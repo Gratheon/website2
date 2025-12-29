@@ -1,0 +1,27 @@
+name: deploy
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+    defaults:
+      run:
+        working-directory: /www/website/
+    steps:
+      - name: pull latest code
+        run: |
+          git reset --hard
+          git pull
+          rm -rf .docusaurus
+      - name: install dependencies
+        run: |
+          source ./setup-env.sh
+          pnpm install
+      - name: restart services
+        run: |
+          chmod +x ./restart.sh
+          ./restart.sh

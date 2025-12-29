@@ -1,0 +1,3 @@
+Hypothesis is that the sun can influence bee behaviour as well as plants secreting the nectar.
+
+- So if we can get solar radience around the apiary into [Analytics with grafana](https://www.notion.so/Analytics-with-grafana-044239bdf92544a0a1ed95258d812e04?pvs=21), we could allow beekeeper to correlated something useful. Solar radience likely is highly aggregated datasource by lat/lon coordinates and very dependent on time-of-the-year

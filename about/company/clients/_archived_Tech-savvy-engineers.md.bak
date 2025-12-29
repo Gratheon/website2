@@ -1,0 +1,2 @@
+- Tech enthusiasts willing to tinker with software and hardware
+- Main motivation - learning complex organisms, AI, robotics

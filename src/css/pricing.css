@@ -1,0 +1,1316 @@
+/* Pricing page header styles */
+.pricing-page-wrapper {
+  padding: 2rem 1rem;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+.pricing-page-title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(45deg, #FFD900, #2f8b0b, #0248ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.pricing-page-subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: var(--ifm-color-emphasis-800);
+}
+
+.plan-comparison-section {
+  margin: 4rem 0;
+}
+
+.plan-comparison-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--ifm-color-emphasis-900);
+}
+
+.comparison-table-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.comparison-table {
+  width: 100%;
+  max-width: 800px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  margin-bottom: 1rem;
+}
+
+.comparison-table th {
+  background: linear-gradient(135deg, var(--ifm-color-primary-light), var(--ifm-color-primary));
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.comparison-table td {
+  padding: 0.8rem 1rem;
+  text-align: center;
+  border-bottom: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.comparison-table tr:nth-child(even) {
+  background-color: var(--ifm-color-emphasis-100);
+}
+
+.comparison-table td:first-child {
+  font-weight: 500;
+  text-align: left;
+  background-color: var(--ifm-color-emphasis-200);
+}
+
+@media (max-width: 768px) {
+  .comparison-table {
+    font-size: 0.85rem;
+  }
+
+  .comparison-table th,
+  .comparison-table td {
+    padding: 0.6rem 0.4rem;
+  }
+}
+
+.pricing-cta-section {
+  text-align: center;
+  margin-top: 4rem;
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, var(--ifm-color-primary-light), var(--ifm-color-primary-lighter));
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-cta-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--ifm-color-primary-darkest);
+}
+
+.pricing-cta-section p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.cta-button {
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.cta-button.primary {
+  background-color: var(--ifm-color-primary);
+  color: white;
+  border: 2px solid var(--ifm-color-primary);
+}
+
+.cta-button.primary:hover {
+  background-color: var(--ifm-color-primary-dark);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button.secondary {
+  background-color: transparent;
+  color: var(--ifm-color-primary-darkest);
+  border: 2px solid var(--ifm-color-primary);
+}
+
+.cta-button.secondary:hover {
+  background-color: var(--ifm-color-primary);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.cta-note {
+  font-size: 0.9rem;
+  color: var(--ifm-color-emphasis-600);
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .pricing-cta-section {
+    padding: 2rem 1rem;
+  }
+
+  .pricing-cta-section h2 {
+    font-size: 2rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Addon section and calculator styling */
+.addon-section table {
+  border: 2px solid #0248ff !important;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.addon-section thead tr {
+  background: linear-gradient(135deg, #0248ff, #0040e8) !important;
+  color: white !important;
+}
+
+.addon-section tbody tr:nth-child(even) {
+  background-color: rgba(2, 72, 255, 0.05);
+}
+
+.addon-section tbody tr:hover {
+  background-color: rgba(2, 72, 255, 0.1);
+}
+
+.addon-section input[type="number"] {
+  border: 1px solid #0248ff;
+  border-radius: 4px;
+  padding: 0.3rem 0.5rem;
+  width: 80px;
+}
+
+.addon-section input[type="number"]:focus {
+  outline: none;
+  border-color: #0040e8;
+  box-shadow: 0 0 0 2px rgba(2, 72, 255, 0.2);
+}
+
+.addon-section .token-result {
+  color: #0248ff;
+  font-weight: 600;
+}
+
+.addon-section th {
+  padding: 0.8rem;
+  text-align: left;
+  font-weight: 600;
+}
+
+.addon-section td {
+  padding: 0.8rem;
+  border-bottom: 1px solid rgba(2, 72, 255, 0.1);
+}
+
+.service-description {
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 0.2rem;
+  font-style: italic;
+}
+
+/* Legacy flexible calculator styling for compatibility */
+.flexible-calculator {
+  border: 2px solid #0248ff !important;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.flexible-calculator thead tr {
+  background: linear-gradient(135deg, #0248ff, #0040e8) !important;
+  color: white !important;
+}
+
+.flexible-calculator tbody tr:nth-child(even) {
+  background-color: rgba(2, 72, 255, 0.05);
+}
+
+.flexible-calculator tbody tr:hover {
+  background-color: rgba(2, 72, 255, 0.1);
+}
+
+.flexible-calculator input[type="number"] {
+  border: 1px solid #0248ff;
+  border-radius: 4px;
+  padding: 0.3rem 0.5rem;
+  width: 80px;
+}
+
+.flexible-calculator input[type="number"]:focus {
+  outline: none;
+  border-color: #0040e8;
+  box-shadow: 0 0 0 2px rgba(2, 72, 255, 0.2);
+}
+
+.flexible-calculator .token-result {
+  color: #0248ff;
+  font-weight: 600;
+}
+
+/* Enterprise tier styling - Black theme */
+.pricing-card.enterprise {
+  background: linear-gradient(135deg, #1a1a1a, #000000);
+  color: white;
+  border: 2px solid #333;
+}
+
+.pricing-card.enterprise.featured {
+  transform: scale(1.05);
+  border: 2px solid #333;
+}
+
+.pricing-card.enterprise.featured .pricing-card-header {
+  background: linear-gradient(135deg, #000000, #1a1a1a);
+  color: white;
+  border-bottom: 1px solid #333;
+}
+
+.pricing-card.enterprise .pricing-card-title {
+  color: white;
+}
+
+.pricing-card.enterprise .pricing-card-price {
+  color: white;
+}
+
+.pricing-card.enterprise .pricing-card-description {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+}
+
+.pricing-card.enterprise .pricing-card-features li {
+  color: white;
+}
+
+.pricing-card.enterprise .pricing-card-footer {
+  background-color: #222;
+  border-top: 1px solid #333;
+}
+
+.pricing-card.enterprise .pricing-button {
+  background: #333;
+  color: white;
+  border: 2px solid #666;
+}
+
+.pricing-card.enterprise .pricing-button:hover {
+  background: #555;
+  border-color: #888;
+  transform: translateY(-2px);
+}
+
+.pricing-card.enterprise:hover {
+  transform: scale(1.05) translateY(-5px);
+}
+
+/* Flexible tier fluid connection styles */
+.addon-section-wrapper {
+  position: relative;
+}
+
+/* Desktop-specific fluid connection */
+@media (min-width: 1400px) {
+
+    .pricing-card {
+        max-width: 300px;
+    }
+
+
+
+    /* Make Flexible column taller in desktop */
+  .pricing-card.flexible.featured {
+    height: 1400px !important;
+    position: relative;
+    margin-bottom: 0;
+    display: flex !important;
+    flex-direction: column;
+    transform: none;
+    z-index: 100;
+    border-bottom: 0;
+    border-radius: 12px 12px 0 0;
+    box-shadow: none;
+    flex: none !important; /* Prevent flex shrinking */
+    min-height: 1440px !important; /* Ensure minimum height */
+    max-height: none !important; /* Remove any max-height restrictions */
+  }
+
+  .pricing-card.flexible.featured .pricing-card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-bottom: 4rem;
+  }
+
+  .pricing-card.flexible.featured .pricing-card-footer {
+    margin-top: auto;
+    position: relative;
+  }
+
+  .addon-section-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    position: relative;
+    padding: 2rem;
+    margin-top: -139px; /* Overlap with Flexible column */
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.15);
+    z-index: 10;
+  }
+
+  .addon-section {
+    margin-top: 0 !important;
+    background: transparent !important; /* Make addon section background transparent */
+    border: none !important; /* Remove border since wrapper has white background */
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    position: relative;
+    padding: 0 !important; /* Remove padding since wrapper has it */
+  }
+}
+
+/* Tablet view adjustment */
+@media (max-width: 1399px) and (min-width: 1000px) {
+  .addon-section-wrapper {
+    margin-top: 4rem !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+  }
+
+  .addon-section {
+    background: linear-gradient(135deg, rgba(2, 72, 255, 0.05), rgba(2, 72, 255, 0.02)) !important;
+    border: 2px solid #0248ff !important;
+    border-radius: 16px !important;
+    padding: 2rem !important;
+  }
+
+  .pricing-card.flexible.featured {
+    height: auto !important; /* Reset height for tablet */
+  }
+}
+
+/* Mobile view - hide connector */
+@media (max-width: 999px) {
+  .addon-section-wrapper {
+    margin-top: 4rem !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+  }
+
+  .addon-section {
+    background: linear-gradient(135deg, rgba(2, 72, 255, 0.05), rgba(2, 72, 255, 0.02)) !important;
+    border: 2px solid #0248ff !important;
+    border-radius: 16px !important;
+    padding: 2rem !important;
+  }
+}
+
+/* Pricing container styles */
+.pricing-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
+  min-height: 1500px; /* Ensure enough height for tall Flexible card */
+}
+
+
+.pricing-card {
+    flex: 1;
+    max-width: 360px;
+    /*max-width: 300px;*/
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: var(--ifm-card-background-color);
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+/* Responsive pricing container adjustments for 5 cards */
+@media (min-width: 1400px) {
+  .pricing-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    align-items: flex-start; /* Align cards to top, allow different heights */
+  }
+
+  .pricing-card {
+    flex: 1;
+    max-width: 400px;
+    min-width: 260px;
+  }
+
+  /* Flexible card gets special treatment */
+  .pricing-card.flexible.featured {
+    flex: none !important; /* Don't participate in flex sizing */
+    width: 340px !important; /* Fixed width */
+  }
+}
+
+@media (max-width: 1399px) and (min-width: 1200px) {
+  .pricing-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 2rem auto;
+  }
+
+  .pricing-card {
+      max-width: 400px;
+  }
+}
+
+@media (max-width: 1199px) and (min-width: 768px) {
+  .pricing-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 800px;
+    margin: 2rem auto;
+  }
+
+  .pricing-card {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 767px) {
+  .pricing-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin: 2rem auto;
+  }
+
+  .pricing-card {
+    max-width: none;
+  }
+}
+
+.pricing-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.pricing-card-header {
+  padding: 1.5rem;
+  text-align: center;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.pricing-card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--ifm-color-primary);
+}
+
+.pricing-card-price {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+/* Monthly price styling */
+.price-monthly {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.price-period {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* Yearly price group styling */
+.price-yearly-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  margin-top: 0.5rem;
+}
+
+.price-yearly {
+  font-size: 1.4rem;
+  font-weight: 600;
+  opacity: 0.85;
+  line-height: 1.1;
+}
+
+.price-discount {
+  font-size: 0.75rem;
+  opacity: 0.7;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+/* Enterprise tier pricing customization */
+.enterprise-price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.1rem;
+}
+
+.enterprise-custom-text {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.enterprise-pricing-text {
+  font-size: 1.2rem;
+  font-weight: 500;
+  opacity: 0.8;
+  line-height: 1;
+}
+
+.pricing-card-description {
+  font-size: 0.9rem;
+  color: var(--ifm-color-emphasis-800);
+}
+
+.pricing-highlight-bar {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding: 0.8rem;
+  background-color: var(--ifm-color-emphasis-100);
+  border-radius: 8px;
+  flex-wrap: wrap;
+}
+
+.highlight-item {
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0.3rem 0.8rem;
+  border-radius: 16px;
+  background-color: var(--ifm-color-emphasis-200);
+}
+
+@media (max-width: 768px) {
+  .pricing-highlight-bar {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+  }
+}
+
+.pricing-card-body {
+  padding: 1.5rem;
+  flex: 1;
+}
+
+.pricing-card-features {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pricing-card-features li {
+  padding: 0.1rem 0;
+  display: flex;
+  align-items: center;
+  min-height: 2.5em;
+}
+
+.pricing-card-features li a {
+  color: var(--ifm-color-primary-darkest);
+  text-decoration: none;
+}
+
+.pricing-card-features li a:hover {
+  text-decoration: underline;
+}
+
+/* Pricing features and limitations sections */
+.pricing-features-section,
+.pricing-limitations-section {
+  margin-bottom: 1.5rem;
+}
+
+.pricing-features-section:last-child,
+.pricing-limitations-section:last-child {
+  margin-bottom: 0;
+}
+
+.pricing-features-section h4,
+.pricing-limitations-section h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: var(--ifm-color-emphasis-800);
+  border-bottom: 1px solid var(--ifm-color-emphasis-300);
+  padding-bottom: 0.5rem;
+}
+
+.pricing-features-section h4 {
+  color: var(--ifm-color-success-dark);
+}
+
+.pricing-limitations-section h4 {
+  color: var(--ifm-color-emphasis-600);
+}
+
+.pricing-card-footer {
+  padding: 1.5rem;
+  text-align: center;
+  background-color: var(--ifm-color-emphasis-100);
+}
+
+/* Featured plan styling */
+.pricing-card.featured {
+  transform: scale(1.05);
+  border: 2px solid var(--ifm-color-primary);
+}
+
+.pricing-card.featured .pricing-card-header {
+  background-color: var(--ifm-color-primary);
+  color: white;
+}
+
+.pricing-card.featured .pricing-card-title {
+  color: white;
+}
+
+.pricing-card.featured .pricing-card-description {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+}
+
+.pricing-card.featured:hover {
+  transform: scale(1.05) translateY(-5px);
+}
+
+/* Brand color specific styling for pricing tiers */
+.pricing-card.simple.featured .pricing-card-header {
+  background-color: #FFD900;
+  color: black;
+}
+
+.pricing-card.simple.featured {
+  border: 2px solid #FFD900;
+}
+
+.pricing-card.simple.featured .pricing-card-title {
+  color: black;
+}
+
+.pricing-card.simple.featured .pricing-card-description {
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 500;
+}
+
+.pricing-card.professional.featured .pricing-card-header {
+  background-color: #2f8b0b;
+  color: white;
+}
+
+.pricing-card.professional.featured {
+  border: 2px solid #2f8b0b;
+}
+
+.pricing-card.professional.featured .pricing-card-title {
+  color: white;
+}
+
+.pricing-card.professional.featured .pricing-card-description {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+}
+
+.pricing-card.flexible.featured .pricing-card-header {
+  background-color: #0248ff;
+  color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+.pricing-card.flexible.featured {
+  border: 2px solid #0248ff;
+}
+
+.pricing-card.flexible.featured .pricing-card-title {
+  color: white;
+}
+
+.pricing-card.flexible.featured .pricing-card-description {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+}
+
+.pricing-card.flexible.featured .pricing-card-header {
+  background-color: #0248ff;
+  color: white;
+}
+
+.pricing-card.flexible.featured {
+  border: 2px solid #0248ff;
+}
+
+.pricing-card.flexible.featured .pricing-card-title {
+  color: white;
+}
+
+.pricing-card.flexible.featured .pricing-card-description {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+}
+
+/* Flexible card specific styling fixes */
+.pricing-card.flexible.featured {
+  border-bottom: none !important;
+}
+
+.pricing-card.flexible.featured:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+/* Additional desktop-specific Flexible card rules */
+@media (min-width: 1400px) {
+  .pricing-card.flexible.featured {
+    overflow: visible !important; /* Allow content to extend */
+    position: relative !important;
+    align-self: flex-start !important; /* Align to top of flex container */
+  margin-top: -40px;
+  }
+}
+
+/* Device pricing table styles */
+.device-pricing-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 2rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.device-pricing-table th {
+  background-color: var(--ifm-table-head-background);
+  color: var(--ifm-table-head-color);
+  padding: 1rem;
+  text-align: left;
+}
+
+.device-pricing-table th:first-child {
+  border-top-left-radius: 8px;
+}
+
+.device-pricing-table th:last-child {
+  border-top-right-radius: 8px;
+}
+
+.device-pricing-table td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--ifm-table-border-color);
+}
+
+.device-pricing-table tr:last-child td {
+  border-bottom: none;
+}
+
+.device-pricing-table tr:nth-child(even) {
+  background-color: var(--ifm-color-emphasis-100);
+}
+
+/* Token pricing table styles */
+.token-pricing-table {
+  display: inline-block; /* Allow parent text-align to center */
+  /* width: 100%; Removed width */
+  /* table-layout: fixed; Removed fixed layout */
+  /* max-width: 700px; Removed max-width */
+  /* margin: 2rem auto; Removed margin auto */
+  margin-top: 2rem; /* Keep vertical margin */
+  margin-bottom: 2rem; /* Keep vertical margin */
+  border-collapse: separate;
+  border-spacing: 0; /* Add border spacing back */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.token-pricing-table th {
+  background-color: var(--ifm-table-head-background);
+  color: var(--ifm-table-head-color);
+  padding: 1rem;
+  text-align: left;
+}
+
+.token-pricing-table th:first-child {
+  /* width: 65%; Removed width */
+  border-top-left-radius: 8px;
+}
+
+.token-pricing-table th:last-child {
+  /* width: 35%; Removed width */
+  /* padding-right: 0; Restore default padding */
+  border-top-right-radius: 8px;
+}
+
+.token-pricing-table td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--ifm-table-border-color);
+  text-align: left; /* Revert to default left alignment */
+}
+
+/* Removed specific td alignment rules */
+/* .token-pricing-table td:last-child { */
+  /* padding-right: 0; Restore default padding */
+/* } */
+
+.token-pricing-table tr:last-child td {
+  border-bottom: none;
+}
+
+.token-pricing-table tr:nth-child(even) {
+  background-color: var(--ifm-color-emphasis-100);
+}
+
+
+/* Ideation stage product styling (only for hardware devices) */
+.hardware-device-card.ideation {
+  opacity: 0.8;
+  position: relative;
+}
+
+.hardware-device-card.ideation::after {
+  content: "In ideation";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #f0f0f0;
+  color: #666;
+  font-size: 0.7rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+  margin: 0.3rem;
+}
+
+/* Custom pricing page layout without sidebar */
+.pricing-page-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.pricing-page-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.pricing-page-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.pricing-page-subtitle {
+  font-size: 1.2rem;
+  color: var(--ifm-color-emphasis-700);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Device pricing info styling */
+.device-pricing-info {
+  background-color: var(--ifm-color-emphasis-100);
+  border-left: 4px solid var(--ifm-color-primary);
+  padding: 1.5rem;
+  border-radius: 0 8px 8px 0;
+  margin: 2rem 0;
+}
+
+.device-pricing-info p {
+  margin-bottom: 1rem;
+}
+
+.device-pricing-info ul {
+  margin-bottom: 0;
+}
+
+.device-pricing-info li {
+  margin-bottom: 0.5rem;
+}
+
+.device-pricing-info li:last-child {
+  margin-bottom: 0;
+}
+
+/* Hardware devices card styling */
+.hardware-devices-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.hardware-device-card {
+  flex: 1;
+  min-width: 250px;
+  max-width: 320px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: var(--ifm-card-background-color);
+  margin-bottom: 1rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.hardware-device-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.hardware-device-header {
+  padding: 1.5rem;
+  text-align: center;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  background-color: var(--ifm-color-emphasis-100);
+}
+
+.hardware-device-header h3 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--ifm-color-primary);
+}
+
+.hardware-device-image {
+  width: 100%;
+  height: 180px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  line-height: 0; /* Fix for white line */
+}
+
+.hardware-device-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; /* Fix for bottom margin */
+  margin-bottom: 0; /* Fix for bottom margin */
+}
+
+.robotic-beehive-image img {
+  object-fit: contain;
+  background-color: #f5f5f5;
+}
+
+.hardware-device-body {
+  padding: 1.5rem;
+  flex: 1;
+}
+
+.hardware-device-pricing {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.hardware-price-item {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  border-radius: 8px;
+  background-color: var(--ifm-color-emphasis-100);
+  height: 100%;
+}
+
+.price-label {
+  font-weight: 600;
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+}
+
+.price-value {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--ifm-color-primary);
+  margin-bottom: 0.25rem;
+}
+
+.price-description {
+  font-size: 0.85rem;
+  color: var(--ifm-color-emphasis-600);
+  min-height: 2.5em; /* Ensure consistent height for descriptions */
+}
+
+.hardware-device-footer {
+  padding: 1.5rem;
+  text-align: center;
+  background-color: var(--ifm-color-emphasis-100);
+}
+
+.hardware-device-card.ideation {
+  opacity: 0.8;
+}
+
+.ideation-badge {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  background-color: var(--ifm-color-emphasis-300);
+  color: var(--ifm-color-emphasis-800);
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  z-index: 1;
+}
+
+/* Hide sidebar on pricing page */
+.pricing-page-container .navbar__inner {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.pricing-page-container .main-wrapper {
+  margin: 0;
+  max-width: 100%;
+  width: 100%;
+}
+
+.pricing-page-container .docSidebarContainer {
+  display: none !important;
+}
+
+.pricing-page-container .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Price Calculator Styles */
+.price-calculator {
+  background-color: var(--ifm-color-emphasis-100);
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 1200px; /* Increased from 800px */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.calculator-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.calculator-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.calculator-item label {
+  font-weight: 500;
+  color: var(--ifm-color-emphasis-800);
+  font-size: 0.9rem;
+}
+
+.calculator-item input {
+  padding: 0.75rem;
+  border: 2px solid var(--ifm-color-emphasis-300);
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease;
+  background-color: var(--ifm-background-color);
+  color: var(--ifm-font-color-base);
+}
+
+.calculator-item input:focus {
+  outline: none;
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 0 2px rgba(var(--ifm-color-primary-rgb), 0.2);
+}
+
+.calculator-results {
+  background-color: var(--ifm-background-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  border: 2px solid var(--ifm-color-primary);
+}
+
+.result-item {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.result-item:first-child {
+  color: var(--ifm-color-primary);
+}
+
+.result-item:last-child {
+  color: var(--ifm-color-success);
+  font-size: 1.2rem;
+}
+
+/* Token Calculator Table Styles */
+.token-calculator-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+}
+
+.token-calculator-table th {
+  background-color:  #0248ff;
+  color: var(--ifm-table-head-color);
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+}
+
+.token-calculator-table th:first-child {
+  /*border-top-left-radius: 8px;*/
+  /*width: 40%; !* Increased from 35% *!*/
+}
+
+.token-calculator-table th:nth-child(2) {
+  /*width: 20%; !* Decreased from 25% *!*/
+}
+
+.token-calculator-table th:nth-child(3) {
+  /*width: 25%; !* Same *!*/
+}
+
+.token-calculator-table th:last-child {
+  /*border-top-right-radius: 8px;*/
+  /*width: 15%; !* Same *!*/
+}
+
+.token-calculator-table td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--ifm-table-border-color);
+  text-align: left;
+  vertical-align: middle;
+}
+
+.token-calculator-table td:last-child {
+  text-align: right;
+  font-weight: 600;
+  color: var(--ifm-color-primary);
+}
+
+.token-calculator-table tr:last-child td {
+  border-bottom: none;
+}
+
+.token-calculator-table tr:nth-child(even) {
+  background-color: var(--ifm-color-emphasis-100);
+}
+
+.token-calculator-table input {
+  width: 100%;
+  max-width: 120px;
+  padding: 0.5rem;
+  border: 2px solid var(--ifm-color-emphasis-300);
+  border-radius: 4px;
+  font-size: 0.9rem;
+  transition: border-color 0.2s ease;
+  background-color: var(--ifm-background-color);
+  color: var(--ifm-font-color-base);
+}
+
+.token-calculator-table input:focus {
+  outline: none;
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 0 2px rgba(var(--ifm-color-primary-rgb), 0.2);
+}
+
+.token-result {
+  font-family: 'Monaco', 'Menlo', 'Consolas', monospace;
+  background-color: var(--ifm-color-emphasis-200);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  display: inline-block;
+  min-width: 60px;
+}
+
+/* Responsive design for calculator */
+@media (max-width: 768px) {
+  .calculator-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .price-calculator {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+
+  .token-calculator-table {
+    font-size: 0.85rem;
+  }
+
+  .token-calculator-table th,
+  .token-calculator-table td {
+    padding: 0.75rem 0.5rem;
+  }
+
+  .token-calculator-table input {
+    max-width: 100px;
+    padding: 0.4rem;
+    font-size: 0.8rem;
+  }
+}
+
+/* Service description styling */
+.service-description {
+  font-size: 0.75rem;
+  color: var(--ifm-color-emphasis-600);
+  font-weight: normal;
+  margin-top: 0.25rem;
+  line-height: 1.3;
+}

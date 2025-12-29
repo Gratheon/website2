@@ -1,0 +1,1 @@
+Instead of having 1 weight sensor for entire hive, use 2 or 4 sensors to understand bee cluster movement in winter time or honey collection in the summer

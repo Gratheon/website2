@@ -1,0 +1,230 @@
+{
+  "main": {
+    "id": "f57152108828ddbc",
+    "type": "split",
+    "children": [
+      {
+        "id": "882eaa84d19e2815",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b4a96b4f95ae87f3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "about/products/web_app/starter-tier/hive_bottom_varroa_count.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "hive_bottom_varroa_count"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "9573deaa506fd20b",
+    "type": "split",
+    "children": [
+      {
+        "id": "6bf381d588faf4ef",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d48a28b0037d20e3",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "a8dd2de626a6cb91",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "hive placement",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "b884b1214136497b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 421.5
+  },
+  "right": {
+    "id": "676a491059176ac1",
+    "type": "split",
+    "children": [
+      {
+        "id": "f97c2e4e81cce3dc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "76df8cf70ed00aa3",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "research/papers/index.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for index"
+            }
+          },
+          {
+            "id": "58e0b8ae91e164c5",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "src/about/about/Brand meaning.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Brand meaning"
+            }
+          },
+          {
+            "id": "18be80560cb527ef",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "29aa3dc62e572e06",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "src/about/about/Brand meaning.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Brand meaning"
+            }
+          },
+          {
+            "id": "40029589d55bfbaa",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 283.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:Create new base": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-git:Open Git source control": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
+    }
+  },
+  "active": "b4a96b4f95ae87f3",
+  "lastOpenFiles": [
+    "about/products/web_app/starter-tier/🗺️ Hive placement planner.md",
+    "about/products/web_app/starter-tier/🤖 Beekeeping advice with LLM.md",
+    "about/products/web_app/starter-tier/hive_bottom_varroa_count.md",
+    "about/products/web_app/starter-tier/join_bee_colonies.md",
+    "about/products/web_app/pro-tier/colony_comparison_analytics.md",
+    "about/products/web_app/hobbyist-tier/hive_ownership_transfer.md",
+    "about/products/web_app/hobbyist-tier/apiary-management.md",
+    "about/products/web_app/hobbyist-tier/queen-detection.md",
+    "about/products/web_app/hobbyist-tier/👑 Queen management.md",
+    "about/products/web_app/hobbyist-tier/👑 Queen detection.md",
+    "about/products/web_app/hobbyist-tier/queen-management.md",
+    "about/products/web_app/hobbyist-tier/🖼️ Frame side management.md",
+    "about/products/web_app/hobbyist-tier/frame-photo-upload.md",
+    "about/products/web_app/hobbyist-tier/📸 Frame side photo upload.md",
+    "about/products/web_app/hobbyist-tier/📦 Hive section management.md",
+    "about/products/web_app/hobbyist-tier/📦 Hive management.md",
+    "about/products/web_app/hobbyist-tier/📦 Apiary management.md",
+    "about/products/web_app/hobbyist-tier/📅 Varroa Treatment diary.md",
+    "about/products/web_app/hobbyist-tier/🐝 Worker bee detection.md",
+    "about/products/web_app/hobbyist-tier/🌻 List local plants.md",
+    "about/products/web_app/hobbyist-tier/🐝 Count bees.md",
+    "about/products/web_app/hobbyist-tier/🐝 Queen cup detection.md",
+    "about/products/web_app/starter-tier/🐝 Honeycomb cell detection & management.md",
+    "about/products/scales/ideas/Easy battery replacement.md",
+    "about/products/scales/ideas/Measure weight distribution with multiple sensors.md",
+    "blog/2025-12-17 🎓 University of Tartu Students Advance Bee Monitoring with AI.md",
+    "build/blog/rss.xml",
+    "build/blog/rss.css",
+    "build/blog/atom.xml",
+    "build/blog/atom.css",
+    "build/blog/rss.xsl",
+    "build/blog/atom.xsl",
+    "build/sitemap.xml",
+    "build/research/papers/Solution for automated bee colony weight monitoring/index.html",
+    "build/index.html",
+    "build/research/papers/Self-Powered Smart Beehive Monitoring and ControlSystem (SBMaCS)/index.html",
+    "build/assets/images/20240531_094836-b8691fdff673d41150bfb78267edc7be.jpg",
+    "build/assets/images/20230730_143206-7844ffc6e237d9d7077b91a58c3c1d43.jpg",
+    "build/assets/images/20240531_094816-a83a82d66efbc6bdc9a1c52331109048.jpg",
+    "build/assets/images/Screenshot 2024-11-04 at 15.26.56-b0e53bbf15b00ed1d310d4a12fbb7a1d.png",
+    "build/assets/images/gratheon-app-1c55186bf2fd15a2b4ad706170ad5369.png",
+    "build/assets/images/Screenshot 2024-12-10 at 23.35.05-5941cff692d642da03621b366e55300e.png",
+    "build/assets/images/Screenshot 2025-10-16 at 20.48.13-357f86a43712be3216cfaadb9a3c444c.png",
+    "build/assets/images/Screenshot 2025-09-13 at 12.30.27-45979be3142bcc40a74091650dd65da5.png",
+    "build/assets/images/Screenshot 2024-03-27 at 10.20.55-7049332e70b459e090bff2d23d6ae296.png",
+    "build/assets/images/Screenshot 2025-09-17 at 12.06.31-6e8010440c3ed8af48b4de0600124461.png",
+    "about/products/entrance_observer/Untitled.canvas"
+  ]
+}

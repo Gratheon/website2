@@ -1,0 +1,16 @@
+version: '3.9'
+services:
+  website-search:
+    image: node:20-alpine
+    command:
+      node /app/proxy-search.js
+    tty: true
+    ports:
+      - 5700:5700
+    working_dir: /app/
+    volumes:
+      - .:/app/
+    restart: always
+    network_mode: host
+
+
