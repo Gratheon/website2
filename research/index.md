@@ -20,7 +20,7 @@ Gratheon team is interested in existing research and engineering work. We track
   - Bee type detection (worker vs drone bees) - 96.7% precision
   - Hornet detection at hive entrance - critical early warning system
   - Multi-class bee detection including pollen-carrying bees
-  - [Read more about their work →](/blog/2025/12/17/University%20of%20Tartu%20Students%20Advance%20Bee%20Monitoring%20with%20AI)
+  - [Read more about their work →](https://gratheon.com/blog/2025/12/17/University-of-Tartu-Students-Advance-Bee-Monitoring-with-AI)
 - [Tartu University Topics](https://topics.cs.ut.ee/?language=en) - We remain open to consulting on bachelor and master degrees work
 
 

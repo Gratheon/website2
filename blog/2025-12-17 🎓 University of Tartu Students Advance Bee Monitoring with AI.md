@@ -1,3 +1,8 @@
+---
+title: University of Tartu Students Advance Bee Monitoring with AI
+date: 2025-12-17T00:00:00.000Z
+---
+
 We're incredibly thankful to share the outstanding work of three student teams from University of Tartu who chose Gratheon as their machine learning course project. This work was completed as part of the Machine Learning course (MTAT.03.227) taught by [Dmytro Fishman](https://www.linkedin.com/in/dmytro-fishman/), Associate Professor at University of Tartu. Their contributions are moving us closer to our mission of protecting bees through AI-powered monitoring.
 
 ![](img/Screenshot%202025-12-17%20at%2012.57.55.png)

@@ -63,7 +63,7 @@ export default function CustomPricingPage() {
               <h4>Features</h4>
               <ul className="pricing-card-features">
                 <li>📦 &nbsp;<Link to="/about/products/web_app/hobbyist-tier/apiary-management">Apiary & Hive Management</Link></li>
-                <li>🖼️ &nbsp;<Link to="/about/products/web_app/hobbyist-tier/frame-photo-upload">Frame Photo Upload</Link></li>
+                <li>🖼️ &nbsp;<Link to="/docs/web-app/features/frame-photo-upload">Frame Photo Upload</Link></li>
                 <li>🐝 &nbsp;<Link to="/about/products/web_app/hobbyist-tier/🐝 Worker bee detection">Worker Bee Detection</Link></li>
                 <li>👑 &nbsp;<Link to="/about/products/web_app/hobbyist-tier/queen-detection">Queen Detection</Link></li>
                 <li>♻️ &nbsp;<Link to="/about/products/web_app/hobbyist-tier/♻️ Public beehive view">Public Hive Sharing</Link></li>
