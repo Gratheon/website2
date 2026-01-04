@@ -94,8 +94,8 @@ export default function CustomPricingPage() {
             <div className="pricing-card-price">
               <div className="price-monthly">€22<span className="price-period"> / month</span></div>
               <div className="price-yearly-group">
-                <span className="price-yearly">€220/year</span>
-                <small className="price-discount">Save 17% with yearly billing</small>
+                <span className="price-yearly">€144 / year</span>
+                <small className="price-discount">Save 45% with yearly billing</small>
               </div>
             </div>
             <div className="pricing-card-description">
@@ -184,8 +184,8 @@ export default function CustomPricingPage() {
             <div className="pricing-card-price">
               <div className="price-monthly">€55<span className="price-period"> / month</span></div>
               <div className="price-yearly-group">
-                <span className="price-yearly">€599/year</span>
-                <small className="price-discount">Save 9% with yearly billing</small>
+                <span className="price-yearly">€396 / year</span>
+                <small className="price-discount">Save 40% with yearly billing</small>
               </div>
             </div>
             <div className="pricing-card-description">
