@@ -173,8 +173,10 @@ const config: Config = {
           items: [
             {
               html: `
-                <a href="https://ariregister.rik.ee/est/company/12245103/Gratheon-O%C3%9C">Gratheon OÜ</a><br />
-                Tallinn, Estonia
+                <div class="footer-company-block">
+                  <a href="https://ariregister.rik.ee/est/company/12245103/Gratheon-O%C3%9C">Gratheon OÜ</a><br />
+                  ❤️ Made with love in Estonia
+                </div>
               `,
             },
           ],

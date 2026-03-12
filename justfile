@@ -1,4 +1,12 @@
 start:
+    #!/usr/bin/env bash
+    set -euo pipefail
+
+    if [ ! -x node_modules/.bin/docusaurus ]; then
+        echo "Installing dependencies (pnpm install)..."
+        pnpm install
+    fi
+
     pnpm run start
 
 build:
@@ -40,4 +48,3 @@ sync-licenses:
     echo ""
     echo "✅ License sync complete!"
     echo "📍 Source of truth: website/$SOURCE_DIR/"
-

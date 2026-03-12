@@ -413,6 +413,16 @@ background: rgb(253, 220, 4);
     margin-bottom: 0; /* Remove bottom margin */
 }
 
+.footer-company-block {
+    min-width: 260px;
+}
+
+@media screen and (min-width: 1024px) {
+    .footer-company-block {
+        min-width: 360px;
+    }
+}
+
 
 #__docusaurus > nav a svg,
 #__docusaurus > footer a svg{

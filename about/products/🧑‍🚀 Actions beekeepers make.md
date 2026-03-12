@@ -8,11 +8,11 @@ What does beekeeper usually do? Sorted by priority:
 - inspecting a colony in a beehive with a smoker, dressed in suit with specialized tools - [🔎 Inspection management](web_app/starter-tier/🔎%20Inspection%20management.md)
 - expanding or down-sizing the hive with a new section full of either empty foundation frames or comb frames - see [📦 Hive section management](web_app/hobbyist-tier/📦%20Hive%20section%20management.md)
 - treating against varroa mites with strips or acid fumes - see [📅 Varroa Treatment diary](web_app/hobbyist-tier/📅%20Varroa%20Treatment%20diary.md)
-- feeding the colony with sugar syrup or candy if its lacking resources - see [🍭 Feeding history](web_app/starter-tier/🍭%20Feeding%20history.md)
+- feeding the colony with sugar syrup or candy if its lacking resources - see [🍭 Feeding history](web_app/free-tier/🍭%20Feeding%20history.md)
 - balancing resources (frames) between colonies to prevent [🍽️ Bee colony starvation](../problems/biological/🍽️%20Bee%20colony%20starvation.md)
-- splitting the colony if it is too big - see [🐝 Split a bee colony](web_app/starter-tier/split_bee_colony.md)
+- splitting the colony if it is too big - see [🐝 Split a bee colony](web_app/hobbyist-tier/split_bee_colony.md)
 - catching swarms
-- merging weak colonies before autumn - see [🫶🏻 Join colonies](web_app/starter-tier/join_bee_colonies.md)
+- merging weak colonies before autumn - see [🫶🏻 Join colonies](web_app/hobbyist-tier/join_bee_colonies.md)
 - adding or swapping a queen - see [💀 Colony without a queen](../problems/💀%20Colony%20without%20a%20queen.md)
 - extracting honey or pollen
 - adding or removing frames - see [📦 Hive section management](web_app/hobbyist-tier/📦%20Hive%20section%20management.md)

@@ -46,17 +46,17 @@ export default function CustomPricingPage() {
       <div className="pricing-page-header">
         <h1 className="pricing-page-title">⚖️ Pricing Plans</h1>
         <p className="pricing-page-subtitle">
-          Choose the plan that best fits your beekeeping needs. Our subscription model is designed to support beekeepers of all sizes.
+          Start simple, unlock AI and automation as you grow, and add extra capacity only when needed.
         </p>
       </div>
 
       <div className="pricing-container">
-        {/* Hobbyist Plan */}
-        <div className="pricing-card" data-tier="hobbyist" style={{ order: 1 }}>
+        {/* Free Plan */}
+        <div className="pricing-card" data-tier="free" style={{ order: 1 }}>
           <div className="pricing-card-header">
-            <div className="pricing-card-title">Hobbyist</div>
+            <div className="pricing-card-title">Free</div>
             <div className="pricing-card-price">Free</div>
-            <div className="pricing-card-description">Perfect for beginners</div>
+            <div className="pricing-card-description">Try core beekeeping records</div>
           </div>
           <div className="pricing-card-body">
             <div className="pricing-features-section">
@@ -64,11 +64,10 @@ export default function CustomPricingPage() {
               <ul className="pricing-card-features">
                 <li>📦 &nbsp;<Link to="/about/products/web_app/hobbyist-tier/apiary-management">Apiary & Hive Management</Link></li>
                 <li>🖼️ &nbsp;<Link to="/docs/web-app/features/frame-photo-upload">Frame Photo Upload</Link></li>
-                <li>🐝 &nbsp;<Link to="/about/products/web_app/hobbyist-tier/🐝 Worker bee detection">Worker Bee Detection</Link></li>
-                <li>👑 &nbsp;<Link to="/about/products/web_app/hobbyist-tier/queen-detection">Queen Detection</Link></li>
                 <li>♻️ &nbsp;<Link to="/about/products/web_app/hobbyist-tier/♻️ Public beehive view">Public Hive Sharing</Link></li>
                   <li>♻️ &nbsp;<Link to="/about/products/web_app/hobbyist-tier/♻️ QR-code generation">QR Code Generation</Link></li>
                   <li>📅 &nbsp;<Link to="/about/products/web_app/hobbyist-tier/📅 Varroa Treatment diary">Treatment Diary</Link></li>
+                  <li>🍭 &nbsp;<Link to="/about/products/web_app/free-tier/🍭 Feeding history">Feeding History</Link></li>
                   <li>♻️ &nbsp;<Link to="/about/products/web_app/hobbyist-tier/hive_ownership_transfer">Hive ownership transfer</Link> 🛠️</li>
               </ul>
             </div>
@@ -77,8 +76,8 @@ export default function CustomPricingPage() {
               <ul className="pricing-card-features">
                 <li>🐝 Up to 3 hives</li>
                 <li>🐝 10 frames per hive max</li>
-                <li>🐢 Low-priority AI processing</li>
-                <li>⛄️ 1 year image retention</li>
+                <li>🚫 No AI image processing</li>
+                <li>⛄️ 6 months image retention</li>
               </ul>
             </div>
           </div>
@@ -87,8 +86,42 @@ export default function CustomPricingPage() {
           </div>
         </div>
 
+        {/* Hobbyist Plan */}
+        <div className="pricing-card hobbyist" data-tier="hobbyist" style={{ order: 2 }}>
+          <div className="pricing-card-header">
+            <div className="pricing-card-title">Hobbyist</div>
+            <div className="pricing-card-price">€5<span className="price-period"> / month</span></div>
+            <div className="pricing-card-description">For regular notes and photo logs</div>
+          </div>
+          <div className="pricing-card-body">
+            <div className="pricing-features-section">
+              <h4>Features</h4>
+              <ul className="pricing-card-features">
+                <li>📦 Basic data management in database</li>
+                <li>🖼️ Frame photo upload and storage</li>
+                <li>🗺️ &nbsp;<Link to="/about/products/web_app/hobbyist-tier/🗺️ Hive placement planner">Hive Placement Planner</Link></li>
+                <li>📓 Inspection notes and treatment diary</li>
+                <li>↔️ &nbsp;<Link to="/about/products/web_app/hobbyist-tier/split_bee_colony">Colony Split Management</Link></li>
+                <li>🫶🏻 &nbsp;<Link to="/about/products/web_app/hobbyist-tier/join_bee_colonies">Colony Joining Tool</Link></li>
+              </ul>
+            </div>
+            <div className="pricing-limitations-section">
+              <h4>Limitations</h4>
+              <ul className="pricing-card-features">
+                <li>🐝 Up to 15 hives</li>
+                <li>🧑‍🚀 1 user account</li>
+                <li>🚫 No AI image processing features</li>
+                <li>⛄️ 1 year image retention</li>
+              </ul>
+            </div>
+          </div>
+          <div className="pricing-card-footer">
+            <Link to="https://app.gratheon.com/account/register" className="pricing-button">Start Hobbyist</Link>
+          </div>
+        </div>
+
         {/* Starter Plan */}
-        <div className="pricing-card simple featured" data-tier="starter" style={{ order: 2 }}>
+        <div className="pricing-card simple featured" data-tier="starter" style={{ order: 3 }}>
           <div className="pricing-card-header">
             <div className="pricing-card-title">Starter</div>
             <div className="pricing-card-price">
@@ -99,7 +132,7 @@ export default function CustomPricingPage() {
               </div>
             </div>
             <div className="pricing-card-description">
-              For small-scale beekeepers
+              Unlock AI-powered workflows
             </div>
           </div>
           <div className="pricing-card-body">
@@ -108,73 +141,25 @@ export default function CustomPricingPage() {
               <ul className="pricing-card-features">
                   <li>🐝 &nbsp;<Link to="/about/products/web_app/starter-tier/🐝 Honeycomb cell detection & management">Cell Analysis</Link></li>
                   <li>🦀 &nbsp;<Link to="/about/products/web_app/starter-tier/hive_bottom_varroa_count">Hive bottom board varroa counting</Link></li>
-                  <li>🗺️ &nbsp;<Link to="/about/products/web_app/starter-tier/🗺️ Hive placement planner">Hive Placement Planner</Link></li>
                   <li>🔎 &nbsp;<Link to="/about/products/web_app/starter-tier/🔎 Inspection management">Inspection Management</Link></li>
-                  <li>🍭 &nbsp;<Link to="/about/products/web_app/starter-tier/🍭 Feeding history">Feeding History</Link></li>
-                  <li>↔️ &nbsp;<Link to="/about/products/web_app/starter-tier/split_bee_colony">Colony Split Management</Link></li>
-                  <li>🫶🏻 &nbsp;<Link to="/about/products/web_app/starter-tier/join_bee_colonies">Colony Joining Tool</Link></li>
                   <li>✏️ &nbsp;<Link to="/about/products/web_app/starter-tier/✏️ Drawing on canvas">Frame Annotation Tool</Link></li>
                   <li>🤖 &nbsp;<Link to="/about/products/web_app/starter-tier/🤖 Beekeeping advice with LLM">AI Beekeeping Assistant</Link></li>
+                  <li>🖼️ AI image analysis credits included monthly</li>
               </ul>
             </div>
             <div className="pricing-limitations-section">
               <h4>Limitations</h4>
               <ul className="pricing-card-features">
                 <li>🧑‍🚀 1 user account</li>
-                <li>🐝 Up to 20 hives</li>
+                <li>🐝 Up to 50 hives</li>
                 <li>🐝 30 frames per hive</li>
                 <li>⛄️ 2 year image retention</li>
+                <li>📦 AI analysis volume capped per month</li>
               </ul>
             </div>
           </div>
           <div className="pricing-card-footer">
             <Link to="https://app.gratheon.com/account/register" className="pricing-button">Start Free Trial</Link>
-          </div>
-        </div>
-
-        {/* Flexible Plan */}
-        <div className="pricing-card flexible featured" data-tier="flexible" style={{ order: 3 }}>
-          <div className="pricing-card-header">
-            <div className="pricing-card-title">Flexible</div>
-            <div className="pricing-card-price">€100<span style={{ fontSize: "1rem" }}> one-time</span></div>
-            <div className="pricing-card-description">Pay only for what you use</div>
-            <div style={{
-              background: '#f39c12',
-              color: 'white',
-              padding: '4px 8px',
-              borderRadius: '4px',
-              fontSize: '0.75rem',
-              marginTop: '8px',
-              display: 'inline-block'
-            }}>
-                🛠In Development
-            </div>
-          </div>
-          <div className="pricing-card-body">
-            <div className="pricing-features-section">
-              <h4>Pay-per-use Infrastructure Features</h4>
-              <ul className="pricing-card-features">
-                <li>🎥 Hive entrance video processing & storage</li>
-                <li>📺 &nbsp;<Link to="/about/products/web_app/flexible-tier/video_playback">Video playback</Link></li>
-                <li>🚿 &nbsp; Increased IoT telemetry rate limits</li>
-
-                <li>🛠 SMS alert notifications</li>
-                <li>🛠 Webhook calls & API integrations</li>
-
-                <li>📦 Extra hive & frame capacity beyond tier limits</li>
-                <li>🖼️ Additional frame uploads</li>
-                <li>📓 Extra beehive inspections</li>
-              </ul>
-            </div>
-            <div className="pricing-features-section">
-              <h4>Perfect For</h4>
-              <ul className="pricing-card-features">
-                <li>📊 Variable workload beekeepers</li>
-                <li>🔬 Research & experimentation</li>
-                <li>⚡ Scaling beyond fixed tier limits</li>
-                <li>💰 Cost control with exact usage</li>
-              </ul>
-            </div>
           </div>
         </div>
 
@@ -189,7 +174,7 @@ export default function CustomPricingPage() {
               </div>
             </div>
             <div className="pricing-card-description">
-              For commercial beekeepers
+              Commercial-scale operations with IoT
             </div>
             <div style={{
               background: '#f39c12',
@@ -220,9 +205,9 @@ export default function CustomPricingPage() {
               <h4>Limitations</h4>
               <ul className="pricing-card-features">
                 <li>📈 Min 10 min telemetry resolution</li>
-                <li>🧑‍🚀 Up to 20 user accounts</li>
-                <li>🐝 Up to 150 hives</li>
-                <li>⛄️ 3 year image retention</li>
+                <li>🧑‍🚀 Up to 5 user accounts</li>
+                <li>🐝 Up to 200 hives</li>
+                <li>⛄️ 5 year image retention</li>
               </ul>
             </div>
           </div>
@@ -231,61 +216,113 @@ export default function CustomPricingPage() {
           </div>
         </div>
 
-        {/* Enterprise Plan */}
-        <div className="pricing-card enterprise featured" data-tier="enterprise" style={{ order: 5 }}>
-          <div className="pricing-card-header">
-            <div className="pricing-card-title">Enterprise</div>
-            <div className="pricing-card-price enterprise-price">
-              <span className="enterprise-custom-text">Custom</span>
-              <span className="enterprise-pricing-text">Pricing</span>
+      </div>
+
+      <div className="custom-options-section">
+        <h2 className="custom-options-title">Add-ons & Custom Options</h2>
+        <div className="custom-options-container">
+          {/* Flexible Plan */}
+          <div className="pricing-card flexible option-card" data-tier="flexible">
+            <div className="pricing-card-header">
+              <div className="pricing-card-title">Flexible</div>
+              <div className="pricing-card-price">€100<span style={{ fontSize: "1rem" }}> one-time</span></div>
+              <div className="pricing-card-description">Pay only for what you use</div>
+              <div style={{
+                background: '#f39c12',
+                color: 'white',
+                padding: '4px 8px',
+                borderRadius: '4px',
+                fontSize: '0.75rem',
+                marginTop: '8px',
+                display: 'inline-block'
+              }}>
+                  🛠In Development
+              </div>
             </div>
-            <div className="pricing-card-description">
-              For large commercial operations with thousands of hives
-            </div>
-            <div style={{
-              background: '#666',
-              color: 'white',
-              padding: '4px 8px',
-              borderRadius: '4px',
-              fontSize: '0.75rem',
-              marginTop: '8px',
-              display: 'inline-block'
-            }}>
-              Contract Required
+              <div className="pricing-card-body">
+                <div className="pricing-features-section">
+                <h4>Pay-per-use Capacity</h4>
+                <ul className="pricing-card-features">
+                  <li>🤖 AI credit packs for image analysis</li>
+                  <li>🐝 Extra hive blocks beyond tier limits</li>
+                  <li>🎥 Hive entrance video processing & storage</li>
+                  <li>📺 &nbsp;<Link to="/about/products/web_app/flexible-tier/video_playback">Video playback</Link></li>
+                  <li>🚿 &nbsp; Increased IoT telemetry rate limits</li>
+                  <li>🛠 SMS alert notifications</li>
+                  <li>🛠 Webhook calls & API integrations</li>
+                  <li>📦 Extra hive & frame capacity beyond tier limits</li>
+                  <li>🖼️ Additional frame uploads</li>
+                  <li>📓 Extra beehive inspections</li>
+                </ul>
+              </div>
+              <div className="pricing-features-section">
+                <h4>Perfect For</h4>
+                <ul className="pricing-card-features">
+                  <li>📊 Variable workload beekeepers</li>
+                  <li>🔬 Research & experimentation</li>
+                  <li>⚡ Scaling beyond fixed tier limits</li>
+                  <li>💰 Cost control with exact usage</li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div className="pricing-card-body">
-            <div className="pricing-features-section">
-              <h4>Features</h4>
-              <ul className="pricing-card-features">
-                <li>🛠️ Custom integrations & API development</li>
-                <li>🏢 On-premise deployment options</li>
-                <li>📞 24/7 priority support & maintenance</li>
-                <li>⚡  High-priority processing & SLA guarantees</li>
-                <li>🔐 Advanced security & compliance features</li>
-                <li>📊 Custom reporting & analytics dashboards</li>
-                <li>📋 Custom training & onboarding</li>
-              </ul>
+
+          {/* Enterprise Plan */}
+          <div className="pricing-card enterprise option-card" data-tier="enterprise">
+            <div className="pricing-card-header">
+              <div className="pricing-card-title">Enterprise</div>
+              <div className="pricing-card-price enterprise-price">
+                <span className="enterprise-custom-text">Custom</span>
+                <span className="enterprise-pricing-text">Pricing</span>
+              </div>
+              <div className="pricing-card-description">
+                For large commercial operations with thousands of hives
+              </div>
+              <div style={{
+                background: '#666',
+                color: 'white',
+                padding: '4px 8px',
+                borderRadius: '4px',
+                fontSize: '0.75rem',
+                marginTop: '8px',
+                display: 'inline-block'
+              }}>
+                Contract Required
+              </div>
             </div>
-            <div className="pricing-limitations-section">
-              <h4>Scale</h4>
-              <ul className="pricing-card-features">
-                <li>🐝 1000+ hives supported</li>
-                <li>👥 Unlimited user accounts</li>
-                <li>⛄️ Unlimited data retention</li>
-                <li>📈 Real-time telemetry (1-sec resolution)</li>
-                <li>🚀 Priority processing queue</li>
-              </ul>
+            <div className="pricing-card-body">
+              <div className="pricing-features-section">
+                <h4>Features</h4>
+                <ul className="pricing-card-features">
+                  <li>🛠️ Custom integrations & API development</li>
+                  <li>🏢 On-premise deployment options</li>
+                  <li>📞 24/7 priority support & maintenance</li>
+                  <li>⚡  High-priority processing & SLA guarantees</li>
+                  <li>🔐 Advanced security & compliance features</li>
+                  <li>📊 Custom reporting & analytics dashboards</li>
+                  <li>📋 Custom training & onboarding</li>
+                </ul>
+              </div>
+              <div className="pricing-limitations-section">
+                <h4>Scale</h4>
+                <ul className="pricing-card-features">
+                  <li>🐝 1000+ hives supported</li>
+                  <li>👥 Unlimited user accounts</li>
+                  <li>⛄️ Unlimited data retention</li>
+                  <li>📈 Real-time telemetry (1-sec resolution)</li>
+                  <li>🚀 Priority processing queue</li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div className="pricing-card-footer">
-            <Link to="mailto:enterprise@gratheon.com" className="pricing-button">Contact Enterprise Sales</Link>
+            <div className="pricing-card-footer">
+              <Link to="mailto:enterprise@gratheon.com" className="pricing-button">Contact Enterprise Sales</Link>
+            </div>
           </div>
         </div>
       </div>
 
 
-      {/* Addon Section - Fluid connection with Flexible tier */}
+      {/* Addon Section - Flexible usage calculator */}
       <div className="addon-section-wrapper" id="addon-calculator">
         <div className="addon-section" style={{
           marginTop: '2rem',
@@ -303,7 +340,7 @@ export default function CustomPricingPage() {
             backgroundClip: 'text',
             fontSize: '2.5rem'
           }}>
-            Flexible Addon Features - Usage Calculator
+            Flexible Add-on Usage Calculator
           </h2>
           <div style={{
             fontSize: '1.5rem',

@@ -1,0 +1,229 @@
+<!doctype html><html lang=en dir=ltr class="docs-wrapper plugin-docs plugin-id-api docs-version-current docs-doc-page docs-doc-id-products/web_app/pro-tier/timeseries_data_analytics" data-has-hydrated=false><head><meta charset=UTF-8><meta name=generator content="Docusaurus v3.9.2"><title data-rh=true>📊 Timeseries data analytics | Gratheon</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"/><meta data-rh=true name=twitter:card content=summary_large_image /><meta data-rh=true property=og:image content=https://gratheon.com/img/gratheon-web-app.webp /><meta data-rh=true name=twitter:image content=https://gratheon.com/img/gratheon-web-app.webp /><meta data-rh=true property=og:url content=https://gratheon.com/about/products/web_app/pro-tier/timeseries_data_analytics /><meta data-rh=true property=og:locale content=en /><meta data-rh=true name=docusaurus_locale content=en /><meta data-rh=true name=docsearch:language content=en /><meta data-rh=true name=docusaurus_version content=current /><meta data-rh=true name=docusaurus_tag content=docs-api-current /><meta data-rh=true name=docsearch:version content=current /><meta data-rh=true name=docsearch:docusaurus_tag content=docs-api-current /><meta data-rh=true property=og:title content="📊 Timeseries data analytics | Gratheon"/><meta data-rh=true name=description content="Multi-hive analytics dashboard for comparing colony metrics over time, identifying trends, correlations, and anomalies across your apiary."/><meta data-rh=true property=og:description content="Multi-hive analytics dashboard for comparing colony metrics over time, identifying trends, correlations, and anomalies across your apiary."/><link data-rh=true rel=icon href=/favicons/favicon.ico /><link data-rh=true rel=canonical href=https://gratheon.com/about/products/web_app/pro-tier/timeseries_data_analytics /><link data-rh=true rel=alternate href=https://gratheon.com/about/products/web_app/pro-tier/timeseries_data_analytics hreflang=en /><link data-rh=true rel=alternate href=https://gratheon.com/about/products/web_app/pro-tier/timeseries_data_analytics hreflang=x-default /><script data-rh=true type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://gratheon.com/about/products/","name":"🍯 Products","position":1},{"@type":"ListItem","item":"https://gratheon.com/about/products/web_app/","name":"📱Web-app","position":2},{"@type":"ListItem","item":"https://gratheon.com/about/products/web_app/pro-tier/timeseries_data_analytics","name":"📊 Timeseries data analytics","position":3}]}</script><link rel=alternate type=application/rss+xml href=/blog/rss.xml title="Gratheon RSS Feed"><link rel=alternate type=application/atom+xml href=/blog/atom.xml title="Gratheon Atom Feed"><link rel=preconnect href=https://www.googletagmanager.com><script>window.dataLayer=window.dataLayer||[],function(e,t,a,n,r){e[n]=e[n]||[],e[n].push({"gtm.start":new Date().getTime(),event:"gtm.js"});var d=t.getElementsByTagName(a)[0],g=t.createElement(a);g.async=!0,g.src="https://www.googletagmanager.com/gtm.js?id="+r+("dataLayer"!=n?"&l="+n:""),d.parentNode.insertBefore(g,d)}(window,document,"script","dataLayer","GTM-KH4KC9")</script><link rel=stylesheet href=/assets/css/styles.57e8f5c5.css /><script src=/assets/js/runtime~main.2d89f59d.js defer></script><script src=/assets/js/main.5959ac03.js defer></script></head><body class=navigation-with-keyboard><svg style="display: none;"><defs>
+<symbol id=theme-svg-external-link viewBox="0 0 24 24"><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t;document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KH4KC9" height=0 width=0 style=display:none;visibility:hidden></iframe></noscript><div id=__docusaurus><div role=region aria-label="Skip to main content"><a class=skipToContent_poJ9 href=#__docusaurus_skipToContent_fallback>Skip to main content</a></div><nav aria-label=Main class="theme-layout-navbar navbar navbar--fixed-top"><div class=navbar__inner><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded=false class="navbar__toggle clean-btn" type=button><svg width=30 height=30 viewBox="0 0 30 30" aria-hidden=true><path stroke=currentColor stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d="M4 7h22M4 15h22M4 23h22"/></svg></button><a class=navbar__brand href=/><div class=navbar__logo><img src=/img/logo_v7w.svg alt=Gratheon class="themedComponent_rn3I themedComponent--light_bBhh"/><img src=/img/logo_v7w.svg alt=Gratheon class="themedComponent_rn3I themedComponent--dark_zi9f"/></div><b class="navbar__title text--truncate"></b></a><a aria-current=page class="navbar__item navbar__link navbar__link--active" href=/about>About</a><a aria-current=page class="navbar__item navbar__link navbar__link--active" href=/about/products>Products</a><a class="navbar__item navbar__link" href=/docs/API/>Docs</a><a class="navbar__item navbar__link" sidebarid=researchSidebar href=/research>Research</a><a class="navbar__item navbar__link" href=/blog>Blog</a><a class="navbar__item navbar__link" href=/pricing>Pricing</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class=navbarSearchContainer_rLJk><input type=text placeholder=Search style="padding:7px 15px;border:2px solid #CCC;border-radius:5px"/></div><a href=https://discord.gg/PcbP4uedWj target=_blank rel="noopener noreferrer" class="navbar__item navbar__link navbar--discord-link" aria-label="Discord Invite"></a><a href=https://github.com/gratheon/web-app target=_blank rel="noopener noreferrer" class="navbar__item navbar__link header--github-link" aria-label="GitHub repository"></a><a href=https://app.gratheon.com/account/authenticate/ target=_blank rel="noopener noreferrer" class="navbar__item navbar__link">Log in<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_c9sx><use href=#theme-svg-external-link /></svg></a></div></div><div role=presentation class=navbar-sidebar__backdrop></div></nav><div id=__docusaurus_skipToContent_fallback class="theme-layout-main main-wrapper mainWrapper_TcZ4"><div class=docsWrapper_a5BB><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_jePA" type=button></button><div class=docRoot_YOz7><aside class="theme-doc-sidebar-container docSidebarContainer_PCNi"><div class=sidebarViewport_svvY><div class=sidebar_yZ0v><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_ib_h"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/about/><span title=Overview class=linkLabel_I9IG>Overview</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_rikP menu__link menu__link--sublist" href=/about/mission/><span title="🌻 Mission" class=categoryLinkLabel_dnDz>🌻 Mission</span></a><button aria-label="Expand sidebar category '🌻 Mission'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_rikP menu__link menu__link--sublist" href=/about/problems/><span title="🌨️ Problems" class=categoryLinkLabel_dnDz>🌨️ Problems</span></a><button aria-label="Expand sidebar category '🌨️ Problems'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_rikP menu__link menu__link--sublist menu__link--active" href=/about/products/><span title="🍯 Products" class=categoryLinkLabel_dnDz>🍯 Products</span></a><button aria-label="Collapse sidebar category '🍯 Products'" aria-expanded=true type=button class="clean-btn menu__caret"></button></div><ul class=menu__list><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href="/about/products/🧑‍🚀 Actions beekeepers make"><span title="🧑‍🚀 Actions beekeepers make" class=linkLabel_I9IG>🧑‍🚀 Actions beekeepers make</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_rikP menu__link menu__link--sublist menu__link--active" tabindex=0 href=/about/products/web_app/><span title=📱Web-app class=categoryLinkLabel_dnDz>📱Web-app</span></a><button aria-label="Collapse sidebar category '📱Web-app'" aria-expanded=true type=button class="clean-btn menu__caret"></button></div><ul class=menu__list><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_rikP menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false tabindex=0 href="/about/products/web_app/basic-functionality/🌍 Localization"><span title=basic-functionality class=categoryLinkLabel_dnDz>basic-functionality</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_rikP menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false tabindex=0 href=/about/products/web_app/flexible-tier/alerts><span title=flexible-tier class=categoryLinkLabel_dnDz>flexible-tier</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_rikP menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false tabindex=0 href="/about/products/web_app/free-tier/🍭 Feeding history"><span title=free-tier class=categoryLinkLabel_dnDz>free-tier</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_rikP menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false tabindex=0 href=/about/products/web_app/hobbyist-tier/apiary-management><span title=hobbyist-tier class=categoryLinkLabel_dnDz>hobbyist-tier</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_rikP menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role=button aria-expanded=true tabindex=0 href=/about/products/web_app/pro-tier/alerts><span title=pro-tier class=categoryLinkLabel_dnDz>pro-tier</span></a></div><ul class=menu__list><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/about/products/web_app/pro-tier/alerts><span title="🔔  Alerts" class=linkLabel_I9IG>🔔  Alerts</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/about/products/web_app/pro-tier/colony_comparison_analytics><span title="⚖️ Colony comparison analytics" class=linkLabel_I9IG>⚖️ Colony comparison analytics</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/about/products/web_app/pro-tier/hive_telemetry_storage><span title="📈 Hive telemetry storage" class=linkLabel_I9IG>📈 Hive telemetry storage</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-4 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_rikP menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false tabindex=0 href="/about/products/web_app/pro-tier/ideas 💡/♻️ Hive ownership transfer"><span title="ideas 💡" class=categoryLinkLabel_dnDz>ideas 💡</span></a></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/about/products/web_app/pro-tier/inventory_management><span title="📦 Inventory management system" class=linkLabel_I9IG>📦 Inventory management system</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link menu__link--active" aria-current=page tabindex=0 href=/about/products/web_app/pro-tier/timeseries_data_analytics><span title="📊 Timeseries data analytics" class=linkLabel_I9IG>📊 Timeseries data analytics</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href="/about/products/web_app/pro-tier/🎥 Video streaming from phone"><span title="🎥 Video streaming from phone" class=linkLabel_I9IG>🎥 Video streaming from phone</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href="/about/products/web_app/pro-tier/📈 Count bees - in the cloud"><span title="📈 Count bees - in the cloud" class=linkLabel_I9IG>📈 Count bees - in the cloud</span></a></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_rikP menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false tabindex=0 href=/about/products/web_app/starter-tier/hive_bottom_varroa_count><span title=starter-tier class=categoryLinkLabel_dnDz>starter-tier</span></a></div></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_rikP menu__link menu__link--sublist" tabindex=0 href=/about/products/scales/><span title="🌡️ Beehive scales" class=categoryLinkLabel_dnDz>🌡️ Beehive scales</span></a><button aria-label="Expand sidebar category '🌡️ Beehive scales'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_rikP menu__link menu__link--sublist" tabindex=0 href=/about/products/entrance_observer/><span title="👁️‍🗨️ Entrance Observer" class=categoryLinkLabel_dnDz>👁️‍🗨️ Entrance Observer</span></a><button aria-label="Expand sidebar category '👁️‍🗨️ Entrance Observer'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_rikP menu__link menu__link--sublist" tabindex=0 href=/about/products/robotic_beehive/><span title="🧿 Robotic Beehive" class=categoryLinkLabel_dnDz>🧿 Robotic Beehive</span></a><button aria-label="Expand sidebar category '🧿 Robotic Beehive'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_rikP menu__link menu__link--sublist" tabindex=0 href=/about/products/robotic_apiary/><span title="🪬 Robotic Apiary" class=categoryLinkLabel_dnDz>🪬 Robotic Apiary</span></a><button aria-label="Expand sidebar category '🪬 Robotic Apiary'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/about/products/entrance_counter_circular/><span title="Circular entrance counter" class=linkLabel_I9IG>Circular entrance counter</span></a></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_rikP menu__link menu__link--sublist" href=/about/company/><span title="👔 Company" class=categoryLinkLabel_dnDz>👔 Company</span></a><button aria-label="Expand sidebar category '👔 Company'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/about/volunteer><span title="❤️‍🔥 Volunteering" class=linkLabel_I9IG>❤️‍🔥 Volunteering</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/about/credits><span title="🙏 Credits" class=linkLabel_I9IG>🙏 Credits</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href="/about/📢 Press kit"><span title="📢 Press kit" class=linkLabel_I9IG>📢 Press kit</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a href=https://github.com/orgs/Gratheon/projects/5 target=_blank rel="noopener noreferrer" class="menu__link menuExternalLink_FdF6"><span title="☑️ Tasks" class=linkLabel_I9IG>☑️ Tasks</span><svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_c9sx><use href=#theme-svg-external-link /></svg></a></ul></nav></div></div></aside><main class=docMainContainer_aHOd><div class="container padding-top--md padding-bottom--lg"><div class=row><div class="col docItemCol_BJgu"><div class=docItemContainer_PUtD><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_dpnR" aria-label=Breadcrumbs><ul class=breadcrumbs><li class=breadcrumbs__item><a aria-label="Home page" class=breadcrumbs__link href=/><svg viewBox="0 0 24 24" class=breadcrumbHomeIcon__OJg><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill=currentColor /></svg></a><li class=breadcrumbs__item><a class=breadcrumbs__link href=/about/products/><span>🍯 Products</span></a><li class=breadcrumbs__item><a class=breadcrumbs__link href=/about/products/web_app/><span>📱Web-app</span></a><li class=breadcrumbs__item><span class=breadcrumbs__link>pro-tier</span><li class="breadcrumbs__item breadcrumbs__item--active"><span class=breadcrumbs__link>📊 Timeseries data analytics</span></ul></nav><div class="tocCollapsible_RHmT theme-doc-toc-mobile tocMobile_VHIv"><button type=button class="clean-btn tocCollapsibleButton_POOD">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>📊 Timeseries data analytics</h1></header><p>Multi-hive analytics dashboard for comparing colony metrics over time, identifying trends, correlations, and anomalies across your apiary.</p>
+<iframe width=100% height=400 src=https://www.youtube.com/embed/aBsKVInYCno title="Features - Telemetry API" frameborder=0 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy=strict-origin-when-cross-origin></iframe>
+<h2 class="anchor anchorTargetStickyNavbar_rb2N" id=overview>Overview<a href=#overview class=hash-link aria-label="Direct link to Overview" title="Direct link to Overview" translate=no>​</a></h2>
+<p>The timeseries analytics feature provides telemetry data visualization in two ways:</p>
+<ol>
+<li class=""><strong>Individual hive view</strong> - Single hive metrics accessible from hive details page under the "Metrics" tab</li>
+<li class=""><strong>Multi-hive analytics</strong> - Comparative dashboard at <code>/time</code> for analyzing multiple hives simultaneously</li>
+</ol>
+<p>By overlaying data from different colonies, beekeepers can quickly identify patterns, compare performance, and spot outliers.</p>
+<p>This feature helps:</p>
+<ul>
+<li class="">Compare colony development across your apiary</li>
+<li class="">Identify correlations between metrics (weight drops and swarming)</li>
+<li class="">Spot underperforming hives early</li>
+<li class="">Analyze impact of weather on bee behavior</li>
+<li class="">Export data for external analysis and reporting</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_rb2N" id=available-charts>Available charts<a href=#available-charts class=hash-link aria-label="Direct link to Available charts" title="Direct link to Available charts" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=colony-population>Colony population<a href=#colony-population class=hash-link aria-label="Direct link to Colony population" title="Direct link to Colony population" translate=no>​</a></h3>
+<p>Track bee population estimates from inspection data with optional ideal growth curve overlay for comparison against expected colony development patterns.</p>
+<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=hive-weight>Hive weight<a href=#hive-weight class=hash-link aria-label="Direct link to Hive weight" title="Direct link to Hive weight" translate=no>​</a></h3>
+<p>Compare daily average weight across hives to monitor honey flow, detect nectar dearth periods, and identify optimal harvest timing.</p>
+<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=internal-temperature>Internal temperature<a href=#internal-temperature class=hash-link aria-label="Direct link to Internal temperature" title="Direct link to Internal temperature" translate=no>​</a></h3>
+<p>Monitor temperature patterns inside each hive. Stable brood nest temperatures (34-35°C) indicate healthy colonies with active brood rearing.</p>
+<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=entrance-traffic>Entrance traffic<a href=#entrance-traffic class=hash-link aria-label="Direct link to Entrance traffic" title="Direct link to Entrance traffic" translate=no>​</a></h3>
+<p>Analyze bee entrance activity including:</p>
+<ul>
+<li class=""><strong>Bees in/out</strong> - Directional traffic flow</li>
+<li class=""><strong>Net flow</strong> - Difference between incoming and outgoing bees</li>
+<li class=""><strong>Average speed</strong> - Movement velocity at entrance</li>
+<li class=""><strong>95th percentile speed</strong> - Fast-moving bee detection</li>
+<li class=""><strong>Stationary bees</strong> - Bees lingering at entrance (guarding behavior)</li>
+<li class=""><strong>Detected bees</strong> - Total count in camera frame</li>
+<li class=""><strong>Bee interactions</strong> - Encounters between bees (trophallaxis, aggression)</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=weather-correlation>Weather correlation<a href=#weather-correlation class=hash-link aria-label="Direct link to Weather correlation" title="Direct link to Weather correlation" translate=no>​</a></h3>
+<p>Overlay environmental data to understand external factors:</p>
+<ul>
+<li class="">Temperature and wind speed</li>
+<li class="">Rainfall and cloud cover</li>
+<li class="">Solar radiation</li>
+<li class="">Pollen availability</li>
+<li class="">Air pollution levels</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_rb2N" id=how-it-works>How it works<a href=#how-it-works class=hash-link aria-label="Direct link to How it works" title="Direct link to How it works" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=individual-hive-view>Individual hive view<a href=#individual-hive-view class=hash-link aria-label="Direct link to Individual hive view" title="Direct link to Individual hive view" translate=no>​</a></h3>
+<ol>
+<li class="">
+<p><strong>Navigate to hive details</strong></p>
+<ul>
+<li class="">Open any hive from apiary view</li>
+<li class="">Click the "Metrics" tab in the hive navigation</li>
+</ul>
+</li>
+<li class="">
+<p><strong>View single hive data</strong></p>
+<ul>
+<li class="">Weight chart (last 7 days)</li>
+<li class="">Temperature chart (last 7 days)</li>
+<li class="">Entrance movement chart (last 7 days)</li>
+<li class="">Charts automatically synchronized for easy correlation</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=multi-hive-analytics-dashboard>Multi-hive analytics dashboard<a href=#multi-hive-analytics-dashboard class=hash-link aria-label="Direct link to Multi-hive analytics dashboard" title="Direct link to Multi-hive analytics dashboard" translate=no>​</a></h3>
+<ol>
+<li class="">
+<p><strong>Select apiary</strong></p>
+<ul>
+<li class="">Choose which apiary to analyze</li>
+<li class="">Filters hives to the selected location</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Choose hives</strong></p>
+<ul>
+<li class="">Select one or more hives to compare</li>
+<li class="">Multi-select allows side-by-side comparison</li>
+<li class="">URL parameters support direct links to specific hives</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Set time range</strong></p>
+<ul>
+<li class="">Default: 90 days</li>
+<li class="">Options: 7, 30, 90, 180, 365 days</li>
+<li class="">Longer ranges use daily aggregation for performance</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Enable charts</strong></p>
+<ul>
+<li class="">Toggle individual charts on/off</li>
+<li class="">Customizes view to focus on relevant metrics</li>
+<li class="">Settings persist in browser localStorage</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Synchronized scrolling</strong></p>
+<ul>
+<li class="">All charts sync time axis when zooming or panning</li>
+<li class="">Makes it easy to correlate events across metrics</li>
+<li class="">Click-drag to zoom, double-click to reset</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Export data</strong></p>
+<ul>
+<li class="">Click table icon (📋) on any chart</li>
+<li class="">View raw data in table format</li>
+<li class="">Export as CSV for external analysis</li>
+</ul>
+</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_rb2N" id=features>Features<a href=#features class=hash-link aria-label="Direct link to Features" title="Direct link to Features" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=two-viewing-modes>Two viewing modes<a href=#two-viewing-modes class=hash-link aria-label="Direct link to Two viewing modes" title="Direct link to Two viewing modes" translate=no>​</a></h3>
+<ul>
+<li class=""><strong>Individual hive</strong>: Quick access to recent metrics (7 days) from hive details page</li>
+<li class=""><strong>Multi-hive dashboard</strong>: Comprehensive analytics at <code>/time</code> for cross-hive comparison</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=cross-hive-comparison>Cross-hive comparison<a href=#cross-hive-comparison class=hash-link aria-label="Direct link to Cross-hive comparison" title="Direct link to Cross-hive comparison" translate=no>​</a></h3>
+<p>Overlay multiple hives on the same chart with color-coded lines. Quickly identify which colonies are gaining weight faster, maintaining stable temperatures, or showing unusual entrance activity patterns.</p>
+<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=correlation-analysis>Correlation analysis<a href=#correlation-analysis class=hash-link aria-label="Direct link to Correlation analysis" title="Direct link to Correlation analysis" translate=no>​</a></h3>
+<p>Look for relationships between metrics:</p>
+<ul>
+<li class="">Weight drops preceding swarms</li>
+<li class="">Temperature extremes affecting bee activity</li>
+<li class="">Weather impact on foraging behavior</li>
+<li class="">Population growth matching weight gain</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=alert-threshold-visualization>Alert threshold visualization<a href=#alert-threshold-visualization class=hash-link aria-label="Direct link to Alert threshold visualization" title="Direct link to Alert threshold visualization" translate=no>​</a></h3>
+<p>Visual indicators show configured alert thresholds on charts. When metrics exceed safe ranges, threshold lines help assess severity.</p>
+<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=inspection-markers>Inspection markers<a href=#inspection-markers class=hash-link aria-label="Direct link to Inspection markers" title="Direct link to Inspection markers" translate=no>​</a></h3>
+<p>Inspection events appear as vertical markers on charts, linking manual observations with sensor data patterns.</p>
+<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=data-export>Data export<a href=#data-export class=hash-link aria-label="Direct link to Data export" title="Direct link to Data export" translate=no>​</a></h3>
+<p>Export any chart's data as CSV for:</p>
+<ul>
+<li class="">Excel analysis</li>
+<li class="">Statistical modeling</li>
+<li class="">Custom visualizations</li>
+<li class="">Record keeping and reporting</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=url-deep-linking>URL deep linking<a href=#url-deep-linking class=hash-link aria-label="Direct link to URL deep linking" title="Direct link to URL deep linking" translate=no>​</a></h3>
+<p>Share specific views with query parameters:</p>
+<ul>
+<li class=""><code>?hiveId=123</code> - Auto-select a hive</li>
+<li class=""><code>?apiaryId=456</code> - Set apiary context</li>
+<li class=""><code>?chartType=weight&scrollTo=weight</code> - Highlight specific chart</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_rb2N" id=use-cases>Use cases<a href=#use-cases class=hash-link aria-label="Direct link to Use cases" title="Direct link to Use cases" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=seasonal-planning>Seasonal planning<a href=#seasonal-planning class=hash-link aria-label="Direct link to Seasonal planning" title="Direct link to Seasonal planning" translate=no>​</a></h3>
+<p>Compare weight gain patterns across years to:</p>
+<ul>
+<li class="">Predict optimal harvest windows</li>
+<li class="">Identify best performing locations</li>
+<li class="">Plan feeding schedules based on historical dearth periods</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=queen-performance-evaluation>Queen performance evaluation<a href=#queen-performance-evaluation class=hash-link aria-label="Direct link to Queen performance evaluation" title="Direct link to Queen performance evaluation" translate=no>​</a></h3>
+<p>Overlay population growth curves to:</p>
+<ul>
+<li class="">Compare queens from different breeders</li>
+<li class="">Identify superior genetics for breeding</li>
+<li class="">Determine optimal replacement timing</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=swarm-prediction>Swarm prediction<a href=#swarm-prediction class=hash-link aria-label="Direct link to Swarm prediction" title="Direct link to Swarm prediction" translate=no>​</a></h3>
+<p>Monitor for swarm indicators:</p>
+<ul>
+<li class="">Sudden weight drops (5-10kg)</li>
+<li class="">Increased entrance traffic</li>
+<li class="">Temperature fluctuations</li>
+<li class="">Population peaks followed by declines</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=environmental-impact-analysis>Environmental impact analysis<a href=#environmental-impact-analysis class=hash-link aria-label="Direct link to Environmental impact analysis" title="Direct link to Environmental impact analysis" translate=no>​</a></h3>
+<p>Correlate bee behavior with weather:</p>
+<ul>
+<li class="">Foraging activity vs temperature</li>
+<li class="">Rain impact on entrance traffic</li>
+<li class="">Wind speed affecting flight patterns</li>
+<li class="">Pollen availability and colony growth</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=treatment-efficacy-tracking>Treatment efficacy tracking<a href=#treatment-efficacy-tracking class=hash-link aria-label="Direct link to Treatment efficacy tracking" title="Direct link to Treatment efficacy tracking" translate=no>​</a></h3>
+<p>Compare colonies before and after interventions:</p>
+<ul>
+<li class="">Weight recovery post-feeding</li>
+<li class="">Temperature stabilization after ventilation fixes</li>
+<li class="">Activity normalization after treatment</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_rb2N" id=technical-details>Technical details<a href=#technical-details class=hash-link aria-label="Direct link to Technical details" title="Direct link to Technical details" translate=no>​</a></h2>
+<p><strong>Data sources:</strong></p>
+<ul>
+<li class="">Telemetry data from telemetry-api (temperature, weight, entrance metrics)</li>
+<li class="">Inspection records from local Dexie database</li>
+<li class="">Weather data from external APIs</li>
+<li class="">Population estimates from inspection JSON data</li>
+</ul>
+<p><strong>Performance:</strong></p>
+<ul>
+<li class="">Charts use lightweight-charts library for smooth rendering</li>
+<li class="">Data queries optimized with GraphQL fragments</li>
+<li class="">Long time ranges use daily aggregation (over 30 days)</li>
+<li class="">Client-side caching via Apollo Client</li>
+<li class="">Settings persist in browser localStorage</li>
+</ul>
+<p><strong>Limitations:</strong></p>
+<ul>
+<li class="">Maximum 7 days for temperature (high-resolution data)</li>
+<li class="">Entrance metrics require entrance-observer hardware</li>
+<li class="">Weather data requires apiary GPS coordinates</li>
+<li class="">Population estimates require manual inspection data</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_rb2N" id=related-features>Related features<a href=#related-features class=hash-link aria-label="Direct link to Related features" title="Direct link to Related features" translate=no>​</a></h2>
+<ul>
+<li class=""><a class="" href=/about/products/web_app/pro-tier/hive_telemetry_storage>📈 Hive telemetry storage</a> - Data collection and storage</li>
+<li class=""><a class="" href=/about/products/web_app/pro-tier/colony_comparison_analytics>⚖️ Colony comparison analytics</a> - Statistical analysis tools</li>
+<li class=""><a class="" href=/about/products/web_app/flexible-tier/alerts>🔔 Alerts</a> - Threshold-based notifications</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_rb2N" id=resources>Resources<a href=#resources class=hash-link aria-label="Direct link to Resources" title="Direct link to Resources" translate=no>​</a></h2>
+<ul>
+<li class=""><a class="" href=/docs/web-app/features/timeseries-analytics>Technical documentation</a></li>
+<li class=""><a href=https://github.com/Gratheon/web-app target=_blank rel="noopener noreferrer" class="">Web-app on GitHub</a></li>
+<li class=""><a class="" href=/docs/API/GraphQL>Telemetry API</a></li>
+</ul></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href=/about/products/web_app/pro-tier/inventory_management><div class=pagination-nav__sublabel>Previous</div><div class=pagination-nav__label>📦 Inventory management system</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/about/products/web_app/pro-tier/🎥 Video streaming from phone"><div class=pagination-nav__sublabel>Next</div><div class=pagination-nav__label>🎥 Video streaming from phone</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_y_d7 thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href=#overview class="table-of-contents__link toc-highlight">Overview</a><li><a href=#available-charts class="table-of-contents__link toc-highlight">Available charts</a><ul><li><a href=#colony-population class="table-of-contents__link toc-highlight">Colony population</a><li><a href=#hive-weight class="table-of-contents__link toc-highlight">Hive weight</a><li><a href=#internal-temperature class="table-of-contents__link toc-highlight">Internal temperature</a><li><a href=#entrance-traffic class="table-of-contents__link toc-highlight">Entrance traffic</a><li><a href=#weather-correlation class="table-of-contents__link toc-highlight">Weather correlation</a></ul><li><a href=#how-it-works class="table-of-contents__link toc-highlight">How it works</a><ul><li><a href=#individual-hive-view class="table-of-contents__link toc-highlight">Individual hive view</a><li><a href=#multi-hive-analytics-dashboard class="table-of-contents__link toc-highlight">Multi-hive analytics dashboard</a></ul><li><a href=#features class="table-of-contents__link toc-highlight">Features</a><ul><li><a href=#two-viewing-modes class="table-of-contents__link toc-highlight">Two viewing modes</a><li><a href=#cross-hive-comparison class="table-of-contents__link toc-highlight">Cross-hive comparison</a><li><a href=#correlation-analysis class="table-of-contents__link toc-highlight">Correlation analysis</a><li><a href=#alert-threshold-visualization class="table-of-contents__link toc-highlight">Alert threshold visualization</a><li><a href=#inspection-markers class="table-of-contents__link toc-highlight">Inspection markers</a><li><a href=#data-export class="table-of-contents__link toc-highlight">Data export</a><li><a href=#url-deep-linking class="table-of-contents__link toc-highlight">URL deep linking</a></ul><li><a href=#use-cases class="table-of-contents__link toc-highlight">Use cases</a><ul><li><a href=#seasonal-planning class="table-of-contents__link toc-highlight">Seasonal planning</a><li><a href=#queen-performance-evaluation class="table-of-contents__link toc-highlight">Queen performance evaluation</a><li><a href=#swarm-prediction class="table-of-contents__link toc-highlight">Swarm prediction</a><li><a href=#environmental-impact-analysis class="table-of-contents__link toc-highlight">Environmental impact analysis</a><li><a href=#treatment-efficacy-tracking class="table-of-contents__link toc-highlight">Treatment efficacy tracking</a></ul><li><a href=#technical-details class="table-of-contents__link toc-highlight">Technical details</a><li><a href=#related-features class="table-of-contents__link toc-highlight">Related features</a><li><a href=#resources class="table-of-contents__link toc-highlight">Resources</a></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class=footer__title></div><ul class="footer__items clean-list"><li class=footer__item>
+                <a href=https://ariregister.rik.ee/est/company/12245103/Gratheon-O%C3%9C>Gratheon OÜ</a><br/>
+                Tallinn, Estonia
+              </ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title></div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/privacy>Privacy Policy</a><li class=footer__item><a class=footer__link-item href=/terms>Terms Of Service</a><li class=footer__item><a href=mailto:pilot@gratheon.com target=_blank rel="noopener noreferrer" class=footer__link-item>Email<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_c9sx><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://tawk.to/gratheon target=_blank rel="noopener noreferrer" class=footer__link-item>Support Chat<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_c9sx><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://gratheon.statuspage.io/ target=_blank rel="noopener noreferrer" class=footer__link-item>Service Status<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_c9sx><use href=#theme-svg-external-link /></svg></a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title></div><ul class="footer__items clean-list"><li class=footer__item><a href=https://t.me/gratheon target=_blank rel="noopener noreferrer" class=footer__link-item>Telegram<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_c9sx><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://twitter.com/gratheon target=_blank rel="noopener noreferrer" class=footer__link-item>Twitter<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_c9sx><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://www.linkedin.com/company/gratheon/ target=_blank rel="noopener noreferrer" class=footer__link-item>LinkedIn<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_c9sx><use href=#theme-svg-external-link /></svg></a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title></div><ul class="footer__items clean-list"><li class=footer__item><a href=https://www.facebook.com/gratheon target=_blank rel="noopener noreferrer" class=footer__link-item>Facebook</a><li class=footer__item><a href=https://www.twitch.tv/tot_ra target=_blank rel="noopener noreferrer" class=footer__link-item>Twitch</a><li class=footer__item><a href=https://www.youtube.com/@gratheon-bees target=_blank rel="noopener noreferrer" class=footer__link-item>Youtube<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_c9sx><use href=#theme-svg-external-link /></svg></a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title></div><ul class="footer__items clean-list"><li class=footer__item><img src=/img/nvidia-inception-program-badge-rgb-for-screen.svg alt="NVIDIA Inception Program Member" style="max-width:200px; height: auto;"/></ul></div></div><div class="footer__bottom text--center"><div class=footer__copyright>Copyright © 2026 Gratheon OÜ. Gratheon™ is a pending EU trademark.</div></div></div></footer></div></body>

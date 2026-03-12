@@ -370,7 +370,7 @@
     max-width: 1200px;
     position: relative;
     padding: 2rem;
-    margin-top: -139px; /* Overlap with Flexible column */
+    margin-top: 2rem;
     background: white;
     border-radius: 16px;
     box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.15);
@@ -433,7 +433,36 @@
   justify-content: center;
   gap: 2rem;
   margin: 2rem 0;
-  min-height: 1500px; /* Ensure enough height for tall Flexible card */
+  min-height: auto;
+}
+
+.custom-options-section {
+  margin: 3rem 0 1.5rem;
+}
+
+.custom-options-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--ifm-color-emphasis-900);
+}
+
+.custom-options-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.custom-options-container .pricing-card {
+  max-width: none;
+}
+
+@media (max-width: 900px) {
+  .custom-options-container {
+    grid-template-columns: 1fr;
+  }
 }
 
 
@@ -716,31 +745,49 @@
 }
 
 /* Brand color specific styling for pricing tiers */
-.pricing-card.simple.featured .pricing-card-header {
+.pricing-card.hobbyist .pricing-card-header {
   background-color: #FFD900;
   color: black;
 }
 
-.pricing-card.simple.featured {
+.pricing-card.hobbyist {
   border: 2px solid #FFD900;
 }
 
-.pricing-card.simple.featured .pricing-card-title {
+.pricing-card.hobbyist .pricing-card-title {
   color: black;
 }
 
-.pricing-card.simple.featured .pricing-card-description {
+.pricing-card.hobbyist .pricing-card-description {
   color: rgba(0, 0, 0, 0.8);
   font-weight: 500;
 }
 
-.pricing-card.professional.featured .pricing-card-header {
+.pricing-card.simple.featured .pricing-card-header {
   background-color: #2f8b0b;
   color: white;
 }
 
-.pricing-card.professional.featured {
+.pricing-card.simple.featured {
   border: 2px solid #2f8b0b;
+}
+
+.pricing-card.simple.featured .pricing-card-title {
+  color: white;
+}
+
+.pricing-card.simple.featured .pricing-card-description {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+}
+
+.pricing-card.professional.featured .pricing-card-header {
+  background-color: #0248ff;
+  color: white;
+}
+
+.pricing-card.professional.featured {
+  border: 2px solid #0248ff;
 }
 
 .pricing-card.professional.featured .pricing-card-title {
