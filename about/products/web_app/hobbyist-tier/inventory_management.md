@@ -6,7 +6,7 @@ Inventory management helps beekeepers track equipment, supplies, and beekeeping 
 
 ## Overview
 
-Professional beekeepers need to manage significant inventory including:
+Beekeepers need to manage inventory including:
 - Beehive equipment (boxes, frames, feeders)
 - Protective gear
 - Treatment supplies (medications, organic acids)

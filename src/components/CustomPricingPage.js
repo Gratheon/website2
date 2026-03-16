@@ -64,6 +64,7 @@ export default function CustomPricingPage() {
               <ul className="pricing-card-features">
                 <li>📦 &nbsp;<Link to="/about/products/web_app/hobbyist-tier/apiary-management">Apiary & Hive Management</Link></li>
                 <li>🖼️ &nbsp;<Link to="/docs/web-app/features/frame-photo-upload">Frame Photo Upload</Link></li>
+                <li>⌨️ &nbsp;<Link to="/docs/web-app/features/keyboard-support">Keyboard Support</Link></li>
                 <li>♻️ &nbsp;<Link to="/about/products/web_app/hobbyist-tier/♻️ Public beehive view">Public Hive Sharing</Link></li>
                   <li>♻️ &nbsp;<Link to="/about/products/web_app/hobbyist-tier/♻️ QR-code generation">QR Code Generation</Link></li>
                   <li>📅 &nbsp;<Link to="/about/products/web_app/hobbyist-tier/📅 Varroa Treatment diary">Treatment Diary</Link></li>
@@ -103,7 +104,7 @@ export default function CustomPricingPage() {
                 <li>📓 Inspection notes and treatment diary</li>
                 <li>↔️ &nbsp;<Link to="/about/products/web_app/hobbyist-tier/split_bee_colony">Colony Split Management</Link></li>
                 <li>🫶🏻 &nbsp;<Link to="/about/products/web_app/hobbyist-tier/join_bee_colonies">Colony Joining Tool</Link></li>
-                <li>🛠 &nbsp;<Link to="/about/products/web_app/pro-tier/inventory_management">Warehouse inventory management</Link></li>
+                <li>🛠 &nbsp;<Link to="/about/products/web_app/hobbyist-tier/inventory_management">Warehouse inventory management</Link></li>
               </ul>
             </div>
             <div className="pricing-limitations-section">
