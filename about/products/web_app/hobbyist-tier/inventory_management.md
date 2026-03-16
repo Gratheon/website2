@@ -1,134 +1,28 @@
 ---
-title: 📦 Inventory management system
+title: 📦 Warehouse inventory management
 ---
 
-Inventory management helps beekeepers track equipment, supplies, and beekeeping materials across multiple locations.
+Warehouse helps beekeepers track how many hive sections, frames, and parts they have in stock — synced with what's actually deployed across active hives.
+
+## Demo
+
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/ECsrHd_EZwE" title="Warehouse inventory management demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Overview
 
-Beekeepers need to manage inventory including:
-- Beehive equipment (boxes, frames, feeders)
-- Protective gear
-- Treatment supplies (medications, organic acids)
-- Feeding supplies (sugar, pollen substitute)
-- Harvesting equipment
-- Maintenance tools and spare parts
+Beekeepers often work with multiple hive systems (Langstroth, Dadant, Ukrainian horizontal, etc.) and different frame sizes. Before heading to the apiary, it's easy to lose track of what equipment is actually available in the shed.
 
-This system provides complete visibility into inventory levels, locations, usage patterns, and restocking needs.
+Warehouse solves this by giving you a live count of:
+- Hive sections (deeps, supers, horizontal) per hive system
+- Frames per section type and system
+- Hive parts (bottom boards, covers, feeders, etc.)
+
+Counts can be updated manually or **automatically synced from your active hives** when hive data changes.
 
 ## Features
 
-### Equipment tracking
-- Track all hive components (boxes, frames, covers, bottom boards)
-- Monitor equipment condition and maintenance needs
-- Schedule equipment rotation and replacement
-- Track equipment loans and returns
-
-### Supply management
-- Monitor treatment supply levels
-- Track feeding supply inventory
-- Set low-stock alerts
-- Generate reorder lists
-
-### Location-based inventory
-- Organize inventory by apiary location
-- Track equipment movement between apiaries
-- Assign equipment to specific hives
-- Plan equipment transport
-
-### Cost tracking
-- Record purchase costs and dates
-- Calculate total investment per apiary
-- Track equipment depreciation
-- Generate financial reports
-
-### Maintenance scheduling
-- Track equipment maintenance history
-- Schedule regular maintenance tasks
-- Monitor equipment lifespan
-- Plan replacement cycles
-
-## Inventory categories
-
-### Hive equipment
-- Boxes (deeps, mediums, shallows)
-- Frames (with/without foundation)
-- Inner covers and outer covers
-- Bottom boards
-- Queen excluders
-- Feeders
-
-### Protective equipment
-- Bee suits and veils
-- Gloves
-- Boots
-- Smokers and fuel
-
-### Treatment supplies
-- Varroa treatments (strips, organic acids)
-- Disease treatments
-- Preventive medications
-- Application equipment
-
-### Feeding supplies
-- Sugar (granulated, syrup)
-- Pollen substitute
-- Protein supplements
-- Fondant
-
-### Honey harvesting
-- Extractors
-- Uncapping knives and tools
-- Strainers and filters
-- Bottling equipment
-- Jars and containers
-
-## Use cases
-
-### Seasonal preparation
-Before spring buildup:
-- Check frame inventory
-- Ensure sufficient feeding supplies
-- Verify protective gear condition
-- Order needed equipment
-
-### Treatment planning
-Before treatment season:
-- Verify treatment supply levels
-- Check expiration dates
-- Calculate needed quantities
-- Place orders in advance
-
-### Apiary expansion
-When adding new apiaries:
-- Calculate equipment needs
-- Track equipment deployment
-- Monitor setup costs
-- Plan equipment sharing
-
-### Commercial operations
-For large-scale operations:
-- Track equipment across multiple locations
-- Optimize equipment utilization
-- Reduce equipment redundancy
-- Plan bulk purchasing
-
-## Integration
-
-### With inspection management
-- Automatically record equipment usage during inspections
-- Flag equipment needing replacement
-- Track equipment performance
-
-### With treatment tracking
-- Deduct treatment supplies when applied
-- Alert when supplies run low
-- Track treatment efficacy by product
-
-### With financial reporting
-- Calculate equipment costs per hive
-- Track return on investment
-- Generate tax documentation
-- Optimize purchasing decisions
-
-
+- **Multi-system support** — track inventory separately per hive system (e.g. Langstroth vs Dadant)
+- **Section & frame matrix** — see counts broken down by box type and frame type in one table
+- **Auto-sync toggle** — automatically deduct from warehouse when hive sections or frames are updated
+- **Visual stock indicator** — square grid gives a quick at-a-glance view of how much you have
+- **Manual count editing** — increment/decrement or type exact values directly
