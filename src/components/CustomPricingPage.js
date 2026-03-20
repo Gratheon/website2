@@ -157,6 +157,7 @@ export default function CustomPricingPage() {
                 <li>🐝 30 frames per hive</li>
                 <li>⛄️ 2 year image retention</li>
                 <li>📦 AI analysis volume capped per month</li>
+                <li>🤖 Mixed real usage: expect ~100-130 AI prompts/month (hive, API, frame views)</li>
               </ul>
             </div>
           </div>
