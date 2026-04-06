@@ -248,7 +248,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Gratheon OÜ. Gratheon™ is a pending EU trademark.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Gratheon OÜ. Gratheon™ trademark registration was approved by the Estonian Patent Office under application M202501179.`,
     },
 
     blog: {
