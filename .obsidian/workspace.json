@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pdf/sensors-17-00055-v2.pdf.md",
+                "file": "research/papers/COMB.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "sensors-17-00055-v2.pdf"
+              "title": "COMB"
             }
           }
         ]
@@ -178,8 +178,16 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "bca15a041fb9888a",
+  "active": "d48a28b0037d20e3",
   "lastOpenFiles": [
+    "research/papers/COMB.md",
+    "research/papers/pdfs/2604.04980v1.pdf",
+    "research/papers/img",
+    "research/papers/Buzzing with Intelligence A Systematic Review of SmartBeehive Technologies.md",
+    "research/papers/Comparing weight dynamics between urban and rural honeybee colonies in Latvia.md",
+    "research/papers/⭐️ Automatic detection and classification of honey bee comb cells using deeplearning.md",
+    "research/index.md",
+    "pdf/sensors-17-00055-v2.pdf.md",
     "about/products/web_app/starter-tier/hive_bottom_varroa_count.md",
     "about/products/web_app/starter-tier/🗺️ Hive placement planner.md",
     "about/products/web_app/starter-tier/🤖 Beekeeping advice with LLM.md",
@@ -199,13 +207,6 @@
     "about/products/web_app/hobbyist-tier/📦 Apiary management.md",
     "about/products/web_app/hobbyist-tier/📅 Varroa Treatment diary.md",
     "about/products/web_app/hobbyist-tier/🐝 Worker bee detection.md",
-    "about/products/web_app/hobbyist-tier/🌻 List local plants.md",
-    "about/products/web_app/hobbyist-tier/🐝 Count bees.md",
-    "about/products/web_app/hobbyist-tier/🐝 Queen cup detection.md",
-    "about/products/web_app/starter-tier/🐝 Honeycomb cell detection & management.md",
-    "about/products/scales/ideas/Easy battery replacement.md",
-    "about/products/scales/ideas/Measure weight distribution with multiple sensors.md",
-    "blog/2025-12-17 🎓 University of Tartu Students Advance Bee Monitoring with AI.md",
     "build/blog/rss.xml",
     "build/blog/rss.css",
     "build/blog/atom.xml",
@@ -214,8 +215,6 @@
     "build/blog/atom.xsl",
     "build/sitemap.xml",
     "build/research/papers/Solution for automated bee colony weight monitoring/index.html",
-    "build/index.html",
-    "build/research/papers/Self-Powered Smart Beehive Monitoring and ControlSystem (SBMaCS)/index.html",
     "build/assets/images/20240531_094836-b8691fdff673d41150bfb78267edc7be.jpg",
     "build/assets/images/20230730_143206-7844ffc6e237d9d7077b91a58c3c1d43.jpg",
     "build/assets/images/20240531_094816-a83a82d66efbc6bdc9a1c52331109048.jpg",
