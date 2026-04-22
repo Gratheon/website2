@@ -11,10 +11,14 @@
             "id": "bca15a041fb9888a",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "pdf/sensors-17-00055-v2.pdf.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "sensors-17-00055-v2.pdf"
             }
           }
         ]
@@ -74,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 421.5
+    "width": 287.5
   },
   "right": {
     "id": "676a491059176ac1",
