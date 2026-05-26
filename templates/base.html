@@ -103,7 +103,10 @@
             text-decoration: none;
             font-weight: 600;
         }
-        .site-nav a:hover { color: var(--nav-active); }
+        .site-nav a:hover,
+        .site-nav a.is-active {
+            color: var(--nav-active);
+        }
         .theme-toggle {
             border: 1px solid var(--nav-border);
             background: transparent;
@@ -374,6 +377,17 @@
             height: auto;
             border: 0;
             border-radius: 12px;
+        }
+        .pdf-embed {
+            display: block;
+            width: min(100vw - var(--sidebar-width) - 80px, 1120px);
+            max-width: calc(100vw - var(--sidebar-width) - 80px);
+            min-height: 75vh;
+            height: 800px;
+            margin: 24px 0;
+            border: 1px solid var(--nav-border);
+            border-radius: 12px;
+            background: var(--bg-primary);
         }
         /* Breadcrumbs */
         .breadcrumbs {
@@ -650,6 +664,11 @@
         @media (max-width: 768px) {
             .sidebar { display: none; }
             .site-content { padding: 16px; }
+            .pdf-embed {
+                width: 100%;
+                max-width: 100%;
+                min-height: 70vh;
+            }
             .projects-grid { grid-template-columns: 1fr; }
         }
     </style>
@@ -662,7 +681,7 @@
                 <img class="no-transform" src="{{.Site.Site.Logo}}" alt="{{.Site.Site.Title}}">
             </a>
             <nav class="site-nav">
-                {{range .HeaderNav}}<a href="{{.URL}}"{{if .Class}} class="{{.Class}}"{{end}}>{{.Title}}</a>{{end}}
+                {{range .HeaderNav}}<a href="{{.URL}}"{{if .Class}} class="{{.Class}}"{{end}}{{if .IsCurrent}} aria-current="page"{{end}}>{{.Title}}</a>{{end}}
             </nav>
         </div>
         <div class="header-right">

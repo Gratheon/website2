@@ -25,6 +25,10 @@
   --brand-blue: #0248ff;
   --brand-yellow: #ffdc04;
   --navbar-height: 60px;
+  --nav-border: #e0e0e0;
+  --bg-primary: #ffffff;
+  --text-primary: #222;
+  --text-secondary: #666;
 }
 
 @font-face {
@@ -50,6 +54,15 @@ body {
   line-height: 1.2;
   color: #222;
   background: white;
+}
+
+html[data-theme='dark'] {
+  --nav-bg: #1d1f22;
+  --nav-border: #383c42;
+  --nav-active: #6aa4ff;
+  --bg-primary: #111315;
+  --text-primary: #eceef1;
+  --text-secondary: #a9adb5;
 }
 
 html[data-theme='dark'] body {
@@ -105,7 +118,40 @@ html[data-theme='dark'] .toc {
 
 .header-right {
   justify-content: flex-end;
+  gap: 8px;
 }
+
+.theme-toggle {
+  border: 1px solid var(--nav-border, #dadde1);
+  background: transparent;
+  width: 36px;
+  height: 36px;
+  border-radius: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  cursor: pointer;
+  color: #222;
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus-visible {
+  background: var(--brand-yellow);
+  color: black;
+  outline: 0;
+}
+
+.theme-toggle svg {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
+.theme-toggle .icon-moon { display: none; }
+html[data-theme='dark'] .theme-toggle { color: var(--text-primary); }
+html[data-theme='dark'] .theme-toggle .icon-sun { display: none; }
+html[data-theme='dark'] .theme-toggle .icon-moon { display: block; }
 
 .navbar-logo {
   display: inline-flex;
@@ -168,7 +214,8 @@ html[data-theme='dark'] .site-nav a:visited {
 
 .site-nav a:hover,
 .site-nav a:active,
-.site-nav a:focus-visible {
+.site-nav a:focus-visible,
+.site-nav a.is-active {
   background: var(--brand-yellow);
   color: black !important;
   text-decoration: none;
