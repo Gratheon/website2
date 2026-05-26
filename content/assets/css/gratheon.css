@@ -559,6 +559,24 @@ html[data-theme='dark'] .page-content a {
   margin-top: 18px;
 }
 
+html[data-theme='dark'] .front-page .front-story {
+  color: var(--text-primary);
+  background: #171a1d;
+  border: 1px solid var(--nav-border);
+}
+
+html[data-theme='dark'] .front-page .front-story article {
+  color: var(--text-primary);
+  background: transparent;
+}
+
+html[data-theme='dark'] .front-page .future {
+  color: var(--text-primary);
+  background: #20242a;
+  border-left-color: var(--brand-yellow);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.04);
+}
+
 .front-page .futureActions {
   display: flex;
   flex-wrap: wrap;

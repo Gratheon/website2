@@ -1,1 +1,0 @@
-Report results to [📈 Telemetry API](../features/📈%20Telemetry%20API.md)

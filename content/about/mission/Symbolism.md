@@ -6,7 +6,7 @@ hide_table_of_contents: true
 # Brand Symbolism
 
 Colors represent main wavelengths that 🐝 bees can see, company values and other associations:
-![](../../src/img/Pasted%20image%2020241028105230.png)
+![](img/Pasted%20image%2020241028105230.png)
 
 ![](img/logo-png-high-res.png)
 
@@ -67,13 +67,13 @@ Recomendation on logo usage
 ![](img/logo-png-high-res.png)
 (PNG version, with white outline)
 
-![](../../src/img/logo_v7w.svg)
+![](/assets/img/logo_v7w.svg)
 
 (wide version, SVG version with white outline)
 
 
-![](../../src/img/logo_v7.png)
-![](../../src/img/logo_v7.svg)
+![](/assets/img/logo_v7.png)
+![](/assets/img/logo_v7.svg)
 
 ## Email template
 ![](../img/Screenshot%202024-05-20%20at%2017.24.44.png)

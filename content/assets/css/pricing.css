@@ -1361,3 +1361,116 @@
   margin-top: 0.25rem;
   line-height: 1.3;
 }
+
+/* Dark theme pricing contrast fixes */
+html[data-theme='dark'] .pricing-page-subtitle {
+  color: var(--text-secondary);
+}
+
+html[data-theme='dark'] .pricing-card {
+  background-color: #171b20;
+  color: var(--text-primary);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+}
+
+html[data-theme='dark'] .pricing-card-header {
+  border-bottom-color: var(--nav-border);
+}
+
+html[data-theme='dark'] .pricing-card:not(.featured):not(.hobbyist):not(.enterprise) .pricing-card-header {
+  background-color: #1f242b;
+}
+
+html[data-theme='dark'] .pricing-card:not(.featured):not(.hobbyist):not(.enterprise) .pricing-card-title {
+  color: #7bdc5c;
+}
+
+html[data-theme='dark'] .pricing-card-features li,
+html[data-theme='dark'] .pricing-limitations-section h4 {
+  color: var(--text-primary);
+}
+
+html[data-theme='dark'] .pricing-card-description,
+html[data-theme='dark'] .service-description {
+  color: var(--text-secondary);
+}
+
+html[data-theme='dark'] .pricing-card.hobbyist .pricing-card-description,
+html[data-theme='dark'] .pricing-card.featured .pricing-card-description {
+  color: inherit;
+}
+
+html[data-theme='dark'] .pricing-card-features li a,
+html[data-theme='dark'] .pricing-card-features li a:visited {
+  color: #8bb8ff;
+}
+
+html[data-theme='dark'] .pricing-features-section h4 {
+  color: #7bdc5c;
+}
+
+html[data-theme='dark'] .pricing-features-section h4,
+html[data-theme='dark'] .pricing-limitations-section h4 {
+  border-bottom-color: var(--nav-border);
+}
+
+html[data-theme='dark'] .pricing-card-footer {
+  background-color: #111519;
+  border-top: 1px solid var(--nav-border);
+}
+
+html[data-theme='dark'] .pricing-card.enterprise {
+  background: linear-gradient(135deg, #101113, #050607);
+}
+
+html[data-theme='dark'] .pricing-card.enterprise .pricing-card-footer {
+  background-color: #0b0d0f;
+}
+
+html[data-theme='dark'] .addon-section-wrapper,
+html[data-theme='dark'] .addon-section,
+html[data-theme='dark'] .price-calculator {
+  color: var(--text-primary);
+}
+
+@media (min-width: 1400px) {
+  html[data-theme='dark'] .addon-section-wrapper {
+    background: #171b20;
+    box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.45);
+  }
+}
+
+html[data-theme='dark'] .flexible-calculator,
+html[data-theme='dark'] .token-calculator-table,
+html[data-theme='dark'] .device-pricing-table,
+html[data-theme='dark'] .token-pricing-table {
+  color: var(--text-primary);
+}
+
+html[data-theme='dark'] .flexible-calculator input,
+html[data-theme='dark'] .token-calculator-table input,
+html[data-theme='dark'] .calculator-item input {
+  background-color: #0f1216;
+  border-color: var(--nav-border);
+  color: var(--text-primary);
+}
+
+html[data-theme='dark'] .token-result {
+  background-color: #26303a;
+  color: var(--text-primary);
+}
+
+html[data-theme='dark'] .pricing-cta-section {
+  background: linear-gradient(135deg, #1f4d10, #12325f);
+}
+
+html[data-theme='dark'] .pricing-cta-section h2,
+html[data-theme='dark'] .pricing-cta-section p,
+html[data-theme='dark'] .pricing-cta-section .cta-note,
+html[data-theme='dark'] .pricing-cta-section .cta-button.secondary {
+  color: var(--text-primary);
+}
+
+html[data-theme='dark'] .pricing-cta-section .cta-button.secondary {
+  border-color: var(--text-primary);
+}

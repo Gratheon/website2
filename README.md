@@ -36,4 +36,4 @@ just publish
   - `content/index.md` → `templates/front.html`
   - `content/pricing.md` → `templates/pricing.html`
 
-Legacy Docusaurus files are still present for reference while the migration stabilizes.
+Legacy Docusaurus files have been removed; `content/` is the source of truth.

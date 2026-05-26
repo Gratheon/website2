@@ -1,7 +1,0 @@
----
-hideNav: true
-year: "2019"
----
-
-[PDF](pdfs/s13592-019-00714-8.pdf)
-

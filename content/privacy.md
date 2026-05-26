@@ -6,7 +6,7 @@ hide_table_of_contents: true
 
 # Privacy Policy
 
-**[Last updated](https://github.com/Gratheon/website/commits/main/src/pages/privacy.md) April 15, 2025**
+**[Last updated](https://github.com/Gratheon/website/commits/main/content/privacy.md) April 15, 2025**
 
 This privacy policy explains what information we collect, how we use it, and your rights regarding your information. Please read it carefully. If you disagree with any terms, please discontinue using our Sites and services.
 

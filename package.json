@@ -5,7 +5,7 @@
   "scripts": {
     "start": "../blog-engine-md/blog-engine serve",
     "serve": "../blog-engine-md/blog-engine serve",
-    "build": "../blog-engine-md/blog-engine build",
-    "publish": "rm -rf build && ../blog-engine-md/blog-engine build && mv dist build"
+    "build": "rm -rf dist && ../blog-engine-md/blog-engine build",
+    "publish": "rm -rf build dist && ../blog-engine-md/blog-engine build && mv dist build"
   }
 }

@@ -5,11 +5,12 @@ serve:
     ../blog-engine-md/blog-engine serve
 
 build:
+    rm -rf dist
     ../blog-engine-md/blog-engine build
 
 # Publish generated output to the directory expected by the current nginx config.
 publish:
-    rm -rf build
+    rm -rf build dist
     ../blog-engine-md/blog-engine build
     mv dist build
 
@@ -20,7 +21,7 @@ sync-licenses:
     echo "🔄 Syncing licenses from website to repositories..."
     echo ""
 
-    SOURCE_DIR="about/company/legal"
+    SOURCE_DIR="content/about/company/legal"
     REPOS=(
         "../web-app"
         "../entrance-observer"
