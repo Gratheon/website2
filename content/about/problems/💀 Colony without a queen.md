@@ -1,0 +1,7 @@
+---
+class: internal state
+prio: "60"
+---
+A colony without a queen is one of the most significant challenges beekeepers face, as the queen plays a crucial role in maintaining the hive's population and overall health. Without a queen, the hive becomes queenless and cannot reproduce worker bees, leading to a decline in the workforce. Over time, this reduces the hive's ability to gather food, care for brood, and defend itself from pests. Queenless hives often experience confusion and stress, which can make the colony vulnerable to disease, robbing, or even collapse. The beekeeper must either introduce a new queen or allow the bees to raise a new one, which can be time-consuming and complex.
+
+Detecting a queenless colony in the early stages can be difficult, as bees often try to compensate by laying eggs in a last-ditch effort to survive. However, these eggs will typically only produce drone bees (males), not workers. The problem with detecting this situation manually is that it can take weeks for the colony to show obvious signs of distress, meaning beekeepers need tools to monitor the hive's health proactively. Gratheon’s combination of IoT sensors and AI-driven hive monitoring can assist in early detection of queenlessness by analyzing the activity patterns and health indicators within the hive, enabling beekeepers to act before the colony faces irreparable damage.

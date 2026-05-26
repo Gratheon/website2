@@ -1,0 +1,2371 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUCT DEVELOPMENT MENTOR PREP | Gratheon</title>
+    
+    <meta name="description" content="**Prepared:** December 8, 2025">
+    
+    
+    <link rel="canonical" href="https://gratheon.com/about/company/prototron_dataroom/product-development-mentor-prep/">
+    <meta property="og:title" content="PRODUCT DEVELOPMENT MENTOR PREP">
+    <meta property="og:description" content="**Prepared:** December 8, 2025">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gratheon.com/about/company/prototron_dataroom/product-development-mentor-prep/">
+    <meta property="og:image" content="https://gratheon.com/assets/img/assets/img/gratheon-web-app-preview.webp">
+    <meta property="og:site_name" content="Gratheon">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="PRODUCT DEVELOPMENT MENTOR PREP">
+    <meta name="twitter:description" content="**Prepared:** December 8, 2025">
+    <meta name="twitter:image" content="https://gratheon.com/assets/img/assets/img/gratheon-web-app-preview.webp">
+    <meta name="twitter:site" content="@gratheon">
+    <meta name="twitter:creator" content="@gratheon">
+    
+    <link rel="icon" href="/assets/favicons/favicon.ico">
+    <style>
+        :root {
+            --sidebar-width: 280px;
+            --toc-width: 240px;
+            --nav-bg: #f8f9fa;
+            --nav-border: #e0e0e0;
+            --nav-active: #0066cc;
+            --bg-primary: #ffffff;
+            --text-primary: #333333;
+            --text-secondary: #666666;
+            --quote-bg: #f5f9ff;
+            --quote-border: #8cb8ee;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background: var(--bg-primary);
+        }
+         
+        .site-header {
+            border-bottom: 1px solid var(--nav-border);
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+        .navbar-logo {
+            display: inline-flex;
+            align-items: center;
+        }
+        .navbar-logo img {
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+            object-fit: cover;
+        }
+        .site-nav {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .lang-switcher {
+            display: inline-flex;
+            gap: 4px;
+            padding: 3px;
+            border: 1px solid var(--nav-border);
+            border-radius: 999px;
+            background: var(--nav-bg);
+        }
+        .lang-link {
+            border: 0;
+            border-radius: 999px;
+            padding: 6px 11px;
+            font-size: 0.8em;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .lang-link.is-active {
+            color: #fff;
+            background: var(--nav-active);
+        }
+        .site-nav a {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .site-nav a:hover { color: var(--nav-active); }
+        .theme-toggle {
+            border: 1px solid var(--nav-border);
+            background: transparent;
+            width: 36px;
+            height: 36px;
+            border-radius: 18px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            color: var(--text-primary);
+        }
+        .theme-toggle svg {
+            width: 18px;
+            height: 18px;
+            display: block;
+        }
+        .theme-toggle .icon-moon { display: none; }
+        html[data-theme='dark'] .theme-toggle .icon-sun { display: none; }
+        html[data-theme='dark'] .theme-toggle .icon-moon { display: block; }
+        html[data-theme='dark'] {
+            --nav-bg: #1d1f22;
+            --nav-border: #383c42;
+            --nav-active: #6aa4ff;
+            --bg-primary: #111315;
+            --text-primary: #eceef1;
+            --text-secondary: #a9adb5;
+            --quote-bg: #18212d;
+            --quote-border: #4b7ebd;
+        }
+        .product-hero-image {
+            height: 200px;
+            overflow: hidden;
+            vertical-align: middle;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .product-hero-image img,
+        .product-hero-image .md-image,
+        .product-hero-image picture {
+            display: block;
+            width: 100%;
+        }
+        .product-hero-image img {
+            width: 100%;
+            margin-top: -10%;
+        }
+        .product-card-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            text-align: center;
+        }
+        .product-card-small {
+            width: 200px;
+        }
+        .product-card-small img,
+        .product-card-small .md-image img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+        }
+        @media (max-width: 700px) {
+            .product-card-grid { justify-content: center; }
+            .product-card-small { width: 45%; min-width: 150px; }
+        }
+        @media (max-width: 480px) {
+            .product-card-small { width: 100%; }
+        }
+         
+        .site-layout {
+            display: flex;
+            width: 100%;
+            max-width: none;
+            margin: 0;
+            min-height: calc(100vh - 120px);
+        }
+         
+        .sidebar {
+            width: var(--sidebar-width);
+            padding: 20px 16px;
+            border-right: 1px solid var(--nav-border);
+            background: var(--nav-bg);
+            flex-shrink: 0;
+            overflow-y: auto;
+            max-height: calc(100vh - 60px);
+            position: sticky;
+            top: 0;
+        }
+        .blog-sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            overflow: hidden;
+        }
+        .sidebar-mode-switch {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 4px;
+            border: 1px solid var(--nav-border);
+            background: var(--bg-primary);
+            border-radius: 999px;
+            padding: 4px;
+        }
+        .sidebar-mode-btn {
+            border: 0;
+            background: transparent;
+            color: var(--text-secondary);
+            border-radius: 999px;
+            font-size: 0.78em;
+            font-weight: 600;
+            padding: 7px 6px;
+            cursor: pointer;
+        }
+        .sidebar-mode-btn.is-active {
+            color: #fff;
+            background: var(--nav-active);
+        }
+        .sidebar-mode-pane {
+            flex: 1;
+            min-height: 0;
+            overflow-y: auto;
+        }
+        .sidebar-timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-height: none;
+            overflow: visible;
+            padding-right: 2px;
+        }
+        .timeline-year h4 {
+            font-size: 0.86em;
+            color: var(--text-secondary);
+            margin: 4px 0;
+        }
+        .timeline-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            margin-bottom: 8px;
+        }
+        .timeline-list li a {
+            display: block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            color: var(--text-primary);
+            text-decoration: none;
+            font-size: 0.86em;
+        }
+        .timeline-list li a time {
+            color: var(--text-secondary);
+            margin-right: 6px;
+            font-size: 0.9em;
+        }
+        .timeline-list li.active > a {
+            color: var(--nav-active);
+            font-weight: 600;
+            background: rgba(0, 102, 204, 0.08);
+        }
+        .sidebar-graph-pane {
+            height: calc(100vh - 130px);
+        }
+        .sidebar-graph-frame {
+            width: 100%;
+            height: 100%;
+            border: 1px solid var(--nav-border);
+            border-radius: 8px;
+            background: var(--bg-primary);
+        }
+        .site-layout.sidebar-graph-mode .sidebar {
+            width: 40%;
+        }
+        .site-layout.sidebar-graph-mode .site-content {
+            max-width: none;
+        }
+        .sidebar-menu, .sidebar-submenu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .sidebar-submenu {
+            padding-left: 16px;
+            border-left: 1px solid var(--nav-border);
+            margin-left: 8px;
+        }
+        .sidebar-item a {
+            display: block;
+            padding: 4px 8px;
+            color: var(--text-primary);
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+        .sidebar-section-head {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .sidebar-section-head a {
+            flex: 1;
+        }
+        .sidebar-toggle {
+            appearance: none;
+            border: 0;
+            background: transparent;
+            color: var(--text-secondary);
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            padding: 0;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+        }
+        .sidebar-toggle:hover {
+            background: rgba(0, 102, 204, 0.08);
+            color: var(--nav-active);
+        }
+        .sidebar-toggle::before {
+            content: "▸";
+            font-size: 0.8em;
+            line-height: 1;
+            transition: transform 0.15s ease;
+        }
+        .sidebar-section.expanded > .sidebar-section-head .sidebar-toggle::before {
+            transform: rotate(90deg);
+        }
+        .sidebar-section > .sidebar-submenu {
+            display: none;
+        }
+        .sidebar-section.expanded > .sidebar-submenu {
+            display: block;
+        }
+        .sidebar-item a:hover {
+            background: rgba(0, 102, 204, 0.08);
+        }
+        .sidebar-item.active > a {
+            color: var(--nav-active);
+            font-weight: 600;
+            background: rgba(0, 102, 204, 0.08);
+        }
+        .sidebar-section > a {
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.8em;
+            letter-spacing: 0.05em;
+            color: var(--text-secondary);
+            margin-top: 12px;
+        }
+         
+        .site-content {
+            flex: 1;
+            min-width: 0;
+            padding: 24px 40px;
+            max-width: 800px;
+        }
+        .embed {
+            width: 100%;
+            max-width: 800px;
+            margin: 24px auto;
+        }
+        .embed iframe {
+            display: block;
+            width: min(100%, 800px);
+            aspect-ratio: 16 / 9;
+            height: auto;
+            border: 0;
+            border-radius: 12px;
+        }
+         
+        .breadcrumbs {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+            padding: 0;
+            margin-bottom: 20px;
+            font-size: 0.85em;
+            color: var(--text-secondary);
+        }
+        .breadcrumbs li:not(:last-child)::after {
+            content: "›";
+            margin-left: 4px;
+            color: var(--text-secondary);
+        }
+        .breadcrumbs a { color: var(--nav-active); text-decoration: none; }
+        .breadcrumbs a:hover { text-decoration: underline; }
+         
+        .toc {
+            width: var(--toc-width);
+            padding: 20px 16px;
+            flex-shrink: 0;
+            position: sticky;
+            top: 0;
+            max-height: 100vh;
+            overflow-y: auto;
+            font-size: 0.85em;
+        }
+        .toc-title {
+            font-size: 0.8em;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        .toc-list, .toc-sublist {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .toc-sublist { padding-left: 12px; }
+        .toc-item a {
+            display: block;
+            padding: 3px 0;
+            color: var(--text-secondary);
+            text-decoration: none;
+            border-left: 2px solid transparent;
+            padding-left: 8px;
+        }
+        .toc-item a:hover {
+            color: var(--nav-active);
+            border-left-color: var(--nav-active);
+        }
+         
+        .prev-next {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid var(--nav-border);
+            gap: 20px;
+        }
+        .prev-next a {
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            padding: 12px 16px;
+            border: 1px solid var(--nav-border);
+            border-radius: 8px;
+            flex: 1;
+            transition: border-color 0.2s;
+        }
+        .prev-next a:hover { border-color: var(--nav-active); }
+        .prev-next .prev-link { text-align: left; }
+        .prev-next .next-link { text-align: right; margin-left: auto; }
+        .prev-label, .next-label {
+            font-size: 0.8em;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+        }
+        .prev-title, .next-title {
+            color: var(--nav-active);
+            font-weight: 500;
+        }
+         
+        article h1 { font-size: 2em; margin-bottom: 8px; }
+        article time { color: var(--text-secondary); font-size: 0.9em; }
+        .article-meta {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 4px;
+            margin: 0 0 8px;
+            flex-wrap: nowrap;
+        }
+        .article-audio {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin: 0 0 0 2px;
+        }
+        .article-audio button {
+            border: 1px solid var(--nav-active);
+            border-radius: 999px;
+            background: var(--nav-active);
+            color: #fff;
+            width: 36px;
+            height: 36px;
+            padding: 0;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        .article-audio button:hover {
+            filter: brightness(0.92);
+        }
+        .article-audio button svg {
+            width: 14px;
+            height: 14px;
+            fill: currentColor;
+        }
+        .article-audio button .icon-stop { display: none; }
+        .article-audio button.is-playing .icon-play { display: none; }
+        .article-audio button.is-playing .icon-stop { display: block; }
+        .article-audio .audio-wave {
+            width: 88px;
+            height: 28px;
+            border: 0;
+            border-radius: 0;
+            background: transparent;
+            opacity: 0.95;
+        }
+        .article-audio button:disabled {
+            opacity: 0.55;
+            cursor: default;
+        }
+        article .tags { margin: 22px 0 24px; }
+        article .tag {
+            display: inline-block;
+            background: var(--nav-bg);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            color: var(--nav-active);
+            margin-right: 4px;
+            text-decoration: none;
+        }
+        article .tag:hover { text-decoration: underline; }
+        article .content { margin-top: 16px; }
+        article .content h2 { margin-top: 2em; margin-bottom: 0.5em; }
+        article .content h3 { margin-top: 1.5em; margin-bottom: 0.4em; }
+        article .content p { margin-bottom: 1em; }
+        article .content blockquote {
+            margin: 1.4em 0;
+            padding: 0.8em 1em;
+            border-left: 4px solid var(--quote-border);
+            background: var(--quote-bg);
+            color: var(--text-secondary);
+            font-style: italic;
+        }
+        article .content blockquote p:last-child {
+            margin-bottom: 0;
+        }
+         
+        .site-footer {
+            border-top: 1px solid var(--nav-border);
+            padding: 20px;
+            color: var(--text-secondary);
+            font-size: 0.9em;
+            text-align: center;
+        }
+         
+        a { color: var(--nav-active); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        img { max-width: 100%; height: auto; }
+        pre {
+            background: #f4f4f4;
+            padding: 15px;
+            overflow-x: auto;
+            border-radius: 4px;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: "Monaco", "Menlo", monospace;
+        }
+        pre code { padding: 0; background: none; }
+        table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background: #f4f4f4; }
+        .section-index { list-style: none; padding: 0; }
+        .section-index li { padding: 6px 0; border-bottom: 1px solid var(--nav-border); }
+        .section-index li a { font-weight: 500; }
+        .section-article-list {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+        .section-article-preview {
+            border-bottom: 1px solid var(--nav-border);
+            padding-bottom: 12px;
+        }
+        .section-article-preview h2 {
+            margin: 0 0 4px;
+            font-size: 1.05em;
+        }
+        .section-article-preview time {
+            display: block;
+            color: var(--text-secondary);
+            font-size: 0.83em;
+            margin-bottom: 6px;
+        }
+        .section-article-preview p {
+            margin: 0;
+            color: var(--text-secondary);
+        }
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            margin: 32px 0 0;
+        }
+        .project-card {
+            background: var(--bg-secondary);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .project-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px var(--shadow);
+        }
+        .project-image {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            background: var(--border);
+            display: block;
+        }
+        .project-content {
+            padding: 20px;
+        }
+        .project-content h3 {
+            margin: 0 0 8px;
+            font-size: 1.25em;
+        }
+        .project-content p {
+            margin: 0 0 16px;
+            color: var(--text-secondary);
+            font-size: 0.95em;
+        }
+        .project-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        .project-tag {
+            font-size: 0.8em;
+            padding: 4px 10px;
+            background: var(--bg-primary);
+            border-radius: 20px;
+            color: var(--text-secondary);
+        }
+         
+        @media (max-width: 1200px) {
+            .toc { display: none; }
+        }
+        @media (max-width: 768px) {
+            .sidebar { display: none; }
+            .site-content { padding: 16px; }
+            .projects-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body class="page-layout-page">
+    <header class="site-header">
+        <div class="header-left">
+            <a class="navbar-logo" href="/">
+                <img class="no-transform" src="/assets/img/logo_v7w.svg" alt="Gratheon">
+            </a>
+            <nav class="site-nav">
+                <a href="/about/">About</a><a href="/about/products/">Products</a><a href="/docs/">Docs</a><a href="/research/">Research</a><a href="/blog/">Blog</a><a href="/pricing/">Pricing</a><a href="https://discord.gg/PcbP4uedWj">Discord</a><a href="https://github.com/gratheon/web-app">GitHub</a><a href="https://app.gratheon.com/account/authenticate/">Log in</a>
+            </nav>
+        </div>
+        <div class="header-right">
+            
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
+                <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="4"></circle>
+                    <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
+                </svg>
+                <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3c0 0 0 0 0 0A7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+    <div class="site-layout">
+        <nav class="sidebar blog-sidebar" aria-label="Navigation" data-sidebar-mode="categories" data-sidebar-default-mode="categories">
+  <div class="sidebar-mode-pane" data-sidebar-mode-pane="categories">
+<ul class="sidebar-menu">
+  <li class="sidebar-item sidebar-section">
+    <div class="sidebar-section-head">
+      <button class="sidebar-toggle" type="button" aria-label="Toggle section Business_plan" aria-expanded="false"></button>
+      <a href="/about/company/business_plan/">Business_plan</a>
+    </div>
+<ul class="sidebar-submenu">
+  <li class="sidebar-item sidebar-section">
+    <div class="sidebar-section-head">
+      <button class="sidebar-toggle" type="button" aria-label="Toggle section Commercial projects" aria-expanded="false"></button>
+      <a href="/about/company/business_plan/Competition/">Commercial projects</a>
+    </div>
+<ul class="sidebar-submenu">
+  <li class="sidebar-item">
+      <a href="/about/company/business_plan/Competition/3bee/">3bee</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/business_plan/Competition/agrisound/">AgriSound</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/business_plan/Competition/apiarybook/">ApiaryBook</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/business_plan/Competition/apimanager/">ApiManager</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/business_plan/Competition/apizoom/">ApiZoom</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/business_plan/Competition/beehivemonitoring/">BeeHiveMonitoring</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/business_plan/Competition/beehivemonitoringusa/">BeehiveMonitoringUSA</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/business_plan/Competition/beeholdrs/">beehold.rs</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/business_plan/Competition/beeing/">beeing</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/business_plan/Competition/beelab/">BeeLab</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/business_plan/Competition/beeorganizer/">BeeOrganizer</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/business_plan/Competition/beeplus-beekeeping/">BeePlus Beekeeping</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/business_plan/Competition/beesage/">BeeSage</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/business_plan/Competition/beescanning/">beescanning</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/business_plan/Competition/beetight-2/">Beetight 2</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/business_plan/Competition/beezee/">BeeZee</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/business_plan/Competition/beezon/">Beezon</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/business_plan/Competition/broodminder/">Broodminder</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/business_plan/Competition/buzzbox/">BuzzBox</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/business_plan/Competition/forsage/">ForSage</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/business_plan/Competition/gobuzzr/">Gobuzzr</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/business_plan/Competition/hiive-link/">HIIVE Link</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/business_plan/Competition/hivebloom/">HiveBloom</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/business_plan/Competition/hivemind/">HiveMind</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/business_plan/Competition/hivepulse/">HivePulse</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/business_plan/Competition/hivetracks/">hivetracks</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/business_plan/Competition/honeyinstruments/">HoneyInstruments</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/business_plan/Competition/i-bee/">i bee</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/business_plan/Competition/inspectnext/">InspectNext</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/business_plan/Competition/intelligenthives/">IntelligentHives</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/business_plan/Competition/io-bee/">io bee</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/business_plan/Competition/osbeehives/">OSBeehives</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/business_plan/Competition/pollenity/">Pollenity</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/business_plan/Competition/prohiver/">Prohiver</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/business_plan/Competition/smsvaga/">SMSVaga</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/business_plan/Competition/solutionbee/">Solutionbee</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/business_plan/Competition/apipuls/">Апипульс</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/business_plan/Competition/beemate/">🇦🇺 Beemate</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/business_plan/Competition/purple-hive/">🇦🇺 Purple Hive</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/business_plan/Competition/nectar/">🇨🇦 Nectar</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/business_plan/Competition/apicai/">🇩🇪 ApicAI</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/business_plan/Competition/beehero/">🇮🇱 BeeHero</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/business_plan/Competition/beewise/">🇮🇱 Beewise</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/business_plan/Competition/beep-nl/">🇳🇱 Beep NL</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/business_plan/Competition/best-bees/">🇺🇸 Best Bees</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/business_plan/Competition/hivegenie/">🇺🇸 HiveGenie</a>
+  </li>
+</ul>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/business_plan/business-plan/">🏇 Go to market strategy</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/business_plan/market-analysis/">📊 Market analysis</a>
+  </li>
+</ul>
+  </li>
+  <li class="sidebar-item sidebar-section">
+    <div class="sidebar-section-head">
+      <button class="sidebar-toggle" type="button" aria-label="Toggle section Legal Documents" aria-expanded="false"></button>
+      <a href="/about/company/legal/">Legal Documents</a>
+    </div>
+<ul class="sidebar-submenu">
+  <li class="sidebar-item">
+      <a href="/about/company/legal/cla-corporate/">CLA CORPORATE</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/legal/cla-individual/">CLA INDIVIDUAL</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/legal/contributing/">CONTRIBUTING</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/legal/license-commercial/">LICENSE COMMERCIAL</a>
+  </li>
+</ul>
+  </li>
+  <li class="sidebar-item sidebar-section">
+    <div class="sidebar-section-head">
+      <button class="sidebar-toggle" type="button" aria-label="Toggle section Processes" aria-expanded="false"></button>
+      <a href="/about/company/Processes/">Processes</a>
+    </div>
+<ul class="sidebar-submenu">
+  <li class="sidebar-item sidebar-section">
+    <div class="sidebar-section-head">
+      <button class="sidebar-toggle" type="button" aria-label="Toggle section Hiring" aria-expanded="false"></button>
+      <a href="/about/company/Processes/Hiring/">Hiring</a>
+    </div>
+<ul class="sidebar-submenu">
+  <li class="sidebar-item sidebar-section">
+    <div class="sidebar-section-head">
+      <button class="sidebar-toggle" type="button" aria-label="Toggle section Internship" aria-expanded="false"></button>
+      <a href="/about/company/Processes/Hiring/Internship/">Internship</a>
+    </div>
+<ul class="sidebar-submenu">
+  <li class="sidebar-item">
+      <a href="/about/company/Processes/Hiring/Internship/internship-iot-mechatronics/">Internship IoT Mechatronics</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/Processes/Hiring/Internship/internship-iot-mechatronics-et/">Internship IoT Mechatronics ET</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/Processes/Hiring/Internship/vidrik-internship-iot-mechatronics/">VIDRIK Internship IoT Mechatronics</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/Processes/Hiring/Internship/vidrik-internship-iot-mechatronics-et/">VIDRIK Internship IoT Mechatronics ET</a>
+  </li>
+</ul>
+  </li>
+  <li class="sidebar-item sidebar-section">
+    <div class="sidebar-section-head">
+      <button class="sidebar-toggle" type="button" aria-label="Toggle section Response templates" aria-expanded="false"></button>
+      <a href="/about/company/Processes/Hiring/Response templates/">Response templates</a>
+    </div>
+<ul class="sidebar-submenu">
+  <li class="sidebar-item">
+      <a href="/about/company/Processes/Hiring/Response templates/beekeeper/">Beekeeper</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/Processes/Hiring/Response templates/fullstack-engineer/">Fullstack engineer</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/Processes/Hiring/Response templates/ml-engineer-role/">ML engineer role</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/Processes/Hiring/Response templates/response-templates/">Response templates</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/Processes/Hiring/Response templates/robotics-engineer/">Robotics engineer</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/Processes/Hiring/Response templates/ux-designer/">UX designer</a>
+  </li>
+</ul>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/Processes/Hiring/hiring/">Hiring</a>
+  </li>
+</ul>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/Processes/features-and-tasks/">☑️ Features and tasks</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/Processes/meeting-recordings/">🎥 Meeting recordings</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/Processes/services-and-tools-that-we-use/">🖥️ Services and tools that we use</a>
+  </li>
+</ul>
+  </li>
+  <li class="sidebar-item sidebar-section">
+    <div class="sidebar-section-head">
+      <button class="sidebar-toggle" type="button" aria-label="Toggle section Values" aria-expanded="false"></button>
+      <a href="/about/company/values/">Values</a>
+    </div>
+<ul class="sidebar-submenu">
+  <li class="sidebar-item">
+      <a href="/about/company/values/adapt-to-change/">Adapt to change 🏕️</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/values/ethical-heart/">Ethical heart 🌳</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/values/gather-value/">Gather value 🍯</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/values/humbly-kind/">Humbly kind 🧸</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/values/new-horizons/">New horizons 🏔️</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/values/observable-mind/">Observable mind 🧿</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/values/radiate-truth/">Radiate truth 🌞</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/values/team-effort/">Team effort 🐝</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/values/values/">🫀 Culture and values</a>
+  </li>
+</ul>
+  </li>
+  <li class="sidebar-item sidebar-section">
+    <div class="sidebar-section-head">
+      <button class="sidebar-toggle" type="button" aria-label="Toggle section ⚽️ Team" aria-expanded="false"></button>
+      <a href="/about/company/Team/">⚽️ Team</a>
+    </div>
+<ul class="sidebar-submenu">
+  <li class="sidebar-item sidebar-section">
+    <div class="sidebar-section-head">
+      <button class="sidebar-toggle" type="button" aria-label="Toggle section Roles" aria-expanded="false"></button>
+      <a href="/about/company/Team/Roles/">Roles</a>
+    </div>
+<ul class="sidebar-submenu">
+  <li class="sidebar-item">
+      <a href="/about/company/Team/Roles/beekeeper-community-manager/">Beekeeper &amp; Community manager 🐝</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/Team/Roles/fullstack-engineer/">Fullstack engineer</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/Team/Roles/ml-engineer/">ML engineer 🧠</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/Team/Roles/product-manager/">Product manager 🦉</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/Team/Roles/robotics-engineer/">Robotics engineer 🦾</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/Team/Roles/roles/">Roles</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/Team/Roles/sre-devops-infrastructure-engineer/">SRE   Devops   Infrastructure engineer</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/Team/Roles/ux-designer/">UX designer 🔲</a>
+  </li>
+</ul>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/Team/merchandise/">Merchandise</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/Team/equity-and-fundraising-plan/">🍰 Equity and fundraising plan</a>
+  </li>
+</ul>
+  </li>
+  <li class="sidebar-item sidebar-section">
+    <div class="sidebar-section-head">
+      <button class="sidebar-toggle" type="button" aria-label="Toggle section 👨🏻‍🚀 Target Clients" aria-expanded="false"></button>
+      <a href="/about/company/clients/">👨🏻‍🚀 Target Clients</a>
+    </div>
+<ul class="sidebar-submenu">
+  <li class="sidebar-item">
+      <a href="/about/company/clients/tech-scale-up-companies/">Corporate Hive Sponsorship Program</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/clients/farmers/">Farmers</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/clients/hobby-beekeepers/">Hobby Beekeepers &amp; Tech Enthusiasts</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/clients/industrial-beekeepers/">Industrial/Commercial Beekeepers</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/clients/potential-new-beekeepers/">Potential New Beekeepers</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/clients/semi-professional-beekeepers/">Semi-professional Beekeepers</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/clients/urban-beekeepers/">Urban Beekeepers</a>
+  </li>
+</ul>
+  </li>
+  <li class="sidebar-item sidebar-section expanded">
+    <div class="sidebar-section-head">
+      <button class="sidebar-toggle" type="button" aria-label="Toggle section Prototron_dataroom" aria-expanded="true"></button>
+      <a href="/about/company/prototron_dataroom/">Prototron_dataroom</a>
+    </div>
+<ul class="sidebar-submenu">
+  <li class="sidebar-item">
+      <a href="/about/company/prototron_dataroom/business-development-mentor-prep/">BUSINESS DEVELOPMENT MENTOR PREP</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/prototron_dataroom/finance-mentor-prep/">FINANCE MENTOR PREP</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/prototron_dataroom/legal-analysis-mentor-prep/">LEGAL ANALYSIS MENTOR PREP</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/prototron_dataroom/marketing-mentor-prep/">MARKETING MENTOR PREP</a>
+  </li>
+  <li class="sidebar-item active expanded">
+      <a href="/about/company/prototron_dataroom/product-development-mentor-prep/" aria-current="page">PRODUCT DEVELOPMENT MENTOR PREP</a>
+  </li>
+</ul>
+  </li>
+  <li class="sidebar-item">
+      <a href="/about/company/why-open-source/">🤲 Why open source</a>
+  </li>
+</ul>
+  </div>
+</nav>
+
+        <main class="site-content">
+            
+<article>
+    
+    <nav aria-label="Breadcrumb">
+        <ol class="breadcrumbs">
+            
+            <li>
+                
+                    <a href="/">Home</a>
+                
+            </li>
+            
+            <li>
+                
+                    <a href="/about/">Overview</a>
+                
+            </li>
+            
+            <li>
+                
+                    <a href="/about/company/">👔 Company</a>
+                
+            </li>
+            
+            <li>
+                
+                    <a href="/about/company/prototron_dataroom/">Prototron_dataroom</a>
+                
+            </li>
+            
+            <li>
+                
+                    <span aria-current="page">PRODUCT DEVELOPMENT MENTOR PREP</span>
+                
+            </li>
+            
+        </ol>
+    </nav>
+    
+    <h1>PRODUCT DEVELOPMENT MENTOR PREP</h1>
+    
+    <div class="content">
+        <h1 id="product-development-analysis--mentor-preparation-report">Product Development Analysis &amp; Mentor Preparation Report</h1>
+<h2 id="tarmo-hrmaorg-product-development---prototron-accelerator">Tarmo Härmaorg (Product Development) - Prototron Accelerator</h2>
+<p><strong>Prepared:</strong> December 8, 2025<br />
+<strong>Company:</strong> Gratheon OÜ<br />
+<strong>Website:</strong> <a href="https://gratheon.com">https://gratheon.com</a><br />
+<strong>Meeting Purpose:</strong> Strategic product development consultation for accelerator program</p>
+<hr />
+<h2 id="executive-summary">Executive Summary</h2>
+<p>Gratheon is building an ambitious beehive monitoring ecosystem with multiple hardware products (IoT sensors, entrance observer, robotic beehive) and a SaaS web application. Strong technical architecture and clear domain understanding, but faces critical product development challenges: scattered focus across too many products, insufficient validation practices, missing product management processes, and weak customer feedback loops.</p>
+<p><strong>Current State:</strong></p>
+<ul>
+<li><strong>Web App:</strong> TRL 6 (prototype demonstration) - 200+ registered users, functional but lacks polish</li>
+<li><strong>IoT Sensors:</strong> TRL 4 (lab validation) - working prototype needs field testing</li>
+<li><strong>Entrance Observer:</strong> TRL 5 (relevant environment) - alpha stage, pipeline incomplete</li>
+<li><strong>Robotic Beehive:</strong> TRL 2 (concept) - early research, 5+ years from market</li>
+</ul>
+<p><strong>Primary Strengths:</strong></p>
+<ul>
+<li>Well-architected microservices (GraphQL federation, offline-first with Dexie)</li>
+<li>Strong domain modeling (13 core entities thoroughly documented)</li>
+<li>Open-source strategy building community trust</li>
+<li>Comprehensive technical documentation (feature specs, DB schemas, architecture diagrams)</li>
+<li>AI/ML integration (bee detection, resource classification)</li>
+</ul>
+<p><strong>Critical Weaknesses:</strong></p>
+<ul>
+<li>No formal product roadmap or prioritization framework</li>
+<li>Limited automated testing (E2E tests minimal, no CI/CD pipeline visible)</li>
+<li>Missing product metrics dashboard (activation, retention, engagement)</li>
+<li>No structured customer feedback collection process</li>
+<li>Development velocity unclear (GitHub project exists but no sprint cadence documented)</li>
+<li>Feature bloat risk: building 4 products simultaneously with limited resources</li>
+</ul>
+<hr />
+<h2 id="1-product-strategy--roadmap">1. PRODUCT STRATEGY &amp; ROADMAP</h2>
+<h3 id="11-current-product-portfolio-analysis">1.1 Current Product Portfolio Analysis</h3>
+<p><strong>Web Application (Primary Product - TRL 6)</strong></p>
+<p><em>What Works:</em></p>
+<ul>
+<li>Clear use cases documented (photo upload → AI stats, colony tracking over time)</li>
+<li>Comprehensive entity model (Apiary → Hive → Box → Frame → Frame Side)</li>
+<li>Real-time features (WebSocket subscriptions, Redis pub/sub)</li>
+<li>Offline-first architecture (Dexie IndexedDB)</li>
+<li>13 feature specs with technical documentation</li>
+</ul>
+<p><em>Critical Gaps:</em></p>
+<ul>
+<li><strong>No Product Roadmap:</strong> Features scattered across 13+ docs without priority/timeline</li>
+<li><strong>No Release Cadence:</strong> Unclear if following agile/sprint methodology</li>
+<li><strong>Missing User Journeys:</strong> Features documented technically, not from user perspective</li>
+<li><strong>No Feature Flags:</strong> Cannot A/B test or gradually roll out features</li>
+<li><strong>Incomplete Features:</strong>
+<ul>
+<li>Varroa counting &quot;coming soon&quot; (critical for value prop)</li>
+<li>Queen detection at ~60% accuracy (below usable threshold)</li>
+<li>Alert system just implemented, needs validation</li>
+<li>Entrance video streaming works but no analytics</li>
+</ul>
+</li>
+</ul>
+<p><em>Questions for Mentor:</em></p>
+<ol>
+<li>Should we pause new features to polish existing ones to &quot;production ready&quot;?</li>
+<li>How to prioritize: user-requested features vs. technical debt vs. new capabilities?</li>
+<li>Is 200 users enough to validate PMF before hardware investment?</li>
+</ol>
+<hr />
+<p><strong>IoT Sensors (Secondary Product - TRL 4)</strong></p>
+<p><em>What Works:</em></p>
+<ul>
+<li>Weight/temperature/humidity telemetry working</li>
+<li>API token-based authentication</li>
+<li>Grafana integration for visualization</li>
+<li>6-month roadmap defined (alert system, Prophet AI forecasting)</li>
+</ul>
+<p><em>Critical Gaps:</em></p>
+<ul>
+<li><strong>No Field Test Data:</strong> How many devices deployed? Uptime? Accuracy?</li>
+<li><strong>Hardware BOM Not Public:</strong> Cost per unit unclear (pricing page shows €200)</li>
+<li><strong>No Failure Mode Analysis:</strong> What happens if WiFi drops? Battery life?</li>
+<li><strong>Missing Device Management:</strong> OTA updates? Remote diagnostics?</li>
+<li><strong>Alert System Just Added:</strong> Needs real-world validation (false positive rate?)</li>
+</ul>
+<p><em>Questions for Mentor:</em></p>
+<ol>
+<li>What's minimum field test duration/sample size to validate before manufacturing?</li>
+<li>Should we partner with hardware manufacturer or DIY?</li>
+<li>How to balance SaaS revenue (recurring) vs. hardware margin (one-time)?</li>
+</ol>
+<hr />
+<p><strong>Entrance Observer (Tertiary Product - TRL 5)</strong></p>
+<p><em>What Works:</em></p>
+<ul>
+<li>Computer vision pipeline designed (NVIDIA Orin Nano)</li>
+<li>Clear 2-month roadmap (bee counting on edge, telemetry API)</li>
+<li>Video streaming functional</li>
+<li>Movement detection algorithm exists</li>
+</ul>
+<p><em>Critical Gaps:</em></p>
+<ul>
+<li><strong>Pipeline Incomplete:</strong> Issues #2, #6, #8 unresolved</li>
+<li><strong>No Accuracy Benchmarks:</strong> Counting precision? False positives?</li>
+<li><strong>Edge Processing Not Validated:</strong> Will Orin Nano handle real-time inference?</li>
+<li><strong>Value Prop Unclear:</strong> Why do beekeepers need bee counts? (Not documented in problem list)</li>
+<li><strong>Price Point Unknown:</strong> Hardware cost not specified</li>
+</ul>
+<p><em>Questions for Mentor:</em></p>
+<ol>
+<li>Is entrance monitoring a &quot;nice-to-have&quot; or critical pain point?</li>
+<li>Should we prove web app + sensors first before adding complexity?</li>
+<li>Can we validate value with manual counting before building automated solution?</li>
+</ol>
+<hr />
+<p><strong>Robotic Beehive (Future Product - TRL 2)</strong></p>
+<p><em>What Works:</em></p>
+<ul>
+<li>Concept exists, vision documented</li>
+<li>Recognizes 5+ year development timeline</li>
+<li>Correctly deprioritized in go-to-market strategy</li>
+</ul>
+<p><em>Critical Gaps:</em></p>
+<ul>
+<li><strong>High Risk:</strong> Mechanical complexity, cost, regulatory concerns</li>
+<li><strong>Unclear Value:</strong> Would beekeepers trust fully automated hive manipulation?</li>
+<li><strong>Resource Drain:</strong> May distract from validating core products</li>
+</ul>
+<p><em>Recommendation:</em></p>
+<ul>
+<li>Keep as vision/PR asset, but zero development resources until Web App + Sensors proven</li>
+</ul>
+<hr />
+<h3 id="12-product-development-process-gaps">1.2 Product Development Process Gaps</h3>
+<p><strong>Missing: Product Management Framework</strong></p>
+<p>No evidence of:</p>
+<ul>
+<li><strong>Product discovery process</strong> (customer interviews, surveys, usage analytics)</li>
+<li><strong>Prioritization framework</strong> (RICE, MoSCoW, value vs. effort matrix)</li>
+<li><strong>Product KPIs dashboard</strong> (activation rate, feature adoption, retention cohorts)</li>
+<li><strong>Feature success metrics</strong> (how do we know if queen detection is &quot;good enough&quot;?)</li>
+<li><strong>Release planning</strong> (quarterly themes, monthly milestones)</li>
+</ul>
+<p><strong>Missing: Customer Feedback Loop</strong></p>
+<p>No documentation of:</p>
+<ul>
+<li><strong>User research cadence</strong> (How often do we talk to customers?)</li>
+<li><strong>Feedback collection tools</strong> (In-app surveys? NPS? Support tickets?)</li>
+<li><strong>Beta testing program</strong> (200 users, but are they actively engaged?)</li>
+<li><strong>Feature request voting system</strong> (How do users influence roadmap?)</li>
+<li><strong>Usage analytics</strong> (PostHog mentioned in package.json, but is it used?)</li>
+</ul>
+<p><strong>Missing: Product Experimentation</strong></p>
+<p>No evidence of:</p>
+<ul>
+<li><strong>A/B testing infrastructure</strong></li>
+<li><strong>Feature flags system</strong> (gradual rollouts, kill switches)</li>
+<li><strong>Pilot programs</strong> (structured field tests with metrics)</li>
+<li><strong>Beta tester agreements</strong> (expectations, NDA, compensation)</li>
+</ul>
+<p><strong>Existing Process (Good):</strong></p>
+<ul>
+<li>GitHub Projects for task management</li>
+<li>Feature → Task → Issue hierarchy clearly defined</li>
+<li>Technical feature templates with architecture diagrams</li>
+<li>Documentation-driven development (specs before code)</li>
+</ul>
+<hr />
+<h2 id="2-technology-stack--architecture">2. TECHNOLOGY STACK &amp; ARCHITECTURE</h2>
+<h3 id="21-technical-strengths">2.1 Technical Strengths</h3>
+<p><strong>Frontend (Web App):</strong></p>
+<ul>
+<li>Modern: Preact + Vite + TypeScript</li>
+<li>Lightweight: 35kB base bundle (excellent for rural areas with slow internet)</li>
+<li>Offline-first: Dexie (IndexedDB) for local data caching</li>
+<li>Real-time: GraphQL subscriptions via WebSockets</li>
+<li>State management: Urql (lightweight alternative to Apollo)</li>
+<li>Maps: Leaflet for apiary geolocation</li>
+<li>Charts: Recharts + Lightweight Charts for timeseries</li>
+</ul>
+<p><strong>Backend (Microservices):</strong></p>
+<ul>
+<li>Architecture: GraphQL Federation (Apollo pattern)</li>
+<li>Languages: Go (high-load services), Node.js/TypeScript (low-load), Python (ML)</li>
+<li>Storage: MySQL (primary), Redis (cache/pub-sub), S3 (images)</li>
+<li>Schema registry: Centralized schema management</li>
+<li>Event-driven: Redis pub/sub for real-time updates</li>
+</ul>
+<p><strong>ML/AI Pipeline:</strong></p>
+<ul>
+<li>Bee detection: Ultralytics YOLO (custom trained)</li>
+<li>Cell classification: Custom CNN models</li>
+<li>Queen detection: Clarifai API (external, 60% accuracy - needs improvement)</li>
+<li>Varroa counting: In development</li>
+<li>Image processing: Python + OpenCV</li>
+</ul>
+<p><strong>DevOps:</strong></p>
+<ul>
+<li>Containerization: Docker + Docker Compose</li>
+<li>Local dev: <code>just</code> command runner (simplifies stack startup)</li>
+<li>Edge devices: Ubuntu on Jetson Nano/Orin (NVIDIA GPU support)</li>
+<li>Deployment: Self-hosted (cost optimization)</li>
+</ul>
+<p><strong>Strengths:</strong><br />
+✅ Scalable microservices architecture<br />
+✅ Technology choices appropriate for use case<br />
+✅ Open-source stack (AGPL) aligns with values<br />
+✅ Edge + cloud hybrid for cost efficiency</p>
+<hr />
+<h3 id="22-technical-debt--quality-concerns">2.2 Technical Debt &amp; Quality Concerns</h3>
+<p><strong>Testing Infrastructure - WEAK:</strong></p>
+<p><em>What exists:</em></p>
+<ul>
+<li>Vitest for unit tests (configured but coverage unknown)</li>
+<li>Playwright for E2E tests (configured, only demo test exists)</li>
+<li>GitHub Actions for CI (assumed, not documented)</li>
+</ul>
+<p><em>What's missing:</em></p>
+<ul>
+<li><strong>Test coverage metrics</strong> (% of code tested?)</li>
+<li><strong>Integration tests</strong> (microservice interactions)</li>
+<li><strong>E2E test suite</strong> (critical user flows: login, upload frame, view stats)</li>
+<li><strong>Performance testing</strong> (can backend handle 10k users? 100k?)</li>
+<li><strong>Load testing</strong> (ML model inference latency under concurrent requests)</li>
+<li><strong>Mobile testing</strong> (responsive design validation)</li>
+<li><strong>Visual regression tests</strong> (UI consistency)</li>
+</ul>
+<p><strong>Code Quality - UNKNOWN:</strong></p>
+<p>No documentation of:</p>
+<ul>
+<li>Code review process (mandatory? who approves?)</li>
+<li>Linting/formatting rules (Prettier configured, but enforced in CI?)</li>
+<li>Static analysis (TypeScript strict mode? ESLint rules?)</li>
+<li>Security scanning (dependency vulnerabilities?)</li>
+<li>Performance monitoring (Sentry configured, but is it analyzed?)</li>
+</ul>
+<p><strong>Development Velocity - UNCLEAR:</strong></p>
+<p>Positive indicators:</p>
+<ul>
+<li>45+ repositories (active development)</li>
+<li>Comprehensive feature documentation</li>
+<li>Recent development (TRL levels indicate ongoing work)</li>
+</ul>
+<p>Concerning gaps:</p>
+<ul>
+<li>No sprint velocity tracking</li>
+<li>No burndown charts</li>
+<li>No release notes/changelog</li>
+<li>No deployment frequency metrics</li>
+<li>No mean time to recovery (MTTR) metrics</li>
+</ul>
+<hr />
+<h3 id="23-scalability--reliability-concerns">2.3 Scalability &amp; Reliability Concerns</h3>
+<p><strong>Database Architecture:</strong></p>
+<ul>
+<li>MySQL for all services (good for small scale)</li>
+<li><strong>Risk:</strong> No sharding strategy for 10k+ users</li>
+<li><strong>Risk:</strong> No read replicas documented</li>
+<li><strong>Risk:</strong> Backup/disaster recovery plan not mentioned</li>
+</ul>
+<p><strong>API Performance:</strong></p>
+<ul>
+<li>GraphQL federation adds latency overhead</li>
+<li><strong>Risk:</strong> No query complexity limits documented</li>
+<li><strong>Risk:</strong> No rate limiting mentioned</li>
+<li><strong>Risk:</strong> N+1 query problems in federation?</li>
+</ul>
+<p><strong>ML Model Deployment:</strong></p>
+<ul>
+<li>Models run as separate services (good isolation)</li>
+<li><strong>Risk:</strong> Queen detection uses Clarifai API (external dependency, cost scales)</li>
+<li><strong>Risk:</strong> Inference latency for 100 concurrent uploads?</li>
+<li><strong>Risk:</strong> GPU resource allocation on edge devices?</li>
+</ul>
+<p><strong>Offline-First Complexity:</strong></p>
+<ul>
+<li>Dexie for local storage (powerful but complex)</li>
+<li><strong>Risk:</strong> Conflict resolution strategy for offline edits?</li>
+<li><strong>Risk:</strong> Data sync reliability?</li>
+<li><strong>Risk:</strong> Storage quota management (browser limits)?</li>
+</ul>
+<hr />
+<h2 id="3-product-development-practices">3. PRODUCT DEVELOPMENT PRACTICES</h2>
+<h3 id="31-whats-working">3.1 What's Working</h3>
+<p><strong>Documentation Culture:</strong></p>
+<ul>
+<li>Exceptional technical documentation (architecture diagrams, DB schemas)</li>
+<li>Feature specs follow consistent template (overview, architecture, API, implementation)</li>
+<li>Domain model well-defined (13 entities with relationships)</li>
+<li>Developer onboarding guides with video tutorials</li>
+<li>Coding instructions clear (no comments, use bullet points, parallel tests)</li>
+</ul>
+<p><strong>Open Source Strategy:</strong></p>
+<ul>
+<li>All code public on GitHub (builds trust)</li>
+<li>AGPL license (prevents competitors from closing source)</li>
+<li>Volunteer contribution model (community building)</li>
+<li>Attracts engineering talent (public portfolio)</li>
+</ul>
+<p><strong>Tech Stack Consistency:</strong></p>
+<ul>
+<li>Limited languages: TypeScript, Go, Python (not Java, Ruby, PHP, etc.)</li>
+<li>Standardized on GraphQL Federation (not REST, gRPC, mixed)</li>
+<li>Docker for all services (not mix of VMs, bare metal)</li>
+<li>Clear rationale documented (why Urql vs Apollo vs Relay)</li>
+</ul>
+<hr />
+<h3 id="32-whats-missing">3.2 What's Missing</h3>
+<p><strong>Product Discovery:</strong></p>
+<p>No evidence of:</p>
+<ul>
+<li>Customer development process (problem interviews before building)</li>
+<li>Jobs-to-be-done framework (why do users &quot;hire&quot; Gratheon?)</li>
+<li>Prototyping/wireframing before implementation</li>
+<li>Usability testing (do users understand the UI?)</li>
+<li>Analytics-driven decisions (which features are used most?)</li>
+</ul>
+<p><strong>Agile Practices:</strong></p>
+<p>Missing or unclear:</p>
+<ul>
+<li>Sprint planning (2-week cycles? monthly?)</li>
+<li>Daily standups (async? synchronous?)</li>
+<li>Sprint retrospectives (continuous improvement?)</li>
+<li>Definition of Done (when is a feature &quot;complete&quot;?)</li>
+<li>Definition of Ready (when can we start building?)</li>
+</ul>
+<p><strong>Product Metrics:</strong></p>
+<p>No documented KPIs for:</p>
+<ul>
+<li><strong>Activation:</strong> % of signups who upload first frame photo</li>
+<li><strong>Engagement:</strong> DAU/WAU/MAU, session duration, features per session</li>
+<li><strong>Retention:</strong> Day 1/7/30 retention cohorts</li>
+<li><strong>Referral:</strong> Viral coefficient, NPS score</li>
+<li><strong>Revenue:</strong> Conversion to paid (future), LTV/CAC</li>
+</ul>
+<p><strong>Quality Assurance:</strong></p>
+<p>No evidence of:</p>
+<ul>
+<li>QA role or process (who tests before release?)</li>
+<li>Bug triage system (severity, priority, SLA)</li>
+<li>Regression testing checklist</li>
+<li>Staging environment validation</li>
+<li>Canary deployments (gradual rollout)</li>
+</ul>
+<hr />
+<h2 id="4-competitive-analysis---product-perspective">4. COMPETITIVE ANALYSIS - PRODUCT PERSPECTIVE</h2>
+<h3 id="41-competitive-advantages-sustain-these">4.1 Competitive Advantages (Sustain These)</h3>
+<p><strong>Frame-Level AI Inspection:</strong></p>
+<ul>
+<li><strong>Unique:</strong> 0 competitors offer AI cell detection + bee counting on same frame</li>
+<li><strong>Value:</strong> Beekeepers get quantified colony strength (not just &quot;feels healthy&quot;)</li>
+<li><strong>Moat:</strong> Custom-trained models + dataset = IP advantage</li>
+</ul>
+<p><strong>Integrated Ecosystem:</strong></p>
+<ul>
+<li><strong>Unique:</strong> Sensors + photos + weather + entrance monitoring in single platform</li>
+<li><strong>Value:</strong> Correlate weight loss with entrance activity + weather</li>
+<li><strong>Moat:</strong> Network effects (more data = better insights)</li>
+</ul>
+<p><strong>Open Source:</strong></p>
+<ul>
+<li><strong>Unique:</strong> Most competitors are closed-source SaaS or hardware vendors</li>
+<li><strong>Value:</strong> Trust, customization, no vendor lock-in</li>
+<li><strong>Moat:</strong> Community contributions, beekeepers can validate code</li>
+</ul>
+<p><strong>Offline-First:</strong></p>
+<ul>
+<li><strong>Unique:</strong> Most competitors require constant internet</li>
+<li><strong>Value:</strong> Works in remote apiaries, data syncs later</li>
+<li><strong>Moat:</strong> Technical complexity = barrier to copying</li>
+</ul>
+<hr />
+<h3 id="42-competitive-weaknesses-fix-these">4.2 Competitive Weaknesses (Fix These)</h3>
+<p><strong>Product Completeness:</strong></p>
+<ul>
+<li>Varroa counting &quot;coming soon&quot; (competitors have it now)</li>
+<li>Queen detection 60% accuracy (not usable, competitors may have better)</li>
+<li>Entrance observer incomplete (competitors shipping devices)</li>
+<li>Alert system just launched (competitors have mature notification systems)</li>
+</ul>
+<p><strong>User Experience:</strong></p>
+<ul>
+<li>Technical UI (bounding boxes, JSON data, &quot;GraphQL&quot;) scares non-technical users</li>
+<li>Slow AI processing (queue system means wait time)</li>
+<li>Requires manual hive modeling (frame-by-frame setup)</li>
+<li>Mobile experience unclear (responsive but optimized?)</li>
+</ul>
+<p><strong>Market Validation:</strong></p>
+<ul>
+<li>200 users (competitors have 1000s)</li>
+<li>No public case studies (social proof missing)</li>
+<li>No testimonials on website (trust signals weak)</li>
+<li>Hardware not shipping yet (competitors selling now)</li>
+</ul>
+<p><strong>Geographic Focus:</strong></p>
+<ul>
+<li>Estonia-first (small market, 5100 beekeepers)</li>
+<li>No localization (Estonian interface?)</li>
+<li>Competitors have EU/US/global presence</li>
+</ul>
+<hr />
+<h2 id="5-product-development-recommendations">5. PRODUCT DEVELOPMENT RECOMMENDATIONS</h2>
+<h3 id="51-immediate-actions-next-30-days">5.1 Immediate Actions (Next 30 Days)</h3>
+<p><strong>Priority 1: Establish Product Metrics</strong></p>
+<ul>
+<li>Implement PostHog event tracking on critical flows:
+<ul>
+<li>Sign up → email verification → first login</li>
+<li>Create apiary → add hive → upload frame → view results</li>
+<li>View alerts, respond to alerts</li>
+</ul>
+</li>
+<li>Create basic dashboard: weekly signups, active users, frame uploads</li>
+<li>Define success criteria for each feature (e.g., &quot;Queen detection usable at 80% accuracy&quot;)</li>
+</ul>
+<p><strong>Priority 2: Customer Feedback Loop</strong></p>
+<ul>
+<li>Schedule 5 customer interviews with active users (who uploaded 5+ frames)</li>
+<li>Create in-app feedback widget (simple emoji rating + text box)</li>
+<li>Set up support email/Discord monitoring (response time SLA)</li>
+<li>Document top 3 user pain points</li>
+</ul>
+<p><strong>Priority 3: Testing &amp; Quality</strong></p>
+<ul>
+<li>Write E2E tests for critical path: sign up → upload frame → view detection</li>
+<li>Add visual regression tests for key screens (homepage, hive edit, inspection list)</li>
+<li>Set up automated test runs on every PR (GitHub Actions)</li>
+<li>Define bug severity levels (P0 = blocks usage, P1 = major feature broken, P2 = minor)</li>
+</ul>
+<p><strong>Priority 4: Roadmap Clarity</strong></p>
+<ul>
+<li>Create public roadmap page (3 themes per quarter)</li>
+<li>Prioritize features using RICE score (Reach × Impact × Confidence / Effort)</li>
+<li>Commit to shipping cadence: 1 major feature per month, bug fixes weekly</li>
+<li>Announce roadmap to users (email newsletter, Discord)</li>
+</ul>
+<hr />
+<h3 id="52-strategic-decisions-next-90-days">5.2 Strategic Decisions (Next 90 Days)</h3>
+<p><strong>Decision 1: Focus vs. Expand</strong></p>
+<p><em>Option A: Polish Web App to &quot;Production Ready&quot;</em></p>
+<ul>
+<li>Pause hardware development for 6 months</li>
+<li>Bring queen detection to 80%+ accuracy</li>
+<li>Complete varroa counting feature</li>
+<li>Ship mobile-optimized UI</li>
+<li>Hit 1000 active users before hardware launch</li>
+</ul>
+<p><em>Option B: Ship IoT Sensors ASAP</em></p>
+<ul>
+<li>Run 3-month pilot with 20 beta testers</li>
+<li>Iterate hardware based on field data</li>
+<li>Launch pre-orders to fund manufacturing</li>
+<li>Risk: divided focus between software and hardware</li>
+</ul>
+<p><strong>Recommendation:</strong> Option A. Software has lower CAC, faster iteration, better margins. Prove SaaS model before hardware investment.</p>
+<hr />
+<p><strong>Decision 2: Freemium vs. Paid-First</strong></p>
+<p><em>Current State:</em> Free during development, pricing page shows plans but not enforced</p>
+<p><em>Option A: Stay Free Until Hardware Ships</em></p>
+<ul>
+<li>Maximize user acquisition (reach 1000 users)</li>
+<li>Collect more training data for ML models</li>
+<li>Risk: Users expect free forever, hard to monetize later</li>
+</ul>
+<p><em>Option B: Launch Paid Tiers Now (Starter €5/mo, Pro €15/mo)</em></p>
+<ul>
+<li>Validate willingness to pay (proves PMF)</li>
+<li>Fund development faster</li>
+<li>Risk: Slows user growth, features may not justify price yet</li>
+</ul>
+<p><strong>Recommendation:</strong> Hybrid - Free tier (5 hives max) + Paid tier (unlimited hives + alerts + advanced analytics). Force decision for serious beekeepers.</p>
+<hr />
+<p><strong>Decision 3: Build vs. Partner</strong></p>
+<p><em>IoT Hardware Manufacturing:</em></p>
+<ul>
+<li>Build: Full control, higher margin, longer time-to-market</li>
+<li>Partner: Faster launch, lower risk, lower margin</li>
+<li><strong>Recommendation:</strong> Partner with VIDRIK or existing IoT manufacturer (mentioned in blog, internship posted)</li>
+</ul>
+<p><em>ML Model Hosting:</em></p>
+<ul>
+<li>Self-host: Lower cost at scale, more control</li>
+<li>Clarifai Cloud: Faster to market, easier scaling, higher variable cost</li>
+<li><strong>Recommendation:</strong> Migrate queen detection to self-hosted (custom model trained), keep Clarifai as fallback</li>
+</ul>
+<p><em>Customer Support:</em></p>
+<ul>
+<li>Founder handles (current state): Free, slow, not scalable</li>
+<li>Hire support agent: Expensive, premature</li>
+<li>Community Discord + docs: Scalable, aligns with open-source values</li>
+<li><strong>Recommendation:</strong> Invest in documentation + Discord automation (FAQ bot)</li>
+</ul>
+<hr />
+<h3 id="53-long-term-product-vision-6-12-months">5.3 Long-Term Product Vision (6-12 Months)</h3>
+<p><strong>North Star Metric:</strong> &quot;Time saved per inspection&quot;</p>
+<ul>
+<li>Baseline: 15 min per hive × 20 hives = 5 hours per inspection</li>
+<li>With Gratheon: Pre-inspection photo review (10 min) → targeted physical check (30 min/hive for 3 problem hives) = 2 hours</li>
+<li><strong>Goal:</strong> Save 3 hours per inspection (60% reduction)</li>
+</ul>
+<p><strong>Product Themes:</strong></p>
+<p><em>Q1 2026: Production Polish</em></p>
+<ul>
+<li>80%+ queen detection accuracy</li>
+<li>Varroa counting shipped and validated</li>
+<li>Mobile-optimized UI</li>
+<li>1000 active users</li>
+</ul>
+<p><em>Q2 2026: Hardware Launch</em></p>
+<ul>
+<li>IoT sensors pilot (20 units)</li>
+<li>Entrance observer alpha (5 units)</li>
+<li>Pre-order campaign</li>
+<li>First 10 paying customers</li>
+</ul>
+<p><em>Q3 2026: Advanced Analytics</em></p>
+<ul>
+<li>Prophet AI forecasting (weight prediction)</li>
+<li>Colony health scoring (aggregate metric)</li>
+<li>Comparative analytics (your hive vs. similar hives)</li>
+<li>Weather correlation insights</li>
+</ul>
+<p><em>Q4 2026: Expansion</em></p>
+<ul>
+<li>Localization (Polish, German)</li>
+<li>Integrations (beekeeping association APIs)</li>
+<li>API for third-party hardware</li>
+<li>Scale to 5000 users</li>
+</ul>
+<hr />
+<h2 id="6-questions-for-tarmo-hrmaorg-mentor">6. QUESTIONS FOR TARMO HÄRMAORG (MENTOR)</h2>
+<h3 id="61-product-strategy">6.1 Product Strategy</h3>
+<ol>
+<li>
+<p><strong>Focus vs. Breadth:</strong> We're building 4 products (web app, sensors, entrance observer, robotic hive). Should we focus 100% on web app until PMF proven, or is parallel hardware development justified?</p>
+</li>
+<li>
+<p><strong>Product-Market Fit Validation:</strong> We have 200 registered users. What metrics would convince you we have PMF? (% active users? retention cohorts? NPS score? willingness to pay?)</p>
+</li>
+<li>
+<p><strong>Feature Prioritization:</strong> We have 30+ documented feature ideas. How do you recommend prioritizing? (RICE? User votes? Founder intuition? Competitive gaps?)</p>
+</li>
+<li>
+<p><strong>Freemium Strategy:</strong> When should we enforce paid tiers? Too early kills growth, too late makes monetization harder. What signals indicate &quot;ready to charge&quot;?</p>
+</li>
+<li>
+<p><strong>Hardware Timing:</strong> Our hardware is TRL 4-5. What field test duration/sample size is needed before committing to manufacturing? (3 months? 6 months? 50 units? 200 units?)</p>
+</li>
+</ol>
+<hr />
+<h3 id="62-product-development-process">6.2 Product Development Process</h3>
+<ol start="6">
+<li>
+<p><strong>Agile vs. Kanban:</strong> We use GitHub Projects but no visible sprint cadence. For a team of ~3 developers + volunteers, what's minimum viable agile process?</p>
+</li>
+<li>
+<p><strong>Quality vs. Speed:</strong> We have minimal test coverage. How do you balance &quot;ship fast, learn&quot; vs. &quot;ship quality, avoid churn&quot;? What's acceptable tech debt for early stage?</p>
+</li>
+<li>
+<p><strong>Customer Discovery:</strong> We have detailed personas but unclear if validated with interviews. How often should we talk to users? (weekly? monthly? ad-hoc?) Structured or casual?</p>
+</li>
+<li>
+<p><strong>Metrics-Driven Development:</strong> PostHog is installed but unclear if used for decisions. What's minimum viable analytics setup? (# of events to track? dashboard to monitor?)</p>
+</li>
+<li>
+<p><strong>Product Documentation:</strong> We excel at technical docs, but lack product specs (user stories, acceptance criteria, wireframes). Is this causing problems? What's minimum viable product doc?</p>
+</li>
+</ol>
+<hr />
+<h3 id="63-team--resources">6.3 Team &amp; Resources</h3>
+<ol start="11">
+<li>
+<p><strong>Product Manager Role:</strong> Currently founder-driven. At what point do we need dedicated PM? What signals indicate &quot;hire now vs. wait&quot;?</p>
+</li>
+<li>
+<p><strong>Designer vs. DIY:</strong> UI is functional but not polished. Should we hire designer now, or focus on product-market fit first with basic UI?</p>
+</li>
+<li>
+<p><strong>QA Process:</strong> No QA role. Is founder + developer testing sufficient until [X users/revenue/complexity]?</p>
+</li>
+<li>
+<p><strong>Volunteer Coordination:</strong> We have volunteer contributors. How to structure product work for volunteers? (isolated features? bug fixes? documentation?)</p>
+</li>
+<li>
+<p><strong>Technical Founder Trap:</strong> Founder is engineer, risk of over-engineering. How to balance technical excellence with &quot;good enough for now&quot;?</p>
+</li>
+</ol>
+<hr />
+<h3 id="64-competitive-positioning">6.4 Competitive Positioning</h3>
+<ol start="16">
+<li>
+<p><strong>Frame-Level AI:</strong> Our unique feature. How do we validate users actually care? (willingness to pay premium? testimonials? usage frequency?)</p>
+</li>
+<li>
+<p><strong>Open Source Risk:</strong> Competitors could fork our code. How do we maintain competitive advantage? (brand? community? network effects? data moat?)</p>
+</li>
+<li>
+<p><strong>Feature Parity:</strong> We're behind competitors on varroa counting, entrance monitoring. Should we catch up first, or lean into unique strengths?</p>
+</li>
+<li>
+<p><strong>B2B vs. B2C:</strong> Current focus is B2C (individual beekeepers). Should we explore B2B (beekeeping associations, research institutions)?</p>
+</li>
+<li>
+<p><strong>International Expansion:</strong> Estonia market is tiny. When should we localize? (after X Estonian users? before hardware launch? never - English only?)</p>
+</li>
+</ol>
+<hr />
+<h3 id="65-business-model-alignment">6.5 Business Model Alignment</h3>
+<ol start="21">
+<li>
+<p><strong>SaaS vs. Hardware Revenue Mix:</strong> Pricing shows €200 hardware + €5-15/mo SaaS. What's ideal ratio? (50/50? 80% recurring? hardware at cost?)</p>
+</li>
+<li>
+<p><strong>Customer Lifetime Value:</strong> With €15/mo ARPU and unknown churn, what's acceptable CAC? How to calculate without historical data?</p>
+</li>
+<li>
+<p><strong>Free Tier Generosity:</strong> Free tier allows 5 hives. Is this too generous? (average user has 10-50 hives, so forces upgrade, or risk of &quot;good enough&quot;?)</p>
+</li>
+<li>
+<p><strong>Hardware Subsidy:</strong> Should we sell sensors at cost (€200) or margin (€400)? Trade-off: adoption vs. revenue.</p>
+</li>
+<li>
+<p><strong>API Monetization:</strong> Open-source code + documented APIs. Should we offer paid API tier for third-party integrations? (€99/mo for weather station manufacturers?)</p>
+</li>
+</ol>
+<hr />
+<h2 id="7-key-product-development-suggestions">7. KEY PRODUCT DEVELOPMENT SUGGESTIONS</h2>
+<h3 id="71-high-impact-low-effort-ship-this-month">7.1 High-Impact, Low-Effort (Ship This Month)</h3>
+<ol>
+<li>
+<p><strong>Implement Feature Flags</strong></p>
+<ul>
+<li>Use LaunchDarkly (free tier) or PostHog feature flags</li>
+<li>Enable gradual rollout of queen detection improvements</li>
+<li>Kill switch for buggy features without redeployment</li>
+<li><strong>Impact:</strong> Faster iteration, less risk, better experimentation</li>
+</ul>
+</li>
+<li>
+<p><strong>Add Product Analytics Events</strong></p>
+<ul>
+<li>Track: sign_up, first_frame_upload, view_detection_results, create_alert_rule</li>
+<li>Create dashboard: weekly signups, WAU, feature adoption %</li>
+<li>Set goal: 50% of signups upload frame within 7 days</li>
+<li><strong>Impact:</strong> Data-driven decisions, identify activation drop-off points</li>
+</ul>
+</li>
+<li>
+<p><strong>Create Public Roadmap Page</strong></p>
+<ul>
+<li>Show: In Progress (this month), Up Next (next 3 months), Future (exploring)</li>
+<li>Allow: Upvotes on feature requests, email notifications</li>
+<li>Example: Linear.app/roadmap style</li>
+<li><strong>Impact:</strong> Transparent communication, manages expectations, collects user input</li>
+</ul>
+</li>
+<li>
+<p><strong>Write 3 E2E Tests</strong></p>
+<ul>
+<li>Test 1: Sign up → verify email → login</li>
+<li>Test 2: Create apiary → add hive → upload frame</li>
+<li>Test 3: Configure alert → trigger alert → view notification</li>
+<li><strong>Impact:</strong> Catch regressions before users do, confidence to ship faster</li>
+</ul>
+</li>
+<li>
+<p><strong>Add In-App Feedback Widget</strong></p>
+<ul>
+<li>Simple: 😀 😐 😞 + &quot;What can we improve?&quot; text box</li>
+<li>Trigger: After frame upload completes, after viewing inspection</li>
+<li>Send to: Discord channel or Notion database</li>
+<li><strong>Impact:</strong> Continuous user feedback, discover hidden pain points</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h3 id="72-medium-impact-medium-effort-next-quarter">7.2 Medium-Impact, Medium-Effort (Next Quarter)</h3>
+<ol start="6">
+<li>
+<p><strong>Improve Queen Detection to 80%+ Accuracy</strong></p>
+<ul>
+<li>Audit Clarifai model performance (precision/recall on test set)</li>
+<li>Expand training dataset (ask users to label queens)</li>
+<li>Train custom YOLOv8 model with transfer learning</li>
+<li>A/B test Clarifai vs. custom model</li>
+<li><strong>Impact:</strong> Unlock paid tier (users won't pay for 60% accuracy)</li>
+</ul>
+</li>
+<li>
+<p><strong>Complete Varroa Counting Feature</strong></p>
+<ul>
+<li>Finish bottom board image processing pipeline</li>
+<li>Validate accuracy with manual counts (ground truth)</li>
+<li>Add varroa trend chart to hive analytics</li>
+<li>Create alert rule: &quot;Varroa count exceeds X mites/week&quot;</li>
+<li><strong>Impact:</strong> Critical pain point solved, strong differentiation</li>
+</ul>
+</li>
+<li>
+<p><strong>Mobile UI Optimization</strong></p>
+<ul>
+<li>Audit mobile usability (Lighthouse, real device testing)</li>
+<li>Optimize touch targets (buttons, dropdowns)</li>
+<li>Simplify hive edit UI for small screens</li>
+<li>Add camera upload shortcut on mobile</li>
+<li><strong>Impact:</strong> 40%+ users on mobile (beekeepers in field)</li>
+</ul>
+</li>
+<li>
+<p><strong>Customer Interview Program</strong></p>
+<ul>
+<li>Interview 10 active users (uploaded 5+ frames)</li>
+<li>Interview 5 churned users (signed up but never uploaded)</li>
+<li>Document: pain points, feature requests, willingness to pay</li>
+<li>Share findings with team (Notion doc or video summary)</li>
+<li><strong>Impact:</strong> Deep qualitative insights, validate/invalidate assumptions</li>
+</ul>
+</li>
+<li>
+<p><strong>IoT Sensors Pilot Program</strong></p>
+<ul>
+<li>Recruit 20 beta testers (active web app users)</li>
+<li>Ship sensors with clear expectations (bugs expected, weekly feedback)</li>
+<li>Define success metrics: uptime %, measurement accuracy, alert usefulness</li>
+<li>Iterate based on feedback (firmware updates, hardware v2)</li>
+<li><strong>Impact:</strong> Validate hardware before manufacturing commitment</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h3 id="73-high-impact-high-effort-6-month-projects">7.3 High-Impact, High-Effort (6-Month Projects)</h3>
+<ol start="11">
+<li>
+<p><strong>Unified Health Score</strong></p>
+<ul>
+<li>Aggregate: frame resources (brood %), bee count, weight trend, entrance activity, varroa count</li>
+<li>Output: 0-100 health score + traffic light 🟢🟡🔴</li>
+<li>Insight: &quot;Hive #3 declining: low brood + high varroa&quot;</li>
+<li><strong>Impact:</strong> Simplifies decision-making, key differentiator</li>
+</ul>
+</li>
+<li>
+<p><strong>Prophet AI Forecasting</strong></p>
+<ul>
+<li>Train Prophet model on weight + weather + entrance data</li>
+<li>Predict: &quot;Expected weight in 7 days: 42kg ± 3kg&quot;</li>
+<li>Alert: &quot;Predicted starvation in 14 days&quot; (based on weight trend)</li>
+<li><strong>Impact:</strong> Proactive beekeeping, prevents losses</li>
+</ul>
+</li>
+<li>
+<p><strong>Comparative Analytics</strong></p>
+<ul>
+<li>Anonymized benchmarking: &quot;Your hive stores 20% more honey than similar hives in your region&quot;</li>
+<li>Filter by: region, hive type, bee race, beekeeper experience</li>
+<li><strong>Impact:</strong> Network effects (more users = better benchmarks), social proof</li>
+</ul>
+</li>
+<li>
+<p><strong>Mobile App (React Native or Tauri)</strong></p>
+<ul>
+<li>Native app for iOS/Android</li>
+<li>Offline-first (same Dexie sync)</li>
+<li>Push notifications for alerts</li>
+<li>Camera integration (direct frame upload)</li>
+<li><strong>Impact:</strong> Better mobile UX, higher engagement, app store discovery</li>
+</ul>
+</li>
+<li>
+<p><strong>API for Third-Party Integrations</strong></p>
+<ul>
+<li>Public API with rate limits</li>
+<li>Use cases: research institutions, weather station manufacturers, beekeeping associations</li>
+<li>Monetization: Free tier (100 requests/day), Pro tier (€99/mo unlimited)</li>
+<li><strong>Impact:</strong> Ecosystem growth, B2B revenue stream</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h2 id="8-product-development-maturity-assessment">8. PRODUCT DEVELOPMENT MATURITY ASSESSMENT</h2>
+<h3 id="current-maturity-level-25--5-early-product-market-fit">Current Maturity Level: <strong>2.5 / 5 (Early Product-Market Fit)</strong></h3>
+<p><strong>Stage 1: Idea Validation (Complete ✅)</strong></p>
+<ul>
+<li>Problem clearly defined (beekeeper pain points documented)</li>
+<li>Target customer identified (semi-pro beekeepers)</li>
+<li>MVP shipped (web app functional with 200 users)</li>
+</ul>
+<p><strong>Stage 2: Product-Market Fit (In Progress 🟡)</strong></p>
+<ul>
+<li>✅ Users exist and use product</li>
+<li>❌ Retention cohorts unclear (are users coming back?)</li>
+<li>❌ Willingness to pay unproven (no revenue yet)</li>
+<li>❌ Referral/virality unclear (organic growth rate?)</li>
+<li><strong>Blockers:</strong> Incomplete features (varroa counting), low accuracy (queen detection), no metrics dashboard</li>
+</ul>
+<p><strong>Stage 3: Scale Readiness (Not Started ❌)</strong></p>
+<ul>
+<li>❌ Product metrics infrastructure</li>
+<li>❌ Automated testing coverage</li>
+<li>❌ Customer support process</li>
+<li>❌ Sales/marketing funnel</li>
+<li>❌ Unit economics validated</li>
+</ul>
+<p><strong>Stage 4: Growth (Not Applicable)</strong><br />
+<strong>Stage 5: Maturity (Not Applicable)</strong></p>
+<hr />
+<h3 id="comparison-to-successful-deeptech-startups-at-similar-stage">Comparison to Successful Deeptech Startups at Similar Stage</h3>
+<p><strong>What Gratheon Does Better:</strong></p>
+<ul>
+<li>Documentation (exceptional technical and domain docs)</li>
+<li>Open-source strategy (community trust)</li>
+<li>Architecture (scalable microservices from day 1)</li>
+<li>Vision clarity (mission, values, roadmap themes)</li>
+</ul>
+<p><strong>What Gratheon Should Improve:</strong></p>
+<ul>
+<li>Product metrics (most startups track activation/retention from day 1)</li>
+<li>Customer feedback loop (weekly user interviews standard)</li>
+<li>Testing (CI/CD with 70%+ coverage expected)</li>
+<li>Experimentation (A/B tests, feature flags common)</li>
+<li>Focus (parallel hardware development rare at this stage)</li>
+</ul>
+<p><strong>Benchmarks for &quot;Good&quot; at This Stage:</strong></p>
+<ul>
+<li><strong>Users:</strong> 200 registered ✅ (target: 500 by Q2 2026)</li>
+<li><strong>Activation:</strong> Unknown ❌ (target: 50% upload frame within 7 days)</li>
+<li><strong>Retention:</strong> Unknown ❌ (target: 40% active weekly after 4 weeks)</li>
+<li><strong>NPS:</strong> Unknown ❌ (target: 30+ &quot;would recommend&quot;)</li>
+<li><strong>Test Coverage:</strong> Low ❌ (target: 60% for critical paths)</li>
+<li><strong>Deployment Frequency:</strong> Unknown ❌ (target: weekly releases)</li>
+<li><strong>Bug Escape Rate:</strong> Unknown ❌ (target: <code>&lt;5</code> P0 bugs/month)</li>
+</ul>
+<hr />
+<h2 id="9-risk-assessment---product-development">9. RISK ASSESSMENT - PRODUCT DEVELOPMENT</h2>
+<h3 id="high-risk-issues-requires-immediate-attention">High-Risk Issues (Requires Immediate Attention)</h3>
+<p><strong>Risk 1: Feature Bloat Without Validation</strong></p>
+<ul>
+<li><strong>Symptom:</strong> 4 products in parallel, 30+ feature ideas, unclear priorities</li>
+<li><strong>Impact:</strong> Spread too thin, nothing reaches &quot;production quality&quot;</li>
+<li><strong>Mitigation:</strong> Pause new features, polish 3 core flows (upload, inspect, alert)</li>
+</ul>
+<p><strong>Risk 2: No Product Metrics = Flying Blind</strong></p>
+<ul>
+<li><strong>Symptom:</strong> Can't answer &quot;is queen detection good enough?&quot; or &quot;do users come back?&quot;</li>
+<li><strong>Impact:</strong> Build wrong features, can't optimize conversion funnel</li>
+<li><strong>Mitigation:</strong> Implement PostHog events this week, set baseline metrics</li>
+</ul>
+<p><strong>Risk 3: Hardware Commitment Without Software PMF</strong></p>
+<ul>
+<li><strong>Symptom:</strong> Investing in sensors/entrance observer before SaaS proven</li>
+<li><strong>Impact:</strong> Capital intensive, long development cycles, hard to pivot</li>
+<li><strong>Mitigation:</strong> Prove 1000 users + €5k MRR before manufacturing</li>
+</ul>
+<p><strong>Risk 4: Insufficient Testing = Quality Perception</strong></p>
+<ul>
+<li><strong>Symptom:</strong> Minimal E2E tests, unclear bug rates, no QA process</li>
+<li><strong>Impact:</strong> Users encounter bugs, churn, negative word-of-mouth</li>
+<li><strong>Mitigation:</strong> 3 E2E tests this sprint, bug severity SLA, staging environment</li>
+</ul>
+<hr />
+<h3 id="medium-risk-issues-monitor-closely">Medium-Risk Issues (Monitor Closely)</h3>
+<p><strong>Risk 5: Technical Founder Bias</strong></p>
+<ul>
+<li><strong>Symptom:</strong> Detailed technical docs, but missing user-centric product docs</li>
+<li><strong>Impact:</strong> Build technically impressive features users don't need</li>
+<li><strong>Mitigation:</strong> Customer interviews, usage analytics, &quot;build less&quot;</li>
+</ul>
+<p><strong>Risk 6: Open-Source Competitive Moat</strong></p>
+<ul>
+<li><strong>Symptom:</strong> Code public, competitors could fork</li>
+<li><strong>Impact:</strong> Loss of differentiation if cloned</li>
+<li><strong>Mitigation:</strong> Brand strength, community, data network effects, hosted SaaS convenience</li>
+</ul>
+<p><strong>Risk 7: ML Accuracy Below Usable Threshold</strong></p>
+<ul>
+<li><strong>Symptom:</strong> Queen detection 60%, varroa counting &quot;coming soon&quot;</li>
+<li><strong>Impact:</strong> Users distrust AI, revert to manual methods</li>
+<li><strong>Mitigation:</strong> Set 80% accuracy bar, show confidence scores, allow manual correction</li>
+</ul>
+<p><strong>Risk 8: No Customer Support Plan</strong></p>
+<ul>
+<li><strong>Symptom:</strong> Founder handles support, no SLA, no knowledge base</li>
+<li><strong>Impact:</strong> Doesn't scale beyond 500 users</li>
+<li><strong>Mitigation:</strong> Discord community, comprehensive FAQ, support@ email with 24h SLA</li>
+</ul>
+<hr />
+<h3 id="low-risk-issues-nice-to-have-improvements">Low-Risk Issues (Nice-to-Have Improvements)</h3>
+<p><strong>Risk 9: Localization Delay</strong></p>
+<ul>
+<li><strong>Symptom:</strong> English-only, Estonian market is small</li>
+<li><strong>Impact:</strong> Slower growth in Poland/Germany</li>
+<li><strong>Mitigation:</strong> Ship English product, localize after 1000 users</li>
+</ul>
+<p><strong>Risk 10: Mobile App vs. Responsive Web</strong></p>
+<ul>
+<li><strong>Symptom:</strong> Responsive web good enough for now</li>
+<li><strong>Impact:</strong> Slightly worse mobile UX, no app store presence</li>
+<li><strong>Mitigation:</strong> Optimize responsive web first, native app in 2026</li>
+</ul>
+<hr />
+<h2 id="10-action-items-summary">10. ACTION ITEMS SUMMARY</h2>
+<h3 id="this-week-founder-can-execute-solo">This Week (Founder Can Execute Solo)</h3>
+<ul>
+<li><input disabled="" type="checkbox" /> Install PostHog events: sign_up, first_frame_upload, view_detection</li>
+<li><input disabled="" type="checkbox" /> Create simple dashboard: Weekly signups, WAU, frame uploads</li>
+<li><input disabled="" type="checkbox" /> Write 1 E2E test: Sign up → upload frame → view detection</li>
+<li><input disabled="" type="checkbox" /> Add feedback widget: 3 emojis + text box after frame upload</li>
+<li><input disabled="" type="checkbox" /> Schedule 2 customer interviews with active users</li>
+</ul>
+<h3 id="this-month-requires-team-alignment">This Month (Requires Team Alignment)</h3>
+<ul>
+<li><input disabled="" type="checkbox" /> Prioritize backlog using RICE scores (top 10 features)</li>
+<li><input disabled="" type="checkbox" /> Create public roadmap page (Q1 2026 themes)</li>
+<li><input disabled="" type="checkbox" /> Define product success metrics (activation %, retention %, NPS target)</li>
+<li><input disabled="" type="checkbox" /> Set up staging environment + deploy checklist</li>
+<li><input disabled="" type="checkbox" /> Document bug severity levels + triage process</li>
+</ul>
+<h3 id="this-quarter-strategic-decisions">This Quarter (Strategic Decisions)</h3>
+<ul>
+<li><input disabled="" type="checkbox" /> Decision: Focus web app OR ship sensors (recommend: web app first)</li>
+<li><input disabled="" type="checkbox" /> Decision: Launch paid tiers OR stay free (recommend: freemium now)</li>
+<li><input disabled="" type="checkbox" /> Decision: Build hardware OR partner (recommend: partner with VIDRIK)</li>
+<li><input disabled="" type="checkbox" /> Improve queen detection to 80%+ accuracy</li>
+<li><input disabled="" type="checkbox" /> Complete varroa counting feature + validation</li>
+<li><input disabled="" type="checkbox" /> Mobile UI optimization pass</li>
+<li><input disabled="" type="checkbox" /> Customer interview program (10 active + 5 churned users)</li>
+</ul>
+<h3 id="next-6-months-product-vision">Next 6 Months (Product Vision)</h3>
+<ul>
+<li><input disabled="" type="checkbox" /> 1000 active users (5x growth)</li>
+<li><input disabled="" type="checkbox" /> 50% activation rate (upload frame within 7 days)</li>
+<li><input disabled="" type="checkbox" /> 40% retention (active weekly after 4 weeks)</li>
+<li><input disabled="" type="checkbox" /> €5k MRR (100 paying users at €15/mo, or 50 at €15/mo + 50 sensors at €200)</li>
+<li><input disabled="" type="checkbox" /> IoT sensors pilot (20 units, 3-month field test)</li>
+<li><input disabled="" type="checkbox" /> Prophet AI forecasting shipped</li>
+<li><input disabled="" type="checkbox" /> Unified health score (0-100 with traffic light)</li>
+</ul>
+<hr />
+<h2 id="11-closing-thoughts">11. CLOSING THOUGHTS</h2>
+<p>Gratheon has exceptional technical foundation and clear vision, but product development maturity lags behind engineering sophistication. The team can write complex microservices and train ML models, but struggles with basic product management: metrics, prioritization, customer feedback, and focus.</p>
+<p><strong>The Core Challenge:</strong> Building 4 products simultaneously with limited resources, without clear product-market fit signals on the primary product (web app).</p>
+<p><strong>The Path Forward:</strong> Embrace constraints. Ship less, polish more. Talk to users weekly. Track metrics religiously. Prove software works before hardware investment. Focus beats features.</p>
+<p><strong>The Opportunity:</strong> Frame-level AI inspection is genuinely unique. If you can prove it saves time and prevents losses, you have a defensible moat. But first, you must prove it works well enough that users trust it, pay for it, and tell their friends.</p>
+<p><strong>Key Insight for Mentor Discussion:</strong> Is the team ready to stop building and start validating? Can we commit to 90 days of zero new features, only polish and customer learning?</p>
+<hr />
+<p><strong>Prepared by:</strong> AI Analysis based on website documentation, technical architecture, and product artifacts<br />
+<strong>Next Steps:</strong> Review with mentor Tarmo Härmaorg, discuss questions, prioritize action items<br />
+<strong>Follow-up:</strong> Share customer interview findings, product metrics dashboard, updated roadmap post-meeting</p>
+
+    </div>
+    
+    
+    
+    <nav class="prev-next" aria-label="Page navigation">
+        
+        <a href="/about/company/prototron_dataroom/marketing-mentor-prep/" class="prev-link">
+            <span class="prev-label">← Previous</span>
+            <span class="prev-title">MARKETING MENTOR PREP</span>
+        </a>
+        
+        
+        <a href="/about/company/why-open-source/" class="next-link">
+            <span class="next-label">Next →</span>
+            <span class="next-title">🤲 Why open source</span>
+        </a>
+        
+    </nav>
+    
+</article>
+
+        </main>
+        <nav class="toc" aria-label="On this page">
+  <h2 class="toc-title">On this page</h2>
+<ul class="toc-list">
+  <li class="toc-item">
+    <a href="#tarmo-hrmaorg-product-development-prototron-accelerator">Tarmo Härmaorg (Product Development) - Prototron Accelerator</a>
+  </li>
+  <li class="toc-item">
+    <a href="#executive-summary">Executive Summary</a>
+  </li>
+  <li class="toc-item">
+    <a href="#1-product-strategy-roadmap">1. PRODUCT STRATEGY &amp; ROADMAP</a>
+<ul class="toc-sublist">
+  <li class="toc-item">
+    <a href="#11-current-product-portfolio-analysis">1.1 Current Product Portfolio Analysis</a>
+  </li>
+  <li class="toc-item">
+    <a href="#12-product-development-process-gaps">1.2 Product Development Process Gaps</a>
+  </li>
+</ul>
+  </li>
+  <li class="toc-item">
+    <a href="#2-technology-stack-architecture">2. TECHNOLOGY STACK &amp; ARCHITECTURE</a>
+<ul class="toc-sublist">
+  <li class="toc-item">
+    <a href="#21-technical-strengths">2.1 Technical Strengths</a>
+  </li>
+  <li class="toc-item">
+    <a href="#22-technical-debt-quality-concerns">2.2 Technical Debt &amp; Quality Concerns</a>
+  </li>
+  <li class="toc-item">
+    <a href="#23-scalability-reliability-concerns">2.3 Scalability &amp; Reliability Concerns</a>
+  </li>
+</ul>
+  </li>
+  <li class="toc-item">
+    <a href="#3-product-development-practices">3. PRODUCT DEVELOPMENT PRACTICES</a>
+<ul class="toc-sublist">
+  <li class="toc-item">
+    <a href="#31-whats-working">3.1 What&#39;s Working</a>
+  </li>
+  <li class="toc-item">
+    <a href="#32-whats-missing">3.2 What&#39;s Missing</a>
+  </li>
+</ul>
+  </li>
+  <li class="toc-item">
+    <a href="#4-competitive-analysis-product-perspective">4. COMPETITIVE ANALYSIS - PRODUCT PERSPECTIVE</a>
+<ul class="toc-sublist">
+  <li class="toc-item">
+    <a href="#41-competitive-advantages-sustain-these">4.1 Competitive Advantages (Sustain These)</a>
+  </li>
+  <li class="toc-item">
+    <a href="#42-competitive-weaknesses-fix-these">4.2 Competitive Weaknesses (Fix These)</a>
+  </li>
+</ul>
+  </li>
+  <li class="toc-item">
+    <a href="#5-product-development-recommendations">5. PRODUCT DEVELOPMENT RECOMMENDATIONS</a>
+<ul class="toc-sublist">
+  <li class="toc-item">
+    <a href="#51-immediate-actions-next-30-days">5.1 Immediate Actions (Next 30 Days)</a>
+  </li>
+  <li class="toc-item">
+    <a href="#52-strategic-decisions-next-90-days">5.2 Strategic Decisions (Next 90 Days)</a>
+  </li>
+  <li class="toc-item">
+    <a href="#53-long-term-product-vision-6-12-months">5.3 Long-Term Product Vision (6-12 Months)</a>
+  </li>
+</ul>
+  </li>
+  <li class="toc-item">
+    <a href="#6-questions-for-tarmo-hrmaorg-mentor">6. QUESTIONS FOR TARMO HÄRMAORG (MENTOR)</a>
+<ul class="toc-sublist">
+  <li class="toc-item">
+    <a href="#61-product-strategy">6.1 Product Strategy</a>
+  </li>
+  <li class="toc-item">
+    <a href="#62-product-development-process">6.2 Product Development Process</a>
+  </li>
+  <li class="toc-item">
+    <a href="#63-team-resources">6.3 Team &amp; Resources</a>
+  </li>
+  <li class="toc-item">
+    <a href="#64-competitive-positioning">6.4 Competitive Positioning</a>
+  </li>
+  <li class="toc-item">
+    <a href="#65-business-model-alignment">6.5 Business Model Alignment</a>
+  </li>
+</ul>
+  </li>
+  <li class="toc-item">
+    <a href="#7-key-product-development-suggestions">7. KEY PRODUCT DEVELOPMENT SUGGESTIONS</a>
+<ul class="toc-sublist">
+  <li class="toc-item">
+    <a href="#71-high-impact-low-effort-ship-this-month">7.1 High-Impact, Low-Effort (Ship This Month)</a>
+  </li>
+  <li class="toc-item">
+    <a href="#72-medium-impact-medium-effort-next-quarter">7.2 Medium-Impact, Medium-Effort (Next Quarter)</a>
+  </li>
+  <li class="toc-item">
+    <a href="#73-high-impact-high-effort-6-month-projects">7.3 High-Impact, High-Effort (6-Month Projects)</a>
+  </li>
+</ul>
+  </li>
+  <li class="toc-item">
+    <a href="#8-product-development-maturity-assessment">8. PRODUCT DEVELOPMENT MATURITY ASSESSMENT</a>
+<ul class="toc-sublist">
+  <li class="toc-item">
+    <a href="#current-maturity-level-25-5-early-product-market-fit">Current Maturity Level: 2.5 / 5 (Early Product-Market Fit)</a>
+  </li>
+  <li class="toc-item">
+    <a href="#comparison-to-successful-deeptech-startups-at-similar-stage">Comparison to Successful Deeptech Startups at Similar Stage</a>
+  </li>
+</ul>
+  </li>
+  <li class="toc-item">
+    <a href="#9-risk-assessment-product-development">9. RISK ASSESSMENT - PRODUCT DEVELOPMENT</a>
+<ul class="toc-sublist">
+  <li class="toc-item">
+    <a href="#high-risk-issues-requires-immediate-attention">High-Risk Issues (Requires Immediate Attention)</a>
+  </li>
+  <li class="toc-item">
+    <a href="#medium-risk-issues-monitor-closely">Medium-Risk Issues (Monitor Closely)</a>
+  </li>
+  <li class="toc-item">
+    <a href="#low-risk-issues-nice-to-have-improvements">Low-Risk Issues (Nice-to-Have Improvements)</a>
+  </li>
+</ul>
+  </li>
+  <li class="toc-item">
+    <a href="#10-action-items-summary">10. ACTION ITEMS SUMMARY</a>
+<ul class="toc-sublist">
+  <li class="toc-item">
+    <a href="#this-week-founder-can-execute-solo">This Week (Founder Can Execute Solo)</a>
+  </li>
+  <li class="toc-item">
+    <a href="#this-month-requires-team-alignment">This Month (Requires Team Alignment)</a>
+  </li>
+  <li class="toc-item">
+    <a href="#this-quarter-strategic-decisions">This Quarter (Strategic Decisions)</a>
+  </li>
+  <li class="toc-item">
+    <a href="#next-6-months-product-vision">Next 6 Months (Product Vision)</a>
+  </li>
+</ul>
+  </li>
+  <li class="toc-item">
+    <a href="#11-closing-thoughts">11. CLOSING THOUGHTS</a>
+  </li>
+</ul>
+</nav>
+
+    </div>
+    <script>
+    (function() {
+        var players = document.querySelectorAll("[data-audio-player]");
+        players.forEach(function(container) {
+            var audio = container.querySelector("[data-audio-element]");
+            var toggleBtn = container.querySelector("[data-audio-toggle]");
+            var wave = container.querySelector("[data-audio-wave]");
+            if (!audio || !toggleBtn || !wave) {
+                return;
+            }
+            var audioCtx = null;
+            var sourceNode = null;
+            var analyser = null;
+            var waveData = null;
+            var rafId = 0;
+
+            function syncToggleState() {
+                var isPlaying = !audio.paused && !audio.ended;
+                toggleBtn.classList.toggle("is-playing", isPlaying);
+                var label = isPlaying ? (toggleBtn.dataset.stopLabel || "Stop") : (toggleBtn.dataset.playLabel || "Listen");
+                toggleBtn.setAttribute("aria-label", label);
+                toggleBtn.setAttribute("title", label);
+            }
+
+            function ensureVisualizer() {
+                if (analyser) {
+                    return;
+                }
+                var AudioCtx = window.AudioContext || window.webkitAudioContext;
+                if (!AudioCtx) {
+                    return;
+                }
+                audioCtx = new AudioCtx();
+                sourceNode = audioCtx.createMediaElementSource(audio);
+                analyser = audioCtx.createAnalyser();
+                analyser.fftSize = 1024;
+                waveData = new Uint8Array(analyser.fftSize);
+                sourceNode.connect(analyser);
+                analyser.connect(audioCtx.destination);
+            }
+
+            function stopWave() {
+                if (rafId) {
+                    cancelAnimationFrame(rafId);
+                    rafId = 0;
+                }
+            }
+
+            function drawWave() {
+                if (!analyser || !wave) {
+                    return;
+                }
+                var dpr = window.devicePixelRatio || 1;
+                var w = Math.max(88, wave.clientWidth || 88);
+                var h = Math.max(28, wave.clientHeight || 28);
+                if (wave.width !== Math.floor(w * dpr) || wave.height !== Math.floor(h * dpr)) {
+                    wave.width = Math.floor(w * dpr);
+                    wave.height = Math.floor(h * dpr);
+                }
+                var ctx = wave.getContext("2d");
+                if (!ctx) {
+                    return;
+                }
+                ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+                ctx.clearRect(0, 0, w, h);
+                ctx.strokeStyle = "#0066cc";
+                ctx.lineWidth = 1.2;
+
+                analyser.getByteTimeDomainData(waveData);
+                ctx.beginPath();
+                var slice = waveData.length / w;
+                for (var x = 0; x < w; x++) {
+                    var idx = Math.floor(x * slice);
+                    var y = ((waveData[idx] - 128) / 128) * (h * 0.36) + (h / 2);
+                    if (x === 0) {
+                        ctx.moveTo(x, y);
+                    } else {
+                        ctx.lineTo(x, y);
+                    }
+                }
+                ctx.stroke();
+
+                if (!audio.paused && !audio.ended) {
+                    rafId = requestAnimationFrame(drawWave);
+                } else {
+                    stopWave();
+                }
+            }
+
+            toggleBtn.addEventListener("click", function() {
+                if (!audio.paused && !audio.ended) {
+                    audio.pause();
+                    audio.currentTime = 0;
+                    syncToggleState();
+                    stopWave();
+                    return;
+                }
+                ensureVisualizer();
+                if (audioCtx && audioCtx.state === "suspended") {
+                    audioCtx.resume().catch(function() {});
+                }
+                var started = audio.play();
+                if (started && typeof started.then === "function") {
+                    started.then(function() {
+                        syncToggleState();
+                        drawWave();
+                    }).catch(function() {});
+                    return;
+                }
+                syncToggleState();
+                drawWave();
+            });
+            audio.addEventListener("pause", syncToggleState);
+            audio.addEventListener("play", syncToggleState);
+            audio.addEventListener("ended", function() {
+                syncToggleState();
+                stopWave();
+            });
+
+            syncToggleState();
+        });
+    })();
+    </script>
+    <script defer src="/assets/js/main.js"></script>
+</body>
+</html>
+

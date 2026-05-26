@@ -3,3 +3,6 @@ node_modules
 public_new
 .docusaurus
 .DS_Store
+.cache
+dist
+

@@ -1,16 +1,17 @@
 start:
-    #!/usr/bin/env bash
-    set -euo pipefail
+    ../blog-engine-md/blog-engine serve
 
-    if [ ! -x node_modules/.bin/docusaurus ]; then
-        echo "Installing dependencies (pnpm install)..."
-        pnpm install
-    fi
-
-    pnpm run start
+serve:
+    ../blog-engine-md/blog-engine serve
 
 build:
-    pnpm run build
+    ../blog-engine-md/blog-engine build
+
+# Publish generated output to the directory expected by the current nginx config.
+publish:
+    rm -rf build
+    ../blog-engine-md/blog-engine build
+    mv dist build
 
 # Sync legal documents from website (source of truth) to all repositories
 sync-licenses:

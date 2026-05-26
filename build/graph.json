@@ -1,0 +1,4734 @@
+{
+  "nodes": [
+    {
+      "id": "about-products-webapp-starter-tier-beekeeping-advice-with-llm",
+      "label": "🤖 Beekeeping advice with LLM",
+      "type": "page",
+      "url": "/about/products/web_app/starter-tier/beekeeping-advice-with-llm/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "research-papers-real-time-low-latency-closed-loop-feedback-using-markerless-posture-tracking",
+      "label": "Real time, low latency closed loop feedback using markerless posture tracking",
+      "type": "page",
+      "url": "/research/papers/real-time-low-latency-closed-loop-feedback-using-markerless-posture-tracking/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "research-papers-transformer-models-improve-the-acoustic-recognition-of-buzz-pollinating-bee-species",
+      "label": "Transformer Models improve the acoustic recognition of buzz-pollinating bee species",
+      "type": "page",
+      "url": "/research/papers/transformer-models-improve-the-acoustic-recognition-of-buzz-pollinating-bee-species/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-businessplan-Competition-beehivemonitoringusa",
+      "label": "BeehiveMonitoringUSA",
+      "type": "page",
+      "url": "/about/company/business_plan/Competition/beehivemonitoringusa/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-clients-hobby-beekeepers",
+      "label": "Hobby Beekeepers \u0026 Tech Enthusiasts",
+      "type": "page",
+      "url": "/about/company/clients/hobby-beekeepers/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-prototrondataroom-business-development-mentor-prep",
+      "label": "BUSINESS DEVELOPMENT MENTOR PREP",
+      "type": "page",
+      "url": "/about/company/prototron_dataroom/business-development-mentor-prep/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-templates-feature-template",
+      "label": "feature template",
+      "type": "page",
+      "url": "/about/products/_templates/feature-template/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-clients-potential-new-beekeepers",
+      "label": "Potential New Beekeepers",
+      "type": "page",
+      "url": "/about/company/clients/potential-new-beekeepers/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-clients-urban-beekeepers",
+      "label": "Urban Beekeepers",
+      "type": "page",
+      "url": "/about/company/clients/urban-beekeepers/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-basic-functionality-localization",
+      "label": "🌍 Localization",
+      "type": "page",
+      "url": "/about/products/web_app/basic-functionality/localization/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "docs-beehive-sensors-components-todo-barometric-pressure-sensor",
+      "label": "Barometric pressure sensor",
+      "type": "doc",
+      "url": "/docs/beehive-sensors/components/todo/barometric-pressure-sensor/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "research-papers-application-of-data-layering-in-precision-beekeeping-the-concept",
+      "label": "Application of Data Layering in Precision Beekeeping The Concept",
+      "type": "page",
+      "url": "/research/papers/application-of-data-layering-in-precision-beekeeping-the-concept/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-businessplan-Competition",
+      "label": "Commercial projects",
+      "type": "page",
+      "url": "/about/company/business_plan/Competition/",
+      "size": 5,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-values-values",
+      "label": "🫀 Culture and values",
+      "type": "page",
+      "url": "/about/company/values/values/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "docs-web-app-features-frame-photo-upload",
+      "label": "frame photo upload",
+      "type": "doc",
+      "url": "/docs/web-app/features/frame-photo-upload/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "research-papers-keypoint-based-bee-orientation-estimation-and-ramp-detection-at-the-hive-entrance-for-bee-behavior-identification-system",
+      "label": "Keypoint Based Bee Orientation Estimation and Ramp Detection at the Hive Entrance for Bee Behavior Identification System",
+      "type": "page",
+      "url": "/research/papers/keypoint-based-bee-orientation-estimation-and-ramp-detection-at-the-hive-entrance-for-bee-behavior-identification-system/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-businessplan-Competition-solutionbee",
+      "label": "Solutionbee",
+      "type": "page",
+      "url": "/about/company/business_plan/Competition/solutionbee/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-businessplan-Competition-beescanning",
+      "label": "beescanning",
+      "type": "page",
+      "url": "/about/company/business_plan/Competition/beescanning/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-entranceobserver-ideas-bee-pose-generation",
+      "label": "🩻 Bee pose generation",
+      "type": "page",
+      "url": "/about/products/entrance_observer/ideas/bee-pose-generation/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "blog-2024-11-22-purposetech-early-traction-webinar",
+      "label": "2024 11 22 🎒 PurposeTech Early traction webinar",
+      "type": "blog",
+      "url": "/blog/2024-11-22-purposetech-early-traction-webinar/",
+      "size": 3,
+      "color": "#4CAF50"
+    },
+    {
+      "id": "research-papers-smart-beehive-monitoring-for-remote-regions-phd-thesis",
+      "label": "Smart Beehive Monitoring for Remote Regions   PhD thesis",
+      "type": "page",
+      "url": "/research/papers/smart-beehive-monitoring-for-remote-regions-phd-thesis/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-businessplan-Competition-beesage",
+      "label": "BeeSage",
+      "type": "page",
+      "url": "/about/company/business_plan/Competition/beesage/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about",
+      "label": "Overview",
+      "type": "page",
+      "url": "/about/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-entranceobserver-ideas-detect-swarming",
+      "label": "🐝 Detect swarming",
+      "type": "page",
+      "url": "/about/products/entrance_observer/ideas/detect-swarming/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-roboticbeehive-ideas-client-side-app-with-ui-in-manual-override-mode",
+      "label": "🎮 Client side app with UI in manual override mode",
+      "type": "page",
+      "url": "/about/products/robotic_beehive/ideas/client-side-app-with-ui-in-manual-override-mode/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "docs-web-app-features-split-colony",
+      "label": "split colony",
+      "type": "doc",
+      "url": "/docs/web-app/features/split-colony/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "research-papers-advances-in-beehive-monitoring-systems-low-cost-integrating-sensor-technology-for-improved-apiculture-management",
+      "label": "Advances in Beehive Monitoring Systems: Low-Cost Integrating Sensor Technology forImproved Apiculture Management",
+      "type": "page",
+      "url": "/research/papers/advances-in-beehive-monitoring-systems-low-cost-integrating-sensor-technology-for-improved-apiculture-management/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about/problems/systemic-index",
+      "label": "Systemic",
+      "type": "page",
+      "url": "/about/problems/systemic/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-entranceobserver-features-bee-movement-metric-reporting",
+      "label": "📊 Bee movement metric reporting",
+      "type": "page",
+      "url": "/about/products/entrance_observer/features/bee-movement-metric-reporting/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-starter-tier-ideas-solar-radiance-as-weather-datasource",
+      "label": "☀️ Solar radiance as weather datasource",
+      "type": "page",
+      "url": "/about/products/web_app/starter-tier/ideas 💡/solar-radiance-as-weather-datasource/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "blog-2023-10-10-tehnopol-tech-startup-bootcamp",
+      "label": "2023 10 10 🎒 Tehnopol tech startup bootcamp",
+      "type": "blog",
+      "url": "/blog/2023-10-10-tehnopol-tech-startup-bootcamp/",
+      "size": 3,
+      "color": "#4CAF50"
+    },
+    {
+      "id": "research-papers-approximation-of-functions",
+      "label": "Approximation of functions determining colony activity using neural networks. Master thesis",
+      "type": "page",
+      "url": "/research/papers/approximation-of-functions/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about/products/entrance_observer/todo-index",
+      "label": "Todo",
+      "type": "page",
+      "url": "/about/products/entrance_observer/todo/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-scales-ideas-measure-atmospheric-pressure",
+      "label": "🌩️ Measure atmospheric pressure",
+      "type": "page",
+      "url": "/about/products/scales/ideas/measure-atmospheric-pressure/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-pro-tier-ideas-share-video-stream",
+      "label": "♻️ Share video stream",
+      "type": "page",
+      "url": "/about/products/web_app/pro-tier/ideas 💡/share-video-stream/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "docs-web-app-features-apiary-management",
+      "label": "apiary management",
+      "type": "doc",
+      "url": "/docs/web-app/features/apiary-management/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "research-papers-automated-video-monitoring-of-unmarked-and-marked-honey-bees-at-the-hive-entrance",
+      "label": "Automated Video Monitoring of Unmarked and Marked Honey Bees at the Hive Entrance",
+      "type": "page",
+      "url": "/research/papers/automated-video-monitoring-of-unmarked-and-marked-honey-bees-at-the-hive-entrance/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about/products/scales-index",
+      "label": "Scales",
+      "type": "page",
+      "url": "/about/products/scales/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about/products/web_app/pro-tier-index",
+      "label": "Pro-tier",
+      "type": "page",
+      "url": "/about/products/web_app/pro-tier/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-businessplan-Competition-beetight-2",
+      "label": "Beetight 2",
+      "type": "page",
+      "url": "/about/company/business_plan/Competition/beetight-2/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-businessplan-Competition-beeing",
+      "label": "beeing",
+      "type": "page",
+      "url": "/about/company/business_plan/Competition/beeing/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-entranceobserver-features-client-side-app-with-ui",
+      "label": "🎮 Client side app with UI",
+      "type": "page",
+      "url": "/about/products/entrance_observer/features/client-side-app-with-ui/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "blog-2025-10-10-gratheon-whitepaper",
+      "label": "2025 10 10 🔬 Gratheon Whitepaper",
+      "type": "blog",
+      "url": "/blog/2025-10-10-gratheon-whitepaper/",
+      "size": 3,
+      "color": "#4CAF50"
+    },
+    {
+      "id": "about-products-roboticbeehive-ideas-hive-bottom-scanning",
+      "label": "🦀 Hive bottom scanning",
+      "type": "page",
+      "url": "/about/products/robotic_beehive/ideas/hive-bottom-scanning/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-hobbyist-tier-join-bee-colonies",
+      "label": "🫶🏻 Join colonies",
+      "type": "page",
+      "url": "/about/products/web_app/hobbyist-tier/join-bee-colonies/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "research-papers-honeybees-on-the-move-pollination-services-and-honey-production",
+      "label": "Honeybees on the move - Pollination services and honey production",
+      "type": "page",
+      "url": "/research/papers/honeybees-on-the-move-pollination-services-and-honey-production/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-businessplan-Competition-3bee",
+      "label": "3bee",
+      "type": "page",
+      "url": "/about/company/business_plan/Competition/3bee/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-businessplan-Competition-buzzbox",
+      "label": "BuzzBox",
+      "type": "page",
+      "url": "/about/company/business_plan/Competition/buzzbox/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-clients",
+      "label": "👨🏻‍🚀 Target Clients",
+      "type": "page",
+      "url": "/about/company/clients/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-pro-tier-ideas-google-calendar-integration",
+      "label": "📅 Google calendar integration",
+      "type": "page",
+      "url": "/about/products/web_app/pro-tier/ideas 💡/google-calendar-integration/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "blog-2025-11-15-prototron-top-40-application-form",
+      "label": "2025 11 15 Prototron top 40 application form",
+      "type": "blog",
+      "url": "/blog/2025-11-15-prototron-top-40-application-form/",
+      "size": 3,
+      "color": "#4CAF50"
+    },
+    {
+      "id": "research-papers-self-powered-smart-beehive-monitoring-and-controlsystem-sbmacs",
+      "label": "Self Powered Smart Beehive Monitoring and ControlSystem (SBMaCS)",
+      "type": "page",
+      "url": "/research/papers/self-powered-smart-beehive-monitoring-and-controlsystem-sbmacs/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-Team-Roles-beekeeper-community-manager",
+      "label": "Beekeeper \u0026 Community manager 🐝",
+      "type": "page",
+      "url": "/about/company/Team/Roles/beekeeper-community-manager/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-businessplan-Competition-hivepulse",
+      "label": "HivePulse",
+      "type": "page",
+      "url": "/about/company/business_plan/Competition/hivepulse/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "research-papers-accuracy-vs-energy",
+      "label": "Accuracy vs. Energy: An Assessment of Bee Object Inference inVideos from On-Hive Video Loggers with YOLOv3,YOLOv4-Tiny, and YOLOv7-Tiny",
+      "type": "page",
+      "url": "/research/papers/accuracy-vs-energy/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "research-papers-visual-diagnosis-of-the-varroa-destructor-parasitic-mite-in-honeybees-using-object-detector-techniques",
+      "label": "Visual Diagnosis of the Varroa Destructor Parasitic Mite in Honeybees Using Object Detector Techniques",
+      "type": "page",
+      "url": "/research/papers/visual-diagnosis-of-the-varroa-destructor-parasitic-mite-in-honeybees-using-object-detector-techniques/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-businessplan-Competition-beeholdrs",
+      "label": "beehold.rs",
+      "type": "page",
+      "url": "/about/company/business_plan/Competition/beeholdrs/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-Team-Roles-roles",
+      "label": "Roles",
+      "type": "page",
+      "url": "/about/company/Team/Roles/roles/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "blog-2024-04-12-pitch-to-500co",
+      "label": "2024 04 12 💶 Pitch to 500co",
+      "type": "blog",
+      "url": "/blog/2024-04-12-pitch-to-500co/",
+      "size": 3,
+      "color": "#4CAF50"
+    },
+    {
+      "id": "about/products/scales/todo-index",
+      "label": "Todo",
+      "type": "page",
+      "url": "/about/products/scales/todo/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about/products/web_app/free-tier-index",
+      "label": "Free-tier",
+      "type": "page",
+      "url": "/about/products/web_app/free-tier/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about/products/web_app/hobbyist-tier-index",
+      "label": "Hobbyist-tier",
+      "type": "page",
+      "url": "/about/products/web_app/hobbyist-tier/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "docs-robotic-beehive-jetson-orin-nano-setup",
+      "label": "Jetson Orin Nano setup",
+      "type": "doc",
+      "url": "/docs/robotic-beehive/jetson-orin-nano-setup/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "research-papers-the-prediction-of-swarming-in-honeybee-colonies-using-vibrational-spectra",
+      "label": "The prediction of swarming in honeybee colonies using vibrational spectra",
+      "type": "page",
+      "url": "/research/papers/the-prediction-of-swarming-in-honeybee-colonies-using-vibrational-spectra/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-Processes-Hiring-Internship-vidrik-internship-iot-mechatronics-et",
+      "label": "VIDRIK Internship IoT Mechatronics ET",
+      "type": "page",
+      "url": "/about/company/Processes/Hiring/Internship/vidrik-internship-iot-mechatronics-et/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-scales-ideas-measure-weight-distribution-with-multiple-sensors",
+      "label": "Measure weight distribution with multiple sensors",
+      "type": "page",
+      "url": "/about/products/scales/ideas/measure-weight-distribution-with-multiple-sensors/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-scales-ideas-connectivity-over-lora",
+      "label": "📡 Connectivity over LoRa",
+      "type": "page",
+      "url": "/about/products/scales/ideas/connectivity-over-lora/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "docs/entrance-observer-index",
+      "label": "Entrance-observer",
+      "type": "doc",
+      "url": "/docs/entrance-observer/",
+      "size": 5,
+      "color": "#2196F3"
+    },
+    {
+      "id": "docs/robotic-beehive-index",
+      "label": "Robotic-beehive",
+      "type": "doc",
+      "url": "/docs/robotic-beehive/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "about-company-businessplan-Competition-apipuls",
+      "label": "Апипульс",
+      "type": "page",
+      "url": "/about/company/business_plan/Competition/apipuls/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-problems-biological-hornet-attacks",
+      "label": "💢 Hornet attacks",
+      "type": "page",
+      "url": "/about/problems/biological/hornet-attacks/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "blog-2025-12-17-university-of-tartu-students-advance-bee-monitoring-with-ai",
+      "label": "University of Tartu Students Advance Bee Monitoring with AI",
+      "type": "blog",
+      "url": "/blog/2025-12-17-university-of-tartu-students-advance-bee-monitoring-with-ai/",
+      "size": 3,
+      "color": "#4CAF50"
+    },
+    {
+      "id": "docs-entrance-observer-components-jetson-wi-fi-antennas",
+      "label": "Wi Fi antennas",
+      "type": "doc",
+      "url": "/docs/entrance-observer/components-jetson/wi-fi-antennas/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "docs-web-app-DBschemas-gate-video-stream",
+      "label": "gate video stream",
+      "type": "doc",
+      "url": "/docs/web-app/🥞 DB schemas/gate-video-stream/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "research-papers-digital-transformation-of-beekeeping-through-the-use-of-a-decision-making-architecture",
+      "label": "Digital Transformation of Beekeeping through the Use of a Decision Making Architecture",
+      "type": "page",
+      "url": "/research/papers/digital-transformation-of-beekeeping-through-the-use-of-a-decision-making-architecture/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "research-papers-open-remote-web-lab-for-learning-robotics-andros-with-physical-and-simulated-robots-in-anauthentic-developer-environment",
+      "label": "Open Remote Web Lab for Learning Robotics and ROS With Physical and Simulated Robots in an Authentic Developer Environment",
+      "type": "page",
+      "url": "/research/papers/open-remote-web-lab-for-learning-robotics-andros-with-physical-and-simulated-robots-in-anauthentic-developer-environment/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "research-papers-recognition-of-pollen-bearing-bees-from-video-using-convolutional-neural-network",
+      "label": "Recognition of Pollen-bearing Bees from Video using Convolutional Neural Network",
+      "type": "page",
+      "url": "/research/papers/recognition-of-pollen-bearing-bees-from-video-using-convolutional-neural-network/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-prototrondataroom-product-development-mentor-prep",
+      "label": "PRODUCT DEVELOPMENT MENTOR PREP",
+      "type": "page",
+      "url": "/about/company/prototron_dataroom/product-development-mentor-prep/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "blog-2024-06-10-hosting-internship-school-for-qa-engineers",
+      "label": "2024 06 10 🎒 Hosting internship school for QA engineers",
+      "type": "blog",
+      "url": "/blog/2024-06-10-hosting-internship-school-for-qa-engineers/",
+      "size": 3,
+      "color": "#4CAF50"
+    },
+    {
+      "id": "about-company-Processes-Hiring-Responsetemplates-fullstack-engineer",
+      "label": "Fullstack engineer",
+      "type": "page",
+      "url": "/about/company/Processes/Hiring/Response templates/fullstack-engineer/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-roboticbeehive-ideas-audio-interface-to-talk-to-bees",
+      "label": "🔊 Audio interface to talk to bees",
+      "type": "page",
+      "url": "/about/products/robotic_beehive/ideas/audio-interface-to-talk-to-bees/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-hobbyist-tier-hive-section-management",
+      "label": "📦 Hive section management",
+      "type": "page",
+      "url": "/about/products/web_app/hobbyist-tier/hive-section-management/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "research-papers-bee-together-joining-bee-audio-datasets-for-hive-extrapolation-in-ai-based-monitoring",
+      "label": "Bee Together: Joining Bee Audio Datasets for Hive Extrapolation in AI-Based Monitoring",
+      "type": "page",
+      "url": "/research/papers/bee-together-joining-bee-audio-datasets-for-hive-extrapolation-in-ai-based-monitoring/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-businessplan-Competition-apiarybook",
+      "label": "ApiaryBook",
+      "type": "page",
+      "url": "/about/company/business_plan/Competition/apiarybook/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-values-radiate-truth",
+      "label": "Radiate truth 🌞",
+      "type": "page",
+      "url": "/about/company/values/radiate-truth/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-hobbyist-tier-queen-management",
+      "label": "👑 Queen Management",
+      "type": "page",
+      "url": "/about/products/web_app/hobbyist-tier/queen-management/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-hobbyist-tier-hive-management",
+      "label": "📦 Hive Management",
+      "type": "page",
+      "url": "/about/products/web_app/hobbyist-tier/hive-management/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-starter-tier-ideas-drone-brood-detection",
+      "label": "🐝 Drone brood detection",
+      "type": "page",
+      "url": "/about/products/web_app/starter-tier/ideas 💡/drone-brood-detection/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "docs-beehive-sensors-components-battery-shield",
+      "label": "Battery (18650 type, Li-ion) shield",
+      "type": "doc",
+      "url": "/docs/beehive-sensors/components/battery-shield/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "docs-web-app-features-join-colonies",
+      "label": "join colonies",
+      "type": "doc",
+      "url": "/docs/web-app/features/join-colonies/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "about/company/Processes-index",
+      "label": "Processes",
+      "type": "page",
+      "url": "/about/company/Processes/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-Processes-Hiring-Responsetemplates-beekeeper",
+      "label": "Beekeeper",
+      "type": "page",
+      "url": "/about/company/Processes/Hiring/Response templates/beekeeper/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-problems-systemic-distant-locations",
+      "label": "🌲 Distant locations",
+      "type": "page",
+      "url": "/about/problems/systemic/distant-locations/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-scales-ideas-easy-battery-replacement",
+      "label": "Easy battery replacement",
+      "type": "page",
+      "url": "/about/products/scales/ideas/easy-battery-replacement/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-pro-tier-ideas-apiary-top-down-view-of-relative-to-the-sun",
+      "label": "🌞 Apiary top down view of  relative to the sun",
+      "type": "page",
+      "url": "/about/products/web_app/pro-tier/ideas 💡/apiary-top-down-view-of-relative-to-the-sun/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "blog-2025-03-19-tehnopol-ai-accelerator-pitch",
+      "label": "2025 03 19 💶 Tehnopol AI accelerator pitch",
+      "type": "blog",
+      "url": "/blog/2025-03-19-tehnopol-ai-accelerator-pitch/",
+      "size": 3,
+      "color": "#4CAF50"
+    },
+    {
+      "id": "about-products-entranceobserver-ideas-device-management-remote-desktop",
+      "label": "🎮 Device management   Remote desktop",
+      "type": "page",
+      "url": "/about/products/entrance_observer/ideas/device-management-remote-desktop/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-scales-ideas-measure-pm2-pollution",
+      "label": "💨 Measure PM2 pollution",
+      "type": "page",
+      "url": "/about/products/scales/ideas/measure-pm2-pollution/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about/products/robotic_beehive-index",
+      "label": "Robotic_beehive",
+      "type": "page",
+      "url": "/about/products/robotic_beehive/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-businessplan-Competition-beeorganizer",
+      "label": "BeeOrganizer",
+      "type": "page",
+      "url": "/about/company/business_plan/Competition/beeorganizer/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-values-team-effort",
+      "label": "Team effort 🐝",
+      "type": "page",
+      "url": "/about/company/values/team-effort/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-starter-tier-drawing-on-canvas",
+      "label": "✏️ Drawing on canvas",
+      "type": "page",
+      "url": "/about/products/web_app/starter-tier/drawing-on-canvas/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "research-papers-model-for-the-bee-apiary-location-evaluation",
+      "label": "Model for the bee apiary location evaluation",
+      "type": "page",
+      "url": "/research/papers/model-for-the-bee-apiary-location-evaluation/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "research-papers-pdfs-beehive-smart-detector-device-for-the-detection-of-criticalconditions-that-utilize-edge-device-computations-and-deeplearning-inferences",
+      "label": "Beehive Smart Detector Device for the Detection of CriticalConditions That Utilize Edge Device Computations and DeepLearning Inferences",
+      "type": "page",
+      "url": "/research/papers/pdfs/beehive-smart-detector-device-for-the-detection-of-criticalconditions-that-utilize-edge-device-computations-and-deeplearning-inferences/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-businessplan-Competition-beelab",
+      "label": "BeeLab",
+      "type": "page",
+      "url": "/about/company/business_plan/Competition/beelab/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-businessplan-Competition-io-bee",
+      "label": "io bee",
+      "type": "page",
+      "url": "/about/company/business_plan/Competition/io-bee/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-legal",
+      "label": "Legal Documents",
+      "type": "page",
+      "url": "/about/company/legal/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-entranceobserver-todo-hornet-attack-detection",
+      "label": "🚁 Hornet attack detection",
+      "type": "page",
+      "url": "/about/products/entrance_observer/todo/hornet-attack-detection/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-scales-scales",
+      "label": "🌡️ Beehive scales",
+      "type": "page",
+      "url": "/about/products/scales/scales/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-hobbyist-tier-apiary-management",
+      "label": "📦 Apiary Management",
+      "type": "page",
+      "url": "/about/products/web_app/hobbyist-tier/apiary-management/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-hobbyist-tier-queen-cup-detection",
+      "label": "🐝 Queen cup detection",
+      "type": "page",
+      "url": "/about/products/web_app/hobbyist-tier/queen-cup-detection/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-pro-tier-ideas-inventory-management-warehouse-view",
+      "label": "📦 Inventory management   warehouse view",
+      "type": "page",
+      "url": "/about/products/web_app/pro-tier/ideas 💡/inventory-management-warehouse-view/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "docs-web-app-tech-stack-conventions-environments",
+      "label": "Tech stack, conventions, environments",
+      "type": "doc",
+      "url": "/docs/web-app/tech-stack-conventions-environments/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "docs-web-app-features-user-registration",
+      "label": "user registration",
+      "type": "doc",
+      "url": "/docs/web-app/features/user-registration/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "docs-web-app-features-bottom-board-management",
+      "label": "bottom board management",
+      "type": "doc",
+      "url": "/docs/web-app/features/bottom-board-management/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "about-company-values-gather-value",
+      "label": "Gather value 🍯",
+      "type": "page",
+      "url": "/about/company/values/gather-value/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-problems-biological-infestations",
+      "label": "🦀 Infestations",
+      "type": "page",
+      "url": "/about/problems/biological/infestations/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-pro-tier-ideas-grafana-access",
+      "label": "📈 Grafana access",
+      "type": "page",
+      "url": "/about/products/web_app/pro-tier/ideas 💡/grafana-access/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "privacy",
+      "label": "Privacy Policy",
+      "type": "page",
+      "url": "/privacy/",
+      "size": 5,
+      "color": "#607D8B"
+    },
+    {
+      "id": "research-papers-reception-and-learning-of-electric-fields-in-bees",
+      "label": "Reception and learning of electric fields in bees",
+      "type": "page",
+      "url": "/research/papers/reception-and-learning-of-electric-fields-in-bees/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "research-papers-wifi-exposure",
+      "label": "Defined exposure of honey bee colonies to simulated radiofrequency electromagnetic fields (RF-EMF): Negative effects on the homing ability, butn ot on brood development or longevity",
+      "type": "page",
+      "url": "/research/papers/wifi-exposure/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-problems-colony-without-a-queen",
+      "label": "💀 Colony without a queen",
+      "type": "page",
+      "url": "/about/problems/colony-without-a-queen/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-starter-tier-ideas-laying-workers-cell-detection",
+      "label": "🐝 Laying workers cell detection",
+      "type": "page",
+      "url": "/about/products/web_app/starter-tier/ideas 💡/laying-workers-cell-detection/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-problems-ugly-beehives",
+      "label": "🗃️ Ugly beehives",
+      "type": "page",
+      "url": "/about/problems/ugly-beehives/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-entranceobserver-ideas-detect-pesticide-exposure",
+      "label": "🤢 Detect pesticide exposure",
+      "type": "page",
+      "url": "/about/products/entrance_observer/ideas/detect-pesticide-exposure/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-hobbyist-tier-ideas-keyboard-shortcuts-support",
+      "label": "🖮 keyboard shortcuts support",
+      "type": "page",
+      "url": "/about/products/web_app/hobbyist-tier/ideas 💡/keyboard-shortcuts-support/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-pro-tier-ideas-colony-comparison",
+      "label": "⚖️ Colony comparison",
+      "type": "page",
+      "url": "/about/products/web_app/pro-tier/ideas 💡/colony-comparison/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "docs-entrance-observer-components-orin-mounts",
+      "label": "Mounts",
+      "type": "doc",
+      "url": "/docs/entrance-observer/components-orin/mounts/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "blog-2024-11-29-andmetorm-hackathon",
+      "label": "2024 11 29 🛠️ Andmetorm hackathon",
+      "type": "blog",
+      "url": "/blog/2024-11-29-andmetorm-hackathon/",
+      "size": 3,
+      "color": "#4CAF50"
+    },
+    {
+      "id": "research-papers-tracking-varroa-parasitism-using-handheld-infrared-cameras-is-eusocial-fever-the-key",
+      "label": "Tracking Varroa Parasitism Using Handheld Infrared Cameras:Is Eusocial Fever the Key?",
+      "type": "page",
+      "url": "/research/papers/tracking-varroa-parasitism-using-handheld-infrared-cameras-is-eusocial-fever-the-key/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about/company/business_plan-index",
+      "label": "Business_plan",
+      "type": "page",
+      "url": "/about/company/business_plan/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-businessplan-Competition-hivetracks",
+      "label": "hivetracks",
+      "type": "page",
+      "url": "/about/company/business_plan/Competition/hivetracks/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "docs-entrance-observer-components-orin-display",
+      "label": "Display",
+      "type": "doc",
+      "url": "/docs/entrance-observer/components-orin/display/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "research-papers-a-minimally-invasive-approach-towards-ecosystem-hacking-with-honeybees",
+      "label": "A Minimally Invasive Approach Towards “Ecosystem Hacking” With Honeybees",
+      "type": "page",
+      "url": "/research/papers/a-minimally-invasive-approach-towards-ecosystem-hacking-with-honeybees/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-problems-storm-wind-collapsing-beehives",
+      "label": "🗃️ Storm wind collapsing beehives",
+      "type": "page",
+      "url": "/about/problems/storm-wind-collapsing-beehives/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-pro-tier-timeseries-data-analytics",
+      "label": "📊 Timeseries data analytics",
+      "type": "page",
+      "url": "/about/products/web_app/pro-tier/timeseries-data-analytics/",
+      "size": 7,
+      "color": "#607D8B"
+    },
+    {
+      "id": "docs-beehive-sensors-components-todo-pm2-dust-sensor",
+      "label": "PM2 dust sensor",
+      "type": "doc",
+      "url": "/docs/beehive-sensors/components/todo/pm2-dust-sensor/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "about-products-roboticapiary-ideas-varroa-mite-detection-with-infra-red-camera",
+      "label": "🦀 Varroa mite detection with infra red camera",
+      "type": "page",
+      "url": "/about/products/robotic_apiary/ideas/varroa-mite-detection-with-infra-red-camera/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "docs-entrance-observer-components-orin-2020-aluminum-extrusion",
+      "label": "2020 Aluminum Extrusion",
+      "type": "doc",
+      "url": "/docs/entrance-observer/components-orin/2020-aluminum-extrusion/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "research-papers-ambient-electromagnetic-radiation-as-a-predictor-of-honey-bee-traffic",
+      "label": "Ambient Electromagnetic Radiation as a Predictor of Honey Bee (Apis mellifera) Traffic in Linear and Non-Linear Regression: Numerical Stability, Physical Time and Energy Efficiency",
+      "type": "page",
+      "url": "/research/papers/ambient-electromagnetic-radiation-as-a-predictor-of-honey-bee-traffic/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "research-papers-current-achievements-and-future-developments-of-a-novel-ai-based-visual-monitoring-of-beehives-in-ecotoxicology-and-for-the-monitoring-of-landscape-structures",
+      "label": "Current achievements and future developments of a novel AI based visual monitoring of beehives in ecotoxicology and for the monitoring of landscape structures",
+      "type": "page",
+      "url": "/research/papers/current-achievements-and-future-developments-of-a-novel-ai-based-visual-monitoring-of-beehives-in-ecotoxicology-and-for-the-monitoring-of-landscape-structures/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-roboticbeehive-ideas-close-mechanized-hive-entrance-in-case-of-hornet-attack",
+      "label": "🛑 Close mechanized hive entrance in case of hornet attack",
+      "type": "page",
+      "url": "/about/products/robotic_beehive/ideas/close-mechanized-hive-entrance-in-case-of-hornet-attack/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-pro-tier-ideas-apiary-satellite-view",
+      "label": "🛰️ Apiary satellite view",
+      "type": "page",
+      "url": "/about/products/web_app/pro-tier/ideas 💡/apiary-satellite-view/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "blog-2025-12-07-gratheon-trademark-filed",
+      "label": "Gratheon Trademark Registration Approved in Estonia",
+      "type": "blog",
+      "url": "/blog/2025-12-07-gratheon-trademark-filed/",
+      "size": 3,
+      "color": "#4CAF50"
+    },
+    {
+      "id": "docs-robotic-beehive-design",
+      "label": "Design",
+      "type": "doc",
+      "url": "/docs/robotic-beehive/design/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "research-papers-comparing-weight-dynamics-between-urban-and-rural-honeybee-colonies-in-latvia",
+      "label": "Comparing weight dynamics between urban and rural honeybee colonies in Latvia",
+      "type": "page",
+      "url": "/research/papers/comparing-weight-dynamics-between-urban-and-rural-honeybee-colonies-in-latvia/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "research-papers-honey-bees-modify-plantpollinator-network-structure",
+      "label": "Honey bees modify plantpollinator network structure",
+      "type": "page",
+      "url": "/research/papers/honey-bees-modify-plantpollinator-network-structure/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "docs/web-app/🥞 DB schemas-index",
+      "label": "🥞 DB schemas",
+      "type": "doc",
+      "url": "/docs/web-app/🥞 DB schemas/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "about/products/web_app/pro-tier/ideas 💡-index",
+      "label": "Ideas 💡",
+      "type": "page",
+      "url": "/about/products/web_app/pro-tier/ideas 💡/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-hobbyist-tier-hive-placement-planner",
+      "label": "🗺️ Hive Placement Planner",
+      "type": "page",
+      "url": "/about/products/web_app/hobbyist-tier/hive-placement-planner/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-starter-tier-hive-bottom-varroa-count",
+      "label": "🦀 Hive bottom board varroa counting",
+      "type": "page",
+      "url": "/about/products/web_app/starter-tier/hive-bottom-varroa-count/",
+      "size": 5,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about/company/values-index",
+      "label": "Values",
+      "type": "page",
+      "url": "/about/company/values/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-businessplan-Competition-forsage",
+      "label": "ForSage",
+      "type": "page",
+      "url": "/about/company/business_plan/Competition/forsage/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-roboticbeehive-ideas-bee-nursing-video-analysis",
+      "label": "🐝 Bee nursing video analysis",
+      "type": "page",
+      "url": "/about/products/robotic_beehive/ideas/bee-nursing-video-analysis/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "blog-2023-10-27-winner-in-api-world-ai-devworld-hackaton",
+      "label": "2023 10 27 🛠️ Winner in API World + AI DevWorld Hackaton",
+      "type": "blog",
+      "url": "/blog/2023-10-27-winner-in-api-world-ai-devworld-hackaton/",
+      "size": 3,
+      "color": "#4CAF50"
+    },
+    {
+      "id": "docs-beehive-sensors-components-todo-co2-sensor-ens160",
+      "label": "CO2 sensor   ENS160",
+      "type": "doc",
+      "url": "/docs/beehive-sensors/components/todo/co2-sensor-ens160/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "docs-web-app-DBschemas-user-cycle",
+      "label": "user cycle",
+      "type": "doc",
+      "url": "/docs/web-app/🥞 DB schemas/user-cycle/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "research-papers-precision-beekeeping-systems-state-of-the-art-pros-and-cons-and-their-application-as-tools-for-advancing-thebeekeeping-sector",
+      "label": "Precision Beekeeping Systems: State of the Art, Pros and Cons, and Their Application as Tools for Advancing theBeekeeping Sector",
+      "type": "page",
+      "url": "/research/papers/precision-beekeeping-systems-state-of-the-art-pros-and-cons-and-their-application-as-tools-for-advancing-thebeekeeping-sector/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-values-observable-mind",
+      "label": "Observable mind 🧿",
+      "type": "page",
+      "url": "/about/company/values/observable-mind/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-businessplan-Competition-smsvaga",
+      "label": "SMSVaga",
+      "type": "page",
+      "url": "/about/company/business_plan/Competition/smsvaga/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-businessplan-Competition-i-bee",
+      "label": "i bee",
+      "type": "page",
+      "url": "/about/company/business_plan/Competition/i-bee/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-hobbyist-tier-inventory-management",
+      "label": "📦 Warehouse inventory management",
+      "type": "page",
+      "url": "/about/products/web_app/hobbyist-tier/inventory-management/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "docs-billing-system",
+      "label": "billing system",
+      "type": "doc",
+      "url": "/docs/billing-system/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "docs-web-app-DBschemas-swarm-api",
+      "label": "swarm api",
+      "type": "doc",
+      "url": "/docs/web-app/🥞 DB schemas/swarm-api/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "research-papers-beepiv-a-method-to-measure-apis-mellifera-traffic-with-particle-image-velocimetry-in-videos",
+      "label": "BeePIV: A Method to Measure Apis Mellifera Traffic with Particle Image Velocimetry in Videos",
+      "type": "page",
+      "url": "/research/papers/beepiv-a-method-to-measure-apis-mellifera-traffic-with-particle-image-velocimetry-in-videos/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-Processes-Hiring-Internship-internship-iot-mechatronics",
+      "label": "Internship IoT Mechatronics",
+      "type": "page",
+      "url": "/about/company/Processes/Hiring/Internship/internship-iot-mechatronics/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-Processes-Hiring-Responsetemplates-ml-engineer-role",
+      "label": "ML engineer role",
+      "type": "page",
+      "url": "/about/company/Processes/Hiring/Response templates/ml-engineer-role/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-businessplan-Competition-purple-hive",
+      "label": "🇦🇺 Purple Hive",
+      "type": "page",
+      "url": "/about/company/business_plan/Competition/purple-hive/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-pro-tier-ideas-ant-detection",
+      "label": "🐜 Ant detection",
+      "type": "page",
+      "url": "/about/products/web_app/pro-tier/ideas 💡/ant-detection/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "blog-2023-12-20-devclubeu-talk-about-ai-and-bees",
+      "label": "2023 12 20 📢 Devclub.eu talk about AI and bees",
+      "type": "blog",
+      "url": "/blog/2023-12-20-devclubeu-talk-about-ai-and-bees/",
+      "size": 3,
+      "color": "#4CAF50"
+    },
+    {
+      "id": "docs-API-authentication",
+      "label": "🔑 Authentication",
+      "type": "doc",
+      "url": "/docs/API/authentication/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "docs-web-app-features-hive-management",
+      "label": "hive management",
+      "type": "doc",
+      "url": "/docs/web-app/features/hive-management/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "about-products-webapp-basic-functionality-user-login",
+      "label": "🧑‍🚀 User login",
+      "type": "page",
+      "url": "/about/products/web_app/basic-functionality/user-login/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-free-tier-feeding-history",
+      "label": "🍭 Feeding history",
+      "type": "page",
+      "url": "/about/products/web_app/free-tier/feeding-history/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-businessplan-business-plan",
+      "label": "🏇 Go to market strategy",
+      "type": "page",
+      "url": "/about/company/business_plan/business-plan/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-starter-tier-inspection-management",
+      "label": "🔎 Inspection management",
+      "type": "page",
+      "url": "/about/products/web_app/starter-tier/inspection-management/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "blog-2023-01-12-pitched-to-picus-capital",
+      "label": "2023 01 12 💶 Pitched to Picus Capital",
+      "type": "blog",
+      "url": "/blog/2023-01-12-pitched-to-picus-capital/",
+      "size": 3,
+      "color": "#4CAF50"
+    },
+    {
+      "id": "docs-beehive-sensors-choice-of-procesor-chip",
+      "label": "Choice of procesor chip",
+      "type": "doc",
+      "url": "/docs/beehive-sensors/choice-of-procesor-chip/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "research-papers-comb",
+      "label": "COMB: Common Open Modular robotic platform for Bees",
+      "type": "page",
+      "url": "/research/papers/comb/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "research-papers-social-networks-predict-the-life-and-death-of-honeybees",
+      "label": "Social networks predict the life and death of honeybees",
+      "type": "page",
+      "url": "/research/papers/social-networks-predict-the-life-and-death-of-honeybees/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-pro-tier-alerts",
+      "label": "🔔  Alerts",
+      "type": "page",
+      "url": "/about/products/web_app/pro-tier/alerts/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "docs-API-api",
+      "label": "🔗 API",
+      "type": "doc",
+      "url": "/docs/API/api/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "docs-index",
+      "label": "Docs",
+      "type": "doc",
+      "url": "/docs/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "en-archive",
+      "label": "Archive",
+      "type": "page",
+      "url": "/archive/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-problems-alcohol-washing-killing-bees",
+      "label": "💀 Alcohol washing killing bees",
+      "type": "page",
+      "url": "/about/problems/alcohol-washing-killing-bees/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-templates-feature-marketing-template",
+      "label": "feature marketing template",
+      "type": "page",
+      "url": "/about/products/_templates/feature-marketing-template/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-roboticapiary-robotic-apiary",
+      "label": "🪬 Robotic Apiary",
+      "type": "page",
+      "url": "/about/products/robotic_apiary/robotic-apiary/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-starter-tier-ideas-flower-blooming-map",
+      "label": "🌻 Flower blooming map",
+      "type": "page",
+      "url": "/about/products/web_app/starter-tier/ideas 💡/flower-blooming-map/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "research-papers-biodiversity-conservation-and-current-threats-to-european-honeybees",
+      "label": "Biodiversity conservation and current threats to European honeybees",
+      "type": "page",
+      "url": "/research/papers/biodiversity-conservation-and-current-threats-to-european-honeybees/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "research-papers-modular-sensory-hardware-and-data-processing-solution-forimplementation-of-the-precision-beekeeping",
+      "label": "Modular sensory hardware and data processing solution forimplementation of the precision beekeeping",
+      "type": "page",
+      "url": "/research/papers/modular-sensory-hardware-and-data-processing-solution-forimplementation-of-the-precision-beekeeping/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "blog-index",
+      "label": "Blog",
+      "type": "blog",
+      "url": "/blog/",
+      "size": 3,
+      "color": "#4CAF50"
+    },
+    {
+      "id": "about-products-scales-todo-tampering-detection",
+      "label": "🐻 Tampering detection",
+      "type": "page",
+      "url": "/about/products/scales/todo/tampering-detection/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-pro-tier-ideas-drone-detection",
+      "label": "🔔 Drone detection",
+      "type": "page",
+      "url": "/about/products/web_app/pro-tier/ideas 💡/drone-detection/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "research-papers-evaluation-of-the-honey-bee-colonies-weight-gain-during-theintensive-foraging-period",
+      "label": "Evaluation of the honey bee colonies weight gain during theintensive foraging period",
+      "type": "page",
+      "url": "/research/papers/evaluation-of-the-honey-bee-colonies-weight-gain-during-theintensive-foraging-period/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "research-papers-intelligent-beehive-monitoring-system-based-on-internet-of-things-and-colony-state-analysis",
+      "label": "Intelligent beehive monitoring system based on internet of things and colony state analysis",
+      "type": "page",
+      "url": "/research/papers/intelligent-beehive-monitoring-system-based-on-internet-of-things-and-colony-state-analysis/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "research-papers-pollinators-as-data-collectors-estimating-floral-diversity-with-bees-and-computer-vision",
+      "label": "Pollinators as Data Collectors Estimating Floral Diversity with Bees and Computer Vision",
+      "type": "page",
+      "url": "/research/papers/pollinators-as-data-collectors-estimating-floral-diversity-with-bees-and-computer-vision/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "docs-beehive-sensors-components-todo-microphone-amplifier-stable",
+      "label": "Microphone Amplifier Stable",
+      "type": "doc",
+      "url": "/docs/beehive-sensors/components/todo/microphone-amplifier-stable/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "research-datasets",
+      "label": "Datasets",
+      "type": "page",
+      "url": "/research/datasets/",
+      "size": 5,
+      "color": "#607D8B"
+    },
+    {
+      "id": "research-papers-impact-of-the-precision-beekeeping-on-the-living-environment",
+      "label": "Impact of the precision beekeeping on the living environment",
+      "type": "page",
+      "url": "/research/papers/impact-of-the-precision-beekeeping-on-the-living-environment/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "research-papers-towards-dense-object-tracking-in-a-2d-honeybee-hive",
+      "label": "Towards dense object tracking in a 2D honeybee hive",
+      "type": "page",
+      "url": "/research/papers/towards-dense-object-tracking-in-a-2d-honeybee-hive/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "docs/entrance-observer/components-orin-index",
+      "label": "Components-orin",
+      "type": "doc",
+      "url": "/docs/entrance-observer/components-orin/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "about-problems-biological-swarming",
+      "label": "🧶 Swarming",
+      "type": "page",
+      "url": "/about/problems/biological/swarming/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "research-papers-towards-varroa-destructor-mite-detection-using-a-narrow-spectra-illumination",
+      "label": "Towards Varroa destructor mite detection using a narrow spectra illumination",
+      "type": "page",
+      "url": "/research/papers/towards-varroa-destructor-mite-detection-using-a-narrow-spectra-illumination/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-problems-biological-diseases",
+      "label": "🦀 Diseases",
+      "type": "page",
+      "url": "/about/problems/biological/diseases/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-roboticbeehive-ideas-energy-autonomy",
+      "label": "🔌 Energy autonomy",
+      "type": "page",
+      "url": "/about/products/robotic_beehive/ideas/energy-autonomy/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "blog-2024-06-17-pitch-to-purposetechvc",
+      "label": "2024 06 17 💶 Pitch to purposetech.vc",
+      "type": "blog",
+      "url": "/blog/2024-06-17-pitch-to-purposetechvc/",
+      "size": 3,
+      "color": "#4CAF50"
+    },
+    {
+      "id": "docs-beehive-sensors-components-display",
+      "label": "Display - LCD1602",
+      "type": "doc",
+      "url": "/docs/beehive-sensors/components/display/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "research-papers-honey-bee-colonies-remote-monitoring-system",
+      "label": "Honey Bee Colonies Remote Monitoring System",
+      "type": "page",
+      "url": "/research/papers/honey-bee-colonies-remote-monitoring-system/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "docs/entrance-observer/components-jetson-index",
+      "label": "Components-jetson",
+      "type": "doc",
+      "url": "/docs/entrance-observer/components-jetson/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "about-company-Team-equity-and-fundraising-plan",
+      "label": "🍰 Equity and fundraising plan",
+      "type": "page",
+      "url": "/about/company/Team/equity-and-fundraising-plan/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-clients-tech-scale-up-companies",
+      "label": "Corporate Hive Sponsorship Program",
+      "type": "page",
+      "url": "/about/company/clients/tech-scale-up-companies/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-problems-systemic-pesticide-poisoning",
+      "label": "🤢 Pesticide poisoning",
+      "type": "page",
+      "url": "/about/problems/systemic/pesticide-poisoning/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-hobbyist-tier-ideas-apiary-position-sharing",
+      "label": "♻️ Apiary position sharing",
+      "type": "page",
+      "url": "/about/products/web_app/hobbyist-tier/ideas 💡/apiary-position-sharing/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-pro-tier-count-bees-in-the-cloud",
+      "label": "📈 Count bees   in the cloud",
+      "type": "page",
+      "url": "/about/products/web_app/pro-tier/count-bees-in-the-cloud/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "docs-robotic-beehive-4-axis-gantry",
+      "label": "4 axis gantry",
+      "type": "doc",
+      "url": "/docs/robotic-beehive/4-axis-gantry/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "about/products/web_app-index",
+      "label": "Web_app",
+      "type": "page",
+      "url": "/about/products/web_app/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "docs-beehive-sensors-components-hx711-bar",
+      "label": "Weight sensor HX711 (bar-type)",
+      "type": "doc",
+      "url": "/docs/beehive-sensors/components/hx711-bar/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "docs-web-app-features-queen-management",
+      "label": "queen management",
+      "type": "doc",
+      "url": "/docs/web-app/features/queen-management/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "research-papers-iot-and-machine-learning-techniques-for-precision-beekeeping-a-review",
+      "label": "IoT and Machine Learning Techniques for Precision Beekeeping:A Review",
+      "type": "page",
+      "url": "/research/papers/iot-and-machine-learning-techniques-for-precision-beekeeping-a-review/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-Processes-Hiring-hiring",
+      "label": "Hiring",
+      "type": "page",
+      "url": "/about/company/Processes/Hiring/hiring/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-entranceobserver-ideas-bee-pose-morphometric-model",
+      "label": "🐝 Bee pose   morphometric model",
+      "type": "page",
+      "url": "/about/products/entrance_observer/ideas/bee-pose-morphometric-model/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "blog-2024-02-29-pitched-at-founders-live",
+      "label": "2024 02 29 📢 Pitched at Founders Live",
+      "type": "blog",
+      "url": "/blog/2024-02-29-pitched-at-founders-live/",
+      "size": 3,
+      "color": "#4CAF50"
+    },
+    {
+      "id": "about-company-businessplan-Competition-apicai",
+      "label": "🇩🇪 ApicAI",
+      "type": "page",
+      "url": "/about/company/business_plan/Competition/apicai/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-problems-mice-killing-a-colony",
+      "label": "🐭 Mice killing a colony",
+      "type": "page",
+      "url": "/about/problems/mice-killing-a-colony/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-entranceobserver-features-count-bees-coming-in-and-out-on-the-edge",
+      "label": "📈 Count bees coming in and out   on the edge",
+      "type": "page",
+      "url": "/about/products/entrance_observer/features/count-bees-coming-in-and-out-on-the-edge/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-pro-tier-ideas-multiple-user-support",
+      "label": "👨🏻‍🚀 Multiple user support",
+      "type": "page",
+      "url": "/about/products/web_app/pro-tier/ideas 💡/multiple-user-support/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-businessplan-Competition-beeplus-beekeeping",
+      "label": "BeePlus Beekeeping",
+      "type": "page",
+      "url": "/about/company/business_plan/Competition/beeplus-beekeeping/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-problems-core-unscalable-work",
+      "label": "💪🏻 Unscalable work",
+      "type": "page",
+      "url": "/about/problems/core/unscalable-work/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "research-papers-buzzing-with-intelligence-a-systematic-review-of-smartbeehive-technologies",
+      "label": "Buzzing with Intelligence: A Systematic Review of Smart Beehive Technologies",
+      "type": "page",
+      "url": "/research/papers/buzzing-with-intelligence-a-systematic-review-of-smartbeehive-technologies/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-businessplan-Competition-hivemind",
+      "label": "HiveMind",
+      "type": "page",
+      "url": "/about/company/business_plan/Competition/hivemind/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-pro-tier-ideas-frame-analysis-starvation-detection-and-alert",
+      "label": "🔔 Frame analysis   starvation detection and alert",
+      "type": "page",
+      "url": "/about/products/web_app/pro-tier/ideas 💡/frame-analysis-starvation-detection-and-alert/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "docs-beehive-sensors-components-todo-barometric-sensor-bmp180",
+      "label": "Barometric sensor   BMP180",
+      "type": "doc",
+      "url": "/docs/beehive-sensors/components/todo/barometric-sensor-bmp180/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "docs/web-app/_templates-index",
+      "label": "_templates",
+      "type": "doc",
+      "url": "/docs/web-app/_templates/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "about-products-entranceobserver-features-bee-interaction-detection",
+      "label": "👭 Bee interaction detection",
+      "type": "page",
+      "url": "/about/products/entrance_observer/features/bee-interaction-detection/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-roboticbeehive-ideas-ventilation-control",
+      "label": "🚁 Ventilation control",
+      "type": "page",
+      "url": "/about/products/robotic_beehive/ideas/ventilation-control/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-flexible-tier-alerts",
+      "label": "🔔 Alerts",
+      "type": "page",
+      "url": "/about/products/web_app/flexible-tier/alerts/",
+      "size": 9,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-hobbyist-tier-ideas-user-password-change",
+      "label": "🧑‍🚀 User password change",
+      "type": "page",
+      "url": "/about/products/web_app/hobbyist-tier/ideas 💡/user-password-change/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "research-papers-analysis-of-the-waggle-dance-motion-of-honeybees-for-the-design-of-a-biomimetic-honeybee-robot",
+      "label": "Analysis of the Waggle Dance Motion of Honeybees for the Design of a Biomimetic Honeybee Robot",
+      "type": "page",
+      "url": "/research/papers/analysis-of-the-waggle-dance-motion-of-honeybees-for-the-design-of-a-biomimetic-honeybee-robot/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-roboticbeehive-ideas-6-channel-audio-monitoring",
+      "label": "🎙️ 6 channel audio monitoring",
+      "type": "page",
+      "url": "/about/products/robotic_beehive/ideas/6-channel-audio-monitoring/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "docs-entrance-observer-remote-desktop-connection-setup",
+      "label": "Remote Desktop connection setup 🖥️",
+      "type": "doc",
+      "url": "/docs/entrance-observer/remote-desktop-connection-setup/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "research-papers-bee-colony-remote-monitoring-based-on-iot-using-esp-now-protocol",
+      "label": "Bee colony remote monitoring based on IoT using ESP-NOW protocol",
+      "type": "page",
+      "url": "/research/papers/bee-colony-remote-monitoring-based-on-iot-using-esp-now-protocol/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "research-papers",
+      "label": "Research papers",
+      "type": "page",
+      "url": "/research/papers/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about/products/robotic_apiary-index",
+      "label": "Robotic_apiary",
+      "type": "page",
+      "url": "/about/products/robotic_apiary/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-entranceobserver-entrance-observer",
+      "label": "👁️‍🗨️ Entrance Observer",
+      "type": "page",
+      "url": "/about/products/entrance_observer/entrance-observer/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "docs-beehive-sensors-components-ds18b20",
+      "label": "Temperature sensor - DS18B20",
+      "type": "doc",
+      "url": "/docs/beehive-sensors/components/ds18b20/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "docs-entrance-observer-components-orin-orin-nano",
+      "label": "Orin Nano",
+      "type": "doc",
+      "url": "/docs/entrance-observer/components-orin/orin-nano/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "blog-2023-12-06-estoniai-meetup-v5",
+      "label": "2023 12 06 📢 EstoniAI Meetup v5",
+      "type": "blog",
+      "url": "/blog/2023-12-06-estoniai-meetup-v5/",
+      "size": 3,
+      "color": "#4CAF50"
+    },
+    {
+      "id": "docs-beehive-sensors-components-todo-temperature-humidity-sensor-alternative",
+      "label": "Temperature   Humidity sensor alternative",
+      "type": "doc",
+      "url": "/docs/beehive-sensors/components/todo/temperature-humidity-sensor-alternative/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "research",
+      "label": "Research",
+      "type": "page",
+      "url": "/research/",
+      "size": 5,
+      "color": "#607D8B"
+    },
+    {
+      "id": "research-papers-autonomous-tracking-of-honey-bee-behaviors-over-long-term-periods-with-cooperating-robots",
+      "label": "Autonomous tracking of honey bee behaviors over long-term periods with cooperating robots",
+      "type": "page",
+      "url": "/research/papers/autonomous-tracking-of-honey-bee-behaviors-over-long-term-periods-with-cooperating-robots/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "research-papers-deepbees-building-and-scaling-convolutional-neuronal-nets-for-fast-and-large-scale-visual-monitoring-of-bee-hives",
+      "label": "DeepBees – Building and Scaling Convolutional Neuronal Nets For Fast and Large-scale Visual Monitoring of Bee Hives",
+      "type": "page",
+      "url": "/research/papers/deepbees-building-and-scaling-convolutional-neuronal-nets-for-fast-and-large-scale-visual-monitoring-of-bee-hives/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about/products/scales/features-index",
+      "label": "Features",
+      "type": "page",
+      "url": "/about/products/scales/features/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-entrancecountercircular",
+      "label": "Circular entrance counter",
+      "type": "page",
+      "url": "/about/products/entrance_counter_circular/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "research-papers-automatic-detection-and-classification-of-honey-bee-comb-cells-using-deeplearning",
+      "label": "⭐️ Automatic detection and classification of honey bee comb cells using deeplearning",
+      "type": "page",
+      "url": "/research/papers/automatic-detection-and-classification-of-honey-bee-comb-cells-using-deeplearning/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "docs-entrance-observer-jetson-orin-setup",
+      "label": "Jetson Orin setup",
+      "type": "doc",
+      "url": "/docs/entrance-observer/jetson-orin-setup/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "en-archive-2025",
+      "label": "Archive: 2025",
+      "type": "page",
+      "url": "/archive/2025/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-entranceobserver-ideas-detect-queen-mating-from-entrance-video",
+      "label": "👑 Detect queen mating from entrance video",
+      "type": "page",
+      "url": "/about/products/entrance_observer/ideas/detect-queen-mating-from-entrance-video/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-pro-tier-ideas-analytics-demography-and-simulation",
+      "label": "🐝 Analytics   demography and simulation",
+      "type": "page",
+      "url": "/about/products/web_app/pro-tier/ideas 💡/analytics-demography-and-simulation/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "docs-entrance-observer-components-jetson-jetson-nano",
+      "label": "Jetson Nano",
+      "type": "doc",
+      "url": "/docs/entrance-observer/components-jetson/jetson-nano/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "research-papers-bio-hybrid-systems-for-ecosystem-level-effects",
+      "label": "Bio Hybrid Systems for Ecosystem Level Effects",
+      "type": "page",
+      "url": "/research/papers/bio-hybrid-systems-for-ecosystem-level-effects/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "research-papers-deeplabcut-based-daily-behavioural-and-posture-analysis-in-a-cricket",
+      "label": "DeepLabCut based daily behavioural and posture analysis in a cricket",
+      "type": "page",
+      "url": "/research/papers/deeplabcut-based-daily-behavioural-and-posture-analysis-in-a-cricket/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-problems-bears-destroying-hives-colonies",
+      "label": "🐻 Bears destroying hives \u0026 colonies",
+      "type": "page",
+      "url": "/about/problems/bears-destroying-hives-colonies/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-Processes-Hiring-Responsetemplates-response-templates",
+      "label": "Response templates",
+      "type": "page",
+      "url": "/about/company/Processes/Hiring/Response templates/response-templates/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-roboticbeehive-robotic-beehive",
+      "label": "🧿 Robotic Beehive",
+      "type": "page",
+      "url": "/about/products/robotic_beehive/robotic-beehive/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "docs-beehive-sensors-components-case",
+      "label": "Aluminium Enclosure",
+      "type": "doc",
+      "url": "/docs/beehive-sensors/components/case/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "research-papers-automatic-detection-and-decoding-of-honeybee-waggle-dances",
+      "label": "Automatic detection and decoding of honeybee waggle dances",
+      "type": "page",
+      "url": "/research/papers/automatic-detection-and-decoding-of-honeybee-waggle-dances/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "research-papers-labelbee-a-web-platform-for-large-scale-semi-automated-analysis-of-honeybee-behavior-from-video",
+      "label": "LabelBee: a web platform for large-scale semi-automated analysis of honeybee behavior from video",
+      "type": "page",
+      "url": "/research/papers/labelbee-a-web-platform-for-large-scale-semi-automated-analysis-of-honeybee-behavior-from-video/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about/products/entrance_observer-index",
+      "label": "Entrance_observer",
+      "type": "page",
+      "url": "/about/products/entrance_observer/",
+      "size": 5,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about/products/scales/ideas-index",
+      "label": "Ideas",
+      "type": "page",
+      "url": "/about/products/scales/ideas/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-Team",
+      "label": "⚽️ Team",
+      "type": "page",
+      "url": "/about/company/Team/",
+      "size": 5,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-businessplan-Competition-nectar",
+      "label": "🇨🇦 Nectar",
+      "type": "page",
+      "url": "/about/company/business_plan/Competition/nectar/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-why-open-source",
+      "label": "🤲 Why open source",
+      "type": "page",
+      "url": "/about/company/why-open-source/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "docs-beehive-sensors-components-todo-carbon-dioxide-co2-temperature-humidity-vocs-air-quality-sensor-module",
+      "label": "Carbon Dioxide CO2 Temperature Humidity VOCs Air Quality Sensor Module",
+      "type": "doc",
+      "url": "/docs/beehive-sensors/components/todo/carbon-dioxide-co2-temperature-humidity-vocs-air-quality-sensor-module/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "docs-beehive-sensors-components-todo-hx711-flat",
+      "label": "Weight sensor HX711 (flat-type)",
+      "type": "doc",
+      "url": "/docs/beehive-sensors/components/todo/hx711-flat/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "about/products/robotic_beehive/todo-index",
+      "label": "Todo",
+      "type": "page",
+      "url": "/about/products/robotic_beehive/todo/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-values-humbly-kind",
+      "label": "Humbly kind 🧸",
+      "type": "page",
+      "url": "/about/company/values/humbly-kind/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-problems-biological-robbing-state",
+      "label": "💢 Robbing state",
+      "type": "page",
+      "url": "/about/problems/biological/robbing-state/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-roboticbeehive-ideas-automatic-acid-treatment-against-varroa",
+      "label": "🧪 Automatic acid treatment against varroa",
+      "type": "page",
+      "url": "/about/products/robotic_beehive/ideas/automatic-acid-treatment-against-varroa/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "docs-web-app-features-user-profile-editing",
+      "label": "user profile editing",
+      "type": "doc",
+      "url": "/docs/web-app/features/user-profile-editing/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "about/company/Processes/Hiring/Internship-index",
+      "label": "Internship",
+      "type": "page",
+      "url": "/about/company/Processes/Hiring/Internship/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-problems-warehouse-organization",
+      "label": "📦 Warehouse organization",
+      "type": "page",
+      "url": "/about/problems/warehouse-organization/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-pro-tier-colony-comparison-analytics",
+      "label": "⚖️ Colony comparison analytics",
+      "type": "page",
+      "url": "/about/products/web_app/pro-tier/colony-comparison-analytics/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "research-papers-a-preliminary-study-of-image-analysis-forparasite-detection-on-honey-bees",
+      "label": "A Preliminary Study of Image Analysis forParasite Detection on Honey Bees",
+      "type": "page",
+      "url": "/research/papers/a-preliminary-study-of-image-analysis-forparasite-detection-on-honey-bees/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "research-papers-beealarmed-masters-thesis",
+      "label": "BeeAlarmed. Masters thesis",
+      "type": "page",
+      "url": "/research/papers/beealarmed-masters-thesis/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "blog-2024-09-26-attended-building-a-viral-product-webinar",
+      "label": "2024 09 26 🎒 Attended Building a Viral Product Webinar",
+      "type": "blog",
+      "url": "/blog/2024-09-26-attended-building-a-viral-product-webinar/",
+      "size": 3,
+      "color": "#4CAF50"
+    },
+    {
+      "id": "docs-API-share-token-authentication",
+      "label": "Share Token Authentication",
+      "type": "doc",
+      "url": "/docs/API/share-token-authentication/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "about-company-Processes-features-and-tasks",
+      "label": "☑️ Features and tasks",
+      "type": "page",
+      "url": "/about/company/Processes/features-and-tasks/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-Processes-services-and-tools-that-we-use",
+      "label": "🖥️ Services and tools that we use",
+      "type": "page",
+      "url": "/about/company/Processes/services-and-tools-that-we-use/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-Team-Roles-fullstack-engineer",
+      "label": "Fullstack engineer",
+      "type": "page",
+      "url": "/about/company/Team/Roles/fullstack-engineer/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-businessplan-Competition-apimanager",
+      "label": "ApiManager",
+      "type": "page",
+      "url": "/about/company/business_plan/Competition/apimanager/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-hobbyist-tier-frame-side-management",
+      "label": "🖼️ Frame Side Management",
+      "type": "page",
+      "url": "/about/products/web_app/hobbyist-tier/frame-side-management/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "docs/web-app/features-index",
+      "label": "Features",
+      "type": "doc",
+      "url": "/docs/web-app/features/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "about-company-Team-merchandise",
+      "label": "Merchandise",
+      "type": "page",
+      "url": "/about/company/Team/merchandise/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-hobbyist-tier-worker-bee-detection",
+      "label": "🐝 Worker bee detection",
+      "type": "page",
+      "url": "/about/products/web_app/hobbyist-tier/worker-bee-detection/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-pro-tier-ideas-device-management",
+      "label": "🎮 Device management",
+      "type": "page",
+      "url": "/about/products/web_app/pro-tier/ideas 💡/device-management/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "docs-entrance-observer-entrance-observer",
+      "label": "👁️‍🗨️ Entrance observer",
+      "type": "doc",
+      "url": "/docs/entrance-observer/entrance-observer/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "research-papers-the-use-of-products-with-a-monitoring-system-for-remote-bee-detection-in-beekeeping-in-czechia",
+      "label": "The Use of Products with a Monitoring System for Remote Bee Detection in Beekeeping in Czechia",
+      "type": "page",
+      "url": "/research/papers/the-use-of-products-with-a-monitoring-system-for-remote-bee-detection-in-beekeeping-in-czechia/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "research-papers-the-development-of-honey-bee-coloniesassessed-using-a-new-semi-automated-broodcounting-method-combcount",
+      "label": "The development of honey bee coloniesassessed using a new semi-automated broodcounting method: CombCount",
+      "type": "page",
+      "url": "/research/papers/the-development-of-honey-bee-coloniesassessed-using-a-new-semi-automated-broodcounting-method-combcount/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-problems-biological-colony-with-drone-laying-queen",
+      "label": "💀 Colony with drone laying queen",
+      "type": "page",
+      "url": "/about/problems/biological/colony-with-drone-laying-queen/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-problems-challenging-to-become-a-new-beekeeper",
+      "label": "🎒 Challenging to become a new beekeeper",
+      "type": "page",
+      "url": "/about/problems/challenging-to-become-a-new-beekeeper/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-problems-time-consuming-inspections",
+      "label": "👁️ Time consuming inspections",
+      "type": "page",
+      "url": "/about/problems/time-consuming-inspections/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-scales-ideas-home-assistant-integration",
+      "label": "🔗 Home assistant integration",
+      "type": "page",
+      "url": "/about/products/scales/ideas/home-assistant-integration/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-businessplan-Competition-intelligenthives",
+      "label": "IntelligentHives",
+      "type": "page",
+      "url": "/about/company/business_plan/Competition/intelligenthives/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-businessplan-Competition-beehero",
+      "label": "🇮🇱 BeeHero",
+      "type": "page",
+      "url": "/about/company/business_plan/Competition/beehero/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-entranceobserver-features-video-streaming-via-api",
+      "label": "🎥 Video streaming via API",
+      "type": "page",
+      "url": "/about/products/entrance_observer/features/video-streaming-via-api/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "blog-2025-01-13-visited-vidrik",
+      "label": "2025 01 13 🤝 Visited VIDRIK",
+      "type": "blog",
+      "url": "/blog/2025-01-13-visited-vidrik/",
+      "size": 3,
+      "color": "#4CAF50"
+    },
+    {
+      "id": "docs-API-graphql",
+      "label": "🎨 GraphQL API",
+      "type": "doc",
+      "url": "/docs/API/graphql/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "blog-2024-12-02-participated-in-startup-pitch-practice-webinar-by-founder-institute",
+      "label": "2024 12 02 📢 Participated in Startup Pitch Practice webinar by Founder Institute",
+      "type": "blog",
+      "url": "/blog/2024-12-02-participated-in-startup-pitch-practice-webinar-by-founder-institute/",
+      "size": 3,
+      "color": "#4CAF50"
+    },
+    {
+      "id": "about-company-businessplan-Competition-gobuzzr",
+      "label": "Gobuzzr",
+      "type": "page",
+      "url": "/about/company/business_plan/Competition/gobuzzr/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-prototrondataroom-marketing-mentor-prep",
+      "label": "MARKETING MENTOR PREP",
+      "type": "page",
+      "url": "/about/company/prototron_dataroom/marketing-mentor-prep/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-problems-biological-overwintering-collapse",
+      "label": "❄️ Overwintering collapse",
+      "type": "page",
+      "url": "/about/problems/biological/overwintering-collapse/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-hobbyist-tier-ideas-show-close-by-beekeepers-from-government-registry",
+      "label": "📍 Show close by beekeepers from government registry",
+      "type": "page",
+      "url": "/about/products/web_app/hobbyist-tier/ideas 💡/show-close-by-beekeepers-from-government-registry/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "docs-beehive-sensors-3d-model",
+      "label": "3d model",
+      "type": "doc",
+      "url": "/docs/beehive-sensors/3d-model/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "about-company-businessplan-Competition-beehivemonitoring",
+      "label": "BeeHiveMonitoring",
+      "type": "page",
+      "url": "/about/company/business_plan/Competition/beehivemonitoring/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-problems-systemic-monocultural-agriculture",
+      "label": "🌻 Monocultural agriculture",
+      "type": "page",
+      "url": "/about/problems/systemic/monocultural-agriculture/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-problems-intrusive-inspections",
+      "label": "💀 Intrusive inspections",
+      "type": "page",
+      "url": "/about/problems/intrusive-inspections/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "docs-beehive-sensors-components",
+      "label": "Bill of materials",
+      "type": "doc",
+      "url": "/docs/beehive-sensors/components/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "about-products-webapp-flexible-tier-video-playback",
+      "label": "📺 Video streaming playback",
+      "type": "page",
+      "url": "/about/products/web_app/flexible-tier/video-playback/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-pro-tier-ideas-harvest-hive-frames-and-sections",
+      "label": "📦 Harvest hive frames and sections",
+      "type": "page",
+      "url": "/about/products/web_app/pro-tier/ideas 💡/harvest-hive-frames-and-sections/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about/company/Processes/Hiring-index",
+      "label": "Hiring",
+      "type": "page",
+      "url": "/about/company/Processes/Hiring/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-businessplan-Competition-pollenity",
+      "label": "Pollenity",
+      "type": "page",
+      "url": "/about/company/business_plan/Competition/pollenity/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "docs-beehive-sensors-components-battery",
+      "label": "Battery (18650 type, Li-ion)",
+      "type": "doc",
+      "url": "/docs/beehive-sensors/components/battery/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "docs-web-app-web-app",
+      "label": "📱 Web-app",
+      "type": "doc",
+      "url": "/docs/web-app/web-app/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "research-papers-toward-an-intelligent-and-efficient-beehive-a-survey-of-precision-beekeeping-systems-and-services",
+      "label": "Toward an intelligent and efficient beehive: A survey of precision beekeeping systems and services",
+      "type": "page",
+      "url": "/research/papers/toward-an-intelligent-and-efficient-beehive-a-survey-of-precision-beekeeping-systems-and-services/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-Team-Roles-robotics-engineer",
+      "label": "Robotics engineer 🦾",
+      "type": "page",
+      "url": "/about/company/Team/Roles/robotics-engineer/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-businessplan-Competition-hiive-link",
+      "label": "HIIVE Link",
+      "type": "page",
+      "url": "/about/company/business_plan/Competition/hiive-link/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-roboticbeehive-ideas-robotic-frame-reordering",
+      "label": "🦾 Robotic frame reordering",
+      "type": "page",
+      "url": "/about/products/robotic_beehive/ideas/robotic-frame-reordering/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "research-papers-automatic-methods-for-long-term-tracking-and-the-detection-and-decoding-of-communication-dancesin-honeybees",
+      "label": "Automatic methods for long term tracking and the detection and decoding of communication dancesin honeybees",
+      "type": "page",
+      "url": "/research/papers/automatic-methods-for-long-term-tracking-and-the-detection-and-decoding-of-communication-dancesin-honeybees/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "docs/API-index",
+      "label": "API",
+      "type": "doc",
+      "url": "/docs/API/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "about-company-legal-cla-individual",
+      "label": "CLA INDIVIDUAL",
+      "type": "page",
+      "url": "/about/company/legal/cla-individual/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-roboticbeehive-ideas-robotic-insertion-of-new-frames",
+      "label": "🦾 Robotic insertion of new frames",
+      "type": "page",
+      "url": "/about/products/robotic_beehive/ideas/robotic-insertion-of-new-frames/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-prototrondataroom-finance-mentor-prep",
+      "label": "FINANCE MENTOR PREP",
+      "type": "page",
+      "url": "/about/company/prototron_dataroom/finance-mentor-prep/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-basic-functionality-user-editing",
+      "label": "🧑‍🚀 User Profile Editing",
+      "type": "page",
+      "url": "/about/products/web_app/basic-functionality/user-editing/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "blog-2023-10-28-climathon-hackathon",
+      "label": "2023 10 28 🛠️ Climathon hackathon",
+      "type": "blog",
+      "url": "/blog/2023-10-28-climathon-hackathon/",
+      "size": 3,
+      "color": "#4CAF50"
+    },
+    {
+      "id": "about-company-clients-industrial-beekeepers",
+      "label": "Industrial/Commercial Beekeepers",
+      "type": "page",
+      "url": "/about/company/clients/industrial-beekeepers/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-mission-ethics",
+      "label": "Ethics",
+      "type": "page",
+      "url": "/about/mission/ethics/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-roboticbeehive-ideas-talk-to-bee-colony-with-ai",
+      "label": "🤖 Talk to bee colony with AI",
+      "type": "page",
+      "url": "/about/products/robotic_beehive/ideas/talk-to-bee-colony-with-ai/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "docs-robotic-beehive-cad-modelling",
+      "label": "CAD modelling 🫖",
+      "type": "doc",
+      "url": "/docs/robotic-beehive/cad-modelling/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "research-papers-be-hive",
+      "label": "The Be-Hive Project - Counting Bee Traffic based on Deep Learning and Pose Estimation",
+      "type": "page",
+      "url": "/research/papers/be-hive/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-Processes-Hiring-Responsetemplates-robotics-engineer",
+      "label": "Robotics engineer",
+      "type": "page",
+      "url": "/about/company/Processes/Hiring/Response templates/robotics-engineer/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-Team-Roles-ux-designer",
+      "label": "UX designer 🔲",
+      "type": "page",
+      "url": "/about/company/Team/Roles/ux-designer/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-scales-todo-internal-temperature-monitoring",
+      "label": "🌡️ Internal Temperature monitoring",
+      "type": "page",
+      "url": "/about/products/scales/todo/internal-temperature-monitoring/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-basic-functionality-user-registration",
+      "label": "🧑‍🚀 User registration",
+      "type": "page",
+      "url": "/about/products/web_app/basic-functionality/user-registration/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-hobbyist-tier-qr-code-generation",
+      "label": "♻️ QR code generation",
+      "type": "page",
+      "url": "/about/products/web_app/hobbyist-tier/qr-code-generation/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-pro-tier-ideas-bee-age-classification",
+      "label": "🐝 Bee age classification",
+      "type": "page",
+      "url": "/about/products/web_app/pro-tier/ideas 💡/bee-age-classification/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-pro-tier-ideas-wax-moth-detection",
+      "label": "🐝 Wax moth detection",
+      "type": "page",
+      "url": "/about/products/web_app/pro-tier/ideas 💡/wax-moth-detection/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "docs-entrance-observer-components-orin-wifi-antennas",
+      "label": "WiFi antennas",
+      "type": "doc",
+      "url": "/docs/entrance-observer/components-orin/wifi-antennas/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "about-company-businessplan-Competition-agrisound",
+      "label": "AgriSound",
+      "type": "page",
+      "url": "/about/company/business_plan/Competition/agrisound/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-values-adapt-to-change",
+      "label": "Adapt to change 🏕️",
+      "type": "page",
+      "url": "/about/company/values/adapt-to-change/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-basic-functionality-api-token-management",
+      "label": "🔐 API token management",
+      "type": "page",
+      "url": "/about/products/web_app/basic-functionality/api-token-management/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "docs-beehive-sensors-installation",
+      "label": "Installation",
+      "type": "doc",
+      "url": "/docs/beehive-sensors/installation/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "docs-robotic-beehive-fuyu-3-axis-gantry-amc-4030-controller-info",
+      "label": "FUYU 3 axis gantry + AMC 4030 controller info",
+      "type": "doc",
+      "url": "/docs/robotic-beehive/fuyu-3-axis-gantry-amc-4030-controller-info/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "research-papers-beenet-an-end-to-end-deep-network-for-bee-surveillance",
+      "label": "BeeNet: An End-To-End Deep Network For Bee Surveillance",
+      "type": "page",
+      "url": "/research/papers/beenet-an-end-to-end-deep-network-for-bee-surveillance/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-clients-semi-professional-beekeepers",
+      "label": "Semi-professional Beekeepers",
+      "type": "page",
+      "url": "/about/company/clients/semi-professional-beekeepers/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-scales-features-telemetry-api",
+      "label": "📈 Telemetry API",
+      "type": "page",
+      "url": "/about/products/scales/features/telemetry-api/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-pro-tier-ideas-bee-race-classification",
+      "label": "🐝 Bee race classification",
+      "type": "page",
+      "url": "/about/products/web_app/pro-tier/ideas 💡/bee-race-classification/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-pro-tier-ideas-skyfi-integration",
+      "label": "🛰️ SkyFi integration",
+      "type": "page",
+      "url": "/about/products/web_app/pro-tier/ideas 💡/skyfi-integration/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "docs-beehive-sensors-components-todo-tampering-vibration-sensor",
+      "label": "Tampering   Vibration sensor",
+      "type": "doc",
+      "url": "/docs/beehive-sensors/components/todo/tampering-vibration-sensor/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "docs-entrance-observer-components-jetson-sd-card-for-jetson-nano",
+      "label": "SD card for Jetson Nano",
+      "type": "doc",
+      "url": "/docs/entrance-observer/components-jetson/sd-card-for-jetson-nano/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "docs-robotic-beehive-components-camera-mokose-4k",
+      "label": "Camera   Mokose 4k",
+      "type": "doc",
+      "url": "/docs/robotic-beehive/components/camera-mokose-4k/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "about/problems/biological-index",
+      "label": "Biological",
+      "type": "page",
+      "url": "/about/problems/biological/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-pro-tier-ideas-calendar-view",
+      "label": "📅 Calendar view",
+      "type": "page",
+      "url": "/about/products/web_app/pro-tier/ideas 💡/calendar-view/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-starter-tier-ideas-varroa-infestation-management",
+      "label": "🦀 Varroa infestation management",
+      "type": "page",
+      "url": "/about/products/web_app/starter-tier/ideas 💡/varroa-infestation-management/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "blog-2025-02-19-visited-ai-taltech-webinar",
+      "label": "2025 02 19 🎒 Visited AI TalTech webinar",
+      "type": "blog",
+      "url": "/blog/2025-02-19-visited-ai-taltech-webinar/",
+      "size": 3,
+      "color": "#4CAF50"
+    },
+    {
+      "id": "research-papers-precision-apiculture-iot-system-for-remote-monitoring-of-honeybee-colonies",
+      "label": "Precision Apiculture – IoT System for Remote Monitoring of Honeybee Colonies",
+      "type": "page",
+      "url": "/research/papers/precision-apiculture-iot-system-for-remote-monitoring-of-honeybee-colonies/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "docs-entrance-observer-components-orin-case",
+      "label": "Case",
+      "type": "doc",
+      "url": "/docs/entrance-observer/components-orin/case/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "about/products/_templates-index",
+      "label": "_templates",
+      "type": "page",
+      "url": "/about/products/_templates/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "docs-entrance-observer-components-orin-plexiglass",
+      "label": "Plexiglass",
+      "type": "doc",
+      "url": "/docs/entrance-observer/components-orin/plexiglass/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "about-problems-systemic-aggressive-bee-colonies",
+      "label": "💢 Aggressive bee colonies",
+      "type": "page",
+      "url": "/about/problems/systemic/aggressive-bee-colonies/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "research-papers-integration-of-scales-and-cameras-in-nondisruptive-electronic-beehive-monitoring",
+      "label": "Integration of Scales and Cameras in Nondisruptive ElectronicBeehive Monitoring: On the Within-Day Relationship of HiveWeight and Traffic in Honeybee (Apis mellifera) Colonies in Langstroth Hives in Tucson, Arizona, USA",
+      "type": "page",
+      "url": "/research/papers/integration-of-scales-and-cameras-in-nondisruptive-electronic-beehive-monitoring/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "en-archive-2023",
+      "label": "Archive: 2023",
+      "type": "page",
+      "url": "/archive/2023/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about/products/web_app/basic-functionality-index",
+      "label": "Basic-functionality",
+      "type": "page",
+      "url": "/about/products/web_app/basic-functionality/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-Team-Roles-sre-devops-infrastructure-engineer",
+      "label": "SRE   Devops   Infrastructure engineer",
+      "type": "page",
+      "url": "/about/company/Team/Roles/sre-devops-infrastructure-engineer/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-problems-counterfeit-honey",
+      "label": "🍯 Counterfeit honey",
+      "type": "page",
+      "url": "/about/problems/counterfeit-honey/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-entranceobserver-todo-varroa-mite-infestation-detection-from-video",
+      "label": "🦀 Varroa mite infestation detection from video",
+      "type": "page",
+      "url": "/about/products/entrance_observer/todo/varroa-mite-infestation-detection-from-video/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about/products/web_app/starter-tier/ideas 💡-index",
+      "label": "Ideas 💡",
+      "type": "page",
+      "url": "/about/products/web_app/starter-tier/ideas 💡/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-businessplan-Competition-honeyinstruments",
+      "label": "HoneyInstruments",
+      "type": "page",
+      "url": "/about/company/business_plan/Competition/honeyinstruments/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "docs-entrance-observer-components-orin-camera",
+      "label": "Camera",
+      "type": "doc",
+      "url": "/docs/entrance-observer/components-orin/camera/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "research-papers-analysis-of-energy-consumption-in-a-precision-beekeeping-system",
+      "label": "Analysis of Energy Consumption in a Precision Beekeeping System",
+      "type": "page",
+      "url": "/research/papers/analysis-of-energy-consumption-in-a-precision-beekeeping-system/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "research-papers-automated-monitoring-of-bee-behaviour-using-connected-hives-towards-a-computational-apidology",
+      "label": "Automated monitoring of bee behaviour using connected hives Towards a computational apidology",
+      "type": "page",
+      "url": "/research/papers/automated-monitoring-of-bee-behaviour-using-connected-hives-towards-a-computational-apidology/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-businessplan-Competition-broodminder",
+      "label": "Broodminder",
+      "type": "page",
+      "url": "/about/company/business_plan/Competition/broodminder/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-problems-core-physical-labor",
+      "label": "💪🏻 Physical labor",
+      "type": "page",
+      "url": "/about/problems/core/physical-labor/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-hobbyist-tier-varroa-treatment-diary",
+      "label": "📅 Varroa Treatment diary",
+      "type": "page",
+      "url": "/about/products/web_app/hobbyist-tier/varroa-treatment-diary/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "blog-2024-01-26-visiting-startup-day-2024",
+      "label": "2024 01 26 💶 Visiting Startup Day 2024",
+      "type": "blog",
+      "url": "/blog/2024-01-26-visiting-startup-day-2024/",
+      "size": 3,
+      "color": "#4CAF50"
+    },
+    {
+      "id": "research-papers-deep-edge-iot-for-acoustic-detection-of-queenless-beehives",
+      "label": "⭐️ Deep Edge IoT for Acoustic Detection of Queenless Beehives",
+      "type": "page",
+      "url": "/research/papers/deep-edge-iot-for-acoustic-detection-of-queenless-beehives/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "docs/beehive-sensors/components/todo-index",
+      "label": "Todo",
+      "type": "doc",
+      "url": "/docs/beehive-sensors/components/todo/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "about-company-Processes-meeting-recordings",
+      "label": "🎥 Meeting recordings",
+      "type": "page",
+      "url": "/about/company/Processes/meeting-recordings/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-businessplan-market-analysis",
+      "label": "📊 Market analysis",
+      "type": "page",
+      "url": "/about/company/business_plan/market-analysis/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-roboticapiary-ideas-cross-family-frame-movement-resource-balancing",
+      "label": "🦾 Cross family frame movement resource balancing",
+      "type": "page",
+      "url": "/about/products/robotic_apiary/ideas/cross-family-frame-movement-resource-balancing/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-basic-functionality-billing-subscription",
+      "label": "💶 Billing subscription",
+      "type": "page",
+      "url": "/about/products/web_app/basic-functionality/billing-subscription/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-pro-tier-video-streaming-from-phone",
+      "label": "🎥 Video streaming from phone",
+      "type": "page",
+      "url": "/about/products/web_app/pro-tier/video-streaming-from-phone/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "research/papers/pdfs-index",
+      "label": "Pdfs",
+      "type": "page",
+      "url": "/research/papers/pdfs/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-Processes-Hiring-Internship-vidrik-internship-iot-mechatronics",
+      "label": "VIDRIK Internship IoT Mechatronics",
+      "type": "page",
+      "url": "/about/company/Processes/Hiring/Internship/vidrik-internship-iot-mechatronics/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-businessplan-Competition-hivebloom",
+      "label": "HiveBloom",
+      "type": "page",
+      "url": "/about/company/business_plan/Competition/hivebloom/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-mission-naming",
+      "label": "Naming",
+      "type": "page",
+      "url": "/about/mission/naming/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products",
+      "label": "🍯 Products",
+      "type": "page",
+      "url": "/about/products/",
+      "size": 5,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-basic-functionality-user-account-deletion",
+      "label": "🙅 User account deletion",
+      "type": "page",
+      "url": "/about/products/web_app/basic-functionality/user-account-deletion/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "docs-robotic-beehive-components",
+      "label": "index",
+      "type": "doc",
+      "url": "/docs/robotic-beehive/components/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "docs-web-app-features-hive-placement-planner",
+      "label": "hive placement planner",
+      "type": "doc",
+      "url": "/docs/web-app/features/hive-placement-planner/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "research-models",
+      "label": "Models",
+      "type": "page",
+      "url": "/research/models/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "blog-2023-11-23-featured-in-a-delfi-article",
+      "label": "2023 11 23 📢 Featured in a Delfi article",
+      "type": "blog",
+      "url": "/blog/2023-11-23-featured-in-a-delfi-article/",
+      "size": 3,
+      "color": "#4CAF50"
+    },
+    {
+      "id": "docs-entrance-observer-components-jetson-camera-lens",
+      "label": "Camera lens",
+      "type": "doc",
+      "url": "/docs/entrance-observer/components-jetson/camera-lens/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "",
+      "label": "Beehive AI monitoring",
+      "type": "page",
+      "url": "/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "research-papers-labeled-dataset-for-bee-detection-and-direction-estimation-on-entrance-to-beehive",
+      "label": "Labeled dataset for bee detection and direction estimation on entrance to beehive",
+      "type": "page",
+      "url": "/research/papers/labeled-dataset-for-bee-detection-and-direction-estimation-on-entrance-to-beehive/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "research-papers-multiple-animals-tracking-in-videousing-part-affinity-fields",
+      "label": "Multiple Animals Tracking in VideoUsing Part Affinity Fields",
+      "type": "page",
+      "url": "/research/papers/multiple-animals-tracking-in-videousing-part-affinity-fields/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "research-papers-varroa-destructor-classification-using-legendre-fourier-moments-with-different-color-spaces",
+      "label": "Varroa Destructor Classification Using Legendre Fourier Moments with Different Color Spaces",
+      "type": "page",
+      "url": "/research/papers/varroa-destructor-classification-using-legendre-fourier-moments-with-different-color-spaces/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "terms",
+      "label": "Terms Of Service",
+      "type": "page",
+      "url": "/terms/",
+      "size": 5,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-entranceobserver-ideas-guard-detection",
+      "label": "🐝 Guard detection",
+      "type": "page",
+      "url": "/about/products/entrance_observer/ideas/guard-detection/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-roboticbeehive-todo-full-hive-inspection",
+      "label": "📸 Full hive inspection",
+      "type": "page",
+      "url": "/about/products/robotic_beehive/todo/full-hive-inspection/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-web-app",
+      "label": "📱Web-app",
+      "type": "page",
+      "url": "/about/products/web_app/web-app/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "blog-2024-03-27-participated-in-easee-deeptech-grant-qualifications-webinar",
+      "label": "2024 03 27 🎒 Participated in EAS.ee deeptech grant qualifications webinar",
+      "type": "blog",
+      "url": "/blog/2024-03-27-participated-in-easee-deeptech-grant-qualifications-webinar/",
+      "size": 3,
+      "color": "#4CAF50"
+    },
+    {
+      "id": "about/problems-index",
+      "label": "Problems",
+      "type": "page",
+      "url": "/about/problems/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-scales-ideas-co2-monitoring",
+      "label": "💨 CO2 monitoring",
+      "type": "page",
+      "url": "/about/products/scales/ideas/co2-monitoring/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-mission-mission",
+      "label": "🌻 Mission",
+      "type": "page",
+      "url": "/about/mission/mission/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-problems-long-term-queen-breeding-tracking",
+      "label": "📈 Long term queen breeding tracking",
+      "type": "page",
+      "url": "/about/problems/long-term-queen-breeding-tracking/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-problems-transport-stress-and-risk",
+      "label": "🚛 Transport stress and risk",
+      "type": "page",
+      "url": "/about/problems/transport-stress-and-risk/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "docs-beehive-sensors-beehive-sensors",
+      "label": "🌡️ Beehive IoT sensors",
+      "type": "doc",
+      "url": "/docs/beehive-sensors/beehive-sensors/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "docs-web-app-templates-feature-technical-template",
+      "label": "feature technical template",
+      "type": "doc",
+      "url": "/docs/web-app/_templates/feature-technical-template/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "docs/web-app-index",
+      "label": "Web-app",
+      "type": "doc",
+      "url": "/docs/web-app/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "about-company-businessplan-Competition-beep-nl",
+      "label": "🇳🇱 Beep NL",
+      "type": "page",
+      "url": "/about/company/business_plan/Competition/beep-nl/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "docs-entrance-observer-components-jetson-jetson-nano-case",
+      "label": "Jetson Nano case",
+      "type": "doc",
+      "url": "/docs/entrance-observer/components-jetson/jetson-nano-case/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "about-products-webapp-pro-tier-ideas-hive-beetle-detection",
+      "label": "🪲 Hive beetle detection",
+      "type": "page",
+      "url": "/about/products/web_app/pro-tier/ideas 💡/hive-beetle-detection/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "blog-2024-12-03-attended-robotics-is-easy-local-webinar-for-schools",
+      "label": "2024 12 03 🎒 Attended \"Robotics is easy\" local webinar for schools",
+      "type": "blog",
+      "url": "/blog/2024-12-03-attended-robotics-is-easy-local-webinar-for-schools/",
+      "size": 3,
+      "color": "#4CAF50"
+    },
+    {
+      "id": "pricing",
+      "label": "Pricing",
+      "type": "page",
+      "url": "/pricing/",
+      "size": 9,
+      "color": "#607D8B"
+    },
+    {
+      "id": "research-papers-machine-learning-and-computer-vision-techniques-in-continuous-beehive-monitoring-applications-a-survey",
+      "label": "Machine Learning and Computer Vision Techniques in Continuous Beehive Monitoring Applications: A Survey",
+      "type": "page",
+      "url": "/research/papers/machine-learning-and-computer-vision-techniques-in-continuous-beehive-monitoring-applications-a-survey/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "research-papers-varroa-destructor-detection-on-honey-bees-using-hyperspectral-imagery",
+      "label": "Varroa destructor detection on honey bees using hyperspectral imagery",
+      "type": "page",
+      "url": "/research/papers/varroa-destructor-detection-on-honey-bees-using-hyperspectral-imagery/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-businessplan-Competition-beezon",
+      "label": "Beezon",
+      "type": "page",
+      "url": "/about/company/business_plan/Competition/beezon/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "blog-2024-05-05-visited-latitude59",
+      "label": "2024 05 05 💶 Visited Latitude59",
+      "type": "blog",
+      "url": "/blog/2024-05-05-visited-latitude59/",
+      "size": 3,
+      "color": "#4CAF50"
+    },
+    {
+      "id": "blog-2025-04-25-attending-eic-accelerator-and-ready2scale-webinar",
+      "label": "2025 04 25 💶  Attending EIC Accelerator and Ready2Scale webinar",
+      "type": "blog",
+      "url": "/blog/2025-04-25-attending-eic-accelerator-and-ready2scale-webinar/",
+      "size": 3,
+      "color": "#4CAF50"
+    },
+    {
+      "id": "docs-entrance-observer-bill-of-materials",
+      "label": "Bill of materials",
+      "type": "doc",
+      "url": "/docs/entrance-observer/bill-of-materials/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "docs-entrance-observer-jetson-nano-setup",
+      "label": "Jetson Nano setup",
+      "type": "doc",
+      "url": "/docs/entrance-observer/jetson-nano-setup/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "research-papers-identifying-queenlessness-in-honeybee-hives-from-audio-signals-using-machine-learning",
+      "label": "Identifying Queenlessness in Honeybee Hives from Audio Signals Using Machine Learning",
+      "type": "page",
+      "url": "/research/papers/identifying-queenlessness-in-honeybee-hives-from-audio-signals-using-machine-learning/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-businessplan-Competition-osbeehives",
+      "label": "OSBeehives",
+      "type": "page",
+      "url": "/about/company/business_plan/Competition/osbeehives/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-legal-contributing",
+      "label": "CONTRIBUTING",
+      "type": "page",
+      "url": "/about/company/legal/contributing/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-roboticbeehive-ideas-close-mechanised-hive-entrance-in-case-of-robbing-behaviour",
+      "label": "🛑 Close mechanised hive entrance in case of robbing behaviour",
+      "type": "page",
+      "url": "/about/products/robotic_beehive/ideas/close-mechanised-hive-entrance-in-case-of-robbing-behaviour/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-pro-tier-ideas-map-view",
+      "label": "🌎 Map view",
+      "type": "page",
+      "url": "/about/products/web_app/pro-tier/ideas 💡/map-view/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "docs-entrance-observer-components-jetson-camera-mokose-4k",
+      "label": "Camera   Mokose 4k",
+      "type": "doc",
+      "url": "/docs/entrance-observer/components-jetson/camera-mokose-4k/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "docs-web-app-ux-ui-wireframes",
+      "label": "UX   UI wireframes",
+      "type": "doc",
+      "url": "/docs/web-app/ux-ui-wireframes/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "docs-web-app-features-varroa-bottom-detection",
+      "label": "varroa bottom detection",
+      "type": "doc",
+      "url": "/docs/web-app/features/varroa-bottom-detection/",
+      "size": 5,
+      "color": "#2196F3"
+    },
+    {
+      "id": "research-papers-apis-mellifera-bee-verification-with-iot-and-graph-neural-network",
+      "label": "Apis mellifera Bee Verification with IoT and Graph Neural Network",
+      "type": "page",
+      "url": "/research/papers/apis-mellifera-bee-verification-with-iot-and-graph-neural-network/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-roboticbeehive-ideas-moveable-hive-bottom-with-varroa-counting",
+      "label": "🦾 Moveable hive bottom with varroa counting",
+      "type": "page",
+      "url": "/about/products/robotic_beehive/ideas/moveable-hive-bottom-with-varroa-counting/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-hobbyist-tier-ideas-product-onboarding-videos-ui",
+      "label": "🎒 Product onboarding videos \u0026 UI",
+      "type": "page",
+      "url": "/about/products/web_app/hobbyist-tier/ideas 💡/product-onboarding-videos-ui/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-businessplan-Competition-beewise",
+      "label": "🇮🇱 Beewise",
+      "type": "page",
+      "url": "/about/company/business_plan/Competition/beewise/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-roboticapiary-ideas-robot-moving-hives-between-fields",
+      "label": "🚛 Robot moving hives between fields",
+      "type": "page",
+      "url": "/about/products/robotic_apiary/ideas/robot-moving-hives-between-fields/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-starter-tier-honeycomb-cell-detection-management",
+      "label": "🐝 Honeycomb cell detection \u0026 management",
+      "type": "page",
+      "url": "/about/products/web_app/starter-tier/honeycomb-cell-detection-management/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "docs-beehive-sensors-components-aluminium-profile",
+      "label": "Aluminium profile 20x20x500mm",
+      "type": "doc",
+      "url": "/docs/beehive-sensors/components/aluminium-profile/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "docs-entrance-observer-components-orin-camera-lens",
+      "label": "Camera lens",
+      "type": "doc",
+      "url": "/docs/entrance-observer/components-orin/camera-lens/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "research-papers-deeplabcut",
+      "label": "DeepLabCut: markerless pose estimation of user-defined body parts with deep learning",
+      "type": "page",
+      "url": "/research/papers/deeplabcut/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-Processes-Hiring-Responsetemplates-ux-designer",
+      "label": "UX designer",
+      "type": "page",
+      "url": "/about/company/Processes/Hiring/Response templates/ux-designer/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-legal-license-commercial",
+      "label": "LICENSE COMMERCIAL",
+      "type": "page",
+      "url": "/about/company/legal/license-commercial/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-roboticbeehive-ideas-robotic-frame-isolation-extraction",
+      "label": "🦾Robotic frame isolation \u0026 extraction",
+      "type": "page",
+      "url": "/about/products/robotic_beehive/ideas/robotic-frame-isolation-extraction/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-starter-tier-ideas-frame-analysis-chilled-brood",
+      "label": "🐝 Frame analysis   chilled brood",
+      "type": "page",
+      "url": "/about/products/web_app/starter-tier/ideas 💡/frame-analysis-chilled-brood/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "blog-2024-11-19-attended-open-hardware-webinar",
+      "label": "2024 11 19 🔬 Attended open hardware webinar",
+      "type": "blog",
+      "url": "/blog/2024-11-19-attended-open-hardware-webinar/",
+      "size": 3,
+      "color": "#4CAF50"
+    },
+    {
+      "id": "docs-web-app-features-telemetry-storage",
+      "label": "telemetry storage",
+      "type": "doc",
+      "url": "/docs/web-app/features/telemetry-storage/",
+      "size": 9,
+      "color": "#2196F3"
+    },
+    {
+      "id": "docs-web-app-DBschemas-image-splitter",
+      "label": "image splitter",
+      "type": "doc",
+      "url": "/docs/web-app/🥞 DB schemas/image-splitter/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "research-papers-deep-learning-based-detection-of-honey-storage-areas-in-apismellifera-colonies-for-predicting-physical-parameters-of-honey-via-linear-regression",
+      "label": "Deep Learning-Based Detection of Honey Storage Areas in Apismellifera Colonies for Predicting Physical Parameters of Honey via Linear Regression",
+      "type": "page",
+      "url": "/research/papers/deep-learning-based-detection-of-honey-storage-areas-in-apismellifera-colonies-for-predicting-physical-parameters-of-honey-via-linear-regression/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-businessplan-Competition-beemate",
+      "label": "🇦🇺 Beemate",
+      "type": "page",
+      "url": "/about/company/business_plan/Competition/beemate/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-businessplan-Competition-hivegenie",
+      "label": "🇺🇸 HiveGenie",
+      "type": "page",
+      "url": "/about/company/business_plan/Competition/hivegenie/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-problems-biological-bee-colony-starvation",
+      "label": "🍽️ Bee colony starvation",
+      "type": "page",
+      "url": "/about/problems/biological/bee-colony-starvation/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-problems-core-observability-of-bee-colony",
+      "label": "👁️ Observability of bee colony",
+      "type": "page",
+      "url": "/about/problems/core/observability-of-bee-colony/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-entranceobserver-ideas-alerts-based-on-bee-counter",
+      "label": "🔔 Alerts based on bee counter",
+      "type": "page",
+      "url": "/about/products/entrance_observer/ideas/alerts-based-on-bee-counter/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "research-papers-hivelink-iot-based-smart-bee-hive-monitoringsystem",
+      "label": "HiveLink – IoT based Smart Bee Hive MonitoringSystem",
+      "type": "page",
+      "url": "/research/papers/hivelink-iot-based-smart-bee-hive-monitoringsystem/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about/company/Team/Roles-index",
+      "label": "Roles",
+      "type": "page",
+      "url": "/about/company/Team/Roles/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-starter-tier-ideas-varroa-mite-detection",
+      "label": "🦀 Varroa mite detection",
+      "type": "page",
+      "url": "/about/products/web_app/starter-tier/ideas 💡/varroa-mite-detection/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-volunteer",
+      "label": "❤️‍🔥 Volunteering",
+      "type": "page",
+      "url": "/about/volunteer/",
+      "size": 5,
+      "color": "#607D8B"
+    },
+    {
+      "id": "research-papers-honeybee-in-out-monitoring-system-by-object-recognition-and-tracking-from-real-time-webcams",
+      "label": "Honeybee In-Out Monitoring System by Object Recognition and Tracking from Real-Time Webcams",
+      "type": "page",
+      "url": "/research/papers/honeybee-in-out-monitoring-system-by-object-recognition-and-tracking-from-real-time-webcams/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "research-papers-precision-monitoring-of-honey-bee",
+      "label": "Precision Monitoring of Honey Bee (Hymenoptera: Apidae) Activity and Pollen Diversity during Pollination to EvaluateColony Health",
+      "type": "page",
+      "url": "/research/papers/precision-monitoring-of-honey-bee/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "research-papers-sleap",
+      "label": "SLEAP: A deep learning system for multi-animal pose tracking",
+      "type": "page",
+      "url": "/research/papers/sleap/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about/problems/core-index",
+      "label": "Core",
+      "type": "page",
+      "url": "/about/problems/core/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about/products/web_app/hobbyist-tier/ideas 💡-index",
+      "label": "Ideas 💡",
+      "type": "page",
+      "url": "/about/products/web_app/hobbyist-tier/ideas 💡/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-roboticbeehive-ideas-automatic-sugar-syrup-feeder",
+      "label": "🍭 Automatic sugar syrup feeder",
+      "type": "page",
+      "url": "/about/products/robotic_beehive/ideas/automatic-sugar-syrup-feeder/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "research-hacker-projects",
+      "label": "Hacker projects",
+      "type": "page",
+      "url": "/research/hacker-projects/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "docs/beehive-sensors-index",
+      "label": "Beehive-sensors",
+      "type": "doc",
+      "url": "/docs/beehive-sensors/",
+      "size": 5,
+      "color": "#2196F3"
+    },
+    {
+      "id": "about-company-values-ethical-heart",
+      "label": "Ethical heart 🌳",
+      "type": "page",
+      "url": "/about/company/values/ethical-heart/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-credits",
+      "label": "🙏 Credits",
+      "type": "page",
+      "url": "/about/credits/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "blog-2024-11-19-attending-garage48-hackaton-andmetorm-kick-off",
+      "label": "2024 11 19 🛠️ Attending Garage48 hackaton Andmetorm kick off",
+      "type": "blog",
+      "url": "/blog/2024-11-19-attending-garage48-hackaton-andmetorm-kick-off/",
+      "size": 3,
+      "color": "#4CAF50"
+    },
+    {
+      "id": "docs-entrance-observer-components-orin-m2-ssd",
+      "label": "M2 SSD",
+      "type": "doc",
+      "url": "/docs/entrance-observer/components-orin/m2-ssd/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "research-papers-solution-for-automated-bee-colony-weight-monitoring",
+      "label": "Solution for automated bee colony weight monitoring",
+      "type": "page",
+      "url": "/research/papers/solution-for-automated-bee-colony-weight-monitoring/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about/mission-index",
+      "label": "Mission",
+      "type": "page",
+      "url": "/about/mission/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-clients-farmers",
+      "label": "Farmers",
+      "type": "page",
+      "url": "/about/company/clients/farmers/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-legal-cla-corporate",
+      "label": "CLA CORPORATE",
+      "type": "page",
+      "url": "/about/company/legal/cla-corporate/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-roboticbeehive-ideas-hive-heating",
+      "label": "🔥 Hive heating",
+      "type": "page",
+      "url": "/about/products/robotic_beehive/ideas/hive-heating/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-hobbyist-tier-public-beehive-view",
+      "label": "♻️ Public beehive view",
+      "type": "page",
+      "url": "/about/products/web_app/hobbyist-tier/public-beehive-view/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "en-archive-2024",
+      "label": "Archive: 2024",
+      "type": "page",
+      "url": "/archive/2024/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-hobbyist-tier-list-local-plants",
+      "label": "🌻 List local plants",
+      "type": "page",
+      "url": "/about/products/web_app/hobbyist-tier/list-local-plants/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "blog-2024-05-05-participated-in-prototronee-fund",
+      "label": "2024 05 05 🛠️ Participated in Prototron.ee fund",
+      "type": "blog",
+      "url": "/blog/2024-05-05-participated-in-prototronee-fund/",
+      "size": 3,
+      "color": "#4CAF50"
+    },
+    {
+      "id": "blog-2024-11-19-attended-practical-startup-strategy-webinar",
+      "label": "2024 11 19 🎒 Attended Practical startup strategy webinar",
+      "type": "blog",
+      "url": "/blog/2024-11-19-attended-practical-startup-strategy-webinar/",
+      "size": 3,
+      "color": "#4CAF50"
+    },
+    {
+      "id": "blog-2025-05-13-estban-red-flags-in-legal",
+      "label": "⚖️ Attended EstBAN Red flags in startup legal aspects webinar",
+      "type": "blog",
+      "url": "/blog/2025-05-13-estban-red-flags-in-legal/",
+      "size": 3,
+      "color": "#4CAF50"
+    },
+    {
+      "id": "docs-beehive-sensors-components-screws",
+      "label": "Screws M4 x 25mm",
+      "type": "doc",
+      "url": "/docs/beehive-sensors/components/screws/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "docs-robotic-beehive-robotic-beehive",
+      "label": "🧿 Robotic beehive",
+      "type": "doc",
+      "url": "/docs/robotic-beehive/robotic-beehive/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "docs-web-app-features-queen-detection",
+      "label": "queen detection",
+      "type": "doc",
+      "url": "/docs/web-app/features/queen-detection/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "docs-web-app-features-timeseries-analytics",
+      "label": "timeseries analytics",
+      "type": "doc",
+      "url": "/docs/web-app/features/timeseries-analytics/",
+      "size": 7,
+      "color": "#2196F3"
+    },
+    {
+      "id": "about-products-roboticbeehive-todo-real-time-frame-scanning",
+      "label": "📸 Real time frame scanning",
+      "type": "page",
+      "url": "/about/products/robotic_beehive/todo/real-time-frame-scanning/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "research-papers-markerless-tracking-of-an-entire-honey-bee-colony",
+      "label": "⭐️ Markerless tracking of an entire honey bee colony",
+      "type": "page",
+      "url": "/research/papers/markerless-tracking-of-an-entire-honey-bee-colony/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about/products/entrance_observer/features-index",
+      "label": "Features",
+      "type": "page",
+      "url": "/about/products/entrance_observer/features/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about/company/Processes/Hiring/Response templates-index",
+      "label": "Response templates",
+      "type": "page",
+      "url": "/about/company/Processes/Hiring/Response templates/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-problems-poor-hive-ventilation",
+      "label": "🗃️ Poor hive ventilation",
+      "type": "page",
+      "url": "/about/problems/poor-hive-ventilation/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-roboticbeehive-ideas-mechanically-reduce-hive-entrance-in-case-of-high-wind",
+      "label": "🛑 Mechanically reduce hive entrance in case of high wind",
+      "type": "page",
+      "url": "/about/products/robotic_beehive/ideas/mechanically-reduce-hive-entrance-in-case-of-high-wind/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-hobbyist-tier-hive-ownership-transfer",
+      "label": "♻️ Hive ownership transfer",
+      "type": "page",
+      "url": "/about/products/web_app/hobbyist-tier/hive-ownership-transfer/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "docs-robotic-beehive-robot-vendors",
+      "label": "Robot Vendors",
+      "type": "doc",
+      "url": "/docs/robotic-beehive/robot-vendors/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "research-papers-tracking-all-members-of-a-honey-bee-colony-over-their-lifetime-using-learned-models-of-correspondence",
+      "label": "Tracking All Members of a Honey Bee Colony Over Their Lifetime Using Learned Models of Correspondence",
+      "type": "page",
+      "url": "/research/papers/tracking-all-members-of-a-honey-bee-colony-over-their-lifetime-using-learned-models-of-correspondence/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-mission-symbolism",
+      "label": "Symbolism",
+      "type": "page",
+      "url": "/about/mission/symbolism/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-problems-systemic-multiple-apiaries",
+      "label": "🏘️ Multiple apiaries",
+      "type": "page",
+      "url": "/about/problems/systemic/multiple-apiaries/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-hobbyist-tier-split-bee-colony",
+      "label": "🐝 Split a bee colony",
+      "type": "page",
+      "url": "/about/products/web_app/hobbyist-tier/split-bee-colony/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "research-papers-mybee",
+      "label": "myBee: An Information System for Precision Beekeeping",
+      "type": "page",
+      "url": "/research/papers/mybee/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-values-new-horizons",
+      "label": "New horizons 🏔️",
+      "type": "page",
+      "url": "/about/company/values/new-horizons/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-pro-tier-ideas-hive-ownership-transfer",
+      "label": "♻️ Hive ownership transfer",
+      "type": "page",
+      "url": "/about/products/web_app/pro-tier/ideas 💡/hive-ownership-transfer/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-press-kit",
+      "label": "📢 Press kit",
+      "type": "page",
+      "url": "/about/press-kit/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "docs-entrance-observer-components-jetson-camera-mount",
+      "label": "Camera mount",
+      "type": "doc",
+      "url": "/docs/entrance-observer/components-jetson/camera-mount/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "research-papers-on-image-classification-in-video-analysis-of-omnidirectional-apis-mellifera-traffic-random-reinforced-forests-vs-shallow-convolutional-networks",
+      "label": "On Image Classification in Video Analysis of Omnidirectional Apis Mellifera Traffic: Random Reinforced Forests vs. Shallow Convolutional Networks",
+      "type": "page",
+      "url": "/research/papers/on-image-classification-in-video-analysis-of-omnidirectional-apis-mellifera-traffic-random-reinforced-forests-vs-shallow-convolutional-networks/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "research-papers-raspberry-pi-bee-health-monitoring-device",
+      "label": "Raspberry Pi Bee Health Monitoring Device",
+      "type": "page",
+      "url": "/research/papers/raspberry-pi-bee-health-monitoring-device/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-problems-precise-pollination",
+      "label": "🌻 Precise pollination",
+      "type": "page",
+      "url": "/about/problems/precise-pollination/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-hobbyist-tier-queen-detection",
+      "label": "👑 Queen Detection",
+      "type": "page",
+      "url": "/about/products/web_app/hobbyist-tier/queen-detection/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "blog-2025-02-20-tehnopol-ai-pre-accelerator-event",
+      "label": "2025 02 20 💶 Tehnopol AI pre accelerator event",
+      "type": "blog",
+      "url": "/blog/2025-02-20-tehnopol-ai-pre-accelerator-event/",
+      "size": 3,
+      "color": "#4CAF50"
+    },
+    {
+      "id": "docs-API-rest",
+      "label": "🗂️ REST APIs",
+      "type": "doc",
+      "url": "/docs/API/rest/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "docs-entrance-observer-which-model-to-use-for-vision",
+      "label": "Which model to use for vision",
+      "type": "doc",
+      "url": "/docs/entrance-observer/which-model-to-use-for-vision/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "docs-robotic-beehive-components-nvme-m2-ssd-for-jetson-orin",
+      "label": "NVMe M2 SSD for Jetson Orin",
+      "type": "doc",
+      "url": "/docs/robotic-beehive/components/nvme-m2-ssd-for-jetson-orin/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "research-papers-evaluation-of-single-shot-object-detection-models-for-identifying-fanning-behavior-in-honeybees-at-the-hive-entrance",
+      "label": "Evaluation of Single-Shot Object Detection Models for Identifying Fanning Behavior in Honeybees at the Hive Entrance",
+      "type": "page",
+      "url": "/research/papers/evaluation-of-single-shot-object-detection-models-for-identifying-fanning-behavior-in-honeybees-at-the-hive-entrance/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-roboticbeehive-ideas-bee-specialization-classification",
+      "label": "🐝 Bee specialization classification",
+      "type": "page",
+      "url": "/about/products/robotic_beehive/ideas/bee-specialization-classification/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-hobbyist-tier-ideas-user-email-verification-and-change",
+      "label": "🧑‍🚀 User email verification and change",
+      "type": "page",
+      "url": "/about/products/web_app/hobbyist-tier/ideas 💡/user-email-verification-and-change/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-actions-beekeepers-make",
+      "label": "🧑‍🚀 Actions beekeepers make",
+      "type": "page",
+      "url": "/about/products/actions-beekeepers-make/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "blog-2024-05-05-sent-deck-to-tiliavc",
+      "label": "2024 05 05 💶 Sent deck to tilia.vc",
+      "type": "blog",
+      "url": "/blog/2024-05-05-sent-deck-to-tiliavc/",
+      "size": 3,
+      "color": "#4CAF50"
+    },
+    {
+      "id": "research-papers-honey-bulk-dna-metagenomic-analysis-to-identify-honey-biological",
+      "label": "Honey bulk DNA metagenomic analysis to identify honey biological",
+      "type": "page",
+      "url": "/research/papers/honey-bulk-dna-metagenomic-analysis-to-identify-honey-biological/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about/products/web_app/flexible-tier-index",
+      "label": "Flexible-tier",
+      "type": "page",
+      "url": "/about/products/web_app/flexible-tier/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company",
+      "label": "👔 Company",
+      "type": "page",
+      "url": "/about/company/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-hobbyist-tier-ideas-weather-alerts",
+      "label": "🌪️ Weather alerts",
+      "type": "page",
+      "url": "/about/products/web_app/hobbyist-tier/ideas 💡/weather-alerts/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "blog-2024-11-30-gratheon-joins-nvidia-inception-program",
+      "label": "2024 11 30 🤝 Gratheon joins NVIDIA Inception Program",
+      "type": "blog",
+      "url": "/blog/2024-11-30-gratheon-joins-nvidia-inception-program/",
+      "size": 3,
+      "color": "#4CAF50"
+    },
+    {
+      "id": "docs-entrance-observer-ml-processing-devices",
+      "label": "ML processing devices",
+      "type": "doc",
+      "url": "/docs/entrance-observer/ml-processing-devices/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "research-papers-audio-image-video-and-weather-datasets-for-continuous-electronic-beehive-monitoring",
+      "label": "Audio, Image, Video, and Weather Datasets for Continuous Electronic Beehive Monitoring",
+      "type": "page",
+      "url": "/research/papers/audio-image-video-and-weather-datasets-for-continuous-electronic-beehive-monitoring/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "research-papers-deepposekit",
+      "label": "DeepPoseKit, a software toolkit for fast and robust animal pose estimation using deep learning",
+      "type": "page",
+      "url": "/research/papers/deepposekit/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-entranceobserver-features-landing-board-heatmap-generation",
+      "label": "🛣️ Landing board heatmap generation",
+      "type": "page",
+      "url": "/about/products/entrance_observer/features/landing-board-heatmap-generation/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "blog-2024-11-04-jamk-workshop",
+      "label": "2024 11 04 🎒 JAMK workshop 🇫🇮",
+      "type": "blog",
+      "url": "/blog/2024-11-04-jamk-workshop/",
+      "size": 3,
+      "color": "#4CAF50"
+    },
+    {
+      "id": "docs-web-app-features-frame-side-management",
+      "label": "frame side management",
+      "type": "doc",
+      "url": "/docs/web-app/features/frame-side-management/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "about-problems-problems",
+      "label": "🌨️ Problems",
+      "type": "page",
+      "url": "/about/problems/problems/",
+      "size": 5,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-pro-tier-hive-telemetry-storage",
+      "label": "📈 Hive telemetry storage",
+      "type": "page",
+      "url": "/about/products/web_app/pro-tier/hive-telemetry-storage/",
+      "size": 11,
+      "color": "#607D8B"
+    },
+    {
+      "id": "blog-2024-06-27-participated-in-k-spaceee-hackathon",
+      "label": "2024 06 27 🛠️ Participated in K space.ee hackathon",
+      "type": "blog",
+      "url": "/blog/2024-06-27-participated-in-k-spaceee-hackathon/",
+      "size": 3,
+      "color": "#4CAF50"
+    },
+    {
+      "id": "about/products/entrance_observer/ideas-index",
+      "label": "Ideas",
+      "type": "page",
+      "url": "/about/products/entrance_observer/ideas/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about/products/robotic_apiary/ideas-index",
+      "label": "Ideas",
+      "type": "page",
+      "url": "/about/products/robotic_apiary/ideas/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-Team-Roles-product-manager",
+      "label": "Product manager 🦉",
+      "type": "page",
+      "url": "/about/company/Team/Roles/product-manager/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-businessplan-Competition-inspectnext",
+      "label": "InspectNext",
+      "type": "page",
+      "url": "/about/company/business_plan/Competition/inspectnext/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "blog-2025-05-15-gscan-webinar",
+      "label": "🔬 L59 startup training - Finding the right mix of scientists, engineers, and business builders (GScan use-case)",
+      "type": "blog",
+      "url": "/blog/2025-05-15-gscan-webinar/",
+      "size": 3,
+      "color": "#4CAF50"
+    },
+    {
+      "id": "research-papers-honeybee-re-identification-in-video-new-datasets-and-impact-of-self-supervision",
+      "label": "Honeybee Re-identification in Video: New Datasets and Impact of Self-supervision",
+      "type": "page",
+      "url": "/research/papers/honeybee-re-identification-in-video-new-datasets-and-impact-of-self-supervision/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-businessplan-Competition-best-bees",
+      "label": "🇺🇸 Best Bees",
+      "type": "page",
+      "url": "/about/company/business_plan/Competition/best-bees/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-entranceobserver-todo-drone-bee-detection-and-counting",
+      "label": "Drone bee detection and counting",
+      "type": "page",
+      "url": "/about/products/entrance_observer/todo/drone-bee-detection-and-counting/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-pro-tier-ideas-pollination-optimization-with-hive-placement-recommendation",
+      "label": "🌻 Pollination optimization with hive placement recommendation",
+      "type": "page",
+      "url": "/about/products/web_app/pro-tier/ideas 💡/pollination-optimization-with-hive-placement-recommendation/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "blog-2023-11-05-participated-in-garage48-cassini-hackathon",
+      "label": "2023 11 05 🛰️ Participated in Garage48 Cassini hackathon",
+      "type": "blog",
+      "url": "/blog/2023-11-05-participated-in-garage48-cassini-hackathon/",
+      "size": 3,
+      "color": "#4CAF50"
+    },
+    {
+      "id": "docs-beehive-sensors-components-todo-air-quality-sensor",
+      "label": "Air Quality Sensor",
+      "type": "doc",
+      "url": "/docs/beehive-sensors/components/todo/air-quality-sensor/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "research-papers-towards-robotic-mapping-of-a-honeybee-comb",
+      "label": "Towards Robotic Mapping of a Honeybee Comb",
+      "type": "page",
+      "url": "/research/papers/towards-robotic-mapping-of-a-honeybee-comb/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about/products/robotic_beehive/ideas-index",
+      "label": "Ideas",
+      "type": "page",
+      "url": "/about/products/robotic_beehive/ideas/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-entranceobserver-ideas-detect-bees-with-pollen-for-foraging-statistics",
+      "label": "🌻 Detect bees with pollen for foraging statistics",
+      "type": "page",
+      "url": "/about/products/entrance_observer/ideas/detect-bees-with-pollen-for-foraging-statistics/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-scales-ideas-internal-humidity-monitoring",
+      "label": "💧 Internal humidity monitoring",
+      "type": "page",
+      "url": "/about/products/scales/ideas/internal-humidity-monitoring/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "docs-API-ratelimiting",
+      "label": "🚪 Rate limiting",
+      "type": "doc",
+      "url": "/docs/API/ratelimiting/",
+      "size": 5,
+      "color": "#2196F3"
+    },
+    {
+      "id": "research-papers-importance-of-gis-solutions-for-beekeepers-a-review",
+      "label": "Importance of GIS solutions for beekeepers: a review",
+      "type": "page",
+      "url": "/research/papers/importance-of-gis-solutions-for-beekeepers-a-review/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-roboticbeehive-ideas-connecting-robot-to-web-app-ux",
+      "label": "🎮 Connecting robot to web app UX",
+      "type": "page",
+      "url": "/about/products/robotic_beehive/ideas/connecting-robot-to-web-app-ux/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-scales-ideas-wind-speed-measurement-anemometer",
+      "label": "🌪️ Wind speed measurement   Anemometer",
+      "type": "page",
+      "url": "/about/products/scales/ideas/wind-speed-measurement-anemometer/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-scales-todo-weight-monitoring",
+      "label": "⚖️ Weight monitoring",
+      "type": "page",
+      "url": "/about/products/scales/todo/weight-monitoring/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "docs-entrance-observer-components-jetson-wifi-module-for-jetson-nano",
+      "label": "WiFi module for Jetson Nano",
+      "type": "doc",
+      "url": "/docs/entrance-observer/components-jetson/wifi-module-for-jetson-nano/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "research-papers-internet-of-things-smart-beehive-network",
+      "label": "Internet of Things Smart Beehive Network: Homogeneous Data,Modeling, and Forecasting the Honey Robbing Phenomenon",
+      "type": "page",
+      "url": "/research/papers/internet-of-things-smart-beehive-network/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "research-papers-an-ai-based-open-source-software-for-varroa-mite-fall-analysis-in-honeybee-colonies",
+      "label": "⭐️ An AI-Based Open-Source Software for Varroa Mite Fall Analysis in Honeybee Colonies",
+      "type": "page",
+      "url": "/research/papers/an-ai-based-open-source-software-for-varroa-mite-fall-analysis-in-honeybee-colonies/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-businessplan-Competition-apizoom",
+      "label": "ApiZoom",
+      "type": "page",
+      "url": "/about/company/business_plan/Competition/apizoom/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-pro-tier-ideas-webhooks-integration",
+      "label": "🪝 Webhooks integration",
+      "type": "page",
+      "url": "/about/products/web_app/pro-tier/ideas 💡/webhooks-integration/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "docs-beehive-sensors-components-esp32",
+      "label": "Microcontroller - ESP32",
+      "type": "doc",
+      "url": "/docs/beehive-sensors/components/esp32/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "research-papers-mapping-crop-types-for-beekeepers-using-sentinel-2-satellite-image-time-series-five-essential-crops-in-the-pollination-services",
+      "label": "Mapping Crop Types for Beekeepers Using Sentinel-2 Satellite Image Time Series: Five Essential Crops in the Pollination Services",
+      "type": "page",
+      "url": "/research/papers/mapping-crop-types-for-beekeepers-using-sentinel-2-satellite-image-time-series-five-essential-crops-in-the-pollination-services/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about/company/prototron_dataroom-index",
+      "label": "Prototron_dataroom",
+      "type": "page",
+      "url": "/about/company/prototron_dataroom/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-entranceobserver-ideas-detect-orientation-flights",
+      "label": "🐝 Detect orientation flights",
+      "type": "page",
+      "url": "/about/products/entrance_observer/ideas/detect-orientation-flights/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-hobbyist-tier-count-bees",
+      "label": "🐝 Count bees",
+      "type": "page",
+      "url": "/about/products/web_app/hobbyist-tier/count-bees/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-pro-tier-ideas-timeseries-anomaly-detection",
+      "label": "🔔 Timeseries Anomaly detection",
+      "type": "page",
+      "url": "/about/products/web_app/pro-tier/ideas 💡/timeseries-anomaly-detection/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-starter-tier-ideas-manual-inspections-bulk-file-upload",
+      "label": "📦 Manual inspections   Bulk file upload",
+      "type": "page",
+      "url": "/about/products/web_app/starter-tier/ideas 💡/manual-inspections-bulk-file-upload/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "blog-2024-03-24-kanal-7-interview",
+      "label": "2024 03 24 📺 Kanal 7 interview",
+      "type": "blog",
+      "url": "/blog/2024-03-24-kanal-7-interview/",
+      "size": 3,
+      "color": "#4CAF50"
+    },
+    {
+      "id": "about-company-businessplan-Competition-beezee",
+      "label": "BeeZee",
+      "type": "page",
+      "url": "/about/company/business_plan/Competition/beezee/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-businessplan-Competition-prohiver",
+      "label": "Prohiver",
+      "type": "page",
+      "url": "/about/company/business_plan/Competition/prohiver/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-webapp-pro-tier-ideas-frame-analysis-spotty-brood-pattern-detection",
+      "label": "🔔 Frame analysis   spotty brood pattern detection",
+      "type": "page",
+      "url": "/about/products/web_app/pro-tier/ideas 💡/frame-analysis-spotty-brood-pattern-detection/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "blog-2025-10-16-visual-ai-in-agriculture-webinar",
+      "label": "2025 10 16 🎒 Visual AI in Agriculture Webinar",
+      "type": "blog",
+      "url": "/blog/2025-10-16-visual-ai-in-agriculture-webinar/",
+      "size": 3,
+      "color": "#4CAF50"
+    },
+    {
+      "id": "docs-web-app-features-keyboard-support",
+      "label": "keyboard support",
+      "type": "doc",
+      "url": "/docs/web-app/features/keyboard-support/",
+      "size": 3,
+      "color": "#2196F3"
+    },
+    {
+      "id": "about/products/web_app/starter-tier-index",
+      "label": "Starter-tier",
+      "type": "page",
+      "url": "/about/products/web_app/starter-tier/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-Processes-Hiring-Internship-internship-iot-mechatronics-et",
+      "label": "Internship IoT Mechatronics ET",
+      "type": "page",
+      "url": "/about/company/Processes/Hiring/Internship/internship-iot-mechatronics-et/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-Team-Roles-ml-engineer",
+      "label": "ML engineer 🧠",
+      "type": "page",
+      "url": "/about/company/Team/Roles/ml-engineer/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-company-prototrondataroom-legal-analysis-mentor-prep",
+      "label": "LEGAL ANALYSIS MENTOR PREP",
+      "type": "page",
+      "url": "/about/company/prototron_dataroom/legal-analysis-mentor-prep/",
+      "size": 3,
+      "color": "#607D8B"
+    },
+    {
+      "id": "about-products-roboticapiary-ideas-moving-robot-between-hives",
+      "label": "🤖 Moving robot between hives",
+      "type": "page",
+      "url": "/about/products/robotic_apiary/ideas/moving-robot-between-hives/",
+      "size": 3,
+      "color": "#607D8B"
+    }
+  ],
+  "edges": [
+    {
+      "source": "privacy",
+      "target": "pricing",
+      "type": "link",
+      "weight": 1
+    },
+    {
+      "source": "about-products-webapp-pro-tier-timeseries-data-analytics",
+      "target": "about-products-webapp-flexible-tier-alerts",
+      "type": "link",
+      "weight": 1
+    },
+    {
+      "source": "about-products-webapp-pro-tier-timeseries-data-analytics",
+      "target": "docs-web-app-features-timeseries-analytics",
+      "type": "link",
+      "weight": 1
+    },
+    {
+      "source": "about-products-webapp-starter-tier-hive-bottom-varroa-count",
+      "target": "docs-web-app-features-varroa-bottom-detection",
+      "type": "link",
+      "weight": 1
+    },
+    {
+      "source": "research-datasets",
+      "target": "about/products/entrance_observer-index",
+      "type": "link",
+      "weight": 1
+    },
+    {
+      "source": "research",
+      "target": "about-company-businessplan-Competition",
+      "type": "link",
+      "weight": 1
+    },
+    {
+      "source": "about-company-Team",
+      "target": "about-volunteer",
+      "type": "link",
+      "weight": 1
+    },
+    {
+      "source": "about-products",
+      "target": "about-problems-problems",
+      "type": "link",
+      "weight": 1
+    },
+    {
+      "source": "terms",
+      "target": "pricing",
+      "type": "link",
+      "weight": 1
+    },
+    {
+      "source": "docs-web-app-features-telemetry-storage",
+      "target": "about-products-webapp-flexible-tier-alerts",
+      "type": "link",
+      "weight": 1
+    },
+    {
+      "source": "docs-web-app-features-timeseries-analytics",
+      "target": "docs-web-app-features-telemetry-storage",
+      "type": "link",
+      "weight": 1
+    },
+    {
+      "source": "about-products-webapp-pro-tier-hive-telemetry-storage",
+      "target": "about-products-webapp-flexible-tier-alerts",
+      "type": "link",
+      "weight": 1
+    },
+    {
+      "source": "about-products-webapp-pro-tier-hive-telemetry-storage",
+      "target": "docs-web-app-features-telemetry-storage",
+      "type": "link",
+      "weight": 1
+    },
+    {
+      "source": "about-products-webapp-pro-tier-hive-telemetry-storage",
+      "target": "docs/beehive-sensors-index",
+      "type": "link",
+      "weight": 1
+    },
+    {
+      "source": "about-products-webapp-pro-tier-hive-telemetry-storage",
+      "target": "docs/entrance-observer-index",
+      "type": "link",
+      "weight": 1
+    },
+    {
+      "source": "docs-API-ratelimiting",
+      "target": "pricing",
+      "type": "link",
+      "weight": 1
+    }
+  ]
+}

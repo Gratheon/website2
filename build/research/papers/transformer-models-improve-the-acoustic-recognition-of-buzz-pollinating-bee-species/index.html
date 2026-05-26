@@ -1,0 +1,1166 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformer Models improve the acoustic recognition of buzz-pollinating bee species | Gratheon</title>
+    
+    <meta name="description" content="PDF">
+    
+    
+    <link rel="canonical" href="https://gratheon.com/research/papers/transformer-models-improve-the-acoustic-recognition-of-buzz-pollinating-bee-species/">
+    <meta property="og:title" content="Transformer Models improve the acoustic recognition of buzz-pollinating bee species">
+    <meta property="og:description" content="PDF">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gratheon.com/research/papers/transformer-models-improve-the-acoustic-recognition-of-buzz-pollinating-bee-species/">
+    <meta property="og:image" content="https://gratheon.com/assets/img/assets/img/gratheon-web-app-preview.webp">
+    <meta property="og:site_name" content="Gratheon">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Transformer Models improve the acoustic recognition of buzz-pollinating bee species">
+    <meta name="twitter:description" content="PDF">
+    <meta name="twitter:image" content="https://gratheon.com/assets/img/assets/img/gratheon-web-app-preview.webp">
+    <meta name="twitter:site" content="@gratheon">
+    <meta name="twitter:creator" content="@gratheon">
+    
+    <link rel="icon" href="/assets/favicons/favicon.ico">
+    <style>
+        :root {
+            --sidebar-width: 280px;
+            --toc-width: 240px;
+            --nav-bg: #f8f9fa;
+            --nav-border: #e0e0e0;
+            --nav-active: #0066cc;
+            --bg-primary: #ffffff;
+            --text-primary: #333333;
+            --text-secondary: #666666;
+            --quote-bg: #f5f9ff;
+            --quote-border: #8cb8ee;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background: var(--bg-primary);
+        }
+         
+        .site-header {
+            border-bottom: 1px solid var(--nav-border);
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+        .navbar-logo {
+            display: inline-flex;
+            align-items: center;
+        }
+        .navbar-logo img {
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+            object-fit: cover;
+        }
+        .site-nav {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .lang-switcher {
+            display: inline-flex;
+            gap: 4px;
+            padding: 3px;
+            border: 1px solid var(--nav-border);
+            border-radius: 999px;
+            background: var(--nav-bg);
+        }
+        .lang-link {
+            border: 0;
+            border-radius: 999px;
+            padding: 6px 11px;
+            font-size: 0.8em;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .lang-link.is-active {
+            color: #fff;
+            background: var(--nav-active);
+        }
+        .site-nav a {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .site-nav a:hover { color: var(--nav-active); }
+        .theme-toggle {
+            border: 1px solid var(--nav-border);
+            background: transparent;
+            width: 36px;
+            height: 36px;
+            border-radius: 18px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            color: var(--text-primary);
+        }
+        .theme-toggle svg {
+            width: 18px;
+            height: 18px;
+            display: block;
+        }
+        .theme-toggle .icon-moon { display: none; }
+        html[data-theme='dark'] .theme-toggle .icon-sun { display: none; }
+        html[data-theme='dark'] .theme-toggle .icon-moon { display: block; }
+        html[data-theme='dark'] {
+            --nav-bg: #1d1f22;
+            --nav-border: #383c42;
+            --nav-active: #6aa4ff;
+            --bg-primary: #111315;
+            --text-primary: #eceef1;
+            --text-secondary: #a9adb5;
+            --quote-bg: #18212d;
+            --quote-border: #4b7ebd;
+        }
+        .product-hero-image {
+            height: 200px;
+            overflow: hidden;
+            vertical-align: middle;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .product-hero-image img,
+        .product-hero-image .md-image,
+        .product-hero-image picture {
+            display: block;
+            width: 100%;
+        }
+        .product-hero-image img {
+            width: 100%;
+            margin-top: -10%;
+        }
+        .product-card-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            text-align: center;
+        }
+        .product-card-small {
+            width: 200px;
+        }
+        .product-card-small img,
+        .product-card-small .md-image img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+        }
+        @media (max-width: 700px) {
+            .product-card-grid { justify-content: center; }
+            .product-card-small { width: 45%; min-width: 150px; }
+        }
+        @media (max-width: 480px) {
+            .product-card-small { width: 100%; }
+        }
+         
+        .site-layout {
+            display: flex;
+            width: 100%;
+            max-width: none;
+            margin: 0;
+            min-height: calc(100vh - 120px);
+        }
+         
+        .sidebar {
+            width: var(--sidebar-width);
+            padding: 20px 16px;
+            border-right: 1px solid var(--nav-border);
+            background: var(--nav-bg);
+            flex-shrink: 0;
+            overflow-y: auto;
+            max-height: calc(100vh - 60px);
+            position: sticky;
+            top: 0;
+        }
+        .blog-sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            overflow: hidden;
+        }
+        .sidebar-mode-switch {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 4px;
+            border: 1px solid var(--nav-border);
+            background: var(--bg-primary);
+            border-radius: 999px;
+            padding: 4px;
+        }
+        .sidebar-mode-btn {
+            border: 0;
+            background: transparent;
+            color: var(--text-secondary);
+            border-radius: 999px;
+            font-size: 0.78em;
+            font-weight: 600;
+            padding: 7px 6px;
+            cursor: pointer;
+        }
+        .sidebar-mode-btn.is-active {
+            color: #fff;
+            background: var(--nav-active);
+        }
+        .sidebar-mode-pane {
+            flex: 1;
+            min-height: 0;
+            overflow-y: auto;
+        }
+        .sidebar-timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-height: none;
+            overflow: visible;
+            padding-right: 2px;
+        }
+        .timeline-year h4 {
+            font-size: 0.86em;
+            color: var(--text-secondary);
+            margin: 4px 0;
+        }
+        .timeline-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            margin-bottom: 8px;
+        }
+        .timeline-list li a {
+            display: block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            color: var(--text-primary);
+            text-decoration: none;
+            font-size: 0.86em;
+        }
+        .timeline-list li a time {
+            color: var(--text-secondary);
+            margin-right: 6px;
+            font-size: 0.9em;
+        }
+        .timeline-list li.active > a {
+            color: var(--nav-active);
+            font-weight: 600;
+            background: rgba(0, 102, 204, 0.08);
+        }
+        .sidebar-graph-pane {
+            height: calc(100vh - 130px);
+        }
+        .sidebar-graph-frame {
+            width: 100%;
+            height: 100%;
+            border: 1px solid var(--nav-border);
+            border-radius: 8px;
+            background: var(--bg-primary);
+        }
+        .site-layout.sidebar-graph-mode .sidebar {
+            width: 40%;
+        }
+        .site-layout.sidebar-graph-mode .site-content {
+            max-width: none;
+        }
+        .sidebar-menu, .sidebar-submenu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .sidebar-submenu {
+            padding-left: 16px;
+            border-left: 1px solid var(--nav-border);
+            margin-left: 8px;
+        }
+        .sidebar-item a {
+            display: block;
+            padding: 4px 8px;
+            color: var(--text-primary);
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+        .sidebar-section-head {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .sidebar-section-head a {
+            flex: 1;
+        }
+        .sidebar-toggle {
+            appearance: none;
+            border: 0;
+            background: transparent;
+            color: var(--text-secondary);
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            padding: 0;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+        }
+        .sidebar-toggle:hover {
+            background: rgba(0, 102, 204, 0.08);
+            color: var(--nav-active);
+        }
+        .sidebar-toggle::before {
+            content: "▸";
+            font-size: 0.8em;
+            line-height: 1;
+            transition: transform 0.15s ease;
+        }
+        .sidebar-section.expanded > .sidebar-section-head .sidebar-toggle::before {
+            transform: rotate(90deg);
+        }
+        .sidebar-section > .sidebar-submenu {
+            display: none;
+        }
+        .sidebar-section.expanded > .sidebar-submenu {
+            display: block;
+        }
+        .sidebar-item a:hover {
+            background: rgba(0, 102, 204, 0.08);
+        }
+        .sidebar-item.active > a {
+            color: var(--nav-active);
+            font-weight: 600;
+            background: rgba(0, 102, 204, 0.08);
+        }
+        .sidebar-section > a {
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.8em;
+            letter-spacing: 0.05em;
+            color: var(--text-secondary);
+            margin-top: 12px;
+        }
+         
+        .site-content {
+            flex: 1;
+            min-width: 0;
+            padding: 24px 40px;
+            max-width: 800px;
+        }
+        .embed {
+            width: 100%;
+            max-width: 800px;
+            margin: 24px auto;
+        }
+        .embed iframe {
+            display: block;
+            width: min(100%, 800px);
+            aspect-ratio: 16 / 9;
+            height: auto;
+            border: 0;
+            border-radius: 12px;
+        }
+         
+        .breadcrumbs {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+            padding: 0;
+            margin-bottom: 20px;
+            font-size: 0.85em;
+            color: var(--text-secondary);
+        }
+        .breadcrumbs li:not(:last-child)::after {
+            content: "›";
+            margin-left: 4px;
+            color: var(--text-secondary);
+        }
+        .breadcrumbs a { color: var(--nav-active); text-decoration: none; }
+        .breadcrumbs a:hover { text-decoration: underline; }
+         
+        .toc {
+            width: var(--toc-width);
+            padding: 20px 16px;
+            flex-shrink: 0;
+            position: sticky;
+            top: 0;
+            max-height: 100vh;
+            overflow-y: auto;
+            font-size: 0.85em;
+        }
+        .toc-title {
+            font-size: 0.8em;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        .toc-list, .toc-sublist {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .toc-sublist { padding-left: 12px; }
+        .toc-item a {
+            display: block;
+            padding: 3px 0;
+            color: var(--text-secondary);
+            text-decoration: none;
+            border-left: 2px solid transparent;
+            padding-left: 8px;
+        }
+        .toc-item a:hover {
+            color: var(--nav-active);
+            border-left-color: var(--nav-active);
+        }
+         
+        .prev-next {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid var(--nav-border);
+            gap: 20px;
+        }
+        .prev-next a {
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            padding: 12px 16px;
+            border: 1px solid var(--nav-border);
+            border-radius: 8px;
+            flex: 1;
+            transition: border-color 0.2s;
+        }
+        .prev-next a:hover { border-color: var(--nav-active); }
+        .prev-next .prev-link { text-align: left; }
+        .prev-next .next-link { text-align: right; margin-left: auto; }
+        .prev-label, .next-label {
+            font-size: 0.8em;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+        }
+        .prev-title, .next-title {
+            color: var(--nav-active);
+            font-weight: 500;
+        }
+         
+        article h1 { font-size: 2em; margin-bottom: 8px; }
+        article time { color: var(--text-secondary); font-size: 0.9em; }
+        .article-meta {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 4px;
+            margin: 0 0 8px;
+            flex-wrap: nowrap;
+        }
+        .article-audio {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin: 0 0 0 2px;
+        }
+        .article-audio button {
+            border: 1px solid var(--nav-active);
+            border-radius: 999px;
+            background: var(--nav-active);
+            color: #fff;
+            width: 36px;
+            height: 36px;
+            padding: 0;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        .article-audio button:hover {
+            filter: brightness(0.92);
+        }
+        .article-audio button svg {
+            width: 14px;
+            height: 14px;
+            fill: currentColor;
+        }
+        .article-audio button .icon-stop { display: none; }
+        .article-audio button.is-playing .icon-play { display: none; }
+        .article-audio button.is-playing .icon-stop { display: block; }
+        .article-audio .audio-wave {
+            width: 88px;
+            height: 28px;
+            border: 0;
+            border-radius: 0;
+            background: transparent;
+            opacity: 0.95;
+        }
+        .article-audio button:disabled {
+            opacity: 0.55;
+            cursor: default;
+        }
+        article .tags { margin: 22px 0 24px; }
+        article .tag {
+            display: inline-block;
+            background: var(--nav-bg);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            color: var(--nav-active);
+            margin-right: 4px;
+            text-decoration: none;
+        }
+        article .tag:hover { text-decoration: underline; }
+        article .content { margin-top: 16px; }
+        article .content h2 { margin-top: 2em; margin-bottom: 0.5em; }
+        article .content h3 { margin-top: 1.5em; margin-bottom: 0.4em; }
+        article .content p { margin-bottom: 1em; }
+        article .content blockquote {
+            margin: 1.4em 0;
+            padding: 0.8em 1em;
+            border-left: 4px solid var(--quote-border);
+            background: var(--quote-bg);
+            color: var(--text-secondary);
+            font-style: italic;
+        }
+        article .content blockquote p:last-child {
+            margin-bottom: 0;
+        }
+         
+        .site-footer {
+            border-top: 1px solid var(--nav-border);
+            padding: 20px;
+            color: var(--text-secondary);
+            font-size: 0.9em;
+            text-align: center;
+        }
+         
+        a { color: var(--nav-active); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        img { max-width: 100%; height: auto; }
+        pre {
+            background: #f4f4f4;
+            padding: 15px;
+            overflow-x: auto;
+            border-radius: 4px;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: "Monaco", "Menlo", monospace;
+        }
+        pre code { padding: 0; background: none; }
+        table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background: #f4f4f4; }
+        .section-index { list-style: none; padding: 0; }
+        .section-index li { padding: 6px 0; border-bottom: 1px solid var(--nav-border); }
+        .section-index li a { font-weight: 500; }
+        .section-article-list {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+        .section-article-preview {
+            border-bottom: 1px solid var(--nav-border);
+            padding-bottom: 12px;
+        }
+        .section-article-preview h2 {
+            margin: 0 0 4px;
+            font-size: 1.05em;
+        }
+        .section-article-preview time {
+            display: block;
+            color: var(--text-secondary);
+            font-size: 0.83em;
+            margin-bottom: 6px;
+        }
+        .section-article-preview p {
+            margin: 0;
+            color: var(--text-secondary);
+        }
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            margin: 32px 0 0;
+        }
+        .project-card {
+            background: var(--bg-secondary);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .project-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px var(--shadow);
+        }
+        .project-image {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            background: var(--border);
+            display: block;
+        }
+        .project-content {
+            padding: 20px;
+        }
+        .project-content h3 {
+            margin: 0 0 8px;
+            font-size: 1.25em;
+        }
+        .project-content p {
+            margin: 0 0 16px;
+            color: var(--text-secondary);
+            font-size: 0.95em;
+        }
+        .project-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        .project-tag {
+            font-size: 0.8em;
+            padding: 4px 10px;
+            background: var(--bg-primary);
+            border-radius: 20px;
+            color: var(--text-secondary);
+        }
+         
+        @media (max-width: 1200px) {
+            .toc { display: none; }
+        }
+        @media (max-width: 768px) {
+            .sidebar { display: none; }
+            .site-content { padding: 16px; }
+            .projects-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body class="page-layout-page">
+    <header class="site-header">
+        <div class="header-left">
+            <a class="navbar-logo" href="/">
+                <img class="no-transform" src="/assets/img/logo_v7w.svg" alt="Gratheon">
+            </a>
+            <nav class="site-nav">
+                <a href="/about/">About</a><a href="/about/products/">Products</a><a href="/docs/">Docs</a><a href="/research/">Research</a><a href="/blog/">Blog</a><a href="/pricing/">Pricing</a><a href="https://discord.gg/PcbP4uedWj">Discord</a><a href="https://github.com/gratheon/web-app">GitHub</a><a href="https://app.gratheon.com/account/authenticate/">Log in</a>
+            </nav>
+        </div>
+        <div class="header-right">
+            
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
+                <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="4"></circle>
+                    <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
+                </svg>
+                <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3c0 0 0 0 0 0A7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+    <div class="site-layout">
+        <nav class="sidebar blog-sidebar" aria-label="Navigation" data-sidebar-mode="categories" data-sidebar-default-mode="categories">
+  <div class="sidebar-mode-pane" data-sidebar-mode-pane="categories">
+<ul class="sidebar-menu">
+  <li class="sidebar-item">
+      <a href="/research/papers/a-minimally-invasive-approach-towards-ecosystem-hacking-with-honeybees/">A Minimally Invasive Approach Towards “Ecosystem Hacking” With Honeybees</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/a-preliminary-study-of-image-analysis-forparasite-detection-on-honey-bees/">A Preliminary Study of Image Analysis forParasite Detection on Honey Bees</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/accuracy-vs-energy/">Accuracy vs. Energy: An Assessment of Bee Object Inference inVideos from On-Hive Video Loggers with YOLOv3,YOLOv4-Tiny, and YOLOv7-Tiny</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/advances-in-beehive-monitoring-systems-low-cost-integrating-sensor-technology-for-improved-apiculture-management/">Advances in Beehive Monitoring Systems: Low-Cost Integrating Sensor Technology forImproved Apiculture Management</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/ambient-electromagnetic-radiation-as-a-predictor-of-honey-bee-traffic/">Ambient Electromagnetic Radiation as a Predictor of Honey Bee (Apis mellifera) Traffic in Linear and Non-Linear Regression: Numerical Stability, Physical Time and Energy Efficiency</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/analysis-of-energy-consumption-in-a-precision-beekeeping-system/">Analysis of Energy Consumption in a Precision Beekeeping System</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/analysis-of-the-waggle-dance-motion-of-honeybees-for-the-design-of-a-biomimetic-honeybee-robot/">Analysis of the Waggle Dance Motion of Honeybees for the Design of a Biomimetic Honeybee Robot</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/apis-mellifera-bee-verification-with-iot-and-graph-neural-network/">Apis mellifera Bee Verification with IoT and Graph Neural Network</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/application-of-data-layering-in-precision-beekeeping-the-concept/">Application of Data Layering in Precision Beekeeping The Concept</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/approximation-of-functions/">Approximation of functions determining colony activity using neural networks. Master thesis</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/audio-image-video-and-weather-datasets-for-continuous-electronic-beehive-monitoring/">Audio, Image, Video, and Weather Datasets for Continuous Electronic Beehive Monitoring</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/automated-monitoring-of-bee-behaviour-using-connected-hives-towards-a-computational-apidology/">Automated monitoring of bee behaviour using connected hives Towards a computational apidology</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/automated-video-monitoring-of-unmarked-and-marked-honey-bees-at-the-hive-entrance/">Automated Video Monitoring of Unmarked and Marked Honey Bees at the Hive Entrance</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/automatic-detection-and-decoding-of-honeybee-waggle-dances/">Automatic detection and decoding of honeybee waggle dances</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/automatic-methods-for-long-term-tracking-and-the-detection-and-decoding-of-communication-dancesin-honeybees/">Automatic methods for long term tracking and the detection and decoding of communication dancesin honeybees</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/autonomous-tracking-of-honey-bee-behaviors-over-long-term-periods-with-cooperating-robots/">Autonomous tracking of honey bee behaviors over long-term periods with cooperating robots</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/bee-colony-remote-monitoring-based-on-iot-using-esp-now-protocol/">Bee colony remote monitoring based on IoT using ESP-NOW protocol</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/bee-together-joining-bee-audio-datasets-for-hive-extrapolation-in-ai-based-monitoring/">Bee Together: Joining Bee Audio Datasets for Hive Extrapolation in AI-Based Monitoring</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/beealarmed-masters-thesis/">BeeAlarmed. Masters thesis</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/beenet-an-end-to-end-deep-network-for-bee-surveillance/">BeeNet: An End-To-End Deep Network For Bee Surveillance</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/beepiv-a-method-to-measure-apis-mellifera-traffic-with-particle-image-velocimetry-in-videos/">BeePIV: A Method to Measure Apis Mellifera Traffic with Particle Image Velocimetry in Videos</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/bio-hybrid-systems-for-ecosystem-level-effects/">Bio Hybrid Systems for Ecosystem Level Effects</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/biodiversity-conservation-and-current-threats-to-european-honeybees/">Biodiversity conservation and current threats to European honeybees</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/buzzing-with-intelligence-a-systematic-review-of-smartbeehive-technologies/">Buzzing with Intelligence: A Systematic Review of Smart Beehive Technologies</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/comb/">COMB: Common Open Modular robotic platform for Bees</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/comparing-weight-dynamics-between-urban-and-rural-honeybee-colonies-in-latvia/">Comparing weight dynamics between urban and rural honeybee colonies in Latvia</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/current-achievements-and-future-developments-of-a-novel-ai-based-visual-monitoring-of-beehives-in-ecotoxicology-and-for-the-monitoring-of-landscape-structures/">Current achievements and future developments of a novel AI based visual monitoring of beehives in ecotoxicology and for the monitoring of landscape structures</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/deep-learning-based-detection-of-honey-storage-areas-in-apismellifera-colonies-for-predicting-physical-parameters-of-honey-via-linear-regression/">Deep Learning-Based Detection of Honey Storage Areas in Apismellifera Colonies for Predicting Physical Parameters of Honey via Linear Regression</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/deepbees-building-and-scaling-convolutional-neuronal-nets-for-fast-and-large-scale-visual-monitoring-of-bee-hives/">DeepBees – Building and Scaling Convolutional Neuronal Nets For Fast and Large-scale Visual Monitoring of Bee Hives</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/deeplabcut-based-daily-behavioural-and-posture-analysis-in-a-cricket/">DeepLabCut based daily behavioural and posture analysis in a cricket</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/deeplabcut/">DeepLabCut: markerless pose estimation of user-defined body parts with deep learning</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/deepposekit/">DeepPoseKit, a software toolkit for fast and robust animal pose estimation using deep learning</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/wifi-exposure/">Defined exposure of honey bee colonies to simulated radiofrequency electromagnetic fields (RF-EMF): Negative effects on the homing ability, butn ot on brood development or longevity</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/digital-transformation-of-beekeeping-through-the-use-of-a-decision-making-architecture/">Digital Transformation of Beekeeping through the Use of a Decision Making Architecture</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/evaluation-of-single-shot-object-detection-models-for-identifying-fanning-behavior-in-honeybees-at-the-hive-entrance/">Evaluation of Single-Shot Object Detection Models for Identifying Fanning Behavior in Honeybees at the Hive Entrance</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/evaluation-of-the-honey-bee-colonies-weight-gain-during-theintensive-foraging-period/">Evaluation of the honey bee colonies weight gain during theintensive foraging period</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/hivelink-iot-based-smart-bee-hive-monitoringsystem/">HiveLink – IoT based Smart Bee Hive MonitoringSystem</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/honey-bee-colonies-remote-monitoring-system/">Honey Bee Colonies Remote Monitoring System</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/honey-bees-modify-plantpollinator-network-structure/">Honey bees modify plantpollinator network structure</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/honey-bulk-dna-metagenomic-analysis-to-identify-honey-biological/">Honey bulk DNA metagenomic analysis to identify honey biological</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/honeybee-in-out-monitoring-system-by-object-recognition-and-tracking-from-real-time-webcams/">Honeybee In-Out Monitoring System by Object Recognition and Tracking from Real-Time Webcams</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/honeybee-re-identification-in-video-new-datasets-and-impact-of-self-supervision/">Honeybee Re-identification in Video: New Datasets and Impact of Self-supervision</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/honeybees-on-the-move-pollination-services-and-honey-production/">Honeybees on the move - Pollination services and honey production</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/identifying-queenlessness-in-honeybee-hives-from-audio-signals-using-machine-learning/">Identifying Queenlessness in Honeybee Hives from Audio Signals Using Machine Learning</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/impact-of-the-precision-beekeeping-on-the-living-environment/">Impact of the precision beekeeping on the living environment</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/importance-of-gis-solutions-for-beekeepers-a-review/">Importance of GIS solutions for beekeepers: a review</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/integration-of-scales-and-cameras-in-nondisruptive-electronic-beehive-monitoring/">Integration of Scales and Cameras in Nondisruptive ElectronicBeehive Monitoring: On the Within-Day Relationship of HiveWeight and Traffic in Honeybee (Apis mellifera) Colonies in Langstroth Hives in Tucson, Arizona, USA</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/intelligent-beehive-monitoring-system-based-on-internet-of-things-and-colony-state-analysis/">Intelligent beehive monitoring system based on internet of things and colony state analysis</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/internet-of-things-smart-beehive-network/">Internet of Things Smart Beehive Network: Homogeneous Data,Modeling, and Forecasting the Honey Robbing Phenomenon</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/iot-and-machine-learning-techniques-for-precision-beekeeping-a-review/">IoT and Machine Learning Techniques for Precision Beekeeping:A Review</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/keypoint-based-bee-orientation-estimation-and-ramp-detection-at-the-hive-entrance-for-bee-behavior-identification-system/">Keypoint Based Bee Orientation Estimation and Ramp Detection at the Hive Entrance for Bee Behavior Identification System</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/labelbee-a-web-platform-for-large-scale-semi-automated-analysis-of-honeybee-behavior-from-video/">LabelBee: a web platform for large-scale semi-automated analysis of honeybee behavior from video</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/labeled-dataset-for-bee-detection-and-direction-estimation-on-entrance-to-beehive/">Labeled dataset for bee detection and direction estimation on entrance to beehive</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/machine-learning-and-computer-vision-techniques-in-continuous-beehive-monitoring-applications-a-survey/">Machine Learning and Computer Vision Techniques in Continuous Beehive Monitoring Applications: A Survey</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/mapping-crop-types-for-beekeepers-using-sentinel-2-satellite-image-time-series-five-essential-crops-in-the-pollination-services/">Mapping Crop Types for Beekeepers Using Sentinel-2 Satellite Image Time Series: Five Essential Crops in the Pollination Services</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/model-for-the-bee-apiary-location-evaluation/">Model for the bee apiary location evaluation</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/modular-sensory-hardware-and-data-processing-solution-forimplementation-of-the-precision-beekeeping/">Modular sensory hardware and data processing solution forimplementation of the precision beekeeping</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/multiple-animals-tracking-in-videousing-part-affinity-fields/">Multiple Animals Tracking in VideoUsing Part Affinity Fields</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/mybee/">myBee: An Information System for Precision Beekeeping</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/on-image-classification-in-video-analysis-of-omnidirectional-apis-mellifera-traffic-random-reinforced-forests-vs-shallow-convolutional-networks/">On Image Classification in Video Analysis of Omnidirectional Apis Mellifera Traffic: Random Reinforced Forests vs. Shallow Convolutional Networks</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/open-remote-web-lab-for-learning-robotics-andros-with-physical-and-simulated-robots-in-anauthentic-developer-environment/">Open Remote Web Lab for Learning Robotics and ROS With Physical and Simulated Robots in an Authentic Developer Environment</a>
+  </li>
+  <li class="sidebar-item sidebar-section">
+    <div class="sidebar-section-head">
+      <button class="sidebar-toggle" type="button" aria-label="Toggle section Pdfs" aria-expanded="false"></button>
+      <a href="/research/papers/pdfs/">Pdfs</a>
+    </div>
+<ul class="sidebar-submenu">
+  <li class="sidebar-item">
+      <a href="/research/papers/pdfs/beehive-smart-detector-device-for-the-detection-of-criticalconditions-that-utilize-edge-device-computations-and-deeplearning-inferences/">Beehive Smart Detector Device for the Detection of CriticalConditions That Utilize Edge Device Computations and DeepLearning Inferences</a>
+  </li>
+</ul>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/pollinators-as-data-collectors-estimating-floral-diversity-with-bees-and-computer-vision/">Pollinators as Data Collectors Estimating Floral Diversity with Bees and Computer Vision</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/precision-apiculture-iot-system-for-remote-monitoring-of-honeybee-colonies/">Precision Apiculture – IoT System for Remote Monitoring of Honeybee Colonies</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/precision-beekeeping-systems-state-of-the-art-pros-and-cons-and-their-application-as-tools-for-advancing-thebeekeeping-sector/">Precision Beekeeping Systems: State of the Art, Pros and Cons, and Their Application as Tools for Advancing theBeekeeping Sector</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/precision-monitoring-of-honey-bee/">Precision Monitoring of Honey Bee (Hymenoptera: Apidae) Activity and Pollen Diversity during Pollination to EvaluateColony Health</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/raspberry-pi-bee-health-monitoring-device/">Raspberry Pi Bee Health Monitoring Device</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/real-time-low-latency-closed-loop-feedback-using-markerless-posture-tracking/">Real time, low latency closed loop feedback using markerless posture tracking</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/reception-and-learning-of-electric-fields-in-bees/">Reception and learning of electric fields in bees</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/recognition-of-pollen-bearing-bees-from-video-using-convolutional-neural-network/">Recognition of Pollen-bearing Bees from Video using Convolutional Neural Network</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/self-powered-smart-beehive-monitoring-and-controlsystem-sbmacs/">Self Powered Smart Beehive Monitoring and ControlSystem (SBMaCS)</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/sleap/">SLEAP: A deep learning system for multi-animal pose tracking</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/smart-beehive-monitoring-for-remote-regions-phd-thesis/">Smart Beehive Monitoring for Remote Regions   PhD thesis</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/social-networks-predict-the-life-and-death-of-honeybees/">Social networks predict the life and death of honeybees</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/solution-for-automated-bee-colony-weight-monitoring/">Solution for automated bee colony weight monitoring</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/be-hive/">The Be-Hive Project - Counting Bee Traffic based on Deep Learning and Pose Estimation</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/the-development-of-honey-bee-coloniesassessed-using-a-new-semi-automated-broodcounting-method-combcount/">The development of honey bee coloniesassessed using a new semi-automated broodcounting method: CombCount</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/the-prediction-of-swarming-in-honeybee-colonies-using-vibrational-spectra/">The prediction of swarming in honeybee colonies using vibrational spectra</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/the-use-of-products-with-a-monitoring-system-for-remote-bee-detection-in-beekeeping-in-czechia/">The Use of Products with a Monitoring System for Remote Bee Detection in Beekeeping in Czechia</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/toward-an-intelligent-and-efficient-beehive-a-survey-of-precision-beekeeping-systems-and-services/">Toward an intelligent and efficient beehive: A survey of precision beekeeping systems and services</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/towards-dense-object-tracking-in-a-2d-honeybee-hive/">Towards dense object tracking in a 2D honeybee hive</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/towards-robotic-mapping-of-a-honeybee-comb/">Towards Robotic Mapping of a Honeybee Comb</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/towards-varroa-destructor-mite-detection-using-a-narrow-spectra-illumination/">Towards Varroa destructor mite detection using a narrow spectra illumination</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/tracking-all-members-of-a-honey-bee-colony-over-their-lifetime-using-learned-models-of-correspondence/">Tracking All Members of a Honey Bee Colony Over Their Lifetime Using Learned Models of Correspondence</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/tracking-varroa-parasitism-using-handheld-infrared-cameras-is-eusocial-fever-the-key/">Tracking Varroa Parasitism Using Handheld Infrared Cameras:Is Eusocial Fever the Key?</a>
+  </li>
+  <li class="sidebar-item active expanded">
+      <a href="/research/papers/transformer-models-improve-the-acoustic-recognition-of-buzz-pollinating-bee-species/" aria-current="page">Transformer Models improve the acoustic recognition of buzz-pollinating bee species</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/varroa-destructor-classification-using-legendre-fourier-moments-with-different-color-spaces/">Varroa Destructor Classification Using Legendre Fourier Moments with Different Color Spaces</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/varroa-destructor-detection-on-honey-bees-using-hyperspectral-imagery/">Varroa destructor detection on honey bees using hyperspectral imagery</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/visual-diagnosis-of-the-varroa-destructor-parasitic-mite-in-honeybees-using-object-detector-techniques/">Visual Diagnosis of the Varroa Destructor Parasitic Mite in Honeybees Using Object Detector Techniques</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/an-ai-based-open-source-software-for-varroa-mite-fall-analysis-in-honeybee-colonies/">⭐️ An AI-Based Open-Source Software for Varroa Mite Fall Analysis in Honeybee Colonies</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/automatic-detection-and-classification-of-honey-bee-comb-cells-using-deeplearning/">⭐️ Automatic detection and classification of honey bee comb cells using deeplearning</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/deep-edge-iot-for-acoustic-detection-of-queenless-beehives/">⭐️ Deep Edge IoT for Acoustic Detection of Queenless Beehives</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/research/papers/markerless-tracking-of-an-entire-honey-bee-colony/">⭐️ Markerless tracking of an entire honey bee colony</a>
+  </li>
+</ul>
+  </div>
+</nav>
+
+        <main class="site-content">
+            
+<article>
+    
+    <nav aria-label="Breadcrumb">
+        <ol class="breadcrumbs">
+            
+            <li>
+                
+                    <a href="/">Home</a>
+                
+            </li>
+            
+            <li>
+                
+                    <a href="/research/">Research</a>
+                
+            </li>
+            
+            <li>
+                
+                    <a href="/research/papers/">Research papers</a>
+                
+            </li>
+            
+            <li>
+                
+                    <span aria-current="page">Transformer Models improve the acoustic recognition of buzz-pollinating bee species</span>
+                
+            </li>
+            
+        </ol>
+    </nav>
+    
+    <h1>Transformer Models improve the acoustic recognition of buzz-pollinating bee species</h1>
+    
+    <div class="content">
+        <p><a href="pdfs/Ferreiraetal2025.pdf">PDF</a></p>
+
+    </div>
+    
+    
+    
+    <nav class="prev-next" aria-label="Page navigation">
+        
+        <a href="/research/papers/tracking-varroa-parasitism-using-handheld-infrared-cameras-is-eusocial-fever-the-key/" class="prev-link">
+            <span class="prev-label">← Previous</span>
+            <span class="prev-title">Tracking Varroa Parasitism Using Handheld Infrared Cameras:Is Eusocial Fever the Key?</span>
+        </a>
+        
+        
+        <a href="/research/papers/varroa-destructor-classification-using-legendre-fourier-moments-with-different-color-spaces/" class="next-link">
+            <span class="next-label">Next →</span>
+            <span class="next-title">Varroa Destructor Classification Using Legendre Fourier Moments with Different Color Spaces</span>
+        </a>
+        
+    </nav>
+    
+</article>
+
+        </main>
+        
+    </div>
+    <script>
+    (function() {
+        var players = document.querySelectorAll("[data-audio-player]");
+        players.forEach(function(container) {
+            var audio = container.querySelector("[data-audio-element]");
+            var toggleBtn = container.querySelector("[data-audio-toggle]");
+            var wave = container.querySelector("[data-audio-wave]");
+            if (!audio || !toggleBtn || !wave) {
+                return;
+            }
+            var audioCtx = null;
+            var sourceNode = null;
+            var analyser = null;
+            var waveData = null;
+            var rafId = 0;
+
+            function syncToggleState() {
+                var isPlaying = !audio.paused && !audio.ended;
+                toggleBtn.classList.toggle("is-playing", isPlaying);
+                var label = isPlaying ? (toggleBtn.dataset.stopLabel || "Stop") : (toggleBtn.dataset.playLabel || "Listen");
+                toggleBtn.setAttribute("aria-label", label);
+                toggleBtn.setAttribute("title", label);
+            }
+
+            function ensureVisualizer() {
+                if (analyser) {
+                    return;
+                }
+                var AudioCtx = window.AudioContext || window.webkitAudioContext;
+                if (!AudioCtx) {
+                    return;
+                }
+                audioCtx = new AudioCtx();
+                sourceNode = audioCtx.createMediaElementSource(audio);
+                analyser = audioCtx.createAnalyser();
+                analyser.fftSize = 1024;
+                waveData = new Uint8Array(analyser.fftSize);
+                sourceNode.connect(analyser);
+                analyser.connect(audioCtx.destination);
+            }
+
+            function stopWave() {
+                if (rafId) {
+                    cancelAnimationFrame(rafId);
+                    rafId = 0;
+                }
+            }
+
+            function drawWave() {
+                if (!analyser || !wave) {
+                    return;
+                }
+                var dpr = window.devicePixelRatio || 1;
+                var w = Math.max(88, wave.clientWidth || 88);
+                var h = Math.max(28, wave.clientHeight || 28);
+                if (wave.width !== Math.floor(w * dpr) || wave.height !== Math.floor(h * dpr)) {
+                    wave.width = Math.floor(w * dpr);
+                    wave.height = Math.floor(h * dpr);
+                }
+                var ctx = wave.getContext("2d");
+                if (!ctx) {
+                    return;
+                }
+                ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+                ctx.clearRect(0, 0, w, h);
+                ctx.strokeStyle = "#0066cc";
+                ctx.lineWidth = 1.2;
+
+                analyser.getByteTimeDomainData(waveData);
+                ctx.beginPath();
+                var slice = waveData.length / w;
+                for (var x = 0; x < w; x++) {
+                    var idx = Math.floor(x * slice);
+                    var y = ((waveData[idx] - 128) / 128) * (h * 0.36) + (h / 2);
+                    if (x === 0) {
+                        ctx.moveTo(x, y);
+                    } else {
+                        ctx.lineTo(x, y);
+                    }
+                }
+                ctx.stroke();
+
+                if (!audio.paused && !audio.ended) {
+                    rafId = requestAnimationFrame(drawWave);
+                } else {
+                    stopWave();
+                }
+            }
+
+            toggleBtn.addEventListener("click", function() {
+                if (!audio.paused && !audio.ended) {
+                    audio.pause();
+                    audio.currentTime = 0;
+                    syncToggleState();
+                    stopWave();
+                    return;
+                }
+                ensureVisualizer();
+                if (audioCtx && audioCtx.state === "suspended") {
+                    audioCtx.resume().catch(function() {});
+                }
+                var started = audio.play();
+                if (started && typeof started.then === "function") {
+                    started.then(function() {
+                        syncToggleState();
+                        drawWave();
+                    }).catch(function() {});
+                    return;
+                }
+                syncToggleState();
+                drawWave();
+            });
+            audio.addEventListener("pause", syncToggleState);
+            audio.addEventListener("play", syncToggleState);
+            audio.addEventListener("ended", function() {
+                syncToggleState();
+                stopWave();
+            });
+
+            syncToggleState();
+        });
+    })();
+    </script>
+    <script defer src="/assets/js/main.js"></script>
+</body>
+</html>
+

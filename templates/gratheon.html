@@ -1,0 +1,81 @@
+{{define "gratheon_head"}}
+<!DOCTYPE html>
+<html lang="{{.Site.Site.Language}}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{.Page.Title}}{{if .Site.Site.Title}} | {{.Site.Site.Title}}{{end}}</title>
+  {{if .MetaDescription}}<meta name="description" content="{{.MetaDescription}}">{{end}}
+  {{if .CanonicalURL}}<link rel="canonical" href="{{.CanonicalURL}}">{{end}}
+  {{if .Site.Site.Favicon}}<link rel="icon" href="{{.Site.Site.Favicon}}">{{end}}
+  {{if .Site.SEO.Enabled}}
+  <meta property="og:title" content="{{.Page.Title}}">
+  {{if .MetaDescription}}<meta property="og:description" content="{{.MetaDescription}}">{{end}}
+  <meta property="og:type" content="{{.OpenGraphType}}">
+  {{if .CanonicalURL}}<meta property="og:url" content="{{.CanonicalURL}}">{{end}}
+  {{if .SocialImageURL}}<meta property="og:image" content="{{.SocialImageURL}}">{{end}}
+  <meta name="twitter:card" content="{{.SocialCard}}">
+  <meta name="twitter:title" content="{{.Page.Title}}">
+  {{if .MetaDescription}}<meta name="twitter:description" content="{{.MetaDescription}}">{{end}}
+  {{if .SocialImageURL}}<meta name="twitter:image" content="{{.SocialImageURL}}">{{end}}
+  {{end}}
+  {{if .CSSPath}}<link rel="stylesheet" href="{{.CSSPath}}">{{end}}
+</head>
+{{end}}
+
+{{define "gratheon_header"}}
+<header class="site-header">
+  <div class="header-left">
+    <a class="navbar-logo" href="/">
+      <img class="no-transform" src="{{.Site.Site.Logo}}" alt="{{.Site.Site.Title}}">
+    </a>
+    <nav class="site-nav">
+      <a href="/about/">About</a>
+      <a href="/about/products/">Products</a>
+      <a href="/docs/">Docs</a>
+      <a href="/research/">Research</a>
+      <a href="/blog/">Blog</a>
+      <a href="/pricing/">Pricing</a>
+    </nav>
+  </div>
+  <div class="header-right">
+    <nav class="site-nav">
+      <a href="https://discord.gg/PcbP4uedWj" aria-label="Discord Invite">Discord</a>
+      <a href="https://github.com/gratheon/web-app" aria-label="GitHub repository">GitHub</a>
+      <a href="https://app.gratheon.com/account/authenticate/">Log in</a>
+    </nav>
+  </div>
+</header>
+{{end}}
+
+{{define "gratheon_footer"}}
+<footer class="site-footer gratheon-footer">
+  <div class="gratheon-footer-grid">
+    <div class="footer-company-block">
+      <a href="https://ariregister.rik.ee/est/company/12245103/Gratheon-O%C3%9C">Gratheon OÜ</a><br>
+      ❤️ Made with love in Estonia
+    </div>
+    <ul>
+      <li><a href="/privacy/">Privacy Policy</a></li>
+      <li><a href="/terms/">Terms Of Service</a></li>
+      <li><a href="mailto:pilot@gratheon.com">Email</a></li>
+      <li><a href="https://tawk.to/gratheon">Support Chat</a></li>
+      <li><a href="https://gratheon.statuspage.io/">Service Status</a></li>
+    </ul>
+    <ul>
+      <li><a href="https://t.me/gratheon">Telegram</a></li>
+      <li><a href="https://twitter.com/gratheon">Twitter</a></li>
+      <li><a href="https://www.linkedin.com/company/gratheon/">LinkedIn</a></li>
+    </ul>
+    <ul>
+      <li><a href="https://www.facebook.com/gratheon">Facebook</a></li>
+      <li><a href="https://www.twitch.tv/tot_ra">Twitch</a></li>
+      <li><a href="https://www.youtube.com/@gratheon-bees">Youtube</a></li>
+    </ul>
+    <div>
+      <img class="gratheon-footer-badge no-transform" src="/assets/img/nvidia-inception-program-badge-rgb-for-screen.svg" alt="NVIDIA Inception Program Member">
+    </div>
+  </div>
+  <div class="gratheon-copyright">Copyright © 2026 Gratheon OÜ. Gratheon™ trademark registration was approved by the Estonian Patent Office under application M202501179.</div>
+</footer>
+{{end}}

@@ -1,20 +1,1035 @@
-<!doctype html><html lang=en dir=ltr class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-entrance-observer/components-orin/Camera" data-has-hydrated=false><head><meta charset=UTF-8><meta name=generator content="Docusaurus v3.9.2"><title data-rh=true>Camera | Gratheon</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"/><meta data-rh=true name=twitter:card content=summary_large_image /><meta data-rh=true property=og:image content=https://gratheon.com/img/gratheon-web-app.webp /><meta data-rh=true name=twitter:image content=https://gratheon.com/img/gratheon-web-app.webp /><meta data-rh=true property=og:url content=https://gratheon.com/docs/entrance-observer/components-orin/Camera /><meta data-rh=true property=og:locale content=en /><meta data-rh=true name=docusaurus_locale content=en /><meta data-rh=true name=docsearch:language content=en /><meta data-rh=true name=docusaurus_version content=current /><meta data-rh=true name=docusaurus_tag content=docs-default-current /><meta data-rh=true name=docsearch:version content=current /><meta data-rh=true name=docsearch:docusaurus_tag content=docs-default-current /><meta data-rh=true property=og:title content="Camera | Gratheon"/><meta data-rh=true name=description content=$154.50 /><meta data-rh=true property=og:description content=$154.50 /><link data-rh=true rel=icon href=/favicons/favicon.ico /><link data-rh=true rel=canonical href=https://gratheon.com/docs/entrance-observer/components-orin/Camera /><link data-rh=true rel=alternate href=https://gratheon.com/docs/entrance-observer/components-orin/Camera hreflang=en /><link data-rh=true rel=alternate href=https://gratheon.com/docs/entrance-observer/components-orin/Camera hreflang=x-default /><script data-rh=true type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://gratheon.com/docs/entrance-observer/","name":"👁️‍🗨️ Entrance observer","position":1},{"@type":"ListItem","item":"https://gratheon.com/docs/entrance-observer/components-orin/Camera","name":"Camera","position":2}]}</script><link rel=alternate type=application/rss+xml href=/blog/rss.xml title="Gratheon RSS Feed"><link rel=alternate type=application/atom+xml href=/blog/atom.xml title="Gratheon Atom Feed"><link rel=preconnect href=https://www.googletagmanager.com><script>window.dataLayer=window.dataLayer||[],function(e,t,a,n,r){e[n]=e[n]||[],e[n].push({"gtm.start":new Date().getTime(),event:"gtm.js"});var d=t.getElementsByTagName(a)[0],g=t.createElement(a);g.async=!0,g.src="https://www.googletagmanager.com/gtm.js?id="+r+("dataLayer"!=n?"&l="+n:""),d.parentNode.insertBefore(g,d)}(window,document,"script","dataLayer","GTM-KH4KC9")</script><link rel=stylesheet href=/assets/css/styles.02ef3496.css /><script src=/assets/js/runtime~main.087be3ce.js defer></script><script src=/assets/js/main.4b3c6040.js defer></script></head><body class=navigation-with-keyboard><svg style="display: none;"><defs>
-<symbol id=theme-svg-external-link viewBox="0 0 24 24"><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
-</defs></svg>
-<script>!function(){var t;document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script>
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KH4KC9" height=0 width=0 style=display:none;visibility:hidden></iframe></noscript><div id=__docusaurus><div role=region aria-label="Skip to main content"><a class=skipToContent_poJ9 href=#__docusaurus_skipToContent_fallback>Skip to main content</a></div><nav aria-label=Main class="theme-layout-navbar navbar navbar--fixed-top"><div class=navbar__inner><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded=false class="navbar__toggle clean-btn" type=button><svg width=30 height=30 viewBox="0 0 30 30" aria-hidden=true><path stroke=currentColor stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d="M4 7h22M4 15h22M4 23h22"/></svg></button><a class=navbar__brand href=/><div class=navbar__logo><img src=/img/logo_v7w.svg alt=Gratheon class="themedComponent_rn3I themedComponent--light_bBhh"/><img src=/img/logo_v7w.svg alt=Gratheon class="themedComponent_rn3I themedComponent--dark_zi9f"/></div><b class="navbar__title text--truncate"></b></a><a class="navbar__item navbar__link" href=/about>About</a><a class="navbar__item navbar__link" href=/about/products>Products</a><a aria-current=page class="navbar__item navbar__link navbar__link--active" href=/docs/API/>Docs</a><a class="navbar__item navbar__link" sidebarid=researchSidebar href=/research>Research</a><a class="navbar__item navbar__link" href=/blog>Blog</a><a class="navbar__item navbar__link" href=/pricing>Pricing</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class=navbarSearchContainer_rLJk><input type=text placeholder=Search style="padding:7px 15px;border:2px solid #CCC;border-radius:5px"/></div><a href=https://discord.gg/PcbP4uedWj target=_blank rel="noopener noreferrer" class="navbar__item navbar__link navbar--discord-link" aria-label="Discord Invite"></a><a href=https://github.com/gratheon/web-app target=_blank rel="noopener noreferrer" class="navbar__item navbar__link header--github-link" aria-label="GitHub repository"></a><a href=https://app.gratheon.com/account/authenticate/ target=_blank rel="noopener noreferrer" class="navbar__item navbar__link">Log in<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_c9sx><use href=#theme-svg-external-link /></svg></a></div></div><div role=presentation class=navbar-sidebar__backdrop></div></nav><div id=__docusaurus_skipToContent_fallback class="theme-layout-main main-wrapper mainWrapper_TcZ4"><div class=docsWrapper_a5BB><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_jePA" type=button></button><div class=docRoot_YOz7><aside class="theme-doc-sidebar-container docSidebarContainer_PCNi"><div class=sidebarViewport_svvY><div class=sidebar_yZ0v><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_ib_h"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_rikP menu__link menu__link--sublist" href=/docs/API/><span title="🔗 API" class=categoryLinkLabel_dnDz>🔗 API</span></a><button aria-label="Expand sidebar category '🔗 API'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_rikP menu__link menu__link--sublist" href=/docs/web-app/><span title="📱 Web-app" class=categoryLinkLabel_dnDz>📱 Web-app</span></a><button aria-label="Expand sidebar category '📱 Web-app'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_rikP menu__link menu__link--sublist" href=/docs/beehive-sensors/><span title="🌡️ Beehive IoT sensors" class=categoryLinkLabel_dnDz>🌡️ Beehive IoT sensors</span></a><button aria-label="Expand sidebar category '🌡️ Beehive IoT sensors'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_rikP menu__link menu__link--sublist menu__link--active" href=/docs/entrance-observer/><span title="👁️‍🗨️ Entrance observer" class=categoryLinkLabel_dnDz>👁️‍🗨️ Entrance observer</span></a><button aria-label="Collapse sidebar category '👁️‍🗨️ Entrance observer'" aria-expanded=true type=button class="clean-btn menu__caret"></button></div><ul class=menu__list><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href="/docs/entrance-observer/Jetson Nano setup"><span title="Jetson Nano setup" class=linkLabel_I9IG>Jetson Nano setup</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href="/docs/entrance-observer/Remote Desktop connection setup"><span title="Remote Desktop connection setup 🖥️" class=linkLabel_I9IG>Remote Desktop connection setup 🖥️</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href="/docs/entrance-observer/Bill of materials"><span title="Bill of materials" class=linkLabel_I9IG>Bill of materials</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href="/docs/entrance-observer/Jetson Orin setup"><span title="Jetson Orin setup" class=linkLabel_I9IG>Jetson Orin setup</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href="/docs/entrance-observer/ML processing devices"><span title="ML processing devices" class=linkLabel_I9IG>ML processing devices</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href="/docs/entrance-observer/Which model to use for vision"><span title="Which model to use for vision" class=linkLabel_I9IG>Which model to use for vision</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_rikP menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false tabindex=0 href="/docs/entrance-observer/components-jetson/Camera - Mokose 4k"><span title=components-jetson class=categoryLinkLabel_dnDz>components-jetson</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_rikP menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role=button aria-expanded=true tabindex=0 href="/docs/entrance-observer/components-orin/2020 Aluminum Extrusion"><span title=components-orin class=categoryLinkLabel_dnDz>components-orin</span></a></div><ul class=menu__list><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href="/docs/entrance-observer/components-orin/2020 Aluminum Extrusion"><span title="2020 Aluminum Extrusion" class=linkLabel_I9IG>2020 Aluminum Extrusion</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href="/docs/entrance-observer/components-orin/Camera lens"><span title="Camera lens" class=linkLabel_I9IG>Camera lens</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current=page tabindex=0 href=/docs/entrance-observer/components-orin/Camera><span title=Camera class=linkLabel_I9IG>Camera</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/docs/entrance-observer/components-orin/Case><span title="Acrylic Clear Case (Type D) Specialized for NVIDIA Jetson Nano 2GB Developer Kit, Easy Access for GPIO and Camera Port, Cut-Outs for The Essential Ports and TF Card" class=linkLabel_I9IG>Acrylic Clear Case (Type D) Specialized for NVIDIA Jetson Nano 2GB Developer Kit, Easy Access for GPIO and Camera Port, Cut-Outs for The Essential Ports and TF Card</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/docs/entrance-observer/components-orin/Display><span title=Display class=linkLabel_I9IG>Display</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href="/docs/entrance-observer/components-orin/M2 SSD"><span title="M2 SSD" class=linkLabel_I9IG>M2 SSD</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/docs/entrance-observer/components-orin/Mounts><span title=Mounts class=linkLabel_I9IG>Mounts</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href="/docs/entrance-observer/components-orin/Orin Nano"><span title="Orin Nano" class=linkLabel_I9IG>Orin Nano</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/docs/entrance-observer/components-orin/Plexiglass><span title=Plexiglass class=linkLabel_I9IG>Plexiglass</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href="/docs/entrance-observer/components-orin/WiFi antennas"><span title="WiFi antennas" class=linkLabel_I9IG>WiFi antennas</span></a></ul></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_rikP menu__link menu__link--sublist" href=/docs/robotic-beehive/><span title="🧿 Robotic beehive" class=categoryLinkLabel_dnDz>🧿 Robotic beehive</span></a><button aria-label="Expand sidebar category '🧿 Robotic beehive'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/billing-system><span title="Billing System Documentation" class=linkLabel_I9IG>Billing System Documentation</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a href=https://github.com/orgs/Gratheon/projects/5 target=_blank rel="noopener noreferrer" class="menu__link menuExternalLink_FdF6"><span title="☑️ Tasks" class=linkLabel_I9IG>☑️ Tasks</span><svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_c9sx><use href=#theme-svg-external-link /></svg></a></ul></nav></div></div></aside><main class=docMainContainer_aHOd><div class="container padding-top--md padding-bottom--lg"><div class=row><div class="col docItemCol_BJgu"><div class=docItemContainer_PUtD><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_dpnR" aria-label=Breadcrumbs><ul class=breadcrumbs><li class=breadcrumbs__item><a aria-label="Home page" class=breadcrumbs__link href=/><svg viewBox="0 0 24 24" class=breadcrumbHomeIcon__OJg><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill=currentColor /></svg></a><li class=breadcrumbs__item><a class=breadcrumbs__link href=/docs/entrance-observer/><span>👁️‍🗨️ Entrance observer</span></a><li class=breadcrumbs__item><span class=breadcrumbs__link>components-orin</span><li class="breadcrumbs__item breadcrumbs__item--active"><span class=breadcrumbs__link>Camera</span></ul></nav><div class="theme-doc-markdown markdown"><p>$154.50</p>
-<header><h1>MOKOSE 4K@30fps USB Camera with 6-12mm Varifocal Manual Lens Webcam UVC Free Drive Compatible Windows Mac OS X Linux</h1></header>
-<p><a href="https://www.amazon.com/dp/B0814VFG12?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1" target=_blank rel="noopener noreferrer" class="">https://www.amazon.com/dp/B0814VFG12?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1</a></p>
-<table><thead><tr><th><th><tbody><tr><td>Brand<td>MOKOSE<tr><td>Photo Sensor Technology<td>CMOS<tr><td>Video Capture Resolution<td>1080p, 4K<tr><td>Maximum Focal Length<td>12 Millimeters<tr><td>Maximum Aperture<td>1.6 f<tr><td>Flash Memory Type<td>SDHC<tr><td>Video Capture Format<td>MP4<tr><td>Screen Size<td>1.8 Inches<tr><td>Connectivity Technology<td>USB<tr><td>Color<td>With 6-12mm Varifocal Manual Lens</table>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera | Gratheon</title>
+    
+    <meta name="description" content="$154.50">
+    
+    
+    <link rel="canonical" href="https://gratheon.com/docs/entrance-observer/components-orin/camera/">
+    <meta property="og:title" content="Camera">
+    <meta property="og:description" content="$154.50">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gratheon.com/docs/entrance-observer/components-orin/camera/">
+    <meta property="og:image" content="https://gratheon.com/assets/img/assets/img/gratheon-web-app-preview.webp">
+    <meta property="og:site_name" content="Gratheon">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Camera">
+    <meta name="twitter:description" content="$154.50">
+    <meta name="twitter:image" content="https://gratheon.com/assets/img/assets/img/gratheon-web-app-preview.webp">
+    <meta name="twitter:site" content="@gratheon">
+    <meta name="twitter:creator" content="@gratheon">
+    
+    <link rel="icon" href="/assets/favicons/favicon.ico">
+    <style>
+        :root {
+            --sidebar-width: 280px;
+            --toc-width: 240px;
+            --nav-bg: #f8f9fa;
+            --nav-border: #e0e0e0;
+            --nav-active: #0066cc;
+            --bg-primary: #ffffff;
+            --text-primary: #333333;
+            --text-secondary: #666666;
+            --quote-bg: #f5f9ff;
+            --quote-border: #8cb8ee;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background: var(--bg-primary);
+        }
+         
+        .site-header {
+            border-bottom: 1px solid var(--nav-border);
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+        .navbar-logo {
+            display: inline-flex;
+            align-items: center;
+        }
+        .navbar-logo img {
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+            object-fit: cover;
+        }
+        .site-nav {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .lang-switcher {
+            display: inline-flex;
+            gap: 4px;
+            padding: 3px;
+            border: 1px solid var(--nav-border);
+            border-radius: 999px;
+            background: var(--nav-bg);
+        }
+        .lang-link {
+            border: 0;
+            border-radius: 999px;
+            padding: 6px 11px;
+            font-size: 0.8em;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .lang-link.is-active {
+            color: #fff;
+            background: var(--nav-active);
+        }
+        .site-nav a {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .site-nav a:hover { color: var(--nav-active); }
+        .theme-toggle {
+            border: 1px solid var(--nav-border);
+            background: transparent;
+            width: 36px;
+            height: 36px;
+            border-radius: 18px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            color: var(--text-primary);
+        }
+        .theme-toggle svg {
+            width: 18px;
+            height: 18px;
+            display: block;
+        }
+        .theme-toggle .icon-moon { display: none; }
+        html[data-theme='dark'] .theme-toggle .icon-sun { display: none; }
+        html[data-theme='dark'] .theme-toggle .icon-moon { display: block; }
+        html[data-theme='dark'] {
+            --nav-bg: #1d1f22;
+            --nav-border: #383c42;
+            --nav-active: #6aa4ff;
+            --bg-primary: #111315;
+            --text-primary: #eceef1;
+            --text-secondary: #a9adb5;
+            --quote-bg: #18212d;
+            --quote-border: #4b7ebd;
+        }
+        .product-hero-image {
+            height: 200px;
+            overflow: hidden;
+            vertical-align: middle;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .product-hero-image img,
+        .product-hero-image .md-image,
+        .product-hero-image picture {
+            display: block;
+            width: 100%;
+        }
+        .product-hero-image img {
+            width: 100%;
+            margin-top: -10%;
+        }
+        .product-card-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            text-align: center;
+        }
+        .product-card-small {
+            width: 200px;
+        }
+        .product-card-small img,
+        .product-card-small .md-image img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+        }
+        @media (max-width: 700px) {
+            .product-card-grid { justify-content: center; }
+            .product-card-small { width: 45%; min-width: 150px; }
+        }
+        @media (max-width: 480px) {
+            .product-card-small { width: 100%; }
+        }
+         
+        .site-layout {
+            display: flex;
+            width: 100%;
+            max-width: none;
+            margin: 0;
+            min-height: calc(100vh - 120px);
+        }
+         
+        .sidebar {
+            width: var(--sidebar-width);
+            padding: 20px 16px;
+            border-right: 1px solid var(--nav-border);
+            background: var(--nav-bg);
+            flex-shrink: 0;
+            overflow-y: auto;
+            max-height: calc(100vh - 60px);
+            position: sticky;
+            top: 0;
+        }
+        .blog-sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            overflow: hidden;
+        }
+        .sidebar-mode-switch {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 4px;
+            border: 1px solid var(--nav-border);
+            background: var(--bg-primary);
+            border-radius: 999px;
+            padding: 4px;
+        }
+        .sidebar-mode-btn {
+            border: 0;
+            background: transparent;
+            color: var(--text-secondary);
+            border-radius: 999px;
+            font-size: 0.78em;
+            font-weight: 600;
+            padding: 7px 6px;
+            cursor: pointer;
+        }
+        .sidebar-mode-btn.is-active {
+            color: #fff;
+            background: var(--nav-active);
+        }
+        .sidebar-mode-pane {
+            flex: 1;
+            min-height: 0;
+            overflow-y: auto;
+        }
+        .sidebar-timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-height: none;
+            overflow: visible;
+            padding-right: 2px;
+        }
+        .timeline-year h4 {
+            font-size: 0.86em;
+            color: var(--text-secondary);
+            margin: 4px 0;
+        }
+        .timeline-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            margin-bottom: 8px;
+        }
+        .timeline-list li a {
+            display: block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            color: var(--text-primary);
+            text-decoration: none;
+            font-size: 0.86em;
+        }
+        .timeline-list li a time {
+            color: var(--text-secondary);
+            margin-right: 6px;
+            font-size: 0.9em;
+        }
+        .timeline-list li.active > a {
+            color: var(--nav-active);
+            font-weight: 600;
+            background: rgba(0, 102, 204, 0.08);
+        }
+        .sidebar-graph-pane {
+            height: calc(100vh - 130px);
+        }
+        .sidebar-graph-frame {
+            width: 100%;
+            height: 100%;
+            border: 1px solid var(--nav-border);
+            border-radius: 8px;
+            background: var(--bg-primary);
+        }
+        .site-layout.sidebar-graph-mode .sidebar {
+            width: 40%;
+        }
+        .site-layout.sidebar-graph-mode .site-content {
+            max-width: none;
+        }
+        .sidebar-menu, .sidebar-submenu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .sidebar-submenu {
+            padding-left: 16px;
+            border-left: 1px solid var(--nav-border);
+            margin-left: 8px;
+        }
+        .sidebar-item a {
+            display: block;
+            padding: 4px 8px;
+            color: var(--text-primary);
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+        .sidebar-section-head {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .sidebar-section-head a {
+            flex: 1;
+        }
+        .sidebar-toggle {
+            appearance: none;
+            border: 0;
+            background: transparent;
+            color: var(--text-secondary);
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            padding: 0;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+        }
+        .sidebar-toggle:hover {
+            background: rgba(0, 102, 204, 0.08);
+            color: var(--nav-active);
+        }
+        .sidebar-toggle::before {
+            content: "▸";
+            font-size: 0.8em;
+            line-height: 1;
+            transition: transform 0.15s ease;
+        }
+        .sidebar-section.expanded > .sidebar-section-head .sidebar-toggle::before {
+            transform: rotate(90deg);
+        }
+        .sidebar-section > .sidebar-submenu {
+            display: none;
+        }
+        .sidebar-section.expanded > .sidebar-submenu {
+            display: block;
+        }
+        .sidebar-item a:hover {
+            background: rgba(0, 102, 204, 0.08);
+        }
+        .sidebar-item.active > a {
+            color: var(--nav-active);
+            font-weight: 600;
+            background: rgba(0, 102, 204, 0.08);
+        }
+        .sidebar-section > a {
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.8em;
+            letter-spacing: 0.05em;
+            color: var(--text-secondary);
+            margin-top: 12px;
+        }
+         
+        .site-content {
+            flex: 1;
+            min-width: 0;
+            padding: 24px 40px;
+            max-width: 800px;
+        }
+        .embed {
+            width: 100%;
+            max-width: 800px;
+            margin: 24px auto;
+        }
+        .embed iframe {
+            display: block;
+            width: min(100%, 800px);
+            aspect-ratio: 16 / 9;
+            height: auto;
+            border: 0;
+            border-radius: 12px;
+        }
+         
+        .breadcrumbs {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+            padding: 0;
+            margin-bottom: 20px;
+            font-size: 0.85em;
+            color: var(--text-secondary);
+        }
+        .breadcrumbs li:not(:last-child)::after {
+            content: "›";
+            margin-left: 4px;
+            color: var(--text-secondary);
+        }
+        .breadcrumbs a { color: var(--nav-active); text-decoration: none; }
+        .breadcrumbs a:hover { text-decoration: underline; }
+         
+        .toc {
+            width: var(--toc-width);
+            padding: 20px 16px;
+            flex-shrink: 0;
+            position: sticky;
+            top: 0;
+            max-height: 100vh;
+            overflow-y: auto;
+            font-size: 0.85em;
+        }
+        .toc-title {
+            font-size: 0.8em;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        .toc-list, .toc-sublist {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .toc-sublist { padding-left: 12px; }
+        .toc-item a {
+            display: block;
+            padding: 3px 0;
+            color: var(--text-secondary);
+            text-decoration: none;
+            border-left: 2px solid transparent;
+            padding-left: 8px;
+        }
+        .toc-item a:hover {
+            color: var(--nav-active);
+            border-left-color: var(--nav-active);
+        }
+         
+        .prev-next {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid var(--nav-border);
+            gap: 20px;
+        }
+        .prev-next a {
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            padding: 12px 16px;
+            border: 1px solid var(--nav-border);
+            border-radius: 8px;
+            flex: 1;
+            transition: border-color 0.2s;
+        }
+        .prev-next a:hover { border-color: var(--nav-active); }
+        .prev-next .prev-link { text-align: left; }
+        .prev-next .next-link { text-align: right; margin-left: auto; }
+        .prev-label, .next-label {
+            font-size: 0.8em;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+        }
+        .prev-title, .next-title {
+            color: var(--nav-active);
+            font-weight: 500;
+        }
+         
+        article h1 { font-size: 2em; margin-bottom: 8px; }
+        article time { color: var(--text-secondary); font-size: 0.9em; }
+        .article-meta {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 4px;
+            margin: 0 0 8px;
+            flex-wrap: nowrap;
+        }
+        .article-audio {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin: 0 0 0 2px;
+        }
+        .article-audio button {
+            border: 1px solid var(--nav-active);
+            border-radius: 999px;
+            background: var(--nav-active);
+            color: #fff;
+            width: 36px;
+            height: 36px;
+            padding: 0;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        .article-audio button:hover {
+            filter: brightness(0.92);
+        }
+        .article-audio button svg {
+            width: 14px;
+            height: 14px;
+            fill: currentColor;
+        }
+        .article-audio button .icon-stop { display: none; }
+        .article-audio button.is-playing .icon-play { display: none; }
+        .article-audio button.is-playing .icon-stop { display: block; }
+        .article-audio .audio-wave {
+            width: 88px;
+            height: 28px;
+            border: 0;
+            border-radius: 0;
+            background: transparent;
+            opacity: 0.95;
+        }
+        .article-audio button:disabled {
+            opacity: 0.55;
+            cursor: default;
+        }
+        article .tags { margin: 22px 0 24px; }
+        article .tag {
+            display: inline-block;
+            background: var(--nav-bg);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            color: var(--nav-active);
+            margin-right: 4px;
+            text-decoration: none;
+        }
+        article .tag:hover { text-decoration: underline; }
+        article .content { margin-top: 16px; }
+        article .content h2 { margin-top: 2em; margin-bottom: 0.5em; }
+        article .content h3 { margin-top: 1.5em; margin-bottom: 0.4em; }
+        article .content p { margin-bottom: 1em; }
+        article .content blockquote {
+            margin: 1.4em 0;
+            padding: 0.8em 1em;
+            border-left: 4px solid var(--quote-border);
+            background: var(--quote-bg);
+            color: var(--text-secondary);
+            font-style: italic;
+        }
+        article .content blockquote p:last-child {
+            margin-bottom: 0;
+        }
+         
+        .site-footer {
+            border-top: 1px solid var(--nav-border);
+            padding: 20px;
+            color: var(--text-secondary);
+            font-size: 0.9em;
+            text-align: center;
+        }
+         
+        a { color: var(--nav-active); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        img { max-width: 100%; height: auto; }
+        pre {
+            background: #f4f4f4;
+            padding: 15px;
+            overflow-x: auto;
+            border-radius: 4px;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: "Monaco", "Menlo", monospace;
+        }
+        pre code { padding: 0; background: none; }
+        table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background: #f4f4f4; }
+        .section-index { list-style: none; padding: 0; }
+        .section-index li { padding: 6px 0; border-bottom: 1px solid var(--nav-border); }
+        .section-index li a { font-weight: 500; }
+        .section-article-list {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+        .section-article-preview {
+            border-bottom: 1px solid var(--nav-border);
+            padding-bottom: 12px;
+        }
+        .section-article-preview h2 {
+            margin: 0 0 4px;
+            font-size: 1.05em;
+        }
+        .section-article-preview time {
+            display: block;
+            color: var(--text-secondary);
+            font-size: 0.83em;
+            margin-bottom: 6px;
+        }
+        .section-article-preview p {
+            margin: 0;
+            color: var(--text-secondary);
+        }
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            margin: 32px 0 0;
+        }
+        .project-card {
+            background: var(--bg-secondary);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .project-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px var(--shadow);
+        }
+        .project-image {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            background: var(--border);
+            display: block;
+        }
+        .project-content {
+            padding: 20px;
+        }
+        .project-content h3 {
+            margin: 0 0 8px;
+            font-size: 1.25em;
+        }
+        .project-content p {
+            margin: 0 0 16px;
+            color: var(--text-secondary);
+            font-size: 0.95em;
+        }
+        .project-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        .project-tag {
+            font-size: 0.8em;
+            padding: 4px 10px;
+            background: var(--bg-primary);
+            border-radius: 20px;
+            color: var(--text-secondary);
+        }
+         
+        @media (max-width: 1200px) {
+            .toc { display: none; }
+        }
+        @media (max-width: 768px) {
+            .sidebar { display: none; }
+            .site-content { padding: 16px; }
+            .projects-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body class="page-layout-page">
+    <header class="site-header">
+        <div class="header-left">
+            <a class="navbar-logo" href="/">
+                <img class="no-transform" src="/assets/img/logo_v7w.svg" alt="Gratheon">
+            </a>
+            <nav class="site-nav">
+                <a href="/about/">About</a><a href="/about/products/">Products</a><a href="/docs/">Docs</a><a href="/research/">Research</a><a href="/blog/">Blog</a><a href="/pricing/">Pricing</a><a href="https://discord.gg/PcbP4uedWj">Discord</a><a href="https://github.com/gratheon/web-app">GitHub</a><a href="https://app.gratheon.com/account/authenticate/">Log in</a>
+            </nav>
+        </div>
+        <div class="header-right">
+            
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
+                <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="4"></circle>
+                    <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
+                </svg>
+                <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3c0 0 0 0 0 0A7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+    <div class="site-layout">
+        <nav class="sidebar blog-sidebar" aria-label="Navigation" data-sidebar-mode="categories" data-sidebar-default-mode="categories">
+  <div class="sidebar-mode-pane" data-sidebar-mode-pane="categories">
+<ul class="sidebar-menu">
+  <li class="sidebar-item sidebar-section">
+    <div class="sidebar-section-head">
+      <button class="sidebar-toggle" type="button" aria-label="Toggle section Components-jetson" aria-expanded="false"></button>
+      <a href="/docs/entrance-observer/components-jetson/">Components-jetson</a>
+    </div>
+<ul class="sidebar-submenu">
+  <li class="sidebar-item">
+      <a href="/docs/entrance-observer/components-jetson/camera-mokose-4k/">Camera   Mokose 4k</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/entrance-observer/components-jetson/camera-lens/">Camera lens</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/entrance-observer/components-jetson/camera-mount/">Camera mount</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/entrance-observer/components-jetson/jetson-nano/">Jetson Nano</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/entrance-observer/components-jetson/jetson-nano-case/">Jetson Nano case</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/entrance-observer/components-jetson/sd-card-for-jetson-nano/">SD card for Jetson Nano</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/entrance-observer/components-jetson/wi-fi-antennas/">Wi Fi antennas</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/entrance-observer/components-jetson/wifi-module-for-jetson-nano/">WiFi module for Jetson Nano</a>
+  </li>
+</ul>
+  </li>
+  <li class="sidebar-item sidebar-section expanded">
+    <div class="sidebar-section-head">
+      <button class="sidebar-toggle" type="button" aria-label="Toggle section Components-orin" aria-expanded="true"></button>
+      <a href="/docs/entrance-observer/components-orin/">Components-orin</a>
+    </div>
+<ul class="sidebar-submenu">
+  <li class="sidebar-item">
+      <a href="/docs/entrance-observer/components-orin/2020-aluminum-extrusion/">2020 Aluminum Extrusion</a>
+  </li>
+  <li class="sidebar-item active expanded">
+      <a href="/docs/entrance-observer/components-orin/camera/" aria-current="page">Camera</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/entrance-observer/components-orin/camera-lens/">Camera lens</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/entrance-observer/components-orin/case/">Case</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/entrance-observer/components-orin/display/">Display</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/entrance-observer/components-orin/m2-ssd/">M2 SSD</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/entrance-observer/components-orin/mounts/">Mounts</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/entrance-observer/components-orin/orin-nano/">Orin Nano</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/entrance-observer/components-orin/plexiglass/">Plexiglass</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/entrance-observer/components-orin/wifi-antennas/">WiFi antennas</a>
+  </li>
+</ul>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/entrance-observer/bill-of-materials/">Bill of materials</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/entrance-observer/jetson-nano-setup/">Jetson Nano setup</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/entrance-observer/jetson-orin-setup/">Jetson Orin setup</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/entrance-observer/ml-processing-devices/">ML processing devices</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/entrance-observer/remote-desktop-connection-setup/">Remote Desktop connection setup 🖥️</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/entrance-observer/which-model-to-use-for-vision/">Which model to use for vision</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/entrance-observer/entrance-observer/">👁️‍🗨️ Entrance observer</a>
+  </li>
+</ul>
+  </div>
+</nav>
+
+        <main class="site-content">
+            
+<article>
+    
+    <nav aria-label="Breadcrumb">
+        <ol class="breadcrumbs">
+            
+            <li>
+                
+                    <a href="/">Home</a>
+                
+            </li>
+            
+            <li>
+                
+                    <a href="/docs/">Docs</a>
+                
+            </li>
+            
+            <li>
+                
+                    <a href="/docs/entrance-observer/">Entrance-observer</a>
+                
+            </li>
+            
+            <li>
+                
+                    <a href="/docs/entrance-observer/components-orin/">Components-orin</a>
+                
+            </li>
+            
+            <li>
+                
+                    <span aria-current="page">Camera</span>
+                
+            </li>
+            
+        </ol>
+    </nav>
+    
+    <h1>Camera</h1>
+    
+    <div class="content">
+        <p>$154.50</p>
+<h1 id="mokose-4k30fps-usb-camera-with-6-12mm-varifocal-manual-lens-webcam-uvc-free-drive-compatible-windows-mac-os-x-linux">MOKOSE 4K@30fps USB Camera with 6-12mm Varifocal Manual Lens Webcam UVC Free Drive Compatible Windows Mac OS X Linux</h1>
+<p><a href="https://www.amazon.com/dp/B0814VFG12?ref=ppx_yo2ov_dt_b_fed_asin_title&amp;th=1">https://www.amazon.com/dp/B0814VFG12?ref=ppx_yo2ov_dt_b_fed_asin_title&amp;th=1</a></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Brand</td>
+<td>MOKOSE</td>
+</tr>
+<tr>
+<td>Photo Sensor Technology</td>
+<td>CMOS</td>
+</tr>
+<tr>
+<td>Video Capture Resolution</td>
+<td>1080p, 4K</td>
+</tr>
+<tr>
+<td>Maximum Focal Length</td>
+<td>12 Millimeters</td>
+</tr>
+<tr>
+<td>Maximum Aperture</td>
+<td>1.6 f</td>
+</tr>
+<tr>
+<td>Flash Memory Type</td>
+<td>SDHC</td>
+</tr>
+<tr>
+<td>Video Capture Format</td>
+<td>MP4</td>
+</tr>
+<tr>
+<td>Screen Size</td>
+<td>1.8 Inches</td>
+</tr>
+<tr>
+<td>Connectivity Technology</td>
+<td>USB</td>
+</tr>
+<tr>
+<td>Color</td>
+<td>With 6-12mm Varifocal Manual Lens</td>
+</tr>
+</tbody>
+</table>
 <ul>
-<li class="">Large size sensor，Using 1/1.8" CMOS image sensor, Make the image more Clearer and less noisy images，Can display the true color of the object more accurately, In order to suit different scenes live broadcast , The camera image color style can be modify via new upgrade firmware, The new firmware optimize Brightness, Contrast, Hue, Saturation, Sharpness, White Balance, Exposure.</li>
-<li class="">High resolution, 3840<em>2160@30fps Max output , 1920</em>1080P 30fps Smooth video and low latency</li>
-<li class="">Multiple resolutions to choose, 3840<em>2160@30fps , 2560@1440@30fps , 2048</em>1536@30fps , 1920<em>1080@30fps , 1280</em>720@30fps , 640*480@30fps</li>
-<li class="">With 3 Meters USB Cable, Support computer usb3.0 and 2.0 interface</li>
-<li class="">The camera using UVC standard have powerful compatibility working with Windows / OS X / Linux, And multiple cameras can working on a computer at the same time</li>
-</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_Za1t"><a href=https://github.com/gratheon/website/tree/main/packages/create-docusaurus/templates/shared/docs/entrance-observer/components-orin/Camera.md target=_blank rel="noopener noreferrer" class=theme-edit-this-page><svg fill=currentColor height=20 width=20 viewBox="0 0 40 40" class=iconEdit_RtZN aria-hidden=true><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"/></g></svg>Edit this page</a></div><div class="col lastUpdated_jlPf"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/entrance-observer/components-orin/Camera lens"><div class=pagination-nav__sublabel>Previous</div><div class=pagination-nav__label>Camera lens</div></a><a class="pagination-nav__link pagination-nav__link--next" href=/docs/entrance-observer/components-orin/Case><div class=pagination-nav__sublabel>Next</div><div class=pagination-nav__label>Acrylic Clear Case (Type D) Specialized for NVIDIA Jetson Nano 2GB Developer Kit, Easy Access for GPIO and Camera Port, Cut-Outs for The Essential Ports and TF Card</div></a></nav></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class=footer__title></div><ul class="footer__items clean-list"><li class=footer__item>
-                <div class=footer-company-block>
-                  <a href=https://ariregister.rik.ee/est/company/12245103/Gratheon-O%C3%9C>Gratheon OÜ</a><br/>
-                  ❤️ Made with love in Estonia
-                </div>
-              </ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title></div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/privacy>Privacy Policy</a><li class=footer__item><a class=footer__link-item href=/terms>Terms Of Service</a><li class=footer__item><a href=mailto:pilot@gratheon.com target=_blank rel="noopener noreferrer" class=footer__link-item>Email<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_c9sx><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://tawk.to/gratheon target=_blank rel="noopener noreferrer" class=footer__link-item>Support Chat<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_c9sx><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://gratheon.statuspage.io/ target=_blank rel="noopener noreferrer" class=footer__link-item>Service Status<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_c9sx><use href=#theme-svg-external-link /></svg></a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title></div><ul class="footer__items clean-list"><li class=footer__item><a href=https://t.me/gratheon target=_blank rel="noopener noreferrer" class=footer__link-item>Telegram<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_c9sx><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://twitter.com/gratheon target=_blank rel="noopener noreferrer" class=footer__link-item>Twitter<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_c9sx><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://www.linkedin.com/company/gratheon/ target=_blank rel="noopener noreferrer" class=footer__link-item>LinkedIn<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_c9sx><use href=#theme-svg-external-link /></svg></a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title></div><ul class="footer__items clean-list"><li class=footer__item><a href=https://www.facebook.com/gratheon target=_blank rel="noopener noreferrer" class=footer__link-item>Facebook</a><li class=footer__item><a href=https://www.twitch.tv/tot_ra target=_blank rel="noopener noreferrer" class=footer__link-item>Twitch</a><li class=footer__item><a href=https://www.youtube.com/@gratheon-bees target=_blank rel="noopener noreferrer" class=footer__link-item>Youtube<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_c9sx><use href=#theme-svg-external-link /></svg></a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title></div><ul class="footer__items clean-list"><li class=footer__item><img src=/img/nvidia-inception-program-badge-rgb-for-screen.svg alt="NVIDIA Inception Program Member" style="max-width:200px; height: auto;"/></ul></div></div><div class="footer__bottom text--center"><div class=footer__copyright>Copyright © 2026 Gratheon OÜ. Gratheon™ trademark registration was approved by the Estonian Patent Office under application M202501179.</div></div></div></footer></div></body>
+<li>Large size sensor，Using 1/1.8&quot; CMOS image sensor, Make the image more Clearer and less noisy images，Can display the true color of the object more accurately, In order to suit different scenes live broadcast , The camera image color style can be modify via new upgrade firmware, The new firmware optimize Brightness, Contrast, Hue, Saturation, Sharpness, White Balance, Exposure.</li>
+<li>High resolution, 3840<em>2160@30fps Max output , 1920</em>1080P 30fps Smooth video and low latency</li>
+<li>Multiple resolutions to choose, 3840<em>2160@30fps , 2560@1440@30fps , 2048</em>1536@30fps , 1920<em>1080@30fps , 1280</em>720@30fps , 640*480@30fps</li>
+<li>With 3 Meters USB Cable, Support computer usb3.0 and 2.0 interface</li>
+<li>The camera using UVC standard have powerful compatibility working with Windows / OS X / Linux, And multiple cameras can working on a computer at the same time</li>
+</ul>
+
+    </div>
+    
+    
+    
+    <nav class="prev-next" aria-label="Page navigation">
+        
+        <a href="/docs/entrance-observer/components-orin/2020-aluminum-extrusion/" class="prev-link">
+            <span class="prev-label">← Previous</span>
+            <span class="prev-title">2020 Aluminum Extrusion</span>
+        </a>
+        
+        
+        <a href="/docs/entrance-observer/components-orin/camera-lens/" class="next-link">
+            <span class="next-label">Next →</span>
+            <span class="next-title">Camera lens</span>
+        </a>
+        
+    </nav>
+    
+</article>
+
+        </main>
+        
+    </div>
+    <script>
+    (function() {
+        var players = document.querySelectorAll("[data-audio-player]");
+        players.forEach(function(container) {
+            var audio = container.querySelector("[data-audio-element]");
+            var toggleBtn = container.querySelector("[data-audio-toggle]");
+            var wave = container.querySelector("[data-audio-wave]");
+            if (!audio || !toggleBtn || !wave) {
+                return;
+            }
+            var audioCtx = null;
+            var sourceNode = null;
+            var analyser = null;
+            var waveData = null;
+            var rafId = 0;
+
+            function syncToggleState() {
+                var isPlaying = !audio.paused && !audio.ended;
+                toggleBtn.classList.toggle("is-playing", isPlaying);
+                var label = isPlaying ? (toggleBtn.dataset.stopLabel || "Stop") : (toggleBtn.dataset.playLabel || "Listen");
+                toggleBtn.setAttribute("aria-label", label);
+                toggleBtn.setAttribute("title", label);
+            }
+
+            function ensureVisualizer() {
+                if (analyser) {
+                    return;
+                }
+                var AudioCtx = window.AudioContext || window.webkitAudioContext;
+                if (!AudioCtx) {
+                    return;
+                }
+                audioCtx = new AudioCtx();
+                sourceNode = audioCtx.createMediaElementSource(audio);
+                analyser = audioCtx.createAnalyser();
+                analyser.fftSize = 1024;
+                waveData = new Uint8Array(analyser.fftSize);
+                sourceNode.connect(analyser);
+                analyser.connect(audioCtx.destination);
+            }
+
+            function stopWave() {
+                if (rafId) {
+                    cancelAnimationFrame(rafId);
+                    rafId = 0;
+                }
+            }
+
+            function drawWave() {
+                if (!analyser || !wave) {
+                    return;
+                }
+                var dpr = window.devicePixelRatio || 1;
+                var w = Math.max(88, wave.clientWidth || 88);
+                var h = Math.max(28, wave.clientHeight || 28);
+                if (wave.width !== Math.floor(w * dpr) || wave.height !== Math.floor(h * dpr)) {
+                    wave.width = Math.floor(w * dpr);
+                    wave.height = Math.floor(h * dpr);
+                }
+                var ctx = wave.getContext("2d");
+                if (!ctx) {
+                    return;
+                }
+                ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+                ctx.clearRect(0, 0, w, h);
+                ctx.strokeStyle = "#0066cc";
+                ctx.lineWidth = 1.2;
+
+                analyser.getByteTimeDomainData(waveData);
+                ctx.beginPath();
+                var slice = waveData.length / w;
+                for (var x = 0; x < w; x++) {
+                    var idx = Math.floor(x * slice);
+                    var y = ((waveData[idx] - 128) / 128) * (h * 0.36) + (h / 2);
+                    if (x === 0) {
+                        ctx.moveTo(x, y);
+                    } else {
+                        ctx.lineTo(x, y);
+                    }
+                }
+                ctx.stroke();
+
+                if (!audio.paused && !audio.ended) {
+                    rafId = requestAnimationFrame(drawWave);
+                } else {
+                    stopWave();
+                }
+            }
+
+            toggleBtn.addEventListener("click", function() {
+                if (!audio.paused && !audio.ended) {
+                    audio.pause();
+                    audio.currentTime = 0;
+                    syncToggleState();
+                    stopWave();
+                    return;
+                }
+                ensureVisualizer();
+                if (audioCtx && audioCtx.state === "suspended") {
+                    audioCtx.resume().catch(function() {});
+                }
+                var started = audio.play();
+                if (started && typeof started.then === "function") {
+                    started.then(function() {
+                        syncToggleState();
+                        drawWave();
+                    }).catch(function() {});
+                    return;
+                }
+                syncToggleState();
+                drawWave();
+            });
+            audio.addEventListener("pause", syncToggleState);
+            audio.addEventListener("play", syncToggleState);
+            audio.addEventListener("ended", function() {
+                syncToggleState();
+                stopWave();
+            });
+
+            syncToggleState();
+        });
+    })();
+    </script>
+    <script defer src="/assets/js/main.js"></script>
+</body>
+</html>
+

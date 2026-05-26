@@ -1,385 +1,1593 @@
-<!doctype html><html lang=en dir=ltr class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-billing-system" data-has-hydrated=false><head><meta charset=UTF-8><meta name=generator content="Docusaurus v3.9.2"><title data-rh=true>Billing System Documentation | Gratheon</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"/><meta data-rh=true name=twitter:card content=summary_large_image /><meta data-rh=true property=og:image content=https://gratheon.com/img/gratheon-web-app.webp /><meta data-rh=true name=twitter:image content=https://gratheon.com/img/gratheon-web-app.webp /><meta data-rh=true property=og:url content=https://gratheon.com/docs/billing-system /><meta data-rh=true property=og:locale content=en /><meta data-rh=true name=docusaurus_locale content=en /><meta data-rh=true name=docsearch:language content=en /><meta data-rh=true name=docusaurus_version content=current /><meta data-rh=true name=docusaurus_tag content=docs-default-current /><meta data-rh=true name=docsearch:version content=current /><meta data-rh=true name=docsearch:docusaurus_tag content=docs-default-current /><meta data-rh=true property=og:title content="Billing System Documentation | Gratheon"/><meta data-rh=true name=description content=Overview /><meta data-rh=true property=og:description content=Overview /><link data-rh=true rel=icon href=/favicons/favicon.ico /><link data-rh=true rel=canonical href=https://gratheon.com/docs/billing-system /><link data-rh=true rel=alternate href=https://gratheon.com/docs/billing-system hreflang=en /><link data-rh=true rel=alternate href=https://gratheon.com/docs/billing-system hreflang=x-default /><script data-rh=true type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://gratheon.com/docs/billing-system","name":"Billing System Documentation","position":1}]}</script><link rel=alternate type=application/rss+xml href=/blog/rss.xml title="Gratheon RSS Feed"><link rel=alternate type=application/atom+xml href=/blog/atom.xml title="Gratheon Atom Feed"><link rel=preconnect href=https://www.googletagmanager.com><script>window.dataLayer=window.dataLayer||[],function(e,t,a,n,r){e[n]=e[n]||[],e[n].push({"gtm.start":new Date().getTime(),event:"gtm.js"});var d=t.getElementsByTagName(a)[0],g=t.createElement(a);g.async=!0,g.src="https://www.googletagmanager.com/gtm.js?id="+r+("dataLayer"!=n?"&l="+n:""),d.parentNode.insertBefore(g,d)}(window,document,"script","dataLayer","GTM-KH4KC9")</script><link rel=stylesheet href=/assets/css/styles.02ef3496.css /><script src=/assets/js/runtime~main.087be3ce.js defer></script><script src=/assets/js/main.4b3c6040.js defer></script></head><body class=navigation-with-keyboard><svg style="display: none;"><defs>
-<symbol id=theme-svg-external-link viewBox="0 0 24 24"><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
-</defs></svg>
-<script>!function(){var t;document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script>
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KH4KC9" height=0 width=0 style=display:none;visibility:hidden></iframe></noscript><div id=__docusaurus><div role=region aria-label="Skip to main content"><a class=skipToContent_poJ9 href=#__docusaurus_skipToContent_fallback>Skip to main content</a></div><nav aria-label=Main class="theme-layout-navbar navbar navbar--fixed-top"><div class=navbar__inner><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded=false class="navbar__toggle clean-btn" type=button><svg width=30 height=30 viewBox="0 0 30 30" aria-hidden=true><path stroke=currentColor stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d="M4 7h22M4 15h22M4 23h22"/></svg></button><a class=navbar__brand href=/><div class=navbar__logo><img src=/img/logo_v7w.svg alt=Gratheon class="themedComponent_rn3I themedComponent--light_bBhh"/><img src=/img/logo_v7w.svg alt=Gratheon class="themedComponent_rn3I themedComponent--dark_zi9f"/></div><b class="navbar__title text--truncate"></b></a><a class="navbar__item navbar__link" href=/about>About</a><a class="navbar__item navbar__link" href=/about/products>Products</a><a aria-current=page class="navbar__item navbar__link navbar__link--active" href=/docs/API/>Docs</a><a class="navbar__item navbar__link" sidebarid=researchSidebar href=/research>Research</a><a class="navbar__item navbar__link" href=/blog>Blog</a><a class="navbar__item navbar__link" href=/pricing>Pricing</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class=navbarSearchContainer_rLJk><input type=text placeholder=Search style="padding:7px 15px;border:2px solid #CCC;border-radius:5px"/></div><a href=https://discord.gg/PcbP4uedWj target=_blank rel="noopener noreferrer" class="navbar__item navbar__link navbar--discord-link" aria-label="Discord Invite"></a><a href=https://github.com/gratheon/web-app target=_blank rel="noopener noreferrer" class="navbar__item navbar__link header--github-link" aria-label="GitHub repository"></a><a href=https://app.gratheon.com/account/authenticate/ target=_blank rel="noopener noreferrer" class="navbar__item navbar__link">Log in<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_c9sx><use href=#theme-svg-external-link /></svg></a></div></div><div role=presentation class=navbar-sidebar__backdrop></div></nav><div id=__docusaurus_skipToContent_fallback class="theme-layout-main main-wrapper mainWrapper_TcZ4"><div class=docsWrapper_a5BB><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_jePA" type=button></button><div class=docRoot_YOz7><aside class="theme-doc-sidebar-container docSidebarContainer_PCNi"><div class=sidebarViewport_svvY><div class=sidebar_yZ0v><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_ib_h"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_rikP menu__link menu__link--sublist" href=/docs/API/><span title="🔗 API" class=categoryLinkLabel_dnDz>🔗 API</span></a><button aria-label="Expand sidebar category '🔗 API'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_rikP menu__link menu__link--sublist" href=/docs/web-app/><span title="📱 Web-app" class=categoryLinkLabel_dnDz>📱 Web-app</span></a><button aria-label="Expand sidebar category '📱 Web-app'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_rikP menu__link menu__link--sublist" href=/docs/beehive-sensors/><span title="🌡️ Beehive IoT sensors" class=categoryLinkLabel_dnDz>🌡️ Beehive IoT sensors</span></a><button aria-label="Expand sidebar category '🌡️ Beehive IoT sensors'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_rikP menu__link menu__link--sublist" href=/docs/entrance-observer/><span title="👁️‍🗨️ Entrance observer" class=categoryLinkLabel_dnDz>👁️‍🗨️ Entrance observer</span></a><button aria-label="Expand sidebar category '👁️‍🗨️ Entrance observer'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_rikP menu__link menu__link--sublist" href=/docs/robotic-beehive/><span title="🧿 Robotic beehive" class=categoryLinkLabel_dnDz>🧿 Robotic beehive</span></a><button aria-label="Expand sidebar category '🧿 Robotic beehive'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link menu__link--active" aria-current=page href=/docs/billing-system><span title="Billing System Documentation" class=linkLabel_I9IG>Billing System Documentation</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a href=https://github.com/orgs/Gratheon/projects/5 target=_blank rel="noopener noreferrer" class="menu__link menuExternalLink_FdF6"><span title="☑️ Tasks" class=linkLabel_I9IG>☑️ Tasks</span><svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_c9sx><use href=#theme-svg-external-link /></svg></a></ul></nav></div></div></aside><main class=docMainContainer_aHOd><div class="container padding-top--md padding-bottom--lg"><div class=row><div class="col docItemCol_BJgu"><div class=docItemContainer_PUtD><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_dpnR" aria-label=Breadcrumbs><ul class=breadcrumbs><li class=breadcrumbs__item><a aria-label="Home page" class=breadcrumbs__link href=/><svg viewBox="0 0 24 24" class=breadcrumbHomeIcon__OJg><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill=currentColor /></svg></a><li class="breadcrumbs__item breadcrumbs__item--active"><span class=breadcrumbs__link>Billing System Documentation</span></ul></nav><div class="tocCollapsible_RHmT theme-doc-toc-mobile tocMobile_VHIv"><button type=button class="clean-btn tocCollapsibleButton_POOD">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Billing System Documentation</h1></header>
-<h2 class="anchor anchorTargetStickyNavbar_rb2N" id=overview>Overview<a href=#overview class=hash-link aria-label="Direct link to Overview" title="Direct link to Overview" translate=no>​</a></h2>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>billing system | Gratheon</title>
+    
+    <meta name="description" content="The billing system in Gratheon enables users to subscribe to different pricing tiers (Free, Starter, Professional) and manage their subscriptions. The system is implemented across three repositories:">
+    
+    
+    <link rel="canonical" href="https://gratheon.com/docs/billing-system/">
+    <meta property="og:title" content="billing system">
+    <meta property="og:description" content="The billing system in Gratheon enables users to subscribe to different pricing tiers (Free, Starter, Professional) and manage their subscriptions. The system is implemented across three repositories:">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gratheon.com/docs/billing-system/">
+    <meta property="og:image" content="https://gratheon.com/assets/img/assets/img/gratheon-web-app-preview.webp">
+    <meta property="og:site_name" content="Gratheon">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="billing system">
+    <meta name="twitter:description" content="The billing system in Gratheon enables users to subscribe to different pricing tiers (Free, Starter, Professional) and manage their subscriptions. The system is implemented across three repositories:">
+    <meta name="twitter:image" content="https://gratheon.com/assets/img/assets/img/gratheon-web-app-preview.webp">
+    <meta name="twitter:site" content="@gratheon">
+    <meta name="twitter:creator" content="@gratheon">
+    
+    <link rel="icon" href="/assets/favicons/favicon.ico">
+    <style>
+        :root {
+            --sidebar-width: 280px;
+            --toc-width: 240px;
+            --nav-bg: #f8f9fa;
+            --nav-border: #e0e0e0;
+            --nav-active: #0066cc;
+            --bg-primary: #ffffff;
+            --text-primary: #333333;
+            --text-secondary: #666666;
+            --quote-bg: #f5f9ff;
+            --quote-border: #8cb8ee;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background: var(--bg-primary);
+        }
+         
+        .site-header {
+            border-bottom: 1px solid var(--nav-border);
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+        .navbar-logo {
+            display: inline-flex;
+            align-items: center;
+        }
+        .navbar-logo img {
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+            object-fit: cover;
+        }
+        .site-nav {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .lang-switcher {
+            display: inline-flex;
+            gap: 4px;
+            padding: 3px;
+            border: 1px solid var(--nav-border);
+            border-radius: 999px;
+            background: var(--nav-bg);
+        }
+        .lang-link {
+            border: 0;
+            border-radius: 999px;
+            padding: 6px 11px;
+            font-size: 0.8em;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .lang-link.is-active {
+            color: #fff;
+            background: var(--nav-active);
+        }
+        .site-nav a {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .site-nav a:hover { color: var(--nav-active); }
+        .theme-toggle {
+            border: 1px solid var(--nav-border);
+            background: transparent;
+            width: 36px;
+            height: 36px;
+            border-radius: 18px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            color: var(--text-primary);
+        }
+        .theme-toggle svg {
+            width: 18px;
+            height: 18px;
+            display: block;
+        }
+        .theme-toggle .icon-moon { display: none; }
+        html[data-theme='dark'] .theme-toggle .icon-sun { display: none; }
+        html[data-theme='dark'] .theme-toggle .icon-moon { display: block; }
+        html[data-theme='dark'] {
+            --nav-bg: #1d1f22;
+            --nav-border: #383c42;
+            --nav-active: #6aa4ff;
+            --bg-primary: #111315;
+            --text-primary: #eceef1;
+            --text-secondary: #a9adb5;
+            --quote-bg: #18212d;
+            --quote-border: #4b7ebd;
+        }
+        .product-hero-image {
+            height: 200px;
+            overflow: hidden;
+            vertical-align: middle;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .product-hero-image img,
+        .product-hero-image .md-image,
+        .product-hero-image picture {
+            display: block;
+            width: 100%;
+        }
+        .product-hero-image img {
+            width: 100%;
+            margin-top: -10%;
+        }
+        .product-card-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            text-align: center;
+        }
+        .product-card-small {
+            width: 200px;
+        }
+        .product-card-small img,
+        .product-card-small .md-image img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+        }
+        @media (max-width: 700px) {
+            .product-card-grid { justify-content: center; }
+            .product-card-small { width: 45%; min-width: 150px; }
+        }
+        @media (max-width: 480px) {
+            .product-card-small { width: 100%; }
+        }
+         
+        .site-layout {
+            display: flex;
+            width: 100%;
+            max-width: none;
+            margin: 0;
+            min-height: calc(100vh - 120px);
+        }
+         
+        .sidebar {
+            width: var(--sidebar-width);
+            padding: 20px 16px;
+            border-right: 1px solid var(--nav-border);
+            background: var(--nav-bg);
+            flex-shrink: 0;
+            overflow-y: auto;
+            max-height: calc(100vh - 60px);
+            position: sticky;
+            top: 0;
+        }
+        .blog-sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            overflow: hidden;
+        }
+        .sidebar-mode-switch {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 4px;
+            border: 1px solid var(--nav-border);
+            background: var(--bg-primary);
+            border-radius: 999px;
+            padding: 4px;
+        }
+        .sidebar-mode-btn {
+            border: 0;
+            background: transparent;
+            color: var(--text-secondary);
+            border-radius: 999px;
+            font-size: 0.78em;
+            font-weight: 600;
+            padding: 7px 6px;
+            cursor: pointer;
+        }
+        .sidebar-mode-btn.is-active {
+            color: #fff;
+            background: var(--nav-active);
+        }
+        .sidebar-mode-pane {
+            flex: 1;
+            min-height: 0;
+            overflow-y: auto;
+        }
+        .sidebar-timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-height: none;
+            overflow: visible;
+            padding-right: 2px;
+        }
+        .timeline-year h4 {
+            font-size: 0.86em;
+            color: var(--text-secondary);
+            margin: 4px 0;
+        }
+        .timeline-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            margin-bottom: 8px;
+        }
+        .timeline-list li a {
+            display: block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            color: var(--text-primary);
+            text-decoration: none;
+            font-size: 0.86em;
+        }
+        .timeline-list li a time {
+            color: var(--text-secondary);
+            margin-right: 6px;
+            font-size: 0.9em;
+        }
+        .timeline-list li.active > a {
+            color: var(--nav-active);
+            font-weight: 600;
+            background: rgba(0, 102, 204, 0.08);
+        }
+        .sidebar-graph-pane {
+            height: calc(100vh - 130px);
+        }
+        .sidebar-graph-frame {
+            width: 100%;
+            height: 100%;
+            border: 1px solid var(--nav-border);
+            border-radius: 8px;
+            background: var(--bg-primary);
+        }
+        .site-layout.sidebar-graph-mode .sidebar {
+            width: 40%;
+        }
+        .site-layout.sidebar-graph-mode .site-content {
+            max-width: none;
+        }
+        .sidebar-menu, .sidebar-submenu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .sidebar-submenu {
+            padding-left: 16px;
+            border-left: 1px solid var(--nav-border);
+            margin-left: 8px;
+        }
+        .sidebar-item a {
+            display: block;
+            padding: 4px 8px;
+            color: var(--text-primary);
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+        .sidebar-section-head {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .sidebar-section-head a {
+            flex: 1;
+        }
+        .sidebar-toggle {
+            appearance: none;
+            border: 0;
+            background: transparent;
+            color: var(--text-secondary);
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            padding: 0;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+        }
+        .sidebar-toggle:hover {
+            background: rgba(0, 102, 204, 0.08);
+            color: var(--nav-active);
+        }
+        .sidebar-toggle::before {
+            content: "▸";
+            font-size: 0.8em;
+            line-height: 1;
+            transition: transform 0.15s ease;
+        }
+        .sidebar-section.expanded > .sidebar-section-head .sidebar-toggle::before {
+            transform: rotate(90deg);
+        }
+        .sidebar-section > .sidebar-submenu {
+            display: none;
+        }
+        .sidebar-section.expanded > .sidebar-submenu {
+            display: block;
+        }
+        .sidebar-item a:hover {
+            background: rgba(0, 102, 204, 0.08);
+        }
+        .sidebar-item.active > a {
+            color: var(--nav-active);
+            font-weight: 600;
+            background: rgba(0, 102, 204, 0.08);
+        }
+        .sidebar-section > a {
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.8em;
+            letter-spacing: 0.05em;
+            color: var(--text-secondary);
+            margin-top: 12px;
+        }
+         
+        .site-content {
+            flex: 1;
+            min-width: 0;
+            padding: 24px 40px;
+            max-width: 800px;
+        }
+        .embed {
+            width: 100%;
+            max-width: 800px;
+            margin: 24px auto;
+        }
+        .embed iframe {
+            display: block;
+            width: min(100%, 800px);
+            aspect-ratio: 16 / 9;
+            height: auto;
+            border: 0;
+            border-radius: 12px;
+        }
+         
+        .breadcrumbs {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+            padding: 0;
+            margin-bottom: 20px;
+            font-size: 0.85em;
+            color: var(--text-secondary);
+        }
+        .breadcrumbs li:not(:last-child)::after {
+            content: "›";
+            margin-left: 4px;
+            color: var(--text-secondary);
+        }
+        .breadcrumbs a { color: var(--nav-active); text-decoration: none; }
+        .breadcrumbs a:hover { text-decoration: underline; }
+         
+        .toc {
+            width: var(--toc-width);
+            padding: 20px 16px;
+            flex-shrink: 0;
+            position: sticky;
+            top: 0;
+            max-height: 100vh;
+            overflow-y: auto;
+            font-size: 0.85em;
+        }
+        .toc-title {
+            font-size: 0.8em;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        .toc-list, .toc-sublist {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .toc-sublist { padding-left: 12px; }
+        .toc-item a {
+            display: block;
+            padding: 3px 0;
+            color: var(--text-secondary);
+            text-decoration: none;
+            border-left: 2px solid transparent;
+            padding-left: 8px;
+        }
+        .toc-item a:hover {
+            color: var(--nav-active);
+            border-left-color: var(--nav-active);
+        }
+         
+        .prev-next {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid var(--nav-border);
+            gap: 20px;
+        }
+        .prev-next a {
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            padding: 12px 16px;
+            border: 1px solid var(--nav-border);
+            border-radius: 8px;
+            flex: 1;
+            transition: border-color 0.2s;
+        }
+        .prev-next a:hover { border-color: var(--nav-active); }
+        .prev-next .prev-link { text-align: left; }
+        .prev-next .next-link { text-align: right; margin-left: auto; }
+        .prev-label, .next-label {
+            font-size: 0.8em;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+        }
+        .prev-title, .next-title {
+            color: var(--nav-active);
+            font-weight: 500;
+        }
+         
+        article h1 { font-size: 2em; margin-bottom: 8px; }
+        article time { color: var(--text-secondary); font-size: 0.9em; }
+        .article-meta {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 4px;
+            margin: 0 0 8px;
+            flex-wrap: nowrap;
+        }
+        .article-audio {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin: 0 0 0 2px;
+        }
+        .article-audio button {
+            border: 1px solid var(--nav-active);
+            border-radius: 999px;
+            background: var(--nav-active);
+            color: #fff;
+            width: 36px;
+            height: 36px;
+            padding: 0;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        .article-audio button:hover {
+            filter: brightness(0.92);
+        }
+        .article-audio button svg {
+            width: 14px;
+            height: 14px;
+            fill: currentColor;
+        }
+        .article-audio button .icon-stop { display: none; }
+        .article-audio button.is-playing .icon-play { display: none; }
+        .article-audio button.is-playing .icon-stop { display: block; }
+        .article-audio .audio-wave {
+            width: 88px;
+            height: 28px;
+            border: 0;
+            border-radius: 0;
+            background: transparent;
+            opacity: 0.95;
+        }
+        .article-audio button:disabled {
+            opacity: 0.55;
+            cursor: default;
+        }
+        article .tags { margin: 22px 0 24px; }
+        article .tag {
+            display: inline-block;
+            background: var(--nav-bg);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            color: var(--nav-active);
+            margin-right: 4px;
+            text-decoration: none;
+        }
+        article .tag:hover { text-decoration: underline; }
+        article .content { margin-top: 16px; }
+        article .content h2 { margin-top: 2em; margin-bottom: 0.5em; }
+        article .content h3 { margin-top: 1.5em; margin-bottom: 0.4em; }
+        article .content p { margin-bottom: 1em; }
+        article .content blockquote {
+            margin: 1.4em 0;
+            padding: 0.8em 1em;
+            border-left: 4px solid var(--quote-border);
+            background: var(--quote-bg);
+            color: var(--text-secondary);
+            font-style: italic;
+        }
+        article .content blockquote p:last-child {
+            margin-bottom: 0;
+        }
+         
+        .site-footer {
+            border-top: 1px solid var(--nav-border);
+            padding: 20px;
+            color: var(--text-secondary);
+            font-size: 0.9em;
+            text-align: center;
+        }
+         
+        a { color: var(--nav-active); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        img { max-width: 100%; height: auto; }
+        pre {
+            background: #f4f4f4;
+            padding: 15px;
+            overflow-x: auto;
+            border-radius: 4px;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: "Monaco", "Menlo", monospace;
+        }
+        pre code { padding: 0; background: none; }
+        table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background: #f4f4f4; }
+        .section-index { list-style: none; padding: 0; }
+        .section-index li { padding: 6px 0; border-bottom: 1px solid var(--nav-border); }
+        .section-index li a { font-weight: 500; }
+        .section-article-list {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+        .section-article-preview {
+            border-bottom: 1px solid var(--nav-border);
+            padding-bottom: 12px;
+        }
+        .section-article-preview h2 {
+            margin: 0 0 4px;
+            font-size: 1.05em;
+        }
+        .section-article-preview time {
+            display: block;
+            color: var(--text-secondary);
+            font-size: 0.83em;
+            margin-bottom: 6px;
+        }
+        .section-article-preview p {
+            margin: 0;
+            color: var(--text-secondary);
+        }
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            margin: 32px 0 0;
+        }
+        .project-card {
+            background: var(--bg-secondary);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .project-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px var(--shadow);
+        }
+        .project-image {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            background: var(--border);
+            display: block;
+        }
+        .project-content {
+            padding: 20px;
+        }
+        .project-content h3 {
+            margin: 0 0 8px;
+            font-size: 1.25em;
+        }
+        .project-content p {
+            margin: 0 0 16px;
+            color: var(--text-secondary);
+            font-size: 0.95em;
+        }
+        .project-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        .project-tag {
+            font-size: 0.8em;
+            padding: 4px 10px;
+            background: var(--bg-primary);
+            border-radius: 20px;
+            color: var(--text-secondary);
+        }
+         
+        @media (max-width: 1200px) {
+            .toc { display: none; }
+        }
+        @media (max-width: 768px) {
+            .sidebar { display: none; }
+            .site-content { padding: 16px; }
+            .projects-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body class="page-layout-page">
+    <header class="site-header">
+        <div class="header-left">
+            <a class="navbar-logo" href="/">
+                <img class="no-transform" src="/assets/img/logo_v7w.svg" alt="Gratheon">
+            </a>
+            <nav class="site-nav">
+                <a href="/about/">About</a><a href="/about/products/">Products</a><a href="/docs/">Docs</a><a href="/research/">Research</a><a href="/blog/">Blog</a><a href="/pricing/">Pricing</a><a href="https://discord.gg/PcbP4uedWj">Discord</a><a href="https://github.com/gratheon/web-app">GitHub</a><a href="https://app.gratheon.com/account/authenticate/">Log in</a>
+            </nav>
+        </div>
+        <div class="header-right">
+            
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
+                <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="4"></circle>
+                    <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
+                </svg>
+                <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3c0 0 0 0 0 0A7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+    <div class="site-layout">
+        
+        <main class="site-content">
+            
+<article>
+    
+    <nav aria-label="Breadcrumb">
+        <ol class="breadcrumbs">
+            
+            <li>
+                
+                    <a href="/">Home</a>
+                
+            </li>
+            
+            <li>
+                
+                    <a href="/docs/">Docs</a>
+                
+            </li>
+            
+            <li>
+                
+                    <span aria-current="page">billing system</span>
+                
+            </li>
+            
+        </ol>
+    </nav>
+    
+    <h1>billing system</h1>
+    
+    <div class="content">
+        <h1 id="billing-system-documentation">Billing System Documentation</h1>
+<h2 id="overview">Overview</h2>
 <p>The billing system in Gratheon enables users to subscribe to different pricing tiers (Free, Starter, Professional) and manage their subscriptions. The system is implemented across three repositories:</p>
 <ul>
-<li class=""><strong>web-app</strong>: Frontend user interface for billing management</li>
-<li class=""><strong>user-cycle</strong>: Backend GraphQL API and Stripe integration</li>
-<li class=""><strong>website</strong>: Public-facing pricing page</li>
+<li><strong>web-app</strong>: Frontend user interface for billing management</li>
+<li><strong>user-cycle</strong>: Backend GraphQL API and Stripe integration</li>
+<li><strong>website</strong>: Public-facing pricing page</li>
 </ul>
-<h2 class="anchor anchorTargetStickyNavbar_rb2N" id=architecture>Architecture<a href=#architecture class=hash-link aria-label="Direct link to Architecture" title="Direct link to Architecture" translate=no>​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=system-components>System Components<a href=#system-components class=hash-link aria-label="Direct link to System Components" title="Direct link to System Components" translate=no>​</a></h3>
-<!-- -->
-<h2 class="anchor anchorTargetStickyNavbar_rb2N" id=pricing-tiers>Pricing Tiers<a href=#pricing-tiers class=hash-link aria-label="Direct link to Pricing Tiers" title="Direct link to Pricing Tiers" translate=no>​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=free-hobbyist>Free (Hobbyist)<a href=#free-hobbyist class=hash-link aria-label="Direct link to Free (Hobbyist)" title="Direct link to Free (Hobbyist)" translate=no>​</a></h3>
+<h2 id="architecture">Architecture</h2>
+<h3 id="system-components">System Components</h3>
+<pre><code class="language-mermaid">graph TB
+    subgraph &quot;Frontend (web-app)&quot;
+        UI[Account/Billing Page]
+        PricingPlans[PricingPlans Component]
+        BillingConfig[billing.ts Config]
+    end
+    
+    subgraph &quot;Backend (user-cycle)&quot;
+        GraphQL[GraphQL Resolvers]
+        StripeAPI[Stripe Integration]
+        UserDB[(User Database)]
+    end
+    
+    subgraph &quot;External&quot;
+        Stripe[Stripe Checkout]
+        StripeWebhook[Stripe Webhooks]
+    end
+    
+    UI --&gt; PricingPlans
+    PricingPlans --&gt; BillingConfig
+    PricingPlans --&gt;|createCheckoutSession| GraphQL
+    GraphQL --&gt; StripeAPI
+    StripeAPI --&gt; Stripe
+    Stripe --&gt;|Payment Success| StripeWebhook
+    StripeWebhook --&gt; GraphQL
+    GraphQL --&gt; UserDB
+</code></pre>
+<h2 id="pricing-tiers">Pricing Tiers</h2>
+<h3 id="free-hobbyist">Free (Hobbyist)</h3>
 <ul>
-<li class=""><strong>Price</strong>: Free forever</li>
-<li class=""><strong>Features</strong>:<!-- -->
+<li><strong>Price</strong>: Free forever</li>
+<li><strong>Features</strong>:
 <ul>
-<li class="">Up to 3 hives</li>
-<li class="">10 frames per hive max</li>
-<li class="">Worker bee detection</li>
-<li class="">Queen detection</li>
-<li class="">Public hive sharing</li>
-<li class="">Treatment diary</li>
+<li>Up to 3 hives</li>
+<li>10 frames per hive max</li>
+<li>Worker bee detection</li>
+<li>Queen detection</li>
+<li>Public hive sharing</li>
+<li>Treatment diary</li>
 </ul>
 </li>
-<li class=""><strong>Limitations</strong>:<!-- -->
+<li><strong>Limitations</strong>:
 <ul>
-<li class="">Low-priority AI processing</li>
-<li class="">1 year image retention</li>
+<li>Low-priority AI processing</li>
+<li>1 year image retention</li>
 </ul>
 </li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=starter>Starter<a href=#starter class=hash-link aria-label="Direct link to Starter" title="Direct link to Starter" translate=no>​</a></h3>
+<h3 id="starter">Starter</h3>
 <ul>
-<li class=""><strong>Monthly</strong>: €22/month</li>
-<li class=""><strong>Yearly</strong>: €12/month (€144/year) - <strong>Save 45%</strong></li>
-<li class=""><strong>Features</strong>:<!-- -->
+<li><strong>Monthly</strong>: €22/month</li>
+<li><strong>Yearly</strong>: €12/month (€144/year) - <strong>Save 45%</strong></li>
+<li><strong>Features</strong>:
 <ul>
-<li class="">Up to 20 hives</li>
-<li class="">30 frames per hive</li>
-<li class="">Cell analysis</li>
-<li class="">Varroa counting (bottom board)</li>
-<li class="">Hive placement planner</li>
-<li class="">Inspection management</li>
-<li class="">AI beekeeping assistant</li>
+<li>Up to 20 hives</li>
+<li>30 frames per hive</li>
+<li>Cell analysis</li>
+<li>Varroa counting (bottom board)</li>
+<li>Hive placement planner</li>
+<li>Inspection management</li>
+<li>AI beekeeping assistant</li>
 </ul>
 </li>
-<li class=""><strong>Limitations</strong>:<!-- -->
+<li><strong>Limitations</strong>:
 <ul>
-<li class="">1 user account</li>
-<li class="">2 year image retention</li>
+<li>1 user account</li>
+<li>2 year image retention</li>
 </ul>
 </li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=professional>Professional<a href=#professional class=hash-link aria-label="Direct link to Professional" title="Direct link to Professional" translate=no>​</a></h3>
+<h3 id="professional">Professional</h3>
 <ul>
-<li class=""><strong>Monthly</strong>: €55/month</li>
-<li class=""><strong>Yearly</strong>: €33/month (€396/year) - <strong>Save 40%</strong></li>
-<li class=""><strong>Features</strong>:<!-- -->
+<li><strong>Monthly</strong>: €55/month</li>
+<li><strong>Yearly</strong>: €33/month (€396/year) - <strong>Save 40%</strong></li>
+<li><strong>Features</strong>:
 <ul>
-<li class="">Up to 150 hives</li>
-<li class="">Unlimited frames</li>
-<li class="">Telemetry storage</li>
-<li class="">Timeseries data analytics</li>
-<li class="">Colony comparison</li>
-<li class="">Unlimited inspections</li>
-<li class="">Up to 20 user accounts</li>
+<li>Up to 150 hives</li>
+<li>Unlimited frames</li>
+<li>Telemetry storage</li>
+<li>Timeseries data analytics</li>
+<li>Colony comparison</li>
+<li>Unlimited inspections</li>
+<li>Up to 20 user accounts</li>
 </ul>
 </li>
-<li class=""><strong>Limitations</strong>:<!-- -->
+<li><strong>Limitations</strong>:
 <ul>
-<li class="">10 min telemetry resolution</li>
-<li class="">3 year image retention</li>
+<li>10 min telemetry resolution</li>
+<li>3 year image retention</li>
 </ul>
 </li>
-<li class=""><strong>Status</strong>: In Development</li>
+<li><strong>Status</strong>: In Development</li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=flexible-addon>Flexible (Addon)<a href=#flexible-addon class=hash-link aria-label="Direct link to Flexible (Addon)" title="Direct link to Flexible (Addon)" translate=no>​</a></h3>
+<h3 id="flexible-addon">Flexible (Addon)</h3>
 <ul>
-<li class=""><strong>Price</strong>: €100 one-time (1000 tokens, valid 1 year)</li>
-<li class=""><strong>Purpose</strong>: Pay-per-use infrastructure features</li>
-<li class=""><strong>Features</strong>:<!-- -->
+<li><strong>Price</strong>: €100 one-time (1000 tokens, valid 1 year)</li>
+<li><strong>Purpose</strong>: Pay-per-use infrastructure features</li>
+<li><strong>Features</strong>:
 <ul>
-<li class="">Video processing & storage</li>
-<li class="">IoT telemetry rate limits</li>
-<li class="">SMS alerts</li>
-<li class="">Webhook integrations</li>
-<li class="">Extra capacity beyond tier limits</li>
+<li>Video processing &amp; storage</li>
+<li>IoT telemetry rate limits</li>
+<li>SMS alerts</li>
+<li>Webhook integrations</li>
+<li>Extra capacity beyond tier limits</li>
 </ul>
 </li>
-<li class=""><strong>Status</strong>: In Development (not shown in web-app billing selection)</li>
+<li><strong>Status</strong>: In Development (not shown in web-app billing selection)</li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=enterprise>Enterprise<a href=#enterprise class=hash-link aria-label="Direct link to Enterprise" title="Direct link to Enterprise" translate=no>​</a></h3>
+<h3 id="enterprise">Enterprise</h3>
 <ul>
-<li class=""><strong>Price</strong>: Custom pricing</li>
-<li class=""><strong>Features</strong>:<!-- -->
+<li><strong>Price</strong>: Custom pricing</li>
+<li><strong>Features</strong>:
 <ul>
-<li class="">Custom integrations</li>
-<li class="">On-premise deployment</li>
-<li class="">24/7 priority support</li>
-<li class="">Advanced security</li>
-<li class="">Unlimited scale</li>
+<li>Custom integrations</li>
+<li>On-premise deployment</li>
+<li>24/7 priority support</li>
+<li>Advanced security</li>
+<li>Unlimited scale</li>
 </ul>
 </li>
-<li class=""><strong>Contact</strong>: <a href=mailto:enterprise@gratheon.com target=_blank rel="noopener noreferrer" class="">enterprise@gratheon.com</a></li>
+<li><strong>Contact</strong>: <a href="mailto:enterprise@gratheon.com">enterprise@gratheon.com</a></li>
 </ul>
-<h2 class="anchor anchorTargetStickyNavbar_rb2N" id=implementation-details>Implementation Details<a href=#implementation-details class=hash-link aria-label="Direct link to Implementation Details" title="Direct link to Implementation Details" translate=no>​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=frontend-web-app>Frontend (web-app)<a href=#frontend-web-app class=hash-link aria-label="Direct link to Frontend (web-app)" title="Direct link to Frontend (web-app)" translate=no>​</a></h3>
-<h4 class="anchor anchorTargetStickyNavbar_rb2N" id=configuration-srcconfigbillingts>Configuration (<code>src/config/billing.ts</code>)<a href=#configuration-srcconfigbillingts class=hash-link aria-label="Direct link to configuration-srcconfigbillingts" title="Direct link to configuration-srcconfigbillingts" translate=no>​</a></h4>
+<h2 id="implementation-details">Implementation Details</h2>
+<h3 id="frontend-web-app">Frontend (web-app)</h3>
+<h4 id="configuration-srcconfigbillingts">Configuration (<code>src/config/billing.ts</code>)</h4>
 <p>Defines all billing tiers with:</p>
 <ul>
-<li class="">Tier names and colors</li>
-<li class="">Monthly/yearly pricing</li>
-<li class="">Savings percentages</li>
-<li class="">Stripe price IDs</li>
+<li>Tier names and colors</li>
+<li>Monthly/yearly pricing</li>
+<li>Savings percentages</li>
+<li>Stripe price IDs</li>
 </ul>
-<div class="language-typescript codeBlockContainer_InFo theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_zYTH><pre tabindex=0 class="prism-code language-typescript codeBlock_Qx6K thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_VjvH><span class=token-line style=color:#393A34><span class="token keyword" style=color:#00009f>export</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>const</span><span class="token plain"> </span><span class="token constant" style=color:#36acaa>BILLING_TIERS</span><span class="token plain"> </span><span class="token operator" style=color:#393A34>=</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  free</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"> name</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token string" style=color:#e3116c>'Free'</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> color</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token string" style=color:#e3116c>'#f0f0f0'</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> textColor</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token string" style=color:#e3116c>'#666'</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>}</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  starter</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">    name</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token string" style=color:#e3116c>'Starter'</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">    color</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token string" style=color:#e3116c>'#FFD900'</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">    monthly</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"> price</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token number" style=color:#36acaa>22</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> currency</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token string" style=color:#e3116c>'EUR'</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> stripePrice</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token string" style=color:#e3116c>'price_starter_monthly'</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>}</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">    yearly</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"> </span><br/></span><span class=token-line style=color:#393A34><span class="token plain">      price</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token number" style=color:#36acaa>12</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> </span><br/></span><span class=token-line style=color:#393A34><span class="token plain">      pricePerYear</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token number" style=color:#36acaa>144</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> </span><br/></span><span class=token-line style=color:#393A34><span class="token plain">      currency</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token string" style=color:#e3116c>'EUR'</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> </span><br/></span><span class=token-line style=color:#393A34><span class="token plain">      savings</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token string" style=color:#e3116c>'45%'</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> </span><br/></span><span class=token-line style=color:#393A34><span class="token plain">      stripePrice</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token string" style=color:#e3116c>'price_starter_yearly'</span><span class="token plain"> </span><br/></span><span class=token-line style=color:#393A34><span class="token plain">    </span><span class="token punctuation" style=color:#393A34>}</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token punctuation" style=color:#393A34>}</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token comment" style=color:#999988;font-style:italic>// ... more tiers</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain"></span><span class="token punctuation" style=color:#393A34>}</span><br/></span></code></pre></div></div>
-<h4 class="anchor anchorTargetStickyNavbar_rb2N" id=components>Components<a href=#components class=hash-link aria-label="Direct link to Components" title="Direct link to Components" translate=no>​</a></h4>
+<pre><code class="language-typescript">export const BILLING_TIERS = {
+  free: { name: 'Free', color: '#f0f0f0', textColor: '#666' },
+  starter: {
+    name: 'Starter',
+    color: '#FFD900',
+    monthly: { price: 22, currency: 'EUR', stripePrice: 'price_starter_monthly' },
+    yearly: { 
+      price: 12, 
+      pricePerYear: 144, 
+      currency: 'EUR', 
+      savings: '45%', 
+      stripePrice: 'price_starter_yearly' 
+    }
+  },
+  // ... more tiers
+}
+</code></pre>
+<h4 id="components">Components</h4>
 <p><strong><code>src/page/accountEdit/billing/index.tsx</code></strong></p>
 <ul>
-<li class="">Main billing page wrapper</li>
-<li class="">Shows subscription status</li>
-<li class="">Displays expiration dates</li>
-<li class="">Cancel subscription button</li>
-<li class="">Embeds PricingPlans component</li>
+<li>Main billing page wrapper</li>
+<li>Shows subscription status</li>
+<li>Displays expiration dates</li>
+<li>Cancel subscription button</li>
+<li>Embeds PricingPlans component</li>
 </ul>
 <p><strong><code>src/page/accountEdit/billing/pricingPlans.tsx</code></strong></p>
 <ul>
-<li class="">3-column layout: Free, Starter, Professional</li>
-<li class="">Monthly/yearly toggle per tier</li>
-<li class="">Stripe checkout integration</li>
-<li class="">Current plan indication</li>
-<li class="">Error handling</li>
+<li>3-column layout: Free, Starter, Professional</li>
+<li>Monthly/yearly toggle per tier</li>
+<li>Stripe checkout integration</li>
+<li>Current plan indication</li>
+<li>Error handling</li>
 </ul>
 <p><strong><code>src/page/accountEdit/billing/pricingPlans.css</code></strong></p>
 <ul>
-<li class="">Responsive grid layout</li>
-<li class="">Tier-specific colors</li>
-<li class="">Hover effects</li>
-<li class="">Mobile-responsive</li>
+<li>Responsive grid layout</li>
+<li>Tier-specific colors</li>
+<li>Hover effects</li>
+<li>Mobile-responsive</li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=backend-user-cycle>Backend (user-cycle)<a href=#backend-user-cycle class=hash-link aria-label="Direct link to Backend (user-cycle)" title="Direct link to Backend (user-cycle)" translate=no>​</a></h3>
-<h4 class="anchor anchorTargetStickyNavbar_rb2N" id=graphql-schema-schemagraphql>GraphQL Schema (<code>schema.graphql</code>)<a href=#graphql-schema-schemagraphql class=hash-link aria-label="Direct link to graphql-schema-schemagraphql" title="Direct link to graphql-schema-schemagraphql" translate=no>​</a></h4>
-<div class="language-graphql codeBlockContainer_InFo theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_zYTH><pre tabindex=0 class="prism-code language-graphql codeBlock_Qx6K thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_VjvH><span class=token-line style=color:#393A34><span class="token keyword" style=color:#00009f>type</span><span class="token plain"> </span><span class="token class-name">User</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token attr-name" style=color:#00a4db>billingPlan</span><span class="token punctuation" style=color:#393A34>:</span><span class="token plain"> </span><span class="token scalar">String</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token attr-name" style=color:#00a4db>hasSubscription</span><span class="token punctuation" style=color:#393A34>:</span><span class="token plain"> </span><span class="token scalar">Boolean</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token attr-name" style=color:#00a4db>isSubscriptionExpired</span><span class="token punctuation" style=color:#393A34>:</span><span class="token plain"> </span><span class="token scalar">Boolean</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token attr-name" style=color:#00a4db>date_expiration</span><span class="token punctuation" style=color:#393A34>:</span><span class="token plain"> </span><span class="token class-name">DateTime</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain"></span><span class="token punctuation" style=color:#393A34>}</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></span><span class=token-line style=color:#393A34><span class="token plain"></span><span class="token keyword" style=color:#00009f>type</span><span class="token plain"> </span><span class="token class-name">BillingHistoryEvent</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token attr-name" style=color:#00a4db>id</span><span class="token punctuation" style=color:#393A34>:</span><span class="token plain"> </span><span class="token scalar">Int</span><span class="token operator" style=color:#393A34>!</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token attr-name" style=color:#00a4db>userId</span><span class="token punctuation" style=color:#393A34>:</span><span class="token plain"> </span><span class="token scalar">Int</span><span class="token operator" style=color:#393A34>!</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token attr-name" style=color:#00a4db>eventType</span><span class="token punctuation" style=color:#393A34>:</span><span class="token plain"> </span><span class="token scalar">String</span><span class="token operator" style=color:#393A34>!</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token attr-name" style=color:#00a4db>billingPlan</span><span class="token punctuation" style=color:#393A34>:</span><span class="token plain"> </span><span class="token scalar">String</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token attr-name" style=color:#00a4db>amount</span><span class="token punctuation" style=color:#393A34>:</span><span class="token plain"> </span><span class="token scalar">Float</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token attr-name" style=color:#00a4db>currency</span><span class="token punctuation" style=color:#393A34>:</span><span class="token plain"> </span><span class="token scalar">String</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token attr-name" style=color:#00a4db>details</span><span class="token punctuation" style=color:#393A34>:</span><span class="token plain"> </span><span class="token scalar">String</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token attr-name" style=color:#00a4db>createdAt</span><span class="token punctuation" style=color:#393A34>:</span><span class="token plain"> </span><span class="token scalar">String</span><span class="token operator" style=color:#393A34>!</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain"></span><span class="token punctuation" style=color:#393A34>}</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></span><span class=token-line style=color:#393A34><span class="token plain"></span><span class="token keyword" style=color:#00009f>type</span><span class="token plain"> </span><span class="token class-name">Query</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token attr-name" style=color:#00a4db>billingHistory</span><span class="token punctuation" style=color:#393A34>:</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>[</span><span class="token class-name">BillingHistoryEvent</span><span class="token punctuation" style=color:#393A34>]</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain"></span><span class="token punctuation" style=color:#393A34>}</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></span><span class=token-line style=color:#393A34><span class="token plain"></span><span class="token keyword" style=color:#00009f>type</span><span class="token plain"> </span><span class="token class-name">Mutation</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token attr-name" style=color:#00a4db>createCheckoutSession</span><span class="token punctuation" style=color:#393A34>(</span><span class="token attr-name" style=color:#00a4db>plan</span><span class="token punctuation" style=color:#393A34>:</span><span class="token plain"> </span><span class="token scalar">String</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> </span><span class="token attr-name" style=color:#00a4db>cycle</span><span class="token punctuation" style=color:#393A34>:</span><span class="token plain"> </span><span class="token scalar">String</span><span class="token punctuation" style=color:#393A34>)</span><span class="token punctuation" style=color:#393A34>:</span><span class="token plain"> </span><span class="token constant" style=color:#36acaa>URL</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token attr-name" style=color:#00a4db>cancelSubscription</span><span class="token punctuation" style=color:#393A34>:</span><span class="token plain"> </span><span class="token class-name">CancelSubscriptionResult</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain"></span><span class="token punctuation" style=color:#393A34>}</span><br/></span></code></pre></div></div>
-<h4 class="anchor anchorTargetStickyNavbar_rb2N" id=billing-history>Billing History<a href=#billing-history class=hash-link aria-label="Direct link to Billing History" title="Direct link to Billing History" translate=no>​</a></h4>
+<h3 id="backend-user-cycle">Backend (user-cycle)</h3>
+<h4 id="graphql-schema-schemagraphql">GraphQL Schema (<code>schema.graphql</code>)</h4>
+<pre><code class="language-graphql">type User {
+  billingPlan: String
+  hasSubscription: Boolean
+  isSubscriptionExpired: Boolean
+  date_expiration: DateTime
+}
+
+type BillingHistoryEvent {
+  id: Int!
+  userId: Int!
+  eventType: String!
+  billingPlan: String
+  amount: Float
+  currency: String
+  details: String
+  createdAt: String!
+}
+
+type Query {
+  billingHistory: [BillingHistoryEvent]
+}
+
+type Mutation {
+  createCheckoutSession(plan: String, cycle: String): URL
+  cancelSubscription: CancelSubscriptionResult
+}
+</code></pre>
+<h4 id="billing-history">Billing History</h4>
 <p>The billing history feature tracks all billing-related events for a user:</p>
 <p><strong>Event Types</strong>:</p>
 <ul>
-<li class=""><code>registration</code> - User account created</li>
-<li class=""><code>purchase</code> - Tier subscription purchased</li>
-<li class=""><code>cancellation</code> - Subscription cancelled by user</li>
-<li class=""><code>system_downgrade</code> - Auto-downgraded to free tier (e.g., payment failure)</li>
-<li class=""><code>upgrade</code> - Plan upgraded</li>
-<li class=""><code>downgrade</code> - Plan downgraded</li>
+<li><code>registration</code> - User account created</li>
+<li><code>purchase</code> - Tier subscription purchased</li>
+<li><code>cancellation</code> - Subscription cancelled by user</li>
+<li><code>system_downgrade</code> - Auto-downgraded to free tier (e.g., payment failure)</li>
+<li><code>upgrade</code> - Plan upgraded</li>
+<li><code>downgrade</code> - Plan downgraded</li>
 </ul>
 <p><strong>Model</strong> (<code>src/models/billingHistory.ts</code>):</p>
-<div class="language-typescript codeBlockContainer_InFo theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_zYTH><pre tabindex=0 class="prism-code language-typescript codeBlock_Qx6K thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_VjvH><span class=token-line style=color:#393A34><span class="token keyword" style=color:#00009f>export</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>const</span><span class="token plain"> billingHistoryModel </span><span class="token operator" style=color:#393A34>=</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token keyword" style=color:#00009f>async</span><span class="token plain"> </span><span class="token function" style=color:#d73a49>getByUserId</span><span class="token punctuation" style=color:#393A34>(</span><span class="token plain">userId</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token builtin">number</span><span class="token punctuation" style=color:#393A34>)</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token builtin">Promise</span><span class="token operator" style=color:#393A34>&lt;</span><span class="token plain">BillingHistoryEvent</span><span class="token punctuation" style=color:#393A34>[</span><span class="token punctuation" style=color:#393A34>]</span><span class="token operator" style=color:#393A34>></span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">    </span><span class="token comment" style=color:#999988;font-style:italic>// Fetch all events for user, ordered by createdAt DESC</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token punctuation" style=color:#393A34>}</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token keyword" style=color:#00009f>async</span><span class="token plain"> </span><span class="token function" style=color:#d73a49>addRegistration</span><span class="token punctuation" style=color:#393A34>(</span><span class="token plain">userId</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token builtin">number</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> plan</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token builtin">string</span><span class="token punctuation" style=color:#393A34>)</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">    </span><span class="token comment" style=color:#999988;font-style:italic>// Track when user registers</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token punctuation" style=color:#393A34>}</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token keyword" style=color:#00009f>async</span><span class="token plain"> </span><span class="token function" style=color:#d73a49>addPurchase</span><span class="token punctuation" style=color:#393A34>(</span><span class="token plain">userId</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token builtin">number</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> plan</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token builtin">string</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> amount</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token builtin">number</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> currency</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token builtin">string</span><span class="token punctuation" style=color:#393A34>)</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">    </span><span class="token comment" style=color:#999988;font-style:italic>// Track tier purchase</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token punctuation" style=color:#393A34>}</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token keyword" style=color:#00009f>async</span><span class="token plain"> </span><span class="token function" style=color:#d73a49>addCancellation</span><span class="token punctuation" style=color:#393A34>(</span><span class="token plain">userId</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token builtin">number</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> previousPlan</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token builtin">string</span><span class="token punctuation" style=color:#393A34>)</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">    </span><span class="token comment" style=color:#999988;font-style:italic>// Track cancellation</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token punctuation" style=color:#393A34>}</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token keyword" style=color:#00009f>async</span><span class="token plain"> </span><span class="token function" style=color:#d73a49>addSystemDowngrade</span><span class="token punctuation" style=color:#393A34>(</span><span class="token plain">userId</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token builtin">number</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> reason</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token builtin">string</span><span class="token punctuation" style=color:#393A34>)</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">    </span><span class="token comment" style=color:#999988;font-style:italic>// Track auto-downgrade to free tier</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token punctuation" style=color:#393A34>}</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain"></span><span class="token punctuation" style=color:#393A34>}</span><br/></span></code></pre></div></div>
+<pre><code class="language-typescript">export const billingHistoryModel = {
+  async getByUserId(userId: number): Promise&lt;BillingHistoryEvent[]&gt; {
+    // Fetch all events for user, ordered by createdAt DESC
+  },
+  
+  async addRegistration(userId: number, plan: string) {
+    // Track when user registers
+  },
+  
+  async addPurchase(userId: number, plan: string, amount: number, currency: string) {
+    // Track tier purchase
+  },
+  
+  async addCancellation(userId: number, previousPlan: string) {
+    // Track cancellation
+  },
+  
+  async addSystemDowngrade(userId: number, reason: string) {
+    // Track auto-downgrade to free tier
+  }
+}
+</code></pre>
 <p><strong>Database Table</strong> (<code>billing_history</code>):</p>
 <ul>
-<li class=""><code>id</code>: Auto-increment primary key</li>
-<li class=""><code>user_id</code>: Foreign key to account table</li>
-<li class=""><code>event_type</code>: ENUM('registration', 'purchase', 'cancellation', 'system_downgrade', 'upgrade', 'downgrade')</li>
-<li class=""><code>billing_plan</code>: ENUM('free', 'starter', 'professional', 'addon', 'enterprise')</li>
-<li class=""><code>amount</code>: Decimal (payment amount)</li>
-<li class=""><code>currency</code>: VARCHAR (e.g., 'EUR')</li>
-<li class=""><code>details</code>: TEXT (JSON string with additional info)</li>
-<li class=""><code>created_at</code>: Timestamp</li>
+<li><code>id</code>: Auto-increment primary key</li>
+<li><code>user_id</code>: Foreign key to account table</li>
+<li><code>event_type</code>: ENUM('registration', 'purchase', 'cancellation', 'system_downgrade', 'upgrade', 'downgrade')</li>
+<li><code>billing_plan</code>: ENUM('free', 'starter', 'professional', 'addon', 'enterprise')</li>
+<li><code>amount</code>: Decimal (payment amount)</li>
+<li><code>currency</code>: VARCHAR (e.g., 'EUR')</li>
+<li><code>details</code>: TEXT (JSON string with additional info)</li>
+<li><code>created_at</code>: Timestamp</li>
 </ul>
-<p><strong>UI Display</strong>:
+<p><strong>UI Display</strong>:<br />
 The billing history is shown as a timeline in the web-app <code>/account</code> page:</p>
 <ul>
-<li class="">Registration date</li>
-<li class="">Tier purchases with amounts</li>
-<li class="">Cancellations</li>
-<li class="">System changes (e.g., auto-downgrade on payment failure)</li>
+<li>Registration date</li>
+<li>Tier purchases with amounts</li>
+<li>Cancellations</li>
+<li>System changes (e.g., auto-downgrade on payment failure)</li>
 </ul>
 <p>This replaces the need for explicit expiration warning messages - users can see their full billing timeline.</p>
-<h4 class="anchor anchorTargetStickyNavbar_rb2N" id=resolvers-srcresolversts>Resolvers (<code>src/resolvers.ts</code>)<a href=#resolvers-srcresolversts class=hash-link aria-label="Direct link to resolvers-srcresolversts" title="Direct link to resolvers-srcresolversts" translate=no>​</a></h4>
+<h4 id="resolvers-srcresolversts">Resolvers (<code>src/resolvers.ts</code>)</h4>
 <p><strong><code>createCheckoutSession</code></strong></p>
 <ul>
-<li class="">Validates user authentication</li>
-<li class="">Maps plan/cycle to Stripe price ID</li>
-<li class="">Creates Stripe checkout session</li>
-<li class="">Returns checkout URL</li>
-<li class="">Supports modes: 'subscription' (starter, professional) or 'payment' (addon)</li>
+<li>Validates user authentication</li>
+<li>Maps plan/cycle to Stripe price ID</li>
+<li>Creates Stripe checkout session</li>
+<li>Returns checkout URL</li>
+<li>Supports modes: 'subscription' (starter, professional) or 'payment' (addon)</li>
 </ul>
-<div class="language-typescript codeBlockContainer_InFo theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_zYTH><pre tabindex=0 class="prism-code language-typescript codeBlock_Qx6K thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_VjvH><span class=token-line style=color:#393A34><span class="token function-variable function" style=color:#d73a49>createCheckoutSession</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>async</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>(</span><span class="token plain">parent</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"> plan</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> cycle </span><span class="token punctuation" style=color:#393A34>}</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> ctx</span><span class="token punctuation" style=color:#393A34>)</span><span class="token plain"> </span><span class="token operator" style=color:#393A34>=></span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token keyword" style=color:#00009f>if</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>(</span><span class="token operator" style=color:#393A34>!</span><span class="token plain">ctx</span><span class="token punctuation" style=color:#393A34>.</span><span class="token plain">uid</span><span class="token punctuation" style=color:#393A34>)</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>return</span><span class="token plain"> </span><span class="token function" style=color:#d73a49>err</span><span class="token punctuation" style=color:#393A34>(</span><span class="token plain">error_code</span><span class="token punctuation" style=color:#393A34>.</span><span class="token constant" style=color:#36acaa>AUTHENTICATION_REQUIRED</span><span class="token punctuation" style=color:#393A34>)</span><span class="token punctuation" style=color:#393A34>;</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token keyword" style=color:#00009f>const</span><span class="token plain"> user </span><span class="token operator" style=color:#393A34>=</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>await</span><span class="token plain"> userModel</span><span class="token punctuation" style=color:#393A34>.</span><span class="token function" style=color:#d73a49>getById</span><span class="token punctuation" style=color:#393A34>(</span><span class="token plain">ctx</span><span class="token punctuation" style=color:#393A34>.</span><span class="token plain">uid</span><span class="token punctuation" style=color:#393A34>)</span><span class="token punctuation" style=color:#393A34>;</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token keyword" style=color:#00009f>let</span><span class="token plain"> priceId </span><span class="token operator" style=color:#393A34>=</span><span class="token plain"> </span><span class="token function" style=color:#d73a49>getPriceIdForPlan</span><span class="token punctuation" style=color:#393A34>(</span><span class="token plain">plan</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> cycle</span><span class="token punctuation" style=color:#393A34>)</span><span class="token punctuation" style=color:#393A34>;</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token keyword" style=color:#00009f>let</span><span class="token plain"> mode </span><span class="token operator" style=color:#393A34>=</span><span class="token plain"> plan </span><span class="token operator" style=color:#393A34>===</span><span class="token plain"> </span><span class="token string" style=color:#e3116c>'addon'</span><span class="token plain"> </span><span class="token operator" style=color:#393A34>?</span><span class="token plain"> </span><span class="token string" style=color:#e3116c>'payment'</span><span class="token plain"> </span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token string" style=color:#e3116c>'subscription'</span><span class="token punctuation" style=color:#393A34>;</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token keyword" style=color:#00009f>const</span><span class="token plain"> session </span><span class="token operator" style=color:#393A34>=</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>await</span><span class="token plain"> stripe</span><span class="token punctuation" style=color:#393A34>.</span><span class="token plain">checkout</span><span class="token punctuation" style=color:#393A34>.</span><span class="token plain">sessions</span><span class="token punctuation" style=color:#393A34>.</span><span class="token function" style=color:#d73a49>create</span><span class="token punctuation" style=color:#393A34>(</span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">    customer_email</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> user</span><span class="token punctuation" style=color:#393A34>.</span><span class="token plain">email</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">    mode</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> mode</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">    line_items</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>[</span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"> price</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> priceId</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> quantity</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token number" style=color:#36acaa>1</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>}</span><span class="token punctuation" style=color:#393A34>]</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">    success_url</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token template-string template-punctuation string" style=color:#e3116c>`</span><span class="token template-string interpolation interpolation-punctuation punctuation" style=color:#393A34>${</span><span class="token template-string interpolation">appUrl</span><span class="token template-string interpolation interpolation-punctuation punctuation" style=color:#393A34>}</span><span class="token template-string string" style=color:#e3116c>/account/success</span><span class="token template-string template-punctuation string" style=color:#e3116c>`</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">    cancel_url</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token template-string template-punctuation string" style=color:#e3116c>`</span><span class="token template-string interpolation interpolation-punctuation punctuation" style=color:#393A34>${</span><span class="token template-string interpolation">appUrl</span><span class="token template-string interpolation interpolation-punctuation punctuation" style=color:#393A34>}</span><span class="token template-string string" style=color:#e3116c>/account/cancel</span><span class="token template-string template-punctuation string" style=color:#e3116c>`</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">    metadata</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"> plan</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> cycle </span><span class="token punctuation" style=color:#393A34>}</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token punctuation" style=color:#393A34>}</span><span class="token punctuation" style=color:#393A34>)</span><span class="token punctuation" style=color:#393A34>;</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token keyword" style=color:#00009f>return</span><span class="token plain"> session</span><span class="token punctuation" style=color:#393A34>.</span><span class="token plain">url</span><span class="token punctuation" style=color:#393A34>;</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain"></span><span class="token punctuation" style=color:#393A34>}</span><br/></span></code></pre></div></div>
+<pre><code class="language-typescript">createCheckoutSession: async (parent, { plan, cycle }, ctx) =&gt; {
+  if (!ctx.uid) return err(error_code.AUTHENTICATION_REQUIRED);
+  
+  const user = await userModel.getById(ctx.uid);
+  let priceId = getPriceIdForPlan(plan, cycle);
+  let mode = plan === 'addon' ? 'payment' : 'subscription';
+  
+  const session = await stripe.checkout.sessions.create({
+    customer_email: user.email,
+    mode: mode,
+    line_items: [{ price: priceId, quantity: 1 }],
+    success_url: `${appUrl}/account/success`,
+    cancel_url: `${appUrl}/account/cancel`,
+    metadata: { plan, cycle }
+  });
+  
+  return session.url;
+}
+</code></pre>
 <p><strong><code>cancelSubscription</code></strong></p>
 <ul>
-<li class="">Cancels Stripe subscription</li>
-<li class="">Updates user database</li>
-<li class="">Returns updated user object</li>
+<li>Cancels Stripe subscription</li>
+<li>Updates user database</li>
+<li>Returns updated user object</li>
 </ul>
-<h4 class="anchor anchorTargetStickyNavbar_rb2N" id=configuration-srcconfigconfigdefaultts>Configuration (<code>src/config/config.default.ts</code>)<a href=#configuration-srcconfigconfigdefaultts class=hash-link aria-label="Direct link to configuration-srcconfigconfigdefaultts" title="Direct link to configuration-srcconfigconfigdefaultts" translate=no>​</a></h4>
-<div class="language-typescript codeBlockContainer_InFo theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_zYTH><pre tabindex=0 class="prism-code language-typescript codeBlock_Qx6K thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_VjvH><span class=token-line style=color:#393A34><span class="token plain">stripe</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  secret</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token string" style=color:#e3116c>'sk_test_...'</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  webhook_secret</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token string" style=color:#e3116c>'whsec_...'</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  plans</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">    starter</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">      monthly</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token string" style=color:#e3116c>'price_starter_monthly_placeholder'</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">      yearly</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token string" style=color:#e3116c>'price_starter_yearly_placeholder'</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">    </span><span class="token punctuation" style=color:#393A34>}</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">    professional</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">      monthly</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token string" style=color:#e3116c>'price_professional_monthly_placeholder'</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">      yearly</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token string" style=color:#e3116c>'price_professional_yearly_placeholder'</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">    </span><span class="token punctuation" style=color:#393A34>}</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">    addon</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">      oneTime</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token string" style=color:#e3116c>'price_addon_onetime_placeholder'</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">    </span><span class="token punctuation" style=color:#393A34>}</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token punctuation" style=color:#393A34>}</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain"></span><span class="token punctuation" style=color:#393A34>}</span><br/></span></code></pre></div></div>
-<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=website-public-pricing>Website (Public Pricing)<a href=#website-public-pricing class=hash-link aria-label="Direct link to Website (Public Pricing)" title="Direct link to Website (Public Pricing)" translate=no>​</a></h3>
+<h4 id="configuration-srcconfigconfigdefaultts">Configuration (<code>src/config/config.default.ts</code>)</h4>
+<pre><code class="language-typescript">stripe: {
+  secret: 'sk_test_...',
+  webhook_secret: 'whsec_...',
+  plans: {
+    starter: {
+      monthly: 'price_starter_monthly_placeholder',
+      yearly: 'price_starter_yearly_placeholder'
+    },
+    professional: {
+      monthly: 'price_professional_monthly_placeholder',
+      yearly: 'price_professional_yearly_placeholder'
+    },
+    addon: {
+      oneTime: 'price_addon_onetime_placeholder'
+    }
+  }
+}
+</code></pre>
+<h3 id="website-public-pricing">Website (Public Pricing)</h3>
 <p><strong><code>src/components/CustomPricingPage.js</code></strong></p>
 <ul>
-<li class="">Public pricing page</li>
-<li class="">Shows all tiers: Hobbyist, Starter, Flexible, Professional, Enterprise</li>
-<li class="">Detailed feature lists</li>
-<li class="">Addon calculator (in development)</li>
-<li class="">Links to registration/sales</li>
+<li>Public pricing page</li>
+<li>Shows all tiers: Hobbyist, Starter, Flexible, Professional, Enterprise</li>
+<li>Detailed feature lists</li>
+<li>Addon calculator (in development)</li>
+<li>Links to registration/sales</li>
 </ul>
-<h2 class="anchor anchorTargetStickyNavbar_rb2N" id=user-flow>User Flow<a href=#user-flow class=hash-link aria-label="Direct link to User Flow" title="Direct link to User Flow" translate=no>​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=subscription-purchase-flow>Subscription Purchase Flow<a href=#subscription-purchase-flow class=hash-link aria-label="Direct link to Subscription Purchase Flow" title="Direct link to Subscription Purchase Flow" translate=no>​</a></h3>
-<!-- -->
-<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=subscription-cancellation-flow>Subscription Cancellation Flow<a href=#subscription-cancellation-flow class=hash-link aria-label="Direct link to Subscription Cancellation Flow" title="Direct link to Subscription Cancellation Flow" translate=no>​</a></h3>
-<!-- -->
-<h2 class="anchor anchorTargetStickyNavbar_rb2N" id=database-schema>Database Schema<a href=#database-schema class=hash-link aria-label="Direct link to Database Schema" title="Direct link to Database Schema" translate=no>​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=account-table-in-user-cycle-mysql>account table (in user-cycle MySQL)<a href=#account-table-in-user-cycle-mysql class=hash-link aria-label="Direct link to account table (in user-cycle MySQL)" title="Direct link to account table (in user-cycle MySQL)" translate=no>​</a></h3>
+<h2 id="user-flow">User Flow</h2>
+<h3 id="subscription-purchase-flow">Subscription Purchase Flow</h3>
+<pre><code class="language-mermaid">sequenceDiagram
+    actor User
+    participant WebApp
+    participant UserCycle
+    participant Stripe
+    participant Database
+
+    User-&gt;&gt;WebApp: Navigate to /account
+    WebApp-&gt;&gt;UserCycle: Query current user &amp; plan
+    UserCycle-&gt;&gt;Database: Fetch user data
+    Database--&gt;&gt;UserCycle: User data
+    UserCycle--&gt;&gt;WebApp: User with billingPlan
+    
+    User-&gt;&gt;WebApp: Click &quot;Choose Yearly&quot; on Starter
+    WebApp-&gt;&gt;UserCycle: createCheckoutSession(plan: &quot;starter&quot;, cycle: &quot;yearly&quot;)
+    UserCycle-&gt;&gt;Stripe: Create checkout session
+    Stripe--&gt;&gt;UserCycle: Session URL
+    UserCycle--&gt;&gt;WebApp: Checkout URL
+    WebApp-&gt;&gt;Stripe: Redirect to checkout
+    
+    User-&gt;&gt;Stripe: Complete payment
+    Stripe-&gt;&gt;UserCycle: Webhook: payment_success
+    UserCycle-&gt;&gt;Database: Update subscription
+    Stripe--&gt;&gt;User: Redirect to success_url
+    User-&gt;&gt;WebApp: /account/success
+    WebApp-&gt;&gt;WebApp: Show success message
+</code></pre>
+<h3 id="subscription-cancellation-flow">Subscription Cancellation Flow</h3>
+<pre><code class="language-mermaid">sequenceDiagram
+    actor User
+    participant WebApp
+    participant UserCycle
+    participant Stripe
+    participant Database
+
+    User-&gt;&gt;WebApp: Click &quot;Cancel subscription&quot;
+    WebApp-&gt;&gt;UserCycle: cancelSubscription mutation
+    UserCycle-&gt;&gt;Database: Fetch user &amp; stripe_subscription
+    Database--&gt;&gt;UserCycle: Subscription ID
+    UserCycle-&gt;&gt;Stripe: Cancel subscription
+    Stripe--&gt;&gt;UserCycle: Confirmation
+    UserCycle-&gt;&gt;Database: Set stripe_subscription = null
+    Database--&gt;&gt;UserCycle: Updated
+    UserCycle--&gt;&gt;WebApp: Updated user
+    WebApp-&gt;&gt;WebApp: Update UI to show cancellation
+</code></pre>
+<h2 id="database-schema">Database Schema</h2>
+<h3 id="account-table-in-user-cycle-mysql">account table (in user-cycle MySQL)</h3>
 <ul>
-<li class=""><code>id</code>: Primary key</li>
-<li class=""><code>email</code>: User email</li>
-<li class=""><code>stripe_subscription</code>: Stripe subscription ID (nullable)</li>
-<li class=""><code>billing_plan</code>: ENUM('free', 'starter', 'professional', 'addon', 'enterprise') - Default: 'free'</li>
-<li class=""><code>date_expiration</code>: Subscription expiration date</li>
-<li class=""><code>date_added</code>: Account creation date</li>
+<li><code>id</code>: Primary key</li>
+<li><code>email</code>: User email</li>
+<li><code>stripe_subscription</code>: Stripe subscription ID (nullable)</li>
+<li><code>billing_plan</code>: ENUM('free', 'starter', 'professional', 'addon', 'enterprise') - Default: 'free'</li>
+<li><code>date_expiration</code>: Subscription expiration date</li>
+<li><code>date_added</code>: Account creation date</li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=billing_history-table-in-user-cycle-mysql>billing_history table (in user-cycle MySQL)<a href=#billing_history-table-in-user-cycle-mysql class=hash-link aria-label="Direct link to billing_history table (in user-cycle MySQL)" title="Direct link to billing_history table (in user-cycle MySQL)" translate=no>​</a></h3>
+<h3 id="billing-history-table-in-user-cycle-mysql">billing_history table (in user-cycle MySQL)</h3>
 <ul>
-<li class=""><code>id</code>: Auto-increment primary key</li>
-<li class=""><code>user_id</code>: Foreign key to account table</li>
-<li class=""><code>event_type</code>: ENUM('registration', 'purchase', 'cancellation', 'system_downgrade', 'upgrade', 'downgrade')</li>
-<li class=""><code>billing_plan</code>: ENUM('free', 'starter', 'professional', 'addon', 'enterprise')</li>
-<li class=""><code>amount</code>: DECIMAL(10,2) - Payment amount (nullable)</li>
-<li class=""><code>currency</code>: VARCHAR(3) - e.g., 'EUR' (nullable)</li>
-<li class=""><code>details</code>: TEXT - JSON string with additional information (nullable)</li>
-<li class=""><code>created_at</code>: TIMESTAMP - Default: CURRENT_TIMESTAMP</li>
+<li><code>id</code>: Auto-increment primary key</li>
+<li><code>user_id</code>: Foreign key to account table</li>
+<li><code>event_type</code>: ENUM('registration', 'purchase', 'cancellation', 'system_downgrade', 'upgrade', 'downgrade')</li>
+<li><code>billing_plan</code>: ENUM('free', 'starter', 'professional', 'addon', 'enterprise')</li>
+<li><code>amount</code>: DECIMAL(10,2) - Payment amount (nullable)</li>
+<li><code>currency</code>: VARCHAR(3) - e.g., 'EUR' (nullable)</li>
+<li><code>details</code>: TEXT - JSON string with additional information (nullable)</li>
+<li><code>created_at</code>: TIMESTAMP - Default: CURRENT_TIMESTAMP</li>
 </ul>
 <p><strong>Migration Files</strong>:</p>
 <ul>
-<li class=""><code>migrations/023-create-billing-history.sql</code> - Creates table and backfills from account data</li>
-<li class=""><code>migrations/024-update-billing-plan-enum.sql</code> - Updates enum values from old ('base', 'pro') to new ('starter', 'professional')</li>
+<li><code>migrations/023-create-billing-history.sql</code> - Creates table and backfills from account data</li>
+<li><code>migrations/024-update-billing-plan-enum.sql</code> - Updates enum values from old ('base', 'pro') to new ('starter', 'professional')</li>
 </ul>
-<h2 class="anchor anchorTargetStickyNavbar_rb2N" id=stripe-integration>Stripe Integration<a href=#stripe-integration class=hash-link aria-label="Direct link to Stripe Integration" title="Direct link to Stripe Integration" translate=no>​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=price-ids-production>Price IDs (Production)<a href=#price-ids-production class=hash-link aria-label="Direct link to Price IDs (Production)" title="Direct link to Price IDs (Production)" translate=no>​</a></h3>
+<h2 id="stripe-integration">Stripe Integration</h2>
+<h3 id="price-ids-production">Price IDs (Production)</h3>
 <p>Must be configured in <code>user-cycle/src/config/config.default.ts</code>:</p>
 <ul>
-<li class=""><code>price_starter_monthly</code>: Starter monthly plan</li>
-<li class=""><code>price_starter_yearly</code>: Starter yearly plan</li>
-<li class=""><code>price_professional_monthly</code>: Professional monthly plan</li>
-<li class=""><code>price_professional_yearly</code>: Professional yearly plan</li>
-<li class=""><code>price_addon_onetime</code>: Flexible addon one-time payment</li>
+<li><code>price_starter_monthly</code>: Starter monthly plan</li>
+<li><code>price_starter_yearly</code>: Starter yearly plan</li>
+<li><code>price_professional_monthly</code>: Professional monthly plan</li>
+<li><code>price_professional_yearly</code>: Professional yearly plan</li>
+<li><code>price_addon_onetime</code>: Flexible addon one-time payment</li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=webhooks>Webhooks<a href=#webhooks class=hash-link aria-label="Direct link to Webhooks" title="Direct link to Webhooks" translate=no>​</a></h3>
+<h3 id="webhooks">Webhooks</h3>
 <p>Configure in Stripe Dashboard:</p>
 <ul>
-<li class=""><code>checkout.session.completed</code>: Handle successful payments</li>
-<li class=""><code>customer.subscription.deleted</code>: Handle cancellations</li>
-<li class=""><code>customer.subscription.updated</code>: Handle plan changes</li>
+<li><code>checkout.session.completed</code>: Handle successful payments</li>
+<li><code>customer.subscription.deleted</code>: Handle cancellations</li>
+<li><code>customer.subscription.updated</code>: Handle plan changes</li>
 </ul>
 <p>Webhook endpoint: <code>https://app.gratheon.com/webhooks/stripe</code></p>
-<h2 class="anchor anchorTargetStickyNavbar_rb2N" id=environment-variables>Environment Variables<a href=#environment-variables class=hash-link aria-label="Direct link to Environment Variables" title="Direct link to Environment Variables" translate=no>​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=user-cycle>user-cycle<a href=#user-cycle class=hash-link aria-label="Direct link to user-cycle" title="Direct link to user-cycle" translate=no>​</a></h3>
+<h2 id="environment-variables">Environment Variables</h2>
+<h3 id="user-cycle">user-cycle</h3>
 <ul>
-<li class=""><code>STRIPE_SECRET_KEY</code>: Stripe API secret key</li>
-<li class=""><code>STRIPE_WEBHOOK_SECRET</code>: Stripe webhook signing secret</li>
-<li class=""><code>JWT_KEY</code>: Session token signing key</li>
-<li class=""><code>MYSQL_HOST</code>, <code>MYSQL_USER</code>, <code>MYSQL_PASSWORD</code>, <code>MYSQL_DATABASE</code>: Database config</li>
+<li><code>STRIPE_SECRET_KEY</code>: Stripe API secret key</li>
+<li><code>STRIPE_WEBHOOK_SECRET</code>: Stripe webhook signing secret</li>
+<li><code>JWT_KEY</code>: Session token signing key</li>
+<li><code>MYSQL_HOST</code>, <code>MYSQL_USER</code>, <code>MYSQL_PASSWORD</code>, <code>MYSQL_DATABASE</code>: Database config</li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=web-app>web-app<a href=#web-app class=hash-link aria-label="Direct link to web-app" title="Direct link to web-app" translate=no>​</a></h3>
+<h3 id="web-app">web-app</h3>
 <ul>
-<li class=""><code>VITE_API_URL</code>: GraphQL API endpoint (points to user-cycle)</li>
+<li><code>VITE_API_URL</code>: GraphQL API endpoint (points to user-cycle)</li>
 </ul>
-<h2 class="anchor anchorTargetStickyNavbar_rb2N" id=security-considerations>Security Considerations<a href=#security-considerations class=hash-link aria-label="Direct link to Security Considerations" title="Direct link to Security Considerations" translate=no>​</a></h2>
+<h2 id="security-considerations">Security Considerations</h2>
 <ol>
-<li class=""><strong>Authentication</strong>: All billing mutations require valid JWT token in context</li>
-<li class=""><strong>CSRF Protection</strong>: GraphQL mutations use POST with proper CORS</li>
-<li class=""><strong>Webhook Verification</strong>: Stripe webhook signatures must be validated</li>
-<li class=""><strong>Price Integrity</strong>: Prices defined server-side, not client-side</li>
-<li class=""><strong>Session Security</strong>: Checkout sessions expire in 24 hours</li>
+<li><strong>Authentication</strong>: All billing mutations require valid JWT token in context</li>
+<li><strong>CSRF Protection</strong>: GraphQL mutations use POST with proper CORS</li>
+<li><strong>Webhook Verification</strong>: Stripe webhook signatures must be validated</li>
+<li><strong>Price Integrity</strong>: Prices defined server-side, not client-side</li>
+<li><strong>Session Security</strong>: Checkout sessions expire in 24 hours</li>
 </ol>
-<h2 class="anchor anchorTargetStickyNavbar_rb2N" id=testing>Testing<a href=#testing class=hash-link aria-label="Direct link to Testing" title="Direct link to Testing" translate=no>​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=manual-testing-checklist>Manual Testing Checklist<a href=#manual-testing-checklist class=hash-link aria-label="Direct link to Manual Testing Checklist" title="Direct link to Manual Testing Checklist" translate=no>​</a></h3>
-<ul class="contains-task-list containsTaskList_624C">
-<li class=task-list-item><input type=checkbox disabled/> <!-- -->Free tier displays correctly</li>
-<li class=task-list-item><input type=checkbox disabled/> <!-- -->Starter monthly/yearly selection works</li>
-<li class=task-list-item><input type=checkbox disabled/> <!-- -->Professional monthly/yearly selection works</li>
-<li class=task-list-item><input type=checkbox disabled/> <!-- -->Stripe checkout redirects properly</li>
-<li class=task-list-item><input type=checkbox disabled/> <!-- -->Success page shows after payment</li>
-<li class=task-list-item><input type=checkbox disabled/> <!-- -->Cancel page shows if user abandons checkout</li>
-<li class=task-list-item><input type=checkbox disabled/> <!-- -->Subscription cancellation works</li>
-<li class=task-list-item><input type=checkbox disabled/> <!-- -->Expired subscription shows warning</li>
-<li class=task-list-item><input type=checkbox disabled/> <!-- -->Current plan badge displays correctly</li>
-</ul>
-<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=stripe-test-cards>Stripe Test Cards<a href=#stripe-test-cards class=hash-link aria-label="Direct link to Stripe Test Cards" title="Direct link to Stripe Test Cards" translate=no>​</a></h3>
+<h2 id="testing">Testing</h2>
+<h3 id="manual-testing-checklist">Manual Testing Checklist</h3>
 <ul>
-<li class="">Success: <code>4242 4242 4242 4242</code></li>
-<li class="">Decline: <code>4000 0000 0000 0002</code></li>
-<li class="">3D Secure: <code>4000 0027 6000 3184</code></li>
+<li><input disabled="" type="checkbox" /> Free tier displays correctly</li>
+<li><input disabled="" type="checkbox" /> Starter monthly/yearly selection works</li>
+<li><input disabled="" type="checkbox" /> Professional monthly/yearly selection works</li>
+<li><input disabled="" type="checkbox" /> Stripe checkout redirects properly</li>
+<li><input disabled="" type="checkbox" /> Success page shows after payment</li>
+<li><input disabled="" type="checkbox" /> Cancel page shows if user abandons checkout</li>
+<li><input disabled="" type="checkbox" /> Subscription cancellation works</li>
+<li><input disabled="" type="checkbox" /> Expired subscription shows warning</li>
+<li><input disabled="" type="checkbox" /> Current plan badge displays correctly</li>
 </ul>
-<h2 class="anchor anchorTargetStickyNavbar_rb2N" id=known-issues--future-improvements>Known Issues & Future Improvements<a href=#known-issues--future-improvements class=hash-link aria-label="Direct link to Known Issues & Future Improvements" title="Direct link to Known Issues & Future Improvements" translate=no>​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=completed-features>Completed Features<a href=#completed-features class=hash-link aria-label="Direct link to Completed Features" title="Direct link to Completed Features" translate=no>​</a></h3>
+<h3 id="stripe-test-cards">Stripe Test Cards</h3>
 <ul>
-<li class="">✅ Billing history tracking (registration, purchase, cancellation events)</li>
-<li class="">✅ Auto-downgrade to free tier on payment failure</li>
-<li class="">✅ No hard paywalls - users maintain app access</li>
-<li class="">✅ Updated pricing structure (45% yearly discount for Starter, 40% for Professional)</li>
-<li class="">✅ Clean tier selection UI with current plan indicator</li>
-<li class="">✅ Database enum migration (from 'base'/'pro' to 'starter'/'professional')</li>
+<li>Success: <code>4242 4242 4242 4242</code></li>
+<li>Decline: <code>4000 0000 0000 0002</code></li>
+<li>3D Secure: <code>4000 0027 6000 3184</code></li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=current-work-in-progress>Current Work In Progress<a href=#current-work-in-progress class=hash-link aria-label="Direct link to Current Work In Progress" title="Direct link to Current Work In Progress" translate=no>​</a></h3>
+<h2 id="known-issues--future-improvements">Known Issues &amp; Future Improvements</h2>
+<h3 id="completed-features">Completed Features</h3>
 <ul>
-<li class="">🚧 Billing history timeline UI in web-app</li>
-<li class="">🚧 Remove flexible tier from web-app selection (keep on website only)</li>
-<li class="">🚧 Feature-level access control (replacing hard paywalls)</li>
-<li class="">🚧 Improve tier selection visual design</li>
+<li>✅ Billing history tracking (registration, purchase, cancellation events)</li>
+<li>✅ Auto-downgrade to free tier on payment failure</li>
+<li>✅ No hard paywalls - users maintain app access</li>
+<li>✅ Updated pricing structure (45% yearly discount for Starter, 40% for Professional)</li>
+<li>✅ Clean tier selection UI with current plan indicator</li>
+<li>✅ Database enum migration (from 'base'/'pro' to 'starter'/'professional')</li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=planned-features>Planned Features<a href=#planned-features class=hash-link aria-label="Direct link to Planned Features" title="Direct link to Planned Features" translate=no>​</a></h3>
+<h3 id="current-work-in-progress">Current Work In Progress</h3>
 <ul>
-<li class="">Subscription upgrade/downgrade flow</li>
-<li class="">Usage tracking for Flexible addon</li>
-<li class="">Invoice history in account page</li>
-<li class="">Payment method management</li>
-<li class="">Multi-currency support</li>
-<li class="">Enterprise custom contracts</li>
-<li class="">Prorated billing for plan changes</li>
-<li class="">Subscription renewal reminders</li>
+<li>🚧 Billing history timeline UI in web-app</li>
+<li>🚧 Remove flexible tier from web-app selection (keep on website only)</li>
+<li>🚧 Feature-level access control (replacing hard paywalls)</li>
+<li>🚧 Improve tier selection visual design</li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=feature-level-blocking-strategy>Feature-Level Blocking Strategy<a href=#feature-level-blocking-strategy class=hash-link aria-label="Direct link to Feature-Level Blocking Strategy" title="Direct link to Feature-Level Blocking Strategy" translate=no>​</a></h3>
+<h3 id="planned-features">Planned Features</h3>
+<ul>
+<li>Subscription upgrade/downgrade flow</li>
+<li>Usage tracking for Flexible addon</li>
+<li>Invoice history in account page</li>
+<li>Payment method management</li>
+<li>Multi-currency support</li>
+<li>Enterprise custom contracts</li>
+<li>Prorated billing for plan changes</li>
+<li>Subscription renewal reminders</li>
+</ul>
+<h3 id="feature-level-blocking-strategy">Feature-Level Blocking Strategy</h3>
 <p>Future implementation will check features individually:</p>
-<div class="language-typescript codeBlockContainer_InFo theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_zYTH><pre tabindex=0 class="prism-code language-typescript codeBlock_Qx6K thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_VjvH><span class=token-line style=color:#393A34><span class="token comment" style=color:#999988;font-style:italic>// Example feature check</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain"></span><span class="token keyword" style=color:#00009f>const</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"> hasAccess</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> requiredTier </span><span class="token punctuation" style=color:#393A34>}</span><span class="token plain"> </span><span class="token operator" style=color:#393A34>=</span><span class="token plain"> </span><span class="token function" style=color:#d73a49>useFeatureAccess</span><span class="token punctuation" style=color:#393A34>(</span><span class="token string" style=color:#e3116c>'cell-analysis'</span><span class="token punctuation" style=color:#393A34>)</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></span><span class=token-line style=color:#393A34><span class="token plain"></span><span class="token keyword" style=color:#00009f>if</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>(</span><span class="token operator" style=color:#393A34>!</span><span class="token plain">hasAccess</span><span class="token punctuation" style=color:#393A34>)</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token keyword" style=color:#00009f>return</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>(</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">    </span><span class="token operator" style=color:#393A34>&lt;</span><span class="token plain">UpgradePrompt </span><br/></span><span class=token-line style=color:#393A34><span class="token plain">      feature</span><span class="token operator" style=color:#393A34>=</span><span class="token string" style=color:#e3116c>"Cell Analysis"</span><span class="token plain"> </span><br/></span><span class=token-line style=color:#393A34><span class="token plain">      requiredTier</span><span class="token operator" style=color:#393A34>=</span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain">requiredTier</span><span class="token punctuation" style=color:#393A34>}</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">      description</span><span class="token operator" style=color:#393A34>=</span><span class="token string" style=color:#e3116c>"Analyze honeycomb cells and track resources"</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">    </span><span class="token operator" style=color:#393A34>/</span><span class="token operator" style=color:#393A34>></span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token punctuation" style=color:#393A34>)</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain"></span><span class="token punctuation" style=color:#393A34>}</span><br/></span></code></pre></div></div>
+<pre><code class="language-typescript">// Example feature check
+const { hasAccess, requiredTier } = useFeatureAccess('cell-analysis')
+
+if (!hasAccess) {
+  return (
+    &lt;UpgradePrompt 
+      feature=&quot;Cell Analysis&quot; 
+      requiredTier={requiredTier}
+      description=&quot;Analyze honeycomb cells and track resources&quot;
+    /&gt;
+  )
+}
+</code></pre>
 <p>Benefits:</p>
 <ul>
-<li class="">Users discover features naturally</li>
-<li class="">Contextual upgrade prompts show value</li>
-<li class="">Better UX than blocking entire app</li>
-<li class="">Clear feature-to-tier mapping</li>
+<li>Users discover features naturally</li>
+<li>Contextual upgrade prompts show value</li>
+<li>Better UX than blocking entire app</li>
+<li>Clear feature-to-tier mapping</li>
 </ul>
-<h2 class="anchor anchorTargetStickyNavbar_rb2N" id=deployment-notes>Deployment Notes<a href=#deployment-notes class=hash-link aria-label="Direct link to Deployment Notes" title="Direct link to Deployment Notes" translate=no>​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=web-app-1>web-app<a href=#web-app-1 class=hash-link aria-label="Direct link to web-app" title="Direct link to web-app" translate=no>​</a></h3>
+<h2 id="deployment-notes">Deployment Notes</h2>
+<h3 id="web-app-1">web-app</h3>
 <ol>
-<li class="">Build: <code>npm run build</code></li>
-<li class="">Environment: Set <code>VITE_API_URL</code> to production user-cycle URL</li>
-<li class="">Deploy static files to CDN/hosting</li>
+<li>Build: <code>npm run build</code></li>
+<li>Environment: Set <code>VITE_API_URL</code> to production user-cycle URL</li>
+<li>Deploy static files to CDN/hosting</li>
 </ol>
-<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=user-cycle-1>user-cycle<a href=#user-cycle-1 class=hash-link aria-label="Direct link to user-cycle" title="Direct link to user-cycle" translate=no>​</a></h3>
+<h3 id="user-cycle-1">user-cycle</h3>
 <ol>
-<li class="">Set production Stripe keys in config</li>
-<li class="">Configure Stripe webhook URL</li>
-<li class="">Deploy GraphQL service</li>
-<li class="">Verify database migrations</li>
+<li>Set production Stripe keys in config</li>
+<li>Configure Stripe webhook URL</li>
+<li>Deploy GraphQL service</li>
+<li>Verify database migrations</li>
 </ol>
-<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=website>website<a href=#website class=hash-link aria-label="Direct link to website" title="Direct link to website" translate=no>​</a></h3>
+<h3 id="website">website</h3>
 <ol>
-<li class="">Update pricing page if tiers change</li>
-<li class="">Rebuild Docusaurus: <code>npm run build</code></li>
-<li class="">Deploy static site</li>
+<li>Update pricing page if tiers change</li>
+<li>Rebuild Docusaurus: <code>npm run build</code></li>
+<li>Deploy static site</li>
 </ol>
-<h2 class="anchor anchorTargetStickyNavbar_rb2N" id=support--troubleshooting>Support & Troubleshooting<a href=#support--troubleshooting class=hash-link aria-label="Direct link to Support & Troubleshooting" title="Direct link to Support & Troubleshooting" translate=no>​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=common-issues>Common Issues<a href=#common-issues class=hash-link aria-label="Direct link to Common Issues" title="Direct link to Common Issues" translate=no>​</a></h3>
-<p><strong>"Checkout session could not be created"</strong></p>
+<h2 id="support--troubleshooting">Support &amp; Troubleshooting</h2>
+<h3 id="common-issues">Common Issues</h3>
+<p><strong>&quot;Checkout session could not be created&quot;</strong></p>
 <ul>
-<li class="">Check Stripe API keys are correct</li>
-<li class="">Verify price IDs exist in Stripe Dashboard</li>
-<li class="">Check server logs for API errors</li>
+<li>Check Stripe API keys are correct</li>
+<li>Verify price IDs exist in Stripe Dashboard</li>
+<li>Check server logs for API errors</li>
 </ul>
-<p><strong>"Subscription has expired"</strong></p>
+<p><strong>&quot;Subscription has expired&quot;</strong></p>
 <ul>
-<li class="">User needs to renew subscription</li>
-<li class="">Check <code>date_expiration</code> in database</li>
-<li class="">Verify Stripe subscription status</li>
+<li>User needs to renew subscription</li>
+<li>Check <code>date_expiration</code> in database</li>
+<li>Verify Stripe subscription status</li>
 </ul>
 <p><strong>Webhook not firing</strong></p>
 <ul>
-<li class="">Verify webhook URL in Stripe Dashboard</li>
-<li class="">Check webhook secret is correct</li>
-<li class="">Inspect Stripe webhook logs</li>
+<li>Verify webhook URL in Stripe Dashboard</li>
+<li>Check webhook secret is correct</li>
+<li>Inspect Stripe webhook logs</li>
 </ul>
-<h2 class="anchor anchorTargetStickyNavbar_rb2N" id=contact>Contact<a href=#contact class=hash-link aria-label="Direct link to Contact" title="Direct link to Contact" translate=no>​</a></h2>
+<h2 id="contact">Contact</h2>
 <ul>
-<li class="">Technical Issues: Create issue in respective repo</li>
-<li class="">Billing Support: <a href=mailto:support@gratheon.com target=_blank rel="noopener noreferrer" class="">support@gratheon.com</a></li>
-<li class="">Enterprise Sales: <a href=mailto:enterprise@gratheon.com target=_blank rel="noopener noreferrer" class="">enterprise@gratheon.com</a></li>
-</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_Za1t"><a href=https://github.com/gratheon/website/tree/main/packages/create-docusaurus/templates/shared/docs/billing-system.md target=_blank rel="noopener noreferrer" class=theme-edit-this-page><svg fill=currentColor height=20 width=20 viewBox="0 0 40 40" class=iconEdit_RtZN aria-hidden=true><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"/></g></svg>Edit this page</a></div><div class="col lastUpdated_jlPf"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/robotic-beehive/components/NVMe M2 SSD for Jetson Orin"><div class=pagination-nav__sublabel>Previous</div><div class=pagination-nav__label>NVMe M2 SSD for Jetson Orin</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_y_d7 thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href=#overview class="table-of-contents__link toc-highlight">Overview</a><li><a href=#architecture class="table-of-contents__link toc-highlight">Architecture</a><ul><li><a href=#system-components class="table-of-contents__link toc-highlight">System Components</a></ul><li><a href=#pricing-tiers class="table-of-contents__link toc-highlight">Pricing Tiers</a><ul><li><a href=#free-hobbyist class="table-of-contents__link toc-highlight">Free (Hobbyist)</a><li><a href=#starter class="table-of-contents__link toc-highlight">Starter</a><li><a href=#professional class="table-of-contents__link toc-highlight">Professional</a><li><a href=#flexible-addon class="table-of-contents__link toc-highlight">Flexible (Addon)</a><li><a href=#enterprise class="table-of-contents__link toc-highlight">Enterprise</a></ul><li><a href=#implementation-details class="table-of-contents__link toc-highlight">Implementation Details</a><ul><li><a href=#frontend-web-app class="table-of-contents__link toc-highlight">Frontend (web-app)</a><li><a href=#backend-user-cycle class="table-of-contents__link toc-highlight">Backend (user-cycle)</a><li><a href=#website-public-pricing class="table-of-contents__link toc-highlight">Website (Public Pricing)</a></ul><li><a href=#user-flow class="table-of-contents__link toc-highlight">User Flow</a><ul><li><a href=#subscription-purchase-flow class="table-of-contents__link toc-highlight">Subscription Purchase Flow</a><li><a href=#subscription-cancellation-flow class="table-of-contents__link toc-highlight">Subscription Cancellation Flow</a></ul><li><a href=#database-schema class="table-of-contents__link toc-highlight">Database Schema</a><ul><li><a href=#account-table-in-user-cycle-mysql class="table-of-contents__link toc-highlight">account table (in user-cycle MySQL)</a><li><a href=#billing_history-table-in-user-cycle-mysql class="table-of-contents__link toc-highlight">billing_history table (in user-cycle MySQL)</a></ul><li><a href=#stripe-integration class="table-of-contents__link toc-highlight">Stripe Integration</a><ul><li><a href=#price-ids-production class="table-of-contents__link toc-highlight">Price IDs (Production)</a><li><a href=#webhooks class="table-of-contents__link toc-highlight">Webhooks</a></ul><li><a href=#environment-variables class="table-of-contents__link toc-highlight">Environment Variables</a><ul><li><a href=#user-cycle class="table-of-contents__link toc-highlight">user-cycle</a><li><a href=#web-app class="table-of-contents__link toc-highlight">web-app</a></ul><li><a href=#security-considerations class="table-of-contents__link toc-highlight">Security Considerations</a><li><a href=#testing class="table-of-contents__link toc-highlight">Testing</a><ul><li><a href=#manual-testing-checklist class="table-of-contents__link toc-highlight">Manual Testing Checklist</a><li><a href=#stripe-test-cards class="table-of-contents__link toc-highlight">Stripe Test Cards</a></ul><li><a href=#known-issues--future-improvements class="table-of-contents__link toc-highlight">Known Issues & Future Improvements</a><ul><li><a href=#completed-features class="table-of-contents__link toc-highlight">Completed Features</a><li><a href=#current-work-in-progress class="table-of-contents__link toc-highlight">Current Work In Progress</a><li><a href=#planned-features class="table-of-contents__link toc-highlight">Planned Features</a><li><a href=#feature-level-blocking-strategy class="table-of-contents__link toc-highlight">Feature-Level Blocking Strategy</a></ul><li><a href=#deployment-notes class="table-of-contents__link toc-highlight">Deployment Notes</a><ul><li><a href=#web-app-1 class="table-of-contents__link toc-highlight">web-app</a><li><a href=#user-cycle-1 class="table-of-contents__link toc-highlight">user-cycle</a><li><a href=#website class="table-of-contents__link toc-highlight">website</a></ul><li><a href=#support--troubleshooting class="table-of-contents__link toc-highlight">Support & Troubleshooting</a><ul><li><a href=#common-issues class="table-of-contents__link toc-highlight">Common Issues</a></ul><li><a href=#contact class="table-of-contents__link toc-highlight">Contact</a></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class=footer__title></div><ul class="footer__items clean-list"><li class=footer__item>
-                <div class=footer-company-block>
-                  <a href=https://ariregister.rik.ee/est/company/12245103/Gratheon-O%C3%9C>Gratheon OÜ</a><br/>
-                  ❤️ Made with love in Estonia
-                </div>
-              </ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title></div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/privacy>Privacy Policy</a><li class=footer__item><a class=footer__link-item href=/terms>Terms Of Service</a><li class=footer__item><a href=mailto:pilot@gratheon.com target=_blank rel="noopener noreferrer" class=footer__link-item>Email<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_c9sx><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://tawk.to/gratheon target=_blank rel="noopener noreferrer" class=footer__link-item>Support Chat<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_c9sx><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://gratheon.statuspage.io/ target=_blank rel="noopener noreferrer" class=footer__link-item>Service Status<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_c9sx><use href=#theme-svg-external-link /></svg></a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title></div><ul class="footer__items clean-list"><li class=footer__item><a href=https://t.me/gratheon target=_blank rel="noopener noreferrer" class=footer__link-item>Telegram<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_c9sx><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://twitter.com/gratheon target=_blank rel="noopener noreferrer" class=footer__link-item>Twitter<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_c9sx><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://www.linkedin.com/company/gratheon/ target=_blank rel="noopener noreferrer" class=footer__link-item>LinkedIn<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_c9sx><use href=#theme-svg-external-link /></svg></a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title></div><ul class="footer__items clean-list"><li class=footer__item><a href=https://www.facebook.com/gratheon target=_blank rel="noopener noreferrer" class=footer__link-item>Facebook</a><li class=footer__item><a href=https://www.twitch.tv/tot_ra target=_blank rel="noopener noreferrer" class=footer__link-item>Twitch</a><li class=footer__item><a href=https://www.youtube.com/@gratheon-bees target=_blank rel="noopener noreferrer" class=footer__link-item>Youtube<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_c9sx><use href=#theme-svg-external-link /></svg></a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title></div><ul class="footer__items clean-list"><li class=footer__item><img src=/img/nvidia-inception-program-badge-rgb-for-screen.svg alt="NVIDIA Inception Program Member" style="max-width:200px; height: auto;"/></ul></div></div><div class="footer__bottom text--center"><div class=footer__copyright>Copyright © 2026 Gratheon OÜ. Gratheon™ trademark registration was approved by the Estonian Patent Office under application M202501179.</div></div></div></footer></div></body>
+<li>Technical Issues: Create issue in respective repo</li>
+<li>Billing Support: <a href="mailto:support@gratheon.com">support@gratheon.com</a></li>
+<li>Enterprise Sales: <a href="mailto:enterprise@gratheon.com">enterprise@gratheon.com</a></li>
+</ul>
+
+    </div>
+    
+    
+    
+    <nav class="prev-next" aria-label="Page navigation">
+        
+        <a href="/docs/web-app/web-app/" class="prev-link">
+            <span class="prev-label">← Previous</span>
+            <span class="prev-title">📱 Web-app</span>
+        </a>
+        
+        
+        <a href="/about/mission/ethics/" class="next-link">
+            <span class="next-label">Next →</span>
+            <span class="next-title">Ethics</span>
+        </a>
+        
+    </nav>
+    
+</article>
+
+        </main>
+        <nav class="toc" aria-label="On this page">
+  <h2 class="toc-title">On this page</h2>
+<ul class="toc-list">
+  <li class="toc-item">
+    <a href="#overview">Overview</a>
+  </li>
+  <li class="toc-item">
+    <a href="#architecture">Architecture</a>
+<ul class="toc-sublist">
+  <li class="toc-item">
+    <a href="#system-components">System Components</a>
+  </li>
+</ul>
+  </li>
+  <li class="toc-item">
+    <a href="#pricing-tiers">Pricing Tiers</a>
+<ul class="toc-sublist">
+  <li class="toc-item">
+    <a href="#free-hobbyist">Free (Hobbyist)</a>
+  </li>
+  <li class="toc-item">
+    <a href="#starter">Starter</a>
+  </li>
+  <li class="toc-item">
+    <a href="#professional">Professional</a>
+  </li>
+  <li class="toc-item">
+    <a href="#flexible-addon">Flexible (Addon)</a>
+  </li>
+  <li class="toc-item">
+    <a href="#enterprise">Enterprise</a>
+  </li>
+</ul>
+  </li>
+  <li class="toc-item">
+    <a href="#implementation-details">Implementation Details</a>
+<ul class="toc-sublist">
+  <li class="toc-item">
+    <a href="#frontend-web-app">Frontend (web-app)</a>
+<ul class="toc-sublist">
+  <li class="toc-item">
+    <a href="#configuration-srcconfigbillingts">Configuration (src/config/billing.ts)</a>
+  </li>
+  <li class="toc-item">
+    <a href="#components">Components</a>
+  </li>
+</ul>
+  </li>
+  <li class="toc-item">
+    <a href="#backend-user-cycle">Backend (user-cycle)</a>
+<ul class="toc-sublist">
+  <li class="toc-item">
+    <a href="#graphql-schema-schemagraphql">GraphQL Schema (schema.graphql)</a>
+  </li>
+  <li class="toc-item">
+    <a href="#billing-history">Billing History</a>
+  </li>
+  <li class="toc-item">
+    <a href="#resolvers-srcresolversts">Resolvers (src/resolvers.ts)</a>
+  </li>
+  <li class="toc-item">
+    <a href="#configuration-srcconfigconfigdefaultts">Configuration (src/config/config.default.ts)</a>
+  </li>
+</ul>
+  </li>
+  <li class="toc-item">
+    <a href="#website-public-pricing">Website (Public Pricing)</a>
+  </li>
+</ul>
+  </li>
+  <li class="toc-item">
+    <a href="#user-flow">User Flow</a>
+<ul class="toc-sublist">
+  <li class="toc-item">
+    <a href="#subscription-purchase-flow">Subscription Purchase Flow</a>
+  </li>
+  <li class="toc-item">
+    <a href="#subscription-cancellation-flow">Subscription Cancellation Flow</a>
+  </li>
+</ul>
+  </li>
+  <li class="toc-item">
+    <a href="#database-schema">Database Schema</a>
+<ul class="toc-sublist">
+  <li class="toc-item">
+    <a href="#account-table-in-user-cycle-mysql">account table (in user-cycle MySQL)</a>
+  </li>
+  <li class="toc-item">
+    <a href="#billinghistory-table-in-user-cycle-mysql">billinghistory table (in user-cycle MySQL)</a>
+  </li>
+</ul>
+  </li>
+  <li class="toc-item">
+    <a href="#stripe-integration">Stripe Integration</a>
+<ul class="toc-sublist">
+  <li class="toc-item">
+    <a href="#price-ids-production">Price IDs (Production)</a>
+  </li>
+  <li class="toc-item">
+    <a href="#webhooks">Webhooks</a>
+  </li>
+</ul>
+  </li>
+  <li class="toc-item">
+    <a href="#environment-variables">Environment Variables</a>
+<ul class="toc-sublist">
+  <li class="toc-item">
+    <a href="#user-cycle">user-cycle</a>
+  </li>
+  <li class="toc-item">
+    <a href="#web-app">web-app</a>
+  </li>
+</ul>
+  </li>
+  <li class="toc-item">
+    <a href="#security-considerations">Security Considerations</a>
+  </li>
+  <li class="toc-item">
+    <a href="#testing">Testing</a>
+<ul class="toc-sublist">
+  <li class="toc-item">
+    <a href="#manual-testing-checklist">Manual Testing Checklist</a>
+  </li>
+  <li class="toc-item">
+    <a href="#stripe-test-cards">Stripe Test Cards</a>
+  </li>
+</ul>
+  </li>
+  <li class="toc-item">
+    <a href="#known-issues-future-improvements">Known Issues &amp; Future Improvements</a>
+<ul class="toc-sublist">
+  <li class="toc-item">
+    <a href="#completed-features">Completed Features</a>
+  </li>
+  <li class="toc-item">
+    <a href="#current-work-in-progress">Current Work In Progress</a>
+  </li>
+  <li class="toc-item">
+    <a href="#planned-features">Planned Features</a>
+  </li>
+  <li class="toc-item">
+    <a href="#feature-level-blocking-strategy">Feature-Level Blocking Strategy</a>
+  </li>
+</ul>
+  </li>
+  <li class="toc-item">
+    <a href="#deployment-notes">Deployment Notes</a>
+<ul class="toc-sublist">
+  <li class="toc-item">
+    <a href="#web-app">web-app</a>
+  </li>
+  <li class="toc-item">
+    <a href="#user-cycle">user-cycle</a>
+  </li>
+  <li class="toc-item">
+    <a href="#website">website</a>
+  </li>
+</ul>
+  </li>
+  <li class="toc-item">
+    <a href="#support-troubleshooting">Support &amp; Troubleshooting</a>
+<ul class="toc-sublist">
+  <li class="toc-item">
+    <a href="#common-issues">Common Issues</a>
+  </li>
+</ul>
+  </li>
+  <li class="toc-item">
+    <a href="#contact">Contact</a>
+  </li>
+</ul>
+</nav>
+
+    </div>
+    <script>
+    (function() {
+        var players = document.querySelectorAll("[data-audio-player]");
+        players.forEach(function(container) {
+            var audio = container.querySelector("[data-audio-element]");
+            var toggleBtn = container.querySelector("[data-audio-toggle]");
+            var wave = container.querySelector("[data-audio-wave]");
+            if (!audio || !toggleBtn || !wave) {
+                return;
+            }
+            var audioCtx = null;
+            var sourceNode = null;
+            var analyser = null;
+            var waveData = null;
+            var rafId = 0;
+
+            function syncToggleState() {
+                var isPlaying = !audio.paused && !audio.ended;
+                toggleBtn.classList.toggle("is-playing", isPlaying);
+                var label = isPlaying ? (toggleBtn.dataset.stopLabel || "Stop") : (toggleBtn.dataset.playLabel || "Listen");
+                toggleBtn.setAttribute("aria-label", label);
+                toggleBtn.setAttribute("title", label);
+            }
+
+            function ensureVisualizer() {
+                if (analyser) {
+                    return;
+                }
+                var AudioCtx = window.AudioContext || window.webkitAudioContext;
+                if (!AudioCtx) {
+                    return;
+                }
+                audioCtx = new AudioCtx();
+                sourceNode = audioCtx.createMediaElementSource(audio);
+                analyser = audioCtx.createAnalyser();
+                analyser.fftSize = 1024;
+                waveData = new Uint8Array(analyser.fftSize);
+                sourceNode.connect(analyser);
+                analyser.connect(audioCtx.destination);
+            }
+
+            function stopWave() {
+                if (rafId) {
+                    cancelAnimationFrame(rafId);
+                    rafId = 0;
+                }
+            }
+
+            function drawWave() {
+                if (!analyser || !wave) {
+                    return;
+                }
+                var dpr = window.devicePixelRatio || 1;
+                var w = Math.max(88, wave.clientWidth || 88);
+                var h = Math.max(28, wave.clientHeight || 28);
+                if (wave.width !== Math.floor(w * dpr) || wave.height !== Math.floor(h * dpr)) {
+                    wave.width = Math.floor(w * dpr);
+                    wave.height = Math.floor(h * dpr);
+                }
+                var ctx = wave.getContext("2d");
+                if (!ctx) {
+                    return;
+                }
+                ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+                ctx.clearRect(0, 0, w, h);
+                ctx.strokeStyle = "#0066cc";
+                ctx.lineWidth = 1.2;
+
+                analyser.getByteTimeDomainData(waveData);
+                ctx.beginPath();
+                var slice = waveData.length / w;
+                for (var x = 0; x < w; x++) {
+                    var idx = Math.floor(x * slice);
+                    var y = ((waveData[idx] - 128) / 128) * (h * 0.36) + (h / 2);
+                    if (x === 0) {
+                        ctx.moveTo(x, y);
+                    } else {
+                        ctx.lineTo(x, y);
+                    }
+                }
+                ctx.stroke();
+
+                if (!audio.paused && !audio.ended) {
+                    rafId = requestAnimationFrame(drawWave);
+                } else {
+                    stopWave();
+                }
+            }
+
+            toggleBtn.addEventListener("click", function() {
+                if (!audio.paused && !audio.ended) {
+                    audio.pause();
+                    audio.currentTime = 0;
+                    syncToggleState();
+                    stopWave();
+                    return;
+                }
+                ensureVisualizer();
+                if (audioCtx && audioCtx.state === "suspended") {
+                    audioCtx.resume().catch(function() {});
+                }
+                var started = audio.play();
+                if (started && typeof started.then === "function") {
+                    started.then(function() {
+                        syncToggleState();
+                        drawWave();
+                    }).catch(function() {});
+                    return;
+                }
+                syncToggleState();
+                drawWave();
+            });
+            audio.addEventListener("pause", syncToggleState);
+            audio.addEventListener("play", syncToggleState);
+            audio.addEventListener("ended", function() {
+                syncToggleState();
+                stopWave();
+            });
+
+            syncToggleState();
+        });
+    })();
+    </script>
+    <script defer src="/assets/js/main.js"></script>
+</body>
+</html>
+

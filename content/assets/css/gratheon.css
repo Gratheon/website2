@@ -1,0 +1,600 @@
+/* Gratheon custom styles for blog-engine-md */
+:root {
+  --nav-active: #2f8b0b;
+  --accent: #2f8b0b;
+  --accent-hover: #246f08;
+  --ifm-color-primary: #2f8b0b;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-emphasis-100: #f5f6f7;
+  --ifm-color-emphasis-200: #ebedf0;
+  --ifm-color-emphasis-300: #dadde1;
+  --ifm-color-emphasis-600: #606770;
+  --ifm-color-emphasis-700: #444950;
+  --ifm-color-emphasis-800: #303846;
+  --ifm-color-emphasis-900: #1c1e21;
+  --ifm-card-background-color: #fff;
+  --ifm-footer-link-hover-color: black;
+  --ifm-table-head-background: #2f8b0b;
+  --ifm-table-border-color: #0000001a;
+  --ifm-table-head-color: white;
+  --brand-blue: #0248ff;
+  --brand-yellow: #ffdc04;
+  --navbar-height: 60px;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("/assets/css/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf") format("truetype");
+  font-weight: 300 800;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 105%;
+  line-height: 1.2;
+  color: #222;
+  background: white;
+}
+
+html[data-theme='dark'] body {
+  color: var(--text-primary);
+  background: var(--bg-primary);
+}
+
+html[data-theme='dark'] .site-header {
+  background: var(--bg-primary);
+  border-bottom-color: var(--nav-border);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
+}
+
+html[data-theme='dark'] .site-layout,
+html[data-theme='dark'] .site-content,
+html[data-theme='dark'] .content,
+html[data-theme='dark'] article {
+  color: var(--text-primary);
+  background: var(--bg-primary);
+}
+
+html[data-theme='dark'] .toc {
+  color: var(--text-secondary);
+  background: var(--bg-primary);
+}
+
+/* Navbar: mirrors the old Docusaurus/Infima top bar closely enough for the custom templates. */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  min-height: var(--navbar-height);
+  padding: 8px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  background: white;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.header-left,
+.header-right {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+}
+
+.header-left {
+  gap: 18px;
+  flex: 1 1 auto;
+}
+
+.header-right {
+  justify-content: flex-end;
+}
+
+.navbar-logo {
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
+  text-decoration: none;
+  border: 0;
+}
+
+.navbar-logo img {
+  display: block;
+  width: 150px !important;
+  max-width: 150px;
+  height: auto !important;
+  max-height: 42px;
+  border-radius: 0 !important;
+  object-fit: contain;
+}
+
+.site-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0;
+  background: transparent;
+  width: 100%;
+}
+
+.site-nav a,
+.site-nav a:visited {
+  color: black;
+  text-decoration: none;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 14px;
+  margin: 4px 6px;
+  border-radius: 999px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.1;
+  white-space: nowrap;
+  transition:
+    background-color 220ms ease,
+    color 220ms ease,
+    transform 220ms ease,
+    box-shadow 220ms ease;
+}
+
+html[data-theme='dark'] .site-nav a,
+html[data-theme='dark'] .site-nav a:visited {
+  color: var(--text-primary);
+}
+
+.site-nav .nav-action-first {
+  margin-left: auto;
+}
+
+.site-nav a:hover,
+.site-nav a:active,
+.site-nav a:focus-visible {
+  background: var(--brand-yellow);
+  color: black !important;
+  text-decoration: none;
+  outline: 0;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+main a:hover {
+  background: var(--brand-yellow);
+  color: black !important;
+  text-decoration: none;
+  outline: 0;
+}
+
+main a,
+.article a,
+.page-content a {
+  color: var(--brand-blue);
+}
+
+html[data-theme='dark'] main a,
+html[data-theme='dark'] .article a,
+html[data-theme='dark'] .page-content a {
+  color: var(--nav-active);
+}
+
+.footer-company-block {
+  min-width: 260px;
+}
+
+.site-footer.gratheon-footer {
+  color: white;
+  background: #241603;
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3)), url("https://gratheon.s3-accelerate.amazonaws.com/www/nvidia.webp");
+  background-size: cover;
+  min-height: 180px;
+  padding: 10px 20px;
+  margin: 0;
+  text-align: left;
+  font-size: 18px;
+}
+
+.gratheon-footer-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  align-items: flex-start;
+}
+
+.gratheon-footer a,
+.gratheon-footer a:visited {
+  color: #ffe353;
+  text-decoration: none;
+}
+
+.gratheon-footer a:hover {
+  color: black;
+  background: var(--brand-yellow);
+}
+
+.gratheon-footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.gratheon-footer li {
+  margin: 2px 0;
+}
+
+.gratheon-footer-badge {
+  max-width: 200px;
+  height: auto;
+}
+
+.gratheon-copyright {
+  margin-top: 18px;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+/* Front page */
+.front-page #splash {
+  background: var(--brand-blue);
+  background-size: 100%;
+  background-position: 0 46%;
+  overflow: hidden;
+}
+
+.front-page #front {
+  min-height: 55px;
+  padding: 25px;
+  height: 680px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.front-page #bgVideo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120%;
+  height: auto;
+  min-height: 100%;
+  z-index: 1;
+  object-fit: cover;
+}
+
+.front-page .headerContentContainer {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.front-page #splash_internal {
+  height: 100px;
+  color: white;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.front-page #splash_internal div {
+  text-shadow: 1px 1px black;
+  font: 50px "Open Sans", sans-serif;
+  font-weight: 700;
+  line-height: 105%;
+  white-space: nowrap;
+}
+
+.front-page #splash_internal p {
+  color: white;
+  text-align: center;
+  padding: 7px 12px;
+  margin: 0;
+  background-color: black;
+  font-size: 25px;
+  border-radius: 10px;
+  font-weight: normal;
+  -webkit-text-stroke-width: 0.6px;
+  -webkit-text-stroke-color: black;
+}
+
+.front-page .signup {
+  border-radius: 8px;
+  color: white;
+  padding: 10px 30px;
+  border: 0;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  text-shadow: none;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  width: 250px;
+}
+
+.front-page .action {
+  border-radius: 8px;
+  color: white;
+  padding: 8px 18px;
+  border: 0;
+  font-size: 17px;
+  font-weight: 700;
+  text-decoration: none;
+  text-shadow: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.2;
+}
+
+.front-page .signup:visited,
+.front-page .action:visited {
+  color: white;
+}
+
+.front-page .blue { background: #0070ff; }
+.front-page .action_green { background: #108310; }
+.front-page .signup:hover,
+.front-page .action:hover {
+  color: black;
+  background: yellow;
+}
+
+.front-page .installButtons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.front-page .installButtons a {
+  border: none;
+}
+
+.front-page .platformDownloads {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.front-page .googlePlayBadge {
+  height: 50px;
+  width: auto;
+  display: block;
+}
+
+.front-page .desktopDownloadIcon {
+  height: 50px;
+  margin: 10px;
+}
+
+.front-page #showcase {
+  max-width: 1100px;
+  margin: -160px auto 0;
+  width: 100%;
+  display: block;
+  position: relative;
+  z-index: 3;
+  padding: 20px;
+  border-radius: 10px;
+  background: white;
+}
+
+.front-page .features {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-left: 10px;
+  justify-content: center;
+}
+
+.front-page .feature {
+  padding: 15px 20px;
+  box-sizing: border-box;
+  flex-basis: calc(33.33333% - 5px);
+  max-width: 400px;
+  border: 1px solid #eee;
+  border-collapse: collapse;
+  margin-left: -1px;
+  margin-top: -1px;
+}
+
+.front-page .feature img,
+.front-page .feature video {
+  max-width: 450px;
+  max-height: 450px;
+  width: 100%;
+}
+
+.front-page .device {
+  max-width: 1100px;
+  margin: 0 auto 30px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 520px);
+  gap: 24px;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #eee;
+  border-radius: 12px;
+}
+
+.front-page .deviceImgs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.front-page .device img,
+.front-page .device video {
+  width: 100%;
+  max-width: 240px;
+  max-height: 300px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.front-page .deviceLinks a {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin: 3px 0;
+}
+
+.front-page .deviceLinks .linkIcon {
+  width: 16px;
+  height: 16px;
+  flex: 0 0 16px;
+}
+
+.front-page .front-story {
+  color: #222;
+  background: rgba(255, 255, 255, 0.98);
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.front-page .front-story article {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.front-page .author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 16px;
+}
+
+.front-page .author a {
+  border: none;
+}
+
+.front-page .author img {
+  display: block;
+  width: 50px !important;
+  height: 50px !important;
+  max-width: 50px;
+  max-height: 50px;
+  border-radius: 25px;
+  object-fit: cover;
+}
+
+.front-page .future {
+  border-left: 6px solid var(--brand-yellow);
+  background: #f7f7f7;
+  padding: 12px 18px;
+  margin-top: 18px;
+}
+
+.front-page .futureActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.front-page .authorIntro {
+  width: 100%;
+  height: 500px;
+  margin: 0 auto;
+  display: block;
+  border: 0;
+}
+
+.front-page .brandStripe {
+  display: flex;
+}
+
+.front-page .brandStripe > div {
+  height: 6px;
+  flex-grow: 1;
+}
+
+.front-page .brandStripeYellow { background-color: #ffd900; }
+.front-page .brandStripeGreen { background-color: #2f8b0b; }
+.front-page .brandStripeBlue { background-color: #0248ff; }
+
+.front-page .badge {
+  font-size: 0.7em;
+  background: #eee;
+  border-radius: 999px;
+  padding: 3px 8px;
+  color: #555;
+}
+
+.front-page .front-section {
+  margin: 40px auto;
+  max-width: 1100px;
+  padding: 0 20px;
+}
+
+.front-page h2 {
+  text-align: center;
+}
+
+@media (max-width: 1100px) {
+  .site-header {
+    align-items: stretch;
+    flex-direction: column;
+    padding: 10px 12px;
+    gap: 6px;
+  }
+
+  .site-nav a,
+  .site-nav a:visited {
+    padding: 10px 8px;
+  }
+
+  .site-nav .nav-action-first {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .front-page #front { height: 400px; }
+  .front-page #showcase { margin-top: 0; }
+  .front-page #splash_internal div { font-size: 35px; }
+  .front-page #splash_internal p { font-size: 20px; }
+}
+
+@media (max-width: 800px) {
+  .front-page #bgVideo { height: 100%; width: auto; min-width: 100%; }
+  .front-page .feature { flex-basis: calc(50% - 5px); max-width: calc(50% - 5px); }
+  .front-page .device { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 600px) {
+  .site-header { position: static; }
+  .navbar-logo img { width: 120px !important; }
+  .front-page #front { height: 360px; padding: 20px; }
+  .front-page #splash_internal div { font-size: 28px; white-space: normal; }
+  .front-page #splash_internal p { font-size: 16px; }
+  .front-page .feature { flex-basis: 100%; max-width: 100%; }
+  .front-page .desktopDownloadIcon,
+  .front-page .googlePlayBadge { height: 30px; }
+}

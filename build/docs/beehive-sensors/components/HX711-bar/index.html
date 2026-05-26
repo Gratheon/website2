@@ -1,26 +1,1019 @@
-<!doctype html><html lang=en dir=ltr class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-beehive-sensors/components/HX711-bar" data-has-hydrated=false><head><meta charset=UTF-8><meta name=generator content="Docusaurus v3.9.2"><title data-rh=true>Weight sensor HX711 (bar-type) | Gratheon</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"/><meta data-rh=true name=twitter:card content=summary_large_image /><meta data-rh=true property=og:image content=https://gratheon.com/img/gratheon-web-app.webp /><meta data-rh=true name=twitter:image content=https://gratheon.com/img/gratheon-web-app.webp /><meta data-rh=true property=og:url content=https://gratheon.com/docs/beehive-sensors/components/HX711-bar /><meta data-rh=true property=og:locale content=en /><meta data-rh=true name=docusaurus_locale content=en /><meta data-rh=true name=docsearch:language content=en /><meta data-rh=true name=docusaurus_version content=current /><meta data-rh=true name=docusaurus_tag content=docs-default-current /><meta data-rh=true name=docsearch:version content=current /><meta data-rh=true name=docsearch:docusaurus_tag content=docs-default-current /><meta data-rh=true property=og:title content="Weight sensor HX711 (bar-type) | Gratheon"/><meta data-rh=true name=description content=https://www.aliexpress.com/item/1005006827930173.html /><meta data-rh=true property=og:description content=https://www.aliexpress.com/item/1005006827930173.html /><link data-rh=true rel=icon href=/favicons/favicon.ico /><link data-rh=true rel=canonical href=https://gratheon.com/docs/beehive-sensors/components/HX711-bar /><link data-rh=true rel=alternate href=https://gratheon.com/docs/beehive-sensors/components/HX711-bar hreflang=en /><link data-rh=true rel=alternate href=https://gratheon.com/docs/beehive-sensors/components/HX711-bar hreflang=x-default /><script data-rh=true type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://gratheon.com/docs/beehive-sensors/","name":"🌡️ Beehive IoT sensors","position":1},{"@type":"ListItem","item":"https://gratheon.com/docs/beehive-sensors/components/","name":"Bill of materials","position":2},{"@type":"ListItem","item":"https://gratheon.com/docs/beehive-sensors/components/HX711-bar","name":"Weight sensor HX711 (bar-type)","position":3}]}</script><link rel=alternate type=application/rss+xml href=/blog/rss.xml title="Gratheon RSS Feed"><link rel=alternate type=application/atom+xml href=/blog/atom.xml title="Gratheon Atom Feed"><link rel=preconnect href=https://www.googletagmanager.com><script>window.dataLayer=window.dataLayer||[],function(e,t,a,n,r){e[n]=e[n]||[],e[n].push({"gtm.start":new Date().getTime(),event:"gtm.js"});var d=t.getElementsByTagName(a)[0],g=t.createElement(a);g.async=!0,g.src="https://www.googletagmanager.com/gtm.js?id="+r+("dataLayer"!=n?"&l="+n:""),d.parentNode.insertBefore(g,d)}(window,document,"script","dataLayer","GTM-KH4KC9")</script><link rel=stylesheet href=/assets/css/styles.02ef3496.css /><script src=/assets/js/runtime~main.087be3ce.js defer></script><script src=/assets/js/main.4b3c6040.js defer></script></head><body class=navigation-with-keyboard><svg style="display: none;"><defs>
-<symbol id=theme-svg-external-link viewBox="0 0 24 24"><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
-</defs></svg>
-<script>!function(){var t;document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script>
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KH4KC9" height=0 width=0 style=display:none;visibility:hidden></iframe></noscript><div id=__docusaurus><div role=region aria-label="Skip to main content"><a class=skipToContent_poJ9 href=#__docusaurus_skipToContent_fallback>Skip to main content</a></div><nav aria-label=Main class="theme-layout-navbar navbar navbar--fixed-top"><div class=navbar__inner><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded=false class="navbar__toggle clean-btn" type=button><svg width=30 height=30 viewBox="0 0 30 30" aria-hidden=true><path stroke=currentColor stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d="M4 7h22M4 15h22M4 23h22"/></svg></button><a class=navbar__brand href=/><div class=navbar__logo><img src=/img/logo_v7w.svg alt=Gratheon class="themedComponent_rn3I themedComponent--light_bBhh"/><img src=/img/logo_v7w.svg alt=Gratheon class="themedComponent_rn3I themedComponent--dark_zi9f"/></div><b class="navbar__title text--truncate"></b></a><a class="navbar__item navbar__link" href=/about>About</a><a class="navbar__item navbar__link" href=/about/products>Products</a><a aria-current=page class="navbar__item navbar__link navbar__link--active" href=/docs/API/>Docs</a><a class="navbar__item navbar__link" sidebarid=researchSidebar href=/research>Research</a><a class="navbar__item navbar__link" href=/blog>Blog</a><a class="navbar__item navbar__link" href=/pricing>Pricing</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class=navbarSearchContainer_rLJk><input type=text placeholder=Search style="padding:7px 15px;border:2px solid #CCC;border-radius:5px"/></div><a href=https://discord.gg/PcbP4uedWj target=_blank rel="noopener noreferrer" class="navbar__item navbar__link navbar--discord-link" aria-label="Discord Invite"></a><a href=https://github.com/gratheon/web-app target=_blank rel="noopener noreferrer" class="navbar__item navbar__link header--github-link" aria-label="GitHub repository"></a><a href=https://app.gratheon.com/account/authenticate/ target=_blank rel="noopener noreferrer" class="navbar__item navbar__link">Log in<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_c9sx><use href=#theme-svg-external-link /></svg></a></div></div><div role=presentation class=navbar-sidebar__backdrop></div></nav><div id=__docusaurus_skipToContent_fallback class="theme-layout-main main-wrapper mainWrapper_TcZ4"><div class=docsWrapper_a5BB><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_jePA" type=button></button><div class=docRoot_YOz7><aside class="theme-doc-sidebar-container docSidebarContainer_PCNi"><div class=sidebarViewport_svvY><div class=sidebar_yZ0v><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_ib_h"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_rikP menu__link menu__link--sublist" href=/docs/API/><span title="🔗 API" class=categoryLinkLabel_dnDz>🔗 API</span></a><button aria-label="Expand sidebar category '🔗 API'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_rikP menu__link menu__link--sublist" href=/docs/web-app/><span title="📱 Web-app" class=categoryLinkLabel_dnDz>📱 Web-app</span></a><button aria-label="Expand sidebar category '📱 Web-app'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_rikP menu__link menu__link--sublist menu__link--active" href=/docs/beehive-sensors/><span title="🌡️ Beehive IoT sensors" class=categoryLinkLabel_dnDz>🌡️ Beehive IoT sensors</span></a><button aria-label="Collapse sidebar category '🌡️ Beehive IoT sensors'" aria-expanded=true type=button class="clean-btn menu__caret"></button></div><ul class=menu__list><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/docs/beehive-sensors/Installation><span title=Installation class=linkLabel_I9IG>Installation</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href="/docs/beehive-sensors/3d model"><span title="3d model" class=linkLabel_I9IG>3d model</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href="/docs/beehive-sensors/Choice of procesor chip"><span title="Choice of procesor chip" class=linkLabel_I9IG>Choice of procesor chip</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_rikP menu__link menu__link--sublist menu__link--active" tabindex=0 href=/docs/beehive-sensors/components/><span title="Bill of materials" class=categoryLinkLabel_dnDz>Bill of materials</span></a><button aria-label="Collapse sidebar category 'Bill of materials'" aria-expanded=true type=button class="clean-btn menu__caret"></button></div><ul class=menu__list><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/docs/beehive-sensors/components/DS18B20><span title="Temperature sensor - DS18B20" class=linkLabel_I9IG>Temperature sensor - DS18B20</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/docs/beehive-sensors/components/ESP32><span title="Microcontroller - ESP32" class=linkLabel_I9IG>Microcontroller - ESP32</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current=page tabindex=0 href=/docs/beehive-sensors/components/HX711-bar><span title="Weight sensor HX711 (bar-type)" class=linkLabel_I9IG>Weight sensor HX711 (bar-type)</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/docs/beehive-sensors/components/aluminium-profile><span title="Aluminium profile 20x20x500mm" class=linkLabel_I9IG>Aluminium profile 20x20x500mm</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/docs/beehive-sensors/components/battery-shield><span title="Battery (18650 type, Li-ion) shield" class=linkLabel_I9IG>Battery (18650 type, Li-ion) shield</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/docs/beehive-sensors/components/battery><span title="Battery (18650 type, Li-ion)" class=linkLabel_I9IG>Battery (18650 type, Li-ion)</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/docs/beehive-sensors/components/case><span title="Aluminium Enclosure" class=linkLabel_I9IG>Aluminium Enclosure</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/docs/beehive-sensors/components/display><span title="Display - LCD1602" class=linkLabel_I9IG>Display - LCD1602</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/docs/beehive-sensors/components/screws><span title="Screws M4 x 25mm" class=linkLabel_I9IG>Screws M4 x 25mm</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_rikP menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false tabindex=0 href="/docs/beehive-sensors/components/todo/Air Quality Sensor"><span title=todo class=categoryLinkLabel_dnDz>todo</span></a></div></ul></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_rikP menu__link menu__link--sublist" href=/docs/entrance-observer/><span title="👁️‍🗨️ Entrance observer" class=categoryLinkLabel_dnDz>👁️‍🗨️ Entrance observer</span></a><button aria-label="Expand sidebar category '👁️‍🗨️ Entrance observer'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_rikP menu__link menu__link--sublist" href=/docs/robotic-beehive/><span title="🧿 Robotic beehive" class=categoryLinkLabel_dnDz>🧿 Robotic beehive</span></a><button aria-label="Expand sidebar category '🧿 Robotic beehive'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/billing-system><span title="Billing System Documentation" class=linkLabel_I9IG>Billing System Documentation</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a href=https://github.com/orgs/Gratheon/projects/5 target=_blank rel="noopener noreferrer" class="menu__link menuExternalLink_FdF6"><span title="☑️ Tasks" class=linkLabel_I9IG>☑️ Tasks</span><svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_c9sx><use href=#theme-svg-external-link /></svg></a></ul></nav></div></div></aside><main class=docMainContainer_aHOd><div class="container padding-top--md padding-bottom--lg"><div class=row><div class="col docItemCol_BJgu"><div class=docItemContainer_PUtD><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_dpnR" aria-label=Breadcrumbs><ul class=breadcrumbs><li class=breadcrumbs__item><a aria-label="Home page" class=breadcrumbs__link href=/><svg viewBox="0 0 24 24" class=breadcrumbHomeIcon__OJg><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill=currentColor /></svg></a><li class=breadcrumbs__item><a class=breadcrumbs__link href=/docs/beehive-sensors/><span>🌡️ Beehive IoT sensors</span></a><li class=breadcrumbs__item><a class=breadcrumbs__link href=/docs/beehive-sensors/components/><span>Bill of materials</span></a><li class="breadcrumbs__item breadcrumbs__item--active"><span class=breadcrumbs__link>Weight sensor HX711 (bar-type)</span></ul></nav><div class="tocCollapsible_RHmT theme-doc-toc-mobile tocMobile_VHIv"><button type=button class="clean-btn tocCollapsibleButton_POOD">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Weight sensor HX711 (bar-type)</h1></header><p><a href=https://www.aliexpress.com/item/1005006827930173.html target=_blank rel="noopener noreferrer" class="">https://www.aliexpress.com/item/1005006827930173.html</a>
-<a href=https://www.amazon.de/-/en/gp/product/B079FQNJJH/ target=_blank rel="noopener noreferrer" class="">https://www.amazon.de/-/en/gp/product/B079FQNJJH/</a>
-<img decoding=async loading=lazy src=/assets/images/612ornIvHHL._SL1000_-59d9a5ab496fa2c24785d7c77c24307a.jpg width=1000 height=1000 class=img_Uobs /></p>
-<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=wiring>Wiring<a href=#wiring class=hash-link aria-label="Direct link to Wiring" title="Direct link to Wiring" translate=no>​</a></h3>
-<h4 class="anchor anchorTargetStickyNavbar_rb2N" id=single-load-cell-setup>Single Load Cell Setup<a href=#single-load-cell-setup class=hash-link aria-label="Direct link to Single Load Cell Setup" title="Direct link to Single Load Cell Setup" translate=no>​</a></h4>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight sensor HX711 (bar-type) | Gratheon</title>
+    
+    <meta name="description" content="https://www.aliexpress.com/item/1005006827930173.html">
+    
+    
+    <link rel="canonical" href="https://gratheon.com/docs/beehive-sensors/components/hx711-bar/">
+    <meta property="og:title" content="Weight sensor HX711 (bar-type)">
+    <meta property="og:description" content="https://www.aliexpress.com/item/1005006827930173.html">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gratheon.com/docs/beehive-sensors/components/hx711-bar/">
+    <meta property="og:image" content="https://gratheon.com/assets/img/assets/img/gratheon-web-app-preview.webp">
+    <meta property="og:site_name" content="Gratheon">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Weight sensor HX711 (bar-type)">
+    <meta name="twitter:description" content="https://www.aliexpress.com/item/1005006827930173.html">
+    <meta name="twitter:image" content="https://gratheon.com/assets/img/assets/img/gratheon-web-app-preview.webp">
+    <meta name="twitter:site" content="@gratheon">
+    <meta name="twitter:creator" content="@gratheon">
+    
+    <link rel="icon" href="/assets/favicons/favicon.ico">
+    <style>
+        :root {
+            --sidebar-width: 280px;
+            --toc-width: 240px;
+            --nav-bg: #f8f9fa;
+            --nav-border: #e0e0e0;
+            --nav-active: #0066cc;
+            --bg-primary: #ffffff;
+            --text-primary: #333333;
+            --text-secondary: #666666;
+            --quote-bg: #f5f9ff;
+            --quote-border: #8cb8ee;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background: var(--bg-primary);
+        }
+         
+        .site-header {
+            border-bottom: 1px solid var(--nav-border);
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+        .navbar-logo {
+            display: inline-flex;
+            align-items: center;
+        }
+        .navbar-logo img {
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+            object-fit: cover;
+        }
+        .site-nav {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .lang-switcher {
+            display: inline-flex;
+            gap: 4px;
+            padding: 3px;
+            border: 1px solid var(--nav-border);
+            border-radius: 999px;
+            background: var(--nav-bg);
+        }
+        .lang-link {
+            border: 0;
+            border-radius: 999px;
+            padding: 6px 11px;
+            font-size: 0.8em;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .lang-link.is-active {
+            color: #fff;
+            background: var(--nav-active);
+        }
+        .site-nav a {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .site-nav a:hover { color: var(--nav-active); }
+        .theme-toggle {
+            border: 1px solid var(--nav-border);
+            background: transparent;
+            width: 36px;
+            height: 36px;
+            border-radius: 18px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            color: var(--text-primary);
+        }
+        .theme-toggle svg {
+            width: 18px;
+            height: 18px;
+            display: block;
+        }
+        .theme-toggle .icon-moon { display: none; }
+        html[data-theme='dark'] .theme-toggle .icon-sun { display: none; }
+        html[data-theme='dark'] .theme-toggle .icon-moon { display: block; }
+        html[data-theme='dark'] {
+            --nav-bg: #1d1f22;
+            --nav-border: #383c42;
+            --nav-active: #6aa4ff;
+            --bg-primary: #111315;
+            --text-primary: #eceef1;
+            --text-secondary: #a9adb5;
+            --quote-bg: #18212d;
+            --quote-border: #4b7ebd;
+        }
+        .product-hero-image {
+            height: 200px;
+            overflow: hidden;
+            vertical-align: middle;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .product-hero-image img,
+        .product-hero-image .md-image,
+        .product-hero-image picture {
+            display: block;
+            width: 100%;
+        }
+        .product-hero-image img {
+            width: 100%;
+            margin-top: -10%;
+        }
+        .product-card-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            text-align: center;
+        }
+        .product-card-small {
+            width: 200px;
+        }
+        .product-card-small img,
+        .product-card-small .md-image img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+        }
+        @media (max-width: 700px) {
+            .product-card-grid { justify-content: center; }
+            .product-card-small { width: 45%; min-width: 150px; }
+        }
+        @media (max-width: 480px) {
+            .product-card-small { width: 100%; }
+        }
+         
+        .site-layout {
+            display: flex;
+            width: 100%;
+            max-width: none;
+            margin: 0;
+            min-height: calc(100vh - 120px);
+        }
+         
+        .sidebar {
+            width: var(--sidebar-width);
+            padding: 20px 16px;
+            border-right: 1px solid var(--nav-border);
+            background: var(--nav-bg);
+            flex-shrink: 0;
+            overflow-y: auto;
+            max-height: calc(100vh - 60px);
+            position: sticky;
+            top: 0;
+        }
+        .blog-sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            overflow: hidden;
+        }
+        .sidebar-mode-switch {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 4px;
+            border: 1px solid var(--nav-border);
+            background: var(--bg-primary);
+            border-radius: 999px;
+            padding: 4px;
+        }
+        .sidebar-mode-btn {
+            border: 0;
+            background: transparent;
+            color: var(--text-secondary);
+            border-radius: 999px;
+            font-size: 0.78em;
+            font-weight: 600;
+            padding: 7px 6px;
+            cursor: pointer;
+        }
+        .sidebar-mode-btn.is-active {
+            color: #fff;
+            background: var(--nav-active);
+        }
+        .sidebar-mode-pane {
+            flex: 1;
+            min-height: 0;
+            overflow-y: auto;
+        }
+        .sidebar-timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-height: none;
+            overflow: visible;
+            padding-right: 2px;
+        }
+        .timeline-year h4 {
+            font-size: 0.86em;
+            color: var(--text-secondary);
+            margin: 4px 0;
+        }
+        .timeline-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            margin-bottom: 8px;
+        }
+        .timeline-list li a {
+            display: block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            color: var(--text-primary);
+            text-decoration: none;
+            font-size: 0.86em;
+        }
+        .timeline-list li a time {
+            color: var(--text-secondary);
+            margin-right: 6px;
+            font-size: 0.9em;
+        }
+        .timeline-list li.active > a {
+            color: var(--nav-active);
+            font-weight: 600;
+            background: rgba(0, 102, 204, 0.08);
+        }
+        .sidebar-graph-pane {
+            height: calc(100vh - 130px);
+        }
+        .sidebar-graph-frame {
+            width: 100%;
+            height: 100%;
+            border: 1px solid var(--nav-border);
+            border-radius: 8px;
+            background: var(--bg-primary);
+        }
+        .site-layout.sidebar-graph-mode .sidebar {
+            width: 40%;
+        }
+        .site-layout.sidebar-graph-mode .site-content {
+            max-width: none;
+        }
+        .sidebar-menu, .sidebar-submenu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .sidebar-submenu {
+            padding-left: 16px;
+            border-left: 1px solid var(--nav-border);
+            margin-left: 8px;
+        }
+        .sidebar-item a {
+            display: block;
+            padding: 4px 8px;
+            color: var(--text-primary);
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+        .sidebar-section-head {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .sidebar-section-head a {
+            flex: 1;
+        }
+        .sidebar-toggle {
+            appearance: none;
+            border: 0;
+            background: transparent;
+            color: var(--text-secondary);
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            padding: 0;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+        }
+        .sidebar-toggle:hover {
+            background: rgba(0, 102, 204, 0.08);
+            color: var(--nav-active);
+        }
+        .sidebar-toggle::before {
+            content: "▸";
+            font-size: 0.8em;
+            line-height: 1;
+            transition: transform 0.15s ease;
+        }
+        .sidebar-section.expanded > .sidebar-section-head .sidebar-toggle::before {
+            transform: rotate(90deg);
+        }
+        .sidebar-section > .sidebar-submenu {
+            display: none;
+        }
+        .sidebar-section.expanded > .sidebar-submenu {
+            display: block;
+        }
+        .sidebar-item a:hover {
+            background: rgba(0, 102, 204, 0.08);
+        }
+        .sidebar-item.active > a {
+            color: var(--nav-active);
+            font-weight: 600;
+            background: rgba(0, 102, 204, 0.08);
+        }
+        .sidebar-section > a {
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.8em;
+            letter-spacing: 0.05em;
+            color: var(--text-secondary);
+            margin-top: 12px;
+        }
+         
+        .site-content {
+            flex: 1;
+            min-width: 0;
+            padding: 24px 40px;
+            max-width: 800px;
+        }
+        .embed {
+            width: 100%;
+            max-width: 800px;
+            margin: 24px auto;
+        }
+        .embed iframe {
+            display: block;
+            width: min(100%, 800px);
+            aspect-ratio: 16 / 9;
+            height: auto;
+            border: 0;
+            border-radius: 12px;
+        }
+         
+        .breadcrumbs {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+            padding: 0;
+            margin-bottom: 20px;
+            font-size: 0.85em;
+            color: var(--text-secondary);
+        }
+        .breadcrumbs li:not(:last-child)::after {
+            content: "›";
+            margin-left: 4px;
+            color: var(--text-secondary);
+        }
+        .breadcrumbs a { color: var(--nav-active); text-decoration: none; }
+        .breadcrumbs a:hover { text-decoration: underline; }
+         
+        .toc {
+            width: var(--toc-width);
+            padding: 20px 16px;
+            flex-shrink: 0;
+            position: sticky;
+            top: 0;
+            max-height: 100vh;
+            overflow-y: auto;
+            font-size: 0.85em;
+        }
+        .toc-title {
+            font-size: 0.8em;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        .toc-list, .toc-sublist {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .toc-sublist { padding-left: 12px; }
+        .toc-item a {
+            display: block;
+            padding: 3px 0;
+            color: var(--text-secondary);
+            text-decoration: none;
+            border-left: 2px solid transparent;
+            padding-left: 8px;
+        }
+        .toc-item a:hover {
+            color: var(--nav-active);
+            border-left-color: var(--nav-active);
+        }
+         
+        .prev-next {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid var(--nav-border);
+            gap: 20px;
+        }
+        .prev-next a {
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            padding: 12px 16px;
+            border: 1px solid var(--nav-border);
+            border-radius: 8px;
+            flex: 1;
+            transition: border-color 0.2s;
+        }
+        .prev-next a:hover { border-color: var(--nav-active); }
+        .prev-next .prev-link { text-align: left; }
+        .prev-next .next-link { text-align: right; margin-left: auto; }
+        .prev-label, .next-label {
+            font-size: 0.8em;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+        }
+        .prev-title, .next-title {
+            color: var(--nav-active);
+            font-weight: 500;
+        }
+         
+        article h1 { font-size: 2em; margin-bottom: 8px; }
+        article time { color: var(--text-secondary); font-size: 0.9em; }
+        .article-meta {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 4px;
+            margin: 0 0 8px;
+            flex-wrap: nowrap;
+        }
+        .article-audio {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin: 0 0 0 2px;
+        }
+        .article-audio button {
+            border: 1px solid var(--nav-active);
+            border-radius: 999px;
+            background: var(--nav-active);
+            color: #fff;
+            width: 36px;
+            height: 36px;
+            padding: 0;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        .article-audio button:hover {
+            filter: brightness(0.92);
+        }
+        .article-audio button svg {
+            width: 14px;
+            height: 14px;
+            fill: currentColor;
+        }
+        .article-audio button .icon-stop { display: none; }
+        .article-audio button.is-playing .icon-play { display: none; }
+        .article-audio button.is-playing .icon-stop { display: block; }
+        .article-audio .audio-wave {
+            width: 88px;
+            height: 28px;
+            border: 0;
+            border-radius: 0;
+            background: transparent;
+            opacity: 0.95;
+        }
+        .article-audio button:disabled {
+            opacity: 0.55;
+            cursor: default;
+        }
+        article .tags { margin: 22px 0 24px; }
+        article .tag {
+            display: inline-block;
+            background: var(--nav-bg);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            color: var(--nav-active);
+            margin-right: 4px;
+            text-decoration: none;
+        }
+        article .tag:hover { text-decoration: underline; }
+        article .content { margin-top: 16px; }
+        article .content h2 { margin-top: 2em; margin-bottom: 0.5em; }
+        article .content h3 { margin-top: 1.5em; margin-bottom: 0.4em; }
+        article .content p { margin-bottom: 1em; }
+        article .content blockquote {
+            margin: 1.4em 0;
+            padding: 0.8em 1em;
+            border-left: 4px solid var(--quote-border);
+            background: var(--quote-bg);
+            color: var(--text-secondary);
+            font-style: italic;
+        }
+        article .content blockquote p:last-child {
+            margin-bottom: 0;
+        }
+         
+        .site-footer {
+            border-top: 1px solid var(--nav-border);
+            padding: 20px;
+            color: var(--text-secondary);
+            font-size: 0.9em;
+            text-align: center;
+        }
+         
+        a { color: var(--nav-active); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        img { max-width: 100%; height: auto; }
+        pre {
+            background: #f4f4f4;
+            padding: 15px;
+            overflow-x: auto;
+            border-radius: 4px;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: "Monaco", "Menlo", monospace;
+        }
+        pre code { padding: 0; background: none; }
+        table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background: #f4f4f4; }
+        .section-index { list-style: none; padding: 0; }
+        .section-index li { padding: 6px 0; border-bottom: 1px solid var(--nav-border); }
+        .section-index li a { font-weight: 500; }
+        .section-article-list {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+        .section-article-preview {
+            border-bottom: 1px solid var(--nav-border);
+            padding-bottom: 12px;
+        }
+        .section-article-preview h2 {
+            margin: 0 0 4px;
+            font-size: 1.05em;
+        }
+        .section-article-preview time {
+            display: block;
+            color: var(--text-secondary);
+            font-size: 0.83em;
+            margin-bottom: 6px;
+        }
+        .section-article-preview p {
+            margin: 0;
+            color: var(--text-secondary);
+        }
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            margin: 32px 0 0;
+        }
+        .project-card {
+            background: var(--bg-secondary);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .project-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px var(--shadow);
+        }
+        .project-image {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            background: var(--border);
+            display: block;
+        }
+        .project-content {
+            padding: 20px;
+        }
+        .project-content h3 {
+            margin: 0 0 8px;
+            font-size: 1.25em;
+        }
+        .project-content p {
+            margin: 0 0 16px;
+            color: var(--text-secondary);
+            font-size: 0.95em;
+        }
+        .project-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        .project-tag {
+            font-size: 0.8em;
+            padding: 4px 10px;
+            background: var(--bg-primary);
+            border-radius: 20px;
+            color: var(--text-secondary);
+        }
+         
+        @media (max-width: 1200px) {
+            .toc { display: none; }
+        }
+        @media (max-width: 768px) {
+            .sidebar { display: none; }
+            .site-content { padding: 16px; }
+            .projects-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body class="page-layout-page">
+    <header class="site-header">
+        <div class="header-left">
+            <a class="navbar-logo" href="/">
+                <img class="no-transform" src="/assets/img/logo_v7w.svg" alt="Gratheon">
+            </a>
+            <nav class="site-nav">
+                <a href="/about/">About</a><a href="/about/products/">Products</a><a href="/docs/">Docs</a><a href="/research/">Research</a><a href="/blog/">Blog</a><a href="/pricing/">Pricing</a><a href="https://discord.gg/PcbP4uedWj">Discord</a><a href="https://github.com/gratheon/web-app">GitHub</a><a href="https://app.gratheon.com/account/authenticate/">Log in</a>
+            </nav>
+        </div>
+        <div class="header-right">
+            
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
+                <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="4"></circle>
+                    <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
+                </svg>
+                <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3c0 0 0 0 0 0A7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+    <div class="site-layout">
+        <nav class="sidebar blog-sidebar" aria-label="Navigation" data-sidebar-mode="categories" data-sidebar-default-mode="categories">
+  <div class="sidebar-mode-pane" data-sidebar-mode-pane="categories">
+<ul class="sidebar-menu">
+  <li class="sidebar-item sidebar-section expanded">
+    <div class="sidebar-section-head">
+      <button class="sidebar-toggle" type="button" aria-label="Toggle section Bill of materials" aria-expanded="true"></button>
+      <a href="/docs/beehive-sensors/components/">Bill of materials</a>
+    </div>
+<ul class="sidebar-submenu">
+  <li class="sidebar-item">
+      <a href="/docs/beehive-sensors/components/case/">Aluminium Enclosure</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/beehive-sensors/components/aluminium-profile/">Aluminium profile 20x20x500mm</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/beehive-sensors/components/battery/">Battery (18650 type, Li-ion)</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/beehive-sensors/components/battery-shield/">Battery (18650 type, Li-ion) shield</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/beehive-sensors/components/display/">Display - LCD1602</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/beehive-sensors/components/esp32/">Microcontroller - ESP32</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/beehive-sensors/components/screws/">Screws M4 x 25mm</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/beehive-sensors/components/ds18b20/">Temperature sensor - DS18B20</a>
+  </li>
+  <li class="sidebar-item sidebar-section">
+    <div class="sidebar-section-head">
+      <button class="sidebar-toggle" type="button" aria-label="Toggle section Todo" aria-expanded="false"></button>
+      <a href="/docs/beehive-sensors/components/todo/">Todo</a>
+    </div>
+<ul class="sidebar-submenu">
+  <li class="sidebar-item">
+      <a href="/docs/beehive-sensors/components/todo/air-quality-sensor/">Air Quality Sensor</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/beehive-sensors/components/todo/barometric-pressure-sensor/">Barometric pressure sensor</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/beehive-sensors/components/todo/barometric-sensor-bmp180/">Barometric sensor   BMP180</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/beehive-sensors/components/todo/carbon-dioxide-co2-temperature-humidity-vocs-air-quality-sensor-module/">Carbon Dioxide CO2 Temperature Humidity VOCs Air Quality Sensor Module</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/beehive-sensors/components/todo/co2-sensor-ens160/">CO2 sensor   ENS160</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/beehive-sensors/components/todo/microphone-amplifier-stable/">Microphone Amplifier Stable</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/beehive-sensors/components/todo/pm2-dust-sensor/">PM2 dust sensor</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/beehive-sensors/components/todo/tampering-vibration-sensor/">Tampering   Vibration sensor</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/beehive-sensors/components/todo/temperature-humidity-sensor-alternative/">Temperature   Humidity sensor alternative</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/beehive-sensors/components/todo/hx711-flat/">Weight sensor HX711 (flat-type)</a>
+  </li>
+</ul>
+  </li>
+  <li class="sidebar-item active expanded">
+      <a href="/docs/beehive-sensors/components/hx711-bar/" aria-current="page">Weight sensor HX711 (bar-type)</a>
+  </li>
+</ul>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/beehive-sensors/3d-model/">3d model</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/beehive-sensors/choice-of-procesor-chip/">Choice of procesor chip</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/beehive-sensors/installation/">Installation</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/beehive-sensors/beehive-sensors/">🌡️ Beehive IoT sensors</a>
+  </li>
+</ul>
+  </div>
+</nav>
+
+        <main class="site-content">
+            
+<article>
+    
+    <nav aria-label="Breadcrumb">
+        <ol class="breadcrumbs">
+            
+            <li>
+                
+                    <a href="/">Home</a>
+                
+            </li>
+            
+            <li>
+                
+                    <a href="/docs/">Docs</a>
+                
+            </li>
+            
+            <li>
+                
+                    <a href="/docs/beehive-sensors/">Beehive-sensors</a>
+                
+            </li>
+            
+            <li>
+                
+                    <a href="/docs/beehive-sensors/components/">Bill of materials</a>
+                
+            </li>
+            
+            <li>
+                
+                    <span aria-current="page">Weight sensor HX711 (bar-type)</span>
+                
+            </li>
+            
+        </ol>
+    </nav>
+    
+    <h1>Weight sensor HX711 (bar-type)</h1>
+    
+    <div class="content">
+        <p><a href="https://www.aliexpress.com/item/1005006827930173.html">https://www.aliexpress.com/item/1005006827930173.html</a><br />
+<a href="https://www.amazon.de/-/en/gp/product/B079FQNJJH/">https://www.amazon.de/-/en/gp/product/B079FQNJJH/</a><br />
+<figure class="md-image">
+  <picture>
+    <source srcset="/assets/img/docs/img/612ornIvHHL._SL1000_-thumbnail.webp 300w, /assets/img/docs/img/612ornIvHHL._SL1000_-preview.webp 800w, /assets/img/docs/img/612ornIvHHL._SL1000_-full.webp 1000w" sizes="(max-width: 768px) 100vw, 800px" type="image/webp">
+    <img src="/assets/img/docs/img/612ornIvHHL._SL1000_-full.webp" alt="" loading="lazy" width="1000" height="1000">
+  </picture>
+</figure></p>
+<h3 id="wiring">Wiring</h3>
+<h4 id="single-load-cell-setup">Single Load Cell Setup</h4>
 <p>HX711 Load Cell Amplifier:</p>
 <ul>
-<li class="">E = Excitation. E+ (Red) and E- (Black) are the excitation wires for the load cell, providing the voltage that powers the load cell.</li>
-<li class="">A = Amplifier. A+ (White) and A- (Green) are the signal wires from the load cell, carrying the differential signal that the HX711 amplifies.</li>
+<li>E = Excitation. E+ (Red) and E- (Black) are the excitation wires for the load cell, providing the voltage that powers the load cell.</li>
+<li>A = Amplifier. A+ (White) and A- (Green) are the signal wires from the load cell, carrying the differential signal that the HX711 amplifies.</li>
 </ul>
-<!-- -->
-<h4 class="anchor anchorTargetStickyNavbar_rb2N" id=four-load-cells-setup-for-complete-beehive-weight-measurement>Four Load Cells Setup (for complete beehive weight measurement)<a href=#four-load-cells-setup-for-complete-beehive-weight-measurement class=hash-link aria-label="Direct link to Four Load Cells Setup (for complete beehive weight measurement)" title="Direct link to Four Load Cells Setup (for complete beehive weight measurement)" translate=no>​</a></h4>
+<pre><code class="language-mermaid">flowchart LR
+
+subgraph ESP32
+VCC[3.3V]
+GND
+GPIO16
+GPIO17
+end
+
+subgraph HX711
+E+
+E-
+A+
+A-
+GND2[GND]
+DT
+SCK
+VCC2[VCC]
+end
+
+VCC &lt;--&gt; VCC2
+GND &lt;--&gt; GND2
+GPIO16 &lt;--&gt; DT
+GPIO17 &lt;--&gt; SCK
+
+E+ &lt;--&gt; Red
+E- &lt;--&gt; Black
+A+ &lt;--&gt; Green
+A- &lt;--&gt; White
+
+subgraph LoadCell
+Red
+Green
+Black
+White
+end
+</code></pre>
+<h4 id="four-load-cells-setup-for-complete-beehive-weight-measurement">Four Load Cells Setup (for complete beehive weight measurement)</h4>
 <p><strong>Yes, you can connect 4 weight sensors to a single ESP32!</strong> Each load cell needs its own HX711 amplifier. Here's how the connections work:</p>
-<!-- -->
-<p><strong>Alternative Wiring (Shared SCK):</strong>
+<pre><code class="language-mermaid">flowchart TD
+    subgraph ESP32
+        VCC[3.3V]
+        GND[GND]
+        GPIO16[GPIO16 - DT1]
+        GPIO17[GPIO17 - SCK1]
+        GPIO18[GPIO18 - DT2] 
+        GPIO19[GPIO19 - SCK2]
+        GPIO21[GPIO21 - DT3]
+        GPIO22[GPIO22 - SCK3]
+        GPIO23[GPIO23 - DT4]
+        GPIO25[GPIO25 - SCK4]
+    end
+
+    subgraph HX711_1[HX711 #1 - Front Left]
+        DT1[DT]
+        SCK1[SCK]
+        VCC1[VCC]
+        GND1[GND]
+        E1+[E+]
+        E1-[E-]
+        A1+[A+]
+        A1-[A-]
+    end
+
+    subgraph HX711_2[HX711 #2 - Front Right]
+        DT2[DT]
+        SCK2[SCK]
+        VCC2[VCC]
+        GND2[GND]
+        E2+[E+]
+        E2-[E-]
+        A2+[A+]
+        A2-[A-]
+    end
+
+    subgraph HX711_3[HX711 #3 - Back Left]
+        DT3[DT]
+        SCK3[SCK]
+        VCC3[VCC]
+        GND3[GND]
+        E3+[E+]
+        E3-[E-]
+        A3+[A+]
+        A3-[A-]
+    end
+
+    subgraph HX711_4[HX711 #4 - Back Right]
+        DT4[DT]
+        SCK4[SCK]
+        VCC4[VCC]
+        GND4[GND]
+        E4+[E+]
+        E4-[E-]
+        A4+[A+]
+        A4-[A-]
+    end
+
+    subgraph LoadCell1[Load Cell 1 - Front Left]
+        Red1[Red - E+]
+        Black1[Black - E-]
+        White1[White - A-]
+        Green1[Green - A+]
+    end
+
+    subgraph LoadCell2[Load Cell 2 - Front Right]
+        Red2[Red - E+]
+        Black2[Black - E-]
+        White2[White - A-]
+        Green2[Green - A+]
+    end
+
+    subgraph LoadCell3[Load Cell 3 - Back Left]
+        Red3[Red - E+]
+        Black3[Black - E-]
+        White3[White - A-]
+        Green3[Green - A+]
+    end
+
+    subgraph LoadCell4[Load Cell 4 - Back Right]
+        Red4[Red - E+]
+        Black4[Black - E-]
+        White4[White - A-]
+        Green4[Green - A+]
+    end
+
+    %% Power connections
+    VCC -.-&gt; VCC1
+    VCC -.-&gt; VCC2
+    VCC -.-&gt; VCC3
+    VCC -.-&gt; VCC4
+    
+    GND -.-&gt; GND1
+    GND -.-&gt; GND2
+    GND -.-&gt; GND3
+    GND -.-&gt; GND4
+
+    %% Digital connections
+    GPIO16 --- DT1
+    GPIO17 --- SCK1
+    GPIO18 --- DT2
+    GPIO19 --- SCK2
+    GPIO21 --- DT3
+    GPIO22 --- SCK3
+    GPIO23 --- DT4
+    GPIO25 --- SCK4
+
+    %% Load cell connections
+    E1+ --- Red1
+    E1- --- Black1
+    A1+ --- Green1
+    A1- --- White1
+
+    E2+ --- Red2
+    E2- --- Black2
+    A2+ --- Green2
+    A2- --- White2
+
+    E3+ --- Red3
+    E3- --- Black3
+    A3+ --- Green3
+    A3- --- White3
+
+    E4+ --- Red4
+    E4- --- Black4
+    A4+ --- Green4
+    A4- --- White4
+</code></pre>
+<p><strong>Alternative Wiring (Shared SCK):</strong><br />
 You can share the SCK (clock) line between all HX711 modules to save ESP32 pins. In this case, you'd only need 5 pins total (1 shared SCK + 4 separate DT pins):</p>
-<div class="language-text codeBlockContainer_InFo theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_zYTH><pre tabindex=0 class="prism-code language-text codeBlock_Qx6K thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_VjvH><span class=token-line style=color:#393A34><span class="token plain">ESP32 GPIO17 → All HX711 SCK pins (shared)</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">ESP32 GPIO16 → HX711 #1 DT</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">ESP32 GPIO18 → HX711 #2 DT  </span><br/></span><span class=token-line style=color:#393A34><span class="token plain">ESP32 GPIO21 → HX711 #3 DT</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">ESP32 GPIO23 → HX711 #4 DT</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">3.3V → All HX711 VCC pins</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">GND → All HX711 GND pins</span><br/></span></code></pre></div></div>
-<p><img decoding=async loading=lazy src=/assets/images/HX711-e3c4fc89170c6c3ef318da559b88e673.png width=1024 height=771 class=img_Uobs /></p>
-<h1>Features</h1>
+<pre><code>ESP32 GPIO17 → All HX711 SCK pins (shared)
+ESP32 GPIO16 → HX711 #1 DT
+ESP32 GPIO18 → HX711 #2 DT  
+ESP32 GPIO21 → HX711 #3 DT
+ESP32 GPIO23 → HX711 #4 DT
+3.3V → All HX711 VCC pins
+GND → All HX711 GND pins
+</code></pre>
+<p><figure class="md-image">
+  <picture>
+    <source srcset="/assets/img/docs/img/HX711-preview.webp 800w, /assets/img/docs/img/HX711-full.webp 1024w, /assets/img/docs/img/HX711-thumbnail.webp 300w" sizes="(max-width: 768px) 100vw, 800px" type="image/webp">
+    <img src="/assets/img/docs/img/HX711-full.webp" alt="" loading="lazy" width="1024" height="771">
+  </picture>
+</figure></p>
+<h1 id="features">Features</h1>
 <p>Two selectable differential input channels</p>
 <p>On-chip active low noise PGA with selectable gain of 3264 and 128</p>
 <p>On-chip power supply regulator for load-cell and ADC analog power supply</p>
@@ -32,26 +1025,286 @@ You can share the SCK (clock) line between all HX711 modules to save ESP32 pins.
 <p>Current consumption including on-chip analog power supply regulator: normal operation &lt; 1.5mApower down &lt; 1uA</p>
 <p>Operation supply voltage range: 2.6 ~ 5.5V</p>
 <p>Operating Temperature Range:-20 degree ~ +85 degree</p>
-<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=connection-summary>Connection Summary<a href=#connection-summary class=hash-link aria-label="Direct link to Connection Summary" title="Direct link to Connection Summary" translate=no>​</a></h3>
+<h3 id="connection-summary">Connection Summary</h3>
 <p><strong>For 4-sensor beehive scale setup:</strong></p>
-<table><thead><tr><th>Load Cell Position<th>HX711 Module<th>ESP32 DT Pin<th>ESP32 SCK Pin<th>Load Cell Wires<tbody><tr><td>Front Left<td>HX711 #1<td>GPIO16<td>GPIO17<td>Red→E+, Black→E-, White→A-, Green→A+<tr><td>Front Right<td>HX711 #2<td>GPIO18<td>GPIO19*<td>Red→E+, Black→E-, White→A-, Green→A+<tr><td>Back Left<td>HX711 #3<td>GPIO21<td>GPIO22*<td>Red→E+, Black→E-, White→A-, Green→A+<tr><td>Back Right<td>HX711 #4<td>GPIO23<td>GPIO25*<td>Red→E+, Black→E-, White→A-, Green→A+</table>
+<table>
+<thead>
+<tr>
+<th>Load Cell Position</th>
+<th>HX711 Module</th>
+<th>ESP32 DT Pin</th>
+<th>ESP32 SCK Pin</th>
+<th>Load Cell Wires</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Front Left</td>
+<td>HX711 #1</td>
+<td>GPIO16</td>
+<td>GPIO17</td>
+<td>Red→E+, Black→E-, White→A-, Green→A+</td>
+</tr>
+<tr>
+<td>Front Right</td>
+<td>HX711 #2</td>
+<td>GPIO18</td>
+<td>GPIO19*</td>
+<td>Red→E+, Black→E-, White→A-, Green→A+</td>
+</tr>
+<tr>
+<td>Back Left</td>
+<td>HX711 #3</td>
+<td>GPIO21</td>
+<td>GPIO22*</td>
+<td>Red→E+, Black→E-, White→A-, Green→A+</td>
+</tr>
+<tr>
+<td>Back Right</td>
+<td>HX711 #4</td>
+<td>GPIO23</td>
+<td>GPIO25*</td>
+<td>Red→E+, Black→E-, White→A-, Green→A+</td>
+</tr>
+</tbody>
+</table>
 <p>*Can be shared (all connected to GPIO17) to save pins.</p>
 <p><strong>Power connections:</strong></p>
 <ul>
-<li class="">ESP32 3.3V → All HX711 VCC pins</li>
-<li class="">ESP32 GND → All HX711 GND pins</li>
+<li>ESP32 3.3V → All HX711 VCC pins</li>
+<li>ESP32 GND → All HX711 GND pins</li>
 </ul>
 <p><strong>Arduino Code Example:</strong></p>
-<div class="language-cpp codeBlockContainer_InFo theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_zYTH><pre tabindex=0 class="prism-code language-cpp codeBlock_Qx6K thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_VjvH><span class=token-line style=color:#393A34><span class="token macro property directive-hash" style=color:#36acaa>#</span><span class="token macro property directive keyword" style=color:#00009f>include</span><span class="token macro property" style=color:#36acaa> </span><span class="token macro property string" style=color:#e3116c>"HX711.h"</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></span><span class=token-line style=color:#393A34><span class="token plain"></span><span class="token comment" style=color:#999988;font-style:italic>// Define pins for each HX711</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain"></span><span class="token macro property directive-hash" style=color:#36acaa>#</span><span class="token macro property directive keyword" style=color:#00009f>define</span><span class="token macro property" style=color:#36acaa> </span><span class="token macro property macro-name" style=color:#36acaa>DT1</span><span class="token macro property" style=color:#36acaa> </span><span class="token macro property expression number" style=color:#36acaa>16</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain"></span><span class="token macro property directive-hash" style=color:#36acaa>#</span><span class="token macro property directive keyword" style=color:#00009f>define</span><span class="token macro property" style=color:#36acaa> </span><span class="token macro property macro-name" style=color:#36acaa>SCK1</span><span class="token macro property" style=color:#36acaa> </span><span class="token macro property expression number" style=color:#36acaa>17</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain"></span><span class="token macro property directive-hash" style=color:#36acaa>#</span><span class="token macro property directive keyword" style=color:#00009f>define</span><span class="token macro property" style=color:#36acaa> </span><span class="token macro property macro-name" style=color:#36acaa>DT2</span><span class="token macro property" style=color:#36acaa> </span><span class="token macro property expression number" style=color:#36acaa>18</span><span class="token macro property expression" style=color:#36acaa>  </span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain"></span><span class="token macro property directive-hash" style=color:#36acaa>#</span><span class="token macro property directive keyword" style=color:#00009f>define</span><span class="token macro property" style=color:#36acaa> </span><span class="token macro property macro-name" style=color:#36acaa>SCK2</span><span class="token macro property" style=color:#36acaa> </span><span class="token macro property expression number" style=color:#36acaa>19</span><span class="token macro property expression" style=color:#36acaa>  </span><span class="token macro property comment" style=color:#999988;font-style:italic>// or 17 if sharing SCK</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain"></span><span class="token macro property directive-hash" style=color:#36acaa>#</span><span class="token macro property directive keyword" style=color:#00009f>define</span><span class="token macro property" style=color:#36acaa> </span><span class="token macro property macro-name" style=color:#36acaa>DT3</span><span class="token macro property" style=color:#36acaa> </span><span class="token macro property expression number" style=color:#36acaa>21</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain"></span><span class="token macro property directive-hash" style=color:#36acaa>#</span><span class="token macro property directive keyword" style=color:#00009f>define</span><span class="token macro property" style=color:#36acaa> </span><span class="token macro property macro-name" style=color:#36acaa>SCK3</span><span class="token macro property" style=color:#36acaa> </span><span class="token macro property expression number" style=color:#36acaa>22</span><span class="token macro property expression" style=color:#36acaa>  </span><span class="token macro property comment" style=color:#999988;font-style:italic>// or 17 if sharing SCK</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain"></span><span class="token macro property directive-hash" style=color:#36acaa>#</span><span class="token macro property directive keyword" style=color:#00009f>define</span><span class="token macro property" style=color:#36acaa> </span><span class="token macro property macro-name" style=color:#36acaa>DT4</span><span class="token macro property" style=color:#36acaa> </span><span class="token macro property expression number" style=color:#36acaa>23</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain"></span><span class="token macro property directive-hash" style=color:#36acaa>#</span><span class="token macro property directive keyword" style=color:#00009f>define</span><span class="token macro property" style=color:#36acaa> </span><span class="token macro property macro-name" style=color:#36acaa>SCK4</span><span class="token macro property" style=color:#36acaa> </span><span class="token macro property expression number" style=color:#36acaa>25</span><span class="token macro property expression" style=color:#36acaa>  </span><span class="token macro property comment" style=color:#999988;font-style:italic>// or 17 if sharing SCK</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></span><span class=token-line style=color:#393A34><span class="token plain"></span><span class="token comment" style=color:#999988;font-style:italic>// Create HX711 instances</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">HX711 scale1</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> scale2</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> scale3</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> scale4</span><span class="token punctuation" style=color:#393A34>;</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></span><span class=token-line style=color:#393A34><span class="token plain"></span><span class="token keyword" style=color:#00009f>void</span><span class="token plain"> </span><span class="token function" style=color:#d73a49>setup</span><span class="token punctuation" style=color:#393A34>(</span><span class="token punctuation" style=color:#393A34>)</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  Serial</span><span class="token punctuation" style=color:#393A34>.</span><span class="token function" style=color:#d73a49>begin</span><span class="token punctuation" style=color:#393A34>(</span><span class="token number" style=color:#36acaa>115200</span><span class="token punctuation" style=color:#393A34>)</span><span class="token punctuation" style=color:#393A34>;</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token comment" style=color:#999988;font-style:italic>// Initialize each scale</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  scale1</span><span class="token punctuation" style=color:#393A34>.</span><span class="token function" style=color:#d73a49>begin</span><span class="token punctuation" style=color:#393A34>(</span><span class="token plain">DT1</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> SCK1</span><span class="token punctuation" style=color:#393A34>)</span><span class="token punctuation" style=color:#393A34>;</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  scale2</span><span class="token punctuation" style=color:#393A34>.</span><span class="token function" style=color:#d73a49>begin</span><span class="token punctuation" style=color:#393A34>(</span><span class="token plain">DT2</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> SCK2</span><span class="token punctuation" style=color:#393A34>)</span><span class="token punctuation" style=color:#393A34>;</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  scale3</span><span class="token punctuation" style=color:#393A34>.</span><span class="token function" style=color:#d73a49>begin</span><span class="token punctuation" style=color:#393A34>(</span><span class="token plain">DT3</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> SCK3</span><span class="token punctuation" style=color:#393A34>)</span><span class="token punctuation" style=color:#393A34>;</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  scale4</span><span class="token punctuation" style=color:#393A34>.</span><span class="token function" style=color:#d73a49>begin</span><span class="token punctuation" style=color:#393A34>(</span><span class="token plain">DT4</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> SCK4</span><span class="token punctuation" style=color:#393A34>)</span><span class="token punctuation" style=color:#393A34>;</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token comment" style=color:#999988;font-style:italic>// Calibration factors (determine experimentally)</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  scale1</span><span class="token punctuation" style=color:#393A34>.</span><span class="token function" style=color:#d73a49>set_scale</span><span class="token punctuation" style=color:#393A34>(</span><span class="token number" style=color:#36acaa>2280.f</span><span class="token punctuation" style=color:#393A34>)</span><span class="token punctuation" style=color:#393A34>;</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  scale2</span><span class="token punctuation" style=color:#393A34>.</span><span class="token function" style=color:#d73a49>set_scale</span><span class="token punctuation" style=color:#393A34>(</span><span class="token number" style=color:#36acaa>2280.f</span><span class="token punctuation" style=color:#393A34>)</span><span class="token punctuation" style=color:#393A34>;</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  scale3</span><span class="token punctuation" style=color:#393A34>.</span><span class="token function" style=color:#d73a49>set_scale</span><span class="token punctuation" style=color:#393A34>(</span><span class="token number" style=color:#36acaa>2280.f</span><span class="token punctuation" style=color:#393A34>)</span><span class="token punctuation" style=color:#393A34>;</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  scale4</span><span class="token punctuation" style=color:#393A34>.</span><span class="token function" style=color:#d73a49>set_scale</span><span class="token punctuation" style=color:#393A34>(</span><span class="token number" style=color:#36acaa>2280.f</span><span class="token punctuation" style=color:#393A34>)</span><span class="token punctuation" style=color:#393A34>;</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token comment" style=color:#999988;font-style:italic>// Tare (zero) all scales</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  scale1</span><span class="token punctuation" style=color:#393A34>.</span><span class="token function" style=color:#d73a49>tare</span><span class="token punctuation" style=color:#393A34>(</span><span class="token punctuation" style=color:#393A34>)</span><span class="token punctuation" style=color:#393A34>;</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  scale2</span><span class="token punctuation" style=color:#393A34>.</span><span class="token function" style=color:#d73a49>tare</span><span class="token punctuation" style=color:#393A34>(</span><span class="token punctuation" style=color:#393A34>)</span><span class="token punctuation" style=color:#393A34>;</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  scale3</span><span class="token punctuation" style=color:#393A34>.</span><span class="token function" style=color:#d73a49>tare</span><span class="token punctuation" style=color:#393A34>(</span><span class="token punctuation" style=color:#393A34>)</span><span class="token punctuation" style=color:#393A34>;</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  scale4</span><span class="token punctuation" style=color:#393A34>.</span><span class="token function" style=color:#d73a49>tare</span><span class="token punctuation" style=color:#393A34>(</span><span class="token punctuation" style=color:#393A34>)</span><span class="token punctuation" style=color:#393A34>;</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain"></span><span class="token punctuation" style=color:#393A34>}</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></span><span class=token-line style=color:#393A34><span class="token plain"></span><span class="token keyword" style=color:#00009f>void</span><span class="token plain"> </span><span class="token function" style=color:#d73a49>loop</span><span class="token punctuation" style=color:#393A34>(</span><span class="token punctuation" style=color:#393A34>)</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token keyword" style=color:#00009f>float</span><span class="token plain"> weight1 </span><span class="token operator" style=color:#393A34>=</span><span class="token plain"> scale1</span><span class="token punctuation" style=color:#393A34>.</span><span class="token function" style=color:#d73a49>get_units</span><span class="token punctuation" style=color:#393A34>(</span><span class="token number" style=color:#36acaa>10</span><span class="token punctuation" style=color:#393A34>)</span><span class="token punctuation" style=color:#393A34>;</span><span class="token plain">  </span><span class="token comment" style=color:#999988;font-style:italic>// Average of 10 readings</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token keyword" style=color:#00009f>float</span><span class="token plain"> weight2 </span><span class="token operator" style=color:#393A34>=</span><span class="token plain"> scale2</span><span class="token punctuation" style=color:#393A34>.</span><span class="token function" style=color:#d73a49>get_units</span><span class="token punctuation" style=color:#393A34>(</span><span class="token number" style=color:#36acaa>10</span><span class="token punctuation" style=color:#393A34>)</span><span class="token punctuation" style=color:#393A34>;</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token keyword" style=color:#00009f>float</span><span class="token plain"> weight3 </span><span class="token operator" style=color:#393A34>=</span><span class="token plain"> scale3</span><span class="token punctuation" style=color:#393A34>.</span><span class="token function" style=color:#d73a49>get_units</span><span class="token punctuation" style=color:#393A34>(</span><span class="token number" style=color:#36acaa>10</span><span class="token punctuation" style=color:#393A34>)</span><span class="token punctuation" style=color:#393A34>;</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token keyword" style=color:#00009f>float</span><span class="token plain"> weight4 </span><span class="token operator" style=color:#393A34>=</span><span class="token plain"> scale4</span><span class="token punctuation" style=color:#393A34>.</span><span class="token function" style=color:#d73a49>get_units</span><span class="token punctuation" style=color:#393A34>(</span><span class="token number" style=color:#36acaa>10</span><span class="token punctuation" style=color:#393A34>)</span><span class="token punctuation" style=color:#393A34>;</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token keyword" style=color:#00009f>float</span><span class="token plain"> totalWeight </span><span class="token operator" style=color:#393A34>=</span><span class="token plain"> weight1 </span><span class="token operator" style=color:#393A34>+</span><span class="token plain"> weight2 </span><span class="token operator" style=color:#393A34>+</span><span class="token plain"> weight3 </span><span class="token operator" style=color:#393A34>+</span><span class="token plain"> weight4</span><span class="token punctuation" style=color:#393A34>;</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  Serial</span><span class="token punctuation" style=color:#393A34>.</span><span class="token function" style=color:#d73a49>printf</span><span class="token punctuation" style=color:#393A34>(</span><span class="token string" style=color:#e3116c>"Corner weights: %.2f, %.2f, %.2f, %.2f kg\n"</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> </span><br/></span><span class=token-line style=color:#393A34><span class="token plain">                weight1</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> weight2</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> weight3</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> weight4</span><span class="token punctuation" style=color:#393A34>)</span><span class="token punctuation" style=color:#393A34>;</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  Serial</span><span class="token punctuation" style=color:#393A34>.</span><span class="token function" style=color:#d73a49>printf</span><span class="token punctuation" style=color:#393A34>(</span><span class="token string" style=color:#e3116c>"Total hive weight: %.2f kg\n"</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> totalWeight</span><span class="token punctuation" style=color:#393A34>)</span><span class="token punctuation" style=color:#393A34>;</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token function" style=color:#d73a49>delay</span><span class="token punctuation" style=color:#393A34>(</span><span class="token number" style=color:#36acaa>1000</span><span class="token punctuation" style=color:#393A34>)</span><span class="token punctuation" style=color:#393A34>;</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain"></span><span class="token punctuation" style=color:#393A34>}</span><br/></span></code></pre></div></div>
+<pre><code class="language-cpp">#include &quot;HX711.h&quot;
+
+// Define pins for each HX711
+#define DT1 16
+#define SCK1 17
+#define DT2 18  
+#define SCK2 19  // or 17 if sharing SCK
+#define DT3 21
+#define SCK3 22  // or 17 if sharing SCK
+#define DT4 23
+#define SCK4 25  // or 17 if sharing SCK
+
+// Create HX711 instances
+HX711 scale1, scale2, scale3, scale4;
+
+void setup() {
+  Serial.begin(115200);
+  
+  // Initialize each scale
+  scale1.begin(DT1, SCK1);
+  scale2.begin(DT2, SCK2);
+  scale3.begin(DT3, SCK3);
+  scale4.begin(DT4, SCK4);
+  
+  // Calibration factors (determine experimentally)
+  scale1.set_scale(2280.f);
+  scale2.set_scale(2280.f);
+  scale3.set_scale(2280.f);
+  scale4.set_scale(2280.f);
+  
+  // Tare (zero) all scales
+  scale1.tare();
+  scale2.tare();
+  scale3.tare();
+  scale4.tare();
+}
+
+void loop() {
+  float weight1 = scale1.get_units(10);  // Average of 10 readings
+  float weight2 = scale2.get_units(10);
+  float weight3 = scale3.get_units(10);
+  float weight4 = scale4.get_units(10);
+  
+  float totalWeight = weight1 + weight2 + weight3 + weight4;
+  
+  Serial.printf(&quot;Corner weights: %.2f, %.2f, %.2f, %.2f kg\n&quot;, 
+                weight1, weight2, weight3, weight4);
+  Serial.printf(&quot;Total hive weight: %.2f kg\n&quot;, totalWeight);
+  
+  delay(1000);
+}
+</code></pre>
 <p>Red to E+</p>
 <p>Black to E-</p>
 <p>Green to A+</p>
 <p>White to A-</p>
-<iframe width=100% height=400 src=https://www.youtube.com/embed/AwSBbMUPjSc title="HX711 Load Cell Arduino | HX711 calibration | Weighing Scale | Strain Gauge" frameborder=0 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy=strict-origin-when-cross-origin></iframe>
-<h2 class="anchor anchorTargetStickyNavbar_rb2N" id=alternative>Alternative<a href=#alternative class=hash-link aria-label="Direct link to Alternative" title="Direct link to Alternative" translate=no>​</a></h2>
-<p><a href=https://www.aliexpress.com/item/1005006593556468.html target=_blank rel="noopener noreferrer" class="">https://www.aliexpress.com/item/1005006593556468.html</a></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_Za1t"><a href=https://github.com/gratheon/website/tree/main/packages/create-docusaurus/templates/shared/docs/beehive-sensors/components/HX711-bar.md target=_blank rel="noopener noreferrer" class=theme-edit-this-page><svg fill=currentColor height=20 width=20 viewBox="0 0 40 40" class=iconEdit_RtZN aria-hidden=true><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"/></g></svg>Edit this page</a></div><div class="col lastUpdated_jlPf"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href=/docs/beehive-sensors/components/ESP32><div class=pagination-nav__sublabel>Previous</div><div class=pagination-nav__label>Microcontroller - ESP32</div></a><a class="pagination-nav__link pagination-nav__link--next" href=/docs/beehive-sensors/components/aluminium-profile><div class=pagination-nav__sublabel>Next</div><div class=pagination-nav__label>Aluminium profile 20x20x500mm</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_y_d7 thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href=#wiring class="table-of-contents__link toc-highlight">Wiring</a><li><a href=#connection-summary class="table-of-contents__link toc-highlight">Connection Summary</a><li><a href=#alternative class="table-of-contents__link toc-highlight">Alternative</a></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class=footer__title></div><ul class="footer__items clean-list"><li class=footer__item>
-                <div class=footer-company-block>
-                  <a href=https://ariregister.rik.ee/est/company/12245103/Gratheon-O%C3%9C>Gratheon OÜ</a><br/>
-                  ❤️ Made with love in Estonia
-                </div>
-              </ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title></div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/privacy>Privacy Policy</a><li class=footer__item><a class=footer__link-item href=/terms>Terms Of Service</a><li class=footer__item><a href=mailto:pilot@gratheon.com target=_blank rel="noopener noreferrer" class=footer__link-item>Email<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_c9sx><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://tawk.to/gratheon target=_blank rel="noopener noreferrer" class=footer__link-item>Support Chat<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_c9sx><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://gratheon.statuspage.io/ target=_blank rel="noopener noreferrer" class=footer__link-item>Service Status<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_c9sx><use href=#theme-svg-external-link /></svg></a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title></div><ul class="footer__items clean-list"><li class=footer__item><a href=https://t.me/gratheon target=_blank rel="noopener noreferrer" class=footer__link-item>Telegram<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_c9sx><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://twitter.com/gratheon target=_blank rel="noopener noreferrer" class=footer__link-item>Twitter<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_c9sx><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://www.linkedin.com/company/gratheon/ target=_blank rel="noopener noreferrer" class=footer__link-item>LinkedIn<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_c9sx><use href=#theme-svg-external-link /></svg></a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title></div><ul class="footer__items clean-list"><li class=footer__item><a href=https://www.facebook.com/gratheon target=_blank rel="noopener noreferrer" class=footer__link-item>Facebook</a><li class=footer__item><a href=https://www.twitch.tv/tot_ra target=_blank rel="noopener noreferrer" class=footer__link-item>Twitch</a><li class=footer__item><a href=https://www.youtube.com/@gratheon-bees target=_blank rel="noopener noreferrer" class=footer__link-item>Youtube<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_c9sx><use href=#theme-svg-external-link /></svg></a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title></div><ul class="footer__items clean-list"><li class=footer__item><img src=/img/nvidia-inception-program-badge-rgb-for-screen.svg alt="NVIDIA Inception Program Member" style="max-width:200px; height: auto;"/></ul></div></div><div class="footer__bottom text--center"><div class=footer__copyright>Copyright © 2026 Gratheon OÜ. Gratheon™ trademark registration was approved by the Estonian Patent Office under application M202501179.</div></div></div></footer></div></body>
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/AwSBbMUPjSc" title="HX711 Load Cell Arduino | HX711 calibration | Weighing Scale | Strain Gauge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<h2 id="alternative">Alternative</h2>
+<p><a href="https://www.aliexpress.com/item/1005006593556468.html">https://www.aliexpress.com/item/1005006593556468.html</a></p>
+
+    </div>
+    
+    
+    
+    <nav class="prev-next" aria-label="Page navigation">
+        
+        <a href="/docs/beehive-sensors/components/todo/hx711-flat/" class="prev-link">
+            <span class="prev-label">← Previous</span>
+            <span class="prev-title">Weight sensor HX711 (flat-type)</span>
+        </a>
+        
+        
+        <a href="/docs/beehive-sensors/3d-model/" class="next-link">
+            <span class="next-label">Next →</span>
+            <span class="next-title">3d model</span>
+        </a>
+        
+    </nav>
+    
+</article>
+
+        </main>
+        <nav class="toc" aria-label="On this page">
+  <h2 class="toc-title">On this page</h2>
+<ul class="toc-list">
+  <li class="toc-item">
+    <a href="#wiring">Wiring</a>
+<ul class="toc-sublist">
+  <li class="toc-item">
+    <a href="#single-load-cell-setup">Single Load Cell Setup</a>
+  </li>
+  <li class="toc-item">
+    <a href="#four-load-cells-setup-for-complete-beehive-weight-measurement">Four Load Cells Setup (for complete beehive weight measurement)</a>
+  </li>
+</ul>
+  </li>
+  <li class="toc-item">
+    <a href="#connection-summary">Connection Summary</a>
+  </li>
+  <li class="toc-item">
+    <a href="#alternative">Alternative</a>
+  </li>
+</ul>
+</nav>
+
+    </div>
+    <script>
+    (function() {
+        var players = document.querySelectorAll("[data-audio-player]");
+        players.forEach(function(container) {
+            var audio = container.querySelector("[data-audio-element]");
+            var toggleBtn = container.querySelector("[data-audio-toggle]");
+            var wave = container.querySelector("[data-audio-wave]");
+            if (!audio || !toggleBtn || !wave) {
+                return;
+            }
+            var audioCtx = null;
+            var sourceNode = null;
+            var analyser = null;
+            var waveData = null;
+            var rafId = 0;
+
+            function syncToggleState() {
+                var isPlaying = !audio.paused && !audio.ended;
+                toggleBtn.classList.toggle("is-playing", isPlaying);
+                var label = isPlaying ? (toggleBtn.dataset.stopLabel || "Stop") : (toggleBtn.dataset.playLabel || "Listen");
+                toggleBtn.setAttribute("aria-label", label);
+                toggleBtn.setAttribute("title", label);
+            }
+
+            function ensureVisualizer() {
+                if (analyser) {
+                    return;
+                }
+                var AudioCtx = window.AudioContext || window.webkitAudioContext;
+                if (!AudioCtx) {
+                    return;
+                }
+                audioCtx = new AudioCtx();
+                sourceNode = audioCtx.createMediaElementSource(audio);
+                analyser = audioCtx.createAnalyser();
+                analyser.fftSize = 1024;
+                waveData = new Uint8Array(analyser.fftSize);
+                sourceNode.connect(analyser);
+                analyser.connect(audioCtx.destination);
+            }
+
+            function stopWave() {
+                if (rafId) {
+                    cancelAnimationFrame(rafId);
+                    rafId = 0;
+                }
+            }
+
+            function drawWave() {
+                if (!analyser || !wave) {
+                    return;
+                }
+                var dpr = window.devicePixelRatio || 1;
+                var w = Math.max(88, wave.clientWidth || 88);
+                var h = Math.max(28, wave.clientHeight || 28);
+                if (wave.width !== Math.floor(w * dpr) || wave.height !== Math.floor(h * dpr)) {
+                    wave.width = Math.floor(w * dpr);
+                    wave.height = Math.floor(h * dpr);
+                }
+                var ctx = wave.getContext("2d");
+                if (!ctx) {
+                    return;
+                }
+                ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+                ctx.clearRect(0, 0, w, h);
+                ctx.strokeStyle = "#0066cc";
+                ctx.lineWidth = 1.2;
+
+                analyser.getByteTimeDomainData(waveData);
+                ctx.beginPath();
+                var slice = waveData.length / w;
+                for (var x = 0; x < w; x++) {
+                    var idx = Math.floor(x * slice);
+                    var y = ((waveData[idx] - 128) / 128) * (h * 0.36) + (h / 2);
+                    if (x === 0) {
+                        ctx.moveTo(x, y);
+                    } else {
+                        ctx.lineTo(x, y);
+                    }
+                }
+                ctx.stroke();
+
+                if (!audio.paused && !audio.ended) {
+                    rafId = requestAnimationFrame(drawWave);
+                } else {
+                    stopWave();
+                }
+            }
+
+            toggleBtn.addEventListener("click", function() {
+                if (!audio.paused && !audio.ended) {
+                    audio.pause();
+                    audio.currentTime = 0;
+                    syncToggleState();
+                    stopWave();
+                    return;
+                }
+                ensureVisualizer();
+                if (audioCtx && audioCtx.state === "suspended") {
+                    audioCtx.resume().catch(function() {});
+                }
+                var started = audio.play();
+                if (started && typeof started.then === "function") {
+                    started.then(function() {
+                        syncToggleState();
+                        drawWave();
+                    }).catch(function() {});
+                    return;
+                }
+                syncToggleState();
+                drawWave();
+            });
+            audio.addEventListener("pause", syncToggleState);
+            audio.addEventListener("play", syncToggleState);
+            audio.addEventListener("ended", function() {
+                syncToggleState();
+                stopWave();
+            });
+
+            syncToggleState();
+        });
+    })();
+    </script>
+    <script defer src="/assets/js/main.js"></script>
+</body>
+</html>
+

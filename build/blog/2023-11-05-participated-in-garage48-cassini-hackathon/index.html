@@ -1,0 +1,1117 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2023 11 05 🛰️ Participated in Garage48 Cassini hackathon | Gratheon</title>
+    
+    <meta name="description" content="We participated in pan-European hackathon focused on satellite data processing, organized locally by Garage48.">
+    
+    
+    <link rel="canonical" href="https://gratheon.com/blog/2023-11-05-participated-in-garage48-cassini-hackathon/">
+    <meta property="og:title" content="2023 11 05 🛰️ Participated in Garage48 Cassini hackathon">
+    <meta property="og:description" content="We participated in pan-European hackathon focused on satellite data processing, organized locally by Garage48.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://gratheon.com/blog/2023-11-05-participated-in-garage48-cassini-hackathon/">
+    <meta property="og:image" content="https://gratheon.com/assets/img/blog/img/image1-preview.webp">
+    <meta property="og:site_name" content="Gratheon">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="2023 11 05 🛰️ Participated in Garage48 Cassini hackathon">
+    <meta name="twitter:description" content="We participated in pan-European hackathon focused on satellite data processing, organized locally by Garage48.">
+    <meta name="twitter:image" content="https://gratheon.com/assets/img/blog/img/image1-preview.webp">
+    <meta name="twitter:site" content="@gratheon">
+    <meta name="twitter:creator" content="@gratheon">
+    
+    <link rel="icon" href="/assets/favicons/favicon.ico">
+    <style>
+        :root {
+            --sidebar-width: 280px;
+            --toc-width: 240px;
+            --nav-bg: #f8f9fa;
+            --nav-border: #e0e0e0;
+            --nav-active: #0066cc;
+            --bg-primary: #ffffff;
+            --text-primary: #333333;
+            --text-secondary: #666666;
+            --quote-bg: #f5f9ff;
+            --quote-border: #8cb8ee;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background: var(--bg-primary);
+        }
+         
+        .site-header {
+            border-bottom: 1px solid var(--nav-border);
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+        .navbar-logo {
+            display: inline-flex;
+            align-items: center;
+        }
+        .navbar-logo img {
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+            object-fit: cover;
+        }
+        .site-nav {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .lang-switcher {
+            display: inline-flex;
+            gap: 4px;
+            padding: 3px;
+            border: 1px solid var(--nav-border);
+            border-radius: 999px;
+            background: var(--nav-bg);
+        }
+        .lang-link {
+            border: 0;
+            border-radius: 999px;
+            padding: 6px 11px;
+            font-size: 0.8em;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .lang-link.is-active {
+            color: #fff;
+            background: var(--nav-active);
+        }
+        .site-nav a {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .site-nav a:hover { color: var(--nav-active); }
+        .theme-toggle {
+            border: 1px solid var(--nav-border);
+            background: transparent;
+            width: 36px;
+            height: 36px;
+            border-radius: 18px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            color: var(--text-primary);
+        }
+        .theme-toggle svg {
+            width: 18px;
+            height: 18px;
+            display: block;
+        }
+        .theme-toggle .icon-moon { display: none; }
+        html[data-theme='dark'] .theme-toggle .icon-sun { display: none; }
+        html[data-theme='dark'] .theme-toggle .icon-moon { display: block; }
+        html[data-theme='dark'] {
+            --nav-bg: #1d1f22;
+            --nav-border: #383c42;
+            --nav-active: #6aa4ff;
+            --bg-primary: #111315;
+            --text-primary: #eceef1;
+            --text-secondary: #a9adb5;
+            --quote-bg: #18212d;
+            --quote-border: #4b7ebd;
+        }
+        .product-hero-image {
+            height: 200px;
+            overflow: hidden;
+            vertical-align: middle;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .product-hero-image img,
+        .product-hero-image .md-image,
+        .product-hero-image picture {
+            display: block;
+            width: 100%;
+        }
+        .product-hero-image img {
+            width: 100%;
+            margin-top: -10%;
+        }
+        .product-card-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            text-align: center;
+        }
+        .product-card-small {
+            width: 200px;
+        }
+        .product-card-small img,
+        .product-card-small .md-image img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+        }
+        @media (max-width: 700px) {
+            .product-card-grid { justify-content: center; }
+            .product-card-small { width: 45%; min-width: 150px; }
+        }
+        @media (max-width: 480px) {
+            .product-card-small { width: 100%; }
+        }
+         
+        .site-layout {
+            display: flex;
+            width: 100%;
+            max-width: none;
+            margin: 0;
+            min-height: calc(100vh - 120px);
+        }
+         
+        .sidebar {
+            width: var(--sidebar-width);
+            padding: 20px 16px;
+            border-right: 1px solid var(--nav-border);
+            background: var(--nav-bg);
+            flex-shrink: 0;
+            overflow-y: auto;
+            max-height: calc(100vh - 60px);
+            position: sticky;
+            top: 0;
+        }
+        .blog-sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            overflow: hidden;
+        }
+        .sidebar-mode-switch {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 4px;
+            border: 1px solid var(--nav-border);
+            background: var(--bg-primary);
+            border-radius: 999px;
+            padding: 4px;
+        }
+        .sidebar-mode-btn {
+            border: 0;
+            background: transparent;
+            color: var(--text-secondary);
+            border-radius: 999px;
+            font-size: 0.78em;
+            font-weight: 600;
+            padding: 7px 6px;
+            cursor: pointer;
+        }
+        .sidebar-mode-btn.is-active {
+            color: #fff;
+            background: var(--nav-active);
+        }
+        .sidebar-mode-pane {
+            flex: 1;
+            min-height: 0;
+            overflow-y: auto;
+        }
+        .sidebar-timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-height: none;
+            overflow: visible;
+            padding-right: 2px;
+        }
+        .timeline-year h4 {
+            font-size: 0.86em;
+            color: var(--text-secondary);
+            margin: 4px 0;
+        }
+        .timeline-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            margin-bottom: 8px;
+        }
+        .timeline-list li a {
+            display: block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            color: var(--text-primary);
+            text-decoration: none;
+            font-size: 0.86em;
+        }
+        .timeline-list li a time {
+            color: var(--text-secondary);
+            margin-right: 6px;
+            font-size: 0.9em;
+        }
+        .timeline-list li.active > a {
+            color: var(--nav-active);
+            font-weight: 600;
+            background: rgba(0, 102, 204, 0.08);
+        }
+        .sidebar-graph-pane {
+            height: calc(100vh - 130px);
+        }
+        .sidebar-graph-frame {
+            width: 100%;
+            height: 100%;
+            border: 1px solid var(--nav-border);
+            border-radius: 8px;
+            background: var(--bg-primary);
+        }
+        .site-layout.sidebar-graph-mode .sidebar {
+            width: 40%;
+        }
+        .site-layout.sidebar-graph-mode .site-content {
+            max-width: none;
+        }
+        .sidebar-menu, .sidebar-submenu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .sidebar-submenu {
+            padding-left: 16px;
+            border-left: 1px solid var(--nav-border);
+            margin-left: 8px;
+        }
+        .sidebar-item a {
+            display: block;
+            padding: 4px 8px;
+            color: var(--text-primary);
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+        .sidebar-section-head {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .sidebar-section-head a {
+            flex: 1;
+        }
+        .sidebar-toggle {
+            appearance: none;
+            border: 0;
+            background: transparent;
+            color: var(--text-secondary);
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            padding: 0;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+        }
+        .sidebar-toggle:hover {
+            background: rgba(0, 102, 204, 0.08);
+            color: var(--nav-active);
+        }
+        .sidebar-toggle::before {
+            content: "▸";
+            font-size: 0.8em;
+            line-height: 1;
+            transition: transform 0.15s ease;
+        }
+        .sidebar-section.expanded > .sidebar-section-head .sidebar-toggle::before {
+            transform: rotate(90deg);
+        }
+        .sidebar-section > .sidebar-submenu {
+            display: none;
+        }
+        .sidebar-section.expanded > .sidebar-submenu {
+            display: block;
+        }
+        .sidebar-item a:hover {
+            background: rgba(0, 102, 204, 0.08);
+        }
+        .sidebar-item.active > a {
+            color: var(--nav-active);
+            font-weight: 600;
+            background: rgba(0, 102, 204, 0.08);
+        }
+        .sidebar-section > a {
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.8em;
+            letter-spacing: 0.05em;
+            color: var(--text-secondary);
+            margin-top: 12px;
+        }
+         
+        .site-content {
+            flex: 1;
+            min-width: 0;
+            padding: 24px 40px;
+            max-width: 800px;
+        }
+        .embed {
+            width: 100%;
+            max-width: 800px;
+            margin: 24px auto;
+        }
+        .embed iframe {
+            display: block;
+            width: min(100%, 800px);
+            aspect-ratio: 16 / 9;
+            height: auto;
+            border: 0;
+            border-radius: 12px;
+        }
+         
+        .breadcrumbs {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+            padding: 0;
+            margin-bottom: 20px;
+            font-size: 0.85em;
+            color: var(--text-secondary);
+        }
+        .breadcrumbs li:not(:last-child)::after {
+            content: "›";
+            margin-left: 4px;
+            color: var(--text-secondary);
+        }
+        .breadcrumbs a { color: var(--nav-active); text-decoration: none; }
+        .breadcrumbs a:hover { text-decoration: underline; }
+         
+        .toc {
+            width: var(--toc-width);
+            padding: 20px 16px;
+            flex-shrink: 0;
+            position: sticky;
+            top: 0;
+            max-height: 100vh;
+            overflow-y: auto;
+            font-size: 0.85em;
+        }
+        .toc-title {
+            font-size: 0.8em;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        .toc-list, .toc-sublist {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .toc-sublist { padding-left: 12px; }
+        .toc-item a {
+            display: block;
+            padding: 3px 0;
+            color: var(--text-secondary);
+            text-decoration: none;
+            border-left: 2px solid transparent;
+            padding-left: 8px;
+        }
+        .toc-item a:hover {
+            color: var(--nav-active);
+            border-left-color: var(--nav-active);
+        }
+         
+        .prev-next {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid var(--nav-border);
+            gap: 20px;
+        }
+        .prev-next a {
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            padding: 12px 16px;
+            border: 1px solid var(--nav-border);
+            border-radius: 8px;
+            flex: 1;
+            transition: border-color 0.2s;
+        }
+        .prev-next a:hover { border-color: var(--nav-active); }
+        .prev-next .prev-link { text-align: left; }
+        .prev-next .next-link { text-align: right; margin-left: auto; }
+        .prev-label, .next-label {
+            font-size: 0.8em;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+        }
+        .prev-title, .next-title {
+            color: var(--nav-active);
+            font-weight: 500;
+        }
+         
+        article h1 { font-size: 2em; margin-bottom: 8px; }
+        article time { color: var(--text-secondary); font-size: 0.9em; }
+        .article-meta {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 4px;
+            margin: 0 0 8px;
+            flex-wrap: nowrap;
+        }
+        .article-audio {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin: 0 0 0 2px;
+        }
+        .article-audio button {
+            border: 1px solid var(--nav-active);
+            border-radius: 999px;
+            background: var(--nav-active);
+            color: #fff;
+            width: 36px;
+            height: 36px;
+            padding: 0;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        .article-audio button:hover {
+            filter: brightness(0.92);
+        }
+        .article-audio button svg {
+            width: 14px;
+            height: 14px;
+            fill: currentColor;
+        }
+        .article-audio button .icon-stop { display: none; }
+        .article-audio button.is-playing .icon-play { display: none; }
+        .article-audio button.is-playing .icon-stop { display: block; }
+        .article-audio .audio-wave {
+            width: 88px;
+            height: 28px;
+            border: 0;
+            border-radius: 0;
+            background: transparent;
+            opacity: 0.95;
+        }
+        .article-audio button:disabled {
+            opacity: 0.55;
+            cursor: default;
+        }
+        article .tags { margin: 22px 0 24px; }
+        article .tag {
+            display: inline-block;
+            background: var(--nav-bg);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            color: var(--nav-active);
+            margin-right: 4px;
+            text-decoration: none;
+        }
+        article .tag:hover { text-decoration: underline; }
+        article .content { margin-top: 16px; }
+        article .content h2 { margin-top: 2em; margin-bottom: 0.5em; }
+        article .content h3 { margin-top: 1.5em; margin-bottom: 0.4em; }
+        article .content p { margin-bottom: 1em; }
+        article .content blockquote {
+            margin: 1.4em 0;
+            padding: 0.8em 1em;
+            border-left: 4px solid var(--quote-border);
+            background: var(--quote-bg);
+            color: var(--text-secondary);
+            font-style: italic;
+        }
+        article .content blockquote p:last-child {
+            margin-bottom: 0;
+        }
+         
+        .site-footer {
+            border-top: 1px solid var(--nav-border);
+            padding: 20px;
+            color: var(--text-secondary);
+            font-size: 0.9em;
+            text-align: center;
+        }
+         
+        a { color: var(--nav-active); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        img { max-width: 100%; height: auto; }
+        pre {
+            background: #f4f4f4;
+            padding: 15px;
+            overflow-x: auto;
+            border-radius: 4px;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: "Monaco", "Menlo", monospace;
+        }
+        pre code { padding: 0; background: none; }
+        table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background: #f4f4f4; }
+        .section-index { list-style: none; padding: 0; }
+        .section-index li { padding: 6px 0; border-bottom: 1px solid var(--nav-border); }
+        .section-index li a { font-weight: 500; }
+        .section-article-list {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+        .section-article-preview {
+            border-bottom: 1px solid var(--nav-border);
+            padding-bottom: 12px;
+        }
+        .section-article-preview h2 {
+            margin: 0 0 4px;
+            font-size: 1.05em;
+        }
+        .section-article-preview time {
+            display: block;
+            color: var(--text-secondary);
+            font-size: 0.83em;
+            margin-bottom: 6px;
+        }
+        .section-article-preview p {
+            margin: 0;
+            color: var(--text-secondary);
+        }
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            margin: 32px 0 0;
+        }
+        .project-card {
+            background: var(--bg-secondary);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .project-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px var(--shadow);
+        }
+        .project-image {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            background: var(--border);
+            display: block;
+        }
+        .project-content {
+            padding: 20px;
+        }
+        .project-content h3 {
+            margin: 0 0 8px;
+            font-size: 1.25em;
+        }
+        .project-content p {
+            margin: 0 0 16px;
+            color: var(--text-secondary);
+            font-size: 0.95em;
+        }
+        .project-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        .project-tag {
+            font-size: 0.8em;
+            padding: 4px 10px;
+            background: var(--bg-primary);
+            border-radius: 20px;
+            color: var(--text-secondary);
+        }
+         
+        @media (max-width: 1200px) {
+            .toc { display: none; }
+        }
+        @media (max-width: 768px) {
+            .sidebar { display: none; }
+            .site-content { padding: 16px; }
+            .projects-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body class="page-layout-page">
+    <header class="site-header">
+        <div class="header-left">
+            <a class="navbar-logo" href="/">
+                <img class="no-transform" src="/assets/img/logo_v7w.svg" alt="Gratheon">
+            </a>
+            <nav class="site-nav">
+                <a href="/about/">About</a><a href="/about/products/">Products</a><a href="/docs/">Docs</a><a href="/research/">Research</a><a href="/blog/">Blog</a><a href="/pricing/">Pricing</a><a href="https://discord.gg/PcbP4uedWj">Discord</a><a href="https://github.com/gratheon/web-app">GitHub</a><a href="https://app.gratheon.com/account/authenticate/">Log in</a>
+            </nav>
+        </div>
+        <div class="header-right">
+            
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
+                <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="4"></circle>
+                    <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
+                </svg>
+                <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3c0 0 0 0 0 0A7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+    <div class="site-layout">
+        
+        <main class="site-content">
+            
+<article>
+    
+    <nav aria-label="Breadcrumb">
+        <ol class="breadcrumbs">
+            
+            <li>
+                
+                    <a href="/">Home</a>
+                
+            </li>
+            
+            <li>
+                
+                    <a href="/blog/">Blog</a>
+                
+            </li>
+            
+            <li>
+                
+                    <span aria-current="page">2023 11 05 🛰️ Participated in Garage48 Cassini hackathon</span>
+                
+            </li>
+            
+        </ol>
+    </nav>
+    
+    <h1>2023 11 05 🛰️ Participated in Garage48 Cassini hackathon</h1>
+    
+    <div class="article-meta">
+        
+        <time datetime="2023-11-05T00:00:00Z">
+            November 5, 2023
+        </time>
+        
+        
+    </div>
+    
+    <div class="content">
+        <p>We participated in pan-European hackathon focused on satellite data processing, organized locally by Garage48.</p>
+<p>Our main goal is to</p>
+<ul>
+<li>network to grow a team</li>
+<li>raise awareness as marketing</li>
+<li>develop product features with geo-data for our apiaries</li>
+</ul>
+<p><a href="https://taikai.network/cassinihackathons/hackathons/intdev-humaid">https://taikai.network/cassinihackathons/hackathons/intdev-humaid</a></p>
+<p><a href="files/First%20Gratheon%20Garage48%20pitch%20to%20get%20a%20team.pdf">Pitch PDF</a></p>
+<!-- truncate -->
+<h2 id="problem"><strong>Problem</strong></h2>
+<p>Food security. 735.1M undernourished people worldwide according to FAO in 2022</p>
+<p>Farming crops are inefficiently pollinated. This happens because beehives are currently positioned randomly, however beekeeper decides to. Beekeepers do not know where and why to place beehives. Bees are key to <strong>natural pollination</strong>, which increases <strong>crop yields</strong>, aiding in food supply, reducing the need in deforestation. ****Farmers can inadvertently kill bees with pesticides.</p>
+<p><strong>Solution</strong></p>
+<p>We're improving <strong>environment overview</strong> <strong>for the beekeepers</strong>.</p>
+<p>By analyzing pollination coverage from satellite, beehives can be positioned more <strong>efficiently</strong>.</p>
+<p>Thanks to our app, farmers can get better yields, beekeepers get more honey and healthy bees and bees get more nectar or pollen diversity.</p>
+<p>Diverse pollen improves bee's health as well as taste of the honey. Bees also do not need to compete with each other as much over resources. Separate hive positioning reduces the risk of diseases.</p>
+<p>In general, <a href="https://gratheon.com/">Gratheon</a> helps beekeepers with observability and automation so that they could be more efficient and their colonies would stay healthy. We provide app and integrate hardware so that computer vision could alert a beekeeper in case of danger. Our long-term vision is autonomous robotic beehive.</p>
+<p><strong>Pollen map feature ideation</strong></p>
+<ol>
+<li>Given a satellite image of the apiary with 5 km radius (max flight range of a bee), run AI predictions to detect which <strong>types</strong> of trees and field crops are growing around the apiary and its <strong>square area (m2)</strong>.<br />
+<figure class="md-image">
+  <picture>
+    <source srcset="/assets/img/blog/img/image1-thumbnail.webp 300w, /assets/img/blog/img/image1-preview.webp 800w, /assets/img/blog/img/image1-full.webp 800w" sizes="(max-width: 768px) 100vw, 800px" type="image/webp">
+    <img src="/assets/img/blog/img/image1-full.webp" alt="" loading="lazy" width="800" height="788">
+  </picture>
+</figure></li>
+</ol>
+<p>Crop classification, image and feature by EOS data analytics as a goal</p>
+<ol start="2">
+<li>Given detected pollination sources, suggest to beekeeper how to optimally place bees to optimize for max nectar flow or max pollen diversity. This is also important given that crops may bloom at different time. Coupled with real-time pollination activity data at individual beehives, beekeeper can make informed decisions</li>
+</ol>
+<p><figure class="md-image">
+  <picture>
+    <source srcset="/assets/img/blog/img/image2-thumbnail.webp 300w, /assets/img/blog/img/image2-preview.webp 621w, /assets/img/blog/img/image2-full.webp 621w" sizes="(max-width: 768px) 100vw, 800px" type="image/webp">
+    <img src="/assets/img/blog/img/image2-full.webp" alt="" loading="lazy" width="621" height="441">
+  </picture>
+</figure></p>
+<p>Hive placement optimization, image and feature by <a href="http://beehero.io">beehero.io</a></p>
+<p>Note that this feature targets beekeepers that are able to <strong>move beehives</strong> or city planners that want to optimally position autonomous beehives in the city. For static apiaries we would <em>only</em> provide what type of nectar/honey you can expect, so that you would know at which time specific nectar (ex. buckwheat) is harvested as well as predict the amount of honey depending on the plant's nectar secretion</p>
+<p><strong>Product Design Mockup</strong></p>
+<p>We started with how we want user to interact with the map to receive interested data</p>
+<ul>
+<li>crop types</li>
+<li>ratios of crops within pollinateable area</li>
+<li>blooming time</li>
+<li>plant nectar production (kg/ha)</li>
+</ul>
+<h2 id="eu-space-technologies">EU space technologies</h2>
+<p>We are using Sentinel 2 L1C data, RGB layer to get base information about fields</p>
+<p>We are then running segmentation on an image to detect fields</p>
+<p>Then we run classification of detected fields to understand which crop we are dealing with. As we know time of the image, we can use it to match blooming time.</p>
+<p>Then we calculate the square area of the field</p>
+<p>Then we calculate the ratio of all field types within 5km vicinity and report this to the user (beekeeper)</p>
+<p>Beekeeper can move the location of the beehive, which will result in recalculation of percentages</p>
+<p>Beekeeper can also see how much bees from different hives intersect</p>
+<h1 id="team">Team</h1>
+<p><a href="https://www.linkedin.com/in/kurapov/">Artjom Kurapov</a> -  software engineer</p>
+<p><a href="https://www.linkedin.com/in/alekseiboris/">Aleksei Boris</a> - bizdev / legal / ops</p>
+<p><a href="https://www.linkedin.com/in/nataliia-kinash/">Natalia Kinash</a> - machine learning engineer, applied mathematics</p>
+<p><a href="https://www.linkedin.com/search/results/all/?heroEntityKey=urn%3Ali%3Afsd_profile%3AACoAACcYIOABh-CstsU-a3j6keX8AEZKUSY5El8&amp;keywords=Reinis%20Indans&amp;origin=ENTITY_SEARCH_HOME_HISTORY&amp;sid=uqZ">Reinis Indans</a> - GIS / fullstack engineer</p>
+<p><a href="https://www.notion.so/1f6cefe4cafd43ef8a2f6ba21e684554?pvs=21">Untitled</a></p>
+<h2 id="design-mockup">Design mockup</h2>
+<p><figure class="md-image">
+  <picture>
+    <source srcset="/assets/img/blog/img/Screenshot 2023-11-04 at 08.58.03-thumbnail.webp 300w, /assets/img/blog/img/Screenshot 2023-11-04 at 08.58.03-preview.webp 800w, /assets/img/blog/img/Screenshot 2023-11-04 at 08.58.03-full.webp 1400w" sizes="(max-width: 768px) 100vw, 800px" type="image/webp">
+    <img src="/assets/img/blog/img/Screenshot 2023-11-04 at 08.58.03-full.webp" alt="" loading="lazy" width="1400" height="1622">
+  </picture>
+</figure></p>
+<p>Apiary view with single hive map</p>
+<p><figure class="md-image">
+  <picture>
+    <source srcset="/assets/img/blog/img/Screenshot 2023-11-04 at 09.24.44-thumbnail.webp 300w, /assets/img/blog/img/Screenshot 2023-11-04 at 09.24.44-preview.webp 800w, /assets/img/blog/img/Screenshot 2023-11-04 at 09.24.44-full.webp 1400w" sizes="(max-width: 768px) 100vw, 800px" type="image/webp">
+    <img src="/assets/img/blog/img/Screenshot 2023-11-04 at 09.24.44-full.webp" alt="" loading="lazy" width="1400" height="1551">
+  </picture>
+</figure><br />
+Blooming time view</p>
+<h2 id="system-design">System design</h2>
+<p><figure class="md-image">
+  <picture>
+    <source srcset="/assets/img/blog/img/Screenshot 2023-11-04 at 09.15.25-thumbnail.webp 300w, /assets/img/blog/img/Screenshot 2023-11-04 at 09.15.25-preview.webp 800w, /assets/img/blog/img/Screenshot 2023-11-04 at 09.15.25-full.webp 1334w" sizes="(max-width: 768px) 100vw, 800px" type="image/webp">
+    <img src="/assets/img/blog/img/Screenshot 2023-11-04 at 09.15.25-full.webp" alt="" loading="lazy" width="1334" height="1208">
+  </picture>
+</figure></p>
+<p>Service component diagram</p>
+<p>Initial idea was that, given coordinates X,Y of the apiary, we make request to copernicus servers to receive RGB visible spectrum data. Then we pass result png image to a trained ML model that will do segmentation of fields and classification of them. We then wanted to store inference results to DB to have caching in place in case user visits same page.</p>
+<p><strong>Machine learning and SATELLITE DATA USED</strong></p>
+<p>We trained two separate models during development.</p>
+<p>We tried first <a href="https://universe.roboflow.com/gratheon/crop-fields/model/2">a light-weight version</a> which could do segmentation of  fields without actual classification. We did not end up using it as we wanted actual field types and it was trained on pre-existing dataset that was not related to Copernicus although it would be the fastest to integrate</p>
+<p>Second model was more complex. We exported map of Estonia without cloud coverage (for 13 june 2023) from Copernicus Open Data Hub in multispectral .dim format which includes all layers (infrered etc), then we processed it in QGIS. We normalized resolution to be 20m.</p>
+<p>For training a model we took polygon data from Estonian registries - PRIA (crop fields registry) and Maaamet (forests and buildings). Then we unified these layers, cleaned classes (out of original 300 classes we got 25 classes). To prepare dataset, for every class we picked training (300) and validation(50) instances. We used random forest model.</p>
+<p><figure class="md-image">
+  <picture>
+    <source srcset="/assets/img/blog/img/qgis-full.webp 800w, /assets/img/blog/img/qgis-thumbnail.webp 300w, /assets/img/blog/img/qgis-preview.webp 800w" sizes="(max-width: 768px) 100vw, 800px" type="image/webp">
+    <img src="/assets/img/blog/img/qgis-full.webp" alt="" loading="lazy" width="800" height="600">
+  </picture>
+</figure></p>
+<p>QGis interface</p>
+<p>As a result, model produces an image where for every pixel we have a class prediction. This allows us to run inference in countries/regions that do not have digital field/crop mapping data available. This also allows us to easily calculate class ratios using simple per-pixel sumation.</p>
+<p>For inference we use sentinel-2-l2a and process API</p>
+<p>Visualization of trained fie<figure class="md-image">
+  <picture>
+    <source srcset="/assets/img/blog/img/estonia-fields-thumbnail.webp 300w, /assets/img/blog/img/estonia-fields-preview.webp 800w, /assets/img/blog/img/estonia-fields-full.webp 800w" sizes="(max-width: 768px) 100vw, 800px" type="image/webp">
+    <img src="/assets/img/blog/img/estonia-fields-full.webp" alt="" loading="lazy" width="800" height="808">
+  </picture>
+</figure>ld classification near Tallinn, Estonia (on top)</p>
+<p><strong>Result app</strong></p>
+<p>We have a web-app deployed and available for the customers.</p>
+<p>We make request to copernicus server to get sentinel-2-l2a image for specific location +- 4 km (bee flight range) and provide a list of classes we can run inference on</p>
+<p>To access it, you need to:</p>
+<ul>
+<li>register in the app - <a href="https://app.gratheon.com/account/register">https://app.gratheon.com/account/register</a></li>
+<li>create new apiary - <a href="https://app.gratheon.com/apiaries/create">https://app.gratheon.com/apiaries/create</a></li>
+<li>go into apiary view, drag the marker and click &quot;Analyze crops&quot; - <a href="https://app.gratheon.com/apiaries/edit/2">https://app.gratheon.com/apiaries/edit/2</a></li>
+</ul>
+<p><strong>Source code</strong></p>
+<ul>
+<li>ML training dataset - <a href="https://drive.google.com/drive/folders/1Gh4DXqaDFF1r3lsgxQlo2HREPjo6xlRK?usp=sharing">https://drive.google.com/drive/folders/1Gh4DXqaDFF1r3lsgxQlo2HREPjo6xlRK?usp=sharing</a></li>
+<li>Backend &amp; ML code - <a href="https://github.com/Gratheon/satellite-pollination-map">https://github.com/Gratheon/satellite-pollination-map</a></li>
+<li>Frontend recent changes related to hackathon - <a href="https://github.com/Gratheon/web-app/commits/main">https://github.com/Gratheon/web-app/commits/main</a></li>
+</ul>
+<p><strong>Limitations &amp; future work</strong></p>
+<ul>
+<li>We could connect beekeepers with farmers to prevent pesticide exposure affecting bees during blooming time</li>
+<li>ML model needs more work on precision. We used fixed date for dataset, so instead we could use historical data to train models with more precise blooming time (say every 2 weeks, april-june)</li>
+<li>We did not reach deploying model into production within hackathon timeframe.</li>
+<li>We did not reach integrating correct pollination times and nectar flow rate for classes that we intend to detect</li>
+</ul>
+<p><figure class="md-image">
+  <picture>
+    <source srcset="/assets/img/blog/img/399275275_750135310479095_4769808596453906481_n-thumbnail.webp 300w, /assets/img/blog/img/399275275_750135310479095_4769808596453906481_n-preview.webp 800w, /assets/img/blog/img/399275275_750135310479095_4769808596453906481_n-full.webp 1368w" sizes="(max-width: 768px) 100vw, 800px" type="image/webp">
+    <img src="/assets/img/blog/img/399275275_750135310479095_4769808596453906481_n-full.webp" alt="" loading="lazy" width="1368" height="2048">
+  </picture>
+</figure></p>
+<p><figure class="md-image">
+  <picture>
+    <source srcset="/assets/img/blog/img/garage48-thumbnail.webp 300w, /assets/img/blog/img/garage48-preview.webp 800w, /assets/img/blog/img/garage48-full.webp 1400w" sizes="(max-width: 768px) 100vw, 800px" type="image/webp">
+    <img src="/assets/img/blog/img/garage48-full.webp" alt="" loading="lazy" width="1400" height="935">
+  </picture>
+</figure><figure class="md-image">
+  <picture>
+    <source srcset="/assets/img/blog/img/400149287_750137250478901_8295912363465611030_n-thumbnail.webp 300w, /assets/img/blog/img/400149287_750137250478901_8295912363465611030_n-preview.webp 800w, /assets/img/blog/img/400149287_750137250478901_8295912363465611030_n-full.webp 1400w" sizes="(max-width: 768px) 100vw, 800px" type="image/webp">
+    <img src="/assets/img/blog/img/400149287_750137250478901_8295912363465611030_n-full.webp" alt="" loading="lazy" width="1400" height="935">
+  </picture>
+</figure><figure class="md-image">
+  <picture>
+    <source srcset="/assets/img/blog/img/400167050_750134100479216_293610792512181331_n-thumbnail.webp 300w, /assets/img/blog/img/400167050_750134100479216_293610792512181331_n-preview.webp 800w, /assets/img/blog/img/400167050_750134100479216_293610792512181331_n-full.webp 1400w" sizes="(max-width: 768px) 100vw, 800px" type="image/webp">
+    <img src="/assets/img/blog/img/400167050_750134100479216_293610792512181331_n-full.webp" alt="" loading="lazy" width="1400" height="935">
+  </picture>
+</figure></p>
+<p><figure class="md-image">
+  <picture>
+    <source srcset="/assets/img/blog/img/400175763_750137117145581_2512030399661623454_n-preview.webp 800w, /assets/img/blog/img/400175763_750137117145581_2512030399661623454_n-full.webp 1400w, /assets/img/blog/img/400175763_750137117145581_2512030399661623454_n-thumbnail.webp 300w" sizes="(max-width: 768px) 100vw, 800px" type="image/webp">
+    <img src="/assets/img/blog/img/400175763_750137117145581_2512030399661623454_n-full.webp" alt="" loading="lazy" width="1400" height="935">
+  </picture>
+</figure></p>
+<p><a href="https://garage48.org/events/6th-cassini-hackathon">https://garage48.org/events/6th-cassini-hackathon</a> <a href="https://www.cassini.eu/hackathons/estonia?mtm_campaign=6CHLOEE">https://www.cassini.eu/hackathons/estonia?mtm_campaign=6CHLOEE</a></p>
+<p>Gratheon project registered: <a href="https://taikai.network/cassinihackathons/hackathons/intdev-humaid/projects/cloewercb02zevm01kqo4xlr7/idea">https://taikai.network/cassinihackathons/hackathons/intdev-humaid/projects/cloewercb02zevm01kqo4xlr7/idea</a></p>
+<p>APIs to be used:</p>
+<p><a href="https://dataspace.copernicus.eu/analyse/apis">https://dataspace.copernicus.eu/analyse/apis</a></p>
+<p><a href="https://www.cassini.eu/hackathons/tools">https://www.cassini.eu/hackathons/tools</a></p>
+<h3 id="6-judging-criteria"><strong>6. JUDGING CRITERIA</strong></h3>
+<p>Both at the local level and the European level your solutions will be judged against three simple criteria.</p>
+<ol>
+<li><strong>Relevance (33%) -</strong> Does the project address one of the hackathon's three challenges? Does the project make use of Copernicus, Galileo and/or EGNOS data and signals?</li>
+<li><strong>Innovativeness (33%) -</strong> How innovative is the idea compared to products/services that are already on the market? Is there potential for a viable business case?</li>
+<li><strong>Quality of the team (33%) -</strong> Do the technical, business and creative expertise of the team members match the needs of the project?</li>
+</ol>
+<h1 id="the-mentors">The Mentors</h1>
+<p><img loading="lazy" src="https://media.voog.com/0000/0036/7580/photos/2020-11-30%2013.54.09.jpg" alt="https://media.voog.com/0000/0036/7580/photos/2020-11-30 13.54.09.jpg" /></p>
+<p><strong>David Clark</strong></p>
+<p>Founder Tallon OÜ | Venture Partner at Tera VC I Entrepreneur &amp; Angel Investor</p>
+<p><img loading="lazy" src="https://media.voog.com/0000/0036/7580/photos/e6a7977daab5-pilt3.jpeg" alt="https://media.voog.com/0000/0036/7580/photos/e6a7977daab5-pilt3.jpeg" /></p>
+<p><strong>Indrek Kelder</strong></p>
+<p>Mentor at Cleantech ForEst</p>
+<p><img loading="lazy" src="https://media.voog.com/0000/0036/7580/photos/Ilya%20photo.jpeg" alt="https://media.voog.com/0000/0036/7580/photos/Ilya photo.jpeg" /></p>
+<p><strong>Ilya Bolkhovsky</strong></p>
+<p>Geospatial Product Manager</p>
+<p><img loading="lazy" src="https://media.voog.com/0000/0036/7580/photos/karin%20maasel.jpeg" alt="https://media.voog.com/0000/0036/7580/photos/karin maasel.jpeg" /></p>
+<p><strong>Karin Maasel</strong></p>
+<p>Executive Director at Data Friendly Space</p>
+<p><img loading="lazy" src="https://media.voog.com/0000/0036/7580/photos/Villem%20Nilbe.jpeg" alt="https://media.voog.com/0000/0036/7580/photos/Villem Nilbe.jpeg" /></p>
+<p><strong>Villem Nilbe</strong></p>
+<p>Product Designer at eAgronom</p>
+<p><img loading="lazy" src="http://media.voog.com/0000/0036/7580/photos/calumcameron.jpeg" alt="http://media.voog.com/0000/0036/7580/photos/calumcameron.jpeg" /></p>
+<p><strong>Calum Cameron</strong></p>
+<p>CEO of DP Innovation Labs and Edasi Labs</p>
+<p><img loading="lazy" src="https://media.voog.com/0000/0036/7580/photos/jana%20saastamoinen.jpg" alt="https://media.voog.com/0000/0036/7580/photos/jana saastamoinen.jpg" /></p>
+<p><strong>Jana Saastamoinen</strong></p>
+<p>Marketing Manager at Garage48</p>
+<p><img loading="lazy" src="https://media.voog.com/0000/0036/7580/photos/romet%20tagobert%20pic%20copy.png" alt="https://media.voog.com/0000/0036/7580/photos/romet tagobert pic copy.png" /></p>
+<p><strong>Romet Tagobert</strong></p>
+<p>Senior Software Engineer at Twilio</p>
+<p><img loading="lazy" src="https://media.voog.com/0000/0036/7580/photos/Fariha.jpg" alt="https://media.voog.com/0000/0036/7580/photos/Fariha.jpg" /></p>
+<p><strong>Fariha Harun</strong></p>
+<p>Data Analyst/Developer at AlphaGIS</p>
+<p><img loading="lazy" src="https://media.voog.com/0000/0036/7580/photos/Kristiina%20Lillestik.jpg" alt="https://media.voog.com/0000/0036/7580/photos/Kristiina Lillestik.jpg" /></p>
+<p><strong>Kristiina Lillestik</strong></p>
+<p>Head of Foreign Relations in the Ministry of Regional Affairs and Agriculture</p>
+<p><img loading="lazy" src="https://media.voog.com/0000/0036/7580/photos/Andres%20Luhamaa.jpg" alt="https://media.voog.com/0000/0036/7580/photos/Andres Luhamaa.jpg" /></p>
+<p><strong>Andres Luhamaa</strong></p>
+<p>Product owner for KappaOne Sentinel-1 data layer services</p>
+<p><img loading="lazy" src="https://media.voog.com/0000/0036/7580/photos/berk%20erdem%20bw.jpeg" alt="https://media.voog.com/0000/0036/7580/photos/berk erdem bw.jpeg" /></p>
+<p><strong>Berk Erdem</strong></p>
+<p>Project Manager at ESTDEV</p>
+<p><img loading="lazy" src="https://media.voog.com/0000/0036/7580/photos/Marius.jpg" alt="https://media.voog.com/0000/0036/7580/photos/Marius.jpg" /></p>
+<p><strong>Marius Taparavičius</strong></p>
+<p>Lawyer at Lithuanian Red Cross society/Lietuvos Raudonojo Kryžiaus draugija</p>
+<p><a href="https://prod-files-secure.s3.us-west-2.amazonaws.com/6b3663fb-4bc2-4044-80e1-5d6ea956abef/a70c8f25-17ad-40cb-9721-af7dc661dc2f/Gratheon_Garage48___Cassini_pitch.pdf">First Gratheon Garage48 pitch to get a team.pdf</a></p>
+<p><a href="https://www.notion.so/Final-Garage48-project-page-395bddc3353f45a5bae301ca13ddde28?pvs=21">Final Garage48 project page</a></p>
+<p><a href="https://www.notion.so/Vocal-pitch-by-Aleksei-94ab6405c75942408ba896194ed31d59?pvs=21">Vocal pitch (by Aleksei)</a></p>
+<p><a href="https://www.notion.so/Share-of-beehive-inspection-public-URL-477d096f683542f4a182e53ff5f23780?pvs=21">Project page on the web</a></p>
+<p><figure class="md-image">
+  <picture>
+    <source srcset="/assets/img/blog/img/product-field-map-thumbnail.webp 300w, /assets/img/blog/img/product-field-map-preview.webp 800w, /assets/img/blog/img/product-field-map-full.webp 900w" sizes="(max-width: 768px) 100vw, 800px" type="image/webp">
+    <img src="/assets/img/blog/img/product-field-map-full.webp" alt="" loading="lazy" width="900" height="878">
+  </picture>
+</figure><br />
+Product Field Map by <strong>Ilya Bolkhovsky</strong></p>
+
+    </div>
+    
+    
+    
+    <nav class="prev-next" aria-label="Page navigation">
+        
+        <a href="/blog/2023-11-23-featured-in-a-delfi-article/" class="prev-link">
+            <span class="prev-label">← Previous</span>
+            <span class="prev-title">2023 11 23 📢 Featured in a Delfi article</span>
+        </a>
+        
+        
+        <a href="/blog/2023-10-28-climathon-hackathon/" class="next-link">
+            <span class="next-label">Next →</span>
+            <span class="next-title">2023 10 28 🛠️ Climathon hackathon</span>
+        </a>
+        
+    </nav>
+    
+</article>
+
+        </main>
+        <nav class="toc" aria-label="On this page">
+  <h2 class="toc-title">On this page</h2>
+<ul class="toc-list">
+  <li class="toc-item">
+    <a href="#problem">Problem</a>
+  </li>
+  <li class="toc-item">
+    <a href="#eu-space-technologies">EU space technologies</a>
+  </li>
+  <li class="toc-item">
+    <a href="#design-mockup">Design mockup</a>
+  </li>
+  <li class="toc-item">
+    <a href="#system-design">System design</a>
+<ul class="toc-sublist">
+  <li class="toc-item">
+    <a href="#6-judging-criteria">6. JUDGING CRITERIA</a>
+  </li>
+</ul>
+  </li>
+</ul>
+</nav>
+
+    </div>
+    <script>
+    (function() {
+        var players = document.querySelectorAll("[data-audio-player]");
+        players.forEach(function(container) {
+            var audio = container.querySelector("[data-audio-element]");
+            var toggleBtn = container.querySelector("[data-audio-toggle]");
+            var wave = container.querySelector("[data-audio-wave]");
+            if (!audio || !toggleBtn || !wave) {
+                return;
+            }
+            var audioCtx = null;
+            var sourceNode = null;
+            var analyser = null;
+            var waveData = null;
+            var rafId = 0;
+
+            function syncToggleState() {
+                var isPlaying = !audio.paused && !audio.ended;
+                toggleBtn.classList.toggle("is-playing", isPlaying);
+                var label = isPlaying ? (toggleBtn.dataset.stopLabel || "Stop") : (toggleBtn.dataset.playLabel || "Listen");
+                toggleBtn.setAttribute("aria-label", label);
+                toggleBtn.setAttribute("title", label);
+            }
+
+            function ensureVisualizer() {
+                if (analyser) {
+                    return;
+                }
+                var AudioCtx = window.AudioContext || window.webkitAudioContext;
+                if (!AudioCtx) {
+                    return;
+                }
+                audioCtx = new AudioCtx();
+                sourceNode = audioCtx.createMediaElementSource(audio);
+                analyser = audioCtx.createAnalyser();
+                analyser.fftSize = 1024;
+                waveData = new Uint8Array(analyser.fftSize);
+                sourceNode.connect(analyser);
+                analyser.connect(audioCtx.destination);
+            }
+
+            function stopWave() {
+                if (rafId) {
+                    cancelAnimationFrame(rafId);
+                    rafId = 0;
+                }
+            }
+
+            function drawWave() {
+                if (!analyser || !wave) {
+                    return;
+                }
+                var dpr = window.devicePixelRatio || 1;
+                var w = Math.max(88, wave.clientWidth || 88);
+                var h = Math.max(28, wave.clientHeight || 28);
+                if (wave.width !== Math.floor(w * dpr) || wave.height !== Math.floor(h * dpr)) {
+                    wave.width = Math.floor(w * dpr);
+                    wave.height = Math.floor(h * dpr);
+                }
+                var ctx = wave.getContext("2d");
+                if (!ctx) {
+                    return;
+                }
+                ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+                ctx.clearRect(0, 0, w, h);
+                ctx.strokeStyle = "#0066cc";
+                ctx.lineWidth = 1.2;
+
+                analyser.getByteTimeDomainData(waveData);
+                ctx.beginPath();
+                var slice = waveData.length / w;
+                for (var x = 0; x < w; x++) {
+                    var idx = Math.floor(x * slice);
+                    var y = ((waveData[idx] - 128) / 128) * (h * 0.36) + (h / 2);
+                    if (x === 0) {
+                        ctx.moveTo(x, y);
+                    } else {
+                        ctx.lineTo(x, y);
+                    }
+                }
+                ctx.stroke();
+
+                if (!audio.paused && !audio.ended) {
+                    rafId = requestAnimationFrame(drawWave);
+                } else {
+                    stopWave();
+                }
+            }
+
+            toggleBtn.addEventListener("click", function() {
+                if (!audio.paused && !audio.ended) {
+                    audio.pause();
+                    audio.currentTime = 0;
+                    syncToggleState();
+                    stopWave();
+                    return;
+                }
+                ensureVisualizer();
+                if (audioCtx && audioCtx.state === "suspended") {
+                    audioCtx.resume().catch(function() {});
+                }
+                var started = audio.play();
+                if (started && typeof started.then === "function") {
+                    started.then(function() {
+                        syncToggleState();
+                        drawWave();
+                    }).catch(function() {});
+                    return;
+                }
+                syncToggleState();
+                drawWave();
+            });
+            audio.addEventListener("pause", syncToggleState);
+            audio.addEventListener("play", syncToggleState);
+            audio.addEventListener("ended", function() {
+                syncToggleState();
+                stopWave();
+            });
+
+            syncToggleState();
+        });
+    })();
+    </script>
+    <script defer src="/assets/js/main.js"></script>
+</body>
+</html>
+

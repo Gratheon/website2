@@ -1,31 +1,39 @@
 # gratheon.com
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+This website is generated with [`blog-engine-md`](../blog-engine-md) from Markdown content.
 
-## Development on local machine
+## Development
 
-```bash
-pnpm install
-pnpm run start
-```
-
-Open http://localhost:3000 to preview
-
-## Building for production
-
-The website is built locally and static files are committed to git:
+The repo is expected to live next to `blog-engine-md`:
 
 ```bash
-pnpm run build
+../blog-engine-md/blog-engine serve
+# or
+just serve
 ```
 
-This generates static files in the `build/` directory which are served by nginx.
+Open the local URL printed by the engine.
 
-## Deployment
+## Build
 
-On push to main branch:
-1. Self-hosted runner pulls latest code (including `build/` directory)
-2. Restarts search service (Docker)
-3. Reloads nginx to serve updated static files
+```bash
+just build
+```
 
-nginx serves static files from `/www/website/build/` directory.
+This generates static files in `dist/`.
+
+For the current nginx/deployment layout that expects `build/`:
+
+```bash
+just publish
+```
+
+## Content
+
+- `content/` is the source used by `blog-engine-md`.
+- Most pages are Markdown copied from the previous Docusaurus content roots.
+- Two pages use custom templates:
+  - `content/index.md` → `templates/front.html`
+  - `content/pricing.md` → `templates/pricing.html`
+
+Legacy Docusaurus files are still present for reference while the migration stabilizes.

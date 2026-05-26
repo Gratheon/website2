@@ -1,261 +1,1568 @@
-<!doctype html><html lang=en dir=ltr class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-web-app/features/bottom-board-management" data-has-hydrated=false><head><meta charset=UTF-8><meta name=generator content="Docusaurus v3.9.2"><title data-rh=true>bottom-board-management | Gratheon</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"/><meta data-rh=true name=twitter:card content=summary_large_image /><meta data-rh=true property=og:image content=https://gratheon.com/img/gratheon-web-app.webp /><meta data-rh=true name=twitter:image content=https://gratheon.com/img/gratheon-web-app.webp /><meta data-rh=true property=og:url content=https://gratheon.com/docs/web-app/features/bottom-board-management /><meta data-rh=true property=og:locale content=en /><meta data-rh=true name=docusaurus_locale content=en /><meta data-rh=true name=docsearch:language content=en /><meta data-rh=true name=docusaurus_version content=current /><meta data-rh=true name=docusaurus_tag content=docs-default-current /><meta data-rh=true name=docsearch:version content=current /><meta data-rh=true name=docsearch:docusaurus_tag content=docs-default-current /><meta data-rh=true property=og:title content="bottom-board-management | Gratheon"/><meta data-rh=true name=description content="This document describes the technical implementation of the hive bottom board feature for varroa mite monitoring. The feature spans three microservices: swarm-api, image-splitter, and web-app."/><meta data-rh=true property=og:description content="This document describes the technical implementation of the hive bottom board feature for varroa mite monitoring. The feature spans three microservices: swarm-api, image-splitter, and web-app."/><link data-rh=true rel=icon href=/favicons/favicon.ico /><link data-rh=true rel=canonical href=https://gratheon.com/docs/web-app/features/bottom-board-management /><link data-rh=true rel=alternate href=https://gratheon.com/docs/web-app/features/bottom-board-management hreflang=en /><link data-rh=true rel=alternate href=https://gratheon.com/docs/web-app/features/bottom-board-management hreflang=x-default /><script data-rh=true type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://gratheon.com/docs/web-app/","name":"📱 Web-app","position":1},{"@type":"ListItem","item":"https://gratheon.com/docs/web-app/features/bottom-board-management","name":"bottom-board-management","position":2}]}</script><link rel=alternate type=application/rss+xml href=/blog/rss.xml title="Gratheon RSS Feed"><link rel=alternate type=application/atom+xml href=/blog/atom.xml title="Gratheon Atom Feed"><link rel=preconnect href=https://www.googletagmanager.com><script>window.dataLayer=window.dataLayer||[],function(e,t,a,n,r){e[n]=e[n]||[],e[n].push({"gtm.start":new Date().getTime(),event:"gtm.js"});var d=t.getElementsByTagName(a)[0],g=t.createElement(a);g.async=!0,g.src="https://www.googletagmanager.com/gtm.js?id="+r+("dataLayer"!=n?"&l="+n:""),d.parentNode.insertBefore(g,d)}(window,document,"script","dataLayer","GTM-KH4KC9")</script><link rel=stylesheet href=/assets/css/styles.02ef3496.css /><script src=/assets/js/runtime~main.087be3ce.js defer></script><script src=/assets/js/main.4b3c6040.js defer></script></head><body class=navigation-with-keyboard><svg style="display: none;"><defs>
-<symbol id=theme-svg-external-link viewBox="0 0 24 24"><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
-</defs></svg>
-<script>!function(){var t;document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script>
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KH4KC9" height=0 width=0 style=display:none;visibility:hidden></iframe></noscript><div id=__docusaurus><div role=region aria-label="Skip to main content"><a class=skipToContent_poJ9 href=#__docusaurus_skipToContent_fallback>Skip to main content</a></div><nav aria-label=Main class="theme-layout-navbar navbar navbar--fixed-top"><div class=navbar__inner><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded=false class="navbar__toggle clean-btn" type=button><svg width=30 height=30 viewBox="0 0 30 30" aria-hidden=true><path stroke=currentColor stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d="M4 7h22M4 15h22M4 23h22"/></svg></button><a class=navbar__brand href=/><div class=navbar__logo><img src=/img/logo_v7w.svg alt=Gratheon class="themedComponent_rn3I themedComponent--light_bBhh"/><img src=/img/logo_v7w.svg alt=Gratheon class="themedComponent_rn3I themedComponent--dark_zi9f"/></div><b class="navbar__title text--truncate"></b></a><a class="navbar__item navbar__link" href=/about>About</a><a class="navbar__item navbar__link" href=/about/products>Products</a><a aria-current=page class="navbar__item navbar__link navbar__link--active" href=/docs/API/>Docs</a><a class="navbar__item navbar__link" sidebarid=researchSidebar href=/research>Research</a><a class="navbar__item navbar__link" href=/blog>Blog</a><a class="navbar__item navbar__link" href=/pricing>Pricing</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class=navbarSearchContainer_rLJk><input type=text placeholder=Search style="padding:7px 15px;border:2px solid #CCC;border-radius:5px"/></div><a href=https://discord.gg/PcbP4uedWj target=_blank rel="noopener noreferrer" class="navbar__item navbar__link navbar--discord-link" aria-label="Discord Invite"></a><a href=https://github.com/gratheon/web-app target=_blank rel="noopener noreferrer" class="navbar__item navbar__link header--github-link" aria-label="GitHub repository"></a><a href=https://app.gratheon.com/account/authenticate/ target=_blank rel="noopener noreferrer" class="navbar__item navbar__link">Log in<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_c9sx><use href=#theme-svg-external-link /></svg></a></div></div><div role=presentation class=navbar-sidebar__backdrop></div></nav><div id=__docusaurus_skipToContent_fallback class="theme-layout-main main-wrapper mainWrapper_TcZ4"><div class=docsWrapper_a5BB><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_jePA" type=button></button><div class=docRoot_YOz7><aside class="theme-doc-sidebar-container docSidebarContainer_PCNi"><div class=sidebarViewport_svvY><div class=sidebar_yZ0v><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_ib_h"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_rikP menu__link menu__link--sublist" href=/docs/API/><span title="🔗 API" class=categoryLinkLabel_dnDz>🔗 API</span></a><button aria-label="Expand sidebar category '🔗 API'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_rikP menu__link menu__link--sublist menu__link--active" href=/docs/web-app/><span title="📱 Web-app" class=categoryLinkLabel_dnDz>📱 Web-app</span></a><button aria-label="Collapse sidebar category '📱 Web-app'" aria-expanded=true type=button class="clean-btn menu__caret"></button></div><ul class=menu__list><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href="/docs/web-app/Tech stack, conventions, environments"><span title="Tech stack, conventions, environments" class=linkLabel_I9IG>Tech stack, conventions, environments</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href="/docs/web-app/UX - UI wireframes"><span title="UX - UI wireframes" class=linkLabel_I9IG>UX - UI wireframes</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_rikP menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role=button aria-expanded=true tabindex=0 href=/docs/web-app/features/split-colony><span title=features class=categoryLinkLabel_dnDz>features</span></a></div><ul class=menu__list><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/docs/web-app/features/split-colony><span title="Split Colony - Technical Documentation" class=linkLabel_I9IG>Split Colony - Technical Documentation</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/docs/web-app/features/join-colonies><span title="Join Colonies - Technical Documentation" class=linkLabel_I9IG>Join Colonies - Technical Documentation</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/docs/web-app/features/frame-photo-upload><span title="Frame Photo Upload - Technical Documentation" class=linkLabel_I9IG>Frame Photo Upload - Technical Documentation</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/docs/web-app/features/apiary-management><span title="Apiary Management - Technical Documentation" class=linkLabel_I9IG>Apiary Management - Technical Documentation</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/docs/web-app/features/queen-detection><span title="Queen Detection - Technical Documentation" class=linkLabel_I9IG>Queen Detection - Technical Documentation</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/docs/web-app/features/queen-management><span title="Queen Management - Technical Documentation" class=linkLabel_I9IG>Queen Management - Technical Documentation</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/docs/web-app/features/frame-side-management><span title="Frame Side Management - Technical Documentation" class=linkLabel_I9IG>Frame Side Management - Technical Documentation</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/docs/web-app/features/hive-placement-planner><span title="Hive Placement Planner - Technical Documentation" class=linkLabel_I9IG>Hive Placement Planner - Technical Documentation</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/docs/web-app/features/hive-management><span title="Hive Management - Technical Documentation" class=linkLabel_I9IG>Hive Management - Technical Documentation</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/docs/web-app/features/user-registration><span title="User Registration - Technical Documentation" class=linkLabel_I9IG>User Registration - Technical Documentation</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/docs/web-app/features/user-profile-editing><span title="User Profile Editing - Technical Documentation" class=linkLabel_I9IG>User Profile Editing - Technical Documentation</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/docs/web-app/features/telemetry-storage><span title="Hive Telemetry Storage - Technical Documentation" class=linkLabel_I9IG>Hive Telemetry Storage - Technical Documentation</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/docs/web-app/features/timeseries-analytics><span title="Timeseries Data Analytics - Technical Documentation" class=linkLabel_I9IG>Timeseries Data Analytics - Technical Documentation</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/docs/web-app/features/keyboard-support><span title="Keyboard Support - Technical Documentation" class=linkLabel_I9IG>Keyboard Support - Technical Documentation</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current=page tabindex=0 href=/docs/web-app/features/bottom-board-management><span title=bottom-board-management class=linkLabel_I9IG>bottom-board-management</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/docs/web-app/features/varroa-bottom-detection><span title="Varroa Bottom Board Detection - Technical Documentation" class=linkLabel_I9IG>Varroa Bottom Board Detection - Technical Documentation</span></a></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_rikP menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false tabindex=0 href="/docs/web-app/🥞 DB schemas/gate-video-stream"><span title="🥞 DB schemas" class=categoryLinkLabel_dnDz>🥞 DB schemas</span></a></div></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_rikP menu__link menu__link--sublist" href=/docs/beehive-sensors/><span title="🌡️ Beehive IoT sensors" class=categoryLinkLabel_dnDz>🌡️ Beehive IoT sensors</span></a><button aria-label="Expand sidebar category '🌡️ Beehive IoT sensors'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_rikP menu__link menu__link--sublist" href=/docs/entrance-observer/><span title="👁️‍🗨️ Entrance observer" class=categoryLinkLabel_dnDz>👁️‍🗨️ Entrance observer</span></a><button aria-label="Expand sidebar category '👁️‍🗨️ Entrance observer'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_rikP menu__link menu__link--sublist" href=/docs/robotic-beehive/><span title="🧿 Robotic beehive" class=categoryLinkLabel_dnDz>🧿 Robotic beehive</span></a><button aria-label="Expand sidebar category '🧿 Robotic beehive'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/billing-system><span title="Billing System Documentation" class=linkLabel_I9IG>Billing System Documentation</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a href=https://github.com/orgs/Gratheon/projects/5 target=_blank rel="noopener noreferrer" class="menu__link menuExternalLink_FdF6"><span title="☑️ Tasks" class=linkLabel_I9IG>☑️ Tasks</span><svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_c9sx><use href=#theme-svg-external-link /></svg></a></ul></nav></div></div></aside><main class=docMainContainer_aHOd><div class="container padding-top--md padding-bottom--lg"><div class=row><div class="col docItemCol_BJgu"><div class=docItemContainer_PUtD><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_dpnR" aria-label=Breadcrumbs><ul class=breadcrumbs><li class=breadcrumbs__item><a aria-label="Home page" class=breadcrumbs__link href=/><svg viewBox="0 0 24 24" class=breadcrumbHomeIcon__OJg><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill=currentColor /></svg></a><li class=breadcrumbs__item><a class=breadcrumbs__link href=/docs/web-app/><span>📱 Web-app</span></a><li class=breadcrumbs__item><span class=breadcrumbs__link>features</span><li class="breadcrumbs__item breadcrumbs__item--active"><span class=breadcrumbs__link>bottom-board-management</span></ul></nav><div class="tocCollapsible_RHmT theme-doc-toc-mobile tocMobile_VHIv"><button type=button class="clean-btn tocCollapsibleButton_POOD">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>bottom-board-management</h1></header><p>This document describes the technical implementation of the hive bottom board feature for varroa mite monitoring. The feature spans three microservices: swarm-api, image-splitter, and web-app.</p>
-<h2 class="anchor anchorTargetStickyNavbar_rb2N" id=architecture>Architecture<a href=#architecture class=hash-link aria-label="Direct link to Architecture" title="Direct link to Architecture" translate=no>​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=service-dependencies>Service Dependencies<a href=#service-dependencies class=hash-link aria-label="Direct link to Service Dependencies" title="Direct link to Service Dependencies" translate=no>​</a></h3>
-<!-- -->
-<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=data-flow>Data Flow<a href=#data-flow class=hash-link aria-label="Direct link to Data Flow" title="Direct link to Data Flow" translate=no>​</a></h3>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bottom board management | Gratheon</title>
+    
+    <meta name="description" content="This document describes the technical implementation of the hive bottom board feature for varroa mite monitoring. The feature spans three microservices: swarm-api, image-splitter, and web-app.">
+    
+    
+    <link rel="canonical" href="https://gratheon.com/docs/web-app/features/bottom-board-management/">
+    <meta property="og:title" content="bottom board management">
+    <meta property="og:description" content="This document describes the technical implementation of the hive bottom board feature for varroa mite monitoring. The feature spans three microservices: swarm-api, image-splitter, and web-app.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gratheon.com/docs/web-app/features/bottom-board-management/">
+    <meta property="og:image" content="https://gratheon.com/assets/img/assets/img/gratheon-web-app-preview.webp">
+    <meta property="og:site_name" content="Gratheon">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="bottom board management">
+    <meta name="twitter:description" content="This document describes the technical implementation of the hive bottom board feature for varroa mite monitoring. The feature spans three microservices: swarm-api, image-splitter, and web-app.">
+    <meta name="twitter:image" content="https://gratheon.com/assets/img/assets/img/gratheon-web-app-preview.webp">
+    <meta name="twitter:site" content="@gratheon">
+    <meta name="twitter:creator" content="@gratheon">
+    
+    <link rel="icon" href="/assets/favicons/favicon.ico">
+    <style>
+        :root {
+            --sidebar-width: 280px;
+            --toc-width: 240px;
+            --nav-bg: #f8f9fa;
+            --nav-border: #e0e0e0;
+            --nav-active: #0066cc;
+            --bg-primary: #ffffff;
+            --text-primary: #333333;
+            --text-secondary: #666666;
+            --quote-bg: #f5f9ff;
+            --quote-border: #8cb8ee;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background: var(--bg-primary);
+        }
+         
+        .site-header {
+            border-bottom: 1px solid var(--nav-border);
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+        .navbar-logo {
+            display: inline-flex;
+            align-items: center;
+        }
+        .navbar-logo img {
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+            object-fit: cover;
+        }
+        .site-nav {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .lang-switcher {
+            display: inline-flex;
+            gap: 4px;
+            padding: 3px;
+            border: 1px solid var(--nav-border);
+            border-radius: 999px;
+            background: var(--nav-bg);
+        }
+        .lang-link {
+            border: 0;
+            border-radius: 999px;
+            padding: 6px 11px;
+            font-size: 0.8em;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .lang-link.is-active {
+            color: #fff;
+            background: var(--nav-active);
+        }
+        .site-nav a {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .site-nav a:hover { color: var(--nav-active); }
+        .theme-toggle {
+            border: 1px solid var(--nav-border);
+            background: transparent;
+            width: 36px;
+            height: 36px;
+            border-radius: 18px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            color: var(--text-primary);
+        }
+        .theme-toggle svg {
+            width: 18px;
+            height: 18px;
+            display: block;
+        }
+        .theme-toggle .icon-moon { display: none; }
+        html[data-theme='dark'] .theme-toggle .icon-sun { display: none; }
+        html[data-theme='dark'] .theme-toggle .icon-moon { display: block; }
+        html[data-theme='dark'] {
+            --nav-bg: #1d1f22;
+            --nav-border: #383c42;
+            --nav-active: #6aa4ff;
+            --bg-primary: #111315;
+            --text-primary: #eceef1;
+            --text-secondary: #a9adb5;
+            --quote-bg: #18212d;
+            --quote-border: #4b7ebd;
+        }
+        .product-hero-image {
+            height: 200px;
+            overflow: hidden;
+            vertical-align: middle;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .product-hero-image img,
+        .product-hero-image .md-image,
+        .product-hero-image picture {
+            display: block;
+            width: 100%;
+        }
+        .product-hero-image img {
+            width: 100%;
+            margin-top: -10%;
+        }
+        .product-card-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            text-align: center;
+        }
+        .product-card-small {
+            width: 200px;
+        }
+        .product-card-small img,
+        .product-card-small .md-image img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+        }
+        @media (max-width: 700px) {
+            .product-card-grid { justify-content: center; }
+            .product-card-small { width: 45%; min-width: 150px; }
+        }
+        @media (max-width: 480px) {
+            .product-card-small { width: 100%; }
+        }
+         
+        .site-layout {
+            display: flex;
+            width: 100%;
+            max-width: none;
+            margin: 0;
+            min-height: calc(100vh - 120px);
+        }
+         
+        .sidebar {
+            width: var(--sidebar-width);
+            padding: 20px 16px;
+            border-right: 1px solid var(--nav-border);
+            background: var(--nav-bg);
+            flex-shrink: 0;
+            overflow-y: auto;
+            max-height: calc(100vh - 60px);
+            position: sticky;
+            top: 0;
+        }
+        .blog-sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            overflow: hidden;
+        }
+        .sidebar-mode-switch {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 4px;
+            border: 1px solid var(--nav-border);
+            background: var(--bg-primary);
+            border-radius: 999px;
+            padding: 4px;
+        }
+        .sidebar-mode-btn {
+            border: 0;
+            background: transparent;
+            color: var(--text-secondary);
+            border-radius: 999px;
+            font-size: 0.78em;
+            font-weight: 600;
+            padding: 7px 6px;
+            cursor: pointer;
+        }
+        .sidebar-mode-btn.is-active {
+            color: #fff;
+            background: var(--nav-active);
+        }
+        .sidebar-mode-pane {
+            flex: 1;
+            min-height: 0;
+            overflow-y: auto;
+        }
+        .sidebar-timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-height: none;
+            overflow: visible;
+            padding-right: 2px;
+        }
+        .timeline-year h4 {
+            font-size: 0.86em;
+            color: var(--text-secondary);
+            margin: 4px 0;
+        }
+        .timeline-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            margin-bottom: 8px;
+        }
+        .timeline-list li a {
+            display: block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            color: var(--text-primary);
+            text-decoration: none;
+            font-size: 0.86em;
+        }
+        .timeline-list li a time {
+            color: var(--text-secondary);
+            margin-right: 6px;
+            font-size: 0.9em;
+        }
+        .timeline-list li.active > a {
+            color: var(--nav-active);
+            font-weight: 600;
+            background: rgba(0, 102, 204, 0.08);
+        }
+        .sidebar-graph-pane {
+            height: calc(100vh - 130px);
+        }
+        .sidebar-graph-frame {
+            width: 100%;
+            height: 100%;
+            border: 1px solid var(--nav-border);
+            border-radius: 8px;
+            background: var(--bg-primary);
+        }
+        .site-layout.sidebar-graph-mode .sidebar {
+            width: 40%;
+        }
+        .site-layout.sidebar-graph-mode .site-content {
+            max-width: none;
+        }
+        .sidebar-menu, .sidebar-submenu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .sidebar-submenu {
+            padding-left: 16px;
+            border-left: 1px solid var(--nav-border);
+            margin-left: 8px;
+        }
+        .sidebar-item a {
+            display: block;
+            padding: 4px 8px;
+            color: var(--text-primary);
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+        .sidebar-section-head {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .sidebar-section-head a {
+            flex: 1;
+        }
+        .sidebar-toggle {
+            appearance: none;
+            border: 0;
+            background: transparent;
+            color: var(--text-secondary);
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            padding: 0;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+        }
+        .sidebar-toggle:hover {
+            background: rgba(0, 102, 204, 0.08);
+            color: var(--nav-active);
+        }
+        .sidebar-toggle::before {
+            content: "▸";
+            font-size: 0.8em;
+            line-height: 1;
+            transition: transform 0.15s ease;
+        }
+        .sidebar-section.expanded > .sidebar-section-head .sidebar-toggle::before {
+            transform: rotate(90deg);
+        }
+        .sidebar-section > .sidebar-submenu {
+            display: none;
+        }
+        .sidebar-section.expanded > .sidebar-submenu {
+            display: block;
+        }
+        .sidebar-item a:hover {
+            background: rgba(0, 102, 204, 0.08);
+        }
+        .sidebar-item.active > a {
+            color: var(--nav-active);
+            font-weight: 600;
+            background: rgba(0, 102, 204, 0.08);
+        }
+        .sidebar-section > a {
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.8em;
+            letter-spacing: 0.05em;
+            color: var(--text-secondary);
+            margin-top: 12px;
+        }
+         
+        .site-content {
+            flex: 1;
+            min-width: 0;
+            padding: 24px 40px;
+            max-width: 800px;
+        }
+        .embed {
+            width: 100%;
+            max-width: 800px;
+            margin: 24px auto;
+        }
+        .embed iframe {
+            display: block;
+            width: min(100%, 800px);
+            aspect-ratio: 16 / 9;
+            height: auto;
+            border: 0;
+            border-radius: 12px;
+        }
+         
+        .breadcrumbs {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+            padding: 0;
+            margin-bottom: 20px;
+            font-size: 0.85em;
+            color: var(--text-secondary);
+        }
+        .breadcrumbs li:not(:last-child)::after {
+            content: "›";
+            margin-left: 4px;
+            color: var(--text-secondary);
+        }
+        .breadcrumbs a { color: var(--nav-active); text-decoration: none; }
+        .breadcrumbs a:hover { text-decoration: underline; }
+         
+        .toc {
+            width: var(--toc-width);
+            padding: 20px 16px;
+            flex-shrink: 0;
+            position: sticky;
+            top: 0;
+            max-height: 100vh;
+            overflow-y: auto;
+            font-size: 0.85em;
+        }
+        .toc-title {
+            font-size: 0.8em;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        .toc-list, .toc-sublist {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .toc-sublist { padding-left: 12px; }
+        .toc-item a {
+            display: block;
+            padding: 3px 0;
+            color: var(--text-secondary);
+            text-decoration: none;
+            border-left: 2px solid transparent;
+            padding-left: 8px;
+        }
+        .toc-item a:hover {
+            color: var(--nav-active);
+            border-left-color: var(--nav-active);
+        }
+         
+        .prev-next {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid var(--nav-border);
+            gap: 20px;
+        }
+        .prev-next a {
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            padding: 12px 16px;
+            border: 1px solid var(--nav-border);
+            border-radius: 8px;
+            flex: 1;
+            transition: border-color 0.2s;
+        }
+        .prev-next a:hover { border-color: var(--nav-active); }
+        .prev-next .prev-link { text-align: left; }
+        .prev-next .next-link { text-align: right; margin-left: auto; }
+        .prev-label, .next-label {
+            font-size: 0.8em;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+        }
+        .prev-title, .next-title {
+            color: var(--nav-active);
+            font-weight: 500;
+        }
+         
+        article h1 { font-size: 2em; margin-bottom: 8px; }
+        article time { color: var(--text-secondary); font-size: 0.9em; }
+        .article-meta {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 4px;
+            margin: 0 0 8px;
+            flex-wrap: nowrap;
+        }
+        .article-audio {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin: 0 0 0 2px;
+        }
+        .article-audio button {
+            border: 1px solid var(--nav-active);
+            border-radius: 999px;
+            background: var(--nav-active);
+            color: #fff;
+            width: 36px;
+            height: 36px;
+            padding: 0;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        .article-audio button:hover {
+            filter: brightness(0.92);
+        }
+        .article-audio button svg {
+            width: 14px;
+            height: 14px;
+            fill: currentColor;
+        }
+        .article-audio button .icon-stop { display: none; }
+        .article-audio button.is-playing .icon-play { display: none; }
+        .article-audio button.is-playing .icon-stop { display: block; }
+        .article-audio .audio-wave {
+            width: 88px;
+            height: 28px;
+            border: 0;
+            border-radius: 0;
+            background: transparent;
+            opacity: 0.95;
+        }
+        .article-audio button:disabled {
+            opacity: 0.55;
+            cursor: default;
+        }
+        article .tags { margin: 22px 0 24px; }
+        article .tag {
+            display: inline-block;
+            background: var(--nav-bg);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            color: var(--nav-active);
+            margin-right: 4px;
+            text-decoration: none;
+        }
+        article .tag:hover { text-decoration: underline; }
+        article .content { margin-top: 16px; }
+        article .content h2 { margin-top: 2em; margin-bottom: 0.5em; }
+        article .content h3 { margin-top: 1.5em; margin-bottom: 0.4em; }
+        article .content p { margin-bottom: 1em; }
+        article .content blockquote {
+            margin: 1.4em 0;
+            padding: 0.8em 1em;
+            border-left: 4px solid var(--quote-border);
+            background: var(--quote-bg);
+            color: var(--text-secondary);
+            font-style: italic;
+        }
+        article .content blockquote p:last-child {
+            margin-bottom: 0;
+        }
+         
+        .site-footer {
+            border-top: 1px solid var(--nav-border);
+            padding: 20px;
+            color: var(--text-secondary);
+            font-size: 0.9em;
+            text-align: center;
+        }
+         
+        a { color: var(--nav-active); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        img { max-width: 100%; height: auto; }
+        pre {
+            background: #f4f4f4;
+            padding: 15px;
+            overflow-x: auto;
+            border-radius: 4px;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: "Monaco", "Menlo", monospace;
+        }
+        pre code { padding: 0; background: none; }
+        table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background: #f4f4f4; }
+        .section-index { list-style: none; padding: 0; }
+        .section-index li { padding: 6px 0; border-bottom: 1px solid var(--nav-border); }
+        .section-index li a { font-weight: 500; }
+        .section-article-list {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+        .section-article-preview {
+            border-bottom: 1px solid var(--nav-border);
+            padding-bottom: 12px;
+        }
+        .section-article-preview h2 {
+            margin: 0 0 4px;
+            font-size: 1.05em;
+        }
+        .section-article-preview time {
+            display: block;
+            color: var(--text-secondary);
+            font-size: 0.83em;
+            margin-bottom: 6px;
+        }
+        .section-article-preview p {
+            margin: 0;
+            color: var(--text-secondary);
+        }
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            margin: 32px 0 0;
+        }
+        .project-card {
+            background: var(--bg-secondary);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .project-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px var(--shadow);
+        }
+        .project-image {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            background: var(--border);
+            display: block;
+        }
+        .project-content {
+            padding: 20px;
+        }
+        .project-content h3 {
+            margin: 0 0 8px;
+            font-size: 1.25em;
+        }
+        .project-content p {
+            margin: 0 0 16px;
+            color: var(--text-secondary);
+            font-size: 0.95em;
+        }
+        .project-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        .project-tag {
+            font-size: 0.8em;
+            padding: 4px 10px;
+            background: var(--bg-primary);
+            border-radius: 20px;
+            color: var(--text-secondary);
+        }
+         
+        @media (max-width: 1200px) {
+            .toc { display: none; }
+        }
+        @media (max-width: 768px) {
+            .sidebar { display: none; }
+            .site-content { padding: 16px; }
+            .projects-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body class="page-layout-page">
+    <header class="site-header">
+        <div class="header-left">
+            <a class="navbar-logo" href="/">
+                <img class="no-transform" src="/assets/img/logo_v7w.svg" alt="Gratheon">
+            </a>
+            <nav class="site-nav">
+                <a href="/about/">About</a><a href="/about/products/">Products</a><a href="/docs/">Docs</a><a href="/research/">Research</a><a href="/blog/">Blog</a><a href="/pricing/">Pricing</a><a href="https://discord.gg/PcbP4uedWj">Discord</a><a href="https://github.com/gratheon/web-app">GitHub</a><a href="https://app.gratheon.com/account/authenticate/">Log in</a>
+            </nav>
+        </div>
+        <div class="header-right">
+            
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
+                <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="4"></circle>
+                    <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
+                </svg>
+                <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3c0 0 0 0 0 0A7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+    <div class="site-layout">
+        <nav class="sidebar blog-sidebar" aria-label="Navigation" data-sidebar-mode="categories" data-sidebar-default-mode="categories">
+  <div class="sidebar-mode-pane" data-sidebar-mode-pane="categories">
+<ul class="sidebar-menu">
+  <li class="sidebar-item sidebar-section">
+    <div class="sidebar-section-head">
+      <button class="sidebar-toggle" type="button" aria-label="Toggle section _templates" aria-expanded="false"></button>
+      <a href="/docs/web-app/_templates/">_templates</a>
+    </div>
+<ul class="sidebar-submenu">
+  <li class="sidebar-item">
+      <a href="/docs/web-app/_templates/feature-technical-template/">feature technical template</a>
+  </li>
+</ul>
+  </li>
+  <li class="sidebar-item sidebar-section expanded">
+    <div class="sidebar-section-head">
+      <button class="sidebar-toggle" type="button" aria-label="Toggle section Features" aria-expanded="true"></button>
+      <a href="/docs/web-app/features/">Features</a>
+    </div>
+<ul class="sidebar-submenu">
+  <li class="sidebar-item">
+      <a href="/docs/web-app/features/apiary-management/">apiary management</a>
+  </li>
+  <li class="sidebar-item active expanded">
+      <a href="/docs/web-app/features/bottom-board-management/" aria-current="page">bottom board management</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/web-app/features/frame-photo-upload/">frame photo upload</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/web-app/features/frame-side-management/">frame side management</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/web-app/features/hive-management/">hive management</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/web-app/features/hive-placement-planner/">hive placement planner</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/web-app/features/join-colonies/">join colonies</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/web-app/features/keyboard-support/">keyboard support</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/web-app/features/queen-detection/">queen detection</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/web-app/features/queen-management/">queen management</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/web-app/features/split-colony/">split colony</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/web-app/features/telemetry-storage/">telemetry storage</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/web-app/features/timeseries-analytics/">timeseries analytics</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/web-app/features/user-profile-editing/">user profile editing</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/web-app/features/user-registration/">user registration</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/web-app/features/varroa-bottom-detection/">varroa bottom detection</a>
+  </li>
+</ul>
+  </li>
+  <li class="sidebar-item sidebar-section">
+    <div class="sidebar-section-head">
+      <button class="sidebar-toggle" type="button" aria-label="Toggle section 🥞 DB schemas" aria-expanded="false"></button>
+      <a href="/docs/web-app/🥞 DB schemas/">🥞 DB schemas</a>
+    </div>
+<ul class="sidebar-submenu">
+  <li class="sidebar-item">
+      <a href="/docs/web-app/🥞 DB schemas/gate-video-stream/">gate video stream</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/web-app/🥞 DB schemas/image-splitter/">image splitter</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/web-app/🥞 DB schemas/swarm-api/">swarm api</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/web-app/🥞 DB schemas/user-cycle/">user cycle</a>
+  </li>
+</ul>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/web-app/tech-stack-conventions-environments/">Tech stack, conventions, environments</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/web-app/ux-ui-wireframes/">UX   UI wireframes</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/web-app/web-app/">📱 Web-app</a>
+  </li>
+</ul>
+  </div>
+</nav>
+
+        <main class="site-content">
+            
+<article>
+    
+    <nav aria-label="Breadcrumb">
+        <ol class="breadcrumbs">
+            
+            <li>
+                
+                    <a href="/">Home</a>
+                
+            </li>
+            
+            <li>
+                
+                    <a href="/docs/">Docs</a>
+                
+            </li>
+            
+            <li>
+                
+                    <a href="/docs/web-app/">Web-app</a>
+                
+            </li>
+            
+            <li>
+                
+                    <a href="/docs/web-app/features/">Features</a>
+                
+            </li>
+            
+            <li>
+                
+                    <span aria-current="page">bottom board management</span>
+                
+            </li>
+            
+        </ol>
+    </nav>
+    
+    <h1>bottom board management</h1>
+    
+    <div class="content">
+        <p>This document describes the technical implementation of the hive bottom board feature for varroa mite monitoring. The feature spans three microservices: swarm-api, image-splitter, and web-app.</p>
+<h2 id="architecture">Architecture</h2>
+<h3 id="service-dependencies">Service Dependencies</h3>
+<pre><code class="language-mermaid">graph TB
+    A[web-app] --&gt;|GraphQL| B[graphql-router]
+    B --&gt;|addBox| C[swarm-api]
+    B --&gt;|uploadFrameSide| D[image-splitter]
+    B --&gt;|addFileToBox| D
+    C --&gt;|stores| E[(MySQL - boxes)]
+    D --&gt;|stores| F[(MySQL - files_box_rel)]
+    D --&gt;|uploads| G[AWS S3]
+    D --&gt;|queues| H[Job Queue]
+</code></pre>
+<h3 id="data-flow">Data Flow</h3>
 <ol>
-<li class="">
+<li>
 <p><strong>User creates bottom box</strong>:</p>
 <ul>
-<li class="">web-app → graphql-router → swarm-api</li>
-<li class="">Creates record in <code>boxes</code> table with <code>type = 'BOTTOM'</code></li>
+<li>web-app → graphql-router → swarm-api</li>
+<li>Creates record in <code>boxes</code> table with <code>type = 'BOTTOM'</code></li>
 </ul>
 </li>
-<li class="">
+<li>
 <p><strong>User uploads image</strong>:</p>
 <ul>
-<li class="">web-app → graphql-router → image-splitter</li>
-<li class="">Step 1: <code>uploadFrameSide</code> uploads to S3, returns <code>fileId</code></li>
-<li class="">Step 2: <code>addFileToBox</code> links file to box in <code>files_box_rel</code></li>
+<li>web-app → graphql-router → image-splitter</li>
+<li>Step 1: <code>uploadFrameSide</code> uploads to S3, returns <code>fileId</code></li>
+<li>Step 2: <code>addFileToBox</code> links file to box in <code>files_box_rel</code></li>
 </ul>
 </li>
-<li class="">
+<li>
 <p><strong>Image processing</strong>:</p>
 <ul>
-<li class="">image-splitter queues varroa detection job</li>
-<li class="">Job processes image asynchronously</li>
-<li class="">Results stored in <code>detectedObjects</code> JSON field</li>
+<li>image-splitter queues varroa detection job</li>
+<li>Job processes image asynchronously</li>
+<li>Results stored in <code>detectedObjects</code> JSON field</li>
 </ul>
 </li>
 </ol>
-<h2 class="anchor anchorTargetStickyNavbar_rb2N" id=database-schema>Database Schema<a href=#database-schema class=hash-link aria-label="Direct link to Database Schema" title="Direct link to Database Schema" translate=no>​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=swarm-api-schema>swarm-api Schema<a href=#swarm-api-schema class=hash-link aria-label="Direct link to swarm-api Schema" title="Direct link to swarm-api Schema" translate=no>​</a></h3>
-<h4 class="anchor anchorTargetStickyNavbar_rb2N" id=boxes-table>boxes table<a href=#boxes-table class=hash-link aria-label="Direct link to boxes table" title="Direct link to boxes table" translate=no>​</a></h4>
-<div class="language-sql codeBlockContainer_InFo theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_zYTH><pre tabindex=0 class="prism-code language-sql codeBlock_Qx6K thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_VjvH><span class=token-line style=color:#393A34><span class="token keyword" style=color:#00009f>CREATE</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>TABLE</span><span class="token plain"> </span><span class="token identifier punctuation" style=color:#393A34>`</span><span class="token identifier">boxes</span><span class="token identifier punctuation" style=color:#393A34>`</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>(</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token identifier punctuation" style=color:#393A34>`</span><span class="token identifier">id</span><span class="token identifier punctuation" style=color:#393A34>`</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>int</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>unsigned</span><span class="token plain"> </span><span class="token operator" style=color:#393A34>NOT</span><span class="token plain"> </span><span class="token boolean" style=color:#36acaa>NULL</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>AUTO_INCREMENT</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token identifier punctuation" style=color:#393A34>`</span><span class="token identifier">user_id</span><span class="token identifier punctuation" style=color:#393A34>`</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>int</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>unsigned</span><span class="token plain"> </span><span class="token operator" style=color:#393A34>NOT</span><span class="token plain"> </span><span class="token boolean" style=color:#36acaa>NULL</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token identifier punctuation" style=color:#393A34>`</span><span class="token identifier">hive_id</span><span class="token identifier punctuation" style=color:#393A34>`</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>int</span><span class="token plain"> </span><span class="token operator" style=color:#393A34>NOT</span><span class="token plain"> </span><span class="token boolean" style=color:#36acaa>NULL</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token identifier punctuation" style=color:#393A34>`</span><span class="token identifier">active</span><span class="token identifier punctuation" style=color:#393A34>`</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>tinyint</span><span class="token punctuation" style=color:#393A34>(</span><span class="token number" style=color:#36acaa>1</span><span class="token punctuation" style=color:#393A34>)</span><span class="token plain"> </span><span class="token operator" style=color:#393A34>NOT</span><span class="token plain"> </span><span class="token boolean" style=color:#36acaa>NULL</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>DEFAULT</span><span class="token plain"> </span><span class="token string" style=color:#e3116c>'1'</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token identifier punctuation" style=color:#393A34>`</span><span class="token identifier">color</span><span class="token identifier punctuation" style=color:#393A34>`</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>varchar</span><span class="token punctuation" style=color:#393A34>(</span><span class="token number" style=color:#36acaa>10</span><span class="token punctuation" style=color:#393A34>)</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>DEFAULT</span><span class="token plain"> </span><span class="token string" style=color:#e3116c>'#ffc848'</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token identifier punctuation" style=color:#393A34>`</span><span class="token identifier">position</span><span class="token identifier punctuation" style=color:#393A34>`</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>mediumint</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>DEFAULT</span><span class="token plain"> </span><span class="token boolean" style=color:#36acaa>NULL</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token identifier punctuation" style=color:#393A34>`</span><span class="token identifier">type</span><span class="token identifier punctuation" style=color:#393A34>`</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>enum</span><span class="token punctuation" style=color:#393A34>(</span><span class="token string" style=color:#e3116c>'SUPER'</span><span class="token punctuation" style=color:#393A34>,</span><span class="token string" style=color:#e3116c>'DEEP'</span><span class="token punctuation" style=color:#393A34>,</span><span class="token string" style=color:#e3116c>'GATE'</span><span class="token punctuation" style=color:#393A34>,</span><span class="token string" style=color:#e3116c>'VENTILATION'</span><span class="token punctuation" style=color:#393A34>,</span><span class="token string" style=color:#e3116c>'QUEEN_EXCLUDER'</span><span class="token punctuation" style=color:#393A34>,</span><span class="token string" style=color:#e3116c>'HORIZONTAL_FEEDER'</span><span class="token punctuation" style=color:#393A34>,</span><span class="token string" style=color:#e3116c>'BOTTOM'</span><span class="token punctuation" style=color:#393A34>)</span><span class="token plain"> </span><br/></span><span class=token-line style=color:#393A34><span class="token plain">         </span><span class="token keyword" style=color:#00009f>CHARACTER</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>SET</span><span class="token plain"> utf8mb4 </span><span class="token keyword" style=color:#00009f>COLLATE</span><span class="token plain"> utf8mb4_0900_ai_ci </span><span class="token operator" style=color:#393A34>NOT</span><span class="token plain"> </span><span class="token boolean" style=color:#36acaa>NULL</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>DEFAULT</span><span class="token plain"> </span><span class="token string" style=color:#e3116c>'DEEP'</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token keyword" style=color:#00009f>PRIMARY</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>KEY</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>(</span><span class="token identifier punctuation" style=color:#393A34>`</span><span class="token identifier">id</span><span class="token identifier punctuation" style=color:#393A34>`</span><span class="token punctuation" style=color:#393A34>)</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain"></span><span class="token punctuation" style=color:#393A34>)</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>ENGINE</span><span class="token operator" style=color:#393A34>=</span><span class="token keyword" style=color:#00009f>InnoDB</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>DEFAULT</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>CHARSET</span><span class="token operator" style=color:#393A34>=</span><span class="token plain">utf8mb4 </span><span class="token keyword" style=color:#00009f>COLLATE</span><span class="token operator" style=color:#393A34>=</span><span class="token plain">utf8mb4_general_ci</span><span class="token punctuation" style=color:#393A34>;</span><br/></span></code></pre></div></div>
+<h2 id="database-schema">Database Schema</h2>
+<h3 id="swarm-api-schema">swarm-api Schema</h3>
+<h4 id="boxes-table">boxes table</h4>
+<pre><code class="language-sql">CREATE TABLE `boxes` (
+  `id` int unsigned NOT NULL AUTO_INCREMENT,
+  `user_id` int unsigned NOT NULL,
+  `hive_id` int NOT NULL,
+  `active` tinyint(1) NOT NULL DEFAULT '1',
+  `color` varchar(10) DEFAULT '#ffc848',
+  `position` mediumint DEFAULT NULL,
+  `type` enum('SUPER','DEEP','GATE','VENTILATION','QUEEN_EXCLUDER','HORIZONTAL_FEEDER','BOTTOM') 
+         CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL DEFAULT 'DEEP',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+</code></pre>
 <p><strong>Migration</strong>: <code>migrations/20251201025115_add_bottom_box_type.sql</code></p>
-<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=image-splitter-schema>image-splitter Schema<a href=#image-splitter-schema class=hash-link aria-label="Direct link to image-splitter Schema" title="Direct link to image-splitter Schema" translate=no>​</a></h3>
-<h4 class="anchor anchorTargetStickyNavbar_rb2N" id=files_box_rel-table>files_box_rel table<a href=#files_box_rel-table class=hash-link aria-label="Direct link to files_box_rel table" title="Direct link to files_box_rel table" translate=no>​</a></h4>
-<div class="language-sql codeBlockContainer_InFo theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_zYTH><pre tabindex=0 class="prism-code language-sql codeBlock_Qx6K thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_VjvH><span class=token-line style=color:#393A34><span class="token keyword" style=color:#00009f>CREATE</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>TABLE</span><span class="token plain"> </span><span class="token identifier punctuation" style=color:#393A34>`</span><span class="token identifier">files_box_rel</span><span class="token identifier punctuation" style=color:#393A34>`</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>(</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token identifier punctuation" style=color:#393A34>`</span><span class="token identifier">box_id</span><span class="token identifier punctuation" style=color:#393A34>`</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>int</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>unsigned</span><span class="token plain"> </span><span class="token operator" style=color:#393A34>NOT</span><span class="token plain"> </span><span class="token boolean" style=color:#36acaa>NULL</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token identifier punctuation" style=color:#393A34>`</span><span class="token identifier">file_id</span><span class="token identifier punctuation" style=color:#393A34>`</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>int</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>unsigned</span><span class="token plain"> </span><span class="token operator" style=color:#393A34>NOT</span><span class="token plain"> </span><span class="token boolean" style=color:#36acaa>NULL</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token identifier punctuation" style=color:#393A34>`</span><span class="token identifier">user_id</span><span class="token identifier punctuation" style=color:#393A34>`</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>int</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>unsigned</span><span class="token plain"> </span><span class="token operator" style=color:#393A34>NOT</span><span class="token plain"> </span><span class="token boolean" style=color:#36acaa>NULL</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token identifier punctuation" style=color:#393A34>`</span><span class="token identifier">inspection_id</span><span class="token identifier punctuation" style=color:#393A34>`</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>INT</span><span class="token plain"> </span><span class="token boolean" style=color:#36acaa>NULL</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>DEFAULT</span><span class="token plain"> </span><span class="token boolean" style=color:#36acaa>NULL</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token identifier punctuation" style=color:#393A34>`</span><span class="token identifier">added_time</span><span class="token identifier punctuation" style=color:#393A34>`</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>datetime</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>DEFAULT</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>CURRENT_TIMESTAMP</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token keyword" style=color:#00009f>INDEX</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>(</span><span class="token identifier punctuation" style=color:#393A34>`</span><span class="token identifier">user_id</span><span class="token identifier punctuation" style=color:#393A34>`</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> </span><span class="token identifier punctuation" style=color:#393A34>`</span><span class="token identifier">box_id</span><span class="token identifier punctuation" style=color:#393A34>`</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> </span><span class="token identifier punctuation" style=color:#393A34>`</span><span class="token identifier">inspection_id</span><span class="token identifier punctuation" style=color:#393A34>`</span><span class="token punctuation" style=color:#393A34>)</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain"></span><span class="token punctuation" style=color:#393A34>)</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>ENGINE</span><span class="token operator" style=color:#393A34>=</span><span class="token keyword" style=color:#00009f>InnoDB</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>DEFAULT</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>CHARSET</span><span class="token operator" style=color:#393A34>=</span><span class="token plain">utf8mb4 </span><span class="token keyword" style=color:#00009f>COLLATE</span><span class="token operator" style=color:#393A34>=</span><span class="token plain">utf8mb4_bin</span><span class="token punctuation" style=color:#393A34>;</span><br/></span></code></pre></div></div>
+<h3 id="image-splitter-schema">image-splitter Schema</h3>
+<h4 id="files-box-rel-table">files_box_rel table</h4>
+<pre><code class="language-sql">CREATE TABLE `files_box_rel` (
+  `box_id` int unsigned NOT NULL,
+  `file_id` int unsigned NOT NULL,
+  `user_id` int unsigned NOT NULL,
+  `inspection_id` INT NULL DEFAULT NULL,
+  `added_time` datetime DEFAULT CURRENT_TIMESTAMP,
+  INDEX (`user_id`, `box_id`, `inspection_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
+</code></pre>
 <p><strong>Migration</strong>: <code>migrations/018-box-files.sql</code></p>
 <p><strong>Purpose</strong>: Links uploaded files to specific boxes with inspection versioning support.</p>
-<h4 class="anchor anchorTargetStickyNavbar_rb2N" id=relationships>Relationships<a href=#relationships class=hash-link aria-label="Direct link to Relationships" title="Direct link to Relationships" translate=no>​</a></h4>
+<h4 id="relationships">Relationships</h4>
 <ul>
-<li class=""><code>box_id</code> → <code>swarm-api.boxes.id</code> (foreign service reference)</li>
-<li class=""><code>file_id</code> → <code>image-splitter.files.id</code></li>
-<li class=""><code>user_id</code> → user ownership</li>
-<li class=""><code>inspection_id</code> → <code>swarm-api.inspections.id</code> (NULL = current state)</li>
+<li><code>box_id</code> → <code>swarm-api.boxes.id</code> (foreign service reference)</li>
+<li><code>file_id</code> → <code>image-splitter.files.id</code></li>
+<li><code>user_id</code> → user ownership</li>
+<li><code>inspection_id</code> → <code>swarm-api.inspections.id</code> (NULL = current state)</li>
 </ul>
-<h2 class="anchor anchorTargetStickyNavbar_rb2N" id=graphql-api>GraphQL API<a href=#graphql-api class=hash-link aria-label="Direct link to GraphQL API" title="Direct link to GraphQL API" translate=no>​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=swarm-api>swarm-api<a href=#swarm-api class=hash-link aria-label="Direct link to swarm-api" title="Direct link to swarm-api" translate=no>​</a></h3>
-<h4 class="anchor anchorTargetStickyNavbar_rb2N" id=add-box-mutation>Add Box Mutation<a href=#add-box-mutation class=hash-link aria-label="Direct link to Add Box Mutation" title="Direct link to Add Box Mutation" translate=no>​</a></h4>
-<div class="language-graphql codeBlockContainer_InFo theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_zYTH><pre tabindex=0 class="prism-code language-graphql codeBlock_Qx6K thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_VjvH><span class=token-line style=color:#393A34><span class="token keyword" style=color:#00009f>mutation</span><span class="token plain"> </span><span class="token definition-mutation function" style=color:#d73a49>addBox</span><span class="token punctuation" style=color:#393A34>(</span><span class="token variable variable-input" style=color:#36acaa>$hiveId</span><span class="token punctuation" style=color:#393A34>:</span><span class="token plain"> </span><span class="token scalar">ID</span><span class="token operator" style=color:#393A34>!</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> </span><span class="token variable variable-input" style=color:#36acaa>$position</span><span class="token punctuation" style=color:#393A34>:</span><span class="token plain"> </span><span class="token scalar">Int</span><span class="token operator" style=color:#393A34>!</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> </span><span class="token variable variable-input" style=color:#36acaa>$type</span><span class="token punctuation" style=color:#393A34>:</span><span class="token plain"> </span><span class="token class-name">BoxType</span><span class="token operator" style=color:#393A34>!</span><span class="token punctuation" style=color:#393A34>)</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token property-query property-mutation">addBox</span><span class="token punctuation" style=color:#393A34>(</span><span class="token attr-name" style=color:#00a4db>hiveId</span><span class="token punctuation" style=color:#393A34>:</span><span class="token plain"> </span><span class="token variable variable-input" style=color:#36acaa>$hiveId</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> </span><span class="token attr-name" style=color:#00a4db>position</span><span class="token punctuation" style=color:#393A34>:</span><span class="token plain"> </span><span class="token variable variable-input" style=color:#36acaa>$position</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> </span><span class="token attr-name" style=color:#00a4db>type</span><span class="token punctuation" style=color:#393A34>:</span><span class="token plain"> </span><span class="token variable variable-input" style=color:#36acaa>$type</span><span class="token punctuation" style=color:#393A34>)</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">    </span><span class="token property" style=color:#36acaa>id</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">    </span><span class="token keyword" style=color:#00009f>type</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">    </span><span class="token property" style=color:#36acaa>position</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">    </span><span class="token property" style=color:#36acaa>color</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token punctuation" style=color:#393A34>}</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain"></span><span class="token punctuation" style=color:#393A34>}</span><br/></span></code></pre></div></div>
+<h2 id="graphql-api">GraphQL API</h2>
+<h3 id="swarm-api">swarm-api</h3>
+<h4 id="add-box-mutation">Add Box Mutation</h4>
+<pre><code class="language-graphql">mutation addBox($hiveId: ID!, $position: Int!, $type: BoxType!) {
+  addBox(hiveId: $hiveId, position: $position, type: $type) {
+    id
+    type
+    position
+    color
+  }
+}
+</code></pre>
 <p><strong>Variables</strong>:</p>
-<div class="language-json codeBlockContainer_InFo theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_zYTH><pre tabindex=0 class="prism-code language-json codeBlock_Qx6K thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_VjvH><span class=token-line style=color:#393A34><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token property" style=color:#36acaa>"hiveId"</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token string" style=color:#e3116c>"123"</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token property" style=color:#36acaa>"position"</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token number" style=color:#36acaa>0</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token property" style=color:#36acaa>"type"</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token string" style=color:#e3116c>"BOTTOM"</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain"></span><span class="token punctuation" style=color:#393A34>}</span><br/></span></code></pre></div></div>
+<pre><code class="language-json">{
+  &quot;hiveId&quot;: &quot;123&quot;,
+  &quot;position&quot;: 0,
+  &quot;type&quot;: &quot;BOTTOM&quot;
+}
+</code></pre>
 <p><strong>Implementation</strong>: <code>graph/schema.resolvers.go::AddBox()</code></p>
-<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=image-splitter>image-splitter<a href=#image-splitter class=hash-link aria-label="Direct link to image-splitter" title="Direct link to image-splitter" translate=no>​</a></h3>
-<h4 class="anchor anchorTargetStickyNavbar_rb2N" id=upload-file-mutation>Upload File Mutation<a href=#upload-file-mutation class=hash-link aria-label="Direct link to Upload File Mutation" title="Direct link to Upload File Mutation" translate=no>​</a></h4>
-<div class="language-graphql codeBlockContainer_InFo theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_zYTH><pre tabindex=0 class="prism-code language-graphql codeBlock_Qx6K thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_VjvH><span class=token-line style=color:#393A34><span class="token keyword" style=color:#00009f>mutation</span><span class="token plain"> </span><span class="token definition-mutation function" style=color:#d73a49>uploadFrameSide</span><span class="token punctuation" style=color:#393A34>(</span><span class="token variable variable-input" style=color:#36acaa>$file</span><span class="token punctuation" style=color:#393A34>:</span><span class="token plain"> </span><span class="token class-name">Upload</span><span class="token operator" style=color:#393A34>!</span><span class="token punctuation" style=color:#393A34>)</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token property-query property-mutation">uploadFrameSide</span><span class="token punctuation" style=color:#393A34>(</span><span class="token attr-name" style=color:#00a4db>file</span><span class="token punctuation" style=color:#393A34>:</span><span class="token plain"> </span><span class="token variable variable-input" style=color:#36acaa>$file</span><span class="token punctuation" style=color:#393A34>)</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">    </span><span class="token property" style=color:#36acaa>id</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">    </span><span class="token property" style=color:#36acaa>url</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">    </span><span class="token object">resizes</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">      </span><span class="token property" style=color:#36acaa>id</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">      </span><span class="token property" style=color:#36acaa>url</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">      </span><span class="token property" style=color:#36acaa>max_dimension_px</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">    </span><span class="token punctuation" style=color:#393A34>}</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token punctuation" style=color:#393A34>}</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain"></span><span class="token punctuation" style=color:#393A34>}</span><br/></span></code></pre></div></div>
+<h3 id="image-splitter">image-splitter</h3>
+<h4 id="upload-file-mutation">Upload File Mutation</h4>
+<pre><code class="language-graphql">mutation uploadFrameSide($file: Upload!) {
+  uploadFrameSide(file: $file) {
+    id
+    url
+    resizes {
+      id
+      url
+      max_dimension_px
+    }
+  }
+}
+</code></pre>
 <p><strong>Returns</strong>:</p>
-<div class="language-json codeBlockContainer_InFo theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_zYTH><pre tabindex=0 class="prism-code language-json codeBlock_Qx6K thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_VjvH><span class=token-line style=color:#393A34><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token property" style=color:#36acaa>"data"</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">    </span><span class="token property" style=color:#36acaa>"uploadFrameSide"</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">      </span><span class="token property" style=color:#36acaa>"id"</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token string" style=color:#e3116c>"456"</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">      </span><span class="token property" style=color:#36acaa>"url"</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token string" style=color:#e3116c>"https://s3.../original.jpg"</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">      </span><span class="token property" style=color:#36acaa>"resizes"</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>[</span><span class="token plain">...</span><span class="token punctuation" style=color:#393A34>]</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">    </span><span class="token punctuation" style=color:#393A34>}</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token punctuation" style=color:#393A34>}</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain"></span><span class="token punctuation" style=color:#393A34>}</span><br/></span></code></pre></div></div>
+<pre><code class="language-json">{
+  &quot;data&quot;: {
+    &quot;uploadFrameSide&quot;: {
+      &quot;id&quot;: &quot;456&quot;,
+      &quot;url&quot;: &quot;https://s3.../original.jpg&quot;,
+      &quot;resizes&quot;: [...]
+    }
+  }
+}
+</code></pre>
 <p><strong>Implementation</strong>: <code>src/graphql/upload-frame-side.ts</code></p>
-<h4 class="anchor anchorTargetStickyNavbar_rb2N" id=link-file-to-box-mutation>Link File to Box Mutation<a href=#link-file-to-box-mutation class=hash-link aria-label="Direct link to Link File to Box Mutation" title="Direct link to Link File to Box Mutation" translate=no>​</a></h4>
-<div class="language-graphql codeBlockContainer_InFo theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_zYTH><pre tabindex=0 class="prism-code language-graphql codeBlock_Qx6K thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_VjvH><span class=token-line style=color:#393A34><span class="token keyword" style=color:#00009f>mutation</span><span class="token plain"> </span><span class="token definition-mutation function" style=color:#d73a49>addFileToBox</span><span class="token punctuation" style=color:#393A34>(</span><span class="token variable variable-input" style=color:#36acaa>$boxId</span><span class="token punctuation" style=color:#393A34>:</span><span class="token plain"> </span><span class="token scalar">ID</span><span class="token operator" style=color:#393A34>!</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> </span><span class="token variable variable-input" style=color:#36acaa>$fileId</span><span class="token punctuation" style=color:#393A34>:</span><span class="token plain"> </span><span class="token scalar">ID</span><span class="token operator" style=color:#393A34>!</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> </span><span class="token variable variable-input" style=color:#36acaa>$hiveId</span><span class="token punctuation" style=color:#393A34>:</span><span class="token plain"> </span><span class="token scalar">ID</span><span class="token operator" style=color:#393A34>!</span><span class="token punctuation" style=color:#393A34>)</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token property-query property-mutation">addFileToBox</span><span class="token punctuation" style=color:#393A34>(</span><span class="token attr-name" style=color:#00a4db>boxId</span><span class="token punctuation" style=color:#393A34>:</span><span class="token plain"> </span><span class="token variable variable-input" style=color:#36acaa>$boxId</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> </span><span class="token attr-name" style=color:#00a4db>fileId</span><span class="token punctuation" style=color:#393A34>:</span><span class="token plain"> </span><span class="token variable variable-input" style=color:#36acaa>$fileId</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> </span><span class="token attr-name" style=color:#00a4db>hiveId</span><span class="token punctuation" style=color:#393A34>:</span><span class="token plain"> </span><span class="token variable variable-input" style=color:#36acaa>$hiveId</span><span class="token punctuation" style=color:#393A34>)</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain"></span><span class="token punctuation" style=color:#393A34>}</span><br/></span></code></pre></div></div>
+<h4 id="link-file-to-box-mutation">Link File to Box Mutation</h4>
+<pre><code class="language-graphql">mutation addFileToBox($boxId: ID!, $fileId: ID!, $hiveId: ID!) {
+  addFileToBox(boxId: $boxId, fileId: $fileId, hiveId: $hiveId)
+}
+</code></pre>
 <p><strong>Variables</strong>:</p>
-<div class="language-json codeBlockContainer_InFo theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_zYTH><pre tabindex=0 class="prism-code language-json codeBlock_Qx6K thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_VjvH><span class=token-line style=color:#393A34><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token property" style=color:#36acaa>"boxId"</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token string" style=color:#e3116c>"123"</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token property" style=color:#36acaa>"fileId"</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token string" style=color:#e3116c>"456"</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token property" style=color:#36acaa>"hiveId"</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token string" style=color:#e3116c>"789"</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain"></span><span class="token punctuation" style=color:#393A34>}</span><br/></span></code></pre></div></div>
+<pre><code class="language-json">{
+  &quot;boxId&quot;: &quot;123&quot;,
+  &quot;fileId&quot;: &quot;456&quot;,
+  &quot;hiveId&quot;: &quot;789&quot;
+}
+</code></pre>
 <p><strong>Implementation</strong>: <code>src/graphql/resolvers.ts::addFileToBox()</code></p>
-<h2 class="anchor anchorTargetStickyNavbar_rb2N" id=frontend-implementation>Frontend Implementation<a href=#frontend-implementation class=hash-link aria-label="Direct link to Frontend Implementation" title="Direct link to Frontend Implementation" translate=no>​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=bottombox-component>BottomBox Component<a href=#bottombox-component class=hash-link aria-label="Direct link to BottomBox Component" title="Direct link to BottomBox Component" translate=no>​</a></h3>
+<h2 id="frontend-implementation">Frontend Implementation</h2>
+<h3 id="bottombox-component">BottomBox Component</h3>
 <p><strong>Location</strong>: <code>web-app/src/page/hiveEdit/bottomBox/BottomBox.tsx</code></p>
 <p><strong>Key Features</strong>:</p>
 <ul>
-<li class="">File upload with validation</li>
-<li class="">Two-step mutation process</li>
-<li class="">Error handling</li>
-<li class="">Loading states</li>
+<li>File upload with validation</li>
+<li>Two-step mutation process</li>
+<li>Error handling</li>
+<li>Loading states</li>
 </ul>
 <p><strong>Code Structure</strong>:</p>
-<div class="language-typescript codeBlockContainer_InFo theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_zYTH><pre tabindex=0 class="prism-code language-typescript codeBlock_Qx6K thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_VjvH><span class=token-line style=color:#393A34><span class="token keyword" style=color:#00009f>export</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>default</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>function</span><span class="token plain"> </span><span class="token function" style=color:#d73a49>BottomBox</span><span class="token punctuation" style=color:#393A34>(</span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"> boxId</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> hiveId </span><span class="token punctuation" style=color:#393A34>}</span><span class="token punctuation" style=color:#393A34>)</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token comment" style=color:#999988;font-style:italic>// Step 1: Upload file</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token keyword" style=color:#00009f>const</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>[</span><span class="token plain">uploadFile</span><span class="token punctuation" style=color:#393A34>]</span><span class="token plain"> </span><span class="token operator" style=color:#393A34>=</span><span class="token plain"> </span><span class="token function" style=color:#d73a49>useUploadMutation</span><span class="token punctuation" style=color:#393A34>(</span><span class="token operator" style=color:#393A34>...</span><span class="token punctuation" style=color:#393A34>)</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token comment" style=color:#999988;font-style:italic>// Step 2: Link to box</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token keyword" style=color:#00009f>const</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>[</span><span class="token plain">addFileToBoxMutation</span><span class="token punctuation" style=color:#393A34>]</span><span class="token plain"> </span><span class="token operator" style=color:#393A34>=</span><span class="token plain"> </span><span class="token function" style=color:#d73a49>useMutation</span><span class="token punctuation" style=color:#393A34>(</span><span class="token operator" style=color:#393A34>...</span><span class="token punctuation" style=color:#393A34>)</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token keyword" style=color:#00009f>async</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>function</span><span class="token plain"> </span><span class="token function" style=color:#d73a49>onFileSelect</span><span class="token punctuation" style=color:#393A34>(</span><span class="token plain">event</span><span class="token punctuation" style=color:#393A34>)</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">    </span><span class="token keyword" style=color:#00009f>const</span><span class="token plain"> file </span><span class="token operator" style=color:#393A34>=</span><span class="token plain"> event</span><span class="token punctuation" style=color:#393A34>.</span><span class="token plain">target</span><span class="token punctuation" style=color:#393A34>.</span><span class="token plain">files</span><span class="token operator" style=color:#393A34>?.</span><span class="token punctuation" style=color:#393A34>[</span><span class="token number" style=color:#36acaa>0</span><span class="token punctuation" style=color:#393A34>]</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">    </span><br/></span><span class=token-line style=color:#393A34><span class="token plain">    </span><span class="token comment" style=color:#999988;font-style:italic>// Upload file to S3</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">    </span><span class="token keyword" style=color:#00009f>const</span><span class="token plain"> uploadResult </span><span class="token operator" style=color:#393A34>=</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>await</span><span class="token plain"> </span><span class="token function" style=color:#d73a49>uploadFile</span><span class="token punctuation" style=color:#393A34>(</span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"> file </span><span class="token punctuation" style=color:#393A34>}</span><span class="token punctuation" style=color:#393A34>)</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">    </span><span class="token keyword" style=color:#00009f>const</span><span class="token plain"> fileId </span><span class="token operator" style=color:#393A34>=</span><span class="token plain"> uploadResult</span><span class="token punctuation" style=color:#393A34>.</span><span class="token plain">data</span><span class="token punctuation" style=color:#393A34>.</span><span class="token plain">uploadFrameSide</span><span class="token punctuation" style=color:#393A34>.</span><span class="token plain">id</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">    </span><br/></span><span class=token-line style=color:#393A34><span class="token plain">    </span><span class="token comment" style=color:#999988;font-style:italic>// Link file to box</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">    </span><span class="token keyword" style=color:#00009f>await</span><span class="token plain"> </span><span class="token function" style=color:#d73a49>addFileToBoxMutation</span><span class="token punctuation" style=color:#393A34>(</span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"> boxId</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> fileId</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> hiveId </span><span class="token punctuation" style=color:#393A34>}</span><span class="token punctuation" style=color:#393A34>)</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token punctuation" style=color:#393A34>}</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token keyword" style=color:#00009f>return</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>(</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">    </span><span class="token operator" style=color:#393A34>&lt;</span><span class="token plain">div</span><span class="token operator" style=color:#393A34>></span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">      </span><span class="token operator" style=color:#393A34>&lt;</span><span class="token plain">input type</span><span class="token operator" style=color:#393A34>=</span><span class="token string" style=color:#e3116c>"file"</span><span class="token plain"> onChange</span><span class="token operator" style=color:#393A34>=</span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain">onFileSelect</span><span class="token punctuation" style=color:#393A34>}</span><span class="token plain"> </span><span class="token operator" style=color:#393A34>/</span><span class="token operator" style=color:#393A34>></span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">      </span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain">data </span><span class="token operator" style=color:#393A34>&&</span><span class="token plain"> </span><span class="token operator" style=color:#393A34>&lt;</span><span class="token plain">img src</span><span class="token operator" style=color:#393A34>=</span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain">data</span><span class="token punctuation" style=color:#393A34>.</span><span class="token plain">uploadFrameSide</span><span class="token punctuation" style=color:#393A34>.</span><span class="token plain">url</span><span class="token punctuation" style=color:#393A34>}</span><span class="token plain"> </span><span class="token operator" style=color:#393A34>/</span><span class="token operator" style=color:#393A34>></span><span class="token punctuation" style=color:#393A34>}</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">    </span><span class="token operator" style=color:#393A34>&lt;</span><span class="token operator" style=color:#393A34>/</span><span class="token plain">div</span><span class="token operator" style=color:#393A34>></span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token punctuation" style=color:#393A34>)</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain"></span><span class="token punctuation" style=color:#393A34>}</span><br/></span></code></pre></div></div>
-<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=integration-points>Integration Points<a href=#integration-points class=hash-link aria-label="Direct link to Integration Points" title="Direct link to Integration Points" translate=no>​</a></h3>
-<p><strong>hiveButtons.tsx</strong>: Adds "Add bottom" button</p>
-<div class="language-typescript codeBlockContainer_InFo theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_zYTH><pre tabindex=0 class="prism-code language-typescript codeBlock_Qx6K thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_VjvH><span class=token-line style=color:#393A34><span class="token operator" style=color:#393A34>&lt;</span><span class="token plain">Button onClick</span><span class="token operator" style=color:#393A34>=</span><span class="token punctuation" style=color:#393A34>{</span><span class="token punctuation" style=color:#393A34>(</span><span class="token punctuation" style=color:#393A34>)</span><span class="token plain"> </span><span class="token operator" style=color:#393A34>=></span><span class="token plain"> </span><span class="token function" style=color:#d73a49>onBoxAdd</span><span class="token punctuation" style=color:#393A34>(</span><span class="token plain">boxTypes</span><span class="token punctuation" style=color:#393A34>.</span><span class="token constant" style=color:#36acaa>BOTTOM</span><span class="token punctuation" style=color:#393A34>)</span><span class="token punctuation" style=color:#393A34>}</span><span class="token operator" style=color:#393A34>></span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token operator" style=color:#393A34>&lt;</span><span class="token plain">span</span><span class="token operator" style=color:#393A34>></span><span class="token operator" style=color:#393A34>&lt;</span><span class="token constant" style=color:#36acaa>T</span><span class="token operator" style=color:#393A34>></span><span class="token plain">Add bottom</span><span class="token operator" style=color:#393A34>&lt;</span><span class="token operator" style=color:#393A34>/</span><span class="token constant" style=color:#36acaa>T</span><span class="token operator" style=color:#393A34>></span><span class="token operator" style=color:#393A34>&lt;</span><span class="token operator" style=color:#393A34>/</span><span class="token plain">span</span><span class="token operator" style=color:#393A34>></span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain"></span><span class="token operator" style=color:#393A34>&lt;</span><span class="token operator" style=color:#393A34>/</span><span class="token plain">Button</span><span class="token operator" style=color:#393A34>></span><br/></span></code></pre></div></div>
+<pre><code class="language-typescript">export default function BottomBox({ boxId, hiveId }) {
+  // Step 1: Upload file
+  const [uploadFile] = useUploadMutation(...)
+  
+  // Step 2: Link to box
+  const [addFileToBoxMutation] = useMutation(...)
+  
+  async function onFileSelect(event) {
+    const file = event.target.files?.[0]
+    
+    // Upload file to S3
+    const uploadResult = await uploadFile({ file })
+    const fileId = uploadResult.data.uploadFrameSide.id
+    
+    // Link file to box
+    await addFileToBoxMutation({ boxId, fileId, hiveId })
+  }
+  
+  return (
+    &lt;div&gt;
+      &lt;input type=&quot;file&quot; onChange={onFileSelect} /&gt;
+      {data &amp;&amp; &lt;img src={data.uploadFrameSide.url} /&gt;}
+    &lt;/div&gt;
+  )
+}
+</code></pre>
+<h3 id="integration-points">Integration Points</h3>
+<p><strong>hiveButtons.tsx</strong>: Adds &quot;Add bottom&quot; button</p>
+<pre><code class="language-typescript">&lt;Button onClick={() =&gt; onBoxAdd(boxTypes.BOTTOM)}&gt;
+  &lt;span&gt;&lt;T&gt;Add bottom&lt;/T&gt;&lt;/span&gt;
+&lt;/Button&gt;
+</code></pre>
 <p><strong>index.tsx</strong>: Renders BottomBox component</p>
-<div class="language-typescript codeBlockContainer_InFo theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_zYTH><pre tabindex=0 class="prism-code language-typescript codeBlock_Qx6K thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_VjvH><span class=token-line style=color:#393A34><span class="token punctuation" style=color:#393A34>{</span><span class="token plain">box </span><span class="token operator" style=color:#393A34>&&</span><span class="token plain"> box</span><span class="token punctuation" style=color:#393A34>.</span><span class="token plain">type </span><span class="token operator" style=color:#393A34>===</span><span class="token plain"> boxTypes</span><span class="token punctuation" style=color:#393A34>.</span><span class="token constant" style=color:#36acaa>BOTTOM</span><span class="token plain"> </span><span class="token operator" style=color:#393A34>&&</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>(</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token operator" style=color:#393A34>&lt;</span><span class="token plain">BottomBox boxId</span><span class="token operator" style=color:#393A34>=</span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain">boxId</span><span class="token punctuation" style=color:#393A34>}</span><span class="token plain"> hiveId</span><span class="token operator" style=color:#393A34>=</span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain">hiveId</span><span class="token punctuation" style=color:#393A34>}</span><span class="token plain"> </span><span class="token operator" style=color:#393A34>/</span><span class="token operator" style=color:#393A34>></span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain"></span><span class="token punctuation" style=color:#393A34>)</span><span class="token punctuation" style=color:#393A34>}</span><br/></span></code></pre></div></div>
-<h2 class="anchor anchorTargetStickyNavbar_rb2N" id=backend-implementation>Backend Implementation<a href=#backend-implementation class=hash-link aria-label="Direct link to Backend Implementation" title="Direct link to Backend Implementation" translate=no>​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=swarm-api-go>swarm-api (Go)<a href=#swarm-api-go class=hash-link aria-label="Direct link to swarm-api (Go)" title="Direct link to swarm-api (Go)" translate=no>​</a></h3>
-<h4 class="anchor anchorTargetStickyNavbar_rb2N" id=box-model>Box Model<a href=#box-model class=hash-link aria-label="Direct link to Box Model" title="Direct link to Box Model" translate=no>​</a></h4>
+<pre><code class="language-typescript">{box &amp;&amp; box.type === boxTypes.BOTTOM &amp;&amp; (
+  &lt;BottomBox boxId={boxId} hiveId={hiveId} /&gt;
+)}
+</code></pre>
+<h2 id="backend-implementation">Backend Implementation</h2>
+<h3 id="swarm-api-go">swarm-api (Go)</h3>
+<h4 id="box-model">Box Model</h4>
 <p><strong>Location</strong>: <code>graph/model/box.go</code></p>
 <p><strong>Key Methods</strong>:</p>
 <ul>
-<li class=""><code>Create()</code> - Creates new box with type validation</li>
-<li class=""><code>ListByHive()</code> - Fetches boxes for a hive</li>
-<li class=""><code>Get()</code> - Retrieves single box</li>
+<li><code>Create()</code> - Creates new box with type validation</li>
+<li><code>ListByHive()</code> - Fetches boxes for a hive</li>
+<li><code>Get()</code> - Retrieves single box</li>
 </ul>
 <p><strong>Type Constants</strong>:</p>
-<div class="language-go codeBlockContainer_InFo theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_zYTH><pre tabindex=0 class="prism-code language-go codeBlock_Qx6K thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_VjvH><span class=token-line style=color:#393A34><span class="token keyword" style=color:#00009f>const</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>(</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">    BoxTypeDeep             BoxType </span><span class="token operator" style=color:#393A34>=</span><span class="token plain"> </span><span class="token string" style=color:#e3116c>"DEEP"</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">    BoxTypeSuper            BoxType </span><span class="token operator" style=color:#393A34>=</span><span class="token plain"> </span><span class="token string" style=color:#e3116c>"SUPER"</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">    BoxTypeGate             BoxType </span><span class="token operator" style=color:#393A34>=</span><span class="token plain"> </span><span class="token string" style=color:#e3116c>"GATE"</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">    BoxTypeVentilation      BoxType </span><span class="token operator" style=color:#393A34>=</span><span class="token plain"> </span><span class="token string" style=color:#e3116c>"VENTILATION"</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">    BoxTypeQueenExcluder    BoxType </span><span class="token operator" style=color:#393A34>=</span><span class="token plain"> </span><span class="token string" style=color:#e3116c>"QUEEN_EXCLUDER"</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">    BoxTypeHorizontalFeeder BoxType </span><span class="token operator" style=color:#393A34>=</span><span class="token plain"> </span><span class="token string" style=color:#e3116c>"HORIZONTAL_FEEDER"</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">    BoxTypeBottom           BoxType </span><span class="token operator" style=color:#393A34>=</span><span class="token plain"> </span><span class="token string" style=color:#e3116c>"BOTTOM"</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain"></span><span class="token punctuation" style=color:#393A34>)</span><br/></span></code></pre></div></div>
-<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=image-splitter-typescript>image-splitter (TypeScript)<a href=#image-splitter-typescript class=hash-link aria-label="Direct link to image-splitter (TypeScript)" title="Direct link to image-splitter (TypeScript)" translate=no>​</a></h3>
-<h4 class="anchor anchorTargetStickyNavbar_rb2N" id=boxfile-model>boxFile Model<a href=#boxfile-model class=hash-link aria-label="Direct link to boxFile Model" title="Direct link to boxFile Model" translate=no>​</a></h4>
+<pre><code class="language-go">const (
+    BoxTypeDeep             BoxType = &quot;DEEP&quot;
+    BoxTypeSuper            BoxType = &quot;SUPER&quot;
+    BoxTypeGate             BoxType = &quot;GATE&quot;
+    BoxTypeVentilation      BoxType = &quot;VENTILATION&quot;
+    BoxTypeQueenExcluder    BoxType = &quot;QUEEN_EXCLUDER&quot;
+    BoxTypeHorizontalFeeder BoxType = &quot;HORIZONTAL_FEEDER&quot;
+    BoxTypeBottom           BoxType = &quot;BOTTOM&quot;
+)
+</code></pre>
+<h3 id="image-splitter-typescript">image-splitter (TypeScript)</h3>
+<h4 id="boxfile-model">boxFile Model</h4>
 <p><strong>Location</strong>: <code>src/models/boxFile.ts</code></p>
 <p><strong>Key Methods</strong>:</p>
-<div class="language-typescript codeBlockContainer_InFo theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_zYTH><pre tabindex=0 class="prism-code language-typescript codeBlock_Qx6K thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_VjvH><span class=token-line style=color:#393A34><span class="token keyword" style=color:#00009f>export</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>default</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token keyword" style=color:#00009f>async</span><span class="token plain"> </span><span class="token function" style=color:#d73a49>addBoxRelation</span><span class="token punctuation" style=color:#393A34>(</span><span class="token plain">fileId</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> boxId</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> userId</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> inspectionId </span><span class="token operator" style=color:#393A34>=</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>null</span><span class="token punctuation" style=color:#393A34>)</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">    </span><span class="token keyword" style=color:#00009f>await</span><span class="token plain"> </span><span class="token function" style=color:#d73a49>storage</span><span class="token punctuation" style=color:#393A34>(</span><span class="token punctuation" style=color:#393A34>)</span><span class="token punctuation" style=color:#393A34>.</span><span class="token function" style=color:#d73a49>query</span><span class="token punctuation" style=color:#393A34>(</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">      sql</span><span class="token template-string template-punctuation string" style=color:#e3116c>`</span><span class="token template-string sql language-sql keyword" style=color:#00009f>INSERT</span><span class="token template-string sql language-sql"> </span><span class="token template-string sql language-sql keyword" style=color:#00009f>INTO</span><span class="token template-string sql language-sql"> files_box_rel </span><br/></span><span class=token-line style=color:#393A34><span class="token template-string sql language-sql">          </span><span class="token template-string sql language-sql punctuation" style=color:#393A34>(</span><span class="token template-string sql language-sql">file_id</span><span class="token template-string sql language-sql punctuation" style=color:#393A34>,</span><span class="token template-string sql language-sql"> box_id</span><span class="token template-string sql language-sql punctuation" style=color:#393A34>,</span><span class="token template-string sql language-sql"> user_id</span><span class="token template-string sql language-sql punctuation" style=color:#393A34>,</span><span class="token template-string sql language-sql"> inspection_id</span><span class="token template-string sql language-sql punctuation" style=color:#393A34>)</span><span class="token template-string sql language-sql"> </span><br/></span><span class=token-line style=color:#393A34><span class="token template-string sql language-sql">          </span><span class="token template-string sql language-sql keyword" style=color:#00009f>VALUES</span><span class="token template-string sql language-sql"> </span><span class="token template-string sql language-sql punctuation" style=color:#393A34>(</span><span class="token template-string sql language-sql interpolation interpolation-punctuation punctuation" style=color:#393A34>${</span><span class="token template-string sql language-sql interpolation">fileId</span><span class="token template-string sql language-sql interpolation interpolation-punctuation punctuation" style=color:#393A34>}</span><span class="token template-string sql language-sql punctuation" style=color:#393A34>,</span><span class="token template-string sql language-sql"> </span><span class="token template-string sql language-sql interpolation interpolation-punctuation punctuation" style=color:#393A34>${</span><span class="token template-string sql language-sql interpolation">boxId</span><span class="token template-string sql language-sql interpolation interpolation-punctuation punctuation" style=color:#393A34>}</span><span class="token template-string sql language-sql punctuation" style=color:#393A34>,</span><span class="token template-string sql language-sql"> </span><span class="token template-string sql language-sql interpolation interpolation-punctuation punctuation" style=color:#393A34>${</span><span class="token template-string sql language-sql interpolation">userId</span><span class="token template-string sql language-sql interpolation interpolation-punctuation punctuation" style=color:#393A34>}</span><span class="token template-string sql language-sql punctuation" style=color:#393A34>,</span><span class="token template-string sql language-sql"> </span><span class="token template-string sql language-sql interpolation interpolation-punctuation punctuation" style=color:#393A34>${</span><span class="token template-string sql language-sql interpolation">inspectionId</span><span class="token template-string sql language-sql interpolation interpolation-punctuation punctuation" style=color:#393A34>}</span><span class="token template-string sql language-sql punctuation" style=color:#393A34>)</span><span class="token template-string template-punctuation string" style=color:#e3116c>`</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">    </span><span class="token punctuation" style=color:#393A34>)</span><span class="token punctuation" style=color:#393A34>;</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token punctuation" style=color:#393A34>}</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token keyword" style=color:#00009f>async</span><span class="token plain"> </span><span class="token function" style=color:#d73a49>getBoxFiles</span><span class="token punctuation" style=color:#393A34>(</span><span class="token plain">boxId</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> userId</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> inspectionId </span><span class="token operator" style=color:#393A34>=</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>null</span><span class="token punctuation" style=color:#393A34>)</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">    </span><span class="token comment" style=color:#999988;font-style:italic>// Returns files for specific box</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token punctuation" style=color:#393A34>}</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain"></span><span class="token punctuation" style=color:#393A34>}</span><br/></span></code></pre></div></div>
-<h4 class="anchor anchorTargetStickyNavbar_rb2N" id=resolver>Resolver<a href=#resolver class=hash-link aria-label="Direct link to Resolver" title="Direct link to Resolver" translate=no>​</a></h4>
+<pre><code class="language-typescript">export default {
+  async addBoxRelation(fileId, boxId, userId, inspectionId = null) {
+    await storage().query(
+      sql`INSERT INTO files_box_rel 
+          (file_id, box_id, user_id, inspection_id) 
+          VALUES (${fileId}, ${boxId}, ${userId}, ${inspectionId})`
+    );
+  },
+  
+  async getBoxFiles(boxId, userId, inspectionId = null) {
+    // Returns files for specific box
+  }
+}
+</code></pre>
+<h4 id="resolver">Resolver</h4>
 <p><strong>Location</strong>: <code>src/graphql/resolvers.ts</code></p>
-<div class="language-typescript codeBlockContainer_InFo theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_zYTH><pre tabindex=0 class="prism-code language-typescript codeBlock_Qx6K thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_VjvH><span class=token-line style=color:#393A34><span class="token function-variable function" style=color:#d73a49>addFileToBox</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>async</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>(</span><span class="token plain">_</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain">boxId</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> fileId</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> hiveId</span><span class="token punctuation" style=color:#393A34>}</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain">uid</span><span class="token punctuation" style=color:#393A34>}</span><span class="token punctuation" style=color:#393A34>)</span><span class="token plain"> </span><span class="token operator" style=color:#393A34>=></span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token keyword" style=color:#00009f>await</span><span class="token plain"> boxFileModel</span><span class="token punctuation" style=color:#393A34>.</span><span class="token function" style=color:#d73a49>addBoxRelation</span><span class="token punctuation" style=color:#393A34>(</span><span class="token plain">fileId</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> boxId</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> uid</span><span class="token punctuation" style=color:#393A34>)</span><span class="token punctuation" style=color:#393A34>;</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token keyword" style=color:#00009f>await</span><span class="token plain"> fileModel</span><span class="token punctuation" style=color:#393A34>.</span><span class="token function" style=color:#d73a49>addHiveRelation</span><span class="token punctuation" style=color:#393A34>(</span><span class="token plain">fileId</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> hiveId</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> uid</span><span class="token punctuation" style=color:#393A34>)</span><span class="token punctuation" style=color:#393A34>;</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain">  </span><span class="token keyword" style=color:#00009f>return</span><span class="token plain"> </span><span class="token boolean" style=color:#36acaa>true</span><span class="token punctuation" style=color:#393A34>;</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain"></span><span class="token punctuation" style=color:#393A34>}</span><br/></span></code></pre></div></div>
-<h2 class="anchor anchorTargetStickyNavbar_rb2N" id=inspection-versioning>Inspection Versioning<a href=#inspection-versioning class=hash-link aria-label="Direct link to Inspection Versioning" title="Direct link to Inspection Versioning" translate=no>​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=how-it-works>How It Works<a href=#how-it-works class=hash-link aria-label="Direct link to How It Works" title="Direct link to How It Works" translate=no>​</a></h3>
+<pre><code class="language-typescript">addFileToBox: async (_, {boxId, fileId, hiveId}, {uid}) =&gt; {
+  await boxFileModel.addBoxRelation(fileId, boxId, uid);
+  await fileModel.addHiveRelation(fileId, hiveId, uid);
+  return true;
+}
+</code></pre>
+<h2 id="inspection-versioning">Inspection Versioning</h2>
+<h3 id="how-it-works">How It Works</h3>
 <ol>
-<li class=""><strong>Current State</strong>: Images have <code>inspection_id = NULL</code></li>
-<li class=""><strong>Create Inspection</strong>:<!-- -->
+<li><strong>Current State</strong>: Images have <code>inspection_id = NULL</code></li>
+<li><strong>Create Inspection</strong>:
 <ul>
-<li class="">Current images are cloned</li>
-<li class="">Clones get new <code>inspection_id</code></li>
-<li class="">Original images remain with <code>NULL</code> (becomes new current state)</li>
+<li>Current images are cloned</li>
+<li>Clones get new <code>inspection_id</code></li>
+<li>Original images remain with <code>NULL</code> (becomes new current state)</li>
 </ul>
 </li>
-<li class=""><strong>Historical View</strong>: Query with specific <code>inspection_id</code></li>
+<li><strong>Historical View</strong>: Query with specific <code>inspection_id</code></li>
 </ol>
-<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=sql-queries>SQL Queries<a href=#sql-queries class=hash-link aria-label="Direct link to SQL Queries" title="Direct link to SQL Queries" translate=no>​</a></h3>
+<h3 id="sql-queries">SQL Queries</h3>
 <p><strong>Get current images</strong>:</p>
-<div class="language-sql codeBlockContainer_InFo theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_zYTH><pre tabindex=0 class="prism-code language-sql codeBlock_Qx6K thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_VjvH><span class=token-line style=color:#393A34><span class="token keyword" style=color:#00009f>SELECT</span><span class="token plain"> </span><span class="token operator" style=color:#393A34>*</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>FROM</span><span class="token plain"> files_box_rel </span><br/></span><span class=token-line style=color:#393A34><span class="token plain"></span><span class="token keyword" style=color:#00009f>WHERE</span><span class="token plain"> box_id </span><span class="token operator" style=color:#393A34>=</span><span class="token plain"> ? </span><span class="token operator" style=color:#393A34>AND</span><span class="token plain"> user_id </span><span class="token operator" style=color:#393A34>=</span><span class="token plain"> ? </span><span class="token operator" style=color:#393A34>AND</span><span class="token plain"> inspection_id </span><span class="token operator" style=color:#393A34>IS</span><span class="token plain"> </span><span class="token boolean" style=color:#36acaa>NULL</span><span class="token punctuation" style=color:#393A34>;</span><br/></span></code></pre></div></div>
+<pre><code class="language-sql">SELECT * FROM files_box_rel 
+WHERE box_id = ? AND user_id = ? AND inspection_id IS NULL;
+</code></pre>
 <p><strong>Get historical images</strong>:</p>
-<div class="language-sql codeBlockContainer_InFo theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_zYTH><pre tabindex=0 class="prism-code language-sql codeBlock_Qx6K thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_VjvH><span class=token-line style=color:#393A34><span class="token keyword" style=color:#00009f>SELECT</span><span class="token plain"> </span><span class="token operator" style=color:#393A34>*</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>FROM</span><span class="token plain"> files_box_rel </span><br/></span><span class=token-line style=color:#393A34><span class="token plain"></span><span class="token keyword" style=color:#00009f>WHERE</span><span class="token plain"> box_id </span><span class="token operator" style=color:#393A34>=</span><span class="token plain"> ? </span><span class="token operator" style=color:#393A34>AND</span><span class="token plain"> user_id </span><span class="token operator" style=color:#393A34>=</span><span class="token plain"> ? </span><span class="token operator" style=color:#393A34>AND</span><span class="token plain"> inspection_id </span><span class="token operator" style=color:#393A34>=</span><span class="token plain"> ?</span><span class="token punctuation" style=color:#393A34>;</span><br/></span></code></pre></div></div>
-<h2 class="anchor anchorTargetStickyNavbar_rb2N" id=job-queue-integration>Job Queue Integration<a href=#job-queue-integration class=hash-link aria-label="Direct link to Job Queue Integration" title="Direct link to Job Queue Integration" translate=no>​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=varroa-detection-job>Varroa Detection Job<a href=#varroa-detection-job class=hash-link aria-label="Direct link to Varroa Detection Job" title="Direct link to Varroa Detection Job" translate=no>​</a></h3>
+<pre><code class="language-sql">SELECT * FROM files_box_rel 
+WHERE box_id = ? AND user_id = ? AND inspection_id = ?;
+</code></pre>
+<h2 id="job-queue-integration">Job Queue Integration</h2>
+<h3 id="varroa-detection-job">Varroa Detection Job</h3>
 <p>When file is uploaded, a varroa detection job is queued:</p>
-<div class="language-typescript codeBlockContainer_InFo theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_zYTH><pre tabindex=0 class="prism-code language-typescript codeBlock_Qx6K thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_VjvH><span class=token-line style=color:#393A34><span class="token keyword" style=color:#00009f>await</span><span class="token plain"> jobs</span><span class="token punctuation" style=color:#393A34>.</span><span class="token function" style=color:#d73a49>addJob</span><span class="token punctuation" style=color:#393A34>(</span><span class="token constant" style=color:#36acaa>TYPE_VARROA</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> fileId</span><span class="token punctuation" style=color:#393A34>)</span><span class="token punctuation" style=color:#393A34>;</span><br/></span></code></pre></div></div>
+<pre><code class="language-typescript">await jobs.addJob(TYPE_VARROA, fileId);
+</code></pre>
 <p><strong>Job Type</strong>: <code>TYPE_VARROA = 'varroa'</code></p>
 <p><strong>Processing</strong>:</p>
 <ol>
-<li class="">Job worker picks up job from queue</li>
-<li class="">Downloads image from S3</li>
-<li class="">Runs varroa detection model</li>
-<li class="">Stores results in <code>detectedObjects</code> JSON field</li>
-<li class="">Updates job status to complete</li>
+<li>Job worker picks up job from queue</li>
+<li>Downloads image from S3</li>
+<li>Runs varroa detection model</li>
+<li>Stores results in <code>detectedObjects</code> JSON field</li>
+<li>Updates job status to complete</li>
 </ol>
-<h2 class="anchor anchorTargetStickyNavbar_rb2N" id=deployment>Deployment<a href=#deployment class=hash-link aria-label="Direct link to Deployment" title="Direct link to Deployment" translate=no>​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=prerequisites>Prerequisites<a href=#prerequisites class=hash-link aria-label="Direct link to Prerequisites" title="Direct link to Prerequisites" translate=no>​</a></h3>
+<h2 id="deployment">Deployment</h2>
+<h3 id="prerequisites">Prerequisites</h3>
 <ul>
-<li class="">MySQL database for both services</li>
-<li class="">AWS S3 bucket configured</li>
-<li class="">Redis for job queue</li>
+<li>MySQL database for both services</li>
+<li>AWS S3 bucket configured</li>
+<li>Redis for job queue</li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=migration-steps>Migration Steps<a href=#migration-steps class=hash-link aria-label="Direct link to Migration Steps" title="Direct link to Migration Steps" translate=no>​</a></h3>
+<h3 id="migration-steps">Migration Steps</h3>
 <ol>
-<li class=""><strong>Deploy swarm-api</strong>:</li>
+<li><strong>Deploy swarm-api</strong>:</li>
 </ol>
-<div class="language-bash codeBlockContainer_InFo theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_zYTH><pre tabindex=0 class="prism-code language-bash codeBlock_Qx6K thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_VjvH><span class=token-line style=color:#393A34><span class="token plain">cd swarm-api</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">just migrate-db-dev</span><br/></span><span class=token-line style=color:#393A34><span class="token plain"># Applies: migrations/20251201025115_add_bottom_box_type.sql</span><br/></span></code></pre></div></div>
-<ol start=2>
-<li class=""><strong>Deploy image-splitter</strong>:</li>
+<pre><code class="language-bash">cd swarm-api
+just migrate-db-dev
+# Applies: migrations/20251201025115_add_bottom_box_type.sql
+</code></pre>
+<ol start="2">
+<li><strong>Deploy image-splitter</strong>:</li>
 </ol>
-<div class="language-bash codeBlockContainer_InFo theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_zYTH><pre tabindex=0 class="prism-code language-bash codeBlock_Qx6K thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_VjvH><span class=token-line style=color:#393A34><span class="token plain">cd image-splitter</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">just stop && just start</span><br/></span><span class=token-line style=color:#393A34><span class="token plain"># Auto-runs: migrations/018-box-files.sql</span><br/></span></code></pre></div></div>
-<ol start=3>
-<li class=""><strong>Deploy web-app</strong>:</li>
+<pre><code class="language-bash">cd image-splitter
+just stop &amp;&amp; just start
+# Auto-runs: migrations/018-box-files.sql
+</code></pre>
+<ol start="3">
+<li><strong>Deploy web-app</strong>:</li>
 </ol>
-<div class="language-bash codeBlockContainer_InFo theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_zYTH><pre tabindex=0 class="prism-code language-bash codeBlock_Qx6K thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_VjvH><span class=token-line style=color:#393A34><span class="token plain">cd web-app</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">pnpm build</span><br/></span><span class=token-line style=color:#393A34><span class="token plain"># Upload dist/ to hosting</span><br/></span></code></pre></div></div>
-<ol start=4>
-<li class=""><strong>Restart graphql-router</strong>:</li>
+<pre><code class="language-bash">cd web-app
+pnpm build
+# Upload dist/ to hosting
+</code></pre>
+<ol start="4">
+<li><strong>Restart graphql-router</strong>:</li>
 </ol>
-<div class="language-bash codeBlockContainer_InFo theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_zYTH><pre tabindex=0 class="prism-code language-bash codeBlock_Qx6K thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_VjvH><span class=token-line style=color:#393A34><span class="token plain">docker restart gratheon-graphql-router-1</span><br/></span></code></pre></div></div>
-<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=verification>Verification<a href=#verification class=hash-link aria-label="Direct link to Verification" title="Direct link to Verification" translate=no>​</a></h3>
-<div class="language-sql codeBlockContainer_InFo theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_zYTH><pre tabindex=0 class="prism-code language-sql codeBlock_Qx6K thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_VjvH><span class=token-line style=color:#393A34><span class="token comment" style=color:#999988;font-style:italic>-- Check box type enum</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain"></span><span class="token keyword" style=color:#00009f>SHOW</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>COLUMNS</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>FROM</span><span class="token plain"> boxes </span><span class="token operator" style=color:#393A34>LIKE</span><span class="token plain"> </span><span class="token string" style=color:#e3116c>'type'</span><span class="token punctuation" style=color:#393A34>;</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></span><span class=token-line style=color:#393A34><span class="token plain"></span><span class="token comment" style=color:#999988;font-style:italic>-- Check files_box_rel table</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain"></span><span class="token keyword" style=color:#00009f>DESCRIBE</span><span class="token plain"> files_box_rel</span><span class="token punctuation" style=color:#393A34>;</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></span><span class=token-line style=color:#393A34><span class="token plain"></span><span class="token comment" style=color:#999988;font-style:italic>-- Test data flow</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain"></span><span class="token keyword" style=color:#00009f>INSERT</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>INTO</span><span class="token plain"> boxes </span><span class="token punctuation" style=color:#393A34>(</span><span class="token plain">user_id</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> hive_id</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>type</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> position</span><span class="token punctuation" style=color:#393A34>)</span><span class="token plain"> </span><br/></span><span class=token-line style=color:#393A34><span class="token plain"></span><span class="token keyword" style=color:#00009f>VALUES</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>(</span><span class="token number" style=color:#36acaa>1</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> </span><span class="token number" style=color:#36acaa>1</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> </span><span class="token string" style=color:#e3116c>'BOTTOM'</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> </span><span class="token number" style=color:#36acaa>0</span><span class="token punctuation" style=color:#393A34>)</span><span class="token punctuation" style=color:#393A34>;</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></span><span class=token-line style=color:#393A34><span class="token plain"></span><span class="token comment" style=color:#999988;font-style:italic>-- Should return the box</span><span class="token plain"></span><br/></span><span class=token-line style=color:#393A34><span class="token plain"></span><span class="token keyword" style=color:#00009f>SELECT</span><span class="token plain"> </span><span class="token operator" style=color:#393A34>*</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>FROM</span><span class="token plain"> boxes </span><span class="token keyword" style=color:#00009f>WHERE</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>type</span><span class="token plain"> </span><span class="token operator" style=color:#393A34>=</span><span class="token plain"> </span><span class="token string" style=color:#e3116c>'BOTTOM'</span><span class="token punctuation" style=color:#393A34>;</span><br/></span></code></pre></div></div>
-<h2 class="anchor anchorTargetStickyNavbar_rb2N" id=testing>Testing<a href=#testing class=hash-link aria-label="Direct link to Testing" title="Direct link to Testing" translate=no>​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=unit-tests>Unit Tests<a href=#unit-tests class=hash-link aria-label="Direct link to Unit Tests" title="Direct link to Unit Tests" translate=no>​</a></h3>
+<pre><code class="language-bash">docker restart gratheon-graphql-router-1
+</code></pre>
+<h3 id="verification">Verification</h3>
+<pre><code class="language-sql">-- Check box type enum
+SHOW COLUMNS FROM boxes LIKE 'type';
+
+-- Check files_box_rel table
+DESCRIBE files_box_rel;
+
+-- Test data flow
+INSERT INTO boxes (user_id, hive_id, type, position) 
+VALUES (1, 1, 'BOTTOM', 0);
+
+-- Should return the box
+SELECT * FROM boxes WHERE type = 'BOTTOM';
+</code></pre>
+<h2 id="testing">Testing</h2>
+<h3 id="unit-tests">Unit Tests</h3>
 <p><strong>swarm-api</strong>:</p>
-<div class="language-bash codeBlockContainer_InFo theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_zYTH><pre tabindex=0 class="prism-code language-bash codeBlock_Qx6K thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_VjvH><span class=token-line style=color:#393A34><span class="token plain">cd swarm-api</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">go test ./...</span><br/></span></code></pre></div></div>
+<pre><code class="language-bash">cd swarm-api
+go test ./...
+</code></pre>
 <p><strong>image-splitter</strong>:</p>
-<div class="language-bash codeBlockContainer_InFo theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_zYTH><pre tabindex=0 class="prism-code language-bash codeBlock_Qx6K thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_VjvH><span class=token-line style=color:#393A34><span class="token plain">cd image-splitter</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">npm test</span><br/></span></code></pre></div></div>
+<pre><code class="language-bash">cd image-splitter
+npm test
+</code></pre>
 <p><strong>web-app</strong>:</p>
-<div class="language-bash codeBlockContainer_InFo theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_zYTH><pre tabindex=0 class="prism-code language-bash codeBlock_Qx6K thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_VjvH><span class=token-line style=color:#393A34><span class="token plain">cd web-app</span><br/></span><span class=token-line style=color:#393A34><span class="token plain">pnpm test:unit</span><br/></span></code></pre></div></div>
-<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=integration-test-flow>Integration Test Flow<a href=#integration-test-flow class=hash-link aria-label="Direct link to Integration Test Flow" title="Direct link to Integration Test Flow" translate=no>​</a></h3>
+<pre><code class="language-bash">cd web-app
+pnpm test:unit
+</code></pre>
+<h3 id="integration-test-flow">Integration Test Flow</h3>
 <ol>
-<li class="">Create hive via API</li>
-<li class="">Add BOTTOM box to hive</li>
-<li class="">Upload image via BottomBox component</li>
-<li class="">Verify:<!-- -->
+<li>Create hive via API</li>
+<li>Add BOTTOM box to hive</li>
+<li>Upload image via BottomBox component</li>
+<li>Verify:
 <ul>
-<li class="">File exists in S3</li>
-<li class="">Record in <code>files</code> table</li>
-<li class="">Record in <code>files_box_rel</code> table</li>
-<li class="">Record in <code>files_hive_rel</code> table</li>
-<li class="">Varroa job queued</li>
+<li>File exists in S3</li>
+<li>Record in <code>files</code> table</li>
+<li>Record in <code>files_box_rel</code> table</li>
+<li>Record in <code>files_hive_rel</code> table</li>
+<li>Varroa job queued</li>
 </ul>
 </li>
 </ol>
-<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=manual-test>Manual Test<a href=#manual-test class=hash-link aria-label="Direct link to Manual Test" title="Direct link to Manual Test" translate=no>​</a></h3>
+<h3 id="manual-test">Manual Test</h3>
 <ol>
-<li class="">Navigate to hive in web-app</li>
-<li class="">Click "Add bottom" button</li>
-<li class="">Verify bottom box appears in structure</li>
-<li class="">Click on bottom box</li>
-<li class="">Upload image file</li>
-<li class="">Check database:</li>
+<li>Navigate to hive in web-app</li>
+<li>Click &quot;Add bottom&quot; button</li>
+<li>Verify bottom box appears in structure</li>
+<li>Click on bottom box</li>
+<li>Upload image file</li>
+<li>Check database:</li>
 </ol>
-<div class="language-sql codeBlockContainer_InFo theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_zYTH><pre tabindex=0 class="prism-code language-sql codeBlock_Qx6K thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_VjvH><span class=token-line style=color:#393A34><span class="token keyword" style=color:#00009f>SELECT</span><span class="token plain"> </span><span class="token operator" style=color:#393A34>*</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>FROM</span><span class="token plain"> files_box_rel </span><br/></span><span class=token-line style=color:#393A34><span class="token plain"></span><span class="token keyword" style=color:#00009f>ORDER</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>BY</span><span class="token plain"> added_time </span><span class="token keyword" style=color:#00009f>DESC</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>LIMIT</span><span class="token plain"> </span><span class="token number" style=color:#36acaa>1</span><span class="token punctuation" style=color:#393A34>;</span><br/></span></code></pre></div></div>
-<h2 class="anchor anchorTargetStickyNavbar_rb2N" id=troubleshooting>Troubleshooting<a href=#troubleshooting class=hash-link aria-label="Direct link to Troubleshooting" title="Direct link to Troubleshooting" translate=no>​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=common-issues>Common Issues<a href=#common-issues class=hash-link aria-label="Direct link to Common Issues" title="Direct link to Common Issues" translate=no>​</a></h3>
-<p><strong>Issue</strong>: "Data truncated for column 'type'"</p>
+<pre><code class="language-sql">SELECT * FROM files_box_rel 
+ORDER BY added_time DESC LIMIT 1;
+</code></pre>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<h3 id="common-issues">Common Issues</h3>
+<p><strong>Issue</strong>: &quot;Data truncated for column 'type'&quot;</p>
 <ul>
-<li class=""><strong>Cause</strong>: Migration not run</li>
-<li class=""><strong>Fix</strong>: Run <code>just migrate-db-dev</code> in swarm-api</li>
+<li><strong>Cause</strong>: Migration not run</li>
+<li><strong>Fix</strong>: Run <code>just migrate-db-dev</code> in swarm-api</li>
 </ul>
-<p><strong>Issue</strong>: "Unknown field addFileToBox"</p>
+<p><strong>Issue</strong>: &quot;Unknown field addFileToBox&quot;</p>
 <ul>
-<li class=""><strong>Cause</strong>: graphql-router not restarted</li>
-<li class=""><strong>Fix</strong>: Restart graphql-router to reload schema</li>
+<li><strong>Cause</strong>: graphql-router not restarted</li>
+<li><strong>Fix</strong>: Restart graphql-router to reload schema</li>
 </ul>
-<p><strong>Issue</strong>: "Unable to resolve table files_box_rel"</p>
+<p><strong>Issue</strong>: &quot;Unable to resolve table files_box_rel&quot;</p>
 <ul>
-<li class=""><strong>Cause</strong>: Migration not run in image-splitter</li>
-<li class=""><strong>Fix</strong>: Rebuild image-splitter container</li>
+<li><strong>Cause</strong>: Migration not run in image-splitter</li>
+<li><strong>Fix</strong>: Rebuild image-splitter container</li>
 </ul>
 <p><strong>Issue</strong>: Image uploads but not linked</p>
 <ul>
-<li class=""><strong>Cause</strong>: Missing <code>addFileToBox</code> call</li>
-<li class=""><strong>Fix</strong>: Check BottomBox component calls both mutations</li>
+<li><strong>Cause</strong>: Missing <code>addFileToBox</code> call</li>
+<li><strong>Fix</strong>: Check BottomBox component calls both mutations</li>
 </ul>
-<h2 class="anchor anchorTargetStickyNavbar_rb2N" id=future-enhancements>Future Enhancements<a href=#future-enhancements class=hash-link aria-label="Direct link to Future Enhancements" title="Direct link to Future Enhancements" translate=no>​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=phase-2-display-images>Phase 2: Display Images<a href=#phase-2-display-images class=hash-link aria-label="Direct link to Phase 2: Display Images" title="Direct link to Phase 2: Display Images" translate=no>​</a></h3>
+<h2 id="future-enhancements">Future Enhancements</h2>
+<h3 id="phase-2-display-images">Phase 2: Display Images</h3>
 <ul>
-<li class="">Add query to fetch box images</li>
-<li class="">Display images in UI</li>
-<li class="">Show upload history</li>
-<li class="">Image deletion capability</li>
+<li>Add query to fetch box images</li>
+<li>Display images in UI</li>
+<li>Show upload history</li>
+<li>Image deletion capability</li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=phase-3-varroa-detection>Phase 3: Varroa Detection<a href=#phase-3-varroa-detection class=hash-link aria-label="Direct link to Phase 3: Varroa Detection" title="Direct link to Phase 3: Varroa Detection" translate=no>​</a></h3>
+<h3 id="phase-3-varroa-detection">Phase 3: Varroa Detection</h3>
 <ul>
-<li class="">Implement varroa counting model</li>
-<li class="">Display count on images</li>
-<li class="">Show detection regions</li>
-<li class="">Confidence scores</li>
+<li>Implement varroa counting model</li>
+<li>Display count on images</li>
+<li>Show detection regions</li>
+<li>Confidence scores</li>
 </ul>
-<h3 class="anchor anchorTargetStickyNavbar_rb2N" id=phase-4-analytics>Phase 4: Analytics<a href=#phase-4-analytics class=hash-link aria-label="Direct link to Phase 4: Analytics" title="Direct link to Phase 4: Analytics" translate=no>​</a></h3>
+<h3 id="phase-4-analytics">Phase 4: Analytics</h3>
 <ul>
-<li class="">Historical trend charts</li>
-<li class="">Treatment correlation</li>
-<li class="">Predictive alerts</li>
-<li class="">Comparison across hives</li>
+<li>Historical trend charts</li>
+<li>Treatment correlation</li>
+<li>Predictive alerts</li>
+<li>Comparison across hives</li>
 </ul>
-<h2 class="anchor anchorTargetStickyNavbar_rb2N" id=related-documentation>Related Documentation<a href=#related-documentation class=hash-link aria-label="Direct link to Related Documentation" title="Direct link to Related Documentation" translate=no>​</a></h2>
+<h2 id="related-documentation">Related Documentation</h2>
 <ul>
-<li class="">[Bottom Board User Guide](../../about/products/web_app/starter-tier/🧮 Hive bottom board & varroa monitoring.md)</li>
-<li class="">[DB Schemas](./🥞 DB schemas/)</li>
+<li>[Bottom Board User Guide](../../about/products/web_app/starter-tier/🧮 Hive bottom board &amp; varroa monitoring.md)</li>
+<li>[DB Schemas](./🥞 DB schemas/)</li>
 </ul>
-<h2 class="anchor anchorTargetStickyNavbar_rb2N" id=change-log>Change Log<a href=#change-log class=hash-link aria-label="Direct link to Change Log" title="Direct link to Change Log" translate=no>​</a></h2>
+<h2 id="change-log">Change Log</h2>
 <ul>
-<li class=""><strong>2025-12-01</strong>: Initial implementation<!-- -->
+<li><strong>2025-12-01</strong>: Initial implementation
 <ul>
-<li class="">Added BOTTOM box type</li>
-<li class="">Created files_box_rel table</li>
-<li class="">Implemented upload flow</li>
-<li class="">Added BottomBox component</li>
+<li>Added BOTTOM box type</li>
+<li>Created files_box_rel table</li>
+<li>Implemented upload flow</li>
+<li>Added BottomBox component</li>
 </ul>
 </li>
-</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_Za1t"><a href=https://github.com/gratheon/website/tree/main/packages/create-docusaurus/templates/shared/docs/web-app/features/bottom-board-management.md target=_blank rel="noopener noreferrer" class=theme-edit-this-page><svg fill=currentColor height=20 width=20 viewBox="0 0 40 40" class=iconEdit_RtZN aria-hidden=true><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"/></g></svg>Edit this page</a></div><div class="col lastUpdated_jlPf"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href=/docs/web-app/features/keyboard-support><div class=pagination-nav__sublabel>Previous</div><div class=pagination-nav__label>Keyboard Support - Technical Documentation</div></a><a class="pagination-nav__link pagination-nav__link--next" href=/docs/web-app/features/varroa-bottom-detection><div class=pagination-nav__sublabel>Next</div><div class=pagination-nav__label>Varroa Bottom Board Detection - Technical Documentation</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_y_d7 thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href=#architecture class="table-of-contents__link toc-highlight">Architecture</a><ul><li><a href=#service-dependencies class="table-of-contents__link toc-highlight">Service Dependencies</a><li><a href=#data-flow class="table-of-contents__link toc-highlight">Data Flow</a></ul><li><a href=#database-schema class="table-of-contents__link toc-highlight">Database Schema</a><ul><li><a href=#swarm-api-schema class="table-of-contents__link toc-highlight">swarm-api Schema</a><li><a href=#image-splitter-schema class="table-of-contents__link toc-highlight">image-splitter Schema</a></ul><li><a href=#graphql-api class="table-of-contents__link toc-highlight">GraphQL API</a><ul><li><a href=#swarm-api class="table-of-contents__link toc-highlight">swarm-api</a><li><a href=#image-splitter class="table-of-contents__link toc-highlight">image-splitter</a></ul><li><a href=#frontend-implementation class="table-of-contents__link toc-highlight">Frontend Implementation</a><ul><li><a href=#bottombox-component class="table-of-contents__link toc-highlight">BottomBox Component</a><li><a href=#integration-points class="table-of-contents__link toc-highlight">Integration Points</a></ul><li><a href=#backend-implementation class="table-of-contents__link toc-highlight">Backend Implementation</a><ul><li><a href=#swarm-api-go class="table-of-contents__link toc-highlight">swarm-api (Go)</a><li><a href=#image-splitter-typescript class="table-of-contents__link toc-highlight">image-splitter (TypeScript)</a></ul><li><a href=#inspection-versioning class="table-of-contents__link toc-highlight">Inspection Versioning</a><ul><li><a href=#how-it-works class="table-of-contents__link toc-highlight">How It Works</a><li><a href=#sql-queries class="table-of-contents__link toc-highlight">SQL Queries</a></ul><li><a href=#job-queue-integration class="table-of-contents__link toc-highlight">Job Queue Integration</a><ul><li><a href=#varroa-detection-job class="table-of-contents__link toc-highlight">Varroa Detection Job</a></ul><li><a href=#deployment class="table-of-contents__link toc-highlight">Deployment</a><ul><li><a href=#prerequisites class="table-of-contents__link toc-highlight">Prerequisites</a><li><a href=#migration-steps class="table-of-contents__link toc-highlight">Migration Steps</a><li><a href=#verification class="table-of-contents__link toc-highlight">Verification</a></ul><li><a href=#testing class="table-of-contents__link toc-highlight">Testing</a><ul><li><a href=#unit-tests class="table-of-contents__link toc-highlight">Unit Tests</a><li><a href=#integration-test-flow class="table-of-contents__link toc-highlight">Integration Test Flow</a><li><a href=#manual-test class="table-of-contents__link toc-highlight">Manual Test</a></ul><li><a href=#troubleshooting class="table-of-contents__link toc-highlight">Troubleshooting</a><ul><li><a href=#common-issues class="table-of-contents__link toc-highlight">Common Issues</a></ul><li><a href=#future-enhancements class="table-of-contents__link toc-highlight">Future Enhancements</a><ul><li><a href=#phase-2-display-images class="table-of-contents__link toc-highlight">Phase 2: Display Images</a><li><a href=#phase-3-varroa-detection class="table-of-contents__link toc-highlight">Phase 3: Varroa Detection</a><li><a href=#phase-4-analytics class="table-of-contents__link toc-highlight">Phase 4: Analytics</a></ul><li><a href=#related-documentation class="table-of-contents__link toc-highlight">Related Documentation</a><li><a href=#change-log class="table-of-contents__link toc-highlight">Change Log</a></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class=footer__title></div><ul class="footer__items clean-list"><li class=footer__item>
-                <div class=footer-company-block>
-                  <a href=https://ariregister.rik.ee/est/company/12245103/Gratheon-O%C3%9C>Gratheon OÜ</a><br/>
-                  ❤️ Made with love in Estonia
-                </div>
-              </ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title></div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/privacy>Privacy Policy</a><li class=footer__item><a class=footer__link-item href=/terms>Terms Of Service</a><li class=footer__item><a href=mailto:pilot@gratheon.com target=_blank rel="noopener noreferrer" class=footer__link-item>Email<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_c9sx><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://tawk.to/gratheon target=_blank rel="noopener noreferrer" class=footer__link-item>Support Chat<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_c9sx><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://gratheon.statuspage.io/ target=_blank rel="noopener noreferrer" class=footer__link-item>Service Status<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_c9sx><use href=#theme-svg-external-link /></svg></a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title></div><ul class="footer__items clean-list"><li class=footer__item><a href=https://t.me/gratheon target=_blank rel="noopener noreferrer" class=footer__link-item>Telegram<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_c9sx><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://twitter.com/gratheon target=_blank rel="noopener noreferrer" class=footer__link-item>Twitter<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_c9sx><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://www.linkedin.com/company/gratheon/ target=_blank rel="noopener noreferrer" class=footer__link-item>LinkedIn<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_c9sx><use href=#theme-svg-external-link /></svg></a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title></div><ul class="footer__items clean-list"><li class=footer__item><a href=https://www.facebook.com/gratheon target=_blank rel="noopener noreferrer" class=footer__link-item>Facebook</a><li class=footer__item><a href=https://www.twitch.tv/tot_ra target=_blank rel="noopener noreferrer" class=footer__link-item>Twitch</a><li class=footer__item><a href=https://www.youtube.com/@gratheon-bees target=_blank rel="noopener noreferrer" class=footer__link-item>Youtube<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_c9sx><use href=#theme-svg-external-link /></svg></a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title></div><ul class="footer__items clean-list"><li class=footer__item><img src=/img/nvidia-inception-program-badge-rgb-for-screen.svg alt="NVIDIA Inception Program Member" style="max-width:200px; height: auto;"/></ul></div></div><div class="footer__bottom text--center"><div class=footer__copyright>Copyright © 2026 Gratheon OÜ. Gratheon™ trademark registration was approved by the Estonian Patent Office under application M202501179.</div></div></div></footer></div></body>
+</ul>
+
+    </div>
+    
+    
+    
+    <nav class="prev-next" aria-label="Page navigation">
+        
+        <a href="/docs/web-app/features/apiary-management/" class="prev-link">
+            <span class="prev-label">← Previous</span>
+            <span class="prev-title">apiary management</span>
+        </a>
+        
+        
+        <a href="/docs/web-app/features/frame-photo-upload/" class="next-link">
+            <span class="next-label">Next →</span>
+            <span class="next-title">frame photo upload</span>
+        </a>
+        
+    </nav>
+    
+</article>
+
+        </main>
+        <nav class="toc" aria-label="On this page">
+  <h2 class="toc-title">On this page</h2>
+<ul class="toc-list">
+  <li class="toc-item">
+    <a href="#architecture">Architecture</a>
+<ul class="toc-sublist">
+  <li class="toc-item">
+    <a href="#service-dependencies">Service Dependencies</a>
+  </li>
+  <li class="toc-item">
+    <a href="#data-flow">Data Flow</a>
+  </li>
+</ul>
+  </li>
+  <li class="toc-item">
+    <a href="#database-schema">Database Schema</a>
+<ul class="toc-sublist">
+  <li class="toc-item">
+    <a href="#swarm-api-schema">swarm-api Schema</a>
+<ul class="toc-sublist">
+  <li class="toc-item">
+    <a href="#boxes-table">boxes table</a>
+  </li>
+</ul>
+  </li>
+  <li class="toc-item">
+    <a href="#image-splitter-schema">image-splitter Schema</a>
+<ul class="toc-sublist">
+  <li class="toc-item">
+    <a href="#filesboxrel-table">filesboxrel table</a>
+  </li>
+  <li class="toc-item">
+    <a href="#relationships">Relationships</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="toc-item">
+    <a href="#graphql-api">GraphQL API</a>
+<ul class="toc-sublist">
+  <li class="toc-item">
+    <a href="#swarm-api">swarm-api</a>
+<ul class="toc-sublist">
+  <li class="toc-item">
+    <a href="#add-box-mutation">Add Box Mutation</a>
+  </li>
+</ul>
+  </li>
+  <li class="toc-item">
+    <a href="#image-splitter">image-splitter</a>
+<ul class="toc-sublist">
+  <li class="toc-item">
+    <a href="#upload-file-mutation">Upload File Mutation</a>
+  </li>
+  <li class="toc-item">
+    <a href="#link-file-to-box-mutation">Link File to Box Mutation</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="toc-item">
+    <a href="#frontend-implementation">Frontend Implementation</a>
+<ul class="toc-sublist">
+  <li class="toc-item">
+    <a href="#bottombox-component">BottomBox Component</a>
+  </li>
+  <li class="toc-item">
+    <a href="#integration-points">Integration Points</a>
+  </li>
+</ul>
+  </li>
+  <li class="toc-item">
+    <a href="#backend-implementation">Backend Implementation</a>
+<ul class="toc-sublist">
+  <li class="toc-item">
+    <a href="#swarm-api-go">swarm-api (Go)</a>
+<ul class="toc-sublist">
+  <li class="toc-item">
+    <a href="#box-model">Box Model</a>
+  </li>
+</ul>
+  </li>
+  <li class="toc-item">
+    <a href="#image-splitter-typescript">image-splitter (TypeScript)</a>
+<ul class="toc-sublist">
+  <li class="toc-item">
+    <a href="#boxfile-model">boxFile Model</a>
+  </li>
+  <li class="toc-item">
+    <a href="#resolver">Resolver</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="toc-item">
+    <a href="#inspection-versioning">Inspection Versioning</a>
+<ul class="toc-sublist">
+  <li class="toc-item">
+    <a href="#how-it-works">How It Works</a>
+  </li>
+  <li class="toc-item">
+    <a href="#sql-queries">SQL Queries</a>
+  </li>
+</ul>
+  </li>
+  <li class="toc-item">
+    <a href="#job-queue-integration">Job Queue Integration</a>
+<ul class="toc-sublist">
+  <li class="toc-item">
+    <a href="#varroa-detection-job">Varroa Detection Job</a>
+  </li>
+</ul>
+  </li>
+  <li class="toc-item">
+    <a href="#deployment">Deployment</a>
+<ul class="toc-sublist">
+  <li class="toc-item">
+    <a href="#prerequisites">Prerequisites</a>
+  </li>
+  <li class="toc-item">
+    <a href="#migration-steps">Migration Steps</a>
+  </li>
+  <li class="toc-item">
+    <a href="#verification">Verification</a>
+  </li>
+</ul>
+  </li>
+  <li class="toc-item">
+    <a href="#testing">Testing</a>
+<ul class="toc-sublist">
+  <li class="toc-item">
+    <a href="#unit-tests">Unit Tests</a>
+  </li>
+  <li class="toc-item">
+    <a href="#integration-test-flow">Integration Test Flow</a>
+  </li>
+  <li class="toc-item">
+    <a href="#manual-test">Manual Test</a>
+  </li>
+</ul>
+  </li>
+  <li class="toc-item">
+    <a href="#troubleshooting">Troubleshooting</a>
+<ul class="toc-sublist">
+  <li class="toc-item">
+    <a href="#common-issues">Common Issues</a>
+  </li>
+</ul>
+  </li>
+  <li class="toc-item">
+    <a href="#future-enhancements">Future Enhancements</a>
+<ul class="toc-sublist">
+  <li class="toc-item">
+    <a href="#phase-2-display-images">Phase 2: Display Images</a>
+  </li>
+  <li class="toc-item">
+    <a href="#phase-3-varroa-detection">Phase 3: Varroa Detection</a>
+  </li>
+  <li class="toc-item">
+    <a href="#phase-4-analytics">Phase 4: Analytics</a>
+  </li>
+</ul>
+  </li>
+  <li class="toc-item">
+    <a href="#related-documentation">Related Documentation</a>
+  </li>
+  <li class="toc-item">
+    <a href="#change-log">Change Log</a>
+  </li>
+</ul>
+</nav>
+
+    </div>
+    <script>
+    (function() {
+        var players = document.querySelectorAll("[data-audio-player]");
+        players.forEach(function(container) {
+            var audio = container.querySelector("[data-audio-element]");
+            var toggleBtn = container.querySelector("[data-audio-toggle]");
+            var wave = container.querySelector("[data-audio-wave]");
+            if (!audio || !toggleBtn || !wave) {
+                return;
+            }
+            var audioCtx = null;
+            var sourceNode = null;
+            var analyser = null;
+            var waveData = null;
+            var rafId = 0;
+
+            function syncToggleState() {
+                var isPlaying = !audio.paused && !audio.ended;
+                toggleBtn.classList.toggle("is-playing", isPlaying);
+                var label = isPlaying ? (toggleBtn.dataset.stopLabel || "Stop") : (toggleBtn.dataset.playLabel || "Listen");
+                toggleBtn.setAttribute("aria-label", label);
+                toggleBtn.setAttribute("title", label);
+            }
+
+            function ensureVisualizer() {
+                if (analyser) {
+                    return;
+                }
+                var AudioCtx = window.AudioContext || window.webkitAudioContext;
+                if (!AudioCtx) {
+                    return;
+                }
+                audioCtx = new AudioCtx();
+                sourceNode = audioCtx.createMediaElementSource(audio);
+                analyser = audioCtx.createAnalyser();
+                analyser.fftSize = 1024;
+                waveData = new Uint8Array(analyser.fftSize);
+                sourceNode.connect(analyser);
+                analyser.connect(audioCtx.destination);
+            }
+
+            function stopWave() {
+                if (rafId) {
+                    cancelAnimationFrame(rafId);
+                    rafId = 0;
+                }
+            }
+
+            function drawWave() {
+                if (!analyser || !wave) {
+                    return;
+                }
+                var dpr = window.devicePixelRatio || 1;
+                var w = Math.max(88, wave.clientWidth || 88);
+                var h = Math.max(28, wave.clientHeight || 28);
+                if (wave.width !== Math.floor(w * dpr) || wave.height !== Math.floor(h * dpr)) {
+                    wave.width = Math.floor(w * dpr);
+                    wave.height = Math.floor(h * dpr);
+                }
+                var ctx = wave.getContext("2d");
+                if (!ctx) {
+                    return;
+                }
+                ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+                ctx.clearRect(0, 0, w, h);
+                ctx.strokeStyle = "#0066cc";
+                ctx.lineWidth = 1.2;
+
+                analyser.getByteTimeDomainData(waveData);
+                ctx.beginPath();
+                var slice = waveData.length / w;
+                for (var x = 0; x < w; x++) {
+                    var idx = Math.floor(x * slice);
+                    var y = ((waveData[idx] - 128) / 128) * (h * 0.36) + (h / 2);
+                    if (x === 0) {
+                        ctx.moveTo(x, y);
+                    } else {
+                        ctx.lineTo(x, y);
+                    }
+                }
+                ctx.stroke();
+
+                if (!audio.paused && !audio.ended) {
+                    rafId = requestAnimationFrame(drawWave);
+                } else {
+                    stopWave();
+                }
+            }
+
+            toggleBtn.addEventListener("click", function() {
+                if (!audio.paused && !audio.ended) {
+                    audio.pause();
+                    audio.currentTime = 0;
+                    syncToggleState();
+                    stopWave();
+                    return;
+                }
+                ensureVisualizer();
+                if (audioCtx && audioCtx.state === "suspended") {
+                    audioCtx.resume().catch(function() {});
+                }
+                var started = audio.play();
+                if (started && typeof started.then === "function") {
+                    started.then(function() {
+                        syncToggleState();
+                        drawWave();
+                    }).catch(function() {});
+                    return;
+                }
+                syncToggleState();
+                drawWave();
+            });
+            audio.addEventListener("pause", syncToggleState);
+            audio.addEventListener("play", syncToggleState);
+            audio.addEventListener("ended", function() {
+                syncToggleState();
+                stopWave();
+            });
+
+            syncToggleState();
+        });
+    })();
+    </script>
+    <script defer src="/assets/js/main.js"></script>
+</body>
+</html>
+

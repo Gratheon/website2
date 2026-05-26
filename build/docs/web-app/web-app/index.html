@@ -1,0 +1,1146 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📱 Web-app | Gratheon</title>
+    
+    <meta name="description" content="&gt; Goal of this document is to kickstart your development of the web-app as an engineer">
+    
+    
+    <link rel="canonical" href="https://gratheon.com/docs/web-app/web-app/">
+    <meta property="og:title" content="📱 Web-app">
+    <meta property="og:description" content="&gt; Goal of this document is to kickstart your development of the web-app as an engineer">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gratheon.com/docs/web-app/web-app/">
+    <meta property="og:image" content="https://gratheon.com/assets/img/assets/img/gratheon-web-app-preview.webp">
+    <meta property="og:site_name" content="Gratheon">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="📱 Web-app">
+    <meta name="twitter:description" content="&gt; Goal of this document is to kickstart your development of the web-app as an engineer">
+    <meta name="twitter:image" content="https://gratheon.com/assets/img/assets/img/gratheon-web-app-preview.webp">
+    <meta name="twitter:site" content="@gratheon">
+    <meta name="twitter:creator" content="@gratheon">
+    
+    <link rel="icon" href="/assets/favicons/favicon.ico">
+    <style>
+        :root {
+            --sidebar-width: 280px;
+            --toc-width: 240px;
+            --nav-bg: #f8f9fa;
+            --nav-border: #e0e0e0;
+            --nav-active: #0066cc;
+            --bg-primary: #ffffff;
+            --text-primary: #333333;
+            --text-secondary: #666666;
+            --quote-bg: #f5f9ff;
+            --quote-border: #8cb8ee;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background: var(--bg-primary);
+        }
+         
+        .site-header {
+            border-bottom: 1px solid var(--nav-border);
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+        .navbar-logo {
+            display: inline-flex;
+            align-items: center;
+        }
+        .navbar-logo img {
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+            object-fit: cover;
+        }
+        .site-nav {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .lang-switcher {
+            display: inline-flex;
+            gap: 4px;
+            padding: 3px;
+            border: 1px solid var(--nav-border);
+            border-radius: 999px;
+            background: var(--nav-bg);
+        }
+        .lang-link {
+            border: 0;
+            border-radius: 999px;
+            padding: 6px 11px;
+            font-size: 0.8em;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .lang-link.is-active {
+            color: #fff;
+            background: var(--nav-active);
+        }
+        .site-nav a {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .site-nav a:hover { color: var(--nav-active); }
+        .theme-toggle {
+            border: 1px solid var(--nav-border);
+            background: transparent;
+            width: 36px;
+            height: 36px;
+            border-radius: 18px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            color: var(--text-primary);
+        }
+        .theme-toggle svg {
+            width: 18px;
+            height: 18px;
+            display: block;
+        }
+        .theme-toggle .icon-moon { display: none; }
+        html[data-theme='dark'] .theme-toggle .icon-sun { display: none; }
+        html[data-theme='dark'] .theme-toggle .icon-moon { display: block; }
+        html[data-theme='dark'] {
+            --nav-bg: #1d1f22;
+            --nav-border: #383c42;
+            --nav-active: #6aa4ff;
+            --bg-primary: #111315;
+            --text-primary: #eceef1;
+            --text-secondary: #a9adb5;
+            --quote-bg: #18212d;
+            --quote-border: #4b7ebd;
+        }
+        .product-hero-image {
+            height: 200px;
+            overflow: hidden;
+            vertical-align: middle;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .product-hero-image img,
+        .product-hero-image .md-image,
+        .product-hero-image picture {
+            display: block;
+            width: 100%;
+        }
+        .product-hero-image img {
+            width: 100%;
+            margin-top: -10%;
+        }
+        .product-card-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            text-align: center;
+        }
+        .product-card-small {
+            width: 200px;
+        }
+        .product-card-small img,
+        .product-card-small .md-image img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+        }
+        @media (max-width: 700px) {
+            .product-card-grid { justify-content: center; }
+            .product-card-small { width: 45%; min-width: 150px; }
+        }
+        @media (max-width: 480px) {
+            .product-card-small { width: 100%; }
+        }
+         
+        .site-layout {
+            display: flex;
+            width: 100%;
+            max-width: none;
+            margin: 0;
+            min-height: calc(100vh - 120px);
+        }
+         
+        .sidebar {
+            width: var(--sidebar-width);
+            padding: 20px 16px;
+            border-right: 1px solid var(--nav-border);
+            background: var(--nav-bg);
+            flex-shrink: 0;
+            overflow-y: auto;
+            max-height: calc(100vh - 60px);
+            position: sticky;
+            top: 0;
+        }
+        .blog-sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            overflow: hidden;
+        }
+        .sidebar-mode-switch {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 4px;
+            border: 1px solid var(--nav-border);
+            background: var(--bg-primary);
+            border-radius: 999px;
+            padding: 4px;
+        }
+        .sidebar-mode-btn {
+            border: 0;
+            background: transparent;
+            color: var(--text-secondary);
+            border-radius: 999px;
+            font-size: 0.78em;
+            font-weight: 600;
+            padding: 7px 6px;
+            cursor: pointer;
+        }
+        .sidebar-mode-btn.is-active {
+            color: #fff;
+            background: var(--nav-active);
+        }
+        .sidebar-mode-pane {
+            flex: 1;
+            min-height: 0;
+            overflow-y: auto;
+        }
+        .sidebar-timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-height: none;
+            overflow: visible;
+            padding-right: 2px;
+        }
+        .timeline-year h4 {
+            font-size: 0.86em;
+            color: var(--text-secondary);
+            margin: 4px 0;
+        }
+        .timeline-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            margin-bottom: 8px;
+        }
+        .timeline-list li a {
+            display: block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            color: var(--text-primary);
+            text-decoration: none;
+            font-size: 0.86em;
+        }
+        .timeline-list li a time {
+            color: var(--text-secondary);
+            margin-right: 6px;
+            font-size: 0.9em;
+        }
+        .timeline-list li.active > a {
+            color: var(--nav-active);
+            font-weight: 600;
+            background: rgba(0, 102, 204, 0.08);
+        }
+        .sidebar-graph-pane {
+            height: calc(100vh - 130px);
+        }
+        .sidebar-graph-frame {
+            width: 100%;
+            height: 100%;
+            border: 1px solid var(--nav-border);
+            border-radius: 8px;
+            background: var(--bg-primary);
+        }
+        .site-layout.sidebar-graph-mode .sidebar {
+            width: 40%;
+        }
+        .site-layout.sidebar-graph-mode .site-content {
+            max-width: none;
+        }
+        .sidebar-menu, .sidebar-submenu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .sidebar-submenu {
+            padding-left: 16px;
+            border-left: 1px solid var(--nav-border);
+            margin-left: 8px;
+        }
+        .sidebar-item a {
+            display: block;
+            padding: 4px 8px;
+            color: var(--text-primary);
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+        .sidebar-section-head {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .sidebar-section-head a {
+            flex: 1;
+        }
+        .sidebar-toggle {
+            appearance: none;
+            border: 0;
+            background: transparent;
+            color: var(--text-secondary);
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            padding: 0;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+        }
+        .sidebar-toggle:hover {
+            background: rgba(0, 102, 204, 0.08);
+            color: var(--nav-active);
+        }
+        .sidebar-toggle::before {
+            content: "▸";
+            font-size: 0.8em;
+            line-height: 1;
+            transition: transform 0.15s ease;
+        }
+        .sidebar-section.expanded > .sidebar-section-head .sidebar-toggle::before {
+            transform: rotate(90deg);
+        }
+        .sidebar-section > .sidebar-submenu {
+            display: none;
+        }
+        .sidebar-section.expanded > .sidebar-submenu {
+            display: block;
+        }
+        .sidebar-item a:hover {
+            background: rgba(0, 102, 204, 0.08);
+        }
+        .sidebar-item.active > a {
+            color: var(--nav-active);
+            font-weight: 600;
+            background: rgba(0, 102, 204, 0.08);
+        }
+        .sidebar-section > a {
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.8em;
+            letter-spacing: 0.05em;
+            color: var(--text-secondary);
+            margin-top: 12px;
+        }
+         
+        .site-content {
+            flex: 1;
+            min-width: 0;
+            padding: 24px 40px;
+            max-width: 800px;
+        }
+        .embed {
+            width: 100%;
+            max-width: 800px;
+            margin: 24px auto;
+        }
+        .embed iframe {
+            display: block;
+            width: min(100%, 800px);
+            aspect-ratio: 16 / 9;
+            height: auto;
+            border: 0;
+            border-radius: 12px;
+        }
+         
+        .breadcrumbs {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+            padding: 0;
+            margin-bottom: 20px;
+            font-size: 0.85em;
+            color: var(--text-secondary);
+        }
+        .breadcrumbs li:not(:last-child)::after {
+            content: "›";
+            margin-left: 4px;
+            color: var(--text-secondary);
+        }
+        .breadcrumbs a { color: var(--nav-active); text-decoration: none; }
+        .breadcrumbs a:hover { text-decoration: underline; }
+         
+        .toc {
+            width: var(--toc-width);
+            padding: 20px 16px;
+            flex-shrink: 0;
+            position: sticky;
+            top: 0;
+            max-height: 100vh;
+            overflow-y: auto;
+            font-size: 0.85em;
+        }
+        .toc-title {
+            font-size: 0.8em;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        .toc-list, .toc-sublist {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .toc-sublist { padding-left: 12px; }
+        .toc-item a {
+            display: block;
+            padding: 3px 0;
+            color: var(--text-secondary);
+            text-decoration: none;
+            border-left: 2px solid transparent;
+            padding-left: 8px;
+        }
+        .toc-item a:hover {
+            color: var(--nav-active);
+            border-left-color: var(--nav-active);
+        }
+         
+        .prev-next {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid var(--nav-border);
+            gap: 20px;
+        }
+        .prev-next a {
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            padding: 12px 16px;
+            border: 1px solid var(--nav-border);
+            border-radius: 8px;
+            flex: 1;
+            transition: border-color 0.2s;
+        }
+        .prev-next a:hover { border-color: var(--nav-active); }
+        .prev-next .prev-link { text-align: left; }
+        .prev-next .next-link { text-align: right; margin-left: auto; }
+        .prev-label, .next-label {
+            font-size: 0.8em;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+        }
+        .prev-title, .next-title {
+            color: var(--nav-active);
+            font-weight: 500;
+        }
+         
+        article h1 { font-size: 2em; margin-bottom: 8px; }
+        article time { color: var(--text-secondary); font-size: 0.9em; }
+        .article-meta {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 4px;
+            margin: 0 0 8px;
+            flex-wrap: nowrap;
+        }
+        .article-audio {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin: 0 0 0 2px;
+        }
+        .article-audio button {
+            border: 1px solid var(--nav-active);
+            border-radius: 999px;
+            background: var(--nav-active);
+            color: #fff;
+            width: 36px;
+            height: 36px;
+            padding: 0;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        .article-audio button:hover {
+            filter: brightness(0.92);
+        }
+        .article-audio button svg {
+            width: 14px;
+            height: 14px;
+            fill: currentColor;
+        }
+        .article-audio button .icon-stop { display: none; }
+        .article-audio button.is-playing .icon-play { display: none; }
+        .article-audio button.is-playing .icon-stop { display: block; }
+        .article-audio .audio-wave {
+            width: 88px;
+            height: 28px;
+            border: 0;
+            border-radius: 0;
+            background: transparent;
+            opacity: 0.95;
+        }
+        .article-audio button:disabled {
+            opacity: 0.55;
+            cursor: default;
+        }
+        article .tags { margin: 22px 0 24px; }
+        article .tag {
+            display: inline-block;
+            background: var(--nav-bg);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            color: var(--nav-active);
+            margin-right: 4px;
+            text-decoration: none;
+        }
+        article .tag:hover { text-decoration: underline; }
+        article .content { margin-top: 16px; }
+        article .content h2 { margin-top: 2em; margin-bottom: 0.5em; }
+        article .content h3 { margin-top: 1.5em; margin-bottom: 0.4em; }
+        article .content p { margin-bottom: 1em; }
+        article .content blockquote {
+            margin: 1.4em 0;
+            padding: 0.8em 1em;
+            border-left: 4px solid var(--quote-border);
+            background: var(--quote-bg);
+            color: var(--text-secondary);
+            font-style: italic;
+        }
+        article .content blockquote p:last-child {
+            margin-bottom: 0;
+        }
+         
+        .site-footer {
+            border-top: 1px solid var(--nav-border);
+            padding: 20px;
+            color: var(--text-secondary);
+            font-size: 0.9em;
+            text-align: center;
+        }
+         
+        a { color: var(--nav-active); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        img { max-width: 100%; height: auto; }
+        pre {
+            background: #f4f4f4;
+            padding: 15px;
+            overflow-x: auto;
+            border-radius: 4px;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: "Monaco", "Menlo", monospace;
+        }
+        pre code { padding: 0; background: none; }
+        table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background: #f4f4f4; }
+        .section-index { list-style: none; padding: 0; }
+        .section-index li { padding: 6px 0; border-bottom: 1px solid var(--nav-border); }
+        .section-index li a { font-weight: 500; }
+        .section-article-list {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+        .section-article-preview {
+            border-bottom: 1px solid var(--nav-border);
+            padding-bottom: 12px;
+        }
+        .section-article-preview h2 {
+            margin: 0 0 4px;
+            font-size: 1.05em;
+        }
+        .section-article-preview time {
+            display: block;
+            color: var(--text-secondary);
+            font-size: 0.83em;
+            margin-bottom: 6px;
+        }
+        .section-article-preview p {
+            margin: 0;
+            color: var(--text-secondary);
+        }
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            margin: 32px 0 0;
+        }
+        .project-card {
+            background: var(--bg-secondary);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .project-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px var(--shadow);
+        }
+        .project-image {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            background: var(--border);
+            display: block;
+        }
+        .project-content {
+            padding: 20px;
+        }
+        .project-content h3 {
+            margin: 0 0 8px;
+            font-size: 1.25em;
+        }
+        .project-content p {
+            margin: 0 0 16px;
+            color: var(--text-secondary);
+            font-size: 0.95em;
+        }
+        .project-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        .project-tag {
+            font-size: 0.8em;
+            padding: 4px 10px;
+            background: var(--bg-primary);
+            border-radius: 20px;
+            color: var(--text-secondary);
+        }
+         
+        @media (max-width: 1200px) {
+            .toc { display: none; }
+        }
+        @media (max-width: 768px) {
+            .sidebar { display: none; }
+            .site-content { padding: 16px; }
+            .projects-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body class="page-layout-page">
+    <header class="site-header">
+        <div class="header-left">
+            <a class="navbar-logo" href="/">
+                <img class="no-transform" src="/assets/img/logo_v7w.svg" alt="Gratheon">
+            </a>
+            <nav class="site-nav">
+                <a href="/about/">About</a><a href="/about/products/">Products</a><a href="/docs/">Docs</a><a href="/research/">Research</a><a href="/blog/">Blog</a><a href="/pricing/">Pricing</a><a href="https://discord.gg/PcbP4uedWj">Discord</a><a href="https://github.com/gratheon/web-app">GitHub</a><a href="https://app.gratheon.com/account/authenticate/">Log in</a>
+            </nav>
+        </div>
+        <div class="header-right">
+            
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
+                <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="4"></circle>
+                    <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
+                </svg>
+                <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3c0 0 0 0 0 0A7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+    <div class="site-layout">
+        <nav class="sidebar blog-sidebar" aria-label="Navigation" data-sidebar-mode="categories" data-sidebar-default-mode="categories">
+  <div class="sidebar-mode-pane" data-sidebar-mode-pane="categories">
+<ul class="sidebar-menu">
+  <li class="sidebar-item sidebar-section">
+    <div class="sidebar-section-head">
+      <button class="sidebar-toggle" type="button" aria-label="Toggle section _templates" aria-expanded="false"></button>
+      <a href="/docs/web-app/_templates/">_templates</a>
+    </div>
+<ul class="sidebar-submenu">
+  <li class="sidebar-item">
+      <a href="/docs/web-app/_templates/feature-technical-template/">feature technical template</a>
+  </li>
+</ul>
+  </li>
+  <li class="sidebar-item sidebar-section">
+    <div class="sidebar-section-head">
+      <button class="sidebar-toggle" type="button" aria-label="Toggle section Features" aria-expanded="false"></button>
+      <a href="/docs/web-app/features/">Features</a>
+    </div>
+<ul class="sidebar-submenu">
+  <li class="sidebar-item">
+      <a href="/docs/web-app/features/apiary-management/">apiary management</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/web-app/features/bottom-board-management/">bottom board management</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/web-app/features/frame-photo-upload/">frame photo upload</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/web-app/features/frame-side-management/">frame side management</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/web-app/features/hive-management/">hive management</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/web-app/features/hive-placement-planner/">hive placement planner</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/web-app/features/join-colonies/">join colonies</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/web-app/features/keyboard-support/">keyboard support</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/web-app/features/queen-detection/">queen detection</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/web-app/features/queen-management/">queen management</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/web-app/features/split-colony/">split colony</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/web-app/features/telemetry-storage/">telemetry storage</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/web-app/features/timeseries-analytics/">timeseries analytics</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/web-app/features/user-profile-editing/">user profile editing</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/web-app/features/user-registration/">user registration</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/web-app/features/varroa-bottom-detection/">varroa bottom detection</a>
+  </li>
+</ul>
+  </li>
+  <li class="sidebar-item sidebar-section">
+    <div class="sidebar-section-head">
+      <button class="sidebar-toggle" type="button" aria-label="Toggle section 🥞 DB schemas" aria-expanded="false"></button>
+      <a href="/docs/web-app/🥞 DB schemas/">🥞 DB schemas</a>
+    </div>
+<ul class="sidebar-submenu">
+  <li class="sidebar-item">
+      <a href="/docs/web-app/🥞 DB schemas/gate-video-stream/">gate video stream</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/web-app/🥞 DB schemas/image-splitter/">image splitter</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/web-app/🥞 DB schemas/swarm-api/">swarm api</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/web-app/🥞 DB schemas/user-cycle/">user cycle</a>
+  </li>
+</ul>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/web-app/tech-stack-conventions-environments/">Tech stack, conventions, environments</a>
+  </li>
+  <li class="sidebar-item">
+      <a href="/docs/web-app/ux-ui-wireframes/">UX   UI wireframes</a>
+  </li>
+  <li class="sidebar-item active expanded">
+      <a href="/docs/web-app/web-app/" aria-current="page">📱 Web-app</a>
+  </li>
+</ul>
+  </div>
+</nav>
+
+        <main class="site-content">
+            
+<article>
+    
+    <nav aria-label="Breadcrumb">
+        <ol class="breadcrumbs">
+            
+            <li>
+                
+                    <a href="/">Home</a>
+                
+            </li>
+            
+            <li>
+                
+                    <a href="/docs/">Docs</a>
+                
+            </li>
+            
+            <li>
+                
+                    <a href="/docs/web-app/">Web-app</a>
+                
+            </li>
+            
+            <li>
+                
+                    <span aria-current="page">📱 Web-app</span>
+                
+            </li>
+            
+        </ol>
+    </nav>
+    
+    <h1>📱 Web-app</h1>
+    
+    <div class="content">
+        <blockquote>
+<p>Goal of this document is to kickstart your development of the web-app as an engineer</p>
+</blockquote>
+<h2 id="environment-prerequisites">Environment prerequisites</h2>
+<p>💡 You will need Linux or Mac OSX with <strong>Docker</strong> to develop <a href="https://www.notion.so/Web-app-2937ed264e1d434a8664caa4bc40978e?pvs=21">Web-app</a> services</p>
+<p>To develop <a href="https://www.notion.so/Entrance-Observer-b0319799ab7744dc928c08119de4fc43?pvs=21">Entrance Observer</a> video processing services you’ll need <a href="https://www.notion.so/Jetson-Orin-Nano-0432edfb44f748a6874c41ddefa7f69c?pvs=21">Jetson Orin Nano</a> or <a href="https://www.notion.so/Jetson-Nano-6500eadfbab64e7b8bd0d0896df30701?pvs=21">Jetson Nano</a> to have GPU support and docker image compatibility</p>
+<h2 id="architecture">Architecture</h2>
+<h3 id="core-services">Core services</h3>
+<p>The following services are mandatory, you will need to git-checkout them and start in the following order:</p>
+<ul>
+<li>mysql ← provides storage for other node and go services</li>
+<li>redis ← provides a pub-sub and caching layer</li>
+<li>graphql-schema-registry ← stores graphql schema of microservices</li>
+<li>graphql-router ← routes API requests to other microservices using a <a href="https://www.apollographql.com/docs/federation/">graphql federation</a>, which basically means that requests are split and routed to the microservice that is responsible for particular part of the schema</li>
+</ul>
+<h3 id="core-services-and-routing">Core services and routing</h3>
+<pre><code class="language-mermaid">flowchart LR
+	web-app --&quot;read/write data \n on client side via dexie&quot;--&gt; indexed-db[(indexed-db)]
+	web-app(&quot;&lt;a href='https://github.com/Gratheon/web-app'&gt;web-app&lt;/a&gt;\n:8080&quot;) --&gt; graphql-router
+	web-app --&quot;subscribe to events\n over websockets&quot;--&gt; event-stream-filter(&quot;&lt;a href='https://github.com/Gratheon/event-stream-filter'&gt;event-stream-filter&lt;/a&gt;\n:8300\n:8350&quot;) --&quot;listen to events&quot;--&gt; redis
+
+	some-product-service --&quot;publish events&quot;--&gt; redis
+	graphql-router --&quot;read service schemas&quot;--&gt; graphql-schema-registry(&quot;&lt;a href='https://github.com/tot-ra/graphql-schema-registry'&gt;graphql-schema-registry&lt;/a&gt;\n&lt;a href='http://localhost:6001/'&gt;:6001&lt;/a&gt;\n&quot;)
+	graphql-router -.-&gt; some-product-service --&quot;read/write data&quot;--&gt; mysql
+	some-product-service --&quot;update schema&quot;--&gt; graphql-schema-registry
+</code></pre>
+<h3 id="product-services">Product services</h3>
+<ul>
+<li>go-api ← main service that manages domain entities like apiary, hive, hive section, frame, frame side</li>
+<li>image-splitter ← main service that manages image processing + stores data on the detected objects in the frame photo</li>
+</ul>
+<p>Note that some service may still be in development and can be unstable or only in draft phase (video processing for example)</p>
+<pre><code class="language-mermaid">flowchart LR
+	graphql-router(&quot;&lt;a href='https://github.com/Gratheon/graphql-router'&gt;graphql-router&lt;/a&gt;\n :6100&quot;) --&gt; swarm-api(&quot;&lt;a href='https://github.com/Gratheon/swarm-api'&gt;swarm-api&lt;/a&gt;\n:8100&quot;) --&gt; mysql[(mysql\n:5100)]
+	graphql-router --&gt; swarm-api --&gt; redis[(&quot;&lt;a href='https://github.com/Gratheon/redis'&gt;redis pub-sub&lt;/a&gt;\n:6379&quot;)]
+
+	graphql-router --&gt; image-splitter(&quot;&lt;a href='https://github.com/Gratheon/image-splitter'&gt;image-splitter&lt;/a&gt;\n:8800&quot;) --&gt; mysql
+
+	web-app --&quot;upload frames&quot;--&gt; image-splitter --&gt; aws-s3
+	image-splitter --&quot;inference&quot;--&gt; models-bee-detector(&quot;&lt;a href='https://github.com/Gratheon/models-bee-detector'&gt;models-bee-detector&lt;/a&gt;\n:8700&quot;)
+	image-splitter --&quot;inference&quot;--&gt; models-frame-resources(&quot;&lt;a href='https://github.com/Gratheon/models-frame-resources'&gt;models-frame-resources&lt;/a&gt;\n:8540&quot;)
+	graphql-router --&gt; user-cycle(&quot;&lt;a href='https://github.com/Gratheon/user-cycle'&gt;user-cycle&lt;/a&gt;\n:4000&quot;) --&gt; mysql
+	graphql-router --&gt; user-cycle --&gt; stripe
+	graphql-router --&gt; plantnet(&quot;&lt;a href='https://github.com/Gratheon/plantnet'&gt;plantnet&lt;/a&gt;\n:8090&quot;) --&gt; mysql
+
+	graphql-router --&gt; weather(&quot;&lt;a href='https://github.com/Gratheon/weather'&gt;weather&lt;/a&gt;\n:8070&quot;)
+	user-cycle --&quot;create org and user&quot;--&gt; grafana(&quot;&lt;a href='https://github.com/gratheon/grafana'&gt;grafana&lt;/a&gt;&quot;)
+
+</code></pre>
+<h2 id="development-setup">Development setup</h2>
+<p>Start by checking out <a href="https://github.com/gratheon/web-app">https://github.com/gratheon/web-app</a>. Its just a react single-page app and does not need a docker image but you can see API dependencies it will require.</p>
+<p>Running pure <code>just start</code> will allow you to use production backend for frontend development, so you should be able to login with <strong>existing credentials</strong>. Make sure to use email/password for that, as Google login does not work on localhost.</p>
+<p>This is most useful in case you need to make cosmetic or FE-only changes that do not alter or introduce any API schema modification.</p>
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/T4b2uxrf8U4" title="Making easy web-app changes" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p>To have full flexibility of schema and backend modification, you will need to  checkout all of the core dependent services based on the architecture diagram and understand how services on the backend are connected</p>
+<p>After checkout, for every service</p>
+<ul>
+<li>You’ll need to run <code>just start</code> to start docker container</li>
+<li>Set <code>src/config/config.dev.ts</code> that was not commited to the repository. Configs typically include credentials to access DB, AWS S3 or external services</li>
+</ul>
+<p>💡 Note that some services run DB migrations when they start-up, so make sure you have mysql running and databases pre-created with valid user access. Note that most services do not yet re-connect to mysql automatically, so you need to start services in correct order or restart pod</p>
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/dCtL5icnsC0" title="Docs - web-app development 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<h3 id="optional-services">Optional services</h3>
+<p>Some services are not blocking the UI or backend in general, but are required for some specific features, so you may need depending on your work:</p>
+<ul>
+<li>models-bee-detector ← detects bees</li>
+<li>event-stream-filter ← sends events to frontend</li>
+<li>gate-video-stream</li>
+<li>models-gate-tracker</li>
+</ul>
+<p><figure class="md-image">
+  <picture>
+    <source srcset="/assets/img/docs/img/Screenshot 2024-04-08 at 12.29.45-thumbnail.webp 300w, /assets/img/docs/img/Screenshot 2024-04-08 at 12.29.45-preview.webp 800w, /assets/img/docs/img/Screenshot 2024-04-08 at 12.29.45-full.webp 1147w" sizes="(max-width: 768px) 100vw, 800px" type="image/webp">
+    <img src="/assets/img/docs/img/Screenshot 2024-04-08 at 12.29.45-full.webp" alt="" loading="lazy" width="1147" height="784">
+  </picture>
+</figure></p>
+<h2 id="features">Features</h2>
+<h3 id="bottom-board--varroa-monitoring">Bottom Board &amp; Varroa Monitoring</h3>
+<p>Beekeepers can track varroa mite infestation by uploading images of the hive bottom board.</p>
+<p>See [Bottom Board Documentation](../../about/products/web_app/starter-tier/🧮 Hive bottom board &amp; varroa monitoring.md) for user guide and [DB Schema](./🥞 DB schemas/) for table structures.</p>
+<ul>
+<li><strong>Image Upload:</strong> Two-step process:
+<ol>
+<li>Upload image to S3 via <code>uploadFrameSide</code> mutation</li>
+<li>Link image to box via <code>addFileToBox</code> mutation in image-splitter</li>
+</ol>
+</li>
+<li><strong>Database:</strong> Images stored in <code>files_box_rel</code> table with references to <code>box_id</code>, <code>file_id</code>, and <code>inspection_id</code> for versioning</li>
+<li><strong>Processing:</strong> Images automatically queued for varroa detection (TYPE_VARROA job)</li>
+<li><strong>Services Involved:</strong>
+<ul>
+<li><strong>swarm-api</strong>: Box management and BOTTOM type</li>
+<li><strong>image-splitter</strong>: File upload, storage, and linking</li>
+<li><strong>web-app</strong>: BottomBox component for UI</li>
+</ul>
+</li>
+</ul>
+<p>See [Bottom Board Documentation](../../about/products/web_app/starter-tier/🧮 Hive bottom board &amp; varroa monitoring.md) for user guide and [DB Schema](./🥞 DB schemas/) for table structures.</p>
+<h3 id="inspection-sharing">Inspection Sharing</h3>
+<p>Users can share individual hive inspections with others via a unique public URL.</p>
+<ul>
+<li><strong>Generating a Link:</strong> From the inspection list view, clicking the &quot;Share&quot; button on an inspection generates a unique URL containing a secure share token.</li>
+<li><strong>Public Access:</strong> Anyone with this link can view the specific inspection details without needing to log in.</li>
+<li><strong>Read-Only &amp; Scoped:</strong> Access via the share link is strictly read-only. The embedded share token limits data access specifically to the shared inspection and potentially its parent hive/apiary details necessary for context. It prevents access to any other data or the ability to perform modifications.</li>
+<li><strong>Security:</strong> Share tokens are validated, and access is controlled by predefined scopes associated with the token. The <strong>GraphQL Router enforces these scopes</strong>, ensuring secure, limited data exposure by blocking unauthorized requests. (See <a href="../API/GraphQL.md#share-token-authentication-read-only-access">GraphQL API Authentication</a> for technical details).</li>
+</ul>
+<h3 id="split-colony">Split Colony</h3>
+<p>Create new hives by moving selected frames from a strong colony. Prevents swarming and enables apiary expansion.</p>
+<p><strong>Technical Overview:</strong></p>
+<ul>
+<li><strong>Mutation:</strong> <code>splitHive(sourceHiveId, name, frameIds)</code> - Creates new hive with 1-10 selected frames</li>
+<li><strong>Database:</strong> New hive record with <code>parent_hive_id</code> and <code>split_date</code> tracking</li>
+<li><strong>Services:</strong> swarm-api (split logic), web-app (SplitHiveModal UI)</li>
+<li><strong>Real-time:</strong> Redis pub/sub broadcasts <code>hive:split</code> event</li>
+</ul>
+<h3 id="join-colony-merge-hives">Join Colony (Merge Hives)</h3>
+<p>Merge two colonies by moving boxes from source to target hive. Strengthens weak colonies and manages queen genetics.</p>
+<p><strong>Technical Overview:</strong></p>
+<ul>
+<li><strong>Mutation:</strong> <code>joinHives(sourceHiveId, targetHiveId, mergeType)</code> - Merges hives with queen management options</li>
+<li><strong>Database:</strong> Source hive marked with <code>merged_into_hive_id</code>, <code>merge_date</code>, <code>merge_type</code></li>
+<li><strong>Box Logic:</strong> BOTTOM/GATE boxes stay in source, all others move to target</li>
+<li><strong>Services:</strong> swarm-api (merge logic, box movement), web-app (JoinColonyModal UI)</li>
+<li><strong>Real-time:</strong> Redis pub/sub broadcasts <code>hive:join</code> and <code>hive:merged</code> events</li>
+</ul>
+
+    </div>
+    
+    
+    
+    <nav class="prev-next" aria-label="Page navigation">
+        
+        <a href="/docs/web-app/ux-ui-wireframes/" class="prev-link">
+            <span class="prev-label">← Previous</span>
+            <span class="prev-title">UX   UI wireframes</span>
+        </a>
+        
+        
+        <a href="/docs/billing-system/" class="next-link">
+            <span class="next-label">Next →</span>
+            <span class="next-title">billing system</span>
+        </a>
+        
+    </nav>
+    
+</article>
+
+        </main>
+        <nav class="toc" aria-label="On this page">
+  <h2 class="toc-title">On this page</h2>
+<ul class="toc-list">
+  <li class="toc-item">
+    <a href="#environment-prerequisites">Environment prerequisites</a>
+  </li>
+  <li class="toc-item">
+    <a href="#architecture">Architecture</a>
+<ul class="toc-sublist">
+  <li class="toc-item">
+    <a href="#core-services">Core services</a>
+  </li>
+  <li class="toc-item">
+    <a href="#core-services-and-routing">Core services and routing</a>
+  </li>
+  <li class="toc-item">
+    <a href="#product-services">Product services</a>
+  </li>
+</ul>
+  </li>
+  <li class="toc-item">
+    <a href="#development-setup">Development setup</a>
+<ul class="toc-sublist">
+  <li class="toc-item">
+    <a href="#optional-services">Optional services</a>
+  </li>
+</ul>
+  </li>
+  <li class="toc-item">
+    <a href="#features">Features</a>
+<ul class="toc-sublist">
+  <li class="toc-item">
+    <a href="#bottom-board-varroa-monitoring">Bottom Board &amp; Varroa Monitoring</a>
+  </li>
+  <li class="toc-item">
+    <a href="#inspection-sharing">Inspection Sharing</a>
+  </li>
+  <li class="toc-item">
+    <a href="#split-colony">Split Colony</a>
+  </li>
+  <li class="toc-item">
+    <a href="#join-colony-merge-hives">Join Colony (Merge Hives)</a>
+  </li>
+</ul>
+  </li>
+</ul>
+</nav>
+
+    </div>
+    <script>
+    (function() {
+        var players = document.querySelectorAll("[data-audio-player]");
+        players.forEach(function(container) {
+            var audio = container.querySelector("[data-audio-element]");
+            var toggleBtn = container.querySelector("[data-audio-toggle]");
+            var wave = container.querySelector("[data-audio-wave]");
+            if (!audio || !toggleBtn || !wave) {
+                return;
+            }
+            var audioCtx = null;
+            var sourceNode = null;
+            var analyser = null;
+            var waveData = null;
+            var rafId = 0;
+
+            function syncToggleState() {
+                var isPlaying = !audio.paused && !audio.ended;
+                toggleBtn.classList.toggle("is-playing", isPlaying);
+                var label = isPlaying ? (toggleBtn.dataset.stopLabel || "Stop") : (toggleBtn.dataset.playLabel || "Listen");
+                toggleBtn.setAttribute("aria-label", label);
+                toggleBtn.setAttribute("title", label);
+            }
+
+            function ensureVisualizer() {
+                if (analyser) {
+                    return;
+                }
+                var AudioCtx = window.AudioContext || window.webkitAudioContext;
+                if (!AudioCtx) {
+                    return;
+                }
+                audioCtx = new AudioCtx();
+                sourceNode = audioCtx.createMediaElementSource(audio);
+                analyser = audioCtx.createAnalyser();
+                analyser.fftSize = 1024;
+                waveData = new Uint8Array(analyser.fftSize);
+                sourceNode.connect(analyser);
+                analyser.connect(audioCtx.destination);
+            }
+
+            function stopWave() {
+                if (rafId) {
+                    cancelAnimationFrame(rafId);
+                    rafId = 0;
+                }
+            }
+
+            function drawWave() {
+                if (!analyser || !wave) {
+                    return;
+                }
+                var dpr = window.devicePixelRatio || 1;
+                var w = Math.max(88, wave.clientWidth || 88);
+                var h = Math.max(28, wave.clientHeight || 28);
+                if (wave.width !== Math.floor(w * dpr) || wave.height !== Math.floor(h * dpr)) {
+                    wave.width = Math.floor(w * dpr);
+                    wave.height = Math.floor(h * dpr);
+                }
+                var ctx = wave.getContext("2d");
+                if (!ctx) {
+                    return;
+                }
+                ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+                ctx.clearRect(0, 0, w, h);
+                ctx.strokeStyle = "#0066cc";
+                ctx.lineWidth = 1.2;
+
+                analyser.getByteTimeDomainData(waveData);
+                ctx.beginPath();
+                var slice = waveData.length / w;
+                for (var x = 0; x < w; x++) {
+                    var idx = Math.floor(x * slice);
+                    var y = ((waveData[idx] - 128) / 128) * (h * 0.36) + (h / 2);
+                    if (x === 0) {
+                        ctx.moveTo(x, y);
+                    } else {
+                        ctx.lineTo(x, y);
+                    }
+                }
+                ctx.stroke();
+
+                if (!audio.paused && !audio.ended) {
+                    rafId = requestAnimationFrame(drawWave);
+                } else {
+                    stopWave();
+                }
+            }
+
+            toggleBtn.addEventListener("click", function() {
+                if (!audio.paused && !audio.ended) {
+                    audio.pause();
+                    audio.currentTime = 0;
+                    syncToggleState();
+                    stopWave();
+                    return;
+                }
+                ensureVisualizer();
+                if (audioCtx && audioCtx.state === "suspended") {
+                    audioCtx.resume().catch(function() {});
+                }
+                var started = audio.play();
+                if (started && typeof started.then === "function") {
+                    started.then(function() {
+                        syncToggleState();
+                        drawWave();
+                    }).catch(function() {});
+                    return;
+                }
+                syncToggleState();
+                drawWave();
+            });
+            audio.addEventListener("pause", syncToggleState);
+            audio.addEventListener("play", syncToggleState);
+            audio.addEventListener("ended", function() {
+                syncToggleState();
+                stopWave();
+            });
+
+            syncToggleState();
+        });
+    })();
+    </script>
+    <script defer src="/assets/js/main.js"></script>
+</body>
+</html>
+

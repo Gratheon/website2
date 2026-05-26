@@ -1,0 +1,17 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.inFolder("research/papers")
+        - file.ext == "md"
+    order:
+      - title
+      - year
+      - orgs
+      - file.name
+    sort:
+      - property: year
+        direction: DESC
+    columnSize:
+      note.title: 392
