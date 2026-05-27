@@ -28,6 +28,25 @@ For the current nginx/deployment layout that expects `build/`:
 just publish
 ```
 
+## Deployment
+
+Pushes to `main` deploy through `.github/workflows/deploy.yml`. The workflow SSHes to `root@gratheon.com`, pulls `/www/website` as the `www` user, runs `./restart.sh`, and verifies `https://gratheon.com/`.
+
+Required GitHub Actions secret:
+
+```bash
+GRATHEON_PRODUCTION_SSH_KEY
+```
+
+Manual production deploy:
+
+```bash
+ssh root@gratheon.com
+cd /www/website
+runuser -u www -- git -C /www/website pull --ff-only origin main
+./restart.sh
+```
+
 ## Content
 
 - `content/` is the source used by `blog-engine-md`.

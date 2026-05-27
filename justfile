@@ -1,18 +1,16 @@
 start:
-    ../blog-engine-md/blog-engine serve
+    "${BLOG_ENGINE:-../blog-engine-md/bin/blog-engine}" serve
 
 serve:
-    ../blog-engine-md/blog-engine serve
+    "${BLOG_ENGINE:-../blog-engine-md/bin/blog-engine}" serve
 
 build:
     rm -rf dist
-    ../blog-engine-md/blog-engine build
+    "${BLOG_ENGINE:-../blog-engine-md/bin/blog-engine}" build
 
 # Publish generated output to the directory expected by the current nginx config.
 publish:
-    rm -rf build dist
-    ../blog-engine-md/blog-engine build
-    mv dist build
+    ./restart.sh --publish-only
 
 # Sync legal documents from website (source of truth) to all repositories
 sync-licenses:

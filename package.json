@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "../blog-engine-md/blog-engine serve",
-    "serve": "../blog-engine-md/blog-engine serve",
-    "build": "rm -rf dist && ../blog-engine-md/blog-engine build",
-    "publish": "rm -rf build dist && ../blog-engine-md/blog-engine build && mv dist build"
+    "start": "\"${BLOG_ENGINE:-../blog-engine-md/bin/blog-engine}\" serve",
+    "serve": "\"${BLOG_ENGINE:-../blog-engine-md/bin/blog-engine}\" serve",
+    "build": "rm -rf dist && \"${BLOG_ENGINE:-../blog-engine-md/bin/blog-engine}\" build",
+    "publish": "./restart.sh --publish-only"
   }
 }
