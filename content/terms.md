@@ -2,9 +2,8 @@
 title: Terms Of Service
 hide_table_of_contents: true
 ---
-# Terms Of Service
 
-**[Last updated](https://github.com/Gratheon/website/commits/main/content/terms.md) April 15, 2025**
+**[Last updated](https://github.com/Gratheon/website2/commits/main/content/terms.md) April 15, 2025**
 
 **Contact Us:** In order to resolve a complaint regarding the Site or to receive further information regarding use of the Site, please contact us at: [pilot@gratheon.com](mailto:pilot@gratheon.com)
 

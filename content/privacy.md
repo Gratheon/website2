@@ -4,9 +4,7 @@ hide_table_of_contents: true
 ---
 
 
-# Privacy Policy
-
-**[Last updated](https://github.com/Gratheon/website/commits/main/content/privacy.md) April 15, 2025**
+**[Last updated](https://github.com/Gratheon/website2/commits/main/content/privacy.md) April 15, 2025**
 
 This privacy policy explains what information we collect, how we use it, and your rights regarding your information. Please read it carefully. If you disagree with any terms, please discontinue using our Sites and services.
 
@@ -272,4 +270,4 @@ To exercise any of your GDPR rights, please contact us using the details in Sect
 
 We may update this privacy policy from time to time. The updated version will be indicated by an updated "Revised" date and the updated version will be effective as soon as it is accessible. If we make material changes to this privacy policy, we may notify you either by prominently posting a notice of such changes or by directly sending you a notification. We encourage you to review this privacy policy frequently to be informed of how we are protecting your information.
 
-You can track [history of changes](https://github.com/Gratheon/website/commits/main/privacy.html)
+You can track [history of changes](https://github.com/Gratheon/website2/commits/main/content/privacy.md)
