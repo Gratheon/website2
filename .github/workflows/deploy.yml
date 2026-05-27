@@ -22,6 +22,12 @@ jobs:
       - name: Deploy production website
         run: ./scripts/deploy-production.sh
 
+      - name: Verify active release on server
+        run: |
+          test -L /www/website/current
+          test -f /www/website/current/index.html
+          readlink /www/website/current
+
       - name: Verify public site
         run: |
           ./scripts/verify-production.sh https://gratheon.com/

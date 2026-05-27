@@ -6,6 +6,8 @@ Beekeepers face numerous challenges when it comes to protecting their hives, wit
 
 Another common threat to bee colonies comes from the wax moth, ants, and hive beetles. Wax moths feed on the bees' wax and brood comb, destroying the structural integrity of the hive and making it more vulnerable to further infestations. Ants can invade hives in search of honey, and their presence often disrupts the hive’s activity. Similarly, the hive beetle can damage combs and larvae, causing a loss of honey stores and spreading diseases that affect the bees. These pests often require constant monitoring and intervention, and their presence in a hive can lead to the weakening of the colony, reducing its overall health and productivity. For beekeepers, managing these infestations is crucial to maintaining strong, healthy colonies.
 
+Related Gratheon work focuses on measurement before intervention: [hive bottom board varroa counting](../../products/web_app/starter-tier/hive_bottom_varroa_count.md), [varroa treatment diary](../../products/web_app/hobbyist-tier/📅%20Varroa%20Treatment%20diary.md), and future [varroa detection from entrance video](../../products/entrance_observer/todo/🦀%20Varroa%20mite%20infestation%20detection%20from%20video.md).
+
 [https://fb.watch/n_bxvQeSug/](https://fb.watch/n_bxvQeSug/)
 
 

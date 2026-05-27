@@ -7,19 +7,20 @@ sidebar_position: 1
 ![](img/research.jpg)
 </div></div>
 
-We want to be aware of recent and historical development in research that is tied to bees, observability and machine learning. We are open to collaboration with research and academic institutions (see our docs for more engineering and ML specific articles). 
+We want to be aware of recent and historical development in research that is tied to bees, observability and machine learning. We are open to collaboration with research and academic institutions (see our docs for more engineering and ML specific articles).
+
+The most active applied research threads connect to [Entrance Observer](../about/products/entrance_observer/entrance_observer.md), [robotic beehive](../about/products/robotic_beehive/robotic_beehive.md), and [web-app AI features](../about/products/web_app/web_app.md).
 
 Gratheon team is interested in existing research and engineering work. We track
 - [Research Papers](papers/index.md) done by academics
 - [Hacker projects](Hacker%20projects.md) done by enthusiasts
-- [Commercial projects](/about/company/business_plan/Competition/) pursued by enterpreneurs
+- [Commercial projects](../about/company/business_plan/Competition/index.md) pursued by enterpreneurs
 ## Research collaboration with us
-- Our [Entrance Observer White Paper](/assets/assets/entrance-observer-whitepaper.pdf)
+- Our [Entrance Observer White Paper](../assets/entrance-observer-whitepaper.pdf)
 - TalTech / Vidrik - we have collaborated on a [whitepaper](https://easychair.org/publications/preprint/QGJN)
 - **University of Tartu** - In 2025, we collaborated with [Associate Professor Dmytro Fishman](https://www.linkedin.com/in/dmytro-fishman/) and his Machine Learning course (MTAT.03.227). Three student teams developed production-ready AI models for:
   - Bee type detection (worker vs drone bees) - 96.7% precision
   - Hornet detection at hive entrance - critical early warning system
   - Multi-class bee detection including pollen-carrying bees
-  - [Read more about their work →](https://gratheon.com/blog/2025/12/17/University-of-Tartu-Students-Advance-Bee-Monitoring-with-AI)
+  - [Read more about their work](../blog/2025-12-17%20🎓%20University%20of%20Tartu%20Students%20Advance%20Bee%20Monitoring%20with%20AI.md)
 - [Tartu University Topics](https://topics.cs.ut.ee/?language=en) - We remain open to consulting on bachelor and master degrees work
-

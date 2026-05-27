@@ -546,10 +546,10 @@ useEffect(() => {
 - Support multi-apiary aggregation for commercial beekeepers
 
 ### 🔗 Related Documentation
-- [Timeseries Data Analytics (User Guide)](/about/products/web_app/pro-tier/timeseries_data_analytics)
-- [Hive Telemetry Storage](/about/products/web_app/pro-tier/hive_telemetry_storage)
-- [Colony Comparison Analytics](/about/products/web_app/pro-tier/colony_comparison_analytics)
-- [Telemetry API](/docs/web-app/features/telemetry-storage)
+- [Timeseries Data Analytics (User Guide)](../../../about/products/web_app/pro-tier/timeseries_data_analytics.md)
+- [Hive Telemetry Storage](../../../about/products/web_app/pro-tier/hive_telemetry_storage.md)
+- [Colony Comparison Analytics](../../../about/products/web_app/pro-tier/colony_comparison_analytics.md)
+- [Telemetry API](telemetry-storage.md)
 
 ### 📚 Development Resources
 - **GitHub Repository**: [web-app](https://github.com/Gratheon/web-app)
@@ -588,4 +588,3 @@ useEffect(() => {
 ## Change Log
 
 **Last Updated**: December 6, 2025
-

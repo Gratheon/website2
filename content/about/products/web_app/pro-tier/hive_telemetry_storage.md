@@ -136,13 +136,12 @@ Analyze metrics before and after treatments to:
 
 ## Related features
 
-- [🔔 Alerts](/about/products/web_app/flexible-tier/alerts) - Configure threshold-based notifications
+- [🔔 Alerts](../flexible-tier/alerts.md) - Configure threshold-based notifications
 - [⚖️ Colony comparison analytics](./colony_comparison_analytics) - Compare metrics across hives
 
 ## Resources
 
-- [Technical documentation](/docs/web-app/features/telemetry-storage)
+- [Technical documentation](../../../../docs/web-app/features/telemetry-storage.md)
 - [Telemetry API on GitHub](https://github.com/Gratheon/telemetry-api)
-- [Beehive sensors setup](/docs/beehive-sensors/)
-- [Entrance observer setup](/docs/entrance-observer/)
-
+- [Beehive sensors setup](../../../../docs/beehive-sensors/beehive-sensors.md)
+- [Entrance observer setup](../../../../docs/entrance-observer/entrance-observer.md)

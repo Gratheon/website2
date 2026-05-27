@@ -509,7 +509,7 @@ mysql -h localhost -P 5100 -u root -ptest image-splitter \
 
 ### 🔗 Related Documentation
 
-- [Bottom Board Varroa Counting (Product)](/about/products/web_app/starter-tier/hive_bottom_varroa_count) - User-facing feature description
+- [Bottom Board Varroa Counting (Product)](../../../about/products/web_app/starter-tier/hive_bottom_varroa_count.md) - User-facing feature description
 - [Bottom Board Management](./bottom-board-management.md) - Box type implementation
 - [Frame Photo Upload](./frame-photo-upload.md) - Similar file upload flow
 - [Inspection Management](./frame-side-management.md) - Versioning system
@@ -551,4 +551,3 @@ mysql -h localhost -P 5100 -u root -ptest image-splitter \
 **Last Updated**: December 22, 2024  
 **Implementation Status**: ✅ Completed  
 **Key Components**: image-splitter worker, models-varroa-bottom Flask server, web-app UI integration
-

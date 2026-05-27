@@ -544,12 +544,12 @@ async function logQueryPerformance(
 - Add multi-hive aggregation queries for apiary-level analytics
 
 ### 🔗 Related Documentation
-- [Hive Telemetry Storage (User Guide)](/about/products/web_app/pro-tier/hive_telemetry_storage)
-- [Alert Management](/about/products/web_app/flexible-tier/alerts)
-- [Colony Comparison Analytics](/about/products/web_app/pro-tier/colony_comparison_analytics)
-- [GraphQL API Reference](/docs/API/GraphQL)
-- [REST API Reference](/docs/API/REST)
-- [Authentication Guide](/docs/API/Authentication)
+- [Hive Telemetry Storage (User Guide)](../../../about/products/web_app/pro-tier/hive_telemetry_storage.md)
+- [Alert Management](../../../about/products/web_app/flexible-tier/alerts.md)
+- [Colony Comparison Analytics](../../../about/products/web_app/pro-tier/colony_comparison_analytics.md)
+- [GraphQL API Reference](../../API/GraphQL.md)
+- [REST API Reference](../../API/REST.md)
+- [Authentication Guide](../../API/Authentication.md)
 
 ### 📚 Development Resources
 - **GitHub Repository**: [telemetry-api](https://github.com/Gratheon/telemetry-api)
@@ -578,4 +578,3 @@ async function logQueryPerformance(
 ## Change Log
 
 **Last Updated**: December 6, 2025
-

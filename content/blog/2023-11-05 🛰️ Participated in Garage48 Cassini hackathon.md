@@ -27,7 +27,7 @@ Thanks to our app, farmers can get better yields, beekeepers get more honey and 
 
 Diverse pollen improves bee's health as well as taste of the honey. Bees also do not need to compete with each other as much over resources. Separate hive positioning reduces the risk of diseases.
 
-In general, [Gratheon](https://gratheon.com/) helps beekeepers with observability and automation so that they could be more efficient and their colonies would stay healthy. We provide app and integrate hardware so that computer vision could alert a beekeeper in case of danger. Our long-term vision is autonomous robotic beehive.
+In general, [Gratheon](../index.md) helps beekeepers with observability and automation so that they could be more efficient and their colonies would stay healthy. We provide app and integrate hardware so that computer vision could alert a beekeeper in case of danger. Our long-term vision is [autonomous robotic beehive](../about/products/robotic_beehive/robotic_beehive.md).
 
 **Pollen map feature ideation**
 

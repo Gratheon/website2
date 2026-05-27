@@ -51,4 +51,4 @@ Gratheon OÜ uses a **dual-licensing model**:
 - Priority support & SLA
 - Custom integrations
 
-See our [Pricing Page](https://gratheon.com/pricing) for details.
+See our [Pricing Page](../../../pricing.md) for details.

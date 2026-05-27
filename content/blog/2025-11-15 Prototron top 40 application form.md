@@ -2,7 +2,7 @@
 We have participated in the Prototron funding program for the second time and submitted our application for consideration. 
 Below are the details of our application form for the Prototron Top 40.
 We share this information to provide transparency about our funding journey and to illustrate the kind of projects we are working on as 
-transparency is one of [our core values](https://gratheon.com/about/company/values/)
+transparency is one of [our core values](../about/company/values/values.md)
 
 ![](img/Pasted%20image%2020251116004736.png)
 

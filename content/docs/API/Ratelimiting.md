@@ -3,7 +3,7 @@ title: 🚪 Rate limiting
 ---
 Currently traffic is not rate limited, however it will be.
 
-Depending on the [pricing plan](/pricing), we will limit how frequently you can make requests.
+Depending on the [pricing plan](../../pricing.md), we will limit how frequently you can make requests.
 [GraphQL](GraphQL.md) API queries and mutations are limited in complexity
 
 | Plan     | Read endpoints | Write/Delete endpoints |

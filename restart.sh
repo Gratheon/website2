@@ -140,6 +140,10 @@ publish_site() {
         cp -R dist/. "$release_dir/"
     fi
 
+    chmod -R u+rwX,go+rX "$release_dir"
+    chmod -R u+rwX,go+rX "$SHARED_DIR"
+    chmod go+X "$RELEASES_DIR" "$(dirname "$PUBLIC_DIR")"
+
     {
         printf 'git_sha=%s\n' "$(git -C "$APP_DIR" rev-parse HEAD 2>/dev/null || true)"
         printf 'published_at=%s\n' "$(date -u +%Y-%m-%dT%H:%M:%SZ)"
@@ -185,16 +189,37 @@ restart_search() {
 }
 
 reload_nginx() {
-    if [ "$(id -u)" -ne 0 ] || ! command -v nginx >/dev/null 2>&1; then
+    local nginx_bin
+    nginx_bin="$(command -v nginx || true)"
+    if [ -z "$nginx_bin" ] && [ -x /usr/sbin/nginx ]; then
+        nginx_bin="/usr/sbin/nginx"
+    fi
+    if [ -z "$nginx_bin" ]; then
         return
     fi
 
-    nginx -t
+    if [ "$(id -u)" -ne 0 ]; then
+        if ! command -v sudo >/dev/null 2>&1 || ! sudo -n true >/dev/null 2>&1; then
+            echo "Nginx reload requires root or passwordless sudo; skipped." >&2
+            return
+        fi
+
+        sudo -n "$nginx_bin" -t
+
+        if command -v systemctl >/dev/null 2>&1; then
+            sudo -n "$(command -v systemctl)" reload nginx
+        else
+            sudo -n "$nginx_bin" -s reload
+        fi
+        return
+    fi
+
+    "$nginx_bin" -t
 
     if command -v systemctl >/dev/null 2>&1; then
         systemctl reload nginx
     else
-        nginx -s reload
+        "$nginx_bin" -s reload
     fi
 }
 

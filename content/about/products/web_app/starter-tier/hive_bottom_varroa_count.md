@@ -99,9 +99,8 @@ Images are versioned with inspections:
 
 ### 📚 Learn More
 
-- [Varroa Bottom Detection - Technical Documentation](/docs/web-app/features/varroa-bottom-detection)
+- [Varroa Bottom Detection - Technical Documentation](../../../../docs/web-app/features/varroa-bottom-detection.md)
 
 **For Beekeepers:**
 - [Honey Bee Health Coalition - Varroa Guide](https://honeybeehealthcoalition.org/varroa/)
 - [Understanding Varroa Mite Thresholds](https://honeybeehealthcoalition.org/varroa/)
-

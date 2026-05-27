@@ -12,7 +12,7 @@ Colors represent main wavelengths that 🐝 bees can see, company values and oth
 
 
 ## Gratheon™ Trademark Notice
-While our software remains open source under AGPL license (see [Why open source](/about/company/🤲%20Why%20open%20source)), the Gratheon brand and logo are protected trademarks.
+While our software remains open source under AGPL license (see [Why open source](../company/🤲%20Why%20open%20source.md)), the Gratheon brand and logo are protected trademarks.
 *EU trademark registration filed December 2025 (Nice classes 9, 42, 7)*
 
 **Gratheon™** is a pending European Union trademark of Gratheon OÜ, filed December 2025 under Nice Classification classes:
@@ -67,13 +67,13 @@ Recomendation on logo usage
 ![](img/logo-png-high-res.png)
 (PNG version, with white outline)
 
-![](/assets/img/logo_v7w.svg)
+![](../../assets/img/logo_v7w.svg)
 
 (wide version, SVG version with white outline)
 
 
-![](/assets/img/logo_v7.png)
-![](/assets/img/logo_v7.svg)
+![](../../assets/img/logo_v7.png)
+![](../../assets/img/logo_v7.svg)
 
 ## Email template
 ![](../img/Screenshot%202024-05-20%20at%2017.24.44.png)

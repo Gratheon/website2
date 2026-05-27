@@ -141,7 +141,7 @@ As a user of the Site, you agree not to:
 
 The Site may invite you to chat, contribute to, or participate in blogs, message boards, online forums, and other functionality. It may provide you with the opportunity to create, submit, post, display, transmit, perform, publish, distribute, or broadcast content and materials to us or on the Site. This includes but is not limited to text, writings, video, audio, photographs, graphics, comments, suggestions, or personal information or other material (collectively, "Contributions").
 
-Contributions may be viewable by other users of the Site and through third-party websites. **Specifically, for users on our [Community pricing plan](/pricing), Contributions related to apiary data, including beehive count, general beehive details, and apiary location (latitude and longitude), are considered public information and may be displayed or used accordingly.** For all users, any Contributions you transmit may be treated as non-confidential and non-proprietary unless otherwise specified by your subscription plan agreement.
+Contributions may be viewable by other users of the Site and through third-party websites. **Specifically, for users on our [Community pricing plan](pricing.md), Contributions related to apiary data, including beehive count, general beehive details, and apiary location (latitude and longitude), are considered public information and may be displayed or used accordingly.** For all users, any Contributions you transmit may be treated as non-confidential and non-proprietary unless otherwise specified by your subscription plan agreement.
 
 When you create or make available any Contributions, you thereby represent and warrant that:
 
@@ -273,7 +273,7 @@ We reserve the right, but not the obligation, to:
 <p><strong>💡 In Short:</strong> Our Privacy Policy governs data privacy and security. By using the Site, you agree to it. Your data may be transferred to and processed in Germany where the Site is hosted.</p>
 </div>
 
-We care about data privacy and security. Please review our Privacy Policy: [https://gratheon.com/privacy](https://gratheon.com/privacy).
+We care about data privacy and security. Please review our [Privacy Policy](privacy.md).
 
 By using the Site, you agree to be bound by our Privacy Policy, which is incorporated into these Terms of Use.
 

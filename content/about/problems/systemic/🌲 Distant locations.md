@@ -5,5 +5,7 @@ For many beekeepers, managing apiaries in distant or remote locations is both a 
 
 The physical distance often leads to delayed interventions, which can exacerbate issues like mite infestations, colony starvation, or queen problems. A lack of immediate access means beekeepers must rely heavily on educated guesses or incomplete data, increasing the risk of colony losses. To address these challenges, technological advancements are becoming crucial. By integrating IoT sensors, AI-driven hive monitoring devices, and automated systems, beekeepers can remotely monitor hive conditions in real-time. This enables timely decision-making without the need for frequent travel, ensuring healthier colonies and reducing operational costs. At our digital beekeeping startup, we are developing solutions tailored to these needs, combining innovative technology with the practical realities of beekeeping to make distant apiary management more efficient and sustainable.
 
+The closest product fit is [beehive scales](../../products/scales/scales.md) for remote telemetry, [Entrance Observer](../../products/entrance_observer/entrance_observer.md) for video-based activity, and [alerts](../../products/web_app/flexible-tier/alerts.md) when measurements need attention.
+
 ![](../../img/GMgfFtbXYAAkcmo.jpg)
 source - [https://twitter.com/austincwb/status/1785712653215715354/photo/1](https://twitter.com/austincwb/status/1785712653215715354/photo/1)

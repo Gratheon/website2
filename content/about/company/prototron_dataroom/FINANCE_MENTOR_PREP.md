@@ -3,7 +3,7 @@
 
 **Prepared:** December 8, 2025  
 **Company:** Gratheon OÜ  
-**Website:** https://gratheon.com  
+**Website:** [gratheon.com](../../../index.md)
 **Meeting Purpose:** Financial strategy and readiness assessment for accelerator program
 
 ---
@@ -814,4 +814,3 @@ Timeline to 20 sponsors:
 **Next Review:** Post-mentor meeting (update with feedback)  
 **Owner:** Founder (Artjom)  
 **Last Updated:** December 8, 2025
-

@@ -37,6 +37,13 @@ Pushes to `main` deploy through `.github/workflows/deploy.yml`. The workflow exp
 
 The production runner must be able to write `/www/website`, execute `/www/blog-engine-md/bin/blog-engine`, reload nginx, and run Docker Compose for `website-search`. Nginx should use the checked-in `config/nginx.conf`, which serves `/www/website/current`.
 
+If the runner user is not `root`, give it passwordless sudo for nginx reloads
+(replace `www` if the runner uses another account):
+
+```text
+www ALL=(root) NOPASSWD: /usr/sbin/nginx -t, /usr/bin/systemctl reload nginx, /usr/sbin/nginx -s reload
+```
+
 Manual production deploy:
 
 ```bash

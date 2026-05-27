@@ -8,6 +8,8 @@ We are developing a robotic vertical beehive inspection platform, which is
 - uploading inspection result to the [web app](../web_app/web_app.md)
 - transported on wheels, you can use it to inspect different hives
 
+The hardware direction is tracked in the [robotic beehive engineering docs](../../../docs/robotic-beehive/robotic-beehive.md). The inspection workflow depends on [frame side management](../web_app/hobbyist-tier/🖼️%20Frame%20side%20management.md) and [inspection management](../web_app/starter-tier/🔎%20Inspection%20management.md) in the web app.
+
 `status`: [TRL 2](https://www.nasa.gov/directorates/somd/space-communications-navigation-program/technology-readiness-levels/)
 
 <div style={{width:300}}>
@@ -90,4 +92,4 @@ Extraction should happen without disturbing the bees, exposing them to elements 
 
 ## Prototype
 
-Consists of actuators that can move the frame in/out, GPU, cameras. Very early stage as we’re focusing on [Web-app](https://www.notion.so/Web-app-2937ed264e1d434a8664caa4bc40978e?pvs=21) and [Entrance Observer](https://www.notion.so/Entrance-Observer-b0319799ab7744dc928c08119de4fc43?pvs=21) first.
+Consists of actuators that can move the frame in/out, GPU, cameras. Very early stage as we’re focusing on [Web-app](../web_app/web_app.md) and [Entrance Observer](../entrance_observer/entrance_observer.md) first.

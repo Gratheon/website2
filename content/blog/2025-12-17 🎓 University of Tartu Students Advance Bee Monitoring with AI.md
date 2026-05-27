@@ -21,13 +21,15 @@ We're incredibly thankful to share the outstanding work of three student teams f
 
 [Albert Unn](https://www.linkedin.com/in/albertunn/), [Kadi-Liis Kivi](https://www.linkedin.com/in/kadi-liis-kivi/), [Karen Roht](https://www.linkedin.com/in/karen-roht/), and [Otto Kase](https://www.linkedin.com/in/otto-kase/) tackled a life-or-death challenge. Hornets can destroy bee colonies within hours. Their YOLOv8-nano model (**96.7% precision, 91.2% recall**) provides early warning capabilities, manually labeling over 1,250 images and creating production-ready deployment for edge devices.
 
-This detection system is crucial for beekeepers as early detection can mean the difference between saving or losing an entire colony.
+This detection system is crucial for beekeepers as early detection can mean the difference between saving or losing an entire colony. It is directly related to the [hornet attacks](../about/problems/biological/💢%20Hornet%20attacks.md) problem and the [Entrance Observer hornet detection](../about/products/entrance_observer/todo/🚁%20Hornet%20attack%20detection.md) feature.
 
 **GitHub:** [https://github.com/OttoKase/HornetDetector](https://github.com/OttoKase/HornetDetector "https://github.com/OttoKase/HornetDetector")
 
 ## Team T41 - Multi-Class Bee Detection on Video
 
 [Norman Tolmats](https://www.linkedin.com/in/norman-tolmats/), [Mihkel Kulu](https://www.linkedin.com/in/mihkel-kulu/), [Joonas Tiitson](https://www.linkedin.com/in/joonas-tiitson/), and [Markus Kivime](https://www.linkedin.com/in/markus-kivime/) pushed the boundaries further by detecting pollen-carrying bees in real-time video streams. Their work on weakly supervised learning and auto-labeling pipelines (30k+ images) demonstrates the future of scalable AI solutions.
+
+That work fits the [pollen foraging statistics](../about/products/entrance_observer/ideas/🌻%20Detect%20bees%20with%20pollen%20for%20foraging%20statistics.md) idea and broader [bee movement metric reporting](../about/products/entrance_observer/features/📊%20Bee%20movement%20metric%20reporting.md).
 
 **GitHub:** https://github.com/bukyt/beeDetection
 
@@ -42,9 +44,8 @@ Special thanks to Associate Professor Dmytro Fishman for fostering an environmen
 Check also [Presentations](https://drive.google.com/drive/folders/12ciUaNCjHmDuEruKZil__kNGml_Ye_1j?usp=drive_link "https://drive.google.com/drive/folders/12ciUaNCjHmDuEruKZil__kNGml_Ye_1j?usp=drive_link") teams made.
 ## Learn More
 
-- [Gratheon Entrance Observer](https://gratheon.com/about/products/entrance_observer/)
-- [All Contributors](https://gratheon.com/about/credits)
-- [How to Volunteer](https://gratheon.com/about/volunteer)
+- [Gratheon Entrance Observer](../about/products/entrance_observer/entrance_observer.md)
+- [All Contributors](../about/credits.md)
+- [How to Volunteer](../about/volunteer.md)
 
 Thank you for choosing to make a difference. 🌻🐝
-

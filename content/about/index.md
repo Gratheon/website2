@@ -24,7 +24,7 @@ We are a [small team](company/Team/index.md) are engineers and researchers from 
 By our calculation the market opportunity for a single device is over 150M ARR euros in Europe alone. We are raising 40 thousands euros in pre-seed angel investments to bootstrap our product.  Join us to help 2 million beekeepers and their cute & fuzzy bees.
 
 ### For the investors 💶
-- [📑 deck.pdf](/assets/deck.pdf) or [google docs](https://docs.google.com/presentation/d/e/2PACX-1vRAO6JHPczQ2u8Z8ph3g7oa2UPk_0gzV-BpPC30R0AFjAL-1Bqqhrum59NEHlI7lCSbyurKZiu8-JuO/pub?start=false&loop=false&delayms=3000)
+- [📑 deck.pdf](../assets/deck.pdf) or [google docs](https://docs.google.com/presentation/d/e/2PACX-1vRAO6JHPczQ2u8Z8ph3g7oa2UPk_0gzV-BpPC30R0AFjAL-1Bqqhrum59NEHlI7lCSbyurKZiu8-JuO/pub?start=false&loop=false&delayms=3000)
 - 💁🏻 B2B (beekeepers) + B2B2B (beekeepers reselling services to farmers)
 - SaaS / Deeptech / Agrotech / Robotics
 
@@ -40,4 +40,3 @@ By our calculation the market opportunity for a single device is over 150M ARR e
 - 🫀 12+ [volunteering contributors](volunteer.md)
 - 🚀 Bootstrapping, pre-seed phase
 - 🪽 looking for angel investments for IoT field testing
-

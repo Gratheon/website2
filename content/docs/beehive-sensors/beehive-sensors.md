@@ -7,6 +7,8 @@ hide_table_of_contents: true
 
 ## Architecture
 
+These docs support the [beehive scales](../../about/products/scales/scales.md) product. Sensor readings are stored by [hive telemetry storage](../../about/products/web_app/pro-tier/hive_telemetry_storage.md) and visualized in [timeseries analytics](../../about/products/web_app/pro-tier/timeseries_data_analytics.md).
+
 ### Services
 - [https://github.com/Gratheon/hardware-beehive-sensors](https://github.com/Gratheon/hardware-beehive-sensors) - sensors repo on client side
 - [https://github.com/gratheon/telemetry-api](https://github.com/gratheon/telemetry-api) - server side

@@ -3,9 +3,15 @@ set -euo pipefail
 
 url="${1:-https://gratheon.com/}"
 output="$(mktemp)"
-trap 'rm -f "$output"' EXIT
+headers="$(mktemp)"
+trap 'rm -f "$output" "$headers"' EXIT
 
-curl --fail --location --retry 3 --retry-delay 5 --max-time 30 "$url" > "$output"
+if ! curl --fail --location --show-error --silent --dump-header "$headers" --retry 3 --retry-delay 5 --max-time 30 "$url" > "$output"; then
+  echo "Verification request failed: $url" >&2
+  sed -n '1,20p' "$headers" >&2 || true
+  sed -n '1,20p' "$output" >&2 || true
+  exit 1
+fi
 test -s "$output"
 
 case "$url" in

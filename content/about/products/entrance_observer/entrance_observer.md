@@ -11,6 +11,8 @@ title: 👁️‍🗨️ Entrance Observer
 
 Check and install our [open source code of **entrance-observer**](https://github.com/Gratheon/entrance-observer/)
 
+For implementation details, see the [Entrance Observer engineering docs](../../../docs/entrance-observer/entrance-observer.md). The metrics it produces are stored through [hive telemetry storage](../web_app/pro-tier/hive_telemetry_storage.md) and can feed [alerts](../web_app/flexible-tier/alerts.md).
+
 <iframe width="100%" height="500"  src="https://www.youtube.com/embed/hNval4v44ao" title="Beehive Entrance Observer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### Problem focus

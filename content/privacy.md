@@ -11,7 +11,7 @@ This privacy policy explains what information we collect, how we use it, and you
 
 **Contact Us:** If you have questions or comments about this policy, you may contact our Data Protection Officer (DPO), Artjom Kurapov, by email at [pilot@gratheon.com](mailto:pilot@gratheon.com). Gratheon OÜ is the data controller for personal information collected under this policy for residents of the European Economic Area (EEA).
 
-**Introduction:** Welcome to Gratheon OÜ ("company", "we", "us", "our"). We are committed to protecting your personal information and your right to privacy when you use our website ([https://gratheon.com](https://gratheon.com/)), mobile application ("Apps"), and related services (collectively, the "Sites").
+**Introduction:** Welcome to Gratheon OÜ ("company", "we", "us", "our"). We are committed to protecting your personal information and your right to privacy when you use our [website](index.md), mobile application ("Apps"), and related services (collectively, the "Sites").
 
 
 ### 1. What Information Do We Collect?
@@ -35,7 +35,7 @@ The specific personal information collected depends on your interactions and the
 *   **Name and Contact Data:** First and last name, email address, postal address, phone number, etc.
 *   **Credentials:** Passwords, password hints, and similar security data for authentication.
 *   **Payment Data:** Information needed to process payments (e.g., credit card number, security code). This data is stored by our payment processor (Stripe); please review their privacy policy.
-*   **Uploaded Files:** Images and videos you upload via the app or API. Per our [Terms and Conditions](https://gratheon.com/terms.html), you agree not to include personal information in these files and grant us a license to use them as User Generated Contributions.
+*   **Uploaded Files:** Images and videos you upload via the app or API. Per our [Terms and Conditions](terms.md), you agree not to include personal information in these files and grant us a license to use them as User Generated Contributions.
 
 All personal information you provide must be true, complete, and accurate. Please notify us of any changes.
 
@@ -121,7 +121,7 @@ We may process or share your data that we hold based on the following legal basi
 
 More specifically, we may need to process your data or share your personal information in the following situations:
 
-- **Public Data for Community Pricing Plan Users:** Please note that if you are using our **[Community pricing plan](/pricing)** services, certain data you provide related to your apiaries, specifically **beehive count, general beehive details (excluding sensitive notes), and apiary location (latitude and longitude)**, is considered public information. This data may be displayed on public maps, used in aggregated datasets, or otherwise shared as part of the community features associated with this plan. Users on paid plans have enhanced privacy controls as defined by their respective subscription agreements.
+- **Public Data for Community Pricing Plan Users:** Please note that if you are using our **[Community pricing plan](pricing.md)** services, certain data you provide related to your apiaries, specifically **beehive count, general beehive details (excluding sensitive notes), and apiary location (latitude and longitude)**, is considered public information. This data may be displayed on public maps, used in aggregated datasets, or otherwise shared as part of the community features associated with this plan. Users on paid plans have enhanced privacy controls as defined by their respective subscription agreements.
 
 - **Business Transfers.** We may share or transfer your information in connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business to another company.
 
@@ -172,7 +172,7 @@ Most Web browsers are set to accept cookies by default. If you prefer, you can u
 
 We provide functionality to delete your account information, it is available at https://app.gratheon.com/account. The view should looks something like this image: 
 
-![](Screenshot%202024-11-10%20at%2020.32.31.png)
+![](assets/Screenshot%202024-11-10%20at%2020.32.31.png)
 All of your data will be removed. Note that this operation is not reversible. We will not be able to restore your account after deletion. We will also not be able to verify that you had any account with us. 
 
 Based on the applicable laws of your country, you may have the right to request access to the personal information we collect from you, change that information, or delete it in some circumstances. To request to review, update, or delete your personal information, please contact: pilot@gratheon.com. We will respond to your request within 30 days.
@@ -221,7 +221,7 @@ We do not knowingly solicit data from or market to children under 18 years of ag
 <p><strong>💡 In Short:</strong> In some regions, such as the European Economic Area, you have rights that allow you greater access to and control over your personal information. You may review, change, or terminate your account at any time.</p>
 </div>
 
-In some regions (like the European Economic Area), you have certain rights under applicable data protection laws. These may include the right (i) to request access and obtain a copy of your personal information, (ii) to request rectification or erasure; (iii) to restrict the processing of your personal information; and (iv) if applicable, to data portability. In certain circumstances, you may also have the right to object to the processing of your personal information. To make such a request, please use the [contact details](https://gratheon.com/privacy.html#contact) provided below. We will consider and act upon any request in accordance with applicable data protection laws.
+In some regions (like the European Economic Area), you have certain rights under applicable data protection laws. These may include the right (i) to request access and obtain a copy of your personal information, (ii) to request rectification or erasure; (iii) to restrict the processing of your personal information; and (iv) if applicable, to data portability. In certain circumstances, you may also have the right to object to the processing of your personal information. To make such a request, please use the contact details provided above. We will consider and act upon any request in accordance with applicable data protection laws.
 
 If we are relying on your consent to process your personal information, you have the right to withdraw your consent at any time. Please note however that this will not affect the lawfulness of the processing before its withdrawal.
 

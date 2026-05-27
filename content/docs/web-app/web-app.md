@@ -5,9 +5,9 @@ title: 📱 Web-app
 > Goal of this document is to kickstart your development of the web-app as an engineer
 ## Environment prerequisites
 
-💡 You will need Linux or Mac OSX with **Docker** to develop [Web-app](https://www.notion.so/Web-app-2937ed264e1d434a8664caa4bc40978e?pvs=21) services
+💡 You will need Linux or Mac OSX with **Docker** to develop [Web-app](../../about/products/web_app/web_app.md) services
 
-To develop [Entrance Observer](https://www.notion.so/Entrance-Observer-b0319799ab7744dc928c08119de4fc43?pvs=21) video processing services you’ll need [Jetson Orin Nano](https://www.notion.so/Jetson-Orin-Nano-0432edfb44f748a6874c41ddefa7f69c?pvs=21) or [Jetson Nano](https://www.notion.so/Jetson-Nano-6500eadfbab64e7b8bd0d0896df30701?pvs=21) to have GPU support and docker image compatibility
+To develop [Entrance Observer](../../about/products/entrance_observer/entrance_observer.md) video processing services you’ll need [Jetson Orin Nano](../entrance-observer/Jetson%20Orin%20setup.md) or [Jetson Nano](../entrance-observer/Jetson%20Nano%20setup.md) to have GPU support and docker image compatibility
 
 ## Architecture
 ### Core services
@@ -100,7 +100,7 @@ Some services are not blocking the UI or backend in general, but are required fo
 
 Beekeepers can track varroa mite infestation by uploading images of the hive bottom board.
 
-See [Bottom Board Documentation](../../about/products/web_app/starter-tier/🧮 Hive bottom board & varroa monitoring.md) for user guide and [DB Schema](./🥞 DB schemas/) for table structures.
+See [Bottom Board Varroa Counting](../../about/products/web_app/starter-tier/hive_bottom_varroa_count.md) for the user guide, [Varroa Bottom Detection](features/varroa-bottom-detection.md) for technical details, and [DB Schema](🥞%20DB%20schemas/image-splitter.md) for table structures.
 -   **Image Upload:** Two-step process:
     1. Upload image to S3 via `uploadFrameSide` mutation
     2. Link image to box via `addFileToBox` mutation in image-splitter
@@ -111,7 +111,7 @@ See [Bottom Board Documentation](../../about/products/web_app/starter-tier/🧮 
     - **image-splitter**: File upload, storage, and linking
     - **web-app**: BottomBox component for UI
 
-See [Bottom Board Documentation](../../about/products/web_app/starter-tier/🧮 Hive bottom board & varroa monitoring.md) for user guide and [DB Schema](./🥞 DB schemas/) for table structures.
+See [Bottom Board Varroa Counting](../../about/products/web_app/starter-tier/hive_bottom_varroa_count.md) for the user guide, [Varroa Bottom Detection](features/varroa-bottom-detection.md) for technical details, and [DB Schema](🥞%20DB%20schemas/image-splitter.md) for table structures.
 
 ### Inspection Sharing
 
@@ -126,6 +126,8 @@ Users can share individual hive inspections with others via a unique public URL.
 
 Create new hives by moving selected frames from a strong colony. Prevents swarming and enables apiary expansion.
 
+User-facing feature notes live in [split bee colony](../../about/products/web_app/hobbyist-tier/split_bee_colony.md).
+
 **Technical Overview:**
 -   **Mutation:** `splitHive(sourceHiveId, name, frameIds)` - Creates new hive with 1-10 selected frames
 -   **Database:** New hive record with `parent_hive_id` and `split_date` tracking
@@ -136,6 +138,8 @@ Create new hives by moving selected frames from a strong colony. Prevents swarmi
 
 Merge two colonies by moving boxes from source to target hive. Strengthens weak colonies and manages queen genetics.
 
+User-facing feature notes live in [join bee colonies](../../about/products/web_app/hobbyist-tier/join_bee_colonies.md).
+
 
 **Technical Overview:**
 -   **Mutation:** `joinHives(sourceHiveId, targetHiveId, mergeType)` - Merges hives with queen management options
@@ -143,4 +147,3 @@ Merge two colonies by moving boxes from source to target hive. Strengthens weak 
 -   **Box Logic:** BOTTOM/GATE boxes stay in source, all others move to target
 -   **Services:** swarm-api (merge logic, box movement), web-app (JoinColonyModal UI)
 -   **Real-time:** Redis pub/sub broadcasts `hive:join` and `hive:merged` events
-

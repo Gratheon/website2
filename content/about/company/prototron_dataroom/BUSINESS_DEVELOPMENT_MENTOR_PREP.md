@@ -3,7 +3,7 @@
 
 **Prepared:** December 8, 2025  
 **Company:** Gratheon OÜ  
-**Website:** https://gratheon.com  
+**Website:** [gratheon.com](../../../index.md)
 **Meeting Purpose:** Strategic business development consultation for accelerator program
 
 ---
@@ -702,4 +702,3 @@ Assumptions (to validate):
 **Report Prepared By:** AI Analysis (Based on Gratheon website, documentation, and public information)  
 **For:** Artjom Kurapov, Founder/CTO, Gratheon OÜ  
 **Next Steps:** Review with mentor Jörgen Martin, prioritize recommendations, execute Q1 2026 action plan
-

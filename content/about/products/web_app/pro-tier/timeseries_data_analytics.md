@@ -190,11 +190,10 @@ Compare colonies before and after interventions:
 
 - [📈 Hive telemetry storage](./hive_telemetry_storage) - Data collection and storage
 - [⚖️ Colony comparison analytics](./colony_comparison_analytics) - Statistical analysis tools
-- [🔔 Alerts](/about/products/web_app/flexible-tier/alerts) - Threshold-based notifications
+- [🔔 Alerts](../flexible-tier/alerts.md) - Threshold-based notifications
 
 ## Resources
 
-- [Technical documentation](/docs/web-app/features/timeseries-analytics)
+- [Technical documentation](../../../../docs/web-app/features/timeseries-analytics.md)
 - [Web-app on GitHub](https://github.com/Gratheon/web-app)
-- [Telemetry API](/docs/API/GraphQL)
-
+- [Telemetry API](../../../../docs/API/GraphQL.md)

@@ -47,6 +47,13 @@ SHARED_DIR="$LIVE_APP_DIR/shared" \
 BLOG_ENGINE="${BLOG_ENGINE:-}" \
     "$WORKTREE_DIR/restart.sh" --publish-only
 
+if [ ! -L "$LIVE_APP_DIR/current" ] || [ ! -f "$LIVE_APP_DIR/current/index.html" ]; then
+    echo "Published release is not active at $LIVE_APP_DIR/current/index.html" >&2
+    ls -la "$LIVE_APP_DIR" >&2 || true
+    ls -la "$LIVE_APP_DIR/current" >&2 || true
+    exit 1
+fi
+
 git_as_repo_owner reset --hard "$TARGET_REF"
 
 cd "$LIVE_APP_DIR"

@@ -12,9 +12,9 @@ In addition to viruses, bacterial infections like American Foulbrood (AFB), Euro
 https://mda-test.com/
 
 ![](../img/Screenshot%202024-12-11%20at%2002.16.38.png)
-source - Celvia CC AS, https://gratheon.com/research/Honey%20bulk%20DNA%20metagenomic%20analysis%20to%20identify%20honey%20biological
+source - Celvia CC AS, [Honey bulk DNA metagenomic analysis](../../../research/papers/Honey%20bulk%20DNA%20metagenomic%20analysis%20to%20identify%20honey%20biological.md)
 
 ![](../img/Screenshot%202024-12-11%20at%2002.16.52.png)
-source - Celvia CC AS, https://gratheon.com/research/Honey%20bulk%20DNA%20metagenomic%20analysis%20to%20identify%20honey%20biological
+source - Celvia CC AS, [Honey bulk DNA metagenomic analysis](../../../research/papers/Honey%20bulk%20DNA%20metagenomic%20analysis%20to%20identify%20honey%20biological.md)
 
 <object data={require('../img/1214.infovoldik_ahm-2009v.pdf').default} type="application/pdf" width="100%" height="800"></object>

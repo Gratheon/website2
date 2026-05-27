@@ -3,7 +3,7 @@
 
 **Prepared:** December 8, 2025  
 **Company:** Gratheon OÜ  
-**Website:** https://gratheon.com  
+**Website:** [gratheon.com](../../../index.md)
 **Meeting Purpose:** Strategic product development consultation for accelerator program
 
 ---
@@ -871,4 +871,3 @@ Gratheon has exceptional technical foundation and clear vision, but product deve
 **Prepared by:** AI Analysis based on website documentation, technical architecture, and product artifacts  
 **Next Steps:** Review with mentor Tarmo Härmaorg, discuss questions, prioritize action items  
 **Follow-up:** Share customer interview findings, product metrics dashboard, updated roadmap post-meeting
-

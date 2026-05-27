@@ -167,7 +167,7 @@ herein contained, the parties agree as follows:
 
     For questions about this license, contact:
     Email: pilot@gratheon.com
-    Website: https://gratheon.com
+    Website: [gratheon.com](../../../index.md)
 
 
 ACCEPTANCE
@@ -188,4 +188,3 @@ Date: _______________
 Signature: _______________
 Name: _______________
 Title: _______________
-

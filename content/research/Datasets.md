@@ -13,7 +13,7 @@ Example foto (webp re-compressed for the web):
 ![](img/IMG_4376.webp)
 
 ## Videos
-[👁️‍🗨️ Entrance Observer](/about/products/entrance_observer/) videos 🎥 of the hive entrance
+[👁️‍🗨️ Entrance Observer](../about/products/entrance_observer/entrance_observer.md) videos 🎥 of the hive entrance
 ![](img/Screenshot%202025-09-10%20at%2009.11.23.png)
 ### 2025
 
@@ -107,4 +107,3 @@ Camera placed on **second** hive section (closer), changed zoom, removed glass a
 - Datasets from the Brno team: [https://www.kaggle.com/datasets/imonbilk/bee-dataset-but-1](https://www.kaggle.com/datasets/imonbilk/bee-dataset-but-1) [https://www.kaggle.com/datasets/imonbilk/bee-dataset-but-2](https://www.kaggle.com/datasets/imonbilk/bee-dataset-but-2) [https://www.kaggle.com/datasets/imonbilk/bee-dataset-but-hs](https://www.kaggle.com/datasets/imonbilk/bee-dataset-but-hs)
 - roboflow datasets (with annotations) [https://universe.roboflow.com/search?q=varroa](https://universe.roboflow.com/search?q=varroa)
 - inaturalist datasets [https://www.inaturalist.org/observations?place_id=any&taxon_id=54328](https://www.inaturalist.org/observations?place_id=any&taxon_id=54328) [https://www.inaturalist.org/observations?place_id=any&taxon_id=47219](https://www.inaturalist.org/observations?place_id=any&taxon_id=47219)
-

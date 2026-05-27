@@ -2,6 +2,6 @@ We took part in [Founder Institute](https://fi.co/) online 1 min pitch practicin
 
 <!-- truncate -->
 
-We now have shorter and more emotional [elevator pitch](https://gratheon.com/about/%F0%9F%8C%BB%20Purpose/#elevator-pitch) structure. We tested it on other mentors and got positive feedback.
+We now have shorter and more emotional [elevator pitch](../about/index.md#elevator-pitch) structure. We tested it on other mentors and got positive feedback.
 
-We got questioned by [Dr. Raashid Saiyed](https://www.linkedin.com/in/raashidsaiyed/) on [why we are open source](/about/company/🤲%20Why%20open%20source), [📊 Market analysis](/about/company/business_plan/📊%20Market%20analysis) and
+We got questioned by [Dr. Raashid Saiyed](https://www.linkedin.com/in/raashidsaiyed/) on [why we are open source](../about/company/🤲%20Why%20open%20source.md), [📊 Market analysis](../about/company/business_plan/📊%20Market%20analysis.md) and

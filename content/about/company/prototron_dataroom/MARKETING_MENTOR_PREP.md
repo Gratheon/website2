@@ -3,7 +3,7 @@
 
 **Prepared:** December 8, 2025  
 **Company:** Gratheon OÜ  
-**Website:** https://gratheon.com  
+**Website:** [gratheon.com](../../../index.md)
 **Meeting Purpose:** Strategic marketing consultation for accelerator program
 
 ---
@@ -803,5 +803,3 @@ Focus on **community-led growth** and **content marketing** for next 90 days. Gi
 
 **Accelerator Goal:**
 Use Taavid Mikomägi's expertise to **validate marketing strategy**, prioritize channels, and identify blind spots. Exit accelerator with clear 12-month growth roadmap and proven early traction (100 waitlist signups = market validation for seed round).
-
-
