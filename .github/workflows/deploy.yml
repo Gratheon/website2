@@ -12,30 +12,17 @@ concurrency:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
+    timeout-minutes: 30
 
     steps:
-      - name: Start SSH agent
-        uses: webfactory/ssh-agent@v0.9.0
-        with:
-          ssh-private-key: ${{ secrets.GRATHEON_PRODUCTION_SSH_KEY }}
+      - name: Checkout deployment scripts
+        uses: actions/checkout@v4
 
-      - name: Trust production host
-        run: |
-          mkdir -p ~/.ssh
-          ssh-keyscan -H gratheon.com >> ~/.ssh/known_hosts
-
-      - name: Pull and rebuild production
-        run: |
-          ssh root@gratheon.com 'bash -se' <<'EOF'
-            set -euo pipefail
-            cd /www/website
-            runuser -u www -- git -C /www/website fetch origin main
-            runuser -u www -- git -C /www/website reset --hard origin/main
-            ./restart.sh
-          EOF
+      - name: Deploy production website
+        run: ./scripts/deploy-production.sh
 
       - name: Verify public site
         run: |
-          curl --fail --location --retry 3 --retry-delay 5 --max-time 30 https://gratheon.com/ > /tmp/gratheon.html
-          test -s /tmp/gratheon.html
+          ./scripts/verify-production.sh https://gratheon.com/
+          ./scripts/verify-production.sh https://gratheon.com/pricing/

@@ -30,13 +30,9 @@ just publish
 
 ## Deployment
 
-Pushes to `main` deploy through `.github/workflows/deploy.yml`. The workflow SSHes to `root@gratheon.com`, pulls `/www/website` as the `www` user, runs `./restart.sh`, and verifies `https://gratheon.com/`.
+Pushes to `main` deploy through `.github/workflows/deploy.yml`. The workflow expects a GitHub Actions self-hosted runner on the production server, updates `/www/website`, runs `./restart.sh`, and verifies `https://gratheon.com/`.
 
-Required GitHub Actions secret:
-
-```bash
-GRATHEON_PRODUCTION_SSH_KEY
-```
+The production runner must be able to write `/www/website`, execute `/www/blog-engine-md/bin/blog-engine`, and run Docker Compose for `website-search`.
 
 Manual production deploy:
 
