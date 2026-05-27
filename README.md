@@ -35,7 +35,9 @@ Published releases are stored under `releases/`, and the active site is the
 
 Pushes to `main` deploy through `.github/workflows/deploy.yml`. The workflow expects a GitHub Actions self-hosted runner on the production server, builds the target commit in a temporary Git worktree, publishes it under `/www/website/releases`, flips `/www/website/current` atomically, updates `/www/website`, reloads nginx, and verifies `https://gratheon.com/`.
 
-The production runner must be able to write `/www/website`, execute `/www/blog-engine-md/bin/blog-engine`, reload nginx, and run Docker Compose for `website-search`. Nginx should use the checked-in `config/nginx.conf`, which serves `/www/website/current`.
+The production runner must be able to write `/www/website`, execute `/www/blog-engine-md/bin/blog-engine`, and reload nginx. Nginx should use the checked-in `config/nginx.conf`, which serves `/www/website/current`.
+
+Production keeps the two newest immutable releases under `/www/website/releases`. New releases reuse unchanged files from the previous active release via hardlinks when `rsync` is available, keeping rollback support without duplicating static assets on every deploy.
 
 If the runner user is not `root`, give it passwordless sudo for nginx reloads
 (replace `www` if the runner uses another account):

@@ -5,7 +5,7 @@ APP_DIR="${APP_DIR:-$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)}"
 PUBLIC_DIR="${PUBLIC_DIR:-$APP_DIR/current}"
 RELEASES_DIR="${RELEASES_DIR:-$APP_DIR/releases}"
 SHARED_DIR="${SHARED_DIR:-$APP_DIR/shared}"
-KEEP_RELEASES="${KEEP_RELEASES:-5}"
+KEEP_RELEASES="${KEEP_RELEASES:-2}"
 PUBLISH_ONLY=0
 ACTIVATE_ONLY=0
 
@@ -134,8 +134,15 @@ publish_site() {
     done
     mkdir -p "$release_dir"
 
+    local current_target
+    current_target="$(readlink "$PUBLIC_DIR" 2>/dev/null || true)"
+
     if command -v rsync >/dev/null 2>&1; then
-        rsync -a --delete dist/ "$release_dir/"
+        if [ -n "$current_target" ] && [ -d "$current_target" ]; then
+            rsync -a --delete --link-dest="$current_target" dist/ "$release_dir/"
+        else
+            rsync -a --delete dist/ "$release_dir/"
+        fi
     else
         cp -R dist/. "$release_dir/"
     fi
@@ -172,20 +179,18 @@ run_publish_as_repo_owner() {
     fi
 }
 
-restart_search() {
-    cd "$APP_DIR"
-
-    if [ ! -f docker-compose.yml ]; then
+remove_legacy_search_container() {
+    local docker_bin
+    docker_bin="$(command -v docker || true)"
+    if [ -z "$docker_bin" ]; then
         return
     fi
 
-    if command -v docker-compose >/dev/null 2>&1; then
-        docker-compose up -d --force-recreate --remove-orphans website-search
-    elif docker compose version >/dev/null 2>&1; then
-        docker compose up -d --force-recreate --remove-orphans website-search
-    else
-        echo "Docker Compose is not installed; skipped website-search restart." >&2
-    fi
+    { "$docker_bin" ps -aq --filter 'name=website-search' 2>/dev/null || true; } \
+        | while IFS= read -r container_id; do
+            [ -n "$container_id" ] || continue
+            "$docker_bin" rm -f "$container_id" >/dev/null 2>&1 || true
+        done
 }
 
 reload_nginx() {
@@ -229,11 +234,11 @@ if [ "$PUBLISH_ONLY" -eq 1 ]; then
 fi
 
 if [ "$ACTIVATE_ONLY" -eq 1 ]; then
-    restart_search
+    remove_legacy_search_container
     reload_nginx
     exit 0
 fi
 
 run_publish_as_repo_owner
-restart_search
+remove_legacy_search_container
 reload_nginx

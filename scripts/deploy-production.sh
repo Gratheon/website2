@@ -44,6 +44,7 @@ APP_DIR="$WORKTREE_DIR" \
 PUBLIC_DIR="$LIVE_APP_DIR/current" \
 RELEASES_DIR="$LIVE_APP_DIR/releases" \
 SHARED_DIR="$LIVE_APP_DIR/shared" \
+KEEP_RELEASES="${KEEP_RELEASES:-2}" \
 BLOG_ENGINE="${BLOG_ENGINE:-}" \
     "$WORKTREE_DIR/restart.sh" --publish-only
 
