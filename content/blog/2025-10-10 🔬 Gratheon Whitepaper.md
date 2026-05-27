@@ -2,4 +2,4 @@ We are glad to announce that we have published our whitepaper on entrance observ
 
 <!-- truncate -->
 
-https://gratheon.com/entrance-observer-whitepaper.pdf
+https://gratheon.com/assets/assets/entrance-observer-whitepaper.pdf

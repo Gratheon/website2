@@ -14,7 +14,7 @@ Gratheon team is interested in existing research and engineering work. We track
 - [Hacker projects](Hacker%20projects.md) done by enthusiasts
 - [Commercial projects](/about/company/business_plan/Competition/) pursued by enterpreneurs
 ## Research collaboration with us
-- Our [Entrance Observer White Paper](/entrance-observer-whitepaper.pdf)
+- Our [Entrance Observer White Paper](/assets/assets/entrance-observer-whitepaper.pdf)
 - TalTech / Vidrik - we have collaborated on a [whitepaper](https://easychair.org/publications/preprint/QGJN)
 - **University of Tartu** - In 2025, we collaborated with [Associate Professor Dmytro Fishman](https://www.linkedin.com/in/dmytro-fishman/) and his Machine Learning course (MTAT.03.227). Three student teams developed production-ready AI models for:
   - Bee type detection (worker vs drone bees) - 96.7% precision
@@ -22,5 +22,4 @@ Gratheon team is interested in existing research and engineering work. We track
   - Multi-class bee detection including pollen-carrying bees
   - [Read more about their work →](https://gratheon.com/blog/2025/12/17/University-of-Tartu-Students-Advance-Bee-Monitoring-with-AI)
 - [Tartu University Topics](https://topics.cs.ut.ee/?language=en) - We remain open to consulting on bachelor and master degrees work
-
 
