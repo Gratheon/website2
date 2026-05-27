@@ -244,37 +244,56 @@ html[data-theme='dark'] .page-content a {
 }
 
 .footer-company-block {
-  min-width: 260px;
+  min-width: 0;
+  font-size: clamp(1.05rem, 1.3vw, 1.35rem);
+  font-weight: 600;
+  line-height: 1.35;
 }
 
 .site-footer.gratheon-footer {
+  position: relative;
+  overflow: hidden;
   color: white;
-  background: #241603;
-  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3)), url("https://gratheon.s3-accelerate.amazonaws.com/www/nvidia.webp");
+  background-color: #0d120b;
+  background-image:
+    linear-gradient(90deg, rgba(0, 0, 0, 0.88) 0%, rgba(0, 0, 0, 0.72) 42%, rgba(0, 0, 0, 0.34) 100%),
+    linear-gradient(180deg, rgba(255, 220, 4, 0.18), rgba(255, 220, 4, 0)),
+    url("https://gratheon.s3-accelerate.amazonaws.com/www/nvidia.webp");
+  background-position: center;
   background-size: cover;
   min-height: 180px;
-  padding: 10px 20px;
+  padding: clamp(34px, 5vw, 72px) clamp(22px, 6vw, 92px) clamp(24px, 4vw, 48px);
   margin: 0;
+  border-top: 0;
   text-align: left;
-  font-size: 18px;
+  font-size: clamp(1rem, 1vw, 1.12rem);
+  line-height: 1.45;
 }
 
 .gratheon-footer-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 28px;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: minmax(220px, 1.35fr) repeat(3, minmax(150px, 0.65fr)) minmax(150px, 0.8fr);
+  gap: clamp(24px, 4vw, 56px);
+  align-items: start;
+  max-width: 1240px;
+  margin: 0 auto;
 }
 
 .gratheon-footer a,
 .gratheon-footer a:visited {
   color: #ffe353;
   text-decoration: none;
+  text-underline-offset: 0.22em;
+  transition: color 160ms ease, background-color 160ms ease, box-shadow 160ms ease;
 }
 
-.gratheon-footer a:hover {
-  color: black;
+.gratheon-footer a:hover,
+.gratheon-footer a:focus-visible {
+  color: #111;
   background: var(--brand-yellow);
+  border-radius: 8px;
+  box-shadow: 0 0 0 4px var(--brand-yellow);
+  outline: 0;
 }
 
 .gratheon-footer ul {
@@ -284,18 +303,29 @@ html[data-theme='dark'] .page-content a {
 }
 
 .gratheon-footer li {
-  margin: 2px 0;
+  margin: 0 0 0.7rem;
+}
+
+.gratheon-footer li:last-child {
+  margin-bottom: 0;
 }
 
 .gratheon-footer-badge {
-  max-width: 200px;
+  display: block;
+  max-width: min(220px, 100%);
   height: auto;
+  margin-left: auto;
+  filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.28));
 }
 
 .gratheon-copyright {
-  margin-top: 18px;
-  font-size: 0.9rem;
-  opacity: 0.9;
+  max-width: 1240px;
+  margin: clamp(26px, 4vw, 48px) auto 0;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.22);
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 0.92rem;
+  line-height: 1.45;
 }
 
 /* Front page */
@@ -638,6 +668,14 @@ html[data-theme='dark'] .front-page .future {
   .site-nav .nav-action-first {
     margin-left: 0;
   }
+
+  .gratheon-footer-grid {
+    grid-template-columns: minmax(220px, 1.2fr) repeat(2, minmax(150px, 1fr));
+  }
+
+  .gratheon-footer-badge {
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -662,4 +700,26 @@ html[data-theme='dark'] .front-page .future {
   .front-page .feature { flex-basis: 100%; max-width: 100%; }
   .front-page .desktopDownloadIcon,
   .front-page .googlePlayBadge { height: 30px; }
+
+  .site-footer.gratheon-footer {
+    padding: 30px 20px 24px;
+  }
+
+  .gratheon-footer-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .footer-company-block {
+    font-size: 1.08rem;
+  }
+
+  .gratheon-footer ul {
+    display: grid;
+    gap: 0.35rem;
+  }
+
+  .gratheon-footer li {
+    margin-bottom: 0;
+  }
 }

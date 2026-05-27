@@ -300,28 +300,34 @@
             text-decoration: none;
             border-radius: 4px;
             font-size: 0.9em;
+            min-width: 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
         .sidebar-section-head {
             display: flex;
             align-items: center;
-            gap: 4px;
+            gap: 6px;
+            min-width: 0;
         }
         .sidebar-section-head a {
-            flex: 1;
+            flex: 1 1 auto;
         }
         .sidebar-toggle {
             appearance: none;
             border: 0;
             background: transparent;
             color: var(--text-secondary);
-            width: 20px;
-            height: 20px;
+            width: 28px;
+            height: 28px;
             cursor: pointer;
             padding: 0;
             display: inline-flex;
             align-items: center;
             justify-content: center;
             border-radius: 4px;
+            flex: 0 0 28px;
         }
         .sidebar-toggle:hover {
             background: rgba(0, 102, 204, 0.08);
@@ -329,7 +335,7 @@
         }
         .sidebar-toggle::before {
             content: "▸";
-            font-size: 0.8em;
+            font-size: 1.15em;
             line-height: 1;
             transition: transform 0.15s ease;
         }
@@ -544,6 +550,36 @@
         article .content h2 { margin-top: 2em; margin-bottom: 0.5em; }
         article .content h3 { margin-top: 1.5em; margin-bottom: 0.4em; }
         article .content p { margin-bottom: 1em; }
+        article .content ul,
+        article .content ol {
+            margin: 0 0 1em;
+            padding-left: 1.6em;
+            list-style-position: outside;
+        }
+        article .content ul { list-style-type: disc; }
+        article .content ol { list-style-type: decimal; }
+        article .content li {
+            margin: 0.25em 0;
+            padding-left: 0.15em;
+        }
+        article .content li > ul,
+        article .content li > ol {
+            margin: 0.3em 0 0.35em;
+            padding-left: 1.4em;
+        }
+        article .content ul ul { list-style-type: circle; }
+        article .content ul ul ul { list-style-type: square; }
+        article .content ol ol { list-style-type: lower-alpha; }
+        article .content ol ol ol { list-style-type: lower-roman; }
+        article .content li > p {
+            margin: 0.4em 0;
+        }
+        article .content li > p:first-child {
+            margin-top: 0;
+        }
+        article .content li > p:last-child {
+            margin-bottom: 0;
+        }
         article .content blockquote {
             margin: 1.4em 0;
             padding: 0.8em 1em;
