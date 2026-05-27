@@ -4,4 +4,9 @@ public_new
 .DS_Store
 .cache
 dist
-
+build
+current
+current.next
+releases
+shared
+build

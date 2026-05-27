@@ -2,11 +2,28 @@
 set -euo pipefail
 
 APP_DIR="${APP_DIR:-$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)}"
+PUBLIC_DIR="${PUBLIC_DIR:-$APP_DIR/current}"
+RELEASES_DIR="${RELEASES_DIR:-$APP_DIR/releases}"
+SHARED_DIR="${SHARED_DIR:-$APP_DIR/shared}"
+KEEP_RELEASES="${KEEP_RELEASES:-5}"
 PUBLISH_ONLY=0
+ACTIVATE_ONLY=0
 
-if [ "${1:-}" = "--publish-only" ]; then
-    PUBLISH_ONLY=1
-fi
+while [ "$#" -gt 0 ]; do
+    case "$1" in
+        --publish-only)
+            PUBLISH_ONLY=1
+            ;;
+        --activate-only)
+            ACTIVATE_ONLY=1
+            ;;
+        *)
+            echo "Unknown option: $1" >&2
+            exit 2
+            ;;
+    esac
+    shift
+done
 
 find_blog_engine() {
     if [ -n "${BLOG_ENGINE:-}" ]; then
@@ -37,6 +54,57 @@ repo_owner() {
     fi
 }
 
+release_id() {
+    local sha
+    sha="$(git -C "$APP_DIR" rev-parse --short HEAD 2>/dev/null || true)"
+    if [ -n "$sha" ]; then
+        printf '%s-%s\n' "$(date -u +%Y%m%d%H%M%S)" "$sha"
+    else
+        printf '%s\n' "$(date -u +%Y%m%d%H%M%S)"
+    fi
+}
+
+prepare_shared_files() {
+    mkdir -p "$SHARED_DIR"
+
+    if [ -f "$APP_DIR/config/maintenance.html" ]; then
+        cp "$APP_DIR/config/maintenance.html" "$SHARED_DIR/maintenance.html"
+    fi
+}
+
+atomic_publish_release() {
+    local release_dir="$1"
+    local next_link="$PUBLIC_DIR.next"
+
+    if [ -e "$PUBLIC_DIR" ] && [ ! -L "$PUBLIC_DIR" ]; then
+        echo "Refusing to replace non-symlink publish target: $PUBLIC_DIR" >&2
+        echo "Move the existing directory aside once, then rerun deploy." >&2
+        exit 1
+    fi
+
+    ln -sfn "$release_dir" "$next_link"
+
+    if ! mv -Tf "$next_link" "$PUBLIC_DIR" 2>/dev/null; then
+        rm -f "$PUBLIC_DIR"
+        mv -f "$next_link" "$PUBLIC_DIR"
+    fi
+}
+
+prune_old_releases() {
+    local current_target
+    current_target="$(readlink "$PUBLIC_DIR" 2>/dev/null || true)"
+
+    find "$RELEASES_DIR" -mindepth 1 -maxdepth 1 -type d -print 2>/dev/null \
+        | sort -r \
+        | awk -v keep="$KEEP_RELEASES" 'NR > keep' \
+        | while IFS= read -r old_release; do
+            if [ "$old_release" = "$current_target" ]; then
+                continue
+            fi
+            rm -rf "$old_release"
+        done
+}
+
 publish_site() {
     cd "$APP_DIR"
 
@@ -56,14 +124,30 @@ publish_site() {
         exit 1
     fi
 
-    mkdir -p build
+    prepare_shared_files
+    mkdir -p "$RELEASES_DIR"
+
+    local release_dir
+    release_dir="$RELEASES_DIR/$(release_id)"
+    while [ -e "$release_dir" ]; do
+        release_dir="$RELEASES_DIR/$(release_id)-$RANDOM"
+    done
+    mkdir -p "$release_dir"
+
     if command -v rsync >/dev/null 2>&1; then
-        rsync -a --delete dist/ build/
-        rm -rf dist
+        rsync -a --delete dist/ "$release_dir/"
     else
-        rm -rf build
-        mv dist build
+        cp -R dist/. "$release_dir/"
     fi
+
+    {
+        printf 'git_sha=%s\n' "$(git -C "$APP_DIR" rev-parse HEAD 2>/dev/null || true)"
+        printf 'published_at=%s\n' "$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+    } > "$release_dir/.release"
+
+    rm -rf dist
+    atomic_publish_release "$release_dir"
+    prune_old_releases
 }
 
 run_publish_as_repo_owner() {
@@ -71,7 +155,14 @@ run_publish_as_repo_owner() {
     owner="$(repo_owner)"
 
     if [ "$(id -u)" -eq 0 ] && [ "$owner" != "root" ] && command -v runuser >/dev/null 2>&1; then
-        RESTART_AS_REPO_USER=1 runuser -u "$owner" -- "$APP_DIR/restart.sh" --publish-only
+        runuser -u "$owner" -- env \
+            APP_DIR="$APP_DIR" \
+            PUBLIC_DIR="$PUBLIC_DIR" \
+            RELEASES_DIR="$RELEASES_DIR" \
+            SHARED_DIR="$SHARED_DIR" \
+            KEEP_RELEASES="$KEEP_RELEASES" \
+            BLOG_ENGINE="${BLOG_ENGINE:-}" \
+            "$APP_DIR/restart.sh" --publish-only
     else
         publish_site
     fi
@@ -109,6 +200,12 @@ reload_nginx() {
 
 if [ "$PUBLISH_ONLY" -eq 1 ]; then
     publish_site
+    exit 0
+fi
+
+if [ "$ACTIVATE_ONLY" -eq 1 ]; then
+    restart_search
+    reload_nginx
     exit 0
 fi
 

@@ -8,7 +8,7 @@ build:
     rm -rf dist
     "${BLOG_ENGINE:-../blog-engine-md/bin/blog-engine}" build
 
-# Publish generated output to the directory expected by the current nginx config.
+# Publish generated output to releases/ and atomically update current.
 publish:
     ./restart.sh --publish-only
 

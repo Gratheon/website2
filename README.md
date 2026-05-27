@@ -22,17 +22,20 @@ just build
 
 This generates static files in `dist/`.
 
-For the current nginx/deployment layout that expects `build/`:
+To publish locally into the same immutable-release layout used in production:
 
 ```bash
 just publish
 ```
 
+Published releases are stored under `releases/`, and the active site is the
+`current` symlink. Generated output is intentionally ignored by Git.
+
 ## Deployment
 
-Pushes to `main` deploy through `.github/workflows/deploy.yml`. The workflow expects a GitHub Actions self-hosted runner on the production server, updates `/www/website`, runs `./restart.sh`, and verifies `https://gratheon.com/`.
+Pushes to `main` deploy through `.github/workflows/deploy.yml`. The workflow expects a GitHub Actions self-hosted runner on the production server, builds the target commit in a temporary Git worktree, publishes it under `/www/website/releases`, flips `/www/website/current` atomically, updates `/www/website`, reloads nginx, and verifies `https://gratheon.com/`.
 
-The production runner must be able to write `/www/website`, execute `/www/blog-engine-md/bin/blog-engine`, and run Docker Compose for `website-search`.
+The production runner must be able to write `/www/website`, execute `/www/blog-engine-md/bin/blog-engine`, reload nginx, and run Docker Compose for `website-search`. Nginx should use the checked-in `config/nginx.conf`, which serves `/www/website/current`.
 
 Manual production deploy:
 

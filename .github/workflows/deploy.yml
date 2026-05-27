@@ -26,3 +26,5 @@ jobs:
         run: |
           ./scripts/verify-production.sh https://gratheon.com/
           ./scripts/verify-production.sh https://gratheon.com/pricing/
+          ./scripts/verify-production.sh https://gratheon.com/assets/css/main.css
+          ./scripts/verify-production.sh https://gratheon.com/assets/js/main.js
