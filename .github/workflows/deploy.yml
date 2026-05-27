@@ -30,7 +30,8 @@ jobs:
           ssh root@gratheon.com 'bash -se' <<'EOF'
             set -euo pipefail
             cd /www/website
-            runuser -u www -- git -C /www/website pull --ff-only origin main
+            runuser -u www -- git -C /www/website fetch origin main
+            runuser -u www -- git -C /www/website reset --hard origin/main
             ./restart.sh
           EOF
 

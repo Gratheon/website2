@@ -43,7 +43,8 @@ Manual production deploy:
 ```bash
 ssh root@gratheon.com
 cd /www/website
-runuser -u www -- git -C /www/website pull --ff-only origin main
+runuser -u www -- git -C /www/website fetch origin main
+runuser -u www -- git -C /www/website reset --hard origin/main
 ./restart.sh
 ```
 
