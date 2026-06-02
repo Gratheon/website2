@@ -1,4 +1,5 @@
 ---
+title: "🎒 Attended \"Robotics is easy\" local webinar for schools"
 image: "https://raw.githubusercontent.com/Gratheon/website/refs/heads/main/blog/img/Screenshot%202024-12-03%20at%2014.12.29.png"
 ---
 

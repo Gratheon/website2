@@ -1,3 +1,7 @@
+---
+title: "🎒 Attended Building a Viral Product Webinar"
+---
+
 [https://www.meetup.com/startup-investor-accelerator-estonia/events/303277579/](https://www.meetup.com/startup-investor-accelerator-estonia/events/303277579/)
 
 

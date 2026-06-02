@@ -1,3 +1,7 @@
+---
+title: "🛠️ Climathon hackathon"
+---
+
 Participated in small climathon hackathon at TalTech
 
 ![](img/climathon-175.jpg)

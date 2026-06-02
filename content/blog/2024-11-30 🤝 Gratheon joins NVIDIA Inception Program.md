@@ -1,3 +1,7 @@
+---
+title: "🤝 Gratheon joins NVIDIA Inception Program"
+---
+
 We're excited to announce that we join NVIDIA Inception Program!
 
 As we are relying on edge devices for video monitoring of bees and we are using NVidia Jetson Nano and Orin, it is natural for us to seek more knowledge and deeper research, gain pricing benefits on devices and have better reach to NVIDIA associated communities of engineers, startups and potential investors. This will especially crucial for robotic beehive.

@@ -1,3 +1,7 @@
+---
+title: "📺 Kanal 7 interview"
+---
+
 Gave an interview to Duomedia, Kanal 7, Anna-Maria Ouertani (in russian) about the project
 
 <!-- truncate -->

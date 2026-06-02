@@ -1,3 +1,6 @@
+---
+title: "💶  Attending EIC Accelerator and Ready2Scale webinar"
+---
 
 ![](img/Screenshot%202025-04-25%20at%2011.08.11.png)
 

@@ -1,3 +1,7 @@
+---
+title: "📢 EstoniAI Meetup v5"
+---
+
 Pitched an app in local AI meetup
 
 <!-- truncate -->

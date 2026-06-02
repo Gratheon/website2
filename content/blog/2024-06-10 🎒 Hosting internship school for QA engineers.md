@@ -1,3 +1,7 @@
+---
+title: "🎒 Hosting internship school for QA engineers"
+---
+
 Gave an remote internship for QA engineers to practice finding bugs, organized by [Tallinn Learning](https://www.tallinn-learning.ee/et) school
 
 <!-- truncate -->

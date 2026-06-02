@@ -1,3 +1,7 @@
+---
+title: "💶 Tehnopol AI pre-accelerator event"
+---
+
 Visited event organized by Tehnopol.
 We've submitted application to be in the next batch.
 Had networking with local AI community

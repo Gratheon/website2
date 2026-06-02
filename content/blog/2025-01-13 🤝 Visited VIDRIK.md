@@ -1,3 +1,7 @@
+---
+title: "🤝 Visited VIDRIK"
+---
+
 Had a meeting with [VIRUMAA DIGI- JA ROHETEHNOLOOGIATE INNOVATSIOONIKESKUS](https://vidrik.taltech.ee/) representatives (engineers, researchers and managers) on the topic of research and development collaboration with Gratheon. Seems like the most suitable topic is the area of IoT devices.
 
 <!-- truncate -->

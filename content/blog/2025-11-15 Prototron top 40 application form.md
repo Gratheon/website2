@@ -1,4 +1,7 @@
-# Prototron Top 40 Application Form
+---
+title: "Prototron top 40 application form"
+---
+
 We have participated in the Prototron funding program for the second time and submitted our application for consideration. 
 Below are the details of our application form for the Prototron Top 40.
 We share this information to provide transparency about our funding journey and to illustrate the kind of projects we are working on as 

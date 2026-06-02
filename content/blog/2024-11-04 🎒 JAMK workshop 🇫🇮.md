@@ -1,3 +1,7 @@
+---
+title: "🎒 JAMK workshop 🇫🇮"
+---
+
 Attended JAMK workshop that is looking for precise pollination and food-related startups.
 
 [AniCare](https://anicare.fi/en/homepage/) was one of the example startups that was featured

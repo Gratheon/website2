@@ -1,3 +1,7 @@
+---
+title: "🛠️ Winner in API World + AI DevWorld Hackaton"
+---
+
 Participated in API World conference (USA) and AI DevWorld Hackaton
 
 <!-- truncate -->

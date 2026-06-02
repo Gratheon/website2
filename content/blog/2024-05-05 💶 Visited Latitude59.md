@@ -1,3 +1,7 @@
+---
+title: "💶 Visited Latitude59"
+---
+
 Huge event, maybe too early for the project
 
 <!-- truncate -->

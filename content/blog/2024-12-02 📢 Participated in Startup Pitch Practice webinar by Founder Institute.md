@@ -1,3 +1,7 @@
+---
+title: "📢 Participated in Startup Pitch Practice webinar by Founder Institute"
+---
+
 We took part in [Founder Institute](https://fi.co/) online 1 min pitch practicing and getting feedback from the mentors. [Regine Harr](https://www.linkedin.com/in/regine-harr-91012215/) gave a good advice on elevator pitch structure.
 
 <!-- truncate -->

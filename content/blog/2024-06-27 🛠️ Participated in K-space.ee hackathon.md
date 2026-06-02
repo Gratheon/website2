@@ -1,3 +1,7 @@
+---
+title: "🛠️ Participated in K-space.ee hackathon"
+---
+
 Visited local k-space (hacker space) co-working space with various equipment opportunities.
 Was mainly experimenting with sensor telemetry as a product
 

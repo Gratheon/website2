@@ -1,3 +1,6 @@
+---
+title: "🎒 Attended Practical startup strategy webinar"
+---
 
 ![](img/Screenshot%202024-11-19%20at%2015.34.57.png)
 

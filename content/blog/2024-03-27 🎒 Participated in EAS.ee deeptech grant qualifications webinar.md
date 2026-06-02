@@ -1,3 +1,7 @@
+---
+title: "🎒 Participated in EAS.ee deeptech grant qualifications webinar"
+---
+
 And quickly undertsood that we cannot qualify for [EAS.ee](http://EAS.ee) 50k grant because
 
 - Gratheon OÜ is older than 5 years

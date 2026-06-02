@@ -1,3 +1,7 @@
+---
+title: "🎒 Visual AI in Agriculture Webinar"
+---
+
 We attended a Webinar on agriculture, mostly showcasing voxel51 AI tool use with agriculture projects
 
 ![](img/unnamed.png)

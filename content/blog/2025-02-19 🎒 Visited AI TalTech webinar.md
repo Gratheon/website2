@@ -1,3 +1,7 @@
+---
+title: "🎒 Visited AI TalTech webinar"
+---
+
 ![](img/Screenshot%202025-02-19%20at%2010.39.43.png)
 
 <!--truncate-->

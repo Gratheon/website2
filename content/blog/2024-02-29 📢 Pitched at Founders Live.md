@@ -1,3 +1,7 @@
+---
+title: "📢 Pitched at Founders Live"
+---
+
 Visited local branch of Founders Live organized by Jaanika Umalas at Palo Alto Club, Tallinn, Estonia where I pitched the project. Got supportive feedback, also pricing questions
 
 <!-- truncate -->

@@ -1,3 +1,7 @@
+---
+title: "🔬 Attended open hardware webinar"
+---
+
 Meetup - https://www.meetup.com/openuk/events/301997990/?eventOrigin=home_page_upcoming_events$all
 
 ### Tim Telford

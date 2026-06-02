@@ -1,3 +1,7 @@
+---
+title: "🛠️ Andmetorm hackathon"
+---
+
 We are excited to participate in the **"Data Storm" hackathon**, which focuses on utilizing open government data from Estonia, particularly in areas such as environment, weather, hydrology, and alerts. Our project addresses challenges related to **storm winds collapsing beehives** and proposes a solution in the form of **weather alerts**.
 
 ### Our focus areas

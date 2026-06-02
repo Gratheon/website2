@@ -1,4 +1,6 @@
-# Tehnopol AI Accelerator Pitch
+---
+title: "💶 Tehnopol AI accelerator pitch"
+---
 
 We're pitching Gratheon to Tehnopol's AI Accelerator program with the following structure:
 

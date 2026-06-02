@@ -1,3 +1,7 @@
+---
+title: "🛰️ Participated in Garage48 Cassini hackathon"
+---
+
 We participated in pan-European hackathon focused on satellite data processing, organized locally by Garage48.
 
 Our main goal is to

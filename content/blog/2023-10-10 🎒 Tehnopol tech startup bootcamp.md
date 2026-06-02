@@ -1,3 +1,7 @@
+---
+title: "🎒 Tehnopol tech startup bootcamp"
+---
+
 Participated in 3-day startup bootcamp organized by Tehnopol
 https://www.tehnopol.ee/sundmused/tech-startup-bootcamp-3-paeva-x-online-x-vene-keeles/
 
