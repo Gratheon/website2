@@ -52,44 +52,8 @@
       });
   }
 
-  function setupPricingCalculator() {
-    var calculator = document.querySelector('[data-pricing-calculator]');
-    if (!calculator) return;
-
-    var tokenOutput = calculator.querySelector('[data-token-result]');
-    var costOutput = calculator.querySelector('[data-cost-result]');
-    var weights = {
-      telemetryRequests: 0.002,
-      dataPoints: 0.0002,
-      videoMinutes: 0.27,
-      smsAlerts: 0.3,
-      webhooks: 0.01,
-      hives: 2,
-      frames: 0.02,
-      frameUploads: 0.25,
-      inspections: 1
-    };
-
-    function update() {
-      var tokens = Object.keys(weights).reduce(function (sum, key) {
-        var input = calculator.querySelector('[name="' + key + '"]');
-        var value = input ? parseFloat(input.value || '0') || 0 : 0;
-        return sum + value * weights[key];
-      }, 0);
-      tokens = Math.round(tokens * 100) / 100;
-      var cost = Math.round((tokens / 1000) * 100 * 100) / 100;
-      if (tokenOutput) tokenOutput.textContent = tokens.toLocaleString();
-      if (costOutput) costOutput.textContent = '€' + cost.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-    }
-
-    calculator.querySelectorAll('input[type="number"]').forEach(function (input) {
-      input.addEventListener('input', update);
-    });
-    update();
-  }
 
   document.addEventListener('DOMContentLoaded', function () {
     setLatestDownloadLinks();
-    setupPricingCalculator();
   });
 })();

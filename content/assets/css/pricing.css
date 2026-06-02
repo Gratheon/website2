@@ -310,6 +310,15 @@
 .pricing-card.enterprise .pricing-card-features li {
   color: white;
 }
+.pricing-card.enterprise .pricing-features-section h4,
+.pricing-card.enterprise .pricing-limitations-section h4 {
+  color: #8892a0;
+  border-bottom-color: #333;
+}
+.pricing-card.enterprise .pricing-card-features li a,
+.pricing-card.enterprise .pricing-card-features li a:visited {
+  color: #8bb8ff;
+}
 
 .pricing-card.enterprise .pricing-card-footer {
   background-color: #222;
@@ -567,6 +576,11 @@
   padding: 1.5rem;
   text-align: center;
   border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 250px;
 }
 
 .pricing-card-title {
@@ -641,6 +655,7 @@
 .pricing-card-description {
   font-size: 0.9rem;
   color: var(--ifm-color-emphasis-800);
+  margin-top: auto;
 }
 
 .pricing-highlight-bar {
@@ -684,22 +699,19 @@
 .pricing-card-features li {
   padding: 0.1rem 0;
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  column-gap: 0.25rem;
+  align-items: flex-start;
+  gap: 0.5rem;
   min-height: 2.5em;
 }
 
 .pricing-card-features li a {
-  color: var(--ifm-color-primary-darkest);
+  color: var(--ifm-link-color, var(--ifm-color-primary));
   text-decoration: none;
 }
 
 .pricing-card-features li a:hover {
   text-decoration: underline;
 }
-
-/* Pricing features and limitations sections */
 .pricing-features-section,
 .pricing-limitations-section {
   margin-bottom: 1.5rem;
@@ -712,22 +724,15 @@
 
 .pricing-features-section h4,
 .pricing-limitations-section h4 {
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
   margin-bottom: 0.75rem;
-  color: var(--ifm-color-emphasis-800);
-  border-bottom: 1px solid var(--ifm-color-emphasis-300);
+  color: var(--ifm-color-emphasis-500);
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
   padding-bottom: 0.5rem;
 }
-
-.pricing-features-section h4 {
-  color: var(--ifm-color-success-dark);
-}
-
-.pricing-limitations-section h4 {
-  color: var(--ifm-color-emphasis-600);
-}
-
 .pricing-card-footer {
   padding: 1.5rem;
   text-align: center;
@@ -1418,13 +1423,11 @@ html[data-theme='dark'] .pricing-card-features li a,
 html[data-theme='dark'] .pricing-card-features li a:visited {
   color: #8bb8ff;
 }
-
-html[data-theme='dark'] .pricing-features-section h4 {
-  color: #7bdc5c;
-}
-
 html[data-theme='dark'] .pricing-features-section h4,
 html[data-theme='dark'] .pricing-limitations-section h4 {
+  color: #8892a0; /* subtle color */
+  border-bottom-color: var(--nav-border);
+}
   border-bottom-color: var(--nav-border);
 }
 
