@@ -1,0 +1,183 @@
+{{define "pricing-lt"}}
+{{/*
+  WHY: /lt/pricing/ is localized independently without changing the canonical English pricing page.
+  WHAT: This standalone copy keeps plan names and prices exact while translating descriptions,
+  features, limits, and CTAs for the localized route only.
+*/}}
+{{template "gratheon_head" .}}
+<body class="pricing-page-no-sidebar">
+  {{template "gratheon_header" .}}
+
+  <main class="pricing-page-wrapper">
+    <div class="pricing-page-header">
+      <h1 class="pricing-page-title">⚖️ Kainų planai</h1>
+      <p class="pricing-page-subtitle">Pradėkite paprastai, augdami atrakinkite AI ir automatizavimą, o papildomą pajėgumą pridėkite tik tada, kai jo reikia.</p>
+    </div>
+
+    <div class="pricing-container">
+      <div class="pricing-card" data-tier="free">
+        <div class="pricing-card-header">
+          <div class="pricing-card-title">Free</div>
+          <div class="pricing-card-price">Free</div>
+          <div class="pricing-card-description">Išbandykite pagrindinius bitininkystės įrašus</div>
+        </div>
+        <div class="pricing-card-body">
+          <div class="pricing-features-section">
+            <h4>Funkcijos</h4>
+            <ul class="pricing-card-features">
+              <li><span class="feature-icon" aria-hidden="true">📦</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/apiary-management/">Bityno ir avilių valdymas</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🖼️</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/frame-side-management/">Rėmelių nuotraukų įkėlimas</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">⌨️</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/ideas%20💡/keyboard-shortcuts-support/">Klaviatūros palaikymas</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">♻️</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/public-beehive-view/">Viešas avilio bendrinimas</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🔗</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/qr-code-generation/">QR kodo generavimas</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">📅</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/varroa-treatment-diary/">Gydymų dienoraštis</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🍭</span><span class="feature-text"><a href="/about/products/web_app/free-tier/feeding-history/">Maitinimo istorija</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">👑</span><span class="feature-text"><a href="/about/products/web_app/free-tier/live-queen-finder/">Live Queen Finder</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">♻️</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/hive-ownership-transfer/">Avilio nuosavybės perdavimas (kuriama)</a></span></li>
+            </ul>
+          </div>
+          <div class="pricing-limitations-section">
+            <h4>Limitai</h4>
+            <ul class="pricing-card-limits">
+              <li>Iki 3 avilių</li>
+              <li>Daugiausia 10 rėmelių avilyje</li>
+              <li>Nėra serverio pusės AI vaizdų apdorojimo kreditų</li>
+              <li>Vaizdų saugojimas 6 mėnesius</li>
+            </ul>
+          </div>
+        </div>
+        <div class="pricing-card-footer"><a href="https://app.gratheon.com/account/register" class="pricing-button">Pradėti</a></div>
+      </div>
+
+      <div class="pricing-card hobbyist" data-tier="hobbyist">
+        <div class="pricing-card-header">
+          <div class="pricing-card-title">Hobbyist</div>
+          <div class="pricing-card-price">€5<span class="price-period"> / month</span></div>
+          <div class="pricing-card-description">Reguliariems užrašams ir nuotraukų žurnalams</div>
+        </div>
+        <div class="pricing-card-body">
+          <div class="pricing-features-section">
+            <h4>Funkcijos</h4>
+            <ul class="pricing-card-features">
+              <li><span class="feature-icon" aria-hidden="true">📦</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/hive-management/">Pagrindinis duomenų valdymas duomenų bazėje</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🖼️</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/frame-side-management/">Rėmelių nuotraukų įkėlimas ir saugojimas</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🗺️</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/hive-placement-planner/">Avilių išdėstymo planuoklis</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">📓</span><span class="feature-text"><a href="/about/products/web_app/starter-tier/inspection-management/">Apžiūros užrašai</a> and <a href="/about/products/web_app/hobbyist-tier/varroa-treatment-diary/">gydymų dienoraštis</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">↔️</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/split-bee-colony/">Šeimos dalijimo valdymas</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🫶🏻</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/join-bee-colonies/">Šeimų sujungimo įrankis</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🛠</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/inventory-management/">Sandėlio atsargų valdymas</a></span></li>
+            </ul>
+          </div>
+          <div class="pricing-limitations-section">
+            <h4>Limitai</h4>
+            <ul class="pricing-card-limits">
+              <li>Iki 15 avilių</li>
+              <li>1 naudotojo paskyra</li>
+              <li>Nėra AI vaizdų apdorojimo funkcijų</li>
+              <li>Vaizdų saugojimas 1 metus</li>
+            </ul>
+          </div>
+        </div>
+        <div class="pricing-card-footer"><a href="https://app.gratheon.com/account/register" class="pricing-button">Pradėti Hobbyist</a></div>
+      </div>
+
+      <div class="pricing-card simple featured" data-tier="starter">
+        <div class="pricing-card-header">
+          <div class="pricing-card-title">Starter</div>
+          <div class="pricing-card-price">
+            <div class="price-monthly">€22<span class="price-period"> / month</span></div>
+            <div class="price-yearly-group"><span class="price-yearly">€144 / year</span><small class="price-discount">Sutaupykite 45% mokėdami kasmet</small></div>
+          </div>
+          <div class="pricing-card-description">Atrakinkite AI pagrįstas darbo eigas</div>
+        </div>
+        <div class="pricing-card-body">
+          <div class="pricing-features-section">
+            <h4>Funkcijos</h4>
+            <ul class="pricing-card-features">
+              <li><span class="feature-icon" aria-hidden="true">🐝</span><span class="feature-text"><a href="/about/products/web_app/starter-tier/honeycomb-cell-detection-management/">Akelių analizė</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🦀</span><span class="feature-text"><a href="/about/products/web_app/starter-tier/hive-bottom-varroa-count/">Varroa skaičiavimas ant avilio dugno lentos</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🔎</span><span class="feature-text"><a href="/about/products/web_app/starter-tier/inspection-management/">Apžiūrų valdymas</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">✏️</span><span class="feature-text"><a href="/about/products/web_app/starter-tier/drawing-on-canvas/">Rėmelio anotavimo įrankis</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🤖</span><span class="feature-text"><a href="/about/products/web_app/starter-tier/beekeeping-advice-with-llm/">AI bitininkystės asistentas</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🖼️</span><span class="feature-text"><a href="/about/products/web_app/starter-tier/honeycomb-cell-detection-management/">Mėnesiniai AI vaizdų analizės kreditai įskaičiuoti</a></span></li>
+            </ul>
+          </div>
+          <div class="pricing-limitations-section">
+            <h4>Limitai</h4>
+            <ul class="pricing-card-limits">
+              <li>1 naudotojo paskyra</li>
+              <li>Iki 50 avilių</li>
+              <li>30 rėmelių avilyje</li>
+              <li>Vaizdų saugojimas 2 metus</li>
+              <li>AI analizės apimtis per mėnesį ribojama</li>
+              <li>Mišrus realus naudojimas: ~100–130 AI užklausų per mėnesį</li>
+            </ul>
+          </div>
+        </div>
+        <div class="pricing-card-footer"><a href="https://app.gratheon.com/account/register" class="pricing-button">Pradėti nemokamą bandomąjį laikotarpį</a></div>
+      </div>
+
+      <div class="pricing-card featured professional" data-tier="professional">
+        <div class="pricing-card-header">
+          <div class="pricing-card-title">Professional</div>
+          <div class="pricing-card-price">
+            <div class="price-monthly">€55<span class="price-period"> / month</span></div>
+            <div class="price-yearly-group"><span class="price-yearly">(€396 / year)</span><small class="price-discount">Sutaupykite 40% mokėdami kasmet</small></div>
+          </div>
+          <div class="pricing-card-description">Augantiems bitynams ir komandoms</div>
+        </div>
+        <div class="pricing-card-body">
+          <div class="pricing-features-section">
+            <h4>Funkcijos</h4>
+            <ul class="pricing-card-features">
+              <li><span class="feature-icon" aria-hidden="true">✅</span><span class="feature-text"><a href="/about/products/web_app/starter-tier/">Viskas iš Starter plano</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">📦</span><span class="feature-text"><a href="/about/products/web_app/pro-tier/hive-telemetry-storage/">Avilių telemetrijos saugojimas</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">📈</span><span class="feature-text"><a href="/about/products/web_app/pro-tier/timeseries-data-analytics/">Laiko eilučių duomenų analitika</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">⚖️</span><span class="feature-text"><a href="/about/products/web_app/pro-tier/colony-comparison-analytics/">Šeimų palyginimo analitika (kuriama)</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🔔</span><span class="feature-text"><a href="/about/products/web_app/pro-tier/ideas%20💡/timeseries-anomaly-detection/">AI pagrįstas anomalijų aptikimas (kuriama)</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🎮</span><span class="feature-text"><a href="/about/products/web_app/pro-tier/ideas%20💡/device-management/">Įrenginių valdymas (kuriama)</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🔎</span><span class="feature-text"><a href="/about/products/web_app/starter-tier/inspection-management/">Neribotos apžiūros kiekvienam aviliui</a></span></li>
+            </ul>
+          </div>
+          <div class="pricing-limitations-section">
+            <h4>Limitai</h4>
+            <ul class="pricing-card-limits">
+              <li>Minimali telemetrijos skiriamoji geba 10 min.</li>
+              <li>Iki 5 naudotojų paskyrų</li>
+              <li>Iki 200 avilių</li>
+              <li>Vaizdų saugojimas 5 metus</li>
+            </ul>
+          </div>
+        </div>
+        <div class="pricing-card-footer"><a href="https://app.gratheon.com/account/register" class="pricing-button">Pradėti Professional</a></div>
+      </div>
+
+      <div class="pricing-card enterprise" data-tier="enterprise">
+        <div class="pricing-card-header">
+          <div class="pricing-card-title">Enterprise</div>
+          <div class="pricing-card-price">Custom</div>
+          <div class="pricing-card-description">Pramoninei bitininkystei ir tyrimų diegimams</div>
+        </div>
+        <div class="pricing-card-body">
+          <div class="pricing-features-section">
+            <h4>Funkcijos</h4>
+            <ul class="pricing-card-features">
+              <li><span class="feature-icon" aria-hidden="true">🤝</span><span class="feature-text"><a href="/about/products/web_app/web-app/">Individualus pajėgumas ir SLA</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">☁️</span><span class="feature-text"><a href="/about/products/web_app/web-app/">Vietiniai arba privataus debesies diegimai</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🛠</span><span class="feature-text"><a href="/about/products/entrance_observer/entrance-observer/">Aparatinės įrangos integravimo palaikymas</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">📈</span><span class="feature-text"><a href="/about/products/web_app/pro-tier/timeseries-data-analytics/">Tyrimų ir duomenų eksportavimo darbo eigos</a></span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="pricing-card-footer"><a href="mailto:pilot@gratheon.com" class="pricing-button">Susisiekite</a></div>
+      </div>
+    </div>
+
+
+  </main>
+
+  {{template "gratheon_footer" .}}
+  {{if .JSPath}}<script defer src="{{.JSPath}}"></script>{{end}}
+</body>
+</html>
+{{end}}

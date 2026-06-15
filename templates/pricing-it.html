@@ -1,0 +1,183 @@
+{{define "pricing-it"}}
+{{/*
+  WHY: /it/pricing/ is localized independently without changing the canonical English pricing page.
+  WHAT: This standalone copy keeps plan names and prices exact while translating descriptions,
+  features, limits, and CTAs for the localized route only.
+*/}}
+{{template "gratheon_head" .}}
+<body class="pricing-page-no-sidebar">
+  {{template "gratheon_header" .}}
+
+  <main class="pricing-page-wrapper">
+    <div class="pricing-page-header">
+      <h1 class="pricing-page-title">⚖️ Piani tariffari</h1>
+      <p class="pricing-page-subtitle">Inizia in modo semplice, sblocca AI e automazione mentre cresci e aggiungi capacità extra solo quando serve.</p>
+    </div>
+
+    <div class="pricing-container">
+      <div class="pricing-card" data-tier="free">
+        <div class="pricing-card-header">
+          <div class="pricing-card-title">Free</div>
+          <div class="pricing-card-price">Free</div>
+          <div class="pricing-card-description">Prova i registri apistici essenziali</div>
+        </div>
+        <div class="pricing-card-body">
+          <div class="pricing-features-section">
+            <h4>Funzionalità</h4>
+            <ul class="pricing-card-features">
+              <li><span class="feature-icon" aria-hidden="true">📦</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/apiary-management/">Gestione apiario e alveari</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🖼️</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/frame-side-management/">Caricamento foto dei telaini</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">⌨️</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/ideas%20💡/keyboard-shortcuts-support/">Supporto tastiera</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">♻️</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/public-beehive-view/">Condivisione pubblica dell’alveare</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🔗</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/qr-code-generation/">Generazione codice QR</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">📅</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/varroa-treatment-diary/">Diario dei trattamenti</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🍭</span><span class="feature-text"><a href="/about/products/web_app/free-tier/feeding-history/">Cronologia alimentazione</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">👑</span><span class="feature-text"><a href="/about/products/web_app/free-tier/live-queen-finder/">Live Queen Finder</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">♻️</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/hive-ownership-transfer/">Trasferimento proprietà dell’alveare (in sviluppo)</a></span></li>
+            </ul>
+          </div>
+          <div class="pricing-limitations-section">
+            <h4>Limiti</h4>
+            <ul class="pricing-card-limits">
+              <li>Fino a 3 alveari</li>
+              <li>Massimo 10 telaini per alveare</li>
+              <li>Nessun credito di elaborazione immagini AI lato server</li>
+              <li>Conservazione immagini per 6 mesi</li>
+            </ul>
+          </div>
+        </div>
+        <div class="pricing-card-footer"><a href="https://app.gratheon.com/account/register" class="pricing-button">Inizia</a></div>
+      </div>
+
+      <div class="pricing-card hobbyist" data-tier="hobbyist">
+        <div class="pricing-card-header">
+          <div class="pricing-card-title">Hobbyist</div>
+          <div class="pricing-card-price">€5<span class="price-period"> / month</span></div>
+          <div class="pricing-card-description">Per note regolari e registri fotografici</div>
+        </div>
+        <div class="pricing-card-body">
+          <div class="pricing-features-section">
+            <h4>Funzionalità</h4>
+            <ul class="pricing-card-features">
+              <li><span class="feature-icon" aria-hidden="true">📦</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/hive-management/">Gestione dati di base nel database</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🖼️</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/frame-side-management/">Caricamento e archiviazione foto dei telaini</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🗺️</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/hive-placement-planner/">Pianificatore posizione alveari</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">📓</span><span class="feature-text"><a href="/about/products/web_app/starter-tier/inspection-management/">Note di ispezione</a> and <a href="/about/products/web_app/hobbyist-tier/varroa-treatment-diary/">diario dei trattamenti</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">↔️</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/split-bee-colony/">Gestione della divisione delle colonie</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🫶🏻</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/join-bee-colonies/">Strumento di unione delle colonie</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🛠</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/inventory-management/">Gestione inventario di magazzino</a></span></li>
+            </ul>
+          </div>
+          <div class="pricing-limitations-section">
+            <h4>Limiti</h4>
+            <ul class="pricing-card-limits">
+              <li>Fino a 15 alveari</li>
+              <li>1 account utente</li>
+              <li>Nessuna funzionalità di elaborazione immagini AI</li>
+              <li>Conservazione immagini per 1 anno</li>
+            </ul>
+          </div>
+        </div>
+        <div class="pricing-card-footer"><a href="https://app.gratheon.com/account/register" class="pricing-button">Avvia Hobbyist</a></div>
+      </div>
+
+      <div class="pricing-card simple featured" data-tier="starter">
+        <div class="pricing-card-header">
+          <div class="pricing-card-title">Starter</div>
+          <div class="pricing-card-price">
+            <div class="price-monthly">€22<span class="price-period"> / month</span></div>
+            <div class="price-yearly-group"><span class="price-yearly">€144 / year</span><small class="price-discount">Risparmia il 45% con fatturazione annuale</small></div>
+          </div>
+          <div class="pricing-card-description">Sblocca flussi di lavoro basati su AI</div>
+        </div>
+        <div class="pricing-card-body">
+          <div class="pricing-features-section">
+            <h4>Funzionalità</h4>
+            <ul class="pricing-card-features">
+              <li><span class="feature-icon" aria-hidden="true">🐝</span><span class="feature-text"><a href="/about/products/web_app/starter-tier/honeycomb-cell-detection-management/">Analisi delle celle</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🦀</span><span class="feature-text"><a href="/about/products/web_app/starter-tier/hive-bottom-varroa-count/">Conteggio Varroa sul fondo dell’alveare</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🔎</span><span class="feature-text"><a href="/about/products/web_app/starter-tier/inspection-management/">Gestione ispezioni</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">✏️</span><span class="feature-text"><a href="/about/products/web_app/starter-tier/drawing-on-canvas/">Strumento di annotazione telaini</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🤖</span><span class="feature-text"><a href="/about/products/web_app/starter-tier/beekeeping-advice-with-llm/">Assistente apistico AI</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🖼️</span><span class="feature-text"><a href="/about/products/web_app/starter-tier/honeycomb-cell-detection-management/">Crediti mensili di analisi immagini AI inclusi</a></span></li>
+            </ul>
+          </div>
+          <div class="pricing-limitations-section">
+            <h4>Limiti</h4>
+            <ul class="pricing-card-limits">
+              <li>1 account utente</li>
+              <li>Fino a 50 alveari</li>
+              <li>30 telaini per alveare</li>
+              <li>Conservazione immagini per 2 anni</li>
+              <li>Volume mensile di analisi AI limitato</li>
+              <li>Uso reale misto: ~100–130 prompt AI/mese</li>
+            </ul>
+          </div>
+        </div>
+        <div class="pricing-card-footer"><a href="https://app.gratheon.com/account/register" class="pricing-button">Avvia prova gratuita</a></div>
+      </div>
+
+      <div class="pricing-card featured professional" data-tier="professional">
+        <div class="pricing-card-header">
+          <div class="pricing-card-title">Professional</div>
+          <div class="pricing-card-price">
+            <div class="price-monthly">€55<span class="price-period"> / month</span></div>
+            <div class="price-yearly-group"><span class="price-yearly">(€396 / year)</span><small class="price-discount">Risparmia il 40% con fatturazione annuale</small></div>
+          </div>
+          <div class="pricing-card-description">Per apiari e team in crescita</div>
+        </div>
+        <div class="pricing-card-body">
+          <div class="pricing-features-section">
+            <h4>Funzionalità</h4>
+            <ul class="pricing-card-features">
+              <li><span class="feature-icon" aria-hidden="true">✅</span><span class="feature-text"><a href="/about/products/web_app/starter-tier/">Tutto in Starter</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">📦</span><span class="feature-text"><a href="/about/products/web_app/pro-tier/hive-telemetry-storage/">Archiviazione telemetria degli alveari</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">📈</span><span class="feature-text"><a href="/about/products/web_app/pro-tier/timeseries-data-analytics/">Analisi dati time-series</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">⚖️</span><span class="feature-text"><a href="/about/products/web_app/pro-tier/colony-comparison-analytics/">Analisi comparativa delle colonie (in sviluppo)</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🔔</span><span class="feature-text"><a href="/about/products/web_app/pro-tier/ideas%20💡/timeseries-anomaly-detection/">Rilevamento anomalie basato su AI (in sviluppo)</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🎮</span><span class="feature-text"><a href="/about/products/web_app/pro-tier/ideas%20💡/device-management/">Gestione dispositivi (in sviluppo)</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🔎</span><span class="feature-text"><a href="/about/products/web_app/starter-tier/inspection-management/">Ispezioni illimitate per alveare</a></span></li>
+            </ul>
+          </div>
+          <div class="pricing-limitations-section">
+            <h4>Limiti</h4>
+            <ul class="pricing-card-limits">
+              <li>Risoluzione telemetria minima 10 min</li>
+              <li>Fino a 5 account utente</li>
+              <li>Fino a 200 alveari</li>
+              <li>Conservazione immagini per 5 anni</li>
+            </ul>
+          </div>
+        </div>
+        <div class="pricing-card-footer"><a href="https://app.gratheon.com/account/register" class="pricing-button">Avvia Professional</a></div>
+      </div>
+
+      <div class="pricing-card enterprise" data-tier="enterprise">
+        <div class="pricing-card-header">
+          <div class="pricing-card-title">Enterprise</div>
+          <div class="pricing-card-price">Custom</div>
+          <div class="pricing-card-description">Per apicoltura industriale e installazioni di ricerca</div>
+        </div>
+        <div class="pricing-card-body">
+          <div class="pricing-features-section">
+            <h4>Funzionalità</h4>
+            <ul class="pricing-card-features">
+              <li><span class="feature-icon" aria-hidden="true">🤝</span><span class="feature-text"><a href="/about/products/web_app/web-app/">Capacità e SLA personalizzati</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">☁️</span><span class="feature-text"><a href="/about/products/web_app/web-app/">Installazioni on-premise o private cloud</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🛠</span><span class="feature-text"><a href="/about/products/entrance_observer/entrance-observer/">Supporto integrazione hardware</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">📈</span><span class="feature-text"><a href="/about/products/web_app/pro-tier/timeseries-data-analytics/">Flussi di ricerca ed esportazione dati</a></span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="pricing-card-footer"><a href="mailto:pilot@gratheon.com" class="pricing-button">Contattaci</a></div>
+      </div>
+    </div>
+
+
+  </main>
+
+  {{template "gratheon_footer" .}}
+  {{if .JSPath}}<script defer src="{{.JSPath}}"></script>{{end}}
+</body>
+</html>
+{{end}}

@@ -1,0 +1,203 @@
+{{define "front-hu"}}
+{{/*
+  WHY: /hu/ needs native marketing copy without changing the canonical English page.
+  WHAT: This standalone template translates visible copy while preserving product names, links, and media assets.
+*/}}
+{{template "gratheon_head" .}}
+<body class="front-page">
+  {{template "gratheon_header" .}}
+
+  <main>
+    <div id="splash">
+      <header id="front">
+        <video id="bgVideo" autoplay loop muted playsinline src="https://gratheon.s3-accelerate.amazonaws.com/video/01.mp4"></video>
+        <div class="headerContentContainer">
+          <div id="splash_internal">
+            <div>Méhkaptár-adatelemzés</div>
+            <p>Óvja a méheket, az időt és az erejét</p>
+          </div>
+          <div class="installButtons">
+            <a class="signup blue" href="https://app.gratheon.com/account/register">Próbálja ki ingyen</a>
+            <div class="platformDownloads">
+              <a href="https://play.google.com/store/apps/details?id=com.gratheon.app.twa"><img class="googlePlayBadge no-transform" height="50" src="/assets/img/google.png" alt="Google Play"></a>
+              <a href="https://github.com/Gratheon/web-app/releases/latest" data-latest-release="mac"><img class="desktopDownloadIcon no-transform" src="/assets/img/mac.png" alt="macOS ARM letöltése"></a>
+              <a href="https://github.com/Gratheon/web-app/releases/latest" data-latest-release="windows"><img class="desktopDownloadIcon no-transform" src="/assets/img/windows-full.webp" alt="Windows letöltése"></a>
+              <a href="https://github.com/Gratheon/web-app/releases/latest" data-latest-release="linux"><img class="desktopDownloadIcon no-transform" src="/assets/img/linux.png" alt="Linux letöltése"></a>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <video id="showcase" autoplay loop muted playsinline src="https://gratheon.s3-accelerate.amazonaws.com/www/detection2.mov"></video>
+
+    <section class="front-section">
+      <h2>Hogyan működik az alkalmazás?</h2>
+      <div class="features">
+        <div class="feature">
+          <h3>Kaptárak modellezése</h3>
+          <p>Modellezze a kaptárakat, hogy terepen is tudja, hol és miért kell beavatkozni, amikor a papíralapú jegyzetek kezelése nehézkessé válik.</p>
+          <video autoplay loop muted playsinline src="https://gratheon.s3-accelerate.amazonaws.com/www/frame-management3.mov"></video>
+        </div>
+        <div class="feature">
+          <h3>Keretfotók feltöltése</h3>
+          <p>Készítsen fotókat a keretekről, és töltse fel őket az alkalmazásba. A Gratheon felismeri és megszámolja a méheket a család méretének méréséhez.</p>
+          <img src="/assets/img/count.webp" alt="Méhszám felismerése">
+        </div>
+        <div class="feature">
+          <h3>Vizsgálatok tárolása</h3>
+          <p>Kövesse a méhcsalád fejlődését az időben, és hasonlítsa össze ugyanazt a keretet a változások megfigyeléséhez.</p>
+          <img src="/assets/img/inspections.webp" alt="Vizsgálati előzmények">
+        </div>
+        <div class="feature">
+          <h3>Live Queen Finder</h3>
+          <p>Vizsgálat közben használja a telefon kameráját, és a Gratheon jelzi a királynőre emlékeztető találatokat, miközben végigpásztázza a keretet.</p>
+          <a href="/about/products/web_app/free-tier/live-queen-finder/">
+            <img src="/assets/img/blog/img/live-queen-finder-detection-preview.webp" alt="Live Queen Finder kamerás felismerés">
+          </a>
+        </div>
+        <div class="feature">
+          <h3>Erőforrások becslése</h3>
+          <p>Ismerje fel a sejteket és becsülje meg az erőforrás-arányokat. A nektár és a virágpor családok közötti kiegyensúlyozása megelőzheti az éhezést.</p>
+          <img src="/assets/img/comb.webp" alt="Lépsejt-elemzés">
+        </div>
+        <div class="feature">
+          <h3>Atkával való fertőzöttség mérése</h3>
+          <p>Ismerje fel és számolja meg a Varroa atkákat anélkül, hogy alkoholos mosási teszttel méheket ölne.</p>
+          <img src="/assets/img/varroa.webp" alt="Varroa felismerés">
+        </div>
+        <div class="feature">
+          <h3>Tanuljon az AI-tól</h3>
+          <p>Használja a kaptár kontextusát, és egyetlen gombbal kérjen tanácsot egy nagy nyelvi modelltől a lehetséges következő lépésekről.</p>
+          <img src="/assets/img/llm.webp" alt="AI méhészeti asszisztens">
+        </div>
+        <div class="feature">
+          <h3>Jegyzetelés</h3>
+          <p>Rajzoljon a keret fölé iPad Pencil-lel vagy egérrel, és emelje ki a fontos területeket.</p>
+          <video autoplay loop muted playsinline src="https://gratheon.s3-accelerate.amazonaws.com/www/ipad3.mov"></video>
+        </div>
+        <div class="feature">
+          <h3>Megosztás</h3>
+          <p>Ossza meg a kaptárvizsgálatokat a méhészközösséggel, és kérjen szakértői tanácsot.</p>
+          <img src="/assets/img/sharing.webp" alt="Nyilvános kaptármegosztás">
+        </div>
+        <div class="feature">
+          <h3>Méhek megfigyelése</h3>
+          <p>Közvetítse a kaptárbejáratokat a nyílt forráskódú Entrance Observer klienssel, egy használaton kívüli telefonnal vagy Raspberry Pi-vel.</p>
+          <iframe src="https://www.youtube.com/embed/oG791JNb1aA?autoplay=1&mute=1&loop=1" style="width:100%;height:201px;margin:0 auto;display:block" title="Méhek a kaptárbejáratnál" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="front-section" id="devices">
+      <h2>Hardvertermékek</h2>
+      <div class="device">
+        <div class="deviceText">
+          <h3>Kaptárszenzorok <span class="badge">prototípus fázis</span></h3>
+          <p>Mérjen hőmérsékletet, páratartalmat, CO2-szintet, légnyomást, hangot és súlyt, hogy a család fejlődését környezeti tényezőkkel kapcsolja össze. Megfizethető, adat- és energiahatékony.</p>
+          <p class="deviceLinks">
+            <a href="https://github.com/Gratheon/beehive-sensors/" aria-label="Kaptárszenzorok forráskódja">
+              <svg class="linkIcon githubIcon" width="16" height="16" viewBox="0 0 1024 1024" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M512 0C229.12 0 0 229.12 0 512c0 226.56 146.56 418.56 350.08 486.4 25.6 4.48 35.2-10.88 35.2-24.32 0-12.16-.64-52.48-.64-95.36C256 902.4 222.72 847.36 212.48 818.56c-5.76-14.72-30.72-60.16-52.48-72.32-17.92-9.6-43.52-28.8-.64-29.44 40.32-.64 69.12 37.76 78.72 53.12 46.08 77.44 119.68 55.68 148.48 42.24 4.48-33.28 17.92-55.68 32.64-68.48-113.92-12.8-233.6-56.96-233.6-253.44 0-55.68 19.84-101.76 52.48-137.6-5.12-12.8-23.04-65.28 5.12-135.68 0 0 42.88-13.44 140.8 52.48 40.96-11.52 84.48-17.28 128-17.28s87.04 5.76 128 17.28c97.92-66.56 140.8-52.48 140.8-52.48 28.16 70.4 10.24 122.88 5.12 135.68 32.64 35.84 52.48 81.28 52.48 137.6 0 197.12-120.32 240.64-234.24 253.44 18.56 16 34.56 46.72 34.56 94.72 0 68.48-.64 123.52-.64 140.8 0 13.44 9.6 29.44 35.2 24.32C877.44 930.56 1024 738.56 1024 512 1024 229.12 794.88 0 512 0Z" fill="#1B1F23"/>
+              </svg> Kód</a>
+          </p>
+        </div>
+        <div class="deviceImgs">
+          <img src="/assets/img/sensors.webp" alt="Kaptárszenzorok">
+          <img src="/assets/img/temp.webp" alt="Kaptár hőmérsékleti grafikonja">
+        </div>
+      </div>
+      <div class="device">
+        <div class="deviceText">
+          <h3>Entrance Observer <span class="badge">MVP fázis</span></h3>
+          <p>Kapjon valós idejű videóképet a bejáratról. Számolja a ki- és berepülő méheket a gyűjtőméhek napi veszteségének becsléséhez. Ismerje fel a méheken utazó Varroa atkákat. Kövesse a virágporáramlást. Észlelje a rablást, a dolgozók tájékozódó repüléseit és az anyakirálynő párzási repüléseit.</p>
+          <p class="deviceLinks">
+            <a href="https://github.com/Gratheon/entrance-observer/" aria-label="Entrance Observer forráskódja">
+              <svg class="linkIcon githubIcon" width="16" height="16" viewBox="0 0 1024 1024" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M512 0C229.12 0 0 229.12 0 512c0 226.56 146.56 418.56 350.08 486.4 25.6 4.48 35.2-10.88 35.2-24.32 0-12.16-.64-52.48-.64-95.36C256 902.4 222.72 847.36 212.48 818.56c-5.76-14.72-30.72-60.16-52.48-72.32-17.92-9.6-43.52-28.8-.64-29.44 40.32-.64 69.12 37.76 78.72 53.12 46.08 77.44 119.68 55.68 148.48 42.24 4.48-33.28 17.92-55.68 32.64-68.48-113.92-12.8-233.6-56.96-233.6-253.44 0-55.68 19.84-101.76 52.48-137.6-5.12-12.8-23.04-65.28 5.12-135.68 0 0 42.88-13.44 140.8 52.48 40.96-11.52 84.48-17.28 128-17.28s87.04 5.76 128 17.28c97.92-66.56 140.8-52.48 140.8-52.48 28.16 70.4 10.24 122.88 5.12 135.68 32.64 35.84 52.48 81.28 52.48 137.6 0 197.12-120.32 240.64-234.24 253.44 18.56 16 34.56 46.72 34.56 94.72 0 68.48-.64 123.52-.64 140.8 0 13.44 9.6 29.44 35.2 24.32C877.44 930.56 1024 738.56 1024 512 1024 229.12 794.88 0 512 0Z" fill="#1B1F23"/>
+              </svg> Kód</a><br>
+            <a href="/assets/assets/entrance-observer-whitepaper.pdf" aria-label="Entrance Observer white paper PDF">
+              <svg class="linkIcon pdfIcon" width="16" height="16" viewBox="0 0 14 16" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.2 0.5h7.1L13 4.2v11.3H2.2z" fill="#fff" stroke="#111"/>
+                <path d="M9.2 0.8v3.7h3.6" fill="none" stroke="#111"/>
+                <path d="M0.7 7h12.6v4.2H0.7z" fill="#ed1c24" stroke="#111" stroke-width="0.4"/>
+                <text x="2" y="10.1" fill="#fff" font-family="Arial, sans-serif" font-size="2.9" font-weight="700">PDF</text>
+              </svg> White paper</a>
+          </p>
+        </div>
+        <div class="deviceImgs">
+          <img src="/assets/img/observer.webp" alt="Entrance Observer">
+          <video autoplay loop muted playsinline src="/assets/img/counting.mov"></video>
+        </div>
+      </div>
+      <div class="device">
+        <div class="deviceText">
+          <h3>Moduláris robotizált méhkaptár <span class="badge">ötletelési fázis</span></h3>
+          <p>Végső célunk. Automatizálni a vizsgálatokat mechanikus keretkiemeléssel. Energiát spórolni a nehéz kaptárelemek emelése helyett. Csökkenteni a vizsgálatok során elpusztuló méhek számát. Hatékonyságot növelni távoli belső megfigyeléssel, kevesebb terepi úttal. Mindig naprakésznek maradni riasztásokkal. Városi környezetben csípésmentesen tartani a szomszédokat.</p>
+          <p class="deviceLinks">
+            <a href="https://github.com/Gratheon/robotic-beehive/" aria-label="Moduláris robotizált méhkaptár forráskódja">
+              <svg class="linkIcon githubIcon" width="16" height="16" viewBox="0 0 1024 1024" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M512 0C229.12 0 0 229.12 0 512c0 226.56 146.56 418.56 350.08 486.4 25.6 4.48 35.2-10.88 35.2-24.32 0-12.16-.64-52.48-.64-95.36C256 902.4 222.72 847.36 212.48 818.56c-5.76-14.72-30.72-60.16-52.48-72.32-17.92-9.6-43.52-28.8-.64-29.44 40.32-.64 69.12 37.76 78.72 53.12 46.08 77.44 119.68 55.68 148.48 42.24 4.48-33.28 17.92-55.68 32.64-68.48-113.92-12.8-233.6-56.96-233.6-253.44 0-55.68 19.84-101.76 52.48-137.6-5.12-12.8-23.04-65.28 5.12-135.68 0 0 42.88-13.44 140.8 52.48 40.96-11.52 84.48-17.28 128-17.28s87.04 5.76 128 17.28c97.92-66.56 140.8-52.48 140.8-52.48 28.16 70.4 10.24 122.88 5.12 135.68 32.64 35.84 52.48 81.28 52.48 137.6 0 197.12-120.32 240.64-234.24 253.44 18.56 16 34.56 46.72 34.56 94.72 0 68.48-.64 123.52-.64 140.8 0 13.44 9.6 29.44 35.2 24.32C877.44 930.56 1024 738.56 1024 512 1024 229.12 794.88 0 512 0Z" fill="#1B1F23"/>
+              </svg> Kód</a>
+          </p>
+        </div>
+        <div class="deviceImgs">
+          <video autoplay loop muted playsinline src="https://gratheon.s3-accelerate.amazonaws.com/video/linear-actuator.mp4"></video>
+        </div>
+      </div>
+    </section>
+
+    <section class="front-story" id="content">
+      <article>
+        <h2>Formálja a méhészet jövőjét</h2>
+        <div class="author">
+          <div>
+            <a href="https://twitter.com/tot_ra" aria-label="Artjom Kurapov a Twitteren">
+              <img src="/assets/img/artjom.jpg" alt="szerző fotója" width="50" height="50">
+            </a>
+          </div>
+          <div>
+            <a href="https://www.linkedin.com/in/kurapov/">Artjom Kurapov</a>,<br>méhész, alapító mérnök
+          </div>
+        </div>
+        <p>Szoftvermérnök vagyok, és 5 éve lettem méhész, hogy javítsam a kertem beporzását és nagyobb termést érjek el. Számomra a méhek kedves és érdekes társállatok is.</p>
+        <p>A méhek kulcsfontosságú fajok az élelmezésbiztonságunk szempontjából. A gazdák méhészekkel működnek együtt, hogy precíz beporzással növeljék a hozamot.</p>
+        <p>A hagyományos méhészet megköveteli a méhcsalád megfigyelhetőségét, mert a méhek éhezést, anyavesztést, késői rajzást vagy Varroa destructor fertőzést szenvedhetnek el, ami gyengíti a családot és téli összeomláshoz vezethet.</p>
+        <p>A megfigyelhetőséget általában nehéz fizikai munkával és gyakori, időben korlátozott vizsgálatokkal oldják meg. Védőruhában, nyári hőségben 20 kg-os, 150 éve tervezett kaptárelemeket kell emelni, és apró részleteket észrevenni, miközben a védekező méhek csípnek, stresszt okozva a vizsgálat során és méheket ölve.</p>
+        <p>Ahogy a méhészet nő, ez a munka nem skálázható. Az ipari méhészeknek több, távoli és nehezen elérhető méhészetük van. A meglévő megoldások ezeket a gondokat nem oldják meg megfelelően.</p>
+        <p>💡 Célunk, hogy segítsünk a méhészeknek a megfigyelhetőségben és az automatizálásban. Víziónk egy teljesen autonóm, több kaptárból álló robotizált méhészet, amely távolról vizsgálja a családokat. Ezt lépésről lépésre érjük el, a szoftverrel kezdve.</p>
+        <p>Használható mérőszámokkal és automatizálással a méhészek hatékonyabbá válnak, kevesebb időt töltenek terepen, többet elemeznek, és csak szükség esetén avatkoznak be pontosan.</p>
+        <div class="future">
+          <div>
+            <p>A Gratheon alkalmazás nyílt forráskódú szoftverekre épül, és maga is teljesen nyílt forráskódú.</p>
+            <p>Csatlakozzon hozzánk, hogy világszerte 100 millió méhcsalád életét javítsuk és kielégítsük a növekvő beporzási igényt. Befektetőket keresünk a fejlesztés skálázásához, mérnököket a csapatba, méhészeket terepi tesztekhez és tanácsadókat.</p>
+            <p>Van ötlete?</p>
+            <p class="futureActions">
+              <a class="action action_green" href="https://discord.gg/PcbP4uedWj">Írja meg Discordon</a>
+              <a class="action blue" href="https://app.gratheon.com/account/register">Regisztráció</a>
+            </p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <iframe
+      class="authorIntro"
+      title="A szerző bemutatkozása"
+      src="https://www.youtube.com/embed/gM3AJEAhmXc?rel=0"
+      frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+
+    <div class="brandStripe" aria-hidden="true">
+      <div class="brandStripeYellow"></div>
+      <div class="brandStripeGreen"></div>
+      <div class="brandStripeBlue"></div>
+    </div>
+  </main>
+
+  {{template "gratheon_footer" .}}
+  {{if .JSPath}}<script defer src="{{.JSPath}}"></script>{{end}}
+</body>
+</html>
+{{end}}

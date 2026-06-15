@@ -54,6 +54,24 @@ i18n:
     - code: "ja"
       label: "日本語"
       aliases: ["ja", "ja-jp"]
+    - code: "lv"
+      label: "Latviešu"
+      aliases: ["lv", "lv-lv"]
+    - code: "lt"
+      label: "Lietuvių"
+      aliases: ["lt", "lt-lt"]
+    - code: "hu"
+      label: "Magyar"
+      aliases: ["hu", "hu-hu"]
+    - code: "uk"
+      label: "Українська"
+      aliases: ["uk", "uk-ua"]
+    - code: "it"
+      label: "Italiano"
+      aliases: ["it", "it-it"]
+    - code: "ro"
+      label: "Română"
+      aliases: ["ro", "ro-ro"]
 author:
   name: "Gratheon OÜ"
   email: "pilot@gratheon.com"
@@ -80,12 +98,6 @@ navigation:
         url: "/blog/"
       - title: "Pricing"
         url: "/pricing/"
-      - title: "Discord"
-        url: "https://discord.gg/PcbP4uedWj"
-        class: "nav-action nav-action-first"
-      - title: "GitHub"
-        url: "https://github.com/gratheon/web-app"
-        class: "nav-action"
       - title: "Log in"
         url: "https://app.gratheon.com/account/authenticate/"
         class: "nav-action"
