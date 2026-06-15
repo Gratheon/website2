@@ -70,8 +70,16 @@ navigation:
     items:
       - title: "About"
         url: "/about/"
+        languages: ["en", "ru", "tr", "pl", "de", "fr", "zh", "hi", "es", "ar", "bn", "pt", "ja"]
+      - title: "Meist"
+        url: "/et/about/"
+        languages: ["et"]
       - title: "Products"
         url: "/about/products/"
+        languages: ["en", "ru", "tr", "pl", "de", "fr", "zh", "hi", "es", "ar", "bn", "pt", "ja"]
+      - title: "Tooted"
+        url: "/et/about/products/"
+        languages: ["et"]
       - title: "Docs"
         url: "/docs/"
       - title: "Research"
