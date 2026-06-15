@@ -2,8 +2,8 @@
 title: 🔗 API
 sidebar_position: 0
 ---
-Lets setup your hive devices to interact with Gratheon!
+Võimaldab seadistada teie taruseadmed Gratheoniga suhtlemiseks!
 
-You can also see how exactly we process this data - check out our architecture, services, code, reasons to choose one solution over another. If you are technical enough and find this useful, feel free to improve these guides in github or even add new ones.
+Samuti näete, kuidas me neid andmeid täpselt töötleme – vaadake meie arhitektuuri, teenuseid, koodi ja põhjuseid, miks eelistada ühte lahendust teisele. Kui olete piisavalt tehniline ja leiate, et see on kasulik, täiustage neid juhendeid Githubis või lisage isegi uusi.
 
-We expose [REST](REST.md) for devices and [GraphQL](GraphQL.md) for software integrations that can handle breaking changes faster.
+Avaldame [REST](REST.md) seadmete jaoks ja [GraphQL](GraphQL.md) tarkvaraintegratsioonide jaoks, mis suudavad muudatustega kiiremini toime tulla.

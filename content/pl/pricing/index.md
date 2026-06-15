@@ -1,6 +1,6 @@
 ---
-title: Pricing
+title: "Cennik"
 slug: ""
-hideNav: true
-redirectUrl: "https://gratheon.com/pricing/"
+layout: pricing-pl
+description: "Plany cenowe produktów i usług Gratheon dla pszczelarstwa"
 ---

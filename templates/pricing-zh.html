@@ -1,0 +1,183 @@
+{{define "pricing-zh"}}
+{{/*
+  WHY: /zh/pricing/ is localized independently without changing the canonical English pricing page.
+  WHAT: This standalone copy keeps plan names and prices exact while translating descriptions,
+  features, limits, and CTAs for the localized route only.
+*/}}
+{{template "gratheon_head" .}}
+<body class="pricing-page-no-sidebar">
+  {{template "gratheon_header" .}}
+
+  <main class="pricing-page-wrapper">
+    <div class="pricing-page-header">
+      <h1 class="pricing-page-title">⚖️ 价格方案</h1>
+      <p class="pricing-page-subtitle">从简单开始，随着发展解锁 AI 和自动化，并且只在需要时增加额外容量。</p>
+    </div>
+
+    <div class="pricing-container">
+      <div class="pricing-card" data-tier="free">
+        <div class="pricing-card-header">
+          <div class="pricing-card-title">Free</div>
+          <div class="pricing-card-price">Free</div>
+          <div class="pricing-card-description">试用核心养蜂记录功能</div>
+        </div>
+        <div class="pricing-card-body">
+          <div class="pricing-features-section">
+            <h4>功能</h4>
+            <ul class="pricing-card-features">
+              <li><span class="feature-icon" aria-hidden="true">📦</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/apiary-management/">蜂场与蜂箱管理</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🖼️</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/frame-side-management/">上传巢框照片</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">⌨️</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/ideas%20💡/keyboard-shortcuts-support/">键盘支持</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">♻️</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/public-beehive-view/">公开分享蜂箱</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🔗</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/qr-code-generation/">生成二维码</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">📅</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/varroa-treatment-diary/">处理日记</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🍭</span><span class="feature-text"><a href="/about/products/web_app/free-tier/feeding-history/">饲喂记录</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">👑</span><span class="feature-text"><a href="/about/products/web_app/free-tier/live-queen-finder/">实时蜂王查找</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">♻️</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/hive-ownership-transfer/">蜂箱所有权转移（开发中）</a></span></li>
+            </ul>
+          </div>
+          <div class="pricing-limitations-section">
+            <h4>限制</h4>
+            <ul class="pricing-card-limits">
+              <li>最多 3 个蜂箱</li>
+              <li>每个蜂箱最多 10 个巢框</li>
+              <li>无服务器端 AI 图像处理额度</li>
+              <li>图像保留 6 个月</li>
+            </ul>
+          </div>
+        </div>
+        <div class="pricing-card-footer"><a href="https://app.gratheon.com/account/register" class="pricing-button">开始使用</a></div>
+      </div>
+
+      <div class="pricing-card hobbyist" data-tier="hobbyist">
+        <div class="pricing-card-header">
+          <div class="pricing-card-title">Hobbyist</div>
+          <div class="pricing-card-price">€5<span class="price-period"> / month</span></div>
+          <div class="pricing-card-description">适合常规记录和照片日志</div>
+        </div>
+        <div class="pricing-card-body">
+          <div class="pricing-features-section">
+            <h4>功能</h4>
+            <ul class="pricing-card-features">
+              <li><span class="feature-icon" aria-hidden="true">📦</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/hive-management/">数据库中的基础数据管理</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🖼️</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/frame-side-management/">巢框照片上传与存储</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🗺️</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/hive-placement-planner/">蜂箱摆放规划器</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">📓</span><span class="feature-text"><a href="/about/products/web_app/starter-tier/inspection-management/">检查记录</a>和<a href="/about/products/web_app/hobbyist-tier/varroa-treatment-diary/">处理日记</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">↔️</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/split-bee-colony/">蜂群分群管理</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🫶🏻</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/join-bee-colonies/">蜂群合并工具</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🛠</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/inventory-management/">仓库库存管理</a></span></li>
+            </ul>
+          </div>
+          <div class="pricing-limitations-section">
+            <h4>限制</h4>
+            <ul class="pricing-card-limits">
+              <li>最多 15 个蜂箱</li>
+              <li>1 个用户账号</li>
+              <li>无 AI 图像处理功能</li>
+              <li>图像保留 1 年</li>
+            </ul>
+          </div>
+        </div>
+        <div class="pricing-card-footer"><a href="https://app.gratheon.com/account/register" class="pricing-button">开始使用 Hobbyist</a></div>
+      </div>
+
+      <div class="pricing-card simple featured" data-tier="starter">
+        <div class="pricing-card-header">
+          <div class="pricing-card-title">Starter</div>
+          <div class="pricing-card-price">
+            <div class="price-monthly">€22<span class="price-period"> / month</span></div>
+            <div class="price-yearly-group"><span class="price-yearly">€144 / year</span><small class="price-discount">按年付费节省 45%</small></div>
+          </div>
+          <div class="pricing-card-description">解锁 AI 驱动的工作流</div>
+        </div>
+        <div class="pricing-card-body">
+          <div class="pricing-features-section">
+            <h4>功能</h4>
+            <ul class="pricing-card-features">
+              <li><span class="feature-icon" aria-hidden="true">🐝</span><span class="feature-text"><a href="/about/products/web_app/starter-tier/honeycomb-cell-detection-management/">巢房分析</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🦀</span><span class="feature-text"><a href="/about/products/web_app/starter-tier/hive-bottom-varroa-count/">蜂箱底板瓦螨计数</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🔎</span><span class="feature-text"><a href="/about/products/web_app/starter-tier/inspection-management/">检查管理</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">✏️</span><span class="feature-text"><a href="/about/products/web_app/starter-tier/drawing-on-canvas/">巢框标注工具</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🤖</span><span class="feature-text"><a href="/about/products/web_app/starter-tier/beekeeping-advice-with-llm/">AI 养蜂助手</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🖼️</span><span class="feature-text"><a href="/about/products/web_app/starter-tier/honeycomb-cell-detection-management/">每月包含 AI 图像分析额度</a></span></li>
+            </ul>
+          </div>
+          <div class="pricing-limitations-section">
+            <h4>限制</h4>
+            <ul class="pricing-card-limits">
+              <li>1 个用户账号</li>
+              <li>最多 50 个蜂箱</li>
+              <li>每个蜂箱 30 个巢框</li>
+              <li>图像保留 2 年</li>
+              <li>AI 分析量按月封顶</li>
+              <li>真实混合使用：约每月 100–130 次 AI 提示</li>
+            </ul>
+          </div>
+        </div>
+        <div class="pricing-card-footer"><a href="https://app.gratheon.com/account/register" class="pricing-button">开始免费试用</a></div>
+      </div>
+
+      <div class="pricing-card featured professional" data-tier="professional">
+        <div class="pricing-card-header">
+          <div class="pricing-card-title">Professional</div>
+          <div class="pricing-card-price">
+            <div class="price-monthly">€55<span class="price-period"> / month</span></div>
+            <div class="price-yearly-group"><span class="price-yearly">(€396 / year)</span><small class="price-discount">按年付费节省 40%</small></div>
+          </div>
+          <div class="pricing-card-description">适合成长中的蜂场和团队</div>
+        </div>
+        <div class="pricing-card-body">
+          <div class="pricing-features-section">
+            <h4>功能</h4>
+            <ul class="pricing-card-features">
+              <li><span class="feature-icon" aria-hidden="true">✅</span><span class="feature-text"><a href="/about/products/web_app/starter-tier/">包含 Starter 的全部内容</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">📦</span><span class="feature-text"><a href="/about/products/web_app/pro-tier/hive-telemetry-storage/">蜂箱遥测数据存储</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">📈</span><span class="feature-text"><a href="/about/products/web_app/pro-tier/timeseries-data-analytics/">时间序列数据分析</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">⚖️</span><span class="feature-text"><a href="/about/products/web_app/pro-tier/colony-comparison-analytics/">蜂群对比分析（开发中）</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🔔</span><span class="feature-text"><a href="/about/products/web_app/pro-tier/ideas%20💡/timeseries-anomaly-detection/">AI 驱动的异常检测（开发中）</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🎮</span><span class="feature-text"><a href="/about/products/web_app/pro-tier/ideas%20💡/device-management/">设备管理（开发中）</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🔎</span><span class="feature-text"><a href="/about/products/web_app/starter-tier/inspection-management/">每个蜂箱不限次数检查</a></span></li>
+            </ul>
+          </div>
+          <div class="pricing-limitations-section">
+            <h4>限制</h4>
+            <ul class="pricing-card-limits">
+              <li>最低 10 分钟遥测分辨率</li>
+              <li>最多 5 个用户账号</li>
+              <li>最多 200 个蜂箱</li>
+              <li>图像保留 5 年</li>
+            </ul>
+          </div>
+        </div>
+        <div class="pricing-card-footer"><a href="https://app.gratheon.com/account/register" class="pricing-button">开始使用 Professional</a></div>
+      </div>
+
+      <div class="pricing-card enterprise" data-tier="enterprise">
+        <div class="pricing-card-header">
+          <div class="pricing-card-title">Enterprise</div>
+          <div class="pricing-card-price">Custom</div>
+          <div class="pricing-card-description">适合工业化养蜂和研究部署</div>
+        </div>
+        <div class="pricing-card-body">
+          <div class="pricing-features-section">
+            <h4>功能</h4>
+            <ul class="pricing-card-features">
+              <li><span class="feature-icon" aria-hidden="true">🤝</span><span class="feature-text"><a href="/about/products/web_app/web-app/">自定义容量和 SLA</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">☁️</span><span class="feature-text"><a href="/about/products/web_app/web-app/">本地或私有云部署</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🛠</span><span class="feature-text"><a href="/about/products/entrance_observer/entrance-observer/">硬件集成支持</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">📈</span><span class="feature-text"><a href="/about/products/web_app/pro-tier/timeseries-data-analytics/">研究与数据导出工作流</a></span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="pricing-card-footer"><a href="mailto:pilot@gratheon.com" class="pricing-button">联系我们</a></div>
+      </div>
+    </div>
+
+
+  </main>
+
+  {{template "gratheon_footer" .}}
+  {{if .JSPath}}<script defer src="{{.JSPath}}"></script>{{end}}
+</body>
+</html>
+{{end}}

@@ -1,6 +1,6 @@
 ---
-title: Pricing
+title: "الأسعار"
 slug: ""
-hideNav: true
-redirectUrl: "https://gratheon.com/pricing/"
+layout: pricing-ar
+description: "خطط أسعار منتجات Gratheon وخدمات تربية النحل"
 ---

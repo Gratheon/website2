@@ -1,6 +1,6 @@
 ---
-title: Pricing
+title: "料金"
 slug: ""
-hideNav: true
-redirectUrl: "https://gratheon.com/pricing/"
+layout: pricing-ja
+description: "Gratheon の製品と養蜂サービスの料金プラン"
 ---

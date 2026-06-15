@@ -1,6 +1,6 @@
 ---
-title: Pricing
+title: "价格"
 slug: ""
-hideNav: true
-redirectUrl: "https://gratheon.com/pricing/"
+layout: pricing-zh
+description: "Gratheon 产品和养蜂服务的价格方案"
 ---

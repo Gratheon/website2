@@ -92,7 +92,7 @@ Some services are not blocking the UI or backend in general, but are required fo
 - gate-video-stream
 - models-gate-tracker
 
-![](../img/Screenshot%202024-04-08%20at%2012.29.45.png)
+![](docs/img/Screenshot%202024-04-08%20at%2012.29.45.png)
 
 ## Features
 

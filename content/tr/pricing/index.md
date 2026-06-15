@@ -1,6 +1,6 @@
 ---
-title: Pricing
+title: "Fiyatlandırma"
 slug: ""
-hideNav: true
-redirectUrl: "https://gratheon.com/pricing/"
+layout: pricing-tr
+description: "Gratheon ürünleri ve arıcılık hizmetleri için fiyatlandırma planları"
 ---

@@ -33,4 +33,4 @@ flowchart LR
 
 
 
-![](img/352610409-b4ed305f-7ddd-44ff-b200-e0d139734349.jpg)
+![](docs/beehive-sensors/img/352610409-b4ed305f-7ddd-44ff-b200-e0d139734349.jpg)

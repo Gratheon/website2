@@ -1,37 +1,40 @@
+---
+title: "Jetson Orin Nano seadistamine"
+---
 
-Compared to Jetson Nano it also has
+Võrreldes terminiga Jetson Nano on ka sellel
 
-- M2 SSD which is 10x faster on write speeds, crucial in video management
+- M2 SSD, mis on kirjutuskiirusel 10 korda kiirem, videohalduses ülioluline
 
 ## **Jetson Orin Nano Developer Kit Carrier Board**
 
-|**Camera**|2x MIPI CSI-2 22-pin Camera Connectors|
+|**Kaamera**|2x MIPI CSI-2 22-pin kaamerapistikud|
 |---|---|
-|**M.2 Key M**|x4 PCIe Gen3, 2280|
-|**M.2 Key M**|x2 PCIe Gen3, 2242|
-|**M.2 Key E**|PCIe (x1), USB 2.0, UART, I2S, and I2C|
-|**USB**|Type A: 4x USB 3.2 Gen2, Type C: 1x for Debug and Device Mode|
-|**Networking**|1x GbE Connector|
-|**Display**|DisplayPort 1.2 (+MST)|
-|**microSD slot**|UHS-1 cards up to SDR104 mode|
-|**Others**|40-pin Expansion Header (UART, SPI, I2S, I2C, GPIO), 12-pin button header, 4-pin fan header, DC power jack|
-|**Dimensions**|100 mm x 79 mm x 30 mm(Height includes feet, carrier board, module, and thermal solution)|
-|POWER|4AMP 19V|
+|**M.2 võti M**|x4 PCIe Gen3, 2280|
+|**M.2 võti M**|x2 PCIe Gen3, 2242|
+|**M.2 võti E**|PCIe (x1), USB 2.0, UART, I2S ja I2C|
+|**USB**|Tüüp A: 4x USB 3.2 Gen2, tüüp C: 1x silumis- ja seadmerežiimi jaoks|
+|**Võrgundus**|1x GbE pistik|
+|**Ekraan**|DisplayPort 1.2 (+MST)|
+|**microSD pesa**|UHS-1 kaardid kuni SDR104 režiimiga|
+|**Muud**|40-kontaktiline laienduspäis (UART, SPI, I2S, I2C, GPIO), 12-kontaktiline nupu päis, 4-kontaktiline ventilaatori päis, alalisvoolu pistikupesa|
+|**Mõõdud**|100 mm x 79 mm x 30 mm (kõrgus sisaldab jalgu, kandeplaati, moodulit ja termilist lahendust)|
+|TOIDE|4AMP 19V|
 
-## Installation
+## Paigaldamine
 
-- Make sure to have host machine Ubuntu v22. Higher versions will not work with SDK
-- Install Nvidia SDK manager
-- Under Jetson CPU chip, connect `FC REC` and `GND` pins to run device in reset mode
-- Connect USB-C port of the jetson with USB3 port of your host machine. Prefer fast cables, as USB-2 cable will be very slow
-- Run Jetson
-- Run NVidia SDK manager, that should detect the device
-- Check almost all checkboxes
-- After half of the installation is complete, SDK will ask about `IP` .
-    - You now need to login into jetson (so connect display, mouse, keyboard)
-    - Attach ethernet cable to jetson or connect via wifi. Run `ifconfig` and get its IP.
-    - Make sure host machine and jetson are in the same network
-    - In SDK manager, enter jetson IP so that it can install remaining software
+- Veenduge, et teil oleks hostmasin Ubuntu v22. Kõrgemad versioonid SDK-ga ei tööta
+- Installige Nvidia SDK haldur
+- Seadme lähtestamisrežiimis käitamiseks ühendage Jetson CPU kiibi all `FC REC` ja `GND` viik
+- Ühendage jetsoni USB-C port hostmasina USB3 pordiga. Eelista kiireid kaableid, kuna USB-2 kaabel on väga aeglane
+- Jookse Jetson
+- Käivitage NVidia SDK haldur, mis peaks seadme tuvastama
+- Märkige peaaegu kõik märkeruudud
+- Kui pool installist on lõpule viidud, küsib SDK `IP` kohta.
+    - Nüüd peate jetsonisse sisse logima (nii et ühendage ekraan, hiir, klaviatuur)
+    - Ühendage Etherneti kaabel Jetsoniga või ühendage WiFi kaudu. Käivitage `ifconfig` ja hankige selle IP.
+    - Veenduge, et hostmasin ja jetson oleksid samas võrgus
+    - SDK-haldurisse sisestage jetson IP, et see saaks installida ülejäänud tarkvara
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/qCAoPcMiR4k" title="Ultimate Jetson Orin Nano  Walkthrough" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -42,22 +45,22 @@ Compared to Jetson Nano it also has
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/1RitDv6PLIQ" title="NVIDIA Jetson Orin Nano Dev Kit" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
-## Performance
+## Jõudlus
 
-| **Model**             | FPS |
-| --------------------- | --- |
-| PeopleNet (V2.5)      | 118 |
-| Action Recognition 2D | 366 |
-| Action Recognition 3D | 26  |
-| LPR Net               | 993 |
-| Dashcam Net           | 405 |
-| BodyPose Net          | 137 |
+| **Model** | FPS |
+| ---------------------- | --- |
+| PeopleNet (V2.5) | 118 |
+| Tegevuse tuvastamine 2D | 366 |
+| Tegevuse tuvastamine 3D | 26 |
+| LPR Net | 993 |
+| Dashcam Net | 405 |
+| BodyPose Net | 137 |
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/X9jt8qb_igo" title="My First Jetson Nano Object Detection Inference Server" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
-## Docker engine issues
+## Docker mootoriprobleemid
 
-Use this to fix startup
+Kasutage seda käivitamise parandamiseks
 
 ```bash
 sudo update-alternatives —config iptables

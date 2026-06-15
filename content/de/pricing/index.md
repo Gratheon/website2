@@ -1,6 +1,6 @@
 ---
-title: Pricing
+title: "Preise"
 slug: ""
-hideNav: true
-redirectUrl: "https://gratheon.com/pricing/"
+layout: pricing-de
+description: "Preispläne für Gratheon-Produkte und Imkereidienste"
 ---

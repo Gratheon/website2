@@ -1,6 +1,7 @@
 ---
 sidebar_position: 4
 title: 🍯 Tooted
+navTitle: Tooted
 ---
 
 Gratheoni tooted on arenduses ning ühendavad tarkvara ja riistvara. Need täiendavad üksteist, koguvad andmeid, pakuvad analüütikat ning aitavad mesinikel teha igapäevaseid otsuseid, et lahendada praktilisi [probleeme](/about/problems/problems/).

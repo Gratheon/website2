@@ -1,22 +1,24 @@
-# Wireless-AC8265 Dual Mode AC8265 Wireless NIC Module for Jetson Nano Developer Kit M.2 NGFF Support 2.4GHz / 5GHz 300Mbps / 867Mbps Dual Band WiFi and Bluetooth 4.2
+---
+title: "Wireless-AC8265 kaherežiimiline AC8265 juhtmevaba võrguühenduse moodul Jetson Nano arenduskomplekti M.2 NGFF-i tugi 2,4 GHz / 5 GHz 300 Mbps / 867 Mbps kaheribaline __ETDOCS_TERM__2000446__0"
+---
 
 https://www.amazon.com/dp/B07SM4SPLV?ref=ppx_yo2ov_dt_b_fed_asin_title
-$21.11
+21,11 dollarit
 
 |                    |                         |
-| ------------------ | ----------------------- |
-| Brand              | waveshare               |
-| Hardware Interface | Bluetooth               |
-| Color              | Assorted                |
-| Compatible Devices | Desktop                 |
-| Data Link Protocol | Bluetooth               |
-| Data Transfer Rate | 300 Megabits Per Second |
-| Item Weight        | 0.03 Kilograms          |
-| UPC                | 765390107844            |
-| Manufacturer       | Waveshare               |
+| ------------------- | ------------------------ |
+| Kaubamärk | waveshare |
+| Riistvaraliides | Bluetooth |
+| Värv | Assortii |
+| Ühilduvad seadmed | Töölaud |
+| Andmesideprotokoll | Bluetooth |
+| Andmeedastuskiirus | 300 megabitti sekundis |
+| Kauba kaal | 0,03 kilogrammi |
+| UPC | 765390107844 |
+| Tootja | Waveshare |
 
-- This is a dual mode wireless NIC module applicable for Jetson Nano
-- Supports 2.4GHz / 5GHz dual band WiFi and Bluetooth 4.2.
-- Chip: Intel 8265AC;Bands: 2.4GHz / 5GHz;Speed: 300Mbps / 867Mbps
-- WiFi protocol: 802.11ac;Bluetooth version: 4.2;NIC interface: NGFF (M.2)
-- Antenna interface: IPEX connector;Supported OS: Linux, Windows 10/8.1/8/7;Dimensions: 22mm × 30mm × 2.4mm
+- See on kaherežiimiline juhtmevaba NIC-moodul, mis sobib Jetson Nano jaoks
+- Toetab 2,4 GHz / 5 GHz kaheribalist WiFi ja Bluetooth 4.2.
+- Kiip: Intel 8265AC; Ribad: 2,4 GHz / 5 GHz; Kiirus: 300 Mbps / 867 Mbps
+- WiFi protokoll: 802.11ac;Bluetoothi versioon: 4.2;NIC-liides: NGFF (M.2)
+- Antenni liides: IPEX-pistik; Toetatud OS: Linux, Windows 10/8.1/8/7; Mõõtmed: 22 mm × 30 mm × 2,4 mm

@@ -1,8 +1,12 @@
-https://www.amazon.com/dp/B0CM6HPFSJ?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1
-$9.59
+---
+title: "Kinnitused"
+---
 
-- security wall mount is compatible with the pro/Pro 2/ pro 3/ pro 4/light/essential/ultra/ultra 2/GO/ Cam E / 2 / 2C and Other Cam Same Interface.and Light as well as other compatible camera models including Replacment mount for Ring Stick Up Cam/Indoor/Battery Cam. Camera with 1/4 Screw Head.
-- sturdy enough to hold the solar panel or your Camera，Made of aluminum alloy. The camera wall mount camera bracket is Aluminum it’s sturdy,stable,waterproof,rust prevention,built-to-last and durable, of material can keep your camera safe and doesn’t fall off.
-- EASY TO INSTALL: With 3 screws for the bracket, 3 holes on the base of the bracket,you are enable to fix it some places you want.
-- the camera mount can be installed on the wall and ceiling with the appropriate angle.ANY ANGLE ADJUSTABLE :with 360-degree swivel & 90-degree tilt.
-- If there is any problem, we will handle it 24 hours a day .
+https://www.amazon.com/dp/B0CM6HPFSJ?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1
+9,59 dollarit
+
+- turvaline seinakinnitus ühildub pro/Pro 2/ pro 3/ pro 4/light/essential/ultra/ultra 2/GO/ Cam E / 2 / 2C ja muu kaamera sama liidesega.ja Light, samuti muude ühilduvate kaameramudelitega, sealhulgas Ring Stick Up kaamera/sise-/akukaamera asenduskinnitus. 1/4 kruvipeaga kaamera.
+- piisavalt vastupidav päikesepaneeli või kaamera hoidmiseks, valmistatud alumiiniumisulamist. Kaamera seinale kinnitatav kaameraklamber on alumiiniumist, see on tugev, stabiilne, veekindel, roostekaitse, vastupidav ja vastupidav, materjalist, mis hoiab teie kaamerat turvalisena ega kuku maha.
+- LIHTNE PAIGALDAMINE: 3 kronsteini kruviga, kronsteini põhjas on 3 ava, saate selle kinnitada soovitud kohtadesse.
+- kaamerakinnituse saab paigaldada seinale ja lakke sobiva nurga all. IGA NURK REGULEERITAV: 360-kraadise pöördega ja 90-kraadise kaldega.
+- Kui on probleeme, tegeleme sellega 24 tundi ööpäevas.

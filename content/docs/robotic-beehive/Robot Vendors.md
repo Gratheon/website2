@@ -15,12 +15,12 @@ List of potential vendors for robot (parts)
 - FANUC
 - [UFactory](https://www.ufactory.cc/cost-effective-cobot-robots/) ~ 5300 EUR
 
-![](img/Screenshot%202023-11-16%20at%2023.53.51.png)
+![](docs/robotic-beehive/img/Screenshot%202023-11-16%20at%2023.53.51.png)
 
-![](img/1730367851883.jpg)
+![](docs/robotic-beehive/img/1730367851883.jpg)
 
-![](img/1730367833273.jpg)
+![](docs/robotic-beehive/img/1730367833273.jpg)
 
-![](img/1730367850604.jpg)
+![](docs/robotic-beehive/img/1730367850604.jpg)
 
-![](img/1730367851650.jpg)
+![](docs/robotic-beehive/img/1730367851650.jpg)

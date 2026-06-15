@@ -1,5 +1,5 @@
 ---
-title: Blog
+title: Blogi
 slug: ""
 hideNav: true
 redirectUrl: "https://gratheon.com/blog/"

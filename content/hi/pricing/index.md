@@ -1,6 +1,6 @@
 ---
-title: Pricing
+title: "मूल्य"
 slug: ""
-hideNav: true
-redirectUrl: "https://gratheon.com/pricing/"
+layout: pricing-hi
+description: "Gratheon उत्पादों और मधुमक्खीपालन सेवाओं के मूल्य निर्धारण प्लान"
 ---

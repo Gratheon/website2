@@ -1,26 +1,30 @@
-Carbon Dioxide CO2 Temperature Humidity VOCs Air Quality Sensor Module (CS811 HDC1080)
+---
+title: "Süsinikdioksiid CO2 Temperatuuri niiskus VOCs Õhukvaliteedi anduri moodul"
+---
 
-![](../../../img/Screenshot%202024-07-21%20at%2002.04.16.png)
-**Product description**
+Süsinikdioksiid CO2 Temperatuuri niiskus VOCs Õhukvaliteedi anduri moodul (CS811 HDC1080)
 
-The CJMCU-8118 is a gas sensor system-on-chip (SSoC) + temperature and humidity sensor that uses low-power sensing technology to detect indoor volatile organic compounds (VOCs).
+![](docs/img/Screenshot%202024-07-21%20at%2002.04.16.png)
+**Toote kirjeldus**
 
-From the schematic diagram of the CCS811 onboard the CJMCU8118, we can see that this is not a simple sensor. It also integrates an MCU inside, so that this sensor has on-board processing capabilities, which can provide etc. Effective carbon dioxide level or total volatile organic compound (TVOC) indicator. At the same time, compared to solutions using discrete gas sensors and MCUs, the CCS811 can save equipment bill-of-material costs and up to 60% of the board area.
+CJMCU-8118 on gaasianduri süsteem-kiibil (SSoC) + temperatuuri- ja niiskusandur, mis kasutab siseruumides lenduvate orgaaniliste ühendite tuvastamiseks väikese võimsusega sensortehnoloogiat (VOCs).
 
-HDC1080 Low-Power, High-Accuracy Digital Humidity Sensor with Temperature Sensor
+CJMCU8118 pardal oleva CCS811 skemaatiliselt näeme, et see pole lihtne andur. Sellesse on integreeritud ka MCU, nii et sellel anduril on pardal olevad töötlemisvõimalused, mis võivad pakkuda jne. Efektiivse süsinikdioksiidi taseme või lenduvate orgaaniliste ühendite (TVOC) indikaator. Samal ajal, võrreldes diskreetseid gaasiandureid ja MCU-sid kasutavate lahendustega, suudab CCS811 säästa seadmete maksumust ja kuni 60% plaadi pindalast.
 
-The DC1080 is a digital humidity sensor with an integrated temperature sensor that provides excellent measurement accuracy with ultra-low power consumption. The HDC1080 supports a wide operating supply voltage range and offers low cost and low power consumption for a variety of common applications compared to competing solutions. Humidity and temperature sensors are factory calibrated.
+HDC1080 väikese võimsusega, suure täpsusega digitaalne niiskusandur koos temperatuurianduriga
 
-**Product Features**
+DC1080 on integreeritud temperatuurianduriga digitaalne niiskusandur, mis tagab suurepärase mõõtmistäpsuse ülimadala energiatarbimisega. HDC1080 toetab laia töötoitepinge vahemikku ning pakub konkureerivate lahendustega võrreldes odavat ja madalat energiatarbimist erinevatele levinud rakendustele. Niiskuse- ja temperatuuriandurid on tehases kalibreeritud.
 
-Relative Humidity Accuracy ±2% (typ)
+**Toote omadused**
 
-Temperature accuracy is ±0.2°C (typ)
+Suhtelise niiskuse täpsus ±2% (tüüp)
 
-Excellent stability in high humidity
+Temperatuuri täpsus on ±0,2°C (tüüp)
 
-14-bit measurement resolution
+Suurepärane stabiilsus kõrge õhuniiskuse korral
 
-100nA current in sleep mode
+14-bitine mõõtmiseraldusvõime
 
-Module size: 15mm*21mm
+100nA vool puhkerežiimis
+
+Mooduli suurus: 15mm * 21mm

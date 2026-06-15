@@ -1,18 +1,18 @@
 ---
 price: "4"
-title: Weight sensor HX711 (bar-type)
+title: Kaaluandur HX711 (lati tüüpi)
 items: "4"
 ---
 https://www.aliexpress.com/item/1005006827930173.html
-[https://www.amazon.de/-/en/gp/product/B079FQNJJH/](https://www.amazon.de/-/en/gp/product/B079FQNJJH/)
-![](../../img/612ornIvHHL._SL1000_.jpg)
-### Wiring
+[https://www.amazon.de/-/en/gp/product/B079FQNJJH/](__ETDOCS_URL_00006__)
+![](docs/img/612ornIvHHL._SL1000_.jpg)
+### Juhtmed
 
 #### Single Load Cell Setup
-HX711 Load Cell Amplifier:
+HX711 Koormuselemendi võimendi:
 
-- E = Excitation. E+ (Red) and E- (Black) are the excitation wires for the load cell, providing the voltage that powers the load cell.
-- A = Amplifier. A+ (White) and A- (Green) are the signal wires from the load cell, carrying the differential signal that the HX711 amplifies.
+- E = Ergastus. E+ (punane) ja E- (must) on koormusanduri ergutusjuhtmed, mis annavad koormusandurile toiteks oleva pinge.
+- A = võimendi. A+ (valge) ja A- (roheline) on koormusanduri signaalijuhtmed, mis kannavad diferentsiaalsignaali, mida HX711 võimendab.
 
 ```mermaid
 flowchart LR
@@ -53,9 +53,9 @@ White
 end
 ```
 
-#### Four Load Cells Setup (for complete beehive weight measurement)
+#### Nelja koormuselemendi seadistamine (mesitaru kaalu täielikuks mõõtmiseks)
 
-**Yes, you can connect 4 weight sensors to a single ESP32!** Each load cell needs its own HX711 amplifier. Here's how the connections work:
+**Jah, ühe ESP32 külge saate ühendada 4 kaaluandurit!** Iga koormusandur vajab oma HX711 võimendit. Ühendused töötavad järgmiselt.
 
 ```mermaid
 flowchart TD
@@ -187,8 +187,8 @@ flowchart TD
     A4- --- White4
 ```
 
-**Alternative Wiring (Shared SCK):**
-You can share the SCK (clock) line between all HX711 modules to save ESP32 pins. In this case, you'd only need 5 pins total (1 shared SCK + 4 separate DT pins):
+**Alternatiivne juhtmestik (jagatud SCK):**
+ESP32 kontaktide salvestamiseks saate jagada SCK (kell) rida kõigi HX711 moodulite vahel. Sel juhul vajate kokku ainult 5 tihvti (1 jagatud SCK + 4 eraldi DT kontakti):
 
 ```
 ESP32 GPIO17 → All HX711 SCK pins (shared)
@@ -203,28 +203,28 @@ GND → All HX711 GND pins
 
 
 
-![](../../img/HX711.png)
+![](docs/img/HX711.png)
 
 
-# Features
+# Omadused
 
-Two selectable differential input channels
+Kaks valitavat diferentsiaalset sisendkanalit
 
-On-chip active low noise PGA with selectable gain of 3264 and 128
+Kiibil olev aktiivne madala müratasemega PGA valitava võimendusega 3264 ja 128
 
-On-chip power supply regulator for load-cell and ADC analog power supply
+Kiibil olev toiteallika regulaator koormuselemendi ja ADC analoogtoiteallika jaoks
 
-On-chip oscillator requiring no external component with optional external crystal
+Kiibil olev ostsillaator, mis ei vaja välist komponenti koos valikulise välise kristalliga
 
-On-chip power-on-reset
+Kiibil olev toite sisselülitamine ja lähtestamine
 
-Simple digital control and serial interface: pin-driven controlsno programming needed
+Lihtne digitaalne juhtimine ja jadaliides: tihvtidega juhitavad juhtelemendid pole vaja programmeerida
 
-Selectable 10SPS or 80SPS output data rate
+Valitav 10SPS või 80SPS väljundandmeedastuskiirus
 
-Simultaneous 50 and 60Hz supply rejection
+Samaaegne 50 ja 60 Hz varustuse tagasilükkamine
 
-Current consumption including on-chip analog power supply regulator: normal operation < 1.5mApower down < 1uA
+Voolutarve koos kiibil oleva analoogtoite regulaatoriga: normaalne töö < 1.5mApower down < 1uA
 
 Operation supply voltage range: 2.6 ~ 5.5V
 
@@ -248,59 +248,7 @@ Operating Temperature Range:-20 degree ~ +85 degree
 - ESP32 GND → All HX711 GND pins
 
 **Arduino Code Example:**
-```cpp
-#include "HX711.h"
-
-// Define pins for each HX711
-#define DT1 16
-#define SCK1 17
-#define DT2 18  
-#define SCK2 19  // or 17 if sharing SCK
-#define DT3 21
-#define SCK3 22  // or 17 if sharing SCK
-#define DT4 23
-#define SCK4 25  // or 17 if sharing SCK
-
-// Create HX711 instances
-HX711 scale1, scale2, scale3, scale4;
-
-void setup() {
-  Serial.begin(115200);
-  
-  // Initialize each scale
-  scale1.begin(DT1, SCK1);
-  scale2.begin(DT2, SCK2);
-  scale3.begin(DT3, SCK3);
-  scale4.begin(DT4, SCK4);
-  
-  // Calibration factors (determine experimentally)
-  scale1.set_scale(2280.f);
-  scale2.set_scale(2280.f);
-  scale3.set_scale(2280.f);
-  scale4.set_scale(2280.f);
-  
-  // Tare (zero) all scales
-  scale1.tare();
-  scale2.tare();
-  scale3.tare();
-  scale4.tare();
-}
-
-void loop() {
-  float weight1 = scale1.get_units(10);  // Average of 10 readings
-  float weight2 = scale2.get_units(10);
-  float weight3 = scale3.get_units(10);
-  float weight4 = scale4.get_units(10);
-  
-  float totalWeight = weight1 + weight2 + weight3 + weight4;
-  
-  Serial.printf("Corner weights: %.2f, %.2f, %.2f, %.2f kg\n", 
-                weight1, weight2, weight3, weight4);
-  Serial.printf("Total hive weight: %.2f kg\n", totalWeight);
-  
-  delay(1000);
-}
-```
+__ETDOCS_CODE_00003__
 
 Red to E+
 
@@ -319,5 +267,5 @@ White to A-
 
 
 
-## Alternative 
+## Alternatiiv 
 https://www.aliexpress.com/item/1005006593556468.html

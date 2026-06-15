@@ -1,0 +1,5 @@
+- Используем Tinkercad для несерьезных моделей, чтобы просто передать идею или для 3д печати
+- Для более серьезных моделей используем freecad
+- Соответствующие CAD-сервисы
+    - [https://www.traceparts.com/](https://www.traceparts.com/)
+    - [https://grabcad.com/library/tag/beehive](https://grabcad.com/library/tag/beehive)

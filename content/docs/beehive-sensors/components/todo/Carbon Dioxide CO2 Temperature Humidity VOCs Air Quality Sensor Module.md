@@ -1,6 +1,6 @@
 Carbon Dioxide CO2 Temperature Humidity VOCs Air Quality Sensor Module (CS811 HDC1080)
 
-![](../../../img/Screenshot%202024-07-21%20at%2002.04.16.png)
+![](docs/img/Screenshot%202024-07-21%20at%2002.04.16.png)
 **Product description**
 
 The CJMCU-8118 is a gas sensor system-on-chip (SSoC) + temperature and humidity sensor that uses low-power sensing technology to detect indoor volatile organic compounds (VOCs).

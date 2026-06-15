@@ -1,15 +1,15 @@
 ---
-title: 🚪 Rate limiting
+title: 🚪 Hinda piirab
 ---
-Currently traffic is not rate limited, however it will be.
+Praegu ei ole liiklus kiirusega piiratud, kuid see on.
 
-Depending on the [pricing plan](../../pricing.md), we will limit how frequently you can make requests.
-[GraphQL](GraphQL.md) API queries and mutations are limited in complexity
+Sõltuvalt [hinnaplaanist](/pricing/) piirame taotluste esitamise sagedust.
+[GraphQL](GraphQL.md) API päringute ja mutatsioonide keerukus on piiratud
 
-| Plan     | Read endpoints | Write/Delete endpoints |
-| -------- | -------------- | ---------------------- |
-| Free     | 5 req/sec      | 5 req/sec              |
-| Simple   | 10 req/sec     | 5 req/sec              |
-| Flexible | 50 req/sec     | 20 req/sec `*`         |
+| Plaan | Loe lõpp-punkte | Kirjuta/kustuta lõpp-punkte |
+| -------- | -------------- | ----------------------- |
+| Tasuta | 5 nõuet/sek | 5 rekv/s |
+| Lihtne | 10 req/sek | 5 nõuet/sek |
+| Paindlik | 50 req/sek | 20 nõuet sekundis `*` |
 
-`*` Flexible pricing plan is usage-based, so requests reduce tokens
+`*` Paindlik hinnaplaan on kasutuspõhine, nii et taotlused vähendavad märke

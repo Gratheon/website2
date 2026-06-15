@@ -1,26 +1,25 @@
 ---
 sidebar_position: 2
-title: Remote Desktop connection setup 🖥️
+title: Kaugtöölaua ühenduse seadistamine 🖥️
 ---
-
-### Remote desktop with VNC
+### VNC-ga kaugtöölaud
 
 ```bash
 sudo apt-get install vino
 ```
 
-If you try to share your desktop from the Jetson Nano, the process fails; running _Desktop Sharing_ fails with an error. This recipe shows you how to fix the issue, and connect remotely via VNCViewer. Having said that, we still prefer connecting via RDP (XRDP), which we find faster and more convenient.
+Kui proovite oma töölauda Jetson Nano kaudu jagada, siis protsess nurjub; _töölaua jagamise_ käivitamine nurjub ja ilmneb tõrge. See retsept näitab, kuidas probleemi lahendada ja VNCVieweri kaudu kaugühendusega luua. Seda öeldes eelistame siiski RDP (XRDP) kaudu ühendamist, mis on meie arvates kiirem ja mugavam.
 
-To fix the issue, follow the steps below:
+Probleemi lahendamiseks järgige alltoodud samme.
 
-- First, we will edit the `org.gnome.Vino` schema, as it has a missing parameter called `enabled`. Open the schema:
+- Kõigepealt muudame skeemi `org.gnome.Vino`, kuna sellel puudub parameeter `enabled`. Avage skeem:
 
 ```bash
 sudo nano /usr/share/glib-2.0/schemas/org.gnome.Vino.gschema.xml
 
 ```
 
-Add the missing key (any location will do):
+Lisage puuduv võti (selleks sobib iga asukoht):
 
 ```xml
 <key name='enabled' type='b'>
@@ -35,23 +34,23 @@ Add the missing key (any location will do):
 
 ```
 
-- Compile the new Gnome schema configuration:
+- Kompileerige uus Gnome'i skeemi konfiguratsioon:
 
 ```bash
 sudo glib-compile-schemas /usr/share/glib-2.0/schemas
 
 ```
 
-- Update the _Desktop Sharing_ settings. Your application should work now. Launch it from your Jetson Nano desktop.
-    - Enable **Allow other users to view your desktop**
-    - Enable the subsection **Allow other users to control your desktop**
-    - Turn off the feature **You must confirm each access to this machine**
-    - Setup the password in the section **Require the user to enter this password**
-    - Close the _Desktop Sharing_ settings. You are done here
-- Setup the VNC server to autostart
-    - Open the _Startup Application Preferences_ panel
-    - Add your VNC (Vino) entry: Add a name ('Vino'), a description (any text which makes sense to you) and the command: `/usr/lib/vino/vino-server`. Close the app
-- Disable encryption for the VNC server: unfortunately, at the time of this writing, we have to live without it. In the terminal, type the following:
+- Värskendage _Töölaua jagamise_ seadeid. Teie rakendus peaks nüüd töötama. Käivitage see oma Jetson Nano töölaualt.
+    - Luba **Luba teistel kasutajatel teie töölauda vaadata**
+    - Lubage alamjaotis **Luba teistel kasutajatel oma töölauda juhtida**
+    - Lülitage funktsioon välja **Peate kinnitama iga juurdepääsu sellele masinale**
+    - Seadistage parool jaotises **Nõuge kasutajalt selle parooli sisestamist**
+    - Sulgege _Töölaua jagamise_ seaded. Siin olete valmis
+- Seadistage VNC-server automaatseks käivitamiseks
+    - Avage paneel _Startup Application Preferences_
+    - Lisage oma VNC (Vino) kirje: lisage nimi ("Vino"), kirjeldus (mis tahes tekst, mis teile sobib) ja käsk: `/usr/lib/vino/vino-server`. Sulgege rakendus
+- Keelake VNC-serveri krüpteerimine: kahjuks peame selle kirjutamise ajal ilma selleta elama. Sisestage terminali järgmine tekst:
 
 ```bash
 gsettings set org.gnome.Vino require-encryption false
@@ -59,19 +58,19 @@ gsettings set org.gnome.Vino prompt-enabled false
 
 ```
 
-- reboot
-- after reboot, you can use any **VNCViewer** from your laptop to connect to the shared screen. Needless to say, the speed is what it is and if you can, use the previous, XRDP recipe.
+- taaskäivitage
+- pärast taaskäivitamist saate jagatud ekraaniga ühenduse loomiseks kasutada sülearvuti mis tahes **VNCViewerit**. Ütlematagi selge, et kiirus on see, mis ta on ja kui saad, kasuta eelmist, XRDP retsepti.
 
-**Note**: as we are crippling the security setup for remote connections via VNC, we have to be aware and enable the VNC feature (this whole section) only if needed.
+**Märkus**: kuna me rikume VNC kaudu kaugühenduste turvaseadeid, peame olema teadlikud ja lubama VNC funktsiooni (kogu see jaotis) ainult vajaduse korral.
 
-- Run network config to get IP of jetson machine, look under wlan0 or eth0 depending on if its using wifi or ethernet
+- Käivitage võrgu konfigureerimine, et saada Jetson-masina IP, vaadake kas wlan0 või eth0 all, olenevalt sellest, kas see kasutab wifit või Etherneti
 
 ```
 ifconfig
 export DISPLAY=:1 && /usr/lib/vino/vino-server
 ```
 
-## Adding autostart
+## Autostarti lisamine
 
 ```bash
 sudo nano /etc/systemd/system/vnc.service
@@ -103,11 +102,11 @@ Comment[en_US]=Auto-start the VNC service on boot and login back in
 Comment=Auto-start the VNC service on boot
 ```
 
-## Set default resolution to not be 640x480
+## Määrake vaikeeraldusvõimeks mitte 640x480
 
 `sudo nano /etc/X11/xorg.conf`
 
-Append:
+Lisa:
 
 ```
 Section "Screen"
@@ -121,31 +120,31 @@ Section "Screen"
 EndSection
 ```
 
-restart
+taaskäivitage
 
-### On Host machine
+### Hostimasinas
 
-- download and run RealVNC [https://www.realvnc.com/en/connect/download/viewer/macos/](https://www.realvnc.com/en/connect/download/viewer/macos/)
-    - Alternatively, you can use TigetVNC [https://tigervnc.org/](https://tigervnc.org/)
-- Connect to vnc://ip-of-jetson from the last step above
-- Configure picture quality to lowest settings to have better responsiveness
+- laadige alla ja käivitage RealVNC [https://www.realvnc.com/en/connect/download/viewer/macos/](__ETDOCS_URL_00012__)
+    - Teise võimalusena võite kasutada TigetVNC [https://tigervnc.org/](__ETDOCS_URL_00013__)
+- Ühendage eelmisest ülaltoodud sammust vnc://ip-of-jetson
+- Parema reageerimisvõime saavutamiseks seadistage pildikvaliteet madalaimatele sätetele
 
-## (Optional) Remote desktop with xrdp
+## (Valikuline) Kaugtöölaud koos xrdp-ga
 
-This is useful for host machines running Windows
+See on kasulik Windowsi kasutavate hostiseadmete jaoks
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/7-WMvmWVxJQ" title="L-2 Jetson Nano Headless | Use Jetson Nano Remotely" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
-## Connecting from the browser
+## Ühenduse loomine brauserist
 
-- checkout [https://github.com/novnc/noVNC](https://github.com/novnc/noVNC) locally
-- run 
+- tasuge [https://github.com/novnc/noVNC](__ETDOCS_URL_00014__) kohapeal
+-jookse 
 ```
 ./utils/novnc_proxy --vnc 192.168.1.223:5900 --listen [localhost:6081](<http://localhost:6081>)
 ``` 
-where `192.168.1.223` is the IP of the jetson
+kus `192.168.1.223` on jetsoni IP
     
-- open browser link that it suggests
+- avage brauseri link, mida see soovitab
 
-![](../img/Screenshot%202024-06-20%20at%2019.13.32.png)
+![](docs/img/Screenshot%202024-06-20%20at%2019.13.32.png)

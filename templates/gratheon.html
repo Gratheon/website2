@@ -65,14 +65,14 @@
   <div class="gratheon-footer-grid">
     <div class="footer-company-block">
       <a href="https://ariregister.rik.ee/est/company/12245103/Gratheon-O%C3%9C">Gratheon OÜ</a><br>
-      ❤️ Made with love in Estonia
+      {{if eq .Page.Language "et"}}❤️ Loodud armastusega Eestis{{else}}❤️ Made with love in Estonia{{end}}
     </div>
     <ul>
-      <li><a href="/privacy/">Privacy Policy</a></li>
-      <li><a href="/terms/">Terms Of Service</a></li>
+      <li><a href="/privacy/">{{if eq .Page.Language "et"}}Privaatsuspoliitika{{else}}Privacy Policy{{end}}</a></li>
+      <li><a href="/terms/">{{if eq .Page.Language "et"}}Teenustingimused{{else}}Terms Of Service{{end}}</a></li>
       <li><a href="mailto:pilot@gratheon.com">Email</a></li>
-      <li><a href="https://tawk.to/gratheon">Support Chat</a></li>
-      <li><a href="https://gratheon.statuspage.io/">Service Status</a></li>
+      <li><a href="https://tawk.to/gratheon">{{if eq .Page.Language "et"}}Tugivestlus{{else}}Support Chat{{end}}</a></li>
+      <li><a href="https://gratheon.statuspage.io/">{{if eq .Page.Language "et"}}Teenuse olek{{else}}Service Status{{end}}</a></li>
     </ul>
     <ul>
       <li><a href="https://t.me/gratheon">Telegram</a></li>

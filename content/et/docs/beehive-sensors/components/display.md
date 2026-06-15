@@ -1,13 +1,13 @@
 ---
-title: Display - LCD1602
+title: Kuva – LCD1602
 price: "2.64"
 ---
 https://www.aliexpress.com/item/1005006100081942.html
 https://github.com/blackhack/LCD_I2C
 
-![](img/20250119_131627.webp)
+![](docs/beehive-sensors/components/img/20250119_131627.webp)
 
-![](img/esp32_LCD_bb.webp)
+![](docs/beehive-sensors/components/img/esp32_LCD_bb.webp)
 
 
 ```

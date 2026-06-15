@@ -1,6 +1,6 @@
 ---
-title: Pricing
+title: "মূল্য"
 slug: ""
-hideNav: true
-redirectUrl: "https://gratheon.com/pricing/"
+layout: pricing-bn
+description: "Gratheon পণ্য ও মৌমাছি পালন পরিষেবার মূল্য পরিকল্পনা"
 ---

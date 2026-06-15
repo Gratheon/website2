@@ -148,4 +148,4 @@ where `192.168.1.223` is the IP of the jetson
     
 - open browser link that it suggests
 
-![](../img/Screenshot%202024-06-20%20at%2019.13.32.png)
+![](docs/img/Screenshot%202024-06-20%20at%2019.13.32.png)

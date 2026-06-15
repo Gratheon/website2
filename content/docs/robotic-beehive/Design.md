@@ -29,16 +29,16 @@ Some ideas
 
 More for [R**obotic Beehive**](https://www.notion.so/Robotic-Beehive-fd9559a2950b44bc8291972299ced18e?pvs=21)
 
-![](../img/pro-1.jpg)
+![](docs/img/pro-1.jpg)
 
-![](../img/Color-Evolution_All-Species-2.jpg)
+![](docs/img/Color-Evolution_All-Species-2.jpg)
 
 ## 3. Nature-inspired, sustainable
-![](../img/439319727_375865652105538_2137747319015441158_n.jpg)
+![](docs/img/439319727_375865652105538_2137747319015441158_n.jpg)
 
 ## 4. Playful / Lego like
 
-![](../img/Screenshot%202024-07-19%20at%2002.05.58.png)
+![](docs/img/Screenshot%202024-07-19%20at%2002.05.58.png)
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/BFh3cO8KrgY" title="Real Beehive Built From LEGO!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 

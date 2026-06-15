@@ -1,0 +1,183 @@
+{{define "pricing-ar"}}
+{{/*
+  WHY: /ar/pricing/ is localized independently without changing the canonical English pricing page.
+  WHAT: This standalone copy keeps plan names and prices exact while translating descriptions,
+  features, limits, and CTAs for the localized route only.
+*/}}
+{{template "gratheon_head" .}}
+<body class="pricing-page-no-sidebar">
+  {{template "gratheon_header" .}}
+
+  <main class="pricing-page-wrapper">
+    <div class="pricing-page-header">
+      <h1 class="pricing-page-title">⚖️ خطط الأسعار</h1>
+      <p class="pricing-page-subtitle">ابدأ ببساطة، وافتح مزايا الذكاء الاصطناعي والأتمتة مع نموك، وأضف سعة إضافية فقط عند الحاجة.</p>
+    </div>
+
+    <div class="pricing-container">
+      <div class="pricing-card" data-tier="free">
+        <div class="pricing-card-header">
+          <div class="pricing-card-title">Free</div>
+          <div class="pricing-card-price">Free</div>
+          <div class="pricing-card-description">جرّب سجلات تربية النحل الأساسية</div>
+        </div>
+        <div class="pricing-card-body">
+          <div class="pricing-features-section">
+            <h4>الميزات</h4>
+            <ul class="pricing-card-features">
+              <li><span class="feature-icon" aria-hidden="true">📦</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/apiary-management/">إدارة المنحل والخلايا</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🖼️</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/frame-side-management/">رفع صور الإطارات</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">⌨️</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/ideas%20💡/keyboard-shortcuts-support/">دعم لوحة المفاتيح</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">♻️</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/public-beehive-view/">مشاركة الخلية علنًا</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🔗</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/qr-code-generation/">إنشاء رموز QR</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">📅</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/varroa-treatment-diary/">يوميات المعالجة</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🍭</span><span class="feature-text"><a href="/about/products/web_app/free-tier/feeding-history/">سجل التغذية</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">👑</span><span class="feature-text"><a href="/about/products/web_app/free-tier/live-queen-finder/">العثور على الملكة مباشرة</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">♻️</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/hive-ownership-transfer/">نقل ملكية الخلية (قيد التطوير)</a></span></li>
+            </ul>
+          </div>
+          <div class="pricing-limitations-section">
+            <h4>الحدود</h4>
+            <ul class="pricing-card-limits">
+              <li>حتى 3 خلايا</li>
+              <li>10 إطارات كحد أقصى لكل خلية</li>
+              <li>لا توجد أرصدة لمعالجة الصور بالذكاء الاصطناعي على الخادم</li>
+              <li>الاحتفاظ بالصور لمدة 6 أشهر</li>
+            </ul>
+          </div>
+        </div>
+        <div class="pricing-card-footer"><a href="https://app.gratheon.com/account/register" class="pricing-button">ابدأ</a></div>
+      </div>
+
+      <div class="pricing-card hobbyist" data-tier="hobbyist">
+        <div class="pricing-card-header">
+          <div class="pricing-card-title">Hobbyist</div>
+          <div class="pricing-card-price">€5<span class="price-period"> / month</span></div>
+          <div class="pricing-card-description">للملاحظات المنتظمة وسجلات الصور</div>
+        </div>
+        <div class="pricing-card-body">
+          <div class="pricing-features-section">
+            <h4>الميزات</h4>
+            <ul class="pricing-card-features">
+              <li><span class="feature-icon" aria-hidden="true">📦</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/hive-management/">إدارة البيانات الأساسية في قاعدة البيانات</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🖼️</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/frame-side-management/">رفع صور الإطارات وتخزينها</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🗺️</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/hive-placement-planner/">مخطط وضع الخلايا</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">📓</span><span class="feature-text"><a href="/about/products/web_app/starter-tier/inspection-management/">ملاحظات الفحص</a> و<a href="/about/products/web_app/hobbyist-tier/varroa-treatment-diary/">يوميات المعالجة</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">↔️</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/split-bee-colony/">إدارة تقسيم الطوائف</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🫶🏻</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/join-bee-colonies/">أداة دمج الطوائف</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🛠</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/inventory-management/">إدارة مخزون المستودع</a></span></li>
+            </ul>
+          </div>
+          <div class="pricing-limitations-section">
+            <h4>الحدود</h4>
+            <ul class="pricing-card-limits">
+              <li>حتى 15 خلية</li>
+              <li>حساب مستخدم واحد</li>
+              <li>لا توجد ميزات لمعالجة الصور بالذكاء الاصطناعي</li>
+              <li>الاحتفاظ بالصور لمدة سنة واحدة</li>
+            </ul>
+          </div>
+        </div>
+        <div class="pricing-card-footer"><a href="https://app.gratheon.com/account/register" class="pricing-button">ابدأ Hobbyist</a></div>
+      </div>
+
+      <div class="pricing-card simple featured" data-tier="starter">
+        <div class="pricing-card-header">
+          <div class="pricing-card-title">Starter</div>
+          <div class="pricing-card-price">
+            <div class="price-monthly">€22<span class="price-period"> / month</span></div>
+            <div class="price-yearly-group"><span class="price-yearly">€144 / year</span><small class="price-discount">وفّر 45% مع الفوترة السنوية</small></div>
+          </div>
+          <div class="pricing-card-description">افتح سير عمل مدعومًا بالذكاء الاصطناعي</div>
+        </div>
+        <div class="pricing-card-body">
+          <div class="pricing-features-section">
+            <h4>الميزات</h4>
+            <ul class="pricing-card-features">
+              <li><span class="feature-icon" aria-hidden="true">🐝</span><span class="feature-text"><a href="/about/products/web_app/starter-tier/honeycomb-cell-detection-management/">تحليل الخلايا</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🦀</span><span class="feature-text"><a href="/about/products/web_app/starter-tier/hive-bottom-varroa-count/">عدّ الفاروا على لوح قاع الخلية</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🔎</span><span class="feature-text"><a href="/about/products/web_app/starter-tier/inspection-management/">إدارة الفحوصات</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">✏️</span><span class="feature-text"><a href="/about/products/web_app/starter-tier/drawing-on-canvas/">أداة وضع التعليقات على الإطارات</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🤖</span><span class="feature-text"><a href="/about/products/web_app/starter-tier/beekeeping-advice-with-llm/">مساعد تربية النحل بالذكاء الاصطناعي</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🖼️</span><span class="feature-text"><a href="/about/products/web_app/starter-tier/honeycomb-cell-detection-management/">أرصدة شهرية لتحليل الصور بالذكاء الاصطناعي مضمنة</a></span></li>
+            </ul>
+          </div>
+          <div class="pricing-limitations-section">
+            <h4>الحدود</h4>
+            <ul class="pricing-card-limits">
+              <li>حساب مستخدم واحد</li>
+              <li>حتى 50 خلية</li>
+              <li>30 إطارًا لكل خلية</li>
+              <li>الاحتفاظ بالصور لمدة سنتين</li>
+              <li>حجم تحليل الذكاء الاصطناعي محدود شهريًا</li>
+              <li>استخدام حقيقي مختلط: نحو ~100–130 مطالبة AI شهريًا</li>
+            </ul>
+          </div>
+        </div>
+        <div class="pricing-card-footer"><a href="https://app.gratheon.com/account/register" class="pricing-button">ابدأ تجربة مجانية</a></div>
+      </div>
+
+      <div class="pricing-card featured professional" data-tier="professional">
+        <div class="pricing-card-header">
+          <div class="pricing-card-title">Professional</div>
+          <div class="pricing-card-price">
+            <div class="price-monthly">€55<span class="price-period"> / month</span></div>
+            <div class="price-yearly-group"><span class="price-yearly">(€396 / year)</span><small class="price-discount">وفّر 40% مع الفوترة السنوية</small></div>
+          </div>
+          <div class="pricing-card-description">للمناحل والفرق النامية</div>
+        </div>
+        <div class="pricing-card-body">
+          <div class="pricing-features-section">
+            <h4>الميزات</h4>
+            <ul class="pricing-card-features">
+              <li><span class="feature-icon" aria-hidden="true">✅</span><span class="feature-text"><a href="/about/products/web_app/starter-tier/">كل ما في Starter</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">📦</span><span class="feature-text"><a href="/about/products/web_app/pro-tier/hive-telemetry-storage/">تخزين قياسات الخلية</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">📈</span><span class="feature-text"><a href="/about/products/web_app/pro-tier/timeseries-data-analytics/">تحليلات بيانات السلاسل الزمنية</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">⚖️</span><span class="feature-text"><a href="/about/products/web_app/pro-tier/colony-comparison-analytics/">تحليلات مقارنة الطوائف (قيد التطوير)</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🔔</span><span class="feature-text"><a href="/about/products/web_app/pro-tier/ideas%20💡/timeseries-anomaly-detection/">اكتشاف الشذوذ المدعوم بالذكاء الاصطناعي (قيد التطوير)</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🎮</span><span class="feature-text"><a href="/about/products/web_app/pro-tier/ideas%20💡/device-management/">إدارة الأجهزة (قيد التطوير)</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🔎</span><span class="feature-text"><a href="/about/products/web_app/starter-tier/inspection-management/">فحوصات غير محدودة لكل خلية</a></span></li>
+            </ul>
+          </div>
+          <div class="pricing-limitations-section">
+            <h4>الحدود</h4>
+            <ul class="pricing-card-limits">
+              <li>دقة قياس لا تقل عن 10 دقائق</li>
+              <li>حتى 5 حسابات مستخدمين</li>
+              <li>حتى 200 خلية</li>
+              <li>الاحتفاظ بالصور لمدة 5 سنوات</li>
+            </ul>
+          </div>
+        </div>
+        <div class="pricing-card-footer"><a href="https://app.gratheon.com/account/register" class="pricing-button">ابدأ Professional</a></div>
+      </div>
+
+      <div class="pricing-card enterprise" data-tier="enterprise">
+        <div class="pricing-card-header">
+          <div class="pricing-card-title">Enterprise</div>
+          <div class="pricing-card-price">Custom</div>
+          <div class="pricing-card-description">لتربية النحل الصناعية وعمليات النشر البحثية</div>
+        </div>
+        <div class="pricing-card-body">
+          <div class="pricing-features-section">
+            <h4>الميزات</h4>
+            <ul class="pricing-card-features">
+              <li><span class="feature-icon" aria-hidden="true">🤝</span><span class="feature-text"><a href="/about/products/web_app/web-app/">سعة مخصصة وSLA</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">☁️</span><span class="feature-text"><a href="/about/products/web_app/web-app/">نشر on-premise أو في سحابة خاصة</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🛠</span><span class="feature-text"><a href="/about/products/entrance_observer/entrance-observer/">دعم تكامل الأجهزة</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">📈</span><span class="feature-text"><a href="/about/products/web_app/pro-tier/timeseries-data-analytics/">سير عمل البحث وتصدير البيانات</a></span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="pricing-card-footer"><a href="mailto:pilot@gratheon.com" class="pricing-button">تواصل معنا</a></div>
+      </div>
+    </div>
+
+
+  </main>
+
+  {{template "gratheon_footer" .}}
+  {{if .JSPath}}<script defer src="{{.JSPath}}"></script>{{end}}
+</body>
+</html>
+{{end}}

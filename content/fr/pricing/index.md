@@ -1,6 +1,6 @@
 ---
-title: Pricing
+title: "Tarifs"
 slug: ""
-hideNav: true
-redirectUrl: "https://gratheon.com/pricing/"
+layout: pricing-fr
+description: "Offres tarifaires pour les produits Gratheon et les services apicoles"
 ---

@@ -8,7 +8,7 @@ ESP32 Development Board WiFi+Bluetooth module Ultra-Low Power Consumption Dual C
 
 https://www.aliexpress.com/item/1005006422498371.html?spm=a2g0o.order_list.order_list_main.65.768b1802ichOiR
 
-![](../../img/Screenshot%202024-07-21%20at%2001.43.48.png)
+![](docs/img/Screenshot%202024-07-21%20at%2001.43.48.png)
 
 ESP32 Breakout Board GPIO 1 into 2 + ESP32 CP2102 NodeMCU-32S Lua 30Pin GPIO WiFi+Bluetooth-compatible Development Board
 

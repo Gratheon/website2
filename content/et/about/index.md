@@ -1,5 +1,6 @@
 ---
 title: Ülevaade
+navTitle: Meist
 sidebar_position: 0
 ---
 Gratheon aitab mesinikel kaitsta mesilasi, mõista mesilaspere arengut ja laiendada tegevust nutikate taruseadmete ning andmeanalüütika abil. See toetab tolmeldamist ja tugevdab üleilmset toidujulgeolekut.
@@ -10,7 +11,7 @@ Gratheon aitab mesinikel kaitsta mesilasi, mõista mesilaspere arengut ja laiend
 
 ## Lühitutvustus
 ### Probleem
-Kas teadsid, et igal aastal hukkub keskmiselt 20% kuni 40% mesilasperedest? Nad hukkuvad nälja, [🦀 Varroa-lesta nakkuste](/about/problems/biological/infestations/), hilise [🧶 sülemlemise](/about/problems/biological/swarming/) või lihtsalt selle tõttu, et mesinik on liiga väsinud, et iga 1–2 nädala järel raskeid tarusid kontrolliks tõsta.
+Kas teadsid, et igal aastal hukkub keskmiselt 20% kuni 40% mesilasperedest? Nad hukkuvad nälja, [🦀 Varroa-lesta (*Varroa destructor*) nakkuste](/about/problems/biological/infestations/), hilise [🧶 sülemlemise](/about/problems/biological/swarming/) või lihtsalt selle tõttu, et mesinik on liiga väsinud, et iga 1–2 nädala järel raskeid tarusid kontrolliks tõsta.
 
 ## Lahendus
 Mina olen Artjom ning meie Gratheonis arendame uut tüüpi mesitaru, mis kontrollib mesilasi automaatselt. Lahendus koosneb kolmest seadmest, mis saadavad andmeid taru kohta, ning rakendusest, mis analüüsib kaalu, pilte ja videot tehisaru abil ning saadab hoiatusi, et parandada ülevaadet ja ennetada pere kokkuvarisemist.

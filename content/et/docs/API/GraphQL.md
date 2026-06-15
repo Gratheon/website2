@@ -3,8 +3,8 @@ sidebar_position: 3
 hide_table_of_contents: true
 title: 🎨 GraphQL API
 ---
-We use federated GraphQL as main flexible way to query and modify web-app data. You can explore its schema directly at https://graphql.gratheon.com/graphql
+Peamise paindliku viisina web-app andmete päringute tegemiseks ja muutmiseks kasutame ühendatud GraphQL. Saate selle skeemi otse uurida aadressil https://graphql.gratheon.com/graphql
 
-This API is most flexible, but it is also changing often and can introduce breaking changes
+See API on kõige paindlikum, kuid muutub ka sageli ja võib tuua kaasa murrangulisi muudatusi
 
 <iframe src="https://graphql.gratheon.com/graphql" width="100%" height="700"></iframe>

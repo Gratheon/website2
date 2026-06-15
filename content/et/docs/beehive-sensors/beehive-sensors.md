@@ -1,17 +1,18 @@
 ---
-title: 🌡️ Beehive IoT sensors
+title: 🌡️ Beehive IoT andurid
+navTitle: Mesitaru andurid
 sidebar_position: 4
 hide_table_of_contents: true
 ---
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/Ags3rplPkQE" title="Getting started with iot sensors development" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-## Architecture
+## Arhitektuur
 
-These docs support the [beehive scales](../../about/products/scales/scales.md) product. Sensor readings are stored by [hive telemetry storage](../../about/products/web_app/pro-tier/hive_telemetry_storage.md) and visualized in [timeseries analytics](../../about/products/web_app/pro-tier/timeseries_data_analytics.md).
+Need dokumendid toetavad [mesipuu kaalud](../../about/products/scales/scales.md) toodet. Andurite näidud salvestatakse [taru telemeetriasalvestusruumi](/about/products/web_app/pro-tier/hive-telemetry-storage/) ja visualiseeritakse [timerida analytics](/about/products/web_app/pro-tier/timeseries-data-analytics/).
 
-### Services
-- [https://github.com/Gratheon/hardware-beehive-sensors](https://github.com/Gratheon/hardware-beehive-sensors) - sensors repo on client side
-- [https://github.com/gratheon/telemetry-api](https://github.com/gratheon/telemetry-api) - server side
+### Teenused
+- [https://github.com/Gratheon/hardware-beehive-sensors](__ETDOCS_URL_00006__) - andurite repo kliendi poolel
+- [https://github.com/gratheon/telemetry-api](__ETDOCS_URL_00007__) - serveri pool
 
 ```mermaid
 flowchart LR
@@ -33,4 +34,4 @@ flowchart LR
 
 
 
-![](img/352610409-b4ed305f-7ddd-44ff-b200-e0d139734349.jpg)
+![](docs/beehive-sensors/img/352610409-b4ed305f-7ddd-44ff-b200-e0d139734349.jpg)

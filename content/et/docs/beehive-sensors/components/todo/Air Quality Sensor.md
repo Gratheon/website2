@@ -1,40 +1,44 @@
-Air Quality Sensor (TZT MQ135 MQ-135 )
+---
+title: "Õhukvaliteedi andur"
+---
+
+Õhukvaliteedi andur (TZT MQ135 MQ-135)
 https://www.aliexpress.com/item/1005005264725457.html?spm=a2g0o.order_list.order_list_main.95.768b1802ichOiR
 
-![](../../../img/Screenshot%202024-07-21%20at%2002.03.38.png)
+![](docs/img/Screenshot%202024-07-21%20at%2002.03.38.png)
 
-Product Overview:
+Toote ülevaade:
 
-MQ135 gas sensor sensitive material used in the clean air, low conductivity tin oxide (SnO2). When present in the environment pollution gas sensor, conductivity sensor with the increase in air pollution in the gas concentration increases. Use simple circuit can convert the change in conductivity of the gas concentration corresponding to the output signal.
+MQ135 gaasianduri tundlik materjal, mida kasutatakse puhtas õhus, madala juhtivusega tinaoksiid (SnO2). Kui see on keskkonnasaaste gaasianduris, suureneb juhtivusandur koos õhusaaste suurenemisega gaasi kontsentratsioonis. Lihtsa vooluringi kasutamine võib teisendada väljundsignaalile vastava gaasi kontsentratsiooni juhtivuse muutust.
 
-MQ135 ammonia gas sensor, sulfide, benzene vapor high sensitivity, smoke and other harmful monitoring will also be ideal. The sensor can detect a variety of harmful gases, it is a low-cost sensors for a variety of applications.
+Ideaalne on ka MQ135 ammoniaagiandur, kõrge tundlikkusega sulfiid, benseeniaur, suitsu ja muu kahjulik seire. Andur suudab tuvastada mitmesuguseid kahjulikke gaase, see on odav andur mitmesugusteks rakendusteks.
 
-Application:
+Rakendus:
 
-Can be used for home and factory gas leakage monitoring devices, suitable for liquefied petroleum gas, butane, propane, methane, smoke, etc.
+Võib kasutada kodu- ja tehase gaasilekke jälgimisseadmetes, sobib vedelgaasi, butaani, propaani, metaani, suitsu jms jaoks.
 
-## Features:
+## Omadused:
 
-- Using high-quality dual-panel design,with power indicator and TTL signal output instructions.
-- The switching signal having a DO (TTL) output and analog output AO.
-- TTL output valid signal is low. ( Low-level signal when the output light can be directly connected to the microcontroller or relay module )
-- Analog output voltage with the higher concentration of higher voltage
-- There are four screw holes for easy positioning.
-- Has a long life and reliable stability
-- Rapid response and recovery characteristic
+- Kasutades kvaliteetset kahepaneelilist disaini, toiteindikaatori ja TTL-signaali väljundjuhistega.
+- Lülitussignaal, millel on DO (TTL) väljund ja analoogväljund AO.
+- TTL väljundi kehtiv signaal on madal. (Madala taseme signaal, kui väljundvalgusti saab otse ühendada mikrokontrolleri või releemooduliga)
+- Analoogväljundpinge kõrgema pinge suurema kontsentratsiooniga
+- Lihtsaks positsioneerimiseks on neli kruviauku.
+- Sellel on pikk kasutusiga ja usaldusväärne stabiilsus
+- Kiire reageerimise ja taastumise omadus
 
-Input voltage : DC5V Power consumption ( current ): 150mADO output : TTL digital 0 and 1 ( 0.1 and 5V)AO output :0.1-0 .3 V ( relative to pollution ),the maximum concentration of a voltage of about 4VSpecial note: After the sensor is powered,needs to warm up around 20S,measured data was stable,heat sensor is a normal phenomenon,because the internal heating wire,if hot is not normal .
+Sisendpinge: DC5V Toitetarve (vool): 150mADO väljund: TTL digitaalne 0 ja 1 (0,1 ja 5V)AO väljund: 0,1-0,3 V (saaste suhtes), maksimaalne pinge kontsentratsioon on umbes 4 V Erimärkus: Pärast anduri sisselülitamist on vaja anda, et andur oleks normaalselt soojendatav. nähtus, kuna sisemine küttetraat, kui kuum, ei ole normaalne.
 
-## Wiring:
+## Juhtmed:
 
-- VCC: positive power supply (5V)
+- VCC: positiivne toiteallikas (5 V)
     
-- GND: power supply is negative
+- GND: toiteallikas on negatiivne
     
-- DO: TTL switching signal output
+- DO: TTL lülitussignaali väljund
     
-- AO: analog signal output
+- AO: analoogsignaali väljund
     
-    NOTE:
+    MÄRKUS.
     
-    After the sensor is powered, need to warm about 20S, measured data becomes stable, heat sensor is normal
+    Pärast anduri sisselülitamist tuleb soojendada umbes 20 S, mõõdetud andmed muutuvad stabiilseks, soojusandur on normaalne

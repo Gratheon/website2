@@ -1,15 +1,17 @@
-# Billing System Documentation
+---
+title: "Arveldussüsteemi dokumentatsioon"
+---
 
-## Overview
+## Ülevaade
 
-The billing system in Gratheon enables users to subscribe to different pricing tiers (Free, Starter, Professional) and manage their subscriptions. The system is implemented across three repositories:
-- **web-app**: Frontend user interface for billing management
-- **user-cycle**: Backend GraphQL API and Stripe integration
-- **website**: Public-facing pricing page
+Gratheoni arveldussüsteem võimaldab kasutajatel tellida erinevaid hinnatasemeid (tasuta, starter, professionaalne) ja hallata oma tellimusi. Süsteemi rakendatakse kolmes hoidlas:
+- **web-app**: kasutajaliides arvelduse haldamiseks
+- **user-cycle**: taustaprogrammi GraphQL API ja Stripe integreerimine
+- **veebisait**: avalik hinnakujundusleht
 
-## Architecture
+## Arhitektuur
 
-### System Components
+### Süsteemi komponendid
 
 ```mermaid
 graph TB
@@ -40,83 +42,83 @@ graph TB
     GraphQL --> UserDB
 ```
 
-## Pricing Tiers
+## Hinnakujundustasemed
 
-### Free (Hobbyist)
-- **Price**: Free forever
-- **Features**:
-  - Up to 3 hives
-  - 10 frames per hive max
-  - Worker bee detection
-  - Queen detection
-  - Public hive sharing
-  - Treatment diary
-- **Limitations**:
-  - Low-priority AI processing
-  - 1 year image retention
+### Tasuta (harrastaja)
+- **Hind**: igavesti tasuta
+- **Omadused**:
+  - Kuni 3 taru
+  - max 10 kaadrit taru kohta
+  - Töömesilaste tuvastamine
+  - Kuninganna tuvastamine
+  - Avalik taru jagamine
+  - Ravipäevik
+- **Piirangud**:
+  - Madala prioriteediga AI töötlemine
+  - 1 aasta pildi säilitamine
 
 ### Starter
-- **Monthly**: €22/month
-- **Yearly**: €12/month (€144/year) - **Save 45%**
-- **Features**:
-  - Up to 20 hives
-  - 30 frames per hive
-  - Cell analysis
-  - Varroa counting (bottom board)
-  - Hive placement planner
-  - Inspection management
-  - AI beekeeping assistant
-- **Limitations**:
-  - 1 user account
-  - 2 year image retention
+- **Kuu**: 22 €/kuus
+- **Aasta**: 12 eurot kuus (144 eurot aastas) - **Säästke 45%**
+- **Omadused**:
+  - Kuni 20 taru
+  - 30 kaadrit taru kohta
+  - Rakuanalüüs
+  - Varroa loendamine (alumine laud)
+  - tarude paigutuse planeerija
+  - ülevaatuse juhtimine
+  - AI mesinduse assistent
+- **Piirangud**:
+  - 1 kasutajakonto
+  - 2-aastane kujutise säilitamine
 
-### Professional
-- **Monthly**: €55/month
-- **Yearly**: €33/month (€396/year) - **Save 40%**
-- **Features**:
-  - Up to 150 hives
-  - Unlimited frames
-  - Telemetry storage
-  - Timeseries data analytics
-  - Colony comparison
-  - Unlimited inspections
-  - Up to 20 user accounts
-- **Limitations**:
-  - 10 min telemetry resolution
-  - 3 year image retention
-- **Status**: In Development
+### Professionaalne
+- **Kuu**: 55 €/kuus
+- **Aasta**: 33 eurot kuus (396 eurot aastas) - **Säästke 40%**
+- **Omadused**:
+  - Kuni 150 taru
+  - piiramatu arv kaadreid
+  - Telemeetriasalvestus
+  - Ajaridade andmete analüüs
+  - Kolooniate võrdlus
+  - Piiramatu kontroll
+  - Kuni 20 kasutajakontot
+- **Piirangud**:
+  - 10 min telemeetria eraldusvõime
+  - 3-aastane kujutise säilitamine
+- **Olek**: arendamisel
 
-### Flexible (Addon)
-- **Price**: €100 one-time (1000 tokens, valid 1 year)
-- **Purpose**: Pay-per-use infrastructure features
-- **Features**:
-  - Video processing & storage
-  - IoT telemetry rate limits
-  - SMS alerts
-  - Webhook integrations
-  - Extra capacity beyond tier limits
-- **Status**: In Development (not shown in web-app billing selection)
+### Paindlik (lisand)
+- **Hind**: 100 € ühekordne (1000 märki, kehtib 1 aasta)
+- **Eesmärk**: tasulised infrastruktuuri funktsioonid
+- **Omadused**:
+  - Video töötlemine ja salvestamine
+  - IoT telemeetria kiiruspiirangud
+  - SMS-teated
+  - Veebihaagi integratsioonid
+  - Täiendav võimsus üle tasandi piiride
+- **Olek**: väljatöötamisel (pole näidatud web-app arveldusvalikus)
 
-### Enterprise
-- **Price**: Custom pricing
-- **Features**:
-  - Custom integrations
-  - On-premise deployment
-  - 24/7 priority support
-  - Advanced security
-  - Unlimited scale
-- **Contact**: enterprise@gratheon.com
+### Ettevõtlus
+- **Hind**: kohandatud hinnakujundus
+- **Omadused**:
+  - Kohandatud integratsioonid
+  - Kohalik juurutamine
+  - 24/7 prioriteetne tugi
+  - Täiustatud turvalisus
+  - Piiramatu ulatus
+- **Võtke ühendust**: enterprise@gratheon.com
 
-## Implementation Details
+## Rakenduse üksikasjad
 
 ### Frontend (web-app)
 
-#### Configuration (`src/config/billing.ts`)
-Defines all billing tiers with:
-- Tier names and colors
-- Monthly/yearly pricing
-- Savings percentages
-- Stripe price IDs
+#### Konfiguratsioon (`src/config/billing.ts`)
+Määratleb kõik arveldustasemed:
+- tasandite nimed ja värvid
+- Igakuine/aastane hinnakujundus
+- Säästuprotsendid
+- Stripe hinna ID-d
 
 ```typescript
 export const BILLING_TIERS = {
@@ -137,31 +139,31 @@ export const BILLING_TIERS = {
 }
 ```
 
-#### Components
+#### Komponendid
 
 **`src/page/accountEdit/billing/index.tsx`**
-- Main billing page wrapper
-- Shows subscription status
-- Displays expiration dates
-- Cancel subscription button
-- Embeds PricingPlans component
+- Peamise arvelduslehe ümbris
+- Näitab tellimuse olekut
+- Kuvab aegumiskuupäevad
+- Tellimuse tühistamise nupp
+- Manustatakse PricingPlansi komponent
 
 **`src/page/accountEdit/billing/pricingPlans.tsx`**
-- 3-column layout: Free, Starter, Professional
-- Monthly/yearly toggle per tier
-- Stripe checkout integration
-- Current plan indication
-- Error handling
+- 3-veeruline paigutus: tasuta, starter, professionaalne
+- Igakuine/aastane lülitus tasandi kohta
+- Stripe kassa integreerimine
+- Praeguse plaani näit
+- Vigade käsitlemine
 
 **`src/page/accountEdit/billing/pricingPlans.css`**
-- Responsive grid layout
-- Tier-specific colors
-- Hover effects
-- Mobile-responsive
+- Tundlik ruudustiku paigutus
+- astmepõhised värvid
+- hõljutusefektid
+- Mobiilile reageeriv
 
-### Backend (user-cycle)
+### Taustaprogramm (user-cycle)
 
-#### GraphQL Schema (`schema.graphql`)
+#### GraphQL Skeem (`schema.graphql`)
 ```graphql
 type User {
   billingPlan: String
@@ -191,19 +193,19 @@ type Mutation {
 }
 ```
 
-#### Billing History
+#### Arveldusajalugu
 
-The billing history feature tracks all billing-related events for a user:
+Arveldusajaloo funktsioon jälgib kõiki kasutaja arveldamisega seotud sündmusi:
 
-**Event Types**:
-- `registration` - User account created
-- `purchase` - Tier subscription purchased
-- `cancellation` - Subscription cancelled by user
-- `system_downgrade` - Auto-downgraded to free tier (e.g., payment failure)
-- `upgrade` - Plan upgraded
-- `downgrade` - Plan downgraded
+**Sündmuste tüübid**:
+- `registration` - Kasutajakonto loodud
+- `purchase` - Taseme tellimus ostetud
+- `cancellation` - Kasutaja tühistas tellimuse
+- `system_downgrade` - Automaatne alandamine tasuta tasemele (nt maksetõrge)
+- `upgrade` - Plaan on täiendatud
+- `downgrade` - Plaan viidi madalamale versioonile
 
-**Model** (`src/models/billingHistory.ts`):
+**Mudel** (`src/models/billingHistory.ts`):
 ```typescript
 export const billingHistoryModel = {
   async getByUserId(userId: number): Promise<BillingHistoryEvent[]> {
@@ -226,35 +228,33 @@ export const billingHistoryModel = {
     // Track auto-downgrade to free tier
   }
 }
-```
+```**Andmebaasi tabel** (`billing_history`):
+- `id`: primaarvõtme automaatne suurendamine
+- `user_id`: kontotabeli võõrvõti
+- `event_type`: ENUM('registreerimine', 'ost', 'tühistamine', 'süsteemi_alandamine', 'uuendus', 'alla versioonile üleminek')
+- `billing_plan`: ENUM('tasuta', 'alustaja', 'professionaalne', 'lisa', 'ettevõte')
+- `amount`: kümnendkoht (makse summa)
+- `currency`: VARCHAR (nt 'EUR')
+- `details`: TEXT (JSON-string koos lisateabega)
+- `created_at`: ajatempel
 
-**Database Table** (`billing_history`):
-- `id`: Auto-increment primary key
-- `user_id`: Foreign key to account table
-- `event_type`: ENUM('registration', 'purchase', 'cancellation', 'system_downgrade', 'upgrade', 'downgrade')
-- `billing_plan`: ENUM('free', 'starter', 'professional', 'addon', 'enterprise')
-- `amount`: Decimal (payment amount)
-- `currency`: VARCHAR (e.g., 'EUR')
-- `details`: TEXT (JSON string with additional info)
-- `created_at`: Timestamp
+**UI Ekraan**:
+Arveldusajalugu kuvatakse ajaskaalana lehel web-app `/account`:
+- Registreerimiskuupäev
+- tasandi ostud summadega
+- tühistamised
+- Süsteemi muudatused (nt automaatne alandamine makse ebaõnnestumise korral)
 
-**UI Display**:
-The billing history is shown as a timeline in the web-app `/account` page:
-- Registration date
-- Tier purchases with amounts
-- Cancellations
-- System changes (e.g., auto-downgrade on payment failure)
+See asendab vajaduse selgesõnaliste aegumise hoiatusteadete järele – kasutajad näevad oma täielikku arvelduse ajaskaala.
 
-This replaces the need for explicit expiration warning messages - users can see their full billing timeline.
-
-#### Resolvers (`src/resolvers.ts`)
+#### Lahendajad (`src/resolvers.ts`)
 
 **`createCheckoutSession`**
-- Validates user authentication
-- Maps plan/cycle to Stripe price ID
-- Creates Stripe checkout session
-- Returns checkout URL
-- Supports modes: 'subscription' (starter, professional) or 'payment' (addon)
+- Kinnitab kasutaja autentimise
+- Mapsi plaan/tsükkel kuni Stripe hinna ID
+- Loob Stripe kassasseansi
+- Tagastab kassa URL-i
+- Toetab režiime: "tellimus" (algaja, professionaalne) või "makse" (lisand)
 
 ```typescript
 createCheckoutSession: async (parent, { plan, cycle }, ctx) => {
@@ -278,11 +278,11 @@ createCheckoutSession: async (parent, { plan, cycle }, ctx) => {
 ```
 
 **`cancelSubscription`**
-- Cancels Stripe subscription
-- Updates user database
-- Returns updated user object
+- Tühistab Stripe tellimuse
+- Värskendab kasutajate andmebaasi
+- Tagastab värskendatud kasutajaobjekti
 
-#### Configuration (`src/config/config.default.ts`)
+#### Konfiguratsioon (`src/config/config.default.ts`)
 ```typescript
 stripe: {
   secret: 'sk_test_...',
@@ -303,18 +303,18 @@ stripe: {
 }
 ```
 
-### Website (Public Pricing)
+### Veebisait (avalik hinnakujundus)
 
 **`src/components/CustomPricingPage.js`**
-- Public pricing page
-- Shows all tiers: Hobbyist, Starter, Flexible, Professional, Enterprise
-- Detailed feature lists
-- Addon calculator (in development)
-- Links to registration/sales
+- Avalik hinnakujundusleht
+- Näitab kõiki tasemeid: harrastaja, alustaja, paindlik, professionaalne, ettevõte
+- Üksikasjalikud funktsioonide loendid
+- Lisakalkulaator (arenduses)
+- Lingid registreerimisele/müügile
 
-## User Flow
+## Kasutajavoog
 
-### Subscription Purchase Flow
+### Tellimuse ostuvoog
 
 ```mermaid
 sequenceDiagram
@@ -345,7 +345,7 @@ sequenceDiagram
     WebApp->>WebApp: Show success message
 ```
 
-### Subscription Cancellation Flow
+### Tellimuse tühistamise voog
 
 ```mermaid
 sequenceDiagram
@@ -367,114 +367,112 @@ sequenceDiagram
     WebApp->>WebApp: Update UI to show cancellation
 ```
 
-## Database Schema
+## Andmebaasi skeem
 
-### account table (in user-cycle MySQL)
-- `id`: Primary key
-- `email`: User email
-- `stripe_subscription`: Stripe subscription ID (nullable)
-- `billing_plan`: ENUM('free', 'starter', 'professional', 'addon', 'enterprise') - Default: 'free'
-- `date_expiration`: Subscription expiration date
-- `date_added`: Account creation date
+### konto tabel (in user-cycle MySQL)
+- `id`: esmane võti
+- `email`: kasutaja e-posti aadress
+- `stripe_subscription`: Stripe tellimuse ID (null)
+- `billing_plan`: ENUM('tasuta', 'alustaja', 'professionaalne', 'lisa', 'ettevõte') - Vaikimisi: 'tasuta'
+- `date_expiration`: tellimuse aegumiskuupäev
+- `date_added`: konto loomise kuupäev
 
-### billing_history table (in user-cycle MySQL)
-- `id`: Auto-increment primary key
-- `user_id`: Foreign key to account table
-- `event_type`: ENUM('registration', 'purchase', 'cancellation', 'system_downgrade', 'upgrade', 'downgrade')
-- `billing_plan`: ENUM('free', 'starter', 'professional', 'addon', 'enterprise')
-- `amount`: DECIMAL(10,2) - Payment amount (nullable)
-- `currency`: VARCHAR(3) - e.g., 'EUR' (nullable)
-- `details`: TEXT - JSON string with additional information (nullable)
-- `created_at`: TIMESTAMP - Default: CURRENT_TIMESTAMP
+### arvelduse_ajaloo tabel (in user-cycle MySQL)
+- `id`: primaarvõtme automaatne suurendamine
+- `user_id`: kontotabeli võõrvõti
+- `event_type`: ENUM('registreerimine', 'ost', 'tühistamine', 'süsteemi_alandamine', 'uuendus', 'alla versioonile üleminek')
+- `billing_plan`: ENUM('tasuta', 'alustaja', 'professionaalne', 'lisa', 'ettevõte')
+- `amount`: DECIMAAL(10,2) - Maksesumma (null)
+- `currency`: VARCHAR(3) - nt 'EUR' (null)
+- `details`: TEKST - JSON-string koos lisateabega (null)
+- `created_at`: TIMESTAMP - Vaikimisi: CURRENT_TIMESTAMP
 
-**Migration Files**:
-- `migrations/023-create-billing-history.sql` - Creates table and backfills from account data
-- `migrations/024-update-billing-plan-enum.sql` - Updates enum values from old ('base', 'pro') to new ('starter', 'professional')
+**Migratsioonifailid**:
+- `migrations/023-create-billing-history.sql` - Loob kontoandmetest tabeli ja järeltäitmisi
+- `migrations/024-update-billing-plan-enum.sql` - Värskendab loendiväärtusi vanadelt ('base', 'profi') uuteks ('alustaja', 'professionaalne')
 
-## Stripe Integration
+## Stripe Integratsioon
 
-### Price IDs (Production)
-Must be configured in `user-cycle/src/config/config.default.ts`:
-- `price_starter_monthly`: Starter monthly plan
-- `price_starter_yearly`: Starter yearly plan
-- `price_professional_monthly`: Professional monthly plan
-- `price_professional_yearly`: Professional yearly plan
-- `price_addon_onetime`: Flexible addon one-time payment
+### Hinna ID-d (tootmine)
+Peab olema konfigureeritud `user-cycle/src/config/config.default.ts`:
+- `price_starter_monthly`: stardikuupakett
+- `price_starter_yearly`: algav aastaplaan
+- `price_professional_monthly`: professionaalne kuupakett
+- `price_professional_yearly`: professionaalne aastaplaan
+- `price_addon_onetime`: paindlik lisamakse ühekordne
 
-### Webhooks
-Configure in Stripe Dashboard:
-- `checkout.session.completed`: Handle successful payments
-- `customer.subscription.deleted`: Handle cancellations
-- `customer.subscription.updated`: Handle plan changes
+### Veebihaagid
+Seadistage Stripe juhtpaneelil:
+- `checkout.session.completed`: käsitlege edukaid makseid
+- `customer.subscription.deleted`: käsitlege tühistamisi
+- `customer.subscription.updated`: käsitlege plaani muudatusi
 
-Webhook endpoint: `https://app.gratheon.com/webhooks/stripe`
-
-## Environment Variables
+Veebihaagi lõpp-punkt: `https://app.gratheon.com/webhooks/stripe`## Keskkonnamuutujad
 
 ### user-cycle
-- `STRIPE_SECRET_KEY`: Stripe API secret key
-- `STRIPE_WEBHOOK_SECRET`: Stripe webhook signing secret
-- `JWT_KEY`: Session token signing key
-- `MYSQL_HOST`, `MYSQL_USER`, `MYSQL_PASSWORD`, `MYSQL_DATABASE`: Database config
+- `STRIPE_SECRET_KEY`: Stripe API salavõti
+- `STRIPE_WEBHOOK_SECRET`: Stripe veebihaagi allkirjastamise saladus
+- `JWT_KEY`: seansi loa allkirjastamise võti
+- `MYSQL_HOST`, `MYSQL_USER`, `MYSQL_PASSWORD`, `MYSQL_DATABASE`: andmebaasi konfiguratsioon
 
 ### web-app
-- `VITE_API_URL`: GraphQL API endpoint (points to user-cycle)
+- `VITE_API_URL`: GraphQL API lõpp-punkt (osutab user-cycle)
 
-## Security Considerations
+## Turvakaalutlused
 
-1. **Authentication**: All billing mutations require valid JWT token in context
-2. **CSRF Protection**: GraphQL mutations use POST with proper CORS
-3. **Webhook Verification**: Stripe webhook signatures must be validated
-4. **Price Integrity**: Prices defined server-side, not client-side
-5. **Session Security**: Checkout sessions expire in 24 hours
+1. **Autentimine**: kõik arveldusmutatsioonid nõuavad kontekstis kehtivat JWT luba
+2. **CSRF-kaitse**: GraphQL mutatsioonid kasutavad POST-i koos õigete CORS-idega
+3. **Veebihaagi kinnitamine**: Stripe veebihaagi allkirjad peavad olema kinnitatud
+4. **Hinna terviklikkus**: hinnad on määratud serveri, mitte kliendi poolel
+5. **Seansi turvalisus**: kassaseansid aeguvad 24 tunni pärast
 
-## Testing
+## Testimine
 
-### Manual Testing Checklist
-- [ ] Free tier displays correctly
-- [ ] Starter monthly/yearly selection works
-- [ ] Professional monthly/yearly selection works
-- [ ] Stripe checkout redirects properly
-- [ ] Success page shows after payment
-- [ ] Cancel page shows if user abandons checkout
-- [ ] Subscription cancellation works
-- [ ] Expired subscription shows warning
-- [ ] Current plan badge displays correctly
+### Käsitsi testimise kontroll-loend
+- [ ] Vaba tasand kuvatakse õigesti
+- [ ] Starter kuu/aasta valik töötab
+- [ ] Professionaalsed igakuised/aastased valikutööd
+- [ ] Stripe checkout suunab korralikult ümber
+- [ ] Edu leht kuvatakse pärast makse sooritamist
+- [ ] Tühista leht näitab, kui kasutaja loobub kassast
+- [ ] Tellimuse tühistamine toimib
+- [ ] Aegunud tellimus näitab hoiatust
+- [ ] Praeguse plaani märk kuvatakse õigesti
 
-### Stripe Test Cards
-- Success: `4242 4242 4242 4242`
-- Decline: `4000 0000 0000 0002`
-- 3D Secure: `4000 0027 6000 3184`
+### Stripe Testkaardid
+- Edu: `4242 4242 4242 4242`
+- Keeldu: `4000 0000 0000 0002`
+- 3D-turvaline: `4000 0027 6000 3184`
 
-## Known Issues & Future Improvements
+## Teadaolevad probleemid ja edasised täiustused
 
-### Completed Features
-- ✅ Billing history tracking (registration, purchase, cancellation events)
-- ✅ Auto-downgrade to free tier on payment failure
-- ✅ No hard paywalls - users maintain app access
-- ✅ Updated pricing structure (45% yearly discount for Starter, 40% for Professional)
-- ✅ Clean tier selection UI with current plan indicator
-- ✅ Database enum migration (from 'base'/'pro' to 'starter'/'professional')
+### Lõpetatud funktsioonid
+- ✅ Arveldusajaloo jälgimine (registreerimine, ostmine, tühistamise sündmused)
+- ✅ Makse ebaõnnestumise korral automaatne alandamine tasuta tasemele
+- ✅ Ei mingeid kõvasid tasumüüre – kasutajad säilitavad rakendusele juurdepääsu
+- ✅ Uuendatud hinnastruktuur (45% aastane allahindlus Starterile, 40% professionaalile)
+- ✅ Puhas tasandi valik UI praeguse plaani indikaatoriga
+- ✅ Andmebaasi loendi migreerimine (alustest/professionaalidest algajatele/professionaalidele)
 
-### Current Work In Progress
-- 🚧 Billing history timeline UI in web-app
-- 🚧 Remove flexible tier from web-app selection (keep on website only)
-- 🚧 Feature-level access control (replacing hard paywalls)
-- 🚧 Improve tier selection visual design
+### Praegune töö pooleli
+- 🚧 Arveldusajaloo ajaskaala UI web-app
+- 🚧 Eemalda paindlik tasand web-app valikust (säilita ainult veebisaidil)
+- 🚧 Funktsioonitasemel juurdepääsukontroll (asendab kõvasid tasulisi seinu)
+- 🚧 Parandage tasandi valiku visuaalset kujundust
 
-### Planned Features
-- Subscription upgrade/downgrade flow
-- Usage tracking for Flexible addon
-- Invoice history in account page
-- Payment method management
-- Multi-currency support
-- Enterprise custom contracts
-- Prorated billing for plan changes
-- Subscription renewal reminders
+### Planeeritud funktsioonid
+- Tellimuse uuendamine/alandamise voog
+- Paindliku lisandmooduli kasutamise jälgimine
+- Arvete ajalugu kontolehel
+- Makseviiside haldamine
+- Mitme valuuta tugi
+- Ettevõtete kohandatud lepingud
+- Proportsionaalselt jaotatud arveldamine plaani muudatuste eest
+- Tellimuse uuendamise meeldetuletused
 
-### Feature-Level Blocking Strategy
+### Funktsioonitaseme blokeerimisstrateegia
 
-Future implementation will check features individually:
+Edaspidine rakendamine kontrollib funktsioone eraldi:
 
 ```typescript
 // Example feature check
@@ -491,52 +489,49 @@ if (!hasAccess) {
 }
 ```
 
-Benefits:
-- Users discover features naturally
-- Contextual upgrade prompts show value
-- Better UX than blocking entire app
-- Clear feature-to-tier mapping
+Eelised:
+- Kasutajad avastavad funktsioone loomulikult
+- Kontekstipõhised versiooniuuendusviibad näitavad väärtust
+- Parem UX kui kogu rakenduse blokeerimine
+- Selge funktsioonide ja tasandite kaardistamine
 
-## Deployment Notes
+## Juurutamise märkused
 
 ### web-app
-1. Build: `npm run build`
-2. Environment: Set `VITE_API_URL` to production user-cycle URL
-3. Deploy static files to CDN/hosting
+1. Järg: `npm run build`
+2. Keskkond: määrake `VITE_API_URL` tootmiseks user-cycle URL
+3. Juurutage staatilised failid CDN-i/hostimisse
 
 ### user-cycle
-1. Set production Stripe keys in config
-2. Configure Stripe webhook URL
-3. Deploy GraphQL service
-4. Verify database migrations
+1. Seadistage konfiguratsioonis tootmisklahvid Stripe
+2. Konfigureerige Stripe veebihaagi URL
+3. Juurutage teenus GraphQL
+4. Kontrollige andmebaasi migratsiooni
 
-### website
-1. Update pricing page if tiers change
-2. Rebuild Docusaurus: `npm run build`
-3. Deploy static site
+### veebisait
+1. Kui tasemed muutuvad, värskendage hinnakujunduse lehte
+2. Ehitage Docusaurus uuesti: `npm run build`
+3. Juurutage staatiline sait
 
-## Support & Troubleshooting
+## Tugi ja tõrkeotsing
 
-### Common Issues
+### Levinud probleemid
 
-**"Checkout session could not be created"**
-- Check Stripe API keys are correct
-- Verify price IDs exist in Stripe Dashboard
-- Check server logs for API errors
+**"Kassasseanssi ei saanud luua"**
+- Kontrollige, kas Stripe API võtmed on õiged
+- Kontrollige hinna ID-de olemasolu Stripe juhtpaneelil
+- Kontrollige serveri logisid API vigade suhtes**"Tellimus on aegunud"**
+- Kasutaja peab tellimust uuendama
+- Kontrollige andmebaasis `date_expiration`
+- Kontrollige Stripe tellimuse olekut
 
-**"Subscription has expired"**
-- User needs to renew subscription
-- Check `date_expiration` in database
-- Verify Stripe subscription status
+**Veebihaak ei käivitu**
+- Kinnitage veebihaagi URL Stripe juhtpaneelil
+- Kontrollige, kas veebihaagi saladus on õige
+- Kontrollige Stripe veebihaagi logisid
 
-**Webhook not firing**
-- Verify webhook URL in Stripe Dashboard
-- Check webhook secret is correct
-- Inspect Stripe webhook logs
+## Võtke ühendust
 
-## Contact
-
-- Technical Issues: Create issue in respective repo
-- Billing Support: support@gratheon.com
-- Enterprise Sales: enterprise@gratheon.com
-
+- Tehnilised probleemid: looge probleem vastavas repos
+- Arveldustugi: support@gratheon.com
+- Ettevõtte müük: enterprise@gratheon.com

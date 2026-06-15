@@ -1,6 +1,7 @@
 ---
-title: Pricing
+title: "Hinnaplaanid"
+navTitle: "Hinnad"
 slug: ""
-hideNav: true
-redirectUrl: "https://gratheon.com/pricing/"
+layout: pricing-et
+description: "Gratheoni toodete ja mesindusteenuste hinnaplaanid"
 ---
