@@ -36,7 +36,15 @@
   <div class="header-right">
     {{if .Languages}}
     <nav class="lang-switcher" aria-label="{{.UI.Languages}}">
-      {{range .Languages}}<a class="lang-link{{if .Active}} is-active{{end}}" href="{{.URL}}" hreflang="{{.Code}}"{{if .Active}} aria-current="page"{{end}}>{{.Label}}</a>{{end}}
+      {{/* Native details keeps the language picker accessible without adding navigation JavaScript. */}}
+      <details class="lang-dropdown">
+        <summary class="lang-current">
+          {{range .Languages}}{{if .Active}}{{.Label}}{{end}}{{end}}
+        </summary>
+        <div class="lang-menu">
+          {{range .Languages}}<a class="lang-link{{if .Active}} is-active{{end}}" href="{{.URL}}" hreflang="{{.Code}}"{{if .Active}} aria-current="page"{{end}}>{{.Label}}</a>{{end}}
+        </div>
+      </details>
     </nav>
     {{end}}
     <button id="theme-toggle" class="theme-toggle" aria-label="{{.UI.ToggleTheme}}" title="{{.UI.ToggleTheme}}">

@@ -1,6 +1,6 @@
 ---
-title: Pricing
+title: "Тарифы"
 slug: ""
-hideNav: true
-redirectUrl: "https://gratheon.com/pricing/"
+layout: pricing-ru
+description: "Тарифы Gratheon для приложений и сервисов для пчеловодства"
 ---
