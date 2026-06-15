@@ -153,6 +153,50 @@ html[data-theme='dark'] .theme-toggle { color: var(--text-primary); }
 html[data-theme='dark'] .theme-toggle .icon-sun { display: none; }
 html[data-theme='dark'] .theme-toggle .icon-moon { display: block; }
 
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  max-width: min(38vw, 520px);
+  overflow-x: auto;
+  padding: 3px;
+  border: 1px solid var(--nav-border, #dadde1);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
+  scrollbar-width: thin;
+}
+
+.lang-link,
+.lang-link:visited {
+  flex: 0 0 auto;
+  border: 0;
+  border-radius: 999px;
+  padding: 6px 10px;
+  color: var(--text-secondary, #666);
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.lang-link:hover,
+.lang-link:focus-visible,
+.lang-link.is-active {
+  background: var(--brand-yellow);
+  color: black !important;
+  outline: 0;
+}
+
+html[data-theme='dark'] .lang-switcher {
+  background: rgba(17, 19, 21, 0.72);
+}
+
+html[data-theme='dark'] .lang-link,
+html[data-theme='dark'] .lang-link:visited {
+  color: var(--text-primary);
+}
+
 .navbar-logo {
   display: inline-flex;
   align-items: center;
@@ -692,6 +736,15 @@ html[data-theme='dark'] .front-page .future {
 }
 
 @media (max-width: 600px) {
+
+  .lang-switcher {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .header-right {
+    width: 100%;
+  }
   .site-header { position: static; }
   .navbar-logo img { width: 120px !important; }
   .front-page #front { height: 360px; padding: 20px; }

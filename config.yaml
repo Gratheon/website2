@@ -15,7 +15,45 @@ i18n:
     - code: "en"
       label: "English"
       aliases: ["en", "en-us", "en-gb"]
-
+    - code: "ru"
+      label: "Русский"
+      aliases: ["ru", "ru-ru"]
+    - code: "et"
+      label: "Eesti"
+      aliases: ["et", "et-ee"]
+    - code: "tr"
+      label: "Türkçe"
+      aliases: ["tr", "tr-tr"]
+    - code: "pl"
+      label: "Polski"
+      aliases: ["pl", "pl-pl"]
+    - code: "de"
+      label: "Deutsch"
+      aliases: ["de", "de-de"]
+    - code: "fr"
+      label: "Français"
+      aliases: ["fr", "fr-fr"]
+    - code: "zh"
+      label: "简体中文"
+      aliases: ["zh", "zh-cn", "zh-hans"]
+    - code: "hi"
+      label: "हिन्दी"
+      aliases: ["hi", "hi-in"]
+    - code: "es"
+      label: "Español"
+      aliases: ["es", "es-es", "es-mx"]
+    - code: "ar"
+      label: "العربية"
+      aliases: ["ar", "ar-sa"]
+    - code: "bn"
+      label: "বাংলা"
+      aliases: ["bn", "bn-bd"]
+    - code: "pt"
+      label: "Português"
+      aliases: ["pt", "pt-br", "pt-pt"]
+    - code: "ja"
+      label: "日本語"
+      aliases: ["ja", "ja-jp"]
 author:
   name: "Gratheon OÜ"
   email: "pilot@gratheon.com"
@@ -31,17 +69,17 @@ navigation:
     enabled: true
     items:
       - title: "About"
-        path: "about"
+        url: "/about/"
       - title: "Products"
-        path: "about/products"
+        url: "/about/products/"
       - title: "Docs"
-        path: "docs"
+        url: "/docs/"
       - title: "Research"
-        path: "research"
+        url: "/research/"
       - title: "Blog"
-        path: "blog"
+        url: "/blog/"
       - title: "Pricing"
-        path: "pricing"
+        url: "/pricing/"
       - title: "Discord"
         url: "https://discord.gg/PcbP4uedWj"
         class: "nav-action nav-action-first"

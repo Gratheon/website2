@@ -1,0 +1,199 @@
+{{define "front-pl"}}
+{{template "gratheon_head" .}}
+<body class="front-page">
+  {{template "gratheon_header" .}}
+
+  <main>
+    <div id="splash">
+      <header id="front">
+        <video id="bgVideo" autoplay loop muted playsinline src="https://gratheon.s3-accelerate.amazonaws.com/video/01.mp4"></video>
+        <div class="headerContentContainer">
+          <div id="splash_internal">
+            <div>Analityka danych z uli</div>
+            <p>Oszczędzaj pszczoły, czas i siły</p>
+          </div>
+          <div class="installButtons">
+            <a class="signup blue" href="https://app.gratheon.com/account/register">Wypróbuj za darmo</a>
+            <div class="platformDownloads">
+              <a href="https://play.google.com/store/apps/details?id=com.gratheon.app.twa"><img class="googlePlayBadge no-transform" height="50" src="/assets/img/google.png" alt="Google Play"></a>
+              <a href="https://github.com/Gratheon/web-app/releases/latest" data-latest-release="mac"><img class="desktopDownloadIcon no-transform" src="/assets/img/mac.png" alt="Pobierz macOS ARM"></a>
+              <a href="https://github.com/Gratheon/web-app/releases/latest" data-latest-release="windows"><img class="desktopDownloadIcon no-transform" src="/assets/img/windows-full.webp" alt="Pobierz Windows"></a>
+              <a href="https://github.com/Gratheon/web-app/releases/latest" data-latest-release="linux"><img class="desktopDownloadIcon no-transform" src="/assets/img/linux.png" alt="Pobierz Linux"></a>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <video id="showcase" autoplay loop muted playsinline src="https://gratheon.s3-accelerate.amazonaws.com/www/detection2.mov"></video>
+
+    <section class="front-section">
+      <h2>Jak działa aplikacja?</h2>
+      <div class="features">
+        <div class="feature">
+          <h3>Modeluj ule</h3>
+          <p>Modeluj ule, aby pamiętać, gdzie i dlaczego trzeba działać, gdy papierowe notatki stają się trudne w terenie.</p>
+          <video autoplay loop muted playsinline src="https://gratheon.s3-accelerate.amazonaws.com/www/frame-management3.mov"></video>
+        </div>
+        <div class="feature">
+          <h3>Przesyłaj zdjęcia ramek</h3>
+          <p>Rób zdjęcia ramek i przesyłaj je do aplikacji. Gratheon wykrywa i liczy pszczoły, aby ocenić siłę rodziny.</p>
+          <img src="/assets/img/count.webp" alt="Bee count detection">
+        </div>
+        <div class="feature">
+          <h3>Przechowuj przeglądy</h3>
+          <p>Śledź rozwój rodziny w czasie i porównuj tę samą ramkę, aby zobaczyć zmiany w kolonii.</p>
+          <img src="/assets/img/inspections.webp" alt="Inspection history">
+        </div>
+        <div class="feature">
+          <h3>Live Queen Finder</h3>
+          <p>Użyj kamery telefonu podczas przeglądu, a Gratheon wskaże wykrycia podobne do matki podczas skanowania ramki.</p>
+          <a href="/about/products/web_app/free-tier/live-queen-finder/">
+            <img src="/assets/img/blog/img/live-queen-finder-detection-preview.webp" alt="Live Queen Finder camera detection">
+          </a>
+        </div>
+        <div class="feature">
+          <h3>Szacuj zasoby</h3>
+          <p>Wykrywaj komórki i szacuj proporcje zasobów. Równoważenie nektaru i pyłku między rodzinami pomaga zapobiegać głodowi.</p>
+          <img src="/assets/img/comb.webp" alt="Honeycomb cell analysis">
+        </div>
+        <div class="feature">
+          <h3>Mierz porażenie roztoczem</h3>
+          <p>Wykrywaj i licz roztocza Varroa bez zabijania pszczół testem alkoholowym.</p>
+          <img src="/assets/img/varroa.webp" alt="Varroa detection">
+        </div>
+        <div class="feature">
+          <h3>Ucz się od AI</h3>
+          <p>Wykorzystaj kontekst ula, aby jednym kliknięciem otrzymać poradę dużego modelu językowego o kolejnych krokach.</p>
+          <img src="/assets/img/llm.webp" alt="AI beekeeping assistant">
+        </div>
+        <div class="feature">
+          <h3>Rób notatki</h3>
+          <p>Użyj rysika iPad lub myszy, aby rysować po ramce i zaznaczać ważne obszary.</p>
+          <video autoplay loop muted playsinline src="https://gratheon.s3-accelerate.amazonaws.com/www/ipad3.mov"></video>
+        </div>
+        <div class="feature">
+          <h3>Udostępniaj</h3>
+          <p>Udostępniaj przeglądy uli społeczności pszczelarskiej i otrzymuj porady ekspertów.</p>
+          <img src="/assets/img/sharing.webp" alt="Public hive sharing">
+        </div>
+        <div class="feature">
+          <h3>Obserwuj pszczoły</h3>
+          <p>Transmituj wloty uli za pomocą open-source klienta Entrance Observer, nieużywanego telefonu lub Raspberry Pi.</p>
+          <iframe src="https://www.youtube.com/embed/oG791JNb1aA?autoplay=1&mute=1&loop=1" style="width:100%;height:201px;margin:0 auto;display:block" title="Bees at the beehive entrance" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="front-section" id="devices">
+      <h2>Produkty sprzętowe</h2>
+      <div class="device">
+        <div class="deviceText">
+          <h3>Czujniki ula <span class="badge">faza prototypu</span></h3>
+          <p>Mierz temperaturę, wilgotność, poziom CO2, ciśnienie, dźwięk i wagę, aby łączyć rozwój rodziny z czynnikami środowiskowymi. Najbardziej przystępne, oszczędne w danych i energii.</p>
+          <p class="deviceLinks">
+            <a href="https://github.com/Gratheon/beehive-sensors/" aria-label="Beehive sensors source code">
+              <svg class="linkIcon githubIcon" width="16" height="16" viewBox="0 0 1024 1024" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M512 0C229.12 0 0 229.12 0 512c0 226.56 146.56 418.56 350.08 486.4 25.6 4.48 35.2-10.88 35.2-24.32 0-12.16-.64-52.48-.64-95.36C256 902.4 222.72 847.36 212.48 818.56c-5.76-14.72-30.72-60.16-52.48-72.32-17.92-9.6-43.52-28.8-.64-29.44 40.32-.64 69.12 37.76 78.72 53.12 46.08 77.44 119.68 55.68 148.48 42.24 4.48-33.28 17.92-55.68 32.64-68.48-113.92-12.8-233.6-56.96-233.6-253.44 0-55.68 19.84-101.76 52.48-137.6-5.12-12.8-23.04-65.28 5.12-135.68 0 0 42.88-13.44 140.8 52.48 40.96-11.52 84.48-17.28 128-17.28s87.04 5.76 128 17.28c97.92-66.56 140.8-52.48 140.8-52.48 28.16 70.4 10.24 122.88 5.12 135.68 32.64 35.84 52.48 81.28 52.48 137.6 0 197.12-120.32 240.64-234.24 253.44 18.56 16 34.56 46.72 34.56 94.72 0 68.48-.64 123.52-.64 140.8 0 13.44 9.6 29.44 35.2 24.32C877.44 930.56 1024 738.56 1024 512 1024 229.12 794.88 0 512 0Z" fill="#1B1F23"/>
+              </svg> Kod</a>
+          </p>
+        </div>
+        <div class="deviceImgs">
+          <img src="/assets/img/sensors.webp" alt="Beehive sensors">
+          <img src="/assets/img/temp.webp" alt="Beehive temperature graph">
+        </div>
+      </div>
+      <div class="device">
+        <div class="deviceText">
+          <h3>Entrance Observer <span class="badge">faza MVP</span></h3>
+          <p>Otrzymuj obraz wlotu w czasie rzeczywistym. Licz pszczoły wchodzące i wychodzące, aby szacować dzienną utratę zbieraczek. Wykrywaj warrozę na pszczołach, przepływ pyłku, rabunki, loty orientacyjne robotnic i loty godowe matki.</p>
+          <p class="deviceLinks">
+            <a href="https://github.com/Gratheon/entrance-observer/" aria-label="Entrance Observer source code">
+              <svg class="linkIcon githubIcon" width="16" height="16" viewBox="0 0 1024 1024" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M512 0C229.12 0 0 229.12 0 512c0 226.56 146.56 418.56 350.08 486.4 25.6 4.48 35.2-10.88 35.2-24.32 0-12.16-.64-52.48-.64-95.36C256 902.4 222.72 847.36 212.48 818.56c-5.76-14.72-30.72-60.16-52.48-72.32-17.92-9.6-43.52-28.8-.64-29.44 40.32-.64 69.12 37.76 78.72 53.12 46.08 77.44 119.68 55.68 148.48 42.24 4.48-33.28 17.92-55.68 32.64-68.48-113.92-12.8-233.6-56.96-233.6-253.44 0-55.68 19.84-101.76 52.48-137.6-5.12-12.8-23.04-65.28 5.12-135.68 0 0 42.88-13.44 140.8 52.48 40.96-11.52 84.48-17.28 128-17.28s87.04 5.76 128 17.28c97.92-66.56 140.8-52.48 140.8-52.48 28.16 70.4 10.24 122.88 5.12 135.68 32.64 35.84 52.48 81.28 52.48 137.6 0 197.12-120.32 240.64-234.24 253.44 18.56 16 34.56 46.72 34.56 94.72 0 68.48-.64 123.52-.64 140.8 0 13.44 9.6 29.44 35.2 24.32C877.44 930.56 1024 738.56 1024 512 1024 229.12 794.88 0 512 0Z" fill="#1B1F23"/>
+              </svg> Kod</a><br>
+            <a href="/assets/assets/entrance-observer-whitepaper.pdf" aria-label="Entrance Observer white paper PDF">
+              <svg class="linkIcon pdfIcon" width="16" height="16" viewBox="0 0 14 16" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.2 0.5h7.1L13 4.2v11.3H2.2z" fill="#fff" stroke="#111"/>
+                <path d="M9.2 0.8v3.7h3.6" fill="none" stroke="#111"/>
+                <path d="M0.7 7h12.6v4.2H0.7z" fill="#ed1c24" stroke="#111" stroke-width="0.4"/>
+                <text x="2" y="10.1" fill="#fff" font-family="Arial, sans-serif" font-size="2.9" font-weight="700">PDF</text>
+              </svg> White Paper</a>
+          </p>
+        </div>
+        <div class="deviceImgs">
+          <img src="/assets/img/observer.webp" alt="Entrance Observer">
+          <video autoplay loop muted playsinline src="/assets/img/counting.mov"></video>
+        </div>
+      </div>
+      <div class="device">
+        <div class="deviceText">
+          <h3>Modułowy ul robotyczny <span class="badge">faza koncepcji</span></h3>
+          <p>Nasz cel końcowy. Automatyzować przeglądy przez mechaniczne wyjmowanie ramek. Oszczędzać siły przy podnoszeniu ciężkich korpusów. Ograniczać śmierć pszczół podczas przeglądów. Zwiększać efektywność dzięki zdalnej obserwacji wnętrza i oszczędzać czas na wyjazdach. Zawsze mieć aktualne powiadomienia i chronić sąsiadów w mieście przed użądleniami.</p>
+          <p class="deviceLinks">
+            <a href="https://github.com/Gratheon/robotic-beehive/" aria-label="Modular Robotic beehive source code">
+              <svg class="linkIcon githubIcon" width="16" height="16" viewBox="0 0 1024 1024" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M512 0C229.12 0 0 229.12 0 512c0 226.56 146.56 418.56 350.08 486.4 25.6 4.48 35.2-10.88 35.2-24.32 0-12.16-.64-52.48-.64-95.36C256 902.4 222.72 847.36 212.48 818.56c-5.76-14.72-30.72-60.16-52.48-72.32-17.92-9.6-43.52-28.8-.64-29.44 40.32-.64 69.12 37.76 78.72 53.12 46.08 77.44 119.68 55.68 148.48 42.24 4.48-33.28 17.92-55.68 32.64-68.48-113.92-12.8-233.6-56.96-233.6-253.44 0-55.68 19.84-101.76 52.48-137.6-5.12-12.8-23.04-65.28 5.12-135.68 0 0 42.88-13.44 140.8 52.48 40.96-11.52 84.48-17.28 128-17.28s87.04 5.76 128 17.28c97.92-66.56 140.8-52.48 140.8-52.48 28.16 70.4 10.24 122.88 5.12 135.68 32.64 35.84 52.48 81.28 52.48 137.6 0 197.12-120.32 240.64-234.24 253.44 18.56 16 34.56 46.72 34.56 94.72 0 68.48-.64 123.52-.64 140.8 0 13.44 9.6 29.44 35.2 24.32C877.44 930.56 1024 738.56 1024 512 1024 229.12 794.88 0 512 0Z" fill="#1B1F23"/>
+              </svg> Kod</a>
+          </p>
+        </div>
+        <div class="deviceImgs">
+          <video autoplay loop muted playsinline src="https://gratheon.s3-accelerate.amazonaws.com/video/linear-actuator.mp4"></video>
+        </div>
+      </div>
+    </section>
+
+    <section class="front-story" id="content">
+      <article>
+        <h2>Kształtuj przyszłość pszczelarstwa</h2>
+        <div class="author">
+          <div>
+            <a href="https://twitter.com/tot_ra" aria-label="Artjom Kurapov on Twitter">
+              <img src="/assets/img/artjom.jpg" alt="author photo" width="50" height="50">
+            </a>
+          </div>
+          <div>
+            Autor <a href="https://www.linkedin.com/in/kurapov/">Artjom Kurapov</a>,<br>Pszczelarz, founding engineer
+          </div>
+        </div>
+        <p>Jestem inżynierem oprogramowania i 5 lat temu zostałem pszczelarzem, aby poprawić zapylanie ogrodu i uzyskać wyższe plony. Dla mnie pszczoły są też uroczymi i ciekawymi zwierzętami.</p>
+        <p>Pszczoły są gatunkiem kluczowym dla naszego bezpieczeństwa żywnościowego. Rolnicy współpracują z pszczelarzami, aby zwiększać plony dzięki precyzyjnemu zapylaniu.</p>
+        <p>Tradycyjne pszczelarstwo wymaga obserwowalności rodziny pszczelej, ponieważ pszczoły mogą cierpieć z powodu głodu, utraty matki, późnej rójki lub porażenia Varroa destructor, które osłabia rodzinę i prowadzi do zimowego osypu.</p>
+        <p>Obserwowalność zwykle oznacza ciężką pracę fizyczną oraz częste, ograniczone czasowo przeglądy. W stroju ochronnym, w letnim upale, trzeba podnosić 20-kilogramowe korpusy zaprojektowane 150 lat temu i zauważać drobne szczegóły, gdy broniące się pszczoły żądlą, powodując stres przeglądu i śmierć pszczół.</p>
+        <p>Gdy pasieka rośnie, ta praca przestaje się skalować. Pszczelarze przemysłowi mają wiele pasiek w odległych, trudno dostępnych miejscach. Obecne rozwiązania nie rozwiązują tych problemów wystarczająco dobrze.</p>
+        <p>💡 Naszym celem jest pomoc pszczelarzom w obserwowalności i automatyzacji. Naszą wizją jest w pełni autonomiczna, wieloulowa pasieka robotyczna, która może zdalnie kontrolować rodziny. Dojdziemy do tego krok po kroku, zaczynając od oprogramowania.</p>
+        <p>Dzięki praktycznym metrykom i automatyzacji pszczelarze stają się bardziej efektywni, spędzają mniej czasu w terenie i więcej analizują, interweniując precyzyjnie tylko wtedy, gdy trzeba.</p>
+        <div class="future">
+          <div>
+            <p>Aplikacja Gratheon powstała na bazie oprogramowania open-source i sama również jest w pełni open source.</p>
+            <p>Dołącz do nas, aby poprawić życie 100 milionów rodzin pszczelich na świecie i sprostać rosnącemu zapotrzebowaniu na zapylanie. Szukamy inwestorów do skalowania rozwoju, inżynierów do zespołu, pszczelarzy do testów terenowych i doradców.</p>
+            <p>Masz pomysły?</p>
+            <p class="futureActions">
+              <a class="action action_green" href="https://discord.gg/PcbP4uedWj">Napisz do nas na Discordzie</a>
+              <a class="action blue" href="https://app.gratheon.com/account/register">Zarejestruj się</a>
+            </p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <iframe
+      class="authorIntro"
+      title="Przedstawienie autora"
+      src="https://www.youtube.com/embed/gM3AJEAhmXc?rel=0"
+      frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+
+    <div class="brandStripe" aria-hidden="true">
+      <div class="brandStripeYellow"></div>
+      <div class="brandStripeGreen"></div>
+      <div class="brandStripeBlue"></div>
+    </div>
+  </main>
+
+  {{template "gratheon_footer" .}}
+  {{if .JSPath}}<script defer src="{{.JSPath}}"></script>{{end}}
+</body>
+</html>
+{{end}}

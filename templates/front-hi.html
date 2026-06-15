@@ -1,0 +1,199 @@
+{{define "front-hi"}}
+{{template "gratheon_head" .}}
+<body class="front-page">
+  {{template "gratheon_header" .}}
+
+  <main>
+    <div id="splash">
+      <header id="front">
+        <video id="bgVideo" autoplay loop muted playsinline src="https://gratheon.s3-accelerate.amazonaws.com/video/01.mp4"></video>
+        <div class="headerContentContainer">
+          <div id="splash_internal">
+            <div>छत्ता डेटा विश्लेषण</div>
+            <p>मधुमक्खियाँ, समय और मेहनत बचाएँ</p>
+          </div>
+          <div class="installButtons">
+            <a class="signup blue" href="https://app.gratheon.com/account/register">मुफ़्त आज़माएँ</a>
+            <div class="platformDownloads">
+              <a href="https://play.google.com/store/apps/details?id=com.gratheon.app.twa"><img class="googlePlayBadge no-transform" height="50" src="/assets/img/google.png" alt="Google Play"></a>
+              <a href="https://github.com/Gratheon/web-app/releases/latest" data-latest-release="mac"><img class="desktopDownloadIcon no-transform" src="/assets/img/mac.png" alt="macOS ARM डाउनलोड करें"></a>
+              <a href="https://github.com/Gratheon/web-app/releases/latest" data-latest-release="windows"><img class="desktopDownloadIcon no-transform" src="/assets/img/windows-full.webp" alt="Windows डाउनलोड करें"></a>
+              <a href="https://github.com/Gratheon/web-app/releases/latest" data-latest-release="linux"><img class="desktopDownloadIcon no-transform" src="/assets/img/linux.png" alt="Linux डाउनलोड करें"></a>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <video id="showcase" autoplay loop muted playsinline src="https://gratheon.s3-accelerate.amazonaws.com/www/detection2.mov"></video>
+
+    <section class="front-section">
+      <h2>ऐप कैसे काम करता है?</h2>
+      <div class="features">
+        <div class="feature">
+          <h3>छत्तों का मॉडल बनाएँ</h3>
+          <p>जब मैदान में कागज़ी नोट संभालना कठिन हो जाए, तब कहाँ और क्यों कार्रवाई करनी है यह याद रखने के लिए छत्तों का मॉडल बनाएँ।</p>
+          <video autoplay loop muted playsinline src="https://gratheon.s3-accelerate.amazonaws.com/www/frame-management3.mov"></video>
+        </div>
+        <div class="feature">
+          <h3>फ्रेम फ़ोटो अपलोड करें</h3>
+          <p>फ्रेम की तस्वीरें लें और ऐप में अपलोड करें। Gratheon मधुमक्खियों का पता लगाकर उन्हें गिनता है ताकि कॉलोनी का आकार मापा जा सके।</p>
+          <img src="/assets/img/count.webp" alt="Bee count detection">
+        </div>
+        <div class="feature">
+          <h3>निरीक्षण सहेजें</h3>
+          <p>कॉलोनी के विकास को समय के साथ ट्रैक करें और बदलाव देखने के लिए उसी फ्रेम की तुलना करें।</p>
+          <img src="/assets/img/inspections.webp" alt="Inspection history">
+        </div>
+        <div class="feature">
+          <h3>Live Queen Finder</h3>
+          <p>निरीक्षण के दौरान फ़ोन कैमरा इस्तेमाल करें और Gratheon को फ्रेम स्कैन करते समय रानी जैसी पहचानें दिखाने दें।</p>
+          <a href="/about/products/web_app/free-tier/live-queen-finder/">
+            <img src="/assets/img/blog/img/live-queen-finder-detection-preview.webp" alt="Live Queen Finder camera detection">
+          </a>
+        </div>
+        <div class="feature">
+          <h3>संसाधनों का अनुमान लगाएँ</h3>
+          <p>सेल पहचानें और संसाधन अनुपात का अनुमान लगाएँ। कॉलोनियों के बीच नेक्टर और पराग संतुलित करने से भूखमरी रोकी जा सकती है।</p>
+          <img src="/assets/img/comb.webp" alt="Honeycomb cell analysis">
+        </div>
+        <div class="feature">
+          <h3>माइट संक्रमण मापें</h3>
+          <p>अल्कोहल वॉश टेस्ट से मधुमक्खियों को मारे बिना वर्रोआ माइट्स का पता लगाएँ और गिनें।</p>
+          <img src="/assets/img/varroa.webp" alt="Varroa detection">
+        </div>
+        <div class="feature">
+          <h3>AI से सीखें</h3>
+          <p>संभावित अगले कदमों पर बड़े भाषा मॉडल से एक बटन में सलाह पाने के लिए छत्ते का संदर्भ इस्तेमाल करें।</p>
+          <img src="/assets/img/llm.webp" alt="AI beekeeping assistant">
+        </div>
+        <div class="feature">
+          <h3>नोट्स लें</h3>
+          <p>फ्रेम के ऊपर ड्रॉ करने और महत्वपूर्ण क्षेत्रों को हाइलाइट करने के लिए iPad Pencil या माउस का उपयोग करें।</p>
+          <video autoplay loop muted playsinline src="https://gratheon.s3-accelerate.amazonaws.com/www/ipad3.mov"></video>
+        </div>
+        <div class="feature">
+          <h3>साझा करें</h3>
+          <p>छत्ता निरीक्षण मधुमक्खी पालन समुदाय के साथ साझा करें और विशेषज्ञ सलाह पाएँ।</p>
+          <img src="/assets/img/sharing.webp" alt="Public hive sharing">
+        </div>
+        <div class="feature">
+          <h3>मधुमक्खियों को देखें</h3>
+          <p>open-source Entrance Observer क्लाइंट, पुराने फ़ोन या Raspberry Pi से छत्ते के प्रवेश द्वारों की स्ट्रीमिंग करें।</p>
+          <iframe src="https://www.youtube.com/embed/oG791JNb1aA?autoplay=1&mute=1&loop=1" style="width:100%;height:201px;margin:0 auto;display:block" title="Bees at the beehive entrance" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="front-section" id="devices">
+      <h2>हार्डवेयर उत्पाद</h2>
+      <div class="device">
+        <div class="deviceText">
+          <h3>छत्ता सेंसर <span class="badge">प्रोटोटाइप चरण</span></h3>
+          <p>कॉलोनी विकास को पर्यावरणीय कारकों से जोड़ने के लिए तापमान, आर्द्रता, CO2, वायुदाब, ध्वनि और वजन मापें। सबसे किफ़ायती, डेटा और ऊर्जा-कुशल।</p>
+          <p class="deviceLinks">
+            <a href="https://github.com/Gratheon/beehive-sensors/" aria-label="Beehive sensors source code">
+              <svg class="linkIcon githubIcon" width="16" height="16" viewBox="0 0 1024 1024" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M512 0C229.12 0 0 229.12 0 512c0 226.56 146.56 418.56 350.08 486.4 25.6 4.48 35.2-10.88 35.2-24.32 0-12.16-.64-52.48-.64-95.36C256 902.4 222.72 847.36 212.48 818.56c-5.76-14.72-30.72-60.16-52.48-72.32-17.92-9.6-43.52-28.8-.64-29.44 40.32-.64 69.12 37.76 78.72 53.12 46.08 77.44 119.68 55.68 148.48 42.24 4.48-33.28 17.92-55.68 32.64-68.48-113.92-12.8-233.6-56.96-233.6-253.44 0-55.68 19.84-101.76 52.48-137.6-5.12-12.8-23.04-65.28 5.12-135.68 0 0 42.88-13.44 140.8 52.48 40.96-11.52 84.48-17.28 128-17.28s87.04 5.76 128 17.28c97.92-66.56 140.8-52.48 140.8-52.48 28.16 70.4 10.24 122.88 5.12 135.68 32.64 35.84 52.48 81.28 52.48 137.6 0 197.12-120.32 240.64-234.24 253.44 18.56 16 34.56 46.72 34.56 94.72 0 68.48-.64 123.52-.64 140.8 0 13.44 9.6 29.44 35.2 24.32C877.44 930.56 1024 738.56 1024 512 1024 229.12 794.88 0 512 0Z" fill="#1B1F23"/>
+              </svg> कोड</a>
+          </p>
+        </div>
+        <div class="deviceImgs">
+          <img src="/assets/img/sensors.webp" alt="Beehive sensors">
+          <img src="/assets/img/temp.webp" alt="Beehive temperature graph">
+        </div>
+      </div>
+      <div class="device">
+        <div class="deviceText">
+          <h3>Entrance Observer <span class="badge">MVP चरण</span></h3>
+          <p>प्रवेश द्वार का रियल-टाइम वीडियो फ़ीड पाएँ। रोज़ाना चारा लाने वाली मधुमक्खियों के नुकसान का अनुमान लगाने के लिए अंदर-बाहर आने वाली मधुमक्खियों को गिनें। मधुमक्खियों पर वर्रोआ माइट्स, पराग प्रवाह, लूट, वर्कर ओरिएंटेशन उड़ानें और रानी की mating flights पहचानें।</p>
+          <p class="deviceLinks">
+            <a href="https://github.com/Gratheon/entrance-observer/" aria-label="Entrance Observer source code">
+              <svg class="linkIcon githubIcon" width="16" height="16" viewBox="0 0 1024 1024" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M512 0C229.12 0 0 229.12 0 512c0 226.56 146.56 418.56 350.08 486.4 25.6 4.48 35.2-10.88 35.2-24.32 0-12.16-.64-52.48-.64-95.36C256 902.4 222.72 847.36 212.48 818.56c-5.76-14.72-30.72-60.16-52.48-72.32-17.92-9.6-43.52-28.8-.64-29.44 40.32-.64 69.12 37.76 78.72 53.12 46.08 77.44 119.68 55.68 148.48 42.24 4.48-33.28 17.92-55.68 32.64-68.48-113.92-12.8-233.6-56.96-233.6-253.44 0-55.68 19.84-101.76 52.48-137.6-5.12-12.8-23.04-65.28 5.12-135.68 0 0 42.88-13.44 140.8 52.48 40.96-11.52 84.48-17.28 128-17.28s87.04 5.76 128 17.28c97.92-66.56 140.8-52.48 140.8-52.48 28.16 70.4 10.24 122.88 5.12 135.68 32.64 35.84 52.48 81.28 52.48 137.6 0 197.12-120.32 240.64-234.24 253.44 18.56 16 34.56 46.72 34.56 94.72 0 68.48-.64 123.52-.64 140.8 0 13.44 9.6 29.44 35.2 24.32C877.44 930.56 1024 738.56 1024 512 1024 229.12 794.88 0 512 0Z" fill="#1B1F23"/>
+              </svg> कोड</a><br>
+            <a href="/assets/assets/entrance-observer-whitepaper.pdf" aria-label="Entrance Observer white paper PDF">
+              <svg class="linkIcon pdfIcon" width="16" height="16" viewBox="0 0 14 16" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.2 0.5h7.1L13 4.2v11.3H2.2z" fill="#fff" stroke="#111"/>
+                <path d="M9.2 0.8v3.7h3.6" fill="none" stroke="#111"/>
+                <path d="M0.7 7h12.6v4.2H0.7z" fill="#ed1c24" stroke="#111" stroke-width="0.4"/>
+                <text x="2" y="10.1" fill="#fff" font-family="Arial, sans-serif" font-size="2.9" font-weight="700">PDF</text>
+              </svg> White Paper</a>
+          </p>
+        </div>
+        <div class="deviceImgs">
+          <img src="/assets/img/observer.webp" alt="Entrance Observer">
+          <video autoplay loop muted playsinline src="/assets/img/counting.mov"></video>
+        </div>
+      </div>
+      <div class="device">
+        <div class="deviceText">
+          <h3>मॉड्यूलर रोबोटिक छत्ता <span class="badge">विचार चरण</span></h3>
+          <p>हमारा अंतिम लक्ष्य। मैकेनिकल फ्रेम निकासी से निरीक्षणों को स्वचालित करना। भारी छत्ता सेक्शन उठाने की ऊर्जा बचाना। निरीक्षणों से मधुमक्खियों की मृत्यु घटाना। दूरस्थ आंतरिक अवलोकन से दक्षता बढ़ाना और फील्ड ट्रिप का समय बचाना। अलर्ट नोटिफिकेशन से हमेशा अपडेट रहना और शहरी क्षेत्रों में पड़ोसियों को डंक से बचाना।</p>
+          <p class="deviceLinks">
+            <a href="https://github.com/Gratheon/robotic-beehive/" aria-label="Modular Robotic beehive source code">
+              <svg class="linkIcon githubIcon" width="16" height="16" viewBox="0 0 1024 1024" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M512 0C229.12 0 0 229.12 0 512c0 226.56 146.56 418.56 350.08 486.4 25.6 4.48 35.2-10.88 35.2-24.32 0-12.16-.64-52.48-.64-95.36C256 902.4 222.72 847.36 212.48 818.56c-5.76-14.72-30.72-60.16-52.48-72.32-17.92-9.6-43.52-28.8-.64-29.44 40.32-.64 69.12 37.76 78.72 53.12 46.08 77.44 119.68 55.68 148.48 42.24 4.48-33.28 17.92-55.68 32.64-68.48-113.92-12.8-233.6-56.96-233.6-253.44 0-55.68 19.84-101.76 52.48-137.6-5.12-12.8-23.04-65.28 5.12-135.68 0 0 42.88-13.44 140.8 52.48 40.96-11.52 84.48-17.28 128-17.28s87.04 5.76 128 17.28c97.92-66.56 140.8-52.48 140.8-52.48 28.16 70.4 10.24 122.88 5.12 135.68 32.64 35.84 52.48 81.28 52.48 137.6 0 197.12-120.32 240.64-234.24 253.44 18.56 16 34.56 46.72 34.56 94.72 0 68.48-.64 123.52-.64 140.8 0 13.44 9.6 29.44 35.2 24.32C877.44 930.56 1024 738.56 1024 512 1024 229.12 794.88 0 512 0Z" fill="#1B1F23"/>
+              </svg> कोड</a>
+          </p>
+        </div>
+        <div class="deviceImgs">
+          <video autoplay loop muted playsinline src="https://gratheon.s3-accelerate.amazonaws.com/video/linear-actuator.mp4"></video>
+        </div>
+      </div>
+    </section>
+
+    <section class="front-story" id="content">
+      <article>
+        <h2>मधुमक्खी पालन का भविष्य बनाएँ</h2>
+        <div class="author">
+          <div>
+            <a href="https://twitter.com/tot_ra" aria-label="Artjom Kurapov on Twitter">
+              <img src="/assets/img/artjom.jpg" alt="author photo" width="50" height="50">
+            </a>
+          </div>
+          <div>
+            लेखक <a href="https://www.linkedin.com/in/kurapov/">Artjom Kurapov</a>,<br>मधुमक्खी पालक, founding engineer
+          </div>
+        </div>
+        <p>मैं एक सॉफ़्टवेयर इंजीनियर हूँ और 5 साल पहले अपने बगीचे के परागण को सुधारने और बेहतर उपज पाने के लिए मधुमक्खी पालक बना। मेरे लिए मधुमक्खियाँ प्यारी और रोचक साथी भी हैं।</p>
+        <p>मधुमक्खियाँ हमारी खाद्य सुरक्षा के लिए प्रमुख प्रजाति हैं। किसान सटीक परागण के माध्यम से उपज बढ़ाने के लिए मधुमक्खी पालकों के साथ सहयोग करते हैं।</p>
+        <p>पारंपरिक मधुमक्खी पालन में कॉलोनी की observability ज़रूरी है, क्योंकि मधुमक्खियाँ भूख, रानी की हानि, देर से swarm, या Varroa destructor संक्रमण झेल सकती हैं, जो कॉलोनी को कमजोर कर सर्दियों में collapse करा सकता है।</p>
+        <p>Observability आमतौर पर कठिन शारीरिक श्रम और बार-बार, सीमित समय वाले निरीक्षणों से मिलती है। गर्मियों में protective suit पहनकर, आपको 150 साल पहले डिज़ाइन किए गए 20 kg छत्ता सेक्शन उठाने पड़ते हैं और बचाव करती मधुमक्खियों के डंक खाते हुए छोटे विवरण देखने पड़ते हैं, जिससे निरीक्षण तनाव बनता है और मधुमक्खियाँ मरती हैं।</p>
+        <p>जैसे-जैसे apiary बढ़ती है, यह काम scalable नहीं रहता। औद्योगिक मधुमक्खी पालकों की कई apiaries दूर-दराज़ और कठिन पहुँच वाली जगहों पर होती हैं। मौजूदा समाधान इन समस्याओं को पर्याप्त रूप से हल नहीं करते।</p>
+        <p>💡 हमारा लक्ष्य मधुमक्खी पालकों को observability और automation में मदद करना है। हमारी दृष्टि पूरी तरह autonomous multi-hive Robotic Apiary है, जो कॉलोनियों का दूर से निरीक्षण कर सके। हम software से शुरुआत करके इसे चरण-दर-चरण हासिल करेंगे।</p>
+        <p>Actionable metrics और automation देकर मधुमक्खी पालक अधिक कुशल बनते हैं, मैदान में कम समय बिताते हैं और अधिक विश्लेषण करते हैं, केवल ज़रूरत पड़ने पर सटीक हस्तक्षेप करते हैं।</p>
+        <div class="future">
+          <div>
+            <p>Gratheon ऐप open-source software पर बना है और स्वयं भी पूरी तरह open source है।</p>
+            <p>दुनिया भर की 100 मिलियन मधुमक्खी कॉलोनियों का जीवन सुधारने और बढ़ती परागण मांग पूरी करने के लिए हमारे साथ जुड़ें। हम विकास को scale करने के लिए investors, टीम में शामिल होने के लिए engineers, field testing के लिए beekeepers और मार्गदर्शन के लिए advisors खोज रहे हैं।</p>
+            <p>कोई विचार है?</p>
+            <p class="futureActions">
+              <a class="action action_green" href="https://discord.gg/PcbP4uedWj">Discord पर हमें बताएं</a>
+              <a class="action blue" href="https://app.gratheon.com/account/register">साइन अप करें</a>
+            </p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <iframe
+      class="authorIntro"
+      title="लेखक परिचय"
+      src="https://www.youtube.com/embed/gM3AJEAhmXc?rel=0"
+      frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+
+    <div class="brandStripe" aria-hidden="true">
+      <div class="brandStripeYellow"></div>
+      <div class="brandStripeGreen"></div>
+      <div class="brandStripeBlue"></div>
+    </div>
+  </main>
+
+  {{template "gratheon_footer" .}}
+  {{if .JSPath}}<script defer src="{{.JSPath}}"></script>{{end}}
+</body>
+</html>
+{{end}}

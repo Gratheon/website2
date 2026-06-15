@@ -65,3 +65,14 @@ runuser -u www -- git -C /www/website reset --hard origin/main
   - `content/pricing.md` → `templates/pricing.html`
 
 Legacy Docusaurus files have been removed; `content/` is the source of truth.
+
+## Internationalization
+
+The site supports the same language list as `~/git/gratheon/web-app/src/config/languages.ts`:
+`en`, `ru`, `et`, `tr`, `pl`, `de`, `fr`, `zh`, `hi`, `es`, `ar`, `bn`, `pt`, `ja`.
+
+Language URLs are generated from `content/<lang>/index.md` and exposed in the text-only language switcher in `templates/gratheon.html` (no country flags). The root `/` remains the default English front page, while `/en/`, `/ru/`, `/et/`, etc. are explicit localized front-page URLs.
+
+Only the front page is translated for now. Each language has a duplicated standalone front-page template (`templates/front-en.html`, `templates/front-ru.html`, etc.), and `content/<lang>/index.md` points directly to its template with `layout: front-<lang>`. This intentionally avoids a complex translation-router/template-partial layer. When changing shared front-page markup, update each `templates/front-*.html` copy or regenerate them manually from the preferred source.
+
+Top-level translated placeholders such as `/<lang>/about/`, `/<lang>/docs/`, `/<lang>/blog/`, `/<lang>/pricing/`, and `/<lang>/research/` intentionally redirect to the current English sections until those sections are fully localized. Replace those redirect Markdown files with real translated content during per-language localization.
