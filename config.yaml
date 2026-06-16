@@ -12,9 +12,9 @@ i18n:
   browserRedirect:
     enabled: false
   languages:
-    - code: "en"
-      label: "English"
-      aliases: ["en", "en-us", "en-gb"]
+    - code: "et"
+      label: "Eesti"
+      aliases: ["et", "et-ee"]
 
 author:
   name: "Gratheon OÜ"
@@ -31,26 +31,38 @@ navigation:
     enabled: true
     items:
       - title: "About"
-        path: "about"
+        url: "/about/"
+        languages: ["en"]
       - title: "Products"
-        path: "about/products"
+        url: "/about/products/"
+        languages: ["en"]
       - title: "Docs"
-        path: "docs"
+        url: "/docs/"
+        languages: ["en"]
       - title: "Research"
-        path: "research"
+        url: "/research/"
+        languages: ["en"]
       - title: "Blog"
-        path: "blog"
+        url: "/blog/"
+        languages: ["en"]
+      - title: "Blogi"
+        url: "/et/blog/"
+        languages: ["et"]
       - title: "Pricing"
-        path: "pricing"
+        url: "/pricing/"
+        languages: ["en"]
       - title: "Discord"
         url: "https://discord.gg/PcbP4uedWj"
         class: "nav-action nav-action-first"
+        languages: ["en"]
       - title: "GitHub"
         url: "https://github.com/gratheon/web-app"
         class: "nav-action"
+        languages: ["en"]
       - title: "Log in"
         url: "https://app.gratheon.com/account/authenticate/"
         class: "nav-action"
+        languages: ["en"]
   sidebar:
     collapsed: true
     maxDepth: 4
