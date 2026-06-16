@@ -1,5 +1,6 @@
 ---
 title: Документация
+navTitle: "Документация"
 slug: ""
 showChildren: true
 ---

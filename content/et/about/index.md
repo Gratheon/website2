@@ -1,6 +1,6 @@
 ---
 title: Ülevaade
-navTitle: Meist
+navTitle: "Meist"
 sidebar_position: 0
 ---
 Gratheon aitab mesinikel kaitsta mesilasi, mõista mesilaspere arengut ja laiendada tegevust nutikate taruseadmete ning andmeanalüütika abil. See toetab tolmeldamist ja tugevdab üleilmset toidujulgeolekut.

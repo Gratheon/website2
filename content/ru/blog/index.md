@@ -1,5 +1,6 @@
 ---
 title: "Блог"
+navTitle: "Блог"
 slug: ""
 hideNav: true
 ---
