@@ -1,0 +1,6 @@
+---
+title: "Jetson Nano"
+---
+
+- hind: 230 EUR
+- URL: https://www.amazon.de/-/en/NVIDIA-Jetson-Nano-Developer-945-13450-0000-100/dp/B084DSDDLT

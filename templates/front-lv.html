@@ -1,0 +1,203 @@
+{{define "front-lv"}}
+{{/*
+  WHY: /lv/ needs native marketing copy without changing the canonical English page.
+  WHAT: This standalone template translates visible copy while preserving product names, links, and media assets.
+*/}}
+{{template "gratheon_head" .}}
+<body class="front-page">
+  {{template "gratheon_header" .}}
+
+  <main>
+    <div id="splash">
+      <header id="front">
+        <video id="bgVideo" autoplay loop muted playsinline src="https://gratheon.s3-accelerate.amazonaws.com/video/01.mp4"></video>
+        <div class="headerContentContainer">
+          <div id="splash_internal">
+            <div>Bišu stropu datu analītika</div>
+            <p>Saudzējiet bites, laiku un spēku</p>
+          </div>
+          <div class="installButtons">
+            <a class="signup blue" href="https://app.gratheon.com/account/register?lang={{.Page.Language}}">Izmēģināt bez maksas</a>
+            <div class="platformDownloads">
+              <a href="https://play.google.com/store/apps/details?id=com.gratheon.app.twa"><img class="googlePlayBadge no-transform" height="50" src="/assets/img/google.png" alt="Google Play"></a>
+              <a href="https://github.com/Gratheon/web-app/releases/latest" data-latest-release="mac"><img class="desktopDownloadIcon no-transform" src="/assets/img/mac.png" alt="Lejupielādēt macOS ARM"></a>
+              <a href="https://github.com/Gratheon/web-app/releases/latest" data-latest-release="windows"><img class="desktopDownloadIcon no-transform" src="/assets/img/windows-full.webp" alt="Lejupielādēt Windows"></a>
+              <a href="https://github.com/Gratheon/web-app/releases/latest" data-latest-release="linux"><img class="desktopDownloadIcon no-transform" src="/assets/img/linux.png" alt="Lejupielādēt Linux"></a>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <video id="showcase" autoplay loop muted playsinline src="https://gratheon.s3-accelerate.amazonaws.com/www/detection2.mov"></video>
+
+    <section class="front-section">
+      <h2>Kā lietotne darbojas?</h2>
+      <div class="features">
+        <div class="feature">
+          <h3>Modelējiet stropus</h3>
+          <p>Modelējiet stropus, lai laukā atcerētos, kur un kāpēc jārīkojas, kad papīra pierakstus kļūst grūti uzturēt.</p>
+          <video autoplay loop muted playsinline src="https://gratheon.s3-accelerate.amazonaws.com/www/frame-management3.mov"></video>
+        </div>
+        <div class="feature">
+          <h3>Augšupielādējiet rāmju fotogrāfijas</h3>
+          <p>Nofotografējiet rāmjus un augšupielādējiet tos lietotnē. Gratheon atpazīst un skaita bites, lai novērtētu saimes lielumu.</p>
+          <img src="/assets/img/count.webp" alt="Bišu skaita noteikšana">
+        </div>
+        <div class="feature">
+          <h3>Saglabājiet apskates</h3>
+          <p>Sekojiet saimes attīstībai laika gaitā un salīdziniet to pašu rāmi, lai redzētu izmaiņas saimē.</p>
+          <img src="/assets/img/inspections.webp" alt="Apskašu vēsture">
+        </div>
+        <div class="feature">
+          <h3>Live Queen Finder</h3>
+          <p>Izmantojiet tālruņa kameru apskates laikā, un Gratheon norādīs uz karalienei līdzīgiem atradumiem, kamēr skenējat rāmi.</p>
+          <a href="/about/products/web_app/free-tier/live-queen-finder/">
+            <img src="/assets/img/blog/img/live-queen-finder-detection-preview.webp" alt="Live Queen Finder kameras noteikšana">
+          </a>
+        </div>
+        <div class="feature">
+          <h3>Novērtējiet resursus</h3>
+          <p>Atpazīstiet šūnas un novērtējiet resursu proporcijas. Nektāra un ziedputekšņu līdzsvarošana starp saimēm var novērst badu.</p>
+          <img src="/assets/img/comb.webp" alt="Medus kāres šūnu analīze">
+        </div>
+        <div class="feature">
+          <h3>Izmēriet ērču invāziju</h3>
+          <p>Atpazīstiet un saskaitiet Varroa ērces, nenogalinot bites ar spirta mazgāšanas testu.</p>
+          <img src="/assets/img/varroa.webp" alt="Varroa noteikšana">
+        </div>
+        <div class="feature">
+          <h3>Mācieties no AI</h3>
+          <p>Izmantojiet stropa kontekstu, lai ar vienu pogu saņemtu lielā valodas modeļa ieteikumus par nākamajiem soļiem.</p>
+          <img src="/assets/img/llm.webp" alt="AI biškopības asistents">
+        </div>
+        <div class="feature">
+          <h3>Veiciet piezīmes</h3>
+          <p>Izmantojiet iPad Pencil vai peli, lai zīmētu virs rāmja un izceltu svarīgas zonas.</p>
+          <video autoplay loop muted playsinline src="https://gratheon.s3-accelerate.amazonaws.com/www/ipad3.mov"></video>
+        </div>
+        <div class="feature">
+          <h3>Kopīgojiet</h3>
+          <p>Kopīgojiet stropu apskates ar biškopju kopienu un saņemiet ekspertu padomus.</p>
+          <img src="/assets/img/sharing.webp" alt="Publiska stropu kopīgošana">
+        </div>
+        <div class="feature">
+          <h3>Novērojiet bites</h3>
+          <p>Straumējiet stropu skrejas, izmantojot atvērtā koda Entrance Observer klientu, neizmantotu tālruni vai Raspberry Pi.</p>
+          <iframe src="https://www.youtube.com/embed/oG791JNb1aA?autoplay=1&mute=1&loop=1" style="width:100%;height:201px;margin:0 auto;display:block" title="Bites pie stropa skrejas" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="front-section" id="devices">
+      <h2>Aparatūras produkti</h2>
+      <div class="device">
+        <div class="deviceText">
+          <h3>Stropu sensori <span class="badge">prototipa fāze</span></h3>
+          <p>Mēriet temperatūru, mitrumu, CO2 līmeni, barometrisko spiedienu, skaņu un svaru, lai sasaistītu saimes attīstību ar vides faktoriem. Ļoti pieejami, datu un enerģijas ziņā efektīvi.</p>
+          <p class="deviceLinks">
+            <a href="https://github.com/Gratheon/beehive-sensors/" aria-label="Stropu sensoru pirmkods">
+              <svg class="linkIcon githubIcon" width="16" height="16" viewBox="0 0 1024 1024" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M512 0C229.12 0 0 229.12 0 512c0 226.56 146.56 418.56 350.08 486.4 25.6 4.48 35.2-10.88 35.2-24.32 0-12.16-.64-52.48-.64-95.36C256 902.4 222.72 847.36 212.48 818.56c-5.76-14.72-30.72-60.16-52.48-72.32-17.92-9.6-43.52-28.8-.64-29.44 40.32-.64 69.12 37.76 78.72 53.12 46.08 77.44 119.68 55.68 148.48 42.24 4.48-33.28 17.92-55.68 32.64-68.48-113.92-12.8-233.6-56.96-233.6-253.44 0-55.68 19.84-101.76 52.48-137.6-5.12-12.8-23.04-65.28 5.12-135.68 0 0 42.88-13.44 140.8 52.48 40.96-11.52 84.48-17.28 128-17.28s87.04 5.76 128 17.28c97.92-66.56 140.8-52.48 140.8-52.48 28.16 70.4 10.24 122.88 5.12 135.68 32.64 35.84 52.48 81.28 52.48 137.6 0 197.12-120.32 240.64-234.24 253.44 18.56 16 34.56 46.72 34.56 94.72 0 68.48-.64 123.52-.64 140.8 0 13.44 9.6 29.44 35.2 24.32C877.44 930.56 1024 738.56 1024 512 1024 229.12 794.88 0 512 0Z" fill="#1B1F23"/>
+              </svg> Kods</a>
+          </p>
+        </div>
+        <div class="deviceImgs">
+          <img src="/assets/img/sensors.webp" alt="Stropu sensori">
+          <img src="/assets/img/temp.webp" alt="Stropa temperatūras grafiks">
+        </div>
+      </div>
+      <div class="device">
+        <div class="deviceText">
+          <h3>Entrance Observer <span class="badge">MVP fāze</span></h3>
+          <p>Saņemiet stropa skrejas video plūsmu reāllaikā. Skaitiet bites, kas ienāk un iziet, lai novērtētu dienas zudumus lidojošajām bitēm. Atpazīstiet Varroa ērces uz bitēm. Sekojiet ziedputekšņu plūsmai. Atpazīstiet laupīšanu, darba bišu orientācijas lidojumus un karalienes pārošanās lidojumus.</p>
+          <p class="deviceLinks">
+            <a href="https://github.com/Gratheon/entrance-observer/" aria-label="Entrance Observer pirmkods">
+              <svg class="linkIcon githubIcon" width="16" height="16" viewBox="0 0 1024 1024" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M512 0C229.12 0 0 229.12 0 512c0 226.56 146.56 418.56 350.08 486.4 25.6 4.48 35.2-10.88 35.2-24.32 0-12.16-.64-52.48-.64-95.36C256 902.4 222.72 847.36 212.48 818.56c-5.76-14.72-30.72-60.16-52.48-72.32-17.92-9.6-43.52-28.8-.64-29.44 40.32-.64 69.12 37.76 78.72 53.12 46.08 77.44 119.68 55.68 148.48 42.24 4.48-33.28 17.92-55.68 32.64-68.48-113.92-12.8-233.6-56.96-233.6-253.44 0-55.68 19.84-101.76 52.48-137.6-5.12-12.8-23.04-65.28 5.12-135.68 0 0 42.88-13.44 140.8 52.48 40.96-11.52 84.48-17.28 128-17.28s87.04 5.76 128 17.28c97.92-66.56 140.8-52.48 140.8-52.48 28.16 70.4 10.24 122.88 5.12 135.68 32.64 35.84 52.48 81.28 52.48 137.6 0 197.12-120.32 240.64-234.24 253.44 18.56 16 34.56 46.72 34.56 94.72 0 68.48-.64 123.52-.64 140.8 0 13.44 9.6 29.44 35.2 24.32C877.44 930.56 1024 738.56 1024 512 1024 229.12 794.88 0 512 0Z" fill="#1B1F23"/>
+              </svg> Kods</a><br>
+            <a href="/assets/assets/entrance-observer-whitepaper.pdf" aria-label="Entrance Observer tehniskais apraksts PDF">
+              <svg class="linkIcon pdfIcon" width="16" height="16" viewBox="0 0 14 16" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.2 0.5h7.1L13 4.2v11.3H2.2z" fill="#fff" stroke="#111"/>
+                <path d="M9.2 0.8v3.7h3.6" fill="none" stroke="#111"/>
+                <path d="M0.7 7h12.6v4.2H0.7z" fill="#ed1c24" stroke="#111" stroke-width="0.4"/>
+                <text x="2" y="10.1" fill="#fff" font-family="Arial, sans-serif" font-size="2.9" font-weight="700">PDF</text>
+              </svg> Tehniskais apraksts</a>
+          </p>
+        </div>
+        <div class="deviceImgs">
+          <img src="/assets/img/observer.webp" alt="Entrance Observer">
+          <video autoplay loop muted playsinline src="/assets/img/counting.mov"></video>
+        </div>
+      </div>
+      <div class="device">
+        <div class="deviceText">
+          <h3>Modulārs robotizēts strops <span class="badge">idejas fāze</span></h3>
+          <p>Mūsu galīgais mērķis. Automatizēt apskates ar mehānisku rāmju izņemšanu. Taupīt spēkus, neceļot smagas stropa daļas. Samazināt bišu bojāeju apskašu laikā. Uzlabot efektivitāti ar attālinātu iekšējo novērošanu un mazāk braucieniem uz dravu. Vienmēr būt informētiem ar brīdinājumiem. Saglabāt kaimiņus pilsētvidē bez dzēlieniem.</p>
+          <p class="deviceLinks">
+            <a href="https://github.com/Gratheon/robotic-beehive/" aria-label="Modulārā robotizētā stropa pirmkods">
+              <svg class="linkIcon githubIcon" width="16" height="16" viewBox="0 0 1024 1024" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M512 0C229.12 0 0 229.12 0 512c0 226.56 146.56 418.56 350.08 486.4 25.6 4.48 35.2-10.88 35.2-24.32 0-12.16-.64-52.48-.64-95.36C256 902.4 222.72 847.36 212.48 818.56c-5.76-14.72-30.72-60.16-52.48-72.32-17.92-9.6-43.52-28.8-.64-29.44 40.32-.64 69.12 37.76 78.72 53.12 46.08 77.44 119.68 55.68 148.48 42.24 4.48-33.28 17.92-55.68 32.64-68.48-113.92-12.8-233.6-56.96-233.6-253.44 0-55.68 19.84-101.76 52.48-137.6-5.12-12.8-23.04-65.28 5.12-135.68 0 0 42.88-13.44 140.8 52.48 40.96-11.52 84.48-17.28 128-17.28s87.04 5.76 128 17.28c97.92-66.56 140.8-52.48 140.8-52.48 28.16 70.4 10.24 122.88 5.12 135.68 32.64 35.84 52.48 81.28 52.48 137.6 0 197.12-120.32 240.64-234.24 253.44 18.56 16 34.56 46.72 34.56 94.72 0 68.48-.64 123.52-.64 140.8 0 13.44 9.6 29.44 35.2 24.32C877.44 930.56 1024 738.56 1024 512 1024 229.12 794.88 0 512 0Z" fill="#1B1F23"/>
+              </svg> Kods</a>
+          </p>
+        </div>
+        <div class="deviceImgs">
+          <video autoplay loop muted playsinline src="https://gratheon.s3-accelerate.amazonaws.com/video/linear-actuator.mp4"></video>
+        </div>
+      </div>
+    </section>
+
+    <section class="front-story" id="content">
+      <article>
+        <h2>Veidojiet biškopības nākotni</h2>
+        <div class="author">
+          <div>
+            <a href="https://twitter.com/tot_ra" aria-label="Artjom Kurapov Twitter profilā">
+              <img src="/assets/img/artjom.jpg" alt="autora foto" width="50" height="50">
+            </a>
+          </div>
+          <div>
+            Autors <a href="https://www.linkedin.com/in/kurapov/">Artjom Kurapov</a>,<br>biškopis, dibinātājs-inženieris
+          </div>
+        </div>
+        <p>Esmu programmatūras inženieris, un pirms 5 gadiem kļuvu par biškopi, lai uzlabotu sava dārza apputeksnēšanu un iegūtu lielāku ražu. Man bites ir arī jauki un interesanti mājdzīvnieki.</p>
+        <p>Bites ir būtiska suga mūsu pārtikas drošībai. Lauksaimnieki sadarbojas ar biškopjiem, lai ar precīzu apputeksnēšanu palielinātu ražu.</p>
+        <p>Tradicionālajai biškopībai nepieciešama bišu saimes novērojamība, jo bites var ciest badu, zaudēt karalieni, vēlīni spietot vai iegūt Varroa destructor ērču invāziju, kas novājina saimi un izraisa bojāeju pārziemošanas laikā.</p>
+        <p>Novērojamību parasti panāk ar smagu fizisku darbu un biežām, laikā ierobežotām apskatēm. Aizsargtērpā, vasaras karstumā, jāceļ 20 kg smagas stropa daļas, kas projektētas pirms 150 gadiem, un jāievēro sīkas detaļas, kamēr aizsargājošās bites dzeļ, radot apskates stresu un nogalinot bites.</p>
+        <p>Kad drava aug, šis darbs vairs nemērogojas. Industriālajiem biškopjiem ir vairākas dravas attālās, grūti sasniedzamās vietās. Esošie risinājumi šīs problēmas neatrisina pietiekami.</p>
+        <p>💡 Mūsu mērķis ir palīdzēt biškopjiem ar novērojamību un automatizāciju. Mūsu vīzija ir pilnībā autonoma robotizēta vairāku stropu drava, kas var attālināti pārbaudīt saimes. Mēs to sasniegsim soli pa solim, sākot ar programmatūru.</p>
+        <p>Sniedzot praktiski izmantojamus rādītājus un automatizāciju, biškopji kļūst efektīvāki, pavada mazāk laika laukā un vairāk analizē, veicot precīzu iejaukšanos tikai tad, kad tā nepieciešama.</p>
+        <div class="future">
+          <div>
+            <p>Gratheon lietotne balstās uz atvērtā koda programmatūru un pati ir pilnībā atvērtā koda.</p>
+            <p>Pievienojieties mums, lai uzlabotu 100 miljonu bišu saimju dzīvi visā pasaulē un apmierinātu pieaugošo apputeksnēšanas pieprasījumu. Mēs meklējam investorus attīstības mērogošanai, inženierus komandai, biškopjus lauka testiem un padomdevējus.</p>
+            <p>Ir idejas?</p>
+            <p class="futureActions">
+              <a class="action action_green" href="https://discord.gg/PcbP4uedWj">Pastāstiet Discord</a>
+              <a class="action blue" href="https://app.gratheon.com/account/register?lang={{.Page.Language}}">Reģistrēties</a>
+            </p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <iframe
+      class="authorIntro"
+      title="Autora ievads"
+      src="https://www.youtube.com/embed/gM3AJEAhmXc?rel=0"
+      frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+
+    <div class="brandStripe" aria-hidden="true">
+      <div class="brandStripeYellow"></div>
+      <div class="brandStripeGreen"></div>
+      <div class="brandStripeBlue"></div>
+    </div>
+  </main>
+
+  {{template "gratheon_footer" .}}
+  {{if .JSPath}}<script defer src="{{.JSPath}}"></script>{{end}}
+</body>
+</html>
+{{end}}

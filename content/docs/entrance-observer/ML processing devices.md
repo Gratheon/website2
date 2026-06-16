@@ -19,8 +19,8 @@
 | AMD                  | Spartan 7                                                 |          |
 |                      |                                                           |          |
 
-![](../img/NVIDIA-Jetson-Orin-Production-Modules--1536x888.jpg.webp)
-![](../img/Screenshot%202024-10-20%20at%2000.12.49.png)
+![](docs/img/NVIDIA-Jetson-Orin-Production-Modules--1536x888.jpg.webp)
+![](docs/img/Screenshot%202024-10-20%20at%2000.12.49.png)
 
-![](../img/Screenshot%202024-10-20%20at%2000.12.01.png)
+![](docs/img/Screenshot%202024-10-20%20at%2000.12.01.png)
 

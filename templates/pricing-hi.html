@@ -1,0 +1,183 @@
+{{define "pricing-hi"}}
+{{/*
+  WHY: /hi/pricing/ is localized independently without changing the canonical English pricing page.
+  WHAT: This standalone copy keeps plan names and prices exact while translating descriptions,
+  features, limits, and CTAs for the localized route only.
+*/}}
+{{template "gratheon_head" .}}
+<body class="pricing-page-no-sidebar">
+  {{template "gratheon_header" .}}
+
+  <main class="pricing-page-wrapper">
+    <div class="pricing-page-header">
+      <h1 class="pricing-page-title">⚖️ मूल्य निर्धारण योजनाएँ</h1>
+      <p class="pricing-page-subtitle">सरल शुरुआत करें, बढ़ने पर एआई और ऑटोमेशन अनलॉक करें, और अतिरिक्त क्षमता केवल ज़रूरत होने पर जोड़ें।</p>
+    </div>
+
+    <div class="pricing-container">
+      <div class="pricing-card" data-tier="free">
+        <div class="pricing-card-header">
+          <div class="pricing-card-title">Free</div>
+          <div class="pricing-card-price">Free</div>
+          <div class="pricing-card-description">मुख्य मधुमक्खीपालन रिकॉर्ड आज़माएँ</div>
+        </div>
+        <div class="pricing-card-body">
+          <div class="pricing-features-section">
+            <h4>सुविधाएँ</h4>
+            <ul class="pricing-card-features">
+              <li><span class="feature-icon" aria-hidden="true">📦</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/apiary-management/">एपियरी और छत्ते का प्रबंधन</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🖼️</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/frame-side-management/">फ्रेम फोटो अपलोड</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">⌨️</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/ideas%20💡/keyboard-shortcuts-support/">कीबोर्ड समर्थन</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">♻️</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/public-beehive-view/">सार्वजनिक छत्ता साझा करना</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🔗</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/qr-code-generation/">QR कोड जनरेशन</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">📅</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/varroa-treatment-diary/">उपचार डायरी</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🍭</span><span class="feature-text"><a href="/about/products/web_app/free-tier/feeding-history/">फ़ीडिंग इतिहास</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">👑</span><span class="feature-text"><a href="/about/products/web_app/free-tier/live-queen-finder/">लाइव रानी मधुमक्खी खोज</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">♻️</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/hive-ownership-transfer/">छत्ते का स्वामित्व हस्तांतरण (विकासाधीन)</a></span></li>
+            </ul>
+          </div>
+          <div class="pricing-limitations-section">
+            <h4>सीमाएँ</h4>
+            <ul class="pricing-card-limits">
+              <li>3 छत्तों तक</li>
+              <li>प्रति छत्ता अधिकतम 10 फ्रेम</li>
+              <li>सर्वर-साइड एआई इमेज प्रोसेसिंग क्रेडिट नहीं</li>
+              <li>6 महीने तक इमेज रिटेंशन</li>
+            </ul>
+          </div>
+        </div>
+        <div class="pricing-card-footer"><a href="https://app.gratheon.com/account/register?lang={{.Page.Language}}" class="pricing-button">शुरू करें</a></div>
+      </div>
+
+      <div class="pricing-card hobbyist" data-tier="hobbyist">
+        <div class="pricing-card-header">
+          <div class="pricing-card-title">Hobbyist</div>
+          <div class="pricing-card-price">€5<span class="price-period"> / month</span></div>
+          <div class="pricing-card-description">नियमित नोट्स और फोटो लॉग के लिए</div>
+        </div>
+        <div class="pricing-card-body">
+          <div class="pricing-features-section">
+            <h4>सुविधाएँ</h4>
+            <ul class="pricing-card-features">
+              <li><span class="feature-icon" aria-hidden="true">📦</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/hive-management/">डेटाबेस में बुनियादी डेटा प्रबंधन</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🖼️</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/frame-side-management/">फ्रेम फोटो अपलोड और संग्रहण</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🗺️</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/hive-placement-planner/">छत्ता प्लेसमेंट प्लानर</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">📓</span><span class="feature-text"><a href="/about/products/web_app/starter-tier/inspection-management/">निरीक्षण नोट्स</a> और <a href="/about/products/web_app/hobbyist-tier/varroa-treatment-diary/">उपचार डायरी</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">↔️</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/split-bee-colony/">कॉलोनी विभाजन प्रबंधन</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🫶🏻</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/join-bee-colonies/">कॉलोनी जोड़ने का टूल</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🛠</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/inventory-management/">गोदाम इन्वेंटरी प्रबंधन</a></span></li>
+            </ul>
+          </div>
+          <div class="pricing-limitations-section">
+            <h4>सीमाएँ</h4>
+            <ul class="pricing-card-limits">
+              <li>15 छत्तों तक</li>
+              <li>1 उपयोगकर्ता खाता</li>
+              <li>एआई इमेज प्रोसेसिंग सुविधाएँ नहीं</li>
+              <li>1 वर्ष तक इमेज रिटेंशन</li>
+            </ul>
+          </div>
+        </div>
+        <div class="pricing-card-footer"><a href="https://app.gratheon.com/account/register?lang={{.Page.Language}}" class="pricing-button">Hobbyist शुरू करें</a></div>
+      </div>
+
+      <div class="pricing-card simple featured" data-tier="starter">
+        <div class="pricing-card-header">
+          <div class="pricing-card-title">Starter</div>
+          <div class="pricing-card-price">
+            <div class="price-monthly">€22<span class="price-period"> / month</span></div>
+            <div class="price-yearly-group"><span class="price-yearly">€144 / year</span><small class="price-discount">वार्षिक बिलिंग पर 45% बचाएँ</small></div>
+          </div>
+          <div class="pricing-card-description">एआई-संचालित वर्कफ़्लो अनलॉक करें</div>
+        </div>
+        <div class="pricing-card-body">
+          <div class="pricing-features-section">
+            <h4>सुविधाएँ</h4>
+            <ul class="pricing-card-features">
+              <li><span class="feature-icon" aria-hidden="true">🐝</span><span class="feature-text"><a href="/about/products/web_app/starter-tier/honeycomb-cell-detection-management/">सेल विश्लेषण</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🦀</span><span class="feature-text"><a href="/about/products/web_app/starter-tier/hive-bottom-varroa-count/">छत्ते के तल बोर्ड पर वर्रोआ गिनती</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🔎</span><span class="feature-text"><a href="/about/products/web_app/starter-tier/inspection-management/">निरीक्षण प्रबंधन</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">✏️</span><span class="feature-text"><a href="/about/products/web_app/starter-tier/drawing-on-canvas/">फ्रेम एनोटेशन टूल</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🤖</span><span class="feature-text"><a href="/about/products/web_app/starter-tier/beekeeping-advice-with-llm/">एआई मधुमक्खीपालन सहायक</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🖼️</span><span class="feature-text"><a href="/about/products/web_app/starter-tier/honeycomb-cell-detection-management/">मासिक एआई इमेज विश्लेषण क्रेडिट शामिल</a></span></li>
+            </ul>
+          </div>
+          <div class="pricing-limitations-section">
+            <h4>सीमाएँ</h4>
+            <ul class="pricing-card-limits">
+              <li>1 उपयोगकर्ता खाता</li>
+              <li>50 छत्तों तक</li>
+              <li>प्रति छत्ता 30 फ्रेम</li>
+              <li>2 वर्ष तक इमेज रिटेंशन</li>
+              <li>एआई विश्लेषण मात्रा प्रति माह सीमित</li>
+              <li>मिश्रित वास्तविक उपयोग: ~100–130 एआई प्रॉम्प्ट/माह</li>
+            </ul>
+          </div>
+        </div>
+        <div class="pricing-card-footer"><a href="https://app.gratheon.com/account/register?lang={{.Page.Language}}" class="pricing-button">मुफ़्त परीक्षण शुरू करें</a></div>
+      </div>
+
+      <div class="pricing-card featured professional" data-tier="professional">
+        <div class="pricing-card-header">
+          <div class="pricing-card-title">Professional</div>
+          <div class="pricing-card-price">
+            <div class="price-monthly">€55<span class="price-period"> / month</span></div>
+            <div class="price-yearly-group"><span class="price-yearly">(€396 / year)</span><small class="price-discount">वार्षिक बिलिंग पर 40% बचाएँ</small></div>
+          </div>
+          <div class="pricing-card-description">बढ़ती एपियरी और टीमों के लिए</div>
+        </div>
+        <div class="pricing-card-body">
+          <div class="pricing-features-section">
+            <h4>सुविधाएँ</h4>
+            <ul class="pricing-card-features">
+              <li><span class="feature-icon" aria-hidden="true">✅</span><span class="feature-text"><a href="/about/products/web_app/starter-tier/">Starter में सब कुछ</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">📦</span><span class="feature-text"><a href="/about/products/web_app/pro-tier/hive-telemetry-storage/">छत्ता टेलीमेट्री संग्रहण</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">📈</span><span class="feature-text"><a href="/about/products/web_app/pro-tier/timeseries-data-analytics/">टाइमसीरीज़ डेटा एनालिटिक्स</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">⚖️</span><span class="feature-text"><a href="/about/products/web_app/pro-tier/colony-comparison-analytics/">कॉलोनी तुलना एनालिटिक्स (विकासाधीन)</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🔔</span><span class="feature-text"><a href="/about/products/web_app/pro-tier/ideas%20💡/timeseries-anomaly-detection/">एआई-चालित विसंगति पहचान (विकासाधीन)</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🎮</span><span class="feature-text"><a href="/about/products/web_app/pro-tier/ideas%20💡/device-management/">डिवाइस प्रबंधन (विकासाधीन)</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🔎</span><span class="feature-text"><a href="/about/products/web_app/starter-tier/inspection-management/">प्रति छत्ता असीमित निरीक्षण</a></span></li>
+            </ul>
+          </div>
+          <div class="pricing-limitations-section">
+            <h4>सीमाएँ</h4>
+            <ul class="pricing-card-limits">
+              <li>न्यूनतम 10 मिनट टेलीमेट्री रेज़ोल्यूशन</li>
+              <li>5 उपयोगकर्ता खातों तक</li>
+              <li>200 छत्तों तक</li>
+              <li>5 वर्ष तक इमेज रिटेंशन</li>
+            </ul>
+          </div>
+        </div>
+        <div class="pricing-card-footer"><a href="https://app.gratheon.com/account/register?lang={{.Page.Language}}" class="pricing-button">Professional शुरू करें</a></div>
+      </div>
+
+      <div class="pricing-card enterprise" data-tier="enterprise">
+        <div class="pricing-card-header">
+          <div class="pricing-card-title">Enterprise</div>
+          <div class="pricing-card-price">Custom</div>
+          <div class="pricing-card-description">औद्योगिक मधुमक्खीपालन और शोध डिप्लॉयमेंट के लिए</div>
+        </div>
+        <div class="pricing-card-body">
+          <div class="pricing-features-section">
+            <h4>सुविधाएँ</h4>
+            <ul class="pricing-card-features">
+              <li><span class="feature-icon" aria-hidden="true">🤝</span><span class="feature-text"><a href="/about/products/web_app/web-app/">कस्टम क्षमता और SLA</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">☁️</span><span class="feature-text"><a href="/about/products/web_app/web-app/">ऑन-प्रिमाइज़ या निजी-क्लाउड डिप्लॉयमेंट</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🛠</span><span class="feature-text"><a href="/about/products/entrance_observer/entrance-observer/">हार्डवेयर इंटीग्रेशन समर्थन</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">📈</span><span class="feature-text"><a href="/about/products/web_app/pro-tier/timeseries-data-analytics/">शोध और डेटा एक्सपोर्ट वर्कफ़्लो</a></span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="pricing-card-footer"><a href="mailto:pilot@gratheon.com" class="pricing-button">संपर्क करें</a></div>
+      </div>
+    </div>
+
+
+  </main>
+
+  {{template "gratheon_footer" .}}
+  {{if .JSPath}}<script defer src="{{.JSPath}}"></script>{{end}}
+</body>
+</html>
+{{end}}

@@ -7,7 +7,7 @@ shipping-price: "8.33"
 LiitoKala (real capacity ~2400mAh)
 https://www.aliexpress.com/item/32817391455.html
 
-![](img/Screenshot%202024-12-29%20at%2021.02.50.png)
+![](docs/beehive-sensors/components/img/Screenshot%202024-12-29%20at%2021.02.50.png)
 
 
 

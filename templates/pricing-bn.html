@@ -1,0 +1,183 @@
+{{define "pricing-bn"}}
+{{/*
+  WHY: /bn/pricing/ is localized independently without changing the canonical English pricing page.
+  WHAT: This standalone copy keeps plan names and prices exact while translating descriptions,
+  features, limits, and CTAs for the localized route only.
+*/}}
+{{template "gratheon_head" .}}
+<body class="pricing-page-no-sidebar">
+  {{template "gratheon_header" .}}
+
+  <main class="pricing-page-wrapper">
+    <div class="pricing-page-header">
+      <h1 class="pricing-page-title">⚖️ মূল্য পরিকল্পনা</h1>
+      <p class="pricing-page-subtitle">সহজভাবে শুরু করুন, বড় হওয়ার সঙ্গে সঙ্গে AI ও অটোমেশন চালু করুন, এবং অতিরিক্ত সক্ষমতা শুধু দরকার হলে যোগ করুন।</p>
+    </div>
+
+    <div class="pricing-container">
+      <div class="pricing-card" data-tier="free">
+        <div class="pricing-card-header">
+          <div class="pricing-card-title">Free</div>
+          <div class="pricing-card-price">Free</div>
+          <div class="pricing-card-description">মূল মৌমাছি পালনের রেকর্ড ব্যবহার করে দেখুন</div>
+        </div>
+        <div class="pricing-card-body">
+          <div class="pricing-features-section">
+            <h4>সুবিধাসমূহ</h4>
+            <ul class="pricing-card-features">
+              <li><span class="feature-icon" aria-hidden="true">📦</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/apiary-management/">মৌচাক এলাকা ও মৌচাক ব্যবস্থাপনা</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🖼️</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/frame-side-management/">ফ্রেম ছবি আপলোড</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">⌨️</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/ideas%20💡/keyboard-shortcuts-support/">কীবোর্ড সমর্থন</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">♻️</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/public-beehive-view/">সর্বজনীন মৌচাক শেয়ারিং</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🔗</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/qr-code-generation/">QR কোড তৈরি</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">📅</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/varroa-treatment-diary/">চিকিৎসা ডায়েরি</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🍭</span><span class="feature-text"><a href="/about/products/web_app/free-tier/feeding-history/">খাওয়ানোর ইতিহাস</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">👑</span><span class="feature-text"><a href="/about/products/web_app/free-tier/live-queen-finder/">লাইভ রানী মৌমাছি খোঁজার টুল</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">♻️</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/hive-ownership-transfer/">মৌচাকের মালিকানা হস্তান্তর (উন্নয়নাধীন)</a></span></li>
+            </ul>
+          </div>
+          <div class="pricing-limitations-section">
+            <h4>সীমা</h4>
+            <ul class="pricing-card-limits">
+              <li>সর্বোচ্চ 3টি মৌচাক</li>
+              <li>প্রতি মৌচাকে সর্বোচ্চ 10টি ফ্রেম</li>
+              <li>সার্ভার-সাইড AI ছবি প্রক্রিয়াকরণ ক্রেডিট নেই</li>
+              <li>6 মাস ছবি সংরক্ষণ</li>
+            </ul>
+          </div>
+        </div>
+        <div class="pricing-card-footer"><a href="https://app.gratheon.com/account/register?lang={{.Page.Language}}" class="pricing-button">শুরু করুন</a></div>
+      </div>
+
+      <div class="pricing-card hobbyist" data-tier="hobbyist">
+        <div class="pricing-card-header">
+          <div class="pricing-card-title">Hobbyist</div>
+          <div class="pricing-card-price">€5<span class="price-period"> / month</span></div>
+          <div class="pricing-card-description">নিয়মিত নোট ও ছবি লগের জন্য</div>
+        </div>
+        <div class="pricing-card-body">
+          <div class="pricing-features-section">
+            <h4>সুবিধাসমূহ</h4>
+            <ul class="pricing-card-features">
+              <li><span class="feature-icon" aria-hidden="true">📦</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/hive-management/">ডাটাবেসে মৌলিক ডেটা ব্যবস্থাপনা</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🖼️</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/frame-side-management/">ফ্রেম ছবি আপলোড ও সংরক্ষণ</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🗺️</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/hive-placement-planner/">মৌচাক স্থাপন পরিকল্পনাকারী</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">📓</span><span class="feature-text"><a href="/about/products/web_app/starter-tier/inspection-management/">পরিদর্শন নোট</a> এবং <a href="/about/products/web_app/hobbyist-tier/varroa-treatment-diary/">চিকিৎসা ডায়েরি</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">↔️</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/split-bee-colony/">কলোনি বিভাজন ব্যবস্থাপনা</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🫶🏻</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/join-bee-colonies/">কলোনি যুক্ত করার টুল</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🛠</span><span class="feature-text"><a href="/about/products/web_app/hobbyist-tier/inventory-management/">গুদাম ইনভেন্টরি ব্যবস্থাপনা</a></span></li>
+            </ul>
+          </div>
+          <div class="pricing-limitations-section">
+            <h4>সীমা</h4>
+            <ul class="pricing-card-limits">
+              <li>সর্বোচ্চ 15টি মৌচাক</li>
+              <li>1টি ব্যবহারকারী অ্যাকাউন্ট</li>
+              <li>AI ছবি প্রক্রিয়াকরণ ফিচার নেই</li>
+              <li>1 বছর ছবি সংরক্ষণ</li>
+            </ul>
+          </div>
+        </div>
+        <div class="pricing-card-footer"><a href="https://app.gratheon.com/account/register?lang={{.Page.Language}}" class="pricing-button">Hobbyist শুরু করুন</a></div>
+      </div>
+
+      <div class="pricing-card simple featured" data-tier="starter">
+        <div class="pricing-card-header">
+          <div class="pricing-card-title">Starter</div>
+          <div class="pricing-card-price">
+            <div class="price-monthly">€22<span class="price-period"> / month</span></div>
+            <div class="price-yearly-group"><span class="price-yearly">€144 / year</span><small class="price-discount">বার্ষিক বিলিংয়ে 45% সাশ্রয় করুন</small></div>
+          </div>
+          <div class="pricing-card-description">AI-চালিত ওয়ার্কফ্লো আনলক করুন</div>
+        </div>
+        <div class="pricing-card-body">
+          <div class="pricing-features-section">
+            <h4>সুবিধাসমূহ</h4>
+            <ul class="pricing-card-features">
+              <li><span class="feature-icon" aria-hidden="true">🐝</span><span class="feature-text"><a href="/about/products/web_app/starter-tier/honeycomb-cell-detection-management/">কোষ বিশ্লেষণ</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🦀</span><span class="feature-text"><a href="/about/products/web_app/starter-tier/hive-bottom-varroa-count/">মৌচাকের নিচের বোর্ডে ভ্যারোয়া গণনা</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🔎</span><span class="feature-text"><a href="/about/products/web_app/starter-tier/inspection-management/">পরিদর্শন ব্যবস্থাপনা</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">✏️</span><span class="feature-text"><a href="/about/products/web_app/starter-tier/drawing-on-canvas/">ফ্রেম অ্যানোটেশন টুল</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🤖</span><span class="feature-text"><a href="/about/products/web_app/starter-tier/beekeeping-advice-with-llm/">AI মৌমাছি পালন সহকারী</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🖼️</span><span class="feature-text"><a href="/about/products/web_app/starter-tier/honeycomb-cell-detection-management/">মাসিক AI ছবি বিশ্লেষণ ক্রেডিট অন্তর্ভুক্ত</a></span></li>
+            </ul>
+          </div>
+          <div class="pricing-limitations-section">
+            <h4>সীমা</h4>
+            <ul class="pricing-card-limits">
+              <li>1টি ব্যবহারকারী অ্যাকাউন্ট</li>
+              <li>সর্বোচ্চ 50টি মৌচাক</li>
+              <li>প্রতি মৌচাকে 30টি ফ্রেম</li>
+              <li>2 বছর ছবি সংরক্ষণ</li>
+              <li>AI বিশ্লেষণের পরিমাণ মাসিক সীমিত</li>
+              <li>বাস্তব মিশ্র ব্যবহার: মাসে ~100–130টি AI প্রম্পট</li>
+            </ul>
+          </div>
+        </div>
+        <div class="pricing-card-footer"><a href="https://app.gratheon.com/account/register?lang={{.Page.Language}}" class="pricing-button">বিনামূল্যে ট্রায়াল শুরু করুন</a></div>
+      </div>
+
+      <div class="pricing-card featured professional" data-tier="professional">
+        <div class="pricing-card-header">
+          <div class="pricing-card-title">Professional</div>
+          <div class="pricing-card-price">
+            <div class="price-monthly">€55<span class="price-period"> / month</span></div>
+            <div class="price-yearly-group"><span class="price-yearly">(€396 / year)</span><small class="price-discount">বার্ষিক বিলিংয়ে 40% সাশ্রয় করুন</small></div>
+          </div>
+          <div class="pricing-card-description">বর্ধনশীল মৌচাক এলাকা ও দলের জন্য</div>
+        </div>
+        <div class="pricing-card-body">
+          <div class="pricing-features-section">
+            <h4>সুবিধাসমূহ</h4>
+            <ul class="pricing-card-features">
+              <li><span class="feature-icon" aria-hidden="true">✅</span><span class="feature-text"><a href="/about/products/web_app/starter-tier/">Starter-এর সবকিছু</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">📦</span><span class="feature-text"><a href="/about/products/web_app/pro-tier/hive-telemetry-storage/">মৌচাক টেলিমেট্রি সংরক্ষণ</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">📈</span><span class="feature-text"><a href="/about/products/web_app/pro-tier/timeseries-data-analytics/">টাইমসিরিজ ডেটা বিশ্লেষণ</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">⚖️</span><span class="feature-text"><a href="/about/products/web_app/pro-tier/colony-comparison-analytics/">কলোনি তুলনা বিশ্লেষণ (উন্নয়নাধীন)</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🔔</span><span class="feature-text"><a href="/about/products/web_app/pro-tier/ideas%20💡/timeseries-anomaly-detection/">AI-চালিত অস্বাভাবিকতা শনাক্তকরণ (উন্নয়নাধীন)</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🎮</span><span class="feature-text"><a href="/about/products/web_app/pro-tier/ideas%20💡/device-management/">ডিভাইস ব্যবস্থাপনা (উন্নয়নাধীন)</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🔎</span><span class="feature-text"><a href="/about/products/web_app/starter-tier/inspection-management/">প্রতি মৌচাকে সীমাহীন পরিদর্শন</a></span></li>
+            </ul>
+          </div>
+          <div class="pricing-limitations-section">
+            <h4>সীমা</h4>
+            <ul class="pricing-card-limits">
+              <li>ন্যূনতম 10 মিনিট টেলিমেট্রি রেজোলিউশন</li>
+              <li>সর্বোচ্চ 5টি ব্যবহারকারী অ্যাকাউন্ট</li>
+              <li>সর্বোচ্চ 200টি মৌচাক</li>
+              <li>5 বছর ছবি সংরক্ষণ</li>
+            </ul>
+          </div>
+        </div>
+        <div class="pricing-card-footer"><a href="https://app.gratheon.com/account/register?lang={{.Page.Language}}" class="pricing-button">Professional শুরু করুন</a></div>
+      </div>
+
+      <div class="pricing-card enterprise" data-tier="enterprise">
+        <div class="pricing-card-header">
+          <div class="pricing-card-title">Enterprise</div>
+          <div class="pricing-card-price">Custom</div>
+          <div class="pricing-card-description">শিল্প পর্যায়ের মৌমাছি পালন ও গবেষণা ডিপ্লয়মেন্টের জন্য</div>
+        </div>
+        <div class="pricing-card-body">
+          <div class="pricing-features-section">
+            <h4>সুবিধাসমূহ</h4>
+            <ul class="pricing-card-features">
+              <li><span class="feature-icon" aria-hidden="true">🤝</span><span class="feature-text"><a href="/about/products/web_app/web-app/">কাস্টম সক্ষমতা ও SLA</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">☁️</span><span class="feature-text"><a href="/about/products/web_app/web-app/">On-premise বা প্রাইভেট-ক্লাউড ডিপ্লয়মেন্ট</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🛠</span><span class="feature-text"><a href="/about/products/entrance_observer/entrance-observer/">হার্ডওয়্যার ইন্টিগ্রেশন সহায়তা</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">📈</span><span class="feature-text"><a href="/about/products/web_app/pro-tier/timeseries-data-analytics/">গবেষণা ও ডেটা এক্সপোর্ট ওয়ার্কফ্লো</a></span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="pricing-card-footer"><a href="mailto:pilot@gratheon.com" class="pricing-button">যোগাযোগ করুন</a></div>
+      </div>
+    </div>
+
+
+  </main>
+
+  {{template "gratheon_footer" .}}
+  {{if .JSPath}}<script defer src="{{.JSPath}}"></script>{{end}}
+</body>
+</html>
+{{end}}

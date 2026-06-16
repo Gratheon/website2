@@ -1,0 +1,5 @@
+---
+title: "Baromeetriline rõhuandur"
+---
+
+![](docs/img/Screenshot%202024-07-21%20at%2018.24.53.png)

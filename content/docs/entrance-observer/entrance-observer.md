@@ -29,7 +29,7 @@ flowchart LR
 
 
 Camera protection cover
-![](img/Screenshot%202025-09-13%20at%2012.30.27.png)
+![](docs/entrance-observer/img/Screenshot%202025-09-13%20at%2012.30.27.png)
 
 ## Choosing processing architecture
 

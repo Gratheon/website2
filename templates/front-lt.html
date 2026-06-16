@@ -1,0 +1,203 @@
+{{define "front-lt"}}
+{{/*
+  WHY: /lt/ needs native marketing copy without changing the canonical English page.
+  WHAT: This standalone template translates visible copy while preserving product names, links, and media assets.
+*/}}
+{{template "gratheon_head" .}}
+<body class="front-page">
+  {{template "gratheon_header" .}}
+
+  <main>
+    <div id="splash">
+      <header id="front">
+        <video id="bgVideo" autoplay loop muted playsinline src="https://gratheon.s3-accelerate.amazonaws.com/video/01.mp4"></video>
+        <div class="headerContentContainer">
+          <div id="splash_internal">
+            <div>Avilių duomenų analitika</div>
+            <p>Saugokite bites, laiką ir jėgas</p>
+          </div>
+          <div class="installButtons">
+            <a class="signup blue" href="https://app.gratheon.com/account/register?lang={{.Page.Language}}">Išbandyti nemokamai</a>
+            <div class="platformDownloads">
+              <a href="https://play.google.com/store/apps/details?id=com.gratheon.app.twa"><img class="googlePlayBadge no-transform" height="50" src="/assets/img/google.png" alt="Google Play"></a>
+              <a href="https://github.com/Gratheon/web-app/releases/latest" data-latest-release="mac"><img class="desktopDownloadIcon no-transform" src="/assets/img/mac.png" alt="Atsisiųsti macOS ARM"></a>
+              <a href="https://github.com/Gratheon/web-app/releases/latest" data-latest-release="windows"><img class="desktopDownloadIcon no-transform" src="/assets/img/windows-full.webp" alt="Atsisiųsti Windows"></a>
+              <a href="https://github.com/Gratheon/web-app/releases/latest" data-latest-release="linux"><img class="desktopDownloadIcon no-transform" src="/assets/img/linux.png" alt="Atsisiųsti Linux"></a>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <video id="showcase" autoplay loop muted playsinline src="https://gratheon.s3-accelerate.amazonaws.com/www/detection2.mov"></video>
+
+    <section class="front-section">
+      <h2>Kaip veikia programėlė?</h2>
+      <div class="features">
+        <div class="feature">
+          <h3>Modeliuokite avilius</h3>
+          <p>Modeliuokite avilius, kad lauke prisimintumėte, kur ir kodėl reikia veikti, kai popierinius užrašus darosi sunku prižiūrėti.</p>
+          <video autoplay loop muted playsinline src="https://gratheon.s3-accelerate.amazonaws.com/www/frame-management3.mov"></video>
+        </div>
+        <div class="feature">
+          <h3>Įkelkite rėmelių nuotraukas</h3>
+          <p>Fotografuokite rėmelius ir įkelkite juos į programėlę. Gratheon aptinka ir suskaičiuoja bites, kad įvertintų šeimos dydį.</p>
+          <img src="/assets/img/count.webp" alt="Bičių skaičiaus aptikimas">
+        </div>
+        <div class="feature">
+          <h3>Saugokite apžiūras</h3>
+          <p>Sekite šeimos raidą laikui bėgant ir palyginkite tą patį rėmelį, kad matytumėte pokyčius šeimoje.</p>
+          <img src="/assets/img/inspections.webp" alt="Apžiūrų istorija">
+        </div>
+        <div class="feature">
+          <h3>Live Queen Finder</h3>
+          <p>Apžiūros metu naudokite telefono kamerą, o Gratheon, skenuojant rėmelį, parodys aptikimus, panašius į motinėlę.</p>
+          <a href="/about/products/web_app/free-tier/live-queen-finder/">
+            <img src="/assets/img/blog/img/live-queen-finder-detection-preview.webp" alt="Live Queen Finder kameros aptikimas">
+          </a>
+        </div>
+        <div class="feature">
+          <h3>Įvertinkite išteklius</h3>
+          <p>Aptikite akeles ir įvertinkite išteklių santykius. Nektaro ir žiedadulkių subalansavimas tarp šeimų gali padėti išvengti bado.</p>
+          <img src="/assets/img/comb.webp" alt="Korio akelių analizė">
+        </div>
+        <div class="feature">
+          <h3>Įvertinkite erkių užkrėtimą</h3>
+          <p>Aptikite ir suskaičiuokite Varroa erkes nežudydami bičių alkoholio plovimo testu.</p>
+          <img src="/assets/img/varroa.webp" alt="Varroa aptikimas">
+        </div>
+        <div class="feature">
+          <h3>Mokykitės iš AI</h3>
+          <p>Naudokite avilio kontekstą ir vienu mygtuku gaukite didelio kalbos modelio patarimą dėl galimų kitų žingsnių.</p>
+          <img src="/assets/img/llm.webp" alt="AI bitininkystės asistentas">
+        </div>
+        <div class="feature">
+          <h3>Darykite užrašus</h3>
+          <p>Naudokite iPad pieštuką arba pelę, kad pieštumėte ant rėmelio ir pažymėtumėte svarbias vietas.</p>
+          <video autoplay loop muted playsinline src="https://gratheon.s3-accelerate.amazonaws.com/www/ipad3.mov"></video>
+        </div>
+        <div class="feature">
+          <h3>Dalinkitės</h3>
+          <p>Dalinkitės avilių apžiūromis su bitininkų bendruomene ir gaukite ekspertų patarimų.</p>
+          <img src="/assets/img/sharing.webp" alt="Viešas avilio bendrinimas">
+        </div>
+        <div class="feature">
+          <h3>Stebėkite bites</h3>
+          <p>Transliuokite avilio lakas naudodami atvirojo kodo Entrance Observer klientą, nenaudojamą telefoną arba Raspberry Pi.</p>
+          <iframe src="https://www.youtube.com/embed/oG791JNb1aA?autoplay=1&mute=1&loop=1" style="width:100%;height:201px;margin:0 auto;display:block" title="Bitės prie avilio lakos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="front-section" id="devices">
+      <h2>Aparatinės įrangos produktai</h2>
+      <div class="device">
+        <div class="deviceText">
+          <h3>Avilio jutikliai <span class="badge">prototipo etapas</span></h3>
+          <p>Matuokite temperatūrą, drėgmę, CO2 lygį, barometrinį slėgį, garsą ir svorį, kad susietumėte šeimos raidą su aplinkos veiksniais. Ypač prieinama, efektyvu duomenų ir energijos požiūriu.</p>
+          <p class="deviceLinks">
+            <a href="https://github.com/Gratheon/beehive-sensors/" aria-label="Avilio jutiklių pirminis kodas">
+              <svg class="linkIcon githubIcon" width="16" height="16" viewBox="0 0 1024 1024" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M512 0C229.12 0 0 229.12 0 512c0 226.56 146.56 418.56 350.08 486.4 25.6 4.48 35.2-10.88 35.2-24.32 0-12.16-.64-52.48-.64-95.36C256 902.4 222.72 847.36 212.48 818.56c-5.76-14.72-30.72-60.16-52.48-72.32-17.92-9.6-43.52-28.8-.64-29.44 40.32-.64 69.12 37.76 78.72 53.12 46.08 77.44 119.68 55.68 148.48 42.24 4.48-33.28 17.92-55.68 32.64-68.48-113.92-12.8-233.6-56.96-233.6-253.44 0-55.68 19.84-101.76 52.48-137.6-5.12-12.8-23.04-65.28 5.12-135.68 0 0 42.88-13.44 140.8 52.48 40.96-11.52 84.48-17.28 128-17.28s87.04 5.76 128 17.28c97.92-66.56 140.8-52.48 140.8-52.48 28.16 70.4 10.24 122.88 5.12 135.68 32.64 35.84 52.48 81.28 52.48 137.6 0 197.12-120.32 240.64-234.24 253.44 18.56 16 34.56 46.72 34.56 94.72 0 68.48-.64 123.52-.64 140.8 0 13.44 9.6 29.44 35.2 24.32C877.44 930.56 1024 738.56 1024 512 1024 229.12 794.88 0 512 0Z" fill="#1B1F23"/>
+              </svg> Kodas</a>
+          </p>
+        </div>
+        <div class="deviceImgs">
+          <img src="/assets/img/sensors.webp" alt="Avilio jutikliai">
+          <img src="/assets/img/temp.webp" alt="Avilio temperatūros grafikas">
+        </div>
+      </div>
+      <div class="device">
+        <div class="deviceText">
+          <h3>Entrance Observer <span class="badge">MVP etapas</span></h3>
+          <p>Gaukite lakos vaizdo srautą realiuoju laiku. Skaičiuokite įeinančias ir išeinančias bites, kad įvertintumėte kasdienius rinkėjų nuostolius. Aptikite Varroa erkes ant bičių. Sekite žiedadulkių srautą. Aptikite plėšikavimą, darbininkių orientacinius skrydžius ir motinėlės poravimosi skrydžius.</p>
+          <p class="deviceLinks">
+            <a href="https://github.com/Gratheon/entrance-observer/" aria-label="Entrance Observer pirminis kodas">
+              <svg class="linkIcon githubIcon" width="16" height="16" viewBox="0 0 1024 1024" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M512 0C229.12 0 0 229.12 0 512c0 226.56 146.56 418.56 350.08 486.4 25.6 4.48 35.2-10.88 35.2-24.32 0-12.16-.64-52.48-.64-95.36C256 902.4 222.72 847.36 212.48 818.56c-5.76-14.72-30.72-60.16-52.48-72.32-17.92-9.6-43.52-28.8-.64-29.44 40.32-.64 69.12 37.76 78.72 53.12 46.08 77.44 119.68 55.68 148.48 42.24 4.48-33.28 17.92-55.68 32.64-68.48-113.92-12.8-233.6-56.96-233.6-253.44 0-55.68 19.84-101.76 52.48-137.6-5.12-12.8-23.04-65.28 5.12-135.68 0 0 42.88-13.44 140.8 52.48 40.96-11.52 84.48-17.28 128-17.28s87.04 5.76 128 17.28c97.92-66.56 140.8-52.48 140.8-52.48 28.16 70.4 10.24 122.88 5.12 135.68 32.64 35.84 52.48 81.28 52.48 137.6 0 197.12-120.32 240.64-234.24 253.44 18.56 16 34.56 46.72 34.56 94.72 0 68.48-.64 123.52-.64 140.8 0 13.44 9.6 29.44 35.2 24.32C877.44 930.56 1024 738.56 1024 512 1024 229.12 794.88 0 512 0Z" fill="#1B1F23"/>
+              </svg> Kodas</a><br>
+            <a href="/assets/assets/entrance-observer-whitepaper.pdf" aria-label="Entrance Observer baltosios knygos PDF">
+              <svg class="linkIcon pdfIcon" width="16" height="16" viewBox="0 0 14 16" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.2 0.5h7.1L13 4.2v11.3H2.2z" fill="#fff" stroke="#111"/>
+                <path d="M9.2 0.8v3.7h3.6" fill="none" stroke="#111"/>
+                <path d="M0.7 7h12.6v4.2H0.7z" fill="#ed1c24" stroke="#111" stroke-width="0.4"/>
+                <text x="2" y="10.1" fill="#fff" font-family="Arial, sans-serif" font-size="2.9" font-weight="700">PDF</text>
+              </svg> Baltoji knyga</a>
+          </p>
+        </div>
+        <div class="deviceImgs">
+          <img src="/assets/img/observer.webp" alt="Entrance Observer">
+          <video autoplay loop muted playsinline src="/assets/img/counting.mov"></video>
+        </div>
+      </div>
+      <div class="device">
+        <div class="deviceText">
+          <h3>Modulinis robotizuotas avilys <span class="badge">idėjos etapas</span></h3>
+          <p>Mūsų galutinis tikslas. Automatizuoti apžiūras mechaniniu rėmelių išėmimu. Taupyti jėgas nekilnojant sunkių avilio dalių. Mažinti bičių žūtis per apžiūras. Didinti efektyvumą nuotoliniu vidaus stebėjimu ir mažiau važiuoti į bityną. Visada būti informuotiems įspėjimais. Miesto vietovėse apsaugoti kaimynus nuo įgėlimų.</p>
+          <p class="deviceLinks">
+            <a href="https://github.com/Gratheon/robotic-beehive/" aria-label="Modulinio robotizuoto avilio pirminis kodas">
+              <svg class="linkIcon githubIcon" width="16" height="16" viewBox="0 0 1024 1024" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M512 0C229.12 0 0 229.12 0 512c0 226.56 146.56 418.56 350.08 486.4 25.6 4.48 35.2-10.88 35.2-24.32 0-12.16-.64-52.48-.64-95.36C256 902.4 222.72 847.36 212.48 818.56c-5.76-14.72-30.72-60.16-52.48-72.32-17.92-9.6-43.52-28.8-.64-29.44 40.32-.64 69.12 37.76 78.72 53.12 46.08 77.44 119.68 55.68 148.48 42.24 4.48-33.28 17.92-55.68 32.64-68.48-113.92-12.8-233.6-56.96-233.6-253.44 0-55.68 19.84-101.76 52.48-137.6-5.12-12.8-23.04-65.28 5.12-135.68 0 0 42.88-13.44 140.8 52.48 40.96-11.52 84.48-17.28 128-17.28s87.04 5.76 128 17.28c97.92-66.56 140.8-52.48 140.8-52.48 28.16 70.4 10.24 122.88 5.12 135.68 32.64 35.84 52.48 81.28 52.48 137.6 0 197.12-120.32 240.64-234.24 253.44 18.56 16 34.56 46.72 34.56 94.72 0 68.48-.64 123.52-.64 140.8 0 13.44 9.6 29.44 35.2 24.32C877.44 930.56 1024 738.56 1024 512 1024 229.12 794.88 0 512 0Z" fill="#1B1F23"/>
+              </svg> Kodas</a>
+          </p>
+        </div>
+        <div class="deviceImgs">
+          <video autoplay loop muted playsinline src="https://gratheon.s3-accelerate.amazonaws.com/video/linear-actuator.mp4"></video>
+        </div>
+      </div>
+    </section>
+
+    <section class="front-story" id="content">
+      <article>
+        <h2>Kurkite bitininkystės ateitį</h2>
+        <div class="author">
+          <div>
+            <a href="https://twitter.com/tot_ra" aria-label="Artjom Kurapov Twitter profilyje">
+              <img src="/assets/img/artjom.jpg" alt="autoriaus nuotrauka" width="50" height="50">
+            </a>
+          </div>
+          <div>
+            Autorius <a href="https://www.linkedin.com/in/kurapov/">Artjom Kurapov</a>,<br>bitininkas, įkūrėjas-inžinierius
+          </div>
+        </div>
+        <p>Esu programinės įrangos inžinierius, o prieš 5 metus tapau bitininku, kad pagerinčiau savo sodo apdulkinimą ir gaučiau didesnį derlių. Man bitės taip pat yra mieli ir įdomūs augintiniai.</p>
+        <p>Bitės yra svarbi rūšis mūsų maisto saugumui. Ūkininkai bendradarbiauja su bitininkais, kad tiksliu apdulkinimu padidintų derlių.</p>
+        <p>Tradicinei bitininkystei reikia bičių šeimos stebimumo, nes bitės gali badauti, netekti motinėlės, vėlai spiestis arba užsikrėsti Varroa destructor erkėmis, kurios silpnina šeimą ir lemia žlugimą per žiemojimą.</p>
+        <p>Stebimumas dažniausiai pasiekiamas sunkiu fiziniu darbu ir dažnomis, laiku ribotomis apžiūromis. Su apsauginiu kostiumu, vasaros karštyje, reikia kelti 20 kg sveriančias avilio dalis, sukurtas prieš 150 metų, ir pastebėti smulkias detales, kol ginančios bitės gelia, sukeldamos apžiūros stresą ir žudydamos bites.</p>
+        <p>Augant bitynui, šis darbas tampa sunkiai plečiamas. Pramoniniai bitininkai turi kelis bitynus tolimose, sunkiai pasiekiamose vietose. Esami sprendimai šių problemų tinkamai neišsprendžia.</p>
+        <p>💡 Mūsų tikslas – padėti bitininkams su stebimumu ir automatizavimu. Mūsų vizija – visiškai autonominis kelių avilių robotizuotas bitynas, galintis nuotoliniu būdu apžiūrėti šeimas. To sieksime žingsnis po žingsnio, pradėdami nuo programinės įrangos.</p>
+        <p>Teikdami veiksmingus rodiklius ir automatizavimą, bitininkai tampa efektyvesni, mažiau laiko praleidžia lauke ir daugiau analizuoja, tiksliai įsikišdami tik tada, kai reikia.</p>
+        <div class="future">
+          <div>
+            <p>Gratheon programėlė sukurta remiantis atvirojo kodo programine įranga ir pati yra visiškai atvirojo kodo.</p>
+            <p>Prisijunkite prie mūsų, kad pagerintume 100 milijonų bičių šeimų gyvenimą visame pasaulyje ir patenkintume didėjantį apdulkinimo poreikį. Ieškome investuotojų plėtrai, inžinierių komandai, bitininkų lauko bandymams ir patarėjų.</p>
+            <p>Turite idėjų?</p>
+            <p class="futureActions">
+              <a class="action action_green" href="https://discord.gg/PcbP4uedWj">Parašykite mums Discord</a>
+              <a class="action blue" href="https://app.gratheon.com/account/register?lang={{.Page.Language}}">Registruotis</a>
+            </p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <iframe
+      class="authorIntro"
+      title="Autoriaus pristatymas"
+      src="https://www.youtube.com/embed/gM3AJEAhmXc?rel=0"
+      frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+
+    <div class="brandStripe" aria-hidden="true">
+      <div class="brandStripeYellow"></div>
+      <div class="brandStripeGreen"></div>
+      <div class="brandStripeBlue"></div>
+    </div>
+  </main>
+
+  {{template "gratheon_footer" .}}
+  {{if .JSPath}}<script defer src="{{.JSPath}}"></script>{{end}}
+</body>
+</html>
+{{end}}

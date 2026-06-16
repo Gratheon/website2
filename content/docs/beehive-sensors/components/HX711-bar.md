@@ -5,7 +5,7 @@ items: "4"
 ---
 https://www.aliexpress.com/item/1005006827930173.html
 [https://www.amazon.de/-/en/gp/product/B079FQNJJH/](https://www.amazon.de/-/en/gp/product/B079FQNJJH/)
-![](../../img/612ornIvHHL._SL1000_.jpg)
+![](docs/img/612ornIvHHL._SL1000_.jpg)
 ### Wiring
 
 #### Single Load Cell Setup
@@ -203,7 +203,7 @@ GND → All HX711 GND pins
 
 
 
-![](../../img/HX711.png)
+![](docs/img/HX711.png)
 
 
 # Features

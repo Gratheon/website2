@@ -65,3 +65,22 @@ runuser -u www -- git -C /www/website reset --hard origin/main
   - `content/pricing.md` → `templates/pricing.html`
 
 Legacy Docusaurus files have been removed; `content/` is the source of truth.
+
+## Internationalization
+
+The site supports the same language list as `~/git/gratheon/web-app/src/config/languages.ts`:
+`en`, `ru`, `et`, `tr`, `pl`, `de`, `fr`, `zh`, `hi`, `es`, `ar`, `bn`, `pt`, `ja`.
+
+Language URLs are generated from `content/<lang>/index.md` and exposed in the text-only language dropdown in `templates/gratheon.html` (no country flags). The root `/` remains the default English front page, while `/en/`, `/ru/`, `/et/`, etc. are explicit localized front-page URLs.
+
+The front page is translated for every supported language via duplicated standalone templates (`templates/front-en.html`, `templates/front-ru.html`, etc.), and `content/<lang>/index.md` points directly to its template with `layout: front-<lang>`. This intentionally avoids a complex translation-router/template-partial layer. When changing shared front-page markup, update each `templates/front-*.html` copy or regenerate them manually from the preferred source.
+
+The pricing page is localized for every supported language with standalone templates: `content/<lang>/pricing/index.md` uses `layout: pricing-<lang>`, which maps to `templates/pricing-<lang>.html`. The canonical `/pricing/` page remains English, `/en/pricing/` redirects to it, and localized pricing copies intentionally keep plan names and prices exact while translating descriptions, features, limits, and CTAs.
+
+Top-level translated placeholders such as `/<lang>/about/`, `/<lang>/docs/`, and `/<lang>/research/` intentionally redirect to the current English sections until those sections are fully localized. `/ru/blog/` is now backed by a curated set of translated posts, while other untranslated blog placeholders still redirect to the English blog until localized.
+
+As of June 2026, Russian `/ru/docs/` and nested `/ru/docs/**` pages are real localized docs copied from `content/docs/**`. Header labels and localized header targets are derived from content frontmatter and localized routes; other languages without localized docs may keep redirect placeholders.
+
+Localized docs must not duplicate heavy binary assets. Keep shared docs images and downloads under `content/img/docs/**`, mirroring the canonical docs content hierarchy (for example `content/img/docs/beehive-sensors/img/example.jpg`). Markdown image embeds in any language should reference the shared image by processed relative path such as `![](docs/beehive-sensors/img/example.jpg)` so the image transformer can generate responsive variants. Non-image downloads/PDF links should use the public shared asset URL such as `/assets/img/docs/robotic-beehive/img/manual.pdf`.
+
+As of June 2026, Estonian `/et/about/` and `/et/about/products/` are real localized sections instead of redirect placeholders. The localized scope intentionally covers the About landing page, Products landing page, top-level product pages, and a small set of important product subpages. Product and brand names such as Gratheon, Entrance Observer, Live Queen Finder, and Varroa destructor stay unchanged in localized copy, while supporting labels and explanatory text are translated. Links outside that Estonian localization scope should point to stable English canonical pages rather than unresolved local markdown links.

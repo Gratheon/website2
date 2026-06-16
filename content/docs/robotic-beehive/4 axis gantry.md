@@ -1,18 +1,18 @@
 This is a list of brainstormed ideas on how to move frames to take photos to automate inspections:
 
-![](img/Screenshot%202023-11-15%20at%2022.04.35.png)
+![](docs/robotic-beehive/img/Screenshot%202023-11-15%20at%2022.04.35.png)
 
 ## Hardware solution
 
 We’re copy-pasting a solution by Júlia Torras Amat in the area of Biomedical Engineering Degree
 
-![](img/Screenshot%202023-11-17%20at%2000.16.26.png)
+![](docs/robotic-beehive/img/Screenshot%202023-11-17%20at%2000.16.26.png)
 
-![](img/Screenshot%202023-11-17%20at%2000.01.03.png)
+![](docs/robotic-beehive/img/Screenshot%202023-11-17%20at%2000.01.03.png)
 
-![](img/Screenshot%202023-11-17%20at%2000.20.08.png)
+![](docs/robotic-beehive/img/Screenshot%202023-11-17%20at%2000.20.08.png)
 
-![](img/Screenshot%202023-11-16%20at%2023.55.38.png)
+![](docs/robotic-beehive/img/Screenshot%202023-11-16%20at%2023.55.38.png)
 
 
 - Size
@@ -42,18 +42,18 @@ When choosing the appropriate driver for the system, it must be done according t
 - [TFG-I-1682.pdf](https://prod-files-secure.s3.us-west-2.amazonaws.com/6b3663fb-4bc2-4044-80e1-5d6ea956abef/7ed8d376-7b61-40a2-b0fa-97e4940552f0/TFG-I-1682.pdf)
 - [**Yahboom 6 Axis Robot Arm**](https://www.notion.so/Yahboom-6-Axis-Robot-Arm-1236c7765b2e4524a88fee8281b1bc33?pvs=21)
 
-[PDF](img/TFG-I-1682.pdf)
+[PDF](/assets/img/docs/robotic-beehive/img/TFG-I-1682.pdf)
 
-<object data={require('./img/TFG-I-1682.pdf').default} type="application/pdf" width="100%" height="800"></object>
+<object data="/assets/img/docs/robotic-beehive/img/TFG-I-1682.pdf" type="application/pdf" width="100%" height="800"></object>
 
-[PDF](img/Torras_Amat_Júlia_TFG.pdf)
+[PDF](/assets/img/docs/robotic-beehive/img/Torras_Amat_J%C3%BAlia_TFG.pdf)
 
-<object data={require('./img/Torras_Amat_Júlia_TFG.pdf').default} type="application/pdf" width="100%" height="800"></object>
+<object data="/assets/img/docs/robotic-beehive/img/Torras_Amat_J%C3%BAlia_TFG.pdf" type="application/pdf" width="100%" height="800"></object>
 
 
 
-![](img/Raspberry-Pi-Pinout-Random-Nerd-Tutorials.webp)
+![](docs/robotic-beehive/img/Raspberry-Pi-Pinout-Random-Nerd-Tutorials.webp)
 
-![](img/Screenshot%202023-12-29%20at%2016.59.55.png)
+![](docs/robotic-beehive/img/Screenshot%202023-12-29%20at%2016.59.55.png)
 
-![](img/FE0B4TLKF6TQ13E.webp)
+![](docs/robotic-beehive/img/FE0B4TLKF6TQ13E.webp)

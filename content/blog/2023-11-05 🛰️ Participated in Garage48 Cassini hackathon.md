@@ -132,7 +132,7 @@ We make request to copernicus server to get sentinel-2-l2a image for specific lo
 
 To access it, you need to:
 
-- register in the app - [https://app.gratheon.com/account/register](https://app.gratheon.com/account/register)
+- register in the app - [https://app.gratheon.com/account/register](https://app.gratheon.com/account/register?lang=en)
 - create new apiary - [https://app.gratheon.com/apiaries/create](https://app.gratheon.com/apiaries/create)
 - go into apiary view, drag the marker and click "Analyze crops" - [https://app.gratheon.com/apiaries/edit/2](https://app.gratheon.com/apiaries/edit/2)
 

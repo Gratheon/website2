@@ -39,7 +39,7 @@
         }
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            font-family: "Open Sans", "Segoe UI", Roboto, Arial, sans-serif;
             line-height: 1.6;
             color: var(--text-primary);
             background: var(--bg-primary);
@@ -78,25 +78,88 @@
             gap: 12px;
         }
         .lang-switcher {
+            position: relative;
+        }
+        .lang-dropdown {
+            position: relative;
+            min-width: 148px;
+        }
+        .lang-current {
             display: inline-flex;
-            gap: 4px;
-            padding: 3px;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            width: 100%;
+            min-height: 36px;
+            padding: 7px 14px;
             border: 1px solid var(--nav-border);
             border-radius: 999px;
             background: var(--nav-bg);
+            color: var(--text-primary);
+            cursor: pointer;
+            font-size: 0.88em;
+            font-weight: 700;
+            line-height: 1;
+            list-style: none;
+            white-space: nowrap;
         }
-        .lang-link {
+        .lang-current::-webkit-details-marker {
+            display: none;
+        }
+        .lang-current::after {
+            content: "";
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 6px solid currentColor;
+            transition: transform 160ms ease;
+        }
+        .lang-dropdown[open] .lang-current::after {
+            transform: rotate(180deg);
+        }
+        .lang-current:hover,
+        .lang-current:focus-visible,
+        .lang-dropdown[open] .lang-current {
+            color: #fff;
+            background: var(--nav-active);
+            outline: 0;
+        }
+        .lang-menu {
+            position: absolute;
+            top: calc(100% + 8px);
+            right: 0;
+            z-index: 1100;
+            display: grid;
+            gap: 2px;
+            min-width: 100%;
+            max-height: min(70vh, 420px);
+            overflow-y: auto;
+            padding: 6px;
+            border: 1px solid var(--nav-border);
+            border-radius: 16px;
+            background: var(--bg-primary);
+            box-shadow: 0 14px 32px rgba(0, 0, 0, 0.16);
+        }
+        .lang-link,
+        .lang-link:visited {
+            display: block;
             border: 0;
-            border-radius: 999px;
-            padding: 6px 11px;
-            font-size: 0.8em;
+            border-radius: 12px;
+            padding: 9px 12px;
+            font-size: 0.88em;
             color: var(--text-secondary);
             text-decoration: none;
-            font-weight: 600;
+            font-weight: 700;
+            line-height: 1.1;
+            white-space: nowrap;
         }
+        .lang-link:hover,
+        .lang-link:focus-visible,
         .lang-link.is-active {
             color: #fff;
             background: var(--nav-active);
+            outline: 0;
         }
         .site-nav a {
             color: var(--text-primary);
@@ -756,7 +819,15 @@
         <div class="header-right">
             {{if .Languages}}
             <nav class="lang-switcher" aria-label="{{.UI.Languages}}">
-                {{range .Languages}}<a class="lang-link{{if .Active}} is-active{{end}}" href="{{.URL}}" hreflang="{{.Code}}">{{.Label}}</a>{{end}}
+                {{/* Native details keeps the language picker accessible without adding navigation JavaScript. */}}
+                <details class="lang-dropdown">
+                    <summary class="lang-current">
+                        {{range .Languages}}{{if .Active}}{{.Label}}{{end}}{{end}}
+                    </summary>
+                    <div class="lang-menu">
+                        {{range .Languages}}<a class="lang-link{{if .Active}} is-active{{end}}" href="{{.URL}}" hreflang="{{.Code}}"{{if .Active}} aria-current="page"{{end}}>{{.Label}}</a>{{end}}
+                    </div>
+                </details>
             </nav>
             {{end}}
             <button id="theme-toggle" class="theme-toggle" aria-label="{{.UI.ToggleTheme}}" title="{{.UI.ToggleTheme}}">

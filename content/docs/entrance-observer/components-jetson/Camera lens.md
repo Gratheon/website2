@@ -6,4 +6,4 @@ price: "40.99"
 
 https://www.aliexpress.com/item/1005003681106033.html?spm=a2g0o.order_list.order_list_main.11.64c11802bMAn1Q
 
-![](img/Pasted%20image%2020241229214746.png)
+![](docs/entrance-observer/components-jetson/img/Pasted%20image%2020241229214746.png)
