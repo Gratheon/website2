@@ -9,6 +9,12 @@ orgs:
   - 🇩🇪 Bernstein Center for Computational Neuroscience
   - 🇺🇸 Baylor College of Medicine
 year: "2018"
+topics:
+  - computer-vision
+productAreas:
+  - hive-scanner
+  - gate-tracker
+paperType: journal
 ---
 
 [PDF](pdfs/Mathis_markerless_defined_deeplearning.pdf)

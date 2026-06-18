@@ -4,7 +4,13 @@ title: "Accuracy vs. Energy: An Assessment of Bee Object Inference inVideos from
 orgs:
   - 🇺🇸 Utah State University
 year: "2023"
-hide_table_of_contents: true
+hideToc: true
+topics:
+  - computer-vision
+  - edge-ai-energy
+productAreas:
+  - gate-tracker
+paperType: journal
 ---
 
 [PDF](pdfs/2023-yolov4.pdf)

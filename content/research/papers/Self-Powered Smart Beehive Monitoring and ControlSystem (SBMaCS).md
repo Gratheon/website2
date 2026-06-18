@@ -5,6 +5,12 @@ orgs:
   - 🇷🇼 University of Rwanda
   - 🇿🇲 Copperbelt University
   - 🇷🇼 National Council of Science and Technology
+topics:
+  - iot-sensors
+  - edge-ai-energy
+productAreas:
+  - monitoring-platform
+paperType: journal
 ---
 
 [PDF](pdfs/sensors-21-03522.pdf)

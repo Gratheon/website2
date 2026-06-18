@@ -3,8 +3,15 @@ hideNav: true
 title: BeeAlarmed. Masters thesis
 orgs:
   - 🇩🇪 South Westphalia University of Applied Sciences
-hide_table_of_contents: true
+hideToc: true
 year: "2020"
+topics:
+  - computer-vision
+  - bee-behaviour
+productAreas:
+  - gate-tracker
+paperType: thesis
+featured: true
 ---
 
 

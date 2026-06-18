@@ -4,7 +4,13 @@ title: "BeePIV: A Method to Measure Apis Mellifera Traffic with Particle Image V
 orgs:
   - 🇺🇸 Utah State University
 year: "2021"
-hide_table_of_contents: true
+hideToc: true
+topics:
+  - computer-vision
+  - bee-behaviour
+productAreas:
+  - gate-tracker
+paperType: journal
 ---
 
 - [PDF](pdfs/applsci-11-02276-v2.pdf)

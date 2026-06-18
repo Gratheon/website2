@@ -4,7 +4,13 @@ title: Identifying Queenlessness in Honeybee Hives from Audio Signals Using Mach
 orgs:
   - 🇬🇧 Kingston University
 year: "2023"
-hide_table_of_contents: true
+hideToc: true
+topics:
+  - audio-acoustics
+  - bee-behaviour
+productAreas:
+  - colony-health
+paperType: journal
 ---
 
 https://www.mdpi.com/2079-9292/12/7/1627

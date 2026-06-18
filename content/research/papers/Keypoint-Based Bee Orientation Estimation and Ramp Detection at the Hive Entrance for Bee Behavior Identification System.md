@@ -3,6 +3,12 @@ hideNav: true
 orgs:
   - 🇱🇹 Vilnius Gediminas Technical University
 year: "2024"
+topics:
+  - computer-vision
+  - bee-behaviour
+productAreas:
+  - gate-tracker
+paperType: journal
 ---
 
 [PDF](pdfs/agriculture-14-01890.pdf)

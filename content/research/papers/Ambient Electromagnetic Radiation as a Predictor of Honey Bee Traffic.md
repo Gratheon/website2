@@ -4,7 +4,13 @@ title: "Ambient Electromagnetic Radiation as a Predictor of Honey Bee (Apis mell
 orgs:
   - 🇺🇸 Utah State University
 year: "2023"
-hide_table_of_contents: true
+hideToc: true
+topics:
+  - iot-sensors
+  - bee-behaviour
+productAreas:
+  - gate-tracker
+paperType: journal
 ---
 https://www.mdpi.com/1424-8220/23/5/2584
 

@@ -5,7 +5,13 @@ orgs:
   - 🇬🇧 Durham University
   - 🇦🇹 University of Graz
 year: "2024"
-hide_table_of_contents: true
+hideToc: true
+topics:
+  - robotics
+  - computer-vision
+productAreas:
+  - robotics
+paperType: conference
 ---
 
 [PDF](pdfs/2024_marss_mapping.pdf)

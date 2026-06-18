@@ -3,8 +3,15 @@ hideNav: true
 orgs:
   - 🇵🇷 University of Puerto Rico
 year: "2018"
-hide_table_of_contents: true
+hideToc: true
 title: Recognition of Pollen-bearing Bees from Video using Convolutional Neural Network
+topics:
+  - computer-vision
+  - bee-behaviour
+  - pollination-ecology
+productAreas:
+  - gate-tracker
+paperType: conference
 ---
 
 - [Original URL](https://par.nsf.gov/servlets/purl/10058461)

@@ -4,7 +4,13 @@ title: "On Image Classification in Video Analysis of Omnidirectional Apis Mellif
 orgs:
   - 🇺🇸 Utah State University
 year: "2021"
-hide_table_of_contents: true
+hideToc: true
+topics:
+  - computer-vision
+  - bee-behaviour
+productAreas:
+  - gate-tracker
+paperType: journal
 ---
 
 - [Original URL](https://www.mdpi.com/2076-3417/11/17/8141)

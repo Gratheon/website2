@@ -4,7 +4,13 @@ title: "Honeybee Re-identification in Video: New Datasets and Impact of Self-sup
 orgs:
   - 🇵🇷 University of Puerto Rico
 year: "2022"
-hide_table_of_contents: true
+hideToc: true
+topics:
+  - computer-vision
+  - datasets-benchmarks
+productAreas:
+  - gate-tracker
+paperType: conference
 ---
 
 [PDF](pdfs/VISAPP.pdf)

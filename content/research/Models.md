@@ -1,3 +1,9 @@
+---
+title: Models
+order: 3
+hideToc: true
+---
+
 Some of the models that we trained
 ### Bee detection
 https://github.com/Gratheon/models-bee-detector/

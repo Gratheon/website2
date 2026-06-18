@@ -4,6 +4,13 @@ title: "Precision Monitoring of Honey Bee (Hymenoptera: Apidae) Activity and Pol
 year: "2023"
 orgs:
   - 🇦🇺 La Trobe University
+topics:
+  - bee-behaviour
+  - pollination-ecology
+  - computer-vision
+productAreas:
+  - gate-tracker
+paperType: journal
 ---
 
 [PDF](pdfs/insects-14-00095.pdf)

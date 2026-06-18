@@ -5,7 +5,13 @@ year: "2021"
 orgs:
   - 🇫🇷 aivancity School for Technology
   - 🇫🇷 Université de Lyon
-hide_table_of_contents: true
+hideToc: true
+topics:
+  - reviews-surveys
+  - iot-sensors
+productAreas:
+  - monitoring-platform
+paperType: journal
 ---
 
 [PDF](pdfs/surveyPB_hal.pdf)

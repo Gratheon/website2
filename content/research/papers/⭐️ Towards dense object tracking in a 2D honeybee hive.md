@@ -3,8 +3,15 @@ hideNav: true
 year: "2018"
 orgs:
   - 🇯🇵 Okinawa Institute of Science and Technology Graduate University
-hide_table_of_contents: true
+hideToc: true
 title: Towards dense object tracking in a 2D honeybee hive
+topics:
+  - computer-vision
+  - bee-behaviour
+productAreas:
+  - hive-scanner
+paperType: conference
+featured: true
 ---
 - [PDF](pdfs/Bozek_Towards_Dense_Object_CVPR_2018_paper.pdf)
 

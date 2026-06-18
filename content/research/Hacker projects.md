@@ -1,8 +1,11 @@
 ---
 title: Hacker projects
-sidebar_position: 3
+navTitle: Hacker projects
+order: 4
+hideToc: true
 ---
-Here we list interesting external projects that are dealing with digital beekeeping, IoT, cameras etc.
+
+Here we list interesting external projects that are dealing with digital beekeeping, IoT, cameras, and open-source hive experimentation.
 
 ## Entrance observer
 

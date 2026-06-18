@@ -5,6 +5,11 @@ orgs:
   - 🇮🇳 Canara Engineering College
 title: HiveLink – IoT based Smart Bee Hive MonitoringSystem
 year: "2023"
+topics:
+  - iot-sensors
+productAreas:
+  - monitoring-platform
+paperType: preprint
 ---
 
 https://arxiv.org/abs/2309.12054

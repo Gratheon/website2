@@ -6,6 +6,12 @@ orgs:
   - 🇨🇾 Cyprus University of Technology
   - 🇳🇱 University of Twente
 year: "2023"
+topics:
+  - computer-vision
+  - bee-behaviour
+productAreas:
+  - gate-tracker
+paperType: conference
 ---
 [PDF](pdfs/IntelliSYS_Beehive_CAMERAREADY.pdf)
 

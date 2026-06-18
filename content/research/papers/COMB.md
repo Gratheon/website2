@@ -5,7 +5,13 @@ orgs:
   - 🇩🇪 University of Konstanz
   - 🇩🇪 Freie Universität Berlin
 year: "2026"
-hide_table_of_contents: true
+hideToc: true
+topics:
+  - robotics
+  - bee-behaviour
+productAreas:
+  - robotics
+paperType: preprint
 ---
 
 - arXiv: https://arxiv.org/abs/2604.04980

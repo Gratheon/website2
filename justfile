@@ -4,6 +4,9 @@ start:
 serve:
     "${BLOG_ENGINE:-../blog-engine-md/bin/blog-engine}" serve
 
+research-indexes:
+    python3 scripts/generate-research-indexes.py
+
 build:
     rm -rf dist
     "${BLOG_ENGINE:-../blog-engine-md/bin/blog-engine}" build

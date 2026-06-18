@@ -7,6 +7,12 @@ orgs:
   - 🇷🇴 Sapientia Hungarian University of Transylvania
   - 🇷🇴 National Institute for Research and Development in Environmental Protection
   - 🇷🇴 National Institute for Research and Development in Forestry "Marin Dracea"
+topics:
+  - iot-sensors
+  - reviews-surveys
+productAreas:
+  - monitoring-platform
+paperType: journal
 ---
 [PDF](pdfs/Advances_in_Beehive_Monitoring_Systems_Low-Cost_In.pdf)
 

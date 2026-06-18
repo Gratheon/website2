@@ -3,8 +3,15 @@ hideNav: true
 orgs:
   - 🇵🇷 University of Puerto Rico
 year: "2022"
-hide_table_of_contents: true
+hideToc: true
 title: Automated Video Monitoring of Unmarked and Marked Honey Bees at the Hive Entrance
+topics:
+  - computer-vision
+  - bee-behaviour
+productAreas:
+  - gate-tracker
+paperType: journal
+featured: true
 ---
 - [Original URL](https://www.frontiersin.org/journals/computer-science/articles/10.3389/fcomp.2021.769338/full)
 - [PDF](pdfs/fcomp-03-769338.pdf)

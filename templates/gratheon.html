@@ -26,7 +26,7 @@
 {{define "gratheon_header"}}
 <header class="site-header">
   <div class="header-left">
-    <a class="navbar-logo" href="{{.HomeURL}}">
+    <a class="navbar-logo" href="{{if or (eq .Page.Language "") (eq .Page.Language .Site.I18n.Default)}}/{{else}}/{{.Page.Language}}/{{end}}">
       <img class="no-transform" src="{{.Site.Site.Logo}}" alt="{{.Site.Site.Title}}">
     </a>
     <nav class="site-nav">

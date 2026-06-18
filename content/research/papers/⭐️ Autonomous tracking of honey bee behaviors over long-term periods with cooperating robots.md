@@ -6,8 +6,16 @@ orgs:
   - 🇦🇹 University of Graz
   - 🇬🇧 Durham University
   - 🇹🇷  Middle East Technical University
-hide_table_of_contents: true
+hideToc: true
 title: Autonomous tracking of honey bee behaviors over long-term periods with cooperating robots
+topics:
+  - robotics
+  - computer-vision
+  - bee-behaviour
+productAreas:
+  - robotics
+paperType: journal
+featured: true
 ---
 
 - Project home page: https://roboroyale.eu/home.html

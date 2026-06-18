@@ -5,7 +5,13 @@ orgs:
   - 🇦🇹 University of Graz
   - 🇨🇿 Czech Technical University
   - 🇹🇷  Middle East Technical University
-hide_table_of_contents: true
+hideToc: true
+topics:
+  - robotics
+  - bee-behaviour
+productAreas:
+  - robotics
+paperType: conference
 ---
 
 [PDF](pdfs/2022_FAI_roboroyale.pdf)

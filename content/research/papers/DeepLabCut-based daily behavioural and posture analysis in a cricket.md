@@ -1,5 +1,12 @@
 ---
 hideNav: true
+year: "2021"
+topics:
+  - computer-vision
+  - bee-behaviour
+productAreas:
+  - hive-scanner
+paperType: journal
 ---
 [PDF](pdfs/bio060237.pdf)
 

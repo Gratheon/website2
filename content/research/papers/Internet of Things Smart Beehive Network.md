@@ -4,6 +4,11 @@ title: "Internet of Things Smart Beehive Network: Homogeneous Data,Modeling, and
 orgs:
   - 🇵🇱 Warsaw University of Life Sciences
 year: "2024"
+topics:
+  - iot-sensors
+productAreas:
+  - monitoring-platform
+paperType: journal
 ---
 
 [PDF](pdfs/inventions-10-00023.pdf)

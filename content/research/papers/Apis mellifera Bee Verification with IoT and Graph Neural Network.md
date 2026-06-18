@@ -4,6 +4,12 @@ year: "2025"
 title: Apis mellifera Bee Verification with IoT and Graph Neural Network
 orgs:
   - 🇲🇽 Instituto Tecnológico El Llano Aguascalientes
+topics:
+  - iot-sensors
+  - computer-vision
+productAreas:
+  - gate-tracker
+paperType: journal
 ---
 
 [PDF](pdfs/applsci-15-07969.pdf)

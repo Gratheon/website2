@@ -4,6 +4,11 @@ title: Bee colony remote monitoring based on IoT using ESP-NOW protocol
 year: "2023"
 orgs:
   - 🇱🇻 Latvia University of Life Sciences and Technologies
+topics:
+  - iot-sensors
+productAreas:
+  - monitoring-platform
+paperType: journal
 ---
 
 [PDF](pdfs/peerj-cs-09-1363.pdf)

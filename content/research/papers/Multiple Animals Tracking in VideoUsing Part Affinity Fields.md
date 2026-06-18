@@ -4,7 +4,13 @@ orgs:
   - 🇵🇷 University of Puerto Rico
 title: Multiple Animals Tracking in VideoUsing Part Affinity Fields
 year: "2018"
-hide_table_of_contents: true
+hideToc: true
+topics:
+  - computer-vision
+  - bee-behaviour
+productAreas:
+  - hive-scanner
+paperType: workshop
 ---
 
 [PDF](pdfs/vaib18rodriguez.pdf)

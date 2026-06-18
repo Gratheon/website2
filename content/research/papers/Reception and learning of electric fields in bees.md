@@ -3,8 +3,14 @@ hideNav: true
 year: "2013"
 orgs:
   - 🇩🇪 Freie Universität Berlin
-hide_table_of_contents: true
+hideToc: true
 title: Reception and learning of electric fields in bees
+topics:
+  - bee-behaviour
+  - iot-sensors
+productAreas:
+  - colony-health
+paperType: journal
 ---
 
 - [URL](https://royalsocietypublishing.org/doi/epdf/10.1098/rspb.2013.0528)

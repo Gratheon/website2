@@ -3,8 +3,15 @@ hideNav: true
 year: "2021"
 orgs:
   - 🇯🇵 Okinawa Institute of Science and Technology Graduate University
-hide_table_of_contents: true
+hideToc: true
 title: ⭐️ Markerless tracking of an entire honey bee colony
+topics:
+  - computer-vision
+  - bee-behaviour
+productAreas:
+  - hive-scanner
+paperType: journal
+featured: true
 ---
 [PDF](pdfs/2021-markerless.pdf)
 

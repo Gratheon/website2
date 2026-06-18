@@ -4,7 +4,15 @@ title: "LabelBee: a web platform for large-scale semi-automated analysis of hone
 orgs:
   - 🇵🇷 University of Puerto Rico
 year: "2019"
-hide_table_of_contents: true
+hideToc: true
+topics:
+  - computer-vision
+  - bee-behaviour
+  - datasets-benchmarks
+productAreas:
+  - gate-tracker
+paperType: conference
+featured: true
 ---
 https://github.com/rmegret/labelbee
 

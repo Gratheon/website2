@@ -5,6 +5,12 @@ orgs:
   - 🇩🇪 University of Hohenheim
   - 🇩🇪 Karlsruhe Institute of Technology
 year: "2023"
+topics:
+  - iot-sensors
+  - bee-behaviour
+productAreas:
+  - colony-health
+paperType: journal
 ---
 - [PDF](pdfs/wifi-exposure.pdf)
 

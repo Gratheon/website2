@@ -5,7 +5,12 @@ year: "2019"
 orgs:
   - 🇱🇻 Latvia University of Life Sciences and Technologies
   - 🇩🇪 University of Kassel
-hide_table_of_contents: true
+hideToc: true
+topics:
+  - iot-sensors
+productAreas:
+  - monitoring-platform
+paperType: journal
 ---
 
 [PDF](pdfs/Vol17No2_Komasilovs.pdf)

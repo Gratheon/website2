@@ -4,7 +4,13 @@ title: "Machine Learning and Computer Vision Techniques in Continuous Beehive Mo
 orgs:
   - 🇨🇿 Brno University of Technology
 year: "2023"
-hide_table_of_contents: true
+hideToc: true
+topics:
+  - reviews-surveys
+  - computer-vision
+productAreas:
+  - monitoring-platform
+paperType: journal
 ---
 
 [PDF](pdfs/2208.00085v3.pdf)

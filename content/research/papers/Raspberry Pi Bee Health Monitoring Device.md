@@ -4,7 +4,13 @@ title: Raspberry Pi Bee Health Monitoring Device
 orgs:
   - 🇨🇿 Brno University of Technology
 year: "2023"
-hide_table_of_contents: true
+hideToc: true
+topics:
+  - iot-sensors
+  - computer-vision
+productAreas:
+  - monitoring-platform
+paperType: preprint
 ---
 
 [PDF](pdfs/2304.14444v1.pdf)

@@ -7,7 +7,13 @@ orgs:
   - 🇧🇩 BRAC University
   - 🇦🇺 Curtin University
   - 🇦🇺 Commonwealth Scientific and Industrial Research Organisation
-hide_table_of_contents: true
+hideToc: true
+topics:
+  - computer-vision
+  - datasets-benchmarks
+productAreas:
+  - gate-tracker
+paperType: journal
 ---
 
 [PDF](pdfs/BeeNet--An-End-To-End-Deep-Network-For-Bee-Survei_2023_Procedia-Computer-Sci.pdf)

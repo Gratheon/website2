@@ -22,6 +22,14 @@ just build
 
 This generates static files in `dist/`.
 
+Generate or refresh research-paper index pages from frontmatter:
+
+```bash
+just research-indexes
+# or
+npm run research-indexes
+```
+
 To publish locally into the same immutable-release layout used in production:
 
 ```bash

@@ -4,6 +4,11 @@ orgs:
   - 🇹🇭  Chiang Mai University
 year: "2025"
 title: Deep Learning-Based Detection of Honey Storage Areas in Apismellifera Colonies for Predicting Physical Parameters of Honey via Linear Regression
+topics:
+  - computer-vision
+productAreas:
+  - hive-scanner
+paperType: journal
 ---
 
 [PDF](pdfs/insects-16-00575.pdf)

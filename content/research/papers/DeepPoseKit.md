@@ -7,6 +7,11 @@ orgs:
   - 🇺🇸  Princeton University
   - 🇩🇪 Technische Universität München
 year: "2019"
+topics:
+  - computer-vision
+productAreas:
+  - hive-scanner
+paperType: preprint
 ---
 
 [PDF](pdfs/47994v1.pdf)

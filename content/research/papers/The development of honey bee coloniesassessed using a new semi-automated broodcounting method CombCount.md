@@ -6,7 +6,12 @@ orgs:
   - 🇦🇺 Macquarie University
   - 🇦🇺 Queensland University of Technology
   - 🇺🇸 Carl Hayden Bee Research Center
-hide_table_of_contents: true
+hideToc: true
+topics:
+  - computer-vision
+productAreas:
+  - hive-scanner
+paperType: journal
 ---
 
 [PDF](pdfs/pone.0205816.pdf)

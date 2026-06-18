@@ -4,7 +4,13 @@ title: Honeybee In-Out Monitoring System by Object Recognition and Tracking from
 year: "2021"
 orgs:
   - 🇰🇷 Incheon National University
-hide_table_of_contents: true
+hideToc: true
+topics:
+  - computer-vision
+  - bee-behaviour
+productAreas:
+  - gate-tracker
+paperType: journal
 ---
 
 [PDF](pdfs/31356.pdf)
