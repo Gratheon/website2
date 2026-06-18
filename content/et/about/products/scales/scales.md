@@ -1,11 +1,11 @@
 ---
 sidebar_position: 3
-title: 🌡️ Beehive scales
+title: 🌡️ Tarukaalud
 ---
 
-🌡️ Beehive scales on nutikad IoT-kaalud, millele on lisatud andurid ja sidekiibid. Need mõõdavad perioodiliselt taru seisundit ning saadavad andmed [Web-appi](../web_app/web_app.md). Koondatud andmed aitavad mesinikel jälgida mesilasperesid põllul minimaalse kuluga.
+🌡️ Tarukaalud on nutikad IoT-kaalud, millele on lisatud andurid ja sidekiibid. Need mõõdavad perioodiliselt taru seisundit ning saadavad andmed [veebirakendusse](../web_app/web_app.md). Koondatud andmed aitavad mesinikel jälgida mesilasperesid põllul minimaalse kuluga.
 
-Riistvara kirjeldus on praegu saadaval inglise keeles [beehive sensors docs](/docs/beehive-sensors/) all, samas kui rakendus salvestab näidud ning võrdleb neid analüütikas.
+Riistvara kirjeldus on praegu saadaval inglise keeles [taruandurite dokumentatsiooni](/docs/beehive-sensors/) all, samas kui rakendus salvestab näidud ning võrdleb neid analüütikas.
 
 `status`: [TRL 4](https://www.nasa.gov/directorates/somd/space-communications-navigation-program/technology-readiness-levels/) (prototüüp)
 
@@ -23,5 +23,5 @@ Riistvara kirjeldus on praegu saadaval inglise keeles [beehive sensors docs](/do
 - [👩🏼‍🏫 Linnamesinikud](/about/company/clients/urban-beekeepers/)
 
 ## Rohkem ingliskeelset infot
-- [Scales overview (EN)](/about/products/scales/scales/)
-- [Telemetry API (EN)](/about/products/scales/features/telemetry-api/)
+- [Tarukaalude ülevaade](/about/products/scales/scales/)
+- [Telemeetria API](/about/products/scales/features/telemetry-api/)

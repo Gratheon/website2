@@ -86,8 +86,68 @@ navigation:
   header:
     enabled: true
     items:
+      # Keep core header labels explicit per locale so the deployed site remains translated
+      # even when it is built with an older blog-engine binary that does not read navTitle.
       - title: "About"
         url: "/about/"
+        languages: ["en"]
+      - title: "О нас"
+        url: "/ru/about/"
+        languages: ["ru"]
+      - title: "Meist"
+        url: "/et/about/"
+        languages: ["et"]
+      - title: "Hakkımızda"
+        url: "/tr/about/"
+        languages: ["tr"]
+      - title: "O nas"
+        url: "/pl/about/"
+        languages: ["pl"]
+      - title: "Über uns"
+        url: "/de/about/"
+        languages: ["de"]
+      - title: "À propos"
+        url: "/fr/about/"
+        languages: ["fr"]
+      - title: "关于我们"
+        url: "/zh/about/"
+        languages: ["zh"]
+      - title: "हमारे बारे में"
+        url: "/hi/about/"
+        languages: ["hi"]
+      - title: "Acerca de"
+        url: "/es/about/"
+        languages: ["es"]
+      - title: "من نحن"
+        url: "/ar/about/"
+        languages: ["ar"]
+      - title: "সম্পর্কে"
+        url: "/bn/about/"
+        languages: ["bn"]
+      - title: "Sobre"
+        url: "/pt/about/"
+        languages: ["pt"]
+      - title: "概要"
+        url: "/ja/about/"
+        languages: ["ja"]
+      - title: "Par mums"
+        url: "/lv/about/"
+        languages: ["lv"]
+      - title: "Apie mus"
+        url: "/lt/about/"
+        languages: ["lt"]
+      - title: "Rólunk"
+        url: "/hu/about/"
+        languages: ["hu"]
+      - title: "Про нас"
+        url: "/uk/about/"
+        languages: ["uk"]
+      - title: "Chi siamo"
+        url: "/it/about/"
+        languages: ["it"]
+      - title: "Despre"
+        url: "/ro/about/"
+        languages: ["ro"]
       # Product labels are Gratheon-site copy. Keep them here rather than in blog-engine-md.
       - title: "Products"
         url: "/about/products/"
@@ -151,12 +211,244 @@ navigation:
         languages: ["ro"]
       - title: "Docs"
         url: "/docs/"
+        languages: ["en"]
+      - title: "Документация"
+        url: "/ru/docs/"
+        languages: ["ru"]
+      - title: "Dokumendid"
+        url: "/et/docs/"
+        languages: ["et"]
+      - title: "Belgeler"
+        url: "/tr/docs/"
+        languages: ["tr"]
+      - title: "Dokumentacja"
+        url: "/pl/docs/"
+        languages: ["pl"]
+      - title: "Dokumentation"
+        url: "/de/docs/"
+        languages: ["de"]
+      - title: "Documentation"
+        url: "/fr/docs/"
+        languages: ["fr"]
+      - title: "文档"
+        url: "/zh/docs/"
+        languages: ["zh"]
+      - title: "दस्तावेज़"
+        url: "/hi/docs/"
+        languages: ["hi"]
+      - title: "Documentación"
+        url: "/es/docs/"
+        languages: ["es"]
+      - title: "الوثائق"
+        url: "/ar/docs/"
+        languages: ["ar"]
+      - title: "ডকুমেন্টেশন"
+        url: "/bn/docs/"
+        languages: ["bn"]
+      - title: "Documentação"
+        url: "/pt/docs/"
+        languages: ["pt"]
+      - title: "ドキュメント"
+        url: "/ja/docs/"
+        languages: ["ja"]
+      - title: "Dokumentācija"
+        url: "/lv/docs/"
+        languages: ["lv"]
+      - title: "Dokumentacija"
+        url: "/lt/docs/"
+        languages: ["lt"]
+      - title: "Dokumentáció"
+        url: "/hu/docs/"
+        languages: ["hu"]
+      - title: "Документація"
+        url: "/uk/docs/"
+        languages: ["uk"]
+      - title: "Documentazione"
+        url: "/it/docs/"
+        languages: ["it"]
+      - title: "Documentație"
+        url: "/ro/docs/"
+        languages: ["ro"]
       - title: "Research"
         url: "/research/"
+        languages: ["en"]
+      - title: "Исследования"
+        url: "/ru/research/"
+        languages: ["ru"]
+      - title: "Uuringud"
+        url: "/et/research/"
+        languages: ["et"]
+      - title: "Araştırma"
+        url: "/tr/research/"
+        languages: ["tr"]
+      - title: "Badania"
+        url: "/pl/research/"
+        languages: ["pl"]
+      - title: "Forschung"
+        url: "/de/research/"
+        languages: ["de"]
+      - title: "Recherche"
+        url: "/fr/research/"
+        languages: ["fr"]
+      - title: "研究"
+        url: "/zh/research/"
+        languages: ["zh"]
+      - title: "शोध"
+        url: "/hi/research/"
+        languages: ["hi"]
+      - title: "Investigación"
+        url: "/es/research/"
+        languages: ["es"]
+      - title: "الأبحاث"
+        url: "/ar/research/"
+        languages: ["ar"]
+      - title: "গবেষণা"
+        url: "/bn/research/"
+        languages: ["bn"]
+      - title: "Pesquisa"
+        url: "/pt/research/"
+        languages: ["pt"]
+      - title: "研究"
+        url: "/ja/research/"
+        languages: ["ja"]
+      - title: "Pētījumi"
+        url: "/lv/research/"
+        languages: ["lv"]
+      - title: "Tyrimai"
+        url: "/lt/research/"
+        languages: ["lt"]
+      - title: "Kutatás"
+        url: "/hu/research/"
+        languages: ["hu"]
+      - title: "Дослідження"
+        url: "/uk/research/"
+        languages: ["uk"]
+      - title: "Ricerca"
+        url: "/it/research/"
+        languages: ["it"]
+      - title: "Cercetare"
+        url: "/ro/research/"
+        languages: ["ro"]
       - title: "Blog"
         url: "/blog/"
+        languages: ["en"]
+      - title: "Блог"
+        url: "/ru/blog/"
+        languages: ["ru"]
+      - title: "Blogi"
+        url: "/et/blog/"
+        languages: ["et"]
+      - title: "Blog"
+        url: "/tr/blog/"
+        languages: ["tr"]
+      - title: "Blog"
+        url: "/pl/blog/"
+        languages: ["pl"]
+      - title: "Blog"
+        url: "/de/blog/"
+        languages: ["de"]
+      - title: "Blog"
+        url: "/fr/blog/"
+        languages: ["fr"]
+      - title: "博客"
+        url: "/zh/blog/"
+        languages: ["zh"]
+      - title: "ब्लॉग"
+        url: "/hi/blog/"
+        languages: ["hi"]
+      - title: "Blog"
+        url: "/es/blog/"
+        languages: ["es"]
+      - title: "المدونة"
+        url: "/ar/blog/"
+        languages: ["ar"]
+      - title: "ব্লগ"
+        url: "/bn/blog/"
+        languages: ["bn"]
+      - title: "Blog"
+        url: "/pt/blog/"
+        languages: ["pt"]
+      - title: "ブログ"
+        url: "/ja/blog/"
+        languages: ["ja"]
+      - title: "Blogs"
+        url: "/lv/blog/"
+        languages: ["lv"]
+      - title: "Tinklaraštis"
+        url: "/lt/blog/"
+        languages: ["lt"]
+      - title: "Blog"
+        url: "/hu/blog/"
+        languages: ["hu"]
+      - title: "Блог"
+        url: "/uk/blog/"
+        languages: ["uk"]
+      - title: "Blog"
+        url: "/it/blog/"
+        languages: ["it"]
+      - title: "Blog"
+        url: "/ro/blog/"
+        languages: ["ro"]
       - title: "Pricing"
         url: "/pricing/"
+        languages: ["en"]
+      - title: "Тарифы"
+        url: "/ru/pricing/"
+        languages: ["ru"]
+      - title: "Hinnad"
+        url: "/et/pricing/"
+        languages: ["et"]
+      - title: "Fiyatlandırma"
+        url: "/tr/pricing/"
+        languages: ["tr"]
+      - title: "Cennik"
+        url: "/pl/pricing/"
+        languages: ["pl"]
+      - title: "Preise"
+        url: "/de/pricing/"
+        languages: ["de"]
+      - title: "Tarifs"
+        url: "/fr/pricing/"
+        languages: ["fr"]
+      - title: "价格"
+        url: "/zh/pricing/"
+        languages: ["zh"]
+      - title: "मूल्य"
+        url: "/hi/pricing/"
+        languages: ["hi"]
+      - title: "Precios"
+        url: "/es/pricing/"
+        languages: ["es"]
+      - title: "الأسعار"
+        url: "/ar/pricing/"
+        languages: ["ar"]
+      - title: "মূল্য"
+        url: "/bn/pricing/"
+        languages: ["bn"]
+      - title: "Preços"
+        url: "/pt/pricing/"
+        languages: ["pt"]
+      - title: "料金"
+        url: "/ja/pricing/"
+        languages: ["ja"]
+      - title: "Cenas"
+        url: "/lv/pricing/"
+        languages: ["lv"]
+      - title: "Kainos"
+        url: "/lt/pricing/"
+        languages: ["lt"]
+      - title: "Árak"
+        url: "/hu/pricing/"
+        languages: ["hu"]
+      - title: "Тарифи"
+        url: "/uk/pricing/"
+        languages: ["uk"]
+      - title: "Prezzi"
+        url: "/it/pricing/"
+        languages: ["it"]
+      - title: "Prețuri"
+        url: "/ro/pricing/"
+        languages: ["ro"]
       - title: "Discord"
         url: "https://discord.gg/PcbP4uedWj"
         class: "nav-action nav-action-first"

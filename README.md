@@ -85,7 +85,7 @@ The front page is translated for every supported non-default language via duplic
 
 The pricing page is localized for every supported non-default language with standalone templates: `content/<lang>/pricing/index.md` uses `layout: pricing-<lang>`, which maps to `templates/pricing-<lang>.html`. The canonical `/pricing/` page remains English; localized pricing copies intentionally keep plan names and prices exact while translating descriptions, features, limits, and CTAs.
 
-Top-level translated placeholders such as `/<lang>/about/`, `/<lang>/docs/`, and `/<lang>/research/` intentionally redirect to the current English sections until those sections are fully localized. `/ru/blog/` is now backed by a curated set of translated posts, while other untranslated non-default blog placeholders still redirect to the English blog until localized.
+Top-level translated placeholders such as `/<lang>/about/`, `/<lang>/docs/`, and `/<lang>/research/` intentionally redirect to the current English sections until those sections are fully localized. `/ru/blog/` is backed by a curated set of translated posts, and `/et/blog/` is backed by translated Estonian posts mirroring the current English blog set. Other untranslated non-default blog placeholders still redirect to the English blog until localized.
 
 As of June 2026, Russian `/ru/docs/` and nested `/ru/docs/**` pages are real localized docs copied from `content/docs/**`. Header labels and localized header targets are derived from content frontmatter and localized routes; other languages without localized docs may keep redirect placeholders.
 

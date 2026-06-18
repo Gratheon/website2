@@ -1,15 +1,15 @@
 ---
-title: 🧿 Robotic Beehive
+title: 🧿 Robotmesitaru
 sidebar_position: 5
 ---
 
 Arendame robotiseeritud vertikaalse taruinspektsiooni platvormi, mis:
 - suudab tõsta mitut tarusektsiooni, et jõuda kiiremini pesani;
 - teeb sisseehitatud kaameratega fotosid raamidest;
-- laadib inspekteerimise tulemused üles [Web-appi](../web_app/web_app.md);
+- laadib inspekteerimise tulemused üles [veebirakendusse](../web_app/web_app.md);
 - liigub ratastel ja võimaldab kontrollida erinevaid tarusid.
 
-Riistvara suund ja tehnilised detailid on praegu kirjeldatud inglise keeles: [robotic beehive engineering docs](/docs/robotic-beehive/robotic-beehive/).
+Riistvara suund ja tehnilised detailid on praegu kirjeldatud inglise keeles: [robotmesitaru inseneridokumentatsioon](/docs/robotic-beehive/robotic-beehive/).
 
 `status`: [TRL 2](https://www.nasa.gov/directorates/somd/space-communications-navigation-program/technology-readiness-levels/)
 
@@ -29,4 +29,4 @@ See lahendus on tõenäoliselt kõige sobivam:
 - [👩🏻 ettevõtete tarusponsorluse programmidele](/about/company/clients/tech-scale-up-companies/)
 
 ## Rohkem ingliskeelset infot
-- [Robotic Beehive overview (EN)](/about/products/robotic_beehive/robotic-beehive/)
+- [Robotmesitaru ülevaade](/about/products/robotic_beehive/robotic-beehive/)

@@ -990,11 +990,21 @@
     <nav aria-label="{{.UI.Breadcrumb}}">
         <ol class="breadcrumbs">
             {{range .Breadcrumbs}}
+            {{/* English is served at root paths; normalize stale /en/... breadcrumb URLs emitted by older builders. */}}
+            {{ $breadcrumbURL := .URL }}
+            {{ $defaultLangPrefix := printf "/%s/" $.Site.I18n.Default }}
+            {{ $defaultLangRoot := printf "/%s" $.Site.I18n.Default }}
+            {{ $unprefixedURL := trimPrefix $breadcrumbURL $defaultLangPrefix }}
+            {{ if and (eq $.Page.Language $.Site.I18n.Default) (eq $breadcrumbURL $defaultLangRoot) }}
+                {{ $breadcrumbURL = "/" }}
+            {{ else if and (eq $.Page.Language $.Site.I18n.Default) (ne $unprefixedURL $breadcrumbURL) }}
+                {{ $breadcrumbURL = printf "/%s" $unprefixedURL }}
+            {{ end }}
             <li>
                 {{if .IsCurrent}}
                     <span aria-current="page">{{.Title}}</span>
                 {{else}}
-                    <a href="{{.URL}}">{{.Title}}</a>
+                    <a href="{{$breadcrumbURL}}">{{.Title}}</a>
                 {{end}}
             </li>
             {{end}}

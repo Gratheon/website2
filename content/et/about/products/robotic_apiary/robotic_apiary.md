@@ -1,9 +1,9 @@
 ---
 sidebar_position: 6
-title: 🪬 Robotic Apiary
+title: 🪬 Robotmesila
 ---
 
-Kulutõhusama lahendusena suurematele mesilate soovime taaskasutada [Robotic Beehive](../robotic_beehive/robotic_beehive.md) funktsionaalsust ning lisada võime liikuda mesilas ringi, et kontrollida tarusid nõudmisel või ajakava alusel.
+Kulutõhusama lahendusena suurematele mesilatele soovime taaskasutada [robotmesitaru](../robotic_beehive/robotic_beehive.md) funktsionaalsust ning lisada võime liikuda mesilas ringi, et kontrollida tarusid nõudmisel või ajakava alusel.
 
 `status`: [TRL 1](https://www.nasa.gov/directorates/somd/space-communications-navigation-program/technology-readiness-levels/)
 
@@ -21,4 +21,4 @@ See toode aitab eelkõige järgmiste väljakutsete puhul:
 - [🧑🏻‍🌾 Põllumehed](/about/company/clients/farmers/)
 
 ## Rohkem ingliskeelset infot
-- [Robotic Apiary overview (EN)](/about/products/robotic_apiary/robotic-apiary/)
+- [Robotmesila ülevaade](/about/products/robotic_apiary/robotic-apiary/)

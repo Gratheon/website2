@@ -1,23 +1,23 @@
 ---
 sidebar_position: 2
-title: 📱Web-app
-navTitle: Web-app
+title: 📱 Veebirakendus
+navTitle: Veebirakendus
 ---
 
-Gratheoni Web-app aitab mesinikel hallata [mesila andmeid](/about/products/web_app/hobbyist-tier/apiary-management/), suhelda paigaldatud modulaarsete taruseadmetega, analüüsida kärje- ja põhjalaua pilte, salvestada [aegridade telemeetriat](/about/products/web_app/pro-tier/hive-telemetry-storage/), luua [teavitusi](/about/products/web_app/flexible-tier/alerts/) ning pakkuda AI soovitusi probleemide lahendamiseks.
+Gratheoni veebirakendus aitab mesinikel hallata [mesila andmeid](/about/products/web_app/hobbyist-tier/apiary-management/), suhelda paigaldatud modulaarsete taruseadmetega, analüüsida kärje- ja põhjalaua pilte, salvestada [aegridade telemeetriat](/about/products/web_app/pro-tier/hive-telemetry-storage/), luua [teavitusi](/about/products/web_app/flexible-tier/alerts/) ning pakkuda tehisaru soovitusi probleemide lahendamiseks.
 
 `status`: [TRL 6](https://www.nasa.gov/directorates/somd/space-communications-navigation-program/technology-readiness-levels/)
 
 ## Põhivõimekus
 
-Web-app koondab üheks süsteemiks:
+Veebirakendus koondab üheks süsteemiks:
 - mesilate ja tarude halduse,
 - inspekteerimiste ning fotode ajaloo,
 - seadmetelt saabuva telemeetria,
 - sissepääsukaamera videod ja mõõdikud,
 - hoiatused ning võrdleva analüütika.
 
-See on keskne koht, kuhu ühenduvad teised Gratheoni tooted nagu [Entrance Observer](../entrance_observer/entrance_observer.md) ja [🌡️ Beehive scales](../scales/scales.md).
+See on keskne koht, kuhu ühenduvad teised Gratheoni tooted nagu [lennuava jälgija](../entrance_observer/entrance_observer.md) ja [🌡️ tarukaalud](../scales/scales.md).
 
 ## Peamised kasutusjuhud
 
@@ -26,7 +26,7 @@ See on keskne koht, kuhu ühenduvad teised Gratheoni tooted nagu [Entrance Obser
 - lisa sektsioonid ja raamid;
 - laadi üles raami foto;
 - oota, kuni taustsüsteem pildi töötleb;
-- saa AI abil statistikat mesilaste arvu ja rakkude jaotuse kohta.
+- saa tehisaru abil statistikat mesilaste arvu ja rakkude jaotuse kohta.
 
 ### Mesilaspere arengu jälgimine ajas
 - salvesta inspekteerimised järjestikuste hetkepiltidena;
@@ -34,13 +34,13 @@ See on keskne koht, kuhu ühenduvad teised Gratheoni tooted nagu [Entrance Obser
 - kasuta andmeid otsuste tegemiseks, mitte ainult mälule toetudes.
 
 ### IoT-andurite telemeetria vastuvõtt
-- loo API token;
+- loo API võti;
 - ühenda andurseade WiFi-võrku;
 - saada andmed rakendusse;
 - vaata kaalu, temperatuuri ja muid näite graafikutel.
 
 ### Lennuava video voogedastus
-- seadista [Entrance Observer](../entrance_observer/entrance_observer.md);
+- seadista [lennuava jälgija](../entrance_observer/entrance_observer.md);
 - kontrolli, et videovoog oleks nähtav;
 - kasuta mõõdikuid ja hoiatusi tegevuse tõlgendamiseks.
 
@@ -48,16 +48,16 @@ See on keskne koht, kuhu ühenduvad teised Gratheoni tooted nagu [Entrance Obser
 - lisa tarule põhjalaud;
 - laadi üles foto valgest väljatõmmatavast plaadist;
 - pildid seotakse inspekteerimistega ajaloolise jälgimise jaoks;
-- [Hive bottom board varroa counting](starter-tier/hive_bottom_varroa_count.md) aitab hinnata lestade hulka ja raviotsuseid.
+- [varroa-lestade loendamine taru põhjalaualt](starter-tier/hive_bottom_varroa_count.md) aitab hinnata lestade hulka ja raviotsuseid.
 
 ## Tähtsamad funktsioonid selles lokaliseeritud osas
-- [👑 Live Queen Finder](free-tier/live-queen-finder.md)
-- [🦀 Hive bottom board varroa counting](starter-tier/hive_bottom_varroa_count.md)
+- [👑 Reaalajas mesilasema leidja](free-tier/live-queen-finder.md)
+- [🦀 Varroa-lestade loendamine taru põhjalaualt](starter-tier/hive_bottom_varroa_count.md)
 
 ## Rohkem ingliskeelset infot
 Need lingid jäävad teadlikult ingliskeelseks, kuni vastavad alamlehed on samuti lokaliseeritud:
-- [Apiary Management](/about/products/web_app/hobbyist-tier/apiary-management/)
-- [Hive telemetry storage](/about/products/web_app/pro-tier/hive-telemetry-storage/)
-- [Alerts](/about/products/web_app/flexible-tier/alerts/)
-- [Timeseries data analytics](/about/products/web_app/pro-tier/timeseries-data-analytics/)
-- [Beehive sensors docs](/docs/beehive-sensors/)
+- [Mesila haldus](/about/products/web_app/hobbyist-tier/apiary-management/)
+- [Taru telemeetria salvestus](/about/products/web_app/pro-tier/hive-telemetry-storage/)
+- [Teavitused](/about/products/web_app/flexible-tier/alerts/)
+- [Aegridade andmeanalüüs](/about/products/web_app/pro-tier/timeseries-data-analytics/)
+- [Taruandurite dokumentatsioon](/docs/beehive-sensors/)

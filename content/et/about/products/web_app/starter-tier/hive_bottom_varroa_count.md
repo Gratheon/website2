@@ -1,14 +1,14 @@
 ---
 status: in-progress
-title: 🦀 Hive bottom board varroa counting
+title: 🦀 Varroa-lestade loendamine taru põhjalaualt
 ---
 
-Varroa destructor on parasiitne lest, mis nõrgestab meemesilasperesid. Regulaarne varroa taseme jälgimine on koloonia tervise jaoks hädavajalik. Traditsiooniline lugemine tähendab valge kleepplaadi paigutamist taru põhja ja mahalangenud lestade käsitsi kokku lugemist — see on aeganõudev ja eksimisaldis.
+Varroa destructor on parasiitne lest, mis nõrgestab meemesilasperesid. Regulaarne varroa taseme jälgimine on mesilaspere tervise jaoks hädavajalik. Traditsiooniline lugemine tähendab valge kleepplaadi paigutamist taru põhja ja mahalangenud lestade käsitsi kokku lugemist — see on aeganõudev ja eksimisaldis.
 
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/1ghYZX55LP0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/1ghYZX55LP0" title="YouTube'i videopleier" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Eesmärk
-Jälgida varroa-nakkuse taset, laadides üles ja analüüsides taru põhjalaua pilte. Rakendus loendab lestad automaatselt AI abil, asendades käsitsi lugemise ja luues ajaloolise trendi.
+Jälgida varroa-nakkuse taset, laadides üles ja analüüsides taru põhjalaua pilte. Rakendus loendab lestad automaatselt tehisaru abil, asendades käsitsi lugemise ja luues ajaloolise trendi.
 
 ## Kasutajalugu
 - Mesiniku jaoks,
@@ -17,7 +17,7 @@ Jälgida varroa-nakkuse taset, laadides üles ja analüüsides taru põhjalaua p
 - ning võtta raviotsused vastu õigel ajal, kui läved ületatakse.
 
 ## Peamised eelised
-- **Käsitsi lugemist ei ole vaja**: AI leiab ja loendab varroa-lestad automaatselt.
+- **Käsitsi lugemist ei ole vaja**: tehisaru leiab ja loendab varroa-lestad automaatselt.
 - **Täpsus ja järjepidevus**: arvutinägemine annab stabiilsemaid tulemusi kui käsitsi hindamine.
 - **Ajalooline jälgimine**: inspekteerimistega seotud pildid näitavad varroa trendi nädalate ja kuude lõikes.
 - **Ravi planeerimine**: objektiivsed andmed aitavad otsustada, millal ravi on vajalik.
@@ -27,14 +27,14 @@ Jälgida varroa-nakkuse taset, laadides üles ja analüüsides taru põhjalaua p
 ### 1. Lisa põhjalaud tarule
 1. Ava rakenduses oma taru struktuurivaade.
 2. Klõpsa sektsioonide valikumenüül.
-3. Vali **"Add bottom"**.
+3. Vali **"Lisa põhi"**.
 4. Põhjalaua sektsioon ilmub taru struktuuri.
 
 ### 2. Laadi üles põhjalaua pildid
 1. Vali taru struktuurist põhjalaud.
-2. Klõpsa **"Upload bottom board image"**.
+2. Klõpsa **"Laadi üles põhjalaua pilt"**.
 3. Vali pilt oma seadmest.
-4. Pilt laaditakse üles ja AI alustab analüüsi.
+4. Pilt laaditakse üles ja tehisaru alustab analüüsi.
 5. Mõne sekundi pärast kuvatakse tulemus.
 
 **Pildistamise soovitused:**
@@ -71,7 +71,7 @@ Pildid versioonitakse koos inspekteerimistega:
 - ✅ üleslaetud piltide vaatamine taru vaates.
 
 **Arenduses:**
-- 🚧 automaatne varroa-lestade loendamine AI abil;
+- 🚧 automaatne varroa-lestade loendamine tehisaru abil;
 - 🚧 tuvastatud lestade visuaalne esiletõstmine pildil;
 - 🚧 ajaloolised trendigraafikud;
 - 🚧 hoiatused ravilävede põhjal;
@@ -84,11 +84,11 @@ Pildid versioonitakse koos inspekteerimistega:
 - ei asenda professionaalset veterinaardiagnoosi.
 
 ## Seotud funktsioonid
-- [Inspection Management (EN)](/about/products/web_app/starter-tier/inspection-management/)
-- Varroa Treatment Tracking (planned)
-- Colony Health Dashboard (planned)
+- [Inspekteerimiste haldus](/about/products/web_app/starter-tier/inspection-management/)
+- Varroa ravi jälgimine (plaanis)
+- Mesilaspere tervise töölaud (plaanis)
 
 ## Lisainfo
-- [Varroa Bottom Detection - Technical Documentation](/docs/web-app/features/varroa-bottom-detection/)
-- [Honey Bee Health Coalition - Varroa Guide](https://honeybeehealthcoalition.org/varroa/)
-- [Understanding Varroa Mite Thresholds](https://honeybeehealthcoalition.org/varroa/)
+- [Varroa tuvastamine põhjalaualt — tehniline dokumentatsioon](/docs/web-app/features/varroa-bottom-detection/)
+- [Honey Bee Health Coalitioni varroa juhend](https://honeybeehealthcoalition.org/varroa/)
+- [Varroa-lesta künniste mõistmine](https://honeybeehealthcoalition.org/varroa/)
