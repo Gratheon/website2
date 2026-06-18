@@ -1057,7 +1057,7 @@
     {{if .Frontmatter.Tags}}
     <div class="tags">
         {{range .Frontmatter.Tags}}
-        <a class="tag" href="/{{$.Page.Language}}/tags/{{slugify .}}/">#{{.}}</a>
+        <a class="tag" href="{{$.TagURL .}}">#{{.}}</a>
         {{end}}
     </div>
     {{end}}
