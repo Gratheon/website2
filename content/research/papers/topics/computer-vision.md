@@ -13,11 +13,11 @@ title: "Research topic: Computer Vision"
 
 ## Product areas
 
-- [Colony Health](../index.md#product-area-colony-health) (6)
-- [Gate Tracker](../index.md#product-area-gate-tracker) (21)
-- [Hive Scanner](../index.md#product-area-hive-scanner) (13)
-- [Monitoring Platform](../index.md#product-area-monitoring-platform) (8)
-- [Robotics](../index.md#product-area-robotics) (2)
+- [Colony Health](../product-areas/colony-health.md) (6)
+- [Gate Tracker](../product-areas/gate-tracker.md) (21)
+- [Hive Scanner](../product-areas/hive-scanner.md) (13)
+- [Monitoring Platform](../product-areas/monitoring-platform.md) (8)
+- [Robotics](../product-areas/robotics.md) (2)
 
 ## Years
 

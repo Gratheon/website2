@@ -1,19 +1,21 @@
 ---
 hideNav: true
 hideToc: true
-title: "Research topic: Robotics"
+title: "Research product area: Robotics"
 ---
 
 <!-- GENERATED RESEARCH INDEX:START -->
 ## Summary
 
-- Topic key: `robotics`
+- Product area key: `robotics`
 - Total papers: 7
 - [All research papers](../index.md)
 
-## Product areas
+## Topics
 
-- [Robotics](../product-areas/robotics.md) (7)
+- [Bee Behaviour](../topics/bee-behaviour.md) (5)
+- [Computer Vision](../topics/computer-vision.md) (2)
+- [Robotics](../topics/robotics.md) (7)
 
 ## Years
 

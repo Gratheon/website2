@@ -9,6 +9,7 @@ frontmatter, and updates generated sections between marker comments in:
 - ``content/research/papers/index.md``
 - ``content/research/papers/topics/*.md``
 - ``content/research/papers/years/*.md``
+- ``content/research/papers/product-areas/*.md``
 
 Any prose outside the generated markers is preserved, so editors can keep manual
 introductions or notes around the generated content.
@@ -30,6 +31,7 @@ SITE_ROOT = Path(__file__).resolve().parents[1]
 PAPERS_DIR = SITE_ROOT / "content/research/papers"
 TOPICS_DIR = PAPERS_DIR / "topics"
 YEARS_DIR = PAPERS_DIR / "years"
+PRODUCT_AREAS_DIR = PAPERS_DIR / "product-areas"
 
 START_MARKER = "<!-- GENERATED RESEARCH INDEX:START -->"
 END_MARKER = "<!-- GENERATED RESEARCH INDEX:END -->"
@@ -82,6 +84,7 @@ def main() -> int:
 
     TOPICS_DIR.mkdir(parents=True, exist_ok=True)
     YEARS_DIR.mkdir(parents=True, exist_ok=True)
+    PRODUCT_AREAS_DIR.mkdir(parents=True, exist_ok=True)
 
     write_or_update(
         PAPERS_DIR / "index.md",
@@ -105,9 +108,19 @@ def main() -> int:
             lambda current_year=year: create_year_shell(current_year),
         )
 
+    papers_by_product_area = group_papers_by_product_area(papers)
+    for product_area in sorted(papers_by_product_area, key=sort_term_key):
+        write_or_update(
+            PRODUCT_AREAS_DIR / f"{product_area.slug}.md",
+            render_product_area_page(product_area, papers_by_product_area[product_area]),
+            lambda current_product_area=product_area: create_product_area_shell(current_product_area),
+        )
+
     print(
         "Generated research indexes for "
-        f"{len(papers)} papers, {len(papers_by_topic)} topic pages, and {len(papers_by_year)} year pages."
+        f"{len(papers)} papers, {len(papers_by_topic)} topic pages, "
+        f"{len(papers_by_year)} year pages, and "
+        f"{len(papers_by_product_area)} product-area pages."
     )
     return 0
 
@@ -225,6 +238,13 @@ def humanize_slug(slug: str) -> str:
     return " ".join(humanized)
 
 
+def yaml_double_quote(value: str) -> str:
+    # WHY: Generated titles can contain `: `, which is invalid as a plain YAML scalar.
+    # WHAT: Return a simple double-quoted scalar for frontmatter title fields.
+    escaped = value.replace("\\", "\\\\").replace('"', '\"').replace("\n", "\\n")
+    return f'"{escaped}"'
+
+
 def paper_sort_key(paper: Paper) -> tuple[tuple[int, int, str], str, str]:
     return (paper.year_sort, paper.title.casefold(), paper.filename.casefold())
 
@@ -300,31 +320,16 @@ def render_main_index(papers: list[Paper]) -> str:
         lines.extend(render_counted_links(
             items=sorted(product_area_groups, key=sort_term_key),
             count_lookup=lambda area: len(product_area_groups[area]),
-            link_lookup=lambda area: f"#product-area-{area.slug}",
+            link_lookup=lambda area: f"product-areas/{quote(area.slug + '.md', safe='/')}",
         ))
 
     lines.extend([
         "",
-        "## Papers by year",
+        "## Full paper lists",
         "",
+        "The complete bibliography is split into the sub-pages above to keep this index fast to scan.",
+        "Use topic, year, or product-area pages for the detailed paper lists.",
     ])
-    for year in sorted(year_groups, key=lambda item: term_sort_key_for_year(item, year_groups[item])):
-        lines.append(f"### [{year.label}](years/{quote(year.slug + '.md', safe='/')})")
-        lines.append("")
-        lines.extend(render_paper_bullets(year_groups[year], base_prefix=""))
-        lines.append("")
-
-    if product_area_groups:
-        lines.extend([
-            "## Papers by product area",
-            "",
-        ])
-        for area in sorted(product_area_groups, key=sort_term_key):
-            lines.append(f'<a id="product-area-{area.slug}"></a>')
-            lines.append(f"### {area.label}")
-            lines.append("")
-            lines.extend(render_paper_bullets(product_area_groups[area], base_prefix="", include_year=True))
-            lines.append("")
 
     return "\n".join(lines).rstrip()
 
@@ -350,7 +355,7 @@ def render_topic_page(topic: Term, papers: list[Paper]) -> str:
         lines.extend(render_counted_links(
             items=sorted(product_area_groups, key=sort_term_key),
             count_lookup=lambda area: len(product_area_groups[area]),
-            link_lookup=lambda area: f"../index.md#product-area-{area.slug}",
+            link_lookup=lambda area: f"../product-areas/{quote(area.slug + '.md', safe='/')}",
         ))
 
     lines.extend([
@@ -409,7 +414,7 @@ def render_year_page(year: Term, papers: list[Paper]) -> str:
         lines.extend(render_counted_links(
             items=sorted(product_area_groups, key=sort_term_key),
             count_lookup=lambda area: len(product_area_groups[area]),
-            link_lookup=lambda area: f"../index.md#product-area-{area.slug}",
+            link_lookup=lambda area: f"../product-areas/{quote(area.slug + '.md', safe='/')}",
         ))
 
     lines.extend([
@@ -421,6 +426,52 @@ def render_year_page(year: Term, papers: list[Paper]) -> str:
         lines.append(f"### [{topic.label}](../topics/{quote(topic.slug + '.md', safe='/')})")
         lines.append("")
         lines.extend(render_paper_bullets(topic_groups[topic], base_prefix="../"))
+        lines.append("")
+
+    return "\n".join(lines).rstrip()
+
+
+def render_product_area_page(product_area: Term, papers: list[Paper]) -> str:
+    topic_groups = group_papers_by_topic(papers)
+    year_groups = group_papers_by_year(papers)
+
+    lines: list[str] = [
+        "## Summary",
+        "",
+        f"- Product area key: `{product_area.slug}`",
+        f"- Total papers: {len(papers)}",
+        "- [All research papers](../index.md)",
+    ]
+
+    lines.extend([
+        "",
+        "## Topics",
+        "",
+    ])
+    lines.extend(render_counted_links(
+        items=sorted(topic_groups, key=sort_term_key),
+        count_lookup=lambda topic: len(topic_groups[topic]),
+        link_lookup=lambda topic: f"../topics/{quote(topic.slug + '.md', safe='/')}",
+    ))
+    lines.extend([
+        "",
+        "## Years",
+        "",
+    ])
+    lines.extend(render_counted_links(
+        items=sorted(year_groups, key=lambda year: term_sort_key_for_year(year, year_groups[year])),
+        count_lookup=lambda year: len(year_groups[year]),
+        link_lookup=lambda year: f"../years/{quote(year.slug + '.md', safe='/')}",
+    ))
+    lines.extend([
+        "",
+        "## Papers by year",
+        "",
+    ])
+    for year in sorted(year_groups, key=lambda item: term_sort_key_for_year(item, year_groups[item])):
+        lines.append(f"### [{year.label}](../years/{quote(year.slug + '.md', safe='/')})")
+        lines.append("")
+        lines.extend(render_paper_bullets(year_groups[year], base_prefix="../"))
         lines.append("")
 
     return "\n".join(lines).rstrip()
@@ -463,7 +514,7 @@ def paper_link(base_prefix: str, filename: str) -> str:
 def create_main_index_shell() -> str:
     return "\n".join([
         "---",
-        "title: Research papers",
+        f"title: {yaml_double_quote('Research papers')}",
         "hide_table_of_contents: true",
         "---",
         "",
@@ -478,7 +529,7 @@ def create_topic_shell(topic: Term) -> str:
         "---",
         "hideNav: true",
         "hide_table_of_contents: true",
-        f"title: Research topic: {topic.label}",
+        f"title: {yaml_double_quote(f'Research topic: {topic.label}')}",
         "---",
         "",
         START_MARKER,
@@ -493,7 +544,21 @@ def create_year_shell(year: Term) -> str:
         "---",
         "hideNav: true",
         "hide_table_of_contents: true",
-        f"title: {title}",
+        f"title: {yaml_double_quote(title)}",
+        "---",
+        "",
+        START_MARKER,
+        END_MARKER,
+        "",
+    ])
+
+
+def create_product_area_shell(product_area: Term) -> str:
+    return "\n".join([
+        "---",
+        "hideNav: true",
+        "hideToc: true",
+        f"title: {yaml_double_quote(f'Research product area: {product_area.label}')}",
         "---",
         "",
         START_MARKER,

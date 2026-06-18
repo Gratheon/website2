@@ -13,9 +13,9 @@ title: "Research topic: Datasets Benchmarks"
 
 ## Product areas
 
-- [Gate Tracker](../index.md#product-area-gate-tracker) (5)
-- [Hive Scanner](../index.md#product-area-hive-scanner) (2)
-- [Monitoring Platform](../index.md#product-area-monitoring-platform) (2)
+- [Gate Tracker](../product-areas/gate-tracker.md) (5)
+- [Hive Scanner](../product-areas/hive-scanner.md) (2)
+- [Monitoring Platform](../product-areas/monitoring-platform.md) (2)
 
 ## Years
 

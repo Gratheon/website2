@@ -13,9 +13,9 @@ title: "Research topic: Edge AI Energy"
 
 ## Product areas
 
-- [Colony Health](../index.md#product-area-colony-health) (1)
-- [Gate Tracker](../index.md#product-area-gate-tracker) (1)
-- [Monitoring Platform](../index.md#product-area-monitoring-platform) (3)
+- [Colony Health](../product-areas/colony-health.md) (1)
+- [Gate Tracker](../product-areas/gate-tracker.md) (1)
+- [Monitoring Platform](../product-areas/monitoring-platform.md) (3)
 
 ## Years
 

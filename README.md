@@ -22,7 +22,7 @@ just build
 
 This generates static files in `dist/`.
 
-Generate or refresh research-paper index pages from frontmatter:
+Generate or refresh research-paper index pages from frontmatter. This keeps `/research/papers/` as a compact overview and writes detailed topic, year, and product-area sub-pages under `content/research/papers/`:
 
 ```bash
 just research-indexes

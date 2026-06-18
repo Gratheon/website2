@@ -13,8 +13,8 @@ title: "Research topic: Audio Acoustics"
 
 ## Product areas
 
-- [Colony Health](../index.md#product-area-colony-health) (4)
-- [Monitoring Platform](../index.md#product-area-monitoring-platform) (2)
+- [Colony Health](../product-areas/colony-health.md) (4)
+- [Monitoring Platform](../product-areas/monitoring-platform.md) (2)
 
 ## Years
 

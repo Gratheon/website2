@@ -13,11 +13,11 @@ title: "Research topic: Bee Behaviour"
 
 ## Product areas
 
-- [Colony Health](../index.md#product-area-colony-health) (9)
-- [Gate Tracker](../index.md#product-area-gate-tracker) (15)
-- [Hive Scanner](../index.md#product-area-hive-scanner) (7)
-- [Monitoring Platform](../index.md#product-area-monitoring-platform) (5)
-- [Robotics](../index.md#product-area-robotics) (5)
+- [Colony Health](../product-areas/colony-health.md) (9)
+- [Gate Tracker](../product-areas/gate-tracker.md) (15)
+- [Hive Scanner](../product-areas/hive-scanner.md) (7)
+- [Monitoring Platform](../product-areas/monitoring-platform.md) (5)
+- [Robotics](../product-areas/robotics.md) (5)
 
 ## Years
 

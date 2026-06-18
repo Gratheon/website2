@@ -13,7 +13,7 @@ title: "Research topic: Reviews Surveys"
 
 ## Product areas
 
-- [Monitoring Platform](../index.md#product-area-monitoring-platform) (12)
+- [Monitoring Platform](../product-areas/monitoring-platform.md) (12)
 
 ## Years
 

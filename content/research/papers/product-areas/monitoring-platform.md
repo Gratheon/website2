@@ -1,61 +1,65 @@
 ---
 hideNav: true
 hideToc: true
-title: "Research topic: IoT Sensors"
+title: "Research product area: Monitoring Platform"
 ---
 
 <!-- GENERATED RESEARCH INDEX:START -->
 ## Summary
 
-- Topic key: `iot-sensors`
+- Product area key: `monitoring-platform`
 - Total papers: 35
 - [All research papers](../index.md)
 
-## Product areas
+## Topics
 
-- [Colony Health](../product-areas/colony-health.md) (4)
-- [Gate Tracker](../product-areas/gate-tracker.md) (2)
-- [Monitoring Platform](../product-areas/monitoring-platform.md) (29)
+- [Audio Acoustics](../topics/audio-acoustics.md) (2)
+- [Bee Behaviour](../topics/bee-behaviour.md) (5)
+- [Computer Vision](../topics/computer-vision.md) (8)
+- [Datasets Benchmarks](../topics/datasets-benchmarks.md) (2)
+- [Edge AI Energy](../topics/edge-ai-energy.md) (3)
+- [IoT Sensors](../topics/iot-sensors.md) (29)
+- [Pollination Ecology](../topics/pollination-ecology.md) (4)
+- [Reviews Surveys](../topics/reviews-surveys.md) (12)
 
 ## Years
 
-- [2025](../years/2025.md) (4)
-- [2024](../years/2024.md) (6)
-- [2023](../years/2023.md) (7)
+- [2025](../years/2025.md) (2)
+- [2024](../years/2024.md) (7)
+- [2023](../years/2023.md) (8)
 - [2022](../years/2022.md) (4)
 - [2021](../years/2021.md) (3)
-- [2020](../years/2020.md) (2)
+- [2020](../years/2020.md) (3)
 - [2019](../years/2019.md) (2)
 - [2017](../years/2017.md) (1)
 - [2016](../years/2016.md) (1)
-- [2013](../years/2013.md) (1)
 - [Unknown year](../years/unknown.md) (4)
 
 ## Papers by year
 
 ### [2025](../years/2025.md)
 
-- [Apis mellifera Bee Verification with IoT and Graph Neural Network](../Apis%20mellifera%20Bee%20Verification%20with%20IoT%20and%20Graph%20Neural%20Network.md) — 🇲🇽 Instituto Tecnológico El Llano Aguascalientes
 - [Buzzing with Intelligence: A Systematic Review of Smart Beehive Technologies](../Buzzing%20with%20Intelligence%20A%20Systematic%20Review%20of%20SmartBeehive%20Technologies.md) — 🇭🇷 University of Split
 - [IoT and Machine Learning Techniques for Precision Beekeeping:A Review](../IoT%20and%20Machine%20Learning%20Techniques%20for%20Precision%20Beekeeping%20A%20Review.md) — 🇺🇬 Makerere University; 🇹🇿 Dar es Salaam Institute of Technology
-- [⭐️ Deep Edge IoT for Acoustic Detection of Queenless Beehives](../%E2%AD%90%EF%B8%8F%20Deep%20Edge%20IoT%20for%20Acoustic%20Detection%20of%20Queenless%20Beehives.md) — 🇬🇷 Aristotle University of Thessaloniki
 
 ### [2024](../years/2024.md)
 
 - [Advances in Beehive Monitoring Systems: Low-Cost Integrating Sensor Technology forImproved Apiculture Management](../Advances%20in%20Beehive%20Monitoring%20Systems%20Low-Cost%20Integrating%20Sensor%20Technology%20for%20Improved%20Apiculture%20Management.md) — 🇷🇴 Research and Development Institute for Wildlife and Mountain Resources Miercurea Ciuc; 🇷🇴 Sapientia Hungarian University of Transylvania; 🇷🇴 National Institute for Research and Development in Environmental Protection; 🇷🇴 National Institute for Research and Development in Forestry "Marin Dracea"
+- [Bee Together: Joining Bee Audio Datasets for Hive Extrapolation in AI-Based Monitoring](../Bee%20Together%20Joining%20Bee%20Audio%20Datasets%20for%20Hive%20Extrapolation%20in%20AI-Based%20Monitoring.md) — 🇫🇷 University of Toulouse
 - [Beehive Smart Detector Device for the Detection of CriticalConditions That Utilize Edge Device Computations and DeepLearning Inferences](../Beehive%20Smart%20Detector%20Device%20for%20the%20Detection%20of%20CriticalConditions%20That%20Utilize%20Edge%20Device%20Computations%20and%20DeepLearning%20Inferences.md) — 🇬🇷 University of Ioannina
 - [Intelligent beehive monitoring system based on internet of things and colony state analysis](../Intelligent%20beehive%20monitoring%20system%20based%20on%20internet%20of%20things%20and%20colony%20state%20analysis.md) — 🇲🇾 Universiti Teknologi MARA; 🇨🇳 Peking University Shenzhen Graduate School; 🇨🇳 Xiamen University; 🇨🇳 Fujian Agriculture And Forestry University; 🇨🇳 Quanzhou University of Information Engineering
 - [Internet of Things Smart Beehive Network: Homogeneous Data,Modeling, and Forecasting the Honey Robbing Phenomenon](../Internet%20of%20Things%20Smart%20Beehive%20Network.md) — 🇵🇱 Warsaw University of Life Sciences
+- [Mapping Crop Types for Beekeepers Using Sentinel-2 Satellite Image Time Series: Five Essential Crops in the Pollination Services](../Mapping%20Crop%20Types%20for%20Beekeepers%20Using%20Sentinel-2%20Satellite%20Image%20Time%20Series%20Five%20Essential%20Crops%20in%20the%20Pollination%20Services.md) — 🇨🇦 Université de Montréal
 - [The Use of Products with a Monitoring System for Remote Bee Detection in Beekeeping in Czechia](../The%20Use%20of%20Products%20with%20a%20Monitoring%20System%20for%20Remote%20Bee%20Detection%20in%20Beekeeping%20in%20Czechia.md) — 🇨🇿 Brno University of Technology
-- [Tracking Varroa Parasitism Using Handheld Infrared Cameras:Is Eusocial Fever the Key?](../Tracking%20Varroa%20Parasitism%20Using%20Handheld%20Infrared%20Cameras%20Is%20Eusocial%20Fever%20the%20Key.md) — 🇭🇺 Hungarian University of Agricultureand Life Sciences
 
 ### [2023](../years/2023.md)
 
-- [Ambient Electromagnetic Radiation as a Predictor of Honey Bee (Apis mellifera) Traffic in Linear and Non-Linear Regression: Numerical Stability, Physical Time and Energy Efficiency](../Ambient%20Electromagnetic%20Radiation%20as%20a%20Predictor%20of%20Honey%20Bee%20Traffic.md) — 🇺🇸 Utah State University
 - [Bee colony remote monitoring based on IoT using ESP-NOW protocol](../Bee%20colony%20remote%20monitoring%20based%20on%20IoT%20using%20ESP-NOW%20protocol.md) — 🇱🇻 Latvia University of Life Sciences and Technologies
 - [Comparing weight dynamics between urban and rural honeybee colonies in Latvia](../Comparing%20weight%20dynamics%20between%20urban%20and%20rural%20honeybee%20colonies%20in%20Latvia.md) — 🇱🇻 Latvia University of Life Sciences and Technologies
-- [Defined exposure of honey bee colonies to simulated radiofrequency electromagnetic fields (RF-EMF): Negative effects on the homing ability, butn ot on brood development or longevity](../wifi-exposure.md) — 🇩🇪 University of Hohenheim; 🇩🇪 Karlsruhe Institute of Technology
 - [HiveLink – IoT based Smart Bee Hive MonitoringSystem](../HiveLink%20%E2%80%93%20IoT%20based%20Smart%20Bee%20Hive%20MonitoringSystem.md) — 🇮🇳 St. Joseph Engineering College; 🇮🇳 Canara Engineering College
+- [Importance of GIS solutions for beekeepers: a review](../Importance%20of%20GIS%20solutions%20for%20beekeepers%20a%20review.md) — 🇱🇻 Latvia University of Life Sciences and Technologies
+- [Machine Learning and Computer Vision Techniques in Continuous Beehive Monitoring Applications: A Survey](../Machine%20Learning%20and%20Computer%20Vision%20Techniques%20in%20Continuous%20Beehive%20Monitoring%20Applications%20A%20Survey.md) — 🇨🇿 Brno University of Technology
+- [Pollinators as Data Collectors Estimating Floral Diversity with Bees and Computer Vision](../Pollinators%20as%20Data%20Collectors%20Estimating%20Floral%20Diversity%20with%20Bees%20and%20Computer%20Vision.md)
 - [Precision Beekeeping Systems: State of the Art, Pros and Cons, and Their Application as Tools for Advancing theBeekeeping Sector](../Precision%20Beekeeping%20Systems%20State%20of%20the%20Art%2C%20Pros%20and%20Cons%2C%20and%20Their%20Application%20as%20Tools%20for%20Advancing%20theBeekeeping%20Sector.md) — 🇮🇹  University of Tuscia; 🇮🇹 University of Napoli Federico II
 - [Raspberry Pi Bee Health Monitoring Device](../Raspberry%20Pi%20Bee%20Health%20Monitoring%20Device.md) — 🇨🇿 Brno University of Technology
 
@@ -75,6 +79,7 @@ title: "Research topic: IoT Sensors"
 ### [2020](../years/2020.md)
 
 - [Analysis of Energy Consumption in a Precision Beekeeping System](../Analysis%20of%20Energy%20Consumption%20in%20a%20Precision%20Beekeeping%20System.md)
+- [Current achievements and future developments of a novel AI based visual monitoring of beehives in ecotoxicology and for the monitoring of landscape structures](../Current%20achievements%20and%20future%20developments%20of%20a%20novel%20AI%20based%20visual%20monitoring%20of%20beehives%20in%20ecotoxicology%20and%20for%20the%20monitoring%20of%20landscape%20structures.md)
 - [Model for the bee apiary location evaluation](../Model%20for%20the%20bee%20apiary%20location%20evaluation.md) — 🇱🇻 Latvia University of Life Sciences and Technologies; 🇩🇪 Humboldt University of Berlin
 
 ### [2019](../years/2019.md)
@@ -89,10 +94,6 @@ title: "Research topic: IoT Sensors"
 ### [2016](../years/2016.md)
 
 - [Honey Bee Colonies Remote Monitoring System](../Honey%20Bee%20Colonies%20Remote%20Monitoring%20System.md) — 🇪🇸 University of Córdoba
-
-### [2013](../years/2013.md)
-
-- [Reception and learning of electric fields in bees](../Reception%20and%20learning%20of%20electric%20fields%20in%20bees.md) — 🇩🇪 Freie Universität Berlin
 
 ### [Unknown year](../years/unknown.md)
 

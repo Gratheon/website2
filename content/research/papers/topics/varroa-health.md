@@ -13,7 +13,7 @@ title: "Research topic: Varroa Health"
 
 ## Product areas
 
-- [Colony Health](../index.md#product-area-colony-health) (7)
+- [Colony Health](../product-areas/colony-health.md) (7)
 
 ## Years
 

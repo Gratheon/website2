@@ -13,9 +13,9 @@ title: "Research topic: Pollination Ecology"
 
 ## Product areas
 
-- [Colony Health](../index.md#product-area-colony-health) (5)
-- [Gate Tracker](../index.md#product-area-gate-tracker) (2)
-- [Monitoring Platform](../index.md#product-area-monitoring-platform) (4)
+- [Colony Health](../product-areas/colony-health.md) (5)
+- [Gate Tracker](../product-areas/gate-tracker.md) (2)
+- [Monitoring Platform](../product-areas/monitoring-platform.md) (4)
 
 ## Years
 

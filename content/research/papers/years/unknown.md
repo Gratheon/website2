@@ -21,9 +21,9 @@ title: Research papers with unknown year
 
 ## Product areas
 
-- [Gate Tracker](../index.md#product-area-gate-tracker) (1)
-- [Monitoring Platform](../index.md#product-area-monitoring-platform) (4)
-- [Robotics](../index.md#product-area-robotics) (1)
+- [Gate Tracker](../product-areas/gate-tracker.md) (1)
+- [Monitoring Platform](../product-areas/monitoring-platform.md) (4)
+- [Robotics](../product-areas/robotics.md) (1)
 
 ## Papers by topic
 
