@@ -157,6 +157,14 @@ navigation:
         url: "/blog/"
       - title: "Pricing"
         url: "/pricing/"
+      - title: "Discord"
+        url: "https://discord.gg/PcbP4uedWj"
+        class: "nav-action nav-action-first"
+        languages: ["en"]
+      - title: "GitHub"
+        url: "https://github.com/gratheon/web-app"
+        class: "nav-action"
+        languages: ["en"]
       # Auth pages read the language from the query string for unauthenticated users.
       - title: "Log in"
         url: "https://app.gratheon.com/account/authenticate/?lang=en"
