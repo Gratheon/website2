@@ -14,6 +14,15 @@
       <p class="pricing-page-subtitle">Starten Sie einfach, schalten Sie KI und Automatisierung frei, wenn Sie wachsen, und fügen Sie zusätzliche Kapazität nur bei Bedarf hinzu.</p>
     </div>
 
+    <div class="pricing-billing-toggle" aria-label="Abrechnungszeitraum">
+      <span class="billing-toggle-label">Monatlich</span>
+      <label class="billing-switch">
+        <input class="billing-switch-input" type="checkbox" role="switch" aria-checked="false" aria-label="Auf jährliche Zahlung umschalten">
+        <span class="billing-switch-track" aria-hidden="true"><span class="billing-switch-thumb"></span></span>
+      </label>
+      <span class="billing-toggle-label">Jährlich <span class="billing-discount-badge">50% sparen</span></span>
+    </div>
+
     <div class="pricing-container">
       <div class="pricing-card" data-tier="free">
         <div class="pricing-card-header">
@@ -52,7 +61,10 @@
       <div class="pricing-card hobbyist" data-tier="hobbyist">
         <div class="pricing-card-header">
           <div class="pricing-card-title">Hobbyist</div>
-          <div class="pricing-card-price">€5<span class="price-period"> / month</span></div>
+          <div class="pricing-card-price">
+            <div class="price-monthly">€5<span class="price-period"> / month</span></div>
+            <div class="price-yearly-group"><span class="price-yearly">€30<span class="price-period"> / year</span></span><small class="price-discount">Sparen Sie 50% bei jährlicher Abrechnung</small></div>
+          </div>
           <div class="pricing-card-description">Für regelmäßige Notizen und Fotoprotokolle</div>
         </div>
         <div class="pricing-card-body">
@@ -86,7 +98,7 @@
           <div class="pricing-card-title">Starter</div>
           <div class="pricing-card-price">
             <div class="price-monthly">€22<span class="price-period"> / month</span></div>
-            <div class="price-yearly-group"><span class="price-yearly">€144 / year</span><small class="price-discount">Sparen Sie 45% bei jährlicher Abrechnung</small></div>
+            <div class="price-yearly-group"><span class="price-yearly">€132<span class="price-period"> / year</span></span><small class="price-discount">Sparen Sie 50% bei jährlicher Abrechnung</small></div>
           </div>
           <div class="pricing-card-description">KI-gestützte Arbeitsabläufe freischalten</div>
         </div>
@@ -122,7 +134,7 @@
           <div class="pricing-card-title">Professional</div>
           <div class="pricing-card-price">
             <div class="price-monthly">€55<span class="price-period"> / month</span></div>
-            <div class="price-yearly-group"><span class="price-yearly">(€396 / year)</span><small class="price-discount">Sparen Sie 40% bei jährlicher Abrechnung</small></div>
+            <div class="price-yearly-group"><span class="price-yearly">€330<span class="price-period"> / year</span></span><small class="price-discount">Sparen Sie 50% bei jährlicher Abrechnung</small></div>
           </div>
           <div class="pricing-card-description">Für wachsende Imkereien und Teams</div>
         </div>

@@ -52,8 +52,25 @@
       });
   }
 
+  function setupPricingBillingToggle() {
+    var wrapper = document.querySelector('.pricing-page-wrapper');
+    var switchInput = document.querySelector('.billing-switch-input');
+    if (!wrapper || !switchInput) return;
+
+    function updateBillingPeriod() {
+      // WHY: pricing cards should show exactly one billing period at a time.
+      // WHAT: a page-level class lets CSS swap monthly and yearly price groups together.
+      var isYearly = switchInput.checked;
+      wrapper.classList.toggle('is-yearly', isYearly);
+      switchInput.setAttribute('aria-checked', isYearly ? 'true' : 'false');
+    }
+
+    updateBillingPeriod();
+    switchInput.addEventListener('change', updateBillingPeriod);
+  }
 
   document.addEventListener('DOMContentLoaded', function () {
     setLatestDownloadLinks();
+    setupPricingBillingToggle();
   });
 })();

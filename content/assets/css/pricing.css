@@ -22,6 +22,98 @@
   color: var(--ifm-color-emphasis-800);
 }
 
+.pricing-billing-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin: 0 auto 2.5rem;
+  color: var(--ifm-color-emphasis-800);
+  font-weight: 700;
+}
+
+.billing-toggle-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  line-height: 1.2;
+}
+
+.billing-discount-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  background: #FFD900;
+  color: #12325f;
+  font-size: 0.75rem;
+  font-weight: 800;
+  white-space: nowrap;
+  box-shadow: 0 4px 12px rgba(255, 217, 0, 0.22);
+}
+
+.billing-switch {
+  position: relative;
+  display: inline-flex;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.billing-switch-input {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
+
+.billing-switch-track {
+  position: relative;
+  width: 3.8rem;
+  height: 2.1rem;
+  border-radius: 999px;
+  background: #d6dbe6;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.24), 0 8px 20px rgba(18, 50, 95, 0.12);
+  transition: background 0.22s ease, box-shadow 0.22s ease;
+}
+
+.billing-switch-thumb {
+  position: absolute;
+  top: 0.18rem;
+  left: 0.2rem;
+  width: 1.74rem;
+  height: 1.74rem;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.28);
+  transition: transform 0.22s ease;
+}
+
+.billing-switch-input:checked + .billing-switch-track {
+  background: #34c759;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.18), 0 8px 20px rgba(52, 199, 89, 0.24);
+}
+
+.billing-switch-input:checked + .billing-switch-track .billing-switch-thumb {
+  transform: translateX(1.68rem);
+}
+
+.billing-switch-input:focus-visible + .billing-switch-track {
+  outline: 3px solid rgba(2, 72, 255, 0.35);
+  outline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+  .pricing-billing-toggle {
+    flex-wrap: wrap;
+    gap: 0.65rem;
+    margin-bottom: 2rem;
+  }
+
+  .billing-toggle-label {
+    font-size: 0.95rem;
+  }
+}
+
 .plan-comparison-section {
   margin: 4rem 0;
 }
@@ -609,8 +701,10 @@
   margin-bottom: 0.5rem;
 }
 
-/* Monthly price styling */
-.price-monthly {
+/* Monthly/yearly price visibility. Yearly prices stay in the DOM for the switch, but are hidden
+   by default so cards never show both billing periods at once. */
+.price-monthly,
+.price-yearly-group {
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.2;
@@ -621,26 +715,39 @@
   font-weight: 400;
 }
 
-/* Yearly price group styling */
 .price-yearly-group {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
-  gap: 0.2rem;
-  margin-top: 0.5rem;
+  gap: 0.25rem;
+}
+
+.pricing-page-wrapper.is-yearly .price-monthly {
+  display: none;
+}
+
+.pricing-page-wrapper.is-yearly .price-yearly-group {
+  display: flex;
 }
 
 .price-yearly {
-  font-size: 1.4rem;
-  font-weight: 600;
-  opacity: 0.85;
-  line-height: 1.1;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
 }
 
 .price-discount {
-  font-size: 0.75rem;
-  opacity: 0.7;
-  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin-top: 0.35rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: 999px;
+  background: rgba(255, 217, 0, 0.95);
+  color: #12325f;
+  font-size: 0.78rem;
+  font-weight: 800;
   line-height: 1.1;
 }
 
@@ -731,13 +838,14 @@
   list-style: none !important;
   padding: 0 !important;
   margin: 0;
+  line-height: 1.3;
+}
+
 .pricing-card-limits li {
   list-style: none !important;
   padding: 0.15rem 0;
   color: var(--ifm-color-emphasis-400);
   font-size: 0.75rem;
-  line-height: 1.3;
-}
   line-height: 1.3;
 }
 
