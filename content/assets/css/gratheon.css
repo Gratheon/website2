@@ -910,15 +910,21 @@ html[data-theme='dark'] .front-page .future {
   background: var(--knowledge-line);
 }
 
+.knowledge-visual--products .md-image {
+  margin: 0;
+  overflow: hidden;
+}
+
+/* first .md-image spans both rows so the web-app screenshot fills the left column */
+.knowledge-visual--products .md-image:first-child {
+  grid-row: 1 / span 2;
+}
+
 .knowledge-visual--products img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   background: var(--knowledge-paper);
-}
-
-.knowledge-visual--products img:first-child {
-  grid-row: 1 / span 2;
 }
 
 .knowledge-map {
@@ -1300,11 +1306,17 @@ html[data-theme='dark'] .front-page .future {
   font-weight: 800;
 }
 
+/* strip the generic .md-image margin inside cards */
+.knowledge-content .product-card-small .md-image {
+  margin: 0 0 14px;
+  overflow: hidden;
+}
+
 .knowledge-content .product-card-small img,
 .knowledge-content .product-card-small .md-image img {
   max-width: none;
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 16 / 9;
   object-fit: cover;
 }
 
@@ -1408,7 +1420,7 @@ html[data-theme='dark'] .knowledge-content .product-card--accent {
     grid-template-rows: 1.2fr 1fr 1fr;
   }
 
-  .knowledge-visual--products img:first-child {
+  .knowledge-visual--products .md-image:first-child {
     grid-row: auto;
   }
 }
@@ -1517,4 +1529,35 @@ html[data-theme='dark'] .knowledge-content .product-card--accent {
 /* The knowledge template now owns the page hero; keep the older markdown research hero from duplicating it. */
 .knowledge-content .research-page > .research-hero:first-child {
   display: none;
+}
+
+/* Section index: auto-generated child-page list rendered below knowledge content. */
+.knowledge-content .section-index {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.75rem;
+}
+
+.knowledge-content .section-index li {
+  margin: 0;
+}
+
+.knowledge-content .section-index li a {
+  display: block;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--nav-border);
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--link-color, var(--text));
+  text-decoration: none;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.knowledge-content .section-index li a:hover {
+  background: var(--nav-bg);
+  border-color: var(--accent, #e8a020);
 }
