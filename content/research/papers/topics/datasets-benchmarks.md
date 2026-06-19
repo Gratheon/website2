@@ -9,7 +9,8 @@ title: "Research topic: Datasets Benchmarks"
 
 - Topic key: `datasets-benchmarks`
 - Total papers: 8
-- [All research papers](../index.md)
+- [Research papers hub](../index.md)
+- [All topics](index.md)
 
 ## Product areas
 

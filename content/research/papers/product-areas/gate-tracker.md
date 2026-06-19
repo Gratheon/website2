@@ -9,7 +9,8 @@ title: "Research product area: Gate Tracker"
 
 - Product area key: `gate-tracker`
 - Total papers: 22
-- [All research papers](../index.md)
+- [Research papers hub](../index.md)
+- [All product areas](index.md)
 
 ## Topics
 

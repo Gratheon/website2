@@ -9,7 +9,8 @@ title: Research papers with unknown year
 
 - Year: Unknown year
 - Total papers: 6
-- [All research papers](../index.md)
+- [Research papers hub](../index.md)
+- [All years](index.md)
 
 ## Topics
 

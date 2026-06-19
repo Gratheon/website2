@@ -9,7 +9,8 @@ title: "Research topic: Pollination Ecology"
 
 - Topic key: `pollination-ecology`
 - Total papers: 11
-- [All research papers](../index.md)
+- [Research papers hub](../index.md)
+- [All topics](index.md)
 
 ## Product areas
 

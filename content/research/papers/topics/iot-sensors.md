@@ -9,7 +9,8 @@ title: "Research topic: IoT Sensors"
 
 - Topic key: `iot-sensors`
 - Total papers: 35
-- [All research papers](../index.md)
+- [Research papers hub](../index.md)
+- [All topics](index.md)
 
 ## Product areas
 

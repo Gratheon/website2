@@ -9,7 +9,8 @@ title: "Research topic: Audio Acoustics"
 
 - Topic key: `audio-acoustics`
 - Total papers: 6
-- [All research papers](../index.md)
+- [Research papers hub](../index.md)
+- [All topics](index.md)
 
 ## Product areas
 

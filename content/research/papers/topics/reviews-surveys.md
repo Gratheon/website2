@@ -9,7 +9,8 @@ title: "Research topic: Reviews Surveys"
 
 - Topic key: `reviews-surveys`
 - Total papers: 12
-- [All research papers](../index.md)
+- [Research papers hub](../index.md)
+- [All topics](index.md)
 
 ## Product areas
 

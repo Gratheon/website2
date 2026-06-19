@@ -9,7 +9,8 @@ title: "Research product area: Robotics"
 
 - Product area key: `robotics`
 - Total papers: 7
-- [All research papers](../index.md)
+- [Research papers hub](../index.md)
+- [All product areas](index.md)
 
 ## Topics
 

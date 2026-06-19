@@ -9,7 +9,8 @@ title: "Research product area: Monitoring Platform"
 
 - Product area key: `monitoring-platform`
 - Total papers: 35
-- [All research papers](../index.md)
+- [Research papers hub](../index.md)
+- [All product areas](index.md)
 
 ## Topics
 

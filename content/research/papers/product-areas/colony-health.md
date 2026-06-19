@@ -9,7 +9,8 @@ title: "Research product area: Colony Health"
 
 - Product area key: `colony-health`
 - Total papers: 18
-- [All research papers](../index.md)
+- [Research papers hub](../index.md)
+- [All product areas](index.md)
 
 ## Topics
 

@@ -9,7 +9,8 @@ title: "Research topic: Robotics"
 
 - Topic key: `robotics`
 - Total papers: 7
-- [All research papers](../index.md)
+- [Research papers hub](../index.md)
+- [All topics](index.md)
 
 ## Product areas
 

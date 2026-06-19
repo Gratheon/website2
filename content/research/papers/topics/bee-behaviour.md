@@ -9,7 +9,8 @@ title: "Research topic: Bee Behaviour"
 
 - Topic key: `bee-behaviour`
 - Total papers: 41
-- [All research papers](../index.md)
+- [Research papers hub](../index.md)
+- [All topics](index.md)
 
 ## Product areas
 

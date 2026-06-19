@@ -9,7 +9,8 @@ title: "Research topic: Computer Vision"
 
 - Topic key: `computer-vision`
 - Total papers: 48
-- [All research papers](../index.md)
+- [Research papers hub](../index.md)
+- [All topics](index.md)
 
 ## Product areas
 

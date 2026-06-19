@@ -6,10 +6,11 @@ index pages need to stay easy to browse and easy to maintain by hand.
 
 WHAT: The script scans ``content/research/papers/*.md``, reads YAML
 frontmatter, and updates generated sections between marker comments in:
-- ``content/research/papers/index.md``
-- ``content/research/papers/topics/*.md``
-- ``content/research/papers/years/*.md``
-- ``content/research/papers/product-areas/*.md``
+- ``content/research/papers/index.md`` as a compact landing page
+- ``content/research/papers/scientific-publications/index.md``
+- ``content/research/papers/topics/index.md`` and ``topics/*.md``
+- ``content/research/papers/years/index.md`` and ``years/*.md``
+- ``content/research/papers/product-areas/index.md`` and ``product-areas/*.md``
 
 Any prose outside the generated markers is preserved, so editors can keep manual
 introductions or notes around the generated content.
@@ -29,6 +30,7 @@ import yaml
 
 SITE_ROOT = Path(__file__).resolve().parents[1]
 PAPERS_DIR = SITE_ROOT / "content/research/papers"
+SCIENTIFIC_PUBLICATIONS_DIR = PAPERS_DIR / "scientific-publications"
 TOPICS_DIR = PAPERS_DIR / "topics"
 YEARS_DIR = PAPERS_DIR / "years"
 PRODUCT_AREAS_DIR = PAPERS_DIR / "product-areas"
@@ -82,6 +84,7 @@ def main() -> int:
 
     papers = load_papers()
 
+    SCIENTIFIC_PUBLICATIONS_DIR.mkdir(parents=True, exist_ok=True)
     TOPICS_DIR.mkdir(parents=True, exist_ok=True)
     YEARS_DIR.mkdir(parents=True, exist_ok=True)
     PRODUCT_AREAS_DIR.mkdir(parents=True, exist_ok=True)
@@ -93,6 +96,30 @@ def main() -> int:
     )
 
     papers_by_topic = group_papers_by_topic(papers)
+    papers_by_year = group_papers_by_year(papers)
+    papers_by_product_area = group_papers_by_product_area(papers)
+
+    write_or_update(
+        SCIENTIFIC_PUBLICATIONS_DIR / "index.md",
+        render_scientific_publications_index(papers),
+        create_scientific_publications_shell,
+    )
+    write_or_update(
+        TOPICS_DIR / "index.md",
+        render_topics_index(papers_by_topic),
+        create_topics_index_shell,
+    )
+    write_or_update(
+        YEARS_DIR / "index.md",
+        render_years_index(papers_by_year),
+        create_years_index_shell,
+    )
+    write_or_update(
+        PRODUCT_AREAS_DIR / "index.md",
+        render_product_areas_index(papers_by_product_area),
+        create_product_areas_index_shell,
+    )
+
     for topic in sorted(papers_by_topic, key=sort_term_key):
         write_or_update(
             TOPICS_DIR / f"{topic.slug}.md",
@@ -100,7 +127,6 @@ def main() -> int:
             lambda current_topic=topic: create_topic_shell(current_topic),
         )
 
-    papers_by_year = group_papers_by_year(papers)
     for year in sorted(papers_by_year, key=lambda term: term_sort_key_for_year(term, papers_by_year[term])):
         write_or_update(
             YEARS_DIR / f"{year.slug}.md",
@@ -108,7 +134,6 @@ def main() -> int:
             lambda current_year=year: create_year_shell(current_year),
         )
 
-    papers_by_product_area = group_papers_by_product_area(papers)
     for product_area in sorted(papers_by_product_area, key=sort_term_key):
         write_or_update(
             PRODUCT_AREAS_DIR / f"{product_area.slug}.md",
@@ -284,54 +309,109 @@ def group_papers_by_product_area(papers: Iterable[Paper]) -> dict[Term, list[Pap
             grouped[product_area].append(paper)
     return {area: sorted(items, key=paper_sort_key) for area, items in grouped.items()}
 
-
 def render_main_index(papers: list[Paper]) -> str:
     topic_groups = group_papers_by_topic(papers)
     year_groups = group_papers_by_year(papers)
     product_area_groups = group_papers_by_product_area(papers)
 
-    lines: list[str] = []
-    lines.extend([
-        "## Browse by topic",
+    # WHY: /research/papers/ should be a real landing page, not a long page
+    # made of several browsing sections. WHAT: link each former section to its
+    # own sub-page so the public URL is easier to scan.
+    lines: list[str] = [
+        "Choose a research-paper sub-page:",
         "",
-    ])
-    lines.extend(render_counted_links(
-        items=sorted(topic_groups, key=sort_term_key),
-        count_lookup=lambda topic: len(topic_groups[topic]),
-        link_lookup=lambda topic: f"topics/{quote(topic.slug + '.md', safe='/')}",
-    ))
-    lines.extend([
-        "",
-        "## Browse by year",
-        "",
-    ])
-    lines.extend(render_counted_links(
-        items=sorted(year_groups, key=lambda year: term_sort_key_for_year(year, year_groups[year])),
-        count_lookup=lambda year: len(year_groups[year]),
-        link_lookup=lambda year: f"years/{quote(year.slug + '.md', safe='/')}",
-    ))
+        f"- [Scientific publications](scientific-publications/index.md) — bibliography entry point for {len(papers)} paper notes.",
+        "- [Research teams](teams/index.md) — academic groups active in precision beekeeping research.",
+        f"- [Browse by topic](topics/index.md) — {len(topic_groups)} topic pages.",
+        f"- [Browse by year](years/index.md) — {len(year_groups)} publication-year pages.",
+    ]
 
     if product_area_groups:
-        lines.extend([
-            "",
-            "## Browse by product area",
-            "",
-        ])
-        lines.extend(render_counted_links(
-            items=sorted(product_area_groups, key=sort_term_key),
-            count_lookup=lambda area: len(product_area_groups[area]),
-            link_lookup=lambda area: f"product-areas/{quote(area.slug + '.md', safe='/')}",
-        ))
+        lines.append(
+            f"- [Browse by product area](product-areas/index.md) — {len(product_area_groups)} product-facing research pages."
+        )
 
-    lines.extend([
-        "",
-        "## Full paper lists",
-        "",
-        "The complete bibliography is split into the sub-pages above to keep this index fast to scan.",
-        "Use topic, year, or product-area pages for the detailed paper lists.",
-    ])
+    lines.append("- [Other research sources](other-research-sources/index.md) — external academic search entry points.")
 
     return "\n".join(lines).rstrip()
+
+
+def render_scientific_publications_index(papers: list[Paper]) -> str:
+    topic_groups = group_papers_by_topic(papers)
+    year_groups = group_papers_by_year(papers)
+    product_area_groups = group_papers_by_product_area(papers)
+
+    lines: list[str] = [
+        "This bibliography links to individual paper notes kept at their existing URLs under `research/papers/`.",
+        "",
+        f"- Total paper notes: {len(papers)}",
+        "- [Research papers hub](../index.md)",
+        "",
+        "Choose a bibliography page:",
+        "",
+        f"- [Browse by topic](../topics/index.md) ({len(topic_groups)})",
+        f"- [Browse by year](../years/index.md) ({len(year_groups)})",
+    ]
+
+    if product_area_groups:
+        lines.append(f"- [Browse by product area](../product-areas/index.md) ({len(product_area_groups)})")
+
+    return "\n".join(lines).rstrip()
+
+
+def render_topics_index(papers_by_topic: dict[Term, list[Paper]]) -> str:
+    lines: list[str] = [
+        "Browse research papers by topic.",
+        "",
+        "- [Research papers hub](../index.md)",
+        "- [Scientific publications](../scientific-publications/index.md)",
+        "",
+        "Topics:",
+        "",
+    ]
+    lines.extend(render_counted_links(
+        items=sorted(papers_by_topic, key=sort_term_key),
+        count_lookup=lambda topic: len(papers_by_topic[topic]),
+        link_lookup=lambda topic: quote(topic.slug + ".md", safe="/."),
+    ))
+    return "\n".join(lines).rstrip()
+
+
+def render_years_index(papers_by_year: dict[Term, list[Paper]]) -> str:
+    lines: list[str] = [
+        "Browse research papers by publication year.",
+        "",
+        "- [Research papers hub](../index.md)",
+        "- [Scientific publications](../scientific-publications/index.md)",
+        "",
+        "Years:",
+        "",
+    ]
+    lines.extend(render_counted_links(
+        items=sorted(papers_by_year, key=lambda year: term_sort_key_for_year(year, papers_by_year[year])),
+        count_lookup=lambda year: len(papers_by_year[year]),
+        link_lookup=lambda year: quote(year.slug + ".md", safe="/."),
+    ))
+    return "\n".join(lines).rstrip()
+
+
+def render_product_areas_index(papers_by_product_area: dict[Term, list[Paper]]) -> str:
+    lines: list[str] = [
+        "Browse research papers by Gratheon product area.",
+        "",
+        "- [Research papers hub](../index.md)",
+        "- [Scientific publications](../scientific-publications/index.md)",
+        "",
+        "Product areas:",
+        "",
+    ]
+    lines.extend(render_counted_links(
+        items=sorted(papers_by_product_area, key=sort_term_key),
+        count_lookup=lambda area: len(papers_by_product_area[area]),
+        link_lookup=lambda area: quote(area.slug + ".md", safe="/."),
+    ))
+    return "\n".join(lines).rstrip()
+
 
 
 def render_topic_page(topic: Term, papers: list[Paper]) -> str:
@@ -343,7 +423,8 @@ def render_topic_page(topic: Term, papers: list[Paper]) -> str:
         "",
         f"- Topic key: `{topic.slug}`",
         f"- Total papers: {len(papers)}",
-        "- [All research papers](../index.md)",
+        "- [Research papers hub](../index.md)",
+        "- [All topics](index.md)",
     ]
 
     if product_area_groups:
@@ -391,7 +472,8 @@ def render_year_page(year: Term, papers: list[Paper]) -> str:
         "",
         f"- Year: {year.label}",
         f"- Total papers: {len(papers)}",
-        "- [All research papers](../index.md)",
+        "- [Research papers hub](../index.md)",
+        "- [All years](index.md)",
     ]
 
     lines.extend([
@@ -430,7 +512,6 @@ def render_year_page(year: Term, papers: list[Paper]) -> str:
 
     return "\n".join(lines).rstrip()
 
-
 def render_product_area_page(product_area: Term, papers: list[Paper]) -> str:
     topic_groups = group_papers_by_topic(papers)
     year_groups = group_papers_by_year(papers)
@@ -440,7 +521,8 @@ def render_product_area_page(product_area: Term, papers: list[Paper]) -> str:
         "",
         f"- Product area key: `{product_area.slug}`",
         f"- Total papers: {len(papers)}",
-        "- [All research papers](../index.md)",
+        "- [Research papers hub](../index.md)",
+        "- [All product areas](index.md)",
     ]
 
     lines.extend([
@@ -515,7 +597,71 @@ def create_main_index_shell() -> str:
     return "\n".join([
         "---",
         f"title: {yaml_double_quote('Research papers')}",
-        "hide_table_of_contents: true",
+        "navTitle: Papers",
+        "order: 5",
+        "hideToc: true",
+        "---",
+        "",
+        "This section tracks external academic work relevant to digital beekeeping, bee health, observability, robotics, and machine learning.",
+        "",
+        START_MARKER,
+        END_MARKER,
+        "",
+    ])
+
+
+def create_scientific_publications_shell() -> str:
+    return "\n".join([
+        "---",
+        f"title: {yaml_double_quote('Scientific publications')}",
+        "navTitle: Publications",
+        "order: 10",
+        "hideToc: true",
+        "---",
+        "",
+        START_MARKER,
+        END_MARKER,
+        "",
+    ])
+
+
+def create_topics_index_shell() -> str:
+    return "\n".join([
+        "---",
+        f"title: {yaml_double_quote('Research paper topics')}",
+        "navTitle: Topics",
+        "order: 20",
+        "hideToc: true",
+        "---",
+        "",
+        START_MARKER,
+        END_MARKER,
+        "",
+    ])
+
+
+def create_years_index_shell() -> str:
+    return "\n".join([
+        "---",
+        f"title: {yaml_double_quote('Research papers by year')}",
+        "navTitle: Years",
+        "order: 30",
+        "hideToc: true",
+        "---",
+        "",
+        START_MARKER,
+        END_MARKER,
+        "",
+    ])
+
+
+def create_product_areas_index_shell() -> str:
+    return "\n".join([
+        "---",
+        f"title: {yaml_double_quote('Research papers by product area')}",
+        "navTitle: Product areas",
+        "order: 40",
+        "hideToc: true",
         "---",
         "",
         START_MARKER,
@@ -528,7 +674,7 @@ def create_topic_shell(topic: Term) -> str:
     return "\n".join([
         "---",
         "hideNav: true",
-        "hide_table_of_contents: true",
+        "hideToc: true",
         f"title: {yaml_double_quote(f'Research topic: {topic.label}')}",
         "---",
         "",
@@ -543,7 +689,7 @@ def create_year_shell(year: Term) -> str:
     return "\n".join([
         "---",
         "hideNav: true",
-        "hide_table_of_contents: true",
+        "hideToc: true",
         f"title: {yaml_double_quote(title)}",
         "---",
         "",

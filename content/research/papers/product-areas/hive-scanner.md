@@ -9,7 +9,8 @@ title: "Research product area: Hive Scanner"
 
 - Product area key: `hive-scanner`
 - Total papers: 13
-- [All research papers](../index.md)
+- [Research papers hub](../index.md)
+- [All product areas](index.md)
 
 ## Topics
 

@@ -9,7 +9,8 @@ title: "Research topic: Varroa Health"
 
 - Topic key: `varroa-health`
 - Total papers: 7
-- [All research papers](../index.md)
+- [Research papers hub](../index.md)
+- [All topics](index.md)
 
 ## Product areas
 

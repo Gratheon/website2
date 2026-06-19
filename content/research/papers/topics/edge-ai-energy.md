@@ -9,7 +9,8 @@ title: "Research topic: Edge AI Energy"
 
 - Topic key: `edge-ai-energy`
 - Total papers: 5
-- [All research papers](../index.md)
+- [Research papers hub](../index.md)
+- [All topics](index.md)
 
 ## Product areas
 
