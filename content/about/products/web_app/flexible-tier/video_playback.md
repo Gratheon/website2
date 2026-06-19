@@ -1,7 +1,7 @@
 ---
 title: 📺 Video streaming playback
+layout: products
 ---
-
 
 ## Goal
 

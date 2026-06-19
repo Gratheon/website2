@@ -1,6 +1,7 @@
 ---
 status: complete
 title: 🗺️ Hive Placement Planner
+layout: products
 ---
 
 ### 🎯 Purpose

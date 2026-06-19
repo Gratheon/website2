@@ -5,6 +5,7 @@ orgs:
 year: "2018"
 hideToc: true
 title: Recognition of Pollen-bearing Bees from Video using Convolutional Neural Network
+layout: research
 topics:
   - computer-vision
   - bee-behaviour

@@ -1,6 +1,7 @@
 ---
 hideNav: true
 title: "BeeNet: An End-To-End Deep Network For Bee Surveillance"
+layout: research
 year: "2023"
 orgs:
   - 🇦🇺 Australian National University

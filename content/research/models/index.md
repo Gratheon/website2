@@ -1,5 +1,6 @@
 ---
 title: Models
+layout: research
 order: 3
 hideToc: true
 ---

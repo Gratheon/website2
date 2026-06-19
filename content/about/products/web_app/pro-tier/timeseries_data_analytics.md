@@ -1,5 +1,6 @@
 ---
 title: 📊 Timeseries data analytics
+layout: products
 ---
 
 Multi-hive analytics dashboard for comparing colony metrics over time, identifying trends, correlations, and anomalies across your apiary.

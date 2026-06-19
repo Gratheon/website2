@@ -1,6 +1,7 @@
 ---
 hideNav: true
 title: DeepPoseKit, a software toolkit for fast and robust animal pose estimation using deep learning
+layout: research
 orgs:
   - 🇩🇪 Max Planck Institute of Animal Behavior
   - 🇩🇪 University of Konstanz

@@ -4,6 +4,7 @@ year: "2021"
 orgs:
   - 🇨🇿 Brno University of Technology
 title: Visual Diagnosis of the Varroa Destructor Parasitic Mite in Honeybees Using Object Detector Techniques
+layout: research
 hideToc: true
 topics:
   - varroa-health

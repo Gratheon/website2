@@ -4,6 +4,7 @@ year: "2026"
 orgs:
   - arXiv author-supplied preprint by Hamze Hammami and Nidhal Abdulaziz
 title: "BeeVe: Unsupervised Acoustic State Discovery in Honey Bee Buzzing"
+layout: research
 topics:
   - audio-acoustics
   - bee-behaviour

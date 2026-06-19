@@ -4,6 +4,7 @@ orgs:
   - 🇱🇻 Latvia University of Life Sciences and Technologies
 year: "2022"
 title: Evaluation of the honey bee colonies weight gain during theintensive foraging period
+layout: research
 hide_table_of_contents: true
 ---
 

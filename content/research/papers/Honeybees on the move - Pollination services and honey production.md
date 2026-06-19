@@ -2,6 +2,7 @@
 hideNav: true
 year: "2018"
 title: Honeybees on the move - Pollination services and honey production
+layout: research
 hideToc: true
 topics:
   - pollination-ecology

@@ -1,0 +1,184 @@
+{{define "knowledge_breadcrumbs"}}
+{{if .Breadcrumbs}}
+<nav class="knowledge-breadcrumbs" aria-label="{{.UI.Breadcrumb}}">
+  <ol>
+    {{range .Breadcrumbs}}
+    {{/* English is served at root paths; normalize stale /en/... breadcrumb URLs emitted by older builders. */}}
+    {{ $breadcrumbURL := .URL }}
+    {{ $defaultLangPrefix := printf "/%s/" $.Site.I18n.Default }}
+    {{ $defaultLangRoot := printf "/%s" $.Site.I18n.Default }}
+    {{ $unprefixedURL := trimPrefix $breadcrumbURL $defaultLangPrefix }}
+    {{ if and (eq $.Page.Language $.Site.I18n.Default) (eq $breadcrumbURL $defaultLangRoot) }}
+      {{ $breadcrumbURL = "/" }}
+    {{ else if and (eq $.Page.Language $.Site.I18n.Default) (ne $unprefixedURL $breadcrumbURL) }}
+      {{ $breadcrumbURL = printf "/%s" $unprefixedURL }}
+    {{ end }}
+    <li>
+      {{if .IsCurrent}}
+        <span aria-current="page">{{.Title}}</span>
+      {{else}}
+        <a href="{{$breadcrumbURL}}">{{.Title}}</a>
+      {{end}}
+    </li>
+    {{end}}
+  </ol>
+</nav>
+{{end}}
+{{end}}
+
+{{define "knowledge_article"}}
+<article class="knowledge-article">
+  {{if hasDate .Frontmatter.Date}}
+  <div class="knowledge-article-meta">
+    <time datetime="{{.Frontmatter.Date.Format "2006-01-02T15:04:05Z07:00"}}">
+      {{formatDateLocalized .Frontmatter.Date .Page.Language}}
+    </time>
+  </div>
+  {{end}}
+
+  <div class="content knowledge-content">
+    {{.Content}}
+  </div>
+
+  {{if .Frontmatter.Tags}}
+  <div class="knowledge-tags">
+    {{range .Frontmatter.Tags}}
+    <a class="tag" href="{{$.TagURL .}}">#{{.}}</a>
+    {{end}}
+  </div>
+  {{end}}
+
+  {{if .PrevNext}}
+  <nav class="knowledge-prev-next" aria-label="{{.UI.PageNavigation}}">
+    {{if .PrevNext.Prev}}
+    <a href="{{.PrevNext.Prev.URL}}" class="prev-link">
+      <span class="prev-label">← {{.UI.Previous}}</span>
+      <span class="prev-title">{{.PrevNext.Prev.Title}}</span>
+    </a>
+    {{end}}
+    {{if .PrevNext.Next}}
+    <a href="{{.PrevNext.Next.URL}}" class="next-link">
+      <span class="next-label">{{.UI.Next}} →</span>
+      <span class="next-title">{{.PrevNext.Next.Title}}</span>
+    </a>
+    {{end}}
+  </nav>
+  {{end}}
+</article>
+{{end}}
+
+{{define "knowledge"}}
+{{template "gratheon_head" .}}
+<body class="knowledge-page knowledge-page-{{if .Page.Layout}}{{.Page.Layout}}{{else}}page{{end}}">
+  {{template "gratheon_header" .}}
+
+  <main class="knowledge-shell">
+    <section class="knowledge-hero" aria-labelledby="knowledge-title">
+      <div class="knowledge-hero-copy">
+        {{template "knowledge_breadcrumbs" .}}
+        <p class="knowledge-eyebrow">
+          {{if eq .Page.Layout "products"}}
+            {{if eq .Page.Language "et"}}Tootesüsteem{{else}}Product system{{end}}
+          {{else}}
+            {{if eq .Page.Language "et"}}Uurimiskogu{{else if eq .Page.Language "ru"}}Исследовательская база{{else}}Research library{{end}}
+          {{end}}
+        </p>
+        <h1 id="knowledge-title">{{.Page.Title}}</h1>
+        <p class="knowledge-standfirst">
+          {{if eq .Page.Layout "products"}}
+            {{if eq .Page.Language "et"}}Tarkvara, seadmed ja automaatika on esitatud ühe seotud süsteemina, et tootepere oleks lihtne sirvida ka sügava funktsioonistruktuuriga.{{else}}Software, devices, and automation are presented as one connected system, so product depth stays navigable without feeling like a reference manual.{{end}}
+          {{else}}
+            {{if eq .Page.Language "et"}}Artiklid, andmestikud, mudelid ja välitöö märkmed on koondatud visuaalseks teadmiste kaardiks, mis säilitab kogu sügava struktuuri.{{else if eq .Page.Language "ru"}}Статьи, датасеты, модели и полевые заметки собраны в визуальную карту знаний, сохраняя глубокую структуру раздела.{{else}}Papers, datasets, models, and field notes are arranged as a visual knowledge map while keeping the full depth of the research archive.{{end}}
+          {{end}}
+        </p>
+        <div class="knowledge-actions">
+          {{if eq .Page.Layout "products"}}
+            {{if eq .Page.Language "et"}}
+              <a class="knowledge-action knowledge-action--primary" href="/et/about/products/web_app/web-app/">Vaata veebirakendust</a>
+              <a class="knowledge-action" href="/et/pricing/">Hinnad</a>
+            {{else}}
+              <a class="knowledge-action knowledge-action--primary" href="/about/products/web_app/web-app/">Explore the web app</a>
+              <a class="knowledge-action" href="/pricing/">Compare plans</a>
+            {{end}}
+          {{else}}
+            {{if eq .Page.Language "et"}}
+              <a class="knowledge-action knowledge-action--primary" href="/research/papers/">Sirvi artikleid</a>
+              <a class="knowledge-action" href="/et/research/models/">Vaata mudeleid</a>
+            {{else if eq .Page.Language "ru"}}
+              <a class="knowledge-action knowledge-action--primary" href="/ru/research/papers/">Статьи</a>
+              <a class="knowledge-action" href="/ru/research/models/">Модели</a>
+            {{else}}
+              <a class="knowledge-action knowledge-action--primary" href="/research/papers/">Browse papers</a>
+              <a class="knowledge-action" href="/research/datasets/">Explore datasets</a>
+            {{end}}
+          {{end}}
+        </div>
+      </div>
+      <div class="knowledge-hero-media" aria-hidden="true">
+        {{if eq .Page.Layout "products"}}
+        <figure class="knowledge-visual knowledge-visual--products">
+          <img src="/assets/img/gratheon-web-app.webp" alt="" loading="eager">
+          <img src="/assets/img/observer.webp" alt="" loading="lazy">
+          <img src="/assets/img/sensors.webp" alt="" loading="lazy">
+        </figure>
+        {{else}}
+        <figure class="knowledge-visual knowledge-visual--research">
+          <img src="/assets/img/research/img/research-preview.webp" alt="" loading="eager">
+        </figure>
+        {{end}}
+      </div>
+    </section>
+
+    {{if .Sidebar}}
+    <section class="knowledge-map" aria-label="{{.UI.Navigation}}">
+      <div class="knowledge-map-intro">
+        <p class="knowledge-map-kicker">
+          {{if eq .Page.Layout "products"}}
+            {{if eq .Page.Language "et"}}Tootekaart{{else}}Product map{{end}}
+          {{else}}
+            {{if eq .Page.Language "et"}}Uuringute kaart{{else if eq .Page.Language "ru"}}Карта раздела{{else}}Research map{{end}}
+          {{end}}
+        </p>
+        <h2>
+          {{if eq .Page.Layout "products"}}
+            {{if eq .Page.Language "et"}}Liigu funktsioonidest süsteemideni{{else}}Move from features to systems{{end}}
+          {{else}}
+            {{if eq .Page.Language "et"}}Säilita sügavus, sirvi kiiremini{{else if eq .Page.Language "ru"}}Глубокая структура без левого справочника{{else}}Deep structure without the left reference rail{{end}}
+          {{end}}
+        </h2>
+      </div>
+      <div class="knowledge-map-nav">
+        {{.Sidebar}}
+      </div>
+    </section>
+    {{end}}
+
+    <div class="knowledge-content-layout">
+      <section class="knowledge-main" aria-label="{{.Page.Title}}">
+        {{template "knowledge_article" .}}
+      </section>
+      {{if .TOC}}
+      <aside class="knowledge-onpage">
+        {{.TOC}}
+      </aside>
+      {{end}}
+    </div>
+  </main>
+
+  {{template "gratheon_footer" .}}
+  <script>
+  // Keep the knowledge-map section labels navigable; the shared sidebar script
+  // otherwise turns sidebar section links into expand/collapse toggles.
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.knowledge-map-nav .sidebar-section > .sidebar-section-head > a').forEach(function(link) {
+      link.addEventListener('click', function(event) {
+        if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0) return;
+        event.stopImmediatePropagation();
+      }, true);
+    });
+  });
+  </script>
+  {{if .JSPath}}<script defer src="{{.JSPath}}"></script>{{end}}
+</body>
+</html>
+{{end}}

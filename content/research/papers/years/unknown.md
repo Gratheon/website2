@@ -2,6 +2,7 @@
 hideNav: true
 hideToc: true
 title: Research papers with unknown year
+layout: research
 ---
 
 <!-- GENERATED RESEARCH INDEX:START -->

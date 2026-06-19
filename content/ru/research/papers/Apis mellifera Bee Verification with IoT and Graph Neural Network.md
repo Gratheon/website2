@@ -2,6 +2,7 @@
 hideNav: true
 year: "2025"
 title: Apis mellifera Bee Verification with IoT and Graph Neural Network
+layout: research
 orgs:
   - 🇲🇽 Instituto Tecnológico El Llano Aguascalientes
 ---

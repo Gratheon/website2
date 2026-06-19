@@ -4,6 +4,7 @@ orgs:
   - 🇱🇹 Vilnius Gediminas Technical University
 year: "2025"
 title: Evaluation of Single-Shot Object Detection Models for Identifying Fanning Behavior in Honeybees at the Hive Entrance
+layout: research
 topics:
   - computer-vision
   - bee-behaviour

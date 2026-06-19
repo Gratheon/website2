@@ -5,6 +5,7 @@ orgs:
   - 🇩🇪 Freie Universität Berlin
   - 🇩🇪 Leibniz-Institute of Freshwater Ecology and Inland Fisheries
 title: "Dancing Honey bee Robot Elicits Dance-Following and Recruits Foragers"
+layout: research
 topics:
   - robotics
   - bee-behaviour

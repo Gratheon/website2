@@ -1,6 +1,7 @@
 ---
 status: complete
 title: 👑 Queen Management
+layout: products
 ---
 
 ### 🎯 Purpose

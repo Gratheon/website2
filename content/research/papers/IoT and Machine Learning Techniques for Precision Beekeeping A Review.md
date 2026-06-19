@@ -1,6 +1,7 @@
 ---
 hideNav: true
 title: "IoT and Machine Learning Techniques for Precision Beekeeping:A Review"
+layout: research
 orgs:
   - 🇺🇬 Makerere University
   - 🇹🇿 Dar es Salaam Institute of Technology

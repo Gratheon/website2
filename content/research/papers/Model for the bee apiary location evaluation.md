@@ -1,6 +1,7 @@
 ---
 hideNav: true
 title: Model for the bee apiary location evaluation
+layout: research
 year: "2020"
 orgs:
   - 🇱🇻 Latvia University of Life Sciences and Technologies

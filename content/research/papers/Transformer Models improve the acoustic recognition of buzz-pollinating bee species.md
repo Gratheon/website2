@@ -1,6 +1,7 @@
 ---
 hideNav: true
 title: Transformer Models improve the acoustic recognition of buzz-pollinating bee species
+layout: research
 year: "2025"
 orgs:
   - 🇧🇷 Universidade Federal de Goiás

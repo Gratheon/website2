@@ -5,6 +5,7 @@ orgs:
   - 🇪🇸 Universidad de Murcia
   - " 🇩🇪 Martin-Luther-Universität Halle-Wittenberg"
 title: Biodiversity conservation and current threats to European honeybees
+layout: research
 hideToc: true
 topics:
   - bee-behaviour

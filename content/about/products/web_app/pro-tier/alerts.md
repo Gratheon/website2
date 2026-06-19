@@ -1,7 +1,7 @@
 ---
 title: 🔔  Alerts
+layout: products
 ---
-
 
 We want to notify beekeeper in various cases/features. For that we need a generic way to create and list alerts. We want to store alerts in DB and display them in UI.
 

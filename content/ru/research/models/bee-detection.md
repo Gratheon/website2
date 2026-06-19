@@ -1,5 +1,6 @@
 ---
 title: Детекция пчёл
+layout: research
 order: 1
 ---
 

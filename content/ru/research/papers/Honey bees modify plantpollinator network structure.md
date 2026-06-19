@@ -4,6 +4,7 @@ orgs:
   - 🇨🇦 University of Alberta
 year: "2023"
 title: Honey bees modify plantpollinator network structure
+layout: research
 hide_table_of_contents: true
 ---
 

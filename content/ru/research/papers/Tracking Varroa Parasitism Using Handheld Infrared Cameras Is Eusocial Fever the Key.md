@@ -1,6 +1,7 @@
 ---
 hideNav: true
 title: Tracking Varroa Parasitism Using Handheld Infrared Cameras:Is Eusocial Fever the Key?
+layout: research
 orgs:
   - 🇭🇺 Hungarian University of Agricultureand Life Sciences
 year: "2024"

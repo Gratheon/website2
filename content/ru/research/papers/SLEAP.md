@@ -1,6 +1,7 @@
 ---
 hideNav: true
 title: "SLEAP: A deep learning system for multi-animal pose tracking"
+layout: research
 year: "2022"
 orgs:
   - 🇺🇸  Princeton University

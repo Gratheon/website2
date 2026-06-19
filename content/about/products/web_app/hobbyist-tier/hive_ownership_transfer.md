@@ -1,5 +1,6 @@
 ---
 title: ♻️ Hive ownership transfer
+layout: products
 ---
 
 Hive ownership transfer allows beekeepers to transfer complete hive records, history, and data to another user account within the Gratheon platform.

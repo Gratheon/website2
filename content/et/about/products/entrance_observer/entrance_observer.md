@@ -1,6 +1,7 @@
 ---
 sidebar_position: 4
 title: 👁️‍🗨️ Lennuava jälgija
+layout: products
 ---
 
 `status: alpha`, [TRL 5](https://www.nasa.gov/directorates/somd/space-communications-navigation-program/technology-readiness-levels/)

@@ -5,6 +5,7 @@ orgs:
   - 🇨🇳 Shandong Agricultural University
   - 🇨🇳 Apiculture Institute of Jiangxi Province
 title: "M3DANet: A Lightweight Semi-Supervised Network and Embedded System for Bee Colony Counting"
+layout: research
 topics:
   - computer-vision
   - edge-ai-energy

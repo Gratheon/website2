@@ -1,5 +1,6 @@
 ---
 title: Bee detection
+layout: research
 order: 1
 ---
 

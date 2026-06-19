@@ -1,6 +1,7 @@
 ---
 status: complete
 title: 🫶🏻 Join colonies
+layout: products
 ---
 
 ### 🎯 Purpose

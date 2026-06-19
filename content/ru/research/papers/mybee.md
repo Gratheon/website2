@@ -1,6 +1,7 @@
 ---
 hideNav: true
 title: "myBee: An Information System for Precision Beekeeping"
+layout: research
 orgs:
   - 🇧🇷 State University of Maringa
   - 🇧🇷 Federal University of Rio de Janeiro

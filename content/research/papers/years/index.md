@@ -1,6 +1,7 @@
 ---
 title: "Research papers by year"
 navTitle: Years
+layout: research
 order: 30
 hideToc: true
 ---

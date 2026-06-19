@@ -1,5 +1,6 @@
 ---
 title: BeePose
+layout: research
 order: 3
 ---
 

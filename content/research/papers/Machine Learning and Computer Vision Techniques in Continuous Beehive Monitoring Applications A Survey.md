@@ -1,6 +1,7 @@
 ---
 hideNav: true
 title: "Machine Learning and Computer Vision Techniques in Continuous Beehive Monitoring Applications: A Survey"
+layout: research
 orgs:
   - 🇨🇿 Brno University of Technology
 year: "2023"

@@ -1,6 +1,7 @@
 ---
 sidebar_position: 6
 title: 🪬 Robotmesila
+layout: products
 ---
 
 Kulutõhusama lahendusena suurematele mesilatele soovime taaskasutada [robotmesitaru](../robotic_beehive/robotic_beehive.md) funktsionaalsust ning lisada võime liikuda mesilas ringi, et kontrollida tarusid nõudmisel või ajakava alusel.

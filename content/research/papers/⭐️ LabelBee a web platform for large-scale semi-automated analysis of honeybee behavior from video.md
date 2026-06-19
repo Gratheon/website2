@@ -1,6 +1,7 @@
 ---
 hideNav: true
 title: "LabelBee: a web platform for large-scale semi-automated analysis of honeybee behavior from video"
+layout: research
 orgs:
   - 🇵🇷 University of Puerto Rico
 year: "2019"
@@ -14,6 +15,7 @@ productAreas:
 paperType: conference
 featured: true
 ---
+
 https://github.com/rmegret/labelbee
 
 [PDF](pdfs/3359115.3359120.pdf)

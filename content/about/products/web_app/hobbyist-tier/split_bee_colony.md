@@ -1,6 +1,7 @@
 ---
 status: complete
 title: 🐝 Split a bee colony
+layout: products
 ---
 
 ### 🎯 Purpose

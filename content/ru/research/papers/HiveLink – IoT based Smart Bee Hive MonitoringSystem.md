@@ -4,6 +4,7 @@ orgs:
   - 🇮🇳 St. Joseph Engineering College
   - 🇮🇳 Canara Engineering College
 title: HiveLink – IoT based Smart Bee Hive MonitoringSystem
+layout: research
 year: "2023"
 ---
 

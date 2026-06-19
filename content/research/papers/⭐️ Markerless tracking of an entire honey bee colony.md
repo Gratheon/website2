@@ -5,6 +5,7 @@ orgs:
   - 🇯🇵 Okinawa Institute of Science and Technology Graduate University
 hideToc: true
 title: ⭐️ Markerless tracking of an entire honey bee colony
+layout: research
 topics:
   - computer-vision
   - bee-behaviour
@@ -13,6 +14,7 @@ productAreas:
 paperType: journal
 featured: true
 ---
+
 [PDF](pdfs/2021-markerless.pdf)
 
 <object data={require('./pdfs/2021-markerless.pdf').default} type="application/pdf" width="100%" height="800"></object>

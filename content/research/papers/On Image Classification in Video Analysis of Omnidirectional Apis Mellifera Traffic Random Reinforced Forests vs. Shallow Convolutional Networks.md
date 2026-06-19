@@ -1,6 +1,7 @@
 ---
 hideNav: true
 title: "On Image Classification in Video Analysis of Omnidirectional Apis Mellifera Traffic: Random Reinforced Forests vs. Shallow Convolutional Networks"
+layout: research
 orgs:
   - 🇺🇸 Utah State University
 year: "2021"

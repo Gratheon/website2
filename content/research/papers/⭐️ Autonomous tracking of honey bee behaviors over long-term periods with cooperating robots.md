@@ -8,6 +8,7 @@ orgs:
   - 🇹🇷  Middle East Technical University
 hideToc: true
 title: Autonomous tracking of honey bee behaviors over long-term periods with cooperating robots
+layout: research
 topics:
   - robotics
   - computer-vision

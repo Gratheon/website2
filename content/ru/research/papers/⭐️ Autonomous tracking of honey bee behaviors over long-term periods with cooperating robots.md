@@ -8,6 +8,7 @@ orgs:
   - 🇹🇷  Middle East Technical University
 hide_table_of_contents: true
 title: Autonomous tracking of honey bee behaviors over long-term periods with cooperating robots
+layout: research
 ---
 
 - Project home page: https://roboroyale.eu/home.html

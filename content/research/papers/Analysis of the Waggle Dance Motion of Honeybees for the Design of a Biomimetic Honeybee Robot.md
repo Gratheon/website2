@@ -1,4 +1,5 @@
 ---
+layout: research
 hideNav: true
 topics:
   - bee-behaviour
@@ -7,5 +8,6 @@ productAreas:
   - robotics
 paperType: conference
 ---
+
 [PDF](pdfs/waggle-dance.pdf)
 

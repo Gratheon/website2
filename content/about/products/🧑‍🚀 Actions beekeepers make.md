@@ -1,6 +1,8 @@
 ---
+layout: products
 sidebar_position: 1
 ---
+
 Beekeeping is not _only_ about watching the bees. Beekeeping in practice is a reactive (and if you are good - proactive) decision making to solve or prevent described [Problems](../problems/problems.md). To link problems with our product solutions its good to list these decisions and actions..
 
 ## Beekeeping 101

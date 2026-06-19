@@ -1,4 +1,5 @@
 ---
+layout: research
 hideNav: true
 year: "2024"
 orgs:

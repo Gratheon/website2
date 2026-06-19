@@ -1,4 +1,5 @@
 ---
+layout: research
 hideNav: true
 orgs:
   - 🇦🇺 University of Western Australia

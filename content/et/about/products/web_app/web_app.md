@@ -2,6 +2,7 @@
 sidebar_position: 2
 title: 📱 Veebirakendus
 navTitle: Veebirakendus
+layout: products
 ---
 
 Gratheoni veebirakendus aitab mesinikel hallata [mesila andmeid](/about/products/web_app/hobbyist-tier/apiary-management/), suhelda paigaldatud modulaarsete taruseadmetega, analüüsida kärje- ja põhjalaua pilte, salvestada [aegridade telemeetriat](/about/products/web_app/pro-tier/hive-telemetry-storage/), luua [teavitusi](/about/products/web_app/flexible-tier/alerts/) ning pakkuda tehisaru soovitusi probleemide lahendamiseks.

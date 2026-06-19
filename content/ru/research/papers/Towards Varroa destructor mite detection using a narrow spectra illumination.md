@@ -4,6 +4,7 @@ year: "2025"
 orgs:
   - 🇨🇿 Brno University of Technology
 title: Towards Varroa destructor mite detection using a narrow spectra illumination
+layout: research
 hide_table_of_contents: true
 ---
 

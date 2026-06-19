@@ -1,3 +1,4 @@
 ---
+layout: products
 status: complete
 ---

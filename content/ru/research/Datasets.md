@@ -1,8 +1,10 @@
 ---
 title: Датасеты
+layout: research
 sidebar_position: 2
 hide_table_of_contents: true
 ---
+
 Собранные нами данные доступны через [Google Drive](https://drive.google.com/drive/folders/105PmxDKFUR6NCPLHBkXGdkfcZwWf9ABI?usp=drive_link), в основном из-за большого объёма данных.
 Сюда входят:
 

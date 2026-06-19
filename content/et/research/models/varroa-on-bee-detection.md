@@ -1,5 +1,6 @@
 ---
 title: Varroa tuvastus mesilasel
+layout: research
 order: 4
 ---
 

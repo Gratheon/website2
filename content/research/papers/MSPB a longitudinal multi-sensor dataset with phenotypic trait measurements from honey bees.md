@@ -6,6 +6,7 @@ orgs:
   - 🇨🇦 Université Laval
   - 🇨🇦 Nectar Technologies Inc.
 title: "MSPB: a longitudinal multi-sensor dataset with phenotypic trait measurements from honey bees"
+layout: research
 topics:
   - datasets-benchmarks
   - audio-acoustics

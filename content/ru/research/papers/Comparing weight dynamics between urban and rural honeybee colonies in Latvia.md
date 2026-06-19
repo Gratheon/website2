@@ -1,6 +1,7 @@
 ---
 hideNav: true
 title: Comparing weight dynamics between urban and rural honeybee colonies in Latvia
+layout: research
 year: "2023"
 orgs:
   - 🇱🇻 Latvia University of Life Sciences and Technologies

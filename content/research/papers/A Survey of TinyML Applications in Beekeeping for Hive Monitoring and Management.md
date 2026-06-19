@@ -5,6 +5,7 @@ orgs:
   - 🇦🇺 University of Technology Sydney
   - 🇦🇺 BeeSTAR
 title: "A Survey of TinyML Applications in Beekeeping for Hive Monitoring and Management"
+layout: research
 topics:
   - reviews-surveys
   - iot-sensors

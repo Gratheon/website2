@@ -1,6 +1,7 @@
 ---
 status: complete
 title: 🖼️ Frame Side Management
+layout: products
 ---
 
 ### 🎯 Purpose

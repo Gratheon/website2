@@ -1,6 +1,7 @@
 ---
 title: Research teams
 navTitle: Teams
+layout: research
 order: 50
 hideToc: true
 ---

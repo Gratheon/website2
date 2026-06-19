@@ -1,5 +1,6 @@
 ---
 title: Datasets
+layout: research
 order: 2
 hideToc: true
 ---

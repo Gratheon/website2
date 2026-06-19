@@ -6,6 +6,7 @@ orgs:
   - 🇫🇮 LUT University
 hide_table_of_contents: true
 title: Varroa destructor detection on honey bees using hyperspectral imagery
+layout: research
 ---
 
 [PDF](/assets/research/papers/pdfs/2024-varroa-destructor.pdf)

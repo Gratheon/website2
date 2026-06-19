@@ -2,6 +2,7 @@
 hideNav: true
 hideToc: true
 title: "Research topic: IoT Sensors"
+layout: research
 ---
 
 <!-- GENERATED RESEARCH INDEX:START -->

@@ -1,6 +1,7 @@
 ---
 hideNav: true
 title: "Importance of GIS solutions for beekeepers: a review"
+layout: research
 year: "2023"
 orgs:
   - 🇱🇻 Latvia University of Life Sciences and Technologies

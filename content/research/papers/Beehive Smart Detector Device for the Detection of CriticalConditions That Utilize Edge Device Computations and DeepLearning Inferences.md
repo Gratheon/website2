@@ -1,6 +1,7 @@
 ---
 hideNav: true
 title: Beehive Smart Detector Device for the Detection of CriticalConditions That Utilize Edge Device Computations and DeepLearning Inferences
+layout: research
 year: "2024"
 orgs:
   - 🇬🇷 University of Ioannina

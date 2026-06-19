@@ -4,6 +4,7 @@ year: "2026"
 orgs:
   - 🇹🇷 Van Yüzüncü Yıl University
 title: "Continuous Non-Invasive Monitoring of Hive Entrance Activity Reveals Honey Bee Colony Dynamics"
+layout: research
 topics:
   - computer-vision
   - bee-behaviour

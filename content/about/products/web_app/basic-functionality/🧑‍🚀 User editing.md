@@ -1,6 +1,7 @@
 ---
 status: complete
 title: 🧑‍🚀 User Profile Editing
+layout: products
 ---
 
 ### 🎯 Purpose

@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
 title: 📱Web-app
+layout: products
 ---
 
 Gratheon web app is intended to help beekeepers manage [apiary data](hobbyist-tier/apiary-management.md), communicate with installed modular hive devices, analyze frame and bottom-board images, store [timeseries telemetry](pro-tier/hive_telemetry_storage.md), generate [alerts](flexible-tier/alerts.md), forecast, and provide AI suggestions to solve issues.

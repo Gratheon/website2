@@ -1,5 +1,6 @@
 ---
 title: 📦 Warehouse inventory management
+layout: products
 ---
 
 Warehouse helps beekeepers track how many hive sections, frames, and parts they have in stock — synced with what's actually deployed across active hives.

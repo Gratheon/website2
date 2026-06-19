@@ -1,6 +1,7 @@
 ---
 status: in-progress
 title: 🦀 Hive bottom board varroa counting
+layout: products
 ---
 
 Varroa mites are parasitic pests that weaken honey bee colonies by feeding on their hemolymph. Regular monitoring of varroa populations is essential for colony health. Traditional counting methods involve placing a white sticky board at the hive bottom and manually counting fallen mites - a time-consuming and error-prone process.

@@ -1,6 +1,7 @@
 ---
 hideNav: true
 title: Solution for automated bee colony weight monitoring
+layout: research
 year: "2017"
 orgs:
   - 🇱🇻 Latvia University of Agriculture

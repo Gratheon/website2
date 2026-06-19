@@ -1,7 +1,9 @@
 ---
 status: complete
 title: 📦 Apiary Management
+layout: products
 ---
+
 ### 🎯 Purpose
 Organize your hives by location or management group with apiaries - perfect for beekeepers managing multiple sites, tracking different locations, or organizing colonies by operational needs.
 

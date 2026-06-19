@@ -1,6 +1,7 @@
 ---
 title: Mudelid
 navTitle: "Mudelid"
+layout: research
 order: 3
 hideToc: true
 ---

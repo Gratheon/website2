@@ -8,6 +8,7 @@ orgs:
   - 🇺🇸 University of Wisconsin-Madison
   - 🇺🇸 Washington State University
 title: "Semi-Supervised Audio Representation Learning for Modeling Beehive Strengths"
+layout: research
 topics:
   - audio-acoustics
   - iot-sensors

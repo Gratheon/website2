@@ -5,6 +5,7 @@ orgs:
 year: "2022"
 hideToc: true
 title: Automated Video Monitoring of Unmarked and Marked Honey Bees at the Hive Entrance
+layout: research
 topics:
   - computer-vision
   - bee-behaviour
@@ -13,6 +14,7 @@ productAreas:
 paperType: journal
 featured: true
 ---
+
 - [Original URL](https://www.frontiersin.org/journals/computer-science/articles/10.3389/fcomp.2021.769338/full)
 - [PDF](pdfs/fcomp-03-769338.pdf)
 

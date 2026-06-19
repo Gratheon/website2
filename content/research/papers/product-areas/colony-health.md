@@ -2,6 +2,7 @@
 hideNav: true
 hideToc: true
 title: "Research product area: Colony Health"
+layout: research
 ---
 
 <!-- GENERATED RESEARCH INDEX:START -->

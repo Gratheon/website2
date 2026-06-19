@@ -68,9 +68,12 @@ runuser -u www -- git -C /www/website reset --hard origin/main
 
 - `content/` is the source used by `blog-engine-md`.
 - Most pages are Markdown copied from the previous Docusaurus content roots.
-- Two pages use custom templates:
+- Several public sections use custom templates:
   - `content/index.md` → `templates/front.html`
   - `content/pricing.md` → `templates/pricing.html`
+  - `content/research/**` → `templates/research.html` → `templates/knowledge.html`
+  - `content/about/products/**` and `content/et/about/products/**` → `templates/products.html` → `templates/knowledge.html`
+- The shared `knowledge.html` template is used for research/product pages to avoid the old reference-page left rail while preserving deep navigation as a wide knowledge map. Keep this layout visually restrained: square panels, strong typography, white space, images/visuals, and no rounded content cards or gradients.
 
 Legacy Docusaurus files have been removed; `content/` is the source of truth.
 

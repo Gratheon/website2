@@ -5,6 +5,7 @@ orgs:
   - 🇨🇱 Universidad de Viña del Mar
   - 🇨🇱 Universidad Técnica Federico Santa María
 title: "Acoustic Signatures of Hive: Detecting Queen Bee Absence Through Machine Learning of Short Audio Segments"
+layout: research
 topics:
   - audio-acoustics
   - bee-behaviour

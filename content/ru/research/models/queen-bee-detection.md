@@ -1,5 +1,6 @@
 ---
 title: Детекция матки
+layout: research
 order: 2
 ---
 

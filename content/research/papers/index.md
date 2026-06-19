@@ -1,6 +1,7 @@
 ---
 title: Research papers
 navTitle: Papers
+layout: research
 order: 5
 hideToc: true
 ---

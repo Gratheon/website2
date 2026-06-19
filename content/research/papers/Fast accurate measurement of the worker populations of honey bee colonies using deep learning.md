@@ -5,6 +5,7 @@ orgs:
   - 🇺🇸 Arizona State University
   - 🇺🇸 Texas A&M University–Kingsville
 title: "Fast, accurate measurement of the worker populations of honey bee colonies using deep learning"
+layout: research
 topics:
   - computer-vision
   - datasets-benchmarks

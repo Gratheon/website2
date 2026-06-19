@@ -4,6 +4,7 @@ year: "2024"
 orgs:
   - 🇺🇸 University of Texas Rio Grande Valley
 title: "IntelliBeeHive: An Automated Honey Bee, Pollen, and Varroa Destructor Monitoring System"
+layout: research
 topics:
   - computer-vision
   - varroa-health

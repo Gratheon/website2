@@ -1,6 +1,7 @@
 ---
 hideNav: true
 title: "Precision Monitoring of Honey Bee (Hymenoptera: Apidae) Activity and Pollen Diversity during Pollination to EvaluateColony Health"
+layout: research
 year: "2023"
 orgs:
   - 🇦🇺 La Trobe University

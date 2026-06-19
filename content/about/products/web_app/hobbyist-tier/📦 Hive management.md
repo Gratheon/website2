@@ -1,6 +1,7 @@
 ---
 status: complete
 title: 📦 Hive Management
+layout: products
 ---
 
 ### 🎯 Purpose

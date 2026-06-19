@@ -1,8 +1,10 @@
 ---
 sidebar_position: 5
 title: Научные статьи
+layout: research
 hide_table_of_contents: true
 ---
+
 ## Команды
 
 Во всём мире есть несколько междисциплинарных исследовательских команд, которые системно работают в области precision beekeeping.

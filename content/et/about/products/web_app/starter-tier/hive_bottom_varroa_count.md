@@ -1,6 +1,7 @@
 ---
 status: in-progress
 title: 🦀 Varroa-lestade loendamine taru põhjalaualt
+layout: products
 ---
 
 Varroa destructor on parasiitne lest, mis nõrgestab meemesilasperesid. Regulaarne varroa taseme jälgimine on mesilaspere tervise jaoks hädavajalik. Traditsiooniline lugemine tähendab valge kleepplaadi paigutamist taru põhja ja mahalangenud lestade käsitsi kokku lugemist — see on aeganõudev ja eksimisaldis.

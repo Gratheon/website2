@@ -1,6 +1,7 @@
 ---
 title: "Research papers by product area"
 navTitle: Product areas
+layout: research
 order: 40
 hideToc: true
 ---

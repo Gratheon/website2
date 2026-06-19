@@ -6,6 +6,7 @@ orgs:
   - 🇫🇮 LUT University
 hideToc: true
 title: Varroa destructor detection on honey bees using hyperspectral imagery
+layout: research
 topics:
   - varroa-health
   - computer-vision

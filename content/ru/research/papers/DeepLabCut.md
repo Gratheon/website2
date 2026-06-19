@@ -1,6 +1,7 @@
 ---
 hideNav: true
 title: "DeepLabCut: markerless pose estimation of user-defined body parts with deep learning"
+layout: research
 orgs:
   - 🇩🇪 Eberhard Karls Universität Tübingen
   - 🇺🇸 Harvard University

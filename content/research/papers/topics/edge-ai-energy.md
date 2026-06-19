@@ -2,6 +2,7 @@
 hideNav: true
 hideToc: true
 title: "Research topic: Edge AI Energy"
+layout: research
 ---
 
 <!-- GENERATED RESEARCH INDEX:START -->

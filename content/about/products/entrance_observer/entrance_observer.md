@@ -1,7 +1,9 @@
 ---
 sidebar_position: 4
 title: 👁️‍🗨️ Entrance Observer
+layout: products
 ---
+
 `status: alpha`, [TRL 5](https://www.nasa.gov/directorates/somd/space-communications-navigation-program/technology-readiness-levels/)
 
 💡 Entrance Observer is a set of cameras and a hardware devices that analyze beehive entrance. It records a video stream, runs AI analysis that sends metrics and videos to our [web app](../web_app/web_app.md) for preview and alerts. 

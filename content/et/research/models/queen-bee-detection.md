@@ -1,5 +1,6 @@
 ---
 title: Mesilasema tuvastus
+layout: research
 order: 2
 ---
 

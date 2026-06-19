@@ -6,6 +6,7 @@ orgs:
   - 🇫🇷  l’Institut National de Recherche en Agriculture
   - 🇧🇪 Centre Apicole de Recherche et d’Information
 title: The prediction of swarming in honeybee colonies using vibrational spectra
+layout: research
 hide_table_of_contents: true
 ---
 

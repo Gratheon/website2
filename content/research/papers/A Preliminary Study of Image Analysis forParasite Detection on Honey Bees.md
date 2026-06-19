@@ -6,6 +6,7 @@ orgs:
   - 🇪🇸 Universidad de Oviedo
   - 🇪🇸 Universitat de Barcelona
 title: A Preliminary Study of Image Analysis forParasite Detection on Honey Bees
+layout: research
 hideToc: true
 topics:
   - computer-vision
@@ -14,6 +15,7 @@ productAreas:
   - colony-health
 paperType: conference
 ---
+
 [PDF](pdfs/162572124.pdf)
 
 <object data={require('./pdfs/162572124.pdf').default} type="application/pdf" width="100%" height="800"></object>

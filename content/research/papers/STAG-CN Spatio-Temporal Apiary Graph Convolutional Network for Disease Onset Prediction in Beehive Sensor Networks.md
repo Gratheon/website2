@@ -4,6 +4,7 @@ year: "2026"
 orgs:
   - 🇰🇷 Korea University
 title: "STAG-CN: Spatio-Temporal Apiary Graph Convolutional Network for Disease Onset Prediction in Beehive Sensor Networks"
+layout: research
 topics:
   - iot-sensors
 productAreas:

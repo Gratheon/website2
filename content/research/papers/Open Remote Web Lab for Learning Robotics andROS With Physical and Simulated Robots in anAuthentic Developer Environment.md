@@ -1,6 +1,7 @@
 ---
 hideNav: true
 title: Open Remote Web Lab for Learning Robotics and ROS With Physical and Simulated Robots in an Authentic Developer Environment
+layout: research
 year: "2024"
 orgs:
   - 🇪🇪 University of Tartu

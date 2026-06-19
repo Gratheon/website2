@@ -1,5 +1,6 @@
 ---
 title: 📈 Hive telemetry storage
+layout: products
 ---
 
 Store and visualize time-series sensor data from IoT devices attached to beehives, enabling long-term monitoring of hive health indicators like temperature, humidity, weight, and entrance traffic.

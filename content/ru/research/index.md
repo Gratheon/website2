@@ -1,6 +1,7 @@
 ---
 title: Исследования
 navTitle: "Исследования"
+layout: research
 sidebar_position: 1
 ---
 

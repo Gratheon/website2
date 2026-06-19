@@ -5,6 +5,7 @@ orgs:
   - 🇫🇷 PSL University
 year: "2022"
 title: Digital Transformation of Beekeeping through the Use of a Decision Making Architecture
+layout: research
 hideToc: true
 topics:
   - iot-sensors

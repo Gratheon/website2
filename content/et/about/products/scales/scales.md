@@ -1,6 +1,7 @@
 ---
 sidebar_position: 3
 title: 🌡️ Tarukaalud
+layout: products
 ---
 
 🌡️ Tarukaalud on nutikad IoT-kaalud, millele on lisatud andurid ja sidekiibid. Need mõõdavad perioodiliselt taru seisundit ning saadavad andmed [veebirakendusse](../web_app/web_app.md). Koondatud andmed aitavad mesinikel jälgida mesilasperesid põllul minimaalse kuluga.

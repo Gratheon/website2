@@ -1,6 +1,7 @@
 ---
 hideNav: true
 title: "BeePIV: A Method to Measure Apis Mellifera Traffic with Particle Image Velocimetry in Videos"
+layout: research
 orgs:
   - 🇺🇸 Utah State University
 year: "2021"

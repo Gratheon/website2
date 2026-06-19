@@ -6,6 +6,7 @@ orgs:
   - 🇨🇦 Université Laval
   - 🇨🇦 Nectar Technologies Inc.
 title: "UrBAN: Urban Beehive Acoustics and PheNotyping Dataset"
+layout: research
 topics:
   - datasets-benchmarks
   - audio-acoustics

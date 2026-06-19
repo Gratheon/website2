@@ -1,6 +1,7 @@
 ---
 title: "Research paper topics"
 navTitle: Topics
+layout: research
 order: 20
 hideToc: true
 ---

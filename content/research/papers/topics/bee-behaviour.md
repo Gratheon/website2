@@ -2,6 +2,7 @@
 hideNav: true
 hideToc: true
 title: "Research topic: Bee Behaviour"
+layout: research
 ---
 
 <!-- GENERATED RESEARCH INDEX:START -->

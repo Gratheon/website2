@@ -1,6 +1,7 @@
 ---
 title: Модели
 navTitle: "Модели"
+layout: research
 order: 3
 hideToc: true
 ---

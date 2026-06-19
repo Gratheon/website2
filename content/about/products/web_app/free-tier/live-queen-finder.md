@@ -1,6 +1,7 @@
 ---
 status: complete
 title: 👑 Live Queen Finder
+layout: products
 ---
 
 ### 🎯 Purpose

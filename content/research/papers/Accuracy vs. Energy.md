@@ -1,6 +1,7 @@
 ---
 hideNav: true
 title: "Accuracy vs. Energy: An Assessment of Bee Object Inference inVideos from On-Hive Video Loggers with YOLOv3,YOLOv4-Tiny, and YOLOv7-Tiny"
+layout: research
 orgs:
   - 🇺🇸 Utah State University
 year: "2023"

@@ -1,4 +1,5 @@
 ---
+layout: research
 hideNav: true
 topics:
   - bee-behaviour
@@ -7,4 +8,5 @@ productAreas:
   - gate-tracker
 paperType: journal
 ---
+
 [PDF](pdfs/waggle-dance2.pdf)

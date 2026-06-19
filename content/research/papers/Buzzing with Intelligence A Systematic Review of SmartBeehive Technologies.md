@@ -4,6 +4,7 @@ year: "2025"
 orgs:
   - 🇭🇷 University of Split
 title: "Buzzing with Intelligence: A Systematic Review of Smart Beehive Technologies"
+layout: research
 topics:
   - reviews-surveys
   - iot-sensors

@@ -1,6 +1,7 @@
 ---
 hideNav: true
 title: "Internet of Things Smart Beehive Network: Homogeneous Data,Modeling, and Forecasting the Honey Robbing Phenomenon"
+layout: research
 orgs:
   - 🇵🇱 Warsaw University of Life Sciences
 year: "2024"

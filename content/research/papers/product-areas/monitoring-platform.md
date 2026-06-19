@@ -2,6 +2,7 @@
 hideNav: true
 hideToc: true
 title: "Research product area: Monitoring Platform"
+layout: research
 ---
 
 <!-- GENERATED RESEARCH INDEX:START -->

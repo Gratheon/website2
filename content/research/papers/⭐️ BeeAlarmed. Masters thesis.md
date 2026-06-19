@@ -1,6 +1,7 @@
 ---
 hideNav: true
 title: BeeAlarmed. Masters thesis
+layout: research
 orgs:
   - 🇩🇪 South Westphalia University of Applied Sciences
 hideToc: true
@@ -13,7 +14,6 @@ productAreas:
 paperType: thesis
 featured: true
 ---
-
 
 [https://github.com/BeeAlarmed/BeeAlarmed](https://github.com/BeeAlarmed/BeeAlarmed)
 Our adaptation - https://github.com/Gratheon/models-gate-tracker

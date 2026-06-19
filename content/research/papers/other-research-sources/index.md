@@ -1,6 +1,7 @@
 ---
 title: Other research sources
 navTitle: Sources
+layout: research
 order: 60
 hideToc: true
 ---

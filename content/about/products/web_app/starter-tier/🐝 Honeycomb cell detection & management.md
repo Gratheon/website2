@@ -1,6 +1,7 @@
 ---
 status: complete
 title: 🐝 Honeycomb cell detection & management
+layout: products
 ---
 
 ### 🎯 Purpose

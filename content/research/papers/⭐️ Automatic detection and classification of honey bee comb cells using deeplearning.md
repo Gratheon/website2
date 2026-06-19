@@ -1,6 +1,7 @@
 ---
 hideNav: true
 title: ⭐️ Automatic detection and classification of honey bee comb cells using deeplearning
+layout: research
 orgs:
   - 🇵🇹 Instituto Politécnico de Bragança
   - 🇧🇷 Federal Technological University of Paraná
@@ -15,6 +16,7 @@ productAreas:
 paperType: conference
 featured: true
 ---
+
 https://bibliotecadigital.ipb.pt/bitstream/10198/22321/1/65.pdf
 
 [PDF](pdfs/65.pdf)

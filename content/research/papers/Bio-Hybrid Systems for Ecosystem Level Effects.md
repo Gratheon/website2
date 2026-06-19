@@ -1,4 +1,5 @@
 ---
+layout: research
 hideNav: true
 year: "2022"
 topics:
@@ -8,5 +9,6 @@ productAreas:
   - robotics
 paperType: conference
 ---
+
 [PDF](pdfs/isal_a_00396.pdf)
 

@@ -1,7 +1,7 @@
 ---
+layout: products
 status: complete
 ---
-
 
 ## User story
 

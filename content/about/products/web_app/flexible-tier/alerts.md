@@ -1,5 +1,6 @@
 ---
 title: 🔔 Alerts
+layout: products
 ---
 
 We want to notify beekeepers in various cases/features. This page describes alert configuration, channels and types supported in the Flexible tier, including SMS notifications and webhooks.

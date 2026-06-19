@@ -1,6 +1,7 @@
 ---
 status: complete
 title: 👑 Reaalajas mesilasema leidja
+layout: products
 ---
 
 ## Eesmärk

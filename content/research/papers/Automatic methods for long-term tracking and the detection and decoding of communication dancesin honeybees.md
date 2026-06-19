@@ -1,4 +1,5 @@
 ---
+layout: research
 hideNav: true
 year: "2015"
 topics:
@@ -8,4 +9,5 @@ productAreas:
   - gate-tracker
 paperType: journal
 ---
+
 [PDF](pdfs/fevo-03-00103.pdf)

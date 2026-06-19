@@ -5,6 +5,7 @@ orgs:
   - 🇩🇪 Karlsruhe Institute of Technology
 hideToc: true
 title: DeepBees – Building and Scaling Convolutional Neuronal Nets For Fast and Large-scale Visual Monitoring of Bee Hives
+layout: research
 topics:
   - computer-vision
   - datasets-benchmarks

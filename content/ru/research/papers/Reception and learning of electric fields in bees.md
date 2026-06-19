@@ -5,6 +5,7 @@ orgs:
   - 🇩🇪 Freie Universität Berlin
 hide_table_of_contents: true
 title: Reception and learning of electric fields in bees
+layout: research
 ---
 
 - [URL](https://royalsocietypublishing.org/doi/epdf/10.1098/rspb.2013.0528)

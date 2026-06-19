@@ -1,5 +1,6 @@
 ---
 title: Queen bee detection
+layout: research
 order: 2
 ---
 

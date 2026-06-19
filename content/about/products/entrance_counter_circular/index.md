@@ -1,6 +1,8 @@
 ---
 title: Circular entrance counter
+layout: products
 ---
+
 `status`: `idea` ( [TRL 1](https://www.nasa.gov/directorates/somd/space-communications-navigation-program/technology-readiness-levels/))
 
 Some beehives have circular entrances on individual hive sections.

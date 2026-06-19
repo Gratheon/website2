@@ -1,6 +1,7 @@
 ---
 title: Hacker projects
 navTitle: Hacker projects
+layout: research
 order: 4
 hideToc: true
 ---

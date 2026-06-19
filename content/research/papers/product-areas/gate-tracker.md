@@ -2,6 +2,7 @@
 hideNav: true
 hideToc: true
 title: "Research product area: Gate Tracker"
+layout: research
 ---
 
 <!-- GENERATED RESEARCH INDEX:START -->

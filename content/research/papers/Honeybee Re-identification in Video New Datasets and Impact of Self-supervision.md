@@ -1,6 +1,7 @@
 ---
 hideNav: true
 title: "Honeybee Re-identification in Video: New Datasets and Impact of Self-supervision"
+layout: research
 orgs:
   - 🇵🇷 University of Puerto Rico
 year: "2022"

@@ -1,6 +1,7 @@
 ---
 hideNav: true
 title: Identifying Queenlessness in Honeybee Hives from Audio Signals Using Machine Learning
+layout: research
 orgs:
   - 🇬🇧 Kingston University
 year: "2023"

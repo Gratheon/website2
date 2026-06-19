@@ -5,6 +5,7 @@ orgs:
   - 🇩🇪 Freie Universität Berlin
 hideToc: true
 title: Reception and learning of electric fields in bees
+layout: research
 topics:
   - bee-behaviour
   - iot-sensors

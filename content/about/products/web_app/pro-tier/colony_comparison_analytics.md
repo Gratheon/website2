@@ -1,5 +1,6 @@
 ---
 title: ⚖️ Colony comparison analytics
+layout: products
 ---
 
 Colony comparison analytics provides side-by-side comparison of multiple hives to identify trends, patterns, and performance differences.

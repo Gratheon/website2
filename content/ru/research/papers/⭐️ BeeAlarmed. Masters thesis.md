@@ -1,12 +1,12 @@
 ---
 hideNav: true
 title: BeeAlarmed. Masters thesis
+layout: research
 orgs:
   - 🇩🇪 South Westphalia University of Applied Sciences
 hide_table_of_contents: true
 year: "2020"
 ---
-
 
 [https://github.com/BeeAlarmed/BeeAlarmed](https://github.com/BeeAlarmed/BeeAlarmed)
 Наша адаптация — https://github.com/Gratheon/models-gate-tracker

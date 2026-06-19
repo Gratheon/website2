@@ -1,6 +1,7 @@
 ---
 hideNav: true
 title: "Toward an intelligent and efficient beehive: A survey of precision beekeeping systems and services"
+layout: research
 year: "2021"
 orgs:
   - 🇫🇷 aivancity School for Technology

@@ -1,5 +1,6 @@
 ---
 title: Varroa-on-bee detection
+layout: research
 order: 4
 ---
 

@@ -1,6 +1,7 @@
 ---
 hideNav: true
 title: Raspberry Pi Bee Health Monitoring Device
+layout: research
 orgs:
   - 🇨🇿 Brno University of Technology
 year: "2023"

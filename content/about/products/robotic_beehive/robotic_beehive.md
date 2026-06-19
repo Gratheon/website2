@@ -1,7 +1,9 @@
 ---
 title: 🧿 Robotic Beehive
+layout: products
 sidebar_position: 5
 ---
+
 We are developing a robotic vertical beehive inspection platform, which is
 - capable of lifting multiple hive sections to faster reach the nest
 - take photos of the beehive frames with built-in cameras - manual hive frame lifting is needed

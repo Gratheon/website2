@@ -1,6 +1,7 @@
 ---
 hideNav: true
 title: "The development of honey bee coloniesassessed using a new semi-automated broodcounting method: CombCount"
+layout: research
 year: "2018"
 orgs:
   - 🇦🇺 Macquarie University

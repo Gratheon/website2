@@ -5,6 +5,7 @@ orgs:
   - 🇦🇺 The University of Sydney
   - 🇦🇺 Macquarie University
 title: "Assessing Honey Bee Colony Health Using Temperature Time Series"
+layout: research
 topics:
   - iot-sensors
   - bee-behaviour

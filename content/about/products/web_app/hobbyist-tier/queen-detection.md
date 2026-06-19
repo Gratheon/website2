@@ -1,6 +1,7 @@
 ---
 status: in-progress
 title: 👑 Queen Detection
+layout: products
 ---
 
 ### 🎯 Purpose

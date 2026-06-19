@@ -1,6 +1,7 @@
 ---
 hideNav: true
 title: ⭐️ Deep Edge IoT for Acoustic Detection of Queenless Beehives
+layout: research
 year: "2025"
 orgs:
   - 🇬🇷 Aristotle University of Thessaloniki

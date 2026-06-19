@@ -1,5 +1,6 @@
 ---
 title: Mesilaste tuvastus
+layout: research
 order: 1
 ---
 

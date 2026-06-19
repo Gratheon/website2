@@ -4,6 +4,7 @@ year: "2021"
 orgs:
   - 🇺🇸 Utah State University
 title: Audio, Image, Video, and Weather Datasets for Continuous Electronic Beehive Monitoring
+layout: research
 hideToc: true
 topics:
   - datasets-benchmarks

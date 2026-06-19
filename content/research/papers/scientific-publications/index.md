@@ -1,6 +1,7 @@
 ---
 title: "Scientific publications"
 navTitle: Publications
+layout: research
 order: 10
 hideToc: true
 ---

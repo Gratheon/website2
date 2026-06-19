@@ -1,6 +1,7 @@
 ---
 hideNav: true
 title: "COMB: Common Open Modular robotic platform for Bees"
+layout: research
 orgs:
   - 🇩🇪 University of Konstanz
   - 🇩🇪 Freie Universität Berlin

@@ -1,5 +1,6 @@
 ---
 title: 🧿 Robotmesitaru
+layout: products
 sidebar_position: 5
 ---
 
