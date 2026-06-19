@@ -15,6 +15,7 @@ sidebar_position: 1
 Команда Gratheon интересуется уже существующими исследованиями и инженерными наработками. Мы отслеживаем
 - [Научные статьи](papers/index.md), подготовленные академическими авторами
 - [Хакерские проекты](Hacker%20projects.md), созданные энтузиастами
+- [Модели Gratheon](models/index.md), обученные для детекции пчёл, маток, позы и клещей варроа на пчёлах
 - [Коммерческие проекты](/about/company/business_plan/Competition/), которые развивают предприниматели
 ## Сотрудничество с нами в области исследований
 - Наш [white paper по Entrance Observer](/assets/assets/entrance-observer-whitepaper.pdf)
