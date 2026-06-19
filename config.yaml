@@ -560,6 +560,12 @@ navigation:
         enableGraph: false
         matchPaths: ["research"]
         sidebarRoot: "research"
+      products:
+        defaultMode: "categories"
+        enableTime: false
+        enableGraph: false
+        matchPaths: ["about/products"]
+        sidebarRoot: "about/products"
       about:
         defaultMode: "categories"
         enableTime: false
