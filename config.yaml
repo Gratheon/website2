@@ -449,94 +449,86 @@ navigation:
       - title: "Prețuri"
         url: "/ro/pricing/"
         languages: ["ro"]
-      - title: "Discord"
-        url: "https://discord.gg/PcbP4uedWj"
-        class: "nav-action nav-action-first"
-        languages: ["en"]
-      - title: "GitHub"
-        url: "https://github.com/gratheon/web-app"
-        class: "nav-action"
-        languages: ["en"]
       # Auth pages read the language from the query string for unauthenticated users.
       - title: "Log in"
         url: "https://app.gratheon.com/account/authenticate/?lang=en"
-        class: "nav-action"
+        class: "nav-action nav-action-first"
         languages: ["en"]
       - title: "Войти"
         url: "https://app.gratheon.com/account/authenticate/?lang=ru"
-        class: "nav-action"
+        class: "nav-action nav-action-first"
         languages: ["ru"]
       - title: "Logi sisse"
         url: "https://app.gratheon.com/account/authenticate/?lang=et"
-        class: "nav-action"
+        class: "nav-action nav-action-first"
         languages: ["et"]
       - title: "Giriş yap"
         url: "https://app.gratheon.com/account/authenticate/?lang=tr"
-        class: "nav-action"
+        class: "nav-action nav-action-first"
         languages: ["tr"]
       - title: "Zaloguj się"
         url: "https://app.gratheon.com/account/authenticate/?lang=pl"
-        class: "nav-action"
+        class: "nav-action nav-action-first"
         languages: ["pl"]
       - title: "Anmelden"
         url: "https://app.gratheon.com/account/authenticate/?lang=de"
-        class: "nav-action"
+        class: "nav-action nav-action-first"
         languages: ["de"]
       - title: "Se connecter"
         url: "https://app.gratheon.com/account/authenticate/?lang=fr"
-        class: "nav-action"
+        class: "nav-action nav-action-first"
         languages: ["fr"]
       - title: "登录"
         url: "https://app.gratheon.com/account/authenticate/?lang=zh"
-        class: "nav-action"
+        class: "nav-action nav-action-first"
         languages: ["zh"]
       - title: "लॉग इन"
         url: "https://app.gratheon.com/account/authenticate/?lang=hi"
-        class: "nav-action"
+        class: "nav-action nav-action-first"
         languages: ["hi"]
       - title: "Iniciar sesión"
         url: "https://app.gratheon.com/account/authenticate/?lang=es"
-        class: "nav-action"
+        class: "nav-action nav-action-first"
         languages: ["es"]
       - title: "تسجيل الدخول"
         url: "https://app.gratheon.com/account/authenticate/?lang=ar"
-        class: "nav-action"
+        class: "nav-action nav-action-first"
         languages: ["ar"]
       - title: "লগ ইন"
         url: "https://app.gratheon.com/account/authenticate/?lang=bn"
-        class: "nav-action"
+        class: "nav-action nav-action-first"
         languages: ["bn"]
       - title: "Entrar"
         url: "https://app.gratheon.com/account/authenticate/?lang=pt"
-        class: "nav-action"
+        class: "nav-action nav-action-first"
         languages: ["pt"]
       - title: "ログイン"
         url: "https://app.gratheon.com/account/authenticate/?lang=ja"
-        class: "nav-action"
+        class: "nav-action nav-action-first"
         languages: ["ja"]
       - title: "Pieslēgties"
         url: "https://app.gratheon.com/account/authenticate/?lang=lv"
-        class: "nav-action"
+        class: "nav-action nav-action-first"
         languages: ["lv"]
       - title: "Prisijungti"
         url: "https://app.gratheon.com/account/authenticate/?lang=lt"
-        class: "nav-action"
+        class: "nav-action nav-action-first"
         languages: ["lt"]
       - title: "Bejelentkezés"
         url: "https://app.gratheon.com/account/authenticate/?lang=hu"
-        class: "nav-action"
+        class: "nav-action nav-action-first"
         languages: ["hu"]
       - title: "Увійти"
         url: "https://app.gratheon.com/account/authenticate/?lang=uk"
-        class: "nav-action"
+        class: "nav-action nav-action-first"
         languages: ["uk"]
       - title: "Accedi"
         url: "https://app.gratheon.com/account/authenticate/?lang=it"
-        class: "nav-action"
+        class: "nav-action nav-action-first"
         languages: ["it"]
       - title: "Autentificare"
         url: "https://app.gratheon.com/account/authenticate/?lang=ro"
-        class: "nav-action"
+        class: "nav-action nav-action-first"
         languages: ["ro"]
   sidebar:
     collapsed: true
