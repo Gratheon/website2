@@ -8,23 +8,25 @@ title: "Research product area: Gate Tracker"
 ## Summary
 
 - Product area key: `gate-tracker`
-- Total papers: 22
+- Total papers: 24
 - [Research papers hub](../index.md)
 - [All product areas](index.md)
 
 ## Topics
 
-- [Bee Behaviour](../topics/bee-behaviour.md) (15)
-- [Computer Vision](../topics/computer-vision.md) (21)
+- [Bee Behaviour](../topics/bee-behaviour.md) (17)
+- [Computer Vision](../topics/computer-vision.md) (23)
 - [Datasets Benchmarks](../topics/datasets-benchmarks.md) (5)
 - [Edge AI Energy](../topics/edge-ai-energy.md) (1)
 - [IoT Sensors](../topics/iot-sensors.md) (2)
 - [Pollination Ecology](../topics/pollination-ecology.md) (2)
+- [Varroa Health](../topics/varroa-health.md) (1)
 
 ## Years
 
+- [2026](../years/2026.md) (1)
 - [2025](../years/2025.md) (2)
-- [2024](../years/2024.md) (1)
+- [2024](../years/2024.md) (2)
 - [2023](../years/2023.md) (7)
 - [2022](../years/2022.md) (2)
 - [2021](../years/2021.md) (3)
@@ -36,6 +38,10 @@ title: "Research product area: Gate Tracker"
 
 ## Papers by year
 
+### [2026](../years/2026.md)
+
+- [Continuous Non-Invasive Monitoring of Hive Entrance Activity Reveals Honey Bee Colony Dynamics](../Continuous%20Non-Invasive%20Monitoring%20of%20Hive%20Entrance%20Activity%20Reveals%20Honey%20Bee%20Colony%20Dynamics.md) — 🇹🇷 Van Yüzüncü Yıl University
+
 ### [2025](../years/2025.md)
 
 - [Apis mellifera Bee Verification with IoT and Graph Neural Network](../Apis%20mellifera%20Bee%20Verification%20with%20IoT%20and%20Graph%20Neural%20Network.md) — 🇲🇽 Instituto Tecnológico El Llano Aguascalientes
@@ -43,6 +49,7 @@ title: "Research product area: Gate Tracker"
 
 ### [2024](../years/2024.md)
 
+- [IntelliBeeHive: An Automated Honey Bee, Pollen, and Varroa Destructor Monitoring System](../IntelliBeeHive%20An%20Automated%20Honey%20Bee%20Pollen%20and%20Varroa%20Destructor%20Monitoring%20System.md) — 🇺🇸 University of Texas Rio Grande Valley
 - [Keypoint-Based Bee Orientation Estimation and Ramp Detection at the Hive Entrance for Bee Behavior Identification System](../Keypoint-Based%20Bee%20Orientation%20Estimation%20and%20Ramp%20Detection%20at%20the%20Hive%20Entrance%20for%20Bee%20Behavior%20Identification%20System.md) — 🇱🇹 Vilnius Gediminas Technical University
 
 ### [2023](../years/2023.md)

@@ -8,29 +8,29 @@ title: "Research topic: Bee Behaviour"
 ## Summary
 
 - Topic key: `bee-behaviour`
-- Total papers: 41
+- Total papers: 47
 - [Research papers hub](../index.md)
 - [All topics](index.md)
 
 ## Product areas
 
-- [Colony Health](../product-areas/colony-health.md) (9)
-- [Gate Tracker](../product-areas/gate-tracker.md) (15)
+- [Colony Health](../product-areas/colony-health.md) (13)
+- [Gate Tracker](../product-areas/gate-tracker.md) (17)
 - [Hive Scanner](../product-areas/hive-scanner.md) (7)
-- [Monitoring Platform](../product-areas/monitoring-platform.md) (5)
-- [Robotics](../product-areas/robotics.md) (5)
+- [Monitoring Platform](../product-areas/monitoring-platform.md) (8)
+- [Robotics](../product-areas/robotics.md) (6)
 
 ## Years
 
-- [2026](../years/2026.md) (1)
+- [2026](../years/2026.md) (5)
 - [2025](../years/2025.md) (1)
-- [2024](../years/2024.md) (3)
+- [2024](../years/2024.md) (4)
 - [2023](../years/2023.md) (8)
 - [2022](../years/2022.md) (5)
 - [2021](../years/2021.md) (6)
 - [2020](../years/2020.md) (4)
 - [2019](../years/2019.md) (2)
-- [2018](../years/2018.md) (5)
+- [2018](../years/2018.md) (6)
 - [2015](../years/2015.md) (1)
 - [2013](../years/2013.md) (1)
 - [2009](../years/2009.md) (1)
@@ -40,7 +40,11 @@ title: "Research topic: Bee Behaviour"
 
 ### [2026](../years/2026.md)
 
+- [Acoustic Signatures of Hive: Detecting Queen Bee Absence Through Machine Learning of Short Audio Segments](../Acoustic%20Signatures%20of%20Hive%20Detecting%20Queen%20Bee%20Absence%20Through%20Machine%20Learning%20of%20Short%20Audio%20Segments.md) — 🇨🇱 Universidad de Viña del Mar; 🇨🇱 Universidad Técnica Federico Santa María
+- [Assessing Honey Bee Colony Health Using Temperature Time Series](../Assessing%20Honey%20Bee%20Colony%20Health%20Using%20Temperature%20Time%20Series.md) — 🇦🇺 The University of Sydney; 🇦🇺 Macquarie University
+- [BeeVe: Unsupervised Acoustic State Discovery in Honey Bee Buzzing](../BeeVe%20Unsupervised%20Acoustic%20State%20Discovery%20in%20Honey%20Bee%20Buzzing.md) — arXiv author-supplied preprint by Hamze Hammami and Nidhal Abdulaziz
 - [COMB: Common Open Modular robotic platform for Bees](../COMB.md) — 🇩🇪 University of Konstanz; 🇩🇪 Freie Universität Berlin
+- [Continuous Non-Invasive Monitoring of Hive Entrance Activity Reveals Honey Bee Colony Dynamics](../Continuous%20Non-Invasive%20Monitoring%20of%20Hive%20Entrance%20Activity%20Reveals%20Honey%20Bee%20Colony%20Dynamics.md) — 🇹🇷 Van Yüzüncü Yıl University
 
 ### [2025](../years/2025.md)
 
@@ -50,6 +54,7 @@ title: "Research topic: Bee Behaviour"
 
 - [Autonomous tracking of honey bee behaviors over long-term periods with cooperating robots](../%E2%AD%90%EF%B8%8F%20Autonomous%20tracking%20of%20honey%20bee%20behaviors%20over%20long-term%20periods%20with%20cooperating%20robots.md) — 🇨🇿 Czech Technical University; 🇦🇹 University of Graz; 🇬🇧 Durham University; 🇹🇷  Middle East Technical University
 - [Honey bulk DNA metagenomic analysis to identify honey biological](../Honey%20bulk%20DNA%20metagenomic%20analysis%20to%20identify%20honey%20biological.md) — 🇪🇪 Celvia CC AS; 🇪🇪 University of Tartu; 🇸🇪 Karolinska University Hospital
+- [IntelliBeeHive: An Automated Honey Bee, Pollen, and Varroa Destructor Monitoring System](../IntelliBeeHive%20An%20Automated%20Honey%20Bee%20Pollen%20and%20Varroa%20Destructor%20Monitoring%20System.md) — 🇺🇸 University of Texas Rio Grande Valley
 - [Keypoint-Based Bee Orientation Estimation and Ramp Detection at the Hive Entrance for Bee Behavior Identification System](../Keypoint-Based%20Bee%20Orientation%20Estimation%20and%20Ramp%20Detection%20at%20the%20Hive%20Entrance%20for%20Bee%20Behavior%20Identification%20System.md) — 🇱🇹 Vilnius Gediminas Technical University
 
 ### [2023](../years/2023.md)
@@ -94,6 +99,7 @@ title: "Research topic: Bee Behaviour"
 
 ### [2018](../years/2018.md)
 
+- [Dancing Honey bee Robot Elicits Dance-Following and Recruits Foragers](../Dancing%20Honey%20bee%20Robot%20Elicits%20Dance-Following%20and%20Recruits%20Foragers.md) — 🇩🇪 Freie Universität Berlin; 🇩🇪 Leibniz-Institute of Freshwater Ecology and Inland Fisheries
 - [Honeybees on the move - Pollination services and honey production](../Honeybees%20on%20the%20move%20-%20Pollination%20services%20and%20honey%20production.md)
 - [Multiple Animals Tracking in VideoUsing Part Affinity Fields](../Multiple%20Animals%20Tracking%20in%20VideoUsing%20Part%20Affinity%20Fields.md) — 🇵🇷 University of Puerto Rico
 - [Recognition of Pollen-bearing Bees from Video using Convolutional Neural Network](../Recognition%20of%20Pollen-bearing%20Bees%20from%20Video%20using%20Convolutional%20Neural%20Network.md) — 🇵🇷 University of Puerto Rico

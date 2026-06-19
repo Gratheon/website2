@@ -8,23 +8,24 @@ title: "Research topic: IoT Sensors"
 ## Summary
 
 - Topic key: `iot-sensors`
-- Total papers: 35
+- Total papers: 41
 - [Research papers hub](../index.md)
 - [All topics](index.md)
 
 ## Product areas
 
-- [Colony Health](../product-areas/colony-health.md) (4)
+- [Colony Health](../product-areas/colony-health.md) (7)
 - [Gate Tracker](../product-areas/gate-tracker.md) (2)
-- [Monitoring Platform](../product-areas/monitoring-platform.md) (29)
+- [Monitoring Platform](../product-areas/monitoring-platform.md) (35)
 
 ## Years
 
-- [2025](../years/2025.md) (4)
-- [2024](../years/2024.md) (6)
+- [2026](../years/2026.md) (2)
+- [2025](../years/2025.md) (6)
+- [2024](../years/2024.md) (7)
 - [2023](../years/2023.md) (7)
 - [2022](../years/2022.md) (4)
-- [2021](../years/2021.md) (3)
+- [2021](../years/2021.md) (4)
 - [2020](../years/2020.md) (2)
 - [2019](../years/2019.md) (2)
 - [2017](../years/2017.md) (1)
@@ -34,11 +35,18 @@ title: "Research topic: IoT Sensors"
 
 ## Papers by year
 
+### [2026](../years/2026.md)
+
+- [Assessing Honey Bee Colony Health Using Temperature Time Series](../Assessing%20Honey%20Bee%20Colony%20Health%20Using%20Temperature%20Time%20Series.md) — 🇦🇺 The University of Sydney; 🇦🇺 Macquarie University
+- [STAG-CN: Spatio-Temporal Apiary Graph Convolutional Network for Disease Onset Prediction in Beehive Sensor Networks](../STAG-CN%20Spatio-Temporal%20Apiary%20Graph%20Convolutional%20Network%20for%20Disease%20Onset%20Prediction%20in%20Beehive%20Sensor%20Networks.md) — 🇰🇷 Korea University
+
 ### [2025](../years/2025.md)
 
+- [A Survey of TinyML Applications in Beekeeping for Hive Monitoring and Management](../A%20Survey%20of%20TinyML%20Applications%20in%20Beekeeping%20for%20Hive%20Monitoring%20and%20Management.md) — 🇦🇺 University of Technology Sydney; 🇦🇺 BeeSTAR
 - [Apis mellifera Bee Verification with IoT and Graph Neural Network](../Apis%20mellifera%20Bee%20Verification%20with%20IoT%20and%20Graph%20Neural%20Network.md) — 🇲🇽 Instituto Tecnológico El Llano Aguascalientes
 - [Buzzing with Intelligence: A Systematic Review of Smart Beehive Technologies](../Buzzing%20with%20Intelligence%20A%20Systematic%20Review%20of%20SmartBeehive%20Technologies.md) — 🇭🇷 University of Split
 - [IoT and Machine Learning Techniques for Precision Beekeeping:A Review](../IoT%20and%20Machine%20Learning%20Techniques%20for%20Precision%20Beekeeping%20A%20Review.md) — 🇺🇬 Makerere University; 🇹🇿 Dar es Salaam Institute of Technology
+- [UrBAN: Urban Beehive Acoustics and PheNotyping Dataset](../UrBAN%20Urban%20Beehive%20Acoustics%20and%20PheNotyping%20Dataset.md) — 🇨🇦 Institut National de la Recherche Scientifique; 🇨🇦 Université Laval; 🇨🇦 Nectar Technologies Inc.
 - [⭐️ Deep Edge IoT for Acoustic Detection of Queenless Beehives](../%E2%AD%90%EF%B8%8F%20Deep%20Edge%20IoT%20for%20Acoustic%20Detection%20of%20Queenless%20Beehives.md) — 🇬🇷 Aristotle University of Thessaloniki
 
 ### [2024](../years/2024.md)
@@ -47,6 +55,7 @@ title: "Research topic: IoT Sensors"
 - [Beehive Smart Detector Device for the Detection of CriticalConditions That Utilize Edge Device Computations and DeepLearning Inferences](../Beehive%20Smart%20Detector%20Device%20for%20the%20Detection%20of%20CriticalConditions%20That%20Utilize%20Edge%20Device%20Computations%20and%20DeepLearning%20Inferences.md) — 🇬🇷 University of Ioannina
 - [Intelligent beehive monitoring system based on internet of things and colony state analysis](../Intelligent%20beehive%20monitoring%20system%20based%20on%20internet%20of%20things%20and%20colony%20state%20analysis.md) — 🇲🇾 Universiti Teknologi MARA; 🇨🇳 Peking University Shenzhen Graduate School; 🇨🇳 Xiamen University; 🇨🇳 Fujian Agriculture And Forestry University; 🇨🇳 Quanzhou University of Information Engineering
 - [Internet of Things Smart Beehive Network: Homogeneous Data,Modeling, and Forecasting the Honey Robbing Phenomenon](../Internet%20of%20Things%20Smart%20Beehive%20Network.md) — 🇵🇱 Warsaw University of Life Sciences
+- [MSPB: a longitudinal multi-sensor dataset with phenotypic trait measurements from honey bees](../MSPB%20a%20longitudinal%20multi-sensor%20dataset%20with%20phenotypic%20trait%20measurements%20from%20honey%20bees.md) — 🇨🇦 Institut National de la Recherche Scientifique; 🇨🇦 Université Laval; 🇨🇦 Nectar Technologies Inc.
 - [The Use of Products with a Monitoring System for Remote Bee Detection in Beekeeping in Czechia](../The%20Use%20of%20Products%20with%20a%20Monitoring%20System%20for%20Remote%20Bee%20Detection%20in%20Beekeeping%20in%20Czechia.md) — 🇨🇿 Brno University of Technology
 - [Tracking Varroa Parasitism Using Handheld Infrared Cameras:Is Eusocial Fever the Key?](../Tracking%20Varroa%20Parasitism%20Using%20Handheld%20Infrared%20Cameras%20Is%20Eusocial%20Fever%20the%20Key.md) — 🇭🇺 Hungarian University of Agricultureand Life Sciences
 
@@ -71,6 +80,7 @@ title: "Research topic: IoT Sensors"
 
 - [Audio, Image, Video, and Weather Datasets for Continuous Electronic Beehive Monitoring](../Audio%2C%20Image%2C%20Video%2C%20and%20Weather%20Datasets%20for%20Continuous%20Electronic%20Beehive%20Monitoring.md) — 🇺🇸 Utah State University
 - [Self-Powered Smart Beehive Monitoring and ControlSystem (SBMaCS)](../Self-Powered%20Smart%20Beehive%20Monitoring%20and%20ControlSystem%20%28SBMaCS%29.md) — 🇷🇼 University of Rwanda; 🇿🇲 Copperbelt University; 🇷🇼 National Council of Science and Technology
+- [Semi-Supervised Audio Representation Learning for Modeling Beehive Strengths](../Semi-Supervised%20Audio%20Representation%20Learning%20for%20Modeling%20Beehive%20Strengths.md) — 🇺🇸 X, the Moonshot Factory; 🇺🇸 Caltech; 🇺🇸 Google; 🇺🇸 University of Wisconsin-Madison; 🇺🇸 Washington State University
 - [Toward an intelligent and efficient beehive: A survey of precision beekeeping systems and services](../Toward%20an%20intelligent%20and%20efficient%20beehive%20A%20survey%20of%20precision%20beekeeping%20systems%20and%20services.md) — 🇫🇷 aivancity School for Technology; 🇫🇷 Université de Lyon
 
 ### [2020](../years/2020.md)

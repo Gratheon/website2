@@ -13,14 +13,14 @@ Browse research papers by topic.
 
 Topics:
 
-- [Audio Acoustics](audio-acoustics.md) (6)
-- [Bee Behaviour](bee-behaviour.md) (41)
-- [Computer Vision](computer-vision.md) (48)
-- [Datasets Benchmarks](datasets-benchmarks.md) (8)
-- [Edge AI Energy](edge-ai-energy.md) (5)
-- [IoT Sensors](iot-sensors.md) (35)
+- [Audio Acoustics](audio-acoustics.md) (11)
+- [Bee Behaviour](bee-behaviour.md) (47)
+- [Computer Vision](computer-vision.md) (52)
+- [Datasets Benchmarks](datasets-benchmarks.md) (11)
+- [Edge AI Energy](edge-ai-energy.md) (7)
+- [IoT Sensors](iot-sensors.md) (41)
 - [Pollination Ecology](pollination-ecology.md) (11)
-- [Reviews Surveys](reviews-surveys.md) (12)
-- [Robotics](robotics.md) (7)
-- [Varroa Health](varroa-health.md) (7)
+- [Reviews Surveys](reviews-surveys.md) (13)
+- [Robotics](robotics.md) (8)
+- [Varroa Health](varroa-health.md) (8)
 <!-- GENERATED RESEARCH INDEX:END -->

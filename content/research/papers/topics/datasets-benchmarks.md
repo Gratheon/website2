@@ -8,19 +8,20 @@ title: "Research topic: Datasets Benchmarks"
 ## Summary
 
 - Topic key: `datasets-benchmarks`
-- Total papers: 8
+- Total papers: 11
 - [Research papers hub](../index.md)
 - [All topics](index.md)
 
 ## Product areas
 
 - [Gate Tracker](../product-areas/gate-tracker.md) (5)
-- [Hive Scanner](../product-areas/hive-scanner.md) (2)
-- [Monitoring Platform](../product-areas/monitoring-platform.md) (2)
+- [Hive Scanner](../product-areas/hive-scanner.md) (3)
+- [Monitoring Platform](../product-areas/monitoring-platform.md) (5)
 
 ## Years
 
-- [2024](../years/2024.md) (1)
+- [2025](../years/2025.md) (2)
+- [2024](../years/2024.md) (2)
 - [2023](../years/2023.md) (2)
 - [2022](../years/2022.md) (1)
 - [2021](../years/2021.md) (1)
@@ -29,9 +30,15 @@ title: "Research topic: Datasets Benchmarks"
 
 ## Papers by year
 
+### [2025](../years/2025.md)
+
+- [Fast, accurate measurement of the worker populations of honey bee colonies using deep learning](../Fast%20accurate%20measurement%20of%20the%20worker%20populations%20of%20honey%20bee%20colonies%20using%20deep%20learning.md) — 🇺🇸 Arizona State University; 🇺🇸 Texas A&M University–Kingsville
+- [UrBAN: Urban Beehive Acoustics and PheNotyping Dataset](../UrBAN%20Urban%20Beehive%20Acoustics%20and%20PheNotyping%20Dataset.md) — 🇨🇦 Institut National de la Recherche Scientifique; 🇨🇦 Université Laval; 🇨🇦 Nectar Technologies Inc.
+
 ### [2024](../years/2024.md)
 
 - [Bee Together: Joining Bee Audio Datasets for Hive Extrapolation in AI-Based Monitoring](../Bee%20Together%20Joining%20Bee%20Audio%20Datasets%20for%20Hive%20Extrapolation%20in%20AI-Based%20Monitoring.md) — 🇫🇷 University of Toulouse
+- [MSPB: a longitudinal multi-sensor dataset with phenotypic trait measurements from honey bees](../MSPB%20a%20longitudinal%20multi-sensor%20dataset%20with%20phenotypic%20trait%20measurements%20from%20honey%20bees.md) — 🇨🇦 Institut National de la Recherche Scientifique; 🇨🇦 Université Laval; 🇨🇦 Nectar Technologies Inc.
 
 ### [2023](../years/2023.md)
 

@@ -8,32 +8,40 @@ title: "Research product area: Colony Health"
 ## Summary
 
 - Product area key: `colony-health`
-- Total papers: 18
+- Total papers: 24
 - [Research papers hub](../index.md)
 - [All product areas](index.md)
 
 ## Topics
 
-- [Audio Acoustics](../topics/audio-acoustics.md) (4)
-- [Bee Behaviour](../topics/bee-behaviour.md) (9)
-- [Computer Vision](../topics/computer-vision.md) (6)
+- [Audio Acoustics](../topics/audio-acoustics.md) (7)
+- [Bee Behaviour](../topics/bee-behaviour.md) (13)
+- [Computer Vision](../topics/computer-vision.md) (7)
 - [Edge AI Energy](../topics/edge-ai-energy.md) (1)
-- [IoT Sensors](../topics/iot-sensors.md) (4)
+- [IoT Sensors](../topics/iot-sensors.md) (7)
 - [Pollination Ecology](../topics/pollination-ecology.md) (5)
-- [Varroa Health](../topics/varroa-health.md) (7)
+- [Varroa Health](../topics/varroa-health.md) (8)
 
 ## Years
 
+- [2026](../years/2026.md) (4)
 - [2025](../years/2025.md) (4)
-- [2024](../years/2024.md) (3)
+- [2024](../years/2024.md) (4)
 - [2023](../years/2023.md) (4)
-- [2021](../years/2021.md) (2)
+- [2021](../years/2021.md) (3)
 - [2020](../years/2020.md) (1)
 - [2018](../years/2018.md) (2)
 - [2013](../years/2013.md) (1)
 - [2009](../years/2009.md) (1)
 
 ## Papers by year
+
+### [2026](../years/2026.md)
+
+- [Acoustic Signatures of Hive: Detecting Queen Bee Absence Through Machine Learning of Short Audio Segments](../Acoustic%20Signatures%20of%20Hive%20Detecting%20Queen%20Bee%20Absence%20Through%20Machine%20Learning%20of%20Short%20Audio%20Segments.md) — 🇨🇱 Universidad de Viña del Mar; 🇨🇱 Universidad Técnica Federico Santa María
+- [Assessing Honey Bee Colony Health Using Temperature Time Series](../Assessing%20Honey%20Bee%20Colony%20Health%20Using%20Temperature%20Time%20Series.md) — 🇦🇺 The University of Sydney; 🇦🇺 Macquarie University
+- [BeeVe: Unsupervised Acoustic State Discovery in Honey Bee Buzzing](../BeeVe%20Unsupervised%20Acoustic%20State%20Discovery%20in%20Honey%20Bee%20Buzzing.md) — arXiv author-supplied preprint by Hamze Hammami and Nidhal Abdulaziz
+- [STAG-CN: Spatio-Temporal Apiary Graph Convolutional Network for Disease Onset Prediction in Beehive Sensor Networks](../STAG-CN%20Spatio-Temporal%20Apiary%20Graph%20Convolutional%20Network%20for%20Disease%20Onset%20Prediction%20in%20Beehive%20Sensor%20Networks.md) — 🇰🇷 Korea University
 
 ### [2025](../years/2025.md)
 
@@ -45,6 +53,7 @@ title: "Research product area: Colony Health"
 ### [2024](../years/2024.md)
 
 - [Honey bulk DNA metagenomic analysis to identify honey biological](../Honey%20bulk%20DNA%20metagenomic%20analysis%20to%20identify%20honey%20biological.md) — 🇪🇪 Celvia CC AS; 🇪🇪 University of Tartu; 🇸🇪 Karolinska University Hospital
+- [IntelliBeeHive: An Automated Honey Bee, Pollen, and Varroa Destructor Monitoring System](../IntelliBeeHive%20An%20Automated%20Honey%20Bee%20Pollen%20and%20Varroa%20Destructor%20Monitoring%20System.md) — 🇺🇸 University of Texas Rio Grande Valley
 - [Tracking Varroa Parasitism Using Handheld Infrared Cameras:Is Eusocial Fever the Key?](../Tracking%20Varroa%20Parasitism%20Using%20Handheld%20Infrared%20Cameras%20Is%20Eusocial%20Fever%20the%20Key.md) — 🇭🇺 Hungarian University of Agricultureand Life Sciences
 - [Varroa destructor detection on honey bees using hyperspectral imagery](../Varroa%20destructor%20detection%20on%20honey%20bees%20using%20hyperspectral%20imagery.md) — 🇨🇿 Brno University of Technology; 🇫🇮 LUT University
 
@@ -57,6 +66,7 @@ title: "Research product area: Colony Health"
 
 ### [2021](../years/2021.md)
 
+- [Semi-Supervised Audio Representation Learning for Modeling Beehive Strengths](../Semi-Supervised%20Audio%20Representation%20Learning%20for%20Modeling%20Beehive%20Strengths.md) — 🇺🇸 X, the Moonshot Factory; 🇺🇸 Caltech; 🇺🇸 Google; 🇺🇸 University of Wisconsin-Madison; 🇺🇸 Washington State University
 - [Social networks predict the life and death of honeybees](../Social%20networks%20predict%20the%20life%20and%20death%20of%20honeybees.md)
 - [Visual Diagnosis of the Varroa Destructor Parasitic Mite in Honeybees Using Object Detector Techniques](../Visual%20Diagnosis%20of%20the%20Varroa%20Destructor%20Parasitic%20Mite%20in%20Honeybees%20Using%20Object%20Detector%20Techniques.md) — 🇨🇿 Brno University of Technology
 

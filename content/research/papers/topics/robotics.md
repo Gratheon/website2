@@ -8,19 +8,20 @@ title: "Research topic: Robotics"
 ## Summary
 
 - Topic key: `robotics`
-- Total papers: 7
+- Total papers: 8
 - [Research papers hub](../index.md)
 - [All topics](index.md)
 
 ## Product areas
 
-- [Robotics](../product-areas/robotics.md) (7)
+- [Robotics](../product-areas/robotics.md) (8)
 
 ## Years
 
 - [2026](../years/2026.md) (1)
 - [2024](../years/2024.md) (3)
 - [2022](../years/2022.md) (2)
+- [2018](../years/2018.md) (1)
 - [Unknown year](../years/unknown.md) (1)
 
 ## Papers by year
@@ -39,6 +40,10 @@ title: "Research topic: Robotics"
 
 - [A Minimally Invasive Approach Towards “Ecosystem Hacking” With Honeybees](../A%20Minimally%20Invasive%20Approach%20Towards%20%E2%80%9CEcosystem%20Hacking%E2%80%9D%20With%20Honeybees.md) — 🇦🇹 University of Graz; 🇨🇿 Czech Technical University; 🇹🇷  Middle East Technical University
 - [Bio-Hybrid Systems for Ecosystem Level Effects](../Bio-Hybrid%20Systems%20for%20Ecosystem%20Level%20Effects.md)
+
+### [2018](../years/2018.md)
+
+- [Dancing Honey bee Robot Elicits Dance-Following and Recruits Foragers](../Dancing%20Honey%20bee%20Robot%20Elicits%20Dance-Following%20and%20Recruits%20Foragers.md) — 🇩🇪 Freie Universität Berlin; 🇩🇪 Leibniz-Institute of Freshwater Ecology and Inland Fisheries
 
 ### [Unknown year](../years/unknown.md)
 

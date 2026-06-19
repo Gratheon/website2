@@ -8,18 +8,19 @@ title: "Research topic: Varroa Health"
 ## Summary
 
 - Topic key: `varroa-health`
-- Total papers: 7
+- Total papers: 8
 - [Research papers hub](../index.md)
 - [All topics](index.md)
 
 ## Product areas
 
-- [Colony Health](../product-areas/colony-health.md) (7)
+- [Colony Health](../product-areas/colony-health.md) (8)
+- [Gate Tracker](../product-areas/gate-tracker.md) (1)
 
 ## Years
 
 - [2025](../years/2025.md) (2)
-- [2024](../years/2024.md) (2)
+- [2024](../years/2024.md) (3)
 - [2023](../years/2023.md) (1)
 - [2021](../years/2021.md) (1)
 - [2018](../years/2018.md) (1)
@@ -33,6 +34,7 @@ title: "Research topic: Varroa Health"
 
 ### [2024](../years/2024.md)
 
+- [IntelliBeeHive: An Automated Honey Bee, Pollen, and Varroa Destructor Monitoring System](../IntelliBeeHive%20An%20Automated%20Honey%20Bee%20Pollen%20and%20Varroa%20Destructor%20Monitoring%20System.md) — 🇺🇸 University of Texas Rio Grande Valley
 - [Tracking Varroa Parasitism Using Handheld Infrared Cameras:Is Eusocial Fever the Key?](../Tracking%20Varroa%20Parasitism%20Using%20Handheld%20Infrared%20Cameras%20Is%20Eusocial%20Fever%20the%20Key.md) — 🇭🇺 Hungarian University of Agricultureand Life Sciences
 - [Varroa destructor detection on honey bees using hyperspectral imagery](../Varroa%20destructor%20detection%20on%20honey%20bees%20using%20hyperspectral%20imagery.md) — 🇨🇿 Brno University of Technology; 🇫🇮 LUT University
 

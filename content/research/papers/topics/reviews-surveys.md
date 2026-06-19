@@ -8,17 +8,17 @@ title: "Research topic: Reviews Surveys"
 ## Summary
 
 - Topic key: `reviews-surveys`
-- Total papers: 12
+- Total papers: 13
 - [Research papers hub](../index.md)
 - [All topics](index.md)
 
 ## Product areas
 
-- [Monitoring Platform](../product-areas/monitoring-platform.md) (12)
+- [Monitoring Platform](../product-areas/monitoring-platform.md) (13)
 
 ## Years
 
-- [2025](../years/2025.md) (2)
+- [2025](../years/2025.md) (3)
 - [2024](../years/2024.md) (1)
 - [2023](../years/2023.md) (3)
 - [2022](../years/2022.md) (2)
@@ -30,6 +30,7 @@ title: "Research topic: Reviews Surveys"
 
 ### [2025](../years/2025.md)
 
+- [A Survey of TinyML Applications in Beekeeping for Hive Monitoring and Management](../A%20Survey%20of%20TinyML%20Applications%20in%20Beekeeping%20for%20Hive%20Monitoring%20and%20Management.md) — 🇦🇺 University of Technology Sydney; 🇦🇺 BeeSTAR
 - [Buzzing with Intelligence: A Systematic Review of Smart Beehive Technologies](../Buzzing%20with%20Intelligence%20A%20Systematic%20Review%20of%20SmartBeehive%20Technologies.md) — 🇭🇷 University of Split
 - [IoT and Machine Learning Techniques for Precision Beekeeping:A Review](../IoT%20and%20Machine%20Learning%20Techniques%20for%20Precision%20Beekeeping%20A%20Review.md) — 🇺🇬 Makerere University; 🇹🇿 Dar es Salaam Institute of Technology
 

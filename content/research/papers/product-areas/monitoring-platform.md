@@ -8,28 +8,29 @@ title: "Research product area: Monitoring Platform"
 ## Summary
 
 - Product area key: `monitoring-platform`
-- Total papers: 35
+- Total papers: 45
 - [Research papers hub](../index.md)
 - [All product areas](index.md)
 
 ## Topics
 
-- [Audio Acoustics](../topics/audio-acoustics.md) (2)
-- [Bee Behaviour](../topics/bee-behaviour.md) (5)
-- [Computer Vision](../topics/computer-vision.md) (8)
-- [Datasets Benchmarks](../topics/datasets-benchmarks.md) (2)
-- [Edge AI Energy](../topics/edge-ai-energy.md) (3)
-- [IoT Sensors](../topics/iot-sensors.md) (29)
+- [Audio Acoustics](../topics/audio-acoustics.md) (7)
+- [Bee Behaviour](../topics/bee-behaviour.md) (8)
+- [Computer Vision](../topics/computer-vision.md) (10)
+- [Datasets Benchmarks](../topics/datasets-benchmarks.md) (5)
+- [Edge AI Energy](../topics/edge-ai-energy.md) (5)
+- [IoT Sensors](../topics/iot-sensors.md) (35)
 - [Pollination Ecology](../topics/pollination-ecology.md) (4)
-- [Reviews Surveys](../topics/reviews-surveys.md) (12)
+- [Reviews Surveys](../topics/reviews-surveys.md) (13)
 
 ## Years
 
-- [2025](../years/2025.md) (2)
-- [2024](../years/2024.md) (7)
+- [2026](../years/2026.md) (5)
+- [2025](../years/2025.md) (5)
+- [2024](../years/2024.md) (8)
 - [2023](../years/2023.md) (8)
 - [2022](../years/2022.md) (4)
-- [2021](../years/2021.md) (3)
+- [2021](../years/2021.md) (4)
 - [2020](../years/2020.md) (3)
 - [2019](../years/2019.md) (2)
 - [2017](../years/2017.md) (1)
@@ -38,10 +39,21 @@ title: "Research product area: Monitoring Platform"
 
 ## Papers by year
 
+### [2026](../years/2026.md)
+
+- [Acoustic Signatures of Hive: Detecting Queen Bee Absence Through Machine Learning of Short Audio Segments](../Acoustic%20Signatures%20of%20Hive%20Detecting%20Queen%20Bee%20Absence%20Through%20Machine%20Learning%20of%20Short%20Audio%20Segments.md) — 🇨🇱 Universidad de Viña del Mar; 🇨🇱 Universidad Técnica Federico Santa María
+- [Assessing Honey Bee Colony Health Using Temperature Time Series](../Assessing%20Honey%20Bee%20Colony%20Health%20Using%20Temperature%20Time%20Series.md) — 🇦🇺 The University of Sydney; 🇦🇺 Macquarie University
+- [BeeVe: Unsupervised Acoustic State Discovery in Honey Bee Buzzing](../BeeVe%20Unsupervised%20Acoustic%20State%20Discovery%20in%20Honey%20Bee%20Buzzing.md) — arXiv author-supplied preprint by Hamze Hammami and Nidhal Abdulaziz
+- [M3DANet: A Lightweight Semi-Supervised Network and Embedded System for Bee Colony Counting](../M3DANet%20A%20Lightweight%20Semi-Supervised%20Network%20and%20Embedded%20System%20for%20Bee%20Colony%20Counting.md) — 🇨🇳 Shandong Agricultural University; 🇨🇳 Apiculture Institute of Jiangxi Province
+- [STAG-CN: Spatio-Temporal Apiary Graph Convolutional Network for Disease Onset Prediction in Beehive Sensor Networks](../STAG-CN%20Spatio-Temporal%20Apiary%20Graph%20Convolutional%20Network%20for%20Disease%20Onset%20Prediction%20in%20Beehive%20Sensor%20Networks.md) — 🇰🇷 Korea University
+
 ### [2025](../years/2025.md)
 
+- [A Survey of TinyML Applications in Beekeeping for Hive Monitoring and Management](../A%20Survey%20of%20TinyML%20Applications%20in%20Beekeeping%20for%20Hive%20Monitoring%20and%20Management.md) — 🇦🇺 University of Technology Sydney; 🇦🇺 BeeSTAR
 - [Buzzing with Intelligence: A Systematic Review of Smart Beehive Technologies](../Buzzing%20with%20Intelligence%20A%20Systematic%20Review%20of%20SmartBeehive%20Technologies.md) — 🇭🇷 University of Split
+- [Fast, accurate measurement of the worker populations of honey bee colonies using deep learning](../Fast%20accurate%20measurement%20of%20the%20worker%20populations%20of%20honey%20bee%20colonies%20using%20deep%20learning.md) — 🇺🇸 Arizona State University; 🇺🇸 Texas A&M University–Kingsville
 - [IoT and Machine Learning Techniques for Precision Beekeeping:A Review](../IoT%20and%20Machine%20Learning%20Techniques%20for%20Precision%20Beekeeping%20A%20Review.md) — 🇺🇬 Makerere University; 🇹🇿 Dar es Salaam Institute of Technology
+- [UrBAN: Urban Beehive Acoustics and PheNotyping Dataset](../UrBAN%20Urban%20Beehive%20Acoustics%20and%20PheNotyping%20Dataset.md) — 🇨🇦 Institut National de la Recherche Scientifique; 🇨🇦 Université Laval; 🇨🇦 Nectar Technologies Inc.
 
 ### [2024](../years/2024.md)
 
@@ -51,6 +63,7 @@ title: "Research product area: Monitoring Platform"
 - [Intelligent beehive monitoring system based on internet of things and colony state analysis](../Intelligent%20beehive%20monitoring%20system%20based%20on%20internet%20of%20things%20and%20colony%20state%20analysis.md) — 🇲🇾 Universiti Teknologi MARA; 🇨🇳 Peking University Shenzhen Graduate School; 🇨🇳 Xiamen University; 🇨🇳 Fujian Agriculture And Forestry University; 🇨🇳 Quanzhou University of Information Engineering
 - [Internet of Things Smart Beehive Network: Homogeneous Data,Modeling, and Forecasting the Honey Robbing Phenomenon](../Internet%20of%20Things%20Smart%20Beehive%20Network.md) — 🇵🇱 Warsaw University of Life Sciences
 - [Mapping Crop Types for Beekeepers Using Sentinel-2 Satellite Image Time Series: Five Essential Crops in the Pollination Services](../Mapping%20Crop%20Types%20for%20Beekeepers%20Using%20Sentinel-2%20Satellite%20Image%20Time%20Series%20Five%20Essential%20Crops%20in%20the%20Pollination%20Services.md) — 🇨🇦 Université de Montréal
+- [MSPB: a longitudinal multi-sensor dataset with phenotypic trait measurements from honey bees](../MSPB%20a%20longitudinal%20multi-sensor%20dataset%20with%20phenotypic%20trait%20measurements%20from%20honey%20bees.md) — 🇨🇦 Institut National de la Recherche Scientifique; 🇨🇦 Université Laval; 🇨🇦 Nectar Technologies Inc.
 - [The Use of Products with a Monitoring System for Remote Bee Detection in Beekeeping in Czechia](../The%20Use%20of%20Products%20with%20a%20Monitoring%20System%20for%20Remote%20Bee%20Detection%20in%20Beekeeping%20in%20Czechia.md) — 🇨🇿 Brno University of Technology
 
 ### [2023](../years/2023.md)
@@ -75,6 +88,7 @@ title: "Research product area: Monitoring Platform"
 
 - [Audio, Image, Video, and Weather Datasets for Continuous Electronic Beehive Monitoring](../Audio%2C%20Image%2C%20Video%2C%20and%20Weather%20Datasets%20for%20Continuous%20Electronic%20Beehive%20Monitoring.md) — 🇺🇸 Utah State University
 - [Self-Powered Smart Beehive Monitoring and ControlSystem (SBMaCS)](../Self-Powered%20Smart%20Beehive%20Monitoring%20and%20ControlSystem%20%28SBMaCS%29.md) — 🇷🇼 University of Rwanda; 🇿🇲 Copperbelt University; 🇷🇼 National Council of Science and Technology
+- [Semi-Supervised Audio Representation Learning for Modeling Beehive Strengths](../Semi-Supervised%20Audio%20Representation%20Learning%20for%20Modeling%20Beehive%20Strengths.md) — 🇺🇸 X, the Moonshot Factory; 🇺🇸 Caltech; 🇺🇸 Google; 🇺🇸 University of Wisconsin-Madison; 🇺🇸 Washington State University
 - [Toward an intelligent and efficient beehive: A survey of precision beekeeping systems and services](../Toward%20an%20intelligent%20and%20efficient%20beehive%20A%20survey%20of%20precision%20beekeeping%20systems%20and%20services.md) — 🇫🇷 aivancity School for Technology; 🇫🇷 Université de Lyon
 
 ### [2020](../years/2020.md)

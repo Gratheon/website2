@@ -8,19 +8,21 @@ title: "Research product area: Hive Scanner"
 ## Summary
 
 - Product area key: `hive-scanner`
-- Total papers: 13
+- Total papers: 15
 - [Research papers hub](../index.md)
 - [All product areas](index.md)
 
 ## Topics
 
 - [Bee Behaviour](../topics/bee-behaviour.md) (7)
-- [Computer Vision](../topics/computer-vision.md) (13)
-- [Datasets Benchmarks](../topics/datasets-benchmarks.md) (2)
+- [Computer Vision](../topics/computer-vision.md) (15)
+- [Datasets Benchmarks](../topics/datasets-benchmarks.md) (3)
+- [Edge AI Energy](../topics/edge-ai-energy.md) (1)
 
 ## Years
 
-- [2025](../years/2025.md) (1)
+- [2026](../years/2026.md) (1)
+- [2025](../years/2025.md) (2)
 - [2022](../years/2022.md) (1)
 - [2021](../years/2021.md) (2)
 - [2020](../years/2020.md) (2)
@@ -29,9 +31,14 @@ title: "Research product area: Hive Scanner"
 
 ## Papers by year
 
+### [2026](../years/2026.md)
+
+- [M3DANet: A Lightweight Semi-Supervised Network and Embedded System for Bee Colony Counting](../M3DANet%20A%20Lightweight%20Semi-Supervised%20Network%20and%20Embedded%20System%20for%20Bee%20Colony%20Counting.md) — 🇨🇳 Shandong Agricultural University; 🇨🇳 Apiculture Institute of Jiangxi Province
+
 ### [2025](../years/2025.md)
 
 - [Deep Learning-Based Detection of Honey Storage Areas in Apismellifera Colonies for Predicting Physical Parameters of Honey via Linear Regression](../Deep%20Learning-Based%20Detection%20of%20Honey%20Storage%20Areas%20in%20Apismellifera%20Colonies%20for%20Predicting%20Physical%20Parameters%20of%20Honey%20via%20Linear%20Regression.md) — 🇹🇭  Chiang Mai University
+- [Fast, accurate measurement of the worker populations of honey bee colonies using deep learning](../Fast%20accurate%20measurement%20of%20the%20worker%20populations%20of%20honey%20bee%20colonies%20using%20deep%20learning.md) — 🇺🇸 Arizona State University; 🇺🇸 Texas A&M University–Kingsville
 
 ### [2022](../years/2022.md)
 

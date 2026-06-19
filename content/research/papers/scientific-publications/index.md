@@ -8,7 +8,7 @@ hideToc: true
 <!-- GENERATED RESEARCH INDEX:START -->
 This bibliography links to individual paper notes kept at their existing URLs under `research/papers/`.
 
-- Total paper notes: 93
+- Total paper notes: 106
 - [Research papers hub](../index.md)
 
 Choose a bibliography page:
