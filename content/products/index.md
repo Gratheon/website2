@@ -5,32 +5,69 @@ layout: products
 ---
 
 <div class="product-page">
-<section class="product-intro product-system-grid">
-<article class="product-system-card product-card--accent">
-<span class="product-card-meta">Product thesis</span>
-<h2>One observability system for the apiary</h2>
-<p>Gratheon combines software, field devices, computer vision, and automation so beekeepers can understand colony state before work becomes heavy, late, or guess-based.</p>
-</article>
-<article class="product-system-card">
-<span class="product-card-meta">Starting point</span>
+<section class="product-web-app-showcase product-system-card product-card--accent">
+<span class="product-card-meta">Software core</span>
+<div class="product-web-app-showcase__grid">
+<div>
 <h2>Begin with the web app</h2>
-<p>The <a href="web_app/web_app.md">web app</a> is the shared workspace for hive records, inspections, uploaded photos, telemetry, alerts, and AI-assisted decisions.</p>
-<p><a class="product-button product-button--primary" href="web_app/web_app.md">Explore web app</a></p>
+<p>The <a href="web_app/web_app.md">Gratheon web app</a> is the shared workspace for hive records, inspections, uploaded photos, telemetry, alerts, and AI-assisted decisions. It is the first product most users need, even before they add field devices.</p>
+<p><a class="product-button product-button--primary" href="web_app/web_app.md">Explore web app</a> <a class="product-button" href="../pricing.md">Compare plans</a></p>
+</div>
+        <p><a class="product-button product-button--primary" href="web_app/web_app.md">Explore web app</a> <a class="product-button" href="/pricing/">Compare plans</a></p>
+</div>
+
+<div class="product-tier-grid">
+<article class="product-tier-card">
+<span class="product-card-meta">Free tier</span>
+<h3>Start in the apiary</h3>
+<ul>
+<li>Feeding history</li>
+<li>Live Queen Finder</li>
+</ul>
 </article>
+<article class="product-tier-card">
+<span class="product-card-meta">Starter tier</span>
+<h3>Record inspections</h3>
+<ul>
+<li>Inspection management</li>
+<li>Honeycomb cell detection</li>
+<li>Bottom-board varroa counting</li>
+</ul>
+</article>
+<article class="product-tier-card">
+<span class="product-card-meta">Hobbyist tier</span>
+<h3>Manage colonies</h3>
+<ul>
+<li>Apiary, hive, frame, and inventory management</li>
+<li>Queen and colony operations</li>
+<li>Plant and placement planning</li>
+</ul>
+</article>
+<article class="product-tier-card">
+<span class="product-card-meta">Pro tier</span>
+<h3>Analyze at scale</h3>
+<ul>
+<li>Telemetry storage and analytics</li>
+<li>Cloud bee counting</li>
+<li>Colony comparison and alerts</li>
+</ul>
+</article>
+<article class="product-tier-card">
+<span class="product-card-meta">Flexible tier</span>
+<h3>Connect live devices</h3>
+<ul>
+<li>Video playback</li>
+<li>Configurable alerts</li>
+</ul>
+</article>
+</div>
 </section>
 
 <section>
 <h2>Product family</h2>
 <p class="product-lead">Each product can stand alone, but the real value is in the shared data model: sensors and cameras collect signals, the app stores and explains them, and automation gradually reduces physical intervention.</p>
 
-<div class="product-card-grid">
-<article class="product-card-small">
-<a href="web_app/web_app.md">📱 Web app</a>
-<img src="/assets/img/gratheon-web-app.webp" alt="Gratheon web app interface" />
-<p>Hive records, inspections, image analysis, telemetry, alerts, and AI recommendations in one workspace.</p>
-<span class="product-card-meta">TRL 6 · software core</span>
-</article>
-
+<div class="product-card-grid product-card-grid--family">
 <article class="product-card-small">
 <a href="scales/scales.md">🌡️ Beehive scales</a>
 <img src="scales/img/Screenshot%202025-10-22%20at%2021.48.15.png" alt="Beehive scales telemetry" />

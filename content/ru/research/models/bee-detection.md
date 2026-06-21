@@ -1,5 +1,5 @@
 ---
-title: Детекция пчёл
+title: Нахождение пчёл
 layout: research
 order: 1
 ---

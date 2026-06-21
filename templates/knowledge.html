@@ -67,6 +67,31 @@
 </article>
 {{end}}
 
+{{define "knowledge_map"}}
+{{if .Sidebar}}
+<section class="knowledge-map" aria-label="{{.UI.Navigation}}">
+  <div class="knowledge-map-intro">
+    <p class="knowledge-map-kicker">
+      {{if eq .Page.Layout "products"}}
+        {{if eq .Page.Language "et"}}Tootekaart{{else}}Product map{{end}}
+      {{else}}
+        {{if eq .Page.Language "et"}}Uuringute kaart{{else if eq .Page.Language "ru"}}Карта раздела{{else}}Research map{{end}}
+      {{end}}
+    </p>
+    <h2>
+      {{if eq .Page.Layout "products"}}
+        {{if eq .Page.Language "et"}}Liigu tarkvarast automaatse andmekogumiseni{{else}}Move from software to automatic data collection{{end}}
+      {{else}}
+        {{if eq .Page.Language "et"}}Sirvi uuringute kogu{{else if eq .Page.Language "ru"}}Навигация по исследовательской базе{{else}}Navigate the research collection{{end}}
+      {{end}}
+    </h2>
+  </div>
+  <div class="knowledge-map-nav{{if eq .Page.Layout "products"}} knowledge-map-nav--split{{end}}">
+    {{.Sidebar}}
+  </div>
+</section>
+{{end}}
+{{end}}
 {{define "knowledge"}}
 {{template "gratheon_head" .}}
 <body class="knowledge-page knowledge-page-{{if .Page.Layout}}{{.Page.Layout}}{{else}}page{{end}}">
@@ -129,28 +154,8 @@
       </div>
     </section>
 
-    {{if .Sidebar}}
-    <section class="knowledge-map" aria-label="{{.UI.Navigation}}">
-      <div class="knowledge-map-intro">
-        <p class="knowledge-map-kicker">
-          {{if eq .Page.Layout "products"}}
-            {{if eq .Page.Language "et"}}Tootekaart{{else}}Product map{{end}}
-          {{else}}
-            {{if eq .Page.Language "et"}}Uuringute kaart{{else if eq .Page.Language "ru"}}Карта раздела{{else}}Research map{{end}}
-          {{end}}
-        </p>
-        <h2>
-          {{if eq .Page.Layout "products"}}
-            {{if eq .Page.Language "et"}}Liigu funktsioonidest süsteemideni{{else}}Move from features to systems{{end}}
-          {{else}}
-            {{if eq .Page.Language "et"}}Sirvi uuringute kogu{{else if eq .Page.Language "ru"}}Навигация по исследовательской базе{{else}}Navigate the research collection{{end}}
-          {{end}}
-        </h2>
-      </div>
-      <div class="knowledge-map-nav{{if eq .Page.Layout "products"}} knowledge-map-nav--split{{end}}">
-        {{.Sidebar}}
-      </div>
-    </section>
+    {{if ne .Page.Layout "products"}}
+      {{template "knowledge_map" .}}
     {{end}}
 
     <div class="knowledge-content-layout">
@@ -163,6 +168,10 @@
       </aside>
       {{end}}
     </div>
+
+    {{if eq .Page.Layout "products"}}
+      {{template "knowledge_map" .}}
+    {{end}}
   </main>
 
   {{template "gratheon_footer" .}}
@@ -176,6 +185,12 @@
         event.stopImmediatePropagation();
       }, true);
     });
+
+    var mapSection = document.querySelector('.knowledge-page-products .knowledge-map');
+    var webShowcase = document.querySelector('.knowledge-page-products .product-web-app-showcase');
+    if (mapSection && webShowcase && mapSection.previousElementSibling !== webShowcase) {
+      webShowcase.insertAdjacentElement('afterend', mapSection);
+    }
 
     var productsMap = document.querySelector('.knowledge-page-products .knowledge-map-nav--split .sidebar-menu');
     if (!productsMap) return;
@@ -191,6 +206,47 @@
       } catch (error) {
         return '';
       }
+    }
+
+    function humanizeLabel(text) {
+      var trimmed = (text || '').replace(/\s+/g, ' ').trim();
+      if (!trimmed) return trimmed;
+      var normalized = trimmed.replace(/[_-]+/g, ' ').replace(/\s+/g, ' ').trim();
+      return normalized.charAt(0).toUpperCase() + normalized.slice(1);
+    }
+
+    function directLeafLinks(item) {
+      var submenu = item && item.querySelector(':scope > .sidebar-submenu');
+      if (!submenu) return [];
+      return Array.prototype.slice.call(submenu.children).filter(function(child) {
+        return !child.classList.contains('sidebar-section');
+      }).map(function(child) {
+        return child.querySelector(':scope > a');
+      }).filter(Boolean);
+    }
+
+    function promoteSelfPageTitle(item) {
+      var headLink = directLink(item);
+      if (!headLink) return;
+      var leaves = directLeafLinks(item);
+      var selfLink = leaves.length ? leaves[leaves.length - 1] : null;
+      if (selfLink) {
+        headLink.textContent = humanizeLabel(selfLink.textContent);
+        var leafItem = selfLink.closest('.sidebar-item');
+        if (leafItem) leafItem.remove();
+      } else {
+        headLink.textContent = humanizeLabel(headLink.textContent);
+      }
+    }
+
+    function cleanSectionLabels(root) {
+      root.querySelectorAll('.sidebar-section-head > a').forEach(function(link) {
+        link.textContent = humanizeLabel(link.textContent);
+      });
+      root.querySelectorAll('.sidebar-toggle').forEach(function(button) {
+        var label = button.getAttribute('aria-label') || '';
+        button.setAttribute('aria-label', humanizeLabel(label));
+      });
     }
 
     function findTopLevelCard(pathSuffix) {
@@ -211,12 +267,26 @@
 
     if (!productSections.length) return;
 
+    productSections.forEach(function(item) {
+      promoteSelfPageTitle(item);
+      cleanSectionLabels(item);
+    });
+
     productsMap.classList.add('knowledge-product-submenu-map');
     productsMap.textContent = '';
 
+    var webAppCard = productSections.find(function(item) {
+      return normalizedPath(directLink(item)).endsWith('/products/web_app/');
+    });
+
+    if (webAppCard) {
+      webAppCard.classList.add('knowledge-map-product-card', 'knowledge-map-web-app-card');
+      productsMap.appendChild(webAppCard);
+    }
+
     if (productsCard || productLinks.length) {
       var overviewCard = document.createElement('li');
-      overviewCard.className = 'sidebar-item sidebar-section active knowledge-map-product-overview';
+      overviewCard.className = 'sidebar-item sidebar-section knowledge-map-product-overview';
       var overviewHead = productsCard && productsCard.querySelector(':scope > .sidebar-section-head');
       if (overviewHead) {
         overviewCard.appendChild(overviewHead);
@@ -240,6 +310,7 @@
     }
 
     productSections.forEach(function(item) {
+      if (item === webAppCard) return;
       item.classList.add('knowledge-map-product-card');
       productsMap.appendChild(item);
     });

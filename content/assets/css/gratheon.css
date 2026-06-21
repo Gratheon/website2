@@ -1413,6 +1413,78 @@ html[data-theme='dark'] .front-page .future {
   color: var(--brand-yellow);
 }
 
+
+.knowledge-page-products .knowledge-content-layout {
+  display: block;
+}
+
+.knowledge-page-products .knowledge-article {
+  max-width: none;
+}
+
+.knowledge-page-products .knowledge-map {
+  margin-top: clamp(42px, 6vw, 88px);
+}
+
+.knowledge-content .product-web-app-showcase {
+  padding: clamp(22px, 3vw, 38px);
+}
+
+.knowledge-content .product-web-app-showcase h2 {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
+}
+
+.knowledge-content .product-web-app-showcase__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(320px, 1.1fr);
+  gap: clamp(24px, 4vw, 56px);
+  align-items: center;
+}
+
+.knowledge-content .product-web-app-showcase__grid img {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: #fff;
+}
+
+.knowledge-content .product-web-app-showcase .product-button:not(.product-button--primary),
+.knowledge-content .product-web-app-showcase .product-button:not(.product-button--primary):visited {
+  border-color: rgba(255, 255, 255, 0.72);
+  color: #fff;
+}
+
+.knowledge-content .product-tier-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1px;
+  margin-top: clamp(24px, 3vw, 40px);
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.knowledge-content .product-tier-card {
+  min-width: 0;
+  padding: clamp(16px, 2vw, 24px);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.knowledge-content .product-tier-card h3 {
+  color: #fff;
+}
+
+.knowledge-content .product-tier-card ul {
+  margin: 12px 0 0;
+  padding-left: 1.1em;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 0.96rem;
+  line-height: 1.45;
+}
+
+.knowledge-content .product-card-grid--family {
+  grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr));
+}
 .knowledge-content .research-card--accent h2,
 .knowledge-content .research-card--accent h3,
 .knowledge-content .product-card--accent h2,
@@ -1576,6 +1648,11 @@ html[data-theme='dark'] .knowledge-content .product-card--accent {
     min-height: 520px;
     grid-template-columns: 1fr;
     grid-template-rows: 1.2fr 1fr 1fr;
+  }
+
+  .knowledge-content .product-web-app-showcase__grid,
+  .knowledge-content .product-tier-grid {
+    grid-template-columns: 1fr;
   }
 
   .knowledge-visual--products .md-image:first-child {
