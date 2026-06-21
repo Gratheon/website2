@@ -123,7 +123,7 @@
         </figure>
         {{else}}
         <figure class="knowledge-visual knowledge-visual--research">
-          <img src="/assets/img/research/img/research-preview.webp" alt="" loading="eager">
+          <img src="/assets/img/research/img/research-full.webp" alt="" loading="eager">
         </figure>
         {{end}}
       </div>
@@ -147,7 +147,7 @@
           {{end}}
         </h2>
       </div>
-      <div class="knowledge-map-nav">
+      <div class="knowledge-map-nav{{if eq .Page.Layout "products"}} knowledge-map-nav--split{{end}}">
         {{.Sidebar}}
       </div>
     </section>
@@ -175,6 +175,73 @@
         if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0) return;
         event.stopImmediatePropagation();
       }, true);
+    });
+
+    var productsMap = document.querySelector('.knowledge-page-products .knowledge-map-nav--split .sidebar-menu');
+    if (!productsMap) return;
+
+    function directLink(item) {
+      return item && item.querySelector(':scope > .sidebar-section-head > a, :scope > a');
+    }
+
+    function normalizedPath(link) {
+      if (!link) return '';
+      try {
+        return new URL(link.getAttribute('href') || '', window.location.origin).pathname.replace(/\/+$/, '/');
+      } catch (error) {
+        return '';
+      }
+    }
+
+    function findTopLevelCard(pathSuffix) {
+      return Array.prototype.find.call(productsMap.children, function(item) {
+        return normalizedPath(directLink(item)).endsWith(pathSuffix);
+      });
+    }
+
+    var productsCard = findTopLevelCard('/about/products/');
+    var productsSubmenu = productsCard && productsCard.querySelector(':scope > .sidebar-submenu');
+    var productItems = Array.prototype.slice.call(productsSubmenu ? productsSubmenu.children : productsMap.children);
+    var productSections = productItems.filter(function(item) {
+      return item.classList.contains('sidebar-section');
+    });
+    var productLinks = productItems.filter(function(item) {
+      return !item.classList.contains('sidebar-section');
+    });
+
+    if (!productSections.length) return;
+
+    productsMap.classList.add('knowledge-product-submenu-map');
+    productsMap.textContent = '';
+
+    if (productsCard || productLinks.length) {
+      var overviewCard = document.createElement('li');
+      overviewCard.className = 'sidebar-item sidebar-section active knowledge-map-product-overview';
+      var overviewHead = productsCard && productsCard.querySelector(':scope > .sidebar-section-head');
+      if (overviewHead) {
+        overviewCard.appendChild(overviewHead);
+      } else {
+        var generatedHead = document.createElement('div');
+        generatedHead.className = 'sidebar-section-head';
+        generatedHead.innerHTML = '<a href="/about/products/">' + (document.documentElement.lang === 'et' ? 'Muud tootelehed' : 'Other product pages') + '</a>';
+        overviewCard.appendChild(generatedHead);
+      }
+
+      if (productLinks.length) {
+        var overviewList = document.createElement('ul');
+        overviewList.className = 'sidebar-submenu knowledge-map-product-links';
+        productLinks.forEach(function(item) {
+          overviewList.appendChild(item);
+        });
+        overviewCard.appendChild(overviewList);
+      }
+
+      productsMap.appendChild(overviewCard);
+    }
+
+    productSections.forEach(function(item) {
+      item.classList.add('knowledge-map-product-card');
+      productsMap.appendChild(item);
     });
   });
   </script>

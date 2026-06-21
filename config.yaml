@@ -578,7 +578,7 @@ assets:
     sizes:
       thumbnail: 300
       preview: 800
-      full: 1400
+      full: 2520
     lazyLoading: true
   css:
     enabled: true
