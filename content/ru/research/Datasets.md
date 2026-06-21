@@ -15,7 +15,7 @@ hide_table_of_contents: true
 ![](/assets/img/research/img/IMG_4376.webp)
 
 ## Видео
-[👁️‍🗨️ Entrance Observer](/about/products/entrance_observer/entrance-observer/) — видео 🎥 летка улья
+[👁️‍🗨️ Entrance Observer](/products/entrance_observer/entrance-observer/) — видео 🎥 летка улья
 ![](/assets/img/research/img/Screenshot%202025-09-10%20at%2009.11.23-preview.webp)
 ### 2025
 

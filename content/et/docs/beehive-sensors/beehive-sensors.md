@@ -8,7 +8,7 @@ hide_table_of_contents: true
 
 ## Arhitektuur
 
-Need dokumendid toetavad [mesipuu kaalud](../../about/products/scales/scales.md) toodet. Andurite näidud salvestatakse [taru telemeetriasalvestusruumi](/about/products/web_app/pro-tier/hive-telemetry-storage/) ja visualiseeritakse [timerida analytics](/about/products/web_app/pro-tier/timeseries-data-analytics/).
+Need dokumendid toetavad [mesipuu kaalud](../../products/scales/scales.md) toodet. Andurite näidud salvestatakse [taru telemeetriasalvestusruumi](/products/web_app/pro-tier/hive-telemetry-storage/) ja visualiseeritakse [timerida analytics](/products/web_app/pro-tier/timeseries-data-analytics/).
 
 ### Teenused
 - [https://github.com/Gratheon/hardware-beehive-sensors](__ETDOCS_URL_00006__) - andurite repo kliendi poolel

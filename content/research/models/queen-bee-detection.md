@@ -10,7 +10,7 @@ Repository: https://github.com/Gratheon/models-queen-bee-detector
 
 It supports two deployment paths:
 
-- browser inference for [Live Queen Finder](/about/products/web_app/free-tier/live-queen-finder/) via ONNX + `onnxruntime-web`
+- browser inference for [Live Queen Finder](/products/web_app/free-tier/live-queen-finder/) via ONNX + `onnxruntime-web`
 - HTTP inference service for server-side experiments and integrations
 
 Baseline training setup:

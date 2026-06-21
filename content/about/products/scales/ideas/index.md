@@ -1,0 +1,3 @@
+---
+redirectUrl: "/products/scales/ideas/"
+---

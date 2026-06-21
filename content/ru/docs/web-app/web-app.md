@@ -5,9 +5,9 @@ title: 📱 Веб-приложение
 > Цель этого документа — дать толчок вашей разработке web-app в качестве инженера.
 ## Предварительные условия среды
 
-💡 Для разработки [сервисов веб-приложения](../../about/products/web_app/web_app.md) вам потребуется Linux или Mac OSX с **Docker**.
+💡 Для разработки [сервисов веб-приложения](../../products/web_app/web_app.md) вам потребуется Linux или Mac OSX с **Docker**.
 
-Для разработки сервисов обработки видео [Entrance Observer](../../about/products/entrance_observer/entrance_observer.md) вам понадобится [Jetson Orin Nano](../entrance-observer/Jetson%20Orin%20setup.md) или [Jetson Nano](../entrance-observer/Jetson%20Nano%20setup.md) для поддержки GPU и совместимости с Docker images.
+Для разработки сервисов обработки видео [Entrance Observer](../../products/entrance_observer/entrance_observer.md) вам понадобится [Jetson Orin Nano](../entrance-observer/Jetson%20Orin%20setup.md) или [Jetson Nano](../entrance-observer/Jetson%20Nano%20setup.md) для поддержки GPU и совместимости с Docker images.
 
 ## Архитектура
 ### Основные услуги
@@ -100,7 +100,7 @@ flowchart LR
 
 Пчеловоды могут отслеживать заражение клещом варроа, загружая изображения нижней доски улья.
 
-См. руководство пользователя в разделе «Подсчет варроа на нижней доске](../../about/products/web_app/starter-tier/hive_bottom_varroa_count.md)», в разделе «Обнаружение дна варроа](features/varroa-bottom-detection.md)» для получения технических подробностей и в [Схеме DB](🥞%20DB%20schemas/image-splitter.md) для структур таблиц.
+См. руководство пользователя в разделе «Подсчет варроа на нижней доске](../../products/web_app/starter-tier/hive_bottom_varroa_count.md)», в разделе «Обнаружение дна варроа](features/varroa-bottom-detection.md)» для получения технических подробностей и в [Схеме DB](🥞%20DB%20schemas/image-splitter.md) для структур таблиц.
 – **Загрузка изображения:** Двухэтапный процесс:
     1. Загрузите изображение в S3 с помощью мутации `uploadFrameSide`.
     2. Свяжите изображение с блоком с помощью мутации `addFileToBox` в image-splitter.
@@ -111,7 +111,7 @@ flowchart LR
     - **image-splitter**: загрузка, хранение и связывание файлов.
     - **web-app**: компонент BottomBox для пользовательского интерфейса.
 
-См. руководство пользователя в разделе «Подсчет варроа на нижней доске](../../about/products/web_app/starter-tier/hive_bottom_varroa_count.md)», в разделе «Обнаружение дна варроа](features/varroa-bottom-detection.md)» для получения технических подробностей и в [Схеме DB](🥞%20DB%20schemas/image-splitter.md) для структур таблиц.
+См. руководство пользователя в разделе «Подсчет варроа на нижней доске](../../products/web_app/starter-tier/hive_bottom_varroa_count.md)», в разделе «Обнаружение дна варроа](features/varroa-bottom-detection.md)» для получения технических подробностей и в [Схеме DB](🥞%20DB%20schemas/image-splitter.md) для структур таблиц.
 
 ### Совместное использование проверок
 
@@ -126,7 +126,7 @@ flowchart LR
 
 Создавайте новые ульи, перемещая выбранные рамки из сильной семьи. Предотвращает роение и способствует расширению пасеки.
 
-Примечания к функциям, доступным для пользователя, находятся в [разделенной пчелиной колонии](../../about/products/web_app/hobbyist-tier/split_bee_colony.md).
+Примечания к функциям, доступным для пользователя, находятся в [разделенной пчелиной колонии](../../products/web_app/hobbyist-tier/split_bee_colony.md).
 
 **Технический обзор:**
 - **Мутация:** `splitHive(sourceHiveId, name, frameIds)` — Создает новый улей с 1–10 выбранными рамками.
@@ -138,7 +138,7 @@ flowchart LR
 
 Объедините две колонии, перемещая коробки из исходного в целевой улей. Укрепляет слабые семьи и управляет генетикой маток.
 
-Примечания к функциям, доступным для пользователя, находятся в папке [join bee colonies](../../about/products/web_app/hobbyist-tier/join_bee_colonies.md).
+Примечания к функциям, доступным для пользователя, находятся в папке [join bee colonies](../../products/web_app/hobbyist-tier/join_bee_colonies.md).
 
 
 **Технический обзор:**

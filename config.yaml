@@ -150,64 +150,64 @@ navigation:
         languages: ["ro"]
       # Product labels are Gratheon-site copy. Keep them here rather than in blog-engine-md.
       - title: "Products"
-        url: "/about/products/"
+        url: "/products/"
         languages: ["en"]
       - title: "Продукты"
-        url: "/about/products/"
+        url: "/products/"
         languages: ["ru"]
       - title: "Tooted"
-        url: "/about/products/"
+        url: "/products/"
         languages: ["et"]
       - title: "Ürünler"
-        url: "/about/products/"
+        url: "/products/"
         languages: ["tr"]
       - title: "Produkty"
-        url: "/about/products/"
+        url: "/products/"
         languages: ["pl"]
       - title: "Produkte"
-        url: "/about/products/"
+        url: "/products/"
         languages: ["de"]
       - title: "Produits"
-        url: "/about/products/"
+        url: "/products/"
         languages: ["fr"]
       - title: "产品"
-        url: "/about/products/"
+        url: "/products/"
         languages: ["zh"]
       - title: "उत्पाद"
-        url: "/about/products/"
+        url: "/products/"
         languages: ["hi"]
       - title: "Productos"
-        url: "/about/products/"
+        url: "/products/"
         languages: ["es"]
       - title: "المنتجات"
-        url: "/about/products/"
+        url: "/products/"
         languages: ["ar"]
       - title: "পণ্য"
-        url: "/about/products/"
+        url: "/products/"
         languages: ["bn"]
       - title: "Produtos"
-        url: "/about/products/"
+        url: "/products/"
         languages: ["pt"]
       - title: "製品"
-        url: "/about/products/"
+        url: "/products/"
         languages: ["ja"]
       - title: "Produkti"
-        url: "/about/products/"
+        url: "/products/"
         languages: ["lv"]
       - title: "Produktai"
-        url: "/about/products/"
+        url: "/products/"
         languages: ["lt"]
       - title: "Termékek"
-        url: "/about/products/"
+        url: "/products/"
         languages: ["hu"]
       - title: "Продукти"
-        url: "/about/products/"
+        url: "/products/"
         languages: ["uk"]
       - title: "Prodotti"
-        url: "/about/products/"
+        url: "/products/"
         languages: ["it"]
       - title: "Produse"
-        url: "/about/products/"
+        url: "/products/"
         languages: ["ro"]
       - title: "Docs"
         url: "/docs/"
@@ -556,8 +556,8 @@ navigation:
         defaultMode: "categories"
         enableTime: false
         enableGraph: false
-        matchPaths: ["about/products"]
-        sidebarRoot: "about/products"
+        matchPaths: ["products"]
+        sidebarRoot: "products"
       about:
         defaultMode: "categories"
         enableTime: false

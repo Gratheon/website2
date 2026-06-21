@@ -454,7 +454,7 @@ ORDER BY added_time DESC LIMIT 1;
 
 ## Сопутствующая документация
 
-- [Руководство пользователя нижней платы](../../about/products/web_app/starter-tier/🧮 Hive bottom board & varroa monitoring.md)
+- [Руководство пользователя нижней платы](../../products/web_app/starter-tier/🧮 Hive bottom board & varroa monitoring.md)
 - [Схемы БД](./🥞 DB schemas/)
 
 ## Журнал изменений

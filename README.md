@@ -72,7 +72,7 @@ runuser -u www -- git -C /www/website reset --hard origin/main
   - `content/index.md` → `templates/front.html`
   - `content/pricing.md` → `templates/pricing.html`
   - `content/research/**` → `templates/research.html` → `templates/knowledge.html`
-  - `content/about/products/**` and `content/et/about/products/**` → `templates/products.html` → `templates/knowledge.html`
+  - `content/products/**` and `content/et/products/**` → `templates/products.html` → `templates/knowledge.html`
 - The shared `knowledge.html` template is used for research/product pages to avoid the old reference-page left rail while preserving deep navigation as a wide knowledge map. Keep this layout visually restrained: square panels, strong typography, white space, images/visuals, and no rounded content cards or gradients.
 
 Legacy Docusaurus files have been removed; `content/` is the source of truth.
@@ -94,7 +94,7 @@ As of June 2026, Russian `/ru/docs/` and nested `/ru/docs/**` pages are real loc
 
 Localized docs must not duplicate heavy binary assets. Keep shared docs images and downloads under `content/img/docs/**`, mirroring the canonical docs content hierarchy (for example `content/img/docs/beehive-sensors/img/example.jpg`). Markdown image embeds in any language should reference the shared image by processed relative path such as `![](docs/beehive-sensors/img/example.jpg)` so the image transformer can generate responsive variants. Non-image downloads/PDF links should use the public shared asset URL such as `/assets/img/docs/robotic-beehive/img/manual.pdf`.
 
-As of June 2026, Estonian `/et/about/` and `/et/about/products/` are real localized sections instead of redirect placeholders. The localized scope intentionally covers the About landing page, Products landing page, top-level product pages, and a small set of important product subpages. Product and brand names such as Gratheon, Entrance Observer, Live Queen Finder, and Varroa destructor stay unchanged in localized copy, while supporting labels and explanatory text are translated. Links outside that Estonian localization scope should point to stable English canonical pages rather than unresolved local markdown links.
+As of June 2026, Estonian `/et/about/` and `/et/products/` are real localized sections instead of redirect placeholders. The localized scope intentionally covers the About landing page, Products landing page, top-level product pages, and a small set of important product subpages. Product and brand names such as Gratheon, Entrance Observer, Live Queen Finder, and Varroa destructor stay unchanged in localized copy, while supporting labels and explanatory text are translated. Links outside that Estonian localization scope should point to stable English canonical pages rather than unresolved local markdown links.
 
 As of June 2026, Estonian `/et/research/` and Spanish `/es/research/` are real localized research landing pages. `/et/research/models/**`, `/es/research/models/**`, and Russian `/ru/research/models/**` mirror the English model-page split. Research paper indexes, datasets, hacker projects, and most detailed paper pages may still link to English canonical routes until those larger sections are localized. Localized research pages must not copy heavy images, videos, or PDFs; reuse generated shared asset URLs such as `/assets/img/research/img/research-preview.webp` and `/assets/assets/entrance-observer-whitepaper.pdf`.
 

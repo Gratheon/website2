@@ -509,7 +509,7 @@ mysql -h localhost -P 5100 -u root -ptest image-splitter \
 
 ### 🔗 Сопутствующая документация
 
-- [Нижняя доска «Счет Варроа» (Продукт)](../../../about/products/web_app/starter-tier/hive_bottom_varroa_count.md) — Описание функции, доступное пользователю
+- [Нижняя доска «Счет Варроа» (Продукт)](../../../products/web_app/starter-tier/hive_bottom_varroa_count.md) — Описание функции, доступное пользователю
 - [Управление нижней платой](./bottom-board-management.md) - Реализация типа коробки
 - [Загрузка фотографии в рамке](./frame-photo-upload.md) - Аналогичный процесс загрузки файлов
 - [Управление проверками](./frame-side-management.md) - Система управления версиями

@@ -10,7 +10,7 @@ order: 2
 
 Поддерживаются два варианта развёртывания:
 
-- браузерный инференс для [Live Queen Finder](/about/products/web_app/free-tier/live-queen-finder/) через ONNX + `onnxruntime-web`
+- браузерный инференс для [Live Queen Finder](/products/web_app/free-tier/live-queen-finder/) через ONNX + `onnxruntime-web`
 - HTTP-сервис инференса для серверных экспериментов и интеграций
 
 Базовая конфигурация обучения:

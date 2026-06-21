@@ -509,7 +509,7 @@ mysql -h localhost -P 5100 -u root -ptest image-splitter \
 
 ### 🔗 Related Documentation
 
-- [Bottom Board Varroa Counting (Product)](../../../about/products/web_app/starter-tier/hive_bottom_varroa_count.md) - User-facing feature description
+- [Bottom Board Varroa Counting (Product)](../../../products/web_app/starter-tier/hive_bottom_varroa_count.md) - User-facing feature description
 - [Bottom Board Management](./bottom-board-management.md) - Box type implementation
 - [Frame Photo Upload](./frame-photo-upload.md) - Similar file upload flow
 - [Inspection Management](./frame-side-management.md) - Versioning system

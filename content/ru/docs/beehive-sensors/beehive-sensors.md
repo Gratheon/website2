@@ -7,7 +7,7 @@ hide_table_of_contents: true
 
 ## Architecture
 
-Эти docs относятся к продукту [beehive scales](../../about/products/scales/scales.md). Sensor readings сохраняются через [hive telemetry storage](../../about/products/web_app/pro-tier/hive_telemetry_storage.md) и визуализируются в [timeseries analytics](../../about/products/web_app/pro-tier/timeseries_data_analytics.md).
+Эти docs относятся к продукту [beehive scales](../../products/scales/scales.md). Sensor readings сохраняются через [hive telemetry storage](../../products/web_app/pro-tier/hive_telemetry_storage.md) и визуализируются в [timeseries analytics](../../products/web_app/pro-tier/timeseries_data_analytics.md).
 
 ### Services
 - [https://github.com/Gratheon/hardware-beehive-sensors](https://github.com/Gratheon/hardware-beehive-sensors) — sensors repo на client side

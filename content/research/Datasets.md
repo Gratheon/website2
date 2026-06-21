@@ -15,7 +15,7 @@ Example foto (webp re-compressed for the web):
 ![](img/IMG_4376.webp)
 
 ## Videos
-[👁️‍🗨️ Entrance Observer](../about/products/entrance_observer/entrance_observer.md) videos 🎥 of the hive entrance
+[👁️‍🗨️ Entrance Observer](../products/entrance_observer/entrance_observer.md) videos 🎥 of the hive entrance
 ![](img/Screenshot%202025-09-10%20at%2009.11.23.png)
 ### 2025
 

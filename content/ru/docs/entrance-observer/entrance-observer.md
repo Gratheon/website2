@@ -5,7 +5,7 @@ hide_table_of_contents: true
 ---
 Основной клиентской службой является [beehive-entrance-video-processor](https://github.com/Gratheon/beehive-entrance-video-processor), ее необходимо запустить на периферийном устройстве для захвата и отправки данных на web-app. Нашим главным приоритетом является вывод на периферийном устройстве, но мы также хотим иметь гибридный вывод с поддержкой облака.
 
-Обзор уровня продукта см. в [Entrance Observer](../../about/products/entrance_observer/entrance_observer.md). Собранные метрики подключаются к [хранилищу телеметрии Hive](../../about/products/web_app/pro-tier/hive_telemetry_storage.md) и [аналитике временных рядов](../../about/products/web_app/pro-tier/timeseries_data_analytics.md).
+Обзор уровня продукта см. в [Entrance Observer](../../products/entrance_observer/entrance_observer.md). Собранные метрики подключаются к [хранилищу телеметрии Hive](../../products/web_app/pro-tier/hive_telemetry_storage.md) и [аналитике временных рядов](../../products/web_app/pro-tier/timeseries_data_analytics.md).
 ### Обработка, воспроизведение и аналитика видео
 
 ```mermaid

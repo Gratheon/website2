@@ -546,9 +546,9 @@ useEffect(() => {
 - Поддержка агрегации нескольких пасек для коммерческих пчеловодов.
 
 ### 🔗 Сопутствующая документация
-- [Аналитика данных таймсерий (Руководство пользователя)](../../../about/products/web_app/pro-tier/timeseries_data_analytics.md)
-- [Хранилище телеметрии улья](../../../about/products/web_app/pro-tier/hive_telemetry_storage.md)
-- [Аналитика сравнения колоний](../../../about/products/web_app/pro-tier/colony_comparison_analytics.md)
+- [Аналитика данных таймсерий (Руководство пользователя)](../../../products/web_app/pro-tier/timeseries_data_analytics.md)
+- [Хранилище телеметрии улья](../../../products/web_app/pro-tier/hive_telemetry_storage.md)
+- [Аналитика сравнения колоний](../../../products/web_app/pro-tier/colony_comparison_analytics.md)
 - [API телеметрии](telemetry-storage.md)
 
 ### 📚 Ресурсы для разработки

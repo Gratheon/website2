@@ -11,7 +11,7 @@ sidebar_position: 1
 
 Мы следим за современными и историческими исследованиями, связанными с пчёлами, наблюдаемостью и машинным обучением. Мы открыты к сотрудничеству с исследовательскими и академическими организациями (в нашей документации есть дополнительные инженерные и ML-материалы).
 
-Наиболее активные прикладные направления исследований связаны с [Entrance Observer](/about/products/entrance_observer/entrance-observer/), [robotic beehive](/about/products/robotic_beehive/robotic-beehive/) и [AI-возможностями web-app](/about/products/web_app/web-app/).
+Наиболее активные прикладные направления исследований связаны с [Entrance Observer](/products/entrance_observer/entrance-observer/), [robotic beehive](/products/robotic_beehive/robotic-beehive/) и [AI-возможностями web-app](/products/web_app/web-app/).
 
 Команда Gratheon интересуется уже существующими исследованиями и инженерными наработками. Мы отслеживаем
 - [Научные статьи](papers/index.md), подготовленные академическими авторами

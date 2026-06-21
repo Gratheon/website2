@@ -12,7 +12,7 @@ showChildren: true
     <div class="research-hero__copy">
       <span class="research-eyebrow">Gratheoni uuringud</span>
       <p class="research-lead">Gratheoni uuringute osa seob digitaalse mesinduse akadeemilised artiklid, välitingimustes kogutud andmestikud, masinõppemudelid ja insenerikatsetused.</p>
-      <p>Keskendume rakenduslikule tööle mesilaspere jälgitavuse, pere tervise, arvutinägemise ja automatiseerimise ümber. Kõige aktiivsemad tootepõhised uurimissuunad on praegu seotud <a href="/et/about/products/entrance_observer/entrance-observer/">Entrance Observeriga</a>, <a href="/et/about/products/robotic_beehive/robotic-beehive/">robotmesitaruga</a> ja <a href="/et/about/products/web_app/web-app/">veebirakenduse AI-funktsioonidega</a>.</p>
+      <p>Keskendume rakenduslikule tööle mesilaspere jälgitavuse, pere tervise, arvutinägemise ja automatiseerimise ümber. Kõige aktiivsemad tootepõhised uurimissuunad on praegu seotud <a href="/et/products/entrance_observer/entrance-observer/">Entrance Observeriga</a>, <a href="/et/products/robotic_beehive/robotic-beehive/">robotmesitaruga</a> ja <a href="/et/products/web_app/web-app/">veebirakenduse AI-funktsioonidega</a>.</p>
       <div class="research-actions">
         <a class="research-button research-button--primary" href="/research/papers/">Sirvi artikleid</a>
         <a class="research-button" href="/research/datasets/">Vaata andmestikke</a>

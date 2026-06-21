@@ -21,7 +21,7 @@ Oleme ülimalt tänulikud, et saame jagada kolme Tartu Ülikooli tudengitiimi si
 
 [Albert Unn](https://www.linkedin.com/in/albertunn/), [Kadi-Liis Kivi](https://www.linkedin.com/in/kadi-liis-kivi/), [Karen Roht](https://www.linkedin.com/in/karen-roht/) ja [Otto Kase](https://www.linkedin.com/in/otto-kase/) võtsid vastu elu või surma väljakutse. Hornetid võivad mesilaspered mõne tunni jooksul hävitada. Nende YOLOv8-nanomudel (**96,7% täpsus, 91,2% meeldetuletus**) pakub varajase hoiatamise võimalusi, märgistades käsitsi rohkem kui 1250 pilti ja luues servaseadmete jaoks tootmisvalmis juurutuse.
 
-See tuvastamissüsteem on mesinike jaoks ülioluline, kuna varajane avastamine võib tähendada erinevust terve koloonia päästmise või kaotamise vahel. See on otseselt seotud probleemiga [horneti rünnakud](/about/problems/biological/💢 Hornet attacks/) ja funktsiooniga [Sissepääsu vaatleja sarvede tuvastamine](/about/products/entrance_observer/todo/🚁 Hornet attack detection/).
+See tuvastamissüsteem on mesinike jaoks ülioluline, kuna varajane avastamine võib tähendada erinevust terve koloonia päästmise või kaotamise vahel. See on otseselt seotud probleemiga [horneti rünnakud](/about/problems/biological/💢 Hornet attacks/) ja funktsiooniga [Sissepääsu vaatleja sarvede tuvastamine](/products/entrance_observer/todo/🚁 Hornet attack detection/).
 
 **GitHub:** [https://github.com/OttoKase/HornetDetector](https://github.com/OttoKase/HornetDetector "https://github.com/OttoKase/HornetDetector")
 
@@ -29,7 +29,7 @@ See tuvastamissüsteem on mesinike jaoks ülioluline, kuna varajane avastamine v
 
 [Norman Tolmats](https://www.linkedin.com/in/norman-tolmats/), [Mihkel Kulu](https://www.linkedin.com/in/mihkel-kulu/), [Joonas Tiitson](https://www.linkedin.com/in/joonas-tiitson/) ja [Markus Kivime](https://www.linkedin.com/in/markus-kivime/) nihutasid piire veelgi, tuvastades reaalajas videovoogudes õietolmu kandvad mesilased. Nende töö nõrgalt juhendatud õppe- ja automaatse märgistamise torujuhtmetega (30 000+ kujutist) näitab skaleeritavate AI-lahenduste tulevikku.
 
-See töö sobib [õietolmu toitumise statistika](/about/products/entrance_observer/ideas/🌻 Detect bees with pollen for foraging statistics/) ideega ja laiemalt [mesilaste liikumise mõõdikute aruandlus](/about/products/entrance_observer/features/📊 Bee movement metric reporting/).
+See töö sobib [õietolmu toitumise statistika](/products/entrance_observer/ideas/🌻 Detect bees with pollen for foraging statistics/) ideega ja laiemalt [mesilaste liikumise mõõdikute aruandlus](/products/entrance_observer/features/📊 Bee movement metric reporting/).
 
 **GitHub:** https://github.com/bukyt/beeDetection
 
@@ -44,7 +44,7 @@ Eriline tänu dotsent Dmytro Fishmanile keskkonna loomise eest, kus tudengid saa
 Vaata ka tehtud [Ettekanded](https://drive.google.com/drive/folders/12ciUaNCjHmDuEruKZil__kNGml_Ye_1j?usp=drive_link "https://drive.google.com/drive/folders/12ciUaNCjHmDuEruKZil__kNGml_Ye_1j?usp=drive_link") meeskondi.
 ## Lisateave
 
-- [Gratheoni sissepääsu vaatleja](/about/products/entrance_observer/entrance_observer/)
+- [Gratheoni sissepääsu vaatleja](/products/entrance_observer/entrance_observer/)
 - [Kõik kaasautorid](/about/credits/)
 - [Kuidas teha vabatahtlikku tööd](/about/volunteer/)
 

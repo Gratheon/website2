@@ -1,1 +1,0 @@
-![](../../../../img/laying-workers.png)

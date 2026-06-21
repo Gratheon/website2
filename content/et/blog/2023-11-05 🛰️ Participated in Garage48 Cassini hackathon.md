@@ -31,7 +31,7 @@ Tänu meie rakendusele saavad põllumehed saada paremat saaki, mesinikud saavad 
 
 Mitmekesine õietolm parandab nii mesilaste tervist kui ka mee maitset. Samuti ei pea mesilased ressursside pärast nii palju konkureerima. Taru eraldi paigutamine vähendab haiguste riski.
 
-Üldiselt aitab [Gratheon](/) mesinikele jälgida ja automatiseerida, et nad saaksid olla tõhusamad ja nende kolooniad terved. Pakume rakendust ja integreerime riistvara, et arvutinägemine saaks mesinikku ohu korral hoiatada. Meie pikaajaline visioon on [autonoomne robot-mesipuu](/about/products/robotic_beehive/robotic_beehive/).
+Üldiselt aitab [Gratheon](/) mesinikele jälgida ja automatiseerida, et nad saaksid olla tõhusamad ja nende kolooniad terved. Pakume rakendust ja integreerime riistvara, et arvutinägemine saaks mesinikku ohu korral hoiatada. Meie pikaajaline visioon on [autonoomne robot-mesipuu](/products/robotic_beehive/robotic_beehive/).
 
 **Õietolmukaardi funktsiooni idee**
 

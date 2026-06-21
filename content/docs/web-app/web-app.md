@@ -5,9 +5,9 @@ title: 📱 Web-app
 > Goal of this document is to kickstart your development of the web-app as an engineer
 ## Environment prerequisites
 
-💡 You will need Linux or Mac OSX with **Docker** to develop [Web-app](../../about/products/web_app/web_app.md) services
+💡 You will need Linux or Mac OSX with **Docker** to develop [Web-app](../../products/web_app/web_app.md) services
 
-To develop [Entrance Observer](../../about/products/entrance_observer/entrance_observer.md) video processing services you’ll need [Jetson Orin Nano](../entrance-observer/Jetson%20Orin%20setup.md) or [Jetson Nano](../entrance-observer/Jetson%20Nano%20setup.md) to have GPU support and docker image compatibility
+To develop [Entrance Observer](../../products/entrance_observer/entrance_observer.md) video processing services you’ll need [Jetson Orin Nano](../entrance-observer/Jetson%20Orin%20setup.md) or [Jetson Nano](../entrance-observer/Jetson%20Nano%20setup.md) to have GPU support and docker image compatibility
 
 ## Architecture
 ### Core services
@@ -100,7 +100,7 @@ Some services are not blocking the UI or backend in general, but are required fo
 
 Beekeepers can track varroa mite infestation by uploading images of the hive bottom board.
 
-See [Bottom Board Varroa Counting](../../about/products/web_app/starter-tier/hive_bottom_varroa_count.md) for the user guide, [Varroa Bottom Detection](features/varroa-bottom-detection.md) for technical details, and [DB Schema](🥞%20DB%20schemas/image-splitter.md) for table structures.
+See [Bottom Board Varroa Counting](../../products/web_app/starter-tier/hive_bottom_varroa_count.md) for the user guide, [Varroa Bottom Detection](features/varroa-bottom-detection.md) for technical details, and [DB Schema](🥞%20DB%20schemas/image-splitter.md) for table structures.
 -   **Image Upload:** Two-step process:
     1. Upload image to S3 via `uploadFrameSide` mutation
     2. Link image to box via `addFileToBox` mutation in image-splitter
@@ -111,7 +111,7 @@ See [Bottom Board Varroa Counting](../../about/products/web_app/starter-tier/hiv
     - **image-splitter**: File upload, storage, and linking
     - **web-app**: BottomBox component for UI
 
-See [Bottom Board Varroa Counting](../../about/products/web_app/starter-tier/hive_bottom_varroa_count.md) for the user guide, [Varroa Bottom Detection](features/varroa-bottom-detection.md) for technical details, and [DB Schema](🥞%20DB%20schemas/image-splitter.md) for table structures.
+See [Bottom Board Varroa Counting](../../products/web_app/starter-tier/hive_bottom_varroa_count.md) for the user guide, [Varroa Bottom Detection](features/varroa-bottom-detection.md) for technical details, and [DB Schema](🥞%20DB%20schemas/image-splitter.md) for table structures.
 
 ### Inspection Sharing
 
@@ -126,7 +126,7 @@ Users can share individual hive inspections with others via a unique public URL.
 
 Create new hives by moving selected frames from a strong colony. Prevents swarming and enables apiary expansion.
 
-User-facing feature notes live in [split bee colony](../../about/products/web_app/hobbyist-tier/split_bee_colony.md).
+User-facing feature notes live in [split bee colony](../../products/web_app/hobbyist-tier/split_bee_colony.md).
 
 **Technical Overview:**
 -   **Mutation:** `splitHive(sourceHiveId, name, frameIds)` - Creates new hive with 1-10 selected frames
@@ -138,7 +138,7 @@ User-facing feature notes live in [split bee colony](../../about/products/web_ap
 
 Merge two colonies by moving boxes from source to target hive. Strengthens weak colonies and manages queen genetics.
 
-User-facing feature notes live in [join bee colonies](../../about/products/web_app/hobbyist-tier/join_bee_colonies.md).
+User-facing feature notes live in [join bee colonies](../../products/web_app/hobbyist-tier/join_bee_colonies.md).
 
 
 **Technical Overview:**

@@ -11,7 +11,7 @@ showChildren: true
     <div class="research-hero__copy">
       <span class="research-eyebrow">Gratheon Research</span>
       <p class="research-lead">Gratheon Research connects academic literature, field datasets, machine learning models, and engineering experiments around digital beekeeping.</p>
-      <p>We focus on applied work around bee observability, colony health, computer vision, and automation. The most active product-facing research threads currently connect to <a href="/about/products/entrance_observer/entrance-observer/">Entrance Observer</a>, <a href="/about/products/robotic_beehive/robotic-beehive/">robotic beehive</a>, and <a href="/about/products/web_app/web-app/">AI features in our web app</a>.</p>
+      <p>We focus on applied work around bee observability, colony health, computer vision, and automation. The most active product-facing research threads currently connect to <a href="/products/entrance_observer/entrance-observer/">Entrance Observer</a>, <a href="/products/robotic_beehive/robotic-beehive/">robotic beehive</a>, and <a href="/products/web_app/web-app/">AI features in our web app</a>.</p>
       <div class="research-actions">
         <a class="research-button research-button--primary" href="/research/papers/">Browse papers</a>
         <a class="research-button" href="/research/datasets/">Explore datasets</a>

@@ -10,7 +10,7 @@ Repositorio: https://github.com/Gratheon/models-queen-bee-detector
 
 Admite dos rutas de despliegue:
 
-- inferencia en navegador para [Live Queen Finder](/about/products/web_app/free-tier/live-queen-finder/) mediante ONNX + `onnxruntime-web`
+- inferencia en navegador para [Live Queen Finder](/products/web_app/free-tier/live-queen-finder/) mediante ONNX + `onnxruntime-web`
 - servicio de inferencia HTTP para experimentos e integraciones del lado del servidor
 
 Configuración base de entrenamiento:

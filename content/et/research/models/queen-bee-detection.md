@@ -10,7 +10,7 @@ Repositorium: https://github.com/Gratheon/models-queen-bee-detector
 
 See toetab kahte kasutusviisi:
 
-- brauseripõhine inferents [Live Queen Finderi](/et/about/products/web_app/free-tier/live-queen-finder/) jaoks ONNX-i ja `onnxruntime-web` abil
+- brauseripõhine inferents [Live Queen Finderi](/et/products/web_app/free-tier/live-queen-finder/) jaoks ONNX-i ja `onnxruntime-web` abil
 - HTTP inferentsiteenus serveripoolsete katsete ja integratsioonide jaoks
 
 Baastreeningu seadistus:
