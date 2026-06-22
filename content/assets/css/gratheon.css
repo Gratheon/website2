@@ -845,6 +845,30 @@ html[data-theme='dark'] .front-page .future {
   max-width: 12ch;
 }
 
+/* Paper-detail pages that embed a PDF do not need the generic research hero image.
+   WHY: the large visual competes with long academic titles and duplicates the PDF preview below.
+   WHAT: switch the hero to a single text column and use a smaller, more readable title scale. */
+.knowledge-page-research:has(.knowledge-content .pdf-embed) .knowledge-hero {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0;
+}
+
+.knowledge-page-research:has(.knowledge-content .pdf-embed) .knowledge-hero-copy {
+  min-height: auto;
+  max-width: 980px;
+}
+
+.knowledge-page-research:has(.knowledge-content .pdf-embed) .knowledge-hero h1 {
+  font-size: clamp(2.35rem, 4.8vw, 4.8rem);
+  line-height: 1.02;
+  letter-spacing: -0.055em;
+  max-width: 18ch;
+}
+
+.knowledge-page-research:has(.knowledge-content .pdf-embed) .knowledge-hero-media {
+  display: none;
+}
+
 .knowledge-standfirst {
   max-width: 760px;
   margin: clamp(22px, 3vw, 36px) 0 0;
