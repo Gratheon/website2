@@ -92,11 +92,6 @@ layout: products
 <span class="product-card-meta">Vision · scale</span>
 </article>
 
-<article class="product-card-small product-card--accent">
-<a href="/about/problems/">🌨️ Problems we solve</a>
-<p>Products are mapped to real beekeeping problems: observability gaps, physical labor, swarming, starvation, robbing, varroa pressure, distant apiaries, and weather risk.</p>
-<span class="product-card-meta">Problem-led roadmap</span>
-</article>
 </div>
 </section>
 
