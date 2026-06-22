@@ -1414,6 +1414,47 @@ html[data-theme='dark'] .front-page .future {
 }
 
 
+/* WHY: Research assets are the primary navigation cards requested above the research map.
+   WHAT: style the lifted block and its inline SVG icons without adding external assets. */
+.knowledge-page-research .research-assets-overview {
+  margin-bottom: clamp(42px, 6vw, 96px);
+}
+
+.knowledge-page-research .research-assets-overview h2 {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
+}
+
+.knowledge-content .research-asset-card {
+  display: grid;
+  align-content: start;
+  gap: 14px;
+}
+
+.knowledge-content .research-asset-card h3 {
+  margin: 0;
+}
+
+.knowledge-content .research-asset-card p {
+  margin: 0;
+}
+
+.knowledge-content .research-card-icon {
+  width: clamp(46px, 5vw, 72px);
+  height: clamp(46px, 5vw, 72px);
+  color: var(--brand-yellow, #ffd400);
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.knowledge-content .research-card-icon path {
+  vector-effect: non-scaling-stroke;
+}
+
 .knowledge-page-products .knowledge-content-layout {
   display: block;
 }

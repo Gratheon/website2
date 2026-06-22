@@ -103,27 +103,6 @@ showChildren: true
     </div>
   </section>
 
-  <section>
-    <h2>Gratheon research assets</h2>
-    <div class="research-card-grid research-card-grid--2">
-      <article class="research-card">
-        <h3><a href="/research/datasets/">Gratheon datasets</a></h3>
-        <p>Inspection photos, entrance videos, metrics, tracks, and external reference resources for experiments and benchmarking.</p>
-      </article>
-      <article class="research-card">
-        <h3><a href="/research/models/">Gratheon models</a></h3>
-        <p>Bee detection, queen detection, BeePose, and varroa-on-bee detection spanning browser inference, HTTP services, and edge experimentation.</p>
-      </article>
-      <article class="research-card">
-        <h3><a href="/research/hacker-projects/">Hacker projects</a></h3>
-        <p>DIY, open hardware, and open-source systems for counters, scales, cameras, and telemetry that complement academic work.</p>
-      </article>
-      <article class="research-card">
-        <h3><a href="/assets/entrance-observer-whitepaper.pdf">Entrance Observer whitepaper</a></h3>
-        <p>A direct technical entry point into Gratheon’s own monitoring work and collaboration discussions.</p>
-      </article>
-    </div>
-  </section>
 
   <section>
     <h2>Recent collaboration signals</h2>
