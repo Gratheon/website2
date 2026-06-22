@@ -25,7 +25,7 @@ Osalejate ja mentorite kollektiivne foto Tiit Tamme / Garage 48:
 
 ## Esimesed slaidid
 
-<object data={require('./img/andmetorm.pdf').default} type="application/pdf" width="100%" height="400"></object>
+<object data="/assets/blog/img/andmetorm.pdf" type="application/pdf" width="100%" height="400"></object>
 
 
 <!--truncate-->

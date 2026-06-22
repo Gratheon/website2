@@ -32,6 +32,6 @@ title: "💶 Osalemine EIC Acceleratori ja Ready2Scale veebiseminaril"
 
 
 
-[PDF](img/Unlock%20EIC%20Accelerator%20funding%20-%20presentation%20and%20key%20success%20factors.pdf)
+[PDF](/assets/blog/img/Unlock%20EIC%20Accelerator%20funding%20-%20presentation%20and%20key%20success%20factors.pdf)
 
-<object data={require('./img/Unlock EIC Accelerator funding - presentation and key success factors.pdf').default} type="application/pdf" width="100%" height="800"></object>
+<object data="/assets/blog/img/Unlock EIC Accelerator funding - presentation and key success factors.pdf" type="application/pdf" width="100%" height="800"></object>

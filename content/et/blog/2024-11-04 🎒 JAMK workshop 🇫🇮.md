@@ -21,9 +21,9 @@ Alustavatest ettevõtetest, mida BioBoosters on toetanud, meeldis mulle:
 
 <!-- truncate -->
 
-[PDF](files/Test%20Farms%202025_deck%20for%20participants.pdf)
+[PDF](/assets/blog/files/Test%20Farms%202025_deck%20for%20participants.pdf)
 
-<object data={require('./files/Test Farms 2025_deck for participants.pdf').default} type="application/pdf" width="100%" height="800"></object>
+<object data="/assets/blog/files/Test Farms 2025_deck for participants.pdf" type="application/pdf" width="100%" height="800"></object>
 
 ![](img/Screenshot%202024-11-04%20at%2015.32.58.png)
 

@@ -9,9 +9,9 @@ title: "🎒 Külastasin AI TalTechi veebiseminari"
 ![](img/Screenshot%202025-02-19%20at%2011.53.33.png)
 ![](img/Screenshot%202025-02-19%20at%2011.58.33.png)
 
-[PDF](img/Suured%20ettevõtted%20kasutavad%20tehisintellekti_est_rus.pdf)
+[PDF](/assets/blog/img/Suured%20ettevõtted%20kasutavad%20tehisintellekti_est_rus.pdf)
 
-<object data={require('./img/Suured ettevõtted kasutavad tehisintellekti_est_rus.pdf').default} type="application/pdf" width="100%" height="800"></object>
+<object data="/assets/blog/img/Suured ettevõtted kasutavad tehisintellekti_est_rus.pdf" type="application/pdf" width="100%" height="800"></object>
 
 
 ![](img/Screenshot%202025-02-19%20at%2011.59.26.png)![](img/Screenshot%202025-02-19%20at%2012.01.25.png)![](img/Screenshot%202025-02-19%20at%2012.01.56.png)![](img/Screenshot%202025-02-19%20at%2012.03.32.png)![](img/Screenshot%202025-02-19%20at%2012.05.04.png)![](img/Screenshot%202025-02-19%20at%2012.08.34.png)

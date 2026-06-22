@@ -11,7 +11,7 @@ Meie peamine eesmärk on
 
 https://taikai.network/cassinihackathons/hackathons/intdev-humaid
 
-[Pitch PDF](files/First%20Gratheon%20Garage48%20pitch%20to%20get%20a%20team.pdf)
+[Pitch PDF](/assets/blog/files/First%20Gratheon%20Garage48%20pitch%20to%20get%20a%20team.pdf)
 
 <!-- truncate -->
 

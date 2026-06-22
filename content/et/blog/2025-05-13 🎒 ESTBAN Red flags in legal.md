@@ -76,4 +76,4 @@ title: ⚖️ Osalesin EstBAN Red flags startup juriidiliste aspektide veebisemi
 
 ![](img/Screenshot%202025-05-13%20at%2014.08.48.png)
 
-[PDF](img/2025%2005%2013%20-%20Startup%20Legal%20Matters%20(by%20TRINITI).pdf)
+[PDF](/assets/blog/img/2025%2005%2013%20-%20Startup%20Legal%20Matters%20(by%20TRINITI).pdf)
