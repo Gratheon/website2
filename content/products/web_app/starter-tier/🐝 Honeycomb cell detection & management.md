@@ -46,6 +46,6 @@ Based on the current app architecture and services:
 5. Compare older vs current inspection resource patterns
 
 ### 🔗 Related Features
-- [🖼️ Frame Side Management](../hobbyist-tier/🖼️%20Frame%20side%20management.md)
+- [🖼️ Frame Side Management](../free-tier/🖼️%20Frame%20side%20management.md)
 - [🔎 Inspection management](🔎%20Inspection%20management.md)
 - [🐝 Count bees](../hobbyist-tier/🐝%20Count%20bees.md)

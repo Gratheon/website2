@@ -5,7 +5,7 @@ navTitle: Veebirakendus
 layout: products
 ---
 
-Gratheoni veebirakendus aitab mesinikel hallata [mesila andmeid](/products/web_app/hobbyist-tier/apiary-management/), suhelda paigaldatud modulaarsete taruseadmetega, analüüsida kärje- ja põhjalaua pilte, salvestada [aegridade telemeetriat](/products/web_app/pro-tier/hive-telemetry-storage/), luua [teavitusi](/products/web_app/flexible-tier/alerts/) ning pakkuda tehisaru soovitusi probleemide lahendamiseks.
+Gratheoni veebirakendus aitab mesinikel hallata [mesila andmeid](/products/web_app/free-tier/apiary-management/), suhelda paigaldatud modulaarsete taruseadmetega, analüüsida kärje- ja põhjalaua pilte, salvestada [aegridade telemeetriat](/products/web_app/pro-tier/hive-telemetry-storage/), luua [teavitusi](/products/web_app/flexible-tier/alerts/) ning pakkuda tehisaru soovitusi probleemide lahendamiseks.
 
 `status`: [TRL 6](https://www.nasa.gov/directorates/somd/space-communications-navigation-program/technology-readiness-levels/)
 
@@ -57,7 +57,7 @@ See on keskne koht, kuhu ühenduvad teised Gratheoni tooted nagu [lennuava jälg
 
 ## Rohkem ingliskeelset infot
 Need lingid jäävad teadlikult ingliskeelseks, kuni vastavad alamlehed on samuti lokaliseeritud:
-- [Mesila haldus](/products/web_app/hobbyist-tier/apiary-management/)
+- [Mesila haldus](/products/web_app/free-tier/apiary-management/)
 - [Taru telemeetria salvestus](/products/web_app/pro-tier/hive-telemetry-storage/)
 - [Teavitused](/products/web_app/flexible-tier/alerts/)
 - [Aegridade andmeanalüüs](/products/web_app/pro-tier/timeseries-data-analytics/)

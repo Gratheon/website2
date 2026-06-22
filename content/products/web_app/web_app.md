@@ -4,7 +4,7 @@ title: 📱Web-app
 layout: products
 ---
 
-Gratheon web app is intended to help beekeepers manage [apiary data](hobbyist-tier/apiary-management.md), communicate with installed modular hive devices, analyze frame and bottom-board images, store [timeseries telemetry](pro-tier/hive_telemetry_storage.md), generate [alerts](flexible-tier/alerts.md), forecast, and provide AI suggestions to solve issues.
+Gratheon web app is intended to help beekeepers manage [apiary data](free-tier/apiary-management.md), communicate with installed modular hive devices, analyze frame and bottom-board images, store [timeseries telemetry](pro-tier/hive_telemetry_storage.md), generate [alerts](flexible-tier/alerts.md), forecast, and provide AI suggestions to solve issues.
 
 `status`: [TRL 6](https://www.nasa.gov/directorates/somd/space-communications-navigation-program/technology-readiness-levels/)
 
@@ -38,7 +38,7 @@ Use-cases is a group of features that when combined serve a great value for the 
 ### Uploading photos to get colony overview stats
 - Create a beehive
 - Open specific section, add frames
-- Open a specific frame, click "upload frame photo" with bees and comb cells on it. See [frame side management](hobbyist-tier/🖼️%20Frame%20side%20management.md) and [inspection management](starter-tier/🔎%20Inspection%20management.md).
+- Open a specific frame, click "upload frame photo" with bees and comb cells on it. See [frame side management](free-tier/🖼️%20Frame%20side%20management.md) and [inspection management](hobbyist-tier/🔎%20Inspection%20management.md).
 - Wait for backend to process
 - Receive AI-assisted statistics about bee counts and cell distribution
 - Compare different hives to see which ones are more powerful with real data behind it

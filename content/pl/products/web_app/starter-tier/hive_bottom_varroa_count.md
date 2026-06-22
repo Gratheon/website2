@@ -85,7 +85,7 @@ Zdjęcia są wersjonowane razem z inspekcjami:
 - nie zastępuje profesjonalnej diagnozy weterynaryjnej.
 
 ## Powiązane funkcje
-- [Zarządzanie inspekcjami](/products/web_app/starter-tier/inspection-management/)
+- [Zarządzanie inspekcjami](/products/web_app/hobbyist-tier/inspection-management/)
 - Śledzenie leczenia Varroa (planowane)
 - Panel zdrowia rodziny pszczelej (planowany)
 

@@ -85,7 +85,7 @@ Pildid versioonitakse koos inspekteerimistega:
 - ei asenda professionaalset veterinaardiagnoosi.
 
 ## Seotud funktsioonid
-- [Inspekteerimiste haldus](/products/web_app/starter-tier/inspection-management/)
+- [Inspekteerimiste haldus](/products/web_app/hobbyist-tier/inspection-management/)
 - Varroa ravi jälgimine (plaanis)
 - Mesilaspere tervise töölaud (plaanis)
 

@@ -5,7 +5,7 @@ navTitle: Aplikacja webowa
 layout: products
 ---
 
-Aplikacja webowa Gratheon pomaga pszczelarzom zarządzać [danymi pasieki](/products/web_app/hobbyist-tier/apiary-management/), komunikować się z zainstalowanymi modułowymi urządzeniami ulowymi, analizować zdjęcia ramek i dennic, zapisywać [telemetrię szeregów czasowych](/products/web_app/pro-tier/hive-telemetry-storage/), tworzyć [alerty](/products/web_app/flexible-tier/alerts/) oraz korzystać z sugestii AI przy rozwiązywaniu problemów.
+Aplikacja webowa Gratheon pomaga pszczelarzom zarządzać [danymi pasieki](/products/web_app/free-tier/apiary-management/), komunikować się z zainstalowanymi modułowymi urządzeniami ulowymi, analizować zdjęcia ramek i dennic, zapisywać [telemetrię szeregów czasowych](/products/web_app/pro-tier/hive-telemetry-storage/), tworzyć [alerty](/products/web_app/flexible-tier/alerts/) oraz korzystać z sugestii AI przy rozwiązywaniu problemów.
 
 `status`: [TRL 6](https://www.nasa.gov/directorates/somd/space-communications-navigation-program/technology-readiness-levels/)
 
@@ -57,7 +57,7 @@ To centralne miejsce, do którego podłączają się inne produkty Gratheon, tak
 
 ## Więcej informacji po angielsku
 Te linki celowo pozostają po angielsku, dopóki odpowiednie podstrony nie zostaną zlokalizowane:
-- [Zarządzanie pasieką](/products/web_app/hobbyist-tier/apiary-management/)
+- [Zarządzanie pasieką](/products/web_app/free-tier/apiary-management/)
 - [Przechowywanie telemetrii ula](/products/web_app/pro-tier/hive-telemetry-storage/)
 - [Alerty](/products/web_app/flexible-tier/alerts/)
 - [Analiza danych szeregów czasowych](/products/web_app/pro-tier/timeseries-data-analytics/)
