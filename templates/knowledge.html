@@ -68,7 +68,16 @@
 {{end}}
 
 {{define "knowledge_map"}}
-{{if .Sidebar}}
+{{ $paperPath := trimPrefix .Page.URL "/research/papers/" }}
+{{ if eq $paperPath .Page.URL }}
+  {{ $paperPath = trimPrefix .Page.URL (printf "/%s/research/papers/" .Page.Language) }}
+{{ end }}
+{{ $isPapersPath := ne $paperPath .Page.URL }}
+{{ $isPapersIndex := eq $paperPath "" }}
+{{ $isPapersSubIndex := or (eq $paperPath "scientific-publications/") (eq $paperPath "topics/") (eq $paperPath "years/") (eq $paperPath "product-areas/") (eq $paperPath "teams/") (eq $paperPath "other-research-sources/") }}
+{{ $isPapersTaxonomy := or (ne (trimPrefix $paperPath "topics/") $paperPath) (ne (trimPrefix $paperPath "years/") $paperPath) (ne (trimPrefix $paperPath "product-areas/") $paperPath) }}
+{{ $isPaperDetail := and $isPapersPath (not $isPapersIndex) (not $isPapersSubIndex) (not $isPapersTaxonomy) }}
+{{if and .Sidebar (not $isPaperDetail)}}
 <section class="knowledge-map" aria-label="{{.UI.Navigation}}">
   <div class="knowledge-map-intro">
     <p class="knowledge-map-kicker">

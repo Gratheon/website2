@@ -1284,6 +1284,18 @@ html[data-theme='dark'] .front-page .future {
   background: var(--knowledge-paper);
 }
 
+.knowledge-content .pdf-embed {
+  /* WHY: research paper detail pages are primarily PDF readers; the inline PDF
+     should use the full content shell instead of the article text width. */
+  width: calc(100vw - clamp(36px, 10vw, 144px));
+  max-width: calc(1480px - clamp(36px, 10vw, 144px));
+  min-height: min(86vh, 960px);
+}
+
+.knowledge-content .pdf-embed + p {
+  max-width: none;
+}
+
 .knowledge-content pre,
 .knowledge-content code {
   border-radius: 0;
