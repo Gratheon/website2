@@ -10,10 +10,10 @@ layout: products
 <div class="product-web-app-showcase__grid">
 <div>
 <h2>Begin with the web app</h2>
-<p>The <a href="web_app/web_app.md">Gratheon web app</a> is the shared workspace for hive records, inspections, uploaded photos, telemetry, alerts, and AI-assisted decisions. It is the first product most users need, even before they add field devices.</p>
-<p><a class="product-button product-button--primary" href="web_app/web_app.md">Explore web app</a> <a class="product-button" href="../pricing.md">Compare plans</a></p>
+<p>The <a href="/products/web_app/">Gratheon web app</a> is the shared workspace for hive records, inspections, uploaded photos, telemetry, alerts, and AI-assisted decisions. It is the first product most users need, even before they add field devices.</p>
+<p><a class="product-button product-button--primary" href="/products/web_app/">Explore web app</a> <a class="product-button" href="/pricing/">Compare plans</a></p>
 </div>
-        <p><a class="product-button product-button--primary" href="web_app/web_app.md">Explore web app</a> <a class="product-button" href="/pricing/">Compare plans</a></p>
+<img src="/img/web-app.png" alt="Gratheon web app interface" />
 </div>
 
 <div class="product-tier-grid">
@@ -69,35 +69,31 @@ layout: products
 
 <div class="product-card-grid product-card-grid--family">
 <article class="product-card-small">
-<a href="scales/scales.md">🌡️ Beehive scales</a>
-<img src="scales/img/Screenshot%202025-10-22%20at%2021.48.15.png" alt="Beehive scales telemetry" />
+<a href="/products/scales/">🌡️ Beehive scales</a>
 <p>Low-cost remote measurements for weight, temperature, and other environmental signals.</p>
 <span class="product-card-meta">Prototype · telemetry</span>
 </article>
 
 <article class="product-card-small">
-<a href="entrance_observer/entrance_observer.md">👁️‍🗨️ Entrance Observer</a>
-<img src="entrance_observer/img/Screenshot%202025-10-22%20at%2020.43.55.png" alt="Entrance Observer interface" />
+<a href="/products/entrance_observer/">👁️‍🗨️ Entrance Observer</a>
 <p>Camera and AI pipeline for entrance video, bee traffic metrics, behavior signals, and alerts.</p>
 <span class="product-card-meta">Alpha · computer vision</span>
 </article>
 
 <article class="product-card-small">
-<a href="robotic_beehive/robotic_beehive.md">🧿 Robotic beehive</a>
-<img src="robotic_beehive/img/Screenshot%202025-02-25%20at%2011.25.06.png" alt="Robotic beehive concept" />
+<a href="/products/robotic_beehive/">🧿 Robotic beehive</a>
 <p>A modular path toward remote internal inspection and mechanized frame operations.</p>
 <span class="product-card-meta">Ideation · automation</span>
 </article>
 
 <article class="product-card-small">
-<a href="robotic_apiary/robotic_apiary.md">🪬 Robotic Apiary</a>
-<img src="robotic_apiary/img/Screenshot%202025-02-14%20at%2018.27.24.png" alt="Robotic apiary concept" />
+<a href="/products/robotic_apiary/">🪬 Robotic Apiary</a>
 <p>Long-term vision for multi-hive automation, field mobility, and apiary-scale intervention.</p>
 <span class="product-card-meta">Vision · scale</span>
 </article>
 
 <article class="product-card-small product-card--accent">
-<a href="../about/problems/problems.md">🌨️ Problems we solve</a>
+<a href="/about/problems/">🌨️ Problems we solve</a>
 <p>Products are mapped to real beekeeping problems: observability gaps, physical labor, swarming, starvation, robbing, varroa pressure, distant apiaries, and weather risk.</p>
 <span class="product-card-meta">Problem-led roadmap</span>
 </article>

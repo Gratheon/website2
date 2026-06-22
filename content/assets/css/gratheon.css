@@ -1443,10 +1443,9 @@ html[data-theme='dark'] .front-page .future {
   align-items: center;
 }
 
+/* WHY: hero web-app screenshot sits on an accent-colored card; no frame keeps it clean. */
 .knowledge-content .product-web-app-showcase__grid img {
   width: 100%;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  background: #fff;
 }
 
 .knowledge-content .product-web-app-showcase .product-button:not(.product-button--primary),
