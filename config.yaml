@@ -87,6 +87,449 @@ navigation:
     enabled: true
     # Shared/multilingual header items can remain in `items` with `languages: [...]`.
     # Single-language items are grouped below by locale to keep the config compact.
+    # Legacy fallback for production binaries that do not read `header.languages` yet.
+    # Newer blog-engine builds skip these single-language items when a language group exists.
+    items:
+      - title: "About"
+        url: "/about/"
+        languages: ["en"]
+      - title: "Products"
+        url: "/products/"
+        languages: ["en"]
+      - title: "Research"
+        url: "/research/"
+        languages: ["en"]
+      - title: "Blog"
+        url: "/blog/"
+        languages: ["en"]
+      - title: "Docs"
+        url: "/docs/"
+        languages: ["en"]
+      - title: "Pricing"
+        url: "/pricing/"
+        languages: ["en"]
+      - title: "Log in"
+        url: "https://app.gratheon.com/account/authenticate/?lang=en"
+        class: "nav-action nav-action-first"
+        languages: ["en"]
+      - title: "О нас"
+        url: "/ru/about/"
+        languages: ["ru"]
+      - title: "Продукты"
+        url: "/products/"
+        languages: ["ru"]
+      - title: "Исследования"
+        url: "/ru/research/"
+        languages: ["ru"]
+      - title: "Блог"
+        url: "/ru/blog/"
+        languages: ["ru"]
+      - title: "Документация"
+        url: "/ru/docs/"
+        languages: ["ru"]
+      - title: "Тарифы"
+        url: "/ru/pricing/"
+        languages: ["ru"]
+      - title: "Войти"
+        url: "https://app.gratheon.com/account/authenticate/?lang=ru"
+        class: "nav-action nav-action-first"
+        languages: ["ru"]
+      - title: "Meist"
+        url: "/et/about/"
+        languages: ["et"]
+      - title: "Tooted"
+        url: "/products/"
+        languages: ["et"]
+      - title: "Uuringud"
+        url: "/et/research/"
+        languages: ["et"]
+      - title: "Blogi"
+        url: "/et/blog/"
+        languages: ["et"]
+      - title: "Dokumendid"
+        url: "/et/docs/"
+        languages: ["et"]
+      - title: "Hinnad"
+        url: "/et/pricing/"
+        languages: ["et"]
+      - title: "Logi sisse"
+        url: "https://app.gratheon.com/account/authenticate/?lang=et"
+        class: "nav-action nav-action-first"
+        languages: ["et"]
+      - title: "Hakkımızda"
+        url: "/tr/about/"
+        languages: ["tr"]
+      - title: "Ürünler"
+        url: "/products/"
+        languages: ["tr"]
+      - title: "Araştırma"
+        url: "/tr/research/"
+        languages: ["tr"]
+      - title: "Blog"
+        url: "/tr/blog/"
+        languages: ["tr"]
+      - title: "Belgeler"
+        url: "/tr/docs/"
+        languages: ["tr"]
+      - title: "Fiyatlandırma"
+        url: "/tr/pricing/"
+        languages: ["tr"]
+      - title: "Giriş yap"
+        url: "https://app.gratheon.com/account/authenticate/?lang=tr"
+        class: "nav-action nav-action-first"
+        languages: ["tr"]
+      - title: "O nas"
+        url: "/pl/about/"
+        languages: ["pl"]
+      - title: "Produkty"
+        url: "/products/"
+        languages: ["pl"]
+      - title: "Badania"
+        url: "/pl/research/"
+        languages: ["pl"]
+      - title: "Blog"
+        url: "/pl/blog/"
+        languages: ["pl"]
+      - title: "Dokumentacja"
+        url: "/pl/docs/"
+        languages: ["pl"]
+      - title: "Cennik"
+        url: "/pl/pricing/"
+        languages: ["pl"]
+      - title: "Zaloguj się"
+        url: "https://app.gratheon.com/account/authenticate/?lang=pl"
+        class: "nav-action nav-action-first"
+        languages: ["pl"]
+      - title: "Über uns"
+        url: "/de/about/"
+        languages: ["de"]
+      - title: "Produkte"
+        url: "/products/"
+        languages: ["de"]
+      - title: "Forschung"
+        url: "/de/research/"
+        languages: ["de"]
+      - title: "Blog"
+        url: "/de/blog/"
+        languages: ["de"]
+      - title: "Dokumentation"
+        url: "/de/docs/"
+        languages: ["de"]
+      - title: "Preise"
+        url: "/de/pricing/"
+        languages: ["de"]
+      - title: "Anmelden"
+        url: "https://app.gratheon.com/account/authenticate/?lang=de"
+        class: "nav-action nav-action-first"
+        languages: ["de"]
+      - title: "À propos"
+        url: "/fr/about/"
+        languages: ["fr"]
+      - title: "Produits"
+        url: "/products/"
+        languages: ["fr"]
+      - title: "Recherche"
+        url: "/fr/research/"
+        languages: ["fr"]
+      - title: "Blog"
+        url: "/fr/blog/"
+        languages: ["fr"]
+      - title: "Documentation"
+        url: "/fr/docs/"
+        languages: ["fr"]
+      - title: "Tarifs"
+        url: "/fr/pricing/"
+        languages: ["fr"]
+      - title: "Se connecter"
+        url: "https://app.gratheon.com/account/authenticate/?lang=fr"
+        class: "nav-action nav-action-first"
+        languages: ["fr"]
+      - title: "关于我们"
+        url: "/zh/about/"
+        languages: ["zh"]
+      - title: "产品"
+        url: "/products/"
+        languages: ["zh"]
+      - title: "研究"
+        url: "/zh/research/"
+        languages: ["zh"]
+      - title: "博客"
+        url: "/zh/blog/"
+        languages: ["zh"]
+      - title: "文档"
+        url: "/zh/docs/"
+        languages: ["zh"]
+      - title: "价格"
+        url: "/zh/pricing/"
+        languages: ["zh"]
+      - title: "登录"
+        url: "https://app.gratheon.com/account/authenticate/?lang=zh"
+        class: "nav-action nav-action-first"
+        languages: ["zh"]
+      - title: "हमारे बारे में"
+        url: "/hi/about/"
+        languages: ["hi"]
+      - title: "उत्पाद"
+        url: "/products/"
+        languages: ["hi"]
+      - title: "शोध"
+        url: "/hi/research/"
+        languages: ["hi"]
+      - title: "ब्लॉग"
+        url: "/hi/blog/"
+        languages: ["hi"]
+      - title: "दस्तावेज़"
+        url: "/hi/docs/"
+        languages: ["hi"]
+      - title: "मूल्य"
+        url: "/hi/pricing/"
+        languages: ["hi"]
+      - title: "लॉग इन"
+        url: "https://app.gratheon.com/account/authenticate/?lang=hi"
+        class: "nav-action nav-action-first"
+        languages: ["hi"]
+      - title: "Acerca de"
+        url: "/es/about/"
+        languages: ["es"]
+      - title: "Productos"
+        url: "/products/"
+        languages: ["es"]
+      - title: "Investigación"
+        url: "/es/research/"
+        languages: ["es"]
+      - title: "Blog"
+        url: "/es/blog/"
+        languages: ["es"]
+      - title: "Documentación"
+        url: "/es/docs/"
+        languages: ["es"]
+      - title: "Precios"
+        url: "/es/pricing/"
+        languages: ["es"]
+      - title: "Iniciar sesión"
+        url: "https://app.gratheon.com/account/authenticate/?lang=es"
+        class: "nav-action nav-action-first"
+        languages: ["es"]
+      - title: "من نحن"
+        url: "/ar/about/"
+        languages: ["ar"]
+      - title: "المنتجات"
+        url: "/products/"
+        languages: ["ar"]
+      - title: "الأبحاث"
+        url: "/ar/research/"
+        languages: ["ar"]
+      - title: "المدونة"
+        url: "/ar/blog/"
+        languages: ["ar"]
+      - title: "الوثائق"
+        url: "/ar/docs/"
+        languages: ["ar"]
+      - title: "الأسعار"
+        url: "/ar/pricing/"
+        languages: ["ar"]
+      - title: "تسجيل الدخول"
+        url: "https://app.gratheon.com/account/authenticate/?lang=ar"
+        class: "nav-action nav-action-first"
+        languages: ["ar"]
+      - title: "সম্পর্কে"
+        url: "/bn/about/"
+        languages: ["bn"]
+      - title: "পণ্য"
+        url: "/products/"
+        languages: ["bn"]
+      - title: "গবেষণা"
+        url: "/bn/research/"
+        languages: ["bn"]
+      - title: "ব্লগ"
+        url: "/bn/blog/"
+        languages: ["bn"]
+      - title: "ডকুমেন্টেশন"
+        url: "/bn/docs/"
+        languages: ["bn"]
+      - title: "মূল্য"
+        url: "/bn/pricing/"
+        languages: ["bn"]
+      - title: "লগ ইন"
+        url: "https://app.gratheon.com/account/authenticate/?lang=bn"
+        class: "nav-action nav-action-first"
+        languages: ["bn"]
+      - title: "Sobre"
+        url: "/pt/about/"
+        languages: ["pt"]
+      - title: "Produtos"
+        url: "/products/"
+        languages: ["pt"]
+      - title: "Pesquisa"
+        url: "/pt/research/"
+        languages: ["pt"]
+      - title: "Blog"
+        url: "/pt/blog/"
+        languages: ["pt"]
+      - title: "Documentação"
+        url: "/pt/docs/"
+        languages: ["pt"]
+      - title: "Preços"
+        url: "/pt/pricing/"
+        languages: ["pt"]
+      - title: "Entrar"
+        url: "https://app.gratheon.com/account/authenticate/?lang=pt"
+        class: "nav-action nav-action-first"
+        languages: ["pt"]
+      - title: "概要"
+        url: "/ja/about/"
+        languages: ["ja"]
+      - title: "製品"
+        url: "/products/"
+        languages: ["ja"]
+      - title: "研究"
+        url: "/ja/research/"
+        languages: ["ja"]
+      - title: "ブログ"
+        url: "/ja/blog/"
+        languages: ["ja"]
+      - title: "ドキュメント"
+        url: "/ja/docs/"
+        languages: ["ja"]
+      - title: "料金"
+        url: "/ja/pricing/"
+        languages: ["ja"]
+      - title: "ログイン"
+        url: "https://app.gratheon.com/account/authenticate/?lang=ja"
+        class: "nav-action nav-action-first"
+        languages: ["ja"]
+      - title: "Par mums"
+        url: "/lv/about/"
+        languages: ["lv"]
+      - title: "Produkti"
+        url: "/products/"
+        languages: ["lv"]
+      - title: "Pētījumi"
+        url: "/lv/research/"
+        languages: ["lv"]
+      - title: "Blogs"
+        url: "/lv/blog/"
+        languages: ["lv"]
+      - title: "Dokumentācija"
+        url: "/lv/docs/"
+        languages: ["lv"]
+      - title: "Cenas"
+        url: "/lv/pricing/"
+        languages: ["lv"]
+      - title: "Pieslēgties"
+        url: "https://app.gratheon.com/account/authenticate/?lang=lv"
+        class: "nav-action nav-action-first"
+        languages: ["lv"]
+      - title: "Apie mus"
+        url: "/lt/about/"
+        languages: ["lt"]
+      - title: "Produktai"
+        url: "/products/"
+        languages: ["lt"]
+      - title: "Tyrimai"
+        url: "/lt/research/"
+        languages: ["lt"]
+      - title: "Tinklaraštis"
+        url: "/lt/blog/"
+        languages: ["lt"]
+      - title: "Dokumentacija"
+        url: "/lt/docs/"
+        languages: ["lt"]
+      - title: "Kainos"
+        url: "/lt/pricing/"
+        languages: ["lt"]
+      - title: "Prisijungti"
+        url: "https://app.gratheon.com/account/authenticate/?lang=lt"
+        class: "nav-action nav-action-first"
+        languages: ["lt"]
+      - title: "Rólunk"
+        url: "/hu/about/"
+        languages: ["hu"]
+      - title: "Termékek"
+        url: "/products/"
+        languages: ["hu"]
+      - title: "Kutatás"
+        url: "/hu/research/"
+        languages: ["hu"]
+      - title: "Blog"
+        url: "/hu/blog/"
+        languages: ["hu"]
+      - title: "Dokumentáció"
+        url: "/hu/docs/"
+        languages: ["hu"]
+      - title: "Árak"
+        url: "/hu/pricing/"
+        languages: ["hu"]
+      - title: "Bejelentkezés"
+        url: "https://app.gratheon.com/account/authenticate/?lang=hu"
+        class: "nav-action nav-action-first"
+        languages: ["hu"]
+      - title: "Про нас"
+        url: "/uk/about/"
+        languages: ["uk"]
+      - title: "Продукти"
+        url: "/products/"
+        languages: ["uk"]
+      - title: "Дослідження"
+        url: "/uk/research/"
+        languages: ["uk"]
+      - title: "Блог"
+        url: "/uk/blog/"
+        languages: ["uk"]
+      - title: "Документація"
+        url: "/uk/docs/"
+        languages: ["uk"]
+      - title: "Тарифи"
+        url: "/uk/pricing/"
+        languages: ["uk"]
+      - title: "Увійти"
+        url: "https://app.gratheon.com/account/authenticate/?lang=uk"
+        class: "nav-action nav-action-first"
+        languages: ["uk"]
+      - title: "Chi siamo"
+        url: "/it/about/"
+        languages: ["it"]
+      - title: "Prodotti"
+        url: "/products/"
+        languages: ["it"]
+      - title: "Ricerca"
+        url: "/it/research/"
+        languages: ["it"]
+      - title: "Blog"
+        url: "/it/blog/"
+        languages: ["it"]
+      - title: "Documentazione"
+        url: "/it/docs/"
+        languages: ["it"]
+      - title: "Prezzi"
+        url: "/it/pricing/"
+        languages: ["it"]
+      - title: "Accedi"
+        url: "https://app.gratheon.com/account/authenticate/?lang=it"
+        class: "nav-action nav-action-first"
+        languages: ["it"]
+      - title: "Despre"
+        url: "/ro/about/"
+        languages: ["ro"]
+      - title: "Produse"
+        url: "/products/"
+        languages: ["ro"]
+      - title: "Cercetare"
+        url: "/ro/research/"
+        languages: ["ro"]
+      - title: "Blog"
+        url: "/ro/blog/"
+        languages: ["ro"]
+      - title: "Documentație"
+        url: "/ro/docs/"
+        languages: ["ro"]
+      - title: "Prețuri"
+        url: "/ro/pricing/"
+        languages: ["ro"]
+      - title: "Autentificare"
+        url: "https://app.gratheon.com/account/authenticate/?lang=ro"
+        class: "nav-action nav-action-first"
+        languages: ["ro"]
     languages:
       en:
         - title: "About"
