@@ -209,66 +209,6 @@ navigation:
       - title: "Produse"
         url: "/products/"
         languages: ["ro"]
-      - title: "Docs"
-        url: "/docs/"
-        languages: ["en"]
-      - title: "Документация"
-        url: "/ru/docs/"
-        languages: ["ru"]
-      - title: "Dokumendid"
-        url: "/et/docs/"
-        languages: ["et"]
-      - title: "Belgeler"
-        url: "/tr/docs/"
-        languages: ["tr"]
-      - title: "Dokumentacja"
-        url: "/pl/docs/"
-        languages: ["pl"]
-      - title: "Dokumentation"
-        url: "/de/docs/"
-        languages: ["de"]
-      - title: "Documentation"
-        url: "/fr/docs/"
-        languages: ["fr"]
-      - title: "文档"
-        url: "/zh/docs/"
-        languages: ["zh"]
-      - title: "दस्तावेज़"
-        url: "/hi/docs/"
-        languages: ["hi"]
-      - title: "Documentación"
-        url: "/es/docs/"
-        languages: ["es"]
-      - title: "الوثائق"
-        url: "/ar/docs/"
-        languages: ["ar"]
-      - title: "ডকুমেন্টেশন"
-        url: "/bn/docs/"
-        languages: ["bn"]
-      - title: "Documentação"
-        url: "/pt/docs/"
-        languages: ["pt"]
-      - title: "ドキュメント"
-        url: "/ja/docs/"
-        languages: ["ja"]
-      - title: "Dokumentācija"
-        url: "/lv/docs/"
-        languages: ["lv"]
-      - title: "Dokumentacija"
-        url: "/lt/docs/"
-        languages: ["lt"]
-      - title: "Dokumentáció"
-        url: "/hu/docs/"
-        languages: ["hu"]
-      - title: "Документація"
-        url: "/uk/docs/"
-        languages: ["uk"]
-      - title: "Documentazione"
-        url: "/it/docs/"
-        languages: ["it"]
-      - title: "Documentație"
-        url: "/ro/docs/"
-        languages: ["ro"]
       - title: "Research"
         url: "/research/"
         languages: ["en"]
@@ -388,6 +328,67 @@ navigation:
         languages: ["it"]
       - title: "Blog"
         url: "/ro/blog/"
+        languages: ["ro"]
+
+      - title: "Docs"
+        url: "/docs/"
+        languages: ["en"]
+      - title: "Документация"
+        url: "/ru/docs/"
+        languages: ["ru"]
+      - title: "Dokumendid"
+        url: "/et/docs/"
+        languages: ["et"]
+      - title: "Belgeler"
+        url: "/tr/docs/"
+        languages: ["tr"]
+      - title: "Dokumentacja"
+        url: "/pl/docs/"
+        languages: ["pl"]
+      - title: "Dokumentation"
+        url: "/de/docs/"
+        languages: ["de"]
+      - title: "Documentation"
+        url: "/fr/docs/"
+        languages: ["fr"]
+      - title: "文档"
+        url: "/zh/docs/"
+        languages: ["zh"]
+      - title: "दस्तावेज़"
+        url: "/hi/docs/"
+        languages: ["hi"]
+      - title: "Documentación"
+        url: "/es/docs/"
+        languages: ["es"]
+      - title: "الوثائق"
+        url: "/ar/docs/"
+        languages: ["ar"]
+      - title: "ডকুমেন্টেশন"
+        url: "/bn/docs/"
+        languages: ["bn"]
+      - title: "Documentação"
+        url: "/pt/docs/"
+        languages: ["pt"]
+      - title: "ドキュメント"
+        url: "/ja/docs/"
+        languages: ["ja"]
+      - title: "Dokumentācija"
+        url: "/lv/docs/"
+        languages: ["lv"]
+      - title: "Dokumentacija"
+        url: "/lt/docs/"
+        languages: ["lt"]
+      - title: "Dokumentáció"
+        url: "/hu/docs/"
+        languages: ["hu"]
+      - title: "Документація"
+        url: "/uk/docs/"
+        languages: ["uk"]
+      - title: "Documentazione"
+        url: "/it/docs/"
+        languages: ["it"]
+      - title: "Documentație"
+        url: "/ro/docs/"
         languages: ["ro"]
       - title: "Pricing"
         url: "/pricing/"
