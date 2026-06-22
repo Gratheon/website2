@@ -82,7 +82,7 @@ showChildren: true
     <div class="research-highlight-grid">
       <article class="research-highlight-card">
         <span class="research-chip">2026 · Robotics</span>
-        <h3><a href="/research/papers/comb-common-open-modular-robotic-platform-for-bees/">COMB: Common Open Modular robotic platform for Bees</a></h3>
+        <h3><a href="/research/papers/comb/">COMB: Common Open Modular robotic platform for Bees</a></h3>
         <p>Recent open modular robotics work from University of Konstanz and Freie Universität Berlin.</p>
       </article>
       <article class="research-highlight-card">

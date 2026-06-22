@@ -156,7 +156,8 @@
   {{template "gratheon_header" .}}
 
   <main class="knowledge-shell">
-    <section class="knowledge-hero" aria-labelledby="knowledge-title">
+    {{ $isProductFeaturePage := and (eq .Page.Layout "products") (ge (len .Breadcrumbs) 5) }}
+    <section class="knowledge-hero{{if $isProductFeaturePage}} knowledge-hero--text-only{{end}}" aria-labelledby="knowledge-title">
       <div class="knowledge-hero-copy">
         {{template "knowledge_breadcrumbs" .}}
         <p class="knowledge-eyebrow">
@@ -197,6 +198,7 @@
           {{end}}
         </div>
       </div>
+      {{if not $isProductFeaturePage}}
       <div class="knowledge-hero-media" aria-hidden="true">
         {{if eq .Page.Layout "products"}}
         <figure class="knowledge-visual knowledge-visual--products">
@@ -208,8 +210,8 @@
         </figure>
         {{end}}
       </div>
+      {{end}}
     </section>
-
     {{if ne .Page.Layout "products"}}
     {{if and (eq .Page.Layout "research") (eq .Page.Language .Site.I18n.Default) (eq .Page.URL "/research/")}}
       {{template "research_assets" .}}
