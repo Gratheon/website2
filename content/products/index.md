@@ -63,7 +63,7 @@ layout: products
 </div>
 </section>
 
-<section>
+<section class="product-family-section">
 <h2>Product family</h2>
 <p class="product-lead">Each product can stand alone, but the real value is in the shared data model: sensors and cameras collect signals, the app stores and explains them, and automation gradually reduces physical intervention.</p>
 

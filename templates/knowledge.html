@@ -229,21 +229,20 @@
   // Keep the knowledge-map section labels navigable; the shared sidebar script
   // otherwise turns sidebar section links into expand/collapse toggles.
   document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('.knowledge-map-nav .sidebar-section > .sidebar-section-head > a').forEach(function(link) {
-      link.addEventListener('click', function(event) {
-        if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0) return;
-        event.stopImmediatePropagation();
-      }, true);
-    });
-
     var mapSection = document.querySelector('.knowledge-page-products .knowledge-map');
     var webShowcase = document.querySelector('.knowledge-page-products .product-web-app-showcase');
-    if (mapSection && webShowcase && mapSection.previousElementSibling !== webShowcase) {
-      webShowcase.insertAdjacentElement('afterend', mapSection);
-    }
-
+    var productFamilySection = document.querySelector('.knowledge-page-products .product-family-section');
     var productsMap = document.querySelector('.knowledge-page-products .knowledge-map-nav--split .sidebar-menu');
     if (!productsMap) return;
+
+    // Keep knowledge-map section labels navigable even after the products map is
+    // split into separate web-app and hardware maps below.
+    document.addEventListener('click', function(event) {
+      var link = event.target.closest('.knowledge-map-nav .sidebar-section > .sidebar-section-head > a');
+      if (!link) return;
+      if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0) return;
+      event.stopImmediatePropagation();
+    }, true);
 
     function directLink(item) {
       return item && item.querySelector(':scope > .sidebar-section-head > a, :scope > a');
@@ -329,6 +328,34 @@
       return normalizedPath(directLink(item)).endsWith('/products/web_app/');
     });
 
+    // WHY: web-app feature details should be read directly after the web-app
+    // showcase, while hardware product details belong after the Product family
+    // overview. Split the generated sidebar map into two placed sections.
+    var hardwareMapSection = null;
+    var hardwareProductsMap = productsMap;
+    if (mapSection && productFamilySection) {
+      hardwareMapSection = mapSection.cloneNode(true);
+      hardwareMapSection.classList.add('knowledge-map--hardware-products');
+      var hardwareKicker = hardwareMapSection.querySelector('.knowledge-map-kicker');
+      var hardwareHeading = hardwareMapSection.querySelector('.knowledge-map-intro h2');
+      if (hardwareKicker) {
+        hardwareKicker.textContent = document.documentElement.lang === 'et' ? 'Riistvaratooted' : 'Hardware product details';
+      }
+      if (hardwareHeading) {
+        hardwareHeading.textContent = document.documentElement.lang === 'et' ? 'Vaata tootepere seadmete detaile' : 'Explore hardware product details';
+      }
+      hardwareProductsMap = hardwareMapSection.querySelector('.knowledge-map-nav--split .sidebar-menu');
+      hardwareProductsMap.classList.add('knowledge-product-submenu-map');
+      hardwareProductsMap.textContent = '';
+
+      if (webShowcase) {
+        webShowcase.insertAdjacentElement('afterend', mapSection);
+      }
+      productFamilySection.insertAdjacentElement('afterend', hardwareMapSection);
+    } else if (mapSection && webShowcase && mapSection.previousElementSibling !== webShowcase) {
+      webShowcase.insertAdjacentElement('afterend', mapSection);
+    }
+
     if (webAppCard) {
       webAppCard.classList.add('knowledge-map-product-card', 'knowledge-map-web-app-card');
       productsMap.appendChild(webAppCard);
@@ -356,13 +383,13 @@
         overviewCard.appendChild(overviewList);
       }
 
-      productsMap.appendChild(overviewCard);
+      hardwareProductsMap.appendChild(overviewCard);
     }
 
     productSections.forEach(function(item) {
       if (item === webAppCard) return;
       item.classList.add('knowledge-map-product-card');
-      productsMap.appendChild(item);
+      hardwareProductsMap.appendChild(item);
     });
   });
   </script>
