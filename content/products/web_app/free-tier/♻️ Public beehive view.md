@@ -8,7 +8,7 @@ For [Growth loops](https://www.notion.so/Growth-loops-ee0adfb601b5474393fc412a7c
 - Create new view that does not need user to be logged in, similar to Login view
 - Include info in there:
     - frames photos
-    - location if allowed by [Apiary position sharing](https://www.notion.so/Apiary-position-sharing-d78e6d14915b49efbb8d8cba331d3542?pvs=21)
+    - location if allowed by [Apiary position sharing](../💡%20future%20ideas/hobbyist%20tier%20ideas%20💡/♻️%20Apiary%20position%20sharing.md)
     - video stream if its available
 
 

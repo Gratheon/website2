@@ -35,7 +35,7 @@ Out of all beekeeping issues, this product is helping with these:
 
 # Vision
 
-We’ll use an improvement over [R**obotic Beehive**](https://www.notion.so/Robotic-Beehive-fd9559a2950b44bc8291972299ced18e?pvs=21) but have it **movable between hives**. Design is not set yet and its up for the team to decide on the architecture
+We’ll use an improvement over [Robotic Beehive](../robotic_beehive/robotic_beehive.md) but have it **movable between hives**. Design is not set yet and its up for the team to decide on the architecture
 
 ![](../../about/img/18e526470a518ddea9ae6e8c8154434f.What-is-an-apiary-1024x675.webp)
 

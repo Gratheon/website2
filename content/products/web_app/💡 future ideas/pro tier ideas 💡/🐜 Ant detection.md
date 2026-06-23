@@ -13,10 +13,10 @@ Typical ants rarely go inside of the hive, only if its abandoned or bee colony i
 
 ## AC
 
-- collect [Datasets](https://www.notion.so/Datasets-d3ca2719238d4c6b80226c58ea38fb50?pvs=21) for ants, maybe use iNaturalist? May need different ant types
+- collect [Datasets](../../../../research/Datasets.md) for ants, maybe use iNaturalist? May need different ant types
 - create (or use existing?) a model that can detect ants based on
-    - a photo. This assumes ants are crawling on the beehive frames inside a hive, likely feeding on honey leftovers. This assumes either photo was taken manually, or, more likely - it came from [R**obotic Beehive**](https://www.notion.so/Robotic-Beehive-fd9559a2950b44bc8291972299ced18e?pvs=21) as part of [Full hive inspection](https://www.notion.so/Full-hive-inspection-7d0f89c8a9de4ab3a8eb9e516b7f7172?pvs=21)
-    - a video. This assumes we run [Entrance Observer](https://www.notion.so/Entrance-Observer-b0319799ab7744dc928c08119de4fc43?pvs=21) at the entrance and ants pass through it
+    - a photo. This assumes ants are crawling on the beehive frames inside a hive, likely feeding on honey leftovers. This assumes either photo was taken manually, or, more likely - it came from [Robotic Beehive](../../../robotic_beehive/robotic_beehive.md) as part of [Full hive inspection](../../../robotic_beehive/todo/📸%20Full%20hive%20inspection.md)
+    - a video. This assumes we run [Entrance Observer](../../../entrance_observer/entrance_observer.md) at the entrance and ants pass through it
 - publish a github repo with a model
 - ideally, model should expose HTTP interface for image and/or video upload
     - you can use [https://github.com/Gratheon/models-bee-detector/blob/master/server.py](https://github.com/Gratheon/models-bee-detector/blob/master/server.py) as example
@@ -24,4 +24,4 @@ Typical ants rarely go inside of the hive, only if its abandoned or bee colony i
 ## Bonus
 
 - integrate model with image-splitter model that does frame analysis [https://github.com/Gratheon/image-splitter](https://github.com/Gratheon/image-splitter)
-- Once we have ants detected in beehive frames, we should alert user that hey, colony is too weak or is infested → [Alerts](https://www.notion.so/Alerts-8b65dea8fc164a7f91b0a76fa0948189?pvs=21)
+- Once we have ants detected in beehive frames, we should alert user that hey, colony is too weak or is infested → [Alerts](../../flexible-tier/alerts.md)

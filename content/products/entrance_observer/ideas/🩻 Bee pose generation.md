@@ -53,7 +53,7 @@ Implements deep learning pose estimation models to detect and track bee body par
 ### 📚 Resources & References
 - [Gratheon beepose models repository](https://github.com/Gratheon/models-beepose)
 - [DeepBees morphometric analysis paper](https://openaccess.thecvf.com/content_ICCVW_2019/papers/CVWC/Marstaller_DeepBees_-_Building_and_Scaling_Convolutional_Neuronal_Nets_For_Fast_ICCVW_2019_paper.pdf)
-- [LabelBee platform pose analysis features](https://www.notion.so/LabelBee-a-web-platform-for-large-scale-semi-automated-analysis-of-honeybee-behavior-from-video-d4e940ed7aee48a6821507ceaa43e603?pvs=21)
+- [LabelBee platform pose analysis features](../../../research/papers/⭐️%20LabelBee%20a%20web%20platform%20for%20large-scale%20semi-automated%20analysis%20of%20honeybee%20behavior%20from%20video.md)
 - [Multiple Animals Tracking using Part Affinity Fields](https://homepages.inf.ed.ac.uk/rbf/VAIB18PAPERS/vaib18rodriguez.pdf)
 
 ### 💬 Notes

@@ -1,4 +1,4 @@
-Similar to other integreations like [Google-calendar integration](https://www.notion.so/Google-calendar-integration-a5b2322fc3ba4e73a0ee14bf968ffcaf?pvs=21), here the idea is to allow user to register a URL (webhook) that we will deliver some event to. For example a new hive added, a frame analyzed etc.
+Similar to other integreations like [Google-calendar integration](📅%20Google-calendar%20integration.md), here the idea is to allow user to register a URL (webhook) that we will deliver some event to. For example a new hive added, a frame analyzed etc.
 
 Here are some of the ideas for the UX, copied from Pipedrive:
 

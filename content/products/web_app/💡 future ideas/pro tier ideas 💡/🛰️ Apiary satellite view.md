@@ -1,4 +1,4 @@
-See also [Pollination optimization with hive placement recommendation](https://www.notion.so/Pollination-optimization-with-hive-placement-recommendation-c824e0e6b0c441c2a7815057ef0958d5?pvs=21)
+See also [Pollination optimization with hive placement recommendation](🌻%20Pollination%20optimization%20with%20hive%20placement%20recommendation.md)
 
 ![](../../../../about/img/Screenshot%202023-11-02%20at%2012.09.17.png)
 [beehero.io](http://beehero.io) hive placement optimization

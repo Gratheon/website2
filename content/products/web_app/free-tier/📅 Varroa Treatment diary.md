@@ -2,7 +2,7 @@ For anti-varroa treatment, it would be nice to have ability to mark last time a 
 
 - set which treatment was used
 - set when next treatment is needed
-- tied to [Alerts](https://www.notion.so/Alerts-8b65dea8fc164a7f91b0a76fa0948189?pvs=21) to remind of something
+- tied to [Alerts](../flexible-tier/alerts.md) to remind of something
 
 Treatment:
 

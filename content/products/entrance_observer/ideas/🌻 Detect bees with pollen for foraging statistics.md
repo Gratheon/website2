@@ -51,7 +51,7 @@ Uses computer vision to identify distinctive pollen loads (corbiculae) on bee le
 - [🩻 Bee pose generation](🩻%20Bee%20pose%20generation.md)
 
 ### 📚 Resources & References
-- [LabelBee platform pollen detection examples](https://www.notion.so/LabelBee-a-web-platform-for-large-scale-semi-automated-analysis-of-honeybee-behavior-from-video-d4e940ed7aee48a6821507ceaa43e603?pvs=21)
+- [LabelBee platform pollen detection examples](../../../research/papers/⭐️%20LabelBee%20a%20web%20platform%20for%20large-scale%20semi-automated%20analysis%20of%20honeybee%20behavior%20from%20video.md)
 - Research on corbiculae detection methods
 - Computer vision approaches for small object detection
 

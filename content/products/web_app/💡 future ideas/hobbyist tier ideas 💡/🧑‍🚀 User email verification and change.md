@@ -16,7 +16,7 @@ For user management, we need email verification to prevent users registering wit
     - send email verification URL on user registration
     - update that user was activated once user visits the link
 - In user profile, show if user email was verified or not
-- If user email was not verified, he should not receive any alerts to that email, see [Alerts](https://www.notion.so/Alerts-8b65dea8fc164a7f91b0a76fa0948189?pvs=21)
+- If user email was not verified, he should not receive any alerts to that email, see [Alerts](../../flexible-tier/alerts.md)
 
 ### Email change
 

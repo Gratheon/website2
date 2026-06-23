@@ -3,9 +3,9 @@ layout: products
 status: complete
 ---
 
-So the goal of this set of features is to allow beekeeper to mark colony as having a treatment (sugar syrup, tymol candy etc.). This is very similar to [Varroa Treatment diary](https://www.notion.so/Varroa-Treatment-diary-90030bfde0c749ce922d43a2d46c273a?pvs=21).
+So the goal of this set of features is to allow beekeeper to mark colony as having a treatment (sugar syrup, tymol candy etc.). This is very similar to [Varroa Treatment diary](📅%20Varroa%20Treatment%20diary.md).
 
-This has separate task for [Automatic sugar syrup feeder](https://www.notion.so/Automatic-sugar-syrup-feeder-76aed0471afd4f9fa41c10a6b557c451?pvs=21)
+This has separate task for [Automatic sugar syrup feeder](../../robotic_beehive/ideas/🍭%20Automatic%20sugar%20syrup%20feeder.md)
 
 ## User story - overwintering
 
@@ -24,7 +24,7 @@ This has separate task for [Automatic sugar syrup feeder](https://www.notion.so/
     
     ![](../../../about/img/Screenshot%202024-07-19%20at%2001.06.39.png)
     
-- I get a reminder [Alerts](https://www.notion.so/Alerts-8b65dea8fc164a7f91b0a76fa0948189?pvs=21) if I added less than 10L of sugar syrup in september and 5 days have passed since last feeding (to remind to feed fully)
+- I get a reminder [Alerts](../flexible-tier/alerts.md) if I added less than 10L of sugar syrup in september and 5 days have passed since last feeding (to remind to feed fully)
     
 
 ## User story - starving colony

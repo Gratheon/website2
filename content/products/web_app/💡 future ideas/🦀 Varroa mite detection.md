@@ -20,7 +20,7 @@ Varroa mites are the biggest danger to colonies today
 
 ## App integration
 
-- Prepare the data. For this we need to cut regions from the original frame where we detect bees - see [Worker bee detection](https://www.notion.so/Worker-bee-detection-3927d59c9f0e465db0ec11b7832ebd18?pvs=21)
+- Prepare the data. For this we need to cut regions from the original frame where we detect bees - see [Worker bee detection](../hobbyist-tier/🐝%20Worker%20bee%20detection.md)
 - use AI model like yolo, get weights to detect and count mites on individual bees
 - return absolute number of mites found in an image
 - add http API to this model

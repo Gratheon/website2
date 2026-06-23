@@ -1,6 +1,6 @@
 ## Why
 
-To have [Alerts](https://www.notion.so/Alerts-8b65dea8fc164a7f91b0a76fa0948189?pvs=21) we need to automatically and continuously analyze measured data of IoT sensors. Based on such timeseries data, we need to alert user in case of anomalies.
+To have [Alerts](../../flexible-tier/alerts.md) we need to automatically and continuously analyze measured data of IoT sensors. Based on such timeseries data, we need to alert user in case of anomalies.
 
 ## Related work
 

@@ -8,7 +8,7 @@ status: complete
 
 ## User story
 
-- User creates an apiary - [Apiary management](https://www.notion.so/Apiary-management-7e554ea58e604e588b50646821467d34?pvs=21)
+- User creates an apiary - [Apiary management](../../free-tier/apiary-management.md)
 - User enters his location on a map
 - A graph of local weather report/graph for the next week (7 days) prediction is shown
     - temperature
@@ -28,7 +28,7 @@ status: complete
 - Need to find some existing public source of data for weather info
 - Note that we already have [https://github.com/Gratheon/weather](https://github.com/Gratheon/weather) service, so best to improve that
 - If there is a risk, generate an weather alert for the user to be aware of
-- Main feature under [Alerts](https://www.notion.so/Alerts-8b65dea8fc164a7f91b0a76fa0948189?pvs=21)
+- Main feature under [Alerts](../../flexible-tier/alerts.md)
     
 ## Suggested solution
 

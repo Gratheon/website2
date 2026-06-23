@@ -15,7 +15,7 @@ status: complete
     - TIME of the inspection is taken from the oldest frame **photo creation time**, not current time
     - Thus an inspection that is 2 week old is created
 - Frame photos are **unlinked/cleared** along with detected objects
-- Frame cell statistics is cleared ([Honeycomb cell detection & management](https://www.notion.so/Honeycomb-cell-detection-management-e9ff03128cdb489293737b8a4c1e7098?pvs=21))
+- Frame cell statistics is cleared ([Honeycomb cell detection & management](../starter-tier/🐝%20Honeycomb%20cell%20detection%20%26%20management.md))
 - Frames become empty and user can upload new photos
 - A message `Inspection created` is shown
 - Inspection timeline link is shown near the menu with amount of inspections

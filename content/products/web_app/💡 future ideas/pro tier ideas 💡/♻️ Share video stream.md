@@ -4,7 +4,7 @@ Prerequisites - user needs to configure hive sharing first.
 
 The flow is:
 
-- user has [Entrance Observer](https://www.notion.so/Entrance-Observer-b0319799ab7744dc928c08119de4fc43?pvs=21) device that streams the video to the app
+- user has [Entrance Observer](../../../entrance_observer/entrance_observer.md) device that streams the video to the app
 - user can configure device to in addition also stream to a portal of his choice
     - [twitch.tv](http://twitch.tv)
     - youtube

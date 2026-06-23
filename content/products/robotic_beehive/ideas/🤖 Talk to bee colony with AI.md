@@ -2,9 +2,9 @@ with RAG
 
 ## Idea
 
-This is a continuation of work done by [Beekeeping advice with LLM](https://www.notion.so/Beekeeping-advice-with-LLM-085f16137ed14781be25379238204037?pvs=21).
+This is a continuation of work done by [Beekeeping advice with LLM](../../web_app/starter-tier/🤖%20Beekeeping%20advice%20with%20LLM.md).
 
-Next step of this feature is [Audio-interface (to talk with bees)](https://www.notion.so/Audio-interface-to-talk-with-bees-14ba260d671d4a05970b7b1279b89f09?pvs=21)
+Next step of this feature is [Audio-interface (to talk with bees)](🔊%20Audio-interface%20to%20talk%20to%20bees.md)
 
 We want here to not only give advice based on hive state, but also allow user to do question-and-answers. For such querying we need to make LLM smarter by also building own knowledge base.
 

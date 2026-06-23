@@ -22,8 +22,8 @@ We want to build hornet detector AI model watching the hive entrance and alert t
 
 ## Alerts
 
-- We need to report detections to [Alerts](https://www.notion.so/Alerts-8b65dea8fc164a7f91b0a76fa0948189?pvs=21)
-- We also want to affect [Close mechanised hive entrance in case of hornet attack](https://www.notion.so/Close-mechanised-hive-entrance-in-case-of-hornet-attack-c666e28eefdd45d780c9540746ef9903?pvs=21)
+- We need to report detections to [Alerts](../../web_app/flexible-tier/alerts.md)
+- We also want to affect [Close mechanised hive entrance in case of hornet attack](../../robotic_beehive/ideas/🛑%20Close%20mechanized%20hive%20entrance%20in%20case%20of%20hornet%20attack.md)
 
 ## Relevant links
 

@@ -1,4 +1,4 @@
-To help beekeepers do [Varroa Treatment diary](https://www.notion.so/Varroa-Treatment-diary-90030bfde0c749ce922d43a2d46c273a?pvs=21) and plan their events without the need of using our app all the time, we should integrate popular google calendar to synchronize events
+To help beekeepers do [Varroa Treatment diary](../../free-tier/📅%20Varroa%20Treatment%20diary.md) and plan their events without the need of using our app all the time, we should integrate popular google calendar to synchronize events
 
 ## User story: (dis-) connecting service
 
@@ -32,7 +32,7 @@ An example dialog to enter custom email for calendar sync
 
 ## User story: event sync
 
-- When user **adds** a new event in [Varroa Treatment diary](https://www.notion.so/Varroa-Treatment-diary-90030bfde0c749ce922d43a2d46c273a?pvs=21) or [Calendar view (of events, treatments, alerts)](https://www.notion.so/Calendar-view-of-events-treatments-alerts-49f6c9ffde1843099136db7333591f26?pvs=21), we should synchronize this event one way → google calendar
+- When user **adds** a new event in [Varroa Treatment diary](../../free-tier/📅%20Varroa%20Treatment%20diary.md) or [Calendar view (of events, treatments, alerts)](📅%20Calendar%20view.md), we should synchronize this event one way → google calendar
 - When user **removes** event that was synchronized, we should remove it → from google calendar
 
 ### Two-way sync

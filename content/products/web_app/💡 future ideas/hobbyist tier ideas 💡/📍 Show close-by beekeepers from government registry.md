@@ -1,4 +1,4 @@
-This feature is very similar to [Apiary position sharing](https://www.notion.so/Apiary-position-sharing-d78e6d14915b49efbb8d8cba331d3542?pvs=21). But instead of using data of our registered users, we want to import and synchronize data from governmental registries, so that users do not need to go outside of the app but can still see relevant information
+This feature is very similar to [Apiary position sharing](♻️%20Apiary%20position%20sharing.md). But instead of using data of our registered users, we want to import and synchronize data from governmental registries, so that users do not need to go outside of the app but can still see relevant information
 
 AC
 

@@ -1,4 +1,4 @@
-- This may be useful for [Industrial beekeepers](https://www.notion.so/Industrial-beekeepers-cf0c8af087cb456dbb72058b88a42db9?pvs=21) with 100 hives that don’t use numeric system or don’t want to search for it in the app.
+- This may be useful for [Industrial beekeepers](../../../about/company/clients/👨🏻‍🚒%20Industrial%20beekeepers.md) with 100 hives that don’t use numeric system or don’t want to search for it in the app.
 - For beekeepers that want to print QR code in case beekeeper wants to put it on a honey 🍯 jar
 
 ### Suggested solution

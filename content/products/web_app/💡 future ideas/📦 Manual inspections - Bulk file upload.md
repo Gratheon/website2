@@ -1,7 +1,7 @@
 ## User story - Adding files
 
 - User opens hive section view
-- User sees bulk upload div/block/button similar to [Frame side photo upload](https://www.notion.so/Frame-side-photo-upload-c9d3df6f053e41bbb7b8414b7c2bb397?pvs=21)
+- User sees bulk upload div/block/button similar to [Frame side photo upload](../../../docs/web-app/features/frame-photo-upload.md)
 - User drags 12 files from his desktop
     - if user selected more files than frame sides - ignore them, but do add a warning message on top with a list of filenames that were ignored.
         - If ignored list is > 3, add `...` at the end and ignore the rest.

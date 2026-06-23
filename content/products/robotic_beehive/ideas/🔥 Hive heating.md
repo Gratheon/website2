@@ -3,9 +3,9 @@ Idea is to have hive heated from the bottom to combat varroa. For winter time th
 ## Suggested solution
 
 - Create a microservice (with AGPL license) that would run on the edge device
-    - use one of the standard languages - [Tech stack, conventions, environments](https://www.notion.so/Tech-stack-conventions-environments-8fdfa92805414c099f3e286cc2cc477f?pvs=21)
+    - use one of the standard languages - [Tech stack, conventions, environments](../../../docs/web-app/Tech%20stack,%20conventions,%20environments.md)
 - Measure temperature in close-to-realtime
-    - Send data to [Telemetry API](https://www.notion.so/Telemetry-API-5d60632841534620ba56d1bb296af98b?pvs=21) at least every 10 min
+    - Send data to [Telemetry API](../../scales/features/📈%20Telemetry%20API.md) at least every 10 min
     - Store data in-memory
 - Heating controll (probably same microservice, just different thread)
     - poll temperature
@@ -14,5 +14,5 @@ Idea is to have hive heated from the bottom to combat varroa. For winter time th
 - Min/max temperature configuration
     - Allow user to set min/max heating temperature
     - Allow user to turn off heater entirely
-- Decide if [Ventilation control](https://www.notion.so/Ventilation-control-023a9bf9e44548809132c57557c2e7f4?pvs=21) feature would be a separate service or part of the same
+- Decide if [Ventilation control](🚁%20Ventilation%20control.md) feature would be a separate service or part of the same
     - keep hive internals at constant 32-35.5 C in case of too-warm

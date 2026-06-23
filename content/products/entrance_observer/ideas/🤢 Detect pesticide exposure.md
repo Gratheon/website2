@@ -15,4 +15,4 @@ On colony level:
 - dead larvae
 - only young (fyzzy) bees left
 
-Depends on [Bee pose + morphometric model](https://www.notion.so/Bee-pose-morphometric-model-c47578645e594e2a97aa7daa98bbf297?pvs=21)
+Depends on [Bee pose + morphometric model](🐝%20Bee%20pose%20-%20morphometric%20model.md)

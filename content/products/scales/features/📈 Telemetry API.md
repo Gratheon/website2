@@ -7,16 +7,16 @@ We want our devices as well as customer’s own hack-projects to be able to stre
 
 1. beekeepers can track their apiaries in [Analytics with grafana](https://www.notion.so/Analytics-with-grafana-044239bdf92544a0a1ed95258d812e04?pvs=21) dashboards
 2. beekeepers can correlate data to get insights
-3. we can generate [Alerts](https://www.notion.so/Alerts-8b65dea8fc164a7f91b0a76fa0948189?pvs=21)
+3. we can generate [Alerts](../../web_app/flexible-tier/alerts.md)
 
 ![](../../../about/img/Screenshot%202024-05-25%20at%2020.03.49.png)
 
-[Evaluation of the honey bee colonies weight gain during the intensive foraging period](https://www.notion.so/Evaluation-of-the-honey-bee-colonies-weight-gain-during-the-intensive-foraging-period-7aa3ad64bf914a0896038255f150f392?pvs=21)
+[Evaluation of the honey bee colonies weight gain during the intensive foraging period](../../../research/papers/Evaluation%20of%20the%20honey%20bee%20colonies%20weight%20gain%20during%20theintensive%20foraging%20period.md)
 
-## Low volume metrics that [Entrance Observer](https://www.notion.so/Entrance-Observer-b0319799ab7744dc928c08119de4fc43?pvs=21) can send to [Web-app](https://www.notion.so/Web-app-2937ed264e1d434a8664caa4bc40978e?pvs=21)
+## Low volume metrics that [Entrance Observer](../../entrance_observer/entrance_observer.md) can send to [Web-app](../../web_app/web_app.md)
 
 - temperature (min interval - 10 min)
-- humidity (min interval - 10 min) - see [Humidity monitoring](https://www.notion.so/Humidity-monitoring-1daa7dc3356048b8a807e7b099bc70f4?pvs=21)
+- humidity (min interval - 10 min) - see [Humidity monitoring](../ideas/💧%20Internal%20humidity%20monitoring.md)
 - weight (min interval - 10 min) → [[Beep.nl](http://Beep.nl) weight telemetry integration]([https://www.notion.so/Beep-nl-weight-telemetry-integration-a72ed2ce25004a3c853bb41fa08abc48?pvs=21](https://www.notion.so/Beep-nl-weight-telemetry-integration-a72ed2ce25004a3c853bb41fa08abc48?pvs=21))
 - bee counts at the hive entrance (min interval - 10 sec)
     - how many worker **bees** have gone in and out
@@ -24,10 +24,10 @@ We want our devices as well as customer’s own hack-projects to be able to stre
         - how many of them had pollen
     - how many guard bees are detected
     - how many drone bees are detected
-    - how many queen bees are detected → [Detect queen mating from entrance video](https://www.notion.so/Detect-queen-mating-from-entrance-video-d5dc2215eabf4d8986a90e041c992cf4?pvs=21)
-- hornet count (min interval 10 sec) → [Hornet attack detection](https://www.notion.so/Hornet-attack-detection-8dde7e03f80547fa9156ac1c16cf52af?pvs=21)
+    - how many queen bees are detected → [Detect queen mating from entrance video](../../entrance_observer/ideas/👑%20Detect%20queen%20mating%20from%20entrance%20video.md)
+- hornet count (min interval 10 sec) → [Hornet attack detection](../../entrance_observer/todo/🚁%20Hornet%20attack%20detection.md)
 - audio noise average volume (min interval - 1 sec)
-    - this should not be confused with actual audio stream that would be sent with [6-channel audio monitoring](https://www.notion.so/6-channel-audio-monitoring-e2d22a771ce645ba86777f2aeb56e848?pvs=21) as part of [R**obotic Beehive**](https://www.notion.so/Robotic-Beehive-fd9559a2950b44bc8291972299ced18e?pvs=21), because [Entrance Observer](https://www.notion.so/Entrance-Observer-b0319799ab7744dc928c08119de4fc43?pvs=21) has limited amount of USB ports so we can’t have mics there
+    - this should not be confused with actual audio stream that would be sent with [6-channel audio monitoring](../../robotic_beehive/ideas/🎙️%206-channel%20audio%20monitoring.md) as part of [Robotic Beehive](../../robotic_beehive/robotic_beehive.md), because [Entrance Observer](../../entrance_observer/entrance_observer.md) has limited amount of USB ports so we can’t have mics there
 
 ## AC
 
