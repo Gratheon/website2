@@ -64,11 +64,11 @@ Kasutusjuht on funktsioonide rühm, mis koos loob kliendile suurema väärtuse.
 - Lisa tarule põhjalaua sektsioon.
 - Laadi üles foto valgest väljatõmmatavast plaadist, millel on varroalestad.
 - Pildid versioonitakse inspekteerimistega ajalooliseks jälgimiseks.
-- [Varroa-lestade loendamine taru põhjalaualt](starter-tier/hive_bottom_varroa_count.md) aitab hinnata lestade hulka ja teha raviotsuseid.
+- [Varroa-lestade loendamine taru põhjalaualt](starter-tier/hive-bottom-varroa-count.md) aitab hinnata lestade hulka ja teha raviotsuseid.
 
 ## Tähtsamad funktsioonid selles lokaliseeritud osas
 - [👑 Reaalajas mesilasema leidja](free-tier/live-queen-finder.md)
-- [🦀 Varroa-lestade loendamine taru põhjalaualt](starter-tier/hive_bottom_varroa_count.md)
+- [🦀 Varroa-lestade loendamine taru põhjalaualt](starter-tier/hive-bottom-varroa-count.md)
 
 ## Rohkem ingliskeelset infot
 Need lingid jäävad teadlikult ingliskeelseks, kuni vastavad alamlehed on samuti lokaliseeritud:

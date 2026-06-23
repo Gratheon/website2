@@ -1,3 +1,3 @@
 ---
-redirectUrl: "/products/web_app/starter-tier/ideas 💡/varroa-mite-detection/"
+redirectUrl: "/products/web_app/future-ideas/varroa-mite-detection/"
 ---

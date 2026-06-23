@@ -1,3 +1,3 @@
 ---
-redirectUrl: "/products/web_app/pro-tier/ideas 💡/bee-age-classification/"
+redirectUrl: "/products/web_app/future-ideas/pro-tier-ideas/bee-age-classification/"
 ---

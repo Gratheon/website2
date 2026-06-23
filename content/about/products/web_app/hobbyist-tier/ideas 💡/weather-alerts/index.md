@@ -1,3 +1,3 @@
 ---
-redirectUrl: "/products/web_app/hobbyist-tier/ideas 💡/weather-alerts/"
+redirectUrl: "/products/web_app/future-ideas/hobbyist-tier-ideas/weather-alerts/"
 ---

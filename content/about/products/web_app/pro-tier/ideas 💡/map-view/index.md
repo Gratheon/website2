@@ -1,3 +1,3 @@
 ---
-redirectUrl: "/products/web_app/pro-tier/ideas 💡/map-view/"
+redirectUrl: "/products/web_app/future-ideas/pro-tier-ideas/map-view/"
 ---

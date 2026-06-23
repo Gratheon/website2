@@ -1,3 +1,3 @@
 ---
-redirectUrl: "/products/web_app/web-app/"
+redirectUrl: "/products/web_app/"
 ---

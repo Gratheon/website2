@@ -12,7 +12,7 @@ showChildren: true
     <div class="research-hero__copy">
       <span class="research-eyebrow">Badania Gratheon</span>
       <p class="research-lead">Gratheon Research łączy literaturę akademicką, terenowe zbiory danych, modele uczenia maszynowego i eksperymenty inżynieryjne związane z cyfrowym pszczelarstwem.</p>
-      <p>Koncentrujemy się na pracach stosowanych dotyczących obserwowalności pszczół, zdrowia rodzin pszczelich, widzenia komputerowego i automatyzacji. Najaktywniejsze wątki badawcze powiązane z produktem dotyczą obecnie <a href="/products/entrance_observer/entrance-observer/">Entrance Observer</a>, <a href="/products/robotic_beehive/robotic-beehive/">ula robotycznego</a> oraz <a href="/products/web_app/web-app/">funkcji AI w naszej aplikacji webowej</a>.</p>
+      <p>Koncentrujemy się na pracach stosowanych dotyczących obserwowalności pszczół, zdrowia rodzin pszczelich, widzenia komputerowego i automatyzacji. Najaktywniejsze wątki badawcze powiązane z produktem dotyczą obecnie <a href="/products/entrance_observer/entrance-observer/">Entrance Observer</a>, <a href="/products/robotic_beehive/robotic-beehive/">ula robotycznego</a> oraz <a href="/products/web_app/">funkcji AI w naszej aplikacji webowej</a>.</p>
       <div class="research-actions">
         <a class="research-button research-button--primary" href="/research/papers/">Przeglądaj publikacje</a>
         <a class="research-button" href="/research/datasets/">Przeglądaj zbiory danych</a>

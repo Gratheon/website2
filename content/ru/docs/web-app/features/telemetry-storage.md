@@ -544,9 +544,9 @@ async function logQueryPerformance(
 - Добавьте запросы агрегации нескольких ульев для аналитики на уровне пасеки.
 
 ### 🔗 Сопутствующая документация
-- [Хранилище телеметрии Hive (Руководство пользователя)](../../../products/web_app/pro-tier/hive_telemetry_storage.md)
+- [Хранилище телеметрии Hive (Руководство пользователя)](../../../products/web_app/pro-tier/hive-telemetry-storage.md)
 - [Управление оповещениями](../../../products/web_app/flexible-tier/alerts.md)
-- [Аналитика сравнения колоний](../../../products/web_app/pro-tier/colony_comparison_analytics.md)
+- [Аналитика сравнения колоний](../../../products/web_app/pro-tier/colony-comparison-analytics.md)
 - [GraphQL API Ссылка](../../API/GraphQL.md)
 - [REST API Ссылка](../../API/REST.md)
 - [Руководство по аутентификации](../../API/Authentication.md)

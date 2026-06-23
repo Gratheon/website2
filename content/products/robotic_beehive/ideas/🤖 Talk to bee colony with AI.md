@@ -2,7 +2,7 @@ with RAG
 
 ## Idea
 
-This is a continuation of work done by [Beekeeping advice with LLM](../../web_app/starter-tier/🤖%20Beekeeping%20advice%20with%20LLM.md).
+This is a continuation of work done by [Beekeeping advice with LLM](../../web_app/starter-tier/beekeeping-advice-with-llm.md).
 
 Next step of this feature is [Audio-interface (to talk with bees)](🔊%20Audio-interface%20to%20talk%20to%20bees.md)
 

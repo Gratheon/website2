@@ -12,7 +12,7 @@ showChildren: true
     <div class="research-hero__copy">
       <span class="research-eyebrow">Investigación de Gratheon</span>
       <p class="research-lead">La investigación de Gratheon conecta literatura académica, conjuntos de datos de campo, modelos de aprendizaje automático y experimentos de ingeniería alrededor de la apicultura digital.</p>
-      <p>Nos centramos en trabajo aplicado sobre observabilidad de abejas, salud de colonias, visión por computador y automatización. Las líneas de investigación más activas vinculadas al producto actualmente se conectan con <a href="/products/entrance_observer/entrance-observer/">Entrance Observer</a>, <a href="/products/robotic_beehive/robotic-beehive/">la colmena robótica</a> y <a href="/products/web_app/web-app/">las funciones de IA de nuestra aplicación web</a>.</p>
+      <p>Nos centramos en trabajo aplicado sobre observabilidad de abejas, salud de colonias, visión por computador y automatización. Las líneas de investigación más activas vinculadas al producto actualmente se conectan con <a href="/products/entrance_observer/entrance-observer/">Entrance Observer</a>, <a href="/products/robotic_beehive/robotic-beehive/">la colmena robótica</a> y <a href="/products/web_app/">las funciones de IA de nuestra aplicación web</a>.</p>
       <div class="research-actions">
         <a class="research-button research-button--primary" href="/research/papers/">Ver artículos</a>
         <a class="research-button" href="/research/datasets/">Explorar conjuntos de datos</a>

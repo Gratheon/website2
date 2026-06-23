@@ -1,3 +1,3 @@
 ---
-redirectUrl: "/products/web_app/pro-tier/ideas 💡/skyfi-integration/"
+redirectUrl: "/products/web_app/future-ideas/pro-tier-ideas/skyfi-integration/"
 ---

@@ -2,7 +2,7 @@ The problem here is that say you have 3 fields with a monocultural crop. If you 
 
 Instead, we want hives to get moved automatically to the right location
 
-We also want right location to be calculated and suggested by another feature [Pollination optimization with hive placement recommendation](../../web_app/💡%20future%20ideas/pro%20tier%20ideas%20💡/🌻%20Pollination%20optimization%20with%20hive%20placement%20recommendation.md)
+We also want right location to be calculated and suggested by another feature [Pollination optimization with hive placement recommendation](../../web_app/future-ideas/pro-tier-ideas/pollination-optimization-with-hive-placement-recommendation.md)
 
 Suggested distance that robot could travel - 20km
 

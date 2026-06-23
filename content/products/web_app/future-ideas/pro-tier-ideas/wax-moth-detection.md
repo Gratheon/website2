@@ -1,0 +1,5 @@
+---
+title: "🐝 Wax moth detection"
+---
+
+Wax moths typically take over very weak colonies or stored bee frames. So this is a low-priority detection

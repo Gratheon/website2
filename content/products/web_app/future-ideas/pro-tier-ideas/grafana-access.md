@@ -1,0 +1,5 @@
+---
+title: "📈 Grafana access"
+---
+
+For professional comparison of metrics, we need to integrate user credentials with grafana and give access to it

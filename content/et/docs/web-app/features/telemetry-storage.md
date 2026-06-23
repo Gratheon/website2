@@ -544,9 +544,9 @@ async function logQueryPerformance(
 - Add multi-hive aggregation queries for apiary-level analytics
 
 ### 🔗 Related Documentation
-- [Hive Telemetry Storage (User Guide)](../../../products/web_app/pro-tier/hive_telemetry_storage.md)
+- [Hive Telemetry Storage (User Guide)](../../../products/web_app/pro-tier/hive-telemetry-storage.md)
 - [Alert Management](../../../products/web_app/flexible-tier/alerts.md)
-- [Colony Comparison Analytics](../../../products/web_app/pro-tier/colony_comparison_analytics.md)
+- [Colony Comparison Analytics](../../../products/web_app/pro-tier/colony-comparison-analytics.md)
 - [GraphQL API Reference](../../API/GraphQL.md)
 - [REST API Reference](../../API/REST.md)
 - [Authentication Guide](../../API/Authentication.md)

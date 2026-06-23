@@ -1,3 +1,3 @@
 ---
-redirectUrl: "/products/web_app/pro-tier/ideas 💡/hive-ownership-transfer/"
+redirectUrl: "/products/web_app/future-ideas/pro-tier-ideas/hive-ownership-transfer/"
 ---

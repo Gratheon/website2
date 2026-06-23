@@ -9,7 +9,7 @@ We try to build a special [culture](../../../values/values.md) and because of th
 
 So if you have time for a side project I suggest you to:
 
-1. Explore what you think is best you can do technically and what interests you the most out of our list of ideas for new features we have in the [Web-app](../../../../products/web_app/web_app.md)
+1. Explore what you think is best you can do technically and what interests you the most out of our list of ideas for new features we have in the [Web-app](../../../../products/web_app/index.md)
 
 2. Join Discord to discuss a specific feature you could work on, but which is not clear / not groomed yet: https://discord.gg/PcbP4uedWj
 
@@ -32,7 +32,7 @@ Feel free to explore the website and I hope to hear back from you in the Discord
   
 Если у тебя есть время для такого проекта, я предлагаю:  
   
-1. Исследовать, что ты можешь сделать технически и что тебе больше всего интересно из нашего списка идей для новых фич в [Web-app](../../../../products/web_app/web_app.md)
+1. Исследовать, что ты можешь сделать технически и что тебе больше всего интересно из нашего списка идей для новых фич в [Web-app](../../../../products/web_app/index.md)
   
 2. Присоединиться к Discord, чтобы обсудить конкретную функцию, над которой ты мог бы поработать, но которая пока не ясна / не проработана: https://discord.gg/PcbP4uedWj
 

@@ -25,7 +25,7 @@ Produkty Gratheon są w trakcie rozwoju i łączą oprogramowanie ze sprzętem. 
 
 ### Więcej informacji
 Jeśli potrzebujesz bardziej szczegółowej dokumentacji technicznej albo funkcji, które nie zostały jeszcze przetłumaczone, są obecnie dostępne po angielsku:
-- [Aplikacja webowa (po angielsku)](/products/web_app/web-app/)
+- [Aplikacja webowa (po angielsku)](/products/web_app/)
 - [Entrance Observer (po angielsku)](/products/entrance_observer/entrance-observer/)
 - [Wagi ulowe (po angielsku)](/products/scales/scales/)
 - [Robotyczny ul (po angielsku)](/products/robotic_beehive/robotic-beehive/)

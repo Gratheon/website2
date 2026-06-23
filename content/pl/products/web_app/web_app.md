@@ -49,11 +49,11 @@ To centralne miejsce, do którego podłączają się inne produkty Gratheon, tak
 - dodaj dennicę do ula;
 - prześlij zdjęcie białej wysuwanej wkładki;
 - obrazy są wersjonowane razem z inspekcjami do późniejszego śledzenia;
-- [liczenie roztoczy Varroa na dennicy ula](starter-tier/hive_bottom_varroa_count.md) pomaga ocenić poziom porażenia i decyzje o leczeniu.
+- [liczenie roztoczy Varroa na dennicy ula](starter-tier/hive-bottom-varroa-count.md) pomaga ocenić poziom porażenia i decyzje o leczeniu.
 
 ## Najważniejsze funkcje w tej zlokalizowanej sekcji
 - [👑 Live Queen Finder](free-tier/live-queen-finder.md)
-- [🦀 Liczenie roztoczy Varroa na dennicy ula](starter-tier/hive_bottom_varroa_count.md)
+- [🦀 Liczenie roztoczy Varroa na dennicy ula](starter-tier/hive-bottom-varroa-count.md)
 
 ## Więcej informacji po angielsku
 Te linki celowo pozostają po angielsku, dopóki odpowiednie podstrony nie zostaną zlokalizowane:

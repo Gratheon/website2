@@ -1,3 +1,3 @@
 ---
-redirectUrl: "/products/web_app/starter-tier/ideas 💡/drone-brood-detection/"
+redirectUrl: "/products/web_app/future-ideas/drone-brood-detection/"
 ---

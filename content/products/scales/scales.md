@@ -4,9 +4,9 @@ title: 🌡️ Beehive scales
 layout: products
 ---
 
-🌡️ Beehive scales are smart IoT scales equipped with additional sensors and communication chips. They periodically measure the hive's state and send data to a [web app](../web_app/web_app.md). This aggregated data helps beekeepers monitor their colonies in the field with minimal costs.
+🌡️ Beehive scales are smart IoT scales equipped with additional sensors and communication chips. They periodically measure the hive's state and send data to a [web app](../web_app/index.md). This aggregated data helps beekeepers monitor their colonies in the field with minimal costs.
 
-The hardware is described in the [beehive sensors docs](../../docs/beehive-sensors/beehive-sensors.md), while the app stores readings in [hive telemetry storage](../web_app/pro-tier/hive_telemetry_storage.md) and compares them through [timeseries data analytics](../web_app/pro-tier/timeseries_data_analytics.md).
+The hardware is described in the [beehive sensors docs](../../docs/beehive-sensors/beehive-sensors.md), while the app stores readings in [hive telemetry storage](../web_app/pro-tier/hive-telemetry-storage.md) and compares them through [timeseries data analytics](../web_app/pro-tier/timeseries-data-analytics.md).
 
 `status`: [TRL 4](https://www.nasa.gov/directorates/somd/space-communications-navigation-program/technology-readiness-levels/) (prototype)
 

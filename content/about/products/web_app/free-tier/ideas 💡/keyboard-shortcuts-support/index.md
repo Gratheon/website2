@@ -1,3 +1,3 @@
 ---
-redirectUrl: "/products/web_app/free-tier/ideas 💡/keyboard-shortcuts-support/"
+redirectUrl: "/products/web_app/free-tier/keyboard-shortcuts/"
 ---

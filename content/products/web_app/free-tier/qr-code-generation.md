@@ -1,0 +1,17 @@
+---
+title: "♻️ QR code generation"
+---
+
+- This may be useful for [Industrial beekeepers](../../../about/company/clients/👨🏻‍🚒%20Industrial%20beekeepers.md) with 100 hives that don’t use numeric system or don’t want to search for it in the app.
+- For beekeepers that want to print QR code in case beekeeper wants to put it on a honey 🍯 jar
+
+### Suggested solution
+
+- When generating [Share of beehive inspection public URL](https://www.notion.so/Share-of-beehive-inspection-public-URL-477d096f683542f4a182e53ff5f23780?pvs=21), also generate an image of a QR code that can be saved or printed
+- add ability to inject hive name/number into a qr code
+
+An extension of this could be [Share of beehive inspection public URL](https://www.notion.so/Share-of-beehive-inspection-public-URL-477d096f683542f4a182e53ff5f23780?pvs=21), then URL could point to public view of the hive.
+
+
+
+![](img/screenshot-2025-04-21-at-04-15-46.png)

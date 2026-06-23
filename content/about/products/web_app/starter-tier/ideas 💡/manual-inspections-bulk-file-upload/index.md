@@ -1,3 +1,3 @@
 ---
-redirectUrl: "/products/web_app/starter-tier/ideas 💡/manual-inspections-bulk-file-upload/"
+redirectUrl: "/products/web_app/future-ideas/manual-inspections-bulk-file-upload/"
 ---

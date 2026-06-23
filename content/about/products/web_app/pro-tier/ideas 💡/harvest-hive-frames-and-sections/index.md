@@ -1,3 +1,3 @@
 ---
-redirectUrl: "/products/web_app/pro-tier/ideas 💡/harvest-hive-frames-and-sections/"
+redirectUrl: "/products/web_app/future-ideas/pro-tier-ideas/harvest-hive-frames-and-sections/"
 ---

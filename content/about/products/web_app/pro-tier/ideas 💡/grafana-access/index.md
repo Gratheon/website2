@@ -1,3 +1,3 @@
 ---
-redirectUrl: "/products/web_app/pro-tier/ideas 💡/grafana-access/"
+redirectUrl: "/products/web_app/future-ideas/pro-tier-ideas/grafana-access/"
 ---

@@ -1,3 +1,3 @@
 ---
-redirectUrl: "/products/web_app/hobbyist-tier/ideas 💡/apiary-position-sharing/"
+redirectUrl: "/products/web_app/future-ideas/hobbyist-tier-ideas/apiary-position-sharing/"
 ---

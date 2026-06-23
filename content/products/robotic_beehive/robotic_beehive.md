@@ -7,10 +7,10 @@ sidebar_position: 5
 We are developing a robotic vertical beehive inspection platform, which is
 - capable of lifting multiple hive sections to faster reach the nest
 - take photos of the beehive frames with built-in cameras - manual hive frame lifting is needed
-- uploading inspection result to the [web app](../web_app/web_app.md)
+- uploading inspection result to the [web app](../web_app/index.md)
 - transported on wheels, you can use it to inspect different hives
 
-The hardware direction is tracked in the [robotic beehive engineering docs](../../docs/robotic-beehive/robotic-beehive.md). The inspection workflow depends on [frame side management](../web_app/free-tier/🖼️%20Frame%20side%20management.md) and [inspection management](../web_app/hobbyist-tier/🔎%20Inspection%20management.md) in the web app.
+The hardware direction is tracked in the [robotic beehive engineering docs](../../docs/robotic-beehive/robotic-beehive.md). The inspection workflow depends on [frame side management](../web_app/free-tier/frame-side-management.md) and [inspection management](../web_app/hobbyist-tier/inspection-management.md) in the web app.
 
 `status`: [TRL 2](https://www.nasa.gov/directorates/somd/space-communications-navigation-program/technology-readiness-levels/)
 
@@ -94,4 +94,4 @@ Extraction should happen without disturbing the bees, exposing them to elements 
 
 ## Prototype
 
-Consists of actuators that can move the frame in/out, GPU, cameras. Very early stage as we’re focusing on [Web-app](../web_app/web_app.md) and [Entrance Observer](../entrance_observer/entrance_observer.md) first.
+Consists of actuators that can move the frame in/out, GPU, cameras. Very early stage as we’re focusing on [Web-app](../web_app/index.md) and [Entrance Observer](../entrance_observer/entrance_observer.md) first.

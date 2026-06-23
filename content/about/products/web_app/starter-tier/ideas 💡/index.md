@@ -1,3 +1,3 @@
 ---
-redirectUrl: "/products/web_app/starter-tier/ideas 💡/"
+redirectUrl: "/products/web_app/future-ideas/"
 ---

@@ -126,7 +126,7 @@ Users can share individual hive inspections with others via a unique public URL.
 
 Create new hives by moving selected frames from a strong colony. Prevents swarming and enables apiary expansion.
 
-User-facing feature notes live in [split bee colony](../../products/web_app/hobbyist-tier/split_bee_colony.md).
+User-facing feature notes live in [split bee colony](../../products/web_app/hobbyist-tier/split-bee-colony.md).
 
 **Technical Overview:**
 -   **Mutation:** `splitHive(sourceHiveId, name, frameIds)` - Creates new hive with 1-10 selected frames
@@ -138,7 +138,7 @@ User-facing feature notes live in [split bee colony](../../products/web_app/hobb
 
 Merge two colonies by moving boxes from source to target hive. Strengthens weak colonies and manages queen genetics.
 
-User-facing feature notes live in [join bee colonies](../../products/web_app/hobbyist-tier/join_bee_colonies.md).
+User-facing feature notes live in [join bee colonies](../../products/web_app/hobbyist-tier/join-bee-colonies.md).
 
 
 **Technical Overview:**

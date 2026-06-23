@@ -6,14 +6,14 @@ layout: products
 
 `status: alpha`, [TRL 5](https://www.nasa.gov/directorates/somd/space-communications-navigation-program/technology-readiness-levels/)
 
-💡 Entrance Observer is a set of cameras and a hardware devices that analyze beehive entrance. It records a video stream, runs AI analysis that sends metrics and videos to our [web app](../web_app/web_app.md) for preview and alerts. 
+💡 Entrance Observer is a set of cameras and a hardware devices that analyze beehive entrance. It records a video stream, runs AI analysis that sends metrics and videos to our [web app](../web_app/index.md) for preview and alerts.
 
 
 ![](img/Screenshot%202025-10-22%20at%2020.43.55.png)
 
 Check and install our [open source code of **entrance-observer**](https://github.com/Gratheon/entrance-observer/)
 
-For implementation details, see the [Entrance Observer engineering docs](../../docs/entrance-observer/entrance-observer.md). The metrics it produces are stored through [hive telemetry storage](../web_app/pro-tier/hive_telemetry_storage.md) and can feed [alerts](../web_app/flexible-tier/alerts.md).
+For implementation details, see the [Entrance Observer engineering docs](../../docs/entrance-observer/entrance-observer.md). The metrics it produces are stored through [hive telemetry storage](../web_app/pro-tier/hive-telemetry-storage.md) and can feed [alerts](../web_app/flexible-tier/alerts.md).
 
 <iframe width="100%" height="500"  src="https://www.youtube.com/embed/hNval4v44ao" title="Beehive Entrance Observer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 

@@ -1,3 +1,3 @@
 ---
-redirectUrl: "/products/web_app/pro-tier/ideas 💡/analytics-demography-and-simulation/"
+redirectUrl: "/products/web_app/future-ideas/pro-tier-ideas/analytics-demography-and-simulation/"
 ---

@@ -5,7 +5,7 @@ hide_table_of_contents: true
 ---
 Main client service is [beehive-entrance-video-processor](https://github.com/Gratheon/beehive-entrance-video-processor), it needs to run on the edge device to capture and send data to web-app. Our main priority is inference on the edge device, but we also want to have hybrid inference with cloud support.
 
-For the product-level overview, see [Entrance Observer](../../products/entrance_observer/entrance_observer.md). The captured metrics connect to [hive telemetry storage](../../products/web_app/pro-tier/hive_telemetry_storage.md) and [timeseries analytics](../../products/web_app/pro-tier/timeseries_data_analytics.md).
+For the product-level overview, see [Entrance Observer](../../products/entrance_observer/entrance_observer.md). The captured metrics connect to [hive telemetry storage](../../products/web_app/pro-tier/hive-telemetry-storage.md) and [timeseries analytics](../../products/web_app/pro-tier/timeseries-data-analytics.md).
 ### Video processing, playback and analytics
 
 ```mermaid

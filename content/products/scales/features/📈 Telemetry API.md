@@ -13,7 +13,7 @@ We want our devices as well as customer’s own hack-projects to be able to stre
 
 [Evaluation of the honey bee colonies weight gain during the intensive foraging period](../../../research/papers/Evaluation%20of%20the%20honey%20bee%20colonies%20weight%20gain%20during%20theintensive%20foraging%20period.md)
 
-## Low volume metrics that [Entrance Observer](../../entrance_observer/entrance_observer.md) can send to [Web-app](../../web_app/web_app.md)
+## Low volume metrics that [Entrance Observer](../../entrance_observer/entrance_observer.md) can send to [Web-app](../../web_app/index.md)
 
 - temperature (min interval - 10 min)
 - humidity (min interval - 10 min) - see [Humidity monitoring](../ideas/💧%20Internal%20humidity%20monitoring.md)
