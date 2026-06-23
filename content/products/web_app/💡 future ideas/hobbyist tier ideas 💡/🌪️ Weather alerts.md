@@ -17,12 +17,12 @@ status: complete
     - rain percentage
 - If there is a storm or heatwave reported by weather forecast, then user receives an alert (SMS or other configured channels)
 
-![](../img/Screenshot%202024-12-02%20at%2003.34.33.png)
+![](Screenshot%202024-12-02%20at%2003.34.33.png)
 ## User story
 
 - I created an apiary and set its location (X,Y) - its available in swarm-api service and its DB
 
-![](../img/Screenshot%202024-06-20%20at%2014.25.52.png)
+![](Screenshot%202024-06-20%20at%2014.25.52.png)
     
 - Now every day, we should evaluate a risk of storms and hurricanes that can damage hives
 - Need to find some existing public source of data for weather info
