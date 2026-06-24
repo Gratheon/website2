@@ -44,7 +44,7 @@ layout: research
 
 ### [2025](../years/2025.md)
 
-- [An AI-Based Digital Scanner for Varroa destructor Detection in Beekeeping](../An%20AI-Based%20Digital%20Scanner%20for%20Varroa%20destructor%20Detection%20in%20Beekeeping.md)
+- [An AI-Based Digital Scanner for Varroa destructor Detection in Beekeeping](../An%20AI-Based%20Digital%20Scanner%20for%20Varroa%20destructor%20Detection%20in%20Beekeeping.md) — 🇮🇹 Council for Agricultural Research and Economics (CREA) – Research Centre for Engineering and Agro-Food Processing, Monterotondo; 🇮🇹 Council for Agricultural Research and Economics (CREA) – Research Centre for Agriculture and Environment, Bologna; 🇷🇸 University of Novi Sad
 - [An AI-Based Open-Source Software for Varroa Mite Fall Analysis in Honeybee Colonies](../%E2%AD%90%EF%B8%8F%20An%20AI-Based%20Open-Source%20Software%20for%20Varroa%20Mite%20Fall%20Analysis%20in%20Honeybee%20Colonies.md) — 🇪🇸 University of Zaragoza; 🇪🇸 University of La Rioja; 🇪🇸 University of Valencia
 - [Apis mellifera Bee Verification with IoT and Graph Neural Network](../Apis%20mellifera%20Bee%20Verification%20with%20IoT%20and%20Graph%20Neural%20Network.md) — 🇲🇽 Instituto Tecnológico El Llano Aguascalientes
 - [Deep Learning-Based Detection of Honey Storage Areas in Apismellifera Colonies for Predicting Physical Parameters of Honey via Linear Regression](../Deep%20Learning-Based%20Detection%20of%20Honey%20Storage%20Areas%20in%20Apismellifera%20Colonies%20for%20Predicting%20Physical%20Parameters%20of%20Honey%20via%20Linear%20Regression.md) — 🇹🇭  Chiang Mai University
@@ -68,7 +68,7 @@ layout: research
 - [Accuracy vs. Energy: An Assessment of Bee Object Inference inVideos from On-Hive Video Loggers with YOLOv3,YOLOv4-Tiny, and YOLOv7-Tiny](../Accuracy%20vs.%20Energy.md) — 🇺🇸 Utah State University
 - [Approximation of functions determining colony activity using neural networks. Master thesis](../Approximation%20of%20functions.md) — 🇨🇿 Brno University of Technology
 - [BeeNet: An End-To-End Deep Network For Bee Surveillance](../BeeNet%20-%20An%20End-To-End%20Deep%20Network%20For%20Bee%20Surveillance.md) — 🇦🇺 Australian National University; 🇧🇩 BRAC University; 🇦🇺 Curtin University; 🇦🇺 Commonwealth Scientific and Industrial Research Organisation
-- [Detection of Varroa destructor Infestation of Honeybees Based on Segmentation and Object Detection Convolutional Neural Networks](../Detection%20of%20Varroa%20destructor%20Infestation%20of%20Honeybees%20Based%20on%20Segmentation%20and%20Object%20Detection%20Convolutional%20Neural%20Networks.md)
+- [Detection of Varroa destructor Infestation of Honeybees Based on Segmentation and Object Detection Convolutional Neural Networks](../Detection%20of%20Varroa%20destructor%20Infestation%20of%20Honeybees%20Based%20on%20Segmentation%20and%20Object%20Detection%20Convolutional%20Neural%20Networks.md) — 🇨🇳 Shandong Agriculture University
 - [Labeled dataset for bee detection and direction estimation on entrance to beehive](../Labeled%20dataset%20for%20bee%20detection%20and%20direction%20estimation%20on%20entrance%20to%20beehive.md) — 🇱🇹 Vilnius Gediminas Technical University
 - [Machine Learning and Computer Vision Techniques in Continuous Beehive Monitoring Applications: A Survey](../Machine%20Learning%20and%20Computer%20Vision%20Techniques%20in%20Continuous%20Beehive%20Monitoring%20Applications%20A%20Survey.md) — 🇨🇿 Brno University of Technology
 - [Pollinators as Data Collectors Estimating Floral Diversity with Bees and Computer Vision](../Pollinators%20as%20Data%20Collectors%20Estimating%20Floral%20Diversity%20with%20Bees%20and%20Computer%20Vision.md)
@@ -80,7 +80,7 @@ layout: research
 ### [2022](../years/2022.md)
 
 - [Automated Video Monitoring of Unmarked and Marked Honey Bees at the Hive Entrance](../%E2%AD%90%EF%B8%8F%20Automated%20Video%20Monitoring%20of%20Unmarked%20and%20Marked%20Honey%20Bees%20at%20the%20Hive%20Entrance.md) — 🇵🇷 University of Puerto Rico; 🇺🇸 Brown University; 🇺🇸 Howard Hughes Medical Institute (Janelia Research Campus)
-- [Deep Learning Beehive Monitoring System for Early Detection of the Varroa Mite](../Deep%20Learning%20Beehive%20Monitoring%20System%20for%20Early%20Detection%20of%20the%20Varroa%20Mite.md)
+- [Deep Learning Beehive Monitoring System for Early Detection of the Varroa Mite](../Deep%20Learning%20Beehive%20Monitoring%20System%20for%20Early%20Detection%20of%20the%20Varroa%20Mite.md) — 🇬🇷 University of Ioannina
 - [Honeybee Re-identification in Video: New Datasets and Impact of Self-supervision](../Honeybee%20Re-identification%20in%20Video%20New%20Datasets%20and%20Impact%20of%20Self-supervision.md) — 🇵🇷 University of Puerto Rico
 - [Integration of Scales and Cameras in Nondisruptive ElectronicBeehive Monitoring: On the Within-Day Relationship of HiveWeight and Traffic in Honeybee (Apis mellifera) Colonies in Langstroth Hives in Tucson, Arizona, USA](../Integration%20of%20Scales%20and%20Cameras%20in%20Nondisruptive%20Electronic%20Beehive%20Monitoring.md) — 🇺🇸 Utah State University
 - [SLEAP: A deep learning system for multi-animal pose tracking](../SLEAP.md) — 🇺🇸  Princeton University; 🇺🇸 New York University; 🇺🇸 Johns Hopkins University School of Medicine

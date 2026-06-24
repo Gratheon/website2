@@ -34,7 +34,7 @@ layout: research
 
 ### [2026](../years/2026.md)
 
-- [An intelligent monitoring system for forecasting and anomaly detection in precision beekeeping](../An%20intelligent%20monitoring%20system%20for%20forecasting%20and%20anomaly%20detection%20in%20precision%20beekeeping.md) — 🇫🇷 Efrei Research Lab; 🇫🇷 Université Paris-Panthéon-Assas
+- [An intelligent monitoring system for forecasting and anomaly detection in precision beekeeping](../An%20intelligent%20monitoring%20system%20for%20forecasting%20and%20anomaly%20detection%20in%20precision%20beekeeping.md) — 🇫🇷 EFREI Research Lab; 🇫🇷 Université Paris-Panthéon-Assas
 - [M3DANet: A Lightweight Semi-Supervised Network and Embedded System for Bee Colony Counting](../M3DANet%20A%20Lightweight%20Semi-Supervised%20Network%20and%20Embedded%20System%20for%20Bee%20Colony%20Counting.md) — 🇨🇳 Shandong Agricultural University; 🇨🇳 Apiculture Institute of Jiangxi Province
 
 ### [2025](../years/2025.md)
@@ -52,7 +52,7 @@ layout: research
 
 ### [2022](../years/2022.md)
 
-- [Deep Learning Beehive Monitoring System for Early Detection of the Varroa Mite](../Deep%20Learning%20Beehive%20Monitoring%20System%20for%20Early%20Detection%20of%20the%20Varroa%20Mite.md)
+- [Deep Learning Beehive Monitoring System for Early Detection of the Varroa Mite](../Deep%20Learning%20Beehive%20Monitoring%20System%20for%20Early%20Detection%20of%20the%20Varroa%20Mite.md) — 🇬🇷 University of Ioannina
 
 ### [2021](../years/2021.md)
 

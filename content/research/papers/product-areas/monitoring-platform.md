@@ -43,10 +43,10 @@ layout: research
 ### [2026](../years/2026.md)
 
 - [Acoustic Signatures of Hive: Detecting Queen Bee Absence Through Machine Learning of Short Audio Segments](../Acoustic%20Signatures%20of%20Hive%20Detecting%20Queen%20Bee%20Absence%20Through%20Machine%20Learning%20of%20Short%20Audio%20Segments.md) — 🇨🇱 Universidad de Viña del Mar; 🇨🇱 Universidad Técnica Federico Santa María
-- [An intelligent monitoring system for forecasting and anomaly detection in precision beekeeping](../An%20intelligent%20monitoring%20system%20for%20forecasting%20and%20anomaly%20detection%20in%20precision%20beekeeping.md) — 🇫🇷 Efrei Research Lab; 🇫🇷 Université Paris-Panthéon-Assas
+- [An intelligent monitoring system for forecasting and anomaly detection in precision beekeeping](../An%20intelligent%20monitoring%20system%20for%20forecasting%20and%20anomaly%20detection%20in%20precision%20beekeeping.md) — 🇫🇷 EFREI Research Lab; 🇫🇷 Université Paris-Panthéon-Assas
 - [Assessing Honey Bee Colony Health Using Temperature Time Series](../Assessing%20Honey%20Bee%20Colony%20Health%20Using%20Temperature%20Time%20Series.md) — 🇦🇺 The University of Sydney; 🇦🇺 Macquarie University
 - [BeeVe: Unsupervised Acoustic State Discovery in Honey Bee Buzzing](../BeeVe%20Unsupervised%20Acoustic%20State%20Discovery%20in%20Honey%20Bee%20Buzzing.md) — arXiv author-supplied preprint by Hamze Hammami and Nidhal Abdulaziz
-- [Development of Wingbeat-Based Acoustic Health Monitoring System for Bee Colonies](../Development%20of%20Wingbeat-Based%20Acoustic%20Health%20Monitoring%20System%20for%20Bee%20Colonies.md)
+- [Development of Wingbeat-Based Acoustic Health Monitoring System for Bee Colonies](../Development%20of%20Wingbeat-Based%20Acoustic%20Health%20Monitoring%20System%20for%20Bee%20Colonies.md) — 🇹🇼 National Formosa University
 - [M3DANet: A Lightweight Semi-Supervised Network and Embedded System for Bee Colony Counting](../M3DANet%20A%20Lightweight%20Semi-Supervised%20Network%20and%20Embedded%20System%20for%20Bee%20Colony%20Counting.md) — 🇨🇳 Shandong Agricultural University; 🇨🇳 Apiculture Institute of Jiangxi Province
 - [STAG-CN: Spatio-Temporal Apiary Graph Convolutional Network for Disease Onset Prediction in Beehive Sensor Networks](../STAG-CN%20Spatio-Temporal%20Apiary%20Graph%20Convolutional%20Network%20for%20Disease%20Onset%20Prediction%20in%20Beehive%20Sensor%20Networks.md) — 🇰🇷 Korea University
 
@@ -96,7 +96,7 @@ layout: research
 
 ### [2020](../years/2020.md)
 
-- [A Smart Sensor-Based Measurement System for Advanced Bee Hive Monitoring](../A%20Smart%20Sensor-Based%20Measurement%20System%20for%20Advanced%20Bee%20Hive%20Monitoring.md)
+- [A Smart Sensor-Based Measurement System for Advanced Bee Hive Monitoring](../A%20Smart%20Sensor-Based%20Measurement%20System%20for%20Advanced%20Bee%20Hive%20Monitoring.md) — 🇮🇹 Università Politecnica delle Marche
 - [Analysis of Energy Consumption in a Precision Beekeeping System](../Analysis%20of%20Energy%20Consumption%20in%20a%20Precision%20Beekeeping%20System.md)
 - [Current achievements and future developments of a novel AI based visual monitoring of beehives in ecotoxicology and for the monitoring of landscape structures](../Current%20achievements%20and%20future%20developments%20of%20a%20novel%20AI%20based%20visual%20monitoring%20of%20beehives%20in%20ecotoxicology%20and%20for%20the%20monitoring%20of%20landscape%20structures.md)
 - [Model for the bee apiary location evaluation](../Model%20for%20the%20bee%20apiary%20location%20evaluation.md) — 🇱🇻 Latvia University of Life Sciences and Technologies; 🇩🇪 Humboldt University of Berlin

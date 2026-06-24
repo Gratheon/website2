@@ -38,9 +38,9 @@ layout: research
 
 ### [2026](../years/2026.md)
 
-- [An intelligent monitoring system for forecasting and anomaly detection in precision beekeeping](../An%20intelligent%20monitoring%20system%20for%20forecasting%20and%20anomaly%20detection%20in%20precision%20beekeeping.md) — 🇫🇷 Efrei Research Lab; 🇫🇷 Université Paris-Panthéon-Assas
+- [An intelligent monitoring system for forecasting and anomaly detection in precision beekeeping](../An%20intelligent%20monitoring%20system%20for%20forecasting%20and%20anomaly%20detection%20in%20precision%20beekeeping.md) — 🇫🇷 EFREI Research Lab; 🇫🇷 Université Paris-Panthéon-Assas
 - [Assessing Honey Bee Colony Health Using Temperature Time Series](../Assessing%20Honey%20Bee%20Colony%20Health%20Using%20Temperature%20Time%20Series.md) — 🇦🇺 The University of Sydney; 🇦🇺 Macquarie University
-- [Development of Wingbeat-Based Acoustic Health Monitoring System for Bee Colonies](../Development%20of%20Wingbeat-Based%20Acoustic%20Health%20Monitoring%20System%20for%20Bee%20Colonies.md)
+- [Development of Wingbeat-Based Acoustic Health Monitoring System for Bee Colonies](../Development%20of%20Wingbeat-Based%20Acoustic%20Health%20Monitoring%20System%20for%20Bee%20Colonies.md) — 🇹🇼 National Formosa University
 - [STAG-CN: Spatio-Temporal Apiary Graph Convolutional Network for Disease Onset Prediction in Beehive Sensor Networks](../STAG-CN%20Spatio-Temporal%20Apiary%20Graph%20Convolutional%20Network%20for%20Disease%20Onset%20Prediction%20in%20Beehive%20Sensor%20Networks.md) — 🇰🇷 Korea University
 
 ### [2025](../years/2025.md)
@@ -88,7 +88,7 @@ layout: research
 
 ### [2020](../years/2020.md)
 
-- [A Smart Sensor-Based Measurement System for Advanced Bee Hive Monitoring](../A%20Smart%20Sensor-Based%20Measurement%20System%20for%20Advanced%20Bee%20Hive%20Monitoring.md)
+- [A Smart Sensor-Based Measurement System for Advanced Bee Hive Monitoring](../A%20Smart%20Sensor-Based%20Measurement%20System%20for%20Advanced%20Bee%20Hive%20Monitoring.md) — 🇮🇹 Università Politecnica delle Marche
 - [Analysis of Energy Consumption in a Precision Beekeeping System](../Analysis%20of%20Energy%20Consumption%20in%20a%20Precision%20Beekeeping%20System.md)
 - [Model for the bee apiary location evaluation](../Model%20for%20the%20bee%20apiary%20location%20evaluation.md) — 🇱🇻 Latvia University of Life Sciences and Technologies; 🇩🇪 Humboldt University of Berlin
 
