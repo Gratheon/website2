@@ -1138,6 +1138,16 @@ html[data-theme='dark'] .front-page .future {
   outline: 0;
 }
 
+.knowledge-page-research .knowledge-map {
+  /* WHY: research map cards should sit below the section heading, not beside it. */
+  grid-template-columns: 1fr;
+  gap: clamp(18px, 3vw, 32px);
+}
+
+.knowledge-page-research .knowledge-map-intro h2 {
+  max-width: 18ch;
+}
+
 .knowledge-page-products .knowledge-map-nav .sidebar-menu {
   grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
   align-items: start;
