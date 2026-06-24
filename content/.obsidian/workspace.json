@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "products/web_app/flexible-tier/alerts.md",
+                "file": "products/web_app/pro-tier/colony-comparison-analytics.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "alerts"
+              "title": "colony-comparison-analytics"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 561.5
+    "width": 378.5
   },
   "right": {
     "id": "a80fb4870500233c",
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "products/web_app/flexible-tier/alerts.md",
+                "file": "products/web_app/pro-tier/colony-comparison-analytics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for alerts"
+              "title": "Backlinks for colony-comparison-analytics"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "products/web_app/flexible-tier/alerts.md",
+                "file": "products/web_app/pro-tier/colony-comparison-analytics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from alerts"
+              "title": "Outgoing links from colony-comparison-analytics"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "products/web_app/flexible-tier/alerts.md",
+                "file": "products/web_app/pro-tier/colony-comparison-analytics.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of alerts"
+              "title": "Outline of colony-comparison-analytics"
             }
           }
         ]
@@ -185,6 +185,9 @@
   },
   "active": "b8fbd663229c3f08",
   "lastOpenFiles": [
+    "products/web_app/pro-tier/count-bees-in-the-cloud.md",
+    "products/web_app/pro-tier/colony-comparison-analytics.md",
+    "products/web_app/flexible-tier/alerts.md",
     "products/web_app/flexible-tier/video_playback.md",
     "products/web_app/future-ideas/varroa-mite-detection.md",
     "products/web_app/future-ideas/varroa-infestation-management.md",
@@ -208,9 +211,6 @@
     "products/web_app/future-ideas/pro-tier-ideas/google-calendar-integration.md",
     "products/web_app/future-ideas/pro-tier-ideas/calendar-view.md",
     "products/web_app/future-ideas/pro-tier-ideas/multiple-user-support.md",
-    "products/web_app/future-ideas/pro-tier-ideas/wax-moth-detection.md",
-    "products/web_app/future-ideas/pro-tier-ideas/bee-race-classification.md",
-    "products/web_app/future-ideas/pro-tier-ideas/bee-age-classification.md",
     "products/web_app/future-ideas/pro-tier-ideas",
     "products/web_app/future-ideas/hobbyist-tier-ideas",
     "products/web_app/future-ideas",
