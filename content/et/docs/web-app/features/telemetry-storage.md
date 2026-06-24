@@ -548,7 +548,7 @@ async function logQueryPerformance(
 - [Alert Management](../../../products/web_app/flexible-tier/alerts.md)
 - [Colony Comparison Analytics](../../../products/web_app/pro-tier/colony-comparison-analytics.md)
 - [GraphQL API Reference](../../API/GraphQL.md)
-- [REST API Reference](../../API/REST.md)
+- [REST API Reference](../../API/rest/index.md)
 - [Authentication Guide](../../API/Authentication.md)
 
 ### 📚 Development Resources
