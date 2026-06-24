@@ -15,68 +15,68 @@ i18n:
     - code: "en"
       label: "English"
       aliases: ["en", "en-us", "en-gb"]
+    - code: "zh"
+      label: "简体中文"
+      aliases: ["zh", "zh-cn", "zh-hans"]
+    - code: "de"
+      label: "Deutsch"
+      aliases: ["de", "de-de"]
+    - code: "es"
+      label: "Español"
+      aliases: ["es", "es-es", "es-mx"]
+    - code: "fr"
+      label: "Français"
+      aliases: ["fr", "fr-fr"]
+    - code: "ja"
+      label: "日本語"
+      aliases: ["ja", "ja-jp"]
+    - code: "hi"
+      label: "हिन्दी"
+      aliases: ["hi", "hi-in"]
+    - code: "ar"
+      label: "العربية"
+      aliases: ["ar", "ar-sa"]
+      direction: "rtl"
+    - code: "pt"
+      label: "Português"
+      aliases: ["pt", "pt-br", "pt-pt"]
     - code: "ru"
       label: "Русский"
       aliases: ["ru", "ru-ru"]
-    - code: "et"
-      label: "Eesti"
-      aliases: ["et", "et-ee"]
+    - code: "it"
+      label: "Italiano"
+      aliases: ["it", "it-it"]
     - code: "tr"
       label: "Türkçe"
       aliases: ["tr", "tr-tr"]
     - code: "pl"
       label: "Polski"
       aliases: ["pl", "pl-pl"]
-    - code: "de"
-      label: "Deutsch"
-      aliases: ["de", "de-de"]
-    - code: "fr"
-      label: "Français"
-      aliases: ["fr", "fr-fr"]
-    - code: "zh"
-      label: "简体中文"
-      aliases: ["zh", "zh-cn", "zh-hans"]
-    - code: "hi"
-      label: "हिन्दी"
-      aliases: ["hi", "hi-in"]
-    - code: "es"
-      label: "Español"
-      aliases: ["es", "es-es", "es-mx"]
-    - code: "ar"
-      label: "العربية"
-      aliases: ["ar", "ar-sa"]
-      direction: "rtl"
+    - code: "bn"
+      label: "বাংলা"
+      aliases: ["bn", "bn-bd"]
     - code: "he"
       label: "עברית"
       aliases: ["he", "he-il", "iw"]
       direction: "rtl"
-    - code: "bn"
-      label: "বাংলা"
-      aliases: ["bn", "bn-bd"]
-    - code: "pt"
-      label: "Português"
-      aliases: ["pt", "pt-br", "pt-pt"]
-    - code: "ja"
-      label: "日本語"
-      aliases: ["ja", "ja-jp"]
-    - code: "lv"
-      label: "Latviešu"
-      aliases: ["lv", "lv-lv"]
-    - code: "lt"
-      label: "Lietuvių"
-      aliases: ["lt", "lt-lt"]
+    - code: "ro"
+      label: "Română"
+      aliases: ["ro", "ro-ro"]
     - code: "hu"
       label: "Magyar"
       aliases: ["hu", "hu-hu"]
     - code: "uk"
       label: "Українська"
       aliases: ["uk", "uk-ua"]
-    - code: "it"
-      label: "Italiano"
-      aliases: ["it", "it-it"]
-    - code: "ro"
-      label: "Română"
-      aliases: ["ro", "ro-ro"]
+    - code: "lt"
+      label: "Lietuvių"
+      aliases: ["lt", "lt-lt"]
+    - code: "lv"
+      label: "Latviešu"
+      aliases: ["lv", "lv-lv"]
+    - code: "et"
+      label: "Eesti"
+      aliases: ["et", "et-ee"]
 author:
   name: "Gratheon OÜ"
   email: "pilot@gratheon.com"
