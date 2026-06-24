@@ -116,8 +116,11 @@ publish_site() {
         exit 1
     fi
 
+    umask 022
     rm -rf dist
+    rm -f cpu.prof
     "$engine" build
+    rm -f cpu.prof
 
     if [ ! -f dist/index.html ]; then
         echo "Build finished without dist/index.html" >&2
@@ -138,18 +141,20 @@ publish_site() {
     current_target="$(readlink "$PUBLIC_DIR" 2>/dev/null || true)"
 
     if command -v rsync >/dev/null 2>&1; then
+        # WHY: the site contains large static research assets. Let rsync set
+        # public-readable permissions while copying instead of doing a second
+        # recursive chmod pass over the whole release and shared image cache.
+        local rsync_args=(-a --delete --chmod=Du=rwx,Dgo=rx,Fu=rw,Fgo=r)
         if [ -n "$current_target" ] && [ -d "$current_target" ]; then
-            rsync -a --delete --link-dest="$current_target" dist/ "$release_dir/"
-        else
-            rsync -a --delete dist/ "$release_dir/"
+            rsync_args+=(--link-dest="$current_target")
         fi
+        rsync "${rsync_args[@]}" dist/ "$release_dir/"
     else
         cp -R dist/. "$release_dir/"
+        chmod -R u+rwX,go+rX "$release_dir"
     fi
 
-    chmod -R u+rwX,go+rX "$release_dir"
-    chmod -R u+rwX,go+rX "$SHARED_DIR"
-    chmod go+X "$RELEASES_DIR" "$(dirname "$PUBLIC_DIR")"
+    chmod u+rwX,go+rX "$release_dir" "$RELEASES_DIR" "$SHARED_DIR" "$(dirname "$PUBLIC_DIR")"
 
     {
         printf 'git_sha=%s\n' "$(git -C "$APP_DIR" rev-parse HEAD 2>/dev/null || true)"

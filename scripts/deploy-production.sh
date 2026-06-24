@@ -7,7 +7,6 @@ SHARED_DIR="${SHARED_DIR:-$LIVE_APP_DIR/shared}"
 REMOTE="${REMOTE:-origin}"
 BRANCH="${BRANCH:-main}"
 TARGET_REF="$REMOTE/$BRANCH"
-WORKTREE_DIR=""
 
 repo_owner() {
     if stat -c '%U' "$APP_DIR" >/dev/null 2>&1; then
@@ -28,31 +27,45 @@ git_as_repo_owner() {
     fi
 }
 
-cleanup_worktree() {
-    if [ -n "$WORKTREE_DIR" ]; then
-        git_as_repo_owner worktree remove --force "$WORKTREE_DIR" >/dev/null 2>&1 || rm -rf "$WORKTREE_DIR"
+prepare_build_cache() {
+    mkdir -p "$SHARED_DIR/cache"
+
+    # WHY: image variants must survive clean builds, but the website repo itself
+    # should stay cheap to update. Keep the engine cache in shared storage and
+    # expose it as the repo-local .cache path expected by blog-engine.
+    if [ -e "$LIVE_APP_DIR/.cache" ] && [ ! -L "$LIVE_APP_DIR/.cache" ]; then
+        if [ -d "$LIVE_APP_DIR/.cache/images" ] && [ ! -e "$SHARED_DIR/cache/images" ]; then
+            mv "$LIVE_APP_DIR/.cache/images" "$SHARED_DIR/cache/images"
+        fi
+        rm -rf "$LIVE_APP_DIR/.cache"
     fi
+
+    ln -sfn "$SHARED_DIR/cache" "$LIVE_APP_DIR/.cache"
 }
-trap cleanup_worktree EXIT
 
 git_as_repo_owner fetch "$REMOTE" "$BRANCH"
 
-WORKTREE_DIR="$(mktemp -d -t website-release.XXXXXX)"
-rm -rf "$WORKTREE_DIR"
-git_as_repo_owner worktree add --detach "$WORKTREE_DIR" "$TARGET_REF"
+# WHY: creating a detached temp worktree checks out all ~2.3k tracked files on
+# every deploy, including large research PDFs/media. Updating the persistent
+# deployment checkout only touches files changed since the previous release,
+# while the public site remains served from the immutable current/ symlink.
+git_as_repo_owner reset --hard "$TARGET_REF"
+git_as_repo_owner clean -fd \
+    -e .cache \
+    -e current \
+    -e current.next \
+    -e releases \
+    -e shared
 
-# Keep blog-engine image variants outside the temporary worktree. Without this,
-# every deploy re-encodes hundreds of large images and can be killed by OOM.
-mkdir -p "$SHARED_DIR/cache"
-ln -sfn "$SHARED_DIR/cache" "$WORKTREE_DIR/.cache"
+prepare_build_cache
 
-APP_DIR="$WORKTREE_DIR" \
+APP_DIR="$LIVE_APP_DIR" \
 PUBLIC_DIR="$LIVE_APP_DIR/current" \
 RELEASES_DIR="$LIVE_APP_DIR/releases" \
 SHARED_DIR="$SHARED_DIR" \
 KEEP_RELEASES="${KEEP_RELEASES:-2}" \
 BLOG_ENGINE="${BLOG_ENGINE:-}" \
-    "$WORKTREE_DIR/restart.sh" --publish-only
+    "$LIVE_APP_DIR/restart.sh" --publish-only
 
 if [ ! -L "$LIVE_APP_DIR/current" ] || [ ! -f "$LIVE_APP_DIR/current/index.html" ]; then
     echo "Published release is not active at $LIVE_APP_DIR/current/index.html" >&2
@@ -60,8 +73,6 @@ if [ ! -L "$LIVE_APP_DIR/current" ] || [ ! -f "$LIVE_APP_DIR/current/index.html"
     ls -la "$LIVE_APP_DIR/current" >&2 || true
     exit 1
 fi
-
-git_as_repo_owner reset --hard "$TARGET_REF"
 
 cd "$LIVE_APP_DIR"
 ./restart.sh --activate-only
