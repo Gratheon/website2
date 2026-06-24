@@ -6,10 +6,11 @@ title: 🗂️ REST APIs
 For general usage we recommend using our [GraphQL](GraphQL.md).
 For edge devices, we provide microservice-specific, versioned REST APIs.
 
-REST API documentation is now generated from service-owned OpenAPI specs in [`telemetry-api`](https://github.com/Gratheon/telemetry-api) and [`gate-video-stream`](https://github.com/Gratheon/gate-video-stream). The embedded Swagger UI lets you switch between services, try requests, view cURL examples, and download generated Postman, Bruno, or Insomnia collections.
+REST API documentation is hosted by the microservices themselves so the docs stay tied to their service-owned OpenAPI contracts. Import the OpenAPI URLs into Postman, Bruno, or Insomnia to generate client collections, or use Swagger UI to copy cURL examples.
 
-- [Open full-screen REST API docs](/assets/docs/API/rest-docs/)
-- [Telemetry API OpenAPI JSON](/assets/docs/API/rest-docs/telemetry-api.openapi.json)
-- [Gate Video Stream OpenAPI JSON](/assets/docs/API/rest-docs/gate-video-stream.openapi.json)
+- [Telemetry API Swagger UI](https://telemetry.gratheon.com/docs/)
+- [Telemetry API OpenAPI JSON](https://telemetry.gratheon.com/openapi.json)
+- [Gate Video Stream Swagger UI](https://video.gratheon.com/docs/) — depends on `video.gratheon.com` availability
+- [Gate Video Stream OpenAPI JSON](https://video.gratheon.com/openapi.json)
 
-<iframe title="Gratheon REST API Swagger UI" src="/assets/docs/API/rest-docs/" width="100%" height="850"></iframe>
+<iframe title="Gratheon Telemetry REST API Swagger UI" src="https://telemetry.gratheon.com/docs/" width="100%" height="850"></iframe>

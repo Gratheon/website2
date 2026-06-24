@@ -6,10 +6,11 @@ title: 🗂️ REST APIs
 Для общего использования мы рекомендуем наш [GraphQL](GraphQL.md).
 Для edge devices мы предоставляем versioned REST API, привязанные к конкретным microservices.
 
-Документация REST API теперь генерируется из OpenAPI specs, которые принадлежат самим сервисам [`telemetry-api`](https://github.com/Gratheon/telemetry-api) и [`gate-video-stream`](https://github.com/Gratheon/gate-video-stream). Встроенный Swagger UI позволяет переключаться между сервисами, пробовать запросы, смотреть cURL examples и скачивать сгенерированные Postman, Bruno или Insomnia collections.
+REST API documentation теперь хостится самими microservices, поэтому docs остаются привязаны к service-owned OpenAPI contracts. OpenAPI URL можно импортировать в Postman, Bruno или Insomnia для генерации client collections, а в Swagger UI можно копировать cURL examples.
 
-- [Открыть REST API docs на весь экран](/assets/docs/API/rest-docs/)
-- [Telemetry API OpenAPI JSON](/assets/docs/API/rest-docs/telemetry-api.openapi.json)
-- [Gate Video Stream OpenAPI JSON](/assets/docs/API/rest-docs/gate-video-stream.openapi.json)
+- [Telemetry API Swagger UI](https://telemetry.gratheon.com/docs/)
+- [Telemetry API OpenAPI JSON](https://telemetry.gratheon.com/openapi.json)
+- [Gate Video Stream Swagger UI](https://video.gratheon.com/docs/) — зависит от доступности `video.gratheon.com`
+- [Gate Video Stream OpenAPI JSON](https://video.gratheon.com/openapi.json)
 
-<iframe title="Gratheon REST API Swagger UI" src="/assets/docs/API/rest-docs/" width="100%" height="850"></iframe>
+<iframe title="Gratheon Telemetry REST API Swagger UI" src="https://telemetry.gratheon.com/docs/" width="100%" height="850"></iframe>

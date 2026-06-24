@@ -6,8 +6,7 @@
     "start": "\"${BLOG_ENGINE:-../blog-engine-md/bin/blog-engine}\" serve",
     "serve": "\"${BLOG_ENGINE:-../blog-engine-md/bin/blog-engine}\" serve",
     "research-indexes": "python3 scripts/generate-research-indexes.py",
-    "rest-api-docs": "python3 scripts/generate-rest-api-docs.py",
-    "build": "python3 scripts/generate-rest-api-docs.py && rm -rf dist && \"${BLOG_ENGINE:-../blog-engine-md/bin/blog-engine}\" build",
+    "build": "rm -rf dist && \"${BLOG_ENGINE:-../blog-engine-md/bin/blog-engine}\" build",
     "publish": "./restart.sh --publish-only"
   }
 }

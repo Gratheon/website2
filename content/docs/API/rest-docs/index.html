@@ -3,88 +3,11 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Gratheon REST APIs</title>
-  <link rel="stylesheet" href="./swagger-ui.css" />
-  <style>
-    body { margin: 0; background: #f7f7f7; color: #111; font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
-    .topbar { display: none; }
-    .gratheon-api-header { padding: 20px 24px; background: #fff; border-bottom: 1px solid #ddd; }
-    .gratheon-api-header h1 { margin: 0 0 8px; font-size: 26px; }
-    .gratheon-api-header p { margin: 0 0 16px; max-width: 860px; line-height: 1.5; }
-    .gratheon-api-controls { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
-    .gratheon-api-controls select, .gratheon-api-controls a { border: 1px solid #222; background: #fff; color: #111; padding: 8px 10px; text-decoration: none; font-size: 14px; }
-    .gratheon-api-controls a:hover { background: #111; color: #fff; }
-    #swagger-ui { background: #fff; }
-  </style>
+  <meta http-equiv="refresh" content="0; url=https://telemetry.gratheon.com/docs/" />
+  <title>Redirecting to Telemetry API docs</title>
+  <script>window.location.replace('https://telemetry.gratheon.com/docs/');</script>
 </head>
 <body>
-  <header class="gratheon-api-header">
-    <h1>Gratheon REST APIs</h1>
-    <p>Self-hosted OpenAPI documentation for REST endpoints exposed by Gratheon microservices. Choose a service below, try requests in Swagger UI, or download generated client collections and cURL examples.</p>
-    <div class="gratheon-api-controls">
-      <label for="service-select">Service</label>
-      <select id="service-select"></select>
-      <a id="openapi-link" href="#">OpenAPI JSON</a>
-      <a id="postman-link" href="#">Postman</a>
-      <a id="bruno-link" href="#">Bruno</a>
-      <a id="insomnia-link" href="#">Insomnia</a>
-      <a id="curl-link" href="#">cURL examples</a>
-    </div>
-  </header>
-  <main id="swagger-ui"></main>
-  <script src="./swagger-ui-bundle.js"></script>
-  <script>
-    const services = [{"id": "telemetry-api", "name": "Telemetry API", "specUrl": "./telemetry-api.openapi.json", "postmanUrl": "./telemetry-api.postman_collection.json", "insomniaUrl": "./telemetry-api.insomnia_collection.json", "brunoUrl": "./telemetry-api.bruno.zip", "curlUrl": "./telemetry-api.curl.sh"}, {"id": "gate-video-stream", "name": "Gate Video Stream API", "specUrl": "./gate-video-stream.openapi.json", "postmanUrl": "./gate-video-stream.postman_collection.json", "insomniaUrl": "./gate-video-stream.insomnia_collection.json", "brunoUrl": "./gate-video-stream.bruno.zip", "curlUrl": "./gate-video-stream.curl.sh"}];
-    const select = document.getElementById('service-select');
-    const links = {
-      openapiUrl: document.getElementById('openapi-link'),
-      postmanUrl: document.getElementById('postman-link'),
-      brunoUrl: document.getElementById('bruno-link'),
-      insomniaUrl: document.getElementById('insomnia-link'),
-      curlUrl: document.getElementById('curl-link'),
-    };
-    let ui;
-
-    for (const service of services) {
-      const option = document.createElement('option');
-      option.value = service.id;
-      option.textContent = service.name;
-    function setService(id) {
-      const service = services.find((item) => item.id === id) || services[0];
-      if (!service) return;
-      const hrefByElement = {
-        openapiUrl: service.specUrl,
-        postmanUrl: service.postmanUrl,
-        brunoUrl: service.brunoUrl,
-        insomniaUrl: service.insomniaUrl,
-        curlUrl: service.curlUrl,
-      };
-      for (const [key, node] of Object.entries(links)) {
-        node.href = hrefByElement[key];
-        node.download = hrefByElement[key].replace('./', '');
-      }
-      window.location.hash = service.id;
-      if (ui) {
-        ui.specActions.updateUrl(service.specUrl);
-        ui.specActions.download(service.specUrl);
-      } else {
-        ui.specActions.updateUrl(service.specUrl);
-        ui.specActions.download(service.specUrl);
-      } else {
-        ui = SwaggerUIBundle({
-          url: service.specUrl,
-          dom_id: '#swagger-ui',
-          deepLinking: true,
-          persistAuthorization: true,
-          displayRequestDuration: true,
-        });
-      }
-    }
-
-    select.addEventListener('change', (event) => setService(event.target.value));
-    const initialId = window.location.hash.replace('#', '') || services[0]?.id;
-    select.value = initialId;
-    setService(initialId);
-  </script>
+  <p>REST API documentation is hosted by the microservices. Continue to <a href="https://telemetry.gratheon.com/docs/">Telemetry API Swagger UI</a>.</p>
 </body>
 </html>

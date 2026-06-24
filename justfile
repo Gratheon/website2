@@ -7,11 +7,7 @@ serve:
 research-indexes:
     python3 scripts/generate-research-indexes.py
 
-rest-api-docs:
-    python3 scripts/generate-rest-api-docs.py
-
 build:
-    python3 scripts/generate-rest-api-docs.py
     rm -rf dist
     "${BLOG_ENGINE:-../blog-engine-md/bin/blog-engine}" build
 
