@@ -20,7 +20,15 @@ Open the local URL printed by the engine.
 just build
 ```
 
-This generates static files in `dist/`.
+This generates static files in `dist/`. The build runs `scripts/generate-rest-api-docs.py` first, copying OpenAPI specs from sibling `../telemetry-api/openapi.json` and `../gate-video-stream/openapi.json` when available, then regenerating the self-hosted Swagger UI and Postman/Bruno/Insomnia/cURL artifacts under `content/docs/API/rest-docs/`. Production deploys can still build from this repository alone because the generated specs are committed as a fallback.
+
+Refresh only the REST API docs artifacts:
+
+```bash
+just rest-api-docs
+# or
+npm run rest-api-docs
+```
 
 Generate or refresh research-paper index pages from frontmatter. This keeps `/research/papers/` as a compact overview and writes dedicated sub-pages for former sections: `/research/papers/scientific-publications/`, `/research/papers/topics/`, `/research/papers/years/`, and `/research/papers/product-areas/`, plus detailed topic, year, and product-area pages under `content/research/papers/`:
 

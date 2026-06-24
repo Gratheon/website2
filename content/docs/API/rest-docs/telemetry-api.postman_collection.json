@@ -1,0 +1,110 @@
+{
+  "info": {
+    "name": "Telemetry API",
+    "description": "Versioned REST API used by edge devices to submit hive sensor telemetry and entrance movement metrics. GraphQL remains the preferred API for web-app integrations.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "https://telemetry.gratheon.com"
+    },
+    {
+      "key": "apiToken",
+      "value": "replace-with-your-token"
+    }
+  ],
+  "item": [
+    {
+      "name": "Check service health",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/health",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "health"
+          ]
+        },
+        "description": ""
+      }
+    },
+    {
+      "name": "Submit IoT sensor metrics",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer {{apiToken}}"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/iot/v1/metrics",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "iot",
+            "v1",
+            "metrics"
+          ]
+        },
+        "description": "Accepts either a single metric object or an array of metric objects. Intended for edge devices such as hive scales and environmental sensors.",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"hiveId\": \"hive-123\",\n  \"timestamp\": 1717238400,\n  \"dedupeKey\": \"device-7:1717238400\",\n  \"fields\": {\n    \"temperatureCelsius\": 25.5,\n    \"humidityPercent\": 65,\n    \"weightKg\": 45.2\n  }\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Submit entrance movement metrics",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer {{apiToken}}"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/entrance/v1/movement",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "entrance",
+            "v1",
+            "movement"
+          ]
+        },
+        "description": "Accepts either a single movement object or an array of movement objects produced by entrance camera edge processing.",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"hiveId\": \"hive-123\",\n  \"boxId\": \"box-entrance-1\",\n  \"beesOut\": 42,\n  \"beesIn\": 39,\n  \"netFlow\": -3,\n  \"avgSpeed\": 7.4,\n  \"p95Speed\": 14.1,\n  \"stationaryBees\": 5,\n  \"detectedBees\": 81,\n  \"beeInteractions\": 12,\n  \"timestamp\": 1717238400\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

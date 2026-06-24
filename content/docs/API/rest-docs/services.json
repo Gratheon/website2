@@ -1,0 +1,20 @@
+[
+  {
+    "id": "telemetry-api",
+    "name": "Telemetry API",
+    "specUrl": "./telemetry-api.openapi.json",
+    "postmanUrl": "./telemetry-api.postman_collection.json",
+    "insomniaUrl": "./telemetry-api.insomnia_collection.json",
+    "brunoUrl": "./telemetry-api.bruno.zip",
+    "curlUrl": "./telemetry-api.curl.sh"
+  },
+  {
+    "id": "gate-video-stream",
+    "name": "Gate Video Stream API",
+    "specUrl": "./gate-video-stream.openapi.json",
+    "postmanUrl": "./gate-video-stream.postman_collection.json",
+    "insomniaUrl": "./gate-video-stream.insomnia_collection.json",
+    "brunoUrl": "./gate-video-stream.bruno.zip",
+    "curlUrl": "./gate-video-stream.curl.sh"
+  }
+]

@@ -1,0 +1,81 @@
+meta {
+  name: Telemetry API
+  type: collection
+}
+
+vars {
+  baseUrl: https://telemetry.gratheon.com
+  apiToken: replace-with-your-token
+}
+
+---
+
+meta {
+  name: Check service health
+  type: http
+}
+
+get {
+  url: {{baseUrl}}/health
+}
+
+---
+
+meta {
+  name: Submit IoT sensor metrics
+  type: http
+}
+
+post {
+  url: {{baseUrl}}/iot/v1/metrics
+}
+
+headers {
+  Authorization: Bearer {{apiToken}}
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "hiveId": "hive-123",
+    "timestamp": 1717238400,
+    "dedupeKey": "device-7:1717238400",
+    "fields": {
+      "temperatureCelsius": 25.5,
+      "humidityPercent": 65,
+      "weightKg": 45.2
+    }
+  }
+}
+
+---
+
+meta {
+  name: Submit entrance movement metrics
+  type: http
+}
+
+post {
+  url: {{baseUrl}}/entrance/v1/movement
+}
+
+headers {
+  Authorization: Bearer {{apiToken}}
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "hiveId": "hive-123",
+    "boxId": "box-entrance-1",
+    "beesOut": 42,
+    "beesIn": 39,
+    "netFlow": -3,
+    "avgSpeed": 7.4,
+    "p95Speed": 14.1,
+    "stationaryBees": 5,
+    "detectedBees": 81,
+    "beeInteractions": 12,
+    "timestamp": 1717238400
+  }
+}

@@ -117,6 +117,7 @@ publish_site() {
     fi
 
     rm -rf dist
+    python3 scripts/generate-rest-api-docs.py
     "$engine" build
 
     if [ ! -f dist/index.html ]; then
