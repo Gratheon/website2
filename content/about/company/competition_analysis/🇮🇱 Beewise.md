@@ -6,6 +6,7 @@ priority: 1
 pricing: v1 - 600$ (40 hives)v2 - $400/month per container + 2000$ delivery
 threat_level: HIGH
 target_market: Enterprise/Commercial beekeepers
+location: Israel / USA
 ---
 
 ## Overview

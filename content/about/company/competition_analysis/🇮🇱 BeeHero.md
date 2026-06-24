@@ -4,6 +4,7 @@ products: 🌡️ Beehive IoT sensors
 priority: 2
 threat_level: HIGH
 target_market: Commercial beekeepers, Pollination services
+location: Israel / USA
 ---
 
 ## Overview

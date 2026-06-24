@@ -4,6 +4,7 @@ products: 👁️‍🗨️ Entrance Observer
 priority: 1
 threat_level: VERY HIGH
 target_market: Professional/Semi-professional beekeepers in Europe
+location: Germany
 pricing: 350€ - 550€ per device
 ---
 

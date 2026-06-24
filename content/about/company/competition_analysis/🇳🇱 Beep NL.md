@@ -65,3 +65,11 @@ Beep is a Dutch open-source beehive monitoring project. Notable for being one of
 - Contribute to each other's projects
 
 <iframe width="1350" height="619" src="https://www.youtube.com/embed/6p_GPbU0JrQ" title="Beep Base Open Source Bee Hive Monitor - Pim Van Gennip (Iconize)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Product images / screenshots
+
+Official product visuals/screenshots used for competitive reference.
+
+![BEEP app v3 screen](img/beep-nl-1.jpg)
+
+![BEEP base sensor hardware](img/beep-nl-2.jpg)

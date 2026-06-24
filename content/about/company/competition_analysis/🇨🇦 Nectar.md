@@ -5,6 +5,7 @@ description: Beekeeping organizer for migratory beekeepers
 products: 📱Web-app
 threat_level: MEDIUM
 target_market: Migratory beekeepers, Semi-professional
+location: Canada
 ---
 
 ## Overview

@@ -76,5 +76,3 @@ IMPACT OF THE PRECISION BEEKEEPING ON THE LIVING ENVIRONMENT research paper:
 | title | url | description |
 | ----- | --- | ----------- |
 <!-- SerializedQuery END -->
-
-
