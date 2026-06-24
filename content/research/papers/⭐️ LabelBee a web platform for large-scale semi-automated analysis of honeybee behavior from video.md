@@ -19,20 +19,20 @@ featured: true
 
 [PDF](pdfs/3359115.3359120.pdf)
 
-![](pdfs/Screenshot%202023-10-25%20at%2002.28.50.png)
+![](pdfs/Screenshot 2023-10-25 at 02.28.50.png)
 
 <object data={require('./pdfs/3359115.3359120.pdf').default} type="application/pdf" width="100%" height="800"></object>
 
 ## External links
 
 - DOI: https://doi.org/10.1145/3359115.3359120
-- [Publisher (ACM DL)](https://dl.acm.org/doi/10.1145/3359115.3359120)
+- [Publisher (ACM Digital Library)](https://dl.acm.org/doi/10.1145/3359115.3359120)
 - [GitHub (LabelBee)](https://github.com/rmegret/labelbee)
 
 ## Abstract
 
-The LabelBee system is a web application designed to facilitate the collection, annotation, and analysis of large amounts of honeybee behavior data from video monitoring. Developed as part of the NSF BIGDATA project "Large-scale multi-parameter analysis of honeybee behavior in their natural habitat", it provides advanced AI and visualization capabilities to enable the construction of good-quality datasets necessary for discovering complex behavior patterns. LabelBee integrates raw video, honeybee positions, decoded barcode tags, individual trajectories, and behavior events (entrance/exit, presence of pollen, fanning, etc.). This integration enables the combination of manual and automatic processing by biologist end-users who share and correct their annotations through a centralized server. The resulting annotations are used by computer scientists to create new automatic models and improve the quality of detection modules.
+LabelBee is a browser-based annotation and analysis system for large volumes of honeybee entrance video collected in natural colony conditions. The platform combines a web GUI, server-side storage, automated preprocessing, and Jupyter-based analysis so biologists can label bees, validate detections, correct trajectories, and annotate events such as entering, leaving, pollen carrying, and fanning. It supports tagged bees through AprilTag detection, untagged bee detection and tracking, pollen classification, fanning recognition, pose estimation, and exportable event files. The paper emphasizes a human-in-the-loop workflow: expert and volunteer annotations improve data quality, those labels train automatic models, and model outputs are brought back into the GUI for validation and curation. This design enables large-scale behavioral datasets and visual analytics such as hourly entrance/exit counts and individual actograms across multiple days.
 
 ## Relevancy to Gratheon
 
-LabelBee is a reference architecture for how Gratheon could build a data-labeling workflow on top of its entrance camera footage. The web-based annotation UI — video scrubbing, bee selection, behavior tagging — addresses the same data-pipeline bottleneck that Gratheon will face when training and improving its gate-tracker model at scale. Gratheon's platform could adopt a LabelBee-style human-in-the-loop interface where beekeeper reports of unusual events are used to create labeled segments for model retraining. The behavioral label vocabulary (entering, leaving, pollen, fanning) directly maps to the metrics Gratheon exposes in its analytics dashboard.
+LabelBee is a strong reference for Gratheon's entrance-camera data pipeline. The web app can borrow its human-in-the-loop concepts: video review, timeline navigation, bee selection, event labels, and quality-control states for correcting model predictions before they become training data. For the Entrance Observer and gate-tracker product area, the paper's label vocabulary maps directly to Gratheon metrics: entering, leaving, pollen return, fanning/cooling, and identity or trajectory confidence. In the autonomous-apiary vision, a LabelBee-style workflow would let beekeepers and researchers turn rare visual observations into curated datasets, close the loop between deployed hardware and model retraining, and make Gratheon's analytics auditable instead of treating computer-vision output as an opaque counter.

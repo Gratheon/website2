@@ -17,18 +17,19 @@ productAreas:
 paperType: journal
 ---
 
-[PDF](pdfs/Biodiversity,%20conservation%20and%20current%20threats%20to%20European%20honeybees.pdf)
+[PDF](pdfs/Biodiversity, conservation and current threats to European honeybees.pdf)
 
 <object data={require('./pdfs/Biodiversity, conservation and current threats to European honeybees.pdf').default} type="application/pdf" width="100%" height="800"></object>
 
 ## External links
 
 - DOI: https://doi.org/10.1051/apido/2009027
+- [Publisher (Apidologie / EDP Sciences)](https://www.apidologie.org/articles/apido/abs/2009/03/m08141/m08141.html)
 
 ## Abstract
 
-Europe harbours several endemic honeybee (*Apis mellifera*) subspecies, but their distribution is now strongly influenced by beekeeping activities. Large-scale migratory beekeeping, queen trade, and the promiscuous mating system of honeybees expose native European populations to introgressive hybridization with managed non-native subspecies, risking the loss of locally adapted trait combinations shaped by natural selection. The review summarizes European honeybee biodiversity, existing country-level management and conservation strategies, and the structure of the beekeeping industry in Europe. It also evaluates threats driving the decline of *A. mellifera*, including factors that create economic losses and jeopardize ecosystem functioning, and outlines research needs for conserving European honeybee genetic resources.
+Europe contains several endemic *Apis mellifera* subspecies and evolutionary lineages whose present distribution reflects both post-glacial biogeography and centuries of beekeeping. The review explains how migratory beekeeping, queen trade, and honeybee promiscuous mating increase introgressive hybridization between native and managed non-native subspecies, potentially erasing locally adapted genetic combinations such as the Western European black bee lineage. It summarizes the main European subspecies, natural and human-mediated hybridization zones, country-level conservation and breeding programs, and wider threats that contribute to honeybee decline and economic losses. The paper argues that conserving native European honeybee diversity is important both for resilient apiculture and for ecosystem pollination services, and it calls for stronger genetic monitoring, protected breeding areas, and coordinated research across Europe.
 
 ## Relevancy to Gratheon
 
-This paper is relevant to Gratheon because it informs entrance and behavior analytics in the Gratheon web app, colony-health diagnostics and Varroa/queen-state alerting, pollination ecology and apiary-location intelligence. Its methods and findings can be translated into product requirements for reliable field deployments: what should be sensed, how signals should be interpreted, and which uncertainty or validation limits need to be surfaced to beekeepers. For Gratheon, the work is most useful as an evidence-backed design reference for connecting local hive observations with actionable recommendations in the web app while keeping hardware practical for remote apiaries.
+This review is relevant to Gratheon's colony-health and apiary-intelligence roadmap because it frames "bee health" as more than a single-hive sensor problem. For the web app, subspecies, breeding origin, queen replacement history, and nearby migratory apiary pressure could become metadata that explains abnormal behavior, overwintering performance, disease susceptibility, or poor pollination outcomes. For Gratheon hardware, entrance traffic, queen-state, temperature, acoustic, and parasite signals should be interpreted against local genetics and regional conservation rules rather than assuming all colonies are biologically equivalent. In the long-term autonomous-apiary vision, the paper supports features that help beekeepers avoid unintentionally weakening local adaptations: tracking queen lineage, recommending locally appropriate stock, and surfacing conservation risks when moving colonies or buying queens.
