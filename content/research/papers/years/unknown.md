@@ -9,7 +9,7 @@ layout: research
 ## Summary
 
 - Year: Unknown year
-- Total papers: 6
+- Total papers: 5
 - [Research papers hub](../index.md)
 - [All years](index.md)
 
@@ -17,14 +17,14 @@ layout: research
 
 - [Bee Behaviour](../topics/bee-behaviour.md) (3)
 - [Computer Vision](../topics/computer-vision.md) (1)
-- [IoT Sensors](../topics/iot-sensors.md) (4)
-- [Reviews Surveys](../topics/reviews-surveys.md) (2)
+- [IoT Sensors](../topics/iot-sensors.md) (3)
+- [Reviews Surveys](../topics/reviews-surveys.md) (1)
 - [Robotics](../topics/robotics.md) (1)
 
 ## Product areas
 
 - [Gate Tracker](../product-areas/gate-tracker.md) (1)
-- [Monitoring Platform](../product-areas/monitoring-platform.md) (4)
+- [Monitoring Platform](../product-areas/monitoring-platform.md) (3)
 - [Robotics](../product-areas/robotics.md) (1)
 
 ## Papers by topic
@@ -43,13 +43,11 @@ layout: research
 
 - [Application of Data Layering in Precision Beekeeping The Concept](../Application%20of%20Data%20Layering%20in%20Precision%20Beekeeping%20The%20Concept.md)
 - [Impact of the precision beekeeping on the living environment](../Impact%20of%20the%20precision%20beekeeping%20on%20the%20living%20environment.md)
-- [myBee: An Information System for Precision Beekeeping](../mybee.md) — 🇧🇷 State University of Maringa; 🇧🇷 Federal University of Rio de Janeiro
 - [Precision Apiculture – IoT System for Remote Monitoring of Honeybee Colonies](../Precision%20Apiculture%20%E2%80%93%20IoT%20System%20for%20Remote%20Monitoring%20of%20Honeybee%20Colonies.md) — 🇲🇰 Ss. Cyril and Methodius University
 
 ### [Reviews Surveys](../topics/reviews-surveys.md)
 
 - [Application of Data Layering in Precision Beekeeping The Concept](../Application%20of%20Data%20Layering%20in%20Precision%20Beekeeping%20The%20Concept.md)
-- [myBee: An Information System for Precision Beekeeping](../mybee.md) — 🇧🇷 State University of Maringa; 🇧🇷 Federal University of Rio de Janeiro
 
 ### [Robotics](../topics/robotics.md)
 

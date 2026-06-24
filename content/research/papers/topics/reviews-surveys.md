@@ -25,7 +25,8 @@ layout: research
 - [2022](../years/2022.md) (2)
 - [2021](../years/2021.md) (1)
 - [2019](../years/2019.md) (1)
-- [Unknown year](../years/unknown.md) (2)
+- [2017](../years/2017.md) (1)
+- [Unknown year](../years/unknown.md) (1)
 
 ## Papers by year
 
@@ -58,8 +59,11 @@ layout: research
 
 - [Automated monitoring of bee behaviour using connected hives Towards a computational apidology](../Automated%20monitoring%20of%20bee%20behaviour%20using%20connected%20hives%20Towards%20a%20computational%20apidology.md)
 
+### [2017](../years/2017.md)
+
+- [myBee: An Information System for Precision Beekeeping](../mybee.md) — 🇧🇷 State University of Maringá; 🇧🇷 Federal University of Rio de Janeiro
+
 ### [Unknown year](../years/unknown.md)
 
 - [Application of Data Layering in Precision Beekeeping The Concept](../Application%20of%20Data%20Layering%20in%20Precision%20Beekeeping%20The%20Concept.md)
-- [myBee: An Information System for Precision Beekeeping](../mybee.md) — 🇧🇷 State University of Maringa; 🇧🇷 Federal University of Rio de Janeiro
 <!-- GENERATED RESEARCH INDEX:END -->

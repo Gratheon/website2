@@ -23,10 +23,10 @@ Years:
 - [2020](2020.md) (8)
 - [2019](2019.md) (5)
 - [2018](2018.md) (9)
-- [2017](2017.md) (1)
+- [2017](2017.md) (2)
 - [2016](2016.md) (1)
 - [2015](2015.md) (1)
 - [2013](2013.md) (1)
 - [2009](2009.md) (1)
-- [Unknown year](unknown.md) (6)
+- [Unknown year](unknown.md) (5)
 <!-- GENERATED RESEARCH INDEX:END -->

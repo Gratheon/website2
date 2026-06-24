@@ -35,7 +35,7 @@ layout: research
 
 ### [2024](../years/2024.md)
 
-- [Autonomous tracking of honey bee behaviors over long-term periods with cooperating robots](../%E2%AD%90%EF%B8%8F%20Autonomous%20tracking%20of%20honey%20bee%20behaviors%20over%20long-term%20periods%20with%20cooperating%20robots.md) — 🇨🇿 Czech Technical University; 🇦🇹 University of Graz; 🇬🇧 Durham University; 🇹🇷  Middle East Technical University
+- [Autonomous tracking of honey bee behaviors over long-term periods with cooperating robots](../%E2%AD%90%EF%B8%8F%20Autonomous%20tracking%20of%20honey%20bee%20behaviors%20over%20long-term%20periods%20with%20cooperating%20robots.md) — 🇨🇿 Czech Technical University; 🇦🇹 University of Graz; 🇬🇧 Durham University; 🇹🇷 Middle East Technical University
 - [Open Remote Web Lab for Learning Robotics and ROS With Physical and Simulated Robots in an Authentic Developer Environment](../Open%20Remote%20Web%20Lab%20for%20Learning%20Robotics%20andROS%20With%20Physical%20and%20Simulated%20Robots%20in%20anAuthentic%20Developer%20Environment.md) — 🇪🇪 University of Tartu
 - [Towards Robotic Mapping of a Honeybee Comb](../Towards%20Robotic%20Mapping%20of%20a%20Honeybee%20Comb.md) — 🇨🇿 Czech Technical University; 🇬🇧 Durham University; 🇦🇹 University of Graz
 

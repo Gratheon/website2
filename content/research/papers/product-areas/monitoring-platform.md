@@ -34,9 +34,9 @@ layout: research
 - [2021](../years/2021.md) (4)
 - [2020](../years/2020.md) (4)
 - [2019](../years/2019.md) (2)
-- [2017](../years/2017.md) (1)
+- [2017](../years/2017.md) (2)
 - [2016](../years/2016.md) (1)
-- [Unknown year](../years/unknown.md) (4)
+- [Unknown year](../years/unknown.md) (3)
 
 ## Papers by year
 
@@ -108,6 +108,7 @@ layout: research
 
 ### [2017](../years/2017.md)
 
+- [myBee: An Information System for Precision Beekeeping](../mybee.md) — 🇧🇷 State University of Maringá; 🇧🇷 Federal University of Rio de Janeiro
 - [Solution for automated bee colony weight monitoring](../Solution%20for%20automated%20bee%20colony%20weight%20monitoring.md) — 🇱🇻 Latvia University of Agriculture
 
 ### [2016](../years/2016.md)
@@ -118,6 +119,5 @@ layout: research
 
 - [Application of Data Layering in Precision Beekeeping The Concept](../Application%20of%20Data%20Layering%20in%20Precision%20Beekeeping%20The%20Concept.md)
 - [Impact of the precision beekeeping on the living environment](../Impact%20of%20the%20precision%20beekeeping%20on%20the%20living%20environment.md)
-- [myBee: An Information System for Precision Beekeeping](../mybee.md) — 🇧🇷 State University of Maringa; 🇧🇷 Federal University of Rio de Janeiro
 - [Precision Apiculture – IoT System for Remote Monitoring of Honeybee Colonies](../Precision%20Apiculture%20%E2%80%93%20IoT%20System%20for%20Remote%20Monitoring%20of%20Honeybee%20Colonies.md) — 🇲🇰 Ss. Cyril and Methodius University
 <!-- GENERATED RESEARCH INDEX:END -->

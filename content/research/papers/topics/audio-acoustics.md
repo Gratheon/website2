@@ -37,9 +37,9 @@ layout: research
 
 ### [2025](../years/2025.md)
 
+- [Deep Edge IoT for Acoustic Detection of Queenless Beehives](../%E2%AD%90%EF%B8%8F%20Deep%20Edge%20IoT%20for%20Acoustic%20Detection%20of%20Queenless%20Beehives.md) — 🇬🇷 Aristotle University of Thessaloniki
 - [Transformer Models improve the acoustic recognition of buzz-pollinating bee species](../Transformer%20Models%20improve%20the%20acoustic%20recognition%20of%20buzz-pollinating%20bee%20species.md) — 🇧🇷 Universidade Federal de Goiás; 🇺🇸 University of Arizona; 🇨🇱 Universidad Católica del Maule
 - [UrBAN: Urban Beehive Acoustics and PheNotyping Dataset](../UrBAN%20Urban%20Beehive%20Acoustics%20and%20PheNotyping%20Dataset.md) — 🇨🇦 Institut National de la Recherche Scientifique; 🇨🇦 Université Laval; 🇨🇦 Nectar Technologies Inc.
-- [⭐️ Deep Edge IoT for Acoustic Detection of Queenless Beehives](../%E2%AD%90%EF%B8%8F%20Deep%20Edge%20IoT%20for%20Acoustic%20Detection%20of%20Queenless%20Beehives.md) — 🇬🇷 Aristotle University of Thessaloniki
 
 ### [2024](../years/2024.md)
 

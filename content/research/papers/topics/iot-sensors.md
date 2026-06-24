@@ -29,10 +29,10 @@ layout: research
 - [2021](../years/2021.md) (4)
 - [2020](../years/2020.md) (3)
 - [2019](../years/2019.md) (2)
-- [2017](../years/2017.md) (1)
+- [2017](../years/2017.md) (2)
 - [2016](../years/2016.md) (1)
 - [2013](../years/2013.md) (1)
-- [Unknown year](../years/unknown.md) (4)
+- [Unknown year](../years/unknown.md) (3)
 
 ## Papers by year
 
@@ -48,9 +48,9 @@ layout: research
 - [A Survey of TinyML Applications in Beekeeping for Hive Monitoring and Management](../A%20Survey%20of%20TinyML%20Applications%20in%20Beekeeping%20for%20Hive%20Monitoring%20and%20Management.md) — 🇦🇺 University of Technology Sydney; 🇦🇺 BeeSTAR
 - [Apis mellifera Bee Verification with IoT and Graph Neural Network](../Apis%20mellifera%20Bee%20Verification%20with%20IoT%20and%20Graph%20Neural%20Network.md) — 🇲🇽 Instituto Tecnológico El Llano Aguascalientes
 - [Buzzing with Intelligence: A Systematic Review of Smart Beehive Technologies](../Buzzing%20with%20Intelligence%20A%20Systematic%20Review%20of%20SmartBeehive%20Technologies.md) — 🇭🇷 University of Split
+- [Deep Edge IoT for Acoustic Detection of Queenless Beehives](../%E2%AD%90%EF%B8%8F%20Deep%20Edge%20IoT%20for%20Acoustic%20Detection%20of%20Queenless%20Beehives.md) — 🇬🇷 Aristotle University of Thessaloniki
 - [IoT and Machine Learning Techniques for Precision Beekeeping:A Review](../IoT%20and%20Machine%20Learning%20Techniques%20for%20Precision%20Beekeeping%20A%20Review.md) — 🇺🇬 Makerere University; 🇹🇿 Dar es Salaam Institute of Technology
 - [UrBAN: Urban Beehive Acoustics and PheNotyping Dataset](../UrBAN%20Urban%20Beehive%20Acoustics%20and%20PheNotyping%20Dataset.md) — 🇨🇦 Institut National de la Recherche Scientifique; 🇨🇦 Université Laval; 🇨🇦 Nectar Technologies Inc.
-- [⭐️ Deep Edge IoT for Acoustic Detection of Queenless Beehives](../%E2%AD%90%EF%B8%8F%20Deep%20Edge%20IoT%20for%20Acoustic%20Detection%20of%20Queenless%20Beehives.md) — 🇬🇷 Aristotle University of Thessaloniki
 
 ### [2024](../years/2024.md)
 
@@ -99,6 +99,7 @@ layout: research
 
 ### [2017](../years/2017.md)
 
+- [myBee: An Information System for Precision Beekeeping](../mybee.md) — 🇧🇷 State University of Maringá; 🇧🇷 Federal University of Rio de Janeiro
 - [Solution for automated bee colony weight monitoring](../Solution%20for%20automated%20bee%20colony%20weight%20monitoring.md) — 🇱🇻 Latvia University of Agriculture
 
 ### [2016](../years/2016.md)
@@ -113,6 +114,5 @@ layout: research
 
 - [Application of Data Layering in Precision Beekeeping The Concept](../Application%20of%20Data%20Layering%20in%20Precision%20Beekeeping%20The%20Concept.md)
 - [Impact of the precision beekeeping on the living environment](../Impact%20of%20the%20precision%20beekeeping%20on%20the%20living%20environment.md)
-- [myBee: An Information System for Precision Beekeeping](../mybee.md) — 🇧🇷 State University of Maringa; 🇧🇷 Federal University of Rio de Janeiro
 - [Precision Apiculture – IoT System for Remote Monitoring of Honeybee Colonies](../Precision%20Apiculture%20%E2%80%93%20IoT%20System%20for%20Remote%20Monitoring%20of%20Honeybee%20Colonies.md) — 🇲🇰 Ss. Cyril and Methodius University
 <!-- GENERATED RESEARCH INDEX:END -->

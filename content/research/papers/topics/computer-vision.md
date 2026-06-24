@@ -45,16 +45,16 @@ layout: research
 ### [2025](../years/2025.md)
 
 - [An AI-Based Digital Scanner for Varroa destructor Detection in Beekeeping](../An%20AI-Based%20Digital%20Scanner%20for%20Varroa%20destructor%20Detection%20in%20Beekeeping.md)
+- [An AI-Based Open-Source Software for Varroa Mite Fall Analysis in Honeybee Colonies](../%E2%AD%90%EF%B8%8F%20An%20AI-Based%20Open-Source%20Software%20for%20Varroa%20Mite%20Fall%20Analysis%20in%20Honeybee%20Colonies.md) — 🇪🇸 University of Zaragoza; 🇪🇸 University of La Rioja; 🇪🇸 University of Valencia
 - [Apis mellifera Bee Verification with IoT and Graph Neural Network](../Apis%20mellifera%20Bee%20Verification%20with%20IoT%20and%20Graph%20Neural%20Network.md) — 🇲🇽 Instituto Tecnológico El Llano Aguascalientes
 - [Deep Learning-Based Detection of Honey Storage Areas in Apismellifera Colonies for Predicting Physical Parameters of Honey via Linear Regression](../Deep%20Learning-Based%20Detection%20of%20Honey%20Storage%20Areas%20in%20Apismellifera%20Colonies%20for%20Predicting%20Physical%20Parameters%20of%20Honey%20via%20Linear%20Regression.md) — 🇹🇭  Chiang Mai University
 - [Evaluation of Single-Shot Object Detection Models for Identifying Fanning Behavior in Honeybees at the Hive Entrance](../Evaluation%20of%20Single-Shot%20Object%20Detection%20Models%20for%20Identifying%20Fanning%20Behavior%20in%20Honeybees%20at%20the%20Hive%20Entrance.md) — 🇱🇹 Vilnius Gediminas Technical University
 - [Fast, accurate measurement of the worker populations of honey bee colonies using deep learning](../Fast%20accurate%20measurement%20of%20the%20worker%20populations%20of%20honey%20bee%20colonies%20using%20deep%20learning.md) — 🇺🇸 Arizona State University; 🇺🇸 Texas A&M University–Kingsville
 - [Towards Varroa destructor mite detection using a narrow spectra illumination](../Towards%20Varroa%20destructor%20mite%20detection%20using%20a%20narrow%20spectra%20illumination.md) — 🇨🇿 Brno University of Technology
-- [⭐️ An AI-Based Open-Source Software for Varroa Mite Fall Analysis in Honeybee Colonies](../%E2%AD%90%EF%B8%8F%20An%20AI-Based%20Open-Source%20Software%20for%20Varroa%20Mite%20Fall%20Analysis%20in%20Honeybee%20Colonies.md) — 🇪🇸 University of Zaragoza 🇪🇸 University of La Rioja 🇪🇸 University of Valencia
 
 ### [2024](../years/2024.md)
 
-- [Autonomous tracking of honey bee behaviors over long-term periods with cooperating robots](../%E2%AD%90%EF%B8%8F%20Autonomous%20tracking%20of%20honey%20bee%20behaviors%20over%20long-term%20periods%20with%20cooperating%20robots.md) — 🇨🇿 Czech Technical University; 🇦🇹 University of Graz; 🇬🇧 Durham University; 🇹🇷  Middle East Technical University
+- [Autonomous tracking of honey bee behaviors over long-term periods with cooperating robots](../%E2%AD%90%EF%B8%8F%20Autonomous%20tracking%20of%20honey%20bee%20behaviors%20over%20long-term%20periods%20with%20cooperating%20robots.md) — 🇨🇿 Czech Technical University; 🇦🇹 University of Graz; 🇬🇧 Durham University; 🇹🇷 Middle East Technical University
 - [Beehive Smart Detector Device for the Detection of CriticalConditions That Utilize Edge Device Computations and DeepLearning Inferences](../Beehive%20Smart%20Detector%20Device%20for%20the%20Detection%20of%20CriticalConditions%20That%20Utilize%20Edge%20Device%20Computations%20and%20DeepLearning%20Inferences.md) — 🇬🇷 University of Ioannina
 - [IntelliBeeHive: An Automated Honey Bee, Pollen, and Varroa Destructor Monitoring System](../IntelliBeeHive%20An%20Automated%20Honey%20Bee%20Pollen%20and%20Varroa%20Destructor%20Monitoring%20System.md) — 🇺🇸 University of Texas Rio Grande Valley
 - [Intelligent beehive monitoring system based on internet of things and colony state analysis](../Intelligent%20beehive%20monitoring%20system%20based%20on%20internet%20of%20things%20and%20colony%20state%20analysis.md) — 🇲🇾 Universiti Teknologi MARA; 🇨🇳 Peking University Shenzhen Graduate School; 🇨🇳 Xiamen University; 🇨🇳 Fujian Agriculture And Forestry University; 🇨🇳 Quanzhou University of Information Engineering
@@ -79,7 +79,7 @@ layout: research
 
 ### [2022](../years/2022.md)
 
-- [Automated Video Monitoring of Unmarked and Marked Honey Bees at the Hive Entrance](../%E2%AD%90%EF%B8%8F%20Automated%20Video%20Monitoring%20of%20Unmarked%20and%20Marked%20Honey%20Bees%20at%20the%20Hive%20Entrance.md) — 🇵🇷 University of Puerto Rico
+- [Automated Video Monitoring of Unmarked and Marked Honey Bees at the Hive Entrance](../%E2%AD%90%EF%B8%8F%20Automated%20Video%20Monitoring%20of%20Unmarked%20and%20Marked%20Honey%20Bees%20at%20the%20Hive%20Entrance.md) — 🇵🇷 University of Puerto Rico; 🇺🇸 Brown University; 🇺🇸 Howard Hughes Medical Institute (Janelia Research Campus)
 - [Deep Learning Beehive Monitoring System for Early Detection of the Varroa Mite](../Deep%20Learning%20Beehive%20Monitoring%20System%20for%20Early%20Detection%20of%20the%20Varroa%20Mite.md)
 - [Honeybee Re-identification in Video: New Datasets and Impact of Self-supervision](../Honeybee%20Re-identification%20in%20Video%20New%20Datasets%20and%20Impact%20of%20Self-supervision.md) — 🇵🇷 University of Puerto Rico
 - [Integration of Scales and Cameras in Nondisruptive ElectronicBeehive Monitoring: On the Within-Day Relationship of HiveWeight and Traffic in Honeybee (Apis mellifera) Colonies in Langstroth Hives in Tucson, Arizona, USA](../Integration%20of%20Scales%20and%20Cameras%20in%20Nondisruptive%20Electronic%20Beehive%20Monitoring.md) — 🇺🇸 Utah State University
@@ -90,20 +90,20 @@ layout: research
 - [BeePIV: A Method to Measure Apis Mellifera Traffic with Particle Image Velocimetry in Videos](../BeePIV%20A%20Method%20to%20Measure%20Apis%20Mellifera%20Traffic%20with%20Particle%20Image%20Velocimetry%20in%20Videos.md) — 🇺🇸 Utah State University
 - [DeepLabCut-based daily behavioural and posture analysis in a cricket](../DeepLabCut-based%20daily%20behavioural%20and%20posture%20analysis%20in%20a%20cricket.md)
 - [Honeybee In-Out Monitoring System by Object Recognition and Tracking from Real-Time Webcams](../Honeybee%20In-Out%20Monitoring%20System%20by%20Object%20Recognition%20and%20Tracking%20from%20Real-Time%20Webcams.md) — 🇰🇷 Incheon National University
+- [Markerless tracking of an entire honey bee colony](../%E2%AD%90%EF%B8%8F%20Markerless%20tracking%20of%20an%20entire%20honey%20bee%20colony.md) — 🇯🇵 Okinawa Institute of Science and Technology Graduate University; 🇦🇺 Australian National University; 🇳🇱 Vrije Universiteit Amsterdam
 - [On Image Classification in Video Analysis of Omnidirectional Apis Mellifera Traffic: Random Reinforced Forests vs. Shallow Convolutional Networks](../On%20Image%20Classification%20in%20Video%20Analysis%20of%20Omnidirectional%20Apis%20Mellifera%20Traffic%20Random%20Reinforced%20Forests%20vs.%20Shallow%20Convolutional%20Networks.md) — 🇺🇸 Utah State University
 - [Visual Diagnosis of the Varroa Destructor Parasitic Mite in Honeybees Using Object Detector Techniques](../Visual%20Diagnosis%20of%20the%20Varroa%20Destructor%20Parasitic%20Mite%20in%20Honeybees%20Using%20Object%20Detector%20Techniques.md) — 🇨🇿 Brno University of Technology
-- [⭐️ Markerless tracking of an entire honey bee colony](../%E2%AD%90%EF%B8%8F%20Markerless%20tracking%20of%20an%20entire%20honey%20bee%20colony.md) — 🇯🇵 Okinawa Institute of Science and Technology Graduate University
 
 ### [2020](../years/2020.md)
 
+- [Automatic detection and classification of honey bee comb cells using deep learning](../%E2%AD%90%EF%B8%8F%20Automatic%20detection%20and%20classification%20of%20honey%20bee%20comb%20cells%20using%20deeplearning.md) — 🇵🇹 Instituto Politécnico de Bragança; 🇧🇷 Federal Technological University of Paraná; 🇫🇷 Université Clermont-Auvergne
 - [BeeAlarmed. Masters thesis](../%E2%AD%90%EF%B8%8F%20BeeAlarmed.%20Masters%20thesis.md) — 🇩🇪 South Westphalia University of Applied Sciences
 - [Current achievements and future developments of a novel AI based visual monitoring of beehives in ecotoxicology and for the monitoring of landscape structures](../Current%20achievements%20and%20future%20developments%20of%20a%20novel%20AI%20based%20visual%20monitoring%20of%20beehives%20in%20ecotoxicology%20and%20for%20the%20monitoring%20of%20landscape%20structures.md)
 - [Real-time, low-latency closed-loop feedback using markerless posture tracking](../Real-time%2C%20low-latency%20closed-loop%20feedback%20using%20markerless%20posture%20tracking.md) — 🇺🇸 Harvard University; 🇬🇧 NeuroGEARS Ltd; 🇺🇸 University of Oregon; 🇨🇭 Swiss Federal Institute of Technology
-- [⭐️ Automatic detection and classification of honey bee comb cells using deeplearning](../%E2%AD%90%EF%B8%8F%20Automatic%20detection%20and%20classification%20of%20honey%20bee%20comb%20cells%20using%20deeplearning.md) — 🇵🇹 Instituto Politécnico de Bragança; 🇧🇷 Federal Technological University of Paraná; 🇫🇷 Université Clermont-Auvergne
 
 ### [2019](../years/2019.md)
 
-- [DeepBees – Building and Scaling Convolutional Neuronal Nets For Fast and Large-scale Visual Monitoring of Bee Hives](../%E2%AD%90%EF%B8%8F%20DeepBees%20%E2%80%93%20Building%20and%20Scaling%20Convolutional%20Neuronal%20Nets%20For%20Fast%20and%20Large-scale%20Visual%20Monitoring%20of%20Bee%20Hives.md) — 🇩🇪 Karlsruhe Institute of Technology
+- [DeepBees – Building and Scaling Convolutional Neuronal Nets For Fast and Large-scale Visual Monitoring of Bee Hives](../%E2%AD%90%EF%B8%8F%20DeepBees%20%E2%80%93%20Building%20and%20Scaling%20Convolutional%20Neuronal%20Nets%20For%20Fast%20and%20Large-scale%20Visual%20Monitoring%20of%20Bee%20Hives.md) — 🇩🇪 Karlsruhe Institute of Technology; 🇩🇪 apic.ai
 - [DeepPoseKit, a software toolkit for fast and robust animal pose estimation using deep learning](../DeepPoseKit.md) — 🇩🇪 Max Planck Institute of Animal Behavior; 🇩🇪 University of Konstanz; 🇺🇸  Princeton University; 🇩🇪 Technische Universität München
 - [LabelBee: a web platform for large-scale semi-automated analysis of honeybee behavior from video](../%E2%AD%90%EF%B8%8F%20LabelBee%20a%20web%20platform%20for%20large-scale%20semi-automated%20analysis%20of%20honeybee%20behavior%20from%20video.md) — 🇵🇷 University of Puerto Rico
 
@@ -114,7 +114,7 @@ layout: research
 - [Multiple Animals Tracking in VideoUsing Part Affinity Fields](../Multiple%20Animals%20Tracking%20in%20VideoUsing%20Part%20Affinity%20Fields.md) — 🇵🇷 University of Puerto Rico
 - [Recognition of Pollen-bearing Bees from Video using Convolutional Neural Network](../Recognition%20of%20Pollen-bearing%20Bees%20from%20Video%20using%20Convolutional%20Neural%20Network.md) — 🇵🇷 University of Puerto Rico
 - [The development of honey bee coloniesassessed using a new semi-automated broodcounting method: CombCount](../The%20development%20of%20honey%20bee%20coloniesassessed%20using%20a%20new%20semi-automated%20broodcounting%20method%20CombCount.md) — 🇦🇺 Macquarie University; 🇦🇺 Queensland University of Technology; 🇺🇸 Carl Hayden Bee Research Center
-- [Towards dense object tracking in a 2D honeybee hive](../%E2%AD%90%EF%B8%8F%20Towards%20dense%20object%20tracking%20in%20a%202D%20honeybee%20hive.md) — 🇯🇵 Okinawa Institute of Science and Technology Graduate University
+- [Towards dense object tracking in a 2D honeybee hive](../%E2%AD%90%EF%B8%8F%20Towards%20dense%20object%20tracking%20in%20a%202D%20honeybee%20hive.md) — 🇯🇵 Okinawa Institute of Science and Technology Graduate University; 🇳🇱 VU University Amsterdam
 - [Tracking All Members of a Honey Bee Colony Over Their Lifetime Using Learned Models of Correspondence](../Tracking%20All%20Members%20of%20a%20Honey%20Bee%20Colony%20Over%20Their%20Lifetime%20Using%20Learned%20Models%20of%20Correspondence.md)
 
 ### [2015](../years/2015.md)

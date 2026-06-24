@@ -65,7 +65,7 @@ layout: research
 
 ### [2022](../years/2022.md)
 
-- [Automated Video Monitoring of Unmarked and Marked Honey Bees at the Hive Entrance](../%E2%AD%90%EF%B8%8F%20Automated%20Video%20Monitoring%20of%20Unmarked%20and%20Marked%20Honey%20Bees%20at%20the%20Hive%20Entrance.md) — 🇵🇷 University of Puerto Rico
+- [Automated Video Monitoring of Unmarked and Marked Honey Bees at the Hive Entrance](../%E2%AD%90%EF%B8%8F%20Automated%20Video%20Monitoring%20of%20Unmarked%20and%20Marked%20Honey%20Bees%20at%20the%20Hive%20Entrance.md) — 🇵🇷 University of Puerto Rico; 🇺🇸 Brown University; 🇺🇸 Howard Hughes Medical Institute (Janelia Research Campus)
 - [Honeybee Re-identification in Video: New Datasets and Impact of Self-supervision](../Honeybee%20Re-identification%20in%20Video%20New%20Datasets%20and%20Impact%20of%20Self-supervision.md) — 🇵🇷 University of Puerto Rico
 
 ### [2021](../years/2021.md)
@@ -80,7 +80,7 @@ layout: research
 
 ### [2019](../years/2019.md)
 
-- [DeepBees – Building and Scaling Convolutional Neuronal Nets For Fast and Large-scale Visual Monitoring of Bee Hives](../%E2%AD%90%EF%B8%8F%20DeepBees%20%E2%80%93%20Building%20and%20Scaling%20Convolutional%20Neuronal%20Nets%20For%20Fast%20and%20Large-scale%20Visual%20Monitoring%20of%20Bee%20Hives.md) — 🇩🇪 Karlsruhe Institute of Technology
+- [DeepBees – Building and Scaling Convolutional Neuronal Nets For Fast and Large-scale Visual Monitoring of Bee Hives](../%E2%AD%90%EF%B8%8F%20DeepBees%20%E2%80%93%20Building%20and%20Scaling%20Convolutional%20Neuronal%20Nets%20For%20Fast%20and%20Large-scale%20Visual%20Monitoring%20of%20Bee%20Hives.md) — 🇩🇪 Karlsruhe Institute of Technology; 🇩🇪 apic.ai
 - [LabelBee: a web platform for large-scale semi-automated analysis of honeybee behavior from video](../%E2%AD%90%EF%B8%8F%20LabelBee%20a%20web%20platform%20for%20large-scale%20semi-automated%20analysis%20of%20honeybee%20behavior%20from%20video.md) — 🇵🇷 University of Puerto Rico
 
 ### [2018](../years/2018.md)

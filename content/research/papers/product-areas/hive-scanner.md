@@ -50,16 +50,16 @@ layout: research
 ### [2021](../years/2021.md)
 
 - [DeepLabCut-based daily behavioural and posture analysis in a cricket](../DeepLabCut-based%20daily%20behavioural%20and%20posture%20analysis%20in%20a%20cricket.md)
-- [⭐️ Markerless tracking of an entire honey bee colony](../%E2%AD%90%EF%B8%8F%20Markerless%20tracking%20of%20an%20entire%20honey%20bee%20colony.md) — 🇯🇵 Okinawa Institute of Science and Technology Graduate University
+- [Markerless tracking of an entire honey bee colony](../%E2%AD%90%EF%B8%8F%20Markerless%20tracking%20of%20an%20entire%20honey%20bee%20colony.md) — 🇯🇵 Okinawa Institute of Science and Technology Graduate University; 🇦🇺 Australian National University; 🇳🇱 Vrije Universiteit Amsterdam
 
 ### [2020](../years/2020.md)
 
+- [Automatic detection and classification of honey bee comb cells using deep learning](../%E2%AD%90%EF%B8%8F%20Automatic%20detection%20and%20classification%20of%20honey%20bee%20comb%20cells%20using%20deeplearning.md) — 🇵🇹 Instituto Politécnico de Bragança; 🇧🇷 Federal Technological University of Paraná; 🇫🇷 Université Clermont-Auvergne
 - [Real-time, low-latency closed-loop feedback using markerless posture tracking](../Real-time%2C%20low-latency%20closed-loop%20feedback%20using%20markerless%20posture%20tracking.md) — 🇺🇸 Harvard University; 🇬🇧 NeuroGEARS Ltd; 🇺🇸 University of Oregon; 🇨🇭 Swiss Federal Institute of Technology
-- [⭐️ Automatic detection and classification of honey bee comb cells using deeplearning](../%E2%AD%90%EF%B8%8F%20Automatic%20detection%20and%20classification%20of%20honey%20bee%20comb%20cells%20using%20deeplearning.md) — 🇵🇹 Instituto Politécnico de Bragança; 🇧🇷 Federal Technological University of Paraná; 🇫🇷 Université Clermont-Auvergne
 
 ### [2019](../years/2019.md)
 
-- [DeepBees – Building and Scaling Convolutional Neuronal Nets For Fast and Large-scale Visual Monitoring of Bee Hives](../%E2%AD%90%EF%B8%8F%20DeepBees%20%E2%80%93%20Building%20and%20Scaling%20Convolutional%20Neuronal%20Nets%20For%20Fast%20and%20Large-scale%20Visual%20Monitoring%20of%20Bee%20Hives.md) — 🇩🇪 Karlsruhe Institute of Technology
+- [DeepBees – Building and Scaling Convolutional Neuronal Nets For Fast and Large-scale Visual Monitoring of Bee Hives](../%E2%AD%90%EF%B8%8F%20DeepBees%20%E2%80%93%20Building%20and%20Scaling%20Convolutional%20Neuronal%20Nets%20For%20Fast%20and%20Large-scale%20Visual%20Monitoring%20of%20Bee%20Hives.md) — 🇩🇪 Karlsruhe Institute of Technology; 🇩🇪 apic.ai
 - [DeepPoseKit, a software toolkit for fast and robust animal pose estimation using deep learning](../DeepPoseKit.md) — 🇩🇪 Max Planck Institute of Animal Behavior; 🇩🇪 University of Konstanz; 🇺🇸  Princeton University; 🇩🇪 Technische Universität München
 
 ### [2018](../years/2018.md)
@@ -67,6 +67,6 @@ layout: research
 - [DeepLabCut: markerless pose estimation of user-defined body parts with deep learning](../DeepLabCut.md) — 🇩🇪 Eberhard Karls Universität Tübingen; 🇺🇸 Harvard University; 🇺🇸 Columbia University; 🇩🇪 Max Planck Institute for Biological Cybernetics; 🇩🇪 Bernstein Center for Computational Neuroscience; 🇺🇸 Baylor College of Medicine
 - [Multiple Animals Tracking in VideoUsing Part Affinity Fields](../Multiple%20Animals%20Tracking%20in%20VideoUsing%20Part%20Affinity%20Fields.md) — 🇵🇷 University of Puerto Rico
 - [The development of honey bee coloniesassessed using a new semi-automated broodcounting method: CombCount](../The%20development%20of%20honey%20bee%20coloniesassessed%20using%20a%20new%20semi-automated%20broodcounting%20method%20CombCount.md) — 🇦🇺 Macquarie University; 🇦🇺 Queensland University of Technology; 🇺🇸 Carl Hayden Bee Research Center
-- [Towards dense object tracking in a 2D honeybee hive](../%E2%AD%90%EF%B8%8F%20Towards%20dense%20object%20tracking%20in%20a%202D%20honeybee%20hive.md) — 🇯🇵 Okinawa Institute of Science and Technology Graduate University
+- [Towards dense object tracking in a 2D honeybee hive](../%E2%AD%90%EF%B8%8F%20Towards%20dense%20object%20tracking%20in%20a%202D%20honeybee%20hive.md) — 🇯🇵 Okinawa Institute of Science and Technology Graduate University; 🇳🇱 VU University Amsterdam
 - [Tracking All Members of a Honey Bee Colony Over Their Lifetime Using Learned Models of Correspondence](../Tracking%20All%20Members%20of%20a%20Honey%20Bee%20Colony%20Over%20Their%20Lifetime%20Using%20Learned%20Models%20of%20Correspondence.md)
 <!-- GENERATED RESEARCH INDEX:END -->

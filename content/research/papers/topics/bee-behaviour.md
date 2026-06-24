@@ -53,7 +53,7 @@ layout: research
 
 ### [2024](../years/2024.md)
 
-- [Autonomous tracking of honey bee behaviors over long-term periods with cooperating robots](../%E2%AD%90%EF%B8%8F%20Autonomous%20tracking%20of%20honey%20bee%20behaviors%20over%20long-term%20periods%20with%20cooperating%20robots.md) — 🇨🇿 Czech Technical University; 🇦🇹 University of Graz; 🇬🇧 Durham University; 🇹🇷  Middle East Technical University
+- [Autonomous tracking of honey bee behaviors over long-term periods with cooperating robots](../%E2%AD%90%EF%B8%8F%20Autonomous%20tracking%20of%20honey%20bee%20behaviors%20over%20long-term%20periods%20with%20cooperating%20robots.md) — 🇨🇿 Czech Technical University; 🇦🇹 University of Graz; 🇬🇧 Durham University; 🇹🇷 Middle East Technical University
 - [Honey bulk DNA metagenomic analysis to identify honey biological](../Honey%20bulk%20DNA%20metagenomic%20analysis%20to%20identify%20honey%20biological.md) — 🇪🇪 Celvia CC AS; 🇪🇪 University of Tartu; 🇸🇪 Karolinska University Hospital
 - [IntelliBeeHive: An Automated Honey Bee, Pollen, and Varroa Destructor Monitoring System](../IntelliBeeHive%20An%20Automated%20Honey%20Bee%20Pollen%20and%20Varroa%20Destructor%20Monitoring%20System.md) — 🇺🇸 University of Texas Rio Grande Valley
 - [Keypoint-Based Bee Orientation Estimation and Ramp Detection at the Hive Entrance for Bee Behavior Identification System](../Keypoint-Based%20Bee%20Orientation%20Estimation%20and%20Ramp%20Detection%20at%20the%20Hive%20Entrance%20for%20Bee%20Behavior%20Identification%20System.md) — 🇱🇹 Vilnius Gediminas Technical University
@@ -72,7 +72,7 @@ layout: research
 ### [2022](../years/2022.md)
 
 - [A Minimally Invasive Approach Towards “Ecosystem Hacking” With Honeybees](../A%20Minimally%20Invasive%20Approach%20Towards%20%E2%80%9CEcosystem%20Hacking%E2%80%9D%20With%20Honeybees.md) — 🇦🇹 University of Graz; 🇨🇿 Czech Technical University; 🇹🇷  Middle East Technical University
-- [Automated Video Monitoring of Unmarked and Marked Honey Bees at the Hive Entrance](../%E2%AD%90%EF%B8%8F%20Automated%20Video%20Monitoring%20of%20Unmarked%20and%20Marked%20Honey%20Bees%20at%20the%20Hive%20Entrance.md) — 🇵🇷 University of Puerto Rico
+- [Automated Video Monitoring of Unmarked and Marked Honey Bees at the Hive Entrance](../%E2%AD%90%EF%B8%8F%20Automated%20Video%20Monitoring%20of%20Unmarked%20and%20Marked%20Honey%20Bees%20at%20the%20Hive%20Entrance.md) — 🇵🇷 University of Puerto Rico; 🇺🇸 Brown University; 🇺🇸 Howard Hughes Medical Institute (Janelia Research Campus)
 - [Bio-Hybrid Systems for Ecosystem Level Effects](../Bio-Hybrid%20Systems%20for%20Ecosystem%20Level%20Effects.md)
 - [Evaluation of the honey bee colonies weight gain during theintensive foraging period](../Evaluation%20of%20the%20honey%20bee%20colonies%20weight%20gain%20during%20theintensive%20foraging%20period.md) — 🇱🇻 Latvia University of Life Sciences and Technologies
 - [SLEAP: A deep learning system for multi-animal pose tracking](../SLEAP.md) — 🇺🇸  Princeton University; 🇺🇸 New York University; 🇺🇸 Johns Hopkins University School of Medicine
@@ -82,9 +82,9 @@ layout: research
 - [BeePIV: A Method to Measure Apis Mellifera Traffic with Particle Image Velocimetry in Videos](../BeePIV%20A%20Method%20to%20Measure%20Apis%20Mellifera%20Traffic%20with%20Particle%20Image%20Velocimetry%20in%20Videos.md) — 🇺🇸 Utah State University
 - [DeepLabCut-based daily behavioural and posture analysis in a cricket](../DeepLabCut-based%20daily%20behavioural%20and%20posture%20analysis%20in%20a%20cricket.md)
 - [Honeybee In-Out Monitoring System by Object Recognition and Tracking from Real-Time Webcams](../Honeybee%20In-Out%20Monitoring%20System%20by%20Object%20Recognition%20and%20Tracking%20from%20Real-Time%20Webcams.md) — 🇰🇷 Incheon National University
+- [Markerless tracking of an entire honey bee colony](../%E2%AD%90%EF%B8%8F%20Markerless%20tracking%20of%20an%20entire%20honey%20bee%20colony.md) — 🇯🇵 Okinawa Institute of Science and Technology Graduate University; 🇦🇺 Australian National University; 🇳🇱 Vrije Universiteit Amsterdam
 - [On Image Classification in Video Analysis of Omnidirectional Apis Mellifera Traffic: Random Reinforced Forests vs. Shallow Convolutional Networks](../On%20Image%20Classification%20in%20Video%20Analysis%20of%20Omnidirectional%20Apis%20Mellifera%20Traffic%20Random%20Reinforced%20Forests%20vs.%20Shallow%20Convolutional%20Networks.md) — 🇺🇸 Utah State University
 - [Social networks predict the life and death of honeybees](../Social%20networks%20predict%20the%20life%20and%20death%20of%20honeybees.md)
-- [⭐️ Markerless tracking of an entire honey bee colony](../%E2%AD%90%EF%B8%8F%20Markerless%20tracking%20of%20an%20entire%20honey%20bee%20colony.md) — 🇯🇵 Okinawa Institute of Science and Technology Graduate University
 
 ### [2020](../years/2020.md)
 
@@ -104,7 +104,7 @@ layout: research
 - [Honeybees on the move - Pollination services and honey production](../Honeybees%20on%20the%20move%20-%20Pollination%20services%20and%20honey%20production.md)
 - [Multiple Animals Tracking in VideoUsing Part Affinity Fields](../Multiple%20Animals%20Tracking%20in%20VideoUsing%20Part%20Affinity%20Fields.md) — 🇵🇷 University of Puerto Rico
 - [Recognition of Pollen-bearing Bees from Video using Convolutional Neural Network](../Recognition%20of%20Pollen-bearing%20Bees%20from%20Video%20using%20Convolutional%20Neural%20Network.md) — 🇵🇷 University of Puerto Rico
-- [Towards dense object tracking in a 2D honeybee hive](../%E2%AD%90%EF%B8%8F%20Towards%20dense%20object%20tracking%20in%20a%202D%20honeybee%20hive.md) — 🇯🇵 Okinawa Institute of Science and Technology Graduate University
+- [Towards dense object tracking in a 2D honeybee hive](../%E2%AD%90%EF%B8%8F%20Towards%20dense%20object%20tracking%20in%20a%202D%20honeybee%20hive.md) — 🇯🇵 Okinawa Institute of Science and Technology Graduate University; 🇳🇱 VU University Amsterdam
 - [Tracking All Members of a Honey Bee Colony Over Their Lifetime Using Learned Models of Correspondence](../Tracking%20All%20Members%20of%20a%20Honey%20Bee%20Colony%20Over%20Their%20Lifetime%20Using%20Learned%20Models%20of%20Correspondence.md)
 
 ### [2015](../years/2015.md)

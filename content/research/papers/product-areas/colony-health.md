@@ -50,10 +50,10 @@ layout: research
 ### [2025](../years/2025.md)
 
 - [An AI-Based Digital Scanner for Varroa destructor Detection in Beekeeping](../An%20AI-Based%20Digital%20Scanner%20for%20Varroa%20destructor%20Detection%20in%20Beekeeping.md)
+- [An AI-Based Open-Source Software for Varroa Mite Fall Analysis in Honeybee Colonies](../%E2%AD%90%EF%B8%8F%20An%20AI-Based%20Open-Source%20Software%20for%20Varroa%20Mite%20Fall%20Analysis%20in%20Honeybee%20Colonies.md) — 🇪🇸 University of Zaragoza; 🇪🇸 University of La Rioja; 🇪🇸 University of Valencia
+- [Deep Edge IoT for Acoustic Detection of Queenless Beehives](../%E2%AD%90%EF%B8%8F%20Deep%20Edge%20IoT%20for%20Acoustic%20Detection%20of%20Queenless%20Beehives.md) — 🇬🇷 Aristotle University of Thessaloniki
 - [Towards Varroa destructor mite detection using a narrow spectra illumination](../Towards%20Varroa%20destructor%20mite%20detection%20using%20a%20narrow%20spectra%20illumination.md) — 🇨🇿 Brno University of Technology
 - [Transformer Models improve the acoustic recognition of buzz-pollinating bee species](../Transformer%20Models%20improve%20the%20acoustic%20recognition%20of%20buzz-pollinating%20bee%20species.md) — 🇧🇷 Universidade Federal de Goiás; 🇺🇸 University of Arizona; 🇨🇱 Universidad Católica del Maule
-- [⭐️ An AI-Based Open-Source Software for Varroa Mite Fall Analysis in Honeybee Colonies](../%E2%AD%90%EF%B8%8F%20An%20AI-Based%20Open-Source%20Software%20for%20Varroa%20Mite%20Fall%20Analysis%20in%20Honeybee%20Colonies.md) — 🇪🇸 University of Zaragoza 🇪🇸 University of La Rioja 🇪🇸 University of Valencia
-- [⭐️ Deep Edge IoT for Acoustic Detection of Queenless Beehives](../%E2%AD%90%EF%B8%8F%20Deep%20Edge%20IoT%20for%20Acoustic%20Detection%20of%20Queenless%20Beehives.md) — 🇬🇷 Aristotle University of Thessaloniki
 
 ### [2024](../years/2024.md)
 
