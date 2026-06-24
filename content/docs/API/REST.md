@@ -13,4 +13,4 @@ REST API documentation is hosted by the microservices themselves so the docs sta
 - [Gate Video Stream Swagger UI](https://video.gratheon.com/docs/) — depends on `video.gratheon.com` availability
 - [Gate Video Stream OpenAPI JSON](https://video.gratheon.com/openapi.json)
 
-<iframe title="Gratheon Telemetry REST API Swagger UI" src="https://telemetry.gratheon.com/docs/" width="100%" height="850"></iframe>
+<iframe class="api-docs-iframe api-docs-iframe--rest" title="Gratheon Telemetry REST API Swagger UI" src="https://telemetry.gratheon.com/docs/" width="100%" height="850" loading="lazy"></iframe>

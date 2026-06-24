@@ -485,6 +485,32 @@ html[data-theme='dark'] .page-content a {
   line-height: 1.45;
 }
 
+
+/* API reference iframes need room for IDE-style layouts (Altair/Swagger).
+   Break them out of the readable article max-width while keeping page gutters. */
+.api-docs-iframe {
+  display: block;
+  width: calc(100vw - var(--sidebar-width, 280px) - 80px);
+  max-width: calc(100vw - var(--sidebar-width, 280px) - 80px);
+  min-height: 75vh;
+  margin: 24px 0;
+  border: 1px solid var(--nav-border, #e0e0e0);
+  border-radius: 12px;
+  background: var(--bg-primary, #fff);
+}
+
+.api-docs-iframe--graphql {
+  min-height: 760px;
+}
+
+@media (max-width: 768px) {
+  .api-docs-iframe {
+    width: 100%;
+    max-width: 100%;
+    min-height: 70vh;
+  }
+}
+
 /* Front page */
 .front-page #splash {
   background: var(--brand-blue);
