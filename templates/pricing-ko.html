@@ -1,1 +1,195 @@
-{{define "pricing-ko"}}{{template "pricing" .}}{{end}}
+{{define "pricing-ko"}}
+{{/*
+  WHY: /ko/pricing/ is localized independently without changing the canonical English pricing page.
+  WHAT: This standalone copy keeps plan names and prices exact while translating descriptions,
+  features, limits, and CTAs for the localized route only.
+*/}}
+{{template "gratheon_head" .}}
+<body class="pricing-page-no-sidebar">
+  {{template "gratheon_header" .}}
+
+  <main class="pricing-page-wrapper">
+    <div class="pricing-page-header">
+      <h1 class="pricing-page-title">⚖️ 요금제</h1>
+      <p class="pricing-page-subtitle">간단하게 시작하고, 성장에 맞춰 AI와 자동화를 활성화하며, 필요할 때만 추가 용량을 더하세요.</p>
+    </div>
+
+    <div class="pricing-billing-toggle" aria-label="청구 주기">
+      <span class="billing-toggle-label">월간</span>
+      <label class="billing-switch">
+        <input class="billing-switch-input" type="checkbox" role="switch" aria-checked="false" aria-label="연간 요금으로 전환">
+        <span class="billing-switch-track" aria-hidden="true"><span class="billing-switch-thumb"></span></span>
+      </label>
+      <span class="billing-toggle-label">연간 <span class="billing-discount-badge">50% 절약</span></span>
+    </div>
+
+    <div class="pricing-container">
+      <div class="pricing-card" data-tier="free">
+        <div class="pricing-card-header">
+          <div class="pricing-card-title">Free</div>
+          <div class="pricing-card-price">Free</div>
+          <div class="pricing-card-description">핵심 양봉 기록 기능을 체험하세요</div>
+        </div>
+        <div class="pricing-card-body">
+          <div class="pricing-features-section">
+            <h4>기능</h4>
+            <ul class="pricing-card-features">
+              <li><span class="feature-icon" aria-hidden="true">📦</span><span class="feature-text"><a href="/products/web_app/free-tier/apiary-management/">양봉장 및 벌통 관리</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🖼️</span><span class="feature-text"><a href="/products/web_app/free-tier/frame-side-management/">소비 사진 업로드</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">⌨️</span><span class="feature-text"><a href="/products/web_app/free-tier/keyboard-shortcuts/">키보드 지원</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">♻️</span><span class="feature-text"><a href="/products/web_app/free-tier/public-beehive-view/">공개 벌통 공유</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🔗</span><span class="feature-text"><a href="/products/web_app/free-tier/qr-code-generation/">QR 코드 생성</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">📅</span><span class="feature-text"><a href="/products/web_app/free-tier/varroa-treatment-diary/">처리 일지</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🍭</span><span class="feature-text"><a href="/products/web_app/free-tier/feeding-history/">급이 기록</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">👑</span><span class="feature-text"><a href="/products/web_app/free-tier/live-queen-finder/">Live Queen Finder</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">♻️</span><span class="feature-text"><a href="/products/web_app/free-tier/hive-ownership-transfer/">벌통 소유권 이전(개발 중)</a></span></li>
+            </ul>
+          </div>
+          <div class="pricing-limitations-section">
+            <h4>제한</h4>
+            <ul class="pricing-card-limits">
+              <li>벌통 최대 3개</li>
+              <li>벌통당 최대 소비 10개</li>
+              <li>서버 측 AI 이미지 처리 크레딧 없음</li>
+              <li>이미지 6개월 보관</li>
+            </ul>
+          </div>
+        </div>
+        <div class="pricing-card-footer"><a href="https://app.gratheon.com/account/register?lang={{.Page.Language}}" class="pricing-button">시작하기</a></div>
+      </div>
+
+      <div class="pricing-card hobbyist" data-tier="hobbyist">
+        <div class="pricing-card-header">
+          <div class="pricing-card-title">Hobbyist</div>
+          <div class="pricing-card-price">
+            <div class="price-monthly">€7<span class="price-period"> / 월</span></div>
+            <div class="price-yearly-group"><span class="price-yearly">€42<span class="price-period"> / 년</span></span><small class="price-discount">연간 결제 시 50% 절약</small></div>
+          </div>
+          <div class="pricing-card-description">정기 메모와 사진 기록용</div>
+        </div>
+        <div class="pricing-card-body">
+          <div class="pricing-features-section">
+            <h4>기능</h4>
+            <ul class="pricing-card-features">
+              <li><span class="feature-icon" aria-hidden="true">📦</span><span class="feature-text"><a href="/products/web_app/free-tier/hive-management/">데이터베이스 기본 데이터 관리</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🖼️</span><span class="feature-text"><a href="/products/web_app/free-tier/frame-side-management/">소비 사진 업로드 및 저장</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🗺️</span><span class="feature-text"><a href="/products/web_app/hobbyist-tier/hive-placement-planner/">벌통 배치 계획 도구</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">📓</span><span class="feature-text"><a href="/products/web_app/hobbyist-tier/inspection-management/">점검 메모</a> 및 <a href="/products/web_app/free-tier/varroa-treatment-diary/">처리 일지</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">↔️</span><span class="feature-text"><a href="/products/web_app/hobbyist-tier/split-bee-colony/">봉군 분할 관리</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🫶🏻</span><span class="feature-text"><a href="/products/web_app/hobbyist-tier/join-bee-colonies/">봉군 합봉 도구</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🛠</span><span class="feature-text"><a href="/products/web_app/hobbyist-tier/inventory-management/">창고 재고 관리</a></span></li>
+            </ul>
+          </div>
+          <div class="pricing-limitations-section">
+            <h4>제한</h4>
+            <ul class="pricing-card-limits">
+              <li>벌통 최대 15개</li>
+              <li>사용자 계정 1개</li>
+              <li>AI 이미지 처리 기능 없음</li>
+              <li>이미지 1년 보관</li>
+            </ul>
+          </div>
+        </div>
+        <div class="pricing-card-footer"><a href="https://app.gratheon.com/account/register?lang={{.Page.Language}}" class="pricing-button">Hobbyist 시작</a></div>
+      </div>
+
+      <div class="pricing-card simple featured" data-tier="starter">
+        <div class="pricing-card-header">
+          <div class="pricing-card-title">Starter</div>
+          <div class="pricing-card-price">
+            <div class="price-monthly">€22<span class="price-period"> / 월</span></div>
+            <div class="price-yearly-group"><span class="price-yearly">€132<span class="price-period"> / 년</span></span><small class="price-discount">연간 결제 시 50% 절약</small></div>
+          </div>
+          <div class="pricing-card-description">AI 기반 워크플로 활성화</div>
+        </div>
+        <div class="pricing-card-body">
+          <div class="pricing-features-section">
+            <h4>기능</h4>
+            <ul class="pricing-card-features">
+              <li><span class="feature-icon" aria-hidden="true">🐝</span><span class="feature-text"><a href="/products/web_app/starter-tier/honeycomb-cell-detection-management/">셀 분석</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🦀</span><span class="feature-text"><a href="/products/web_app/starter-tier/hive-bottom-varroa-count/">벌통 바닥판 바로아 계수</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🔎</span><span class="feature-text"><a href="/products/web_app/hobbyist-tier/inspection-management/">점검 관리</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">✏️</span><span class="feature-text"><a href="/products/web_app/starter-tier/drawing-on-canvas/">소비 주석 도구</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🤖</span><span class="feature-text"><a href="/products/web_app/starter-tier/beekeeping-advice-with-llm/">AI 양봉 도우미</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🖼️</span><span class="feature-text"><a href="/products/web_app/starter-tier/honeycomb-cell-detection-management/">월별 AI 이미지 분석 크레딧 포함</a></span></li>
+            </ul>
+          </div>
+          <div class="pricing-limitations-section">
+            <h4>제한</h4>
+            <ul class="pricing-card-limits">
+              <li>사용자 계정 1개</li>
+              <li>벌통 최대 50개</li>
+              <li>벌통당 소비 30개</li>
+              <li>이미지 2년 보관</li>
+              <li>월별 AI 분석 사용량 제한</li>
+              <li>혼합 실제 사용량: 월 약 100–130회 AI 프롬프트</li>
+            </ul>
+          </div>
+        </div>
+        <div class="pricing-card-footer"><a href="https://app.gratheon.com/account/register?lang={{.Page.Language}}" class="pricing-button">무료 체험 시작</a></div>
+      </div>
+
+      <div class="pricing-card featured professional" data-tier="professional">
+        <div class="pricing-card-header">
+          <div class="pricing-card-title">Professional</div>
+          <div class="pricing-card-price">
+            <div class="price-monthly">€55<span class="price-period"> / 월</span></div>
+            <div class="price-yearly-group"><span class="price-yearly">€330<span class="price-period"> / 년</span></span><small class="price-discount">연간 결제 시 50% 절약</small></div>
+          </div>
+          <div class="pricing-card-description">성장하는 양봉장과 팀용</div>
+        </div>
+        <div class="pricing-card-body">
+          <div class="pricing-features-section">
+            <h4>기능</h4>
+            <ul class="pricing-card-features">
+              <li><span class="feature-icon" aria-hidden="true">✅</span><span class="feature-text"><a href="/products/web_app/starter-tier/">Starter의 모든 기능</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">📦</span><span class="feature-text"><a href="/products/web_app/pro-tier/hive-telemetry-storage/">벌통 원격 측정 데이터 저장</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">📈</span><span class="feature-text"><a href="/products/web_app/pro-tier/timeseries-data-analytics/">시계열 데이터 분석</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">⚖️</span><span class="feature-text"><a href="/products/web_app/pro-tier/colony-comparison-analytics/">봉군 비교 분석(개발 중)</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🔔</span><span class="feature-text"><a href="/products/web_app/future-ideas/pro-tier-ideas/timeseries-anomaly-detection/">AI 기반 이상 감지(개발 중)</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🎮</span><span class="feature-text"><a href="/products/web_app/future-ideas/pro-tier-ideas/device-management/">장치 관리(개발 중)</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🔎</span><span class="feature-text"><a href="/products/web_app/hobbyist-tier/inspection-management/">벌통당 무제한 점검</a></span></li>
+            </ul>
+          </div>
+          <div class="pricing-limitations-section">
+            <h4>제한</h4>
+            <ul class="pricing-card-limits">
+              <li>원격 측정 최소 해상도 10분</li>
+              <li>사용자 계정 최대 5개</li>
+              <li>벌통 최대 200개</li>
+              <li>이미지 5년 보관</li>
+            </ul>
+          </div>
+        </div>
+        <div class="pricing-card-footer"><a href="https://app.gratheon.com/account/register?lang={{.Page.Language}}" class="pricing-button">Professional 시작</a></div>
+      </div>
+
+      <div class="pricing-card enterprise" data-tier="enterprise">
+        <div class="pricing-card-header">
+          <div class="pricing-card-title">Enterprise</div>
+          <div class="pricing-card-price">Custom</div>
+          <div class="pricing-card-description">산업 양봉과 연구 배포용</div>
+        </div>
+        <div class="pricing-card-body">
+          <div class="pricing-features-section">
+            <h4>기능</h4>
+            <ul class="pricing-card-features">
+              <li><span class="feature-icon" aria-hidden="true">🤝</span><span class="feature-text"><a href="/products/web_app/">맞춤 용량 및 SLA</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">☁️</span><span class="feature-text"><a href="/products/web_app/">온프레미스 또는 프라이빗 클라우드 배포</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🛠</span><span class="feature-text"><a href="/products/entrance_observer/entrance-observer/">하드웨어 통합 지원</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">📈</span><span class="feature-text"><a href="/products/web_app/pro-tier/timeseries-data-analytics/">연구 및 데이터 내보내기 워크플로</a></span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="pricing-card-footer"><a href="mailto:pilot@gratheon.com" class="pricing-button">문의하기</a></div>
+      </div>
+    </div>
+
+
+  </main>
+
+  {{template "gratheon_footer" .}}
+  {{if .JSPath}}<script defer src="{{.JSPath}}"></script>{{end}}
+</body>
+</html>
+{{end}}

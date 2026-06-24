@@ -92,7 +92,7 @@ Legacy Docusaurus files have been removed; `content/` is the source of truth.
 ## Internationalization
 
 The site supports the same language list as `~/git/gratheon/web-app/src/config/languages.ts`:
-`en`, `ru`, `et`, `tr`, `pl`, `de`, `fr`, `zh`, `hi`, `es`, `ar`, `he`, `bn`, `pt`, `ja`, `lv`, `lt`, `hu`, `uk`, `it`, `ro`.
+`en`, `ru`, `et`, `tr`, `pl`, `de`, `fr`, `zh`, `hi`, `es`, `ar`, `he`, `bn`, `pt`, `ja`, `lv`, `lt`, `hu`, `uk`, `it`, `ro`, `ko`, `nl`.
 
 Right-to-left languages such as Arabic (`ar`) and Hebrew (`he`) must set `direction: "rtl"` in `config.yaml`. `blog-engine-md` exposes this as `.Page.Direction`, and Gratheon templates must emit `<html lang="{{.Page.Language}}" dir="{{.Page.Direction}}">` so browser bidi behavior, CSS selectors, and accessibility tools agree on page direction.
 

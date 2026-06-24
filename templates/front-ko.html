@@ -1,1 +1,199 @@
-{{define "front-ko"}}{{template "front-en" .}}{{end}}
+{{define "front-ko"}}
+{{template "gratheon_head" .}}
+<body class="front-page">
+  {{template "gratheon_header" .}}
+
+  <main>
+    <div id="splash">
+      <header id="front">
+        <video id="bgVideo" autoplay loop muted playsinline src="https://gratheon.s3-accelerate.amazonaws.com/video/01.mp4"></video>
+        <div class="headerContentContainer">
+          <div id="splash_internal">
+            <div>벌통 데이터 분석</div>
+            <p>벌과 시간, 체력을 아끼세요</p>
+          </div>
+          <div class="installButtons">
+            <a class="signup blue" href="https://app.gratheon.com/account/register?lang={{.Page.Language}}">무료로 사용해 보기</a>
+            <div class="platformDownloads">
+              <a href="https://play.google.com/store/apps/details?id=com.gratheon.app.twa"><img class="googlePlayBadge no-transform" height="50" src="/assets/img/google.png" alt="Google Play"></a>
+              <a href="https://github.com/Gratheon/web-app/releases/latest" data-latest-release="mac"><img class="desktopDownloadIcon no-transform" src="/assets/img/mac.png" alt="macOS ARM 다운로드"></a>
+              <a href="https://github.com/Gratheon/web-app/releases/latest" data-latest-release="windows"><img class="desktopDownloadIcon no-transform" src="/assets/img/windows-full.webp" alt="Windows 다운로드"></a>
+              <a href="https://github.com/Gratheon/web-app/releases/latest" data-latest-release="linux"><img class="desktopDownloadIcon no-transform" src="/assets/img/linux.png" alt="Linux 다운로드"></a>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <video id="showcase" autoplay loop muted playsinline src="https://gratheon.s3-accelerate.amazonaws.com/www/detection2.mov"></video>
+
+    <section class="front-section">
+      <h2>앱은 어떻게 작동하나요?</h2>
+      <div class="features">
+        <div class="feature">
+          <h3>벌통 모델링</h3>
+          <p>현장에서 종이 기록을 유지하기 어려울 때 어디에, 왜 조치해야 하는지 기억할 수 있도록 벌통을 모델링합니다.</p>
+          <video autoplay loop muted playsinline src="https://gratheon.s3-accelerate.amazonaws.com/www/frame-management3.mov"></video>
+        </div>
+        <div class="feature">
+          <h3>소비 사진 업로드</h3>
+          <p>소비 사진을 찍어 앱에 업로드하세요. Gratheon이 벌을 감지하고 세어 봉군 규모를 측정합니다.</p>
+          <img src="/assets/img/count.webp" alt="벌 수 감지">
+        </div>
+        <div class="feature">
+          <h3>점검 기록 저장</h3>
+          <p>시간에 따른 봉군 발달을 추적하고 같은 소비를 비교해 봉군 변화를 확인합니다.</p>
+          <img src="/assets/img/inspections.webp" alt="점검 기록">
+        </div>
+        <div class="feature">
+          <h3>Live Queen Finder</h3>
+          <p>점검 중 휴대폰 카메라를 사용하면 소비를 스캔하는 동안 Gratheon이 여왕벌로 보이는 탐지를 표시합니다.</p>
+          <a href="/products/web_app/free-tier/live-queen-finder/">
+            <img src="/assets/img/blog/img/live-queen-finder-detection-preview.webp" alt="Live Queen Finder 카메라 감지">
+          </a>
+        </div>
+        <div class="feature">
+          <h3>자원 추정</h3>
+          <p>벌집 셀을 감지하고 자원 비율을 추정합니다. 봉군 간 꿀과 꽃가루 균형을 맞추면 굶주림을 예방할 수 있습니다.</p>
+          <img src="/assets/img/comb.webp" alt="벌집 셀 분석">
+        </div>
+        <div class="feature">
+          <h3>응애 감염 수준 측정</h3>
+          <p>알코올 세척 검사로 벌을 죽이지 않고도 바로아 응애를 감지하고 셀 수 있습니다.</p>
+          <img src="/assets/img/varroa.webp" alt="바로아 감지">
+        </div>
+        <div class="feature">
+          <h3>AI에게 배우기</h3>
+          <p>벌통 맥락을 바탕으로 대규모 언어 모델이 가능한 다음 조치를 버튼 한 번으로 조언합니다.</p>
+          <img src="/assets/img/llm.webp" alt="AI 양봉 도우미">
+        </div>
+        <div class="feature">
+          <h3>메모하기</h3>
+          <p>iPad Pencil이나 마우스로 소비 위에 직접 그려 중요한 영역을 표시합니다.</p>
+          <video autoplay loop muted playsinline src="https://gratheon.s3-accelerate.amazonaws.com/www/ipad3.mov"></video>
+        </div>
+        <div class="feature">
+          <h3>공유</h3>
+          <p>벌통 점검 결과를 양봉 커뮤니티와 공유하고 전문가 조언을 받으세요.</p>
+          <img src="/assets/img/sharing.webp" alt="공개 벌통 공유">
+        </div>
+        <div class="feature">
+          <h3>벌 관찰하기</h3>
+          <p>오픈소스 Entrance Observer 클라이언트, 사용하지 않는 휴대폰 또는 Raspberry Pi로 벌통 입구를 스트리밍합니다.</p>
+          <iframe src="https://www.youtube.com/embed/oG791JNb1aA?autoplay=1&mute=1&loop=1" style="width:100%;height:201px;margin:0 auto;display:block" title="벌통 입구의 벌" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="front-section" id="devices">
+      <h2>하드웨어 제품</h2>
+      <div class="device">
+        <div class="deviceText">
+          <h3>벌통 센서 <span class="badge">프로토타입 단계</span></h3>
+          <p>온도, 습도, CO2 수준, 기압, 소리, 무게를 측정해 봉군 발달과 환경 요인의 상관관계를 파악합니다. 비용 효율적이며 데이터와 에너지 사용이 효율적입니다.</p>
+          <p class="deviceLinks">
+            <a href="https://github.com/Gratheon/beehive-sensors/" aria-label="벌통 센서 소스 코드">
+              <svg class="linkIcon githubIcon" width="16" height="16" viewBox="0 0 1024 1024" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M512 0C229.12 0 0 229.12 0 512c0 226.56 146.56 418.56 350.08 486.4 25.6 4.48 35.2-10.88 35.2-24.32 0-12.16-.64-52.48-.64-95.36C256 902.4 222.72 847.36 212.48 818.56c-5.76-14.72-30.72-60.16-52.48-72.32-17.92-9.6-43.52-28.8-.64-29.44 40.32-.64 69.12 37.76 78.72 53.12 46.08 77.44 119.68 55.68 148.48 42.24 4.48-33.28 17.92-55.68 32.64-68.48-113.92-12.8-233.6-56.96-233.6-253.44 0-55.68 19.84-101.76 52.48-137.6-5.12-12.8-23.04-65.28 5.12-135.68 0 0 42.88-13.44 140.8 52.48 40.96-11.52 84.48-17.28 128-17.28s87.04 5.76 128 17.28c97.92-66.56 140.8-52.48 140.8-52.48 28.16 70.4 10.24 122.88 5.12 135.68 32.64 35.84 52.48 81.28 52.48 137.6 0 197.12-120.32 240.64-234.24 253.44 18.56 16 34.56 46.72 34.56 94.72 0 68.48-.64 123.52-.64 140.8 0 13.44 9.6 29.44 35.2 24.32C877.44 930.56 1024 738.56 1024 512 1024 229.12 794.88 0 512 0Z" fill="#1B1F23"/>
+              </svg> 코드</a>
+          </p>
+        </div>
+        <div class="deviceImgs">
+          <img src="/assets/img/sensors.webp" alt="벌통 센서">
+          <img src="/assets/img/temp.webp" alt="벌통 온도 그래프">
+        </div>
+      </div>
+      <div class="device">
+        <div class="deviceText">
+          <h3>Entrance Observer <span class="badge">MVP 단계</span></h3>
+          <p>벌통 입구 영상을 실시간으로 받아보세요. 출입하는 벌을 세어 하루 채집벌 손실을 추정합니다. 벌 몸에 붙은 바로아 응애를 감지하고, 꽃가루 유입, 도봉, 일벌 정위 비행, 여왕벌 교미 비행을 추적합니다.</p>
+          <p class="deviceLinks">
+            <a href="https://github.com/Gratheon/entrance-observer/" aria-label="Entrance Observer 소스 코드">
+              <svg class="linkIcon githubIcon" width="16" height="16" viewBox="0 0 1024 1024" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M512 0C229.12 0 0 229.12 0 512c0 226.56 146.56 418.56 350.08 486.4 25.6 4.48 35.2-10.88 35.2-24.32 0-12.16-.64-52.48-.64-95.36C256 902.4 222.72 847.36 212.48 818.56c-5.76-14.72-30.72-60.16-52.48-72.32-17.92-9.6-43.52-28.8-.64-29.44 40.32-.64 69.12 37.76 78.72 53.12 46.08 77.44 119.68 55.68 148.48 42.24 4.48-33.28 17.92-55.68 32.64-68.48-113.92-12.8-233.6-56.96-233.6-253.44 0-55.68 19.84-101.76 52.48-137.6-5.12-12.8-23.04-65.28 5.12-135.68 0 0 42.88-13.44 140.8 52.48 40.96-11.52 84.48-17.28 128-17.28s87.04 5.76 128 17.28c97.92-66.56 140.8-52.48 140.8-52.48 28.16 70.4 10.24 122.88 5.12 135.68 32.64 35.84 52.48 81.28 52.48 137.6 0 197.12-120.32 240.64-234.24 253.44 18.56 16 34.56 46.72 34.56 94.72 0 68.48-.64 123.52-.64 140.8 0 13.44 9.6 29.44 35.2 24.32C877.44 930.56 1024 738.56 1024 512 1024 229.12 794.88 0 512 0Z" fill="#1B1F23"/>
+              </svg> 코드</a><br>
+            <a href="/assets/assets/entrance-observer-whitepaper.pdf" aria-label="Entrance Observer 화이트페이퍼 PDF">
+              <svg class="linkIcon pdfIcon" width="16" height="16" viewBox="0 0 14 16" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.2 0.5h7.1L13 4.2v11.3H2.2z" fill="#fff" stroke="#111"/>
+                <path d="M9.2 0.8v3.7h3.6" fill="none" stroke="#111"/>
+                <path d="M0.7 7h12.6v4.2H0.7z" fill="#ed1c24" stroke="#111" stroke-width="0.4"/>
+                <text x="2" y="10.1" fill="#fff" font-family="Arial, sans-serif" font-size="2.9" font-weight="700">PDF</text>
+              </svg> 화이트페이퍼</a>
+          </p>
+        </div>
+        <div class="deviceImgs">
+          <img src="/assets/img/observer.webp" alt="Entrance Observer">
+          <video autoplay loop muted playsinline src="/assets/img/counting.mov"></video>
+        </div>
+      </div>
+      <div class="device">
+        <div class="deviceText">
+          <h3>모듈형 로봇 벌통 <span class="badge">아이디어 단계</span></h3>
+          <p>우리의 최종 목표입니다. 기계식 소비 추출로 점검을 자동화합니다. 무거운 벌통 상자를 들어 올리는 힘을 아끼고, 점검 중 죽는 벌을 줄입니다. 원격 내부 관찰로 현장 방문 시간을 줄여 효율을 높입니다. 알림으로 항상 최신 상태를 확인하고 도시 지역의 이웃이 벌침에 쏘이지 않도록 돕습니다.</p>
+          <p class="deviceLinks">
+            <a href="https://github.com/Gratheon/robotic-beehive/" aria-label="모듈형 로봇 벌통 소스 코드">
+              <svg class="linkIcon githubIcon" width="16" height="16" viewBox="0 0 1024 1024" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M512 0C229.12 0 0 229.12 0 512c0 226.56 146.56 418.56 350.08 486.4 25.6 4.48 35.2-10.88 35.2-24.32 0-12.16-.64-52.48-.64-95.36C256 902.4 222.72 847.36 212.48 818.56c-5.76-14.72-30.72-60.16-52.48-72.32-17.92-9.6-43.52-28.8-.64-29.44 40.32-.64 69.12 37.76 78.72 53.12 46.08 77.44 119.68 55.68 148.48 42.24 4.48-33.28 17.92-55.68 32.64-68.48-113.92-12.8-233.6-56.96-233.6-253.44 0-55.68 19.84-101.76 52.48-137.6-5.12-12.8-23.04-65.28 5.12-135.68 0 0 42.88-13.44 140.8 52.48 40.96-11.52 84.48-17.28 128-17.28s87.04 5.76 128 17.28c97.92-66.56 140.8-52.48 140.8-52.48 28.16 70.4 10.24 122.88 5.12 135.68 32.64 35.84 52.48 81.28 52.48 137.6 0 197.12-120.32 240.64-234.24 253.44 18.56 16 34.56 46.72 34.56 94.72 0 68.48-.64 123.52-.64 140.8 0 13.44 9.6 29.44 35.2 24.32C877.44 930.56 1024 738.56 1024 512 1024 229.12 794.88 0 512 0Z" fill="#1B1F23"/>
+              </svg> 코드</a>
+          </p>
+        </div>
+        <div class="deviceImgs">
+          <video autoplay loop muted playsinline src="https://gratheon.s3-accelerate.amazonaws.com/video/linear-actuator.mp4"></video>
+        </div>
+      </div>
+    </section>
+
+    <section class="front-story" id="content">
+      <article>
+        <h2>양봉의 미래를 함께 만들어가세요</h2>
+        <div class="author">
+          <div>
+            <a href="https://twitter.com/tot_ra" aria-label="Twitter의 Artjom Kurapov">
+              <img src="/assets/img/artjom.jpg" alt="저자 사진" width="50" height="50">
+            </a>
+          </div>
+          <div>
+            <a href="https://www.linkedin.com/in/kurapov/">Artjom Kurapov</a> 작성,<br>양봉가, 창립 엔지니어
+          </div>
+        </div>
+        <p>저는 소프트웨어 엔지니어이며, 5년 전 정원의 수분을 개선하고 더 많은 수확을 얻기 위해 양봉가가 되었습니다. 저에게 벌은 귀엽고 흥미로운 반려동물이기도 합니다.</p>
+        <p>벌은 우리의 식량 안보에 핵심적인 종입니다. 농부들은 정밀한 수분으로 수확량을 늘리기 위해 양봉가와 협력합니다.</p>
+        <p>전통적인 양봉에는 봉군 관찰성이 필요합니다. 벌은 굶주림, 여왕벌 상실, 늦은 분봉 또는 봉군을 약화시키고 월동 붕괴를 일으키는 Varroa destructor 응애 감염을 겪을 수 있기 때문입니다.</p>
+        <p>관찰성은 보통 힘든 육체노동과 자주 해야 하지만 시간이 제한된 점검으로 해결됩니다. 여름 더위 속에서 보호복을 입고, 150년 전에 설계된 20kg 벌통 상자를 들어 올리며, 방어하는 벌에게 쏘이는 와중에도 작은 세부 사항을 확인해야 합니다. 이는 점검 스트레스를 만들고 벌을 죽게 합니다.</p>
+        <p>양봉장이 커질수록 이 작업은 확장하기 어려워집니다. 산업 양봉가는 접근하기 어려운 먼 곳에 여러 양봉장을 운영합니다. 기존 솔루션은 이러한 문제를 충분히 해결하지 못합니다.</p>
+        <p>💡 우리의 목표는 관찰성과 자동화로 양봉가를 돕는 것입니다. 우리의 비전은 봉군을 원격으로 점검할 수 있는 완전 자율 다중 벌통 Robotic Apiary입니다. 소프트웨어에서 시작해 단계적으로 그 목표에 도달하겠습니다.</p>
+        <p>실행 가능한 지표와 자동화를 제공함으로써 양봉가는 더 효율적으로 일하고, 현장에서 보내는 시간을 줄이며, 더 많이 분석하고 필요한 때에만 정밀하게 개입할 수 있습니다.</p>
+        <div class="future">
+          <div>
+            <p>Gratheon 앱은 오픈소스 소프트웨어 위에 구축되었으며, 앱 자체도 완전한 오픈소스입니다.</p>
+            <p>전 세계 1억 개 봉군의 삶을 개선하고 더 큰 수분 수요를 충족하는 일에 함께해 주세요. 개발을 확장할 투자자, 팀에 합류할 엔지니어, 현장 테스트를 진행할 양봉가, 우리를 이끌어 줄 자문가를 찾고 있습니다.</p>
+            <p>아이디어가 있으신가요?</p>
+            <p class="futureActions">
+              <a class="action action_green" href="https://discord.gg/PcbP4uedWj">Discord에서 알려주세요</a>
+              <a class="action blue" href="https://app.gratheon.com/account/register?lang={{.Page.Language}}">가입하기</a>
+            </p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <iframe
+      class="authorIntro"
+      title="저자 소개"
+      src="https://www.youtube.com/embed/gM3AJEAhmXc?rel=0"
+      frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+
+    <div class="brandStripe" aria-hidden="true">
+      <div class="brandStripeYellow"></div>
+      <div class="brandStripeGreen"></div>
+      <div class="brandStripeBlue"></div>
+    </div>
+  </main>
+
+  {{template "gratheon_footer" .}}
+  {{if .JSPath}}<script defer src="{{.JSPath}}"></script>{{end}}
+</body>
+</html>
+{{end}}

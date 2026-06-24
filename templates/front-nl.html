@@ -1,1 +1,199 @@
-{{define "front-nl"}}{{template "front-en" .}}{{end}}
+{{define "front-nl"}}
+{{template "gratheon_head" .}}
+<body class="front-page">
+  {{template "gratheon_header" .}}
+
+  <main>
+    <div id="splash">
+      <header id="front">
+        <video id="bgVideo" autoplay loop muted playsinline src="https://gratheon.s3-accelerate.amazonaws.com/video/01.mp4"></video>
+        <div class="headerContentContainer">
+          <div id="splash_internal">
+            <div>Data-analyse voor bijenkasten</div>
+            <p>Bespaar bijen, tijd en kracht</p>
+          </div>
+          <div class="installButtons">
+            <a class="signup blue" href="https://app.gratheon.com/account/register?lang={{.Page.Language}}">Gratis proberen</a>
+            <div class="platformDownloads">
+              <a href="https://play.google.com/store/apps/details?id=com.gratheon.app.twa"><img class="googlePlayBadge no-transform" height="50" src="/assets/img/google.png" alt="Google Play"></a>
+              <a href="https://github.com/Gratheon/web-app/releases/latest" data-latest-release="mac"><img class="desktopDownloadIcon no-transform" src="/assets/img/mac.png" alt="macOS ARM downloaden"></a>
+              <a href="https://github.com/Gratheon/web-app/releases/latest" data-latest-release="windows"><img class="desktopDownloadIcon no-transform" src="/assets/img/windows-full.webp" alt="Windows downloaden"></a>
+              <a href="https://github.com/Gratheon/web-app/releases/latest" data-latest-release="linux"><img class="desktopDownloadIcon no-transform" src="/assets/img/linux.png" alt="Linux downloaden"></a>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <video id="showcase" autoplay loop muted playsinline src="https://gratheon.s3-accelerate.amazonaws.com/www/detection2.mov"></video>
+
+    <section class="front-section">
+      <h2>Hoe werkt de app?</h2>
+      <div class="features">
+        <div class="feature">
+          <h3>Bijenkasten modelleren</h3>
+          <p>Modelleer kasten zodat je in het veld weet waar en waarom actie nodig is wanneer papieren notities moeilijk bij te houden zijn.</p>
+          <video autoplay loop muted playsinline src="https://gratheon.s3-accelerate.amazonaws.com/www/frame-management3.mov"></video>
+        </div>
+        <div class="feature">
+          <h3>Raamfoto's uploaden</h3>
+          <p>Maak foto's van ramen en upload ze naar de app. Gratheon detecteert en telt bijen om de volksgrootte te meten.</p>
+          <img src="/assets/img/count.webp" alt="Detectie van bijenaantal">
+        </div>
+        <div class="feature">
+          <h3>Inspecties opslaan</h3>
+          <p>Volg de ontwikkeling van een volk door de tijd en vergelijk hetzelfde raam om veranderingen in het volk te zien.</p>
+          <img src="/assets/img/inspections.webp" alt="Inspectiegeschiedenis">
+        </div>
+        <div class="feature">
+          <h3>Live Queen Finder</h3>
+          <p>Gebruik tijdens de inspectie de camera van je telefoon en laat Gratheon koninginachtige detecties aanwijzen terwijl je het raam scant.</p>
+          <a href="/products/web_app/free-tier/live-queen-finder/">
+            <img src="/assets/img/blog/img/live-queen-finder-detection-preview.webp" alt="Live Queen Finder-cameradetectie">
+          </a>
+        </div>
+        <div class="feature">
+          <h3>Voorraden inschatten</h3>
+          <p>Detecteer cellen en schat voorraadverhoudingen. Nectar en pollen tussen volken in balans brengen kan verhongering voorkomen.</p>
+          <img src="/assets/img/comb.webp" alt="Analyse van honingraatcellen">
+        </div>
+        <div class="feature">
+          <h3>Mijtenbesmetting meten</h3>
+          <p>Detecteer en tel varroamijten zonder bijen te doden met een alcoholwastest.</p>
+          <img src="/assets/img/varroa.webp" alt="Varroadetectie">
+        </div>
+        <div class="feature">
+          <h3>Leren van AI</h3>
+          <p>Gebruik de context van de kast om met één knop advies van een groot taalmodel te krijgen over mogelijke volgende stappen.</p>
+          <img src="/assets/img/llm.webp" alt="AI-imkerassistent">
+        </div>
+        <div class="feature">
+          <h3>Notities maken</h3>
+          <p>Gebruik een iPad Pencil of muis om op het raam te tekenen en belangrijke gebieden te markeren.</p>
+          <video autoplay loop muted playsinline src="https://gratheon.s3-accelerate.amazonaws.com/www/ipad3.mov"></video>
+        </div>
+        <div class="feature">
+          <h3>Delen</h3>
+          <p>Deel kastinspecties met de imkergemeenschap en krijg deskundig advies.</p>
+          <img src="/assets/img/sharing.webp" alt="Openbaar delen van bijenkasten">
+        </div>
+        <div class="feature">
+          <h3>Bijen observeren</h3>
+          <p>Stream bijenkastingangen met de open-source Entrance Observer-client, een ongebruikte telefoon of Raspberry Pi.</p>
+          <iframe src="https://www.youtube.com/embed/oG791JNb1aA?autoplay=1&mute=1&loop=1" style="width:100%;height:201px;margin:0 auto;display:block" title="Bijen bij de bijenkastingang" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="front-section" id="devices">
+      <h2>Hardwareproducten</h2>
+      <div class="device">
+        <div class="deviceText">
+          <h3>Bijenkastsensoren <span class="badge">prototypefase</span></h3>
+          <p>Meet temperatuur, luchtvochtigheid, CO2-niveau, luchtdruk, geluid en gewicht om de ontwikkeling van het volk te koppelen aan omgevingsfactoren. Betaalbaar en efficiënt met data en energie.</p>
+          <p class="deviceLinks">
+            <a href="https://github.com/Gratheon/beehive-sensors/" aria-label="Broncode van bijenkastsensoren">
+              <svg class="linkIcon githubIcon" width="16" height="16" viewBox="0 0 1024 1024" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M512 0C229.12 0 0 229.12 0 512c0 226.56 146.56 418.56 350.08 486.4 25.6 4.48 35.2-10.88 35.2-24.32 0-12.16-.64-52.48-.64-95.36C256 902.4 222.72 847.36 212.48 818.56c-5.76-14.72-30.72-60.16-52.48-72.32-17.92-9.6-43.52-28.8-.64-29.44 40.32-.64 69.12 37.76 78.72 53.12 46.08 77.44 119.68 55.68 148.48 42.24 4.48-33.28 17.92-55.68 32.64-68.48-113.92-12.8-233.6-56.96-233.6-253.44 0-55.68 19.84-101.76 52.48-137.6-5.12-12.8-23.04-65.28 5.12-135.68 0 0 42.88-13.44 140.8 52.48 40.96-11.52 84.48-17.28 128-17.28s87.04 5.76 128 17.28c97.92-66.56 140.8-52.48 140.8-52.48 28.16 70.4 10.24 122.88 5.12 135.68 32.64 35.84 52.48 81.28 52.48 137.6 0 197.12-120.32 240.64-234.24 253.44 18.56 16 34.56 46.72 34.56 94.72 0 68.48-.64 123.52-.64 140.8 0 13.44 9.6 29.44 35.2 24.32C877.44 930.56 1024 738.56 1024 512 1024 229.12 794.88 0 512 0Z" fill="#1B1F23"/>
+              </svg> Code</a>
+          </p>
+        </div>
+        <div class="deviceImgs">
+          <img src="/assets/img/sensors.webp" alt="Bijenkastsensoren">
+          <img src="/assets/img/temp.webp" alt="Temperatuurgrafiek van bijenkast">
+        </div>
+      </div>
+      <div class="device">
+        <div class="deviceText">
+          <h3>Entrance Observer <span class="badge">MVP-fase</span></h3>
+          <p>Krijg realtime videobeeld van de ingang. Tel inkomende en uitgaande bijen om het dagelijkse verlies van haalbijen te schatten. Detecteer varroamijten op bijen. Volg pollenstroom, roverij, oriëntatievluchten van werksters en paringsvluchten van de koningin.</p>
+          <p class="deviceLinks">
+            <a href="https://github.com/Gratheon/entrance-observer/" aria-label="Broncode van Entrance Observer">
+              <svg class="linkIcon githubIcon" width="16" height="16" viewBox="0 0 1024 1024" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M512 0C229.12 0 0 229.12 0 512c0 226.56 146.56 418.56 350.08 486.4 25.6 4.48 35.2-10.88 35.2-24.32 0-12.16-.64-52.48-.64-95.36C256 902.4 222.72 847.36 212.48 818.56c-5.76-14.72-30.72-60.16-52.48-72.32-17.92-9.6-43.52-28.8-.64-29.44 40.32-.64 69.12 37.76 78.72 53.12 46.08 77.44 119.68 55.68 148.48 42.24 4.48-33.28 17.92-55.68 32.64-68.48-113.92-12.8-233.6-56.96-233.6-253.44 0-55.68 19.84-101.76 52.48-137.6-5.12-12.8-23.04-65.28 5.12-135.68 0 0 42.88-13.44 140.8 52.48 40.96-11.52 84.48-17.28 128-17.28s87.04 5.76 128 17.28c97.92-66.56 140.8-52.48 140.8-52.48 28.16 70.4 10.24 122.88 5.12 135.68 32.64 35.84 52.48 81.28 52.48 137.6 0 197.12-120.32 240.64-234.24 253.44 18.56 16 34.56 46.72 34.56 94.72 0 68.48-.64 123.52-.64 140.8 0 13.44 9.6 29.44 35.2 24.32C877.44 930.56 1024 738.56 1024 512 1024 229.12 794.88 0 512 0Z" fill="#1B1F23"/>
+              </svg> Code</a><br>
+            <a href="/assets/assets/entrance-observer-whitepaper.pdf" aria-label="Entrance Observer-whitepaper PDF">
+              <svg class="linkIcon pdfIcon" width="16" height="16" viewBox="0 0 14 16" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.2 0.5h7.1L13 4.2v11.3H2.2z" fill="#fff" stroke="#111"/>
+                <path d="M9.2 0.8v3.7h3.6" fill="none" stroke="#111"/>
+                <path d="M0.7 7h12.6v4.2H0.7z" fill="#ed1c24" stroke="#111" stroke-width="0.4"/>
+                <text x="2" y="10.1" fill="#fff" font-family="Arial, sans-serif" font-size="2.9" font-weight="700">PDF</text>
+              </svg> Whitepaper</a>
+          </p>
+        </div>
+        <div class="deviceImgs">
+          <img src="/assets/img/observer.webp" alt="Entrance Observer">
+          <video autoplay loop muted playsinline src="/assets/img/counting.mov"></video>
+        </div>
+      </div>
+      <div class="device">
+        <div class="deviceText">
+          <h3>Modulaire robotbijenkast <span class="badge">ideefase</span></h3>
+          <p>Ons uiteindelijke doel. Automatiseer inspecties met mechanische raamuitname. Bespaar energie door zware kastdelen minder te tillen. Verminder bijensterfte door inspecties. Verhoog de efficiëntie met interne observatie op afstand en bespaar tijd op veldbezoeken. Blijf altijd op de hoogte met waarschuwingen. Houd buren in stedelijke gebieden steekvrij.</p>
+          <p class="deviceLinks">
+            <a href="https://github.com/Gratheon/robotic-beehive/" aria-label="Broncode van modulaire robotbijenkast">
+              <svg class="linkIcon githubIcon" width="16" height="16" viewBox="0 0 1024 1024" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M512 0C229.12 0 0 229.12 0 512c0 226.56 146.56 418.56 350.08 486.4 25.6 4.48 35.2-10.88 35.2-24.32 0-12.16-.64-52.48-.64-95.36C256 902.4 222.72 847.36 212.48 818.56c-5.76-14.72-30.72-60.16-52.48-72.32-17.92-9.6-43.52-28.8-.64-29.44 40.32-.64 69.12 37.76 78.72 53.12 46.08 77.44 119.68 55.68 148.48 42.24 4.48-33.28 17.92-55.68 32.64-68.48-113.92-12.8-233.6-56.96-233.6-253.44 0-55.68 19.84-101.76 52.48-137.6-5.12-12.8-23.04-65.28 5.12-135.68 0 0 42.88-13.44 140.8 52.48 40.96-11.52 84.48-17.28 128-17.28s87.04 5.76 128 17.28c97.92-66.56 140.8-52.48 140.8-52.48 28.16 70.4 10.24 122.88 5.12 135.68 32.64 35.84 52.48 81.28 52.48 137.6 0 197.12-120.32 240.64-234.24 253.44 18.56 16 34.56 46.72 34.56 94.72 0 68.48-.64 123.52-.64 140.8 0 13.44 9.6 29.44 35.2 24.32C877.44 930.56 1024 738.56 1024 512 1024 229.12 794.88 0 512 0Z" fill="#1B1F23"/>
+              </svg> Code</a>
+          </p>
+        </div>
+        <div class="deviceImgs">
+          <video autoplay loop muted playsinline src="https://gratheon.s3-accelerate.amazonaws.com/video/linear-actuator.mp4"></video>
+        </div>
+      </div>
+    </section>
+
+    <section class="front-story" id="content">
+      <article>
+        <h2>Geef de toekomst van de imkerij vorm</h2>
+        <div class="author">
+          <div>
+            <a href="https://twitter.com/tot_ra" aria-label="Artjom Kurapov op Twitter">
+              <img src="/assets/img/artjom.jpg" alt="foto van de auteur" width="50" height="50">
+            </a>
+          </div>
+          <div>
+            Door <a href="https://www.linkedin.com/in/kurapov/">Artjom Kurapov</a>,<br>imker, founding engineer
+          </div>
+        </div>
+        <p>Ik ben software-engineer en werd 5 jaar geleden imker om de bestuiving van mijn tuin te verbeteren en hogere opbrengsten te krijgen. Voor mij zijn bijen ook lieve en interessante huisdieren.</p>
+        <p>Bijen zijn een sleutelsoort voor onze voedselzekerheid. Boeren werken samen met imkers om opbrengsten te verhogen via gerichte bestuiving.</p>
+        <p>Traditionele imkerij vraagt om observeerbaarheid van een bijenvolk, omdat bijen honger, verlies van de koningin, late zwermneiging of een besmetting met de Varroa destructor-mijt kunnen krijgen, wat het volk verzwakt en wintersterfte veroorzaakt.</p>
+        <p>Observeerbaarheid wordt meestal opgelost met zwaar lichamelijk werk en frequente inspecties met beperkte tijd. In de zomerhitte, gekleed in een beschermend pak, moet je kastdelen van 20 kg tillen die 150 jaar geleden zijn ontworpen, kleine details opmerken terwijl verdedigende bijen steken, inspectiestress veroorzaken en bijen doden.</p>
+        <p>Naarmate je bijenstand groeit, wordt dit werk niet schaalbaar. Industriële imkers hebben meerdere bijenstanden op afgelegen locaties die moeilijk bereikbaar zijn. Bestaande oplossingen lossen deze problemen onvoldoende op.</p>
+        <p>💡 Ons doel is imkers te helpen met observeerbaarheid en automatisering. Onze visie is een volledig autonome Robotic Apiary met meerdere kasten die volken op afstand kan inspecteren. We bereiken dit stap voor stap, beginnend met software.</p>
+        <p>Met bruikbare meetgegevens en automatisering worden imkers efficiënter, besteden ze minder tijd in het veld en analyseren ze meer, zodat ze alleen precies ingrijpen wanneer dat nodig is.</p>
+        <div class="future">
+          <div>
+            <p>De Gratheon-app bouwt voort op open-sourcesoftware en is zelf ook volledig open source.</p>
+            <p>Doe mee om het leven van 100 miljoen bijenvolken wereldwijd te verbeteren en aan een grotere bestuivingsvraag te voldoen. We zoeken investeerders om onze ontwikkeling op te schalen, engineers voor ons team, imkers voor veldtesten en adviseurs om ons te begeleiden.</p>
+            <p>Heb je ideeën?</p>
+            <p class="futureActions">
+              <a class="action action_green" href="https://discord.gg/PcbP4uedWj">Vertel het ons op Discord</a>
+              <a class="action blue" href="https://app.gratheon.com/account/register?lang={{.Page.Language}}">Aanmelden</a>
+            </p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <iframe
+      class="authorIntro"
+      title="Introductie van de auteur"
+      src="https://www.youtube.com/embed/gM3AJEAhmXc?rel=0"
+      frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+
+    <div class="brandStripe" aria-hidden="true">
+      <div class="brandStripeYellow"></div>
+      <div class="brandStripeGreen"></div>
+      <div class="brandStripeBlue"></div>
+    </div>
+  </main>
+
+  {{template "gratheon_footer" .}}
+  {{if .JSPath}}<script defer src="{{.JSPath}}"></script>{{end}}
+</body>
+</html>
+{{end}}
