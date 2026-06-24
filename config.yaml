@@ -46,6 +46,12 @@ i18n:
     - code: "it"
       label: "Italiano"
       aliases: ["it", "it-it"]
+    - code: "ko"
+      label: "한국어"
+      aliases: ["ko", "ko-kr"]
+    - code: "nl"
+      label: "Nederlands"
+      aliases: ["nl", "nl-nl"]
     - code: "tr"
       label: "Türkçe"
       aliases: ["tr", "tr-tr"]
@@ -558,6 +564,50 @@ navigation:
         url: "https://app.gratheon.com/account/authenticate/?lang=ro"
         class: "nav-action nav-action-first"
         languages: ["ro"]
+      - title: "회사 소개"
+        url: "/ko/about/"
+        languages: ["ko"]
+      - title: "제품"
+        url: "/products/"
+        languages: ["ko"]
+      - title: "연구"
+        url: "/ko/research/"
+        languages: ["ko"]
+      - title: "블로그"
+        url: "/ko/blog/"
+        languages: ["ko"]
+      - title: "문서"
+        url: "/ko/docs/"
+        languages: ["ko"]
+      - title: "가격"
+        url: "/ko/pricing/"
+        languages: ["ko"]
+      - title: "로그인"
+        url: "https://app.gratheon.com/account/authenticate/?lang=ko"
+        class: "nav-action nav-action-first"
+        languages: ["ko"]
+      - title: "Over ons"
+        url: "/nl/about/"
+        languages: ["nl"]
+      - title: "Producten"
+        url: "/products/"
+        languages: ["nl"]
+      - title: "Onderzoek"
+        url: "/nl/research/"
+        languages: ["nl"]
+      - title: "Blog"
+        url: "/nl/blog/"
+        languages: ["nl"]
+      - title: "Documentatie"
+        url: "/nl/docs/"
+        languages: ["nl"]
+      - title: "Prijzen"
+        url: "/nl/pricing/"
+        languages: ["nl"]
+      - title: "Inloggen"
+        url: "https://app.gratheon.com/account/authenticate/?lang=nl"
+        class: "nav-action nav-action-first"
+        languages: ["nl"]
     languages:
       en:
         - title: "About"
@@ -894,6 +944,38 @@ navigation:
           url: "/ro/pricing/"
         - title: "Autentificare"
           url: "https://app.gratheon.com/account/authenticate/?lang=ro"
+          class: "nav-action nav-action-first"
+      ko:
+        - title: "회사 소개"
+          url: "/ko/about/"
+        - title: "제품"
+          url: "/products/"
+        - title: "연구"
+          url: "/ko/research/"
+        - title: "블로그"
+          url: "/ko/blog/"
+        - title: "문서"
+          url: "/ko/docs/"
+        - title: "가격"
+          url: "/ko/pricing/"
+        - title: "로그인"
+          url: "https://app.gratheon.com/account/authenticate/?lang=ko"
+          class: "nav-action nav-action-first"
+      nl:
+        - title: "Over ons"
+          url: "/nl/about/"
+        - title: "Producten"
+          url: "/products/"
+        - title: "Onderzoek"
+          url: "/nl/research/"
+        - title: "Blog"
+          url: "/nl/blog/"
+        - title: "Documentatie"
+          url: "/nl/docs/"
+        - title: "Prijzen"
+          url: "/nl/pricing/"
+        - title: "Inloggen"
+          url: "https://app.gratheon.com/account/authenticate/?lang=nl"
           class: "nav-action nav-action-first"
   sidebar:
     collapsed: true
