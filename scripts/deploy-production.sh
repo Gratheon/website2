@@ -3,6 +3,7 @@ set -euo pipefail
 
 APP_DIR="${APP_DIR:-/www/website}"
 LIVE_APP_DIR="$APP_DIR"
+SHARED_DIR="${SHARED_DIR:-$LIVE_APP_DIR/shared}"
 REMOTE="${REMOTE:-origin}"
 BRANCH="${BRANCH:-main}"
 TARGET_REF="$REMOTE/$BRANCH"
@@ -40,10 +41,15 @@ WORKTREE_DIR="$(mktemp -d -t website-release.XXXXXX)"
 rm -rf "$WORKTREE_DIR"
 git_as_repo_owner worktree add --detach "$WORKTREE_DIR" "$TARGET_REF"
 
+# Keep blog-engine image variants outside the temporary worktree. Without this,
+# every deploy re-encodes hundreds of large images and can be killed by OOM.
+mkdir -p "$SHARED_DIR/cache"
+ln -sfn "$SHARED_DIR/cache" "$WORKTREE_DIR/.cache"
+
 APP_DIR="$WORKTREE_DIR" \
 PUBLIC_DIR="$LIVE_APP_DIR/current" \
 RELEASES_DIR="$LIVE_APP_DIR/releases" \
-SHARED_DIR="$LIVE_APP_DIR/shared" \
+SHARED_DIR="$SHARED_DIR" \
 KEEP_RELEASES="${KEEP_RELEASES:-2}" \
 BLOG_ENGINE="${BLOG_ENGINE:-}" \
     "$WORKTREE_DIR/restart.sh" --publish-only

@@ -57,7 +57,7 @@ Pushes to `main` deploy through `.github/workflows/deploy.yml`. The workflow exp
 
 The production runner must be able to write `/www/website`, execute `/www/blog-engine-md/bin/blog-engine`, and reload nginx. Nginx should use the checked-in `config/nginx.conf`, which serves `/www/website/current`.
 
-Production keeps the two newest immutable releases under `/www/website/releases`. New releases reuse unchanged files from the previous active release via hardlinks when `rsync` is available, keeping rollback support without duplicating static assets on every deploy.
+Production keeps the two newest immutable releases under `/www/website/releases`. New releases reuse unchanged files from the previous active release via hardlinks when `rsync` is available, keeping rollback support without duplicating static assets on every deploy. The deploy script also symlinks the temporary worktree `.cache` directory to `/www/website/shared/cache` so processed image variants survive between deploys; this avoids re-encoding hundreds of large images on every run and keeps memory use low on the self-hosted runner. Image processing is intentionally configured with one parallel worker and a 1600px full-size variant to keep the first uncached deploy below typical small-runner memory limits.
 
 If the runner user is not `root`, give it passwordless sudo for nginx reloads
 (replace `www` if the runner uses another account):

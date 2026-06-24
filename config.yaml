@@ -85,7 +85,8 @@ build:
   contentDir: "content"
   outputDir: "dist"
   cacheDir: ".cache"
-  parallelWorkers: 4
+  # Keep image processing serial on the production runner: large screenshots can OOM when resized concurrently.
+  parallelWorkers: 1
 
 navigation:
   header:
@@ -920,7 +921,7 @@ assets:
     sizes:
       thumbnail: 300
       preview: 800
-      full: 2520
+      full: 1600
     lazyLoading: true
   css:
     enabled: true
@@ -928,6 +929,9 @@ assets:
   js:
     enabled: true
     minify: true
+  cache:
+    enabled: true
+    directory: ".cache"
 
 feeds:
   rss:
