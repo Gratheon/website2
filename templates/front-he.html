@@ -1,0 +1,152 @@
+{{define "front-he"}}
+{{template "gratheon_head" .}}
+<body class="front-page">
+  {{template "gratheon_header" .}}
+
+  <main>
+    <div id="splash">
+      <header id="front">
+        <video id="bgVideo" autoplay loop muted playsinline src="https://gratheon.s3-accelerate.amazonaws.com/video/01.mp4"></video>
+        <div class="headerContentContainer">
+          <div id="splash_internal">
+            <div>ניתוח נתוני כוורות</div>
+            <p>חוסכים דבורים, זמן וכוח</p>
+          </div>
+          <div class="installButtons">
+            <a class="signup blue" href="https://app.gratheon.com/account/register?lang={{.Page.Language}}">נסו בחינם</a>
+            <div class="platformDownloads">
+              <a href="https://play.google.com/store/apps/details?id=com.gratheon.app.twa"><img class="googlePlayBadge no-transform" height="50" src="/assets/img/google.png" alt="Google Play"></a>
+              <a href="https://github.com/Gratheon/web-app/releases/latest" data-latest-release="mac"><img class="desktopDownloadIcon no-transform" src="/assets/img/mac.png" alt="הורדת macOS ARM"></a>
+              <a href="https://github.com/Gratheon/web-app/releases/latest" data-latest-release="windows"><img class="desktopDownloadIcon no-transform" src="/assets/img/windows-full.webp" alt="הורדת Windows"></a>
+              <a href="https://github.com/Gratheon/web-app/releases/latest" data-latest-release="linux"><img class="desktopDownloadIcon no-transform" src="/assets/img/linux.png" alt="הורדת Linux"></a>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <video id="showcase" autoplay loop muted playsinline src="https://gratheon.s3-accelerate.amazonaws.com/www/detection2.mov"></video>
+
+    <section class="front-section">
+      <h2>איך האפליקציה עובדת?</h2>
+      <div class="features">
+        <div class="feature">
+          <h3>מודל לכוורות</h3>
+          <p>צרו מודל של הכוורות כדי לזכור איפה ולמה צריך לפעול כשהערות נייר הופכות לקשות לתחזוקה בשטח.</p>
+          <video autoplay loop muted playsinline src="https://gratheon.s3-accelerate.amazonaws.com/www/frame-management3.mov"></video>
+        </div>
+        <div class="feature">
+          <h3>העלאת תמונות מסגרות</h3>
+          <p>צלמו מסגרות והעלו אותן לאפליקציה. Gratheon מזהה וסופר דבורים כדי למדוד את גודל המושבה.</p>
+          <img src="/assets/img/count.webp" alt="Bee count detection">
+        </div>
+        <div class="feature">
+          <h3>שמירת בדיקות</h3>
+          <p>עקבו אחר התפתחות המושבה לאורך זמן והשוו את אותה מסגרת כדי לראות שינויים במושבה.</p>
+          <img src="/assets/img/inspections.webp" alt="Inspection history">
+        </div>
+        <div class="feature">
+          <h3>Live Queen Finder</h3>
+          <p>השתמשו במצלמת הטלפון בזמן בדיקה ותנו ל-Gratheon להצביע על זיהויים דמויי מלכה בזמן סריקת המסגרת.</p>
+          <a href="/products/web_app/free-tier/live-queen-finder/">
+            <img src="/assets/img/blog/img/live-queen-finder-detection-preview.webp" alt="Live Queen Finder camera detection">
+          </a>
+        </div>
+        <div class="feature">
+          <h3>הערכת משאבים</h3>
+          <p>זהו תאים והעריכו יחסי משאבים. איזון צוף ואבקה בין מושבות יכול למנוע רעב.</p>
+          <img src="/assets/img/comb.webp" alt="Honeycomb cell analysis">
+        </div>
+        <div class="feature">
+          <h3>מדידת נגיעות בקרדית</h3>
+          <p>זהו וספרו קרדיות ורואה בלי להרוג דבורים בבדיקת שטיפה באלכוהול.</p>
+          <img src="/assets/img/varroa.webp" alt="Varroa detection">
+        </div>
+        <div class="feature">
+          <h3>למידה מ-AI</h3>
+          <p>השתמשו בהקשר הכוורת כדי לקבל עצה בלחיצה אחת ממודל שפה גדול לגבי צעדים אפשריים.</p>
+          <img src="/assets/img/llm.webp" alt="AI beekeeping assistant">
+        </div>
+        <div class="feature">
+          <h3>רישום הערות</h3>
+          <p>השתמשו בעיפרון iPad או בעכבר כדי לצייר מעל המסגרת ולסמן אזורים חשובים.</p>
+          <video autoplay loop muted playsinline src="https://gratheon.s3-accelerate.amazonaws.com/www/ipad3.mov"></video>
+        </div>
+        <div class="feature">
+          <h3>שיתוף</h3>
+          <p>שתפו בדיקות כוורת עם קהילת הדבוראים וקבלו עצות מומחים.</p>
+          <img src="/assets/img/sharing.webp" alt="Public hive sharing">
+        </div>
+        <div class="feature">
+          <h3>תצפית על דבורים</h3>
+          <p>שדרו את פתחי הכוורות באמצעות לקוח Entrance Observer בקוד פתוח, טלפון לא בשימוש או Raspberry Pi.</p>
+          <iframe src="https://www.youtube.com/embed/oG791JNb1aA?autoplay=1&mute=1&loop=1" style="width:100%;height:201px;margin:0 auto;display:block" title="Bees at the beehive entrance" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="front-section" id="devices">
+      <h2>מוצרי חומרה</h2>
+      <div class="device">
+        <div class="deviceText">
+          <h3>חיישני כוורת <span class="badge">שלב אבטיפוס</span></h3>
+          <p>מדידת טמפרטורה, לחות, רמת CO2, לחץ ברומטרי, קול ומשקל כדי לקשר בין התפתחות המושבה לבין גורמים סביבתיים.</p>
+          <p class="deviceLinks"><a href="https://github.com/Gratheon/beehive-sensors/" aria-label="Beehive sensors source code">קוד</a></p>
+        </div>
+        <div class="deviceImgs">
+          <img src="/assets/img/sensors.webp" alt="Beehive sensors">
+          <img src="/assets/img/temp.webp" alt="Beehive temperature graph">
+        </div>
+      </div>
+      <div class="device">
+        <div class="deviceText">
+          <h3>Entrance Observer <span class="badge">שלב MVP</span></h3>
+          <p>קבלו וידאו חי של פתח הכוורת. ספרו דבורים נכנסות ויוצאות, העריכו אובדן יומי וזהו קרדיות ורואה, זרימת אבקה ומעופי התמצאות.</p>
+          <p class="deviceLinks"><a href="https://github.com/Gratheon/entrance-observer/" aria-label="Entrance Observer source code">קוד</a><br><a href="/assets/assets/entrance-observer-whitepaper.pdf" aria-label="Entrance Observer white paper PDF">White Paper</a></p>
+        </div>
+        <div class="deviceImgs">
+          <img src="/assets/img/observer.webp" alt="Entrance Observer">
+          <video autoplay loop muted playsinline src="/assets/img/counting.mov"></video>
+        </div>
+      </div>
+      <div class="device">
+        <div class="deviceText">
+          <h3>כוורת רובוטית מודולרית <span class="badge">שלב רעיון</span></h3>
+          <p>המטרה הסופית שלנו: אוטומציה של בדיקות באמצעות חילוץ מכני של מסגרות, פחות הרמת חלקי כוורת כבדים וניטור פנימי מרחוק עם התראות בזמן.</p>
+          <p class="deviceLinks"><a href="https://github.com/Gratheon/robotic-beehive/" aria-label="Modular Robotic beehive source code">קוד</a></p>
+        </div>
+        <div class="deviceImgs"><video autoplay loop muted playsinline src="https://gratheon.s3-accelerate.amazonaws.com/video/linear-actuator.mp4"></video></div>
+      </div>
+    </section>
+
+    <section class="front-story" id="content">
+      <article>
+        <h2>עצבו את עתיד הדבוראות</h2>
+        <div class="author">
+          <div><a href="https://twitter.com/tot_ra" aria-label="Artjom Kurapov on Twitter"><img src="/assets/img/artjom.jpg" alt="author photo" width="50" height="50"></a></div>
+          <div>מאת <a href="https://www.linkedin.com/in/kurapov/">Artjom Kurapov</a>,<br>דבוראי ומהנדס מייסד</div>
+        </div>
+        <p>אני מהנדס תוכנה, ולפני 5 שנים הפכתי לדבוראי כדי לשפר את האבקת הגינה שלי ולקבל יבולים גבוהים יותר.</p>
+        <p>דבורים הן מין מפתח לביטחון המזון שלנו. חקלאים עובדים עם דבוראים כדי להגדיל יבולים באמצעות האבקה מדויקת.</p>
+        <p>דבוראות מסורתית דורשת תצפית על מושבת הדבורים, כי דבורים עלולות לסבול מרעב, אובדן מלכה, התנחלות מאוחרת או נגיעות ב-Varroa destructor.</p>
+        <p>ככל שהמכוורת גדלה, העבודה הזו אינה ניתנת להרחבה. הפתרונות הקיימים עדיין לא פותרים את הבעיות הללו מספיק טוב.</p>
+        <p>💡 המטרה שלנו היא לעזור לדבוראים בתצפית ובאוטומציה. החזון שלנו הוא מכוורת רובוטית מרובת כוורות ואוטונומית לחלוטין.</p>
+        <div class="future"><div>
+          <p>אפליקציית Gratheon בנויה על תוכנות קוד פתוח והיא עצמה פתוחה לחלוטין.</p>
+          <p>הצטרפו אלינו לשיפור חייהן של 100 מיליון מושבות דבורים ברחבי העולם. אנחנו מחפשים משקיעים, מהנדסים, דבוראים לבדיקות שטח ויועצים.</p>
+          <p>יש לכם רעיונות?</p>
+          <p class="futureActions"><a class="action action_green" href="https://discord.gg/PcbP4uedWj">ספרו לנו ב-Discord</a><a class="action blue" href="https://app.gratheon.com/account/register?lang={{.Page.Language}}">הרשמה</a></p>
+        </div></div>
+      </article>
+    </section>
+
+    <iframe class="authorIntro" title="Author introduction" src="https://www.youtube.com/embed/gM3AJEAhmXc?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <div class="brandStripe" aria-hidden="true"><div class="brandStripeYellow"></div><div class="brandStripeGreen"></div><div class="brandStripeBlue"></div></div>
+  </main>
+
+  {{template "gratheon_footer" .}}
+  {{if .JSPath}}<script defer src="{{.JSPath}}"></script>{{end}}
+</body>
+</html>
+{{end}}

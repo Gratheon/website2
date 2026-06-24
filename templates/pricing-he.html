@@ -1,0 +1,190 @@
+{{define "pricing-he"}}
+{{template "gratheon_head" .}}
+<body class="pricing-page-no-sidebar">
+  {{template "gratheon_header" .}}
+
+  <main class="pricing-page-wrapper">
+    <div class="pricing-page-header">
+      <h1 class="pricing-page-title">⚖️ תוכניות מחיר</h1>
+      <p class="pricing-page-subtitle">התחילו פשוט, פתחו יכולות AI ואוטומציה ככל שאתם גדלים, והוסיפו קיבולת רק כשצריך.</p>
+    </div>
+
+    <div class="pricing-billing-toggle" aria-label="תקופת חיוב">
+      <span class="billing-toggle-label">חודשי</span>
+      <label class="billing-switch">
+        <input class="billing-switch-input" type="checkbox" role="switch" aria-checked="false" aria-label="מעבר למחיר שנתי">
+        <span class="billing-switch-track" aria-hidden="true"><span class="billing-switch-thumb"></span></span>
+      </label>
+      <span class="billing-toggle-label">שנתי <span class="billing-discount-badge">חיסכון של 50%</span></span>
+    </div>
+
+    <div class="pricing-container">
+      <div class="pricing-card" data-tier="free">
+        <div class="pricing-card-header">
+          <div class="pricing-card-title">חינם</div>
+          <div class="pricing-card-price">חינם</div>
+          <div class="pricing-card-description">נסו רישומי דבוראות בסיסיים</div>
+        </div>
+        <div class="pricing-card-body">
+          <div class="pricing-features-section">
+            <h4>תכונות</h4>
+            <ul class="pricing-card-features">
+              <li><span class="feature-icon" aria-hidden="true">📦</span><span class="feature-text"><a href="/products/web_app/free-tier/apiary-management/">ניהול מכוורת וכוורות</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🖼️</span><span class="feature-text"><a href="/products/web_app/free-tier/frame-side-management/">העלאת תמונות מסגרות</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">⌨️</span><span class="feature-text"><a href="/products/web_app/free-tier/keyboard-shortcuts/">תמיכה במקלדת</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">♻️</span><span class="feature-text"><a href="/products/web_app/free-tier/public-beehive-view/">שיתוף כוורת ציבורי</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🔗</span><span class="feature-text"><a href="/products/web_app/free-tier/qr-code-generation/">יצירת קודי QR</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">📅</span><span class="feature-text"><a href="/products/web_app/free-tier/varroa-treatment-diary/">יומן טיפולים</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🍭</span><span class="feature-text"><a href="/products/web_app/free-tier/feeding-history/">היסטוריית האכלה</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">👑</span><span class="feature-text"><a href="/products/web_app/free-tier/live-queen-finder/">איתור מלכה חי</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">♻️</span><span class="feature-text"><a href="/products/web_app/free-tier/hive-ownership-transfer/">העברת בעלות על כוורת (בפיתוח)</a></span></li>
+            </ul>
+          </div>
+          <div class="pricing-limitations-section">
+            <h4>מגבלות</h4>
+            <ul class="pricing-card-limits">
+              <li>עד 3 כוורות</li>
+              <li>עד 10 מסגרות לכל כוורת</li>
+              <li>אין קרדיטים לעיבוד תמונה ב-AI בצד השרת</li>
+              <li>שמירת תמונות ל-6 חודשים</li>
+            </ul>
+          </div>
+        </div>
+        <div class="pricing-card-footer"><a href="https://app.gratheon.com/account/register?lang={{.Page.Language}}" class="pricing-button">התחלה</a></div>
+      </div>
+
+      <div class="pricing-card hobbyist" data-tier="hobbyist">
+        <div class="pricing-card-header">
+          <div class="pricing-card-title">Hobbyist</div>
+          <div class="pricing-card-price">
+            <div class="price-monthly">€7<span class="price-period"> / חודש</span></div>
+            <div class="price-yearly-group"><span class="price-yearly">€42<span class="price-period"> / שנה</span></span><small class="price-discount">חיסכון של 50% with yearly billing</small></div>
+          </div>
+          <div class="pricing-card-description">להערות קבועות ויומני תמונות</div>
+        </div>
+        <div class="pricing-card-body">
+          <div class="pricing-features-section">
+            <h4>תכונות</h4>
+            <ul class="pricing-card-features">
+              <li><span class="feature-icon" aria-hidden="true">📦</span><span class="feature-text"><a href="/products/web_app/free-tier/hive-management/">ניהול נתונים בסיסי במסד נתונים</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🖼️</span><span class="feature-text"><a href="/products/web_app/free-tier/frame-side-management/">העלאה ואחסון של תמונות מסגרות</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🗺️</span><span class="feature-text"><a href="/products/web_app/hobbyist-tier/hive-placement-planner/">מתכנן מיקום כוורות</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">📓</span><span class="feature-text"><a href="/products/web_app/hobbyist-tier/inspection-management/">הערות בדיקה</a> and <a href="/products/web_app/free-tier/varroa-treatment-diary/">יומן טיפולים</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">↔️</span><span class="feature-text"><a href="/products/web_app/hobbyist-tier/split-bee-colony/">ניהול פיצול מושבות</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🫶🏻</span><span class="feature-text"><a href="/products/web_app/hobbyist-tier/join-bee-colonies/">כלי איחוד מושבות</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🛠</span><span class="feature-text"><a href="/products/web_app/hobbyist-tier/inventory-management/">ניהול מלאי מחסן</a></span></li>
+            </ul>
+          </div>
+          <div class="pricing-limitations-section">
+            <h4>מגבלות</h4>
+            <ul class="pricing-card-limits">
+              <li>עד 15 כוורות</li>
+              <li>חשבון משתמש אחד</li>
+              <li>ללא תכונות עיבוד תמונה ב-AI</li>
+              <li>שמירת תמונות לשנה אחת</li>
+            </ul>
+          </div>
+        </div>
+        <div class="pricing-card-footer"><a href="https://app.gratheon.com/account/register?lang={{.Page.Language}}" class="pricing-button">התחילו Hobbyist</a></div>
+      </div>
+
+      <div class="pricing-card simple featured" data-tier="starter">
+        <div class="pricing-card-header">
+          <div class="pricing-card-title">Starter</div>
+          <div class="pricing-card-price">
+            <div class="price-monthly">€22<span class="price-period"> / חודש</span></div>
+            <div class="price-yearly-group"><span class="price-yearly">€132<span class="price-period"> / שנה</span></span><small class="price-discount">חיסכון של 50% with yearly billing</small></div>
+          </div>
+          <div class="pricing-card-description">פתחו תהליכי עבודה מבוססי AI</div>
+        </div>
+        <div class="pricing-card-body">
+          <div class="pricing-features-section">
+            <h4>תכונות</h4>
+            <ul class="pricing-card-features">
+              <li><span class="feature-icon" aria-hidden="true">🐝</span><span class="feature-text"><a href="/products/web_app/starter-tier/honeycomb-cell-detection-management/">ניתוח תאים</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🦀</span><span class="feature-text"><a href="/products/web_app/starter-tier/hive-bottom-varroa-count/">ספירת ורואה בלוח תחתון של כוורת</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🔎</span><span class="feature-text"><a href="/products/web_app/hobbyist-tier/inspection-management/">ניהול בדיקות</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">✏️</span><span class="feature-text"><a href="/products/web_app/starter-tier/drawing-on-canvas/">כלי סימון על מסגרות</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🤖</span><span class="feature-text"><a href="/products/web_app/starter-tier/beekeeping-advice-with-llm/">עוזר דבוראות מבוסס AI</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🖼️</span><span class="feature-text"><a href="/products/web_app/starter-tier/honeycomb-cell-detection-management/">קרדיטים חודשיים לניתוח תמונה ב-AI כלולים</a></span></li>
+            </ul>
+          </div>
+          <div class="pricing-limitations-section">
+            <h4>מגבלות</h4>
+            <ul class="pricing-card-limits">
+              <li>חשבון משתמש אחד</li>
+              <li>עד 50 כוורות</li>
+              <li>30 מסגרות לכל כוורת</li>
+              <li>שמירת תמונות לשנתיים</li>
+              <li>נפח ניתוח AI מוגבל לחודש</li>
+              <li>שימוש אמיתי מעורב: כ-100–130 בקשות AI בחודש</li>
+            </ul>
+          </div>
+        </div>
+        <div class="pricing-card-footer"><a href="https://app.gratheon.com/account/register?lang={{.Page.Language}}" class="pricing-button">התחלת ניסיון חינם</a></div>
+      </div>
+
+      <div class="pricing-card featured professional" data-tier="professional">
+        <div class="pricing-card-header">
+          <div class="pricing-card-title">Professional</div>
+          <div class="pricing-card-price">
+            <div class="price-monthly">€55<span class="price-period"> / חודש</span></div>
+            <div class="price-yearly-group"><span class="price-yearly">€330<span class="price-period"> / שנה</span></span><small class="price-discount">חיסכון של 50% with yearly billing</small></div>
+          </div>
+          <div class="pricing-card-description">למכוורות ולקבוצות בצמיחה</div>
+        </div>
+        <div class="pricing-card-body">
+          <div class="pricing-features-section">
+            <h4>תכונות</h4>
+            <ul class="pricing-card-features">
+              <li><span class="feature-icon" aria-hidden="true">✅</span><span class="feature-text"><a href="/products/web_app/starter-tier/">כל מה שכלול ב-Starter</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">📦</span><span class="feature-text"><a href="/products/web_app/pro-tier/hive-telemetry-storage/">אחסון טלמטריית כוורת</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">📈</span><span class="feature-text"><a href="/products/web_app/pro-tier/timeseries-data-analytics/">ניתוח נתוני סדרות זמן</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">⚖️</span><span class="feature-text"><a href="/products/web_app/pro-tier/colony-comparison-analytics/">ניתוח השוואתי של מושבות (בפיתוח)</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🔔</span><span class="feature-text"><a href="/products/web_app/future-ideas/pro-tier-ideas/timeseries-anomaly-detection/">זיהוי חריגות מבוסס AI (בפיתוח)</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🎮</span><span class="feature-text"><a href="/products/web_app/future-ideas/pro-tier-ideas/device-management/">ניהול מכשירים (בפיתוח)</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🔎</span><span class="feature-text"><a href="/products/web_app/hobbyist-tier/inspection-management/">בדיקות ללא הגבלה לכל כוורת</a></span></li>
+            </ul>
+          </div>
+          <div class="pricing-limitations-section">
+            <h4>מגבלות</h4>
+            <ul class="pricing-card-limits">
+              <li>רזולוציית טלמטריה מינימלית של 10 דקות</li>
+              <li>עד 5 חשבונות משתמשים</li>
+              <li>עד 200 כוורות</li>
+              <li>שמירת תמונות ל-5 שנים</li>
+            </ul>
+          </div>
+        </div>
+        <div class="pricing-card-footer"><a href="https://app.gratheon.com/account/register?lang={{.Page.Language}}" class="pricing-button">התחילו Professional</a></div>
+      </div>
+
+      <div class="pricing-card enterprise" data-tier="enterprise">
+        <div class="pricing-card-header">
+          <div class="pricing-card-title">Enterprise</div>
+          <div class="pricing-card-price">מותאם אישית</div>
+          <div class="pricing-card-description">לדבוראות תעשייתית ולהטמעות מחקר</div>
+        </div>
+        <div class="pricing-card-body">
+          <div class="pricing-features-section">
+            <h4>תכונות</h4>
+            <ul class="pricing-card-features">
+              <li><span class="feature-icon" aria-hidden="true">🤝</span><span class="feature-text"><a href="/products/web_app/">מותאם אישית capacity and SLA</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">☁️</span><span class="feature-text"><a href="/products/web_app/">הטמעה מקומית או בענן פרטי</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">🛠</span><span class="feature-text"><a href="/products/entrance_observer/entrance-observer/">תמיכה באינטגרציית חומרה</a></span></li>
+              <li><span class="feature-icon" aria-hidden="true">📈</span><span class="feature-text"><a href="/products/web_app/pro-tier/timeseries-data-analytics/">תהליכי מחקר וייצוא נתונים</a></span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="pricing-card-footer"><a href="mailto:pilot@gratheon.com" class="pricing-button">צרו קשר</a></div>
+      </div>
+    </div>
+
+
+  </main>
+
+  {{template "gratheon_footer" .}}
+  {{if .JSPath}}<script defer src="{{.JSPath}}"></script>{{end}}
+</body>
+</html>
+{{end}}

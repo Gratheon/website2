@@ -102,6 +102,27 @@
   outline-offset: 3px;
 }
 
+html[dir='rtl'] .pricing-page-wrapper,
+html[dir='rtl'] .pricing-card,
+html[dir='rtl'] .pricing-features-section,
+html[dir='rtl'] .pricing-limitations-section {
+  direction: rtl;
+}
+
+html[dir='rtl'] .pricing-card-features,
+html[dir='rtl'] .pricing-card-limits {
+  text-align: right;
+}
+
+html[dir='rtl'] .billing-switch-thumb {
+  left: auto;
+  right: 0.2rem;
+}
+
+html[dir='rtl'] .billing-switch-input:checked + .billing-switch-track .billing-switch-thumb {
+  transform: translateX(-1.68rem);
+}
+
 @media (max-width: 600px) {
   .pricing-billing-toggle {
     flex-wrap: wrap;

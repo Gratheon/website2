@@ -98,7 +98,9 @@ Legacy Docusaurus files have been removed; `content/` is the source of truth.
 ## Internationalization
 
 The site supports the same language list as `~/git/gratheon/web-app/src/config/languages.ts`:
-`en`, `ru`, `et`, `tr`, `pl`, `de`, `fr`, `zh`, `hi`, `es`, `ar`, `bn`, `pt`, `ja`.
+`en`, `ru`, `et`, `tr`, `pl`, `de`, `fr`, `zh`, `hi`, `es`, `ar`, `he`, `bn`, `pt`, `ja`, `lv`, `lt`, `hu`, `uk`, `it`, `ro`.
+
+Right-to-left languages such as Arabic (`ar`) and Hebrew (`he`) must set `direction: "rtl"` in `config.yaml`. `blog-engine-md` exposes this as `.Page.Direction`, and Gratheon templates must emit `<html lang="{{.Page.Language}}" dir="{{.Page.Direction}}">` so browser bidi behavior, CSS selectors, and accessibility tools agree on page direction.
 
 Language URLs are generated from localized `content/<lang>/index.md` files and exposed in the text-only language dropdown in `templates/gratheon.html` (no country flags). English (`en`) is the default locale and is served only from root canonical paths such as `/`, `/blog/`, `/pricing/`, and `/docs/`; it must not be duplicated under `content/en` or linked as `/en/...`. Non-default locales continue to use explicit prefixes such as `/ru/`, `/et/`, etc. The nginx config keeps legacy `/en/...` requests redirecting to their root canonical equivalents.
 

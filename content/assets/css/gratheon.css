@@ -340,6 +340,47 @@ html[data-theme='dark'] .site-nav a:visited {
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
 }
 
+/* RTL support for Arabic, Hebrew and future right-to-left locales. */
+html[dir='rtl'] .site-header,
+html[dir='rtl'] .header-left,
+html[dir='rtl'] .header-right,
+html[dir='rtl'] .site-nav,
+html[dir='rtl'] .installButtons,
+html[dir='rtl'] .platformDownloads,
+html[dir='rtl'] .device,
+html[dir='rtl'] .author,
+html[dir='rtl'] .futureActions {
+  direction: rtl;
+}
+
+html[dir='rtl'] .site-nav .nav-action-first {
+  margin-left: 6px;
+  margin-right: auto;
+}
+
+html[dir='rtl'] .lang-menu {
+  left: 0;
+  right: auto;
+  text-align: right;
+}
+
+html[dir='rtl'] .front-section,
+html[dir='rtl'] .front-story,
+html[dir='rtl'] .deviceText,
+html[dir='rtl'] article {
+  text-align: right;
+}
+
+html[dir='rtl'] .brandStripe,
+html[dir='rtl'] video,
+html[dir='rtl'] iframe,
+html[dir='rtl'] img,
+html[dir='rtl'] svg,
+html[dir='rtl'] code,
+html[dir='rtl'] pre {
+  direction: ltr;
+}
+
 main a:hover {
   background: var(--brand-yellow);
   color: black !important;

@@ -45,6 +45,11 @@ i18n:
     - code: "ar"
       label: "العربية"
       aliases: ["ar", "ar-sa"]
+      direction: "rtl"
+    - code: "he"
+      label: "עברית"
+      aliases: ["he", "he-il", "iw"]
+      direction: "rtl"
     - code: "bn"
       label: "বাংলা"
       aliases: ["bn", "bn-bd"]
@@ -706,6 +711,22 @@ navigation:
           url: "/ar/pricing/"
         - title: "تسجيل الدخول"
           url: "https://app.gratheon.com/account/authenticate/?lang=ar"
+          class: "nav-action nav-action-first"
+      he:
+        - title: "עלינו"
+          url: "/he/about/"
+        - title: "מוצרים"
+          url: "/products/"
+        - title: "מחקר"
+          url: "/he/research/"
+        - title: "בלוג"
+          url: "/he/blog/"
+        - title: "מסמכים"
+          url: "/he/docs/"
+        - title: "מחירים"
+          url: "/he/pricing/"
+        - title: "כניסה"
+          url: "https://app.gratheon.com/account/authenticate/?lang=he"
           class: "nav-action nav-action-first"
       bn:
         - title: "সম্পর্কে"
