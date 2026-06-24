@@ -27,6 +27,10 @@ Implements internationalization (i18n) system with automatic browser language de
 - Date formatting adjusted to match language/locale conventions
 - Immediate UI update when language preference is changed
 
+### 🔠 Supported Languages Logic
+The order of supported languages presented in our user interfaces and configurations is prioritized based on **commercial potential**. We estimate this by looking at the cumulative Gross Domestic Product (GDP) of the speakers of each language.
+This ensures that the languages representing the most significant economic markets (e.g., English, Mandarin, German, Spanish) are prominently available and maintained.
+
 ### 🚫 Out of Scope
 - Right-to-left (RTL) language support
 - Advanced locale-specific formatting beyond dates
