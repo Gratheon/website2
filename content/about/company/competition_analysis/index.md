@@ -1,5 +1,5 @@
 ---
-title: Commercial projects
+title: Competition analysis
 sidebar_position: 5
 ---
 
