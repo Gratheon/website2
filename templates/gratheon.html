@@ -1,6 +1,6 @@
 {{define "gratheon_head"}}
 <!DOCTYPE html>
-<html lang="{{.Page.Language}}" dir="{{.Page.Direction}}">
+<html lang="{{.Page.Language}}" dir="{{if or (eq .Page.Language "ar") (eq .Page.Language "he")}}rtl{{else}}ltr{{end}}">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
