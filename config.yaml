@@ -338,6 +338,28 @@ navigation:
         url: "https://app.gratheon.com/account/authenticate/?lang=ar"
         class: "nav-action nav-action-first"
         languages: ["ar"]
+      - title: "עלינו"
+        url: "/he/about/"
+        languages: ["he"]
+      - title: "מוצרים"
+        url: "/products/"
+        languages: ["he"]
+      - title: "מחקר"
+        url: "/he/research/"
+        languages: ["he"]
+      - title: "בלוג"
+        url: "/he/blog/"
+        languages: ["he"]
+      - title: "מסמכים"
+        url: "/he/docs/"
+        languages: ["he"]
+      - title: "מחירים"
+        url: "/he/pricing/"
+        languages: ["he"]
+      - title: "כניסה"
+        url: "https://app.gratheon.com/account/authenticate/?lang=he"
+        class: "nav-action nav-action-first"
+        languages: ["he"]
       - title: "সম্পর্কে"
         url: "/bn/about/"
         languages: ["bn"]
