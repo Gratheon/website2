@@ -1,25 +1,35 @@
 ---
 hideNav: true
-year: "2025"
-orgs:
-  - 🇦🇺 University of Technology Sydney
-  - 🇦🇺 BeeSTAR
-title: "A Survey of TinyML Applications in Beekeeping for Hive Monitoring and Management"
 layout: research
+hideToc: true
+title: A Survey of TinyML Applications in Beekeeping for Hive Monitoring and Management
+description: WILLY SUCIPTO, University of Technology Sydney, Australia JIANLONG ZHOU, University of Technology Sydney, Australia RAY SEUNG MIN KWON, BeeSTAR (powered by LB Agtech Holdings Pty Ltd), Australia FANG CHEN, University of.
+year: '2025'
+orgs:
+- 🇦🇺 University of Technology Sydney
+- 🇦🇺 BeeSTAR
 topics:
-  - reviews-surveys
-  - iot-sensors
-  - edge-ai-energy
+- reviews-surveys
+- iot-sensors
+- edge-ai-energy
 productAreas:
-  - monitoring-platform
+- monitoring-platform
 paperType: preprint
 ---
-
-- arXiv: https://arxiv.org/abs/2509.08822
-- DOI: https://doi.org/10.48550/arXiv.2509.08822
-- Legal open PDF: https://arxiv.org/pdf/2509.08822v1
-- Relevance score: 8/10 — TinyML-focused review of low-power hive-condition monitoring, behavior recognition, pest/disease detection, and swarming forecasts.
 
 [PDF](pdfs/2509.08822v1.pdf)
 
 <object data={require('./pdfs/2509.08822v1.pdf').default} type="application/pdf" width="100%" height="800"></object>
+
+## External links
+
+- DOI: https://doi.org/10.48550/arXiv.2509.08822
+- arXiv: https://arxiv.org/abs/2509.08822
+
+## Abstract
+
+WILLY SUCIPTO, University of Technology Sydney, Australia JIANLONG ZHOU, University of Technology Sydney, Australia RAY SEUNG MIN KWON, BeeSTAR (powered by LB Agtech Holdings Pty Ltd), Australia FANG CHEN, University of Technology Sydney, Australia Honey bee colonies are essential for global food security and ecosystem stability, yet they face escalating threats from pests, diseases, and environmental stressors. Traditional hive inspections are labor-intensive and disruptive, while cloud-based monitoring solutions remain impractical for remote or resource-limited apiaries. Recent advances in Internet of Things (IoT) and Tiny Machine Learning (TinyML) enable low-power, real-time monitoring directly on edge devices, offering scalable and non-invasive alternatives. This survey synthesizes current innovations at the intersection of TinyML and apiculture, organized around four key functional areas: monitoring hive conditions, recognizing bee behaviors, detecting pests and diseases, and forecasting swarming events.
+
+## Relevancy to Gratheon
+
+This paper is relevant to Gratheon because it informs sensor hardware, telemetry pipelines, and monitoring dashboards, edge-AI deployment, power budgeting, and offline operation, product strategy and competitive research mapping. Its methods and findings can be translated into product requirements for reliable field deployments: what should be sensed, how signals should be interpreted, and which uncertainty or validation limits need to be surfaced to beekeepers. For Gratheon, the work is most useful as an evidence-backed design reference for connecting local hive observations with actionable recommendations in the web app while keeping hardware practical for remote apiaries.

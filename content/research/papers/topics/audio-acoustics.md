@@ -32,7 +32,7 @@ layout: research
 ### [2026](../years/2026.md)
 
 - [Acoustic Signatures of Hive: Detecting Queen Bee Absence Through Machine Learning of Short Audio Segments](../Acoustic%20Signatures%20of%20Hive%20Detecting%20Queen%20Bee%20Absence%20Through%20Machine%20Learning%20of%20Short%20Audio%20Segments.md) — 🇨🇱 Universidad de Viña del Mar; 🇨🇱 Universidad Técnica Federico Santa María
-- [BeeVe: Unsupervised Acoustic State Discovery in Honey Bee Buzzing](../BeeVe%20Unsupervised%20Acoustic%20State%20Discovery%20in%20Honey%20Bee%20Buzzing.md) — arXiv author-supplied preprint by Hamze Hammami and Nidhal Abdulaziz
+- [BeeVe: Unsupervised Acoustic State Discovery in Honey Bee Buzzing](../BeeVe%20Unsupervised%20Acoustic%20State%20Discovery%20in%20Honey%20Bee%20Buzzing.md) — 🇺🇳 arXiv author-supplied preprint by Hamze Hammami and Nidhal Abdulaziz
 - [Development of Wingbeat-Based Acoustic Health Monitoring System for Bee Colonies](../Development%20of%20Wingbeat-Based%20Acoustic%20Health%20Monitoring%20System%20for%20Bee%20Colonies.md) — 🇹🇼 National Formosa University
 
 ### [2025](../years/2025.md)
@@ -43,7 +43,7 @@ layout: research
 
 ### [2024](../years/2024.md)
 
-- [Bee Together: Joining Bee Audio Datasets for Hive Extrapolation in AI-Based Monitoring](../Bee%20Together%20Joining%20Bee%20Audio%20Datasets%20for%20Hive%20Extrapolation%20in%20AI-Based%20Monitoring.md) — 🇫🇷 University of Toulouse
+- [Bee Together: Joining Bee Audio Datasets for Hive Extrapolation in AI-Based Monitoring](../Bee%20Together%20Joining%20Bee%20Audio%20Datasets%20for%20Hive%20Extrapolation%20in%20AI-Based%20Monitoring.md) — 🇫🇷 University of Toulon
 - [MSPB: a longitudinal multi-sensor dataset with phenotypic trait measurements from honey bees](../MSPB%20a%20longitudinal%20multi-sensor%20dataset%20with%20phenotypic%20trait%20measurements%20from%20honey%20bees.md) — 🇨🇦 Institut National de la Recherche Scientifique; 🇨🇦 Université Laval; 🇨🇦 Nectar Technologies Inc.
 
 ### [2023](../years/2023.md)
@@ -57,5 +57,5 @@ layout: research
 
 ### [2020](../years/2020.md)
 
-- [The prediction of swarming in honeybee colonies using vibrational spectra](../The%20prediction%20of%20swarming%20in%20honeybee%20colonies%20using%20vibrational%20spectra.md) — 🇬🇧 Nottingham Trent University; 🇫🇷  l’Institut National de Recherche en Agriculture; 🇧🇪 Centre Apicole de Recherche et d’Information
+- [The prediction of swarming in honeybee colonies using vibrational spectra](../The%20prediction%20of%20swarming%20in%20honeybee%20colonies%20using%20vibrational%20spectra.md) — 🇬🇧 Nottingham Trent University; 🇫🇷 l’Institut National de Recherche en Agriculture; 🇧🇪 Centre Apicole de Recherche et d’Information
 <!-- GENERATED RESEARCH INDEX:END -->

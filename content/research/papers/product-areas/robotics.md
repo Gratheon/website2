@@ -25,7 +25,7 @@ layout: research
 - [2024](../years/2024.md) (3)
 - [2022](../years/2022.md) (2)
 - [2018](../years/2018.md) (1)
-- [Unknown year](../years/unknown.md) (1)
+- [2011](../years/2011.md) (1)
 
 ## Papers by year
 
@@ -41,14 +41,14 @@ layout: research
 
 ### [2022](../years/2022.md)
 
-- [A Minimally Invasive Approach Towards “Ecosystem Hacking” With Honeybees](../A%20Minimally%20Invasive%20Approach%20Towards%20%E2%80%9CEcosystem%20Hacking%E2%80%9D%20With%20Honeybees.md) — 🇦🇹 University of Graz; 🇨🇿 Czech Technical University; 🇹🇷  Middle East Technical University
-- [Bio-Hybrid Systems for Ecosystem Level Effects](../Bio-Hybrid%20Systems%20for%20Ecosystem%20Level%20Effects.md)
+- [A Minimally Invasive Approach Towards “Ecosystem Hacking” With Honeybees](../A%20Minimally%20Invasive%20Approach%20Towards%20%E2%80%9CEcosystem%20Hacking%E2%80%9D%20With%20Honeybees.md) — 🇦🇹 University of Graz; 🇨🇿 Czech Technical University; 🇹🇷 Middle East Technical University
+- [Bio-Hybrid Systems for Ecosystem Level Effects](../Bio-Hybrid%20Systems%20for%20Ecosystem%20Level%20Effects.md) — 🇦🇹 University of Graz; 🇩🇪 Humboldt University of Berlin; 🇨🇭 École Polytechnique Fédérale de Lausanne; 🇩🇪 Freie Universität Berlin; 🇱🇻 Latvia University of Life Sciences and Technologies
 
 ### [2018](../years/2018.md)
 
 - [Dancing Honey bee Robot Elicits Dance-Following and Recruits Foragers](../Dancing%20Honey%20bee%20Robot%20Elicits%20Dance-Following%20and%20Recruits%20Foragers.md) — 🇩🇪 Freie Universität Berlin; 🇩🇪 Leibniz-Institute of Freshwater Ecology and Inland Fisheries
 
-### [Unknown year](../years/unknown.md)
+### [2011](../years/2011.md)
 
-- [Analysis of the Waggle Dance Motion of Honeybees for the Design of a Biomimetic Honeybee Robot](../Analysis%20of%20the%20Waggle%20Dance%20Motion%20of%20Honeybees%20for%20the%20Design%20of%20a%20Biomimetic%20Honeybee%20Robot.md)
+- [Analysis of the Waggle Dance Motion of Honeybees for the Design of a Biomimetic Honeybee Robot](../Analysis%20of%20the%20Waggle%20Dance%20Motion%20of%20Honeybees%20for%20the%20Design%20of%20a%20Biomimetic%20Honeybee%20Robot.md) — 🇩🇪 Freie Universität Berlin; 🇬🇧 University of Cambridge
 <!-- GENERATED RESEARCH INDEX:END -->

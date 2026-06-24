@@ -56,9 +56,9 @@ layout: research
 
 ### [2021](../years/2021.md)
 
-- [Self-Powered Smart Beehive Monitoring and ControlSystem (SBMaCS)](../Self-Powered%20Smart%20Beehive%20Monitoring%20and%20ControlSystem%20%28SBMaCS%29.md) — 🇷🇼 University of Rwanda; 🇿🇲 Copperbelt University; 🇷🇼 National Council of Science and Technology
+- [Self-Powered Smart Beehive Monitoring and Control System (SBMaCS)](../Self-Powered%20Smart%20Beehive%20Monitoring%20and%20ControlSystem%20%28SBMaCS%29.md) — 🇷🇼 University of Rwanda; 🇿🇲 Copperbelt University; 🇷🇼 National Council of Science and Technology
 
 ### [2020](../years/2020.md)
 
-- [Analysis of Energy Consumption in a Precision Beekeeping System](../Analysis%20of%20Energy%20Consumption%20in%20a%20Precision%20Beekeeping%20System.md)
+- [Analysis of Energy Consumption in a Precision Beekeeping System](../Analysis%20of%20Energy%20Consumption%20in%20a%20Precision%20Beekeeping%20System.md) — 🇫🇷 emlyon business school; 🇫🇷 Inria; 🇫🇷 École Normale Supérieure de Lyon; 🇫🇷 Université Claude Bernard Lyon 1; 🇫🇷 CNRS LIP
 <!-- GENERATED RESEARCH INDEX:END -->

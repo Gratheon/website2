@@ -43,7 +43,7 @@ layout: research
 
 - [Honey bees modify plantpollinator network structure](../Honey%20bees%20modify%20plantpollinator%20network%20structure.md) — 🇨🇦 University of Alberta
 - [Importance of GIS solutions for beekeepers: a review](../Importance%20of%20GIS%20solutions%20for%20beekeepers%20a%20review.md) — 🇱🇻 Latvia University of Life Sciences and Technologies
-- [Pollinators as Data Collectors Estimating Floral Diversity with Bees and Computer Vision](../Pollinators%20as%20Data%20Collectors%20Estimating%20Floral%20Diversity%20with%20Bees%20and%20Computer%20Vision.md)
+- [Pollinators as Data Collectors: Estimating Floral Diversity with Bees and Computer Vision](../Pollinators%20as%20Data%20Collectors%20Estimating%20Floral%20Diversity%20with%20Bees%20and%20Computer%20Vision.md) — 🇩🇪 Karlsruhe Institute of Technology; 🇩🇪 apic.ai GmbH
 - [Precision Monitoring of Honey Bee (Hymenoptera: Apidae) Activity and Pollen Diversity during Pollination to EvaluateColony Health](../Precision%20Monitoring%20of%20Honey%20Bee.md) — 🇦🇺 La Trobe University
 
 ### [2020](../years/2020.md)
@@ -52,10 +52,10 @@ layout: research
 
 ### [2018](../years/2018.md)
 
-- [Honeybees on the move - Pollination services and honey production](../Honeybees%20on%20the%20move%20-%20Pollination%20services%20and%20honey%20production.md)
+- [Honeybees on the move - Pollination services and honey production](../Honeybees%20on%20the%20move%20-%20Pollination%20services%20and%20honey%20production.md) — 🇺🇸 United States Department of Agriculture; 🇺🇸 United States Environmental Protection Agency
 - [Recognition of Pollen-bearing Bees from Video using Convolutional Neural Network](../Recognition%20of%20Pollen-bearing%20Bees%20from%20Video%20using%20Convolutional%20Neural%20Network.md) — 🇵🇷 University of Puerto Rico
 
 ### [2009](../years/2009.md)
 
-- [Biodiversity conservation and current threats to European honeybees](../Biodiversity%20conservation%20and%20current%20threats%20to%20European%20honeybees.md) — 🇪🇸 Universidad de Murcia; 🇩🇪 Martin-Luther-Universität Halle-Wittenberg
+- [Biodiversity, conservation and current threats to European honeybees](../Biodiversity%20conservation%20and%20current%20threats%20to%20European%20honeybees.md) — 🇪🇸 Universidad de Murcia; 🇩🇪 Martin-Luther-Universität Halle-Wittenberg; 🇮🇹 CRA-API
 <!-- GENERATED RESEARCH INDEX:END -->

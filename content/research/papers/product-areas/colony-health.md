@@ -43,7 +43,7 @@ layout: research
 - [Acoustic Signatures of Hive: Detecting Queen Bee Absence Through Machine Learning of Short Audio Segments](../Acoustic%20Signatures%20of%20Hive%20Detecting%20Queen%20Bee%20Absence%20Through%20Machine%20Learning%20of%20Short%20Audio%20Segments.md) — 🇨🇱 Universidad de Viña del Mar; 🇨🇱 Universidad Técnica Federico Santa María
 - [An intelligent monitoring system for forecasting and anomaly detection in precision beekeeping](../An%20intelligent%20monitoring%20system%20for%20forecasting%20and%20anomaly%20detection%20in%20precision%20beekeeping.md) — 🇫🇷 EFREI Research Lab; 🇫🇷 Université Paris-Panthéon-Assas
 - [Assessing Honey Bee Colony Health Using Temperature Time Series](../Assessing%20Honey%20Bee%20Colony%20Health%20Using%20Temperature%20Time%20Series.md) — 🇦🇺 The University of Sydney; 🇦🇺 Macquarie University
-- [BeeVe: Unsupervised Acoustic State Discovery in Honey Bee Buzzing](../BeeVe%20Unsupervised%20Acoustic%20State%20Discovery%20in%20Honey%20Bee%20Buzzing.md) — arXiv author-supplied preprint by Hamze Hammami and Nidhal Abdulaziz
+- [BeeVe: Unsupervised Acoustic State Discovery in Honey Bee Buzzing](../BeeVe%20Unsupervised%20Acoustic%20State%20Discovery%20in%20Honey%20Bee%20Buzzing.md) — 🇺🇳 arXiv author-supplied preprint by Hamze Hammami and Nidhal Abdulaziz
 - [Development of Wingbeat-Based Acoustic Health Monitoring System for Bee Colonies](../Development%20of%20Wingbeat-Based%20Acoustic%20Health%20Monitoring%20System%20for%20Bee%20Colonies.md) — 🇹🇼 National Formosa University
 - [STAG-CN: Spatio-Temporal Apiary Graph Convolutional Network for Disease Onset Prediction in Beehive Sensor Networks](../STAG-CN%20Spatio-Temporal%20Apiary%20Graph%20Convolutional%20Network%20for%20Disease%20Onset%20Prediction%20in%20Beehive%20Sensor%20Networks.md) — 🇰🇷 Korea University
 
@@ -64,7 +64,7 @@ layout: research
 
 ### [2023](../years/2023.md)
 
-- [Defined exposure of honey bee colonies to simulated radiofrequency electromagnetic fields (RF-EMF): Negative effects on the homing ability, butn ot on brood development or longevity](../wifi-exposure.md) — 🇩🇪 University of Hohenheim; 🇩🇪 Karlsruhe Institute of Technology
+- [Defined exposure of honey bee colonies to simulated radiofrequency electromagnetic fields (RF-EMF): Negative effects on the homing ability, but not on brood development or longevity](../wifi-exposure.md) — 🇩🇪 University of Hohenheim; 🇩🇪 Karlsruhe Institute of Technology
 - [Detection of Varroa destructor Infestation of Honeybees Based on Segmentation and Object Detection Convolutional Neural Networks](../Detection%20of%20Varroa%20destructor%20Infestation%20of%20Honeybees%20Based%20on%20Segmentation%20and%20Object%20Detection%20Convolutional%20Neural%20Networks.md) — 🇨🇳 Shandong Agriculture University
 - [Honey bees modify plantpollinator network structure](../Honey%20bees%20modify%20plantpollinator%20network%20structure.md) — 🇨🇦 University of Alberta
 - [Identifying Queenlessness in Honeybee Hives from Audio Signals Using Machine Learning](../Identifying%20Queenlessness%20in%20Honeybee%20Hives%20from%20Audio%20Signals%20Using%20Machine%20Learning.md) — 🇬🇧 Kingston University
@@ -77,17 +77,17 @@ layout: research
 ### [2021](../years/2021.md)
 
 - [Semi-Supervised Audio Representation Learning for Modeling Beehive Strengths](../Semi-Supervised%20Audio%20Representation%20Learning%20for%20Modeling%20Beehive%20Strengths.md) — 🇺🇸 X, the Moonshot Factory; 🇺🇸 Caltech; 🇺🇸 Google; 🇺🇸 University of Wisconsin-Madison; 🇺🇸 Washington State University
-- [Social networks predict the life and death of honeybees](../Social%20networks%20predict%20the%20life%20and%20death%20of%20honeybees.md)
+- [Social networks predict the life and death of honeybees](../Social%20networks%20predict%20the%20life%20and%20death%20of%20honeybees.md) — 🇩🇪 Freie Universität Berlin; 🇩🇪 Robert Koch Institute; 🇩🇪 University of Konstanz; 🇺🇸 Auburn University; 🇺🇸 University of Hohenheim
 - [Visual Diagnosis of the Varroa Destructor Parasitic Mite in Honeybees Using Object Detector Techniques](../Visual%20Diagnosis%20of%20the%20Varroa%20Destructor%20Parasitic%20Mite%20in%20Honeybees%20Using%20Object%20Detector%20Techniques.md) — 🇨🇿 Brno University of Technology
 
 ### [2020](../years/2020.md)
 
-- [The prediction of swarming in honeybee colonies using vibrational spectra](../The%20prediction%20of%20swarming%20in%20honeybee%20colonies%20using%20vibrational%20spectra.md) — 🇬🇧 Nottingham Trent University; 🇫🇷  l’Institut National de Recherche en Agriculture; 🇧🇪 Centre Apicole de Recherche et d’Information
+- [The prediction of swarming in honeybee colonies using vibrational spectra](../The%20prediction%20of%20swarming%20in%20honeybee%20colonies%20using%20vibrational%20spectra.md) — 🇬🇧 Nottingham Trent University; 🇫🇷 l’Institut National de Recherche en Agriculture; 🇧🇪 Centre Apicole de Recherche et d’Information
 
 ### [2018](../years/2018.md)
 
 - [A Preliminary Study of Image Analysis forParasite Detection on Honey Bees](../A%20Preliminary%20Study%20of%20Image%20Analysis%20forParasite%20Detection%20on%20Honey%20Bees.md) — 🇦🇹 Vienna University of Technology; 🇪🇸 Universidad de Oviedo; 🇪🇸 Universitat de Barcelona
-- [Honeybees on the move - Pollination services and honey production](../Honeybees%20on%20the%20move%20-%20Pollination%20services%20and%20honey%20production.md)
+- [Honeybees on the move - Pollination services and honey production](../Honeybees%20on%20the%20move%20-%20Pollination%20services%20and%20honey%20production.md) — 🇺🇸 United States Department of Agriculture; 🇺🇸 United States Environmental Protection Agency
 
 ### [2013](../years/2013.md)
 
@@ -95,5 +95,5 @@ layout: research
 
 ### [2009](../years/2009.md)
 
-- [Biodiversity conservation and current threats to European honeybees](../Biodiversity%20conservation%20and%20current%20threats%20to%20European%20honeybees.md) — 🇪🇸 Universidad de Murcia; 🇩🇪 Martin-Luther-Universität Halle-Wittenberg
+- [Biodiversity, conservation and current threats to European honeybees](../Biodiversity%20conservation%20and%20current%20threats%20to%20European%20honeybees.md) — 🇪🇸 Universidad de Murcia; 🇩🇪 Martin-Luther-Universität Halle-Wittenberg; 🇮🇹 CRA-API
 <!-- GENERATED RESEARCH INDEX:END -->

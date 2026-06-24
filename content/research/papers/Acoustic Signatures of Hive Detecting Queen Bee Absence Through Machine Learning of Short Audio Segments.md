@@ -1,25 +1,34 @@
 ---
 hideNav: true
-year: "2026"
-orgs:
-  - 🇨🇱 Universidad de Viña del Mar
-  - 🇨🇱 Universidad Técnica Federico Santa María
-title: "Acoustic Signatures of Hive: Detecting Queen Bee Absence Through Machine Learning of Short Audio Segments"
 layout: research
+hideToc: true
+title: 'Acoustic Signatures of Hive: Detecting Queen Bee Absence Through Machine Learning of Short Audio Segments'
+description: 'Academic Editor: Bin Han Received: 27 March 2026 Revised: 13 May 2026 Accepted: 18 May 2026 Published: 25 May 2026 Copyright: © 2026 by the authors.'
+year: '2026'
+orgs:
+- 🇨🇱 Universidad de Viña del Mar
+- 🇨🇱 Universidad Técnica Federico Santa María
 topics:
-  - audio-acoustics
-  - bee-behaviour
+- audio-acoustics
+- bee-behaviour
 productAreas:
-  - colony-health
-  - monitoring-platform
+- colony-health
+- monitoring-platform
 paperType: journal
 ---
-
-- DOI: https://doi.org/10.3390/insects17060547
-- Original URL: https://www.mdpi.com/2075-4450/17/6/547
-- Legal open PDF: https://mdpi-res.com/d_attachment/insects/insects-17-00547/article_deploy/insects-17-00547.pdf
-- Relevance score: 9/10 — short-window hive audio classification for non-invasive queen absence detection.
 
 [PDF](pdfs/insects-17-00547.pdf)
 
 <object data={require('./pdfs/insects-17-00547.pdf').default} type="application/pdf" width="100%" height="800"></object>
+
+## External links
+
+- DOI: https://doi.org/10.3390/insects17060547
+
+## Abstract
+
+Academic Editor: Bin Han Received: 27 March 2026 Revised: 13 May 2026 Accepted: 18 May 2026 Published: 25 May 2026 Copyright: © 2026 by the authors. Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Honeybee population decline poses a serious threat to global biodiversity and agricultural productivity, underscoring the need for continuous and non-invasive hive monitoring solutions. In particular, early detection of queen absence is critical for maintaining colony viability. This study investigates the effectiveness of machine learning and deep learning models for acoustic-based queen-presence detection using short-duration hive audio.
+
+## Relevancy to Gratheon
+
+This paper is relevant to Gratheon because it informs entrance and behavior analytics in the Gratheon web app, colony-health diagnostics and Varroa/queen-state alerting, sensor hardware, telemetry pipelines, and monitoring dashboards, audio-acoustic monitoring models for remote hive status detection. Its methods and findings can be translated into product requirements for reliable field deployments: what should be sensed, how signals should be interpreted, and which uncertainty or validation limits need to be surfaced to beekeepers. For Gratheon, the work is most useful as an evidence-backed design reference for connecting local hive observations with actionable recommendations in the web app while keeping hardware practical for remote apiaries.

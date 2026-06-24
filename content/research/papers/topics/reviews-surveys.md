@@ -24,9 +24,8 @@ layout: research
 - [2023](../years/2023.md) (3)
 - [2022](../years/2022.md) (2)
 - [2021](../years/2021.md) (1)
-- [2019](../years/2019.md) (1)
+- [2019](../years/2019.md) (2)
 - [2017](../years/2017.md) (1)
-- [Unknown year](../years/unknown.md) (1)
 
 ## Papers by year
 
@@ -38,13 +37,13 @@ layout: research
 
 ### [2024](../years/2024.md)
 
-- [Advances in Beehive Monitoring Systems: Low-Cost Integrating Sensor Technology forImproved Apiculture Management](../Advances%20in%20Beehive%20Monitoring%20Systems%20Low-Cost%20Integrating%20Sensor%20Technology%20for%20Improved%20Apiculture%20Management.md) — 🇷🇴 Research and Development Institute for Wildlife and Mountain Resources Miercurea Ciuc; 🇷🇴 Sapientia Hungarian University of Transylvania; 🇷🇴 National Institute for Research and Development in Environmental Protection; 🇷🇴 National Institute for Research and Development in Forestry "Marin Dracea"
+- [Advances in Beehive Monitoring Systems: Low-Cost Integrating Sensor Technology for Improved Apiculture Management](../Advances%20in%20Beehive%20Monitoring%20Systems%20Low-Cost%20Integrating%20Sensor%20Technology%20for%20Improved%20Apiculture%20Management.md) — 🇷🇴 Research and Development Institute for Wildlife and Mountain Resources Miercurea Ciuc; 🇷🇴 Sapientia Hungarian University of Transylvania; 🇷🇴 National Institute for Research and Development in Environmental Protection; 🇷🇴 National Institute for Research and Development in Forestry Marin Dracea
 
 ### [2023](../years/2023.md)
 
 - [Importance of GIS solutions for beekeepers: a review](../Importance%20of%20GIS%20solutions%20for%20beekeepers%20a%20review.md) — 🇱🇻 Latvia University of Life Sciences and Technologies
 - [Machine Learning and Computer Vision Techniques in Continuous Beehive Monitoring Applications: A Survey](../Machine%20Learning%20and%20Computer%20Vision%20Techniques%20in%20Continuous%20Beehive%20Monitoring%20Applications%20A%20Survey.md) — 🇨🇿 Brno University of Technology
-- [Precision Beekeeping Systems: State of the Art, Pros and Cons, and Their Application as Tools for Advancing theBeekeeping Sector](../Precision%20Beekeeping%20Systems%20State%20of%20the%20Art%2C%20Pros%20and%20Cons%2C%20and%20Their%20Application%20as%20Tools%20for%20Advancing%20theBeekeeping%20Sector.md) — 🇮🇹  University of Tuscia; 🇮🇹 University of Napoli Federico II
+- [Precision Beekeeping Systems: State of the Art, Pros and Cons, and Their Application as Tools for Advancing theBeekeeping Sector](../Precision%20Beekeeping%20Systems%20State%20of%20the%20Art%2C%20Pros%20and%20Cons%2C%20and%20Their%20Application%20as%20Tools%20for%20Advancing%20theBeekeeping%20Sector.md) — 🇮🇹 University of Tuscia; 🇮🇹 University of Napoli Federico II
 
 ### [2022](../years/2022.md)
 
@@ -57,13 +56,10 @@ layout: research
 
 ### [2019](../years/2019.md)
 
-- [Automated monitoring of bee behaviour using connected hives Towards a computational apidology](../Automated%20monitoring%20of%20bee%20behaviour%20using%20connected%20hives%20Towards%20a%20computational%20apidology.md)
+- [Application of Data Layering in Precision Beekeeping: The Concept](../Application%20of%20Data%20Layering%20in%20Precision%20Beekeeping%20The%20Concept.md) — 🇱🇻 Latvia University of Life Sciences and Technologies
+- [Automated monitoring of bee behaviour using connected hives: Towards a computational apidology](../Automated%20monitoring%20of%20bee%20behaviour%20using%20connected%20hives%20Towards%20a%20computational%20apidology.md) — 🇫🇷 CNRS Research Center on Animal Cognition; 🇫🇷 Université Toulouse III - Paul Sabatier
 
 ### [2017](../years/2017.md)
 
 - [myBee: An Information System for Precision Beekeeping](../mybee.md) — 🇧🇷 State University of Maringá; 🇧🇷 Federal University of Rio de Janeiro
-
-### [Unknown year](../years/unknown.md)
-
-- [Application of Data Layering in Precision Beekeeping The Concept](../Application%20of%20Data%20Layering%20in%20Precision%20Beekeeping%20The%20Concept.md)
 <!-- GENERATED RESEARCH INDEX:END -->

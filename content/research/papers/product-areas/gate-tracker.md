@@ -34,8 +34,8 @@ layout: research
 - [2020](../years/2020.md) (1)
 - [2019](../years/2019.md) (2)
 - [2018](../years/2018.md) (2)
+- [2017](../years/2017.md) (1)
 - [2015](../years/2015.md) (1)
-- [Unknown year](../years/unknown.md) (1)
 
 ## Papers by year
 
@@ -88,11 +88,11 @@ layout: research
 - [DeepLabCut: markerless pose estimation of user-defined body parts with deep learning](../DeepLabCut.md) — 🇩🇪 Eberhard Karls Universität Tübingen; 🇺🇸 Harvard University; 🇺🇸 Columbia University; 🇩🇪 Max Planck Institute for Biological Cybernetics; 🇩🇪 Bernstein Center for Computational Neuroscience; 🇺🇸 Baylor College of Medicine
 - [Recognition of Pollen-bearing Bees from Video using Convolutional Neural Network](../Recognition%20of%20Pollen-bearing%20Bees%20from%20Video%20using%20Convolutional%20Neural%20Network.md) — 🇵🇷 University of Puerto Rico
 
+### [2017](../years/2017.md)
+
+- [Automatic detection and decoding of honey bee waggle dances](../Automatic%20detection%20and%20decoding%20of%20honeybee%20waggle%20dances.md) — 🇩🇪 Freie Universität Berlin
+
 ### [2015](../years/2015.md)
 
-- [Automatic methods for long-term tracking and the detection and decoding of communication dancesin honeybees](../Automatic%20methods%20for%20long-term%20tracking%20and%20the%20detection%20and%20decoding%20of%20communication%20dancesin%20honeybees.md)
-
-### [Unknown year](../years/unknown.md)
-
-- [Automatic detection and decoding of honeybee waggle dances](../Automatic%20detection%20and%20decoding%20of%20honeybee%20waggle%20dances.md)
+- [Automatic methods for long-term tracking and the detection and decoding of communication dances in honeybees](../Automatic%20methods%20for%20long-term%20tracking%20and%20the%20detection%20and%20decoding%20of%20communication%20dancesin%20honeybees.md) — 🇩🇪 Freie Universität Berlin; 🇬🇧 University of Sussex
 <!-- GENERATED RESEARCH INDEX:END -->

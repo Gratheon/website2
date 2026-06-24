@@ -38,7 +38,7 @@ layout: research
 
 ### [2024](../years/2024.md)
 
-- [Bee Together: Joining Bee Audio Datasets for Hive Extrapolation in AI-Based Monitoring](../Bee%20Together%20Joining%20Bee%20Audio%20Datasets%20for%20Hive%20Extrapolation%20in%20AI-Based%20Monitoring.md) — 🇫🇷 University of Toulouse
+- [Bee Together: Joining Bee Audio Datasets for Hive Extrapolation in AI-Based Monitoring](../Bee%20Together%20Joining%20Bee%20Audio%20Datasets%20for%20Hive%20Extrapolation%20in%20AI-Based%20Monitoring.md) — 🇫🇷 University of Toulon
 - [MSPB: a longitudinal multi-sensor dataset with phenotypic trait measurements from honey bees](../MSPB%20a%20longitudinal%20multi-sensor%20dataset%20with%20phenotypic%20trait%20measurements%20from%20honey%20bees.md) — 🇨🇦 Institut National de la Recherche Scientifique; 🇨🇦 Université Laval; 🇨🇦 Nectar Technologies Inc.
 
 ### [2023](../years/2023.md)

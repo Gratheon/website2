@@ -1,17 +1,19 @@
 ---
 hideNav: true
-title: DeepPoseKit, a software toolkit for fast and robust animal pose estimation using deep learning
 layout: research
+hideToc: true
+title: DeepPoseKit, a software toolkit for fast and robust animal pose estimation using deep learning
+description: Quantitative behavioral measurements are important for answering questions across scientiﬁc disciplines—from neuroscience to ecology.
+year: '2019'
 orgs:
-  - 🇩🇪 Max Planck Institute of Animal Behavior
-  - 🇩🇪 University of Konstanz
-  - 🇺🇸  Princeton University
-  - 🇩🇪 Technische Universität München
-year: "2019"
+- 🇩🇪 Max Planck Institute of Animal Behavior
+- 🇩🇪 University of Konstanz
+- 🇺🇸 Princeton University
+- 🇩🇪 Technische Universität München
 topics:
-  - computer-vision
+- computer-vision
 productAreas:
-  - hive-scanner
+- hive-scanner
 paperType: preprint
 ---
 
@@ -19,3 +21,14 @@ paperType: preprint
 
 <object data={require('./pdfs/47994v1.pdf').default} type="application/pdf" width="100%" height="800"></object>
 
+## External links
+
+- [Local PDF](pdfs/47994v1.pdf)
+
+## Abstract
+
+Quantitative behavioral measurements are important for answering questions across scientiﬁc disciplines—from neuroscience to ecology. State-of-the-art deep-learning methods offer major advances in data quality and detail by allowing researchers to automatically estimate locations of an animal’s body parts directly from images or videos. However, currently-available animal pose estimation methods have limitations in speed and robustness. Here we introduce a new easy-to-use software toolkit, DeepPoseKit, that addresses these problems using an eﬃcient multi-scale deep-learning model, called Stacked DenseNet, and a fast GPU-based peak-detection algorithm for estimating keypoint locations with subpixel precision. These advances improve processing speed >2× with no loss in accuracy compared to currently-available.
+
+## Relevancy to Gratheon
+
+This paper is relevant to Gratheon because it informs camera-based hive-scanner and computer-vision models. Its methods and findings can be translated into product requirements for reliable field deployments: what should be sensed, how signals should be interpreted, and which uncertainty or validation limits need to be surfaced to beekeepers. For Gratheon, the work is most useful as an evidence-backed design reference for connecting local hive observations with actionable recommendations in the web app while keeping hardware practical for remote apiaries.
