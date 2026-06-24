@@ -32,6 +32,14 @@ npm run research-indexes
 
 When adding individual paper notes under `content/research/papers/*.md`, keep them discoverable through generated indexes instead of the left sidebar: include YAML frontmatter with `hideNav: true`, `layout: research`, `hideToc: true`, `title`, `description`, `year`, `topics`, `productAreas`, and `paperType`. The research index generator reads this metadata and still lists hidden paper pages under topic, year, and product-area pages.
 
+Research-paper pages should use a consistent rich format so they remain useful as a literature library:
+
+- Keep frontmatter consistent across papers: `hideNav: true`, `layout: research`, `hideToc: true`, `title`, `description`, `year`, `orgs`, `topics`, `productAreas`, and `paperType`. Format `orgs` as a YAML list and prefix each university or research organization with the country flag, for example `- 🇪🇪 University of Tartu`.
+- Include the local PDF as a Markdown link, for example `[PDF](pdfs/example.pdf)`, and embed the same local file with an `<object data={require('./pdfs/example.pdf').default} type="application/pdf" width="100%" height="800"></object>` preview.
+- Add an `## External links` section with DOI, arXiv, publisher, project, dataset, or GitHub links when available.
+- Add an `## Abstract` section summarizing the actual paper from the local PDF rather than only repeating the title.
+- Add an `## Relevancy to Gratheon` section describing how the work maps to Gratheon web-app features, hardware products, or the long-term autonomous-apiary vision.
+
 To publish locally into the same immutable-release layout used in production:
 
 ```bash
