@@ -1,5 +1,18 @@
-# An AI-Based Digital Scanner for Varroa destructor Detection in Beekeeping
-
+---
+hideNav: true
+description: "AI-based digital scanner for detecting Varroa destructor mites on sticky boards."
+year: "2025"
+hideToc: true
+title: An AI-Based Digital Scanner for Varroa destructor Detection in Beekeeping
+layout: research
+topics:
+  - varroa-health
+  - computer-vision
+productAreas:
+  - hive-scanner
+  - colony-health
+paperType: journal
+---
 **Year:** 2025  
 **DOI:** 10.3390/insects16010075  
 **URL:** https://doi.org/10.3390/insects16010075  

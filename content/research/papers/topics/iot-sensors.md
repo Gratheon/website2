@@ -9,25 +9,25 @@ layout: research
 ## Summary
 
 - Topic key: `iot-sensors`
-- Total papers: 41
+- Total papers: 44
 - [Research papers hub](../index.md)
 - [All topics](index.md)
 
 ## Product areas
 
-- [Colony Health](../product-areas/colony-health.md) (7)
+- [Colony Health](../product-areas/colony-health.md) (9)
 - [Gate Tracker](../product-areas/gate-tracker.md) (2)
-- [Monitoring Platform](../product-areas/monitoring-platform.md) (35)
+- [Monitoring Platform](../product-areas/monitoring-platform.md) (38)
 
 ## Years
 
-- [2026](../years/2026.md) (2)
+- [2026](../years/2026.md) (4)
 - [2025](../years/2025.md) (6)
 - [2024](../years/2024.md) (7)
 - [2023](../years/2023.md) (7)
 - [2022](../years/2022.md) (4)
 - [2021](../years/2021.md) (4)
-- [2020](../years/2020.md) (2)
+- [2020](../years/2020.md) (3)
 - [2019](../years/2019.md) (2)
 - [2017](../years/2017.md) (1)
 - [2016](../years/2016.md) (1)
@@ -38,7 +38,9 @@ layout: research
 
 ### [2026](../years/2026.md)
 
+- [An intelligent monitoring system for forecasting and anomaly detection in precision beekeeping](../An%20intelligent%20monitoring%20system%20for%20forecasting%20and%20anomaly%20detection%20in%20precision%20beekeeping.md) — 🇫🇷 Efrei Research Lab; 🇫🇷 Université Paris-Panthéon-Assas
 - [Assessing Honey Bee Colony Health Using Temperature Time Series](../Assessing%20Honey%20Bee%20Colony%20Health%20Using%20Temperature%20Time%20Series.md) — 🇦🇺 The University of Sydney; 🇦🇺 Macquarie University
+- [Development of Wingbeat-Based Acoustic Health Monitoring System for Bee Colonies](../Development%20of%20Wingbeat-Based%20Acoustic%20Health%20Monitoring%20System%20for%20Bee%20Colonies.md)
 - [STAG-CN: Spatio-Temporal Apiary Graph Convolutional Network for Disease Onset Prediction in Beehive Sensor Networks](../STAG-CN%20Spatio-Temporal%20Apiary%20Graph%20Convolutional%20Network%20for%20Disease%20Onset%20Prediction%20in%20Beehive%20Sensor%20Networks.md) — 🇰🇷 Korea University
 
 ### [2025](../years/2025.md)
@@ -86,6 +88,7 @@ layout: research
 
 ### [2020](../years/2020.md)
 
+- [A Smart Sensor-Based Measurement System for Advanced Bee Hive Monitoring](../A%20Smart%20Sensor-Based%20Measurement%20System%20for%20Advanced%20Bee%20Hive%20Monitoring.md)
 - [Analysis of Energy Consumption in a Precision Beekeeping System](../Analysis%20of%20Energy%20Consumption%20in%20a%20Precision%20Beekeeping%20System.md)
 - [Model for the bee apiary location evaluation](../Model%20for%20the%20bee%20apiary%20location%20evaluation.md) — 🇱🇻 Latvia University of Life Sciences and Technologies; 🇩🇪 Humboldt University of Berlin
 

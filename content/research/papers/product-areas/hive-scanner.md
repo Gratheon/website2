@@ -9,21 +9,22 @@ layout: research
 ## Summary
 
 - Product area key: `hive-scanner`
-- Total papers: 15
+- Total papers: 16
 - [Research papers hub](../index.md)
 - [All product areas](index.md)
 
 ## Topics
 
 - [Bee Behaviour](../topics/bee-behaviour.md) (7)
-- [Computer Vision](../topics/computer-vision.md) (15)
+- [Computer Vision](../topics/computer-vision.md) (16)
 - [Datasets Benchmarks](../topics/datasets-benchmarks.md) (3)
 - [Edge AI Energy](../topics/edge-ai-energy.md) (1)
+- [Varroa Health](../topics/varroa-health.md) (1)
 
 ## Years
 
 - [2026](../years/2026.md) (1)
-- [2025](../years/2025.md) (2)
+- [2025](../years/2025.md) (3)
 - [2022](../years/2022.md) (1)
 - [2021](../years/2021.md) (2)
 - [2020](../years/2020.md) (2)
@@ -38,6 +39,7 @@ layout: research
 
 ### [2025](../years/2025.md)
 
+- [An AI-Based Digital Scanner for Varroa destructor Detection in Beekeeping](../An%20AI-Based%20Digital%20Scanner%20for%20Varroa%20destructor%20Detection%20in%20Beekeeping.md)
 - [Deep Learning-Based Detection of Honey Storage Areas in Apismellifera Colonies for Predicting Physical Parameters of Honey via Linear Regression](../Deep%20Learning-Based%20Detection%20of%20Honey%20Storage%20Areas%20in%20Apismellifera%20Colonies%20for%20Predicting%20Physical%20Parameters%20of%20Honey%20via%20Linear%20Regression.md) — 🇹🇭  Chiang Mai University
 - [Fast, accurate measurement of the worker populations of honey bee colonies using deep learning](../Fast%20accurate%20measurement%20of%20the%20worker%20populations%20of%20honey%20bee%20colonies%20using%20deep%20learning.md) — 🇺🇸 Arizona State University; 🇺🇸 Texas A&M University–Kingsville
 

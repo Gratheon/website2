@@ -1,5 +1,17 @@
-# Detection of Varroa destructor Infestation of Honeybees Based on Segmentation and Object Detection Convolutional Neural Networks
-
+---
+hideNav: true
+description: "Segmentation and object-detection approach for detecting Varroa destructor infestation on honeybees."
+year: "2023"
+hideToc: true
+title: Detection of Varroa destructor Infestation of Honeybees Based on Segmentation and Object Detection Convolutional Neural Networks
+layout: research
+topics:
+  - varroa-health
+  - computer-vision
+productAreas:
+  - colony-health
+paperType: journal
+---
 **Year:** 2023  
 **DOI:** 10.3390/agriengineering5040102  
 **URL:** https://doi.org/10.3390/agriengineering5040102  

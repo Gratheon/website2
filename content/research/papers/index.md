@@ -11,7 +11,7 @@ This section tracks external academic work relevant to digital beekeeping, bee h
 <!-- GENERATED RESEARCH INDEX:START -->
 Choose a research-paper sub-page:
 
-- [Scientific publications](scientific-publications/index.md) — bibliography entry point for 106 paper notes.
+- [Scientific publications](scientific-publications/index.md) — bibliography entry point for 112 paper notes.
 - [Research teams](teams/index.md) — academic groups active in precision beekeeping research.
 - [Browse by topic](topics/index.md) — 10 topic pages.
 - [Browse by year](years/index.md) — 15 publication-year pages.

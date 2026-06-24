@@ -9,18 +9,18 @@ layout: research
 ## Summary
 
 - Topic key: `audio-acoustics`
-- Total papers: 11
+- Total papers: 12
 - [Research papers hub](../index.md)
 - [All topics](index.md)
 
 ## Product areas
 
-- [Colony Health](../product-areas/colony-health.md) (7)
-- [Monitoring Platform](../product-areas/monitoring-platform.md) (7)
+- [Colony Health](../product-areas/colony-health.md) (8)
+- [Monitoring Platform](../product-areas/monitoring-platform.md) (8)
 
 ## Years
 
-- [2026](../years/2026.md) (2)
+- [2026](../years/2026.md) (3)
 - [2025](../years/2025.md) (3)
 - [2024](../years/2024.md) (2)
 - [2023](../years/2023.md) (1)
@@ -33,6 +33,7 @@ layout: research
 
 - [Acoustic Signatures of Hive: Detecting Queen Bee Absence Through Machine Learning of Short Audio Segments](../Acoustic%20Signatures%20of%20Hive%20Detecting%20Queen%20Bee%20Absence%20Through%20Machine%20Learning%20of%20Short%20Audio%20Segments.md) — 🇨🇱 Universidad de Viña del Mar; 🇨🇱 Universidad Técnica Federico Santa María
 - [BeeVe: Unsupervised Acoustic State Discovery in Honey Bee Buzzing](../BeeVe%20Unsupervised%20Acoustic%20State%20Discovery%20in%20Honey%20Bee%20Buzzing.md) — arXiv author-supplied preprint by Hamze Hammami and Nidhal Abdulaziz
+- [Development of Wingbeat-Based Acoustic Health Monitoring System for Bee Colonies](../Development%20of%20Wingbeat-Based%20Acoustic%20Health%20Monitoring%20System%20for%20Bee%20Colonies.md)
 
 ### [2025](../years/2025.md)
 

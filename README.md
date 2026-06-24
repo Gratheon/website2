@@ -30,6 +30,8 @@ just research-indexes
 npm run research-indexes
 ```
 
+When adding individual paper notes under `content/research/papers/*.md`, keep them discoverable through generated indexes instead of the left sidebar: include YAML frontmatter with `hideNav: true`, `layout: research`, `hideToc: true`, `title`, `description`, `year`, `topics`, `productAreas`, and `paperType`. The research index generator reads this metadata and still lists hidden paper pages under topic, year, and product-area pages.
+
 To publish locally into the same immutable-release layout used in production:
 
 ```bash

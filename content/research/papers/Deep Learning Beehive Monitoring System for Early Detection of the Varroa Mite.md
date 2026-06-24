@@ -1,5 +1,18 @@
-# Deep Learning Beehive Monitoring System for Early Detection of the Varroa Mite
-
+---
+hideNav: true
+description: "Embedded camera and deep-learning system for early Varroa mite detection in beehives."
+year: "2022"
+hideToc: true
+title: Deep Learning Beehive Monitoring System for Early Detection of the Varroa Mite
+layout: research
+topics:
+  - varroa-health
+  - computer-vision
+  - edge-ai-energy
+productAreas:
+  - colony-health
+paperType: journal
+---
 **Year:** 2022  
 **DOI:** 10.3390/signals3030030  
 **URL:** https://doi.org/10.3390/signals3030030  

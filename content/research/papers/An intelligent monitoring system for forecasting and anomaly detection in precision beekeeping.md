@@ -1,5 +1,21 @@
-# An intelligent monitoring system for forecasting and anomaly detection in precision beekeeping
-
+---
+hideNav: true
+description: "BeeViz IoT monitoring system for time-series forecasting and anomaly detection in precision beekeeping."
+year: "2026"
+orgs:
+  - 🇫🇷 Efrei Research Lab
+  - 🇫🇷 Université Paris-Panthéon-Assas
+hideToc: true
+title: An intelligent monitoring system for forecasting and anomaly detection in precision beekeeping
+layout: research
+topics:
+  - iot-sensors
+  - edge-ai-energy
+productAreas:
+  - monitoring-platform
+  - colony-health
+paperType: journal
+---
 **Year:** 2026  
 **DOI:** 10.1038/s41598-026-37877-1  
 **URL:** https://doi.org/10.1038/s41598-026-37877-1  

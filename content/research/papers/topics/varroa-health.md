@@ -9,20 +9,22 @@ layout: research
 ## Summary
 
 - Topic key: `varroa-health`
-- Total papers: 8
+- Total papers: 11
 - [Research papers hub](../index.md)
 - [All topics](index.md)
 
 ## Product areas
 
-- [Colony Health](../product-areas/colony-health.md) (8)
+- [Colony Health](../product-areas/colony-health.md) (11)
 - [Gate Tracker](../product-areas/gate-tracker.md) (1)
+- [Hive Scanner](../product-areas/hive-scanner.md) (1)
 
 ## Years
 
-- [2025](../years/2025.md) (2)
+- [2025](../years/2025.md) (3)
 - [2024](../years/2024.md) (3)
-- [2023](../years/2023.md) (1)
+- [2023](../years/2023.md) (2)
+- [2022](../years/2022.md) (1)
 - [2021](../years/2021.md) (1)
 - [2018](../years/2018.md) (1)
 
@@ -30,6 +32,7 @@ layout: research
 
 ### [2025](../years/2025.md)
 
+- [An AI-Based Digital Scanner for Varroa destructor Detection in Beekeeping](../An%20AI-Based%20Digital%20Scanner%20for%20Varroa%20destructor%20Detection%20in%20Beekeeping.md)
 - [Towards Varroa destructor mite detection using a narrow spectra illumination](../Towards%20Varroa%20destructor%20mite%20detection%20using%20a%20narrow%20spectra%20illumination.md) — 🇨🇿 Brno University of Technology
 - [⭐️ An AI-Based Open-Source Software for Varroa Mite Fall Analysis in Honeybee Colonies](../%E2%AD%90%EF%B8%8F%20An%20AI-Based%20Open-Source%20Software%20for%20Varroa%20Mite%20Fall%20Analysis%20in%20Honeybee%20Colonies.md) — 🇪🇸 University of Zaragoza 🇪🇸 University of La Rioja 🇪🇸 University of Valencia
 
@@ -41,7 +44,12 @@ layout: research
 
 ### [2023](../years/2023.md)
 
+- [Detection of Varroa destructor Infestation of Honeybees Based on Segmentation and Object Detection Convolutional Neural Networks](../Detection%20of%20Varroa%20destructor%20Infestation%20of%20Honeybees%20Based%20on%20Segmentation%20and%20Object%20Detection%20Convolutional%20Neural%20Networks.md)
 - [Varroa Destructor Classification Using Legendre Fourier Moments with Different Color Spaces](../Varroa%20Destructor%20Classification%20Using%20Legendre%20Fourier%20Moments%20with%20Different%20Color%20Spaces.md) — 🇲🇽 Universidad Politécnica de Tulancingo
+
+### [2022](../years/2022.md)
+
+- [Deep Learning Beehive Monitoring System for Early Detection of the Varroa Mite](../Deep%20Learning%20Beehive%20Monitoring%20System%20for%20Early%20Detection%20of%20the%20Varroa%20Mite.md)
 
 ### [2021](../years/2021.md)
 
