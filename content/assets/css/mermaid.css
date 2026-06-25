@@ -1,0 +1,21 @@
+/* Mermaid diagrams rendered from ```mermaid fenced code blocks.
+   WHY: blog-engine-md loads Mermaid lazily only when needed, so this small CSS file
+   keeps rendered diagrams readable without adding a build-time dependency. */
+article .content .mermaid {
+  margin: 1.5em 0;
+  padding: 1em;
+  border: 1px solid var(--nav-border, #e0e0e0);
+  border-radius: 8px;
+  background: var(--bg-primary, #fff);
+  overflow-x: auto;
+  text-align: center;
+}
+
+article .content .mermaid svg {
+  max-width: 100%;
+  height: auto;
+}
+
+article .content .mermaid[data-processed="true"] {
+  background: transparent;
+}

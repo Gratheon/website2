@@ -1,5 +1,5 @@
 ---
-title: "Arveldussüsteemi dokumentatsioon"
+title: "Arveldussüsteem"
 ---
 
 ## Ülevaade

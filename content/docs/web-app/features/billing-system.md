@@ -1,4 +1,6 @@
-# Billing System Documentation
+---
+title: "Billing System"
+---
 
 ## Overview
 
