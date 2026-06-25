@@ -11,8 +11,8 @@ layout: products
 <div class="product-web-app-showcase__grid">
 <div>
 <h2>Empieza con la aplicación web</h2>
-<p>La <a href="web_app/web_app.md">aplicación web de Gratheon</a> es el espacio compartido para registros de colmenas, inspecciones, fotos subidas, telemetría, alertas y decisiones asistidas por IA. Es el primer producto que la mayoría de usuarios necesita, incluso antes de añadir dispositivos de campo.</p>
-<p><a class="product-button product-button--primary" href="web_app/web_app.md">Explorar la aplicación web</a> <a class="product-button" href="/es/pricing/">Comparar planes</a></p>
+<p>La <a href="/es/products/web_app/">aplicación web de Gratheon</a> es el espacio compartido para registros de colmenas, inspecciones, fotos subidas, telemetría, alertas y decisiones asistidas por IA. Es el primer producto que la mayoría de usuarios necesita, incluso antes de añadir dispositivos de campo.</p>
+<p><a class="product-button product-button--primary" href="/es/products/web_app/">Explorar la aplicación web</a> <a class="product-button" href="/es/pricing/">Comparar planes</a></p>
 </div>
 <img src="/img/web-app.png" alt="Interfaz de la aplicación web de Gratheon" />
 </div>
@@ -70,25 +70,25 @@ layout: products
 
 <div class="product-card-grid product-card-grid--family">
 <article class="product-card-small">
-<a href="scales/scales.md">🌡️ Básculas para colmenas</a>
+<a href="/es/products/scales/scales/">🌡️ Básculas para colmenas</a>
 <p>Mediciones remotas de bajo coste para peso, temperatura y otras señales ambientales.</p>
 <span class="product-card-meta">Prototipo · telemetría</span>
 </article>
 
 <article class="product-card-small">
-<a href="entrance_observer/entrance_observer.md">👁️‍🗨️ Entrance Observer</a>
+<a href="/es/products/entrance_observer/entrance_observer/">👁️‍🗨️ Entrance Observer</a>
 <p>Cámara y canalización de IA para vídeo de la piquera, métricas de tráfico de abejas, señales de comportamiento y alertas.</p>
 <span class="product-card-meta">Alpha · visión por computador</span>
 </article>
 
 <article class="product-card-small">
-<a href="robotic_beehive/robotic_beehive.md">🧿 Colmena robótica</a>
+<a href="/es/products/robotic_beehive/robotic_beehive/">🧿 Colmena robótica</a>
 <p>Una ruta modular hacia la inspección interna remota y operaciones mecanizadas con cuadros.</p>
 <span class="product-card-meta">Ideación · automatización</span>
 </article>
 
 <article class="product-card-small">
-<a href="robotic_apiary/robotic_apiary.md">🪬 Apiario robótico</a>
+<a href="/es/products/robotic_apiary/robotic_apiary/">🪬 Apiario robótico</a>
 <p>Visión a largo plazo para automatización de múltiples colmenas, movilidad en campo e intervención a escala de apiario.</p>
 <span class="product-card-meta">Visión · escala</span>
 </article>
@@ -120,10 +120,10 @@ layout: products
 
 ## Detalles localizados
 
-- [📱 Aplicación web](web_app/web_app.md)
-- [🌡️ Básculas para colmenas](scales/scales.md)
-- [👁️‍🗨️ Entrance Observer](entrance_observer/entrance_observer.md)
-- [🧿 Colmena robótica](robotic_beehive/robotic_beehive.md)
-- [🪬 Apiario robótico](robotic_apiary/robotic_apiary.md)
+- [📱 Aplicación web](/es/products/web_app/)
+- [🌡️ Básculas para colmenas](/es/products/scales/scales/)
+- [👁️‍🗨️ Entrance Observer](/es/products/entrance_observer/entrance_observer/)
+- [🧿 Colmena robótica](/es/products/robotic_beehive/robotic_beehive/)
+- [🪬 Apiario robótico](/es/products/robotic_apiary/robotic_apiary/)
 
 Las subpáginas de funciones que todavía no están traducidas enlazan intencionadamente a las rutas canónicas en inglés para evitar páginas locales incompletas.

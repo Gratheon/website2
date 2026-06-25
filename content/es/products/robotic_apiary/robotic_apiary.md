@@ -5,7 +5,7 @@ navTitle: Apiario robótico
 layout: products
 ---
 
-Como solución más rentable para apiarios grandes, queremos reutilizar la funcionalidad de la [colmena robótica](../robotic_beehive/robotic_beehive.md) y añadir capacidad de moverse por el apiario para inspeccionar colmenas bajo demanda o según calendario.
+Como solución más rentable para apiarios grandes, queremos reutilizar la funcionalidad de la [colmena robótica](/es/products/robotic_beehive/robotic_beehive/) y añadir capacidad de moverse por el apiario para inspeccionar colmenas bajo demanda o según calendario.
 
 `status`: [TRL 1](https://www.nasa.gov/directorates/somd/space-communications-navigation-program/technology-readiness-levels/)
 
@@ -27,7 +27,7 @@ El apiario robótico apunta a problemas como:
 
 ## Retos y requisitos
 
-- Inspeccionar varias colmenas con funcionalidad similar a la [colmena robótica](../robotic_beehive/robotic_beehive.md).
+- Inspeccionar varias colmenas con funcionalidad similar a la [colmena robótica](/es/products/robotic_beehive/robotic_beehive/).
 - Mantener el coste bajo usando un módulo móvil compartido.
 - Soportar una forma de remolque móvil que pueda trasladarse con un coche.
 - No depender de un contenedor enorme para mover toda la infraestructura.

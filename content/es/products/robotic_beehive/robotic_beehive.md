@@ -8,7 +8,7 @@ sidebar_position: 5
 Estamos desarrollando una plataforma robótica vertical para inspección de colmenas. La dirección del producto es:
 - levantar varias secciones para llegar más rápido al nido;
 - tomar fotos de cuadros con cámaras integradas, reduciendo el levantamiento manual;
-- subir resultados de inspección a la [aplicación web](../web_app/web_app.md);
+- subir resultados de inspección a la [aplicación web](/es/products/web_app/);
 - moverse sobre ruedas para inspeccionar distintas colmenas.
 
 La dirección de hardware se documenta en la [documentación técnica de colmena robótica](/docs/robotic-beehive/). El flujo de inspección depende de la gestión de lados de cuadro y de la gestión de inspecciones en la aplicación web.
@@ -52,7 +52,7 @@ La extracción debe ocurrir sin perturbar a las abejas, exponerlas al clima o po
 
 ## Prototipo
 
-El prototipo combina actuadores, GPU y cámaras. Está en una fase muy temprana porque ahora el foco principal es la [aplicación web](../web_app/web_app.md) y [Entrance Observer](../entrance_observer/entrance_observer.md).
+El prototipo combina actuadores, GPU y cámaras. Está en una fase muy temprana porque ahora el foco principal es la [aplicación web](/es/products/web_app/) y [Entrance Observer](/es/products/entrance_observer/entrance_observer/).
 
 ## Más información en inglés
 

@@ -8,7 +8,7 @@ El plan Starter añade flujos de inspección más avanzados y análisis que ayud
 
 ## Funciones destacadas
 
-- [Conteo de varroa en bandeja inferior](hive_bottom_varroa_count.md)
+- [Conteo de varroa en bandeja inferior](hive-bottom-varroa-count.md)
 - Gestión de inspecciones.
 - Detección de celdas de panal y análisis de imágenes.
 

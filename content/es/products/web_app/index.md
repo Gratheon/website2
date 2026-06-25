@@ -50,7 +50,7 @@ La aplicación web de Gratheon ayuda a los apicultores a gestionar [datos de api
 - Correlaciona los datos con clima, inspecciones y alertas.
 
 ### Transmitir vídeo desde la piquera
-- Configura una cámara [Entrance Observer](../entrance_observer/entrance_observer.md).
+- Configura una cámara [Entrance Observer](/es/products/entrance_observer/entrance_observer/).
 - Comprueba que el vídeo sea visible.
 - Usa métricas y alertas para interpretar actividad, robbing, enjambrazón u otros eventos.
 
@@ -58,12 +58,12 @@ La aplicación web de Gratheon ayuda a los apicultores a gestionar [datos de api
 - Añade una bandeja inferior a la colmena.
 - Sube una foto del panel blanco deslizante con ácaros varroa.
 - Las imágenes se versionan junto con inspecciones para seguimiento histórico.
-- [El conteo de varroa en bandeja inferior](starter-tier/hive_bottom_varroa_count.md) ayuda a evaluar el nivel de infestación y las decisiones de tratamiento.
+- [El conteo de varroa en bandeja inferior](starter-tier/hive-bottom-varroa-count.md) ayuda a evaluar el nivel de infestación y las decisiones de tratamiento.
 
 ## Funciones localizadas destacadas
 
 - [👑 Live Queen Finder](free-tier/live-queen-finder.md)
-- [🦀 Conteo de varroa en bandeja inferior](starter-tier/hive_bottom_varroa_count.md)
+- [🦀 Conteo de varroa en bandeja inferior](starter-tier/hive-bottom-varroa-count.md)
 
 ## Más información en inglés
 

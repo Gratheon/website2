@@ -5,7 +5,7 @@ navTitle: Básculas
 layout: products
 ---
 
-Las básculas para colmenas son dispositivos IoT inteligentes con sensores y chips de comunicación adicionales. Miden periódicamente el estado de la colmena y envían los datos a la [aplicación web](../web_app/web_app.md). Estos datos agregados ayudan a monitorizar colonias en campo con costes mínimos.
+Las básculas para colmenas son dispositivos IoT inteligentes con sensores y chips de comunicación adicionales. Miden periódicamente el estado de la colmena y envían los datos a la [aplicación web](/es/products/web_app/). Estos datos agregados ayudan a monitorizar colonias en campo con costes mínimos.
 
 La dirección de hardware se describe en la [documentación de sensores de colmena](/docs/beehive-sensors/), mientras que la aplicación almacena las lecturas en [telemetría de colmena](/products/web_app/pro-tier/hive-telemetry-storage/) y las compara mediante [analítica de series temporales](/products/web_app/pro-tier/timeseries-data-analytics/).
 

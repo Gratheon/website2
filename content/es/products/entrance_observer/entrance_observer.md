@@ -7,7 +7,7 @@ layout: products
 
 `status: alpha`, [TRL 5](https://www.nasa.gov/directorates/somd/space-communications-navigation-program/technology-readiness-levels/)
 
-Entrance Observer es un conjunto de cámaras y dispositivos de hardware que analiza la piquera de la colmena. Graba vídeo, ejecuta análisis de IA y envía métricas y clips a la [aplicación web](../web_app/web_app.md) para visualización y alertas.
+Entrance Observer es un conjunto de cámaras y dispositivos de hardware que analiza la piquera de la colmena. Graba vídeo, ejecuta análisis de IA y envía métricas y clips a la [aplicación web](/es/products/web_app/) para visualización y alertas.
 
 El código abierto está disponible en [GitHub: entrance-observer](https://github.com/Gratheon/entrance-observer/). Para detalles de implementación, consulta la [documentación técnica de Entrance Observer](/docs/entrance-observer/). Las métricas que produce se almacenan mediante [telemetría de colmena](/products/web_app/pro-tier/hive-telemetry-storage/) y pueden alimentar [alertas](/products/web_app/flexible-tier/alerts/).
 

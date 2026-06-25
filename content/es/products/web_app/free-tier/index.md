@@ -9,6 +9,7 @@ El plan gratuito cubre las funciones iniciales para empezar a estructurar datos 
 ## Funciones destacadas
 
 - [Live Queen Finder](live-queen-finder.md)
+- [Historial de alimentación](feeding-history.md)
 - Gestión básica de apiarios y colmenas.
 - Subida de fotos para flujos de análisis iniciales.
 
