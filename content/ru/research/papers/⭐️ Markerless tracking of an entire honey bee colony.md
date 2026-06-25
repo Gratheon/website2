@@ -1,14 +1,36 @@
 ---
 hideNav: true
+layout: research
+hideToc: true
+title: "Markerless tracking of an entire honey bee colony"
+description: "CNN segmentation method achieving markerless detection of all bees in a full colony on natural honeycomb background, enabling months-long sociometric monitoring with ~79% trajectory recovery."
 year: "2021"
 orgs:
   - 🇯🇵 Okinawa Institute of Science and Technology Graduate University
-hide_table_of_contents: true
-title: ⭐️ Markerless tracking of an entire honey bee colony
-layout: research
+  - 🇦🇺 Australian National University
+  - 🇳🇱 Vrije Universiteit Amsterdam
+topics:
+  - computer-vision
+  - bee-behaviour
+productAreas:
+  - hive-scanner
+paperType: journal
+featured: true
 ---
 
-[PDF](/assets/research/papers/pdfs/2021-markerless.pdf)
+[PDF](pdfs/2021-markerless.pdf)
 
-<object data="/assets/research/papers/pdfs/2021-markerless.pdf" type="application/pdf" width="100%" height="800"></object>
+<object data={require('./pdfs/2021-markerless.pdf').default} type="application/pdf" width="100%" height="800"></object>
 
+## Внешние ссылки
+
+- DOI: https://doi.org/10.1038/s41467-021-21769-1
+- [Полный текст (Nature Communications)](https://www.nature.com/articles/s41467-021-21769-1)
+
+## Аннотация
+
+От клеток в ткани до стай птиц и человеческих толп живые системы демонстрируют поразительное разнообразие коллективного поведения. Однако количественное изучение таких явлений сначала требует отслеживания значительной доли членов группы в естественных условиях — а это остаётся сложной и до сих пор не решённой задачей. Авторы представляют комплексный вычислительный метод отслеживания всей пчелиной семьи *Apis mellifera* с использованием видео высокого разрешения на фоне естественных сот. Архитектура сегментации на основе сверточной нейронной сети (CNN) адаптирована для автоматической идентификации положений пчёл и ячеек расплода, ориентации тел и состояний внутри ячеек. Метод достигает высокой точности (~10% ширины тела ошибки по позиции, ~10° ошибки по ориентации и true positive rate > 90%) и демонстрирует многомесячный мониторинг социометрических колебаний пчелиной семьи. Эти колебания включают ~24-часовые циклы числа детекций, отрицательную корреляцию между пчёлами и расплодом и ночное усиление присутствия пчёл внутри ячеек сот. Обнаруженные позиции объединяются с визуальными признаками изображений, центрированных на организме, чтобы отслеживать отдельных особей во времени и через сложные события перекрытия, восстанавливая ~79% траекторий пчёл из пяти наблюдательных ульев на пятиминутных интервалах. Полученные траектории раскрывают важные индивидуальные формы поведения, включая виляющие танцы и перемещение внутри ячеек сот.
+
+## Актуальность для Gratheon
+
+Эта статья в Nature Communications задаёт современный уровень для продуктового направления hive-scanner, к которому стремится Gratheon. Подход к безмаркерному отслеживанию всей пчелиной семьи — это именно то, что нужно модулю наблюдательного улья Gratheon: без физической маркировки пчёл, без нарушения естественного поведения и с автоматическим извлечением метрик уровня семьи — количества пчёл, площади расплода и амплитуды суточных циклов. Многомесячное развёртывание в OIST даёт шаблон того, как hive-scanner в Gratheon должен вести непрерывную социометрическую наблюдаемость и показывать тренды пчелиной семьи в dashboard веб-приложения. Публичный датасет и код, на которые ссылается статья, также являются прямыми источниками обучающих данных для пайплайна компьютерного зрения Gratheon.
