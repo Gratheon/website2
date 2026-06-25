@@ -1549,7 +1549,13 @@ html[data-theme='dark'] .front-page .future {
 .knowledge-content .research-asset-card {
   display: grid;
   align-content: start;
-  gap: 14px;
+  gap: 16px;
+}
+
+.knowledge-content .research-asset-card__heading {
+  display: flex;
+  align-items: center;
+  gap: clamp(14px, 2vw, 22px);
 }
 
 .knowledge-content .research-asset-card h3 {
@@ -1561,17 +1567,20 @@ html[data-theme='dark'] .front-page .future {
 }
 
 .knowledge-content .research-card-icon {
-  width: clamp(46px, 5vw, 72px);
-  height: clamp(46px, 5vw, 72px);
+  flex: 0 0 auto;
+  width: clamp(52px, 5vw, 68px);
+  height: clamp(52px, 5vw, 68px);
   color: var(--brand-yellow, #ffd400);
   fill: none;
   stroke: currentColor;
-  stroke-width: 2.2;
+  stroke-width: 2.4;
   stroke-linecap: round;
   stroke-linejoin: round;
+  filter: drop-shadow(0 10px 18px rgba(255, 212, 0, 0.18));
 }
 
-.knowledge-content .research-card-icon path {
+.knowledge-content .research-card-icon path,
+.knowledge-content .research-card-icon circle {
   vector-effect: non-scaling-stroke;
 }
 
