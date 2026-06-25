@@ -104,7 +104,7 @@
 {{end}}
 {{define "research_assets"}}
 <section class="knowledge-content research-assets-overview" aria-labelledby="research-assets-title">
-  <h2 id="research-assets-title">Gratheon research assets</h2>
+  <h2 id="research-assets-title">{{if eq .Page.Language "et"}}Gratheoni uurimisvarad{{else}}Gratheon research assets{{end}}</h2>
   <div class="research-card-grid research-card-grid--3 research-assets-grid">
     <article class="research-card research-asset-card">
       <div class="research-asset-card__heading">
@@ -115,9 +115,9 @@
           <path d="M24 12.9c3.5-2 6.9-2.4 10.5-1.4v25c-3.6-1-7-.6-10.5 1.4v-25Z" />
           <path d="M17 19.5c1.7-.2 3.2.1 4.5.7M27 20.2c1.3-.6 2.8-.9 4.5-.7M17 25c1.7-.2 3.2.1 4.5.7M27 25.7c1.3-.6 2.8-.9 4.5-.7" />
         </svg>
-        <h3><a href="/research/datasets/">Gratheon datasets</a></h3>
+        <h3><a href="{{if eq .Page.Language "et"}}/et/research/datasets/{{else}}/research/datasets/{{end}}">{{if eq .Page.Language "et"}}Gratheoni andmestikud{{else}}Gratheon datasets{{end}}</a></h3>
       </div>
-      <p>Inspection photos, entrance videos, metrics, tracks, and external reference resources for experiments and benchmarking.</p>
+      <p>{{if eq .Page.Language "et"}}Inspektsioonifotod, lennuava videod, mõõdikud, liikumisjäljed ja välised võrdlusressursid katseteks ning võrdlusanalüüsiks.{{else}}Inspection photos, entrance videos, metrics, tracks, and external reference resources for experiments and benchmarking.{{end}}</p>
     </article>
     <article class="research-card research-asset-card">
       <div class="research-asset-card__heading">
@@ -128,9 +128,9 @@
           <circle cx="28.5" cy="16.5" r="5.3" />
           <path d="M24 14.5v22M15.5 36.5h17M13.5 30c1.4-2.8 3.3-4.3 5.8-4.3M34.5 30c-1.4-2.8-3.3-4.3-5.8-4.3" />
         </svg>
-        <h3><a href="/research/models/">Gratheon models</a></h3>
+        <h3><a href="{{if eq .Page.Language "et"}}/et/research/models/{{else}}/research/models/{{end}}">{{if eq .Page.Language "et"}}Gratheoni mudelid{{else}}Gratheon models{{end}}</a></h3>
       </div>
-      <p>Bee detection, queen detection, BeePose, and varroa-on-bee detection spanning browser inference, HTTP services, and edge experimentation.</p>
+      <p>{{if eq .Page.Language "et"}}Mesilaste tuvastus, mesilasema tuvastus, BeePose ja varroa tuvastus mesilasel brauseri inferentsi, HTTP-teenuste ja servaseadmete katsete jaoks.{{else}}Bee detection, queen detection, BeePose, and varroa-on-bee detection spanning browser inference, HTTP services, and edge experimentation.{{end}}</p>
     </article>
     <article class="research-card research-asset-card">
       <div class="research-asset-card__heading">
@@ -141,9 +141,9 @@
           <path d="M19 13.5h5.5" />
           <path d="M33 35.5l3 3 6-7" />
         </svg>
-        <h3><a href="/assets/assets/entrance-observer-whitepaper.pdf">Entrance Observer whitepaper</a></h3>
+        <h3><a href="/assets/assets/entrance-observer-whitepaper.pdf">{{if eq .Page.Language "et"}}Entrance Observeri whitepaper{{else}}Entrance Observer whitepaper{{end}}</a></h3>
       </div>
-      <p>A direct technical entry point into Gratheon’s own monitoring work and collaboration discussions.</p>
+      <p>{{if eq .Page.Language "et"}}Otsene tehniline sissepääs Gratheoni enda seiretöösse ja koostööaruteludesse.{{else}}A direct technical entry point into Gratheon’s own monitoring work and collaboration discussions.{{end}}</p>
     </article>
   </div>
 </section>
@@ -184,8 +184,8 @@
             {{end}}
           {{else}}
             {{if eq .Page.Language "et"}}
-              <a class="knowledge-action knowledge-action--primary" href="/research/papers/">Sirvi artikleid</a>
-              <a class="knowledge-action" href="/et/research/models/">Vaata mudeleid</a>
+              <a class="knowledge-action knowledge-action--primary" href="/et/research/papers/">Sirvi artikleid</a>
+              <a class="knowledge-action" href="/et/research/datasets/">Vaata andmestikke</a>
             {{else if eq .Page.Language "ru"}}
               <a class="knowledge-action knowledge-action--primary" href="/ru/research/papers/">Статьи</a>
               <a class="knowledge-action" href="/ru/research/models/">Модели</a>
@@ -211,7 +211,7 @@
       {{end}}
     </section>
     {{if ne .Page.Layout "products"}}
-    {{if and (eq .Page.Layout "research") (eq .Page.Language .Site.I18n.Default) (eq .Page.URL "/research/")}}
+    {{if and (eq .Page.Layout "research") (or (and (eq .Page.Language .Site.I18n.Default) (eq .Page.URL "/research/")) (and (eq .Page.Language "et") (eq .Page.URL "/et/research/")))}}
       {{template "research_assets" .}}
     {{end}}
       {{template "knowledge_map" .}}
