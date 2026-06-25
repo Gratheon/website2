@@ -74,10 +74,11 @@
 {{ end }}
 {{ $isPapersPath := ne $paperPath .Page.URL }}
 {{ $isPapersIndex := eq $paperPath "" }}
+{{ $isPapersLanding := and $isPapersPath $isPapersIndex }}
 {{ $isPapersSubIndex := or (eq $paperPath "scientific-publications/") (eq $paperPath "topics/") (eq $paperPath "years/") (eq $paperPath "product-areas/") (eq $paperPath "teams/") (eq $paperPath "other-research-sources/") }}
 {{ $isPapersTaxonomy := or (ne (trimPrefix $paperPath "topics/") $paperPath) (ne (trimPrefix $paperPath "years/") $paperPath) (ne (trimPrefix $paperPath "product-areas/") $paperPath) }}
 {{ $isPaperDetail := and $isPapersPath (not $isPapersIndex) (not $isPapersSubIndex) (not $isPapersTaxonomy) }}
-{{if and .Sidebar (not $isPaperDetail)}}
+{{if and .Sidebar (not $isPaperDetail) (not $isPapersLanding)}}
 <section class="knowledge-map" aria-label="{{.UI.Navigation}}">
   <div class="knowledge-map-intro">
     <p class="knowledge-map-kicker">

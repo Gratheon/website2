@@ -1546,6 +1546,131 @@ html[data-theme='dark'] .front-page .future {
   border-top: 0;
 }
 
+
+/* WHY: The research papers landing page should act like a filter entry point,
+   not duplicate the sidebar tree. WHAT: style generated emoji filter cards and
+   the publications summary block without extra image assets. */
+.knowledge-content .research-paper-filters {
+  margin-top: clamp(24px, 4vw, 48px);
+}
+
+.knowledge-content .research-paper-filters__intro {
+  max-width: 760px;
+}
+
+.knowledge-content .research-paper-filters__intro h2 {
+  margin-top: 8px;
+  font-size: clamp(1.7rem, 3vw, 3rem);
+  line-height: 1.04;
+  letter-spacing: -0.05em;
+}
+
+.knowledge-content .research-paper-filter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr));
+  gap: 14px;
+  margin-top: clamp(20px, 3vw, 34px);
+}
+
+.knowledge-content .research-paper-filter-card,
+.knowledge-content .research-paper-filter-card:visited {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 14px;
+  align-items: start;
+  min-width: 0;
+  padding: clamp(16px, 2.4vw, 24px);
+  border: 1px solid var(--knowledge-line);
+  border-radius: 18px;
+  background: var(--knowledge-paper);
+  color: var(--knowledge-ink);
+  text-decoration: none;
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.05);
+}
+
+.knowledge-content .research-paper-filter-card:hover,
+.knowledge-content .research-paper-filter-card:focus-visible {
+  border-color: var(--brand-yellow);
+  box-shadow: 0 0 0 5px rgba(255, 212, 0, 0.28), 0 18px 38px rgba(0, 0, 0, 0.08);
+  outline: 0;
+  text-decoration: none;
+}
+
+.knowledge-content .research-paper-filter-card__icon {
+  display: inline-grid;
+  place-items: center;
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 999px;
+  background: var(--brand-yellow);
+  font-size: 1.35rem;
+  line-height: 1;
+}
+
+.knowledge-content .research-paper-filter-card__body {
+  display: grid;
+  gap: 6px;
+  min-width: 0;
+}
+
+.knowledge-content .research-paper-filter-card strong {
+  font-size: 1.08rem;
+  line-height: 1.2;
+}
+
+.knowledge-content .research-paper-filter-card small {
+  color: var(--knowledge-muted);
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+.knowledge-content .research-publications-summary {
+  display: grid;
+  gap: 14px;
+  margin-bottom: clamp(26px, 4vw, 48px);
+  padding: clamp(18px, 2.6vw, 30px);
+  border: 1px solid var(--knowledge-line);
+  border-radius: 20px;
+  background: var(--knowledge-soft);
+}
+
+.knowledge-content .research-publications-summary p {
+  margin: 0;
+}
+
+.knowledge-content .research-publication-filter-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.knowledge-content .research-publication-filter-links a,
+.knowledge-content .research-publication-filter-links a:visited {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border: 1px solid var(--knowledge-line);
+  border-radius: 999px;
+  background: var(--knowledge-paper);
+  color: var(--knowledge-ink);
+  font-size: 0.92rem;
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.knowledge-content .research-publication-filter-links a:hover,
+.knowledge-content .research-publication-filter-links a:focus-visible {
+  border-color: var(--brand-yellow);
+  background: var(--brand-yellow);
+  color: black;
+  outline: 0;
+  text-decoration: none;
+}
+
+.knowledge-content .research-publication-filter-links span {
+  color: var(--knowledge-muted);
+}
 .knowledge-content .research-asset-card {
   display: grid;
   align-content: start;

@@ -18,6 +18,7 @@ introductions or notes around the generated content.
 
 from __future__ import annotations
 
+import html
 import re
 import sys
 from collections import defaultdict
@@ -308,30 +309,78 @@ def group_papers_by_product_area(papers: Iterable[Paper]) -> dict[Term, list[Pap
         for product_area in paper.product_areas:
             grouped[product_area].append(paper)
     return {area: sorted(items, key=paper_sort_key) for area, items in grouped.items()}
-
 def render_main_index(papers: list[Paper]) -> str:
     topic_groups = group_papers_by_topic(papers)
     year_groups = group_papers_by_year(papers)
     product_area_groups = group_papers_by_product_area(papers)
 
-    # WHY: /research/papers/ should be a real landing page, not a long page
-    # made of several browsing sections. WHAT: link each former section to its
-    # own sub-page so the public URL is easier to scan.
-    lines: list[str] = [
-        "Choose a research-paper sub-page:",
-        "",
-        f"- [Scientific publications](scientific-publications/index.md) — bibliography entry point for {len(papers)} paper notes.",
-        "- [Research teams](teams/index.md) — academic groups active in precision beekeeping research.",
-        f"- [Browse by topic](topics/index.md) — {len(topic_groups)} topic pages.",
-        f"- [Browse by year](years/index.md) — {len(year_groups)} publication-year pages.",
+    # WHY: /research/papers/ should not repeat the visual Papers map above.
+    # WHAT: render compact filter cards with emoji icons that point to each
+    # browsing mode while keeping the page short and scannable.
+    cards = [
+        (
+            "📚",
+            "Scientific publications",
+            "scientific-publications/",
+            f"All {len(papers)} paper notes in one bibliography.",
+        ),
+        (
+            "🏛️",
+            "Research teams",
+            "teams/",
+            "Academic groups active in precision beekeeping research.",
+        ),
+        (
+            "🏷️",
+            "Topics",
+            "topics/",
+            f"Filter by {len(topic_groups)} research topics.",
+        ),
+        (
+            "📅",
+            "Years",
+            "years/",
+            f"Filter by {len(year_groups)} publication years.",
+        ),
     ]
 
     if product_area_groups:
-        lines.append(
-            f"- [Browse by product area](product-areas/index.md) — {len(product_area_groups)} product-facing research pages."
-        )
+        cards.append((
+            "🧩",
+            "Product areas",
+            "product-areas/",
+            f"Map papers to {len(product_area_groups)} Gratheon product areas.",
+        ))
 
-    lines.append("- [Other research sources](other-research-sources/index.md) — external academic search entry points.")
+    cards.append((
+        "🔎",
+        "Sources",
+        "other-research-sources/",
+        "Open external academic search entry points.",
+    ))
+
+    lines: list[str] = [
+        '<section class="research-paper-filters" aria-labelledby="research-paper-filters-title">',
+        '  <div class="research-paper-filters__intro">',
+        '    <p class="research-card-meta">Paper filters</p>',
+        '    <h2 id="research-paper-filters-title">Find papers by bibliography, topic, year, product area, or team</h2>',
+        '    <p>Use these filters to narrow the literature library. The full list of individual papers starts on Scientific publications.</p>',
+        '  </div>',
+        '  <div class="research-paper-filter-grid">',
+    ]
+
+    for icon, label, href, description in cards:
+        lines.extend([
+            f'    <a class="research-paper-filter-card" href="{html.escape(href, quote=True)}">',
+            f'      <span class="research-paper-filter-card__icon" aria-hidden="true">{html.escape(icon)}</span>',
+            f'      <span class="research-paper-filter-card__body"><strong>{html.escape(label)}</strong><small>{html.escape(description)}</small></span>',
+            '    </a>',
+        ])
+
+    lines.extend([
+        '  </div>',
+        '</section>',
+    ])
 
     return "\n".join(lines).rstrip()
 
@@ -342,20 +391,26 @@ def render_scientific_publications_index(papers: list[Paper]) -> str:
     product_area_groups = group_papers_by_product_area(papers)
 
     lines: list[str] = [
-        "This bibliography links to individual paper notes kept at their existing URLs under `research/papers/`.",
-        "",
-        f"- Total paper notes: {len(papers)}",
-        "- [Research papers hub](../index.md)",
-        "",
-        "Choose a bibliography page:",
-        "",
-        f"- [Browse by topic](../topics/index.md) ({len(topic_groups)})",
-        f"- [Browse by year](../years/index.md) ({len(year_groups)})",
+        '<section class="research-publications-summary" aria-label="Scientific publications summary">',
+        f'  <p class="research-card-meta">{len(papers)} paper notes</p>',
+        '  <p>This bibliography links to individual paper notes kept at their existing URLs under <code>/research/papers/</code>.</p>',
+        '  <div class="research-publication-filter-links" aria-label="Alternative filters">',
+        f'    <a href="../topics/">🏷️ Topics <span>{len(topic_groups)}</span></a>',
+        f'    <a href="../years/">📅 Years <span>{len(year_groups)}</span></a>',
     ]
 
     if product_area_groups:
-        lines.append(f"- [Browse by product area](../product-areas/index.md) ({len(product_area_groups)})")
+        lines.append(f'    <a href="../product-areas/">🧩 Product areas <span>{len(product_area_groups)}</span></a>')
 
+    lines.extend([
+        '    <a href="../">← Research papers hub</a>',
+        '  </div>',
+        '</section>',
+        '',
+        '## Publications',
+        '',
+    ])
+    lines.extend(render_paper_bullets(papers, base_prefix="../", include_year=True))
     return "\n".join(lines).rstrip()
 
 
@@ -615,6 +670,7 @@ def create_scientific_publications_shell() -> str:
     return "\n".join([
         "---",
         f"title: {yaml_double_quote('Scientific publications')}",
+        "description: Browse the full Gratheon bibliography of external scientific publications relevant to digital beekeeping, bee health, observability, robotics, and machine learning.",
         "navTitle: Publications",
         "layout: research",
         "order: 10",
