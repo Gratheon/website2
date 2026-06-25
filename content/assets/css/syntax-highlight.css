@@ -1,0 +1,58 @@
+/* Dependency-free syntax highlighting for Markdown fenced code blocks.
+   WHY: blog-engine-md already emits language-* classes, but the website does not ship
+   a highlighter. These variables and token styles are used by syntax-highlight.js. */
+:root {
+  --syntax-code-bg: #f6f8fa;
+  --syntax-code-border: #d8dee4;
+  --syntax-code-text: #1f2328;
+  --syntax-token-comment: #6e7781;
+  --syntax-token-keyword: #cf222e;
+  --syntax-token-string: #0a7f36;
+  --syntax-token-number: #0550ae;
+  --syntax-token-property: #953800;
+  --syntax-token-function: #8250df;
+  --syntax-token-operator: #57606a;
+}
+
+html[data-theme='dark'] {
+  --syntax-code-bg: #161b22;
+  --syntax-code-border: #30363d;
+  --syntax-code-text: #e6edf3;
+  --syntax-token-comment: #8b949e;
+  --syntax-token-keyword: #ff7b72;
+  --syntax-token-string: #a5d6ff;
+  --syntax-token-number: #79c0ff;
+  --syntax-token-property: #d2a8ff;
+  --syntax-token-function: #d2a8ff;
+  --syntax-token-operator: #ff7b72;
+}
+
+article .content pre {
+  border: 1px solid var(--syntax-code-border);
+  background: var(--syntax-code-bg) !important;
+  color: var(--syntax-code-text);
+  line-height: 1.5;
+}
+
+article .content pre > code[class*="language-"],
+pre > code[class*="language-"] {
+  display: block;
+  background: transparent !important;
+  color: inherit;
+  white-space: pre;
+}
+
+pre code.is-highlighted .token-comment { color: var(--syntax-token-comment); font-style: italic; }
+pre code.is-highlighted .token-keyword { color: var(--syntax-token-keyword); font-weight: 700; }
+pre code.is-highlighted .token-string { color: var(--syntax-token-string); }
+pre code.is-highlighted .token-number { color: var(--syntax-token-number); }
+pre code.is-highlighted .token-property { color: var(--syntax-token-property); }
+pre code.is-highlighted .token-function { color: var(--syntax-token-function); }
+pre code.is-highlighted .token-operator { color: var(--syntax-token-operator); }
+pre code.is-highlighted .token-punctuation { color: var(--text-secondary, #666); }
+pre code.is-highlighted .token-variable { color: var(--syntax-token-number); }
+pre code.is-highlighted .token-command { color: var(--syntax-token-function); font-weight: 700; }
+pre code.is-highlighted .token-option { color: var(--syntax-token-property); }
+pre code.is-highlighted .token-header { color: var(--syntax-token-property); }
+pre code.is-highlighted .token-method { color: var(--syntax-token-keyword); font-weight: 700; }
+pre code.is-highlighted .token-path { color: var(--syntax-token-string); }
