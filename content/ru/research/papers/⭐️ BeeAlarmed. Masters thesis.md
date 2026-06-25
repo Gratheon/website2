@@ -1,20 +1,35 @@
 ---
 hideNav: true
-title: BeeAlarmed. Masters thesis
 layout: research
+hideToc: true
+title: "BeeAlarmed. Masters thesis"
+description: "Open-source проект мониторинга улья на базе камер, который считает пчёл у летка, отслеживает их траектории и с помощью нейросети классифицирует пыльцу, Varroa, охлаждающее поведение и ос."
+year: "2020"
 orgs:
   - 🇩🇪 South Westphalia University of Applied Sciences
-hide_table_of_contents: true
-year: "2020"
+topics:
+  - computer-vision
+  - bee-behaviour
+productAreas:
+  - gate-tracker
+paperType: thesis
+featured: true
 ---
-
-[https://github.com/BeeAlarmed/BeeAlarmed](https://github.com/BeeAlarmed/BeeAlarmed)
-Наша адаптация — https://github.com/Gratheon/models-gate-tracker
-
-Не удалось найти сам PDF, доступен только исходный код
-
-[https://www.facebook.com/fhsuedwestfalen/videos/703400580980712/?__tn__=%2CO-R](https://www.facebook.com/fhsuedwestfalen/videos/703400580980712/?__tn__=%2CO-R)
-
 
 [VIDEO](/assets/research/papers/pdfs/fabien.mov)
 
+## Внешние ссылки
+
+- [GitHub (BeeAlarmed)](https://github.com/BeeAlarmed/BeeAlarmed)
+- [Upstream README](https://raw.githubusercontent.com/BeeAlarmed/BeeAlarmed/main/README.md)
+- [Example video (YouTube)](https://www.youtube.com/watch?v=sRm5TmTcnpg)
+- [Gratheon adaptation (models-gate-tracker)](https://github.com/Gratheon/models-gate-tracker)
+- [Video presentation (Facebook)](https://www.facebook.com/fhsuedwestfalen/videos/703400580980712/)
+
+## Аннотация
+
+BeeAlarmed — это open-source проект мониторинга улья на базе камеры, который определяет, отслеживает и классифицирует пчёл у летка. Каждый кадр с камеры обрабатывается для определения положений пчёл; затем система восстанавливает траектории с помощью трекинга на основе фильтра Калмана и подсчитывает пчёл, входящих в улей или вылетающих из него, по пересечению границы наблюдаемой зоны. После этого вырезанные и повернутые изображения отдельных пчёл передаются в нейронную сеть, которая классифицирует практически полезные признаки: наличие обножки, заражение клещом Varroa, пчёл, охлаждающих улей, и ос. Исходная реализация ориентирована на развёртывание на Jetson Nano, но также может обрабатывать видеофайлы и отправляет агрегированные наблюдения через LoRaWAN / The Things Network. В README проекта описаны практический прототип туннеля с камерой, LED-подсветка, загрузка предобученной модели, примеры видео и ограничения, связанные с углом камеры, качеством изображения и необходимостью дообучения на данных конкретного развёртывания. PDF магистерской работы не найден ни в локальном архиве, ни в upstream-репозитории; из локальных артефактов доступно только видео презентации, указанное выше.
+
+## Актуальность для Gratheon
+
+BeeAlarmed напрямую относится к направлениям Entrance Observer и gate-tracker в Gratheon, потому что демонстрирует тот же edge-паттерн компьютерного зрения, который нужен продукту в production: захват видео у летка, детекция пчёл, восстановление траекторий, подсчёт входящего и исходящего трафика и классификация признаков. Ориентация на Jetson Nano, телеметрия через LoRaWAN и чувствительность к геометрии камеры задают полезные практические ограничения для проектирования оборудования Gratheon и инструкций по установке. Для веб-приложения категории выходных данных BeeAlarmed естественно превращаются в метрики и алерты: баланс трафика, приток пыльцы, подозрение на Varroa, охлаждающее или вентилирующее поведение и вторжение ос. В видении автономной пасеки этот проект служит ранним blueprint того, как превратить пассивное видео у летка в машинно-читаемое состояние пчелиной семьи, которое затем может запускать повторные инспекции, дообучение модели или автоматизированные действия.
