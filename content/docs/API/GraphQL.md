@@ -1,7 +1,7 @@
 ---
-sidebar_position: 3
 hide_table_of_contents: true
 title: 🎨 GraphQL API
+order: 3
 ---
 We use federated GraphQL as main flexible way to query and modify web-app data.
 

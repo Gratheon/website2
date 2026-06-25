@@ -1,6 +1,5 @@
 ---
-order: 2
-sidebar_position: 2
+order: 4
 hide_table_of_contents: true
 title: 🗂️ REST APIs
 showChildren: true

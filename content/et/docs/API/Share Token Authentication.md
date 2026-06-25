@@ -1,5 +1,6 @@
 ---
 title: "Jagage märgi autentimist"
+order: 6
 ---
 
 Mõnda Gratheoni ressurssi saab avalikult jagada (ja need ei nõua vaataja selgesõnalist sisselogimist). Näiteks saab jagada mesipuu ülevaatuse vaadet. 

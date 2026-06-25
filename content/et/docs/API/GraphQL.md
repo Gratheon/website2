@@ -1,7 +1,7 @@
 ---
-sidebar_position: 3
 hide_table_of_contents: true
 title: 🎨 GraphQL API
+order: 3
 ---
 Peamise paindliku viisina web-app andmete päringute tegemiseks ja muutmiseks kasutame ühendatud GraphQL. Saate selle skeemi otse uurida aadressil https://graphql.gratheon.com/graphql
 

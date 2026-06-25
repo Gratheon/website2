@@ -1,6 +1,6 @@
 ---
-sidebar_position: 1
 title: 🔑 Autentimine
+order: 2
 ---
 Meie dokumendile API pääsemiseks peate looma [kasutajaprofiilis](https://app.gratheon.com/account) märgi API. Tokenid võimaldavad meil teid autentida.
 

@@ -1,6 +1,6 @@
 ---
-sidebar_position: 1
 title: 🔑 Authentication
+order: 2
 ---
 To access our API, you will need to generate API token in [user profile](https://app.gratheon.com/account). Tokens allow us to authenticate you.
 

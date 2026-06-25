@@ -1,6 +1,6 @@
 ---
-sidebar_position: 1
 title: 🔑 Authentication
+order: 2
 ---
 Чтобы получить доступ к нашему API, нужно сгенерировать API token в [user profile](https://app.gratheon.com/account). Tokens позволяют нам аутентифицировать вас.
 

@@ -1,5 +1,6 @@
 ---
 title: 🚪 Rate limiting
+order: 5
 ---
 Currently traffic is not rate limited, however it will be.
 

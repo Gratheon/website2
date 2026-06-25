@@ -1,6 +1,6 @@
 ---
 title: 🔗 API
-sidebar_position: 0
+order: 1
 ---
 Võimaldab seadistada teie taruseadmed Gratheoniga suhtlemiseks!
 

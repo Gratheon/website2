@@ -1,6 +1,6 @@
 ---
 title: 🔗 API
-sidebar_position: 0
+order: 1
 ---
 Давайте настроим ваши устройства ульев для взаимодействия с Gratheon!
 

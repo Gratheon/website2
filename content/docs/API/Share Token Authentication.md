@@ -1,3 +1,7 @@
+---
+title: Share Token Authentication
+order: 6
+---
 Some of Gratheon resources can be publicly shared (and do not require explicit login by the viewer). For example, a beehive inspection view can be shared. 
 
 For such cases, we support a special **Share Token** authentication. This token provides limited, **read-only** access based on predefined **scopes**. This token is included in the URL that is used for sharing.

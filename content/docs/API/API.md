@@ -1,6 +1,6 @@
 ---
 title: 🔗 API
-sidebar_position: 0
+order: 1
 ---
 Lets setup your hive devices to interact with Gratheon!
 

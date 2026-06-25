@@ -1,5 +1,6 @@
 ---
 title: 🚪 Rate limiting
+order: 5
 ---
 Сейчас traffic не ограничивается rate limit, но это будет добавлено.
 
