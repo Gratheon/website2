@@ -2,6 +2,33 @@
 title: Bill of materials
 ---
 
+This BOM is split by product maturity. The goal is to keep the first public build cheap and easy to source, then add field reliability and research sensors in later kits.
+
+## Recommended MVP BOM
+
+| Tier | Component | Recommended part | Qty | Rough cost | Why |
+| --- | --- | --- | ---: | ---: | --- |
+| Required | Microcontroller | [ESP32 DevKit / ESP32-WROOM](ESP32.md) | 1 | €4–10 | Cheapest supported WiFi MCU for Arduino-based DIY onboarding. |
+| Required | Weight ADC | HX711 breakout | 1 | €1–4 | Common low-cost ADC for load cells. |
+| Required | Load cell | 100–200 kg single-point load cell **or** 4× 50 kg bar load cells | 1 / 4 | €8–35 | Tracks honey flow, food reserves, sudden hive movement. |
+| Required | Internal temperature | [DS18B20 waterproof probe](DS18B20.md) | 1 | €2–5 | Robust and cheap first internal hive temperature sensor. |
+| Recommended | Humidity/ambient temperature | SHT31/SHTC3/BME280 module | 1 | €3–10 | Better first humidity option than DHT-style modules for field docs. |
+| Recommended | Enclosure | IP65 electrical junction box + cable glands | 1 | €6–18 | Easier and cheaper than custom aluminium for DIY entry. |
+| Recommended | Battery | 18650 holder + protected 18650 cells or USB power bank | 1 | €8–25 | Lets users start without custom PCB power design. |
+| Optional | Solar charging | 5–6 V solar panel + CN3065/TP4056-class charger module | 1 | €8–25 | Needed for multi-month field tests. |
+| Optional | Battery telemetry | INA219, MAX17048, LC709203, or resistor divider | 1 | €1–9 | Enables low-battery alerts and field reliability. |
+| Optional | Mechanical frame | Aluminium profile or stainless mount | as needed | €20–80 | Needed for repeatable field weighing; can become a paid kit. |
+
+## Cost targets
+
+| Build | Expected cost | Scope |
+| --- | ---: | --- |
+| Lab demo | €20–35 | ESP32 + HX711 + load cell + DS18B20, powered over USB. |
+| Outdoor DIY MVP | €45–90 | Adds enclosure, battery, humidity sensor, weatherproof wiring. |
+| Field-ready scale frame | €90–180 | Adds stronger mechanical frame, solar, better connectors, calibration weights. |
+
+## Existing prototype components
+
 <!-- QueryToSerialize: table WITHOUT ID "[" + default(title, file.name) + "]" + default( "("+  replace(replace(file.path, "gratheon.com", ""), " ", "%20") + ")", "") as title,  price,  shipping-price, items  FROM "docs/beehive-sensors/components"   WHERE file.name != "index" -->
 <!-- SerializedQuery: table WITHOUT ID "[" + default(title, file.name) + "]" + default( "("+  replace(replace(file.path, "gratheon.com", ""), " ", "%20") + ")", "") as title,  price,  shipping-price, items  FROM "docs/beehive-sensors/components"   WHERE file.name != "index" -->
 
@@ -28,10 +55,26 @@ title: Bill of materials
 | [Temperature - Humidity sensor alternative](docs/beehive-sensors/components/todo/Temperature%20-%20Humidity%20sensor%20alternative.md)                                                                     | \-    | \-             | \-    |
 <!-- SerializedQuery END -->
 
+## Phase-2 sensors
 
+Keep these in research/prototype docs until the base scale works reliably in the field:
 
+- Microphone/acoustic module for queenlessness, swarming, and stress experiments.
+- CO₂/VOC/PM sensors for controlled research deployments, not the first outdoor DIY kit.
+- IMU/vibration/tamper sensor for theft/storm alerts.
+- LoRa or cellular connectivity modules for remote apiaries.
+- LCD/display only for bench debugging; avoid it in outdoor battery kits.
 
 ## Possible vendors
+
+Prefer parts that can be purchased from several sources so the guide does not depend on one marketplace listing:
+
+- EU maker shops and electronics distributors for ESP32 boards, SHT31/BME280, DS18B20, cable glands, IP65 boxes.
+- AliExpress/Amazon/eBay for low-cost HX711, load cells, solar panels, battery holders.
+- Local hardware stores for aluminium/stainless mechanical parts.
+- PCBWay/JLCPCB/LCSC only after the DIY wiring has stabilized enough for a custom PCB.
+
+Prototype scale vendors to compare later:
 
 + 146 USD https://www.alibaba.com/product-detail/Weight-Pesage-Industrial-Balanzas-Load-Cell_1600454137483.html?spm=a2700.galleryofferlist.normal_offer.d_title.38c713a0EKDwRy&priceId=6e22a495b4744c7799663b3e1da26427
 + 100 usd https://www.alibaba.com/product-detail/Stainless-Steel-Waterproof-Weighing-Industrial-Scale_1600910558433.html?spm=a2700.details.popular_products.11.6a5948747Tm3az
