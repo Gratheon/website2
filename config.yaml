@@ -693,7 +693,7 @@ navigation:
         - title: "Über uns"
           url: "/de/about/"
         - title: "Produkte"
-          url: "/products/"
+          url: "/de/products/"
         - title: "Forschung"
           url: "/de/research/"
         - title: "Blog"
