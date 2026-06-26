@@ -13,14 +13,13 @@ Colors represent main wavelengths that 🐝 bees can see, company values and oth
 
 ## Gratheon™ Trademark Notice
 While our software remains open source under AGPL license (see [Why open source](../company/🤲%20Why%20open%20source.md)), the Gratheon brand and logo are protected trademarks.
-*EU trademark registration filed December 2025 (Nice classes 9, 42, 7)*
 
-**Gratheon™** is a pending European Union trademark of Gratheon OÜ, filed December 2025 under Nice Classification classes:
-- **Class 9:**: Electronic monitoring apparatus and instruments for beehives; weighing scales for beehives; temperature and humidity sensors; video cameras for monitoring beehive entrances; robotic apparatus for beehive inspection; downloadable mobile applications for beehive management; downloadable computer software for apiary data analysis; IoT (Internet of Things) sensors.
-- **Class 42:**: Software as a service (SaaS) services featuring software for beehive management and monitoring; cloud computing services for apiary data storage and analysis; platform as a service (PaaS) featuring computer software platforms for apiary management; artificial intelligence as a service (AIaaS) featuring software using artificial intelligence for analyzing bee behavior and health; providing temporary use of online non-downloadable software for beehive data analytics; scientific research and analysis services in the field of apiculture.
-- **Class 7:**: Robotic apparatus for beehive inspection; automated lifting mechanisms for beehive sections; industrial robots for agricultural use; mechanized equipment for apiculture; robotic platforms for automated beehive frame imaging.
+**Gratheon™** is a trademark of Gratheon OÜ, registered in Estonia by the Estonian Patent Office under registration number **65350** and application **M202501179**. The registration was made on June 18, 2026 and is valid until December 8, 2035. The certificate is available as [Gratheon trademark certificate 65350](/assets/assets/legal/gratheon-trademark-certificate-65350.pdf).
 
-The ® symbol will be used after EUIPO registration approval (expected Q2 2026).
+The registered figurative mark with verbal element covers Nice Classification classes:
+- **Class 7:** Industrial robots for working with bee colonies; automatic lifting mechanisms for hive sections; industrial robots for agricultural use; mechanized equipment for beekeeping; robotic lifting devices for moving hive frames.
+- **Class 9:** Electronic monitoring devices and instruments for bee colonies; scales for bee colonies; temperature and humidity sensors; video cameras for monitoring hive entrances; robotic devices for hive inspection; downloadable mobile applications for bee colony management; downloadable software for beekeeping analytics; IoT sensors; inspection apparatus and instruments for beekeeping; electronic imaging devices for automatic hive frame photography; electric monitoring and control devices for tracking bee colonies.
+- **Class 42:** Software as a service (SaaS) for bee colony management and monitoring; cloud computing services for storing and analyzing beekeeping results; platform as a service (PaaS) for bee colony management software; artificial intelligence as a service (AIaaS) for analyzing bee behavior and health; temporary use of non-downloadable software for beekeeping analytics; research and scientific analysis services in beekeeping.
 
 
 ## Brand meanings and association matrix

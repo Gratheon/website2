@@ -1,78 +1,82 @@
 ---
-title: "Регистрация товарного знака Gratheon одобрена в Эстонии"
+title: "Товарный знак Gratheon зарегистрирован в Эстонии"
 ---
 
-Estonian Patent Office (Patendiamet) выпустил решение о регистрации товарного знака Gratheon по заявке M202501179, покрывающее классы Nice 7, 9 и 42.
+Estonian Patent Office (Patendiamet) зарегистрировал товарный знак Gratheon в Эстонии под регистрационным номером 65350 и по заявке M202501179, покрывающей классы Nice 7, 9 и 42.
 
-## Обновление: апрель 2026
+## Обновление: июнь 2026
 
-В апреле 2026 года мы получили официальный ответ от Patendiamet, подтверждающий решение о регистрации. Этот пост обновлён по сравнению с исходным объявлением о подаче заявки и отражает текущий статус.
+18 июня 2026 года Patendiamet выдал официальный сертификат товарного знака Gratheon. Эта публикация обновлена после более раннего объявления о решении зарегистрировать знак и теперь отражает завершённую национальную регистрацию.
 
 ## Что это значит
 
-Это решение даёт нашему бренду более сильную юридическую основу в Эстонии, пока мы продолжаем создавать robotics, IoT devices и software для пчеловодства. По мере расширения в Европе мы можем позже подать заявку на более широкую защиту через EUIPO.
+Эта регистрация даёт нашему бренду более прочную юридическую основу в Эстонии, пока мы продолжаем создавать робототехнику, IoT-устройства и программное обеспечение для пчеловодства. По мере расширения в Европе мы можем позже подать заявку на более широкую защиту через EUIPO.
 
 <!--truncate-->
 
-## Registered Scope
+## Зарегистрированный охват
 
-**Class 7 - Machinery**
-- Industrial robots for working with bee colonies
-- Automatic lifting mechanisms for hive sections
-- Industrial robots for agricultural use
-- Mechanized equipment for beekeeping
-- Robotic lifting devices for moving hive frames
+**Класс 7 — машины и оборудование**
+- Промышленные роботы для работы с пчелиными семьями
+- Автоматические подъёмные механизмы для секций ульев
+- Промышленные роботы для сельскохозяйственного применения
+- Механизированное оборудование для пчеловодства
+- Роботизированные подъёмные устройства для перемещения рамок ульев
 
-**Class 9 - Electronic Apparatus and Software**
-- Electronic monitoring devices and instruments for bee colonies
-- Scales for bee colonies
-- Temperature and humidity sensors
-- Video cameras for monitoring hive entrances
-- Robotic devices for hive inspection
-- Downloadable mobile applications for bee colony management
-- Downloadable software for beekeeping analytics
-- IoT sensors
-- Inspection apparatus and instruments for beekeeping
-- Electronic imaging devices for automatic hive frame photography
-- Electric monitoring and control devices for tracking bee colonies
+**Класс 9 — электронные устройства и программное обеспечение**
+- Электронные устройства и инструменты мониторинга пчелиных семей
+- Весы для пчелиных семей
+- Датчики температуры и влажности
+- Видеокамеры для мониторинга входов в ульи
+- Роботизированные устройства для инспекции ульев
+- Загружаемые мобильные приложения для управления пчелиными семьями
+- Загружаемое программное обеспечение для аналитики пчеловодства
+- IoT-датчики
+- Инспекционные аппараты и инструменты для пчеловодства
+- Электронные устройства визуализации для автоматической фотосъёмки рамок ульев
+- Электрические устройства мониторинга и управления для отслеживания пчелиных семей
 
-**Class 42 - Software and Research Services**
-- Software as a Service (SaaS) for bee colony management and monitoring
-- Cloud computing services for storing and analyzing beekeeping results
-- Platform as a Service (PaaS) for bee colony management software
-- Artificial Intelligence as a Service (AIaaS) for analyzing bee behavior and health
-- Temporary use of non-downloadable software for beekeeping analytics
-- Research and scientific analysis services in beekeeping
+**Класс 42 — программные и исследовательские услуги**
+- Software as a Service (SaaS) для управления пчелиными семьями и их мониторинга
+- Облачные вычислительные услуги для хранения и анализа результатов пчеловодства
+- Platform as a Service (PaaS) для программной платформы управления пчелиными семьями
+- Artificial Intelligence as a Service (AIaaS) для анализа поведения и здоровья пчёл
+- Временное использование незагружаемого программного обеспечения для аналитики пчеловодства
+- Научные исследования и аналитические услуги в области пчеловодства
 
-## Decision Details
+## Детали регистрации
 
-- **Decision:** Trademark registration approved by Patendiamet
-- **Application number:** M202501179
-- **Filed:** December 8, 2025
-- **Applicant:** Gratheon OÜ
-- **Coverage:** Estonia
-- **Colors listed:** HEX `#0248FF`, HEX `#FFD900`, HEX `#2f8b0b`
-- **Mark type:** Figurative mark with verbal element
+- **Регистрационный номер:** 65350
+- **Номер заявки:** M202501179
+- **Дата подачи:** 8 декабря 2025
+- **Дата регистрации:** 18 июня 2026
+- **Действует до:** 8 декабря 2035
+- **Владелец:** Gratheon OÜ
+- **Территория:** Эстония
+- **Указанные цвета:** HEX `#0248FF`, HEX `#FFD900`, HEX `#2f8b0b`
+- **Тип знака:** Изобразительный знак со словесным элементом
+- **Сертификат:** [сертификат товарного знака Gratheon 65350](/assets/assets/legal/gratheon-trademark-certificate-65350.pdf)
 
-## Timeline
+## Хронология
 
-- **Filed:** December 8, 2025
-- **Registration decision issued:** 2026
-- **Classes covered:** 7, 9, and 42
-- **Jurisdiction:** Estonia
+- **Подача заявки:** 8 декабря 2025
+- **Публикация сообщения о решении зарегистрировать знак:** 15 апреля 2026
+- **Выдача сертификата:** 18 июня 2026
+- **Охваченные классы:** 7, 9 и 42
+- **Юрисдикция:** Эстония
 
-We previously described the mark as pending. This page now reflects the registration decision issued by the Estonian Patent Office.
+Ранее мы описывали знак как ожидающий регистрации, а затем как одобренный к регистрации. Теперь эта страница отражает завершённую регистрацию, внесённую Estonian Patent Office.
 
-## Why It Matters
+## Почему это важно
 
-Formal trademark protection matters because it:
-- Strengthens investor and partner confidence with clearer IP status
-- Reduces brand confusion in our home market
-- Protects our robotics, IoT, and software activities under one name
-- Creates a stronger foundation for future expansion beyond Estonia
+Формальная защита товарного знака важна, потому что она:
+- Укрепляет доверие инвесторов и партнёров благодаря более ясному статусу интеллектуальной собственности
+- Снижает риск путаницы брендов на нашем домашнем рынке
+- Защищает нашу деятельность в робототехнике, IoT и программном обеспечении под одним названием
+- Создаёт более прочную основу для будущего расширения за пределы Эстонии
 
-While we maintain our open source philosophy for code (AGPL license), protecting the Gratheon brand helps keep our identity and market positioning distinct as we scale.
+Мы сохраняем философию открытого исходного кода для программного обеспечения (AGPL), но защита бренда Gratheon помогает сохранять нашу идентичность и рыночное позиционирование по мере роста.
 
 ---
 
-*Gratheon™ is a trademark of Gratheon OÜ. Trademark registration was approved by the Estonian Patent Office under application M202501179.*
+*Gratheon™ — товарный знак Gratheon OÜ, зарегистрированный Estonian Patent Office под регистрационным номером 65350 и по заявке M202501179.*

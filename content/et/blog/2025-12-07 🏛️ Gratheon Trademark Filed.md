@@ -1,67 +1,71 @@
 ---
-title: Eestis tunnustatud Gratheoni kaubamärgi registreerimine
+title: Gratheoni kaubamärk registreeriti Eestis
 ---
 
-Patendiamet (Patendiamet) on väljastanud Gratheoni kaubamärgi registreerimisotsuse taotluse M202501179 alusel, mis hõlmab Nice'i klasse 7, 9 ja 42.
+Patendiamet on registreerinud Gratheoni kaubamärgi Eestis registreeringu numbriga 65350 ja taotluse M202501179 alusel, hõlmates Nice'i klasse 7, 9 ja 42.
 
-## Värskendus: aprill 2026
+## Värskendus: juuni 2026
 
-2026. aasta aprillis saime Patendiametilt ametliku vastuse, mis kinnitas registreerimisotsuse. Seda postitust värskendati esialgsest esitamisteatest, et kajastada praegust olekut.
+18. juunil 2026 väljastas Patendiamet Gratheoni ametliku kaubamärgitunnistuse. Seda postitust värskendati varasemast registreerimisotsuse teatest, et kajastada lõpule viidud riiklikku registreeringut.
 
 ## Mida see tähendab
 
-See otsus annab meie kaubamärgile tugevama juriidilise aluse Eestis, kuna jätkame robootika, asjade interneti seadmete ja mesindustarkvara ehitamist. Kuna laieneme üle Euroopa, võime hiljem taotleda EUIPO kaudu laiemat kaitset.
+See registreering annab meie kaubamärgile tugevama juriidilise aluse Eestis, kuna jätkame robootika, asjade interneti seadmete ja mesindustarkvara ehitamist. Kuna laieneme üle Euroopa, võime hiljem taotleda EUIPO kaudu laiemat kaitset.
 
 <!--truncate-->
 
 ## Registreeritud ulatus
 
 **Klass 7 – masinad**
-- Tööstuslikud robotid mesilasperedega töötamiseks
-- Taruosade automaatsed tõstemehhanismid
-- Tööstuslikud robotid põllumajanduses kasutamiseks
-- Mehhaniseeritud seadmed mesinduseks
-- Robottõsteseadmed taruraamide teisaldamiseks
+- Tööstusrobotid mesilasperedega töötamiseks
+- Automaatsed tõstemehhanismid mesilasperede sektsioonide jaoks
+- Tööstusrobotid põllumajanduslikuks kasutamiseks
+- Mehhaniseeritud seadmed mesinduse jaoks
+- Robot-tõsteseadmed mesitarude raamide liigutamiseks
 
 **Klass 9 – elektroonikaseadmed ja tarkvara**
-- Mesilasperede elektroonilised seireseadmed ja instrumendid
+- Elektroonilised jälgimisseadmed ja -instrumendid mesilasperede jaoks
 - Kaalud mesilasperede jaoks
-- Temperatuuri ja niiskuse andurid
-- Videokaamerad taru sissepääsude jälgimiseks
-- Robotseadmed tarude kontrollimiseks
+- Temperatuuri- ja niiskuseandurid
+- Videokaamerad mesilasperede sissepääsude jälgimiseks
+- Robotseadmed mesilasperede inspekteerimiseks
 - Allalaaditavad mobiilirakendused mesilasperede haldamiseks
-- Allalaaditav tarkvara mesinduse analüütikaks
-- IoT andurid
-- Kontrolliseadmed ja -instrumendid mesinduseks
-- Elektroonilised pildistamisseadmed taruraami automaatseks pildistamiseks
-- Elektrilised seire- ja juhtimisseadmed mesilasperede jälgimiseks
+- Allalaaditav tarkvaraprogramm mesindustulemuste analüüsiks
+- Asjade interneti (IoT) andurid
+- Inspekteerimisaparaadid ja -instrumendid mesinduse valdkonnas
+- Elektroonilised pildistusseadmed mesitarude raamide automaatseks fotografeerimiseks
+- Elektrilised seireseadmed ja kontrollseadmed mesilasperede jälgimiseks
 
 **Klass 42 – tarkvara- ja uurimisteenused**
-- Tarkvara teenusena (SaaS) mesilasperede haldamiseks ja jälgimiseks
-- Pilvandmetöötlusteenused mesindustulemuste salvestamiseks ja analüüsimiseks
-- Platvorm kui teenus (PaaS) mesilasperede haldamise tarkvara jaoks
-- Tehisintellekt kui teenus (AIaaS) mesilaste käitumise ja tervise analüüsimiseks
-- Allalaadimatu tarkvara ajutine kasutamine mesindusanalüüsi jaoks
-- Mesinduse uurimis- ja teadusanalüüsiteenused
+- Tarkvara teenusena (SaaS), mis pakub tarkvara mesilasperede haldamiseks ja jälgimiseks
+- Pilvandmetöötlusteenused mesindustulemuste salvestamiseks ja analüüsiks
+- Platvorm teenusena (PaaS), mis pakub tarkvaraplatvormi mesilasperede haldamiseks
+- Tehisintellekt teenusena (AIaaS), mis pakub tehisintellekti kasutavat tarkvara mesilaste käitumise ja tervise analüüsimiseks
+- Allalaadimatu tarkvara ajutise kasutuse pakkumine mesindustulemuste analüüsiks
+- Teadusuuringud ja teaduslikud analüüsiteenused mesinduse valdkonnas
 
-## Otsuse üksikasjad
+## Registreeringu üksikasjad
 
-- **Otsus:** Patendiameti poolt heaks kiidetud kaubamärgi registreerimine
+- **Registreeringu number:** 65350
 - **Taotluse number:** M202501179
-- **Esitatud:** 8. detsember 2025
-- **Taotleja:** Gratheon OÜ
-- **Katvus:** Eesti
-- **Loodud värvid:** HEX `#0248FF`, HEX `#FFD900`, HEX `#2f8b0b`
-- **Märgise tüüp:** Kujundmärk sõnalise elemendiga
+- **Taotluse esitamise kuupäev:** 8. detsember 2025
+- **Registreeringu kuupäev:** 18. juuni 2026
+- **Kehtiv kuni:** 8. detsember 2035
+- **Omanik:** Gratheon OÜ
+- **Kehtivusala:** Eesti
+- **Värvid:** HEX `#0248FF`, HEX `#FFD900`, HEX `#2f8b0b`
+- **Märgi tüüp:** Kujutismärk sõnalise osaga
+- **Tunnistus:** [Gratheoni kaubamärgitunnistus 65350](/assets/assets/legal/gratheon-trademark-certificate-65350.pdf)
 
 ## Ajaskaala
 
 - **Esitatud:** 8. detsember 2025
-- **Registreerimisotsus välja antud:** 2026.a
+- **Registreerimise otsuse teade avaldatud:** 15. aprill 2026
+- **Kaubamärgitunnistus väljastatud:** 18. juuni 2026
 - **Kaasatud klassid:** 7, 9 ja 42
 - **Jurisdiktsioon:** Eesti
 
-Varem kirjeldasime märki ootelolevana. Sellel lehel on nüüd kajastatud Patendiameti väljastatud registreerimisotsus.
+Varem kirjeldasime märki ootelolevana ja hiljem registreerimiseks heakskiidetuna. Sellel lehel on nüüd kajastatud Patendiameti registrisse kantud lõplik registreering.
 
 ## Miks see on oluline
 
@@ -75,4 +79,4 @@ Kuigi säilitame oma avatud lähtekoodiga koodi (AGPL-litsentsi) filosoofia, ait
 
 ---
 
-*Gratheon™ on Gratheon OÜ kaubamärk. Kaubamärgi registreeringu kinnitas Patendiamet taotlusega M202501179.*
+*Gratheon™ on Gratheon OÜ kaubamärk, mille Patendiamet on registreerinud registreeringu numbriga 65350 ja taotluse M202501179 alusel.*
