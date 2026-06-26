@@ -1305,8 +1305,8 @@ html[data-theme='dark'] .front-page .future {
 }
 
 .knowledge-content {
-  font-size: clamp(1.04rem, 1.08vw, 1.18rem);
-  line-height: 1.68;
+  font-size: 1.5rem;
+  line-height: 1.1;
 }
 
 .knowledge-content > .research-page,
@@ -1330,10 +1330,6 @@ html[data-theme='dark'] .front-page .future {
   font-size: clamp(1.25rem, 1.8vw, 2rem);
   line-height: 1.15;
   letter-spacing: -0.025em;
-}
-
-.knowledge-content p {
-  max-width: 78ch;
 }
 
 .knowledge-content > p:first-child,
