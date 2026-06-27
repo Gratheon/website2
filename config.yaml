@@ -568,7 +568,7 @@ navigation:
         url: "/ko/about/"
         languages: ["ko"]
       - title: "제품"
-        url: "/products/"
+        url: "/ko/products/"
         languages: ["ko"]
       - title: "연구"
         url: "/ko/research/"
@@ -949,7 +949,7 @@ navigation:
         - title: "회사 소개"
           url: "/ko/about/"
         - title: "제품"
-          url: "/products/"
+          url: "/ko/products/"
         - title: "연구"
           url: "/ko/research/"
         - title: "블로그"
