@@ -66,6 +66,46 @@
   {{end}}
 </article>
 {{end}}
+{{define "research_paper_meta"}}
+{{with .Frontmatter.Params}}
+{{ $authors := index . "authors" }}
+{{ $orgs := index . "orgs" }}
+{{ $year := index . "year" }}
+{{ $paperType := index . "paperType" }}
+{{ $doi := index . "doi" }}
+{{if or $year $paperType $authors $orgs $doi}}
+<section class="research-paper-meta" aria-labelledby="research-paper-meta-title">
+  <h2 id="research-paper-meta-title">{{if eq $.Page.Language "ru"}}Сведения о публикации{{else if eq $.Page.Language "et"}}Publikatsiooni andmed{{else}}Publication details{{end}}</h2>
+  <dl class="research-paper-meta-grid">
+    {{if $authors}}
+    <div><dt>{{if eq $.Page.Language "ru"}}Авторы{{else if eq $.Page.Language "et"}}Autorid{{else}}Authors{{end}}</dt><dd>{{range $index, $item := $authors}}{{if $index}}, {{end}}{{$item}}{{end}}</dd></div>
+    {{end}}
+    {{if $orgs}}
+    <div><dt>{{if eq $.Page.Language "ru"}}Организации{{else if eq $.Page.Language "et"}}Organisatsioonid{{else}}Organizations{{end}}</dt><dd>{{range $orgs}}<span>{{.}}</span>{{end}}</dd></div>
+    {{end}}
+    {{if $year}}
+    <div><dt>{{if eq $.Page.Language "ru"}}Год{{else if eq $.Page.Language "et"}}Aasta{{else}}Year{{end}}</dt><dd>{{$year}}</dd></div>
+    {{end}}
+    {{if $paperType}}
+    <div><dt>{{if eq $.Page.Language "ru"}}Тип{{else if eq $.Page.Language "et"}}Tüüp{{else}}Type{{end}}</dt><dd>{{title $paperType}}</dd></div>
+    {{end}}
+    {{if $doi}}
+    <div><dt>DOI</dt><dd><a href="https://doi.org/{{$doi}}">{{$doi}}</a></dd></div>
+    {{end}}
+  </dl>
+</section>
+{{end}}
+{{end}}
+{{end}}
+{{define "research_paper_pdf_preview"}}
+{{with .Frontmatter.Params}}
+{{with index . "pdf"}}
+<section class="content knowledge-content research-paper-pdf-preview" aria-label="{{if eq $.Page.Language "ru"}}Предпросмотр PDF{{else if eq $.Page.Language "et"}}PDF-i eelvaade{{else}}PDF preview{{end}}">
+  <iframe class="pdf-embed" src="{{.}}" title="{{if eq $.Page.Language "ru"}}Предпросмотр PDF{{else if eq $.Page.Language "et"}}PDF-i eelvaade{{else}}PDF preview{{end}}" loading="lazy" height="800"></iframe>
+</section>
+{{end}}
+{{end}}
+{{end}}
 
 {{define "knowledge_map"}}
 {{ $paperPath := trimPrefix .Page.URL "/research/papers/" }}
@@ -155,7 +195,16 @@
 
   <main class="knowledge-shell">
     {{ $isProductFeaturePage := and (eq .Page.Layout "products") (ge (len .Breadcrumbs) 5) }}
-    <section class="knowledge-hero{{if $isProductFeaturePage}} knowledge-hero--text-only{{end}}" aria-labelledby="knowledge-title">
+    {{ $researchPaperPath := trimPrefix .Page.URL "/research/papers/" }}
+    {{ if eq $researchPaperPath .Page.URL }}
+      {{ $researchPaperPath = trimPrefix .Page.URL (printf "/%s/research/papers/" .Page.Language) }}
+    {{ end }}
+    {{ $isResearchPaperPath := ne $researchPaperPath .Page.URL }}
+    {{ $isResearchPapersIndex := eq $researchPaperPath "" }}
+    {{ $isResearchPapersSubIndex := or (eq $researchPaperPath "scientific-publications/") (eq $researchPaperPath "topics/") (eq $researchPaperPath "years/") (eq $researchPaperPath "product-areas/") (eq $researchPaperPath "teams/") (eq $researchPaperPath "other-research-sources/") }}
+    {{ $isResearchPapersTaxonomy := or (ne (trimPrefix $researchPaperPath "topics/") $researchPaperPath) (ne (trimPrefix $researchPaperPath "years/") $researchPaperPath) (ne (trimPrefix $researchPaperPath "product-areas/") $researchPaperPath) }}
+    {{ $isPaperDetail := and $isResearchPaperPath (not $isResearchPapersIndex) (not $isResearchPapersSubIndex) (not $isResearchPapersTaxonomy) }}
+    <section class="knowledge-hero{{if $isProductFeaturePage}} knowledge-hero--text-only{{end}}{{if $isPaperDetail}} knowledge-hero--paper-detail{{end}}" aria-labelledby="knowledge-title">
       <div class="knowledge-hero-copy">
         {{template "knowledge_breadcrumbs" .}}
         <p class="knowledge-eyebrow">
@@ -167,14 +216,22 @@
         </p>
         <h1 id="knowledge-title">{{.Page.Title}}</h1>
         <p class="knowledge-standfirst">
-          {{if eq .Page.Layout "products"}}
+          {{if $isPaperDetail}}
+            {{with .Frontmatter.Params}}{{if index . "abstract"}}{{index . "abstract"}}{{else}}{{$.Page.Description}}{{end}}{{else}}{{.Page.Description}}{{end}}
+          {{else if eq .Page.Layout "products"}}
             {{if eq .Page.Language "et"}}Tarkvara, seadmed ja automaatika on esitatud ühe seotud süsteemina, et tootepere oleks lihtne sirvida ka sügava funktsioonistruktuuriga.{{else}}Software, devices, and automation are presented as one connected system, so product depth stays navigable without feeling like a reference manual.{{end}}
           {{else}}
             {{if eq .Page.Language "et"}}Artiklid, andmestikud, mudelid ja välitöö märkmed on koondatud visuaalseks teadmiste kaardiks, mis säilitab kogu sügava struktuuri.{{else if eq .Page.Language "ru"}}Статьи, датасеты, модели и полевые заметки собраны в визуальную карту знаний, сохраняя глубокую структуру раздела.{{else}}Papers, datasets, models, and field notes are connected into a practical research map for digital beekeeping, from academic references to applied Gratheon experiments.{{end}}
           {{end}}
         </p>
         <div class="knowledge-actions">
-          {{if eq .Page.Layout "products"}}
+          {{if $isPaperDetail}}
+            {{with .Frontmatter.Params}}
+              {{with index . "pdf"}}
+              <a class="knowledge-action knowledge-action--primary" href="{{.}}">{{if eq $.Page.Language "ru"}}Скачать PDF{{else if eq $.Page.Language "et"}}Laadi PDF alla{{else}}Download PDF{{end}}</a>
+              {{end}}
+            {{end}}
+          {{else if eq .Page.Layout "products"}}
             {{if eq .Page.Language "et"}}
               <a class="knowledge-action knowledge-action--primary" href="/et/products/web_app/web-app/">Vaata veebirakendust</a>
               <a class="knowledge-action" href="/et/pricing/">Hinnad</a>
@@ -196,7 +253,7 @@
           {{end}}
         </div>
       </div>
-      {{if not $isProductFeaturePage}}
+      {{if and (not $isProductFeaturePage) (not $isPaperDetail)}}
       <div class="knowledge-hero-media" aria-hidden="true">
         {{if eq .Page.Layout "products"}}
         <figure class="knowledge-visual knowledge-visual--products">
@@ -219,6 +276,8 @@
 
     <div class="knowledge-content-layout">
       <section class="knowledge-main" aria-label="{{.Page.Title}}">
+        {{if $isPaperDetail}}{{template "research_paper_meta" .}}{{end}}
+        {{if $isPaperDetail}}{{template "research_paper_pdf_preview" .}}{{end}}
         {{template "knowledge_article" .}}
       </section>
       {{if .TOC}}

@@ -1,12 +1,16 @@
 ---
 hideNav: true
-year: "2025"
-title: Apis mellifera Bee Verification with IoT and Graph Neural Network
 layout: research
+hideToc: true
+title: Apis mellifera Bee Verification with IoT and Graph Neural Network
+year: '2025'
+authors:
+- Apolinar Velarde Martínez
+- Gilberto González Rodríguez
+- Juan Carlos Estrada Cabral
 orgs:
-  - 🇲🇽 Instituto Tecnológico El Llano Aguascalientes
+- "\U0001F1F2\U0001F1FD Instituto Tecnológico El Llano Aguascalientes"
+pdf: "/assets/research/papers/pdfs/applsci-15-07969.pdf"
 ---
 
-[PDF](/assets/research/papers/pdfs/applsci-15-07969.pdf)
-<object data="/assets/research/papers/pdfs/applsci-15-07969.pdf" type="application/pdf" width="100%" height="800"></object>
 

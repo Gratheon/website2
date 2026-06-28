@@ -2,36 +2,25 @@
 hideNav: true
 layout: research
 hideToc: true
-title: "LabelBee: a web platform for large-scale semi-automated analysis of honeybee behavior from video"
-description: "Web platform combining human annotation and AI for large-scale labeling of honeybee entrance videos, extracting individual trajectories, pollen events, fanning, and behavioral tags."
-year: "2019"
+title: 'LabelBee: a web platform for large-scale semi-automated analysis of honeybee behavior from video'
+description: Web platform combining human annotation and AI for large-scale labeling of honeybee entrance videos, extracting individual trajectories, pollen events, fanning, and behavioral tags.
+year: '2019'
 orgs:
-  - 🇵🇷 University of Puerto Rico
+- "\U0001F1F5\U0001F1F7 University of Puerto Rico"
 topics:
-  - computer-vision
-  - bee-behaviour
-  - datasets-benchmarks
+- computer-vision
+- bee-behaviour
+- datasets-benchmarks
 productAreas:
-  - gate-tracker
+- gate-tracker
 paperType: conference
+pdf: "/assets/research/papers/pdfs/3359115.3359120.pdf"
+doi: 10.1145/3359115.3359120
+abstract: 'LabelBee is a browser-based annotation and analysis system for large volumes of honeybee entrance video collected in natural colony conditions. The platform combines a web GUI, server-side storage, automated preprocessing, and Jupyter-based analysis so biologists can label bees, validate detections, correct trajectories, and annotate events such as entering, leaving, pollen carrying, and fanning. It supports tagged bees through AprilTag detection, untagged bee detection and tracking, pollen classification, fanning recognition, pose estimation, and exportable event files. The paper emphasizes a human-in-the-loop workflow: expert and volunteer annotations improve data quality, those labels train automatic models, and model outputs are brought back into the GUI for validation and curation. This design enables large-scale behavioral datasets and visual analytics such as hourly entrance/exit counts and individual actograms across multiple days.'
 featured: true
 ---
 
-[PDF](pdfs/3359115.3359120.pdf)
-
 ![](pdfs/Screenshot 2023-10-25 at 02.28.50.png)
-
-<object data={require('./pdfs/3359115.3359120.pdf').default} type="application/pdf" width="100%" height="800"></object>
-
-## External links
-
-- DOI: https://doi.org/10.1145/3359115.3359120
-- [Publisher (ACM Digital Library)](https://dl.acm.org/doi/10.1145/3359115.3359120)
-- [GitHub (LabelBee)](https://github.com/rmegret/labelbee)
-
-## Abstract
-
-LabelBee is a browser-based annotation and analysis system for large volumes of honeybee entrance video collected in natural colony conditions. The platform combines a web GUI, server-side storage, automated preprocessing, and Jupyter-based analysis so biologists can label bees, validate detections, correct trajectories, and annotate events such as entering, leaving, pollen carrying, and fanning. It supports tagged bees through AprilTag detection, untagged bee detection and tracking, pollen classification, fanning recognition, pose estimation, and exportable event files. The paper emphasizes a human-in-the-loop workflow: expert and volunteer annotations improve data quality, those labels train automatic models, and model outputs are brought back into the GUI for validation and curation. This design enables large-scale behavioral datasets and visual analytics such as hourly entrance/exit counts and individual actograms across multiple days.
 
 ## Relevancy to Gratheon
 

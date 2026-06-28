@@ -6,27 +6,17 @@ title: Raspberry Pi Bee Health Monitoring Device
 description: A declining honeybee population could pose a threat to a food resources of the whole world one of the latest trend in beekeeping is an effort to monitor a health of the honeybees using various sensors and devices.
 year: '2023'
 orgs:
-- 🇨🇿 Brno University of Technology
+- "\U0001F1E8\U0001F1FF Brno University of Technology"
 topics:
 - iot-sensors
 - computer-vision
 productAreas:
 - monitoring-platform
 paperType: preprint
+pdf: "/assets/research/papers/pdfs/2304.14444v1.pdf"
+doi: 10.1016/j.biocontrol.2011.12.004
+abstract: A declining honeybee population could pose a threat to a food resources of the whole world one of the latest trend in beekeeping is an effort to monitor a health of the honeybees using various sensors and devices. This paper participates on a development on one of these devices. The aim of this paper is to make an upgrades and improvement of an in-development bee health monitoring device and propose a remote data logging solution for a continual monitoring of a.
 ---
-
-[PDF](pdfs/2304.14444v1.pdf)
-
-<object data={require('./pdfs/2304.14444v1.pdf').default} type="application/pdf" width="100%" height="800"></object>
-
-## External links
-
-- DOI: https://doi.org/10.1016/j.biocontrol.2011.12.004
-- arXiv: https://arxiv.org/abs/2304.14444
-
-## Abstract
-
-A declining honeybee population could pose a threat to a food resources of the whole world one of the latest trend in beekeeping is an effort to monitor a health of the honeybees using various sensors and devices. This paper participates on a development on one of these devices. The aim of this paper is to make an upgrades and improvement of an in-development bee health monitoring device and propose a remote data logging solution for a continual monitoring of a.
 
 ## Relevancy to Gratheon
 

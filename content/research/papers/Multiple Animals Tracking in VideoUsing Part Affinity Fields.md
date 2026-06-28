@@ -6,27 +6,17 @@ title: Multiple Animals Tracking in VideoUsing Part Affinity Fields
 description: Multiple Animals Tracking in Video Using Part Affinity Fields Ivan F.
 year: '2018'
 orgs:
-- 🇵🇷 University of Puerto Rico
+- "\U0001F1F5\U0001F1F7 University of Puerto Rico"
 topics:
 - computer-vision
 - bee-behaviour
 productAreas:
 - hive-scanner
 paperType: workshop
+pdf: "/assets/research/papers/pdfs/vaib18rodriguez.pdf"
+doi: 10.1038/srep14351
+abstract: Multiple Animals Tracking in Video Using Part Affinity Fields Ivan F. Rodriguez∗ , Rémi Mégret† , Roian Egnor ‡ , Kristin Branson‡ Jose L. Agosto§ , Tugrul Giray§ and Edgar Acuña¶ ∗ Department of Mathematics, University of Puerto Rico, Rı́o Piedras campus † Department of Computer Science, University of Puerto Rico, Rı́o Piedras campus ‡ HHMI Janelia Research Campus § Department of Biology, University of Puerto Rico, Rı́o Piedras campus ¶ Department of Mathematical Sciences, University of Puerto Rico, Mayagüez campus Abstract—In this work, we address the problem of pose detection and tracking of multiple individuals for the study of behaviour in insects and animals. Using a Deep Neural Network architecture, precise detection and association of the body parts can be performed.
 ---
-
-[PDF](pdfs/vaib18rodriguez.pdf)
-
-<object data={require('./pdfs/vaib18rodriguez.pdf').default} type="application/pdf" width="100%" height="800"></object>
-
-## External links
-
-- DOI: https://doi.org/10.1038/srep14351
-- DOI: https://doi.org/10.1002/nav.3800020109
-
-## Abstract
-
-Multiple Animals Tracking in Video Using Part Affinity Fields Ivan F. Rodriguez∗ , Rémi Mégret† , Roian Egnor ‡ , Kristin Branson‡ Jose L. Agosto§ , Tugrul Giray§ and Edgar Acuña¶ ∗ Department of Mathematics, University of Puerto Rico, Rı́o Piedras campus † Department of Computer Science, University of Puerto Rico, Rı́o Piedras campus ‡ HHMI Janelia Research Campus § Department of Biology, University of Puerto Rico, Rı́o Piedras campus ¶ Department of Mathematical Sciences, University of Puerto Rico, Mayagüez campus Abstract—In this work, we address the problem of pose detection and tracking of multiple individuals for the study of behaviour in insects and animals. Using a Deep Neural Network architecture, precise detection and association of the body parts can be performed.
 
 ## Relevancy to Gratheon
 

@@ -6,26 +6,17 @@ title: DeepLabCut-based daily behavioural and posture analysis in a cricket
 description: Circadian rhythms are indispensable intrinsic programs that regulate the daily rhythmicity of physiological processes, such as feeding and sleep.
 year: '2021'
 orgs:
-- 🇯🇵 Waseda University
+- "\U0001F1EF\U0001F1F5 Waseda University"
 topics:
 - computer-vision
 - bee-behaviour
 productAreas:
 - hive-scanner
 paperType: journal
+pdf: "/assets/research/papers/pdfs/bio060237.pdf"
+doi: 10.1242/bio.060237
+abstract: Circadian rhythms are indispensable intrinsic programs that regulate the daily rhythmicity of physiological processes, such as feeding and sleep. The cricket has been employed as a model organism for understanding the neural mechanisms underlying circadian rhythms in insects. However, previous studies measuring rhythm-controlled behaviours only analysed locomotive activity using seesaw-type and infrared sensor-based actometers. Meanwhile, advances in deep learning techniques have made it possible to analyse animal behaviour and posture using software that is devoid of human bias and does not require physical tagging of individual animals. Here, we present a system that can simultaneously quantify multiple behaviours in individual crickets – such as locomotor activity, feeding, and sleep-like states – in the longterm, using DeepLabCut, a supervised machine learning-based software for body keypoints.
 ---
-
-[PDF](pdfs/bio060237.pdf)
-
-<object data={require('./pdfs/bio060237.pdf').default} type="application/pdf" width="100%" height="800"></object>
-
-## External links
-
-- DOI: https://doi.org/10.1242/bio.060237
-
-## Abstract
-
-Circadian rhythms are indispensable intrinsic programs that regulate the daily rhythmicity of physiological processes, such as feeding and sleep. The cricket has been employed as a model organism for understanding the neural mechanisms underlying circadian rhythms in insects. However, previous studies measuring rhythm-controlled behaviours only analysed locomotive activity using seesaw-type and infrared sensor-based actometers. Meanwhile, advances in deep learning techniques have made it possible to analyse animal behaviour and posture using software that is devoid of human bias and does not require physical tagging of individual animals. Here, we present a system that can simultaneously quantify multiple behaviours in individual crickets – such as locomotor activity, feeding, and sleep-like states – in the longterm, using DeepLabCut, a supervised machine learning-based software for body keypoints.
 
 ## Relevancy to Gratheon
 

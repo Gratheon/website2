@@ -5,31 +5,24 @@ hideToc: true
 title: Intelligent beehive monitoring system based on internet of things and colony state analysis
 description: 'Keywords: Bee Internet of things Object detection Multi-object tracking Environmental monitoring Bees play a crucial role in terrestrial ecosystems.'
 year: '2024'
+authors:
+- Yiyao Zheng
 orgs:
-- 🇲🇾 Universiti Teknologi MARA
-- 🇨🇳 Peking University Shenzhen Graduate School
-- 🇨🇳 Xiamen University
-- 🇨🇳 Fujian Agriculture And Forestry University
-- 🇨🇳 Quanzhou University of Information Engineering
+- "\U0001F1F2\U0001F1FE Universiti Teknologi MARA"
+- "\U0001F1E8\U0001F1F3 Peking University Shenzhen Graduate School"
+- "\U0001F1E8\U0001F1F3 Xiamen University"
+- "\U0001F1E8\U0001F1F3 Fujian Agriculture And Forestry University"
+- "\U0001F1E8\U0001F1F3 Quanzhou University of Information Engineering"
 topics:
 - iot-sensors
 - computer-vision
 productAreas:
 - monitoring-platform
 paperType: journal
+pdf: "/assets/research/papers/pdfs/1-s2.0-S2772375524001898-main.pdf"
+doi: 10.1016/j.atech.2024.100584
+abstract: 'Keywords: Bee Internet of things Object detection Multi-object tracking Environmental monitoring Bees play a crucial role in terrestrial ecosystems. However, beekeepers are unable to monitor the state of bee­ hives (bees and environment) all the time, which often results in bees escaping or even dying. Currently, some researchers provided the scheme of intelligent beehive monitoring system equipped with the Internet of Things (IoT), There remain two challenges: accurately monitor the environmental status around the hive and accurately track and monitor bees in real time. With the development of the IoT and computer vision algorithms, we hope to provide an automated and efficient system to meet the above challenges. In this paper, we proposed a hive monitoring system, and build a visualization module in the cloud to monitor the activity of bee colonies and the environmental dynamic.'
 ---
-
-[PDF](pdfs/1-s2.0-S2772375524001898-main.pdf)
-
-<object data={require('./pdfs/1-s2.0-S2772375524001898-main.pdf').default} type="application/pdf" width="100%" height="800"></object>
-
-## External links
-
-- DOI: https://doi.org/10.1016/j.atech.2024.100584
-
-## Abstract
-
-Keywords: Bee Internet of things Object detection Multi-object tracking Environmental monitoring Bees play a crucial role in terrestrial ecosystems. However, beekeepers are unable to monitor the state of bee­ hives (bees and environment) all the time, which often results in bees escaping or even dying. Currently, some researchers provided the scheme of intelligent beehive monitoring system equipped with the Internet of Things (IoT), There remain two challenges: accurately monitor the environmental status around the hive and accurately track and monitor bees in real time. With the development of the IoT and computer vision algorithms, we hope to provide an automated and efficient system to meet the above challenges. In this paper, we proposed a hive monitoring system, and build a visualization module in the cloud to monitor the activity of bee colonies and the environmental dynamic.
 
 ## Relevancy to Gratheon
 

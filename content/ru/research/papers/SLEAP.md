@@ -1,14 +1,13 @@
 ---
 hideNav: true
-title: "SLEAP: A deep learning system for multi-animal pose tracking"
 layout: research
-year: "2022"
+hideToc: true
+title: 'SLEAP: A deep learning system for multi-animal pose tracking'
+year: '2022'
 orgs:
-  - 🇺🇸  Princeton University
-  - 🇺🇸 New York University
-  - 🇺🇸 Johns Hopkins University School of Medicine
+- "\U0001F1FA\U0001F1F8  Princeton University"
+- "\U0001F1FA\U0001F1F8 New York University"
+- "\U0001F1FA\U0001F1F8 Johns Hopkins University School of Medicine"
 ---
 
 - [PDF](/assets/research/papers/pdfs/s41592-022-01426-1.pdf)
-  <object data="/assets/research/papers/pdfs/s41592-022-01426-1.pdf" type="application/pdf" width="100%" height="800"></object>
-

@@ -1,14 +1,12 @@
 ---
 hideNav: true
-title: "BeePIV: A Method to Measure Apis Mellifera Traffic with Particle Image Velocimetry in Videos"
 layout: research
+hideToc: true
+title: 'BeePIV: A Method to Measure Apis Mellifera Traffic with Particle Image Velocimetry in Videos'
+year: '2021'
 orgs:
-  - 🇺🇸 Utah State University
-year: "2021"
+- "\U0001F1FA\U0001F1F8 Utah State University"
 hide_table_of_contents: true
 ---
 
 - [PDF](/assets/research/papers/pdfs/applsci-11-02276-v2.pdf)
-
-<object data="/assets/research/papers/pdfs/applsci-11-02276-v2.pdf" type="application/pdf" width="100%" height="800"></object>
-

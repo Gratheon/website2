@@ -5,27 +5,20 @@ hideToc: true
 title: HiveLink – IoT based Smart Bee Hive MonitoringSystem
 description: HiveLink—the IoT-based Smart Bee Hive Monitoring System addresses the challenges faced by beekeepers in managing the influence of environmental impact, diseases, and collapse in honey bee colonies.
 year: '2023'
+authors:
+- Enter Author Names
+- Seperated by commas
 orgs:
-- 🇮🇳 St. Joseph Engineering College
-- 🇮🇳 Canara Engineering College
+- "\U0001F1EE\U0001F1F3 St. Joseph Engineering College"
+- "\U0001F1EE\U0001F1F3 Canara Engineering College"
 topics:
 - iot-sensors
 productAreas:
 - monitoring-platform
 paperType: preprint
+pdf: "/assets/research/papers/pdfs/2309.12054v1.pdf"
+abstract: HiveLink—the IoT-based Smart Bee Hive Monitoring System addresses the challenges faced by beekeepers in managing the influence of environmental impact, diseases, and collapse in honey bee colonies. Integrated with advanced sensors, the system monitors temperature, humidity, hive weight, and diurnal cycle. Leveraging IoT technology, the system provides realtime data, remote connectivity, and actionable insights for beekeepers. Monitoring the hive with the system enables early disease detection, proactive interventions, and optimized hive management. Minimizing manual inspections, enhancing productivity, and promoting sustainable practices to mitigate environmental impact and support honey bee.
 ---
-
-[PDF](pdfs/2309.12054v1.pdf)
-
-<object data={require('./pdfs/2309.12054v1.pdf').default} type="application/pdf" width="100%" height="800"></object>
-
-## External links
-
-- arXiv: https://arxiv.org/abs/2309.12054
-
-## Abstract
-
-HiveLink—the IoT-based Smart Bee Hive Monitoring System addresses the challenges faced by beekeepers in managing the influence of environmental impact, diseases, and collapse in honey bee colonies. Integrated with advanced sensors, the system monitors temperature, humidity, hive weight, and diurnal cycle. Leveraging IoT technology, the system provides realtime data, remote connectivity, and actionable insights for beekeepers. Monitoring the hive with the system enables early disease detection, proactive interventions, and optimized hive management. Minimizing manual inspections, enhancing productivity, and promoting sustainable practices to mitigate environmental impact and support honey bee.
 
 ## Relevancy to Gratheon
 

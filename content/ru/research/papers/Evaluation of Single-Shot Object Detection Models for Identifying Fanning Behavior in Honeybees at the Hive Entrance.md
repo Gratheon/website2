@@ -1,30 +1,24 @@
 ---
 hideNav: true
-orgs:
-  - 🇱🇹 Vilnius Gediminas Technical University
-year: "2025"
-title: Evaluation of Single-Shot Object Detection Models for Identifying Fanning Behavior in Honeybees at the Hive Entrance
 layout: research
+hideToc: true
+title: Evaluation of Single-Shot Object Detection Models for Identifying Fanning Behavior in Honeybees at the Hive Entrance
 description: Thermoregulatory fanning behavior in honeybees is a vital indicator of colony health and environmental response.
+year: '2025'
+authors:
+- Tomyslav Sledevič
+orgs:
+- "\U0001F1F1\U0001F1F9 Vilnius Gediminas Technical University"
 topics:
-  - computer-vision
-  - bee-behaviour
+- computer-vision
+- bee-behaviour
 productAreas:
-  - gate-tracker
+- gate-tracker
 paperType: journal
+pdf: "/assets/research/papers/pdfs/agriculture-15-01609-v2.pdf"
+doi: 10.3390/agriculture15151609
+abstract: 'Терморегуляционное вентилирующее поведение медоносных пчёл — важный индикатор состояния колонии и её реакции на окружающую среду. В этой работе представлен новый датасет из 18 000 размеченных видеокадров, содержащий 57 597 примеров поведения у летка улья в различных условиях. Оцениваются три современные single-shot модели обнаружения объектов (YOLOv8, YOLO11, YOLO12) с использованием как стандартного RGB-входа, так и двух вариантов кодирования движения: Temporally Stacked Grayscale (TSG) и Temporally Encoded Motion (TEM). Результаты показывают, что модели, учитывающие временную информацию через TSG и TEM, заметно превосходят подход с одним только RGB и достигают до 85% mAP@50 при сохранении возможности работы в реальном времени на производительных GPU. Тесты развёртывания на платформе Jetson AGX Orin подтверждают применимость подхода для edge computing, хотя для более компактных моделей возникают компромиссы между точностью и скоростью.'
 ---
-
-[PDF](/assets/research/papers/pdfs/agriculture-15-01609-v2.pdf)
-
-<object data="/assets/research/papers/pdfs/agriculture-15-01609-v2.pdf" type="application/pdf" width="100%" height="800"></object>
-
-## Внешние ссылки
-
-- DOI: https://doi.org/10.3390/agriculture15151609
-
-## Аннотация
-
-Терморегуляционное вентилирующее поведение медоносных пчёл — важный индикатор состояния колонии и её реакции на окружающую среду. В этой работе представлен новый датасет из 18 000 размеченных видеокадров, содержащий 57 597 примеров поведения у летка улья в различных условиях. Оцениваются три современные single-shot модели обнаружения объектов (YOLOv8, YOLO11, YOLO12) с использованием как стандартного RGB-входа, так и двух вариантов кодирования движения: Temporally Stacked Grayscale (TSG) и Temporally Encoded Motion (TEM). Результаты показывают, что модели, учитывающие временную информацию через TSG и TEM, заметно превосходят подход с одним только RGB и достигают до 85% mAP@50 при сохранении возможности работы в реальном времени на производительных GPU. Тесты развёртывания на платформе Jetson AGX Orin подтверждают применимость подхода для edge computing, хотя для более компактных моделей возникают компромиссы между точностью и скоростью.
 
 ## Актуальность для Gratheon
 

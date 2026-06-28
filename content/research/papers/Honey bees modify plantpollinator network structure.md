@@ -5,28 +5,22 @@ hideToc: true
 title: Honey bees modify plantpollinator network structure
 description: Honey bees (Apis mellifera) are widely used for honey production and crop pollination, raising concern for wild pollinators, as honey bees may compete with wild pollinators for floral resources.
 year: '2023'
+authors:
+- Sydney H. Worthy
+- John H. Acorn
+- Carol M. Frost
 orgs:
-- 🇨🇦 University of Alberta
+- "\U0001F1E8\U0001F1E6 University of Alberta"
 topics:
 - pollination-ecology
 - bee-behaviour
 productAreas:
 - colony-health
 paperType: journal
+pdf: "/assets/research/papers/pdfs/journal.pone.0287332.pdf"
+doi: 10.1371/journal.pone.0287332
+abstract: Honey bees (Apis mellifera) are widely used for honey production and crop pollination, raising concern for wild pollinators, as honey bees may compete with wild pollinators for floral resources. The first sign of competition, before changes appear in wild pollinator abundance or diversity, may be changes to wild pollinator interactions with plants. Such changes for a community can be measured by looking at changes to metrics of resource use overlap in plant-pollinator interaction networks. Studies of honey bee effects on plant-pollinator networks have usually not distinguished whether honey bees alter wild pollinator interactions, or if they merely alter total network structure by adding their own interactions. To test this question, we experimentally introduced honey bees to a Canadian grassland and measured plant-pollinator interactions at varying distances from the introduced.
 ---
-
-[PDF](pdfs/journal.pone.0287332.pdf)
-
-<object data={require('./pdfs/journal.pone.0287332.pdf').default} type="application/pdf" width="100%" height="800"></object>
-
-## External links
-
-- DOI: https://doi.org/10.1371/journal.pone.0287332
-- DOI: https://doi.org/10.5061/dryad.1vhhmgqzg
-
-## Abstract
-
-Honey bees (Apis mellifera) are widely used for honey production and crop pollination, raising concern for wild pollinators, as honey bees may compete with wild pollinators for floral resources. The first sign of competition, before changes appear in wild pollinator abundance or diversity, may be changes to wild pollinator interactions with plants. Such changes for a community can be measured by looking at changes to metrics of resource use overlap in plant-pollinator interaction networks. Studies of honey bee effects on plant-pollinator networks have usually not distinguished whether honey bees alter wild pollinator interactions, or if they merely alter total network structure by adding their own interactions. To test this question, we experimentally introduced honey bees to a Canadian grassland and measured plant-pollinator interactions at varying distances from the introduced.
 
 ## Relevancy to Gratheon
 

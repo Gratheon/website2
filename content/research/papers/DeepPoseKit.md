@@ -6,28 +6,18 @@ title: DeepPoseKit, a software toolkit for fast and robust animal pose estimatio
 description: Quantitative behavioral measurements are important for answering questions across scientiﬁc disciplines—from neuroscience to ecology.
 year: '2019'
 orgs:
-- 🇩🇪 Max Planck Institute of Animal Behavior
-- 🇩🇪 University of Konstanz
-- 🇺🇸 Princeton University
-- 🇩🇪 Technische Universität München
+- "\U0001F1E9\U0001F1EA Max Planck Institute of Animal Behavior"
+- "\U0001F1E9\U0001F1EA University of Konstanz"
+- "\U0001F1FA\U0001F1F8 Princeton University"
+- "\U0001F1E9\U0001F1EA Technische Universität München"
 topics:
 - computer-vision
 productAreas:
 - hive-scanner
 paperType: preprint
+pdf: "/assets/research/papers/pdfs/47994v1.pdf"
+abstract: Quantitative behavioral measurements are important for answering questions across scientiﬁc disciplines—from neuroscience to ecology. State-of-the-art deep-learning methods offer major advances in data quality and detail by allowing researchers to automatically estimate locations of an animal’s body parts directly from images or videos. However, currently-available animal pose estimation methods have limitations in speed and robustness. Here we introduce a new easy-to-use software toolkit, DeepPoseKit, that addresses these problems using an eﬃcient multi-scale deep-learning model, called Stacked DenseNet, and a fast GPU-based peak-detection algorithm for estimating keypoint locations with subpixel precision. These advances improve processing speed >2× with no loss in accuracy compared to currently-available.
 ---
-
-[PDF](pdfs/47994v1.pdf)
-
-<object data={require('./pdfs/47994v1.pdf').default} type="application/pdf" width="100%" height="800"></object>
-
-## External links
-
-- [Local PDF](pdfs/47994v1.pdf)
-
-## Abstract
-
-Quantitative behavioral measurements are important for answering questions across scientiﬁc disciplines—from neuroscience to ecology. State-of-the-art deep-learning methods offer major advances in data quality and detail by allowing researchers to automatically estimate locations of an animal’s body parts directly from images or videos. However, currently-available animal pose estimation methods have limitations in speed and robustness. Here we introduce a new easy-to-use software toolkit, DeepPoseKit, that addresses these problems using an eﬃcient multi-scale deep-learning model, called Stacked DenseNet, and a fast GPU-based peak-detection algorithm for estimating keypoint locations with subpixel precision. These advances improve processing speed >2× with no loss in accuracy compared to currently-available.
 
 ## Relevancy to Gratheon
 

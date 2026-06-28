@@ -1,7 +1,8 @@
 ---
-layout: research
 hideNav: true
+layout: research
+hideToc: true
+pdf: "/assets/research/papers/pdfs/Application_of_Data_Layering_in_Precisio.pdf"
 ---
 
-[PDF](/assets/research/papers/pdfs/Application_of_Data_Layering_in_Precisio.pdf)
 

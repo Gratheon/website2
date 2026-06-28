@@ -5,27 +5,20 @@ hideToc: true
 title: Comparing weight dynamics between urban and rural honeybee colonies in Latvia
 description: Beekeeping is an important agricultural industry in Latvia, which has an area of 64,589 km2 and is largely mixed forest.
 year: '2023'
+authors:
+- valja
 orgs:
-- 🇱🇻 Latvia University of Life Sciences and Technologies
+- "\U0001F1F1\U0001F1FB Latvia University of Life Sciences and Technologies"
 topics:
 - iot-sensors
 - bee-behaviour
 productAreas:
 - monitoring-platform
 paperType: journal
+pdf: "/assets/research/papers/pdfs/Vol21NoS2_2023_Komasilova.pdf"
+doi: 10.15159/AR.23.019
+abstract: Beekeeping is an important agricultural industry in Latvia, which has an area of 64,589 km2 and is largely mixed forest. The natural foraging base does not provide the honey yield evenly throughout the whole season, thus the average honey yield in Latvia is about 20 kg per colony. The objective of this research was to compare the weight dynamics of colonies placed in rural and urban environments. As urban beekeeping is becoming more popular, it is important to understand whether there are enough foraging resources within the city for the bee colonies. To do this, the weight changes of ten honey bee colonies was remotely monitored and analysed during the summer.
 ---
-
-[PDF](pdfs/Vol21NoS2_2023_Komasilova.pdf)
-
-<object data={require('./pdfs/Vol21NoS2_2023_Komasilova.pdf').default} type="application/pdf" width="100%" height="800"></object>
-
-## External links
-
-- DOI: https://doi.org/10.15159/AR.23.019
-
-## Abstract
-
-Beekeeping is an important agricultural industry in Latvia, which has an area of 64,589 km2 and is largely mixed forest. The natural foraging base does not provide the honey yield evenly throughout the whole season, thus the average honey yield in Latvia is about 20 kg per colony. The objective of this research was to compare the weight dynamics of colonies placed in rural and urban environments. As urban beekeeping is becoming more popular, it is important to understand whether there are enough foraging resources within the city for the bee colonies. To do this, the weight changes of ten honey bee colonies was remotely monitored and analysed during the summer.
 
 ## Relevancy to Gratheon
 

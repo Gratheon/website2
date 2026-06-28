@@ -1,9 +1,8 @@
 ---
-layout: research
 hideNav: true
+layout: research
+hideToc: true
+pdf: "/assets/research/papers/pdfs/bio060237.pdf"
 ---
 
-[PDF](/assets/research/papers/pdfs/bio060237.pdf)
-
-<object data="/assets/research/papers/pdfs/bio060237.pdf" type="application/pdf" width="100%" height="800"></object>
 

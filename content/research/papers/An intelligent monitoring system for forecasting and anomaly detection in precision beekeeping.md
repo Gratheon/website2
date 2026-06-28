@@ -2,33 +2,23 @@
 hideNav: true
 layout: research
 hideToc: true
-title: "An intelligent monitoring system for forecasting and anomaly detection in precision beekeeping"
-description: "BeeViz IoT platform combining transformer-based time-series forecasting and anomaly detection for predictive hive management using temperature, humidity, and weight sensors."
-year: "2026"
+title: An intelligent monitoring system for forecasting and anomaly detection in precision beekeeping
+description: BeeViz IoT platform combining transformer-based time-series forecasting and anomaly detection for predictive hive management using temperature, humidity, and weight sensors.
+year: '2026'
 orgs:
-  - 🇫🇷 EFREI Research Lab
-  - 🇫🇷 Université Paris-Panthéon-Assas
+- "\U0001F1EB\U0001F1F7 EFREI Research Lab"
+- "\U0001F1EB\U0001F1F7 Université Paris-Panthéon-Assas"
 topics:
-  - iot-sensors
-  - edge-ai-energy
+- iot-sensors
+- edge-ai-energy
 productAreas:
-  - monitoring-platform
-  - colony-health
+- monitoring-platform
+- colony-health
 paperType: journal
+pdf: "/assets/research/papers/pdfs/An intelligent monitoring system for forecasting and anomaly detection in precision beekeeping.pdf"
+doi: 10.1038/s41598-026-37877-1
+abstract: Bees play a vital ecological role as pollinators, contributing to biodiversity, forest regeneration, and agricultural productivity. In recent years, precision beekeeping has emerged as a promising approach to support hive management through sensor-based monitoring. However, existing systems often lack predictive capabilities, limiting their usefulness in anticipating disruptive events that threaten colony health. To address this gap, we present BeeViz, an intelligent monitoring system that combines time series forecasting and anomaly detection to enhance decision-making in apiculture. The system integrates sensor networks, cloud infrastructure, and AI-based data processing modules to continuously track key hive parameters (temperature, humidity, and weight) and generate short-term forecasts and real-time alerts. Preliminary results show that the system can effectively detect anomalies and generate short-term forecasts for key hive parameters, with promising accuracy across different metrics. By enabling proactive interventions, BeeViz supports more resilient and sustainable beekeeping practices, paving the way for collaborative learning and data-driven hive management.
 ---
-
-[PDF](pdfs/An intelligent monitoring system for forecasting and anomaly detection in precision beekeeping.pdf)
-
-<object data={require('./pdfs/An intelligent monitoring system for forecasting and anomaly detection in precision beekeeping.pdf').default} type="application/pdf" width="100%" height="800"></object>
-
-## External links
-
-- DOI: https://doi.org/10.1038/s41598-026-37877-1
-- [Full text (Scientific Reports)](https://www.nature.com/articles/s41598-026-37877-1)
-
-## Abstract
-
-Bees play a vital ecological role as pollinators, contributing to biodiversity, forest regeneration, and agricultural productivity. In recent years, precision beekeeping has emerged as a promising approach to support hive management through sensor-based monitoring. However, existing systems often lack predictive capabilities, limiting their usefulness in anticipating disruptive events that threaten colony health. To address this gap, we present BeeViz, an intelligent monitoring system that combines time series forecasting and anomaly detection to enhance decision-making in apiculture. The system integrates sensor networks, cloud infrastructure, and AI-based data processing modules to continuously track key hive parameters (temperature, humidity, and weight) and generate short-term forecasts and real-time alerts. Preliminary results show that the system can effectively detect anomalies and generate short-term forecasts for key hive parameters, with promising accuracy across different metrics. By enabling proactive interventions, BeeViz supports more resilient and sustainable beekeeping practices, paving the way for collaborative learning and data-driven hive management.
 
 ## Relevancy to Gratheon
 

@@ -5,10 +5,12 @@ hideToc: true
 title: 'MSPB: a longitudinal multi-sensor dataset with phenotypic trait measurements from honey bees'
 description: 'www.nature.com/scientificdata MSPB: a longitudinal multi-sensor Data Descriptor dataset with phenotypic trait measurements from honey bees OPEN Yi Zhu 1 ✉, Mahsa Abdollahi1, Ségolène Maucourt2, Nico Coallier Pierre Giovenazzo2 &.'
 year: '2024'
+authors:
+- Yi Zhu
 orgs:
-- 🇨🇦 Institut National de la Recherche Scientifique
-- 🇨🇦 Université Laval
-- 🇨🇦 Nectar Technologies Inc.
+- "\U0001F1E8\U0001F1E6 Institut National de la Recherche Scientifique"
+- "\U0001F1E8\U0001F1E6 Université Laval"
+- "\U0001F1E8\U0001F1E6 Nectar Technologies Inc."
 topics:
 - datasets-benchmarks
 - audio-acoustics
@@ -16,19 +18,10 @@ topics:
 productAreas:
 - monitoring-platform
 paperType: journal
+pdf: "/assets/research/papers/pdfs/s41597-024-03695-1.pdf"
+doi: 10.1038/s41597-024-03695-1
+abstract: 'www.nature.com/scientificdata MSPB: a longitudinal multi-sensor Data Descriptor dataset with phenotypic trait measurements from honey bees OPEN Yi Zhu 1 ✉, Mahsa Abdollahi1, Ségolène Maucourt2, Nico Coallier Pierre Giovenazzo2 & Tiago H. Guimarães1, We present a one-year-long multi-sensor dataset collected from honey bee colonies (Apis mellifera) with rich phenotypic measurements. Data were collected non-stop from April 2020 to April 2021 from 53 hives located at two apiaries in Québec, Canada. The sensor data included audio features, temperature, and relative humidity.'
 ---
-
-[PDF](pdfs/s41597-024-03695-1.pdf)
-
-<object data={require('./pdfs/s41597-024-03695-1.pdf').default} type="application/pdf" width="100%" height="800"></object>
-
-## External links
-
-- DOI: https://doi.org/10.1038/s41597-024-03695-1
-
-## Abstract
-
-www.nature.com/scientificdata MSPB: a longitudinal multi-sensor Data Descriptor dataset with phenotypic trait measurements from honey bees OPEN Yi Zhu 1 ✉, Mahsa Abdollahi1, Ségolène Maucourt2, Nico Coallier Pierre Giovenazzo2 & Tiago H. Guimarães1, We present a one-year-long multi-sensor dataset collected from honey bee colonies (Apis mellifera) with rich phenotypic measurements. Data were collected non-stop from April 2020 to April 2021 from 53 hives located at two apiaries in Québec, Canada. The sensor data included audio features, temperature, and relative humidity.
 
 ## Relevancy to Gratheon
 

@@ -5,29 +5,25 @@ hideToc: true
 title: 'The development of honey bee coloniesassessed using a new semi-automated broodcounting method: CombCount'
 description: Precise, objective data on brood and honey levels in honey bee colonies can be obtained through the analysis of hive frame photographs.
 year: '2018'
+authors:
+- Th#_#x00E9
+- otime Colin
+- Jake Bruce
+- William G. Meikle
+- Andrew B. Barron
 orgs:
-- 🇦🇺 Macquarie University
-- 🇦🇺 Queensland University of Technology
-- 🇺🇸 Carl Hayden Bee Research Center
+- "\U0001F1E6\U0001F1FA Macquarie University"
+- "\U0001F1E6\U0001F1FA Queensland University of Technology"
+- "\U0001F1FA\U0001F1F8 Carl Hayden Bee Research Center"
 topics:
 - computer-vision
 productAreas:
 - hive-scanner
 paperType: journal
+pdf: "/assets/research/papers/pdfs/pone.0205816.pdf"
+doi: 10.1371/journal
+abstract: Precise, objective data on brood and honey levels in honey bee colonies can be obtained through the analysis of hive frame photographs. However, accurate analysis of all the frame photographs from medium- to large-scale experiments is time-consuming. This limits the number of hives than can be practically included in honeybee studies. Faster estimation methods exist but they significantly decrease precision and their use requires a larger sample size to maintain statistical power. To resolve this issue, we created ‘CombCount’ a python program that automatically detects uncapped cells to speed up measurements of capped brood and capped honey on photos of.
 ---
-
-[PDF](pdfs/pone.0205816.pdf)
-
-<object data={require('./pdfs/pone.0205816.pdf').default} type="application/pdf" width="100%" height="800"></object>
-
-## External links
-
-- DOI: https://doi.org/10.1371/journal
-- DOI: https://doi.org/10.1371/journal.pone.0205816
-
-## Abstract
-
-Precise, objective data on brood and honey levels in honey bee colonies can be obtained through the analysis of hive frame photographs. However, accurate analysis of all the frame photographs from medium- to large-scale experiments is time-consuming. This limits the number of hives than can be practically included in honeybee studies. Faster estimation methods exist but they significantly decrease precision and their use requires a larger sample size to maintain statistical power. To resolve this issue, we created ‘CombCount’ a python program that automatically detects uncapped cells to speed up measurements of capped brood and capped honey on photos of.
 
 ## Relevancy to Gratheon
 

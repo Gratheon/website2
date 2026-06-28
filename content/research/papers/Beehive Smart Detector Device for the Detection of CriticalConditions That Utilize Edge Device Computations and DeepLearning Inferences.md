@@ -5,8 +5,10 @@ hideToc: true
 title: Beehive Smart Detector Device for the Detection of CriticalConditions That Utilize Edge Device Computations and DeepLearning Inferences
 description: This paper presents a new edge detection process implemented in an embedded IoT device called Bee Smart Detection node to detect catastrophic apiary events.
 year: '2024'
+authors:
+- Sotirios Kontogiannis (S.K.)
 orgs:
-- 🇬🇷 University of Ioannina
+- "\U0001F1EC\U0001F1F7 University of Ioannina"
 topics:
 - edge-ai-energy
 - iot-sensors
@@ -14,19 +16,10 @@ topics:
 productAreas:
 - monitoring-platform
 paperType: journal
+pdf: "/assets/research/papers/pdfs/sensors-24-05444-v3.pdf"
+doi: 10.3390/s24165444
+abstract: This paper presents a new edge detection process implemented in an embedded IoT device called Bee Smart Detection node to detect catastrophic apiary events. Such events include swarming, queen loss, and the detection of Colony Collapse Disorder (CCD) conditions. Two deep learning sub-processes are used for this purpose. The first uses a fuzzy multi-layered neural network of variable depths called fuzzy-stranded-NN to detect CCD conditions based on temperature and humidity measurements inside the beehive. The second utilizes a deep learning CNN model to detect swarming and queen loss cases based on sound.
 ---
-
-[PDF](pdfs/sensors-24-05444-v3.pdf)
-
-<object data={require('./pdfs/sensors-24-05444-v3.pdf').default} type="application/pdf" width="100%" height="800"></object>
-
-## External links
-
-- DOI: https://doi.org/10.3390/s24165444
-
-## Abstract
-
-This paper presents a new edge detection process implemented in an embedded IoT device called Bee Smart Detection node to detect catastrophic apiary events. Such events include swarming, queen loss, and the detection of Colony Collapse Disorder (CCD) conditions. Two deep learning sub-processes are used for this purpose. The first uses a fuzzy multi-layered neural network of variable depths called fuzzy-stranded-NN to detect CCD conditions based on temperature and humidity measurements inside the beehive. The second utilizes a deep learning CNN model to detect swarming and queen loss cases based on sound.
 
 ## Relevancy to Gratheon
 

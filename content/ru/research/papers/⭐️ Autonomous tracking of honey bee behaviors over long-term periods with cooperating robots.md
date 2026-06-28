@@ -1,36 +1,29 @@
 ---
 hideNav: true
-year: "2024"
-orgs:
-  - 🇨🇿 Czech Technical University
-  - 🇦🇹 University of Graz
-  - 🇬🇧 Durham University
-  - 🇹🇷  Middle East Technical University
-hide_table_of_contents: true
-title: Autonomous tracking of honey bee behaviors over long-term periods with cooperating robots
 layout: research
+hideToc: true
+title: Autonomous tracking of honey bee behaviors over long-term periods with cooperating robots
+year: '2024'
+orgs:
+- "\U0001F1E8\U0001F1FF Czech Technical University"
+- "\U0001F1E6\U0001F1F9 University of Graz"
+- "\U0001F1EC\U0001F1E7 Durham University"
+- "\U0001F1F9\U0001F1F7  Middle East Technical University"
+hide_table_of_contents: true
 ---
 
 - Project home page: https://roboroyale.eu/home.html
 - Official publication: https://www.science.org/doi/10.1126/scirobotics.adn6848#M1
 - Наш [PDF cache](/assets/research/papers/pdfs/scirobotics.adn6848.pdf)
 
-<object data="/assets/research/papers/pdfs/scirobotics.adn6848.pdf" type="application/pdf" width="100%" height="800"></object>
-
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/Wv_iQ3VHyeQ" title="Autonomous tracking of honeybee behaviors over long-term periods with cooperating robots" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/RtaotaaB5SM?list=PLwJcdKVRxEGLCrmPlRZjI0PEkswdf8O9g" title="Dashboard of the AROBA system" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-
-
-
 
 Проект RoboRoyale — это R&D-сотрудничество нескольких университетов, посвящённое анализу поведения пчелиной матки с помощью камеры, управляемой роботом, и прозрачного (наблюдательного) улья
 
 - см. [⭐️ Autonomous tracking of honey bee behaviors over long-term periods with cooperating robots](/ru/research/papers/autonomous-tracking-of-honey-bee-behaviors-over-long-term-periods-with-cooperating-robots/)
 - [https://x.com/EU_RoboRoyale](https://x.com/EU_RoboRoyale)
-
-
 
 ![](/assets/img/research/img/F4zzEZ6XQAAIux8-preview.webp)
 
@@ -49,4 +42,3 @@ layout: research
 ![](/assets/img/research/img/FcyC-tQX0Aca1ut-preview.webp)
 
 ![](/assets/img/research/img/FTOxAhxXEAAAtBB-preview.webp)
-

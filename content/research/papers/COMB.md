@@ -2,31 +2,25 @@
 hideNav: true
 layout: research
 hideToc: true
-title: "COMB: Common Open Modular robotic platform for Bees"
-description: "Compact, open-source, modular mechatronic platform for in-hive experiments within standard DNM observation-hive frames, with XY positioning, interchangeable payload modules, and embedded control architecture."
-year: "2026"
+title: 'COMB: Common Open Modular robotic platform for Bees'
+description: Compact, open-source, modular mechatronic platform for in-hive experiments within standard DNM observation-hive frames, with XY positioning, interchangeable payload modules, and embedded control architecture.
+year: '2026'
+authors:
+- Pranav Kedia
+- Marie Messerich
+- Tim Landgraf
 orgs:
-  - 🇩🇪 University of Konstanz
-  - 🇩🇪 Freie Universität Berlin
+- "\U0001F1E9\U0001F1EA University of Konstanz"
+- "\U0001F1E9\U0001F1EA Freie Universität Berlin"
 topics:
-  - robotics
-  - bee-behaviour
+- robotics
+- bee-behaviour
 productAreas:
-  - robotics
+- robotics
 paperType: preprint
+pdf: "/assets/research/papers/pdfs/2604.04980v1.pdf"
+abstract: 'Experimental access to real honeybee colonies requires robotic systems capable of operating within limited spatial constraints, tolerating hive-specific fouling and environmental conditions, and supporting both sensing and localized actuation without frequent hardware redesign. This paper introduces COMB, a compact, open-source, modular mechatronic platform designed for in-hive experiments within standard Deutsch-Normalmaß (DNM) observation-hive frames. The platform integrates an XY positioning system, a Movable Access Window (MAW) for sealed tool access through the hive boundary, interchangeable payload modules, and an embedded control architecture that enables repeatable trajectory execution and signal generation. The platform''s capabilities are demonstrated through three representative modules: a biomimetic dance-and-signaling payload, a close-range comb scanner, and an electromagnetic wing actuator for localized oscillatory stimulation. COMB is positioned as a reusable experimental robotics platform for controlled in-hive sensing and actuation, and as a compact, generalized successor to earlier task-specific honeybee robotic systems.'
 ---
-
-[PDF](pdfs/2604.04980v1.pdf)
-
-<object data={require('./pdfs/2604.04980v1.pdf').default} type="application/pdf" width="100%" height="800"></object>
-
-## External links
-
-- arXiv: https://arxiv.org/abs/2604.04980
-
-## Abstract
-
-Experimental access to real honeybee colonies requires robotic systems capable of operating within limited spatial constraints, tolerating hive-specific fouling and environmental conditions, and supporting both sensing and localized actuation without frequent hardware redesign. This paper introduces COMB, a compact, open-source, modular mechatronic platform designed for in-hive experiments within standard Deutsch-Normalmaß (DNM) observation-hive frames. The platform integrates an XY positioning system, a Movable Access Window (MAW) for sealed tool access through the hive boundary, interchangeable payload modules, and an embedded control architecture that enables repeatable trajectory execution and signal generation. The platform's capabilities are demonstrated through three representative modules: a biomimetic dance-and-signaling payload, a close-range comb scanner, and an electromagnetic wing actuator for localized oscillatory stimulation. COMB is positioned as a reusable experimental robotics platform for controlled in-hive sensing and actuation, and as a compact, generalized successor to earlier task-specific honeybee robotic systems.
 
 ## Relevancy to Gratheon
 

@@ -5,9 +5,15 @@ hideToc: true
 title: 'Acoustic Signatures of Hive: Detecting Queen Bee Absence Through Machine Learning of Short Audio Segments'
 description: 'Academic Editor: Bin Han Received: 27 March 2026 Revised: 13 May 2026 Accepted: 18 May 2026 Published: 25 May 2026 Copyright: © 2026 by the authors.'
 year: '2026'
+authors:
+- Pablo Ormeño-Arriagada
+- Christofer Jiménez
+- Ramón Arias Gilart
+- Karen Yañez
+- Daniel Ramírez
 orgs:
-- 🇨🇱 Universidad de Viña del Mar
-- 🇨🇱 Universidad Técnica Federico Santa María
+- "\U0001F1E8\U0001F1F1 Universidad de Viña del Mar"
+- "\U0001F1E8\U0001F1F1 Universidad Técnica Federico Santa María"
 topics:
 - audio-acoustics
 - bee-behaviour
@@ -15,19 +21,10 @@ productAreas:
 - colony-health
 - monitoring-platform
 paperType: journal
+pdf: "/assets/research/papers/pdfs/insects-17-00547.pdf"
+doi: 10.3390/insects17060547
+abstract: 'Academic Editor: Bin Han Received: 27 March 2026 Revised: 13 May 2026 Accepted: 18 May 2026 Published: 25 May 2026 Copyright: © 2026 by the authors. Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Honeybee population decline poses a serious threat to global biodiversity and agricultural productivity, underscoring the need for continuous and non-invasive hive monitoring solutions. In particular, early detection of queen absence is critical for maintaining colony viability. This study investigates the effectiveness of machine learning and deep learning models for acoustic-based queen-presence detection using short-duration hive audio.'
 ---
-
-[PDF](pdfs/insects-17-00547.pdf)
-
-<object data={require('./pdfs/insects-17-00547.pdf').default} type="application/pdf" width="100%" height="800"></object>
-
-## External links
-
-- DOI: https://doi.org/10.3390/insects17060547
-
-## Abstract
-
-Academic Editor: Bin Han Received: 27 March 2026 Revised: 13 May 2026 Accepted: 18 May 2026 Published: 25 May 2026 Copyright: © 2026 by the authors. Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Honeybee population decline poses a serious threat to global biodiversity and agricultural productivity, underscoring the need for continuous and non-invasive hive monitoring solutions. In particular, early detection of queen absence is critical for maintaining colony viability. This study investigates the effectiveness of machine learning and deep learning models for acoustic-based queen-presence detection using short-duration hive audio.
 
 ## Relevancy to Gratheon
 

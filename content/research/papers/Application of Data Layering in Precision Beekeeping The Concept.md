@@ -6,26 +6,16 @@ title: 'Application of Data Layering in Precision Beekeeping: The Concept'
 description: The monitoring and predictions of various multilevel states of honeybee colonies are performed using emerging Internet of Things technologies and data processing methods.
 year: '2019'
 orgs:
-- 🇱🇻 Latvia University of Life Sciences and Technologies
+- "\U0001F1F1\U0001F1FB Latvia University of Life Sciences and Technologies"
 topics:
 - iot-sensors
 - reviews-surveys
 productAreas:
 - monitoring-platform
 paperType: conference
+pdf: "/assets/research/papers/pdfs/Application_of_Data_Layering_in_Precisio.pdf"
+abstract: The monitoring and predictions of various multilevel states of honeybee colonies are performed using emerging Internet of Things technologies and data processing methods. It is become common to use multiple sensors and devices providing multi-modal data to monitor a single activity. Modern data analysis and data processing procedures include a step of data fusion in order to provide more accurate input data. This, however, requires implementation of machine learning and large data sets, whereas gathering large data sets of real time and observation data is a common problem for small to medium size apiaries. This why there are no real implementation of data fusion method in precision beekeeping.
 ---
-
-[PDF](pdfs/Application_of_Data_Layering_in_Precisio.pdf)
-
-<object data={require('./pdfs/Application_of_Data_Layering_in_Precisio.pdf').default} type="application/pdf" width="100%" height="800"></object>
-
-## External links
-
-- [Local PDF](pdfs/Application_of_Data_Layering_in_Precisio.pdf)
-
-## Abstract
-
-The monitoring and predictions of various multilevel states of honeybee colonies are performed using emerging Internet of Things technologies and data processing methods. It is become common to use multiple sensors and devices providing multi-modal data to monitor a single activity. Modern data analysis and data processing procedures include a step of data fusion in order to provide more accurate input data. This, however, requires implementation of machine learning and large data sets, whereas gathering large data sets of real time and observation data is a common problem for small to medium size apiaries. This why there are no real implementation of data fusion method in precision beekeeping.
 
 ## Relevancy to Gratheon
 

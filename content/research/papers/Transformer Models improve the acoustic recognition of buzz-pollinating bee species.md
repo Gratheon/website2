@@ -5,30 +5,22 @@ hideToc: true
 title: Transformer Models improve the acoustic recognition of buzz-pollinating bee species
 description: Buzz-pollinated crops, such as tomatoes, potatoes, kiwifruit, and blueberries, are among the highest-yielding agricultural products.
 year: '2025'
+authors:
+- Alef Iury Siqueira Ferreira
 orgs:
-- 🇧🇷 Universidade Federal de Goiás
-- 🇺🇸 University of Arizona
-- 🇨🇱 Universidad Católica del Maule
+- "\U0001F1E7\U0001F1F7 Universidade Federal de Goiás"
+- "\U0001F1FA\U0001F1F8 University of Arizona"
+- "\U0001F1E8\U0001F1F1 Universidad Católica del Maule"
 topics:
 - audio-acoustics
 - pollination-ecology
 productAreas:
 - colony-health
 paperType: journal
+pdf: "/assets/research/papers/pdfs/Ferreiraetal2025.pdf"
+doi: 10.1016/j.ecoinf.2025.103010
+abstract: Buzz-pollinated crops, such as tomatoes, potatoes, kiwifruit, and blueberries, are among the highest-yielding agricultural products. The flowers of these cultivated plants are characterized by having a specialized flower morphology with poricidal anthers that require vibration to achieve a full seed set. At least 446 bee species, in 82 genera, use floral sonication (buzz pollination) to collect pollen grains as food. Identifying and classifying these diverse often look-alike bee species poses a challenge for taxonomists. Automated classification systems, based upon audible bee floral buzzes, have been investigated to meet this.
 ---
-
-[PDF](pdfs/Ferreiraetal2025.pdf)
-
-<object data={require('./pdfs/Ferreiraetal2025.pdf').default} type="application/pdf" width="100%" height="800"></object>
-
-## External links
-
-- DOI: https://doi.org/10.1016/j.ecoinf.2025.103010
-- DOI: https://doi.org/10.5281/zenodo.1
-
-## Abstract
-
-Buzz-pollinated crops, such as tomatoes, potatoes, kiwifruit, and blueberries, are among the highest-yielding agricultural products. The flowers of these cultivated plants are characterized by having a specialized flower morphology with poricidal anthers that require vibration to achieve a full seed set. At least 446 bee species, in 82 genera, use floral sonication (buzz pollination) to collect pollen grains as food. Identifying and classifying these diverse often look-alike bee species poses a challenge for taxonomists. Automated classification systems, based upon audible bee floral buzzes, have been investigated to meet this.
 
 ## Relevancy to Gratheon
 

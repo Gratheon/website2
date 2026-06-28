@@ -1,13 +1,16 @@
 ---
 hideNav: true
-title: "Accuracy vs. Energy: An Assessment of Bee Object Inference inVideos from On-Hive Video Loggers with YOLOv3,YOLOv4-Tiny, and YOLOv7-Tiny"
 layout: research
+hideToc: true
+title: 'Accuracy vs. Energy: An Assessment of Bee Object Inference inVideos from On-Hive Video Loggers with YOLOv3,YOLOv4-Tiny, and YOLOv7-Tiny'
+year: '2023'
+authors:
+- Vladimir A. Kulyukin
+- Aleksey V. Kulyukin
 orgs:
-  - 🇺🇸 Utah State University
-year: "2023"
+- "\U0001F1FA\U0001F1F8 Utah State University"
+pdf: "/assets/research/papers/pdfs/2023-yolov4.pdf"
 hide_table_of_contents: true
 ---
 
-[PDF](/assets/research/papers/pdfs/2023-yolov4.pdf)
 
-<object data="/assets/research/papers/pdfs/2023-yolov4.pdf" type="application/pdf" width="100%" height="800"></object>

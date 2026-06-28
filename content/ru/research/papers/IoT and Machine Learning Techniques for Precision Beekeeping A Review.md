@@ -1,14 +1,19 @@
 ---
 hideNav: true
-title: IoT and Machine Learning Techniques for Precision Beekeeping:A Review
 layout: research
+hideToc: true
+title: IoT and Machine Learning Techniques for Precision Beekeeping:A Review
+year: '2025'
+authors:
+- Agatha Turyagyenda
+- Andrew Katumba
+- Roseline Akol
+- Mary Nsabagwa
+- Mbazingwa Elirehema Mkiramweni
 orgs:
-  - 🇺🇬 Makerere University
-  - 🇹🇿 Dar es Salaam Institute of Technology
-year: "2025"
+- "\U0001F1FA\U0001F1EC Makerere University"
+- "\U0001F1F9\U0001F1FF Dar es Salaam Institute of Technology"
+pdf: "/assets/research/papers/pdfs/ai-06-00026.pdf"
 ---
 
-[PDF](/assets/research/papers/pdfs/ai-06-00026.pdf)
-
-<object data="/assets/research/papers/pdfs/ai-06-00026.pdf" type="application/pdf" width="100%" height="800"></object>
 

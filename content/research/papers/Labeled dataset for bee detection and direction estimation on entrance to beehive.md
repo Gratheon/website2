@@ -5,28 +5,21 @@ hideToc: true
 title: Labeled dataset for bee detection and direction estimation on entrance to beehive
 description: Tomyslav Sledevič∗, Dalius Matuzevičius Department of Electronic Systems, Faculty of Electronics, Vilnius Gediminas Technical University, Saulėtekio al.
 year: '2023'
+authors:
+- Tomyslav Sledevi
+- "#x010D"
 orgs:
-- 🇱🇹 Vilnius Gediminas Technical University
+- "\U0001F1F1\U0001F1F9 Vilnius Gediminas Technical University"
 topics:
 - datasets-benchmarks
 - computer-vision
 productAreas:
 - gate-tracker
 paperType: conference
+pdf: "/assets/research/papers/pdfs/dataset-lt.pdf"
+doi: 10.1016/j.dib.2024.110060
+abstract: Tomyslav Sledevič∗, Dalius Matuzevičius Department of Electronic Systems, Faculty of Electronics, Vilnius Gediminas Technical University, Saulėtekio al.
 ---
-
-[PDF](pdfs/dataset-lt.pdf)
-
-<object data={require('./pdfs/dataset-lt.pdf').default} type="application/pdf" width="100%" height="800"></object>
-
-## External links
-
-- DOI: https://doi.org/10.1016/j.dib.2024.110060
-- DOI: https://doi.org/10.17632/8gb9r2yhfc.5
-
-## Abstract
-
-Tomyslav Sledevič∗, Dalius Matuzevičius Department of Electronic Systems, Faculty of Electronics, Vilnius Gediminas Technical University, Saulėtekio al.
 
 ## Relevancy to Gratheon
 

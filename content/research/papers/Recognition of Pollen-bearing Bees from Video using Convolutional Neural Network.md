@@ -6,7 +6,7 @@ title: Recognition of Pollen-bearing Bees from Video using Convolutional Neural 
 description: In this paper, the recognition of pollen bearing honey bees from videos of the entrance of the hive is presented.
 year: '2018'
 orgs:
-- 🇵🇷 University of Puerto Rico
+- "\U0001F1F5\U0001F1F7 University of Puerto Rico"
 topics:
 - computer-vision
 - bee-behaviour
@@ -14,19 +14,9 @@ topics:
 productAreas:
 - gate-tracker
 paperType: conference
+pdf: "/assets/research/papers/pdfs/10058461.pdf"
+abstract: In this paper, the recognition of pollen bearing honey bees from videos of the entrance of the hive is presented. This computer vision task is a key component for the automatic monitoring of honeybees in order to obtain large scale data of their foraging behavior and task specialization. Several approaches are considered for this task, including baseline classifiers, shallow Convolutional Neural Networks, and deeper networks from the literature. The experimental comparison is based on a new dataset of images of honeybees that was manually annotated for the presence of pollen. The proposed approach, based on Convolutional Neural Networks is shown to outperform the other approaches in terms of.
 ---
-
-[PDF](pdfs/10058461.pdf)
-
-<object data={require('./pdfs/10058461.pdf').default} type="application/pdf" width="100%" height="800"></object>
-
-## External links
-
-- [Original URL](https://par.nsf.gov/servlets/purl/10058461)
-
-## Abstract
-
-In this paper, the recognition of pollen bearing honey bees from videos of the entrance of the hive is presented. This computer vision task is a key component for the automatic monitoring of honeybees in order to obtain large scale data of their foraging behavior and task specialization. Several approaches are considered for this task, including baseline classifiers, shallow Convolutional Neural Networks, and deeper networks from the literature. The experimental comparison is based on a new dataset of images of honeybees that was manually annotated for the presence of pollen. The proposed approach, based on Convolutional Neural Networks is shown to outperform the other approaches in terms of.
 
 ## Relevancy to Gratheon
 

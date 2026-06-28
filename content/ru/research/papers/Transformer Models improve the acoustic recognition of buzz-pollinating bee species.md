@@ -1,13 +1,16 @@
 ---
 hideNav: true
-title: Transformer Models improve the acoustic recognition of buzz-pollinating bee species
 layout: research
-year: "2025"
+hideToc: true
+title: Transformer Models improve the acoustic recognition of buzz-pollinating bee species
+year: '2025'
+authors:
+- Alef Iury Siqueira Ferreira
 orgs:
-  - 🇧🇷 Universidade Federal de Goiás
-  - 🇺🇸 University of Arizona
-  - 🇨🇱 Universidad Católica del Maule
+- "\U0001F1E7\U0001F1F7 Universidade Federal de Goiás"
+- "\U0001F1FA\U0001F1F8 University of Arizona"
+- "\U0001F1E8\U0001F1F1 Universidad Católica del Maule"
+pdf: "/assets/research/papers/pdfs/Ferreiraetal2025.pdf"
 ---
 
-[PDF](/assets/research/papers/pdfs/Ferreiraetal2025.pdf)
 

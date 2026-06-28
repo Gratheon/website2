@@ -5,28 +5,22 @@ hideToc: true
 title: 'Pollinators as Data Collectors: Estimating Floral Diversity with Bees and Computer Vision'
 description: on the spatial and temporal diversity of pollen collected by honeybee colonies.
 year: '2023'
+authors:
+- Frederic Tausch
+- Jan Wagner
+- Simon Klaus
 orgs:
-- 🇩🇪 Karlsruhe Institute of Technology
-- 🇩🇪 apic.ai GmbH
+- "\U0001F1E9\U0001F1EA Karlsruhe Institute of Technology"
+- "\U0001F1E9\U0001F1EA apic.ai GmbH"
 topics:
 - pollination-ecology
 - computer-vision
 productAreas:
 - monitoring-platform
 paperType: workshop
+pdf: "/assets/research/papers/pdfs/Tausch_Pollinators_as_Data_Collectors_Estimating_Floral_Diversity_with_Bees_and_ICCVW_2023_paper.pdf"
+abstract: on the spatial and temporal diversity of pollen collected by honeybee colonies. This study, known as the ”Citizen Science Investigation on Pollen” (CSI-Pollen) [21], involved the collaboration of 750 beekeepers serving as citizen scientists. A remarkable total of approximately 18,000 pollen samples were collected and subjected to manual chromatic assessment. This paper presents a bee-based environment monitoring system that uses pollen color analysis to estimate ﬂoral diversity. The study focuses on non-invasively assessing pollinator habitat quality using computer vision technology on honey bee.
 ---
-
-[PDF](pdfs/Tausch_Pollinators_as_Data_Collectors_Estimating_Floral_Diversity_with_Bees_and_ICCVW_2023_paper.pdf)
-
-<object data={require('./pdfs/Tausch_Pollinators_as_Data_Collectors_Estimating_Floral_Diversity_with_Bees_and_ICCVW_2023_paper.pdf').default} type="application/pdf" width="100%" height="800"></object>
-
-## External links
-
-- [Local PDF](pdfs/Tausch_Pollinators_as_Data_Collectors_Estimating_Floral_Diversity_with_Bees_and_ICCVW_2023_paper.pdf)
-
-## Abstract
-
-on the spatial and temporal diversity of pollen collected by honeybee colonies. This study, known as the ”Citizen Science Investigation on Pollen” (CSI-Pollen) [21], involved the collaboration of 750 beekeepers serving as citizen scientists. A remarkable total of approximately 18,000 pollen samples were collected and subjected to manual chromatic assessment. This paper presents a bee-based environment monitoring system that uses pollen color analysis to estimate ﬂoral diversity. The study focuses on non-invasively assessing pollinator habitat quality using computer vision technology on honey bee.
 
 ## Relevancy to Gratheon
 

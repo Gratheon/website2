@@ -5,28 +5,24 @@ hideToc: true
 title: Automatic detection and decoding of honey bee waggle dances
 description: The waggle dance is one of the most popular examples of animal communication.
 year: '2017'
+authors:
+- Fernando Wario
+- Benjamin Wild
+- Ra#_#x00FA
+- l Rojas
+- Tim Landgraf
 orgs:
-- 🇩🇪 Freie Universität Berlin
+- "\U0001F1E9\U0001F1EA Freie Universität Berlin"
 topics:
 - bee-behaviour
 - computer-vision
 productAreas:
 - gate-tracker
 paperType: journal
+pdf: "/assets/research/papers/pdfs/waggle-dance2.pdf"
+doi: 10.1371/journal.pone.0188626
+abstract: The waggle dance is one of the most popular examples of animal communication. Forager bees direct their nestmates to profitable resources via a complex motor display. Essentially, the dance encodes the polar coordinates to the resource in the field. Unemployed foragers follow the dancer’s movements and then search for the advertised spots in the field. Throughout the last decades, biologists have employed different techniques to measure key characteristics of the waggle dance and decode the information it.
 ---
-
-[PDF](pdfs/waggle-dance2.pdf)
-
-<object data={require('./pdfs/waggle-dance2.pdf').default} type="application/pdf" width="100%" height="800"></object>
-
-## External links
-
-- DOI: https://doi.org/10.1371/journal.pone.0188626
-- DOI: https://doi.org/10.1371/journal.pone.0188626.g001
-
-## Abstract
-
-The waggle dance is one of the most popular examples of animal communication. Forager bees direct their nestmates to profitable resources via a complex motor display. Essentially, the dance encodes the polar coordinates to the resource in the field. Unemployed foragers follow the dancer’s movements and then search for the advertised spots in the field. Throughout the last decades, biologists have employed different techniques to measure key characteristics of the waggle dance and decode the information it.
 
 ## Relevancy to Gratheon
 

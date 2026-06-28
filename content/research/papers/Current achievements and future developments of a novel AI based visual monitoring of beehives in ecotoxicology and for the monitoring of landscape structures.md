@@ -5,28 +5,20 @@ hideToc: true
 title: Current achievements and future developments of a novel AI based visual monitoring of beehives in ecotoxicology and for the monitoring of landscape structures
 description: in German Honigbienen sind nützliche Bio-Indikatoren.
 year: '2020'
+authors:
+- Katharina
 orgs:
-- 🇩🇪 apic.ai GmbH
+- "\U0001F1E9\U0001F1EA apic.ai GmbH"
 topics:
 - computer-vision
 - bee-behaviour
 productAreas:
 - monitoring-platform
 paperType: preprint
+pdf: "/assets/research/papers/pdfs/2020.02.04.933580v1.full.pdf"
+doi: 10.1101/2020.02.04.933580
+abstract: in German Honigbienen sind nützliche Bio-Indikatoren. Sie besitzen ein großes Potenzial, Licht in das Ausmaß und die Wechselwirkungen der Faktoren zu bringen, die den Rückgang der Insektenzahl beeinflussen. Dieses Potenzial wurde bisher noch nicht vollständig ausgeschöpft, da die Produktion zuverlässiger Daten aufwendige und arbeitsintensive Studiendesigns erfordert, die mit hohen Kosten verbunden sind. Ein neuartiges, auf künstlicher Intelligenz (KI) basierendes visuelles Monitoringsystem könnte eine teilweise Automatisierung der Datenerfassung über Aktivität, Sammelbienenverlust und Beeinträchtigungen des zentralen Nervensystems ermöglichen. Die Möglichkeit, Merkmale aus den Bilddaten zu extrahieren, könnte darüber hinaus zukünftig auch eine Bewertung des Polleneintrags und eine Unterscheidung von toten Bienen, Drohnen und Arbeitsbienen sowie anderen Insekten wie Wespen oder Hornissen.
 ---
-
-[PDF](pdfs/2020.02.04.933580v1.full.pdf)
-
-<object data={require('./pdfs/2020.02.04.933580v1.full.pdf').default} type="application/pdf" width="100%" height="800"></object>
-
-## External links
-
-- DOI: https://doi.org/10.1101/2020.02.04.933580
-- DOI: https://doi.org/10.1101/2020.02.04.933580;
-
-## Abstract
-
-in German Honigbienen sind nützliche Bio-Indikatoren. Sie besitzen ein großes Potenzial, Licht in das Ausmaß und die Wechselwirkungen der Faktoren zu bringen, die den Rückgang der Insektenzahl beeinflussen. Dieses Potenzial wurde bisher noch nicht vollständig ausgeschöpft, da die Produktion zuverlässiger Daten aufwendige und arbeitsintensive Studiendesigns erfordert, die mit hohen Kosten verbunden sind. Ein neuartiges, auf künstlicher Intelligenz (KI) basierendes visuelles Monitoringsystem könnte eine teilweise Automatisierung der Datenerfassung über Aktivität, Sammelbienenverlust und Beeinträchtigungen des zentralen Nervensystems ermöglichen. Die Möglichkeit, Merkmale aus den Bilddaten zu extrahieren, könnte darüber hinaus zukünftig auch eine Bewertung des Polleneintrags und eine Unterscheidung von toten Bienen, Drohnen und Arbeitsbienen sowie anderen Insekten wie Wespen oder Hornissen.
 
 ## Relevancy to Gratheon
 

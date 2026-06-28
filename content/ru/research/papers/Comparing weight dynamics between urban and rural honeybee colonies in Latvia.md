@@ -1,12 +1,15 @@
 ---
 hideNav: true
-title: Comparing weight dynamics between urban and rural honeybee colonies in Latvia
 layout: research
-year: "2023"
+hideToc: true
+title: Comparing weight dynamics between urban and rural honeybee colonies in Latvia
+year: '2023'
+authors:
+- valja
 orgs:
-  - 🇱🇻 Latvia University of Life Sciences and Technologies
+- "\U0001F1F1\U0001F1FB Latvia University of Life Sciences and Technologies"
+pdf: "/assets/research/papers/pdfs/Vol21NoS2_2023_Komasilova.pdf"
 hide_table_of_contents: true
 ---
 
-[PDF](/assets/research/papers/pdfs/Vol21NoS2_2023_Komasilova.pdf)
 

@@ -5,9 +5,15 @@ hideToc: true
 title: 'Acoustic Signatures of Hive: Detecting Queen Bee Absence Through Machine Learning of Short Audio Segments'
 description: 'Academic Editor: Bin Han; Received: 27 March 2026; Revised: 13 May 2026; Accepted: 18 May 2026; Published: 25 May 2026. Copyright: © 2026 by the authors.'
 year: '2026'
+authors:
+- Pablo Ormeño-Arriagada
+- Christofer Jiménez
+- Ramón Arias Gilart
+- Karen Yañez
+- Daniel Ramírez
 orgs:
-- 🇨🇱 Universidad de Viña del Mar
-- 🇨🇱 Universidad Técnica Federico Santa María
+- "\U0001F1E8\U0001F1F1 Universidad de Viña del Mar"
+- "\U0001F1E8\U0001F1F1 Universidad Técnica Federico Santa María"
 topics:
 - audio-acoustics
 - bee-behaviour
@@ -15,19 +21,10 @@ productAreas:
 - colony-health
 - monitoring-platform
 paperType: journal
+pdf: "/assets/research/papers/pdfs/insects-17-00547.pdf"
+doi: 10.3390/insects17060547
+abstract: 'Редактор: Bin Han. Получено: 27 March 2026. Исправленная версия: 13 May 2026. Принято: 18 May 2026. Опубликовано: 25 May 2026. Copyright: © 2026 by the authors. Licensee MDPI, Basel, Switzerland. Эта статья находится в открытом доступе и распространяется в соответствии с условиями лицензии Creative Commons. Снижение численности медоносных пчёл представляет серьёзную угрозу для глобального биоразнообразия и сельскохозяйственной продуктивности, что подчёркивает необходимость непрерывных и неинвазивных решений для мониторинга улья. В частности, раннее выявление отсутствия матки критически важно для сохранения жизнеспособности пчелиной семьи. В этой работе исследуется эффективность моделей machine learning и deep learning для акустической детекции присутствия матки на основе коротких аудиосегментов, записанных в улье.'
 ---
-
-[PDF](/assets/research/papers/pdfs/insects-17-00547.pdf)
-
-<object data="/assets/research/papers/pdfs/insects-17-00547.pdf" type="application/pdf" width="100%" height="800"></object>
-
-## Внешние ссылки
-
-- DOI: https://doi.org/10.3390/insects17060547
-
-## Аннотация
-
-Редактор: Bin Han. Получено: 27 March 2026. Исправленная версия: 13 May 2026. Принято: 18 May 2026. Опубликовано: 25 May 2026. Copyright: © 2026 by the authors. Licensee MDPI, Basel, Switzerland. Эта статья находится в открытом доступе и распространяется в соответствии с условиями лицензии Creative Commons. Снижение численности медоносных пчёл представляет серьёзную угрозу для глобального биоразнообразия и сельскохозяйственной продуктивности, что подчёркивает необходимость непрерывных и неинвазивных решений для мониторинга улья. В частности, раннее выявление отсутствия матки критически важно для сохранения жизнеспособности пчелиной семьи. В этой работе исследуется эффективность моделей machine learning и deep learning для акустической детекции присутствия матки на основе коротких аудиосегментов, записанных в улье.
 
 ## Актуальность для Gratheon
 

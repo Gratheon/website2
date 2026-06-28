@@ -2,32 +2,26 @@
 hideNav: true
 layout: research
 hideToc: true
-title: "Deep Learning Beehive Monitoring System for Early Detection of the Varroa Mite"
-description: "Embedded camera module with two-stage CNN pipeline (bee detection + mite identification) placed inside the brood box for real-time, offline-capable Varroa detection."
-year: "2022"
+title: Deep Learning Beehive Monitoring System for Early Detection of the Varroa Mite
+description: Embedded camera module with two-stage CNN pipeline (bee detection + mite identification) placed inside the brood box for real-time, offline-capable Varroa detection.
+year: '2022'
+authors:
+- George Voudiotis
+- Anna Moraiti
+- Sotirios Kontogiannis
 orgs:
-  - 🇬🇷 University of Ioannina
+- "\U0001F1EC\U0001F1F7 University of Ioannina"
 topics:
-  - varroa-health
-  - computer-vision
-  - edge-ai-energy
+- varroa-health
+- computer-vision
+- edge-ai-energy
 productAreas:
-  - colony-health
+- colony-health
 paperType: journal
+pdf: "/assets/research/papers/pdfs/Deep Learning Beehive Monitoring System for Early Detection of the Varroa Mite.pdf"
+doi: 10.3390/signals3030030
+abstract: One of the most critical causes of colony collapse disorder in beekeeping is caused by the Varroa mite. This paper presents an embedded camera module supported by a deep learning algorithm for the process of early detecting of Varroa infestations. This is achieved using a deep learning algorithm that tries to identify bees inside the brood frames carrying the mite in real-time. The end-node device camera module is placed inside the brood box. It is equipped with offline detection in remote areas of limited network coverage or online imagery data transmission and mite detection over the cloud. The proposed deep learning algorithm uses a deep learning network for bee object detection and an image processing step to identify the mite on the previously detected objects. Finally, the authors present their proof of concept experimentation of their approach that can offer a total bee and Varroa detection accuracy of close to 70%.
 ---
-
-[PDF](pdfs/Deep Learning Beehive Monitoring System for Early Detection of the Varroa Mite.pdf)
-
-<object data={require('./pdfs/Deep Learning Beehive Monitoring System for Early Detection of the Varroa Mite.pdf').default} type="application/pdf" width="100%" height="800"></object>
-
-## External links
-
-- DOI: https://doi.org/10.3390/signals3030030
-- [Full text (MDPI Signals)](https://www.mdpi.com/2624-6120/3/3/30)
-
-## Abstract
-
-One of the most critical causes of colony collapse disorder in beekeeping is caused by the Varroa mite. This paper presents an embedded camera module supported by a deep learning algorithm for the process of early detecting of Varroa infestations. This is achieved using a deep learning algorithm that tries to identify bees inside the brood frames carrying the mite in real-time. The end-node device camera module is placed inside the brood box. It is equipped with offline detection in remote areas of limited network coverage or online imagery data transmission and mite detection over the cloud. The proposed deep learning algorithm uses a deep learning network for bee object detection and an image processing step to identify the mite on the previously detected objects. Finally, the authors present their proof of concept experimentation of their approach that can offer a total bee and Varroa detection accuracy of close to 70%.
 
 ## Relevancy to Gratheon
 

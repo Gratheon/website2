@@ -1,14 +1,14 @@
 ---
 hideNav: true
-year: "2024"
-orgs:
-  - 🇨🇿 Brno University of Technology
-  - 🇫🇮 LUT University
-hide_table_of_contents: true
-title: Varroa destructor detection on honey bees using hyperspectral imagery
 layout: research
+hideToc: true
+title: Varroa destructor detection on honey bees using hyperspectral imagery
+year: '2024'
+orgs:
+- "\U0001F1E8\U0001F1FF Brno University of Technology"
+- "\U0001F1EB\U0001F1EE LUT University"
+pdf: "/assets/research/papers/pdfs/2024-varroa-destructor.pdf"
+hide_table_of_contents: true
 ---
 
-[PDF](/assets/research/papers/pdfs/2024-varroa-destructor.pdf)
 
-<object data="/assets/research/papers/pdfs/2024-varroa-destructor.pdf" type="application/pdf" width="100%" height="800"></object>

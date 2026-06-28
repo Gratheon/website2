@@ -1,9 +1,9 @@
 ---
+layout: research
+hideToc: true
 title: Research papers
 navTitle: Papers
-layout: research
 order: 5
-hideToc: true
 ---
 
 This section tracks external academic work relevant to digital beekeeping, bee health, observability, robotics, and machine learning.
