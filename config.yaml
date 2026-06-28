@@ -590,7 +590,7 @@ navigation:
         url: "/nl/about/"
         languages: ["nl"]
       - title: "Producten"
-        url: "/products/"
+        url: "/nl/products/"
         languages: ["nl"]
       - title: "Onderzoek"
         url: "/nl/research/"
@@ -965,7 +965,7 @@ navigation:
         - title: "Over ons"
           url: "/nl/about/"
         - title: "Producten"
-          url: "/products/"
+          url: "/nl/products/"
         - title: "Onderzoek"
           url: "/nl/research/"
         - title: "Blog"
