@@ -5,27 +5,20 @@ hideToc: true
 title: 'Importance of GIS solutions for beekeepers: a review'
 description: In today's realities, beekeeping encounters a number of different challenges, including the lack of suitable areas, urbanisation, intensive farming methods etc.
 year: '2023'
+authors:
+- Valentina Prigo~eva
 orgs:
-- 🇱🇻 Latvia University of Life Sciences and Technologies
+- "\U0001F1F1\U0001F1FB Latvia University of Life Sciences and Technologies"
 topics:
 - reviews-surveys
 - pollination-ecology
 productAreas:
 - monitoring-platform
 paperType: journal
+pdf: "/assets/research/papers/pdfs/Vol21No2_2023_Kotovs.pdf"
+doi: 10.15159/AR.23.049
+abstract: In today's realities, beekeeping encounters a number of different challenges, including the lack of suitable areas, urbanisation, intensive farming methods etc. In order to meet the current needs, modern beekeeping uses various information technology solutions that support beekeepers in their activities. Among such solutions, the use of geographic information systems and spatial data is relevant. At the time of writing this work, its authors are developing software solution for beekeepers based on Geographic Information System (GIS) and an interactive map within the scientific project named Hiveopolis. To further develop this solution, it is necessary to investigate the current situation related to issues in modern beekeeping and the solutions already.
 ---
-
-[PDF](pdfs/Vol21No2_2023_Kotovs.pdf)
-
-<object data={require('./pdfs/Vol21No2_2023_Kotovs.pdf').default} type="application/pdf" width="100%" height="800"></object>
-
-## External links
-
-- DOI: https://doi.org/10.15159/AR.23.049
-
-## Abstract
-
-In today's realities, beekeeping encounters a number of different challenges, including the lack of suitable areas, urbanisation, intensive farming methods etc. In order to meet the current needs, modern beekeeping uses various information technology solutions that support beekeepers in their activities. Among such solutions, the use of geographic information systems and spatial data is relevant. At the time of writing this work, its authors are developing software solution for beekeepers based on Geographic Information System (GIS) and an interactive map within the scientific project named Hiveopolis. To further develop this solution, it is necessary to investigate the current situation related to issues in modern beekeeping and the solutions already.
 
 ## Relevancy to Gratheon
 

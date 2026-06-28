@@ -1,13 +1,16 @@
 ---
 hideNav: true
-orgs:
-  - 🇮🇳 St. Joseph Engineering College
-  - 🇮🇳 Canara Engineering College
-title: HiveLink – IoT based Smart Bee Hive MonitoringSystem
 layout: research
-year: "2023"
+hideToc: true
+title: HiveLink – IoT based Smart Bee Hive MonitoringSystem
+year: '2023'
+authors:
+- Enter Author Names
+- Seperated by commas
+orgs:
+- "\U0001F1EE\U0001F1F3 St. Joseph Engineering College"
+- "\U0001F1EE\U0001F1F3 Canara Engineering College"
+pdf: "/assets/research/papers/pdfs/2309.12054v1.pdf"
 ---
 
 https://arxiv.org/abs/2309.12054
-[PDF](/assets/research/papers/pdfs/2309.12054v1.pdf)
-

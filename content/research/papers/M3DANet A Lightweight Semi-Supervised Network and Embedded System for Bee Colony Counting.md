@@ -5,9 +5,18 @@ hideToc: true
 title: 'M3DANet: A Lightweight Semi-Supervised Network and Embedded System for Bee Colony Counting'
 description: 'Academic Editor: Aichen Wang Received: 17 April 2026 Revised: 25 May 2026 Accepted: 8 June 2026 Published: 10 June 2026 Copyright: © 2026 by the authors.'
 year: '2026'
+authors:
+- Xue Li
+- Mingzhen Ma
+- Ying Kong
+- Huijun Huang
+- Qian Li
+- Feng Liu
+- Zhenguo Liu
+- Guangming Wang
 orgs:
-- 🇨🇳 Shandong Agricultural University
-- 🇨🇳 Apiculture Institute of Jiangxi Province
+- "\U0001F1E8\U0001F1F3 Shandong Agricultural University"
+- "\U0001F1E8\U0001F1F3 Apiculture Institute of Jiangxi Province"
 topics:
 - computer-vision
 - edge-ai-energy
@@ -15,19 +24,10 @@ productAreas:
 - hive-scanner
 - monitoring-platform
 paperType: journal
+pdf: "/assets/research/papers/pdfs/agriculture-16-01284.pdf"
+doi: 10.3390/agriculture16121284
+abstract: 'Academic Editor: Aichen Wang Received: 17 April 2026 Revised: 25 May 2026 Accepted: 8 June 2026 Published: 10 June 2026 Copyright: © 2026 by the authors. Licensee MDPI, Basel, Switzerland. Accurate bee counting is important for colony monitoring, pollination assessment, and precision beekeeping, but manual counting and dense point annotation are labor-intensive. This study proposes M3DANet, a lightweight semi-supervised density regression network with a handheld edge deployment system for bee colony counting. A dataset containing 586 valid high-resolution images and 34,869 point annotations was constructed for training and.'
 ---
-
-[PDF](pdfs/agriculture-16-01284.pdf)
-
-<object data={require('./pdfs/agriculture-16-01284.pdf').default} type="application/pdf" width="100%" height="800"></object>
-
-## External links
-
-- DOI: https://doi.org/10.3390/agriculture16121284
-
-## Abstract
-
-Academic Editor: Aichen Wang Received: 17 April 2026 Revised: 25 May 2026 Accepted: 8 June 2026 Published: 10 June 2026 Copyright: © 2026 by the authors. Licensee MDPI, Basel, Switzerland. Accurate bee counting is important for colony monitoring, pollination assessment, and precision beekeeping, but manual counting and dense point annotation are labor-intensive. This study proposes M3DANet, a lightweight semi-supervised density regression network with a handheld edge deployment system for bee colony counting. A dataset containing 586 valid high-resolution images and 34,869 point annotations was constructed for training and.
 
 ## Relevancy to Gratheon
 

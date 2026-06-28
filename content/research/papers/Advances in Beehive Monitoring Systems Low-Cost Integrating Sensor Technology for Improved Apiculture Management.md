@@ -5,30 +5,32 @@ hideToc: true
 title: 'Advances in Beehive Monitoring Systems: Low-Cost Integrating Sensor Technology for Improved Apiculture Management'
 description: The integration of monitoring systems in beekeeping has significant implications for the health and sustainability of honeybee colonies.
 year: '2024'
+authors:
+- Hunor Bartos
+- Bodor Zsolt
+- Keresztesi Ágnes
+- Gârbacea George
+- György Deak
+- Monica Matei
+- Laslo Lucian
+- Boboc Madalina
+- Elena H.
+- Szép Róbert
 orgs:
-- 🇷🇴 Research and Development Institute for Wildlife and Mountain Resources Miercurea Ciuc
-- 🇷🇴 Sapientia Hungarian University of Transylvania
-- 🇷🇴 National Institute for Research and Development in Environmental Protection
-- 🇷🇴 National Institute for Research and Development in Forestry Marin Dracea
+- "\U0001F1F7\U0001F1F4 Research and Development Institute for Wildlife and Mountain Resources Miercurea Ciuc"
+- "\U0001F1F7\U0001F1F4 Sapientia Hungarian University of Transylvania"
+- "\U0001F1F7\U0001F1F4 National Institute for Research and Development in Environmental Protection"
+- "\U0001F1F7\U0001F1F4 National Institute for Research and Development in Forestry Marin Dracea"
 topics:
 - iot-sensors
 - reviews-surveys
 productAreas:
 - monitoring-platform
 paperType: journal
+pdf: "/assets/research/papers/pdfs/Advances_in_Beehive_Monitoring_Systems_Low-Cost_In.pdf"
+doi: 10.1051/e3sconf/202458904001
+abstract: The integration of monitoring systems in beekeeping has significant implications for the health and sustainability of honeybee colonies. These advanced systems, which include sensors for temperature, humidity, hive weight, and sound analysis, allow for real-time tracking of hive conditions, enabling beekeepers to respond promptly to potential threats such as disease, pests, or environmental stressors. Research shows that such technology can lead to improved colony management, reducing the incidence of colony collapse disorder (CCD) by facilitating early intervention. Additionally, continuous data collection helps in identifying patterns and anomalies in hive behavior, contributing to a better understanding of bee biology and environmental interactions. However, the effectiveness of these systems depends on the accuracy of the data collected and the beekeeper's ability to interpret and act upon this.
 ---
-
-[PDF](pdfs/Advances_in_Beehive_Monitoring_Systems_Low-Cost_In.pdf)
-
-<object data={require('./pdfs/Advances_in_Beehive_Monitoring_Systems_Low-Cost_In.pdf').default} type="application/pdf" width="100%" height="800"></object>
-
-## External links
-
-- DOI: https://doi.org/10.1051/e3sconf/202458904001
-
-## Abstract
-
-The integration of monitoring systems in beekeeping has significant implications for the health and sustainability of honeybee colonies. These advanced systems, which include sensors for temperature, humidity, hive weight, and sound analysis, allow for real-time tracking of hive conditions, enabling beekeepers to respond promptly to potential threats such as disease, pests, or environmental stressors. Research shows that such technology can lead to improved colony management, reducing the incidence of colony collapse disorder (CCD) by facilitating early intervention. Additionally, continuous data collection helps in identifying patterns and anomalies in hive behavior, contributing to a better understanding of bee biology and environmental interactions. However, the effectiveness of these systems depends on the accuracy of the data collected and the beekeeper's ability to interpret and act upon this.
 
 ## Relevancy to Gratheon
 

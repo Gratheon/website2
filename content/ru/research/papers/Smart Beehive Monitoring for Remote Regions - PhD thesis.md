@@ -1,10 +1,11 @@
 ---
-layout: research
 hideNav: true
+layout: research
+hideToc: true
+year: '2022'
 orgs:
-  - 🇦🇺 University of Western Australia
-year: "2022"
+- "\U0001F1E6\U0001F1FA University of Western Australia"
+pdf: "/assets/research/papers/pdfs/THESIS_DOCTOR_OF_PHILOSOPHY_ANWAR_Omar_2022.pdf"
 ---
 
-[PDF](/assets/research/papers/pdfs/THESIS_DOCTOR_OF_PHILOSOPHY_ANWAR_Omar_2022.pdf)
 

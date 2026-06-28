@@ -2,33 +2,22 @@
 hideNav: true
 layout: research
 hideToc: true
-title: "Towards dense object tracking in a 2D honeybee hive"
-description: "U-Net segmentation with orientation-aware loss and temporal recurrence for dense markerless bee detection and tracking, with a 375k-instance labeled dataset."
-year: "2018"
+title: Towards dense object tracking in a 2D honeybee hive
+description: U-Net segmentation with orientation-aware loss and temporal recurrence for dense markerless bee detection and tracking, with a 375k-instance labeled dataset.
+year: '2018'
 orgs:
-  - 🇯🇵 Okinawa Institute of Science and Technology Graduate University
-  - 🇳🇱 VU University Amsterdam
+- "\U0001F1EF\U0001F1F5 Okinawa Institute of Science and Technology Graduate University"
+- "\U0001F1F3\U0001F1F1 VU University Amsterdam"
 topics:
-  - computer-vision
-  - bee-behaviour
+- computer-vision
+- bee-behaviour
 productAreas:
-  - hive-scanner
+- hive-scanner
 paperType: conference
+pdf: "/assets/ru/research/papers/pdfs/Bozek_Towards_Dense_Object_CVPR_2018_paper.pdf"
+abstract: От человеческих толп до клеток в ткани детекция объектов и эффективное отслеживание множества объектов в плотных конфигурациях остаются важной и нерешённой задачей. Ранее ограничения анализа изображений сводили исследования плотных групп либо к отслеживанию одной или нескольких маркированных особей, либо к грубому анализу динамики всей группы, и оба подхода дают неполную информацию. В этой работе авторы объединяют сверточные нейронные сети (CNN) с модельной средой двумерного пчелиного улья, чтобы автоматически распознавать всех особей в плотной группе по исходным изображениям. Для этого создаётся новая адаптированная схема разметки особей, а архитектура сегментации U-Net используется с функцией потерь, зависящей как от идентичности объекта, так и от его ориентации. Временные закономерности видеозаписи используются рекуррентным образом, что сокращает размер сети на 94% по сравнению с исходным U-Net при качестве, близком к человеческому уровню. Датасет содержит более 375 000 размеченных экземпляров пчёл на 720 видеокадрах с частотой 2 FPS. Метод корректно детектирует 96% особей с ошибкой по положению около 7% типичного размера тела и ошибкой по ориентации около 12°, и представляет собой важный шаг к автоматизированному плотному отслеживанию объектов в биологических системах.
 featured: true
 ---
-
-[PDF](pdfs/Bozek_Towards_Dense_Object_CVPR_2018_paper.pdf)
-
-<object data={require('./pdfs/Bozek_Towards_Dense_Object_CVPR_2018_paper.pdf').default} type="application/pdf" width="100%" height="800"></object>
-
-## Внешние ссылки
-
-- [CVPR 2018 open access (CVF)](https://openaccess.thecvf.com/content_cvpr_2018/papers/Bozek_Towards_Dense_Object_CVPR_2018_paper.pdf)
-- [Издатель (IEEE Xplore)](https://ieeexplore.ieee.org/document/8578773)
-
-## Аннотация
-
-От человеческих толп до клеток в ткани детекция объектов и эффективное отслеживание множества объектов в плотных конфигурациях остаются важной и нерешённой задачей. Ранее ограничения анализа изображений сводили исследования плотных групп либо к отслеживанию одной или нескольких маркированных особей, либо к грубому анализу динамики всей группы, и оба подхода дают неполную информацию. В этой работе авторы объединяют сверточные нейронные сети (CNN) с модельной средой двумерного пчелиного улья, чтобы автоматически распознавать всех особей в плотной группе по исходным изображениям. Для этого создаётся новая адаптированная схема разметки особей, а архитектура сегментации U-Net используется с функцией потерь, зависящей как от идентичности объекта, так и от его ориентации. Временные закономерности видеозаписи используются рекуррентным образом, что сокращает размер сети на 94% по сравнению с исходным U-Net при качестве, близком к человеческому уровню. Датасет содержит более 375 000 размеченных экземпляров пчёл на 720 видеокадрах с частотой 2 FPS. Метод корректно детектирует 96% особей с ошибкой по положению около 7% типичного размера тела и ошибкой по ориентации около 12°, и представляет собой важный шаг к автоматизированному плотному отслеживанию объектов в биологических системах.
 
 ## Актуальность для Gratheon
 

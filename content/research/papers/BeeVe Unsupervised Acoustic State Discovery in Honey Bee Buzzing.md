@@ -5,8 +5,11 @@ hideToc: true
 title: 'BeeVe: Unsupervised Acoustic State Discovery in Honey Bee Buzzing'
 description: Discovering structure in biological signals without supervision is a fundamental problem in computational intelligence, yet existing bioacoustic methods assume vocal production models or predefined semantic units, leaving.
 year: '2026'
+authors:
+- Hamze Hammami
+- Nidhal Abdulaziz
 orgs:
-- 🇺🇳 arXiv author-supplied preprint by Hamze Hammami and Nidhal Abdulaziz
+- "\U0001F1FA\U0001F1F3 arXiv author-supplied preprint by Hamze Hammami and Nidhal Abdulaziz"
 topics:
 - audio-acoustics
 - bee-behaviour
@@ -14,20 +17,10 @@ productAreas:
 - colony-health
 - monitoring-platform
 paperType: preprint
+pdf: "/assets/research/papers/pdfs/2605.07903v1.pdf"
+doi: 10.48550/arXiv.2605.07903
+abstract: 'Discovering structure in biological signals without supervision is a fundamental problem in computational intelligence, yet existing bioacoustic methods assume vocal production models or predefined semantic units, leaving non-vocal species poorly served. Honey bees are a compelling instance of this gap: their collective buzzing arises from mechanical muscle vibrations rather than any communicative vocal apparatus, and while evidence suggests these vibrations reflect colony physiological state, no existing vocal framework applies. This work introduces BeeVe, an unsupervised framework for acoustic state discovery in collective honey bee buzzing. BeeVe uses the self-supervised Patchout Spectrogram Transformer (PaSST) as a frozen feature extractor to produce general acoustic embeddings, then trains a Vector-Quantized Variational Autoencoder (VQ-VAE) entirely without labels on those embeddings, learning a finite discrete codebook of acoustic tokens directly from unlabelled hive audio. All learning applied to bee audio is unsupervised: no labels, pretext tasks, or contrastive objectives are used at any.'
 ---
-
-[PDF](pdfs/2605.07903v1.pdf)
-
-<object data={require('./pdfs/2605.07903v1.pdf').default} type="application/pdf" width="100%" height="800"></object>
-
-## External links
-
-- DOI: https://doi.org/10.48550/arXiv.2605.07903
-- arXiv: https://arxiv.org/abs/2605.07903
-
-## Abstract
-
-Discovering structure in biological signals without supervision is a fundamental problem in computational intelligence, yet existing bioacoustic methods assume vocal production models or predefined semantic units, leaving non-vocal species poorly served. Honey bees are a compelling instance of this gap: their collective buzzing arises from mechanical muscle vibrations rather than any communicative vocal apparatus, and while evidence suggests these vibrations reflect colony physiological state, no existing vocal framework applies. This work introduces BeeVe, an unsupervised framework for acoustic state discovery in collective honey bee buzzing. BeeVe uses the self-supervised Patchout Spectrogram Transformer (PaSST) as a frozen feature extractor to produce general acoustic embeddings, then trains a Vector-Quantized Variational Autoencoder (VQ-VAE) entirely without labels on those embeddings, learning a finite discrete codebook of acoustic tokens directly from unlabelled hive audio. All learning applied to bee audio is unsupervised: no labels, pretext tasks, or contrastive objectives are used at any.
 
 ## Relevancy to Gratheon
 

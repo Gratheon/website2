@@ -6,27 +6,18 @@ title: 'Defined exposure of honey bee colonies to simulated radiofrequency elect
 description: Urbanization and the increasing use of wireless technologies lead to higher emission rates of radiofrequency electromagnetic ﬁelds (RF-EMF) in populated areas.
 year: '2023'
 orgs:
-- 🇩🇪 University of Hohenheim
-- 🇩🇪 Karlsruhe Institute of Technology
+- "\U0001F1E9\U0001F1EA University of Hohenheim"
+- "\U0001F1E9\U0001F1EA Karlsruhe Institute of Technology"
 topics:
 - iot-sensors
 - bee-behaviour
 productAreas:
 - colony-health
 paperType: journal
+pdf: "/assets/research/papers/pdfs/wifi-exposure.pdf"
+doi: 10.1016/j.scitotenv.2023.165211
+abstract: Urbanization and the increasing use of wireless technologies lead to higher emission rates of radiofrequency electromagnetic ﬁelds (RF-EMF) in populated areas. This anthropogenic electromagnetic radiation is a form of environmental pollution and a potential stressor on bees or other ﬂying insects. Cities often have a high density of wireless devices operating on microwave frequencies, which generate electromagnetic frequencies e.g. in the 2.4 and 5.8 GHz bands commonly used by the wireless technologies. To date the effects of nonionizing electromagnetic radiation on the vitality and behavior of insects are poorly understood. In our experiment we used honey bees as model organisms and analyzed the effects of deﬁned exposures to 2.4 and 5.8 GHz on brood development, longevity and homing ability under ﬁeld.
 ---
-
-[PDF](pdfs/wifi-exposure.pdf)
-
-<object data={require('./pdfs/wifi-exposure.pdf').default} type="application/pdf" width="100%" height="800"></object>
-
-## External links
-
-- DOI: https://doi.org/10.1016/j.scitotenv.2023.165211
-
-## Abstract
-
-Urbanization and the increasing use of wireless technologies lead to higher emission rates of radiofrequency electromagnetic ﬁelds (RF-EMF) in populated areas. This anthropogenic electromagnetic radiation is a form of environmental pollution and a potential stressor on bees or other ﬂying insects. Cities often have a high density of wireless devices operating on microwave frequencies, which generate electromagnetic frequencies e.g. in the 2.4 and 5.8 GHz bands commonly used by the wireless technologies. To date the effects of nonionizing electromagnetic radiation on the vitality and behavior of insects are poorly understood. In our experiment we used honey bees as model organisms and analyzed the effects of deﬁned exposures to 2.4 and 5.8 GHz on brood development, longevity and homing ability under ﬁeld.
 
 ## Relevancy to Gratheon
 

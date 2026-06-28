@@ -6,30 +6,20 @@ title: Bio-Hybrid Systems for Ecosystem Level Effects
 description: In a time marked by ecological decay and by the perspective of a severe backlash of this ecosystem decay and climate devastation onto human society, bold moves that employ novel technology to counteract this decline are required.
 year: '2022'
 orgs:
-- 🇦🇹 University of Graz
-- 🇩🇪 Humboldt University of Berlin
-- 🇨🇭 École Polytechnique Fédérale de Lausanne
-- 🇩🇪 Freie Universität Berlin
-- 🇱🇻 Latvia University of Life Sciences and Technologies
+- "\U0001F1E6\U0001F1F9 University of Graz"
+- "\U0001F1E9\U0001F1EA Humboldt University of Berlin"
+- "\U0001F1E8\U0001F1ED École Polytechnique Fédérale de Lausanne"
+- "\U0001F1E9\U0001F1EA Freie Universität Berlin"
+- "\U0001F1F1\U0001F1FB Latvia University of Life Sciences and Technologies"
 topics:
 - robotics
 - bee-behaviour
 productAreas:
 - robotics
 paperType: conference
+pdf: "/assets/research/papers/pdfs/isal_a_00396.pdf"
+abstract: 'In a time marked by ecological decay and by the perspective of a severe backlash of this ecosystem decay and climate devastation onto human society, bold moves that employ novel technology to counteract this decline are required. We present a novel concept of employing Artificial Life technology, in the form of cybernetically enhanced bio-hybrid superorganisms as a countermeasure and as a contingency plan. We describe our general conceptual paradigm, consisting of three interacting action plans, namely: (1) Organismic Augmentation; (2) BioHybrid Socialization and (3) Ecosystem Hacking, which together compose a method to create a novel agent for ecosystem stabilization. We demonstrate, through early results from the research project HIVEOPOLIS, a specific way how classic Artificial Life technologies can create such a living, ecologically active and technologically-augmented superorganism that operates outside in the field. These technologies range from cellular automata and biomimetic robots to novel and sustainable biocompatible.'
 ---
-
-[PDF](pdfs/isal_a_00396.pdf)
-
-<object data={require('./pdfs/isal_a_00396.pdf').default} type="application/pdf" width="100%" height="800"></object>
-
-## External links
-
-- [Local PDF](pdfs/isal_a_00396.pdf)
-
-## Abstract
-
-In a time marked by ecological decay and by the perspective of a severe backlash of this ecosystem decay and climate devastation onto human society, bold moves that employ novel technology to counteract this decline are required. We present a novel concept of employing Artificial Life technology, in the form of cybernetically enhanced bio-hybrid superorganisms as a countermeasure and as a contingency plan. We describe our general conceptual paradigm, consisting of three interacting action plans, namely: (1) Organismic Augmentation; (2) BioHybrid Socialization and (3) Ecosystem Hacking, which together compose a method to create a novel agent for ecosystem stabilization. We demonstrate, through early results from the research project HIVEOPOLIS, a specific way how classic Artificial Life technologies can create such a living, ecologically active and technologically-augmented superorganism that operates outside in the field. These technologies range from cellular automata and biomimetic robots to novel and sustainable biocompatible.
 
 ## Relevancy to Gratheon
 

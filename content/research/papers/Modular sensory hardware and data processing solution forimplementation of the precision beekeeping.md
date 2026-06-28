@@ -5,27 +5,20 @@ hideToc: true
 title: Modular sensory hardware and data processing solution forimplementation of the precision beekeeping
 description: For successful implementation of the Precision Apiculture (Precision Beekeeping) approach, immense amount of bee colony data collection and processing using various hardware and software solutions is needed.
 year: '2019'
+authors:
+- Merlin
 orgs:
-- 🇱🇻 Latvia University of Life Sciences and Technologies
-- 🇩🇪 University of Kassel
+- "\U0001F1F1\U0001F1FB Latvia University of Life Sciences and Technologies"
+- "\U0001F1E9\U0001F1EA University of Kassel"
 topics:
 - iot-sensors
 productAreas:
 - monitoring-platform
 paperType: journal
+pdf: "/assets/research/papers/pdfs/Vol17No2_Komasilovs.pdf"
+doi: 10.15159/AR.19.038
+abstract: For successful implementation of the Precision Apiculture (Precision Beekeeping) approach, immense amount of bee colony data collection and processing using various hardware and software solutions is needed. This paper presents standalone wireless hardware system for bee colony main parameters monitoring (temperature, weight and sound). Monitoring system is based on Raspberry Pi 3 computer with connected sensors. Power supply is granted by the solar panel for reliable operation in places without constant source for power. For convenient data management cloud based data warehouse (DW) is proposed and developed for ease data storage and.
 ---
-
-[PDF](pdfs/Vol17No2_Komasilovs.pdf)
-
-<object data={require('./pdfs/Vol17No2_Komasilovs.pdf').default} type="application/pdf" width="100%" height="800"></object>
-
-## External links
-
-- DOI: https://doi.org/10.15159/AR.19.038
-
-## Abstract
-
-For successful implementation of the Precision Apiculture (Precision Beekeeping) approach, immense amount of bee colony data collection and processing using various hardware and software solutions is needed. This paper presents standalone wireless hardware system for bee colony main parameters monitoring (temperature, weight and sound). Monitoring system is based on Raspberry Pi 3 computer with connected sensors. Power supply is granted by the solar panel for reliable operation in places without constant source for power. For convenient data management cloud based data warehouse (DW) is proposed and developed for ease data storage and.
 
 ## Relevancy to Gratheon
 

@@ -2,42 +2,30 @@
 hideNav: true
 layout: research
 hideToc: true
-title: "Autonomous tracking of honey bee behaviors over long-term periods with cooperating robots"
-description: "AROBA robotic system for 24/7 autonomous observation of queen bee behavior and colony dynamics in a natural hive, collecting continuous data over 30-day periods."
-year: "2024"
+title: Autonomous tracking of honey bee behaviors over long-term periods with cooperating robots
+description: AROBA robotic system for 24/7 autonomous observation of queen bee behavior and colony dynamics in a natural hive, collecting continuous data over 30-day periods.
+year: '2024'
 orgs:
-  - 🇨🇿 Czech Technical University
-  - 🇦🇹 University of Graz
-  - 🇬🇧 Durham University
-  - 🇹🇷 Middle East Technical University
+- "\U0001F1E8\U0001F1FF Czech Technical University"
+- "\U0001F1E6\U0001F1F9 University of Graz"
+- "\U0001F1EC\U0001F1E7 Durham University"
+- "\U0001F1F9\U0001F1F7 Middle East Technical University"
 topics:
-  - robotics
-  - computer-vision
-  - bee-behaviour
+- robotics
+- computer-vision
+- bee-behaviour
 productAreas:
-  - robotics
+- robotics
 paperType: journal
+pdf: "/assets/research/papers/pdfs/scirobotics.adn6848.pdf"
+doi: 10.1126/scirobotics.adn6848
+abstract: Digital and mechatronic methods, paired with artificial intelligence and machine learning, are transformative technologies in behavioral science and biology. The central element of the most important pollinator species — honey bees — is the colony's queen. Because honey bee self-regulation is complex and studying queens in their natural colony context is difficult, the behavioral strategies of these organisms have not been widely studied. The authors created the AROBA autonomous robotic observation system aimed at continuous observation of the queen and her interactions with worker bees and comb cells, generating behavioral datasets of exceptional length and quality. Key behavioral metrics of the queen and her social embedding within the colony were gathered continuously for 24 hours a day over a period of 30 days, demonstrating the system's capability to extract key behavioral metrics at microscopic, mesoscopic, and macroscopic system levels. Long-term continuous observations yielded large amounts of high-definition video data beyond the capabilities of humans or stationary cameras, enabling a deeper understanding of honey bees' swarm-intelligent self-regulation.
 featured: true
 ---
-
-[PDF](pdfs/scirobotics.adn6848.pdf)
-
-<object data={require('./pdfs/scirobotics.adn6848.pdf').default} type="application/pdf" width="100%" height="800"></object>
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/Wv_iQ3VHyeQ" title="Autonomous tracking of honeybee behaviors over long-term periods with cooperating robots" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/RtaotaaB5SM?list=PLwJcdKVRxEGLCrmPlRZjI0PEkswdf8O9g" title="Dashboard of the AROBA system" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-## External links
-
-- DOI: https://doi.org/10.1126/scirobotics.adn6848
-- [Publisher (Science Robotics)](https://www.science.org/doi/10.1126/scirobotics.adn6848)
-- [Project home page (RoboRoyale)](https://roboroyale.eu/home.html)
-- [Twitter/X](https://x.com/EU_RoboRoyale)
-
-## Abstract
-
-Digital and mechatronic methods, paired with artificial intelligence and machine learning, are transformative technologies in behavioral science and biology. The central element of the most important pollinator species — honey bees — is the colony's queen. Because honey bee self-regulation is complex and studying queens in their natural colony context is difficult, the behavioral strategies of these organisms have not been widely studied. The authors created the AROBA autonomous robotic observation system aimed at continuous observation of the queen and her interactions with worker bees and comb cells, generating behavioral datasets of exceptional length and quality. Key behavioral metrics of the queen and her social embedding within the colony were gathered continuously for 24 hours a day over a period of 30 days, demonstrating the system's capability to extract key behavioral metrics at microscopic, mesoscopic, and macroscopic system levels. Long-term continuous observations yielded large amounts of high-definition video data beyond the capabilities of humans or stationary cameras, enabling a deeper understanding of honey bees' swarm-intelligent self-regulation.
 
 ## Relevancy to Gratheon
 

@@ -6,26 +6,16 @@ title: Smart Beehive Monitoring for Remote Regions - PhD thesis
 description: his thesis is presented for the degree of Doctor of Philosophy of Electronic Engineering of The University of Western Australia, July, 2022 © Copyright 2022 by Omar Anwar Dedicated to the one who endured all the stings. iv
 year: '2022'
 orgs:
-- 🇦🇺 University of Western Australia
+- "\U0001F1E6\U0001F1FA University of Western Australia"
 topics:
 - iot-sensors
 - reviews-surveys
 productAreas:
 - monitoring-platform
 paperType: thesis
+pdf: "/assets/research/papers/pdfs/THESIS_DOCTOR_OF_PHILOSOPHY_ANWAR_Omar_2022.pdf"
+abstract: his thesis is presented for the degree of Doctor of Philosophy of Electronic Engineering of The University of Western Australia, July, 2022 © Copyright 2022 by Omar Anwar Dedicated to the one who endured all the stings. iv.
 ---
-
-[PDF](pdfs/THESIS_DOCTOR_OF_PHILOSOPHY_ANWAR_Omar_2022.pdf)
-
-<object data={require('./pdfs/THESIS_DOCTOR_OF_PHILOSOPHY_ANWAR_Omar_2022.pdf').default} type="application/pdf" width="100%" height="800"></object>
-
-## External links
-
-- [Local PDF](pdfs/THESIS_DOCTOR_OF_PHILOSOPHY_ANWAR_Omar_2022.pdf)
-
-## Abstract
-
-his thesis is presented for the degree of Doctor of Philosophy of Electronic Engineering of The University of Western Australia, July, 2022 © Copyright 2022 by Omar Anwar Dedicated to the one who endured all the stings. iv.
 
 ## Relevancy to Gratheon
 

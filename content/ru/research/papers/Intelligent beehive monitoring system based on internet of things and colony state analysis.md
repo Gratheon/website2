@@ -1,15 +1,16 @@
 ---
-layout: research
 hideNav: true
+layout: research
+hideToc: true
+authors:
+- Yiyao Zheng
 orgs:
-  - 🇲🇾 Universiti Teknologi MARA
-  - 🇨🇳 Peking University Shenzhen Graduate School
-  - 🇨🇳 Xiamen University
-  - 🇨🇳 Fujian Agriculture And Forestry University
-  - 🇨🇳 Quanzhou University of Information Engineering
+- "\U0001F1F2\U0001F1FE Universiti Teknologi MARA"
+- "\U0001F1E8\U0001F1F3 Peking University Shenzhen Graduate School"
+- "\U0001F1E8\U0001F1F3 Xiamen University"
+- "\U0001F1E8\U0001F1F3 Fujian Agriculture And Forestry University"
+- "\U0001F1E8\U0001F1F3 Quanzhou University of Information Engineering"
+pdf: "/assets/research/papers/pdfs/1-s2.0-S2772375524001898-main.pdf"
 ---
 
-[PDF](/assets/research/papers/pdfs/1-s2.0-S2772375524001898-main.pdf)
-
-<object data="/assets/research/papers/pdfs/1-s2.0-S2772375524001898-main.pdf" type="application/pdf" width="100%" height="800"></object>
 

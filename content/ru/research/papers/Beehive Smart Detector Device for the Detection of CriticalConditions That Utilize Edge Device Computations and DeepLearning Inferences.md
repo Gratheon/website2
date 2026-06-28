@@ -1,11 +1,13 @@
 ---
-title: Beehive Smart Detector Device for the Detection of CriticalConditions That Utilize Edge Device Computations and DeepLearning Inferences
 layout: research
-year: "2024"
+hideToc: true
+title: Beehive Smart Detector Device for the Detection of CriticalConditions That Utilize Edge Device Computations and DeepLearning Inferences
+year: '2024'
+authors:
+- Sotirios Kontogiannis (S.K.)
 orgs:
-  - 🇬🇷 University of Ioannina
+- "\U0001F1EC\U0001F1F7 University of Ioannina"
+pdf: "/assets/research/papers/pdfs/sensors-24-05444-v3.pdf"
 ---
 
-[PDF](/assets/research/papers/pdfs/sensors-24-05444-v3.pdf)
 
-<object data="/assets/research/papers/pdfs/sensors-24-05444-v3.pdf" type="application/pdf" width="100%" height="800"></object>

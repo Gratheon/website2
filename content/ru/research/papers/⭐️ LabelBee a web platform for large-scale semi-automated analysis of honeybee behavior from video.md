@@ -2,36 +2,25 @@
 hideNav: true
 layout: research
 hideToc: true
-title: "LabelBee: a web platform for large-scale semi-automated analysis of honeybee behavior from video"
-description: "Web platform combining human annotation and AI for large-scale labeling of honeybee entrance videos, extracting individual trajectories, pollen events, fanning, and behavioral tags."
-year: "2019"
+title: 'LabelBee: a web platform for large-scale semi-automated analysis of honeybee behavior from video'
+description: Web platform combining human annotation and AI for large-scale labeling of honeybee entrance videos, extracting individual trajectories, pollen events, fanning, and behavioral tags.
+year: '2019'
 orgs:
-  - 🇵🇷 University of Puerto Rico
+- "\U0001F1F5\U0001F1F7 University of Puerto Rico"
 topics:
-  - computer-vision
-  - bee-behaviour
-  - datasets-benchmarks
+- computer-vision
+- bee-behaviour
+- datasets-benchmarks
 productAreas:
-  - gate-tracker
+- gate-tracker
 paperType: conference
+pdf: "/assets/ru/research/papers/pdfs/3359115.3359120.pdf"
+doi: 10.1145/3359115.3359120
+abstract: 'LabelBee — это браузерная система аннотирования и анализа больших объёмов видео у летка с медоносными пчёлами, собранных в естественных условиях жизни пчелиной семьи. Платформа объединяет веб-интерфейс, серверное хранилище, автоматическую предобработку и анализ на базе Jupyter, чтобы биологи могли размечать пчёл, валидировать детекции, исправлять траектории и аннотировать события, такие как вход, выход, перенос пыльцы и вентилирование. Система поддерживает пчёл с метками через детекцию AprilTag, детекцию и трекинг немаркированных пчёл, классификацию пыльцы, распознавание вентилирования, оценку позы и экспорт файлов событий. В статье подчёркивается human-in-the-loop workflow: аннотации экспертов и волонтёров повышают качество данных, эти метки обучают автоматические модели, а результаты моделей возвращаются в GUI для валидации и курирования. Такая архитектура позволяет строить крупномасштабные поведенческие датасеты и визуальную аналитику, например почасовые подсчёты входов/выходов у летка и индивидуальные актограммы на протяжении нескольких дней.'
 featured: true
 ---
 
-[PDF](pdfs/3359115.3359120.pdf)
-
 ![](pdfs/Screenshot 2023-10-25 at 02.28.50.png)
-
-<object data={require('./pdfs/3359115.3359120.pdf').default} type="application/pdf" width="100%" height="800"></object>
-
-## Внешние ссылки
-
-- DOI: https://doi.org/10.1145/3359115.3359120
-- [Издатель (ACM Digital Library)](https://dl.acm.org/doi/10.1145/3359115.3359120)
-- [GitHub (LabelBee)](https://github.com/rmegret/labelbee)
-
-## Аннотация
-
-LabelBee — это браузерная система аннотирования и анализа больших объёмов видео у летка с медоносными пчёлами, собранных в естественных условиях жизни пчелиной семьи. Платформа объединяет веб-интерфейс, серверное хранилище, автоматическую предобработку и анализ на базе Jupyter, чтобы биологи могли размечать пчёл, валидировать детекции, исправлять траектории и аннотировать события, такие как вход, выход, перенос пыльцы и вентилирование. Система поддерживает пчёл с метками через детекцию AprilTag, детекцию и трекинг немаркированных пчёл, классификацию пыльцы, распознавание вентилирования, оценку позы и экспорт файлов событий. В статье подчёркивается human-in-the-loop workflow: аннотации экспертов и волонтёров повышают качество данных, эти метки обучают автоматические модели, а результаты моделей возвращаются в GUI для валидации и курирования. Такая архитектура позволяет строить крупномасштабные поведенческие датасеты и визуальную аналитику, например почасовые подсчёты входов/выходов у летка и индивидуальные актограммы на протяжении нескольких дней.
 
 ## Актуальность для Gratheon
 

@@ -5,30 +5,23 @@ hideToc: true
 title: Social networks predict the life and death of honeybees
 description: s 1234567890():,; Benjamin Wild 1,8 ✉, David M.
 year: '2021'
+authors:
+- Benjamin Wild
 orgs:
-- 🇩🇪 Freie Universität Berlin
-- 🇩🇪 Robert Koch Institute
-- 🇩🇪 University of Konstanz
-- 🇺🇸 Auburn University
-- 🇺🇸 University of Hohenheim
+- "\U0001F1E9\U0001F1EA Freie Universität Berlin"
+- "\U0001F1E9\U0001F1EA Robert Koch Institute"
+- "\U0001F1E9\U0001F1EA University of Konstanz"
+- "\U0001F1FA\U0001F1F8 Auburn University"
+- "\U0001F1FA\U0001F1F8 University of Hohenheim"
 topics:
 - bee-behaviour
 productAreas:
 - colony-health
 paperType: journal
+pdf: "/assets/research/papers/pdfs/s41467-021-21212-5.pdf"
+doi: 10.1038/s41467-021-21212-5
+abstract: s 1234567890():,; Benjamin Wild 1,8 ✉, David M. Dormagen 1,8, Adrian Zachariae2,8, Michael L. Couzin 3,4,5 & Tim Landgraf 1 ✉ 3,4,5, In complex societies, individuals’ roles are reﬂected by interactions with other conspeciﬁcs. Honey bees (Apis mellifera) generally change tasks as they age, but developmental trajectories of individuals can vary drastically due to physiological and environmental factors.
 ---
-
-[PDF](pdfs/s41467-021-21212-5.pdf)
-
-<object data={require('./pdfs/s41467-021-21212-5.pdf').default} type="application/pdf" width="100%" height="800"></object>
-
-## External links
-
-- DOI: https://doi.org/10.1038/s41467-021-21212-5
-
-## Abstract
-
-s 1234567890():,; Benjamin Wild 1,8 ✉, David M. Dormagen 1,8, Adrian Zachariae2,8, Michael L. Couzin 3,4,5 & Tim Landgraf 1 ✉ 3,4,5, In complex societies, individuals’ roles are reﬂected by interactions with other conspeciﬁcs. Honey bees (Apis mellifera) generally change tasks as they age, but developmental trajectories of individuals can vary drastically due to physiological and environmental factors.
 
 ## Relevancy to Gratheon
 

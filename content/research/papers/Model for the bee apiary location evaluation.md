@@ -5,28 +5,21 @@ hideToc: true
 title: Model for the bee apiary location evaluation
 description: Honeybees are predominant and ecologically as well as economically important group of pollinators in most geographical regions.
 year: '2020'
+authors:
+- merlin.raud
 orgs:
-- 🇱🇻 Latvia University of Life Sciences and Technologies
-- 🇩🇪 Humboldt University of Berlin
+- "\U0001F1F1\U0001F1FB Latvia University of Life Sciences and Technologies"
+- "\U0001F1E9\U0001F1EA Humboldt University of Berlin"
 topics:
 - pollination-ecology
 - iot-sensors
 productAreas:
 - monitoring-platform
 paperType: journal
+pdf: "/assets/research/papers/pdfs/AR2020_Vol18SI2_Komasilova.pdf"
+doi: 10.15159/AR.20.090
+abstract: Honeybees are predominant and ecologically as well as economically important group of pollinators in most geographical regions. As a result of analysing current situation in studies and practices, a conclusion was drawn that beekeeping sector is in decline. The identified reasons for this are land-use intensification, monocropping, pesticide poisoning, colony diseases, parasites and adverse climate. One of the solutions is to find a proper bee colony harvesting location and use luring methods to attract bees to this location. Usually beekeepers choose the apiary location based on their own previous experience and sometimes the position is not optimal for the.
 ---
-
-[PDF](pdfs/AR2020_Vol18SI2_Komasilova.pdf)
-
-<object data={require('./pdfs/AR2020_Vol18SI2_Komasilova.pdf').default} type="application/pdf" width="100%" height="800"></object>
-
-## External links
-
-- DOI: https://doi.org/10.15159/AR.20.090
-
-## Abstract
-
-Honeybees are predominant and ecologically as well as economically important group of pollinators in most geographical regions. As a result of analysing current situation in studies and practices, a conclusion was drawn that beekeeping sector is in decline. The identified reasons for this are land-use intensification, monocropping, pesticide poisoning, colony diseases, parasites and adverse climate. One of the solutions is to find a proper bee colony harvesting location and use luring methods to attract bees to this location. Usually beekeepers choose the apiary location based on their own previous experience and sometimes the position is not optimal for the.
 
 ## Relevancy to Gratheon
 

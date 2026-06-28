@@ -1,8 +1,9 @@
 ---
-sidebar_position: 5
-title: Научные статьи
 layout: research
+hideToc: true
+title: Научные статьи
 hide_table_of_contents: true
+sidebar_position: 5
 ---
 
 ## Команды

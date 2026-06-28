@@ -5,27 +5,24 @@ hideToc: true
 title: Keypoint-Based Bee Orientation Estimation and Ramp Detection at the Hive Entrance for Bee Behavior Identification System
 description: This paper addresses the challenge of accurately estimating bee orientations on beehive landing boards, which is crucial for optimizing beekeeping practices and enhancing agricultural productivity.
 year: '2024'
+authors:
+- Tomyslav Sledevič
+- Artūras Serackis
+- Dalius Matuzevičius
+- Darius Plonis
+- Darius Andriukaitis
 orgs:
-- 🇱🇹 Vilnius Gediminas Technical University
+- "\U0001F1F1\U0001F1F9 Vilnius Gediminas Technical University"
 topics:
 - computer-vision
 - bee-behaviour
 productAreas:
 - gate-tracker
 paperType: journal
+pdf: "/assets/research/papers/pdfs/agriculture-14-01890.pdf"
+doi: 10.3390/agriculture14111890
+abstract: 'This paper addresses the challenge of accurately estimating bee orientations on beehive landing boards, which is crucial for optimizing beekeeping practices and enhancing agricultural productivity. The research utilizes YOLOv8 pose models, trained on a dataset created using an open-source computer vision annotation tool. The annotation process involves associating bounding boxes with keypoints to represent bee orientations, with each bee annotated using two keypoints: one for the head and one for the stinger. The YOLOv8-pose models demonstrate high precision, achieving 98% accuracy for both bounding box and keypoint detection in 1024 × 576 px images. However, trade-offs between model size and processing speed are addressed, with the smaller nano model reaching 67 frames per second on 640 × 384 px.'
 ---
-
-[PDF](pdfs/agriculture-14-01890.pdf)
-
-<object data={require('./pdfs/agriculture-14-01890.pdf').default} type="application/pdf" width="100%" height="800"></object>
-
-## External links
-
-- DOI: https://doi.org/10.3390/agriculture14111890
-
-## Abstract
-
-This paper addresses the challenge of accurately estimating bee orientations on beehive landing boards, which is crucial for optimizing beekeeping practices and enhancing agricultural productivity. The research utilizes YOLOv8 pose models, trained on a dataset created using an open-source computer vision annotation tool. The annotation process involves associating bounding boxes with keypoints to represent bee orientations, with each bee annotated using two keypoints: one for the head and one for the stinger. The YOLOv8-pose models demonstrate high precision, achieving 98% accuracy for both bounding box and keypoint detection in 1024 × 576 px images. However, trade-offs between model size and processing speed are addressed, with the smaller nano model reaching 67 frames per second on 640 × 384 px.
 
 ## Relevancy to Gratheon
 

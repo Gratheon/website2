@@ -1,16 +1,15 @@
 ---
 hideNav: true
-year: "2018"
-orgs:
-  - 🇦🇹 Vienna University of Technology
-  - 🇪🇸 Universidad de Oviedo
-  - 🇪🇸 Universitat de Barcelona
-title: A Preliminary Study of Image Analysis forParasite Detection on Honey Bees
 layout: research
+hideToc: true
+title: A Preliminary Study of Image Analysis forParasite Detection on Honey Bees
+year: '2018'
+orgs:
+- "\U0001F1E6\U0001F1F9 Vienna University of Technology"
+- "\U0001F1EA\U0001F1F8 Universidad de Oviedo"
+- "\U0001F1EA\U0001F1F8 Universitat de Barcelona"
+pdf: "/assets/research/papers/pdfs/162572124.pdf"
 hide_table_of_contents: true
 ---
 
-[PDF](/assets/research/papers/pdfs/162572124.pdf)
-
-<object data="/assets/research/papers/pdfs/162572124.pdf" type="application/pdf" width="100%" height="800"></object>
 

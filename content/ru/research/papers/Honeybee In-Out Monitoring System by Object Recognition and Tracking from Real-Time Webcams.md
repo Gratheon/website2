@@ -1,12 +1,15 @@
 ---
 hideNav: true
-title: Honeybee In-Out Monitoring System by Object Recognition and Tracking from Real-Time Webcams
 layout: research
-year: "2021"
+hideToc: true
+title: Honeybee In-Out Monitoring System by Object Recognition and Tracking from Real-Time Webcams
+year: '2021'
+authors:
+- NuriMedia Contents Team
 orgs:
-  - 🇰🇷 Incheon National University
+- "\U0001F1F0\U0001F1F7 Incheon National University"
+pdf: "/assets/research/papers/pdfs/31356.pdf"
 hide_table_of_contents: true
 ---
 
-[PDF](/assets/research/papers/pdfs/31356.pdf)
 

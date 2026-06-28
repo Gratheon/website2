@@ -6,27 +6,18 @@ title: Impact of the Precision Beekeeping on the Living Environment
 description: Bees are insects of great importance to humanity and the living environment.
 year: '2022'
 orgs:
-- 🇷🇸 University of Niš
-- 🇷🇸 Belgrade Metropolitan University
+- "\U0001F1F7\U0001F1F8 University of Niš"
+- "\U0001F1F7\U0001F1F8 Belgrade Metropolitan University"
 topics:
 - iot-sensors
 - bee-behaviour
 productAreas:
 - monitoring-platform
 paperType: conference
+pdf: "/assets/research/papers/pdfs/Impact_of_the_Precision_Beekeeping_on_th.pdf"
+doi: 10.22190/FUWLEP2201049P
+abstract: Bees are insects of great importance to humanity and the living environment. Bees are the main pollinators and plants are dependent on them. Consequently, global food production is dependent on bees and their work. In order to have a healthy living environment, it is of great importance for humans to help bees to be as healthy and productive as possible. The relationship between humans and bees is more than 9000 years old, but beekeeping principles and tools invented more than 200 years ago are still in.
 ---
-
-[PDF](pdfs/Impact_of_the_Precision_Beekeeping_on_th.pdf)
-
-<object data={require('./pdfs/Impact_of_the_Precision_Beekeeping_on_th.pdf').default} type="application/pdf" width="100%" height="800"></object>
-
-## External links
-
-- DOI: https://doi.org/10.22190/FUWLEP2201049P
-
-## Abstract
-
-Bees are insects of great importance to humanity and the living environment. Bees are the main pollinators and plants are dependent on them. Consequently, global food production is dependent on bees and their work. In order to have a healthy living environment, it is of great importance for humans to help bees to be as healthy and productive as possible. The relationship between humans and bees is more than 9000 years old, but beekeeping principles and tools invented more than 200 years ago are still in.
 
 ## Relevancy to Gratheon
 

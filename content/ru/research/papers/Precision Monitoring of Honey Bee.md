@@ -1,13 +1,19 @@
 ---
 hideNav: true
-title: "Precision Monitoring of Honey Bee (Hymenoptera: Apidae) Activity and Pollen Diversity during Pollination to EvaluateColony Health"
 layout: research
-year: "2023"
+hideToc: true
+title: 'Precision Monitoring of Honey Bee (Hymenoptera: Apidae) Activity and Pollen Diversity during Pollination to EvaluateColony Health'
+year: '2023'
+authors:
+- Aimee C. McKinnon
+- Luke Collins
+- Jennifer L. Wood
+- Nick Murphy
+- Ashley E. Franks
+- Martin J. Steinbauer
 orgs:
-  - 🇦🇺 La Trobe University
+- "\U0001F1E6\U0001F1FA La Trobe University"
+pdf: "/assets/research/papers/pdfs/insects-14-00095.pdf"
 ---
 
-[PDF](/assets/research/papers/pdfs/insects-14-00095.pdf)
-
-<object data="/assets/research/papers/pdfs/insects-14-00095.pdf" type="application/pdf" width="100%" height="800"></object>
 

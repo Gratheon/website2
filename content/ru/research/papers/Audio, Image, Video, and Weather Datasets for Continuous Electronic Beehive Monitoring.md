@@ -1,33 +1,26 @@
 ---
 hideNav: true
-year: "2021"
-orgs:
-  - 🇺🇸 Utah State University
-title: Audio, Image, Video, and Weather Datasets for Continuous Electronic Beehive Monitoring
 layout: research
-hide_table_of_contents: true
+hideToc: true
+title: Audio, Image, Video, and Weather Datasets for Continuous Electronic Beehive Monitoring
 description: In 2014, we designed and implemented BeePi, a multi-sensor electronic beehive monitoring system.
+year: '2021'
+authors:
+- Vladimir Kulyukin
+orgs:
+- "\U0001F1FA\U0001F1F8 Utah State University"
 topics:
-  - datasets-benchmarks
-  - audio-acoustics
-  - iot-sensors
+- datasets-benchmarks
+- audio-acoustics
+- iot-sensors
 productAreas:
-  - monitoring-platform
+- monitoring-platform
 paperType: journal
+pdf: "/assets/research/papers/pdfs/applsci-11-04632.pdf"
+doi: 10.3390/app11104632
+abstract: В 2014 году авторы разработали и внедрили BeePi — многосенсорную систему электронного мониторинга улья. С тех пор мониторы BeePi, размещённые на разных пасеках в северной части штата Юта, использовались для разработки алгоритмов обработки аудио, изображений и видео, предназначенных для анализа трафика фуражиров вблизи ульев Лангстрота. После первой публикации о BeePi в 2016 году исследователи и практики неоднократно запрашивали датасеты, использованные в этих работах. Основная цель статьи — предоставить единый и подробный справочный источник по наборам данных, которые авторы на данный момент подготовили для своих исследований. Авторы надеются, что эти датасеты станут стабильными бенчмарками для непрерывного электронного мониторинга ульев, помогут заинтересованным сторонам проверять результаты и исправлять ошибки, а также продвинут уровень исследований в области непрерывного электронного мониторинга ульев и связанных направлений AI, machine learning и data.
+hide_table_of_contents: true
 ---
-
-[PDF](/assets/research/papers/pdfs/applsci-11-04632.pdf)
-
-<object data="/assets/research/papers/pdfs/applsci-11-04632.pdf" type="application/pdf" width="100%" height="800"></object>
-
-## Внешние ссылки
-
-- DOI: https://doi.org/10.3390/app11104632
-- [Original URL](https://www.mdpi.com/2076-3417/11/10/4632)
-
-## Аннотация
-
-В 2014 году авторы разработали и внедрили BeePi — многосенсорную систему электронного мониторинга улья. С тех пор мониторы BeePi, размещённые на разных пасеках в северной части штата Юта, использовались для разработки алгоритмов обработки аудио, изображений и видео, предназначенных для анализа трафика фуражиров вблизи ульев Лангстрота. После первой публикации о BeePi в 2016 году исследователи и практики неоднократно запрашивали датасеты, использованные в этих работах. Основная цель статьи — предоставить единый и подробный справочный источник по наборам данных, которые авторы на данный момент подготовили для своих исследований. Авторы надеются, что эти датасеты станут стабильными бенчмарками для непрерывного электронного мониторинга ульев, помогут заинтересованным сторонам проверять результаты и исправлять ошибки, а также продвинут уровень исследований в области непрерывного электронного мониторинга ульев и связанных направлений AI, machine learning и data.
 
 ## Актуальность для Gratheon
 

@@ -5,28 +5,22 @@ hideToc: true
 title: 'On Image Classification in Video Analysis of Omnidirectional Apis Mellifera Traffic: Random Reinforced Forests vs. Shallow Convolutional Networks'
 description: Omnidirectional honeybee traffic is the number of bees moving in arbitrary directions in close proximity to the landing pad of a beehive over a period of time.
 year: '2021'
+authors:
+- Vladimir Kulyukin
+- Nikhil Ganta
+- Anastasiia Tkachenko
 orgs:
-- 🇺🇸 Utah State University
+- "\U0001F1FA\U0001F1F8 Utah State University"
 topics:
 - computer-vision
 - bee-behaviour
 productAreas:
 - gate-tracker
 paperType: journal
+pdf: "/assets/research/papers/pdfs/applsci-11-08141-v3.pdf"
+doi: 10.3390/app11178141
+abstract: 'Omnidirectional honeybee traffic is the number of bees moving in arbitrary directions in close proximity to the landing pad of a beehive over a period of time. Automated video analysis of such traffic is critical for continuous colony health assessment. In our previous research, we proposed a two-tier algorithm to measure omnidirectional bee traffic in videos. Our algorithm combines motion detection with image classification: in tier 1, motion detection functions as class-agnostic object location to generate regions with possible objects; in tier 2, each region from tier 1 is classified by a class-specific classifier. In this article, we present an empirical and theoretical comparison of random reinforced forests and shallow convolutional networks as tier 2.'
 ---
-
-[PDF](pdfs/applsci-11-08141-v3.pdf)
-
-<object data={require('./pdfs/applsci-11-08141-v3.pdf').default} type="application/pdf" width="100%" height="800"></object>
-
-## External links
-
-- DOI: https://doi.org/10.3390/app11178141
-- [Original URL](https://www.mdpi.com/2076-3417/11/17/8141)
-
-## Abstract
-
-Omnidirectional honeybee traffic is the number of bees moving in arbitrary directions in close proximity to the landing pad of a beehive over a period of time. Automated video analysis of such traffic is critical for continuous colony health assessment. In our previous research, we proposed a two-tier algorithm to measure omnidirectional bee traffic in videos. Our algorithm combines motion detection with image classification: in tier 1, motion detection functions as class-agnostic object location to generate regions with possible objects; in tier 2, each region from tier 1 is classified by a class-specific classifier. In this article, we present an empirical and theoretical comparison of random reinforced forests and shallow convolutional networks as tier 2.
 
 ## Relevancy to Gratheon
 

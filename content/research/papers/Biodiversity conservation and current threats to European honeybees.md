@@ -5,30 +5,26 @@ hideToc: true
 title: Biodiversity, conservation and current threats to European honeybees
 description: Review of European honeybee subspecies biodiversity, conservation strategies, beekeeping-driven introgression, and threats to native Apis mellifera populations.
 year: '2009'
+authors:
+- Pilar De la Rúa
+- Rodolfo Jaffé**
+- Raffaele Dall'Olio**
+- Irene Muñoz
+- José Serrano
 orgs:
-- 🇪🇸 Universidad de Murcia
-- 🇩🇪 Martin-Luther-Universität Halle-Wittenberg
-- 🇮🇹 CRA-API
+- "\U0001F1EA\U0001F1F8 Universidad de Murcia"
+- "\U0001F1E9\U0001F1EA Martin-Luther-Universität Halle-Wittenberg"
+- "\U0001F1EE\U0001F1F9 CRA-API"
 topics:
 - bee-behaviour
 - pollination-ecology
 productAreas:
 - colony-health
 paperType: journal
+pdf: "/assets/research/papers/pdfs/Biodiversity, conservation and current threats to European honeybees.pdf"
+doi: 10.1051/apido/2009027
+abstract: Europe contains several endemic *Apis mellifera* subspecies and evolutionary lineages whose present distribution reflects both post-glacial biogeography and centuries of beekeeping. The review explains how migratory beekeeping, queen trade, and honeybee promiscuous mating increase introgressive hybridization between native and managed non-native subspecies, potentially erasing locally adapted genetic combinations such as the Western European black bee lineage. It summarizes the main European subspecies, natural and human-mediated hybridization zones, country-level conservation and breeding programs, and wider threats that contribute to honeybee decline and economic losses. The paper argues that conserving native European honeybee diversity is important both for resilient apiculture and for ecosystem pollination services, and it calls for stronger genetic monitoring, protected breeding areas, and coordinated research across Europe.
 ---
-
-[PDF](pdfs/Biodiversity, conservation and current threats to European honeybees.pdf)
-
-<object data={require('./pdfs/Biodiversity, conservation and current threats to European honeybees.pdf').default} type="application/pdf" width="100%" height="800"></object>
-
-## External links
-
-- DOI: https://doi.org/10.1051/apido/2009027
-- [Publisher (Apidologie / EDP Sciences)](https://www.apidologie.org/articles/apido/abs/2009/03/m08141/m08141.html)
-
-## Abstract
-
-Europe contains several endemic *Apis mellifera* subspecies and evolutionary lineages whose present distribution reflects both post-glacial biogeography and centuries of beekeeping. The review explains how migratory beekeeping, queen trade, and honeybee promiscuous mating increase introgressive hybridization between native and managed non-native subspecies, potentially erasing locally adapted genetic combinations such as the Western European black bee lineage. It summarizes the main European subspecies, natural and human-mediated hybridization zones, country-level conservation and breeding programs, and wider threats that contribute to honeybee decline and economic losses. The paper argues that conserving native European honeybee diversity is important both for resilient apiculture and for ecosystem pollination services, and it calls for stronger genetic monitoring, protected breeding areas, and coordinated research across Europe.
 
 ## Relevancy to Gratheon
 

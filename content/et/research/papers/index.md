@@ -1,9 +1,9 @@
 ---
+layout: research
+hideToc: true
 title: Uurimisartiklid
 navTitle: Artiklid
-layout: research
 order: 5
-hideToc: true
 ---
 
 See jaotis jälgib välist akadeemilist tööd, mis on seotud digitaalse mesinduse, mesilaste tervise, jälgitavuse, robootika ja masinõppega.
