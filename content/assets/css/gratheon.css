@@ -862,6 +862,11 @@ html[data-theme='dark'] .front-page .future {
 
 .knowledge-hero--text-only .knowledge-hero-copy {
   min-height: 0;
+  max-width: none;
+}
+
+.knowledge-hero--text-only h1 {
+  max-width: none;
 }
 
 .knowledge-hero-copy {
@@ -922,14 +927,14 @@ html[data-theme='dark'] .front-page .future {
 
 .knowledge-page-research:has(.knowledge-content .pdf-embed) .knowledge-hero-copy {
   min-height: auto;
-  max-width: 980px;
+  max-width: none;
 }
 
 .knowledge-page-research:has(.knowledge-content .pdf-embed) .knowledge-hero h1 {
   font-size: clamp(2.35rem, 4.8vw, 4.8rem);
   line-height: 1.02;
   letter-spacing: -0.055em;
-  max-width: 18ch;
+  max-width: none;
 }
 
 .knowledge-page-research:has(.knowledge-content .pdf-embed) .knowledge-hero-media {
