@@ -67,33 +67,34 @@
 </article>
 {{end}}
 {{define "research_paper_meta"}}
-{{if or .Frontmatter.Year .Frontmatter.PaperType .Frontmatter.Authors .Frontmatter.Orgs .Frontmatter.Topics .Frontmatter.ProductAreas .Frontmatter.DOI}}
+{{with .Frontmatter.Params}}
+{{ $authors := index . "authors" }}
+{{ $orgs := index . "orgs" }}
+{{ $year := index . "year" }}
+{{ $paperType := index . "paperType" }}
+{{ $doi := index . "doi" }}
+{{if or $year $paperType $authors $orgs $doi}}
 <section class="research-paper-meta" aria-labelledby="research-paper-meta-title">
-  <h2 id="research-paper-meta-title">{{if eq .Page.Language "ru"}}Сведения о публикации{{else if eq .Page.Language "et"}}Publikatsiooni andmed{{else}}Publication details{{end}}</h2>
+  <h2 id="research-paper-meta-title">{{if eq $.Page.Language "ru"}}Сведения о публикации{{else if eq $.Page.Language "et"}}Publikatsiooni andmed{{else}}Publication details{{end}}</h2>
   <dl class="research-paper-meta-grid">
-    {{if .Frontmatter.Authors}}
-    <div><dt>{{if eq .Page.Language "ru"}}Авторы{{else if eq .Page.Language "et"}}Autorid{{else}}Authors{{end}}</dt><dd>{{range $index, $item := .Frontmatter.Authors}}{{if $index}}, {{end}}{{$item}}{{end}}</dd></div>
+    {{if $authors}}
+    <div><dt>{{if eq $.Page.Language "ru"}}Авторы{{else if eq $.Page.Language "et"}}Autorid{{else}}Authors{{end}}</dt><dd>{{range $index, $item := $authors}}{{if $index}}, {{end}}{{$item}}{{end}}</dd></div>
     {{end}}
-    {{if .Frontmatter.Orgs}}
-    <div><dt>{{if eq .Page.Language "ru"}}Организации{{else if eq .Page.Language "et"}}Organisatsioonid{{else}}Organizations{{end}}</dt><dd>{{range .Frontmatter.Orgs}}<span>{{humanTitle .}}</span>{{end}}</dd></div>
+    {{if $orgs}}
+    <div><dt>{{if eq $.Page.Language "ru"}}Организации{{else if eq $.Page.Language "et"}}Organisatsioonid{{else}}Organizations{{end}}</dt><dd>{{range $orgs}}<span>{{.}}</span>{{end}}</dd></div>
     {{end}}
-    {{if .Frontmatter.Year}}
-    <div><dt>{{if eq .Page.Language "ru"}}Год{{else if eq .Page.Language "et"}}Aasta{{else}}Year{{end}}</dt><dd>{{.Frontmatter.Year}}</dd></div>
+    {{if $year}}
+    <div><dt>{{if eq $.Page.Language "ru"}}Год{{else if eq $.Page.Language "et"}}Aasta{{else}}Year{{end}}</dt><dd>{{$year}}</dd></div>
     {{end}}
-    {{if .Frontmatter.PaperType}}
-    <div><dt>{{if eq .Page.Language "ru"}}Тип{{else if eq .Page.Language "et"}}Tüüp{{else}}Type{{end}}</dt><dd>{{humanTitle .Frontmatter.PaperType}}</dd></div>
+    {{if $paperType}}
+    <div><dt>{{if eq $.Page.Language "ru"}}Тип{{else if eq $.Page.Language "et"}}Tüüp{{else}}Type{{end}}</dt><dd>{{title $paperType}}</dd></div>
     {{end}}
-    {{if .Frontmatter.Topics}}
-    <div><dt>{{if eq .Page.Language "ru"}}Темы{{else if eq .Page.Language "et"}}Teemad{{else}}Topics{{end}}</dt><dd>{{range .Frontmatter.Topics}}<span class="research-paper-chip">{{humanTitle .}}</span>{{end}}</dd></div>
-    {{end}}
-    {{if .Frontmatter.ProductAreas}}
-    <div><dt>{{if eq .Page.Language "ru"}}Области Gratheon{{else if eq .Page.Language "et"}}Gratheoni valdkonnad{{else}}Gratheon areas{{end}}</dt><dd>{{range .Frontmatter.ProductAreas}}<span class="research-paper-chip">{{humanTitle .}}</span>{{end}}</dd></div>
-    {{end}}
-    {{if .Frontmatter.DOI}}
-    <div><dt>DOI</dt><dd><a href="https://doi.org/{{.Frontmatter.DOI}}">{{.Frontmatter.DOI}}</a></dd></div>
+    {{if $doi}}
+    <div><dt>DOI</dt><dd><a href="https://doi.org/{{$doi}}">{{$doi}}</a></dd></div>
     {{end}}
   </dl>
 </section>
+{{end}}
 {{end}}
 {{end}}
 
@@ -207,7 +208,7 @@
         <h1 id="knowledge-title">{{.Page.Title}}</h1>
         <p class="knowledge-standfirst">
           {{if $isPaperDetail}}
-            {{if .Frontmatter.Abstract}}{{.Frontmatter.Abstract}}{{else}}{{.Page.Description}}{{end}}
+            {{with .Frontmatter.Params}}{{if index . "abstract"}}{{index . "abstract"}}{{else}}{{$.Page.Description}}{{end}}{{else}}{{.Page.Description}}{{end}}
           {{else if eq .Page.Layout "products"}}
             {{if eq .Page.Language "et"}}Tarkvara, seadmed ja automaatika on esitatud ühe seotud süsteemina, et tootepere oleks lihtne sirvida ka sügava funktsioonistruktuuriga.{{else}}Software, devices, and automation are presented as one connected system, so product depth stays navigable without feeling like a reference manual.{{end}}
           {{else}}
@@ -216,8 +217,10 @@
         </p>
         <div class="knowledge-actions">
           {{if $isPaperDetail}}
-            {{if .Frontmatter.PDF}}
-              <a class="knowledge-action knowledge-action--primary" href="{{.Frontmatter.PDF}}">{{if eq .Page.Language "ru"}}Скачать PDF{{else if eq .Page.Language "et"}}Laadi PDF alla{{else}}Download PDF{{end}}</a>
+            {{with .Frontmatter.Params}}
+              {{with index . "pdf"}}
+              <a class="knowledge-action knowledge-action--primary" href="{{.}}">{{if eq $.Page.Language "ru"}}Скачать PDF{{else if eq $.Page.Language "et"}}Laadi PDF alla{{else}}Download PDF{{end}}</a>
+              {{end}}
             {{end}}
           {{else if eq .Page.Layout "products"}}
             {{if eq .Page.Language "et"}}
