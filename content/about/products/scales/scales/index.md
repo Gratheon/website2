@@ -1,3 +1,0 @@
----
-redirectUrl: "/products/scales/scales/"
----
