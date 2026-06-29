@@ -5,7 +5,7 @@ navTitle: Aplicación web
 layout: products
 ---
 
-La aplicación web de Gratheon ayuda a los apicultores a gestionar [datos de apiario](/products/web_app/free-tier/apiary-management/), comunicarse con dispositivos modulares instalados en la colmena, analizar fotos de cuadros y bandejas inferiores, almacenar [telemetría de series temporales](/products/web_app/pro-tier/hive-telemetry-storage/), generar [alertas](/products/web_app/flexible-tier/alerts/) y recibir sugerencias de IA para resolver problemas.
+La aplicación web de Gratheon ayuda a los apicultores a gestionar [datos de apiario](free-tier/apiary-management.md), comunicarse con dispositivos modulares instalados en la colmena, analizar fotos de cuadros y bandejas inferiores, almacenar [telemetría de series temporales](pro-tier/hive-telemetry-storage.md), generar [alertas](flexible-tier/alerts.md) y recibir sugerencias de IA para resolver problemas.
 
 `status`: [TRL 6](https://www.nasa.gov/directorates/somd/space-communications-navigation-program/technology-readiness-levels/)
 
@@ -65,11 +65,10 @@ La aplicación web de Gratheon ayuda a los apicultores a gestionar [datos de api
 - [👑 Live Queen Finder](free-tier/live-queen-finder.md)
 - [🦀 Conteo de varroa en bandeja inferior](starter-tier/hive-bottom-varroa-count.md)
 
-## Más información en inglés
-
-Estos enlaces permanecen en inglés hasta que sus subpáginas se localicen:
-- [Gestión de apiarios](/products/web_app/free-tier/apiary-management/)
-- [Gestión de inspecciones](/products/web_app/hobbyist-tier/inspection-management/)
-- [Almacenamiento de telemetría de colmena](/products/web_app/pro-tier/hive-telemetry-storage/)
-- [Alertas](/products/web_app/flexible-tier/alerts/)
-- [Analítica de datos de series temporales](/products/web_app/pro-tier/timeseries-data-analytics/)
+## Funciones localizadas adicionales
+- [Gestión de apiarios](free-tier/apiary-management.md)
+- [Gestión de lados de cuadro](free-tier/frame-side-management.md)
+- [Gestión de inspecciones](hobbyist-tier/inspection-management.md)
+- [Almacenamiento de telemetría de colmena](pro-tier/hive-telemetry-storage.md)
+- [Alertas](flexible-tier/alerts.md)
+- [Analítica de datos de series temporales](pro-tier/timeseries-data-analytics.md)

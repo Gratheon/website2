@@ -103,7 +103,7 @@ Las imágenes se versionan junto con inspecciones:
 
 ### 🔗 Funciones relacionadas
 
-- [🔎 Gestión de inspecciones](/products/web_app/hobbyist-tier/inspection-management/) — versionar imágenes con inspecciones.
+- [🔎 Gestión de inspecciones](../hobbyist-tier/inspection-management.md) — versionar imágenes con inspecciones.
 - Diario de tratamientos contra varroa (planificado).
 - Panel de salud de colonia (planificado).
 - [Modelo relacionado de detección de varroa en abejas](/es/research/models/varroa-on-bee-detection/).

@@ -21,7 +21,7 @@ Esta función está relacionada con el [diario de tratamientos contra varroa](/p
 
 ![](/about/img/Screenshot%202024-07-19%20at%2001.06.39.png)
 
-- Puedo recibir una [alerta](/products/web_app/flexible-tier/alerts/) si añadí menos de 10 L de jarabe en septiembre y han pasado 5 días desde la última alimentación.
+- Puedo recibir una [alerta](../flexible-tier/alerts.md) si añadí menos de 10 L de jarabe en septiembre y han pasado 5 días desde la última alimentación.
 
 ## Historia de usuario: colonia con falta de recursos
 
