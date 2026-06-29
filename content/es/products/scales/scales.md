@@ -5,37 +5,25 @@ navTitle: Básculas
 layout: products
 ---
 
-Las básculas para colmenas son dispositivos IoT inteligentes con sensores y chips de comunicación adicionales. Miden periódicamente el estado de la colmena y envían los datos a la [aplicación web](/es/products/web_app/). Estos datos agregados ayudan a monitorizar colonias en campo con costes mínimos.
+🌡️ Las básculas para colmenas son básculas IoT inteligentes equipadas con sensores adicionales y chips de comunicación. Miden periódicamente el estado de la colmena y envían los datos a la [aplicación web](../web_app/index.md). Estos datos agregados ayudan a los apicultores a monitorizar sus colonias en el campo con costes mínimos.
 
-La dirección de hardware se describe en la [documentación de sensores de colmena](/docs/beehive-sensors/), mientras que la aplicación almacena las lecturas en [telemetría de colmena](/products/web_app/pro-tier/hive-telemetry-storage/) y las compara mediante [analítica de series temporales](/products/web_app/pro-tier/timeseries-data-analytics/).
+El hardware está descrito en la [documentación de sensores de colmena](/docs/beehive-sensors/), mientras que la aplicación guarda las lecturas en el [almacenamiento de telemetría de colmenas](/es/products/web_app/pro-tier/hive-telemetry-storage/) y las compara mediante [analítica de series temporales](/es/products/web_app/pro-tier/timeseries-data-analytics/).
 
 `status`: [TRL 4](https://www.nasa.gov/directorates/somd/space-communications-navigation-program/technology-readiness-levels/) (prototipo)
 
-## Enfoque del problema
-
-Este producto ayuda con:
-- enjambrazón;
-- hambre o falta de reservas;
-- robbing;
-- daños por osos o manipulación;
-- colmenas volcadas por viento;
-- seguimiento de colmenas en ubicaciones remotas.
+## Problemas que ayuda a resolver
+- [🧶 Enjambrazón](/about/problems/biological/swarming/)
+- [🍽️ Hambruna de la colonia](/about/problems/biological/bee-colony-starvation/)
+- [💢 Pillaje](/about/problems/biological/robbing-state/)
+- [🐻 Daños de osos en colmenas y colonias](/about/problems/bears-destroying-hives-colonies/)
+- [🗃️ Viento de tormenta que vuelca colmenas](/about/problems/storm-wind-collapsing-beehives/)
+- [🌲 Ubicaciones remotas](/about/problems/systemic/distant-locations/)
 
 ## Público objetivo
+- [🧑‍🚀 Apicultores aficionados](/about/company/clients/hobby-beekeepers/)
+- [👨🏻‍🚒 Apicultores industriales](/about/company/clients/industrial-beekeepers/)
+- [👩🏼‍🏫 Apicultores urbanos](/about/company/clients/urban-beekeepers/)
 
-- Apicultores aficionados que quieren señales sencillas sin visitas constantes.
-- Apicultores industriales que necesitan priorizar desplazamientos.
-- Apiarios urbanos o educativos donde la observabilidad remota aporta valor.
-
-## Qué mide
-
-La configuración puede variar, pero el objetivo es combinar:
-- peso de la colmena;
-- temperatura;
-- humedad;
-- eventos o cambios bruscos;
-- conectividad y estado de batería.
-
-## Integración
-
-Las básculas no son una aplicación separada: envían métricas al mismo modelo de datos que usa la aplicación web, para que las lecturas se puedan correlacionar con inspecciones, alimentación, clima y alertas.
+## Más información en inglés
+- [Resumen de básculas para colmenas](/products/scales/scales/)
+- [API de telemetría](/products/scales/features/telemetry-api/)

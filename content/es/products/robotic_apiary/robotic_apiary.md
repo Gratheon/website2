@@ -5,39 +5,30 @@ navTitle: Apiario robótico
 layout: products
 ---
 
-Como solución más rentable para apiarios grandes, queremos reutilizar la funcionalidad de la [colmena robótica](/es/products/robotic_beehive/robotic_beehive/) y añadir capacidad de moverse por el apiario para inspeccionar colmenas bajo demanda o según calendario.
+Como solución más rentable para apiarios grandes, queremos reutilizar la funcionalidad de la [colmena robótica](../robotic_beehive/robotic_beehive.md) y añadirle la capacidad de moverse por el apiario para inspeccionar colmenas bajo demanda o según una agenda.
 
 `status`: [TRL 1](https://www.nasa.gov/directorates/somd/space-communications-navigation-program/technology-readiness-levels/)
 
-## Enfoque del problema
-
-El apiario robótico apunta a problemas como:
-- colapso durante la invernada;
-- ubicaciones remotas;
-- polinización precisa;
-- gestión de múltiples apiarios;
-- observabilidad de colonias;
-- trabajo físico que no escala.
+## Problemas que ayuda a resolver
+Este producto se centra especialmente en estos retos:
+- [❄️ Colapso durante la invernada](/about/problems/biological/overwintering-collapse/)
+- [🌲 Ubicaciones remotas](/about/problems/systemic/distant-locations/)
+- [🌻 Polinización precisa](/about/problems/precise-pollination/)
+- [🏘️ Varios apiarios](/about/problems/systemic/multiple-apiaries/)
+- [👁️ Observabilidad de la colonia](/about/problems/core/observability-of-bee-colony/)
+- [💪🏻 Trabajo no escalable](/about/problems/core/unscalable-work/)
 
 ## Público objetivo
-
-- Apicultores industriales.
-- Agricultores que dependen de servicios de polinización.
-- Operadores con muchas colmenas en líneas o ubicaciones repetibles.
+- [👨🏻‍🚒 Apicultores industriales](/about/company/clients/industrial-beekeepers/)
+- [🧑🏻‍🌾 Agricultores](/about/company/clients/farmers/)
 
 ## Retos y requisitos
-
-- Inspeccionar varias colmenas con funcionalidad similar a la [colmena robótica](/es/products/robotic_beehive/robotic_beehive/).
-- Mantener el coste bajo usando un módulo móvil compartido.
-- Soportar una forma de remolque móvil que pueda trasladarse con un coche.
-- No depender de un contenedor enorme para mover toda la infraestructura.
-- Estabilizar el módulo aunque el suelo del apiario no sea perfectamente plano.
+- Inspeccionar varias colmenas (~10) con la misma funcionalidad que la [colmena robótica](../robotic_beehive/robotic_beehive.md).
+- Mantener costes bajos usando un único módulo móvil.
+- Adoptar una forma móvil tipo remolque: debería ser posible mover todo el apiario con un coche. El objetivo es transportar las colmenas de vuelta a la base durante el invierno sin depender de un contenedor grande.
 
 ## Visión
-
-La arquitectura final todavía no está cerrada. El objetivo es comparar opciones de movimiento sobre raíles frente a ruedas, y diseños monolíticos frente a distribuidos, sin bloquear a los apicultores en un único tipo de colmena o disposición del apiario.
+Usaremos una mejora de la [colmena robótica](../robotic_beehive/robotic_beehive.md), pero haciéndola **móvil entre colmenas**. El diseño todavía no está cerrado y el equipo debe decidir la arquitectura.
 
 ## Más información en inglés
-
-Las ideas detalladas de movilidad y automatización siguen en inglés hasta que se localicen:
-- [Robotic Apiary](/products/robotic_apiary/robotic-apiary/)
+- [Resumen del apiario robótico](/products/robotic_apiary/robotic-apiary/)

@@ -5,56 +5,35 @@ layout: products
 sidebar_position: 5
 ---
 
-Estamos desarrollando una plataforma robótica vertical para inspección de colmenas. La dirección del producto es:
-- levantar varias secciones para llegar más rápido al nido;
-- tomar fotos de cuadros con cámaras integradas, reduciendo el levantamiento manual;
-- subir resultados de inspección a la [aplicación web](/es/products/web_app/);
-- moverse sobre ruedas para inspeccionar distintas colmenas.
+Estamos desarrollando una plataforma robótica de inspección vertical de colmenas que:
+- puede levantar varias secciones de la colmena para llegar más rápido al nido;
+- toma fotos de los cuadros con cámaras integradas;
+- sube el resultado de la inspección a la [aplicación web](../web_app/index.md);
+- se transporta sobre ruedas, por lo que puede usarse para inspeccionar distintas colmenas.
 
-La dirección de hardware se documenta en la [documentación técnica de colmena robótica](/docs/robotic-beehive/). El flujo de inspección depende de la gestión de lados de cuadro y de la gestión de inspecciones en la aplicación web.
+La dirección de hardware se documenta en la [documentación de ingeniería de la colmena robótica](/docs/robotic-beehive/robotic-beehive/). El flujo de inspección depende de la [gestión de caras de cuadros](/es/products/web_app/free-tier/frame-side-management/) y la [gestión de inspecciones](/es/products/web_app/hobbyist-tier/inspection-management/) en la aplicación web.
 
 `status`: [TRL 2](https://www.nasa.gov/directorates/somd/space-communications-navigation-program/technology-readiness-levels/)
 
-## Enfoque del problema
-
-Este producto ayuda con:
-- observabilidad de la colonia;
-- inspecciones intrusivas;
-- trabajo físico pesado;
-- infestaciones;
-- muerte de abejas por lavados con alcohol;
-- colonias sin reina;
-- colmenas difíciles de inspeccionar o poco estéticas;
-- barrera de entrada para nuevos apicultores.
+## Problemas que ayuda a resolver
+Este producto ayuda con estos problemas:
+- [👁️ Observabilidad de la colonia](/about/problems/core/observability-of-bee-colony/)
+- [💀 Inspecciones intrusivas](/about/problems/intrusive-inspections/)
+- [💪🏻 Trabajo físico](/about/problems/core/physical-labor/)
+- [🦀 Infestaciones](/about/problems/biological/infestations/)
+- [💀 Lavado con alcohol que mata abejas](/about/problems/alcohol-washing-killing-bees/)
+- [💀 Colonia sin reina](/about/problems/colony-without-a-queen/)
+- [💀 Colonia con reina ponedora de zánganos](/about/problems/biological/colony-with-drone-laying-queen/)
+- [🗃️ Colmenas poco atractivas](/about/problems/ugly-beehives/)
+- [🎒 Dificultad para empezar en la apicultura](/about/problems/challenging-to-become-a-new-beekeeper/)
 
 ## Clientes objetivo
+Una plataforma robótica de inspección costará más de 2000 EUR y su valor principal está en digitalizar y organizar el estado del apiario. Puede ser demasiado aparatosa para algunos [apicultores industriales](/about/company/clients/industrial-beekeepers/) o [agricultores](/about/company/clients/farmers/), y demasiado compleja para [nuevos apicultores potenciales](/about/company/clients/potential-new-beekeepers/). Parece más viable para:
 
-Una plataforma robótica de inspección costará más de 2000 EUR y su valor principal está en digitalizar y organizar el estado del apiario. Puede resultar demasiado grande para algunos apicultores industriales o agricultores, y demasiado compleja para principiantes absolutos. Parece más viable para:
-
-- apicultores semiprofesionales;
-- apiarios urbanos;
-- programas corporativos de patrocinio de colmenas;
-- equipos técnicos que quieren datos repetibles de inspección.
-
-## Requisitos no funcionales
-
-La extracción debe ocurrir sin perturbar a las abejas, exponerlas al clima o poner en riesgo a las personas cercanas.
-
-- Adaptarse al tamaño de cuadro y sección elegido por el cliente (Langstroth, Farrar, National, etc.).
-- No dañar al operador humano.
-- No aplastar abejas ni causar hipotermia o robbing por aperturas innecesarias.
-- Extraer cuadros incluso si están pegados con cera.
-- Evitar riesgo de incendio por calor, sol o cableado eléctrico.
-- Mover cuadros llenos de miel.
-- Ser reparable, modular y con piezas sustituibles.
-- Funcionar offline-first y ofrecer control manual en sitio.
-- Entrar en modo seguro ante pérdida de energía.
-
-## Prototipo
-
-El prototipo combina actuadores, GPU y cámaras. Está en una fase muy temprana porque ahora el foco principal es la [aplicación web](/es/products/web_app/) y [Entrance Observer](/es/products/entrance_observer/entrance_observer/).
+- [👨🏻‍🚀 Apicultores semiprofesionales](/about/company/clients/semi-professional-beekeepers/)
+- [👩🏼‍🏫 Apicultores urbanos](/about/company/clients/urban-beekeepers/)
+- [👩🏻 Programas de patrocinio corporativo de colmenas](/about/company/clients/tech-scale-up-companies/)
 
 ## Más información en inglés
-
-Las listas detalladas de ideas y tareas siguen en inglés hasta que se localicen:
-- [Funciones e ideas de la colmena robótica](/products/robotic_beehive/robotic-beehive/)
+- [Resumen de la colmena robótica](/products/robotic_beehive/robotic-beehive/)
+- [Ideas de automatización](/products/robotic_beehive/ideas/)
