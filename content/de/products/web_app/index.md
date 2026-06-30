@@ -5,7 +5,7 @@ navTitle: Web-App
 layout: products
 ---
 
-Die Gratheon Web-App hilft Imkern dabei, [Bienenstandsdaten](/products/web_app/free-tier/apiary-management/) zu verwalten, mit modularen Geräten am Bienenstock zu kommunizieren, Rähmchen- und Bodeneinlagenfotos zu analysieren, [Zeitreihen-Telemetrie](/products/web_app/pro-tier/hive-telemetry-storage/) zu speichern, [Warnungen](/products/web_app/flexible-tier/alerts/) zu erzeugen und KI-Vorschläge für Entscheidungen zu nutzen.
+Die Gratheon Web-App hilft Imkern dabei, [Bienenstandsdaten](free-tier/apiary-management.md) zu verwalten, mit modularen Geräten am Bienenstock zu kommunizieren, Rähmchen- und Bodeneinlagenfotos zu analysieren, [Zeitreihen-Telemetrie](pro-tier/hive-telemetry-storage.md) zu speichern, [Warnungen](flexible-tier/alerts.md) zu erzeugen und KI-Vorschläge für Entscheidungen zu nutzen.
 
 `status`: [TRL 6](https://www.nasa.gov/directorates/somd/space-communications-navigation-program/technology-readiness-levels/)
 
@@ -54,12 +54,15 @@ Die Gratheon Web-App hilft Imkern dabei, [Bienenstandsdaten](/products/web_app/f
 - Eine Bodeneinlage zur Beute hinzufügen.
 - Ein Foto der weißen Einschubplatte mit Varroamilben hochladen.
 - Bilder werden zusammen mit Durchsichten versioniert, damit ein historischer Verlauf entsteht.
-- Die englische Funktion [Hive bottom board varroa counting](/products/web_app/starter-tier/hive-bottom-varroa-count/) unterstützt die Bewertung des Befalls und Behandlungsentscheidungen.
+- [Varroa-Zählung auf der Bodeneinlage](starter-tier/hive-bottom-varroa-count.md) unterstützt die Bewertung des Befalls und Behandlungsentscheidungen.
 
-## Weiterführende englische Funktionsseiten
-Diese Unterseiten bleiben vorerst auf Englisch, bis sie einzeln lokalisiert werden:
-- [Apiary management](/products/web_app/free-tier/apiary-management/)
-- [Inspection management](/products/web_app/hobbyist-tier/inspection-management/)
-- [Hive telemetry storage](/products/web_app/pro-tier/hive-telemetry-storage/)
-- [Alerts](/products/web_app/flexible-tier/alerts/)
-- [Timeseries data analytics](/products/web_app/pro-tier/timeseries-data-analytics/)
+## Lokalisierte Funktionsseiten
+Diese deutschen Unterseiten spiegeln zentrale englische Web-App-Funktionen wider:
+- [Bienenstandsverwaltung](free-tier/apiary-management.md)
+- [Live-Königinnenfinder](free-tier/live-queen-finder.md)
+- [Durchsichtsverwaltung](hobbyist-tier/inspection-management.md)
+- [Varroa-Zählung auf der Bodeneinlage](starter-tier/hive-bottom-varroa-count.md)
+- [Speicherung von Beuten-Telemetrie](pro-tier/hive-telemetry-storage.md)
+- [Warnungen](flexible-tier/alerts.md)
+
+Weitere Feature-Seiten bleiben vorerst auf Englisch, bis sie einzeln lokalisiert werden.
