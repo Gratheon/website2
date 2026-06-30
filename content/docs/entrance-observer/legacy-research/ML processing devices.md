@@ -5,7 +5,7 @@
 |                      | Raspberry Pi 5                                            |          |
 |                      | Coral                                                     | 130 USD  |
 | NVidia               | [Jetson Nano setup](Jetson%20Nano%20setup.md)             | 250 EUR  |
-| NVidia               | [Jetson Orin Nano setup](../robotic-beehive/Jetson%20Orin%20Nano%20setup.md) | 650 EUR  |
+| NVidia               | [Jetson Orin Nano setup](../Jetson%20Orin%20setup.md)     | 650 EUR  |
 | NVidia               | Jetson AGX Orin                                           | 2250 EUR |
 | Sima.ai              |                                                           | 2000 EUR |
 | VeriSilicon          |                                                           |          |
@@ -19,8 +19,8 @@
 | AMD                  | Spartan 7                                                 |          |
 |                      |                                                           |          |
 
-![](docs/img/NVIDIA-Jetson-Orin-Production-Modules--1536x888.jpg.webp)
-![](docs/img/Screenshot%202024-10-20%20at%2000.12.49.png)
+![](/docs/img/NVIDIA-Jetson-Orin-Production-Modules--1536x888.jpg.webp)
+![](/docs/img/Screenshot%202024-10-20%20at%2000.12.49.png)
 
-![](docs/img/Screenshot%202024-10-20%20at%2000.12.01.png)
+![](/docs/img/Screenshot%202024-10-20%20at%2000.12.01.png)
 

@@ -2,45 +2,104 @@
 title: 👁️‍🗨️ Entrance observer
 order: 4
 sidebar_position: 5
-hide_table_of_contents: true
+hide_table_of_contents: false
 ---
-Main client service is [beehive-entrance-video-processor](https://github.com/Gratheon/beehive-entrance-video-processor), it needs to run on the edge device to capture and send data to web-app. Our main priority is inference on the edge device, but we also want to have hybrid inference with cloud support.
 
-For the product-level overview, see [Entrance Observer](../../products/entrance_observer/entrance_observer.md). The captured metrics connect to [hive telemetry storage](../../products/web_app/pro-tier/hive-telemetry-storage.md) and [timeseries analytics](../../products/web_app/pro-tier/timeseries-data-analytics.md).
-### Video processing, playback and analytics
+Entrance Observer is the edge vision component that watches a hive entrance, detects bee movement, and sends bee traffic telemetry and optional short video evidence to Gratheon's web platform.
+
+The current prototype target is **NVIDIA Jetson Orin Nano Super Developer Kit** with a USB UVC camera. Jetson runs the [`entrance-observer`](https://github.com/Gratheon/entrance-observer) edge application locally so the apiary does not need to stream continuous raw video to the cloud.
+
+For the product-level overview, see [Entrance Observer](../../products/entrance_observer/entrance_observer.md). Captured metrics connect to [hive telemetry storage](../../products/web_app/pro-tier/hive-telemetry-storage.md) and [timeseries analytics](../../products/web_app/pro-tier/timeseries-data-analytics.md).
+
+## Current deployment target
+
+| Area | Current decision | Why |
+| --- | --- | --- |
+| Edge compute | Jetson Orin Nano Super Developer Kit, 8 GB | Enough GPU headroom for local object detection/tracking and fast iteration with NVIDIA JetPack, CUDA, TensorRT, and Docker. |
+| Camera | USB3 UVC 4K camera with manual varifocal lens | UVC is easy to debug on Linux and avoids CSI camera integration work during the prototype phase. |
+| Processing mode | Edge-first with optional cloud fallback | Keeps bandwidth low, works with unreliable apiary internet, and still allows retraining/reprocessing from selected uploaded clips. |
+| Data product | Bee traffic time series in Gratheon web-app | The primary value is direction/count history, alerts, and correlation with hive telemetry. |
+| Video product | Short clips and HLS playback for diagnostics | Video is stored selectively for verification, debugging, model improvement, and user review. |
+
+## Runtime architecture
 
 ```mermaid
 flowchart LR
-	web-app("<a href='https://github.com/Gratheon/web-app'>web-app</a>\n:8080") --"fetch video streams"--> graphql-router("<a href='https://github.com/Gratheon/graphql-router'>graphql-router</a>") --"list video stream URLs"--> gate-video-stream -- "get data for playback" --> mysql
+  subgraph Hive[Hive entrance]
+    camera[USB UVC camera]
+    mount[Weather-protected mount]
+  end
 
-	web-app --"record & upload \n 10s webcam video"--> gate-video-stream("<a href='https://github.com/Gratheon/gate-video-stream'>gate-video-stream</a>\n:8900") --"inference video"--> models-gate-tracker("<a href='https://github.com/Gratheon/models-gate-tracker'>models-gate-tracker</a>")
+  subgraph Edge[Jetson Orin Nano]
+    app[entrance-observer]
+    capture[Video capture]
+    detector[Detection and tracking]
+    buffer[Clip buffer]
+    uploader[Uploader]
+  end
 
-	gate-video-stream --"store video re-training with 1 month TTL"--> aws-s3
-	gate-video-stream --"store results long-term" --> mysql
+  subgraph Cloud[Gratheon cloud]
+    video[gate-video-stream REST API]
+    model[models-gate-tracker]
+    telemetry[telemetry-api REST API]
+    graphql[graphql-router GraphQL]
+    mysql[(MySQL)]
+    s3[(S3-compatible object storage)]
+  end
 
-	entrance-observer("<a href='https://github.com/Gratheon/entrance-observer'>entrance-observer</a>") --"record & upload 10s video chunks\nsend edge-computed telemetry"--> gate-video-stream
+  subgraph UI[Gratheon web-app]
+    web[web-app]
+    grafana[Grafana analytics]
+  end
 
-	entrance-observer -."send detected bees \n timeseries counts".-> telemetry-api("<a href='https://github.com/Gratheon/telemetry-api'>telemetry-api</a>")
-
-	web-app --"include analytics page"--> grafana("<a href='https://github.com/Gratheon/grafana'>grafana</a>\n:9000") --"read bee traffic over time"--> influxdb("influxdb:5300")
+  camera --> capture --> detector
+  detector -->|bee count, direction, confidence, timestamp| uploader
+  buffer --> uploader
+  uploader -->|POST movement metrics| telemetry
+  uploader -->|upload selected clips| video
+  video -->|optional cloud inference or reprocessing| model
+  video --> mysql
+  video --> s3
+  telemetry --> mysql
+  web -->|query hive, streams, telemetry| graphql
+  graphql --> telemetry
+  graphql --> video
+  grafana -->|time-series dashboards| telemetry
+  web --> grafana
 ```
 
+## Data flow
 
+1. **Capture** - `entrance-observer` reads frames from the USB camera on Jetson.
+2. **Infer and track** - the edge app detects bees near the entrance, tracks movement across configured regions, and computes direction-aware counts.
+3. **Aggregate** - raw detections are converted into telemetry buckets such as entrances, exits, unknown direction, confidence, and health metadata.
+4. **Upload metrics** - Jetson sends movement telemetry to [`telemetry-api`](../API/rest/telemetry-api.md) using the device REST API.
+5. **Upload clips when useful** - the edge app uploads short video clips to [`gate-video-stream`](../API/rest/gate-video-stream.md) for playback, debugging, and model retraining.
+6. **Read in web-app** - the Gratheon web-app uses [`graphql-router`](../API/GraphQL.md) for user-facing queries and can embed Grafana dashboards for time-series analysis.
+7. **Improve model** - selected stored clips are used to validate detections, retrain the model, and compare cloud inference with edge inference.
 
+## API responsibilities
 
+| Component | Interface | Responsibility |
+| --- | --- | --- |
+| `entrance-observer` | Local camera, REST clients | Capture frames, run edge inference, aggregate telemetry, and upload metrics/clips. |
+| `telemetry-api` | REST for devices, GraphQL behind router | Store entrance movement metrics and serve time-series reads to web-app/Grafana. |
+| `gate-video-stream` | REST/OpenAPI | Accept short entrance videos, serve HLS playback playlists, and retain training/debug clips. |
+| `models-gate-tracker` | Internal service | Run cloud-side inference/reprocessing when uploaded video needs validation or model evaluation. |
+| `graphql-router` | Federated GraphQL | User-facing API gateway for web-app queries. |
+| `web-app` | Browser UI | Device setup, status, video playback links, dashboards, and alerts. |
 
-Camera protection cover
-![](docs/entrance-observer/img/Screenshot%202025-09-13%20at%2012.30.27.png)
+## Edge device operating requirements
 
-## Choosing processing architecture
+- Stable 5 V / 4 A USB-C power for Jetson Orin Nano.
+- NVMe SSD for OS and local buffering because video clips can quickly fill the built-in storage.
+- WiFi or Ethernet with retryable uploads and local buffering for offline apiaries.
+- Weather-protected camera and electronics enclosure, with clear plexiglass or lens cover placed so it does not create glare.
+- Remote diagnostics through SSH, `jtop`, Docker logs, GStreamer tools, and camera test commands.
 
-We can approach where to process video from different angles:
+See also:
 
-| **Where**                                                                                                                                                                                                                                                                                                                                                               | **Pros**                                                                                                                                                                                                                                                                            | **Cons**                                                                                                                                                                                                                                   |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Edge device without GPU  <br />raspberry-pi  <br />  <br />ex.  <br />[🇨🇿 BeeLogger](https://www.notion.so/BeeLogger-ad269086bf8449faa0aae6754f879181?pvs=21), [BeePi](https://www.notion.so/BeePi-2e3023f492864fa98b2790743c3ba6e4?pvs=21)                                                                                                                           | - cheap ~ 95 EUR for the board                                                                                                                                                                                                                                                      | - limited to simple numerical models  <br />- may not be reliable                                                                                                                                                                          |
-| Edge-device with GPU  <br />(jetson nano)  <br />  <br />ex.  <br />[🇩🇪Apic.ai](https://www.notion.so/Apic-ai-7859a940fd644a3fa35008fd3a2f1909?pvs=21), [🇦🇺Beemate](https://www.notion.so/Beemate-7f54f62332334254b42e3e584dfae537?pvs=21), [🔬BeeAlarmed. Masters thesis](https://www.notion.so/BeeAlarmed-Masters-thesis-d9c40374718b480ab08a3872f441a2d8?pvs=21) | - efficient  <br />- low network dependency  <br />- can work offline with own GPU                                                                                                                                                                                                  | ~ cost 230 EUR for the board alone                                                                                                                                                                                                         |
-| Hybrid:  <br />- on-premise (local) GPU workstation  <br />- Video streaming devices                                                                                                                                                                                                                                                                                    | - lower cost in total                                                                                                                                                                                                                                                               | - higher initial cost for the device  <br />- need of dedicated workstation location                                                                                                                                                       |
-| Cloud-only, ex.  [LabelBee](https://www.notion.so/LabelBee-482ad7f33192487caae38697b21b7f5d?pvs=21)                                                                                                                                                                                                                                                                     |                                                                                                                                                                                                                                                                                     | - need high network bandwidth  <br />- need to optimize for variable network bandwidth  <br />- expensive  <br />- video streaming and processing cost  <br />- video storage cost                                                         |
-| Specialized [PCB devices](https://jlcpcb.com/)                                                                                                                                                                                                                                                                                                                          | - energy efficiency  <br />- low production cost                                                                                                                                                                                                                                    | - usually low on RAM, GPU  <br />- high development cost                                                                                                                                                                                   |
-| On a mobile phone                                                                                                                                                                                                                                                                                                                                                       | - price controlled by the customer  <br />- has built-in networking  <br />- has a camera  <br />- has screen  <br />- has battery & power management  <br />- no vendor-lock  <br />- easiest to get started  <br />- easy for beekeeper to setup  <br />- automatic app redeploys | - high variety of phones, inconsistent experience  <br />- for processing on the phone, issues with GPU, need to use custom mobile tensorflow  <br />- too high-level (in-browser), hard to handle exceptions & may need user intervention |
+- [Bill of materials](Bill%20of%20materials.md)
+- [Jetson Orin setup](Jetson%20Orin%20setup.md)
+- [Future production hardware alternatives](Future%20production%20hardware%20alternatives.md)
+- [Legacy research archive](legacy-research/ML%20processing%20devices.md)

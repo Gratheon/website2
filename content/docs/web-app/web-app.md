@@ -8,7 +8,7 @@ order: 2
 
 💡 You will need Linux or Mac OSX with **Docker** to develop [Web-app](../../products/web_app/index.md) services
 
-To develop [Entrance Observer](../../products/entrance_observer/entrance_observer.md) video processing services you’ll need [Jetson Orin Nano](../entrance-observer/Jetson%20Orin%20setup.md) or [Jetson Nano](../entrance-observer/Jetson%20Nano%20setup.md) to have GPU support and docker image compatibility
+To develop [Entrance Observer](../../products/entrance_observer/entrance_observer.md) video processing services you’ll need [Jetson Orin Nano](../entrance-observer/Jetson%20Orin%20setup.md). Older [Jetson Nano notes](../entrance-observer/legacy-research/Jetson%20Nano%20setup.md) are kept only as legacy research because the current architecture targets Jetson Orin.
 
 ## Architecture
 ### Core services

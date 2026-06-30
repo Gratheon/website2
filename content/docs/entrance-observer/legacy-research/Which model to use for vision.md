@@ -26,6 +26,6 @@ Runtimes
 - TensorRT
 - ONNX
 
-![](docs/img/Screenshot%202023-11-07%20at%2020.25.33.png)
+![](/docs/img/Screenshot%202023-11-07%20at%2020.25.33.png)
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/dL9B9VUHkgQ" title="Top Object Detection Models in 2023 | Model Selection Guide sponsored by Intel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
