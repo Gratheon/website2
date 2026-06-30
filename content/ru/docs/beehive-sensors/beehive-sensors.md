@@ -1,5 +1,6 @@
 ---
 title: 🌡️ Beehive IoT sensors
+order: 3
 sidebar_position: 4
 hide_table_of_contents: true
 ---

@@ -1,5 +1,6 @@
 ---
 title: 🧿 Роботизированный улей
+order: 5
 sidebar_position: 6
 ---
 `status:draft`

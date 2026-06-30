@@ -1,5 +1,6 @@
 ---
 title: 🌡️ Beehive IoT andurid
+order: 3
 navTitle: Mesitaru andurid
 sidebar_position: 4
 hide_table_of_contents: true

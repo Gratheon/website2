@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
 title: 📱 Web-app
+order: 2
 ---
 > Goal of this document is to kickstart your development of the web-app as an engineer
 ## Environment prerequisites

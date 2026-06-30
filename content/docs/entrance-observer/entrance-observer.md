@@ -1,5 +1,6 @@
 ---
 title: 👁️‍🗨️ Entrance observer
+order: 4
 sidebar_position: 5
 hide_table_of_contents: true
 ---
