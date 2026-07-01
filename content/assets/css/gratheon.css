@@ -2228,3 +2228,38 @@ html[data-theme='dark'] .knowledge-content .product-card--accent {
   background: var(--knowledge-paper);
   font-size: 0.9rem;
 }
+
+/* Docs/articles need more horizontal space than the default readable-column template.
+   WHY: hardware comparison tables become cramped at desktop widths and the ToC sits too close to the article.
+   WHAT: let the article consume the space between the left navigation and right ToC, pushing ToC toward the viewport edge. */
+.page-layout-page .site-content {
+  flex: 1 1 auto;
+  width: auto;
+  max-width: none;
+  padding-inline: clamp(28px, 3vw, 56px);
+}
+
+.page-layout-page article .content {
+  max-width: none;
+}
+
+.page-layout-page article .content table {
+  table-layout: auto;
+}
+
+@media (min-width: 1201px) {
+  .page-layout-page .site-content {
+    max-width: calc(100vw - var(--sidebar-width, 280px) - var(--toc-width, 240px));
+  }
+
+  .page-layout-page .toc {
+    padding-left: 24px;
+    padding-right: clamp(24px, 3vw, 56px);
+  }
+}
+
+@media (max-width: 768px) {
+  .page-layout-page .site-content {
+    padding-inline: 16px;
+  }
+}
