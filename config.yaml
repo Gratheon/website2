@@ -238,7 +238,7 @@ navigation:
         url: "/fr/about/"
         languages: ["fr"]
       - title: "Produits"
-        url: "/products/"
+        url: "/fr/products/"
         languages: ["fr"]
       - title: "Recherche"
         url: "/fr/research/"
