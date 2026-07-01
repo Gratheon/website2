@@ -11,203 +11,215 @@ This page compares future hardware paths for a production Entrance Observer that
 - send direction-aware bee traffic telemetry to Gratheon;
 - upload selected clips for playback, audits, and model improvement;
 - operate reliably in an outdoor apiary with weak network connectivity;
-- reduce energy far enough that a solar-powered version becomes possible.
+- reduce energy enough to support solar-powered autonomous deployments.
 
 ## Recommendation summary
 
-Use **Jetson Orin Nano** as the reference development platform until model quality and throughput are stable. In parallel, prototype **Raspberry Pi 5 + Raspberry Pi AI HAT+ 26 TOPS (Hailo-8)** as the main cost-reduction and lower-power candidate.
+Use **Jetson Orin Nano** as the reference development platform until model quality and tracking behavior are stable, but do **not** assume it is the best production device. The production decision must be based on four independent axes:
 
-For production, split the product into two connectivity/energy profiles instead of forcing one device to do everything:
-
-1. **Urban / powered / WiFi model** - edge AI + selected H.265/H.264 video clip upload + web playback. This can use mains power or a larger solar kit.
-2. **Field / solar / telemetry model** - edge AI + telemetry over LTE-M/NB-IoT/GSM or LoRaWAN, with no routine video upload. It uploads only small thumbnails, health pings, and occasional diagnostic clips when cellular bandwidth/power allow it.
+1. **AI efficiency for our model** - FPS per watt and count accuracy for the current custom bee detector/tracker.
+2. **Video compression** - preferably hardware H.265/HEVC for selected diagnostic clips.
+3. **Energy profile** - average Wh/day with night sleep, event-triggered upload, and cellular modem duty cycling.
+4. **Connectivity mode** - WiFi for urban/apiary-with-internet mode, LTE/GSM or LoRa telemetry mode for field deployments.
 
 The likely production path is:
 
-1. **Now - reference platform:** Jetson Orin Nano Super Developer Kit for fast model iteration and debugging.
-2. **Next - cost-down prototype:** Raspberry Pi 5 + AI HAT+ 26 TOPS with a fixed non-fisheye camera module and the same API contract.
-3. **Parallel video-encoder prototype:** evaluate a board/camera path with hardware H.265/HEVC encoding because Jetson Orin Nano lacks NVENC and Raspberry Pi/Hailo should not spend solar energy on CPU HEVC encoding.
-4. **Later - production design:** custom carrier/enclosure around either a Hailo-based module, a Jetson Orin NX class module, or an SoC with integrated NPU + VPU, selected by measured accuracy, FPS/W, encoder efficiency, total assembled cost, and support burden.
+1. **Now - reference platform:** Jetson Orin Nano Super Developer Kit for model iteration and debugging.
+2. **Next - cost-down AI prototype:** Raspberry Pi 5 + AI HAT+ 26 TOPS with the same `entrance-observer` API contract.
+3. **Next - bandwidth/solar prototype:** evaluate a platform with hardware H.265 encode, or add an external camera/encoder module, because Jetson Orin Nano does not include NVENC.
+4. **Later - two product SKUs:** an urban WiFi/video SKU and a field solar telemetry-first SKU.
 
-## What our current model pipeline needs
+## Current model and workload
 
-Current `entrance-observer` behavior from the implementation:
+The current `entrance-observer` repository gives us a concrete workload to benchmark instead of comparing theoretical TOPS only.
 
-| Area | Current state | Production implication |
+| Workload item | Current state | Production implication |
 | --- | --- | --- |
-| Detector | Custom **YOLO 11 bee detector** loaded from `weights/best.pt`. The current model has one `bee` class, `imgsz=640`, **129 layers**, **3,011,043 parameters**, **8.2 GFLOPs**, and a **5.95 MB** `.pt` file. | The first Hailo/RKNN/Coral test should target this exact detector, not a generic benchmark model. |
-| Tracker/counting | `model.track(...)` plus line/rectangle crossing logic for `bees_in`, `bees_out`, `detected_bees`, `net_flow`, speed and interaction metrics. | The detector FPS alone is not enough. Benchmark full detect + track + encode + upload loop. |
-| Default video capture | App defaults include 640x480 capture, 30 FPS, 20s chunks. README also notes tested 1280x720 @ 15 FPS on USB2 with Jetson Orin Nano. | Production should define 2-3 fixed profiles instead of arbitrary user values. |
-| Detection upload video | Defaults to 320x240 detection overlay video. Upload FPS can be capped by `upload_max_fps`. | This is already a good low-bandwidth lever. H.265 helps only if encode energy is low. |
-| Upload policy | Skips video upload when there are no incoming/outgoing bees. | Keep and expand this. For field mode, default to no video upload. |
-| Energy policy | Night mode sleeps from 22:00 to 06:00 by default. | Extend to solar-aware duty cycling based on battery state, season, and light. |
+| Detector | Current checkpoint is a YOLOv8n-derived custom bee detector trained as one class (`bee`) from `weights/best.pt`; README calls it YOLO 11 custom bee weights. Checkpoint metadata: `imgsz=640`, 129 layers, 3,011,043 parameters, 8.2 GFLOPs, about 6 MB `.pt`. | This is a small detector and a good candidate for TensorRT and HailoRT conversion. Benchmark the exact model, not generic YOLO marketing numbers. |
+| Tracker | Ultralytics `model.track(..., persist=True)` with track history. | Production benchmark must include detection + tracking + counting, not detector-only FPS. |
+| Count logic | Line or rectangle crossing, producing `bees_in`, `bees_out`, `detected_bees`, `net_flow`, speed metrics, interactions, and track history. | Telemetry payload is tiny. Full video is optional and should not be required for field mode. |
+| Capture defaults | Runtime defaults are 640x480@30 FPS; README also mentions tested 1280x720@15 FPS over USB2 on Jetson Orin Nano. | Use 720p/15 FPS and 640x480/30 FPS as first benchmark points. |
+| Upload video defaults | Detection upload video defaults to 320x240, chunk length defaults to 20s in code, README examples mention 30-60s. | Upload clips should be downscaled and capped in FPS. Raw capture resolution should be independent from upload resolution. |
+| Bandwidth optimization already present | Skips video upload when no bees were incoming/outgoing. Night sleep defaults to 22:00-06:00 / day 06:00-22:00. | Field mode should extend this: upload telemetry always, upload video only on sampled events/anomalies/manual request. |
 
-## AI efficiency for our model
+## AI efficiency benchmark plan for our model
 
-We do **not** yet have a measured FPS/W table for the custom Gratheon model across candidate hardware. The table below is the decision framework and expected fit. Production choice should be based on measured values from the exact `weights/best.pt` model and the full tracking pipeline.
+We need to pull AI efficiency from actual device measurements. The table below defines what to measure and how the result should be used.
 
-| Candidate | AI accelerator | Expected model path | Expected efficiency for our small YOLO detector | Main blocker to verify |
-| --- | ---: | --- | --- | --- |
-| Jetson Orin Nano Super Dev Kit | Up to 67 TOPS marketing class | PyTorch/Ultralytics now, then ONNX -> TensorRT | Strong developer baseline. Enough headroom for heavier models and future behavior models, but board-level power is higher than ideal for solar. | No NVENC. Full-loop power while detecting + software encoding can be too high for compact solar. |
-| Raspberry Pi 5 + AI HAT+ 26 TOPS | Hailo-8, 26 TOPS | PyTorch -> ONNX -> Hailo Dataflow Compiler -> HailoRT | Best first cost/power candidate if YOLO 11 converts cleanly. Hailo is efficient for quantized CNN detection. | Conversion/operator compatibility, quantization accuracy, and tracking CPU overhead. |
-| Raspberry Pi 5 + AI HAT+ 13 TOPS | Hailo-8L, 13 TOPS | Same as above, smaller/lower-FPS profile | Possible for telemetry-only field mode if target FPS is modest and model stays small. | Tight headroom, especially if future model adds behavior/varroa/pose detection. |
-| Jetson Orin NX production module | CUDA/TensorRT + NVENC | ONNX -> TensorRT, hardware encode through NVENC | Higher BOM but best premium path: strong AI and hardware H.265/H.264 encode in one module family. | Cost and power, but may still be easier than combining Pi/Hailo with external encoder. |
-| RK3588 class board | ~6 TOPS NPU + VPU | ONNX -> RKNN, H.265 through SoC VPU | Attractive if cost/solar dominate and model can be simplified. Integrated VPU is useful for clips. | NPU tooling/operator support and support burden. Needs real field validation before production. |
-| Coral Edge TPU | ~4 TOPS | TFLite Edge TPU compiled model | Very low power, but likely only suitable for simplified detector or sparse frame sampling. | Model conversion/operator support and too little headroom for robust tracking. |
+| Metric | How to measure | Why it matters | Production target |
+| --- | --- | --- | --- |
+| Detector + tracker FPS | Run the same representative video set through `entrance-observer`, including `model.track`, overlays off, telemetry on. | Generic TOPS does not include tracker overhead. | Sustained FPS above the minimum needed for reliable bee crossing direction. Start target: 15 FPS at 720p or 30 FPS at 640x480. |
+| FPS/W | Measure wall power with a USB-C/PoE inline meter while processing fixed clips. | Solar sizing depends on real power, not board TDP. | Prefer at least 2x better FPS/W than Jetson reference before switching production platform. |
+| Joules per 20s chunk | Power meter Wh delta while processing one chunk. | Directly maps to energy per observation window. | Optimize chunk scheduling and sleep around this number. |
+| Count accuracy per watt | Compare `bees_in/out` against labelled clips and divide by average system watts. | A fast but inaccurate low-power system is not useful. | Select lowest Wh/day device that meets product accuracy tolerance. |
+| CPU headroom | Track CPU load while camera capture, AI, telemetry, video encode, and upload run together. | H.265 software encode can starve tracking/upload on small boards. | Keep enough headroom for watchdog, retry queue, modem, and local web UI. |
+| Thermal stability | Run 4-8h in enclosure-like temperature. | Solar field units will be sealed and hot. | No thermal throttling that changes count accuracy. |
 
-### Required benchmark metrics
+### Expected AI efficiency by platform
 
-Add a benchmark harness before making the production hardware decision. Measure the full pipeline, not only neural network inference:
+This is a decision-support table, not a substitute for benchmarks on our clips.
 
-| Metric | How to measure | Target use |
-| --- | --- | --- |
-| Detector FPS | Run exact model on fixed clips at 640x480 and 1280x720. | Decide if hardware can keep up with bee speed. |
-| Pipeline FPS | Capture/decode -> infer -> track -> draw overlay -> encode. | Real user behavior and crash risk. |
-| FPS/W | Pipeline FPS divided by wall power at the device input. | Solar sizing and heat design. |
-| Joule per 20s chunk | Energy used to process one default chunk. | Battery model. |
-| Wh/day | Daytime operation with night sleep and real traffic. | Solar panel and battery sizing. |
-| Bytes/event | Telemetry bytes, thumbnail bytes, clip bytes per bee activity event. | Network plan and backend storage. |
-| Count error | Compare `bees_in/out` against labelled clips. | Product accuracy. |
-| Upload success under poor network | Run with packet loss/low bandwidth. | Field reliability. |
+| Platform | AI runtime for our detector | Expected efficiency | Main risk for our model | Decision |
+| --- | --- | --- | --- | --- |
+| Jetson Orin Nano Super | TensorRT/CUDA via Ultralytics export path | High AI headroom, moderate-to-high system power | Great AI but weak video-encoding story because Orin Nano lacks NVENC. | Keep as reference and premium dev platform. |
+| Raspberry Pi 5 + AI HAT+ 26 TOPS | ONNX/TFLite to HailoRT | Likely best cost/power candidate if conversion succeeds | Hailo compiler/operator support and tracker CPU overhead. | Build next prototype. |
+| Raspberry Pi 5 + AI HAT+ 13 TOPS | HailoRT | Lower power/cost, less headroom | May be too tight for robust tracking at target FPS. | Test only after 26 TOPS works. |
+| RK3588 NPU board | RKNN | Potentially low cost and decent power | Tooling/operator support and maintainability. | Third priority after Hailo. |
+| Coral TPU | TFLite Edge TPU | Very low power for supported models | Current YOLO-style model may require major conversion/simplification. | Only for a simplified telemetry-only model. |
+| MCU/NPU smart camera | Vendor-specific | Could be best long-term solar option | High integration cost and model lock-in. | Research after dataset/model stabilizes. |
 
 ## Video encoding and bandwidth
 
-The user-facing goal is video review, but the product goal is reliable bee traffic telemetry. Video should be treated as diagnostic/training evidence, not the always-on data path.
+The product should not stream continuous video. It should upload telemetry continuously and upload short clips only for debugging, user review, model improvement, or anomalies.
 
-Important hardware finding: **Jetson Orin Nano does not have NVIDIA NVENC**. NVIDIA documents software encoding for Orin Nano. This makes Orin Nano excellent for AI development, but not ideal if production requires low-energy H.265/HEVC clip encoding. Orin NX/AGX class modules have NVENC, while many lower-cost SoCs such as RK3588 include a hardware VPU. Raspberry Pi 5 + Hailo accelerates AI, not necessarily HEVC encoding; avoid assuming the Hailo path solves video compression.
+Important hardware finding: **Jetson Orin Nano does not have the NVIDIA NVENC engine**. NVIDIA documents software encode for Orin Nano. That means Jetson Orin Nano is excellent for AI, but not automatically excellent for low-power H.265/H.264 video compression.
 
-| Mode | Codec/upload policy | Bandwidth | Energy | Recommended use |
+### Codec strategy
+
+| Mode | Video behavior | Codec target | Network assumption | Product use |
 | --- | --- | --- | --- | --- |
-| Telemetry only | JSON metrics over REST/MQTT-like transport | Very low | Very low | Default for solar/field mode. |
-| Telemetry + thumbnail | Metrics plus JPEG/WebP thumbnail around events | Low | Low | Good compromise for field diagnostics. |
-| Low-res detection clips | 320x240 overlay video, low FPS cap, upload only when movement happened | Medium | Medium | Urban WiFi and debugging. Already close to current app defaults. |
-| H.264 clips | Hardware H.264 if available, otherwise software | Medium | Medium/high if software | Works on more devices and browsers than H.265. |
-| H.265/HEVC clips | Hardware HEVC only | Lower bandwidth for similar quality | Low only with hardware encoder; high with software | Use for production only on hardware with real HEVC encode support or a camera module/IP camera that outputs HEVC. |
-| Raw/high-res clips | High resolution, high FPS upload | Very high | Very high | Avoid except lab/retraining capture sessions. |
+| Urban WiFi mode | Upload selected detection clips; allow higher sampling. | H.265 preferred, H.264 acceptable. | WiFi or Ethernet available. | User playback, model QA, installation debugging. |
+| Field LTE/GSM mode | Upload telemetry always; upload only low-res sampled clips or anomalies. | H.265 strongly preferred if hardware encode exists. | Metered mobile data. | Remote apiary monitoring without high data bills. |
+| LoRa telemetry mode | No video upload by default; only movement buckets and health. | None, video stored locally if storage exists. | LoRaWAN/private LoRa or very constrained link. | Solar autonomous telemetry-only deployment. |
+| Service visit mode | Store full-quality clips locally for later download. | Any local efficient format. | Technician has local WiFi/USB access. | Model retraining and diagnostics without cellular data. |
 
-### Production video recommendations
+### Encoding comparison
 
-1. Keep **event-based upload**: no movement means no video upload.
-2. Add **field mode**: upload telemetry only by default, store local clips for a short retention window, and upload diagnostic clips only on request or when solar/battery budget allows.
-3. Add **H.265 only when hardware encoding exists**. Do not use CPU x265 on solar devices except for rare offline/background compression.
-4. Consider **dual stream**: run inference on higher-quality local frames, upload a separate low-res overlay stream.
-5. If using Jetson Orin Nano, prefer low-res H.264/mp4v or external/camera-side encoding rather than CPU HEVC.
-6. If video upload is a core production feature, evaluate **Jetson Orin NX** or an SoC/camera module with hardware HEVC encoder before committing to Raspberry Pi + Hailo.
-
-## Connectivity profiles
-
-The product should have two variants because connectivity changes both network and power design.
-
-| Variant | Connectivity | What it uploads | Power posture | Hardware implications | Best customer |
-| --- | --- | --- | --- | --- | --- |
-| Urban WiFi | WiFi or Ethernet | Telemetry + selected clips + live local UI | Can assume mains or larger solar | WiFi module, optional Ethernet, higher storage, clip upload enabled | Backyard/urban beekeeper, research apiary with infrastructure. |
-| Field GSM/LTE | LTE Cat-1/Cat-4 today, LTE-M/NB-IoT where available | Telemetry, health pings, thumbnails, rare clips | Solar-oriented | SIM module, external antenna, retry queue, aggressive upload policy | Remote apiaries with cellular coverage. |
-| Field LoRaWAN | LoRaWAN | Telemetry only, no video | Best low-power link | Separate MCU or LoRa concentrator workflow, compact binary payloads | Remote apiaries with LoRaWAN coverage or private gateway. |
-| Hybrid gateway | Local WiFi/LoRa from many hives to one cellular gateway | Telemetry from many devices, occasional clips from selected devices | Efficient at apiary scale | One powered gateway, cheaper hive observer nodes | Commercial apiary with many hives in one location. |
-
-### Connectivity design notes
-
-- LoRaWAN cannot carry video. Use it only for aggregate movement metrics and health status.
-- GSM/LTE can carry occasional clips, but clip upload should be rate-limited and battery-aware.
-- WiFi model can keep the current `gate-video-stream` video upload behavior.
-- Field models need a local persistent queue: telemetry first, thumbnail second, video last.
-- All variants should keep the same cloud-side API contracts: `telemetry-api` for movement metrics and `gate-video-stream` only when video exists.
-
-## Solar power and autonomy
-
-Solar feasibility depends on average Wh/day, not peak TOPS. The current app already helps by sleeping at night and skipping empty video uploads. Production should make this explicit.
-
-| Load source | Effect on solar design | Mitigation |
+| Platform | Hardware H.265 encode suitability | Impact on Entrance Observer |
 | --- | --- | --- |
-| Continuous camera + AI inference | Main energy cost during daylight hours. | Lower FPS, region-of-interest crop, process every Nth frame when traffic is low, sleep at night. |
-| CPU video encoding | Can dominate energy if hardware encoder is absent. | Use hardware encoder, low-res clips, thumbnails, or telemetry-only mode. |
-| Cellular modem | High peaks during attach/upload. | Batch telemetry, short upload windows, good antenna, store-and-forward. |
-| WiFi | Lower cost where infrastructure exists, but can still be wasteful if weak signal. | Prefer external antenna or Ethernet in urban installs. |
-| Storage writes | Moderate but continuous if saving all video. | Store only event clips, cap retention, delete uploaded clips. |
-| Cold/heat | Reduces battery capacity and may throttle compute. | Oversize battery, ventilated/shaded enclosure, thermal pads/heatsink. |
+| Jetson Orin Nano | Poor for hardware encode: no NVENC. H.264 software encode is documented by NVIDIA. H.265 software encode would add CPU/power load. | Use for AI reference, but avoid relying on it for solar video-heavy deployments. Upload smaller/fewer clips or pair with an external encoder/camera. |
+| Jetson Orin NX / AGX Orin class | Better candidate because higher Orin families include NVENC-class hardware encode support. | More expensive, but better for a premium video SKU if we need local AI + efficient video compression. |
+| Raspberry Pi 5 + Hailo | AI accelerator separate from video pipeline. H.265 encode support must be verified for the exact camera/OS pipeline. | Good cost-down AI candidate, but video encode must be benchmarked independently. |
+| RK3588 board | Often attractive for media pipelines with hardware codecs and integrated NPU. | Worth testing if Hailo conversion fails or if H.265 is more important than AI headroom. |
+| IP camera module with onboard H.265 | Camera handles video encode; edge device handles AI from decoded frames or secondary stream. | Strong option for bandwidth but can complicate frame access, latency, power, and enclosure integration. |
 
-### Solar sizing method
+### Bandwidth policy
 
-Use this formula during field tests:
+| Policy | Urban WiFi default | Field solar default |
+| --- | --- | --- |
+| Telemetry | Upload every chunk or every 1-5 minutes. | Upload every chunk summary or batch every 5-15 minutes. |
+| Clip resolution | 640x480 or 720p for selected clips. | 320x240 or 480p only when needed. |
+| Clip FPS | 10-15 FPS enough for review. | 2-10 FPS depending on event severity. |
+| Clip trigger | Movement present, user debug, random QA sampling. | Anomaly, large traffic change, manual request, low-rate sampling. |
+| Local retention | 1-7 days depending on storage. | 7-30 days if storage allows, delete oldest first. |
+| Upload retry | Immediate when connected. | Batch and backoff to protect modem energy/data. |
 
-```text
-Wh/day = (active_hours * active_power_W) + (sleep_hours * sleep_power_W) + upload_energy_Wh
-battery_Wh = Wh/day * autonomy_days / usable_depth_of_discharge
-panel_W = Wh/day / (peak_sun_hours * charge_efficiency)
-```
+## Energy and solar autonomy
 
-Example design targets to validate:
+Solar autonomy should be designed around **average Wh/day**, not peak watts. The current app already sleeps at night and skips empty video uploads; production should deepen this into explicit power modes.
 
-| Profile | Compute target | Video target | Solar implication |
-| --- | --- | --- | --- |
-| Urban WiFi | Continuous daylight detection | Event clips allowed | Mains preferred; solar possible with larger panel/battery. |
-| Field cellular | Daylight detection, lower FPS when idle | Telemetry + thumbnails, rare clips | Feasible if average power is kept low and modem uploads are batched. |
-| Field LoRaWAN | Sparse/low-FPS detection or periodic observation windows | No clips | Most feasible for full autonomy. |
+### Power modes
 
-## Candidate comparison
+| Mode | Camera | AI | Network | Video upload | Purpose |
+| --- | --- | --- | --- | --- | --- |
+| Active observation | On | On | WiFi/LTE on or periodic | Selected clips | Daytime bee traffic monitoring. |
+| Telemetry-only active | On or low FPS | On at reduced FPS | Periodic | Off | Field mode when energy/data budget is low. |
+| Idle/day low traffic | Low FPS or periodic sampling | Burst only | Off except heartbeat | Off | Save power during low traffic. |
+| Night sleep | Off | Off | Off except optional heartbeat | Off | Bees are not visible and app already supports night sleep. |
+| Maintenance | On | On | Local WiFi AP / SSH | Optional | Installation and service visit. |
 
-| Option | AI capability | Video encode fit | Approx. compute hardware cost | Strengths | Risks | Fit for Entrance Observer |
-| --- | ---: | --- | ---: | --- | --- | --- |
-| Jetson Orin Nano Super Developer Kit | Up to 67 TOPS class, CUDA/TensorRT | **Weak for production HEVC**: no NVENC, software encode | $249 dev kit | Best development velocity, mature NVIDIA vision stack, enough headroom for heavier models and multi-stage pipelines. | Higher board power; software encoding can hurt bandwidth/solar goals; dev kit is not final production hardware. | Best reference platform and premium prototype. Not the best solar video platform. |
-| Jetson Orin NX module/carrier | Strong CUDA/TensorRT | **Strong**: NVENC H.264/H.265 class path | Higher than Orin Nano | Combines AI and hardware video encode in NVIDIA ecosystem. | Cost, carrier design, power. | Best premium production candidate if video clips are a must-have. |
-| Raspberry Pi 5 + AI HAT+ 26 TOPS | 26 TOPS Hailo-8 | AI HAT does not solve encode; use low-res clips or external/camera-side encoder | Pi 5 + $110 HAT+ plus storage/cooling | Lower cost, good availability, lower power than Jetson class, official Pi camera ecosystem. | Hailo conversion; HEVC encode path must be proven separately. | Best cost-efficient candidate for telemetry-first production. |
-| Raspberry Pi 5 + AI HAT+/AI Kit 13 TOPS | 13 TOPS Hailo-8L | Same caveat as 26 TOPS | Lower than 26 TOPS HAT+ | Cheaper, lower-power experiment. | May be too tight for robust detection/tracking. | Possible field telemetry-only candidate if benchmarks pass. |
-| RK3588 boards, e.g. Radxa ROCK 5 class | Around 6 TOPS NPU | **Strong on paper** due to integrated VPU/HEVC class encode | Often lower than Jetson | Attractive board cost, integrated NPU + video processing. | Software ecosystem and NPU model tooling are fragmented. | Worth evaluating for aggressive cost-down with clips. |
-| Google Coral Edge TPU USB/M.2 | About 4 TOPS | Depends on host | Low accelerator cost when available | Very low-power inference. | Model/operator support and low headroom. | Not ideal unless model is simplified and video is telemetry-only. |
-| Camera-side H.265 IP/USB module + edge AI host | AI on host, encode in camera/module | **Strong if camera outputs HEVC** | Variable | Offloads compression from compute board. | Integration complexity, latency, control of exposure/focus, weatherproof lens path. | Good option if we keep Pi/Hailo but need efficient clips. |
-| Cloud-only processing | Server GPU | Edge only uploads video | Low edge hardware, high recurring cost | Simplifies edge device and enables heavy models. | Bandwidth, latency, privacy, recurring cost. | Use only as fallback/reprocessing, not default. |
-| Phone-based observer | Mobile NPU/GPU varies | Phone encoder is strong | Customer-provided phone | Camera, modem, battery, screen built in. | Device variability, weatherproofing, OS lifecycle. | Demo path, not reliable production hardware. |
+### Solar sizing checklist
 
-## Product variants to design
+| Design input | Why it matters | Initial target to validate |
+| --- | --- | --- |
+| Average active watts | Dominates panel and battery size. | Measure per platform with camera + AI + telemetry. |
+| Active hours/day | Bee activity is daytime, not 24h. | Start with 16h active, 8h night sleep from current defaults; tune by season/location. |
+| Sleep watts | Solar autonomy fails if standby is too high. | Target sub-watt sleep for field SKU if hardware supports it. |
+| Modem burst watts | LTE can spike current during attach/upload. | Use supercapacitor/battery sizing and batch uploads. |
+| Worst-case sunless days | Determines battery. | 2-3 days for hobby/urban, 5+ days for remote paid field units. |
+| Winter solar insolation | Estonia/northern climates are harsh. | Field SKU may need aggressive telemetry-only winter mode. |
 
-| Variant | Compute | Camera | Connectivity | Video policy | Power | Recommended next action |
-| --- | --- | --- | --- | --- | --- | --- |
-| Reference dev kit | Jetson Orin Nano | Current 4K USB camera + manual lens | WiFi/Ethernet | Upload selected low-res clips | Mains | Keep for model quality and dataset generation. |
-| Urban production | Pi 5 + AI HAT+ 26 TOPS or Orin NX | Fixed non-fisheye CSI/USB camera | WiFi/Ethernet | H.264/H.265 clips if hardware encode exists | Mains or large solar | Benchmark Pi/Hailo first; choose Orin NX if video encode is mandatory. |
-| Field cellular | Pi 5 + AI HAT+ 13/26 TOPS or lower-power NPU SoC | Fixed non-fisheye CSI camera | LTE-M/NB-IoT/Cat-1/Cat-4 | Telemetry + thumbnails, rare clips | Solar | Build battery-aware uploader and measure Wh/day. |
-| Field LoRaWAN | Low-power NPU or split MCU + AI module | Fixed camera, possibly lower FPS | LoRaWAN | Telemetry only | Solar | Define compact movement payload and gateway strategy. |
-| Multi-hive gateway | One stronger edge gateway + cheaper camera nodes | Cameras per hive | Local WiFi/LoRa to gateway, gateway cellular | Gateway uploads clips/telemetry | Solar/mains at gateway | Evaluate if apiaries usually have many hives close together. |
+### Energy-oriented hardware ranking
 
-## Camera and optics
+| Candidate | AI | Video encode | Connectivity | Solar fit | Notes |
+| --- | --- | --- | --- | --- | --- |
+| Raspberry Pi 5 + AI HAT+ 26 TOPS | Good if Hailo conversion works | Must verify H.265/H.264 encode path | WiFi built in, LTE/LoRa via USB/HAT | Medium-good | Best near-term cost-down prototype. Need careful power tuning. |
+| Jetson Orin Nano | Excellent AI headroom | Weak H.265 story due no NVENC | WiFi/Ethernet/LTE USB | Medium-poor for video-heavy solar | Good reference, not ideal for autonomous video. |
+| RK3588 board | Medium AI | Potentially strong media codecs | WiFi/LTE/LoRa varies | Medium-good | More integration risk, but attractive if video encode is central. |
+| Hailo/vision processor smart camera | Good for fixed model | Often onboard H.265 | Ethernet/WiFi/LTE varies | Good | Best long-term integrated product direction if vendor lock-in is acceptable. |
+| Telemetry-only MCU + LoRa plus local camera storage | Minimal AI unless using tiny model | No cloud video | LoRa | Excellent | Use only if bee counts can be produced by a simplified low-power model or external event sensor. |
 
-The current README explicitly notes that dual CSI cameras were tried but optics were not sufficient because of excessive fisheye. Production should use a camera/lens combination selected for entrance geometry, not generic wide-angle modules.
+## Connectivity variants
 
-| Camera option | Pros | Cons | Recommendation |
-| --- | --- | --- | --- |
-| Current MOKOSE 4K USB UVC + manual varifocal lens | Good prototype quality, adjustable FOV, easy Linux debugging. | Higher cost/size, USB cable/weatherproofing, manual focus/zoom variability. | Keep for lab/reference and early pilots. |
-| Raspberry Pi Camera Module 3 standard lens | 12MP Sony IMX708, autofocus, HDR mode, 75° diagonal FOV, 1080p50/720p120, low cost. | CSI cable/enclosure integration; standard lens still may be wider than ideal depending on distance. | Best first Pi/Hailo camera candidate. Use **standard**, not Wide, to avoid fisheye-like geometry. |
-| Raspberry Pi Camera Module 3 Wide | 120° FOV captures more scene. | Too wide for bee counting, more distortion, smaller bee pixels. | Avoid unless enclosure geometry forces very close camera placement. |
-| Raspberry Pi High Quality Camera / IMX477 with C/CS lens | Interchangeable lens, better optics control, can choose 6mm/8mm/12mm non-fisheye lens. | Higher cost and mechanical complexity. | Best optics path if Camera Module 3 standard is not sharp enough. |
-| Industrial global-shutter USB/CSI camera | Better motion capture for fast bees. | Cost and integration complexity. | Consider if motion blur causes count errors. |
-| H.265 IP camera module | Camera-side compression, weatherproof options. | Harder to integrate local inference unless raw/RTSP latency is acceptable; may over-compress small bees. | Consider only for video-heavy urban variant. |
+We likely need two product modes because bandwidth and power requirements are very different.
 
-### Lens/FOV rule of thumb
-
-Avoid fisheye and ultra-wide lenses. We need enough pixels per bee and low geometric distortion near the counting line/rectangle.
-
-| Requirement | Target |
-| --- | --- |
-| Lens type | Rectilinear/non-fisheye. |
-| FOV | Narrow enough that the entrance fills most of the frame. Prefer standard or varifocal lens over 120° wide modules. |
-| Focus | Fixed once installed; lock focus mechanically or use controlled autofocus only during setup. |
-| Resolution | Capture enough detail locally; upload can be lower resolution. |
-| Shutter | Prefer short exposure to reduce motion blur; add illumination only if bee-safe and required. |
-| Cover window | Flat optical window, not curved dome, because domes add distortion/reflections. |
-
-## Enclosure, cover, and product mechanics
-
-For production, the enclosure must protect electronics while keeping the optical path clean and undistorted.
+### Urban WiFi/video SKU
 
 | Component | Recommendation | Why |
 | --- | --- | --- |
-| Main enclosure | UV-stabilized polycarbonate or ASA/PC-ABS, outdoor-rated IP65 minimum; IP67 only if submersion/splash conditions require it. | IP65 is usually enough for rain/dust and easier to vent than IP67. UV stability matters outdoors. |
-| Camera window | Flat replaceable optical acrylic/polycarbonate or glass window with gasket. Add anti-reflective/anti-scratch option if budget allows. | Avoid curved domes/fisheye effects. Replaceable window handles scratches/propolis/dirt. |
-| Sun/rain hood | Small hood above lens/window. | Reduces glare, direct rain, and water drops on the optical path. |
-| Venting | Hydrophobic vent membrane. | Reduces condensation while keeping water ingress low. |
-| Cable entry | IP-rated cable glands and strain relief. | Prevents water ingress and field failures. |
-| Mounting | Adjustable bracket with lockable angle and hive-specific adapter plate. | Camera alignment is part of accuracy. |
-| Thermal path | Metal heat spreader or external heatsink path for AI board; shade from direct sun. | Solar enclosure heat can throttle inference. |
-| Service access | Separate sealed electronics bay and camera/window service path. | Beekeepers need to clean lens/window without exposing electronics. |
+| Network | WiFi 5/6 or Ethernet; optional local AP setup mode. | Cheap, higher bandwidth, easier debugging. |
+| Uploads | Telemetry + selected video clips. | Supports user playback and model QA. |
+| Compute | Jetson Orin Nano for dev/premium, Pi 5 + Hailo for production cost-down. | AI quality first, then cost. |
+| Storage | 128-256 GB NVMe or high-endurance SD/eMMC. | Local clip retention and retry queue. |
+| Power | Mains/USB-C/PoE preferred. | Video uploads and local UI are less constrained. |
+
+### Field solar telemetry SKU
+
+| Component | Recommendation | Why |
+| --- | --- | --- |
+| Network | LTE-M/NB-IoT/4G for telemetry and rare clips; LoRa/LoRaWAN for telemetry-only deployments. | Remote apiaries often lack WiFi. |
+| Uploads | Telemetry always, clips rarely. | Saves data and energy. |
+| Compute | Lowest-power platform that passes count accuracy. Hailo 26 TOPS or integrated smart camera first. | Solar budget is the product constraint. |
+| Storage | Local ring buffer for clips and JSONL telemetry. | Upload only when network/energy allows. |
+| Power | Solar panel + MPPT charger + LiFePO4 battery + load switch/watchdog. | Safer chemistry and better field autonomy. |
+| Firmware policy | Batch telemetry, modem off between uploads, adaptive FPS, winter/low-battery mode. | Energy autonomy requires software control, not just bigger battery. |
+
+## Camera and optics
+
+The current USB 4K camera is useful for prototyping, but production should avoid fisheye optics. The README explicitly notes that dual CSI cameras could work, but optics quality was insufficient because of too much fisheye.
+
+### Camera requirements
+
+| Requirement | Target | Why |
+| --- | --- | --- |
+| Lens type | Rectilinear, not fisheye; horizontal FOV roughly 45-80 degrees depending on mounting distance. | Bee movement direction and size should not distort heavily near edges. |
+| Focus | Manual lock or reliable autofocus with fixed focus after setup. | Autofocus hunting can break detection. |
+| Sensor | Good daylight dynamic range; global shutter is a plus but not mandatory for first product. | Entrances have shadows, sun patches, and fast motion. |
+| Resolution | Capture 720p-1080p for AI; 4K only if needed for future Varroa/parasite detail. | 4K increases bandwidth, storage, and compute. |
+| Interface | USB UVC for prototype, CSI/MIPI or industrial USB for production. | UVC is easy; CSI is lower integration and cable complexity once fixed. |
+| Weather | Separate optical window, gasket, anti-glare angle, replaceable cover. | Outdoor lens covers get dirty, wet, and scratched. |
+
+### Camera options
+
+| Option | Pros | Cons | Fit |
+| --- | --- | --- | --- |
+| Current MOKOSE 4K USB + manual varifocal lens | Good prototype control, Linux UVC, adjustable FOV, not fisheye if lens is chosen well. | Bulky, retail BOM cost, USB cable/weatherproofing. | Keep for reference and model data collection. |
+| Raspberry Pi Camera Module 3 standard 75 degree | Cheap, 12MP IMX708, autofocus, HDR, official ecosystem, not the 120 degree wide version. | Smaller sensor/lens, CSI cable/enclosure work, avoid Wide variant for distortion. | Good Pi/Hailo production prototype. |
+| Raspberry Pi HQ camera + C/CS lens | Better optics control, interchangeable lenses, can choose rectilinear lens. | Larger and more expensive than Camera Module 3. | Best Pi-based image quality prototype. |
+| Industrial UVC camera with C/CS mount | Good Linux compatibility and optics; can use locked focus/iris. | More expensive. | Good premium production candidate. |
+| H.265 IP camera module | Onboard compression and weatherproof camera variants exist. | AI frame access/latency can be harder; may force network camera pipeline. | Good for video-centric SKU, risky for tight AI loop. |
+| Wide/fisheye CSI camera | Large scene coverage. | Distortion hurts counting and tracking at entrance edges. | Avoid unless calibrated and undistorted before inference. |
+
+## Enclosure, cover, and product components
+
+A production unit is not just compute + camera. Outdoor reliability will be driven by enclosure, optics window, condensation control, power, and serviceability.
+
+### Recommended enclosure concept
+
+Use a **UV-stabilized polycarbonate or ASA outdoor enclosure** with gasketed lid, cable glands, and a replaceable optical window. Target **IP65 minimum** for rain/dust; use **IP67** only if submersion risk exists because it increases design complexity and condensation risk.
+
+| Component | Recommendation | Notes |
+| --- | --- | --- |
+| Main enclosure | UV-stabilized polycarbonate/ASA, IP65 or better, light color. | Light color reduces solar heating. Polycarbonate is impact resistant. |
+| Optical window | Replaceable flat acrylic/polycarbonate or glass window, tilted slightly downward. | Flat and angled window reduces distortion and rain/glare. Avoid curved dome unless optically corrected. |
+| Lens hood | Small hood or shade above optical window. | Reduces rain drops and direct sun reflections. |
+| Cable entry | IP-rated cable glands and strain relief. | USB/CSI/power/network cables fail first outdoors. |
+| Condensation | Vent membrane plus desiccant service pack. | Fully sealed boxes still breathe with temperature changes. |
+| Thermal path | Heat spreader or metal backplate for compute, avoid direct sun. | Needed for Jetson/Hailo inside sealed box. |
+| Mount | Adjustable bracket with locking angle and hive adapter plate. | Camera alignment is critical for tracking regions. |
+| Serviceability | External status LED, QR/device ID label, removable cover/window. | Field support must be possible without opening electronics every time. |
+
+### Product BOM blocks
+
+| Block | Urban WiFi/video SKU | Field solar telemetry SKU |
+| --- | --- | --- |
+| Compute | Jetson Orin Nano or Pi 5 + Hailo. | Pi 5 + Hailo or lower-power integrated vision module if benchmark passes. |
+| Camera | Rectilinear USB/CSI camera, 720p-1080p AI capture. | Rectilinear CSI/industrial camera, lower FPS, strong daylight performance. |
+| Network | WiFi/Ethernet. | LTE-M/NB-IoT/4G or LoRa telemetry, modem power switching. |
+| Storage | NVMe/high-endurance SD, larger retention. | Smaller high-endurance storage, ring buffer. |
+| Power | USB-C mains or PoE. | Solar panel, MPPT, LiFePO4 battery, fuse, load switch. |
+| Enclosure | IP65 with optical window and cable glands. | IP65/IP67 class, vent membrane, better thermal and condensation handling. |
+| Software mode | Higher video sampling, easy remote debugging. | Telemetry-first, adaptive FPS, rare video upload, aggressive sleep. |
 
 ## Production architecture target
 
@@ -215,21 +227,20 @@ The cloud APIs should stay the same regardless of edge hardware. Production hard
 
 ```mermaid
 flowchart LR
-  camera[Camera module or USB camera]
-  encoder[Optional hardware H.265/H.264 encoder]
+  camera[Rectilinear camera]
   edge[Production edge device]
   app[entrance-observer runtime]
-  queue[Local priority upload queue]
   telemetry[telemetry-api REST]
   video[gate-video-stream REST]
   graphql[graphql-router]
   web[web-app]
+  power[Solar or mains power controller]
+  network[WiFi / LTE / LoRa]
 
+  power --> edge
   camera --> edge --> app
-  camera -.video stream.-> encoder -.compressed clips.-> app
-  app --> queue
-  queue -->|movement metrics first| telemetry
-  queue -->|optional clips/thumbnails| video
+  app -->|movement metrics| network --> telemetry
+  app -->|selected clips only| network --> video
   web --> graphql
   graphql --> telemetry
   graphql --> video
@@ -239,13 +250,12 @@ Keep these interface boundaries stable:
 
 | Boundary | Production requirement |
 | --- | --- |
-| Camera to edge app | Abstract capture source so USB UVC, CSI camera, Pi camera, and RTSP/IP camera can be swapped. |
-| Model runtime | Abstract inference backend so TensorRT, HailoRT, ONNX Runtime, RKNN, or TFLite can be selected per device. |
-| Video encoder | Abstract writer so OpenCV, GStreamer, hardware VPU/NVENC, or camera-side HEVC can be selected. |
+| Camera to edge app | Abstract capture source so USB UVC, CSI camera, IP camera, and Pi camera can be swapped. |
+| Model runtime | Abstract inference backend so TensorRT, HailoRT, ONNX Runtime, RKNN, or vendor smart-camera runtime can be selected per device. |
 | Metrics upload | Keep the same `telemetry-api` schema for bee movement buckets. |
-| Video upload | Keep the same `gate-video-stream` upload/playback contract for clips. |
-| Upload queue | Prioritize telemetry, then thumbnails, then video. Make upload policy connectivity- and battery-aware. |
-| Device management | Keep device ID, hive ID, health telemetry, logs, and update state independent from hardware vendor. |
+| Video upload | Keep `gate-video-stream` upload/playback optional and event-triggered. |
+| Device management | Keep device ID, hive ID, health telemetry, logs, update state, energy state, and network state independent from hardware vendor. |
+| Connectivity profile | Support WiFi/video and field telemetry profiles with the same app contract. |
 
 ## Evaluation plan
 
@@ -257,7 +267,7 @@ Create a representative video set from the Jetson prototype:
 - high and low bee traffic;
 - clean and dirty cover/lens states;
 - at least one hive with challenging shadows or reflections;
-- clips captured with the target non-fisheye camera candidate.
+- at least one clip captured through the candidate product optical window.
 
 ### 2. Define acceptance metrics
 
@@ -267,18 +277,18 @@ Minimum production acceptance should include:
 | --- | --- |
 | Bee movement count error | Within product-defined tolerance versus labelled clips. |
 | Direction accuracy | High enough to distinguish entrance vs exit trends reliably. |
-| Sustained pipeline FPS | Enough for entrance geometry and bee speed, measured at target resolution. |
+| Sustained FPS | Enough for the entrance geometry and bee speed, measured at target resolution. |
+| FPS/W and Wh/day | Low enough for solar sizing in field SKU. |
+| Video bytes/event | Low enough for LTE monthly budget when clips are enabled. |
 | Offline operation | Buffer telemetry and selected clips during network loss. |
-| Power | Low enough for outdoor enclosure thermals and future solar/battery options. |
-| Encoding | Hardware H.265/H.264 path if video upload is enabled in production. |
-| Serviceability | Remote logs, health checks, watchdog, and reproducible OS image. |
+| Serviceability | Remote logs, health checks, watchdog, reproducible OS image, and local maintenance mode. |
 
 ### 3. Port the model/runtime
 
-- Export the reference model from the Jetson pipeline to ONNX where possible.
+- Export current `weights/best.pt` from the reference pipeline to ONNX.
 - Convert and benchmark TensorRT on Jetson as the reference optimized runtime.
-- Convert and benchmark HailoRT for Raspberry Pi AI HAT+.
-- Benchmark a video encoder path separately: OpenCV mp4v/avc1, GStreamer, NVENC/VPU if available, camera-side H.265 if used.
+- Convert and benchmark HailoRT for Raspberry Pi AI HAT+ 26 TOPS.
+- Test hardware/video encode paths separately from AI runtime.
 - Only evaluate RKNN/Coral after the Hailo path is measured.
 
 ### 4. Compare total assembled cost
@@ -287,11 +297,12 @@ Do not compare only board prices. Include:
 
 - compute board and accelerator;
 - camera and lens;
-- hardware video encoder if separate;
+- hardware encoder or camera encoder if needed;
 - storage;
-- power supply, solar charge controller, battery, and protection;
-- WiFi/cellular/LoRa module and antennas;
-- enclosure, optical window, mounting, seals, and cables;
+- power supply and protection;
+- networking/modem/antenna;
+- solar panel, MPPT, and battery for field SKU;
+- enclosure, optical window, seals, vents, and cables;
 - assembly and flashing time;
 - expected support burden.
 
@@ -299,34 +310,34 @@ Do not compare only board prices. Include:
 
 | If benchmark result is... | Choose... | Reason |
 | --- | --- | --- |
-| Hailo 26 TOPS matches Jetson accuracy/FPS and telemetry-only is acceptable | Raspberry Pi 5 + AI HAT+ 26 TOPS | Best cost-efficient path with official ecosystem and lower power. |
-| Hailo matches AI but video clips are required | Pi/Hailo + camera-side/hardware encoder, or Jetson Orin NX | Hailo solves AI, not video compression. |
-| Hailo works but has tight headroom | Keep Jetson Orin Nano for early production, continue model compression | Avoid shipping unreliable counts while improving model/runtime. |
-| Model needs CUDA-specific operators or heavier pipeline | Jetson Orin production module/carrier | Higher BOM, but lower engineering risk and better model flexibility. |
-| Solar field mode is the top requirement | Telemetry-first Pi/Hailo 13/26 TOPS or lower-power NPU SoC | Video upload must be optional or rare. |
-| Low-cost clips are required and RKNN accuracy is acceptable | RK3588 class board | Integrated NPU + VPU may be cost-efficient, but tooling risk is higher. |
-| Network is strong and edge cost must be minimal | Hybrid/cloud fallback for selected customers | Still avoid default cloud-only due to bandwidth and recurring cost. |
+| Hailo 26 TOPS matches Jetson count accuracy/FPS and video encode is acceptable | Raspberry Pi 5 + AI HAT+ 26 TOPS | Best near-term cost-efficient path. |
+| Hailo matches AI but video encode is weak | Pi/Hailo + lower video policy or external/on-camera H.265 | Keep low AI cost while solving bandwidth separately. |
+| Jetson is much more accurate or easier to maintain | Jetson Orin for early production | Ship reliability first, continue cost-down in parallel. |
+| Video upload becomes central product requirement | Jetson Orin NX/AGX or media-focused platform with hardware H.265 | Orin Nano lacks NVENC; don't force software encode into solar product. |
+| Field solar budget cannot support SBC-class compute | Telemetry-first SKU with aggressive duty cycling or integrated vision processor | Product may need two hardware classes. |
+| Simple model is sufficient after field validation | Evaluate RK3588/Coral/integrated smart camera | Potential cost-down only after model is proven small. |
 
 ## Open questions
 
-- What is the minimum acceptable FPS and resolution for reliable bee direction tracking with the final lens/FOV?
+- What is the minimum acceptable FPS and resolution for reliable bee direction tracking?
+- Does the product require video playback in field mode, or is telemetry enough?
+- What monthly data budget is acceptable for LTE deployments?
+- How many sunless days should the solar SKU survive in target countries?
 - Should production hardware support one entrance only, or multiple cameras/entrances per device?
 - Is night or low-light observation required, and if yes, what illumination is acceptable near bees?
-- How many days of autonomy are required: 1, 3, 7, or more cloudy days?
-- Which field network is most realistic for target customers: GSM/LTE, LTE-M/NB-IoT, LoRaWAN, or local gateway?
-- How much local video retention is required when the apiary is offline?
-- Should the production kit be a DIY kit, a pre-assembled Gratheon device, or both?
+- Should the production kit be DIY, pre-assembled Gratheon hardware, or both?
 
 ## Sources checked
 
-- `entrance-observer` README and source code: YOLO 11 custom bee detector, one `bee` class, `imgsz=640`, 129 layers, 3,011,043 parameters, 8.2 GFLOPs, `weights/best.pt` about 5.95 MB, 640x480/30 FPS defaults, 320x240 detection upload defaults, skip upload when no bees move, night sleep default 22:00-06:00.
+- Current `entrance-observer` README and source: custom YOLO 11 bee detector, tracking/counting metrics, 640x480 defaults, 320x240 detection upload defaults, night sleep, skip empty uploads.
 - NVIDIA Jetson Orin Nano Super Developer Kit product page: $249 class device and 67 TOPS marketing specification.
-- NVIDIA Jetson Linux Developer Guide: Orin Nano software encode note, stating Jetson Orin Nano does not have NVENC.
-- NVIDIA Jetson power/performance documentation: Jetson Orin family power management and power modes.
+- NVIDIA Jetson Linux documentation: Jetson Orin Nano does not have NVENC and uses software encode guidance.
+- NVIDIA Jetson power/performance documentation: Orin power management and sleep states.
 - Raspberry Pi AI Kit page: 13 TOPS Hailo-8L module, now replaced for new customers by Raspberry Pi AI HAT+.
-- Raspberry Pi AI HAT+ announcement: 13 TOPS Hailo-8L at $70 and 26 TOPS Hailo-8 at $110, PCIe Gen 3 mode, multiple real-time networks.
-- Raspberry Pi Camera Module 3 product page: Sony IMX708 12MP, autofocus, HDR, 75° standard / 120° wide variants, 1080p50 and 720p120.
+- Raspberry Pi AI HAT+ announcement: 13 TOPS Hailo-8L at $70 and 26 TOPS Hailo-8 at $110, with PCIe Gen 3.0 mode.
+- Raspberry Pi Camera Module 3 page: 12MP IMX708, autofocus, HDR, 75 degree standard / 120 degree wide options, 1080p50 and 720p120.
 - Hailo-8 M.2 product page: 26 TOPS AI acceleration module class.
 - Radxa ROCK 5 documentation: RK3588 SBC family for lower-cost NPU experiments.
-- Waveshare SIM7600G-H documentation: cellular/GNSS module class for field connectivity experiments.
-- Outdoor enclosure references: IP65/IP67, UV-stabilized polycarbonate, clear covers, gaskets, and waterproof cable entry requirements.
+- Google Coral documentation: Edge TPU platform for very-low-power edge AI, but with constrained model support.
+- Waveshare SIM7600G-H docs: LTE/GNSS modem class for Jetson/Raspberry Pi style edge devices.
+- Outdoor enclosure references: IP65/IP67 polycarbonate/UV-stabilized enclosures and the design trade-off between weather resistance, heat, and condensation.
