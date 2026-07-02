@@ -58,7 +58,6 @@ flowchart LR
 	graphql-router --> plantnet("<a href='https://github.com/Gratheon/plantnet'>plantnet</a>\n:8090") --> mysql
 
 	graphql-router --> weather("<a href='https://github.com/Gratheon/weather'>weather</a>\n:8070")
-	user-cycle --"create org and user"--> grafana("<a href='https://github.com/gratheon/grafana'>grafana</a>")
 
 ```
 

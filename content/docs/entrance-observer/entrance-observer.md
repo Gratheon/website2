@@ -49,7 +49,7 @@ flowchart LR
 
   subgraph UI[Gratheon web-app]
     web[web-app]
-    grafana[Grafana analytics]
+    charts[Telemetry charts]
   end
 
   camera --> capture --> detector
@@ -64,8 +64,8 @@ flowchart LR
   web -->|query hive, streams, telemetry| graphql
   graphql --> telemetry
   graphql --> video
-  grafana -->|time-series dashboards| telemetry
-  web --> grafana
+  web --> charts
+  charts -->|query time-series metrics| graphql
 ```
 
 ## Data flow
@@ -75,7 +75,7 @@ flowchart LR
 3. **Aggregate** - raw detections are converted into telemetry buckets such as entrances, exits, unknown direction, confidence, and health metadata.
 4. **Upload metrics** - Jetson sends movement telemetry to [`telemetry-api`](../API/rest/telemetry-api.md) using the device REST API.
 5. **Upload clips when useful** - the edge app uploads short video clips to [`gate-video-stream`](../API/rest/gate-video-stream.md) for playback, debugging, and model retraining.
-6. **Read in web-app** - the Gratheon web-app uses [`graphql-router`](../API/GraphQL.md) for user-facing queries and can embed Grafana dashboards for time-series analysis.
+6. **Read in web-app** - the Gratheon web-app uses [`graphql-router`](../API/GraphQL.md) for user-facing queries and renders time-series charts directly from telemetry data.
 7. **Improve model** - selected stored clips are used to validate detections, retrain the model, and compare cloud inference with edge inference.
 
 ## API responsibilities
@@ -83,7 +83,7 @@ flowchart LR
 | Component | Interface | Responsibility |
 | --- | --- | --- |
 | `entrance-observer` | Local camera, REST clients | Capture frames, run edge inference, aggregate telemetry, and upload metrics/clips. |
-| `telemetry-api` | REST for devices, GraphQL behind router | Store entrance movement metrics and serve time-series reads to web-app/Grafana. |
+| `telemetry-api` | REST for devices, GraphQL behind router | Store entrance movement metrics and serve time-series reads to the web-app. |
 | `gate-video-stream` | REST/OpenAPI | Accept short entrance videos, serve HLS playback playlists, and retain training/debug clips. |
 | `models-gate-tracker` | Internal service | Run cloud-side inference/reprocessing when uploaded video needs validation or model evaluation. |
 | `graphql-router` | Federated GraphQL | User-facing API gateway for web-app queries. |

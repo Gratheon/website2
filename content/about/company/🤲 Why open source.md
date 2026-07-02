@@ -14,7 +14,7 @@ Many investors and mentors are surprised to see us open source. This page clarif
    
 6. Legacy. No matter what happens to the company founders 💀, code is still available for the project **to live on** and benefit both the humanity and the bees
    
-7. Use of AGPL software. This helps us to stay 💶 financially lean by avoiding commercial licensing of sub-components, such as Ultralytics yolo model, Grafana and keep all of our code under AGPL. And because anyone can contribute for free, we also benefit from it
+7. Use of AGPL software. This helps us to stay 💶 financially lean by avoiding commercial licensing of sub-components, such as Ultralytics yolo model, and keep all of our code under AGPL. And because anyone can contribute for free, we also benefit from it
    
 8. Good for 💶 investors at initial phases, because they can see
     1. that **product exists** and is functional

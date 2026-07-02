@@ -198,11 +198,9 @@ flowchart LR
 
     telemetry-api --"store sensor time series" --> mysql[(<a href="https://github.com/Gratheon/mysql">mysql</a>)]
 
-    grafana[(<a href="https://github.com/Gratheon/grafana">grafana</a>)] --"fetch metric history"--> telemetry-api
-
     telemetry-api --"verify API tokens for REST calls"--> user-cycle[<a href="https://github.com/Gratheon/user-cycle">user-cycle</a>]
-    web-app[<a href="https://github.com/Gratheon/web-app">web-app</a>] --"display configurable graphs"--> grafana
-    web-app --"query metrics\nPOST GraphQL"--> graphql-router[<a href="https://github.com/Gratheon/graphql-router">graphql-router</a>]--> telemetry-api
+    web-app[<a href="https://github.com/Gratheon/web-app">web-app</a>] --"render telemetry charts"--> graphql-router[<a href="https://github.com/Gratheon/graphql-router">graphql-router</a>]
+    graphql-router --"query metric history"--> telemetry-api
 ```
 
 ![](docs/beehive-sensors/img/352610409-b4ed305f-7ddd-44ff-b200-e0d139734349.jpg)

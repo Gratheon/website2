@@ -45,7 +45,7 @@ This feature supports:
 3. **View and analyze data**
    - Real-time metrics displayed in hive dashboard
    - Historical charts with configurable time ranges
-   - Advanced analytics via Grafana integration
+   - Advanced analytics through built-in web-app charts
    - Export data for external analysis
 
 4. **Set up alerts**
@@ -70,15 +70,14 @@ flowchart LR
     B -->|store| D[(MySQL)]
     E[web-app] -->|query| F[graphql-router]
     F --> B
-    E -->|advanced graphs| G[grafana]
-    G --> D
+    E -->|render charts| F
 ```
 
 The system uses:
 - **telemetry-api** - Core service for metric storage and querying
 - **MySQL** - Time-series optimized storage (indexed by hive_id and timestamp)
 - **graphql-router** - API gateway for web-app queries
-- **grafana** - Advanced visualization and analytics
+- **web-app charts** - Built-in visualization and analytics UI
 
 ## API access
 
@@ -133,7 +132,7 @@ Analyze metrics before and after treatments to:
 - Data point limit: 10,000 records per query
 - Write frequency: Minimum 1-second interval per device
 - Polling-based updates (no real-time websockets)
-- Grafana requires separate authentication
+- Analytics uses the same authenticated web-app session
 
 ## Related features
 

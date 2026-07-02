@@ -5,7 +5,7 @@
 
 We want our devices as well as customer’s own hack-projects to be able to stream data to us so that
 
-1. beekeepers can track their apiaries in [Analytics with grafana](https://www.notion.so/Analytics-with-grafana-044239bdf92544a0a1ed95258d812e04?pvs=21) dashboards
+1. beekeepers can track their apiaries in web-app telemetry dashboards
 2. beekeepers can correlate data to get insights
 3. we can generate [Alerts](../../web_app/flexible-tier/alerts.md)
 
@@ -32,5 +32,5 @@ We want our devices as well as customer’s own hack-projects to be able to stre
 ## AC
 
 - provide a flexible graphQL API in telemetry-api to store timeseries metrics
-- store this data into timeseries DB, ex. InfluxDB. Alternatively maybe look at [prometheus](https://grafana.com/docs/grafana-cloud/send-data/metrics/metrics-prometheus/?pg=metrics&plcmt=hero-btn-2). If too hard, fallback to MySQL.
-- play with [Analytics with grafana](https://www.notion.so/Analytics-with-grafana-044239bdf92544a0a1ed95258d812e04?pvs=21) to be able to display graphs
+- store this data in telemetry-api time-series storage. MySQL is the current fallback when a dedicated time-series database is not justified.
+- render time-series graphs directly in the web app by querying telemetry-api through `graphql-router`

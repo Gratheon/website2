@@ -24,7 +24,7 @@ We want to notify beekeeper in various cases/features. For that we need a generi
     - drone cell ratio is too high - [Drone brood detection](../future-ideas/drone-brood-detection.md)
     - low/high temperature in the hive
     - swarming has happened
-    - custom anomaly - should be tied to [Analytics with grafana](https://www.notion.so/Analytics-with-grafana-044239bdf92544a0a1ed95258d812e04?pvs=21)
+    - custom anomaly - should be tied to telemetry analytics in the web app
 
 ## User story - receiving a queen missing alert
 

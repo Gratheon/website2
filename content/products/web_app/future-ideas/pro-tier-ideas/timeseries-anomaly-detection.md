@@ -8,7 +8,7 @@ To have [Alerts](../../flexible-tier/alerts.md) we need to automatically and con
 
 ## Related work
 
-See [Analytics with grafana](https://www.notion.so/Analytics-with-grafana-044239bdf92544a0a1ed95258d812e04?pvs=21) and [**Setup influx DB under telemetry-api**](https://www.notion.so/Setup-influx-DB-under-telemetry-api-77bc00eb46df4a759dc119650253aff7?pvs=21)
+See telemetry analytics in the web app and [**Setup influx DB under telemetry-api**](https://www.notion.so/Setup-influx-DB-under-telemetry-api-77bc00eb46df4a759dc119650253aff7?pvs=21)
 
 ## AC
 

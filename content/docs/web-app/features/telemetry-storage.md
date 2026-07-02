@@ -14,7 +14,7 @@ Time-series data storage and querying system for IoT sensor metrics from beehive
 - **MetricSelector**: UI for choosing which metrics to display
 - **TimeRangeFilter**: Date range picker for historical queries
 - **HiveTelemetryPanel**: Dashboard widget showing real-time sensor data
-- **GrafanaEmbed**: iFrame integration for advanced analytics
+- **TelemetryChart**: in-app chart component for advanced analytics
 
 #### Services
 - **telemetry-api**: Core service for metric storage and retrieval
@@ -22,7 +22,7 @@ Time-series data storage and querying system for IoT sensor metrics from beehive
 - **entrance-observer**: Video analytics service sending bee traffic metrics
 - **user-cycle**: Authentication service for API token validation
 - **graphql-router**: Federated gateway routing telemetry queries
-- **grafana**: Advanced visualization and analytics platform
+- **web-app charts**: Built-in visualization and analytics UI
 
 ### 📋 Technical Specifications
 
@@ -378,7 +378,6 @@ sequenceDiagram
     participant U as user-cycle
     participant M as MySQL
     participant W as web-app
-    participant G as grafana
     
     S->>T: POST /v1/metrics (with token)
     T->>U: Validate API token
@@ -391,9 +390,7 @@ sequenceDiagram
     T->>M: SELECT FROM telemetry_metrics
     M-->>T: Time-series data
     T-->>W: MetricFloatList
-    
-    G->>M: Direct SQL query
-    M-->>G: Aggregated results
+
 ```
 
 ### ⚙️ Configuration
@@ -490,7 +487,7 @@ Location: `web-app/e2e/telemetry.spec.ts`
 - **High-frequency writes**: Sensors send data every 5 seconds, approximately 17,280 inserts per hive per day
 - **Large time-range queries**: Queries over 1 year require aggregation to avoid memory issues
 - **Concurrent device writes**: MySQL write locks during bulk inserts from multiple devices
-- **Grafana load**: Complex dashboard queries can generate 20+ database queries simultaneously
+- **Chart query load**: Complex in-app dashboard views can generate multiple telemetry queries simultaneously
 
 #### Metrics
 - **Query response time**: under 500ms for 24-hour range, under 2 seconds for 30-day range
@@ -526,7 +523,7 @@ async function logQueryPerformance(
 - Write frequency: minimum 1 second interval per device
 - Supported metrics: temperature, humidity, weight, entrance traffic only
 - No real-time websocket streaming (polling only)
-- Grafana requires separate authentication (not SSO integrated)
+- No separate analytics authentication; charts are rendered inside the authenticated web-app session
 
 **Known Issues:**
 - Daylight saving time transitions can create timestamp gaps in charts
@@ -556,7 +553,7 @@ async function logQueryPerformance(
 - **Architecture Diagram**: Available in repository README
 - **API Schema**: `/schema.graphql` in repository
 - **Database Migrations**: `/migrations` directory
-- **Grafana Dashboards**: `/grafana/dashboards` (JSON exports)
+- **Telemetry chart components**: maintained in the web-app codebase
 
 ### 💬 Technical Notes
 
@@ -571,7 +568,7 @@ async function logQueryPerformance(
 - Devices must handle network interruptions gracefully (buffer and retry)
 - API tokens should be rotated every 90 days for security
 - Large time-range queries should use aggregation to prevent timeout
-- Grafana embedding requires CORS configuration on telemetry-api
+- Web-app chart requests should go through `graphql-router` so telemetry access stays behind the authenticated API boundary
 - Data retention policies executed daily via cron job (deletes old records)
 
 ---

@@ -49,7 +49,7 @@ Esta función ayuda a:
 3. **Ver y analizar datos**
    - Las métricas recientes se muestran en el panel de la colmena.
    - Los gráficos históricos permiten elegir rangos de tiempo.
-   - La analítica avanzada puede integrarse con Grafana.
+   - La analítica avanzada se muestra con gráficos integrados en la aplicación web.
    - Los datos pueden exportarse para análisis externo.
 
 4. **Configurar alertas**
@@ -75,8 +75,7 @@ flowchart LR
     B -->|store| D[(MySQL)]
     E[web-app] -->|query| F[graphql-router]
     F --> B
-    E -->|advanced graphs| G[grafana]
-    G --> D
+    E -->|render charts| F
 ```
 
 El sistema usa:
@@ -84,7 +83,7 @@ El sistema usa:
 - **telemetry-api**: servicio principal para almacenar y consultar métricas.
 - **MySQL**: almacenamiento optimizado por identificador de colmena y fecha.
 - **graphql-router**: puerta de enlace para consultas desde la aplicación web.
-- **Grafana**: visualización avanzada y análisis operativo.
+- **Gráficos de la web-app**: visualización avanzada y análisis operativo integrados.
 
 ## Acceso API
 
@@ -133,7 +132,7 @@ Compara métricas antes y después de una intervención para verificar recuperac
 - Hay límites de puntos por consulta para mantener rendimiento.
 - La frecuencia mínima de escritura depende del dispositivo y la configuración.
 - Algunas vistas usan actualización por sondeo, no WebSockets en tiempo real.
-- Grafana puede requerir autenticación separada.
+- La analítica usa la misma sesión autenticada de la aplicación web.
 
 ## Funciones relacionadas
 

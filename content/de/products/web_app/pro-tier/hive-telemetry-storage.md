@@ -46,7 +46,7 @@ Diese Funktion unterstützt:
 3. **Daten ansehen und analysieren**
    - Echtzeitnahe Messwerte im Beuten-Dashboard anzeigen.
    - Historische Diagramme mit konfigurierbaren Zeitbereichen nutzen.
-   - Erweiterte Auswertungen über Grafana einsehen.
+   - Erweiterte Auswertungen über integrierte Diagramme in der Web-App einsehen.
    - Daten für externe Analysen exportieren.
 
 4. **Warnungen einrichten**
@@ -71,15 +71,14 @@ flowchart LR
     B -->|store| D[(MySQL)]
     E[web-app] -->|query| F[graphql-router]
     F --> B
-    E -->|advanced graphs| G[grafana]
-    G --> D
+    E -->|render charts| F
 ```
 
 Das System verwendet:
 - **telemetry-api** – zentraler Dienst für Speicherung und Abfrage von Messwerten,
 - **MySQL** – zeitreihenoptimierte Speicherung,
 - **graphql-router** – API-Gateway für Web-App-Abfragen,
-- **grafana** – erweiterte Visualisierung und Analyse.
+- **Web-App-Diagramme** - integrierte Visualisierung und Analyse.
 
 ## API-Zugriff
 
@@ -122,7 +121,7 @@ Analysieren Sie Messwerte vor und nach Eingriffen, um Erholung, Temperaturstabil
 - Datenpunktlimit: 10.000 Werte pro Abfrage.
 - Schreibfrequenz: mindestens 1 Sekunde Abstand pro Gerät.
 - Aktualisierung per Polling, keine Echtzeit-WebSockets.
-- Grafana benötigt eine separate Authentifizierung.
+- Die Analytik verwendet dieselbe authentifizierte Web-App-Sitzung.
 
 ## Verwandte Funktionen
 

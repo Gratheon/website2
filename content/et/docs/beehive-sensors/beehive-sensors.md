@@ -23,11 +23,10 @@ flowchart LR
 	
 	telemetry-api --"store bee traffic timeseries" --> influx[(influx-db v2)]
 	
-	grafana[(<a href="https://github.com/Gratheon/grafana">grafana</a>)] --"fetch temperature history for hive X"--> telemetry-api
 
 	telemetry-api --"verify API tokens for REST calls"--> user-cycle[<a href="https://github.com/Gratheon/user-cycle">user-cycle</a>]
-	web-app[<a href="https://github.com/Gratheon/web-app">web-app</a>] --"display advanced configureable graphs"--> grafana
-	web-app --"query for simplistic metrics\nPOST graphql"-->graphql-router[<a href="https://github.com/Gratheon/graphql-router">graphql-router</a>]--> telemetry-api
+	web-app[<a href="https://github.com/Gratheon/web-app">web-app</a>] --"render telemetry charts"--> graphql-router[<a href="https://github.com/Gratheon/graphql-router">graphql-router</a>]
+	graphql-router --"query metric history"--> telemetry-api
 
 ```
 
