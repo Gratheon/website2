@@ -1354,6 +1354,131 @@ html[data-theme='dark'] .front-page .future {
   font-size: 0.94rem;
 }
 
+/* Research teams page: make the comparison table wider and easier to scan.
+   WHY: this page compares many institutions and recurring authors, so the default article/table width makes cells cramped.
+   WHAT: only this explicit table class gets full-shell width, roomier cells, outlined institution links, and official portrait chips. */
+.knowledge-content-layout:has(.research-teams-table-wrap) {
+  grid-template-columns: minmax(0, 1fr);
+}
+.knowledge-article:has(.research-teams-table-wrap) {
+  max-width: none;
+}
+
+.knowledge-content .research-teams-table-wrap {
+  width: 100%;
+  max-width: none;
+  margin: clamp(24px, 4vw, 48px) 0;
+  overflow-x: auto;
+  border: 1px solid var(--knowledge-line);
+  background: var(--knowledge-paper);
+}
+
+.knowledge-content .research-teams-table {
+  width: 100%;
+  min-width: 1160px;
+  margin: 0;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-size: clamp(0.95rem, 1vw, 1.08rem);
+  line-height: 1.35;
+}
+
+.knowledge-content .research-teams-table__team {
+  width: 27%;
+}
+
+.knowledge-content .research-teams-table__people {
+  width: 24%;
+}
+
+.knowledge-content .research-teams-table__evidence {
+  width: 14%;
+}
+
+.knowledge-content .research-teams-table__areas {
+  width: 35%;
+}
+
+.knowledge-content .research-teams-table th,
+.knowledge-content .research-teams-table td {
+  padding: clamp(16px, 1.8vw, 28px) clamp(18px, 2vw, 30px);
+  vertical-align: top;
+  border-bottom: 1px solid var(--knowledge-line);
+}
+
+.knowledge-content .research-teams-table th {
+  color: var(--knowledge-ink);
+  font-weight: 850;
+  line-height: 1.15;
+  text-align: left;
+  background: color-mix(in srgb, var(--knowledge-soft) 72%, var(--knowledge-paper) 28%);
+}
+
+.knowledge-content .research-teams-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.knowledge-content .research-teams-table td:first-child a,
+.knowledge-content .research-teams-table td:first-child a:visited {
+  display: inline;
+  padding: 0 0.12em;
+  border-bottom: 2px solid color-mix(in srgb, var(--accent, #2f8b0b) 65%, transparent);
+  color: var(--knowledge-ink);
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.knowledge-content .research-teams-table td:first-child a:hover,
+.knowledge-content .research-teams-table td:first-child a:focus-visible {
+  background: var(--brand-yellow);
+  border-bottom-color: var(--brand-yellow);
+  color: black !important;
+  outline: 0;
+}
+
+.knowledge-content .research-team-avatars {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 12px;
+}
+
+.knowledge-content .research-team-avatar,
+.knowledge-content .research-team-avatar:visited {
+  display: inline-flex;
+  width: 46px;
+  height: 46px;
+  padding: 0;
+  border: 1px solid var(--knowledge-line);
+  border-radius: 999px;
+  overflow: hidden;
+  background: var(--knowledge-soft);
+}
+
+.knowledge-content .research-team-avatar:hover,
+.knowledge-content .research-team-avatar:focus-visible {
+  box-shadow: 0 0 0 3px var(--brand-yellow);
+  outline: 0;
+}
+
+.knowledge-content .research-team-avatar img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+}
+
+@media (max-width: 760px) {
+  .knowledge-content .research-teams-table-wrap {
+    width: 100%;
+  }
+
+  .knowledge-content .research-teams-table {
+    min-width: 980px;
+  }
+}
+
 .knowledge-content blockquote {
   margin: 32px 0;
   padding: 22px 26px;
