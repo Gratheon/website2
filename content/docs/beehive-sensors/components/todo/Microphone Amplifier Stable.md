@@ -1,3 +1,6 @@
+---
+hideNav: true
+---
 Microphone Amplifier Stable MAX9814 module Auto Gain Control MAX4466
 
 https://www.aliexpress.com/item/1005001718734058.html?spm=a2g0o.order_list.order_list_main.77.768b1802ichOiR

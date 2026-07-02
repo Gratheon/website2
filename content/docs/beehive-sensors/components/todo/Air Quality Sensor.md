@@ -1,3 +1,6 @@
+---
+hideNav: true
+---
 Air Quality Sensor (TZT MQ135 MQ-135 )
 https://www.aliexpress.com/item/1005005264725457.html?spm=a2g0o.order_list.order_list_main.95.768b1802ichOiR
 

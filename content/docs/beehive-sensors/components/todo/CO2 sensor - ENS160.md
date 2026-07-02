@@ -1,3 +1,6 @@
+---
+hideNav: true
+---
 ## Alternatives
 
 - MQ135

@@ -1,6 +1,7 @@
 ---
 price: "3.14"
 title: Microcontroller - ESP32
+hideNav: true
 ---
 
 

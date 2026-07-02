@@ -1,6 +1,7 @@
 ---
 title: Display - LCD1602
 price: "2.64"
+hideNav: true
 ---
 https://www.aliexpress.com/item/1005006100081942.html
 https://github.com/blackhack/LCD_I2C

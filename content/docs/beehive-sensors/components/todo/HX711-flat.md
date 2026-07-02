@@ -1,5 +1,6 @@
 ---
 title: Weight sensor HX711 (flat-type)
+hideNav: true
 ---
 https://www.aliexpress.com/item/1005007254273938.html
 

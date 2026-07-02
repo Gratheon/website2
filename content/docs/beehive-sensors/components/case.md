@@ -2,6 +2,7 @@
 price: "19.11"
 shipping-price: "18.87"
 title: Aluminium Enclosure
+hideNav: true
 ---
 https://www.aliexpress.com/item/1005007794243559.html
 170x54x150mm

@@ -3,6 +3,7 @@ title: Battery (18650 type, Li-ion)
 items: "4"
 price: "9.42"
 shipping-price: "8.33"
+hideNav: true
 ---
 LiitoKala (real capacity ~2400mAh)
 https://www.aliexpress.com/item/32817391455.html

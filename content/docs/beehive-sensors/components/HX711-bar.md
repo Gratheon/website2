@@ -2,6 +2,7 @@
 price: "4"
 title: Weight sensor HX711 (bar-type)
 items: "4"
+hideNav: true
 ---
 https://www.aliexpress.com/item/1005006827930173.html
 [https://www.amazon.de/-/en/gp/product/B079FQNJJH/](https://www.amazon.de/-/en/gp/product/B079FQNJJH/)

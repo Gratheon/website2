@@ -1,6 +1,7 @@
 ---
 title: Battery (18650 type, Li-ion) shield
 price: "5.53"
+hideNav: true
 ---
 
 

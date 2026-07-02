@@ -1,3 +1,6 @@
+---
+hideNav: true
+---
 Carbon Dioxide CO2 Temperature Humidity VOCs Air Quality Sensor Module (CS811 HDC1080)
 
 ![](docs/img/Screenshot%202024-07-21%20at%2002.04.16.png)
