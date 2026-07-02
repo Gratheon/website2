@@ -1,24 +1,16 @@
 ---
 title: Bill of materials
 navTitle: Bill of materials
-hideChildren: false
+hideNav: true
+hide_table_of_contents: false
 ---
 
-This BOM section is split by product maturity. Each phase has its own purchase list, functionality, and sourcing notes:
+This legacy BOM index is kept for old links. Beehive sensor BOMs are now grouped inside each phase:
 
-| Phase | Use this when | Target cost | Detailed BOM |
-| --- | --- | ---: | --- |
-| Phase 1 - Lab | You need to prove wiring, firmware, calibration, and telemetry ingestion on a bench. | €20-35 | [Lab BOM](lab.md) |
-| Phase 2 - Field MVP | You need a weatherproof DIY hive scale for first outdoor pilots. | €45-90 | [Field MVP BOM](mvp.md) |
-| Phase 3 - Production | You need repeatable, supportable hardware for customers or managed apiaries. | €90-180+ | [Production BOM](production.md) |
+| Phase | Product description | Bill of materials |
+| --- | --- | --- |
+| Phase 1 - Lab validation | [Product description](../phase-1-lab-validation/product-description.md) | [Bill of materials](../phase-1-lab-validation/bill-of-materials.md) |
+| Phase 2 - Field MVP | [Product description](../phase-2-field-mvp/product-description.md) | [Bill of materials](../phase-2-field-mvp/bill-of-materials.md) |
+| Phase 3 - Production kit | [Product description](../phase-3-production-kit/product-description.md) | [Bill of materials](../phase-3-production-kit/bill-of-materials.md) |
 
-## Sourcing principles
-
-- Prefer components that can be bought from more than one supplier.
-- Keep AliExpress links for low-cost prototyping, but list Adafruit, SparkFun, DigiKey, Mouser, Amazon, or local hardware-store alternatives where possible.
-- Treat individual product links as examples, not permanent vendor lock-in.
-- Re-check stock, connector type, voltage, dimensions, and shipping cost before ordering.
-
-## Hidden component details
-
-The older single-component pages are still linked from the phase BOM tables for wiring notes and historical purchases, but they are hidden from the left sidebar to keep the menu focused on phases.
+The older single-component pages remain available for purchase history, wiring notes, and images, but they are hidden from the sidebar to keep the menu focused on phases.
