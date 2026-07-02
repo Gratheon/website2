@@ -12,6 +12,7 @@ Phase 2 is the first outdoor pilot device. It turns the lab circuit into a weath
 
 - [Product description](product-description.md) - outdoor scope, electrical interfaces, mechanical stack, power budget, and installation flow.
 - [Bill of materials](bill-of-materials.md) - parts to buy for a field pilot unit.
+- [🧪 Research references](../research-references.md) - research papers and design implications behind the selected MVP sensor scope.
 
 ## Phase outcome
 

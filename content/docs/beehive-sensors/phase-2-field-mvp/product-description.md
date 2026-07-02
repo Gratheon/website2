@@ -140,12 +140,9 @@ Not required for the first release, but useful for field reliability:
 - Add a “last seen” and “missing telemetry” alert using the latest timestamp per device/hive.
 - Add calibration metadata: load-cell factor, tare date, and mechanical configuration.
 
-## Research backing
+## Research references
 
-The Field MVP keeps weight, temperature, humidity, battery, and connectivity first because research and practical DIY builds consistently show these are the most useful low-cost modalities before adding heavier sensors:
-
-- [Advances in Beehive Monitoring Systems: Low-Cost Integrating Sensor Technology for Improved Apiculture Management](../../../research/papers/Advances%20in%20Beehive%20Monitoring%20Systems%20Low-Cost%20Integrating%20Sensor%20Technology%20for%20Improved%20Apiculture%20Management.md) validates low-cost temperature, humidity, hive weight, and sound monitoring as practical modalities.
-- [Analysis of Energy Consumption in a Precision Beekeeping System](../../../research/papers/Analysis%20of%20Energy%20Consumption%20in%20a%20Precision%20Beekeeping%20System.md) explains why field devices must be built around sleep cycles, radio duty cycle, and reduced edge processing.
+Research backing has moved to [🧪 Research references](../research-references.md). It links this Field MVP scope to Gratheon's [Research](/research/) section and explains why weight, temperature, humidity, battery health, and connectivity health stay ahead of heavier sensor modalities.
 
 ## Exit criteria
 
