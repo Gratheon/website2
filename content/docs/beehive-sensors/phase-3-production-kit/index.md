@@ -12,6 +12,7 @@ Phase 3 is the supportable product version. It replaces fragile prototype wiring
 
 - [Product description](product-description.md) - production architecture, connector strategy, mechanical requirements, service diagnostics, and gateway variants.
 - [Bill of materials](bill-of-materials.md) - production-grade parts, sourcing options, and connectorized subsystem plan.
+- [🧪 Research references](../research-references.md) - research papers and design implications behind the production roadmap.
 
 ## Phase outcome
 

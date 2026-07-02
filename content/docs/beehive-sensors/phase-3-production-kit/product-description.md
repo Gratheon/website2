@@ -158,10 +158,9 @@ This keeps the first kit simple while preserving a path to remote apiaries: many
 - Pairing test from unboxed device to Gratheon hive dashboard.
 - Firmware update or recovery test if OTA is supported.
 
-## Research backing
+## Research references
 
-- [A Smart Sensor-Based Measurement System for Advanced Bee Hive Monitoring](../../../research/papers/A%20Smart%20Sensor-Based%20Measurement%20System%20for%20Advanced%20Bee%20Hive%20Monitoring.md) validates the long-term multimodal direction with weight, sound, temperature, humidity, and CO₂.
-- [Bee colony remote monitoring based on IoT using ESP-NOW protocol](../../../research/papers/Bee%20colony%20remote%20monitoring%20based%20on%20IoT%20using%20ESP-NOW%20protocol.md) supports the production gateway architecture for apiaries without WiFi.
+Research backing has moved to [🧪 Research references](../research-references.md). It links this production-kit scope to Gratheon's [Research](/research/) section and explains why multimodal sensing, gateway connectivity, calibrated mechanics, and serviceable outdoor hardware shape the production roadmap.
 
 ## Exit criteria
 
