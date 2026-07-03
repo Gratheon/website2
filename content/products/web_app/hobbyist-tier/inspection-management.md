@@ -6,6 +6,9 @@ status: complete
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/5tYttNWfQPA" title="Beehive inspections feature" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+
+Related future idea: [Inspection mode](../future-ideas/hobbyist-tier-ideas/inspection-mode.md) for a field-first wizard with voice notes and guided frame photo capture.
+
 ## Creating inspection
 
 - User as beekeeper did manual beehive inspection and took the photos
