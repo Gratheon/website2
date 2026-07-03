@@ -119,6 +119,7 @@ flowchart LR
    - requested quality profile
    - `recordingMode`: `off`, `manual`, `onDemand`, or `event`
 6. `entrance-observer` receives the session request through its outbound connection to `gate-video-stream`. This can be polling for MVP, then WebSocket or MQTT for lower latency.
+   - MVP implementation note: the first version uses authenticated REST polling from `entrance-observer` to `gate-video-stream` for commands and status, with service-owned placeholder playback/publisher endpoints issued by `gate-video-stream`. Real relay media publishing can be swapped in later without changing the product-facing GraphQL boundary.
 7. `entrance-observer` starts a high-quality media publisher only for that session and connects outbound to `gate-video-stream` or its configured relay.
 8. `web-app` attaches a player to the playback endpoint returned by `gate-video-stream`.
 9. When the user leaves the section, closes the player, or the session expires, `web-app` sends `stopEntranceLiveStream(sessionId)` or `gate-video-stream` times it out.
@@ -250,6 +251,12 @@ Minimum device messages back to `gate-video-stream`:
 - `STREAM_ACTIVE(sessionId, fps, bitrate, resolution, encoder)`
 - `STREAM_FAILED(sessionId, errorCode, message)`
 - `STREAM_STOPPED(sessionId, reason)`
+
+Implementation note for the current MVP contract:
+
+- `DEVICE_ONLINE` is accepted through the same `/api/entrance-live/device/event` endpoint as stream lifecycle events.
+- It refreshes device presence and stores the latest payload but does not, by itself, move the session state beyond `REQUESTED`.
+- Session state transitions are event-driven only for `STREAM_STARTING`, `STREAM_ACTIVE`, `STREAM_FAILED`, and `STREAM_STOPPED`.
 
 Device status should include camera availability, current publisher state, current bitrate/FPS, encoder type, network quality, and last error.
 
