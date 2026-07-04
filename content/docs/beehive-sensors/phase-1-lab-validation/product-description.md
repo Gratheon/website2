@@ -29,6 +29,8 @@ Use this phase to validate:
 
 ## Lab interconnect map
 
+The high-level signal flow for Phase 1 is shown below. For detailed pin-by-pin wiring, see the [wiring-diagrams section](wiring-diagrams/).
+
 ```mermaid
 flowchart LR
     usb[USB laptop or charger] --> esp32[ESP32 DevKit]
