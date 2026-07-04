@@ -1242,7 +1242,40 @@ html[data-theme='dark'] .front-page .future {
 }
 
 .knowledge-page-products .knowledge-product-submenu-map {
+  width: 100%;
   grid-template-columns: repeat(auto-fit, minmax(min(340px, 100%), 1fr));
+}
+
+/* WHY: after the products map is split under focused product sections, the map
+   should use the full content row instead of inheriting the generic narrow card grid. */
+.knowledge-page-products .knowledge-map-nav--split,
+.knowledge-page-products .knowledge-map-nav--split .sidebar,
+.knowledge-page-products .knowledge-map-nav--split .knowledge-product-submenu-map {
+  width: 100%;
+  max-width: none;
+}
+
+.knowledge-page-products .knowledge-map-nav--split .knowledge-product-submenu-map {
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+}
+
+.knowledge-page-products .knowledge-map--hardware-products .knowledge-product-submenu-map {
+  grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr));
+}
+
+.knowledge-page-products .knowledge-map--hardware-products .knowledge-map-product-card > .sidebar-submenu {
+  grid-template-columns: repeat(auto-fit, minmax(min(180px, 100%), 1fr));
+  align-items: start;
+}
+
+.knowledge-page-products .knowledge-map--hardware-products .knowledge-map-product-card > .sidebar-submenu > .sidebar-section {
+  margin-top: 0;
+}
+
+.knowledge-page-products .knowledge-map--hardware-products .knowledge-map-product-card > .sidebar-submenu > .sidebar-section > .sidebar-submenu {
+  margin-left: 0;
+  padding-left: 0;
+  border-left: 0;
 }
 
 .knowledge-page-products .knowledge-map-nav .knowledge-product-submenu-map > .sidebar-item {
