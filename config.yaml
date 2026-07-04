@@ -128,7 +128,7 @@ navigation:
         url: "/ru/about/"
         languages: ["ru"]
       - title: "Продукты"
-        url: "/products/"
+        url: "/ru/products/"
         languages: ["ru"]
       - title: "Исследования"
         url: "/ru/research/"
@@ -629,7 +629,7 @@ navigation:
         - title: "О нас"
           url: "/ru/about/"
         - title: "Продукты"
-          url: "/products/"
+          url: "/ru/products/"
         - title: "Исследования"
           url: "/ru/research/"
         - title: "Блог"
