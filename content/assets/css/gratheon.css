@@ -1387,6 +1387,39 @@ html[data-theme='dark'] .front-page .future {
   font-size: 0.94rem;
 }
 
+/* Wide research tables: keep the Hacker projects comparison tables readable.
+   WHY: these tables contain project names, authors, sources, and long research notes, so the default article + ToC grid makes cells too cramped.
+   WHAT: scope by the page-specific entrance-observer heading, then let this article use the full content lane and roomier cells. */
+.knowledge-page-research .knowledge-content-layout:has(#entrance-observer-bee-counting-and-computer-vision) {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.knowledge-page-research .knowledge-article:has(#entrance-observer-bee-counting-and-computer-vision) {
+  max-width: none;
+}
+
+.knowledge-page-research .knowledge-content:has(#entrance-observer-bee-counting-and-computer-vision) table {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin: clamp(22px, 3vw, 40px) 0;
+  overflow-x: auto;
+  border-collapse: collapse;
+  table-layout: auto;
+  font-size: clamp(0.95rem, 1vw, 1.08rem);
+  line-height: 1.35;
+}
+
+.knowledge-page-research .knowledge-content:has(#entrance-observer-bee-counting-and-computer-vision) th,
+.knowledge-page-research .knowledge-content:has(#entrance-observer-bee-counting-and-computer-vision) td {
+  padding: clamp(16px, 1.7vw, 26px) clamp(18px, 2vw, 32px);
+  vertical-align: top;
+}
+
+.knowledge-page-research .knowledge-content:has(#entrance-observer-bee-counting-and-computer-vision) th {
+  line-height: 1.15;
+}
+
 /* Research teams page: make the comparison table wider and easier to scan.
    WHY: this page compares many institutions and recurring authors, so the default article/table width makes cells cramped.
    WHAT: only this explicit table class gets full-shell width, roomier cells, outlined institution links, and official portrait chips. */
