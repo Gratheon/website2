@@ -10,7 +10,7 @@ Nous développons une plateforme robotisée pour l’inspection de ruches vertic
 - téléverser les résultats d’inspection vers l’[application web](/fr/products/web_app/) ;
 - être transportable sur roues pour inspecter différentes ruches.
 
-L’orientation matérielle est suivie dans la [documentation d’ingénierie de la ruche robotisée](/docs/robotic-beehive/). Le flux d’inspection dépend de la [gestion des côtés de cadre](/products/web_app/free-tier/frame-side-management/) et de la [gestion des inspections](/products/web_app/hobbyist-tier/inspection-management/) dans l’application web.
+L’orientation matérielle est suivie dans la [documentation d’ingénierie de la ruche robotisée](/docs/robotic-beehive/). Le flux d’inspection dépend de la [gestion des côtés de cadre](/fr/products/web_app/free-tier/frame-side-management/) et de la [gestion des inspections](/fr/products/web_app/hobbyist-tier/inspection-management/) dans l’application web.
 
 `status`: [TRL 2](https://www.nasa.gov/directorates/somd/space-communications-navigation-program/technology-readiness-levels/)
 

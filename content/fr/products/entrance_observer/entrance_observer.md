@@ -12,7 +12,7 @@ layout: products
 
 Consultez et installez notre [code open source **entrance-observer**](https://github.com/Gratheon/entrance-observer/).
 
-Pour les détails d’implémentation, voir la [documentation d’ingénierie d’Entrance Observer](/docs/entrance-observer/). Les métriques produites sont stockées via le [stockage de télémétrie de ruche](/products/web_app/pro-tier/hive-telemetry-storage/) et peuvent alimenter les [alertes](/products/web_app/flexible-tier/alerts/).
+Pour les détails d’implémentation, voir la [documentation d’ingénierie d’Entrance Observer](/docs/entrance-observer/). Les métriques produites sont stockées via le [stockage de télémétrie de ruche](/fr/products/web_app/pro-tier/hive-telemetry-storage/) et peuvent alimenter les [alertes](/fr/products/web_app/flexible-tier/alerts/).
 
 <iframe width="100%" height="500" src="https://www.youtube.com/embed/hNval4v44ao" title="Beehive Entrance Observer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 

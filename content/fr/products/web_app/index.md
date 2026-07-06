@@ -5,7 +5,7 @@ navTitle: Application web
 layout: products
 ---
 
-L’application web Gratheon aide les apiculteurs à gérer les [données de rucher](/products/web_app/free-tier/apiary-management/), communiquer avec des appareils modulaires installés sur les ruches, analyser les photos de cadres et de plateaux de fond, stocker la [télémétrie en séries temporelles](/products/web_app/pro-tier/hive-telemetry-storage/), générer des [alertes](/products/web_app/flexible-tier/alerts/), prévoir l’évolution des colonies et recevoir des suggestions d’IA pour résoudre les problèmes.
+L’application web Gratheon aide les apiculteurs à gérer les [données de rucher](/fr/products/web_app/free-tier/apiary-management/), communiquer avec des appareils modulaires installés sur les ruches, analyser les photos de cadres et de plateaux de fond, stocker la [télémétrie en séries temporelles](/fr/products/web_app/pro-tier/hive-telemetry-storage/), générer des [alertes](/fr/products/web_app/flexible-tier/alerts/), prévoir l’évolution des colonies et recevoir des suggestions d’IA pour résoudre les problèmes.
 
 `status`: [TRL 6](https://www.nasa.gov/directorates/somd/space-communications-navigation-program/technology-readiness-levels/)
 
@@ -29,9 +29,9 @@ L’application web Gratheon aide les apiculteurs à gérer les [données de ruc
 
 ### Téléverser des photos pour obtenir une vue d’ensemble de la colonie
 - Créer une ruche.
-- Ouvrir une section, ajouter des cadres et téléverser une photo de cadre avec abeilles et cellules.
+- Ouvrir une section, ajouter des cadres et téléverser une [photo de cadre](/fr/products/web_app/free-tier/frame-side-management/) avec abeilles et cellules. Voir aussi la [gestion des inspections](/fr/products/web_app/hobbyist-tier/inspection-management/).
 - Attendre le traitement par le backend.
-- Recevoir des statistiques assistées par IA sur le nombre d’abeilles et la distribution des cellules.
+- Recevoir des statistiques assistées par IA sur le nombre d’abeilles et la [distribution des cellules](/fr/products/web_app/starter-tier/honeycomb-cell-detection-and-management/).
 - Comparer les colonies avec des données réelles.
 
 ### Suivre le développement de la colonie dans le temps
@@ -54,8 +54,8 @@ L’application web Gratheon aide les apiculteurs à gérer les [données de ruc
 - Ajouter une section de plateau de fond à la ruche.
 - Téléverser une photo du tiroir blanc montrant les varroas.
 - Les images sont versionnées avec les inspections pour conserver un historique.
-- Le [comptage du varroa sur plateau de fond](/products/web_app/starter-tier/hive-bottom-varroa-count/) aide à évaluer l’infestation et les décisions de traitement.
+- Le [comptage du varroa sur plateau de fond](/fr/products/web_app/starter-tier/hive-bottom-varroa-count/) aide à évaluer l’infestation et les décisions de traitement.
 
 ## Pages fonctionnelles localisées
 
-Les pages détaillées de fonctionnalités restent pour l’instant sur les routes anglaises canoniques jusqu’à leur traduction complète. Cela évite de créer des pages françaises partielles tout en gardant les liens utiles vers la documentation existante.
+Les principales pages de l’application web liées depuis cette section sont maintenant disponibles en français : gestion des ruchers, côtés de cadre, inspections, détection des cellules de rayon, comptage varroa sur plateau de fond, télémétrie, analyse temporelle et alertes. Les fonctionnalités plus expérimentales qui ne sont pas encore traduites pointent volontairement vers leurs routes canoniques en anglais afin d’éviter des pages françaises incomplètes.

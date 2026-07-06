@@ -6,7 +6,7 @@ layout: products
 
 🌡️ Les balances de ruches sont des balances IoT intelligentes équipées de capteurs supplémentaires et de puces de communication. Elles mesurent régulièrement l’état de la ruche et envoient les données à l’[application web](/fr/products/web_app/). Ces données agrégées aident les apiculteurs à suivre leurs colonies sur le terrain avec un coût et un effort réduits.
 
-Le matériel est décrit dans la [documentation des capteurs de ruche](/docs/beehive-sensors/). L’application stocke les mesures dans le [stockage de télémétrie de ruche](/products/web_app/pro-tier/hive-telemetry-storage/) et les compare via l’[analyse de séries temporelles](/products/web_app/pro-tier/timeseries-data-analytics/).
+Le matériel est décrit dans la [documentation des capteurs de ruche](/docs/beehive-sensors/). L’application stocke les mesures dans le [stockage de télémétrie de ruche](/fr/products/web_app/pro-tier/hive-telemetry-storage/) et les compare via l’[analyse de séries temporelles](/fr/products/web_app/pro-tier/timeseries-data-analytics/).
 
 `status`: [TRL 4](https://www.nasa.gov/directorates/somd/space-communications-navigation-program/technology-readiness-levels/) (prototype)
 
