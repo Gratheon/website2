@@ -3,6 +3,7 @@ title: Models
 layout: research
 order: 3
 hideToc: true
+heroImage: /assets/img/queens.webp
 ---
 
 Gratheon trains and maintains machine-learning models for digital beekeeping and hive monitoring.

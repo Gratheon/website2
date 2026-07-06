@@ -3,6 +3,7 @@ title: Datasets
 layout: research
 order: 2
 hideToc: true
+heroImage: /assets/img/research/img/Screenshot 2025-09-10 at 09.11.23.png
 ---
 
 Data collected by us is available via [Google Drive](https://drive.google.com/drive/folders/105PmxDKFUR6NCPLHBkXGdkfcZwWf9ABI?usp=drive_link), mostly due to the size of the data.
