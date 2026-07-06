@@ -4,6 +4,7 @@ hideToc: true
 title: Research papers
 navTitle: Papers
 order: 5
+heroImage: /assets/img/research/img/FTOxAhxXEAAAtBB.jpg
 ---
 
 This section tracks external academic work relevant to digital beekeeping, bee health, observability, robotics, and machine learning.

@@ -260,8 +260,25 @@
           <img src="/assets/img/products.png" alt="" loading="eager">
         </figure>
         {{else}}
+        {{ $researchHeroImage := "/assets/img/research.webp" }}
+        {{ $datasetsPath := trimPrefix .Page.URL "/research/datasets/" }}
+        {{ if eq $datasetsPath .Page.URL }}{{ $datasetsPath = trimPrefix .Page.URL (printf "/%s/research/datasets/" .Page.Language) }}{{ end }}
+        {{ $modelsPath := trimPrefix .Page.URL "/research/models/" }}
+        {{ if eq $modelsPath .Page.URL }}{{ $modelsPath = trimPrefix .Page.URL (printf "/%s/research/models/" .Page.Language) }}{{ end }}
+        {{ $hackerProjectsPath := trimPrefix .Page.URL "/research/hacker-projects/" }}
+        {{ if eq $hackerProjectsPath .Page.URL }}{{ $hackerProjectsPath = trimPrefix .Page.URL (printf "/%s/research/hacker-projects/" .Page.Language) }}{{ end }}
+        {{ if ne $datasetsPath .Page.URL }}
+          {{ $researchHeroImage = "/assets/img/research/img/Screenshot 2025-09-10 at 09.11.23.png" }}
+        {{ else if ne $modelsPath .Page.URL }}
+          {{ $researchHeroImage = "/assets/img/queens.webp" }}
+        {{ else if ne $hackerProjectsPath .Page.URL }}
+          {{ $researchHeroImage = "/assets/img/research/img/FrXARCXWwAQ4FWM.jpg" }}
+        {{ else if $isResearchPaperPath }}
+          {{ $researchHeroImage = "/assets/img/research/img/FTOxAhxXEAAAtBB.jpg" }}
+        {{ end }}
+        {{with .Frontmatter.Params}}{{with index . "heroImage"}}{{ $researchHeroImage = . }}{{end}}{{end}}
         <figure class="knowledge-visual knowledge-visual--research">
-          <img class="no-transform" src="/assets/img/research.webp" alt="" loading="eager">
+          <img class="no-transform" src="{{$researchHeroImage}}" alt="" loading="eager">
         </figure>
         {{end}}
       </div>

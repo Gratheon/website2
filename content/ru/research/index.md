@@ -6,6 +6,7 @@ layout: research
 sidebar_position: 1
 hideToc: true
 showChildren: true
+heroImage: /assets/img/research/img/research.jpg
 ---
 
 <div class="research-page">
