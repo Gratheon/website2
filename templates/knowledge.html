@@ -36,7 +36,7 @@
   </div>
   {{end}}
 
-  <div class="content knowledge-content">
+  <div class="content knowledge-content{{if and (eq .Page.Layout "products") (ge (len .Breadcrumbs) 5)}} knowledge-content--feature-detail{{end}}">
     {{.Content}}
   </div>
 
@@ -216,7 +216,9 @@
         </p>
         <h1 id="knowledge-title">{{.Page.Title}}</h1>
         <p class="knowledge-standfirst">
-          {{if $isPaperDetail}}
+          {{if and $isProductFeaturePage .MetaDescription}}
+            {{.MetaDescription}}
+          {{else if $isPaperDetail}}
             {{with .Frontmatter.Params}}{{if index . "abstract"}}{{index . "abstract"}}{{else}}{{$.Page.Description}}{{end}}{{else}}{{.Page.Description}}{{end}}
           {{else if eq .Page.Layout "products"}}
             {{if eq .Page.Language "et"}}Tarkvara, seadmed ja automaatika on esitatud ühe seotud süsteemina, et tootepere oleks lihtne sirvida ka sügava funktsioonistruktuuriga.{{else}}Software, devices, and automation are presented as one connected system, so product depth stays navigable without feeling like a reference manual.{{end}}
@@ -224,6 +226,7 @@
             {{if eq .Page.Language "et"}}Artiklid, andmestikud, mudelid ja välitöö märkmed on koondatud visuaalseks teadmiste kaardiks, mis säilitab kogu sügava struktuuri.{{else if eq .Page.Language "ru"}}Статьи, датасеты, модели и полевые заметки собраны в визуальную карту знаний, сохраняя глубокую структуру раздела.{{else}}Papers, datasets, models, and field notes are connected into a practical research map for digital beekeeping, from academic references to applied Gratheon experiments.{{end}}
           {{end}}
         </p>
+        {{if not $isProductFeaturePage}}
         <div class="knowledge-actions">
           {{if $isPaperDetail}}
             {{with .Frontmatter.Params}}
@@ -252,6 +255,7 @@
             {{end}}
           {{end}}
         </div>
+        {{end}}
       </div>
       {{if and (not $isProductFeaturePage) (not $isPaperDetail)}}
       <div class="knowledge-hero-media" aria-hidden="true">
@@ -318,6 +322,26 @@
     var webShowcase = document.querySelector('.knowledge-page-products .product-web-app-showcase');
     var productFamilySection = document.querySelector('.knowledge-page-products .product-family-section');
     var productsMap = document.querySelector('.knowledge-page-products .knowledge-map-nav--split .sidebar-menu');
+
+    // WHY: product feature pages need the concrete Purpose copy in the hero, not
+    // as a separate first section below it. Move the first Purpose paragraph up
+    // and remove that heading/paragraph from the article to avoid duplication.
+    var featureContent = document.querySelector('.knowledge-page-products .knowledge-content--feature-detail');
+    var standfirst = document.querySelector('.knowledge-page-products .knowledge-hero--text-only .knowledge-standfirst');
+    if (featureContent && standfirst) {
+      var purposeHeading = Array.prototype.find.call(featureContent.querySelectorAll('h3'), function(heading) {
+        return /\bPurpose\b/i.test(heading.textContent || '');
+      });
+      var purposeParagraph = purposeHeading && purposeHeading.nextElementSibling;
+      if (purposeParagraph && purposeParagraph.tagName === 'P') {
+        standfirst.textContent = purposeParagraph.textContent.replace(/\s+/g, ' ').trim();
+        var purposeAnchor = document.querySelector('.knowledge-page-products .knowledge-onpage a[href="#' + purposeHeading.id + '"]');
+        var purposeTocItem = purposeAnchor && purposeAnchor.closest('li');
+        if (purposeTocItem) purposeTocItem.remove();
+        purposeParagraph.remove();
+        purposeHeading.remove();
+      }
+    }
     if (!productsMap) return;
 
     // Keep knowledge-map section labels navigable even after the products map is

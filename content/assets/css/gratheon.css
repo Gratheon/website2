@@ -869,6 +869,26 @@ html[data-theme='dark'] .front-page .future {
   max-width: none;
 }
 
+.knowledge-page-products .knowledge-hero--text-only {
+  margin-bottom: clamp(24px, 4vw, 56px);
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.knowledge-page-products .knowledge-hero--text-only .knowledge-hero-copy {
+  max-width: 1180px;
+}
+
+.knowledge-page-products .knowledge-hero--text-only h1 {
+  max-width: none;
+  font-size: clamp(3.1rem, 6.9vw, 7.4rem);
+  line-height: 0.98;
+}
+
+.knowledge-page-products .knowledge-hero--text-only .knowledge-standfirst {
+  max-width: 1160px;
+}
+
 .knowledge-hero-copy {
   display: flex;
   flex-direction: column;
