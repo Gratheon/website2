@@ -4,7 +4,7 @@ navTitle: Hacker projects
 layout: research
 order: 4
 hideToc: true
-heroImage: https://hackster.imgix.net/uploads/attachments/1545306/_O8K9rWMu94.blob?auto=compress%2Cformat&w=900&h=675&fit=min
+heroImage: https://hackster.imgix.net/uploads/attachments/1549817/_WGXxJxi9se.blob?auto=compress%2Cformat&w=900&h=675&fit=min
 ---
 
 This page tracks external hacker, student, and open-source projects around digital beekeeping, IoT hive monitoring, cameras, bee counters, and experimental hive automation.
