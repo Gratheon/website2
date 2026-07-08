@@ -12,7 +12,7 @@ layout: products
 
 Installieren und prüfen Sie unseren [Open-Source-Code für **entrance-observer**](https://github.com/Gratheon/entrance-observer/).
 
-Implementierungsdetails stehen in der englischen [Entrance-Observer-Dokumentation](/docs/entrance-observer/). Die erzeugten Metriken werden über [Hive telemetry storage](/products/web_app/pro-tier/hive-telemetry-storage/) gespeichert und können [Alerts](/products/web_app/flexible-tier/alerts/) auslösen.
+Implementierungsdetails stehen in der englischen [Entrance-Observer-Dokumentation](/docs/entrance-observer/). Die erzeugten Metriken werden über [Telemetriespeicherung](/de/products/web_app/pro-tier/hive-telemetry-storage/) gespeichert und können [Warnungen](/de/products/web_app/flexible-tier/alerts/) auslösen.
 
 <iframe width="100%" height="500" src="https://www.youtube.com/embed/hNval4v44ao" title="Beehive Entrance Observer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 

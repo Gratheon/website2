@@ -10,7 +10,7 @@ Wir entwickeln eine robotische Plattform für die Durchsicht vertikaler Bienenst
 - Durchsichtsergebnisse in die [Web-App](/de/products/web_app/) hochladen
 - auf Rädern transportierbar sein, sodass sie an verschiedenen Beuten eingesetzt werden kann
 
-Die Hardware-Richtung wird in der englischen [Engineering-Dokumentation zum robotischen Bienenstock](/docs/robotic-beehive/) verfolgt. Der Durchsichtsablauf hängt von den englischen Web-App-Funktionen [Frame side management](/products/web_app/free-tier/frame-side-management/) und [Inspection management](/products/web_app/hobbyist-tier/inspection-management/) ab.
+Die Hardware-Richtung wird in der englischen [Engineering-Dokumentation zum robotischen Bienenstock](/docs/robotic-beehive/) verfolgt. Der Durchsichtsablauf hängt von den englischen Web-App-Funktionen [Rähmchenseitenverwaltung](/de/products/web_app/free-tier/frame-side-management/) und [Durchsichtsverwaltung](/de/products/web_app/hobbyist-tier/inspection-management/) ab.
 
 `status`: [TRL 2](https://www.nasa.gov/directorates/somd/space-communications-navigation-program/technology-readiness-levels/)
 

@@ -6,7 +6,7 @@ layout: products
 
 🌡️ Bienenstockwaagen sind intelligente IoT-Waagen mit zusätzlichen Sensoren und Kommunikationschips. Sie messen regelmäßig den Zustand des Bienenstocks und senden die Daten an die [Web-App](/de/products/web_app/). Diese aggregierten Daten helfen Imkern, ihre Völker im Feld mit minimalem Aufwand zu überwachen.
 
-Die Hardware ist in der englischen [Dokumentation zu Bienenstocksensoren](/docs/beehive-sensors/) beschrieben. Die App speichert Messwerte in [Hive telemetry storage](/products/web_app/pro-tier/hive-telemetry-storage/) und vergleicht sie über [Timeseries data analytics](/products/web_app/pro-tier/timeseries-data-analytics/).
+Die Hardware ist in der englischen [Dokumentation zu Bienenstocksensoren](/docs/beehive-sensors/) beschrieben. Die App speichert Messwerte in [Telemetriespeicherung](/de/products/web_app/pro-tier/hive-telemetry-storage/) und vergleicht sie über [Zeitreihenanalyse](/de/products/web_app/pro-tier/timeseries-data-analytics/).
 
 `status`: [TRL 4](https://www.nasa.gov/directorates/somd/space-communications-navigation-program/technology-readiness-levels/) (Prototyp)
 

@@ -216,7 +216,7 @@ navigation:
         url: "/de/about/"
         languages: ["de"]
       - title: "Produkte"
-        url: "/products/"
+        url: "/de/products/"
         languages: ["de"]
       - title: "Forschung"
         url: "/de/research/"

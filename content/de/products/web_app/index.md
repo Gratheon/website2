@@ -57,12 +57,37 @@ Die Gratheon Web-App hilft Imkern dabei, [Bienenstandsdaten](free-tier/apiary-ma
 - [Varroa-Zählung auf der Bodeneinlage](starter-tier/hive-bottom-varroa-count.md) unterstützt die Bewertung des Befalls und Behandlungsentscheidungen.
 
 ## Lokalisierte Funktionsseiten
-Diese deutschen Unterseiten spiegeln zentrale englische Web-App-Funktionen wider:
-- [Bienenstandsverwaltung](free-tier/apiary-management.md)
-- [Live-Königinnenfinder](free-tier/live-queen-finder.md)
-- [Durchsichtsverwaltung](hobbyist-tier/inspection-management.md)
-- [Varroa-Zählung auf der Bodeneinlage](starter-tier/hive-bottom-varroa-count.md)
-- [Speicherung von Beuten-Telemetrie](pro-tier/hive-telemetry-storage.md)
-- [Warnungen](flexible-tier/alerts.md)
+Diese deutschen Unterseiten spiegeln zentrale englische Web-App-Funktionen wider und werden von der deutschen Preis- und Produktnavigation verlinkt:
 
-Weitere Feature-Seiten bleiben vorerst auf Englisch, bis sie einzeln lokalisiert werden.
+### Free-Tier
+- [Bienenstandsverwaltung](free-tier/apiary-management.md)
+- [Beutenverwaltung](free-tier/hive-management.md)
+- [Rähmchenseiten verwalten](free-tier/frame-side-management.md)
+- [Tastaturkürzel](free-tier/keyboard-shortcuts.md)
+- [Öffentliche Beutenansicht](free-tier/public-beehive-view.md)
+- [QR-Code-Generierung](free-tier/qr-code-generation.md)
+- [Varroa-Behandlungsjournal](free-tier/varroa-treatment-diary.md)
+- [Fütterungsverlauf](free-tier/feeding-history.md)
+- [Live-Königinnenfinder](free-tier/live-queen-finder.md)
+- [Übertragung des Beuteneigentums](free-tier/hive-ownership-transfer.md)
+
+### Hobbyist-Tier
+- [Beuten-Standortplaner](hobbyist-tier/hive-placement-planner.md)
+- [Durchsichtsverwaltung](hobbyist-tier/inspection-management.md)
+- [Volk teilen](hobbyist-tier/split-bee-colony.md)
+- [Völker zusammenführen](hobbyist-tier/join-bee-colonies.md)
+- [Lager- und Inventarverwaltung](hobbyist-tier/inventory-management.md)
+
+### Starter-Tier
+- [Wabenzellenerkennung und -verwaltung](starter-tier/honeycomb-cell-detection-and-management.md)
+- [Varroa-Zählung auf der Bodeneinlage](starter-tier/hive-bottom-varroa-count.md)
+- [Zeichnen auf dem Bild](starter-tier/drawing-on-canvas.md)
+- [Imkereiberatung mit LLM](starter-tier/beekeeping-advice-with-llm.md)
+
+### Pro- und Zukunftsfunktionen
+- [Speicherung von Beuten-Telemetrie](pro-tier/hive-telemetry-storage.md)
+- [Zeitreihen-Datenanalyse](pro-tier/timeseries-data-analytics.md)
+- [Völkervergleich und Analytik](pro-tier/colony-comparison-analytics.md)
+- [Warnungen](flexible-tier/alerts.md)
+- [Zeitreihen-Anomalieerkennung](future-ideas/pro-tier-ideas/timeseries-anomaly-detection.md)
+- [Geräteverwaltung](future-ideas/pro-tier-ideas/device-management.md)
