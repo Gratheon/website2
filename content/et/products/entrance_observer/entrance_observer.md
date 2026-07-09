@@ -6,7 +6,7 @@ layout: products
 
 `status: alpha`, [TRL 5](https://www.nasa.gov/directorates/somd/space-communications-navigation-program/technology-readiness-levels/)
 
-💡 Lennuava jälgija on kaamerate ja riistvara komplekt, mis analüüsib taru lennuava. See salvestab videovoo, teeb tehisaru-analüüsi ning saadab mõõdikud ja videod meie [veebirakendusse](../web_app/web_app.md), kus neid saab vaadata ja kasutada teavituste loomiseks.
+💡 Lennuava jälgija on kaamerate ja riistvara komplekt, mis analüüsib taru lennuava. See salvestab videovoo, teeb tehisaru-analüüsi ning saadab mõõdikud ja videod meie [veebirakendusse](/et/products/web_app/), kus neid saab vaadata ja kasutada teavituste loomiseks.
 
 Kontrolli ja paigalda meie [avatud lähtekoodiga **entrance-observer** projekt](https://github.com/Gratheon/entrance-observer/).
 

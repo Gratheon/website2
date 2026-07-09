@@ -58,10 +58,8 @@ Mudeli repositoorium: [github.com/Gratheon/models-queen-bee-detector](https://gi
 
 ### 🔗 Seotud funktsioonid
 
-Need lingid jäävad praegu ingliskeelseteks, kuni vastavad alamlehed on lokaliseeritud:
-
-- [Mesilasemade haldus](/products/web_app/hobbyist-tier/queen-management/)
-- [Mesilasema tuvastamine](/products/web_app/hobbyist-tier/queen-detection/)
+- [Mesilasemade haldus](../hobbyist-tier/queen-management.md)
+- [Mesilasema tuvastamine](../hobbyist-tier/queen-detection.md)
 
 ---
 **Viimati uuendatud**: 8. juuni 2026

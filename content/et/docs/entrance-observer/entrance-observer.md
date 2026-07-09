@@ -6,7 +6,7 @@ hide_table_of_contents: true
 ---
 Peamine klienditeenindus on [betaru-sissepääs-videoprotsessor](https://github.com/Gratheon/beehive-entrance-video-processor), see peab töötama ääreseadmes, et jäädvustada ja saata andmeid aadressile web-app. Meie peamine prioriteet on järelduste tegemine ääreseadmel, kuid tahame ka pilve toega hübriidjäreldusi.
 
-Tootetaseme ülevaate saamiseks vaadake jaotist [Entrance Observer](../../products/entrance_observer/entrance_observer.md). Jäädvustatud mõõdikud loovad ühenduse [taru telemeetriasalvestusega](/products/web_app/pro-tier/hive-telemetry-storage/) ja [aegridade analüüsiga](/products/web_app/pro-tier/timeseries-data-analytics/).
+Tootetaseme ülevaate saamiseks vaadake jaotist [Entrance Observer](/et/products/entrance_observer/). Jäädvustatud mõõdikud loovad ühenduse [taru telemeetriasalvestusega](/et/products/web_app/pro-tier/hive-telemetry-storage/) ja [aegridade analüüsiga](/et/products/web_app/pro-tier/timeseries-data-analytics/).
 ### Videotöötlus, taasesitus ja analüüs
 
 ```mermaid

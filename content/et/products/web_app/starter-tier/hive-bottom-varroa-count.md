@@ -85,11 +85,11 @@ Pildid versioonitakse koos inspekteerimistega:
 - ei asenda professionaalset veterinaardiagnoosi.
 
 ## Seotud funktsioonid
-- [Inspekteerimiste haldus](/products/web_app/hobbyist-tier/inspection-management/)
+- [Ülevaatuste haldus](../hobbyist-tier/inspection-management.md)
 - Varroa ravi jälgimine (plaanis)
 - Mesilaspere tervise töölaud (plaanis)
 
 ## Lisainfo
-- [Varroa tuvastamine põhjalaualt — tehniline dokumentatsioon](/docs/web-app/features/varroa-bottom-detection/)
+- [Varroa tuvastamine põhjalaualt — tehniline dokumentatsioon](/et/docs/web-app/features/varroa-bottom-detection/)
 - [Honey Bee Health Coalitioni varroa juhend](https://honeybeehealthcoalition.org/varroa/)
 - [Varroa-lesta künniste mõistmine](https://honeybeehealthcoalition.org/varroa/)

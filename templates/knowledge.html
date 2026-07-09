@@ -236,10 +236,10 @@
             {{end}}
           {{else if eq .Page.Layout "products"}}
             {{if eq .Page.Language "et"}}
-              <a class="knowledge-action knowledge-action--primary" href="/et/products/web_app/web-app/">Vaata veebirakendust</a>
+              <a class="knowledge-action knowledge-action--primary" href="/et/products/web_app/">Vaata veebirakendust</a>
               <a class="knowledge-action" href="/et/pricing/">Hinnad</a>
             {{else}}
-              <a class="knowledge-action knowledge-action--primary" href="/products/web_app/web-app/">Explore the web app</a>
+              <a class="knowledge-action knowledge-action--primary" href="/products/web_app/">Explore the web app</a>
               <a class="knowledge-action" href="/pricing/">Compare plans</a>
             {{end}}
           {{else}}
@@ -479,7 +479,7 @@
       } else {
         var generatedHead = document.createElement('div');
         generatedHead.className = 'sidebar-section-head';
-        generatedHead.innerHTML = '<a href="/products/">' + (document.documentElement.lang === 'et' ? 'Muud tootelehed' : 'Other product pages') + '</a>';
+        generatedHead.innerHTML = '<a href="' + (document.documentElement.lang === 'et' ? '/et/products/' : '/products/') + '">' + (document.documentElement.lang === 'et' ? 'Muud tootelehed' : 'Other product pages') + '</a>';
         overviewCard.appendChild(generatedHead);
       }
 

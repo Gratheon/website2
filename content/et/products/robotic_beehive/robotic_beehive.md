@@ -7,7 +7,7 @@ sidebar_position: 5
 Arendame robotiseeritud vertikaalse taruinspektsiooni platvormi, mis:
 - suudab tõsta mitut tarusektsiooni, et jõuda kiiremini pesani;
 - teeb sisseehitatud kaameratega fotosid raamidest;
-- laadib inspekteerimise tulemused üles [veebirakendusse](../web_app/web_app.md);
+- laadib inspekteerimise tulemused üles [veebirakendusse](/et/products/web_app/);
 - liigub ratastel ja võimaldab kontrollida erinevaid tarusid.
 
 Riistvara suund ja tehnilised detailid on praegu kirjeldatud inglise keeles: [robotmesitaru inseneridokumentatsioon](/docs/robotic-beehive/robotic-beehive/).
