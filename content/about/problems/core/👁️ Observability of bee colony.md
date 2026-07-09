@@ -3,7 +3,7 @@ class: beekeeping practices
 priority: 100
 sidebar_position: 1
 ---
-Probably the biggest problem for the beekeeper is that it is hard to make **decisions** without **up-to-date** and **correct information** about the **colony development**.  See [🧑‍🚀 Actions beekeepers make](../../products/🧑‍🚀%20Actions%20beekeepers%20make.md)
+Probably the biggest problem for the beekeeper is that it is hard to make **decisions** without **up-to-date** and **correct information** about the **colony development**.  See [🧑‍🚀 Actions beekeepers make](../🧑‍🚀%20Actions%20beekeepers%20make.md)
 
 Gratheon approaches this through the [web app](../../products/web_app/index.md) as the colony record, [beehive scales](../../products/scales/scales.md) for continuous sensor data, and [Entrance Observer](../../products/entrance_observer/entrance_observer.md) for hive entrance activity.
 

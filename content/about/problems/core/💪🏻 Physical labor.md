@@ -9,7 +9,7 @@ A deep section full of honey can weight 20-30 kg. A "super" section maybe half o
 A beekeeper needs to lift these sections in order to reach the nest, usually at the bottom of the hive.
 Inspections need to happen at daytime when its sunny, so that most of the worker bees are in the field.
 Hive frames are glued together with propolis and need extra tools to separate them.
-In addition to inspections, [🧑‍🚀 Actions beekeepers make](../../products/🧑‍🚀%20Actions%20beekeepers%20make.md) may also require physical work
+In addition to inspections, [🧑‍🚀 Actions beekeepers make](../🧑‍🚀%20Actions%20beekeepers%20make.md) may also require physical work
 
 ![](../../img/artjom-exhausted.png)
 

@@ -5,7 +5,7 @@ We think of product development as a hierarchy of abstractions:
 ## Use cases
 These are main customer journeys that may involve multiple features.
 You can also think of it as a memorable session where customer actively uses a product.
-For example, adding a beehive, modelling it, uploading first inspection photos to receive aggregate statistics. Use case results in an [🧑‍🚀 Actions beekeepers make](../../../products/🧑‍🚀%20Actions%20beekeepers%20make.md).
+For example, adding a beehive, modelling it, uploading first inspection photos to receive aggregate statistics. Use case results in an [🧑‍🚀 Actions beekeepers make](../../problems/🧑‍🚀%20Actions%20beekeepers%20make.md).
 ### Adding new idea 💡
 You can add new idea of a feature by creating [a new file via github](https://github.com/Gratheon/website/tree/main/content/products/web_app/pro-tier/ideas%20%F0%9F%92%A1) and describing it in markdown format. This pull request will be reviewed, same as code.
 ## Features and Ideas
