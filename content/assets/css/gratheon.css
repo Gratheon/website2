@@ -1333,7 +1333,7 @@ html[data-theme='dark'] .front-page .future {
 .knowledge-page-products .knowledge-map-web-app-card > .knowledge-web-app-tier-grid,
 .knowledge-page-products .knowledge-map-nav .knowledge-map-web-app-card > .knowledge-web-app-tier-grid {
   display: grid !important;
-  grid-template-columns: repeat(6, minmax(190px, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
   margin: 0;
   padding: 0;
@@ -1370,15 +1370,19 @@ html[data-theme='dark'] .front-page .future {
 }
 
 .knowledge-page-products .knowledge-map-nav .knowledge-web-app-tier-card--enterprise {
-  background: #111;
-  color: #fff;
+  border-color: rgba(17, 17, 17, 0.16);
+  background: var(--knowledge-paper);
+  color: var(--knowledge-ink);
 }
 
 .knowledge-page-products .knowledge-map-nav .knowledge-web-app-tier-card--enterprise > .sidebar-section-head > a,
-.knowledge-page-products .knowledge-map-nav .knowledge-web-app-tier-card--enterprise > .sidebar-section-head > a:visited,
+.knowledge-page-products .knowledge-map-nav .knowledge-web-app-tier-card--enterprise > .sidebar-section-head > a:visited {
+  color: var(--knowledge-ink);
+}
+
 .knowledge-page-products .knowledge-map-nav .knowledge-web-app-tier-card--enterprise .knowledge-web-app-feature-list a,
 .knowledge-page-products .knowledge-map-nav .knowledge-web-app-tier-card--enterprise .knowledge-web-app-feature-list a:visited {
-  color: #fff;
+  color: var(--knowledge-muted);
 }
 
 .knowledge-page-products .knowledge-map-nav .knowledge-web-app-tier-card > .knowledge-web-app-feature-list {
@@ -1389,9 +1393,29 @@ html[data-theme='dark'] .front-page .future {
   padding-top: 14px;
   border-top: 1px solid var(--knowledge-line);
 }
-
 .knowledge-page-products .knowledge-map-nav .knowledge-web-app-tier-card--enterprise > .knowledge-web-app-feature-list {
-  border-top-color: rgba(255, 255, 255, 0.18);
+  border-top-color: var(--knowledge-line);
+}
+
+.knowledge-page-products .knowledge-map-nav .knowledge-web-app-tier-card > .sidebar-section-head > a,
+.knowledge-page-products .knowledge-map-nav .knowledge-web-app-feature-list a {
+  padding-left: 0;
+}
+
+.knowledge-page-products .knowledge-map-nav .knowledge-web-app-tier-card > .sidebar-section-head > a::before,
+.knowledge-page-products .knowledge-map-nav .knowledge-web-app-feature-list a::before {
+  content: none;
+  display: none;
+}
+
+.knowledge-page-products .knowledge-map-nav .knowledge-web-app-feature-list {
+  margin-left: 0;
+  padding-left: 0;
+  border-left: 0;
+}
+
+.knowledge-page-products .knowledge-map-nav .knowledge-web-app-feature-list .sidebar-item {
+  margin-top: 0;
 }
 
 .knowledge-page-products .knowledge-map-nav .knowledge-web-app-feature-item a {
