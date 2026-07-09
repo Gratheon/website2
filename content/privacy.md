@@ -71,6 +71,18 @@ If you use our Apps, we may also collect:
 
 We may obtain non-personal information from external sources, such as plant identification data from services like PlantNet, to enrich the information available within our application. We do not collect personal information about you from public databases or marketing partners for marketing purposes.
 
+#### 1.5. AI Processing of Your Data
+
+<div class="summary-box">
+<p><strong>💡 In Short:</strong> We use AI services to process some of your uploaded content (such as images) to provide application features like object detection and beekeeping assistance.</p>
+</div>
+
+Our application uses third-party AI services to process certain user-uploaded content:
+*   **Image Analysis:** User-uploaded images of beehive frames may be sent to Clarifai and/or our own AI models for object detection (e.g., detecting bees, queen cells, diseases).
+*   **Beekeeping Assistant:** Our AI-powered beekeeping assistant may use data you provide about your hives and apiaries (such as inspection results and hive conditions) to generate personalized recommendations. This data may be processed by Google Gemini.
+
+This processing is performed solely to provide application features and is not used for advertising or unrelated purposes. Please refer to the respective privacy policies of [Clarifai](https://www.clarifai.com/privacy) and [Google](https://policies.google.com/privacy) for details on how they handle data.
+
 ### 2. How Do We Use Your Information?
 
 <div class="summary-box">
@@ -121,7 +133,7 @@ We may process or share your data that we hold based on the following legal basi
 
 More specifically, we may need to process your data or share your personal information in the following situations:
 
-- **Public Data for Community Pricing Plan Users:** Please note that if you are using our **[Community pricing plan](pricing.md)** services, certain data you provide related to your apiaries, specifically **beehive count, general beehive details (excluding sensitive notes), and apiary location (latitude and longitude)**, is considered public information. This data may be displayed on public maps, used in aggregated datasets, or otherwise shared as part of the community features associated with this plan. Users on paid plans have enhanced privacy controls as defined by their respective subscription agreements.
+- **Public Data for Free Plan Users:** Please note that if you are using our **Free plan**, certain data you provide related to your apiaries, specifically **beehive count, general beehive details (excluding sensitive notes), and apiary location (latitude and longitude)**, is considered public information. This data may be displayed on public maps, used in aggregated datasets, or otherwise shared as part of the community features associated with this plan. Users on paid plans have enhanced privacy controls as defined by their respective subscription agreements.
 
 - **Business Transfers.** We may share or transfer your information in connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business to another company.
 
@@ -138,12 +150,13 @@ We only share and disclose your information with the following third parties. We
 | Category                                 | Company and Website                                                       | Purpose                                                                 |
 | ---------------------------------------- | ------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
 | Invoice and Billing                      | [Stripe](https://stripe.com/)                                             | Processing payments for subscriptions and services.                     |
-| Web and Mobile Analytics                 | [Google Analytics](https://marketingplatform.google.com/about/analytics/) | Understanding user behavior to improve the Sites and Apps.              |
-| Web and Mobile Analytics                 | [Posthog](https://posthog.com)                                            | Understanding user behavior to improve the Sites and Apps.              |
+| Web and Mobile Analytics                 | [PostHog](https://posthog.com)                                            | Understanding user behavior to improve the Sites and Apps.              |
 | Infrastructure - Hosting                 | [Digital Ocean](https://www.digitalocean.com/)                            | Hosting the servers and infrastructure required for the Sites and Apps. |
-| Infrastructure - Inference               | [Clarifai](https://www.clarifai.com/)                                     | Running AI models to detect objects on images and videos                |
-| Cloud Storage & File Hosting             | [Amazon Web services S3](https://aws.amazon.com/)                         | Storing user-uploaded files like images and videos securely.            |
-| Website Error and Performance Monitoring | [Sentry](https://sentry.io/)                                              | Identifying and diagnosing errors and performance issues.               |
+| Infrastructure - AI Inference            | [Clarifai](https://www.clarifai.com/)                                     | Running AI models to detect objects on user-uploaded images and videos.  |
+| Infrastructure - AI Inference            | [Google Gemini](https://ai.google.dev/)                                   | AI-powered features including beekeeping assistant and translations.     |
+| Cloud Storage & File Hosting             | [Amazon Web Services S3](https://aws.amazon.com/)                         | Storing user-uploaded files like images and videos securely.            |
+| Website Error and Performance Monitoring | [Sentry](https://sentry.io/)                                              | Identifying and diagnosing errors and performance issues. Includes session replay on errors to help reproduce and fix issues. |
+| Authentication                           | [Google OAuth](https://developers.google.com/identity)                    | Enabling sign-in with Google accounts.                                  |
 | Customer Support & Communication         | [Tawk.to](https://www.tawk.to/)                                           | Providing real-time chat support to users.                              |
 
 ### 5. Do We Use Cookies and Other Tracking Technologies?
@@ -156,7 +169,7 @@ We only share and disclose your information with the following third parties. We
 |---|---|
 |token|Authentication key to access the app|
 |twk_idm_key, twk_uuid_*, TawkConnectionTime|Support chat (tawk.to) integration|
-|AMP_*, AMP_MKTG_*|User behaviour analytics (amplitude) integration|
+|ph_*|User behaviour analytics (PostHog) integration|
 
 We may use cookies and similar tracking technologies (like web beacons and pixels) to access or store information. The table above lists the primary cookies currently used by our application and their purposes.
 
@@ -271,3 +284,12 @@ To exercise any of your GDPR rights, please contact us using the details in Sect
 We may update this privacy policy from time to time. The updated version will be indicated by an updated "Revised" date and the updated version will be effective as soon as it is accessible. If we make material changes to this privacy policy, we may notify you either by prominently posting a notice of such changes or by directly sending you a notification. We encourage you to review this privacy policy frequently to be informed of how we are protecting your information.
 
 You can track [history of changes](https://github.com/Gratheon/website2/commits/main/content/privacy.md)
+
+### 15. How to Contact Us
+
+If you have questions, comments, or concerns about this privacy policy or our data practices, you may contact us at:
+
+**Gratheon OÜ**
+Email: [pilot@gratheon.com](mailto:pilot@gratheon.com)
+Phone: (+372) 58058720
+Data Protection Officer: Artjom Kurapov

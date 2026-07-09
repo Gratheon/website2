@@ -13,7 +13,7 @@ hide_table_of_contents: true
 <p><strong>💡 In Short:</strong> These Terms create a binding agreement. By using our Site (website, mobile app, etc.), you agree to these Terms. If you don't agree, stop using the Site immediately. We can change these Terms, and continued use means you accept the changes.</p>
 </div>
 
-These Terms of Use constitute a legally binding agreement made between you, whether personally or on behalf of an entity (“you”) and Gratheon OÜ ("**Company**", “**we**”, “**us**”, or “**our**”), concerning your access to and use of the https;//gratheon.com website as well as any other media form, media channel, mobile website or mobile application related, linked, or otherwise connected thereto (collectively, the “Site”).
+These Terms of Use constitute a legally binding agreement made between you, whether personally or on behalf of an entity (“you”) and Gratheon OÜ ("**Company**", “**we**”, “**us**”, or “**our**”), concerning your access to and use of the https://gratheon.com website as well as any other media form, media channel, mobile website or mobile application related, linked, or otherwise connected thereto (collectively, the “Site”).
 
 You agree that by accessing the Site, you have read, understood, and agree to be bound by all of these Terms of Use. **If you do not agree with all of these Terms of Use, then you are expressly prohibited from using the Site and you must discontinue use immediately.**
 
@@ -23,7 +23,7 @@ We will alert you about any changes by updating the “Last updated” date of t
 
 The information provided on the Site is not intended for distribution to or use by any person or entity in any jurisdiction or country where such distribution or use would be contrary to law or regulation or which would subject us to any registration requirement within such jurisdiction or country. Accordingly, those persons who choose to access the Site from other locations do so on their own initiative and are solely responsible for compliance with local laws, if and to the extent local laws are applicable.
 
-The Site is not tailored to comply with industry-specific regulations (Health Insurance Portability and Accountability Act (HIPAA), Federal Information Security Management Act (FISMA), etc.), so if your interactions would be subjected to such laws, you may not use this Site. You may not use the Site in a way that would violate the Gramm-Leach-Bliley Act (GLBA).
+The Site is not tailored to comply with industry-specific regulations, so if your interactions would be subject to such laws, you may not use this Site.
 
 The Site is intended for users who are at least 18 years old. Persons under the age of 18 are not permitted to use or register for the Site.
 
@@ -33,7 +33,7 @@ The Site is intended for users who are at least 18 years old. Persons under the 
 <p><strong>💡 In Short:</strong> We own or license all content and trademarks on the Site. You get a limited license to use the Site for personal, non-commercial purposes. You cannot copy or use our content or marks for commercial purposes without permission.</p>
 </div>
 
-Unless otherwise indicated, the Site is our proprietary property. All source code, databases, functionality, software, website designs, audio, video, text, photographs, and graphics on the Site (collectively, the “Content”) and the trademarks, service marks, and logos contained therein (the “Marks”) are owned or controlled by us or licensed to us. They are protected by copyright and trademark laws and various other intellectual property rights and unfair competition laws of the United States, international copyright laws, and international conventions.
+Unless otherwise indicated, the Site is our proprietary property. All source code, databases, functionality, software, website designs, audio, video, text, photographs, and graphics on the Site (collectively, the “Content”) and the trademarks, service marks, and logos contained therein (the “Marks”) are owned or controlled by us or licensed to us. They are protected by copyright and trademark laws and various other intellectual property rights and unfair competition laws of the European Union, international copyright laws, and international conventions.
 
 The Content and the Marks are provided on the Site “AS IS” for your information and personal use only. Except as expressly provided in these Terms of Use, no part of the Site and no Content or Marks may be copied, reproduced, aggregated, republished, uploaded, posted, publicly displayed, encoded, translated, transmitted, distributed, sold, licensed, or otherwise exploited for any commercial purpose whatsoever, without our express prior written permission.
 
@@ -69,12 +69,10 @@ We reserve the right to remove, reclaim, or change a username you select if we d
 ### 5. Fees and Payment
 
 <div class="summary-box">
-<p><strong>💡 In Short:</strong> Some services require payment (Visa, Mastercard accepted). Provide accurate payment info. We bill through an online account in Euros. You authorize recurring charges for subscriptions until cancelled. We can correct pricing errors and refuse orders.</p>
+<p><strong>💡 In Short:</strong> Some services require payment. Provide accurate payment info. We bill through an online account in Euros. You authorize recurring charges for subscriptions until cancelled. We can correct pricing errors and refuse orders.</p>
 </div>
 
-We accept the following forms of payment:
-*   Mastercard
-*   Visa
+We accept payments through [Stripe](https://stripe.com/), which supports major credit and debit cards (Visa, Mastercard, and others) as well as additional payment methods depending on your region.
 
 You may be required to purchase or pay a fee to access some of our services. You agree to provide current, complete, and accurate purchase and account information for all purchases made via the Site.
 
@@ -91,10 +89,10 @@ We reserve the right to correct any errors or mistakes in pricing, even if we ha
 ### 6. Free Trial
 
 <div class="summary-box">
-<p><strong>💡 In Short:</strong> New users get a 14-day free trial. Your account won't be charged during the trial and will be suspended afterwards unless you upgrade.</p>
+<p><strong>💡 In Short:</strong> New users start with a free plan. Paid plans may include a trial period. Your account won't be charged during the trial.</p>
 </div>
 
-We offer a 14-day free trial to new users who register with the Site. The account will not be charged and the subscription will be suspended until upgraded to a paid version at the end of the free trial.
+We offer a free plan to new users who register with the Site. Certain paid plans may include a trial period, during which the account will not be charged. At the end of the trial period, the subscription will revert to the free plan unless upgraded to a paid version.
 
 ### 7. Cancellation
 
@@ -128,7 +126,7 @@ As a user of the Site, you agree not to:
 10. Sell or otherwise transfer your profile.
 11. Use any information obtained from the Site in order to harass, abuse, or harm another person.
 12. Decipher, decompile, disassemble, or reverse engineer any of the software comprising or in any way making up a part of the Site.
-13. Copy or adapt the Site’s software, including but not limited to Flash, PHP, HTML, JavaScript, or other code.
+13. Copy or adapt the Site’s software, including but not limited to PHP, HTML, JavaScript, or other code.
 14. Upload or transmit (or attempt to upload or to transmit) viruses, Trojan horses, or other material, including excessive use of capital letters and spamming (continuous posting of repetitive text), that interferes with any party’s uninterrupted use and enjoyment of the Site or modifies, impairs, disrupts, alters, or interferes with the use, features, functions, operation, or maintenance of the Site.
 15. Upload or transmit (or attempt to upload or to transmit) any material that acts as a passive or active information collection or transmission mechanism, including without limitation, clear graphics interchange formats (“gifs”), 1×1 pixels, web bugs, cookies, or other similar devices (sometimes referred to as “spyware” or “passive collection mechanisms” or “pcms”).
 16. Disparage, tarnish, or otherwise harm, in our opinion, us and/or the Site.
@@ -141,7 +139,7 @@ As a user of the Site, you agree not to:
 
 The Site may invite you to chat, contribute to, or participate in blogs, message boards, online forums, and other functionality. It may provide you with the opportunity to create, submit, post, display, transmit, perform, publish, distribute, or broadcast content and materials to us or on the Site. This includes but is not limited to text, writings, video, audio, photographs, graphics, comments, suggestions, or personal information or other material (collectively, "Contributions").
 
-Contributions may be viewable by other users of the Site and through third-party websites. **Specifically, for users on our [Community pricing plan](pricing.md), Contributions related to apiary data, including beehive count, general beehive details, and apiary location (latitude and longitude), are considered public information and may be displayed or used accordingly.** For all users, any Contributions you transmit may be treated as non-confidential and non-proprietary unless otherwise specified by your subscription plan agreement.
+Contributions may be viewable by other users of the Site and through third-party websites. **Specifically, for users on our Free plan, Contributions related to apiary data, including beehive count, general beehive details, and apiary location (latitude and longitude), are considered public information and may be displayed or used accordingly.** For all users, any Contributions you transmit may be treated as non-confidential and non-proprietary unless otherwise specified by your subscription plan agreement.
 
 When you create or make available any Contributions, you thereby represent and warrant that:
 
@@ -208,7 +206,7 @@ The following terms apply when you use a mobile application obtained from either
 1.  The license granted to you for our mobile application is limited to a non-transferable license to use the application on a device that utilizes the Apple iOS or Android operating systems, as applicable, and in accordance with the usage rules set forth in the applicable App Distributor’s terms of service.
 2.  We are responsible for providing any maintenance and support services with respect to the mobile application as specified in these Terms of Use or as otherwise required under applicable law. You acknowledge that each App Distributor has no obligation whatsoever to furnish any maintenance and support services with respect to the mobile application.
 3.  In the event of any failure of the mobile application to conform to any applicable warranty, you may notify the applicable App Distributor. The App Distributor, in accordance with its terms and policies, may refund the purchase price, if any, paid for the mobile application. To the maximum extent permitted by applicable law, the App Distributor will have no other warranty obligation whatsoever with respect to the mobile application.
-4.  You represent and warrant that (i) you are not located in a country that is subject to a U.S. government embargo, or that has been designated by the U.S. government as a “terrorist supporting” country and (ii) you are not listed on any U.S. government list of prohibited or restricted parties.
+4.  You represent and warrant that (i) you are not located in a country that is subject to EU or international sanctions, and (ii) you are not listed on any EU or international list of prohibited or restricted parties.
 5.  You must comply with applicable third-party terms of agreement when using the mobile application (e.g., if you have a VoIP application, then you must not be in violation of their wireless data service agreement when using the mobile application).
 6.  You acknowledge and agree that the App Distributors are third-party beneficiaries of the terms and conditions in this mobile application license contained in these Terms of Use. Each App Distributor will have the right (and will be deemed to have accepted the right) to enforce the terms and conditions in this mobile application license against you as a third-party beneficiary thereof.
 
@@ -240,21 +238,7 @@ You should review the applicable terms and policies, including privacy and data 
 
 Any purchases you make through Third-Party Websites will be through other websites and from other companies. We take no responsibility whatsoever in relation to such purchases which are exclusively between you and the applicable third party. You agree and acknowledge that we do not endorse the products or services offered on Third-Party Websites and you shall hold us harmless from any harm caused by your purchase of such products or services. Additionally, you shall hold us harmless from any losses sustained by you or harm caused to you relating to or resulting in any way from any Third-Party Content or any contact with Third-Party Websites.
 
-### 14. U.S. Government Rights
-
-<div class="summary-box">
-<p><strong>💡 In Short:</strong> If used by the U.S. government, our services are considered "commercial items" and these Terms apply according to specific FAR and DFARS regulations.</p>
-</div>
-
-Our services are “commercial items” as defined in Federal Acquisition Regulation (“FAR”) 2.101.
-
-If our services are acquired by or on behalf of any agency not within the Department of Defense (“DOD”), our services are subject to the terms of these Terms of Use in accordance with FAR 12.212 (for computer software) and FAR 12.211 (for technical data).
-
-If our services are acquired by or on behalf of any agency within the Department of Defense, our services are subject to the terms of these Terms of Use in accordance with Defense Federal Acquisition Regulation (“DFARS”) 227.7202‑3. In addition, DFARS 252.227‑7015 applies to technical data acquired by the DOD.
-
-This U.S. Government Rights clause is in lieu of, and supersedes, any other FAR, DFARS, or other clause or provision that addresses government rights in computer software or technical data under these Terms of Use.
-
-### 15. Site Management
+### 14. Site Management
 
 <div class="summary-box">
 <p><strong>💡 In Short:</strong> We reserve the right to monitor the Site, take legal action for violations, restrict access or content, remove burdensome files, and manage the Site to protect our rights and ensure proper functioning.</p>
@@ -267,7 +251,7 @@ We reserve the right, but not the obligation, to:
 4.  In our sole discretion and without limitation, notice, or liability, to remove from the Site or otherwise disable all files and content that are excessive in size or are in any way burdensome to our systems.
 5.  Otherwise manage the Site in a manner designed to protect our rights and property and to facilitate the proper functioning of the Site.
 
-### 16. Privacy Policy
+### 15. Privacy Policy
 
 <div class="summary-box">
 <p><strong>💡 In Short:</strong> Our Privacy Policy governs data privacy and security. By using the Site, you agree to it. Your data may be transferred to and processed in Germany where the Site is hosted.</p>
@@ -279,7 +263,7 @@ By using the Site, you agree to be bound by our Privacy Policy, which is incorpo
 
 Please be advised the Site is hosted in Germany. If you access the Site from any other region of the world with laws or other requirements governing personal data collection, use, or disclosure that differ from applicable laws in Germany, then through your continued use of the Site, you are transferring your data to Germany, and you agree to have your data transferred to and processed in Germany.
 
-### 17. Copyright Infringements
+### 16. Copyright Infringements
 
 <div class="summary-box">
 <p><strong>💡 In Short:</strong> We respect intellectual property. If you believe material on the Site infringes your copyright, notify us using the contact info provided. Be aware you could be liable for damages if you misrepresent infringement.</p>
@@ -289,7 +273,7 @@ We respect the intellectual property rights of others. If you believe that any m
 
 A copy of your Notification will be sent to the person who posted or stored the material addressed in the Notification. Please be advised that pursuant to applicable law you may be held liable for damages if you make material misrepresentations in a Notification. Thus, if you are not sure that material located on or linked to by the Site infringes your copyright, you should consider first contacting an attorney.
 
-### 18. Term and Termination
+### 17. Term and Termination
 
 <div class="summary-box">
 <p><strong>💡 In Short:</strong> These Terms remain in effect while you use the Site. We can deny access or terminate your account at any time, for any reason, without notice, especially for breaching these Terms. If terminated, you cannot create a new account.</p>
@@ -305,7 +289,7 @@ If we terminate or suspend your account for any reason, you are prohibited from 
 
 In addition to terminating or suspending your account, we reserve the right to take appropriate legal action, including without limitation pursuing civil, criminal, and injunctive redress.
 
-### 19. Modifications and Interruptions
+### 18. Modifications and Interruptions
 
 <div class="summary-box">
 <p><strong>💡 In Short:</strong> We can change or remove Site content, or modify/discontinue the Site at any time without notice. The Site may not always be available due to maintenance or other issues. We aren't liable for losses caused by downtime or modifications.</p>
@@ -321,7 +305,7 @@ We reserve the right to change, revise, update, suspend, discontinue, or otherwi
 
 Nothing in these Terms of Use will be construed to obligate us to maintain and support the Site or to supply any corrections, updates, or releases in connection therewith.
 
-### 20. Governing Law
+### 19. Governing Law
 
 <div class="summary-box">
 <p><strong>💡 In Short:</strong> Estonian law governs these Terms. If you're an EU consumer, you also retain mandatory protections from your country of residence. Disputes can be brought in Estonia or your EU country of residence.</p>
@@ -333,30 +317,30 @@ If your habitual residence is in the EU, and you are a consumer, you additionall
 
 Gratheon OÜ and yourself both agree to submit to the non-exclusive jurisdiction of the courts of Harju, which means that you may make a claim to defend your consumer protection rights in regards to these Conditions of Use in Estonia, or in the EU country in which you reside.
 
-### 21. Dispute Resolution
+### 20. Dispute Resolution
 
 <div class="summary-box">
 <p><strong>💡 In Short:</strong> We agree to first try informal negotiation for 30 days for most disputes. If that fails, disputes will be resolved by binding arbitration in Tallinn, Estonia, under European Court of Arbitration rules. Class actions are not permitted. Exceptions apply for intellectual property disputes and injunctive relief.</p>
 </div>
 
-#### 21.1. Informal Negotiations
+#### 20.1. Informal Negotiations
 
 To expedite resolution and control the cost of any dispute, controversy, or claim related to these Terms of Use (each a "Dispute" and collectively, the “Disputes”) brought by either you or us (individually, a “Party” and collectively, the “Parties”), the Parties agree to first attempt to negotiate any Dispute (except those Disputes expressly provided below) informally for at least thirty (30) days before initiating arbitration. Such informal negotiations commence upon written notice from one Party to the other Party.
 
-#### 21.2. Binding Arbitration
+#### 20.2. Binding Arbitration
 
 Any dispute arising from the relationships between the Parties to this contract shall be determined by one arbitrator who will be chosen in accordance with the Arbitration and Internal Rules of the European Court of Arbitration being part of the European Centre of Arbitration having its seat in Strasbourg, and which are in force at the time the application for arbitration is filed, and of which adoption of this clause constitutes acceptance.
 
 The seat of arbitration shall be Tallinn, Estonia. The language of the proceedings shall be English. Applicable rules of substantive law shall be the law of Estonia.
 
-#### 21.3. Restrictions
+#### 20.3. Restrictions
 
 The Parties agree that any arbitration shall be limited to the Dispute between the Parties individually. To the full extent permitted by law:
 (a) no arbitration shall be joined with any other proceeding;
 (b) there is no right or authority for any Dispute to be arbitrated on a class-action basis or to utilize class action procedures; and
 (c) there is no right or authority for any Dispute to be brought in a purported representative capacity on behalf of the general public or any other persons.
 
-#### 21.4. Exceptions to Informal Negotiations and Arbitration
+#### 20.4. Exceptions to Informal Negotiations and Arbitration
 
 The Parties agree that the following Disputes are not subject to the above provisions concerning informal negotiations and binding arbitration:
 (a) any Disputes seeking to enforce or protect, or concerning the validity of, any of the intellectual property rights of a Party;
@@ -365,7 +349,7 @@ The Parties agree that the following Disputes are not subject to the above provi
 
 If this provision is found to be illegal or unenforceable, then neither Party will elect to arbitrate any Dispute falling within that portion of this provision found to be illegal or unenforceable. Such Dispute shall be decided by a court of competent jurisdiction within the courts listed for jurisdiction above, and the Parties agree to submit to the personal jurisdiction of that court.
 
-### 22. Corrections
+### 21. Corrections
 
 <div class="summary-box">
 <p><strong>💡 In Short:</strong> There might be errors on the Site. We reserve the right to correct any errors, inaccuracies, or omissions and update information at any time without notice.</p>
@@ -373,7 +357,7 @@ If this provision is found to be illegal or unenforceable, then neither Party wi
 
 There may be information on the Site that contains typographical errors, inaccuracies, or omissions, including descriptions, pricing, availability, and various other information. We reserve the right to correct any errors, inaccuracies, or omissions and to change or update the information on the Site at any time, without prior notice.
 
-### 23. Disclaimer
+### 22. Disclaimer
 
 <div class="summary-box">
 <p><strong>💡 In Short:</strong> The Site is provided "as-is". We disclaim all warranties. We are not liable for errors, damages, security breaches, interruptions, viruses, or content issues. Use the Site at your own risk.</p>
@@ -395,7 +379,7 @@ There may be information on the Site that contains typographical errors, inaccur
 
 **As with the purchase of a product or service through any medium or in any environment, you should use your best judgment and exercise caution where appropriate.**
 
-### 24. Limitations of Liability
+### 23. Limitations of Liability
 
 <div class="summary-box">
 <p><strong>💡 In Short:</strong> We are not liable for any direct or indirect damages arising from your use of the Site. Our total liability is limited to the amount you paid us in the last three months, if any. Some jurisdictions may grant you additional rights.</p>
@@ -405,9 +389,9 @@ There may be information on the Site that contains typographical errors, inaccur
 
 **Notwithstanding anything to the contrary contained herein, our liability to you for any cause whatsoever and regardless of the form of the action, will at all times be limited to the amount paid, if any, by you to us during the three (3) month period prior to any cause of action arising.**
 
-**Certain US state laws and international laws do not allow limitations on implied warranties or the exclusion or limitation of certain damages. If these laws apply to you, some or all of the above disclaimers or limitations may not apply to you, and you may have additional rights.**
+**Certain international laws do not allow limitations on implied warranties or the exclusion or limitation of certain damages. If these laws apply to you, some or all of the above disclaimers or limitations may not apply to you, and you may have additional rights.**
 
-### 25. Indemnification
+### 24. Indemnification
 
 <div class="summary-box">
 <p><strong>💡 In Short:</strong> You agree to defend and indemnify us against any claims arising from your Contributions, your use of the Site, your breach of these Terms, or your violation of third-party rights.</p>
@@ -423,7 +407,7 @@ You agree to defend, indemnify, and hold us harmless, including our subsidiaries
 
 Notwithstanding the foregoing, we reserve the right, at your expense, to assume the exclusive defense and control of any matter for which you are required to indemnify us, and you agree to cooperate, at your expense, with our defense of such claims. We will use reasonable efforts to notify you of any such claim, action, or proceeding which is subject to this indemnification upon becoming aware of it.
 
-### 26. User Data
+### 25. User Data
 
 <div class="summary-box">
 <p><strong>💡 In Short:</strong> We maintain data related to your use of the Site for performance purposes. We perform backups, but you are responsible for your data. We are not liable for data loss or corruption.</p>
@@ -435,7 +419,7 @@ Although we perform regular routine backups of data, you are solely responsible 
 
 You agree that we shall have no liability to you for any loss or corruption of any such data, and you hereby waive any right of action against us arising from any such loss or corruption of such data.
 
-### 27. Electronic Communications, Transactions, and Signatures
+### 26. Electronic Communications, Transactions, and Signatures
 
 <div class="summary-box">
 <p><strong>💡 In Short:</strong> Using the Site or emailing us constitutes electronic communication. You consent to receive electronic communications and agree they satisfy legal requirements. You agree to electronic signatures and records.</p>
@@ -447,7 +431,7 @@ Visiting the Site, sending us emails, and completing online forms constitute ele
 
 You hereby waive any rights or requirements under any statutes, regulations, rules, ordinances, or other laws in any jurisdiction which require an original signature or delivery or retention of non-electronic records, or to payments or the granting of credits by any means other than electronic means.
 
-### 28. Miscellaneous
+### 27. Miscellaneous
 
 <div class="summary-box">
 <p><strong>💡 In Short:</strong> These Terms constitute the entire agreement. Our failure to enforce a provision isn't a waiver. We can assign our rights. We aren't liable for delays beyond our control. If a part of these Terms is unenforceable, the rest remains valid. No joint venture is created. You waive defenses based on the electronic form of these Terms.</p>
