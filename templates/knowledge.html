@@ -430,6 +430,33 @@
       cleanSectionLabels(item);
     });
 
+    // Keep a copy of the generated product navigation for hardware details before
+    // replacing the web-app map with semantic feature cards below.
+    var hardwareMapSection = null;
+    var hardwareProductsMap = productsMap;
+    if (mapSection && productFamilySection) {
+      hardwareMapSection = mapSection.cloneNode(true);
+      hardwareMapSection.classList.add('knowledge-map--hardware-products');
+      var hardwareKicker = hardwareMapSection.querySelector('.knowledge-map-kicker');
+      var hardwareHeading = hardwareMapSection.querySelector('.knowledge-map-intro h2');
+      if (hardwareKicker) {
+        hardwareKicker.textContent = document.documentElement.lang === 'et' ? 'Riistvaratooted' : 'Hardware product details';
+      }
+      if (hardwareHeading) {
+        hardwareHeading.textContent = document.documentElement.lang === 'et' ? 'Vaata tootepere seadmete detaile' : 'Explore hardware product details';
+      }
+      hardwareProductsMap = hardwareMapSection.querySelector('.knowledge-map-nav--split .sidebar-menu');
+      hardwareProductsMap.classList.add('knowledge-product-submenu-map');
+      hardwareProductsMap.textContent = '';
+
+      if (webShowcase) {
+        webShowcase.insertAdjacentElement('afterend', mapSection);
+      }
+      productFamilySection.insertAdjacentElement('afterend', hardwareMapSection);
+    } else if (mapSection && webShowcase && mapSection.previousElementSibling !== webShowcase) {
+      webShowcase.insertAdjacentElement('afterend', mapSection);
+    }
+
     productsMap.classList.add('knowledge-product-submenu-map');
     productsMap.textContent = '';
 
@@ -475,6 +502,12 @@
       });
     }
 
+    function featureLinkData(item) {
+      if (!item) return null;
+      var link = item.matches && item.matches('a') ? item : item.querySelector('a');
+      return link ? { label: link.textContent.replace(/\s+/g, ' ').trim(), href: link.getAttribute('href') || '#' } : null;
+    }
+
     function directSectionByPath(root, pathSuffix) {
       var submenu = root && root.querySelector(':scope > .sidebar-submenu');
       if (!submenu) return null;
@@ -483,77 +516,71 @@
       });
     }
 
-    function appendFeatureItems(list, items) {
-      sortedFeatureItems(items).forEach(function(item) {
-        item.classList.add('knowledge-web-app-feature-item');
-        list.appendChild(item);
+    function directFeatureItems(section) {
+      var submenu = section && section.querySelector(':scope > .sidebar-submenu');
+      if (!submenu) return [];
+      return Array.prototype.slice.call(submenu.children).filter(function(child) {
+        return !child.classList.contains('sidebar-section');
       });
     }
 
-    function appendIdeaItems(list, headingText, items) {
+    function appendFeatureItems(container, items, extraClass) {
+      sortedFeatureItems(items).forEach(function(item) {
+        var data = featureLinkData(item);
+        if (!data) return;
+        var link = document.createElement('a');
+        link.className = 'knowledge-web-app-feature-link' + (extraClass ? ' ' + extraClass : '');
+        link.href = data.href;
+        link.textContent = data.label;
+        container.appendChild(link);
+      });
+    }
+
+    function appendIdeaItems(container, headingText, items) {
       if (!items.length) return;
-      var subhead = document.createElement('li');
+      var subhead = document.createElement('div');
       subhead.className = 'knowledge-web-app-tier-subhead';
       subhead.textContent = headingText;
-      list.appendChild(subhead);
-      sortedFeatureItems(items).forEach(function(item) {
-        item.classList.add('knowledge-web-app-feature-item', 'knowledge-web-app-feature-item--idea');
-        list.appendChild(item);
-      });
+      container.appendChild(subhead);
+      appendFeatureItems(container, items, 'knowledge-web-app-feature-link--idea');
     }
 
     function createTierColumn(options) {
-      var section = options.section;
-      var item = section || document.createElement('li');
-      item.className = 'sidebar-item sidebar-section knowledge-web-app-tier-card knowledge-web-app-tier-card--' + options.key;
-      item.removeAttribute('style');
-
-      var head = item.querySelector(':scope > .sidebar-section-head');
-      if (!head) {
-        head = document.createElement('div');
-        head.className = 'sidebar-section-head';
-        var link = document.createElement('a');
-        link.href = options.href || '/pricing/';
-        head.appendChild(link);
-        item.appendChild(head);
+      var href = options.href || '/pricing/';
+      if (options.section) {
+        var sectionLink = directLink(options.section);
+        if (sectionLink) href = sectionLink.getAttribute('href') || href;
       }
 
-      var headLink = head.querySelector('a');
-      if (headLink) {
-        headLink.textContent = options.label;
-        if (options.href) headLink.href = options.href;
-      }
-      head.querySelectorAll('.sidebar-toggle').forEach(function(button) { button.remove(); });
+      var article = document.createElement('article');
+      article.className = 'knowledge-web-app-tier-card knowledge-web-app-tier-card--' + options.key;
 
-      var oldSubmenu = item.querySelector(':scope > .sidebar-submenu');
-      var directItems = oldSubmenu ? Array.prototype.slice.call(oldSubmenu.children).filter(function(child) {
-        return !child.classList.contains('sidebar-section');
-      }) : [];
-      if (oldSubmenu) oldSubmenu.remove();
+      var titleLink = document.createElement('a');
+      titleLink.className = 'knowledge-web-app-tier-title';
+      titleLink.href = href;
+      titleLink.textContent = options.label;
+      article.appendChild(titleLink);
 
-      var list = document.createElement('ul');
-      list.className = 'sidebar-submenu knowledge-web-app-feature-list';
-      appendFeatureItems(list, directItems);
+      var list = document.createElement('div');
+      list.className = 'knowledge-web-app-feature-list';
+      appendFeatureItems(list, options.items || []);
       (options.ideaGroups || []).forEach(function(group) {
         appendIdeaItems(list, group.label, group.items);
       });
       (options.syntheticFeatures || []).forEach(function(feature) {
-        var featureItem = document.createElement('li');
-        featureItem.className = 'sidebar-item knowledge-web-app-feature-item';
         var link = document.createElement('a');
+        link.className = 'knowledge-web-app-feature-link';
         link.href = feature.href;
         link.textContent = feature.label;
-        featureItem.appendChild(link);
-        list.appendChild(featureItem);
+        list.appendChild(link);
       });
-      item.appendChild(list);
-      return item;
+      article.appendChild(list);
+      return article;
     }
 
     function rebuildWebAppCardByTier(card) {
       if (!card) return;
       updateWebAppMapIntro();
-      card.classList.add('knowledge-map-product-card', 'knowledge-map-web-app-card');
 
       var isEt = document.documentElement.lang === 'et';
       var futureSection = directSectionByPath(card, '/products/web_app/future-ideas/');
@@ -562,35 +589,18 @@
       var genericIdeas = directLeafLinks(futureSection);
       var ideasLabel = isEt ? 'Ideed arenduses' : 'Ideas in development';
 
+      var freeSection = directSectionByPath(card, '/products/web_app/free-tier/');
+      var hobbyistSection = directSectionByPath(card, '/products/web_app/hobbyist-tier/');
+      var starterSection = directSectionByPath(card, '/products/web_app/starter-tier/');
+      var flexibleSection = directSectionByPath(card, '/products/web_app/flexible-tier/');
+      var proSection = directSectionByPath(card, '/products/web_app/pro-tier/');
+
       var orderedTiers = [
-        {
-          key: 'free',
-          label: isEt ? 'Free pakett' : 'Free tier',
-          section: directSectionByPath(card, '/products/web_app/free-tier/')
-        },
-        {
-          key: 'hobbyist',
-          label: isEt ? 'Hobbyist pakett' : 'Hobbyist tier',
-          section: directSectionByPath(card, '/products/web_app/hobbyist-tier/'),
-          ideaGroups: [{ label: ideasLabel, items: hobbyistIdeas }]
-        },
-        {
-          key: 'starter',
-          label: isEt ? 'Starter pakett' : 'Starter tier',
-          section: directSectionByPath(card, '/products/web_app/starter-tier/'),
-          ideaGroups: genericIdeas.length ? [{ label: ideasLabel, items: genericIdeas }] : []
-        },
-        {
-          key: 'flexible',
-          label: isEt ? 'Paindlikud lisad' : 'Flexible add-ons',
-          section: directSectionByPath(card, '/products/web_app/flexible-tier/')
-        },
-        {
-          key: 'pro',
-          label: isEt ? 'Pro pakett' : 'Pro tier',
-          section: directSectionByPath(card, '/products/web_app/pro-tier/'),
-          ideaGroups: [{ label: ideasLabel, items: proIdeas }]
-        },
+        { key: 'free', label: isEt ? 'Free pakett' : 'Free tier', section: freeSection, items: directFeatureItems(freeSection) },
+        { key: 'hobbyist', label: isEt ? 'Hobbyist pakett' : 'Hobbyist tier', section: hobbyistSection, items: directFeatureItems(hobbyistSection), ideaGroups: [{ label: ideasLabel, items: hobbyistIdeas }] },
+        { key: 'starter', label: isEt ? 'Starter pakett' : 'Starter tier', section: starterSection, items: directFeatureItems(starterSection), ideaGroups: genericIdeas.length ? [{ label: ideasLabel, items: genericIdeas }] : [] },
+        { key: 'flexible', label: isEt ? 'Paindlikud lisad' : 'Flexible add-ons', section: flexibleSection, items: directFeatureItems(flexibleSection) },
+        { key: 'pro', label: isEt ? 'Pro pakett' : 'Pro tier', section: proSection, items: directFeatureItems(proSection), ideaGroups: [{ label: ideasLabel, items: proIdeas }] },
         {
           key: 'enterprise',
           label: isEt ? 'Enterprise pakett' : 'Enterprise tier',
@@ -604,61 +614,25 @@
         }
       ];
 
-      var tierGrid = document.createElement('ul');
-      tierGrid.className = 'sidebar-submenu knowledge-web-app-tier-grid';
+      var tierGrid = document.createElement('div');
+      tierGrid.className = 'knowledge-web-app-tier-grid';
       orderedTiers.forEach(function(tier) {
-        if (tier.section || tier.syntheticFeatures) {
+        if ((tier.items && tier.items.length) || tier.syntheticFeatures) {
           tierGrid.appendChild(createTierColumn(tier));
         }
       });
 
-      var heading = card.querySelector(':scope > .sidebar-section-head');
-      if (heading) heading.remove();
-      var existingSubmenu = card.querySelector(':scope > .sidebar-submenu');
-      if (existingSubmenu) existingSubmenu.remove();
-      card.textContent = '';
-      card.appendChild(tierGrid);
+      var nav = mapSection && mapSection.querySelector('.knowledge-map-nav');
+      if (nav) {
+        nav.className = 'knowledge-web-app-feature-map';
+        nav.replaceChildren(tierGrid);
+      }
     }
 
-    // WHY: the generated sidebar tree is grouped by folders and becomes a tall
-    // scrolling card. WHAT: rebuild only the web-app branch into pricing-like
-    // billing tier columns ordered from the lowest plan to Enterprise.
+    // WHY: the generated product sidebar is a navigation tree, but the web-app
+    // map is now content. WHAT: render only this branch as semantic feature
+    // cards so it is not constrained by sidebar/nav/ul styling.
     rebuildWebAppCardByTier(webAppCard);
-
-    if (webAppCard) {
-      productsMap.appendChild(webAppCard);
-    }
-
-    // WHY: web-app feature details should be read directly after the web-app
-    // showcase, while hardware product details belong after the Product family
-    // overview. Split the generated sidebar map into two placed sections.
-    var hardwareMapSection = null;
-    var hardwareProductsMap = productsMap;
-    if (mapSection && productFamilySection) {
-      hardwareMapSection = mapSection.cloneNode(true);
-      hardwareMapSection.classList.remove('knowledge-map--web-app-features');
-      hardwareMapSection.classList.add('knowledge-map--hardware-products');
-      var inheritedWebAppDescription = hardwareMapSection.querySelector('.knowledge-map-description');
-      if (inheritedWebAppDescription) inheritedWebAppDescription.remove();
-      var hardwareKicker = hardwareMapSection.querySelector('.knowledge-map-kicker');
-      var hardwareHeading = hardwareMapSection.querySelector('.knowledge-map-intro h2');
-      if (hardwareKicker) {
-        hardwareKicker.textContent = document.documentElement.lang === 'et' ? 'Riistvaratooted' : 'Hardware product details';
-      }
-      if (hardwareHeading) {
-        hardwareHeading.textContent = document.documentElement.lang === 'et' ? 'Vaata tootepere seadmete detaile' : 'Explore hardware product details';
-      }
-      hardwareProductsMap = hardwareMapSection.querySelector('.knowledge-map-nav--split .sidebar-menu');
-      hardwareProductsMap.classList.add('knowledge-product-submenu-map');
-      hardwareProductsMap.textContent = '';
-
-      if (webShowcase) {
-        webShowcase.insertAdjacentElement('afterend', mapSection);
-      }
-      productFamilySection.insertAdjacentElement('afterend', hardwareMapSection);
-    } else if (mapSection && webShowcase && mapSection.previousElementSibling !== webShowcase) {
-      webShowcase.insertAdjacentElement('afterend', mapSection);
-    }
 
     if (productLinks.length) {
       var overviewCard = document.createElement('li');
