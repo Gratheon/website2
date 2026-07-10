@@ -73,8 +73,18 @@ layout: products
 ## Локализованные функции
 
 - [📦 Управление пасеками](free-tier/apiary-management.md)
+- [📦 Управление ульями](free-tier/hive-management.md)
 - [🖼️ Управление стороной рамки](free-tier/frame-side-management.md)
 - [👑 Live Queen Finder](free-tier/live-queen-finder.md)
+- [🧑‍🚀 Регистрация пользователя](free-tier/user-registration.md)
+- [🧑‍🚀 Вход пользователя](free-tier/user-login.md)
+- [🔑 Восстановление пароля](free-tier/user-password-restoration.md)
+- [🧑‍🚀 Редактирование профиля](free-tier/user-editing.md)
+- [🍭 История подкормок](free-tier/feeding-history.md)
+- [📅 Дневник обработок от varroa](free-tier/varroa-treatment-diary.md)
+- [♻️ Генерация QR-кодов](free-tier/qr-code-generation.md)
+- [♻️ Публичный просмотр улья](free-tier/public-beehive-view.md)
+- [🖮 Горячие клавиши](free-tier/keyboard-shortcuts.md)
 - [🔎 Управление осмотрами](hobbyist-tier/inspection-management.md)
 - [🦀 Подсчёт varroa на донной доске](starter-tier/hive-bottom-varroa-count.md)
 - [📈 Хранение телеметрии улья](pro-tier/hive-telemetry-storage.md)
