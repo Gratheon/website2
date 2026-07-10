@@ -1398,6 +1398,10 @@ html[data-theme='dark'] .front-page .future {
   font-size: 0.95rem;
 }
 
+.knowledge-page-products .knowledge-web-app-feature-link--platform {
+  color: color-mix(in srgb, var(--knowledge-muted) 88%, var(--knowledge-ink));
+}
+
 .knowledge-page-products .knowledge-web-app-tier-subhead {
   margin-top: 12px;
   padding-top: 14px;

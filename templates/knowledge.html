@@ -502,6 +502,43 @@
       });
     }
 
+    // WHY: free tier mixes beekeeper value props with generic account/platform
+    // features. WHAT: keep a stable suffix list so the map can show benefits first.
+    var genericPlatformFeatureSuffixes = [
+      '/user-registration/',
+      '/user-login/',
+      '/user-editing/',
+      '/user-password-restoration/',
+      '/user-account-deletion/',
+      '/localization/',
+      '/api-token-management/',
+      '/keyboard-shortcuts/',
+      '/billing-subscription/'
+    ];
+
+    function isGenericPlatformFeature(item) {
+      var data = featureLinkData(item);
+      if (!data) return false;
+      try {
+        var path = new URL(data.href, window.location.origin).pathname.replace(/\/+$/, '/');
+        return genericPlatformFeatureSuffixes.some(function(suffix) {
+          return path.endsWith(suffix);
+        });
+      } catch (error) {
+        return false;
+      }
+    }
+
+    function partitionFeatureItems(items) {
+      var beekeeper = [];
+      var generic = [];
+      (items || []).forEach(function(item) {
+        if (isGenericPlatformFeature(item)) generic.push(item);
+        else beekeeper.push(item);
+      });
+      return { beekeeper: beekeeper, generic: generic };
+    }
+
     function featureLinkData(item) {
       if (!item) return null;
       var link = item.matches && item.matches('a') ? item : item.querySelector('a');
@@ -536,13 +573,17 @@
       });
     }
 
-    function appendIdeaItems(container, headingText, items) {
+    function appendFeatureGroup(container, headingText, items, extraClass) {
       if (!items.length) return;
       var subhead = document.createElement('div');
       subhead.className = 'knowledge-web-app-tier-subhead';
       subhead.textContent = headingText;
       container.appendChild(subhead);
-      appendFeatureItems(container, items, 'knowledge-web-app-feature-link--idea');
+      appendFeatureItems(container, items, extraClass);
+    }
+
+    function appendIdeaItems(container, headingText, items) {
+      appendFeatureGroup(container, headingText, items, 'knowledge-web-app-feature-link--idea');
     }
 
     function createTierColumn(options) {
@@ -563,7 +604,17 @@
 
       var list = document.createElement('div');
       list.className = 'knowledge-web-app-feature-list';
-      appendFeatureItems(list, options.items || []);
+      var partitioned = partitionFeatureItems(options.items || []);
+      var isEt = document.documentElement.lang === 'et';
+      appendFeatureItems(list, partitioned.beekeeper);
+      if (partitioned.generic.length) {
+        appendFeatureGroup(
+          list,
+          isEt ? 'Platvormi põhifunktsioonid' : 'Platform basics',
+          partitioned.generic,
+          'knowledge-web-app-feature-link--platform'
+        );
+      }
       (options.ideaGroups || []).forEach(function(group) {
         appendIdeaItems(list, group.label, group.items);
       });
