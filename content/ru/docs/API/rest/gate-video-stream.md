@@ -9,6 +9,7 @@ title: Gate Video Stream
 Сейчас `gate-video-stream` отвечает за:
 
 - загрузку и HLS-воспроизведение сохраненного видео у входа
+- серверную генерацию тепловых карт летка из траекторий Entrance Observer
 - GraphQL lifecycle live-сессии через `startEntranceLiveStream`, `keepEntranceLiveStreamAlive`, `stopEntranceLiveStream` и `entranceLiveStreamSession`
 - device-facing polling/status/event endpoints для `entrance-observer`
 - выдачу service-owned placeholder playback/publisher endpoints для live MVP
@@ -27,6 +28,8 @@ title: Gate Video Stream
 - Запрос poll одновременно обновляет heartbeat устройства, потому что несет актуальные `cameraStatus`, `publisherState` и опциональный payload с диагностикой.
 - Устройство подтверждает обработку команды через `POST /api/entrance-live/device/command-ack`.
 - Устройство сообщает о переходах жизненного цикла через `POST /api/entrance-live/device/event`, включая `DEVICE_ONLINE`, `STREAM_STARTING`, `STREAM_ACTIVE`, `STREAM_FAILED` и `STREAM_STOPPED`.
+- `entrance-observer` загружает отслеживаемые траектории пчёл через `POST /api/entrance-heatmaps/trajectories`; `gate-video-stream` агрегирует их в суточные тепловые карты и сохраняет рядом с видео-активами.
+- Браузерные клиенты получают список сохранённых тепловых карт через GraphQL-запрос `entranceHeatmaps(boxIds, date, limit)` через `graphql-router`.
 - Событие `DEVICE_ONLINE` обновляет присутствие устройства и status payload, но само по себе не переводит сессию в `STARTING` или `ACTIVE`.
 
 Для browser clients используйте GraphQL через `graphql-router`, а не прямые URL устройства.
