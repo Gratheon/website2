@@ -1,9 +1,10 @@
 ---
 title: Модели
-navTitle: "Модели"
+navTitle: Модели
 layout: research
 order: 3
 hideToc: true
+heroImage: /assets/img/queens.webp
 ---
 
 Gratheon обучает и поддерживает модели машинного обучения для цифрового пчеловодства и мониторинга ульев.

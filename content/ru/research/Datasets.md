@@ -1,8 +1,9 @@
 ---
 title: Датасеты
 layout: research
-sidebar_position: 2
-hide_table_of_contents: true
+order: 2
+hideToc: true
+heroImage: /assets/img/research/img/Screenshot 2025-09-10 at 09.11.23.png
 ---
 
 Собранные нами данные доступны через [Google Drive](https://drive.google.com/drive/folders/105PmxDKFUR6NCPLHBkXGdkfcZwWf9ABI?usp=drive_link), в основном из-за большого объёма данных.
@@ -15,7 +16,7 @@ hide_table_of_contents: true
 ![](/assets/img/research/img/IMG_4376.webp)
 
 ## Видео
-[👁️‍🗨️ Entrance Observer](/products/entrance_observer/entrance-observer/) — видео 🎥 летка улья
+[👁️‍🗨️ Entrance Observer](/ru/products/entrance_observer/entrance_observer/) — видео 🎥 летка улья
 ![](/assets/img/research/img/Screenshot%202025-09-10%20at%2009.11.23-preview.webp)
 ### 2025
 
@@ -45,11 +46,11 @@ Input #0
 	- имена файлов заданы в UTC timestamps.
 	- [метрики в формате jsonl](https://drive.google.com/file/d/18b2aKTxrS1K9YpQciDybXwDlNYuEE4yh/view?usp=drive_link)
 	- [траектории пчёл в формате jsonl](https://drive.google.com/file/d/1J6I2KOeUa4dns7OmXidvc6Oqc0VF2goC/view?usp=drive_link)
-- [September 6th](https://drive.google.com/drive/folders/1TQxpUFSc13xWLE_0gA4BkzPv8amcFyc-?usp=drive_link). Солнечная погода. 
-	- Dataset duration ~8h (8:00-15:36, 19:35-20:35 EEST)
+- [6 сентября](https://drive.google.com/drive/folders/1TQxpUFSc13xWLE_0gA4BkzPv8amcFyc-?usp=drive_link). Солнечная погода.
+	- Длительность датасета ~8 ч (8:00–15:36, 19:35–20:35 EEST)
 	- около 13:20 наблюдается характерный рисунок облёта
-	- [metrics in jsonl](https://drive.google.com/file/d/1oHRftj_zvbZXd8vKCcTIg9VRGoslf4vy/view?usp=drive_link)
-	- [bee tracks in jsonl](https://drive.google.com/file/d/1SibnVr5I8ifYLJlxiqiWBpNWbBxm7lEl/view?usp=drive_link)
+	- [метрики в jsonl](https://drive.google.com/file/d/1oHRftj_zvbZXd8vKCcTIg9VRGoslf4vy/view?usp=drive_link)
+	- [траектории пчёл в jsonl](https://drive.google.com/file/d/1SibnVr5I8ifYLJlxiqiWBpNWbBxm7lEl/view?usp=drive_link)
 
 Пример видео (ffmpeg, повторно сжатого для веба):
 
@@ -59,19 +60,19 @@ Input #0
 
 
 #### Тип датасета 2
-- [September 7th](https://drive.google.com/drive/folders/1E8p_d_rdb_Mq2IjoOyw4OVaWrs37xj2s?usp=drive_link)
-	- Длительность датасета ~ 3 ч (12:00–15:05 EEST)
-	- 1280x720px. 30 min chunks. 15FPS.  
+- [7 сентября](https://drive.google.com/drive/folders/1E8p_d_rdb_Mq2IjoOyw4OVaWrs37xj2s?usp=drive_link)
+	- Длительность датасета ~3 ч (12:00–15:05 EEST)
+	- 1280x720px. Чанки по 30 минут. 15 FPS.
 	- Солнечная погода с облаками и порывами ветра после 16:00
 	- **Новый уровень зума** выставлен в 12:00 EEST на область прилётной доски (ширина 23 см). 
-	- [metrics](https://drive.google.com/file/d/1vzIe7SRJP_jarai9jqNIVPac8l6efrQv/view?usp=drive_link)
-	- [tracks](https://drive.google.com/file/d/1ij0A15NC2XDdUy3ghvZ6GYT_458uqzZn/view?usp=drive_link)
-- [September 8th](https://drive.google.com/drive/folders/1L25SnvC_IDGOZlkE_vWidIPIKZilKURE?usp=drive_link)
+	- [метрики](https://drive.google.com/file/d/1vzIe7SRJP_jarai9jqNIVPac8l6efrQv/view?usp=drive_link)
+	- [траектории](https://drive.google.com/file/d/1ij0A15NC2XDdUy3ghvZ6GYT_458uqzZn/view?usp=drive_link)
+- [8 сентября](https://drive.google.com/drive/folders/1L25SnvC_IDGOZlkE_vWidIPIKZilKURE?usp=drive_link)
 	- Длительность датасета ~3.5 ч (13:52–17:33 EEST) в пиковое время с ориентационными облётами
 	- Полная длительность (8 ч) доступна на [youtube](https://youtu.be/oG791JNb1aA)
-	- [metrics](https://drive.google.com/file/d/1Uz0I-nzvRPiNe1QH-PK1XcPpCMrfV2NY/view?usp=drive_link)
-	- [tracks](https://drive.google.com/file/d/1o9Z6c7-JunYptKTGUFV7aJqYdjkKKYUr/view?usp=drive_link)
-- September 9th
+	- [метрики](https://drive.google.com/file/d/1Uz0I-nzvRPiNe1QH-PK1XcPpCMrfV2NY/view?usp=drive_link)
+	- [траектории](https://drive.google.com/file/d/1o9Z6c7-JunYptKTGUFV7aJqYdjkKKYUr/view?usp=drive_link)
+- 9 сентября
 	- Длительность датасета ~3 ч (12:00–15:00 EEST)
 
 
@@ -80,13 +81,13 @@ Input #0
 #### Тип датасета 3
 Камера установлена на **вторую** секцию улья (ближе), изменён зум, убраны стеклянные и алюминиевые границы, вместо них добавлены камни
 
-- [September 10th](https://drive.google.com/drive/folders/1T9zKrfkNYAl4NHn6E1F8O6stDdiA544f?usp=drive_link)
+- [10 сентября](https://drive.google.com/drive/folders/1T9zKrfkNYAl4NHn6E1F8O6stDdiA544f?usp=drive_link)
 	- 11:30 - 17:00
-- September 11th
+- 11 сентября
 	- дождливый день, очень низкая активность
-- September 13th
-	- rainy day
-- September 14th
+- 13 сентября
+	- дождливый день
+- 14 сентября
 	- облачный день
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/3O4oy4sBHtM" title="Beehive entrance, september 10" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
