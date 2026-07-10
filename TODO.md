@@ -83,3 +83,35 @@ Impact Guide
 ### Research → Product Pipeline (💙 Low)
 - [ ] 💙 Vibration-based varroa monitoring spike — prototype piezo/accelerometer pipeline inspired by `gratheon.com/content/research/papers/Automated non-invasive Varroa mite detection by vibrational measurements...md`; compare signal quality vs sticky-board and frame-photo models. **Impact:** Non-invasive monitoring option. **Effort:** High (R&D).
 - [ ] 💙 TinyML audio hive-state node — evaluate edge audio classifier from `IoT Embedded Smart Monitoring System with Edge Machine Learning for Beehive Management` paper for queenlessness / swarming cues; complement entrance-observer video. **Impact:** Multi-modal colony health. **Effort:** High (R&D).
+
+## Added by autonomous analysis (2026-07-10, pass 2)
+
+### Product & Pro Tier (💛 High)
+- [ ] 💛 Varroa infestation management UI — per `future-ideas/varroa-infestation-management.md`: compute infestation % (mites/bees, cap at 100%), show on hive list with sort, surface in frame-side views, link to treatment diary. Backend detection exists in `image-splitter`; missing aggregate UX. **Impact:** Core varroa workflow completion. **Effort:** Medium.
+- [ ] 💛 Team / multi-user apiary access — per `future-ideas/pro-tier-ideas/multiple-user-support.md`: invite collaborators, role-based permissions (view/edit/admin) on apiaries and hives. **Impact:** Unblocks industrial and association accounts. **Effort:** High.
+- [ ] 💛 Industrial map view — per `future-ideas/pro-tier-ideas/map-view.md`: apiary map with route planning, pollination coverage overlay, links to satellite view. **Impact:** Professional beekeeper operations. **Effort:** Medium-High.
+- [ ] 💚 Colony comparison over time — per `future-ideas/pro-tier-ideas/colony-comparison.md`: git-diff style charts for honey production, swarming, aggression, varroa, overwintering across hives or seasons. **Impact:** Data-driven apiary decisions. **Effort:** Medium-High.
+- [ ] 💚 Google Calendar sync — per `future-ideas/pro-tier-ideas/google-calendar-integration.md`: OAuth in settings, two-way sync for treatments and inspections; reuse `user-cycle` Google OAuth patterns. **Impact:** Retention outside the app. **Effort:** Medium-High.
+- [ ] 💚 Shareable telemetry analytics dashboards — per `future-ideas/pro-tier-ideas/telemetry-analytics-access.md`: authenticated Grafana-style views in web-app with share links and configurable chart presets. **Impact:** Pro tier differentiation. **Effort:** Medium-High.
+
+### ML & Colony Health (💛 High / 💚 Medium)
+- [ ] 💛 Frame starvation detection & alert — per `future-ideas/pro-tier-ideas/frame-analysis-starvation-detection-and-alert.md`: detect capped honey scarcity, face-first dead bees, lightweight hives from frame photos + bottom-board piles; wire to `alerts`. **Impact:** Prevents colony loss. **Effort:** Medium-High.
+- [ ] 💚 Spotty / chilled brood pattern detection — per `future-ideas/pro-tier-ideas/frame-analysis-spotty-brood-pattern-detection.md` and `frame-analysis-chilled-brood.md`: classify irregular brood patterns on frame sides; surface warnings in hive detail. **Impact:** Early disease/stress signals. **Effort:** Medium-High.
+- [ ] 💚 Pest frame classifiers (wax moth, hive beetle, ants) — per `future-ideas/pro-tier-ideas/wax-moth-detection.md`, `hive-beetle-detection.md`, `ant-detection.md`; add workers in `image-splitter` and badges on frame analysis. **Impact:** Broader pest management. **Effort:** Medium per pest.
+- [ ] 💙 Drone brood & laying-worker cell detection — per `future-ideas/drone-brood-detection.md` and `laying-workers-cell-detection.md`. **Impact:** Queenlessness early warning. **Effort:** Medium-High.
+
+### Integrations & Data Sources (💚 Medium)
+- [ ] 💚 Outbound webhooks — per `future-ideas/pro-tier-ideas/webhooks-integration.md`: user-configurable URLs for events (hive created, frame analyzed, alert fired); signed payloads + retry log in new `user-cycle` or `swarm-api` table. **Impact:** Ecosystem and automation. **Effort:** Medium-High.
+- [ ] 💚 Solar radiance in weather context — per `future-ideas/solar-radiance-as-weather-datasource.md`: extend `weather` service with irradiance by lat/lon; overlay on telemetry charts for nectar-flow correlation. **Impact:** Richer environmental context. **Effort:** Medium.
+- [ ] 💙 Apiary satellite imagery view — per `future-ideas/pro-tier-ideas/apiary-satellite-view.md` and optional `skyfi-integration.md` for high-res updates. **Impact:** Land-use and placement planning. **Effort:** Medium-High.
+
+### Platform, Observability & Quality (💚 Medium)
+- [ ] 💚 GraphQL router CI — add `.github/workflows/review.yml` to `graphql-router` (schema validation, `test-proxy.sh`, lint); repo currently only has deploy workflow. **Impact:** Federation gateway regression safety. **Effort:** Low.
+- [ ] 💛 Enforce API rate limits in graphql-router — integrate `rate-limiter` TokenBucket middleware per user/plan tier on federated routes (doc task exists; this is implementation). **Impact:** Abuse prevention before public API. **Effort:** Medium.
+- [ ] 💚 OTEL for gate-video-stream & event-stream-filter — add `OTEL_*` env + `log-lib-go` tracing to both services; they are missing from ClickStack instrumentation unlike `swarm-api`, `telemetry-api`, `alerts`. **Impact:** End-to-end trace coverage for live video and realtime events. **Effort:** Low-Medium.
+- [ ] 💚 Segment stats quorum in gate-video-stream — implement TODO in `gate-video-stream/src/models/segment.ts` for consistent in/out counts when multiple upload workers race. **Impact:** Accurate entrance traffic on video segments. **Effort:** Low-Medium.
+- [ ] 💚 Expand Playwright E2E coverage — `web-app` has only `test/ui/apiary.spec.ts`, `user-cycle.spec.ts`, and demo scaffold; add flows for hive inspection upload, varroa overlay, treatment log, offline banner. **Impact:** Release confidence. **Effort:** Medium.
+- [ ] 💚 ClickStack alert rules & incident runbook — define HyperDX alert thresholds (error rate, latency, disk) for each `OTEL_SERVICE_NAME`; document triage steps complementing the unified observability runbook item above. **Impact:** Faster production incident response. **Effort:** Medium.
+
+### Offline & Sync (💚 Medium)
+- [ ] 💚 IndexedDB conflict resolution — `web-app` offline layer (`offlineIndexDbExchange`, `models/db`) lacks documented merge strategy when field edits diverge from server after reconnect; define last-write-wins vs inspection-scoped merge and add user-facing conflict UI. **Impact:** Reliable field-first workflows. **Effort:** Medium-High.
