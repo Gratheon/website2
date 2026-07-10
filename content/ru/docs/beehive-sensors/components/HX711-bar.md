@@ -1,18 +1,19 @@
 ---
 price: "4"
-title: Weight sensor HX711 (bar-type)
+title: Весовой датчик HX711, балочный тип
 items: "4"
+hideNav: true
 ---
 https://www.aliexpress.com/item/1005006827930173.html
 [https://www.amazon.de/-/en/gp/product/B079FQNJJH/](https://www.amazon.de/-/en/gp/product/B079FQNJJH/)
 ![](docs/img/612ornIvHHL._SL1000_.jpg)
-### Wiring
+### Подключение
 
-#### Single Load Cell Setup
-HX711 Load Cell Amplifier:
+#### Подключение одного тензодатчика
+Усилитель тензодатчика HX711:
 
-- E = Excitation. E+ (Red) и E- (Black) — excitation wires для load cell; они подают напряжение питания на load cell.
-- A = Amplifier. A+ (White) и A- (Green) — signal wires от load cell; они передают differential signal, который усиливает HX711.
+- E = Excitation. E+ (красный) и E- (чёрный) - провода возбуждения тензодатчика, которые подают на него питание.
+- A = Amplifier. A+ (белый) и A- (зелёный) - сигнальные провода тензодатчика, по которым идёт дифференциальный сигнал для усиления HX711.
 
 ```mermaid
 flowchart LR
@@ -53,9 +54,9 @@ White
 end
 ```
 
-#### Four Load Cells Setup (для полного измерения веса улья)
+#### Подключение четырёх тензодатчиков для полного измерения веса улья
 
-**Да, можно подключить 4 weight sensors к одному ESP32!** Каждой load cell нужен свой HX711 amplifier. Подключения работают так:
+**Да, к одному ESP32 можно подключить 4 весовых датчика.** Каждому тензодатчику нужен свой усилитель HX711. Подключение выглядит так:
 
 ```mermaid
 flowchart TD
@@ -187,8 +188,8 @@ flowchart TD
     A4- --- White4
 ```
 
-**Alternative Wiring (Shared SCK):**
-Можно разделить линию SCK (clock) между всеми HX711 modules, чтобы сэкономить pins ESP32. В этом случае всего нужно 5 pins (1 общий SCK + 4 отдельные DT pins):
+**Альтернативное подключение с общей линией SCK:**
+Можно использовать общую линию SCK (clock) для всех модулей HX711, чтобы сэкономить пины ESP32. В этом случае всего нужно 5 пинов: 1 общий SCK и 4 отдельные линии DT.
 
 ```
 ESP32 GPIO17 → All HX711 SCK pins (shared)
@@ -206,48 +207,48 @@ GND → All HX711 GND pins
 ![](docs/img/HX711.png)
 
 
-# Features
+## Возможности
 
-Два выбираемых differential input channels
+Два выбираемых дифференциальных входных канала.
 
-On-chip active low noise PGA with selectable gain of 32, 64 and 128
+Встроенный активный малошумящий PGA с выбираемым усилением 32, 64 и 128.
 
-On-chip power supply regulator для load-cell и ADC analog power supply
+Встроенный регулятор питания для тензодатчика и аналогового питания ADC.
 
-On-chip oscillator без внешних компонентов, с опциональным external crystal
+Встроенный осциллятор без обязательных внешних компонентов, с возможностью использовать внешний кристалл.
 
-On-chip power-on-reset
+Встроенный power-on reset.
 
-Простое digital control и serial interface: pin-driven controls, programming не требуется
+Простое цифровое управление и последовательный интерфейс: управление через пины, программирование самого чипа не требуется.
 
-Selectable 10SPS или 80SPS output data rate
+Выбираемая частота выдачи данных: 10 SPS или 80 SPS.
 
-Одновременное подавление помех питания 50 и 60Hz
+Одновременное подавление помех питания 50 Hz и 60 Hz.
 
-Current consumption, включая on-chip analog power supply regulator: normal operation < 1.5mA, power down < 1uA
+Потребляемый ток, включая встроенный регулятор аналогового питания: нормальная работа < 1.5 mA, power down < 1 uA.
 
-Operation supply voltage range: 2.6 ~ 5.5V
+Диапазон рабочего напряжения питания: 2.6-5.5 V.
 
-Operating Temperature Range: -20 degree ~ +85 degree
+Диапазон рабочей температуры: -20 до +85 °C.
 
-### Connection Summary
+### Сводка подключения
 
-**Для setup весов улья с 4 sensors:**
+**Для весов улья с 4 датчиками:**
 
-| Load Cell Position | HX711 Module | ESP32 DT Pin | ESP32 SCK Pin | Load Cell Wires |
+| Позиция тензодатчика | Модуль HX711 | ESP32 DT Pin | ESP32 SCK Pin | Провода тензодатчика |
 |-------------------|--------------|--------------|---------------|-----------------|
-| Front Left        | HX711 #1     | GPIO16       | GPIO17        | Red→E+, Black→E-, White→A-, Green→A+ |
-| Front Right       | HX711 #2     | GPIO18       | GPIO19*       | Red→E+, Black→E-, White→A-, Green→A+ |
-| Back Left         | HX711 #3     | GPIO21       | GPIO22*       | Red→E+, Black→E-, White→A-, Green→A+ |
-| Back Right        | HX711 #4     | GPIO23       | GPIO25*       | Red→E+, Black→E-, White→A-, Green→A+ |
+| Передний левый | HX711 #1 | GPIO16 | GPIO17 | Красный→E+, чёрный→E-, белый→A-, зелёный→A+ |
+| Передний правый | HX711 #2 | GPIO18 | GPIO19* | Красный→E+, чёрный→E-, белый→A-, зелёный→A+ |
+| Задний левый | HX711 #3 | GPIO21 | GPIO22* | Красный→E+, чёрный→E-, белый→A-, зелёный→A+ |
+| Задний правый | HX711 #4 | GPIO23 | GPIO25* | Красный→E+, чёрный→E-, белый→A-, зелёный→A+ |
 
-*Можно сделать shared (все подключить к GPIO17), чтобы сэкономить pins.
+*Можно сделать общим, подключив все SCK к GPIO17, чтобы сэкономить пины.
 
-**Power connections:**
-- ESP32 3.3V → All HX711 VCC pins
-- ESP32 GND → All HX711 GND pins
+**Подключение питания:**
+- ESP32 3.3V → все пины VCC модулей HX711.
+- ESP32 GND → все пины GND модулей HX711.
 
-**Arduino Code Example:**
+**Пример кода Arduino:**
 ```cpp
 #include "HX711.h"
 
@@ -302,13 +303,13 @@ void loop() {
 }
 ```
 
-Red to E+
+Красный к E+.
 
-Black to E-
+Чёрный к E-.
 
-Green to A+
+Зелёный к A+.
 
-White to A-
+Белый к A-.
 
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/AwSBbMUPjSc" title="HX711 Load Cell Arduino | HX711 calibration | Weighing Scale | Strain Gauge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -319,5 +320,6 @@ White to A-
 
 
 
-## Alternative 
+## Альтернатива
+
 https://www.aliexpress.com/item/1005006593556468.html
