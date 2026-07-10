@@ -227,3 +227,29 @@ Impact Guide
 ### Developer Experience (💚 Medium)
 - [ ] 💚 Monorepo workspace developer map — add root `README.md` with service catalog (ports, repos, Node 24/25 matrix per `engines`, `just`/`docker-compose` entry points); gratheon.com dev guide links here. Complements local full-stack compose task. **Impact:** Faster onboarding across 20+ repos. **Effort:** Low.
 - [ ] 💚 event-stream-filter WebSocket resilience — add JWT validation on subscription connect, exponential backoff reconnect guidance for web-app Urql client, and integration test for redis pub-sub fan-out under reconnect storms. **Impact:** Reliable realtime hive updates. **Effort:** Low-Medium.
+
+## Added by autonomous analysis (2026-07-10, pass 6)
+
+### Alerts & Notification UX (❤️ Critical / 💛 High)
+- [ ] ❤️ Queen missing automated alert — per `products/web_app/pro-tier/alerts.md` and `hobbyist-tier/queen-detection.md`: after inspection frame batch completes in `image-splitter`, if no queen detected above confidence threshold across all sides, create alert via `alerts` service and show in web-app header inbox. Depends on alert evaluator for rule-based variant but manual trigger path can ship first. **Impact:** Prevents queenless colony loss. **Effort:** Medium.
+- [ ] 💛 Alert type preference catalog UI — per `pro-tier/alerts.md`: settings checkbox grid for alert categories (swarming risk, hornet attack, queen missing, spotty brood, high drone ratio, hive temp, custom anomaly); persist per-user preferences and respect them in `createAndDeliverAlert`. **Impact:** Reduces notification fatigue, increases trust. **Effort:** Medium.
+- [ ] 💛 Apiary 7-day weather forecast panel — extend `web-app` apiary view beyond current `weather` snapshot to multi-day wind/temp/humidity/rain chart (reuse `weather` `historicalWeatherCompact` or forecast fields); prerequisite UI for storm-risk alerts in `future-ideas/hobbyist-tier-ideas/weather-alerts.md`. **Impact:** Proactive apiary planning. **Effort:** Medium.
+- [ ] 💛 Weather service apiary storm-risk cron — per `weather-alerts.md` suggested solution: periodic job in `weather` (or standalone worker) fetches apiary `{id, lat, lng}` from `swarm-api`, evaluates 24h wind gust / storm codes from Open-Meteo, POSTs high-risk events to `alerts`. Complements generic "Weather alerts" web-app task with backend automation. **Impact:** Automated storm damage prevention. **Effort:** Medium.
+
+### ML Model Quality (💛 High)
+- [ ] 💛 Retrain `models-queen-bee-detector` from confirmed labels — product doc cites ~60% accuracy (`queen-detection.md` in-progress); mine `is_queen_confirmed` user feedback in `image-splitter`, expand training set, version weights, add PR benchmark (precision/recall on held-out set). **Impact:** Core queen workflow reliability. **Effort:** Medium-High.
+- [ ] 💚 `models-varroa-bottom` GPU inference path — per `docs/web-app/features/varroa-bottom-detection.md` limitations (CPU-only today); add CUDA/TensorRT optional path to reduce batch bottom-board latency. **Impact:** Faster varroa bottom-board analysis. **Effort:** Medium.
+
+### Product & Seasonal UX (💚 Medium)
+- [ ] 💚 Complete device registration backend — `web-app` Devices page exists (professional tier) but lacks full spec from `device-management.md`: `createDevice`/`updateDevice` mutations, `user-cycle` `deviceId` on API tokens, `lastUsed` heartbeat middleware (>1 min throttle), online/yellow/offline status from timestamps, model number field. **Impact:** Unblocks fleet ops beyond placeholder UI. **Effort:** Medium.
+
+### Platform, i18n & DX (💚 Medium)
+- [ ] 💚 Align Node.js engine versions across repos — `web-app` requires Node 25 (`engines`), `user-cycle` documents 22+, org convention is `nvm use 24`; audit `engines`, Dockerfiles, and CI matrices; document supported versions in root developer map. **Impact:** Fewer local onboarding failures. **Effort:** Low-Medium.
+- [ ] 💚 Remove legacy Cypress script from web-app — `package.json` still exposes `test:e2e:write` via Cypress but E2E uses Playwright (`test/ui/`); remove dead script and any unused Cypress deps. **Impact:** CI/DX clarity. **Effort:** Low.
+- [ ] 💚 alerts CI review workflow — add `.github/workflows/review.yml` (lint, typecheck) to `alerts`; repo has `test.yml` + `deploy.yml` only unlike `user-cycle` / `image-splitter`. **Impact:** TS service regression safety. **Effort:** Low.
+- [ ] 💚 German (de) product docs completion — `content/de/products/` has `in-progress` stubs for shipped features (varroa treatment diary, QR codes, public beehive view, ownership transfer, inventory, colony comparison); translate from EN or mark `complete` after parity review. **Impact:** DE market credibility. **Effort:** Medium.
+
+### Hardware & Long-term Robotics (💙 Low)
+- [ ] 💙 Scale field-swappable battery module — per `scales/ideas/Easy battery replacement.md`: industrial design for remote hive scale nodes so apiarists can swap batteries without opening the main weatherproof enclosure. **Impact:** Uptime for off-grid scale deployments. **Effort:** Medium (hardware).
+- [ ] 💙 Robotic frame manipulation suite — frame reordering, insertion, isolation and extraction per `robotic_beehive/ideas/`; MQTT command API + web-app manual-override UI (`Client-side app with UI in manual override mode.md`). Prerequisite for industrial robotic hive line. **Impact:** Long-term hardware differentiation. **Effort:** High (hardware + firmware).
+- [ ] 💙 Automated varroa acid treatment actuator — per `robotic_beehive/ideas/🧪 Automatic acid treatment against varroa.md`: controlled oxalic/formic delivery linked to varroa threshold alerts with safety interlocks and treatment diary logging. **Impact:** Closed-loop varroa management (R&D). **Effort:** High (hardware + safety).
