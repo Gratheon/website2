@@ -194,3 +194,36 @@ Impact Guide
 - [ ] 💚 log-lib shared packages CI — add `.github/workflows` to `log-lib`, `log-lib-go`, `log-lib-py` (lint, unit tests, semver tag publish); consumed by most Go/TS/Python services but have no automation today. **Impact:** Shared observability dependency safety. **Effort:** Low.
 - [ ] 💚 gratheon.com post-deploy smoke suite — extend deploy workflow with HTTP checks beyond homepage: `rss.xml`/`atom.xml` validity, research index pages (`just research-indexes` drift), critical i18n routes (`/ru/`, `/et/`), OpenGraph on product pages. **Impact:** Content site reliability. **Effort:** Low-Medium.
 - [ ] 💚 Research paper index CI validation — run `just research-indexes` in gratheon.com PR workflow and fail if generated indexes drift from paper frontmatter; prevents orphan papers and broken topic/year links. **Impact:** Research library maintainability. **Effort:** Low.
+
+## Added by autonomous analysis (2026-07-10, pass 5)
+
+### Mobile & Distribution (💚 Medium)
+- [ ] 💚 Native mobile app store distribution — terms and privacy docs reference Google Play / App Store mobile apps; ship Capacitor or Trusted Web Activity wrapper around PWA with store-compliant account deletion, push notifications, and camera permissions for Live Queen Finder. **Impact:** Distribution channel and field UX. **Effort:** Medium-High.
+- [ ] 💚 Phone-as-entrance-camera streaming — implement pro-tier flow from `video-streaming-from-phone.md`: use old phone as hive entrance camera, relay WebRTC/HLS via `gate-video-stream` without dedicated edge hardware. **Impact:** Lower-cost entrance monitoring entry point. **Effort:** Medium-High.
+
+### Product UX Completion (💛 High)
+- [ ] 💛 Complete hive bottom board varroa UX — `varroaBottomDetections` GraphQL + `BottomBox.tsx` exist but product doc is still `in-progress`; add mite overlay on images, per-inspection trend charts, treatment threshold alerts wired to `alerts`, and treatment effectiveness comparison. **Impact:** Core varroa monitoring workflow. **Effort:** Medium.
+- [ ] 💚 Hive Placement Planner enhancements — implement "Coming Soon" items from `hive-placement-planner.md`: touch gestures on mobile/tablet, distance measurement, flight-path collision visualization, printable PDF export, import obstacles from satellite imagery. **Impact:** Field-ready apiary planning. **Effort:** Medium.
+
+### Edge Operations (💚 Medium)
+- [ ] 💚 Entrance observer remote desktop — per `entrance_observer/ideas/🎮 Device management - Remote desktop.md`: Headscale/ZeroTier VPN + noVNC in web-app device detail for Jetson troubleshooting without apiary visits. Complements fleet dashboard and OTA tasks. **Impact:** Support efficiency for remote apiaries. **Effort:** Medium-High.
+- [ ] 💚 Adaptive upload bandwidth for entrance-observer — README notes chunks upload at fixed quality regardless of connectivity; add dynamic chunk duration, resolution, and skip/retry policy based on link quality to improve reliability on weak apiary Wi-Fi. **Impact:** Field deployment success rate. **Effort:** Medium.
+
+### Notifications & Integrations (💚 Medium)
+- [ ] 💚 Telegram alert bot onboarding — web-app stores `telegramUsername` but delivery needs `telegram_chat_id`; add `@GratheonBot` deep-link `/start` flow, settings QR code, and link/unlink UX in alert config. **Impact:** Higher Telegram alert adoption. **Effort:** Low-Medium.
+- [ ] 💚 In-app alert notification center + Web Push — add browser push subscription (VAPID), unified alert inbox in web-app with read/dismiss state, complementing SMS/email/Telegram channels. **Impact:** Real-time awareness without SMS cost. **Effort:** Medium.
+- [ ] 💚 Public developer API portal — publish OpenAPI spec for `telemetry-api` `/iot/v1/metrics` and browsable federated GraphQL schema docs with auth examples for device manufacturers and webhook integrators. **Impact:** Ecosystem growth, B2B integrations. **Effort:** Medium.
+
+### Data Platform & Observability (💚 Medium)
+- [ ] 💚 plantnet GBIF data refresh pipeline — current import is static (2022 GBIF snapshot); add scheduled re-import, species table versioning, and spatial indexes for apiary-radius queries at scale. **Impact:** Accurate foraging context for AI advice and maps. **Effort:** Medium.
+- [ ] 💚 image-splitter ML job queue observability — expose queue depth, per-job-type failure rate, and model latency metrics (resize, bees, cells, varroa, queen cups) to ClickStack; alert on stuck jobs. **Impact:** Image analysis SLA and support triage. **Effort:** Low-Medium.
+- [ ] 💚 S3/Minio frame image lifecycle policies — tiered retention/archival for old inspection photos and entrance video segments by plan tier; reduces storage cost as user base grows. **Impact:** Operational cost control. **Effort:** Medium.
+
+### ML & Hardware R&D (💙 Low)
+- [ ] 💙 Hornet detector model training pipeline — train dedicated YOLO hornet/wasp weights from Roboflow datasets per `entrance_observer/todo/🚁 Hornet attack detection.md`; deploy to entrance-observer chunk inference separate from generic traffic-spike heuristics. **Impact:** Asian hornet defense differentiation. **Effort:** Medium-High (R&D).
+- [ ] 💙 Robotic hive climate actuators — ventilation louvers and winter heating per `robotic_beehive/ideas/🚁 Ventilation control.md` and `🔥 Hive heating.md`; MQTT command API from web-app with safety interlocks. **Impact:** Long-term hardware product line. **Effort:** High (hardware).
+- [ ] 💙 IR varroa detection on robotic apiary — prototype infrared camera varroa screening per `robotic_apiary/ideas/🦀 Varroa mite detection with infra-red camera.md`. **Impact:** Non-invasive industrial monitoring. **Effort:** High (R&D).
+
+### Developer Experience (💚 Medium)
+- [ ] 💚 Monorepo workspace developer map — add root `README.md` with service catalog (ports, repos, Node 24/25 matrix per `engines`, `just`/`docker-compose` entry points); gratheon.com dev guide links here. Complements local full-stack compose task. **Impact:** Faster onboarding across 20+ repos. **Effort:** Low.
+- [ ] 💚 event-stream-filter WebSocket resilience — add JWT validation on subscription connect, exponential backoff reconnect guidance for web-app Urql client, and integration test for redis pub-sub fan-out under reconnect storms. **Impact:** Reliable realtime hive updates. **Effort:** Low-Medium.
