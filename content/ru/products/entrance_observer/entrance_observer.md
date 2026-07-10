@@ -30,30 +30,30 @@ layout: products
 
 ## Возможности
 
-Пока страницы функций остаются на английском, но структура синхронизирована с основной английской версией:
-
-- [🎥 Video streaming via API](/products/entrance_observer/features/video-streaming-via-api/)
-- [🐝 Detect swarming](/products/entrance_observer/ideas/detect-swarming/)
-- [🎮 Client-side app with UI](/products/entrance_observer/features/client-side-app-with-ui/)
-- [📈 Count bees coming in and out - on the edge](/products/entrance_observer/features/count-bees-coming-in-and-out-on-the-edge/)
-- [📊 Bee movement metric reporting](/products/entrance_observer/features/bee-movement-metric-reporting/)
-- [🛣️ Landing board heatmap generation](/products/entrance_observer/features/landing-board-heatmap-generation/)
+- [🎥 Видеопоток через API](features/🎥%20Video%20streaming%20via%20API.md)
+- [🐝 Обнаружение роения](ideas/🐝%20Detect%20swarming.md)
+- [🎮 Клиентское приложение с UI](features/🎮%20Client-side%20app%20with%20UI.md)
+- [📈 Подсчёт пчёл на входе и выходе - на edge](features/📈%20Count%20bees%20coming%20in%20and%20out%20-%20on%20the%20edge.md)
+- [📊 Отчётность метрик движения пчёл](features/📊%20Bee%20movement%20metric%20reporting.md)
+- [🛣️ Генерация тепловой карты летка](features/🛣️%20Landing%20board%20heatmap%20generation.md)
 
 ## TODO
 
-- [🦀 Varroa mite infestation detection from video](/products/entrance_observer/todo/varroa-mite-infestation-detection-from-video/)
-- [🚁 Hornet attack detection](/products/entrance_observer/todo/hornet-attack-detection/)
+- [🦀 Детекция заражения клещом варроа по видео](todo/🦀%20Varroa%20mite%20infestation%20detection%20from%20video.md)
+- [🚁 Детекция атаки шершня](todo/🚁%20Hornet%20attack%20detection.md)
 - [Drone bee detection and counting](/products/entrance_observer/todo/drone-bee-detection-and-counting/)
 
 ## Идеи
 
-- [🌻 Detect bees with pollen for foraging statistics](/products/entrance_observer/ideas/detect-bees-with-pollen-for-foraging-statistics/)
-- [🐝 Detect orientation flights](/products/entrance_observer/ideas/detect-orientation-flights/)
-- [🐝 Guard detection](/products/entrance_observer/ideas/guard-detection/)
+- [🌻 Детекция пчёл с пыльцой для статистики вылета](ideas/🌻%20Detect%20bees%20with%20pollen%20for%20foraging%20statistics.md)
+- [🐝 Детекция ориентировочных вылетов](ideas/🐝%20Detect%20orientation%20flights.md)
+- [🐝 Детекция сторожевых пчёл](ideas/🐝%20Guard%20detection.md)
 - [👑 Detect queen mating from entrance video](/products/entrance_observer/ideas/detect-queen-mating-from-entrance-video/)
-- [🔔 Alerts based on bee counter](/products/entrance_observer/ideas/alerts-based-on-bee-counter/)
-- [🤢 Detect pesticide exposure](/products/entrance_observer/ideas/detect-pesticide-exposure/)
-- [🩻 Bee pose generation](/products/entrance_observer/ideas/bee-pose-generation/)
+- [🔔 Оповещения на основе счётчика пчёл](ideas/🔔%20Alerts%20based%20on%20bee%20counter.md)
+- [🤢 Детекция воздействия пестицидов](ideas/🤢%20Detect%20pesticide%20exposure.md)
+- [🩻 Генерация позы пчелы](ideas/🩻%20Bee%20pose%20generation.md)
+- [🐝 Поза пчелы - морфометрическая модель](ideas/🐝%20Bee%20pose%20-%20morphometric%20model.md)
+- [🎮 Управление устройством - удалённый рабочий стол](ideas/🎮%20Device%20management%20-%20Remote%20desktop.md)
 
 ## Целевая аудитория
 
