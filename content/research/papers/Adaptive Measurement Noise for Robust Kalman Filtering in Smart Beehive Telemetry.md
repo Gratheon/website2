@@ -21,7 +21,6 @@ topics:
 productAreas:
 - monitoring-platform
 paperType: journal
-pdf: "/assets/research/papers/pdfs/2026-adaptive-measurement-noise-kalman.pdf"
 doi: 10.1109/access.2026.3697308
 abstract: Honeybee colony monitoring generates multimodal, non-stationary telemetry streams that require reliable recursive state estimation with well-calibrated uncertainty for digital apiculture. Although Kalman filtering is widely used in environmental monitoring, adaptive measurement-noise modeling has not been systematically evaluated for smart-hive telemetry under leak-free chronological protocols. The approach performs online measurement-noise covariance adaptation using innovation statistics identified as the primary source of calibration improvement, while an innovation-based normalized innovation squared (NIS) gate serves as a secondary robustness safeguard against rare extreme observations.
 ---
