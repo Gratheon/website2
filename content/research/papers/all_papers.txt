@@ -1,13 +1,3 @@
-⭐️ An AI-Based Open-Source Software for Varroa Mite Fall Analysis in Honeybee Colonies.md
-⭐️ Automated Video Monitoring of Unmarked and Marked Honey Bees at the Hive Entrance.md
-⭐️ Automatic detection and classification of honey bee comb cells using deeplearning.md
-⭐️ Autonomous tracking of honey bee behaviors over long-term periods with cooperating robots.md
-⭐️ BeeAlarmed. Masters thesis.md
-⭐️ Deep Edge IoT for Acoustic Detection of Queenless Beehives.md
-⭐️ DeepBees – Building and Scaling Convolutional Neuronal Nets For Fast and Large-scale Visual Monitoring of Bee Hives.md
-⭐️ LabelBee a web platform for large-scale semi-automated analysis of honeybee behavior from video.md
-⭐️ Markerless tracking of an entire honey bee colony.md
-⭐️ Towards dense object tracking in a 2D honeybee hive.md
 A Minimally Invasive Approach Towards “Ecosystem Hacking” With Honeybees.md
 A Preliminary Study of Image Analysis forParasite Detection on Honey Bees.md
 A Smart Sensor-Based Measurement System for Advanced Bee Hive Monitoring.md
@@ -21,8 +11,8 @@ An intelligent monitoring system for forecasting and anomaly detection in precis
 Analysis of Energy Consumption in a Precision Beekeeping System.md
 Analysis of the Waggle Dance Motion of Honeybees for the Design of a Biomimetic Honeybee Robot.md
 Apis mellifera Bee Verification with IoT and Graph Neural Network.md
-Application of continuous monitoring of honeybee colonies.md
 Application of Data Layering in Precision Beekeeping The Concept.md
+Application of continuous monitoring of honeybee colonies.md
 Approximation of functions.md
 Assessing Honey Bee Colony Health Using Temperature Time Series.md
 Audio, Image, Video, and Weather Datasets for Continuous Electronic Beehive Monitoring.md
@@ -31,20 +21,20 @@ Automated non-invasive Varroa mite detection by vibrational measurements of gait
 Automatic detection and decoding of honeybee waggle dances.md
 Automatic methods for long-term tracking and the detection and decoding of communication dancesin honeybees.md
 Be-Hive.md
-Bee colony remote monitoring based on IoT using ESP-NOW protocol.md
 Bee Together Joining Bee Audio Datasets for Hive Extrapolation in AI-Based Monitoring.md
-Beehive Smart Detector Device for the Detection of CriticalConditions That Utilize Edge Device Computations and DeepLearning Inferences.md
+Bee colony remote monitoring based on IoT using ESP-NOW protocol.md
 BeeNet - An End-To-End Deep Network For Bee Surveillance.md
 BeePIV A Method to Measure Apis Mellifera Traffic with Particle Image Velocimetry in Videos.md
 BeeVe Unsupervised Acoustic State Discovery in Honey Bee Buzzing.md
+Beehive Smart Detector Device for the Detection of CriticalConditions That Utilize Edge Device Computations and DeepLearning Inferences.md
 Bio-Hybrid Systems for Ecosystem Level Effects.md
 Biodiversity conservation and current threats to European honeybees.md
 Buzzing with Intelligence A Systematic Review of SmartBeehive Technologies.md
 COMB.md
 Comparing weight dynamics between urban and rural honeybee colonies in Latvia.md
 Continuous Non-Invasive Monitoring of Hive Entrance Activity Reveals Honey Bee Colony Dynamics.md
-Current achievements and future developments of a novel AI based visual monitoring of beehives in ecotoxicology and for the monitoring of landscape structures.md
 Current Status and Future Outlooks of Precision Beekeeping Systems and Services.md
+Current achievements and future developments of a novel AI based visual monitoring of beehives in ecotoxicology and for the monitoring of landscape structures.md
 Dancing Honey bee Robot Elicits Dance-Following and Recruits Foragers.md
 Data fusion challenges in precision beekeeping a review.md
 Deep Learning Beehive Monitoring System for Early Detection of the Varroa Mite.md
@@ -58,6 +48,7 @@ Digital Transformation of Beekeeping through the Use of a Decision Making Archit
 Evaluation of Single-Shot Object Detection Models for Identifying Fanning Behavior in Honeybees at the Hive Entrance.md
 Evaluation of the honey bee colonies weight gain during theintensive foraging period.md
 Fast accurate measurement of the worker populations of honey bee colonies using deep learning.md
+From Hive Sensors to Environmental DNA Toward a Systems Biology Framework for Honeybee-Based Early Warning of Colony and Ecosystem Health.md
 HiveLink – IoT based Smart Bee Hive MonitoringSystem.md
 Honey Bee Colonies Remote Monitoring System.md
 Honey bees modify plantpollinator network structure.md
@@ -74,22 +65,23 @@ Integration of Scales and Cameras in Nondisruptive Electronic Beehive Monitoring
 IntelliBeeHive An Automated Honey Bee Pollen and Varroa Destructor Monitoring System.md
 Intelligent beehive monitoring system based on internet of things and colony state analysis.md
 Internet of Things Smart Beehive Network.md
-IoT and Machine Learning Techniques for Precision Beekeeping A Review.md
+Interpretable Deep Learning for Varroa Mite Detection Integrating Deblurring Morphology-Preserving Preprocessing and Explainability Analysis.md
 IoT Embedded Smart Monitoring System with Edge Machine Learning for Beehive Management.md
+IoT and Machine Learning Techniques for Precision Beekeeping A Review.md
 Janus A Combined Radar and Vibration Sensor for Beehive Monitoring.md
 Keypoint-Based Bee Orientation Estimation and Ramp Detection at the Hive Entrance for Bee Behavior Identification System.md
 Labeled dataset for bee detection and direction estimation on entrance to beehive.md
 M3DANet A Lightweight Semi-Supervised Network and Embedded System for Bee Colony Counting.md
+MSPB a longitudinal multi-sensor dataset with phenotypic trait measurements from honey bees.md
 Machine Learning and Computer Vision Techniques in Continuous Beehive Monitoring Applications A Survey.md
 Mapping Crop Types for Beekeepers Using Sentinel-2 Satellite Image Time Series Five Essential Crops in the Pollination Services.md
 Model for the bee apiary location evaluation.md
 Modular sensory hardware and data processing solution forimplementation of the precision beekeeping.md
 Monitoring System for Remote Bee Colony State Detection.md
-MSPB a longitudinal multi-sensor dataset with phenotypic trait measurements from honey bees.md
 Multiple Animals Tracking in VideoUsing Part Affinity Fields.md
-mybee.md
 On Image Classification in Video Analysis of Omnidirectional Apis Mellifera Traffic Random Reinforced Forests vs. Shallow Convolutional Networks.md
 Open Remote Web Lab for Learning Robotics andROS With Physical and Simulated Robots in anAuthentic Developer Environment.md
+Physics-aware vision instrumentation for stingless bee counting at hive entrance using hybrid edge-cloud object detection.md
 Pollen Bearing Honey Bee Detection in Hive Entrance Video Recorded by Remote Embedded System for Pollination Monitoring.md
 Pollinators as Data Collectors Estimating Floral Diversity with Bees and Computer Vision.md
 Precision Apiculture – IoT System for Remote Monitoring of Honeybee Colonies.md
@@ -101,17 +93,17 @@ Real-time, low-latency closed-loop feedback using markerless posture tracking.md
 Reception and learning of electric fields in bees.md
 Recognition of Pollen-bearing Bees from Video using Convolutional Neural Network.md
 Recognizing Beehives Health Abnormalities Based on Mobile Net Deep Learning Model.md
+SLEAP.md
+STAG-CN Spatio-Temporal Apiary Graph Convolutional Network for Disease Onset Prediction in Beehive Sensor Networks.md
 Self-Powered Smart Beehive Monitoring and ControlSystem (SBMaCS).md
 Semi-Supervised Audio Representation Learning for Modeling Beehive Strengths.md
-SLEAP.md
 Smart Beehive Monitoring for Remote Regions - PhD thesis.md
 Social networks predict the life and death of honeybees.md
 Solution for automated bee colony weight monitoring.md
-STAG-CN Spatio-Temporal Apiary Graph Convolutional Network for Disease Onset Prediction in Beehive Sensor Networks.md
-The development of honey bee coloniesassessed using a new semi-automated broodcounting method CombCount.md
-The prediction of swarming in honeybee colonies using vibrational spectra.md
 The Relevance of Compound Events in Bee Traffic Monitoring.md
 The Use of Products with a Monitoring System for Remote Bee Detection in Beekeeping in Czechia.md
+The development of honey bee coloniesassessed using a new semi-automated broodcounting method CombCount.md
+The prediction of swarming in honeybee colonies using vibrational spectra.md
 Time-series dataset of honey bee colony dynamics before during and after sunflower pollination.md
 Toward an intelligent and efficient beehive A survey of precision beekeeping systems and services.md
 Towards Robotic Mapping of a Honeybee Comb.md
@@ -125,4 +117,15 @@ Varroa Destructor Classification Using Legendre Fourier Moments with Different C
 Varroa destructor detection on honey bees using hyperspectral imagery.md
 Visual Diagnosis of the Varroa Destructor Parasitic Mite in Honeybees Using Object Detector Techniques.md
 Visual recognition of honeybee behavior patterns at the hive entrance.md
+mybee.md
 wifi-exposure.md
+⭐️ An AI-Based Open-Source Software for Varroa Mite Fall Analysis in Honeybee Colonies.md
+⭐️ Automated Video Monitoring of Unmarked and Marked Honey Bees at the Hive Entrance.md
+⭐️ Automatic detection and classification of honey bee comb cells using deeplearning.md
+⭐️ Autonomous tracking of honey bee behaviors over long-term periods with cooperating robots.md
+⭐️ BeeAlarmed. Masters thesis.md
+⭐️ Deep Edge IoT for Acoustic Detection of Queenless Beehives.md
+⭐️ DeepBees – Building and Scaling Convolutional Neuronal Nets For Fast and Large-scale Visual Monitoring of Bee Hives.md
+⭐️ LabelBee a web platform for large-scale semi-automated analysis of honeybee behavior from video.md
+⭐️ Markerless tracking of an entire honey bee colony.md
+⭐️ Towards dense object tracking in a 2D honeybee hive.md

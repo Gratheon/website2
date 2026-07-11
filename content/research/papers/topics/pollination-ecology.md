@@ -9,14 +9,14 @@ layout: research
 ## Summary
 
 - Topic key: `pollination-ecology`
-- Total papers: 11
+- Total papers: 12
 - [Research papers hub](../index.md)
 - [All topics](index.md)
 
 ## Product areas
 
 - [Colony Health](../product-areas/colony-health.md) (5)
-- [Gate Tracker](../product-areas/gate-tracker.md) (2)
+- [Gate Tracker](../product-areas/gate-tracker.md) (3)
 - [Monitoring Platform](../product-areas/monitoring-platform.md) (4)
 
 ## Years
@@ -26,6 +26,7 @@ layout: research
 - [2023](../years/2023.md) (4)
 - [2020](../years/2020.md) (1)
 - [2018](../years/2018.md) (2)
+- [2016](../years/2016.md) (1)
 - [2009](../years/2009.md) (1)
 
 ## Papers by year
@@ -54,6 +55,10 @@ layout: research
 
 - [Honeybees on the move - Pollination services and honey production](../Honeybees%20on%20the%20move%20-%20Pollination%20services%20and%20honey%20production.md) — 🇺🇸 United States Department of Agriculture; 🇺🇸 United States Environmental Protection Agency
 - [Recognition of Pollen-bearing Bees from Video using Convolutional Neural Network](../Recognition%20of%20Pollen-bearing%20Bees%20from%20Video%20using%20Convolutional%20Neural%20Network.md) — 🇵🇷 University of Puerto Rico
+
+### [2016](../years/2016.md)
+
+- [Pollen Bearing Honey Bee Detection in Hive Entrance Video Recorded by Remote Embedded System for Pollination Monitoring](../Pollen%20Bearing%20Honey%20Bee%20Detection%20in%20Hive%20Entrance%20Video%20Recorded%20by%20Remote%20Embedded%20System%20for%20Pollination%20Monitoring.md) — 🇧🇦 University of Banja Luka
 
 ### [2009](../years/2009.md)
 

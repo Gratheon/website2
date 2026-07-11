@@ -9,19 +9,21 @@ layout: research
 ## Summary
 
 - Topic key: `datasets-benchmarks`
-- Total papers: 11
+- Total papers: 14
 - [Research papers hub](../index.md)
 - [All topics](index.md)
 
 ## Product areas
 
+- [Colony Health](../product-areas/colony-health.md) (2)
 - [Gate Tracker](../product-areas/gate-tracker.md) (5)
-- [Hive Scanner](../product-areas/hive-scanner.md) (3)
-- [Monitoring Platform](../product-areas/monitoring-platform.md) (5)
+- [Hive Scanner](../product-areas/hive-scanner.md) (4)
+- [Monitoring Platform](../product-areas/monitoring-platform.md) (7)
 
 ## Years
 
-- [2025](../years/2025.md) (2)
+- [2026](../years/2026.md) (2)
+- [2025](../years/2025.md) (3)
 - [2024](../years/2024.md) (2)
 - [2023](../years/2023.md) (2)
 - [2022](../years/2022.md) (1)
@@ -31,9 +33,15 @@ layout: research
 
 ## Papers by year
 
+### [2026](../years/2026.md)
+
+- [Estimating colony strength and pollination efficiency in honey bees using a novel dataset and deep learning-based models](../Estimating%20colony%20strength%20and%20pollination%20efficiency%20in%20honey%20bees%20using%20a%20novel%20dataset%20and%20deep%20learning-based%20models.md) — 🇺🇸 University of Arkansas at Fayetteville; 🇺🇸 Washington State University; 🇺🇸 University of Arkansas System; 🇺🇸 Mississippi State University; 🇺🇸 University of Tennessee at Knoxville
+- [FAIRHiveFrames-1K: A Public FAIR Dataset of 1265 Annotated Hive Frame Images with Preliminary YOLOv8 and YOLOv11 Baselines](../FAIRHiveFrames-1K%20A%20Public%20FAIR%20Dataset%20of%201265%20Annotated%20Hive%20Frame%20Images%20with%20Preliminary%20YOLOv8%20and%20YOLOv11%20Baselines.md) — 🇺🇸 Utah State University
+
 ### [2025](../years/2025.md)
 
 - [Fast, accurate measurement of the worker populations of honey bee colonies using deep learning](../Fast%20accurate%20measurement%20of%20the%20worker%20populations%20of%20honey%20bee%20colonies%20using%20deep%20learning.md) — 🇺🇸 Arizona State University; 🇺🇸 Texas A&M University–Kingsville
+- [Image-based honey bee larval viral and bacterial diagnosis using machine learning](../Image-based%20honey%20bee%20larval%20viral%20and%20bacterial%20diagnosis%20using%20machine%20learning.md) — 🇺🇸 USDA Carl Hayden Bee Research Center; 🇺🇸 University of Arizona; 🇺🇸 Arizona Science Center
 - [UrBAN: Urban Beehive Acoustics and PheNotyping Dataset](../UrBAN%20Urban%20Beehive%20Acoustics%20and%20PheNotyping%20Dataset.md) — 🇨🇦 Institut National de la Recherche Scientifique; 🇨🇦 Université Laval; 🇨🇦 Nectar Technologies Inc.
 
 ### [2024](../years/2024.md)

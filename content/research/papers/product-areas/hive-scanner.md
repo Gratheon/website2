@@ -9,22 +9,25 @@ layout: research
 ## Summary
 
 - Product area key: `hive-scanner`
-- Total papers: 16
+- Total papers: 20
 - [Research papers hub](../index.md)
 - [All product areas](index.md)
 
 ## Topics
 
 - [Bee Behaviour](../topics/bee-behaviour.md) (7)
-- [Computer Vision](../topics/computer-vision.md) (16)
-- [Datasets Benchmarks](../topics/datasets-benchmarks.md) (3)
+- [Bee Counting](../topics/bee-counting.md) (1)
+- [Colony Health](../topics/colony-health.md) (3)
+- [Computer Vision](../topics/computer-vision.md) (20)
+- [Datasets Benchmarks](../topics/datasets-benchmarks.md) (4)
 - [Edge AI Energy](../topics/edge-ai-energy.md) (1)
-- [Varroa Health](../topics/varroa-health.md) (1)
+- [Varroa Health](../topics/varroa-health.md) (3)
 
 ## Years
 
-- [2026](../years/2026.md) (1)
-- [2025](../years/2025.md) (3)
+- [2026](../years/2026.md) (3)
+- [2025](../years/2025.md) (4)
+- [2023](../years/2023.md) (1)
 - [2022](../years/2022.md) (1)
 - [2021](../years/2021.md) (2)
 - [2020](../years/2020.md) (2)
@@ -35,6 +38,8 @@ layout: research
 
 ### [2026](../years/2026.md)
 
+- [Honeybee Counting on Comb Images via Part-Level Annotation and Hungarian Matching](../Honeybee%20Counting%20on%20Comb%20Images%20via%20Part-Level%20Annotation%20and%20Hungarian%20Matching.md) — 🇯🇵 Utsunomiya University
+- [Interpretable Deep Learning for Varroa Mite Detection: Integrating Deblurring, Morphology-Preserving Preprocessing, and Explainability Analysis](../Interpretable%20Deep%20Learning%20for%20Varroa%20Mite%20Detection%20Integrating%20Deblurring%20Morphology-Preserving%20Preprocessing%20and%20Explainability%20Analysis.md) — 🇰🇷 Kangwon National University; 🇰🇷 National Institute of Agricultural Sciences
 - [M3DANet: A Lightweight Semi-Supervised Network and Embedded System for Bee Colony Counting](../M3DANet%20A%20Lightweight%20Semi-Supervised%20Network%20and%20Embedded%20System%20for%20Bee%20Colony%20Counting.md) — 🇨🇳 Shandong Agricultural University; 🇨🇳 Apiculture Institute of Jiangxi Province
 
 ### [2025](../years/2025.md)
@@ -42,6 +47,11 @@ layout: research
 - [An AI-Based Digital Scanner for Varroa destructor Detection in Beekeeping](../An%20AI-Based%20Digital%20Scanner%20for%20Varroa%20destructor%20Detection%20in%20Beekeeping.md) — 🇮🇹 Council for Agricultural Research and Economics (CREA) – Research Centre for Engineering and Agro-Food Processing, Monterotondo; 🇮🇹 Council for Agricultural Research and Economics (CREA) – Research Centre for Agriculture and Environment, Bologna; 🇷🇸 University of Novi Sad
 - [Deep Learning-Based Detection of Honey Storage Areas in Apismellifera Colonies for Predicting Physical Parameters of Honey via Linear Regression](../Deep%20Learning-Based%20Detection%20of%20Honey%20Storage%20Areas%20in%20Apismellifera%20Colonies%20for%20Predicting%20Physical%20Parameters%20of%20Honey%20via%20Linear%20Regression.md) — 🇹🇭 Chiang Mai University
 - [Fast, accurate measurement of the worker populations of honey bee colonies using deep learning](../Fast%20accurate%20measurement%20of%20the%20worker%20populations%20of%20honey%20bee%20colonies%20using%20deep%20learning.md) — 🇺🇸 Arizona State University; 🇺🇸 Texas A&M University–Kingsville
+- [Image-based honey bee larval viral and bacterial diagnosis using machine learning](../Image-based%20honey%20bee%20larval%20viral%20and%20bacterial%20diagnosis%20using%20machine%20learning.md) — 🇺🇸 USDA Carl Hayden Bee Research Center; 🇺🇸 University of Arizona; 🇺🇸 Arizona Science Center
+
+### [2023](../years/2023.md)
+
+- [Recognizing Beehives’ Health Abnormalities Based on Mobile Net Deep Learning Model](../Recognizing%20Beehives%20Health%20Abnormalities%20Based%20on%20Mobile%20Net%20Deep%20Learning%20Model.md) — 🇪🇬 Egyptian Russian University; 🇪🇬 Cairo University; 🇪🇬 Tanta University; 🇪🇬 Scientific Research Group in Egypt
 
 ### [2022](../years/2022.md)
 

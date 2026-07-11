@@ -19,7 +19,7 @@ This section tracks external academic work relevant to digital beekeeping, bee h
   <div class="research-paper-filter-grid">
     <a class="research-paper-filter-card" href="scientific-publications/">
       <span class="research-paper-filter-card__icon" aria-hidden="true">📚</span>
-      <span class="research-paper-filter-card__body"><strong>Scientific publications</strong><small>All 112 paper notes in one bibliography.</small></span>
+      <span class="research-paper-filter-card__body"><strong>Scientific publications</strong><small>All 139 paper notes in one bibliography.</small></span>
     </a>
     <a class="research-paper-filter-card" href="teams/">
       <span class="research-paper-filter-card__icon" aria-hidden="true">🏛️</span>
@@ -27,15 +27,15 @@ This section tracks external academic work relevant to digital beekeeping, bee h
     </a>
     <a class="research-paper-filter-card" href="topics/">
       <span class="research-paper-filter-card__icon" aria-hidden="true">🏷️</span>
-      <span class="research-paper-filter-card__body"><strong>Topics</strong><small>Filter by 10 research topics.</small></span>
+      <span class="research-paper-filter-card__body"><strong>Topics</strong><small>Filter by 18 research topics.</small></span>
     </a>
     <a class="research-paper-filter-card" href="years/">
       <span class="research-paper-filter-card__icon" aria-hidden="true">📅</span>
-      <span class="research-paper-filter-card__body"><strong>Years</strong><small>Filter by 15 publication years.</small></span>
+      <span class="research-paper-filter-card__body"><strong>Years</strong><small>Filter by 16 publication years.</small></span>
     </a>
     <a class="research-paper-filter-card" href="product-areas/">
       <span class="research-paper-filter-card__icon" aria-hidden="true">🧩</span>
-      <span class="research-paper-filter-card__body"><strong>Product areas</strong><small>Map papers to 5 Gratheon product areas.</small></span>
+      <span class="research-paper-filter-card__body"><strong>Product areas</strong><small>Map papers to 6 Gratheon product areas.</small></span>
     </a>
     <a class="research-paper-filter-card" href="other-research-sources/">
       <span class="research-paper-filter-card__icon" aria-hidden="true">🔎</span>

@@ -9,32 +9,35 @@ layout: research
 ## Summary
 
 - Product area key: `gate-tracker`
-- Total papers: 24
+- Total papers: 28
 - [Research papers hub](../index.md)
 - [All product areas](index.md)
 
 ## Topics
 
-- [Bee Behaviour](../topics/bee-behaviour.md) (17)
-- [Computer Vision](../topics/computer-vision.md) (23)
+- [Audio Acoustics](../topics/audio-acoustics.md) (1)
+- [Bee Behaviour](../topics/bee-behaviour.md) (21)
+- [Computer Vision](../topics/computer-vision.md) (26)
+- [Datasets](../topics/datasets.md) (1)
 - [Datasets Benchmarks](../topics/datasets-benchmarks.md) (5)
-- [Edge AI Energy](../topics/edge-ai-energy.md) (1)
-- [IoT Sensors](../topics/iot-sensors.md) (2)
-- [Pollination Ecology](../topics/pollination-ecology.md) (2)
+- [Edge AI Energy](../topics/edge-ai-energy.md) (2)
+- [IoT Sensors](../topics/iot-sensors.md) (3)
+- [Pollination Ecology](../topics/pollination-ecology.md) (3)
 - [Varroa Health](../topics/varroa-health.md) (1)
 
 ## Years
 
-- [2026](../years/2026.md) (1)
-- [2025](../years/2025.md) (2)
+- [2026](../years/2026.md) (2)
+- [2025](../years/2025.md) (3)
 - [2024](../years/2024.md) (2)
 - [2023](../years/2023.md) (7)
 - [2022](../years/2022.md) (2)
-- [2021](../years/2021.md) (3)
+- [2021](../years/2021.md) (4)
 - [2020](../years/2020.md) (1)
 - [2019](../years/2019.md) (2)
 - [2018](../years/2018.md) (2)
 - [2017](../years/2017.md) (1)
+- [2016](../years/2016.md) (1)
 - [2015](../years/2015.md) (1)
 
 ## Papers by year
@@ -42,11 +45,13 @@ layout: research
 ### [2026](../years/2026.md)
 
 - [Continuous Non-Invasive Monitoring of Hive Entrance Activity Reveals Honey Bee Colony Dynamics](../Continuous%20Non-Invasive%20Monitoring%20of%20Hive%20Entrance%20Activity%20Reveals%20Honey%20Bee%20Colony%20Dynamics.md) — 🇹🇷 Van Yüzüncü Yıl University
+- [Physics-aware vision instrumentation for stingless bee counting at hive entrance using hybrid edge-cloud object detection](../Physics-aware%20vision%20instrumentation%20for%20stingless%20bee%20counting%20at%20hive%20entrance%20using%20hybrid%20edge-cloud%20object%20detection.md) — 🇲🇾 Universiti Teknologi Malaysia; 🇮🇩 Universitas Negeri Jakarta; 🇮🇩 Institut Teknologi Indonesia; 🇮🇩 Politeknik Negeri Bandung; 🇮🇩 National Research and Innovation Agency
 
 ### [2025](../years/2025.md)
 
 - [Apis mellifera Bee Verification with IoT and Graph Neural Network](../Apis%20mellifera%20Bee%20Verification%20with%20IoT%20and%20Graph%20Neural%20Network.md) — 🇲🇽 Instituto Tecnológico El Llano Aguascalientes
 - [Evaluation of Single-Shot Object Detection Models for Identifying Fanning Behavior in Honeybees at the Hive Entrance](../Evaluation%20of%20Single-Shot%20Object%20Detection%20Models%20for%20Identifying%20Fanning%20Behavior%20in%20Honeybees%20at%20the%20Hive%20Entrance.md) — 🇱🇹 Vilnius Gediminas Technical University
+- [Visual recognition of honeybee behavior patterns at the hive entrance](../Visual%20recognition%20of%20honeybee%20behavior%20patterns%20at%20the%20hive%20entrance.md) — 🇱🇹 Vilnius Gediminas Technical University
 
 ### [2024](../years/2024.md)
 
@@ -72,6 +77,7 @@ layout: research
 
 - [BeePIV: A Method to Measure Apis Mellifera Traffic with Particle Image Velocimetry in Videos](../BeePIV%20A%20Method%20to%20Measure%20Apis%20Mellifera%20Traffic%20with%20Particle%20Image%20Velocimetry%20in%20Videos.md) — 🇺🇸 Utah State University
 - [Honeybee In-Out Monitoring System by Object Recognition and Tracking from Real-Time Webcams](../Honeybee%20In-Out%20Monitoring%20System%20by%20Object%20Recognition%20and%20Tracking%20from%20Real-Time%20Webcams.md) — 🇰🇷 Incheon National University
+- [Janus: A Combined Radar and Vibration Sensor for Beehive Monitoring](../Janus%20A%20Combined%20Radar%20and%20Vibration%20Sensor%20for%20Beehive%20Monitoring.md) — 🇺🇸 University of Maine
 - [On Image Classification in Video Analysis of Omnidirectional Apis Mellifera Traffic: Random Reinforced Forests vs. Shallow Convolutional Networks](../On%20Image%20Classification%20in%20Video%20Analysis%20of%20Omnidirectional%20Apis%20Mellifera%20Traffic%20Random%20Reinforced%20Forests%20vs.%20Shallow%20Convolutional%20Networks.md) — 🇺🇸 Utah State University
 
 ### [2020](../years/2020.md)
@@ -91,6 +97,10 @@ layout: research
 ### [2017](../years/2017.md)
 
 - [Automatic detection and decoding of honey bee waggle dances](../Automatic%20detection%20and%20decoding%20of%20honeybee%20waggle%20dances.md) — 🇩🇪 Freie Universität Berlin
+
+### [2016](../years/2016.md)
+
+- [Pollen Bearing Honey Bee Detection in Hive Entrance Video Recorded by Remote Embedded System for Pollination Monitoring](../Pollen%20Bearing%20Honey%20Bee%20Detection%20in%20Hive%20Entrance%20Video%20Recorded%20by%20Remote%20Embedded%20System%20for%20Pollination%20Monitoring.md) — 🇧🇦 University of Banja Luka
 
 ### [2015](../years/2015.md)
 

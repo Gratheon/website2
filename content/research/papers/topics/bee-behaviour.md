@@ -9,30 +9,32 @@ layout: research
 ## Summary
 
 - Topic key: `bee-behaviour`
-- Total papers: 47
+- Total papers: 53
 - [Research papers hub](../index.md)
 - [All topics](index.md)
 
 ## Product areas
 
-- [Colony Health](../product-areas/colony-health.md) (13)
-- [Gate Tracker](../product-areas/gate-tracker.md) (17)
+- [Colony Health](../product-areas/colony-health.md) (14)
+- [Edge Device](../product-areas/edge-device.md) (1)
+- [Gate Tracker](../product-areas/gate-tracker.md) (21)
 - [Hive Scanner](../product-areas/hive-scanner.md) (7)
-- [Monitoring Platform](../product-areas/monitoring-platform.md) (8)
+- [Monitoring Platform](../product-areas/monitoring-platform.md) (12)
 - [Robotics](../product-areas/robotics.md) (6)
 
 ## Years
 
-- [2026](../years/2026.md) (5)
-- [2025](../years/2025.md) (1)
+- [2026](../years/2026.md) (8)
+- [2025](../years/2025.md) (2)
 - [2024](../years/2024.md) (4)
 - [2023](../years/2023.md) (8)
 - [2022](../years/2022.md) (6)
-- [2021](../years/2021.md) (6)
+- [2021](../years/2021.md) (7)
 - [2020](../years/2020.md) (4)
 - [2019](../years/2019.md) (2)
 - [2018](../years/2018.md) (6)
 - [2017](../years/2017.md) (1)
+- [2016](../years/2016.md) (1)
 - [2015](../years/2015.md) (1)
 - [2013](../years/2013.md) (1)
 - [2011](../years/2011.md) (1)
@@ -42,15 +44,19 @@ layout: research
 
 ### [2026](../years/2026.md)
 
+- [A Hall-Effect Sensor-Based Queen Bee Detection System – a Proof of Concept](../A%20Hall-Effect%20Sensor-Based%20Queen%20Bee%20Detection%20System%20%E2%80%93%20a%20Proof%20of%20Concept.md) — 🇵🇱 AGH University of Krakow; 🇵🇱 Wrocław University of Science and Technology
 - [Acoustic Signatures of Hive: Detecting Queen Bee Absence Through Machine Learning of Short Audio Segments](../Acoustic%20Signatures%20of%20Hive%20Detecting%20Queen%20Bee%20Absence%20Through%20Machine%20Learning%20of%20Short%20Audio%20Segments.md) — 🇨🇱 Universidad de Viña del Mar; 🇨🇱 Universidad Técnica Federico Santa María
 - [Assessing Honey Bee Colony Health Using Temperature Time Series](../Assessing%20Honey%20Bee%20Colony%20Health%20Using%20Temperature%20Time%20Series.md) — 🇦🇺 The University of Sydney; 🇦🇺 Macquarie University
 - [BeeVe: Unsupervised Acoustic State Discovery in Honey Bee Buzzing](../BeeVe%20Unsupervised%20Acoustic%20State%20Discovery%20in%20Honey%20Bee%20Buzzing.md) — 🇺🇳 arXiv author-supplied preprint by Hamze Hammami and Nidhal Abdulaziz
 - [COMB: Common Open Modular robotic platform for Bees](../COMB.md) — 🇩🇪 University of Konstanz; 🇩🇪 Freie Universität Berlin
 - [Continuous Non-Invasive Monitoring of Hive Entrance Activity Reveals Honey Bee Colony Dynamics](../Continuous%20Non-Invasive%20Monitoring%20of%20Hive%20Entrance%20Activity%20Reveals%20Honey%20Bee%20Colony%20Dynamics.md) — 🇹🇷 Van Yüzüncü Yıl University
+- [Estimating colony strength and pollination efficiency in honey bees using a novel dataset and deep learning-based models](../Estimating%20colony%20strength%20and%20pollination%20efficiency%20in%20honey%20bees%20using%20a%20novel%20dataset%20and%20deep%20learning-based%20models.md) — 🇺🇸 University of Arkansas at Fayetteville; 🇺🇸 Washington State University; 🇺🇸 University of Arkansas System; 🇺🇸 Mississippi State University; 🇺🇸 University of Tennessee at Knoxville
+- [Physics-aware vision instrumentation for stingless bee counting at hive entrance using hybrid edge-cloud object detection](../Physics-aware%20vision%20instrumentation%20for%20stingless%20bee%20counting%20at%20hive%20entrance%20using%20hybrid%20edge-cloud%20object%20detection.md) — 🇲🇾 Universiti Teknologi Malaysia; 🇮🇩 Universitas Negeri Jakarta; 🇮🇩 Institut Teknologi Indonesia; 🇮🇩 Politeknik Negeri Bandung; 🇮🇩 National Research and Innovation Agency
 
 ### [2025](../years/2025.md)
 
 - [Evaluation of Single-Shot Object Detection Models for Identifying Fanning Behavior in Honeybees at the Hive Entrance](../Evaluation%20of%20Single-Shot%20Object%20Detection%20Models%20for%20Identifying%20Fanning%20Behavior%20in%20Honeybees%20at%20the%20Hive%20Entrance.md) — 🇱🇹 Vilnius Gediminas Technical University
+- [Visual recognition of honeybee behavior patterns at the hive entrance](../Visual%20recognition%20of%20honeybee%20behavior%20patterns%20at%20the%20hive%20entrance.md) — 🇱🇹 Vilnius Gediminas Technical University
 
 ### [2024](../years/2024.md)
 
@@ -84,6 +90,7 @@ layout: research
 - [BeePIV: A Method to Measure Apis Mellifera Traffic with Particle Image Velocimetry in Videos](../BeePIV%20A%20Method%20to%20Measure%20Apis%20Mellifera%20Traffic%20with%20Particle%20Image%20Velocimetry%20in%20Videos.md) — 🇺🇸 Utah State University
 - [DeepLabCut-based daily behavioural and posture analysis in a cricket](../DeepLabCut-based%20daily%20behavioural%20and%20posture%20analysis%20in%20a%20cricket.md) — 🇯🇵 Waseda University
 - [Honeybee In-Out Monitoring System by Object Recognition and Tracking from Real-Time Webcams](../Honeybee%20In-Out%20Monitoring%20System%20by%20Object%20Recognition%20and%20Tracking%20from%20Real-Time%20Webcams.md) — 🇰🇷 Incheon National University
+- [Janus: A Combined Radar and Vibration Sensor for Beehive Monitoring](../Janus%20A%20Combined%20Radar%20and%20Vibration%20Sensor%20for%20Beehive%20Monitoring.md) — 🇺🇸 University of Maine
 - [Markerless tracking of an entire honey bee colony](../%E2%AD%90%EF%B8%8F%20Markerless%20tracking%20of%20an%20entire%20honey%20bee%20colony.md) — 🇯🇵 Okinawa Institute of Science and Technology Graduate University; 🇦🇺 Australian National University; 🇳🇱 Vrije Universiteit Amsterdam
 - [On Image Classification in Video Analysis of Omnidirectional Apis Mellifera Traffic: Random Reinforced Forests vs. Shallow Convolutional Networks](../On%20Image%20Classification%20in%20Video%20Analysis%20of%20Omnidirectional%20Apis%20Mellifera%20Traffic%20Random%20Reinforced%20Forests%20vs.%20Shallow%20Convolutional%20Networks.md) — 🇺🇸 Utah State University
 - [Social networks predict the life and death of honeybees](../Social%20networks%20predict%20the%20life%20and%20death%20of%20honeybees.md) — 🇩🇪 Freie Universität Berlin; 🇩🇪 Robert Koch Institute; 🇩🇪 University of Konstanz; 🇺🇸 Auburn University; 🇺🇸 University of Hohenheim
@@ -112,6 +119,10 @@ layout: research
 ### [2017](../years/2017.md)
 
 - [Automatic detection and decoding of honey bee waggle dances](../Automatic%20detection%20and%20decoding%20of%20honeybee%20waggle%20dances.md) — 🇩🇪 Freie Universität Berlin
+
+### [2016](../years/2016.md)
+
+- [Pollen Bearing Honey Bee Detection in Hive Entrance Video Recorded by Remote Embedded System for Pollination Monitoring](../Pollen%20Bearing%20Honey%20Bee%20Detection%20in%20Hive%20Entrance%20Video%20Recorded%20by%20Remote%20Embedded%20System%20for%20Pollination%20Monitoring.md) — 🇧🇦 University of Banja Luka
 
 ### [2015](../years/2015.md)
 
