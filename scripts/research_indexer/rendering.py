@@ -341,35 +341,23 @@ def render_paper_table(
 
     lines: list[str] = [
         '<div class="research-publications-table-wrap">',
-        '<table class="research-publications-table">',
-        '  <colgroup>',
-        '    <col class="research-publications-table__title">',
-        '    <col class="research-publications-table__year">',
-        '    <col class="research-publications-table__orgs">',
-        '  </colgroup>',
-        '  <thead>',
-        '    <tr>',
-        '      <th scope="col">Publication</th>',
-        '      <th scope="col">Year</th>',
-        '      <th scope="col">Institutions</th>',
-        '    </tr>',
-        '  </thead>',
-        '  <tbody>',
+        '',
+        '| Publication | Year | Institutions |',
+        '|---|---|---|',
     ]
 
     for paper in paper_list:
-        orgs = "; ".join(paper.orgs)
-        lines.extend([
-            '    <tr>',
-            f'      <td><a href="{html.escape(paper_link(base_prefix, paper.filename), quote=True)}">{html.escape(paper.title)}</a></td>',
-            f'      <td>{html.escape(paper.year_label)}</td>',
-            f'      <td>{html.escape(orgs)}</td>' if orgs else '      <td></td>',
-            '    </tr>',
-        ])
+        title = paper.title.replace('|', '\|')
+        orgs = "; ".join(paper.orgs).replace('|', '\|')
+        
+        # We must use standard markdown links so blog-engine-md converts them correctly
+        link_url = paper_link(base_prefix, paper.filename)
+        link = f"[{title}]({link_url})"
+        
+        lines.append(f"| {link} | {paper.year_label} | {orgs} |")
 
     lines.extend([
-        '  </tbody>',
-        '</table>',
+        '',
         '</div>',
     ])
     return lines
