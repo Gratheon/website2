@@ -129,6 +129,45 @@
   - Add CSRF protection for web-app forms
   - Validate input sanitization in graphql-router
 
+
+---
+
+## New Tasks (Added 2026-07-11) — Website & Content
+
+### 💛 Implement automated SEO audit pipeline for gratheon.com
+**Why**: The site is built with Eleventy and has Obsidian-style content, but there's no visible SEO tooling — meta tags, Open Graph images, structured data (JSON-LD), or robots.txt are not systematically validated. For a public-facing product site serving beekeepers globally, organic search traffic is critical.
+**What to do**:
+- Add Eleventy plugin that audits every generated page for: missing `<title>`, duplicate meta descriptions, broken internal links, missing alt text on images
+- Generate and validate `robots.txt` and `sitemap.xml` as part of the build step
+- Add structured data (Organization schema, Product schema) to relevant pages via Eleventy global data or layouts
+
+### 💚 Set up content staging/deployment for blog-engine-md
+**Why**: The blog engine (`blog-engine-md`) is used by both gratheon.com and kurapov.ee. There's no visible CI/CD pipeline that validates markdown, builds the static site, and deploys to production. Currently deployments rely on manual `restart.sh` scripts on the server.
+**What to do**:
+- Create GitHub Actions workflow for blog-engine-md: lint markdown → build → validate links → deploy to staging
+- Add pre-commit hooks (husky-style) that catch broken markdown links, frontmatter issues, and image references before they reach CI
+- Document deployment procedure in a runbook
+
+### 💙 Implement multilingual SEO for gratheon.com
+**Why**: The site targets Russian-speaking beekeepers primarily but English content is growing. There's no visible hreflang tag strategy or language-specific sitemap to signal language variants to search engines. This limits discoverability among non-Russian speakers and hurts international organic traffic.
+**What to do**:
+- Add `hreflang` annotations to all page templates in Eleventy (matching gratheon.com/ and kurapov.ee/i18n patterns)
+- Generate separate sitemaps per language or use `<link rel="alternate">` tags
+- Validate hreflang with Google Search Console's international targeting report
+
+### 💚 Add content migration tool from Docusaurus → blog-engine-md
+**Why**: Several services (kurapov.ee, potentially gratheon.com docs) were previously built on Docusaurus. The `blog-engine-md` README explicitly states it's a "memory-efficient alternative to Docusaurus" but there's no automated migration script — manual conversion of Docusaurus markdown, routing tables, and navigation config is error-prone.
+**What to do**:
+- Create a CLI tool (`docusaurus-migrate`) that: converts `docs/` folder structure → blog-engine-md content layout, transforms Docusaurus frontmatter → supported YAML, generates Eleventy navigation config from Docusaurus sidebar.js
+- Test migration on kurapov.ee's existing content as the canonical example
+
+### 💛 Optimize gratheon.com build time (Eleventy is slow)
+**Why**: The site has 28+ pages with templates, shared layouts, and Obsidian-style content. Eleventy builds are known to be slow with large template counts. Currently there's no incremental build strategy or caching visible in the justfile — every `just serve` rebuilds everything from scratch.
+**What to do**:
+- Enable Eleventy incremental mode (`--incremental`) and verify output correctness vs full build
+- Add cache for generated content (`.cache/` directory already exists but may not be used)
+- Profile template processing time per page; identify slow templates
+
 **💚 Secure rate-limiter service**
 - Current state: Redis-based rate limiter exists but no visible security controls
 - Impact: Could be bypassed or abused by malicious actors
