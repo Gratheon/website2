@@ -15,7 +15,7 @@ sidebar_position: 2
 
 ## Главный вызов
 
-Традиционное пчеловодство требует постоянной [👁️ наблюдаемости пчелиной семьи](/ru/about/problems/core/observability-of-bee-colony/) через [💪🏻 физический труд](/ru/about/problems/core/physical-labor/) и [👁️ трудоемкие осмотры](/ru/about/problems/time-consuming-inspections/). Такой подход становится [💪🏻 немасштабируемой работой](/ru/about/problems/core/unscalable-work/) по мере роста хозяйства, особенно для [👨🏻‍🚒 промышленных пчеловодов](/ru/about/company/clients/industrial-beekeepers/), управляющих [🏘️ несколькими пасеками](/about/problems/systemic/multiple-apiaries/) в [🌲 удаленных местах](/about/problems/systemic/distant-locations/).
+Традиционное пчеловодство требует постоянной [👁️ наблюдаемости пчелиной семьи](/ru/about/problems/core/observability-of-bee-colony/) через [💪🏻 физический труд](/ru/about/problems/core/physical-labor/) и [👁️ трудоемкие осмотры](/ru/about/problems/time-consuming-inspections/). Такой подход становится [💪🏻 немасштабируемой работой](/ru/about/problems/core/unscalable-work/) по мере роста хозяйства, особенно для [👨🏻‍🚒 промышленных пчеловодов](/ru/about/company/clients/industrial-beekeepers/), управляющих [🏘️ несколькими пасеками](/ru/about/problems/systemic/multiple-apiaries/) в [🌲 удаленных местах](/ru/about/problems/systemic/distant-locations/).
 
 ## Категории проблем
 
@@ -47,11 +47,11 @@ sidebar_position: 2
 
 | Проблема | Влияние | Приоритет |
 |---------|---------|----------|
-| [🌲 Удаленные места](/about/problems/systemic/distant-locations/) | Увеличивают стоимость осмотров | 70 |
-| [🏘️ Несколько пасек](/about/problems/systemic/multiple-apiaries/) | Усложняют управление | 50 |
+| [🌲 Удаленные места](/ru/about/problems/systemic/distant-locations/) | Увеличивают стоимость осмотров | 70 |
+| [🏘️ Несколько пасек](/ru/about/problems/systemic/multiple-apiaries/) | Усложняют управление | 50 |
 | [💢 Агрессивные пчелиные семьи](/ru/about/problems/systemic/aggressive-bee-colonies/) | Проблемы безопасности и управления | 50 |
-| [🌻 Монокультурное сельское хозяйство](/about/problems/systemic/monocultural-agriculture/) | Уменьшает разнообразие питания пчел | 40 |
-| [🤢 Отравление пестицидами](/about/problems/systemic/pesticide-poisoning/) | Внешняя токсическая угроза | 40 |
+| [🌻 Монокультурное сельское хозяйство](/ru/about/problems/systemic/monocultural-agriculture/) | Уменьшает разнообразие питания пчел | 40 |
+| [🤢 Отравление пестицидами](/ru/about/problems/systemic/pesticide-poisoning/) | Внешняя токсическая угроза | 40 |
 
 ### 🛡️ Этические вопросы и благополучие (приоритет: 40-50)
 Проблемы, связанные с благополучием пчел и устойчивыми практиками:
@@ -67,7 +67,7 @@ sidebar_position: 2
 | Проблема | Влияние | Приоритет |
 |---------|---------|----------|
 | [🎒 Сложно стать новым пчеловодом](/ru/about/problems/challenging-to-become-a-new-beekeeper/) | Снижает рост отрасли | 40 |
-| [📦 Организация склада](/about/problems/warehouse-organization/) | Операционная неэффективность | 30 |
+| [📦 Организация склада](/ru/about/problems/warehouse-organization/) | Операционная неэффективность | 30 |
 | [🗃️ Плохая вентиляция улья](/ru/about/problems/poor-hive-ventilation/) | Проблемы конструкции оборудования | 30 |
 
 ### 🌪️ Внешние угрозы (переменный приоритет)
@@ -75,7 +75,7 @@ sidebar_position: 2
 
 - [🐻 Медведи разрушают ульи и семьи](/ru/about/problems/bears-destroying-hives-colonies/)
 - [🐭 Мыши убивают семью](/ru/about/problems/mice-killing-a-colony/)
-- [🗃️ Штормовой ветер опрокидывает ульи](/about/problems/storm-wind-collapsing-beehives/)
+- [🗃️ Штормовой ветер опрокидывает ульи](/ru/about/problems/storm-wind-collapsing-beehives/)
 
 ## Новые вызовы, которыми мы занимаемся
 
