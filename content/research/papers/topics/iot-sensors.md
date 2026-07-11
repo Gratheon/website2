@@ -9,21 +9,21 @@ layout: research
 ## Summary
 
 - Topic key: `iot-sensors`
-- Total papers: 58
+- Total papers: 60
 - [Research papers hub](../index.md)
 - [All topics](index.md)
 
 ## Product areas
 
-- [Colony Health](../product-areas/colony-health.md) (18)
+- [Colony Health](../product-areas/colony-health.md) (19)
 - [Edge Device](../product-areas/edge-device.md) (1)
 - [Gate Tracker](../product-areas/gate-tracker.md) (3)
-- [Monitoring Platform](../product-areas/monitoring-platform.md) (52)
+- [Monitoring Platform](../product-areas/monitoring-platform.md) (54)
 
 ## Years
 
 - [2026](../years/2026.md) (10)
-- [2025](../years/2025.md) (7)
+- [2025](../years/2025.md) (9)
 - [2024](../years/2024.md) (9)
 - [2023](../years/2023.md) (8)
 - [2022](../years/2022.md) (5)
@@ -58,7 +58,9 @@ layout: research
 - [Deep Edge IoT for Acoustic Detection of Queenless Beehives](../%E2%AD%90%EF%B8%8F%20Deep%20Edge%20IoT%20for%20Acoustic%20Detection%20of%20Queenless%20Beehives.md) — 🇬🇷 Aristotle University of Thessaloniki
 - [IoT and Machine Learning Techniques for Precision Beekeeping:A Review](../IoT%20and%20Machine%20Learning%20Techniques%20for%20Precision%20Beekeeping%20A%20Review.md) — 🇺🇬 Makerere University; 🇹🇿 Dar es Salaam Institute of Technology
 - [Queen Detection in Beehives via Environmental Sensor Fusion for Low-Power Edge Computing](../Queen%20Detection%20in%20Beehives%20via%20Environmental%20Sensor%20Fusion%20for%20Low-Power%20Edge%20Computing.md) — 🇨🇭 Institute of Neuroinformatics, University of Zurich and ETH Zurich; 🇨🇭 Digital Society Initiative, University of Zurich
+- [Spectral Components of Honey Bee Sound Signals Recorded Inside and Outside the Beehive: An Explainable Machine Learning Approach to Diurnal Pattern Recognition](../Spectral%20Components%20of%20Honey%20Bee%20Sound%20Signals%20Recorded%20Inside%20and%20Outside%20the%20Beehive.md) — 🇵🇱 Wrocław University of Science and Technology; 🇵🇱 AGH University of Krakow
 - [UrBAN: Urban Beehive Acoustics and PheNotyping Dataset](../UrBAN%20Urban%20Beehive%20Acoustics%20and%20PheNotyping%20Dataset.md) — 🇨🇦 Institut National de la Recherche Scientifique; 🇨🇦 Université Laval; 🇨🇦 Nectar Technologies Inc.
+- [WaggleNet: A LoRa and MQTT-Based Monitoring System for Internal and External Beehive Conditions](../WaggleNet%20A%20LoRa%20and%20MQTT-Based%20Monitoring%20System%20for%20Internal%20and%20External%20Beehive%20Conditions.md) — 🇰🇷 Kyonggi University; 🇰🇷 Hallym University; 🇰🇷 Jeonbuk National University; 🇺🇸 Purdue University
 
 ### [2024](../years/2024.md)
 

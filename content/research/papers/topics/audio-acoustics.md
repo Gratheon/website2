@@ -9,20 +9,20 @@ layout: research
 ## Summary
 
 - Topic key: `audio-acoustics`
-- Total papers: 18
+- Total papers: 20
 - [Research papers hub](../index.md)
 - [All topics](index.md)
 
 ## Product areas
 
-- [Colony Health](../product-areas/colony-health.md) (12)
+- [Colony Health](../product-areas/colony-health.md) (13)
 - [Gate Tracker](../product-areas/gate-tracker.md) (1)
-- [Monitoring Platform](../product-areas/monitoring-platform.md) (14)
+- [Monitoring Platform](../product-areas/monitoring-platform.md) (16)
 
 ## Years
 
 - [2026](../years/2026.md) (4)
-- [2025](../years/2025.md) (3)
+- [2025](../years/2025.md) (5)
 - [2024](../years/2024.md) (4)
 - [2023](../years/2023.md) (2)
 - [2021](../years/2021.md) (3)
@@ -40,7 +40,9 @@ layout: research
 
 ### [2025](../years/2025.md)
 
+- [buzzdetect: an open-source deep learning tool for automated bioacoustic pollinator monitoring](../buzzdetect%20an%20open-source%20deep%20learning%20tool%20for%20automated%20bioacoustic%20pollinator%20monitoring.md) — 🇺🇸 The Ohio State University; 🇺🇸 Dartmouth College
 - [Deep Edge IoT for Acoustic Detection of Queenless Beehives](../%E2%AD%90%EF%B8%8F%20Deep%20Edge%20IoT%20for%20Acoustic%20Detection%20of%20Queenless%20Beehives.md) — 🇬🇷 Aristotle University of Thessaloniki
+- [Spectral Components of Honey Bee Sound Signals Recorded Inside and Outside the Beehive: An Explainable Machine Learning Approach to Diurnal Pattern Recognition](../Spectral%20Components%20of%20Honey%20Bee%20Sound%20Signals%20Recorded%20Inside%20and%20Outside%20the%20Beehive.md) — 🇵🇱 Wrocław University of Science and Technology; 🇵🇱 AGH University of Krakow
 - [Transformer Models improve the acoustic recognition of buzz-pollinating bee species](../Transformer%20Models%20improve%20the%20acoustic%20recognition%20of%20buzz-pollinating%20bee%20species.md) — 🇧🇷 Universidade Federal de Goiás; 🇺🇸 University of Arizona; 🇨🇱 Universidad Católica del Maule
 - [UrBAN: Urban Beehive Acoustics and PheNotyping Dataset](../UrBAN%20Urban%20Beehive%20Acoustics%20and%20PheNotyping%20Dataset.md) — 🇨🇦 Institut National de la Recherche Scientifique; 🇨🇦 Université Laval; 🇨🇦 Nectar Technologies Inc.
 

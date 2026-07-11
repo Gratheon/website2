@@ -9,13 +9,13 @@ layout: research
 ## Summary
 
 - Product area key: `colony-health`
-- Total papers: 43
+- Total papers: 44
 - [Research papers hub](../index.md)
 - [All product areas](index.md)
 
 ## Topics
 
-- [Audio Acoustics](../topics/audio-acoustics.md) (12)
+- [Audio Acoustics](../topics/audio-acoustics.md) (13)
 - [Bee Behaviour](../topics/bee-behaviour.md) (14)
 - [Bee Traffic](../topics/bee-traffic.md) (1)
 - [Behavior Recognition](../topics/behavior-recognition.md) (1)
@@ -23,8 +23,8 @@ layout: research
 - [Computer Vision](../topics/computer-vision.md) (18)
 - [Datasets](../topics/datasets.md) (1)
 - [Datasets Benchmarks](../topics/datasets-benchmarks.md) (2)
-- [Edge AI Energy](../topics/edge-ai-energy.md) (4)
-- [IoT Sensors](../topics/iot-sensors.md) (18)
+- [Edge AI Energy](../topics/edge-ai-energy.md) (5)
+- [IoT Sensors](../topics/iot-sensors.md) (19)
 - [Pollination Ecology](../topics/pollination-ecology.md) (5)
 - [Pollination Monitoring](../topics/pollination-monitoring.md) (1)
 - [Precision Beekeeping](../topics/precision-beekeeping.md) (2)
@@ -34,7 +34,7 @@ layout: research
 ## Years
 
 - [2026](../years/2026.md) (13)
-- [2025](../years/2025.md) (6)
+- [2025](../years/2025.md) (7)
 - [2024](../years/2024.md) (6)
 - [2023](../years/2023.md) (7)
 - [2022](../years/2022.md) (1)
@@ -68,6 +68,7 @@ layout: research
 - [An AI-Based Open-Source Software for Varroa Mite Fall Analysis in Honeybee Colonies](../%E2%AD%90%EF%B8%8F%20An%20AI-Based%20Open-Source%20Software%20for%20Varroa%20Mite%20Fall%20Analysis%20in%20Honeybee%20Colonies.md) — 🇪🇸 University of Zaragoza; 🇪🇸 University of La Rioja; 🇪🇸 University of Valencia
 - [Deep Edge IoT for Acoustic Detection of Queenless Beehives](../%E2%AD%90%EF%B8%8F%20Deep%20Edge%20IoT%20for%20Acoustic%20Detection%20of%20Queenless%20Beehives.md) — 🇬🇷 Aristotle University of Thessaloniki
 - [Image-based honey bee larval viral and bacterial diagnosis using machine learning](../Image-based%20honey%20bee%20larval%20viral%20and%20bacterial%20diagnosis%20using%20machine%20learning.md) — 🇺🇸 USDA Carl Hayden Bee Research Center; 🇺🇸 University of Arizona; 🇺🇸 Arizona Science Center
+- [Spectral Components of Honey Bee Sound Signals Recorded Inside and Outside the Beehive: An Explainable Machine Learning Approach to Diurnal Pattern Recognition](../Spectral%20Components%20of%20Honey%20Bee%20Sound%20Signals%20Recorded%20Inside%20and%20Outside%20the%20Beehive.md) — 🇵🇱 Wrocław University of Science and Technology; 🇵🇱 AGH University of Krakow
 - [Towards Varroa destructor mite detection using a narrow spectra illumination](../Towards%20Varroa%20destructor%20mite%20detection%20using%20a%20narrow%20spectra%20illumination.md) — 🇨🇿 Brno University of Technology
 - [Transformer Models improve the acoustic recognition of buzz-pollinating bee species](../Transformer%20Models%20improve%20the%20acoustic%20recognition%20of%20buzz-pollinating%20bee%20species.md) — 🇧🇷 Universidade Federal de Goiás; 🇺🇸 University of Arizona; 🇨🇱 Universidad Católica del Maule
 

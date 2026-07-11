@@ -9,7 +9,7 @@ layout: research
 ## Summary
 
 - Topic key: `pollination-ecology`
-- Total papers: 12
+- Total papers: 13
 - [Research papers hub](../index.md)
 - [All topics](index.md)
 
@@ -17,11 +17,11 @@ layout: research
 
 - [Colony Health](../product-areas/colony-health.md) (5)
 - [Gate Tracker](../product-areas/gate-tracker.md) (3)
-- [Monitoring Platform](../product-areas/monitoring-platform.md) (4)
+- [Monitoring Platform](../product-areas/monitoring-platform.md) (5)
 
 ## Years
 
-- [2025](../years/2025.md) (1)
+- [2025](../years/2025.md) (2)
 - [2024](../years/2024.md) (2)
 - [2023](../years/2023.md) (4)
 - [2020](../years/2020.md) (1)
@@ -33,6 +33,7 @@ layout: research
 
 ### [2025](../years/2025.md)
 
+- [buzzdetect: an open-source deep learning tool for automated bioacoustic pollinator monitoring](../buzzdetect%20an%20open-source%20deep%20learning%20tool%20for%20automated%20bioacoustic%20pollinator%20monitoring.md) — 🇺🇸 The Ohio State University; 🇺🇸 Dartmouth College
 - [Transformer Models improve the acoustic recognition of buzz-pollinating bee species](../Transformer%20Models%20improve%20the%20acoustic%20recognition%20of%20buzz-pollinating%20bee%20species.md) — 🇧🇷 Universidade Federal de Goiás; 🇺🇸 University of Arizona; 🇨🇱 Universidad Católica del Maule
 
 ### [2024](../years/2024.md)

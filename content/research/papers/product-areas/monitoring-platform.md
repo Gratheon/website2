@@ -9,13 +9,13 @@ layout: research
 ## Summary
 
 - Product area key: `monitoring-platform`
-- Total papers: 68
+- Total papers: 71
 - [Research papers hub](../index.md)
 - [All product areas](index.md)
 
 ## Topics
 
-- [Audio Acoustics](../topics/audio-acoustics.md) (14)
+- [Audio Acoustics](../topics/audio-acoustics.md) (16)
 - [Bee Behaviour](../topics/bee-behaviour.md) (12)
 - [Bee Counting](../topics/bee-counting.md) (1)
 - [Bee Traffic](../topics/bee-traffic.md) (1)
@@ -23,10 +23,10 @@ layout: research
 - [Colony Health](../topics/colony-health.md) (5)
 - [Computer Vision](../topics/computer-vision.md) (19)
 - [Datasets](../topics/datasets.md) (2)
-- [Datasets Benchmarks](../topics/datasets-benchmarks.md) (7)
-- [Edge AI Energy](../topics/edge-ai-energy.md) (9)
-- [IoT Sensors](../topics/iot-sensors.md) (52)
-- [Pollination Ecology](../topics/pollination-ecology.md) (4)
+- [Datasets Benchmarks](../topics/datasets-benchmarks.md) (8)
+- [Edge AI Energy](../topics/edge-ai-energy.md) (11)
+- [IoT Sensors](../topics/iot-sensors.md) (54)
+- [Pollination Ecology](../topics/pollination-ecology.md) (5)
 - [Pollination Monitoring](../topics/pollination-monitoring.md) (1)
 - [Precision Beekeeping](../topics/precision-beekeeping.md) (2)
 - [Reviews Surveys](../topics/reviews-surveys.md) (19)
@@ -35,7 +35,7 @@ layout: research
 ## Years
 
 - [2026](../years/2026.md) (18)
-- [2025](../years/2025.md) (7)
+- [2025](../years/2025.md) (10)
 - [2024](../years/2024.md) (10)
 - [2023](../years/2023.md) (9)
 - [2022](../years/2022.md) (5)
@@ -72,12 +72,15 @@ layout: research
 ### [2025](../years/2025.md)
 
 - [A Survey of TinyML Applications in Beekeeping for Hive Monitoring and Management](../A%20Survey%20of%20TinyML%20Applications%20in%20Beekeeping%20for%20Hive%20Monitoring%20and%20Management.md) — 🇦🇺 University of Technology Sydney; 🇦🇺 BeeSTAR
+- [buzzdetect: an open-source deep learning tool for automated bioacoustic pollinator monitoring](../buzzdetect%20an%20open-source%20deep%20learning%20tool%20for%20automated%20bioacoustic%20pollinator%20monitoring.md) — 🇺🇸 The Ohio State University; 🇺🇸 Dartmouth College
 - [Buzzing with Intelligence: A Systematic Review of Smart Beehive Technologies](../Buzzing%20with%20Intelligence%20A%20Systematic%20Review%20of%20SmartBeehive%20Technologies.md) — 🇭🇷 University of Split
 - [Fast, accurate measurement of the worker populations of honey bee colonies using deep learning](../Fast%20accurate%20measurement%20of%20the%20worker%20populations%20of%20honey%20bee%20colonies%20using%20deep%20learning.md) — 🇺🇸 Arizona State University; 🇺🇸 Texas A&M University–Kingsville
 - [IoT and Machine Learning Techniques for Precision Beekeeping:A Review](../IoT%20and%20Machine%20Learning%20Techniques%20for%20Precision%20Beekeeping%20A%20Review.md) — 🇺🇬 Makerere University; 🇹🇿 Dar es Salaam Institute of Technology
 - [Queen Detection in Beehives via Environmental Sensor Fusion for Low-Power Edge Computing](../Queen%20Detection%20in%20Beehives%20via%20Environmental%20Sensor%20Fusion%20for%20Low-Power%20Edge%20Computing.md) — 🇨🇭 Institute of Neuroinformatics, University of Zurich and ETH Zurich; 🇨🇭 Digital Society Initiative, University of Zurich
+- [Spectral Components of Honey Bee Sound Signals Recorded Inside and Outside the Beehive: An Explainable Machine Learning Approach to Diurnal Pattern Recognition](../Spectral%20Components%20of%20Honey%20Bee%20Sound%20Signals%20Recorded%20Inside%20and%20Outside%20the%20Beehive.md) — 🇵🇱 Wrocław University of Science and Technology; 🇵🇱 AGH University of Krakow
 - [UrBAN: Urban Beehive Acoustics and PheNotyping Dataset](../UrBAN%20Urban%20Beehive%20Acoustics%20and%20PheNotyping%20Dataset.md) — 🇨🇦 Institut National de la Recherche Scientifique; 🇨🇦 Université Laval; 🇨🇦 Nectar Technologies Inc.
 - [Visual recognition of honeybee behavior patterns at the hive entrance](../Visual%20recognition%20of%20honeybee%20behavior%20patterns%20at%20the%20hive%20entrance.md) — 🇱🇹 Vilnius Gediminas Technical University
+- [WaggleNet: A LoRa and MQTT-Based Monitoring System for Internal and External Beehive Conditions](../WaggleNet%20A%20LoRa%20and%20MQTT-Based%20Monitoring%20System%20for%20Internal%20and%20External%20Beehive%20Conditions.md) — 🇰🇷 Kyonggi University; 🇰🇷 Hallym University; 🇰🇷 Jeonbuk National University; 🇺🇸 Purdue University
 
 ### [2024](../years/2024.md)
 

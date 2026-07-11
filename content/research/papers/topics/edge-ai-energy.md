@@ -9,22 +9,22 @@ layout: research
 ## Summary
 
 - Topic key: `edge-ai-energy`
-- Total papers: 13
+- Total papers: 15
 - [Research papers hub](../index.md)
 - [All topics](index.md)
 
 ## Product areas
 
-- [Colony Health](../product-areas/colony-health.md) (4)
+- [Colony Health](../product-areas/colony-health.md) (5)
 - [Edge Device](../product-areas/edge-device.md) (2)
 - [Gate Tracker](../product-areas/gate-tracker.md) (2)
 - [Hive Scanner](../product-areas/hive-scanner.md) (1)
-- [Monitoring Platform](../product-areas/monitoring-platform.md) (9)
+- [Monitoring Platform](../product-areas/monitoring-platform.md) (11)
 
 ## Years
 
 - [2026](../years/2026.md) (4)
-- [2025](../years/2025.md) (3)
+- [2025](../years/2025.md) (5)
 - [2024](../years/2024.md) (2)
 - [2023](../years/2023.md) (1)
 - [2022](../years/2022.md) (1)
@@ -45,6 +45,8 @@ layout: research
 - [A Survey of TinyML Applications in Beekeeping for Hive Monitoring and Management](../A%20Survey%20of%20TinyML%20Applications%20in%20Beekeeping%20for%20Hive%20Monitoring%20and%20Management.md) — 🇦🇺 University of Technology Sydney; 🇦🇺 BeeSTAR
 - [Deep Edge IoT for Acoustic Detection of Queenless Beehives](../%E2%AD%90%EF%B8%8F%20Deep%20Edge%20IoT%20for%20Acoustic%20Detection%20of%20Queenless%20Beehives.md) — 🇬🇷 Aristotle University of Thessaloniki
 - [Queen Detection in Beehives via Environmental Sensor Fusion for Low-Power Edge Computing](../Queen%20Detection%20in%20Beehives%20via%20Environmental%20Sensor%20Fusion%20for%20Low-Power%20Edge%20Computing.md) — 🇨🇭 Institute of Neuroinformatics, University of Zurich and ETH Zurich; 🇨🇭 Digital Society Initiative, University of Zurich
+- [Spectral Components of Honey Bee Sound Signals Recorded Inside and Outside the Beehive: An Explainable Machine Learning Approach to Diurnal Pattern Recognition](../Spectral%20Components%20of%20Honey%20Bee%20Sound%20Signals%20Recorded%20Inside%20and%20Outside%20the%20Beehive.md) — 🇵🇱 Wrocław University of Science and Technology; 🇵🇱 AGH University of Krakow
+- [WaggleNet: A LoRa and MQTT-Based Monitoring System for Internal and External Beehive Conditions](../WaggleNet%20A%20LoRa%20and%20MQTT-Based%20Monitoring%20System%20for%20Internal%20and%20External%20Beehive%20Conditions.md) — 🇰🇷 Kyonggi University; 🇰🇷 Hallym University; 🇰🇷 Jeonbuk National University; 🇺🇸 Purdue University
 
 ### [2024](../years/2024.md)
 

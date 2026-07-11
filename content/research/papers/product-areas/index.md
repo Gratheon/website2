@@ -14,10 +14,10 @@ Browse research papers by Gratheon product area.
 
 Product areas:
 
-- [Colony Health](colony-health.md) (43)
+- [Colony Health](colony-health.md) (44)
 - [Edge Device](edge-device.md) (2)
 - [Gate Tracker](gate-tracker.md) (28)
 - [Hive Scanner](hive-scanner.md) (20)
-- [Monitoring Platform](monitoring-platform.md) (68)
+- [Monitoring Platform](monitoring-platform.md) (71)
 - [Robotics](robotics.md) (8)
 <!-- GENERATED RESEARCH INDEX:END -->
