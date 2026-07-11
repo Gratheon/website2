@@ -6,17 +6,28 @@ order: 30
 hideToc: true
 ---
 
-Просмотр исследовательских статей по году публикации. Для уже синхронизированных лет ссылки ведут на русские страницы; остальные годы временно ведут на английские индексы.
+<!-- GENERATED RESEARCH INDEX:START -->
+Просмотр исследовательских статей по году публикации.
 
-- [2026](/research/papers/years/2026/)
-- [2025](/research/papers/years/2025/)
-- [2024](/research/papers/years/2024/)
-- [2023](/research/papers/years/2023/)
-- [2022](/research/papers/years/2022/)
-- [2021](/research/papers/years/2021/)
-- [2020](/research/papers/years/2020/)
-- [2019](/research/papers/years/2019/)
-- [2018](/research/papers/years/2018/)
-- [2016](/ru/research/papers/years/2016/)
-- [2013](/ru/research/papers/years/2013/)
-- [Остальные годы](/research/papers/years/)
+- [Центр исследовательских статей](../index.md)
+- [Научные публикации](../scientific-publications/index.md)
+
+Годы:
+
+- [2026](2026.md) (9)
+- [2025](2025.md) (13)
+- [2024](2024.md) (16)
+- [2023](2023.md) (20)
+- [2022](2022.md) (11)
+- [2021](2021.md) (11)
+- [2020](2020.md) (9)
+- [2019](2019.md) (6)
+- [2018](2018.md) (9)
+- [2017](2017.md) (3)
+- [2016](2016.md) (1)
+- [2015](2015.md) (1)
+- [2013](2013.md) (1)
+- [2011](2011.md) (1)
+- [2009](2009.md) (1)
+- [Без указанного года](unknown.md) (5)
+<!-- GENERATED RESEARCH INDEX:END -->
