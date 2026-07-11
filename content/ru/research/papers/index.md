@@ -18,7 +18,7 @@ heroImage: /assets/img/research/img/FTOxAhxXEAAAtBB.jpg
   <div class="research-paper-filter-grid">
     <a class="research-paper-filter-card" href="/research/papers/scientific-publications/">
       <span class="research-paper-filter-card__icon" aria-hidden="true">📚</span>
-      <span class="research-paper-filter-card__body"><strong>Научные публикации</strong><small>Все 112 заметок о статьях в одной библиографии.</small></span>
+      <span class="research-paper-filter-card__body"><strong>Научные публикации</strong><small>Все 110 заметок о статьях в одной библиографии.</small></span>
     </a>
     <a class="research-paper-filter-card" href="/ru/research/papers/teams/">
       <span class="research-paper-filter-card__icon" aria-hidden="true">🏛️</span>

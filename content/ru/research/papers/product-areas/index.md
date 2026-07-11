@@ -8,8 +8,8 @@ hideToc: true
 
 Просмотр исследовательских статей по продуктовым областям Gratheon.
 
-- [Здоровье колонии](/research/papers/product-areas/colony-health/)
-- [Gate Tracker](/research/papers/product-areas/gate-tracker/)
-- [Hive Scanner](/research/papers/product-areas/hive-scanner/)
-- [Платформа мониторинга](/research/papers/product-areas/monitoring-platform/)
-- [Робототехника](/research/papers/product-areas/robotics/)
+- [Здоровье колонии](/ru/research/papers/product-areas/colony-health/)
+- [Gate Tracker](/ru/research/papers/product-areas/gate-tracker/)
+- [Hive Scanner](/ru/research/papers/product-areas/hive-scanner/)
+- [Платформа мониторинга](/ru/research/papers/product-areas/monitoring-platform/)
+- [Робототехника](/ru/research/papers/product-areas/robotics/)
