@@ -17,9 +17,9 @@ layout: research
 
 - [Поведение пчёл](/research/papers/topics/bee-behaviour/) (7)
 - [Компьютерное зрение](/research/papers/topics/computer-vision/) (16)
-- [Датасеты и бенчмарки](../topics/datasets-benchmarks.md) (3)
-- [Edge AI и энергопотребление](../topics/edge-ai-energy.md) (1)
-- [Варроа и здоровье](../topics/varroa-health.md) (1)
+- [Датасеты и бенчмарки](/research/papers/topics/datasets-benchmarks/) (3)
+- [Edge AI и энергопотребление](/research/papers/topics/edge-ai-energy/) (1)
+- [Варроа и здоровье](/research/papers/topics/varroa-health/) (1)
 
 ## Годы
 

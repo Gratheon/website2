@@ -17,7 +17,7 @@ layout: research
 
 - [Поведение пчёл](/research/papers/topics/bee-behaviour/) (6)
 - [Компьютерное зрение](/research/papers/topics/computer-vision/) (2)
-- [Робототехника](../topics/robotics.md) (8)
+- [Робототехника](/research/papers/topics/robotics/) (8)
 
 ## Годы
 
