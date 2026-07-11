@@ -16,9 +16,9 @@ heroImage: /assets/img/research/img/FTOxAhxXEAAAtBB.jpg
     <p>Используйте эти фильтры, чтобы сузить библиотеку литературы. Полный список отдельных статей начинается в разделе «Научные публикации».</p>
   </div>
   <div class="research-paper-filter-grid">
-    <a class="research-paper-filter-card" href="/research/papers/scientific-publications/">
+    <a class="research-paper-filter-card" href="/ru/research/papers/scientific-publications/">
       <span class="research-paper-filter-card__icon" aria-hidden="true">📚</span>
-      <span class="research-paper-filter-card__body"><strong>Научные публикации</strong><small>Все 110 заметок о статьях в одной библиографии.</small></span>
+      <span class="research-paper-filter-card__body"><strong>Научные публикации</strong><small>127 русских заметок о статьях и полный английский архив.</small></span>
     </a>
     <a class="research-paper-filter-card" href="/ru/research/papers/teams/">
       <span class="research-paper-filter-card__icon" aria-hidden="true">🏛️</span>

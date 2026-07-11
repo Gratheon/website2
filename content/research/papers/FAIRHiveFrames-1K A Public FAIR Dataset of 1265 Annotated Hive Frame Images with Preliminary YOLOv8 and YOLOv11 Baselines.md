@@ -2,7 +2,7 @@
 hideNav: true
 layout: research
 hideToc: true
-title: FAIRHiveFrames-1K: A Public FAIR Dataset of 1265 Annotated Hive Frame Images with Preliminary YOLOv8 and YOLOv11 Baselines
+title: "FAIRHiveFrames-1K: A Public FAIR Dataset of 1265 Annotated Hive Frame Images with Preliminary YOLOv8 and YOLOv11 Baselines"
 description: In precision apiculture, the portable digital camera is a cost-effective sensor for capturing hive images or videos used to quantify different colony variables. Openly accessible, well-annotated, inte...
 year: '2026'
 authors:
