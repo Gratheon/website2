@@ -46,7 +46,7 @@ sidebar_position: 5
 
 ## Локализованные карточки конкурентов
 
-В этом обновлении синхронизирована первая управляемая часть раздела, без копирования изображений или других тяжёлых ассетов. Медиа переиспользуются из основной английской папки анализа конкурентов.
+В этом разделе русские карточки синхронизируются управляемыми партиями, без копирования изображений или других тяжёлых ассетов. Медиа переиспользуются из основной английской папки анализа конкурентов.
 
 | Конкурент | Сегмент | Страна/рынок | Уровень угрозы |
 | --- | --- | --- | --- |
@@ -63,6 +63,16 @@ sidebar_position: 5
 | [🇮🇹 3bee](🇮🇹%203bee.md) | IoT / ESG | Италия / ЕС | Средний |
 | [🇬🇧 AgriSound](🇬🇧%20AgriSound.md) | Акустический AI-мониторинг | Великобритания | Средний |
 | [🇺🇸 Broodminder](🇺🇸%20Broodminder.md) | IoT-датчики улья | США | Средне-высокий |
+| [🇷🇺 BeeOrganizer](🇷🇺%20BeeOrganizer.md) | Веб-приложение | Русскоязычный рынок | Низкий-средний |
+| [🇳🇱 Beep NL](🇳🇱%20Beep%20NL.md) | Open source IoT-датчики | Нидерланды / ЕС | Средний |
+| [🇸🇰 BeeHiveMonitoring](🇸🇰%20BeeHiveMonitoring.md) | IoT-датчики улья | Словакия / ЕС | Средний |
+| [🇺🇸 HiveBloom](🇺🇸%20HiveBloom.md) | Веб-приложение с AI | США / global app stores | Средний |
+| [🇫🇷 HoneyInstruments](🇫🇷%20HoneyInstruments.md) | IoT-датчики улья | Франция / ЕС | Средний |
+| [🇱🇻 BeeSage](🇱🇻%20BeeSage.md) | Умные весы улья | Латвия / ЕС | Средний |
+| [🇮🇳 Gobuzzr](🇮🇳%20Gobuzzr.md) | IoT-датчики улья | Индия | Низкий-средний |
+| [🇷🇸 SMSVaga](🇷🇸%20SMSVaga.md) | SMS-весы улья | Сербия / Балканы | Низкий-средний |
+| [🇷🇸 beehold.rs](🇷🇸%20beehold.rs.md) | AI-помощник пчеловода | Сербия / Балканы | Средний |
+| [🇪🇺 io-bee](🇪🇺%20io-bee.md) | IoT-датчики улья | Европа | Средний |
 | [🇮🇱 Beewise](🇮🇱%20Beewise.md) | Роботизированная пасека | Израиль / США | Высокий |
 
 ## 🪬 Роботизированная пасека
@@ -92,6 +102,13 @@ sidebar_position: 5
 | [🇬🇧 AgriSound](🇬🇧%20AgriSound.md) | https://agrisound.io/ | Акустический AI-мониторинг ульев. |
 | [🇺🇸 Broodminder](🇺🇸%20Broodminder.md) | https://broodminder.com/ | Устоявшиеся доступные датчики веса, температуры и влажности. |
 | [🇺🇸 BuzzBox](🇺🇸%20BuzzBox.md) | Kickstarter | Исторический open-source датчик; скорее ориентир, чем активный конкурент. |
+| [🇳🇱 Beep NL](🇳🇱%20Beep%20NL.md) | https://beep.nl/ | Нидерландский open-source проект мониторинга ульев. |
+| [🇸🇰 BeeHiveMonitoring](🇸🇰%20BeeHiveMonitoring.md) | https://beehivemonitoring.com/ | Широкая линейка европейских весов, gateways, счётчиков и cloud workflows. |
+| [🇫🇷 HoneyInstruments](🇫🇷%20HoneyInstruments.md) | https://www.honeyinstruments.com/en | Французская professional-grade IoT-платформа мониторинга ульев. |
+| [🇱🇻 BeeSage](🇱🇻%20BeeSage.md) | https://beesage.co/ | Латвийские умные весы HiveScale и mobile-friendly web dashboard. |
+| [🇮🇳 Gobuzzr](🇮🇳%20Gobuzzr.md) | https://www.gobuzzr.com/ | Доступная IoT-платформа мониторинга ульев для entry-level сегмента. |
+| [🇷🇸 SMSVaga](🇷🇸%20SMSVaga.md) | https://smsvaga.com/ | Сербские SMS-весы для простого мониторинга веса, условий и краж. |
+| [🇪🇺 io-bee](🇪🇺%20io-bee.md) | https://io-bee.eu/ | Европейская IoT-платформа для semi-professional пчеловодов. |
 
 ## 📱 Веб-приложения
 
@@ -103,3 +120,6 @@ sidebar_position: 5
 | [🇫🇷 ApiZoom](🇫🇷%20ApiZoom.md) | https://www.apizoom.app/ | Франкоязычное веб-приложение для учёта пасеки. |
 | [🇺🇸 hivetracks](🇺🇸%20hivetracks.md) | https://www.hivetracks.com/ | Устоявшаяся американская платформа цифрового учёта. |
 | [🇬🇧 BeePlus Beekeeping](🇬🇧%20BeePlus%20Beekeeping.md) | https://www.hive-tool.com/ | iOS-приложение для полевых записей без подписки. |
+| [🇷🇺 BeeOrganizer](🇷🇺%20BeeOrganizer.md) | https://beeorganizer.ru/welcome | Бесплатный русскоязычный сервис учёта пасеки с Android-приложением. |
+| [🇺🇸 HiveBloom](🇺🇸%20HiveBloom.md) | https://hivebloom.com/ | Современный журнал пасеки с AI-диктовкой и mentor-like guidance. |
+| [🇷🇸 beehold.rs](🇷🇸%20beehold.rs.md) | https://beehold.rs/ | Сербский AI-powered digital assistant для пчеловодов. |
