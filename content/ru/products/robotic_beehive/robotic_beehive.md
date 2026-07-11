@@ -51,21 +51,17 @@ sidebar_position: 5
 
 ## Возможности и идеи
 
-Детальные идеи пока остаются на английском и переиспользуют канонические страницы:
+Часть идей уже локализована на русском и переиспользует общие изображения, документы и исследовательские материалы:
 
-- [🍭 Automatic sugar syrup feeder](/products/robotic_beehive/ideas/automatic-sugar-syrup-feeder/)
-- [🎙️ 6-channel audio monitoring](/products/robotic_beehive/ideas/6-channel-audio-monitoring/)
-- [🎮 Client-side app with UI in manual override mode](/products/robotic_beehive/ideas/client-side-app-with-ui-in-manual-override-mode/)
-- [🐝 Bee nursing video analysis](/products/robotic_beehive/ideas/bee-nursing-video-analysis/)
-- [🐝 Bee specialization classification](/products/robotic_beehive/ideas/bee-specialization-classification/)
-- [🔌 Energy autonomy](/products/robotic_beehive/ideas/energy-autonomy/)
-- [🔥 Hive heating](/products/robotic_beehive/ideas/hive-heating/)
-- [🚁 Ventilation control](/products/robotic_beehive/ideas/ventilation-control/)
-- [🛑 Close mechanized hive entrance in case of hornet attack](/products/robotic_beehive/ideas/close-mechanized-hive-entrance-in-case-of-hornet-attack/)
-- [🤖 Talk to bee colony with AI](/products/robotic_beehive/ideas/talk-to-bee-colony-with-ai/)
-- [🦀 Hive bottom scanning](/products/robotic_beehive/ideas/hive-bottom-scanning/)
-- [🦾 Robotic frame reordering](/products/robotic_beehive/ideas/robotic-frame-reordering/)
-- [🧪 Automatic acid treatment against varroa](/products/robotic_beehive/ideas/automatic-acid-treatment-against-varroa/)
+- [🎮 Клиентское приложение с UI в режиме ручного управления](ideas/🎮%20Client-side%20app%20with%20UI%20in%20manual%20override%20mode.md)
+- [🔌 Энергетическая автономность](ideas/🔌%20Energy%20autonomy.md)
+- [🔥 Подогрев улья](ideas/🔥%20Hive%20heating.md)
+- [🚁 Управление вентиляцией](ideas/🚁%20Ventilation%20control.md)
+- [🤖 Общение с пчелиной семьёй через ИИ](ideas/🤖%20Talk%20to%20bee%20colony%20with%20AI.md)
+- [📸 Сканирование рамки в реальном времени](todo/📸%20Real-time%20frame%20scanning.md)
+- [📸 Полный осмотр улья](todo/📸%20Full%20hive%20inspection.md)
+
+Остальные идеи пока доступны в английской версии и будут локализованы постепенно.
 
 ## Нефункциональные требования
 

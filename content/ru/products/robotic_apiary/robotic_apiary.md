@@ -43,6 +43,13 @@ layout: products
 
 Пасека: традиционно ульи часто стоят в линию. Источник: [https://beeswiki.com/what-is-an-apiary/](https://beeswiki.com/what-is-an-apiary/)
 
+
+## Связанные идеи
+
+- [🚛 Перемещение ульев между полями роботом](ideas/🚛%20Robot%20moving%20hives%20between%20fields.md)
+- [🤖 Перемещение робота между ульями](ideas/🤖%20Moving%20robot%20between%20hives.md)
+- [🦀 Детекция клеща варроа с ИК-камерой](ideas/🦀%20Varroa%20mite%20detection%20with%20infra-red%20camera.md)
+
 # Идеация
 
 ## Перемещение

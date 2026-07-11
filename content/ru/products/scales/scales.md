@@ -57,4 +57,7 @@ layout: products
 - [📱 Веб-приложение](../web_app/index.md)
 - [📈 Хранение телеметрии улья](../web_app/pro-tier/hive-telemetry-storage.md)
 - [📊 Аналитика временных рядов](../web_app/pro-tier/timeseries-data-analytics.md)
+- [🌡️ Мониторинг внутренней температуры](todo/🌡️%20Internal%20Temperature%20monitoring.md)
+- [💧 Мониторинг внутренней влажности](ideas/💧%20Internal%20humidity%20monitoring.md)
+- [🌪️ Измерение скорости ветра](ideas/🌪️%20Wind%20speed%20measurement%20-%20Anemometer.md)
 - [Документация датчиков улья](/ru/docs/beehive-sensors/)
