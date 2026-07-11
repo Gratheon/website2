@@ -100,8 +100,10 @@
 {{define "research_paper_pdf_preview"}}
 {{with .Frontmatter.Params}}
 {{with index . "pdf"}}
+{{ $pdfVersion := formatDate $.Page.ModifiedTime "20060102150405" }}
 <section class="content knowledge-content research-paper-pdf-preview" aria-label="{{if eq $.Page.Language "ru"}}Предпросмотр PDF{{else if eq $.Page.Language "et"}}PDF-i eelvaade{{else}}PDF preview{{end}}">
-  <iframe class="pdf-embed" src="{{.}}" title="{{if eq $.Page.Language "ru"}}Предпросмотр PDF{{else if eq $.Page.Language "et"}}PDF-i eelvaade{{else}}PDF preview{{end}}" loading="lazy" height="800"></iframe>
+  {{/* WHY: nginx caches PDFs for 7 days; bust cache after replacing invalid placeholder files. */}}
+  <iframe class="pdf-embed" src="{{.}}?v={{$pdfVersion}}" title="{{if eq $.Page.Language "ru"}}Предпросмотр PDF{{else if eq $.Page.Language "et"}}PDF-i eelvaade{{else}}PDF preview{{end}}" height="800"></iframe>
 </section>
 {{end}}
 {{end}}
@@ -231,7 +233,8 @@
           {{if $isPaperDetail}}
             {{with .Frontmatter.Params}}
               {{with index . "pdf"}}
-              <a class="knowledge-action knowledge-action--primary" href="{{.}}">{{if eq $.Page.Language "ru"}}Скачать PDF{{else if eq $.Page.Language "et"}}Laadi PDF alla{{else}}Download PDF{{end}}</a>
+              {{ $pdfVersion := formatDate $.Page.ModifiedTime "20060102150405" }}
+              <a class="knowledge-action knowledge-action--primary" href="{{.}}?v={{$pdfVersion}}">{{if eq $.Page.Language "ru"}}Скачать PDF{{else if eq $.Page.Language "et"}}Laadi PDF alla{{else}}Download PDF{{end}}</a>
               {{end}}
             {{end}}
           {{else if eq .Page.Layout "products"}}
