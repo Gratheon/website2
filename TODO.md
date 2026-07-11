@@ -7,21 +7,93 @@
 | 💚 | Quality — technical debt, compounds over time | Backlog rotation |
 | 💙 | Nice-to-have — polish and optimization | When nothing else pulls you |
 
-
 ## New Tasks (Added 2026-07-11)
 
-### Test Coverage & Quality Assurance
+### 🆕 Newly Discovered Gaps — Edge ML & Blog Services (09:45 EEST)
 
-**💛 Implement comprehensive test suite for web-app frontend**
-- Current state: 440 files with minimal visible test coverage
-- Impact: Prevents regression in core hive management UI
-- Actions: Add unit tests for key components (hive edit, device view), integration tests for GraphQL queries, E2E tests for critical user flows
-- Components: `web-app/src/page/hiveEdit/*`, `web-app/src/page/deviceView/*`, `web-app/src/page/apiaryList/*`
+**❤️ entrance-observer: add test infrastructure and CI pipeline**
+- Current state: `tests/` directory exists but is completely empty. `.gitignore` is also empty. No GitHub Actions workflow present. This service runs on Jetson Orin/Nano with GPU-accelerated video processing for real-time hive entrance monitoring — zero safety net in production.
+- Impact: A regression means false bee activity counts or missed detections at apiaries, directly affecting beekeepers' decisions about treatment and inspections.
+- Actions:
+  - Initialize proper `.gitignore` (Python venvs, .cache, large video files, model weights)
+  - Add unit tests for the float detection pipeline: best_float32.tflite model loading and inference correctness on known input frames
+  - Add integration test: mock video chunk → frame extraction → model inference → result aggregation
+  - Create `.github/workflows/ci.yml` with CPU-only inference benchmark (for CI portability) + GPU tests for pre-merge validation on Jetson
+  - Add a performance regression gate: fail if frames/sec drops >15% vs baseline
+- Components: `entrance-observer/tests/`, `entrance-observer/.gitignore`, `entrance-observer/.github/workflows/ci.yml`
 
-**💚 Expand test coverage to event-stream-filter and plantnet services**
-- Current state: Only 7/23+ components have tests (alerts, image-splitter, log-lib-go, rate-limiter, swarm-api, telemetry-api, weather)
-- Impact: Prevents silent failures in data pipeline
-- Actions: Add unit tests for event filtering logic, integration tests for plant detection models, mock external dependencies
+**❤️ models-queen-bee-detector / models-varroa-on-bee: add test infrastructure and CI**
+- Current state: Both services have NO `tests/` directory and NO GitHub Actions workflows. These are the ML inference engines for queen detection and varroa mite counting — they power the AI Advisor feature (the key revenue differentiator). Zero test coverage on production model code is unacceptable.
+- Impact: Model drift or code regressions go undetected until beekeepers report wrong predictions, eroding trust in the platform's core value proposition.
+- Actions:
+  - Add `tests/` directory with unit tests for each model service (data loading, preprocessing, inference output validation)
+  - Validate model outputs against known test cases (images with ground-truth annotations stored as fixtures)
+  - Create `.github/workflows/ci.yml` for both services: lint → type-check → run tests → validate model artifact integrity (hash check on .tflite files)
+  - Add a periodic "model drift" validation job that re-runs inference on a canonical test dataset and alerts if accuracy drops below threshold
+- Components: `models-queen-bee-detector/tests/`, `models-varroa-on-bee/tests/`, `.github/workflows/ci.yml` in each
+
+**💛 blog-engine-md: add CI pipeline and i18n correctness tests**
+- Current state: No GitHub Actions workflow exists. No `tests/` directory. The service serves public-facing content with i18n (Russian, English) and sitemap generation — but there is no automated verification that translations resolve correctly or that the site renders without errors.
+- Impact: Broken translations, missing pages, or incorrect hreflang tags affect SEO and user trust for the public blog — a key marketing channel for Gratheon.
+- Actions:
+  - Create `.github/workflows/ci.yml`: lint → build → run tests (once added)
+  - Add unit tests for i18n resolver: verify fallback chain (requested lang → en → empty string), test all markdown files with frontmatter produce consistent output across languages
+  - Test sitemap.xml generation includes correct hreflang tags for all supported locales
+  - Verify that content changes (new posts, translation updates) don't break the build pipeline
+- Components: `blog-engine-md/.github/workflows/ci.yml`, `blog-engine-md/tests/`
+
+### 🆕 Operational & Security Gaps Discovered During Deep Audit (09:50 EEST)
+
+**❤️ swarm-api: fix unsafe `viper.SafeWriteConfig()` config writer**
+- Current state: `swarm-api/config.go` calls `viper.SafeWriteConfig()` which silently creates a default config file if one doesn't exist. This can overwrite production configs with development defaults on first startup in new environments. The error handling pattern uses `panic(fmt.Errorf(...))` instead of structured logging.
+- Impact: Accidental config overwrites could take production swarm-api offline or cause incorrect database connections, telemetry ingestion failures.
+- Actions:
+  - Replace `SafeWriteConfig()` with explicit config validation: check if config exists, fail clearly with structured error message if missing
+  - Add startup health check that validates all required env vars (DB_HOST, DB_PORT, DB_NAME, etc.) before accepting connections
+  - Use log-lib-go for structured logging instead of panic patterns
+  - Create `config.example.json` documenting the expected config structure and required environment variables
+- Components: `swarm-api/config.go`, `swarm-api/docs/config.example.json`
+
+**💛 Add database schema migration management across all MySQL instances**
+- Current state: swarm-api uses MySQL for apiary/hive data, plantnet also connects to MySQL. No visible migration tooling (no flyway, no golang-migrate, no drizzle-kit). Schema changes are manual `ALTER TABLE` or ad-hoc SQL files — impossible to track what changed, when, and why across environments.
+- Impact: Schema drift between dev/staging/production causes "works on my machine" issues and data corruption risks during deployments. No rollback capability for broken migrations.
+- Actions:
+  - Adopt a migration tool (e.g., `golang-migrate` for swarm-api, `drizzle-kit` or similar for plantnet)
+  - Create versioned migration files for each service with up/down scripts
+  - Add CI validation that blocks deployment if migrations haven't been applied to target environment
+  - Document migration workflow: create → review → apply → verify in staging before production
+- Components: `swarm-api/migrations/`, `plantnet/migrations/`
+
+**💚 PWA offline mode verification tests for web-app**
+- Current state: `web-app/vite.config.ts` configures VitePWA plugin, `Dexie` is used as an IndexedDB layer. README mentions offline support. However, there are zero tests verifying the offline experience works: data sync on reconnect, stale-while-revalidate caching behavior, service worker update flow, push notifications on reconnect.
+- Impact: Beekeepers work in rural areas with poor/no connectivity — this is a real usability requirement, not just a nice-to-have. If PWA doesn't actually work offline, the app becomes unusable for its target market exactly when they need it most.
+- Actions:
+  - Write Playwright tests that simulate network → offline → online transitions using `page.route()` with `'blacklist'` strategy or `networkConditions: 'Offline'`
+  - Verify Dexie writes persist locally and sync to backend when reconnected
+  - Test PWA installability (manifest.json correctness, service worker registration)
+  - Verify service worker updates trigger correctly after new deployments without losing local data
+- Components: `web-app/tests/e2e/pwa-offline.spec.ts`, `web-app/vite.config.ts`
+
+**💛 Implement distributed tracing correlation IDs across GraphQL federation**
+- Current state: graphql-router federates queries across 16+ services (swarm-api, user-cycle, alerts, weather, plantnet, telemetry-api). No visible trace ID propagation. When a user's request spans multiple services, debugging requires manually correlating logs from each service — no single view of what happened.
+- Impact: Debugging production issues across the federation takes hours instead of minutes. Hard to identify which service caused latency or errors in a multi-hop GraphQL query.
+- Actions:
+  - Add `X-Request-ID` / correlation ID generation at graphql-router entry point
+  - Propagate trace headers through all GraphQL resolvers (via context passing in Go and TypeScript)
+  - Log trace IDs in all services using their respective log libraries (log-lib-go, log-lib-py, web-app Sentry integration)
+  - Create Grafana dashboard showing request latency breakdown by service for common query patterns
+- Components: `graphql-router/src/middleware/trace.ts`, `swarm-api/graph/context.go`, `web-app/src/lib/tracing.ts`
+
+**💚 Add API security audit: CORS origins, auth token validation, file upload sanitization**
+- Current state: swarm-api handles sensitive apiary data (GPS coordinates, owner info). image-splitter processes user-uploaded photos. No visible automated audit of: which CORS origins are allowed (could be too permissive), whether auth tokens are validated on all protected endpoints, or whether uploaded files are sanitized before processing.
+- Impact: Security vulnerabilities that could lead to data leaks, unauthorized access to apiary locations, or malicious file injection through the upload pipeline.
+- Actions:
+  - Audit CORS configuration across graphql-router and swarm-api — ensure origins match exactly what's deployed (not `*`)
+  - Verify auth middleware validates tokens on ALL protected routes (some might bypass via direct GraphQL queries)
+  - Add file upload validation in image-splitter: check magic bytes, reject non-image files, limit file size per request
+  - Run automated security scans in CI (use `gosec` for Go code, `eslint-plugin-security` for TypeScript, dependency vulnerability checks)
+- Components: `graphql-router/src/middleware/auth.ts`, `swarm-api/graph/cors.go`, `image-splitter/src/handlers/upload.ts`
+
 
 **💙 Standardize testing patterns across monorepo**
 - Current state: Mixed testing frameworks (Jest for TypeScript/Node, Go test for Go services)
