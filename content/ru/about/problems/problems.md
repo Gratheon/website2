@@ -15,7 +15,7 @@ sidebar_position: 2
 
 ## Главный вызов
 
-Традиционное пчеловодство требует постоянной [👁️ наблюдаемости пчелиной семьи](/ru/about/problems/core/observability-of-bee-colony/) через [💪🏻 физический труд](/ru/about/problems/core/physical-labor/) и [👁️ трудоемкие осмотры](/ru/about/problems/time-consuming-inspections/). Такой подход становится [💪🏻 немасштабируемой работой](/about/problems/core/unscalable-work/) по мере роста хозяйства, особенно для [👨🏻‍🚒 промышленных пчеловодов](/ru/about/company/clients/industrial-beekeepers/), управляющих [🏘️ несколькими пасеками](/about/problems/systemic/multiple-apiaries/) в [🌲 удаленных местах](/about/problems/systemic/distant-locations/).
+Традиционное пчеловодство требует постоянной [👁️ наблюдаемости пчелиной семьи](/ru/about/problems/core/observability-of-bee-colony/) через [💪🏻 физический труд](/ru/about/problems/core/physical-labor/) и [👁️ трудоемкие осмотры](/ru/about/problems/time-consuming-inspections/). Такой подход становится [💪🏻 немасштабируемой работой](/ru/about/problems/core/unscalable-work/) по мере роста хозяйства, особенно для [👨🏻‍🚒 промышленных пчеловодов](/ru/about/company/clients/industrial-beekeepers/), управляющих [🏘️ несколькими пасеками](/about/problems/systemic/multiple-apiaries/) в [🌲 удаленных местах](/about/problems/systemic/distant-locations/).
 
 ## Категории проблем
 
@@ -25,7 +25,7 @@ sidebar_position: 2
 | Проблема | Влияние | Приоритет |
 |---------|---------|----------|
 | [👁️ Наблюдаемость пчелиной семьи](/ru/about/problems/core/observability-of-bee-colony/) | Невозможно рано обнаруживать проблемы | 100 |
-| [💪🏻 Немасштабируемая работа](/about/problems/core/unscalable-work/) | Ограничивает рост хозяйства | 90 |
+| [💪🏻 Немасштабируемая работа](/ru/about/problems/core/unscalable-work/) | Ограничивает рост хозяйства | 90 |
 | [💪🏻 Физический труд](/ru/about/problems/core/physical-labor/) | Требует много времени, зависит от сезона | 80 |
 
 ### 🦠 Биологические угрозы (приоритет: 60-80)
@@ -33,14 +33,14 @@ sidebar_position: 2
 
 | Проблема | Влияние | Приоритет |
 | -------------------------------------------------------------------------------------------- | -------------------------------------- | -------- |
-| [❄️ Зимняя гибель семьи](/about/problems/biological/overwintering-collapse/) | Полная потеря семьи | 80 |
-| [🦀 Заражения](/about/problems/biological/infestations/) | Ослабляют семьи, распространяют болезни | 80 |
-| [💢 Атаки шершней](/about/problems/biological/hornet-attacks/) | Семья становится непродуктивной | 70 |
-| [🧶 Роение](/about/problems/biological/swarming/) | Потеря продуктивности, сложность управления | 70 |
-| [🦀 Болезни](/about/problems/biological/diseases/) | Заразительное повреждение семей | 60 |
-| [🍽️ Голодание пчелиной семьи](/about/problems/biological/bee-colony-starvation/) | Предотвратимая гибель семьи | 60 |
-| [💀 Семья с трутовочной маткой](/about/problems/biological/colony-with-drone-laying-queen/) | Семья становится непродуктивной | 60 |
-| [💢 Состояние воровства](/about/problems/biological/robbing-state/) | Ослабляет семьи и приводит к потере меда | 50 |
+| [❄️ Зимняя гибель семьи](/ru/about/problems/biological/overwintering-collapse/) | Полная потеря семьи | 80 |
+| [🦀 Заражения](/ru/about/problems/biological/infestations/) | Ослабляют семьи, распространяют болезни | 80 |
+| [💢 Атаки шершней](/ru/about/problems/biological/hornet-attacks/) | Семья становится непродуктивной | 70 |
+| [🧶 Роение](/ru/about/problems/biological/swarming/) | Потеря продуктивности, сложность управления | 70 |
+| [🦀 Болезни](/ru/about/problems/biological/diseases/) | Заразительное повреждение семей | 60 |
+| [🍽️ Голодание пчелиной семьи](/ru/about/problems/biological/bee-colony-starvation/) | Предотвратимая гибель семьи | 60 |
+| [💀 Семья с трутовочной маткой](/ru/about/problems/biological/colony-with-drone-laying-queen/) | Семья становится непродуктивной | 60 |
+| [💢 Состояние воровства](/ru/about/problems/biological/robbing-state/) | Ослабляет семьи и приводит к потере меда | 50 |
 
 ### 🌍 Экологические и системные проблемы (приоритет: 30-70)
 Более широкие вызовы, влияющие на экосистему пчеловодства:
@@ -49,7 +49,7 @@ sidebar_position: 2
 |---------|---------|----------|
 | [🌲 Удаленные места](/about/problems/systemic/distant-locations/) | Увеличивают стоимость осмотров | 70 |
 | [🏘️ Несколько пасек](/about/problems/systemic/multiple-apiaries/) | Усложняют управление | 50 |
-| [💢 Агрессивные пчелиные семьи](/about/problems/systemic/aggressive-bee-colonies/) | Проблемы безопасности и управления | 50 |
+| [💢 Агрессивные пчелиные семьи](/ru/about/problems/systemic/aggressive-bee-colonies/) | Проблемы безопасности и управления | 50 |
 | [🌻 Монокультурное сельское хозяйство](/about/problems/systemic/monocultural-agriculture/) | Уменьшает разнообразие питания пчел | 40 |
 | [🤢 Отравление пестицидами](/about/problems/systemic/pesticide-poisoning/) | Внешняя токсическая угроза | 40 |
 
@@ -68,7 +68,7 @@ sidebar_position: 2
 |---------|---------|----------|
 | [🎒 Сложно стать новым пчеловодом](/ru/about/problems/challenging-to-become-a-new-beekeeper/) | Снижает рост отрасли | 40 |
 | [📦 Организация склада](/about/problems/warehouse-organization/) | Операционная неэффективность | 30 |
-| [🗃️ Плохая вентиляция улья](/about/problems/poor-hive-ventilation/) | Проблемы конструкции оборудования | 30 |
+| [🗃️ Плохая вентиляция улья](/ru/about/problems/poor-hive-ventilation/) | Проблемы конструкции оборудования | 30 |
 
 ### 🌪️ Внешние угрозы (переменный приоритет)
 Непредсказуемые вызовы, требующие устойчивых решений:
