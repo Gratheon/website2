@@ -6,7 +6,7 @@ order: 30
 hideToc: true
 ---
 
-Просмотр исследовательских статей по году публикации.
+Просмотр исследовательских статей по году публикации. Для уже синхронизированных лет ссылки ведут на русские страницы; остальные годы временно ведут на английские индексы.
 
 - [2026](/research/papers/years/2026/)
 - [2025](/research/papers/years/2025/)
@@ -17,4 +17,6 @@ hideToc: true
 - [2020](/research/papers/years/2020/)
 - [2019](/research/papers/years/2019/)
 - [2018](/research/papers/years/2018/)
-- [Более ранние годы](/research/papers/years/)
+- [2016](/ru/research/papers/years/2016/)
+- [2013](/ru/research/papers/years/2013/)
+- [Остальные годы](/research/papers/years/)

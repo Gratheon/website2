@@ -6,10 +6,10 @@ order: 40
 hideToc: true
 ---
 
-Просмотр исследовательских статей по продуктовым областям Gratheon.
+Просмотр исследовательских статей по продуктовым областям Gratheon. Для уже синхронизированных областей ссылки ведут на русские страницы; остальные области временно ведут на английские индексы.
 
-- [Здоровье колонии](/ru/research/papers/product-areas/colony-health/)
-- [Gate Tracker](/ru/research/papers/product-areas/gate-tracker/)
+- [Здоровье колонии](/research/papers/product-areas/colony-health/)
+- [Gate Tracker](/research/papers/product-areas/gate-tracker/)
 - [Hive Scanner](/ru/research/papers/product-areas/hive-scanner/)
-- [Платформа мониторинга](/ru/research/papers/product-areas/monitoring-platform/)
+- [Платформа мониторинга](/research/papers/product-areas/monitoring-platform/)
 - [Робототехника](/ru/research/papers/product-areas/robotics/)
