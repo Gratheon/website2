@@ -59,11 +59,17 @@ sidebar_position: 5
 | [🇩🇪 HIIVE Link](🇩🇪%20HIIVE%20Link.md) | IoT-датчики улья | Германия / ЕС | Низкий-средний |
 | [🇩🇪 i-bee](🇩🇪%20i-bee.md) | Веб-приложение | Европа | Низкий-средний |
 | [🇪🇺 IntelligentHives](🇪🇺%20IntelligentHives.md) | IoT-датчики с AI-позиционированием | Европа | Средний |
+| [🇮🇱 BeeHero](🇮🇱%20BeeHero.md) | IoT-датчики улья | Израиль / США | Высокий |
+| [🇮🇹 3bee](🇮🇹%203bee.md) | IoT / ESG | Италия / ЕС | Средний |
+| [🇬🇧 AgriSound](🇬🇧%20AgriSound.md) | Акустический AI-мониторинг | Великобритания | Средний |
+| [🇺🇸 Broodminder](🇺🇸%20Broodminder.md) | IoT-датчики улья | США | Средне-высокий |
+| [🇮🇱 Beewise](🇮🇱%20Beewise.md) | Роботизированная пасека | Израиль / США | Высокий |
 
 ## 🪬 Роботизированная пасека
 
 | Название | URL | Описание |
 | ----- | --- | -------- |
+| [🇮🇱 Beewise](🇮🇱%20Beewise.md) | https://beewise.ag/ | Лидер рынка роботизированных ульев для корпоративного сегмента. |
 
 ## 👁️‍🗨️ Наблюдатель за летком
 
@@ -81,6 +87,11 @@ sidebar_position: 5
 | [🇪🇺 IntelligentHives](🇪🇺%20IntelligentHives.md) | https://intelligenthives.eu | Европейская IoT-платформа с AI-позиционированием. |
 | [🇧🇬 Pollenity](🇧🇬%20Pollenity.md) | https://pollenity.com/ | ESG/CSR, биоразнообразие и сеть пчеловодов, скорее потенциальный партнёр. |
 | [🇩🇪 HIIVE Link](🇩🇪%20HIIVE%20Link.md) | https://hiive-link.com/ | Модульная линейка датчиков, шлюзов и солнечных аксессуаров. |
+| [🇮🇱 BeeHero](🇮🇱%20BeeHero.md) | https://www.beehero.io/ | Хорошо профинансированная IoT-платформа для коммерческого опыления. |
+| [🇮🇹 3bee](🇮🇹%203bee.md) | https://www.3bee.com/en/ | Итальянская платформа с ESG и корпоративными спонсорствами ульев. |
+| [🇬🇧 AgriSound](🇬🇧%20AgriSound.md) | https://agrisound.io/ | Акустический AI-мониторинг ульев. |
+| [🇺🇸 Broodminder](🇺🇸%20Broodminder.md) | https://broodminder.com/ | Устоявшиеся доступные датчики веса, температуры и влажности. |
+| [🇺🇸 BuzzBox](🇺🇸%20BuzzBox.md) | Kickstarter | Исторический open-source датчик; скорее ориентир, чем активный конкурент. |
 
 ## 📱 Веб-приложения
 
@@ -88,3 +99,7 @@ sidebar_position: 5
 | ----- | --- | -------- |
 | [🇨🇦 Nectar](🇨🇦%20Nectar.md) | https://www.nectar.buzz/ | Современное приложение для управления кочевым пчеловодством. |
 | [🇩🇪 i-bee](🇩🇪%20i-bee.md) | https://www.i-bee.net/en/ | Европейская многоязычная платформа для управления пасеками. |
+| [🇷🇴 ApiaryBook](🇷🇴%20ApiaryBook.md) | https://apiarybook.com | Румынское приложение для европейских пчеловодов. |
+| [🇫🇷 ApiZoom](🇫🇷%20ApiZoom.md) | https://www.apizoom.app/ | Франкоязычное веб-приложение для учёта пасеки. |
+| [🇺🇸 hivetracks](🇺🇸%20hivetracks.md) | https://www.hivetracks.com/ | Устоявшаяся американская платформа цифрового учёта. |
+| [🇬🇧 BeePlus Beekeeping](🇬🇧%20BeePlus%20Beekeeping.md) | https://www.hive-tool.com/ | iOS-приложение для полевых записей без подписки. |
