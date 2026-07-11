@@ -2015,6 +2015,101 @@ html[data-theme='dark'] .front-page .future {
 .knowledge-content .research-publication-filter-links span {
   color: var(--knowledge-muted);
 }
+
+/* Scientific publications bibliography: full-width table for 100+ paper notes.
+   WHY: the plain list mixed title, year, and orgs into one long line per entry.
+   WHAT: align columns and keep institution text readable on wide screens. */
+.knowledge-content-layout:has(.research-publications-table-wrap) {
+  grid-template-columns: minmax(0, 1fr);
+}
+.knowledge-article:has(.research-publications-table-wrap) {
+  max-width: none;
+}
+
+.knowledge-content .research-publications-table-wrap {
+  width: 100%;
+  max-width: none;
+  margin: clamp(18px, 3vw, 32px) 0 0;
+  overflow-x: auto;
+  border: 1px solid var(--knowledge-line);
+  background: var(--knowledge-paper);
+}
+
+.knowledge-content .research-publications-table {
+  width: 100%;
+  min-width: 920px;
+  margin: 0;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-size: clamp(0.92rem, 0.95vw, 1.02rem);
+  line-height: 1.35;
+}
+
+.knowledge-content .research-publications-table__title {
+  width: 46%;
+}
+
+.knowledge-content .research-publications-table__year {
+  width: 8%;
+}
+
+.knowledge-content .research-publications-table__orgs {
+  width: 46%;
+}
+
+.knowledge-content .research-publications-table th,
+.knowledge-content .research-publications-table td {
+  padding: clamp(12px, 1.4vw, 20px) clamp(14px, 1.6vw, 24px);
+  vertical-align: top;
+  border-bottom: 1px solid var(--knowledge-line);
+}
+
+.knowledge-content .research-publications-table th {
+  color: var(--knowledge-ink);
+  font-weight: 850;
+  line-height: 1.15;
+  text-align: left;
+  background: color-mix(in srgb, var(--knowledge-soft) 72%, var(--knowledge-paper) 28%);
+}
+
+.knowledge-content .research-publications-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.knowledge-content .research-publications-table td:nth-child(2) {
+  color: var(--knowledge-muted);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.knowledge-content .research-publications-table td:first-child a,
+.knowledge-content .research-publications-table td:first-child a:visited {
+  display: inline;
+  padding: 0 0.12em;
+  border-bottom: 2px solid color-mix(in srgb, var(--accent, #2f8b0b) 65%, transparent);
+  color: var(--knowledge-ink);
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.knowledge-content .research-publications-table td:first-child a:hover,
+.knowledge-content .research-publications-table td:first-child a:focus-visible {
+  background: var(--brand-yellow);
+  border-bottom-color: var(--brand-yellow);
+  color: black !important;
+  outline: 0;
+}
+
+@media (max-width: 960px) {
+  .knowledge-content .research-publications-table-wrap {
+    border-radius: 16px;
+  }
+
+  .knowledge-content .research-publications-table {
+    min-width: 760px;
+  }
+}
+
 .knowledge-content .research-asset-card {
   display: grid;
   align-content: start;

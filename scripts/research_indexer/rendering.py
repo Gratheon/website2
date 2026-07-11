@@ -112,7 +112,9 @@ def render_scientific_publications_index(papers: list[Paper]) -> str:
         '## Publications',
         '',
     ])
-    lines.extend(render_paper_bullets(papers, base_prefix="../", include_year=True))
+    # WHY: a bibliography with 100+ entries is easier to scan as aligned columns.
+    # WHAT: render title, year, and institutions in a full-width table.
+    lines.extend(render_paper_table(papers, base_prefix="../"))
     return "\n".join(lines).rstrip()
 
 
@@ -326,6 +328,51 @@ def render_counted_links(
     for item in items:
         lines.append(f"- [{item.label}]({link_lookup(item)}) ({count_lookup(item)})")
     return lines or ["- None"]
+
+
+def render_paper_table(
+    papers: Iterable[Paper],
+    *,
+    base_prefix: str,
+) -> list[str]:
+    paper_list = list(papers)
+    if not paper_list:
+        return ["- None"]
+
+    lines: list[str] = [
+        '<div class="research-publications-table-wrap">',
+        '<table class="research-publications-table">',
+        '  <colgroup>',
+        '    <col class="research-publications-table__title">',
+        '    <col class="research-publications-table__year">',
+        '    <col class="research-publications-table__orgs">',
+        '  </colgroup>',
+        '  <thead>',
+        '    <tr>',
+        '      <th scope="col">Publication</th>',
+        '      <th scope="col">Year</th>',
+        '      <th scope="col">Institutions</th>',
+        '    </tr>',
+        '  </thead>',
+        '  <tbody>',
+    ]
+
+    for paper in paper_list:
+        orgs = "; ".join(paper.orgs)
+        lines.extend([
+            '    <tr>',
+            f'      <td><a href="{html.escape(paper_link(base_prefix, paper.filename), quote=True)}">{html.escape(paper.title)}</a></td>',
+            f'      <td>{html.escape(paper.year_label)}</td>',
+            f'      <td>{html.escape(orgs)}</td>' if orgs else '      <td></td>',
+            '    </tr>',
+        ])
+
+    lines.extend([
+        '  </tbody>',
+        '</table>',
+        '</div>',
+    ])
+    return lines
 
 
 def render_paper_bullets(
