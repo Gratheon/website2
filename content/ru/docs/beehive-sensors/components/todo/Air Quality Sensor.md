@@ -1,40 +1,38 @@
-Air Quality Sensor (TZT MQ135 MQ-135)
+---
+hideNav: true
+---
+Датчик качества воздуха (TZT MQ135 MQ-135)
 https://www.aliexpress.com/item/1005005264725457.html?spm=a2g0o.order_list.order_list_main.95.768b1802ichOiR
 
 ![](docs/img/Screenshot%202024-07-21%20at%2002.03.38.png)
 
-Product Overview:
+Обзор продукта:
 
-В gas sensor MQ135 sensitive material — tin oxide (SnO2) с низкой conductivity в clean air. Когда в environment присутствует загрязняющий gas, conductivity sensor увеличивается вместе с concentration загрязняющего газа в воздухе. Простая circuit может преобразовать изменение conductivity в output signal, соответствующий gas concentration.
+В газовом датчике MQ135 чувствительным материалом является диоксид олова (SnO2), который имеет низкую проводимость в чистом воздухе. Когда в окружающей среде появляется загрязняющий газ, проводимость датчика увеличивается вместе с ростом концентрации загрязнения в воздухе. Простая схема может преобразовать изменение проводимости в выходной сигнал, соответствующий концентрации газа.
 
-MQ135 имеет высокую sensitivity к ammonia gas, sulfide и benzene vapor; он также подходит для smoke и другого harmful monitoring. Sensor может обнаруживать разные harmful gases; это low-cost sensor для множества applications.
+MQ135 обладает высокой чувствительностью к аммиаку, сульфидам и парам бензола; он также подходит для мониторинга дыма и других вредных примесей. Датчик может обнаруживать разные вредные газы и является недорогим решением для множества применений.
 
-Application:
+Применение:
 
-Можно использовать в домашних и factory gas leakage monitoring devices; подходит для liquefied petroleum gas, butane, propane, methane, smoke и т. д.
+Может использоваться в бытовых и промышленных устройствах мониторинга утечки газа, подходит для сжиженного нефтяного газа, бутана, пропана, метана, дыма и т. д.
 
-## Features:
+## Особенности
 
-- High-quality dual-panel design с power indicator и TTL signal output indication.
-- Switching signal имеет DO (TTL) output и analog output AO.
-- TTL output valid signal is low. (Low-level signal при output light можно напрямую подключать к microcontroller или relay module.)
-- Analog output voltage растёт вместе с concentration.
-- Есть четыре screw holes для удобного позиционирования.
-- Long life и reliable stability.
-- Rapid response and recovery characteristic.
+- Качественная двухсторонняя плата с индикатором питания и индикатором выходного TTL-сигнала.
+- Сигнальный выход включает DO (TTL) и аналоговый выход AO.
+- Активный уровень TTL-выхода - низкий. Низкоуровневый сигнал при срабатывании можно напрямую подключать к микроконтроллеру или релейному модулю.
+- Напряжение аналогового выхода растёт вместе с концентрацией газа.
+- Четыре монтажных отверстия для удобного позиционирования.
+- Долгий срок службы и надёжная стабильность.
+- Быстрый отклик и восстановление.
 
-Input voltage: DC5V. Power consumption (current): 150mA. DO output: TTL digital 0 and 1 (0.1 and 5V). AO output: 0.1-0.3V (relative to pollution), максимальное concentration voltage около 4V. Special note: после подачи питания sensor needs to warm up around 20S; measured data becomes stable. Heat sensor is normal, because of internal heating wire; if it is not hot, that is abnormal.
+Входное напряжение: DC 5V. Потребление тока: 150mA. DO output: TTL digital 0 and 1 (0.1 and 5V). AO output: 0.1-0.3V относительно загрязнения, при максимальной концентрации напряжение около 4V. Важно: после подачи питания датчику нужно прогреться около 20 секунд, после чего измерения становятся стабильными. Нагрев датчика нормален из-за внутренней нагревательной нити; если датчик не нагревается, это ненормально.
 
-## Wiring:
+## Подключение
 
-- VCC: positive power supply (5V)
-    
-- GND: power supply is negative
-    
+- VCC: положительный контакт питания (5V)
+- GND: отрицательный контакт питания
 - DO: TTL switching signal output
-    
 - AO: analog signal output
-    
-    NOTE:
-    
-    После подачи питания sensor needs to warm about 20S; measured data becomes stable. Heat sensor is normal.
+
+Примечание: после подачи питания датчику нужно прогреться около 20 секунд, после чего измерения становятся стабильными. Нагрев датчика нормален.

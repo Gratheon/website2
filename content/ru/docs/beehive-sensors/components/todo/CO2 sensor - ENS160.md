@@ -1,11 +1,14 @@
-## Alternatives
+---
+hideNav: true
+---
+## Альтернативы
 
 - MQ135
 - SCD40
 - CCS811
 
-MQ-series sensors
-High current usage
+Датчики MQ-series
+Высокое потребление тока
 
 ![](docs/img/Screenshot%202024-06-27%20at%2000.54.22.png)
 

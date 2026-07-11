@@ -1,26 +1,29 @@
-Carbon Dioxide CO2 Temperature Humidity VOCs Air Quality Sensor Module (CS811 HDC1080)
+---
+hideNav: true
+---
+Модуль датчика CO2, температуры, влажности, VOC и качества воздуха (CS811 HDC1080)
 
 ![](docs/img/Screenshot%202024-07-21%20at%2002.04.16.png)
-**Product description**
+**Описание продукта**
 
-CJMCU-8118 — это gas sensor system-on-chip (SSoC) + temperature and humidity sensor, использующий low-power sensing technology для обнаружения indoor volatile organic compounds (VOCs).
+CJMCU-8118 - это газовый sensor system-on-chip (SSoC) вместе с датчиком температуры и влажности, использующий технологию низкого энергопотребления для обнаружения летучих органических соединений (VOCs) в помещении.
 
-По schematic diagram CCS811 на CJMCU8118 видно, что это не простой sensor. Внутри также интегрирован MCU, поэтому этот sensor имеет on-board processing capabilities и может выдавать, например, Effective carbon dioxide level или total volatile organic compound (TVOC) indicator. При этом по сравнению с solutions на discrete gas sensors и MCUs, CCS811 может снизить bill-of-material costs оборудования и сэкономить до 60% board area.
+По принципиальной схеме CCS811 на плате CJMCU8118 видно, что это не простой датчик. Внутри также интегрирован MCU, поэтому датчик имеет встроенные вычислительные возможности и может выдавать, например, показатель эффективного уровня CO2 или общего содержания летучих органических соединений (TVOC). При этом по сравнению с решениями на отдельных газовых датчиках и MCU, CCS811 может снизить стоимость bill-of-material оборудования и сэкономить до 60% площади платы.
 
-HDC1080 Low-Power, High-Accuracy Digital Humidity Sensor with Temperature Sensor
+HDC1080 - цифровой датчик влажности с низким энергопотреблением, высокой точностью и встроенным датчиком температуры.
 
-DC1080 — digital humidity sensor со встроенным temperature sensor, обеспечивающий отличную measurement accuracy при ultra-low power consumption. HDC1080 поддерживает широкий operating supply voltage range и предлагает low cost и low power consumption для множества common applications по сравнению с competing solutions. Humidity and temperature sensors factory calibrated.
+HDC1080 - цифровой датчик влажности со встроенным датчиком температуры, обеспечивающий высокую точность измерений при сверхнизком энергопотреблении. HDC1080 поддерживает широкий диапазон рабочего напряжения питания и предлагает низкую стоимость и низкое энергопотребление для множества типовых применений по сравнению с конкурирующими решениями. Датчики влажности и температуры откалиброваны на заводе.
 
-**Product Features**
+**Особенности продукта**
 
-Relative Humidity Accuracy ±2% (typ)
+Точность относительной влажности ±2% (тип.)
 
-Temperature accuracy is ±0.2°C (typ)
+Точность температуры ±0.2°C (тип.)
 
-Excellent stability in high humidity
+Отличная стабильность при высокой влажности
 
-14-bit measurement resolution
+14-битное разрешение измерений
 
-100nA current in sleep mode
+Ток 100nA в sleep mode
 
-Module size: 15mm*21mm
+Размер модуля: 15mm*21mm
