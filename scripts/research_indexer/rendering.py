@@ -6,10 +6,10 @@ import html
 from typing import Iterable
 from urllib.parse import quote
 
-from .constants import UNKNOWN_YEAR_SLUG
+from .constants import DEFAULT_TOPIC_ICON, TOPIC_ICONS, UNKNOWN_YEAR_SLUG
 from .grouping import group_papers_by_product_area, group_papers_by_topic, group_papers_by_year
 from .models import Paper, Term
-from .normalize import slugify, sort_term_key, term_sort_key_for_year
+from .normalize import slugify, sort_term_key, sort_term_key_by_count, term_sort_key_for_year
 
 def render_main_index(papers: list[Paper]) -> str:
     topic_groups = group_papers_by_topic(papers)
@@ -119,20 +119,38 @@ def render_scientific_publications_index(papers: list[Paper]) -> str:
 
 
 def render_topics_index(papers_by_topic: dict[Term, list[Paper]]) -> str:
+    sorted_topics = sorted(
+        papers_by_topic,
+        key=lambda topic: sort_term_key_by_count(topic, len(papers_by_topic[topic])),
+    )
+
     lines: list[str] = [
         "Browse research papers by topic.",
         "",
         "- [Research papers hub](../index.md)",
         "- [Scientific publications](../scientific-publications/index.md)",
         "",
-        "Topics:",
-        "",
+        '<section class="research-paper-filters research-topics-index" aria-labelledby="research-topics-title">',
+        '  <h2 id="research-topics-title">Topics</h2>',
+        '  <div class="research-paper-filter-grid">',
     ]
-    lines.extend(render_counted_links(
-        items=sorted(papers_by_topic, key=sort_term_key),
-        count_lookup=lambda topic: len(papers_by_topic[topic]),
-        link_lookup=lambda topic: quote(topic.slug + ".md", safe="/."),
-    ))
+
+    for topic in sorted_topics:
+        count = len(papers_by_topic[topic])
+        icon = TOPIC_ICONS.get(topic.slug, DEFAULT_TOPIC_ICON)
+        href = f"/research/papers/topics/{quote(topic.slug, safe='/')}/"
+        paper_label = "paper" if count == 1 else "papers"
+        lines.extend([
+            f'    <a class="research-paper-filter-card" href="{html.escape(href, quote=True)}">',
+            f'      <span class="research-paper-filter-card__icon" aria-hidden="true">{html.escape(icon)}</span>',
+            f'      <span class="research-paper-filter-card__body"><strong>{html.escape(topic.label)}</strong><small>{count} {paper_label}</small></span>',
+            '    </a>',
+        ])
+
+    lines.extend([
+        '  </div>',
+        '</section>',
+    ])
     return "\n".join(lines).rstrip()
 
 

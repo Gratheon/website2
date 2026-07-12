@@ -89,6 +89,10 @@ def sort_term_key(term: Term) -> tuple[str, str]:
     return (term.label.casefold(), term.slug)
 
 
+def sort_term_key_by_count(term: Term, count: int) -> tuple[int, str, str]:
+    return (-count, term.label.casefold(), term.slug)
+
+
 def term_sort_key_for_year(year: Term, year_papers: list[Paper]) -> tuple[int, int, str]:
     if year.slug == UNKNOWN_YEAR_SLUG:
         return (1, 0, year.label.casefold())

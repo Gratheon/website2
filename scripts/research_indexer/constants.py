@@ -31,3 +31,27 @@ ACRONYM_WORDS = {
 }
 UNCATEGORIZED_TOPIC_SLUG = "uncategorized"
 UNKNOWN_YEAR_SLUG = "unknown"
+
+# WHY: Topics index is scanned visually; emoji icons match the research hub filter cards.
+# WHAT: Map stable topic slugs to a single recognizable icon per research area.
+TOPIC_ICONS: dict[str, str] = {
+    "audio-acoustics": "🔊",
+    "bee-behaviour": "🐝",
+    "bee-counting": "🔢",
+    "bee-traffic": "🚪",
+    "behavior-recognition": "🧠",
+    "colony-health": "❤️",
+    "computer-vision": "👁️",
+    "datasets": "📊",
+    "datasets-benchmarks": "📈",
+    "edge-ai-energy": "⚡",
+    "iot-sensors": "📡",
+    "pollination-ecology": "🌸",
+    "pollination-monitoring": "🌻",
+    "precision-beekeeping": "🎯",
+    "reviews-surveys": "📋",
+    "robotics": "🤖",
+    UNCATEGORIZED_TOPIC_SLUG: "❓",
+    "varroa-health": "🦠",
+}
+DEFAULT_TOPIC_ICON = "🏷️"

@@ -1968,6 +1968,13 @@ html[data-theme='dark'] .front-page .future {
   line-height: 1.35;
 }
 
+.knowledge-content .research-topics-index h2 {
+  margin-top: 0;
+  font-size: clamp(1.5rem, 2.6vw, 2.4rem);
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+}
+
 .knowledge-content .research-publications-summary {
   display: grid;
   gap: 14px;
