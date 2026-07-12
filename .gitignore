@@ -3,6 +3,7 @@ node_modules
 public_new
 .DS_Store
 .cache
+.cache/paper_discovery/
 dist
 build
 current
