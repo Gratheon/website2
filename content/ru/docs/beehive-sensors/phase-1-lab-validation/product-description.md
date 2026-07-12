@@ -29,7 +29,7 @@ hide_table_of_contents: false
 
 ## Lab interconnect map
 
-Высокоуровневый signal flow для Этапа 1 показан ниже. Подробную pin-by-pin проводку смотрите в разделе [wiring-diagrams](wiring-diagrams/).
+Высокоуровневый signal flow для Этапа 1 показан ниже. Подробную pin-by-pin проводку смотрите в [Обзоре системы](system-overview.md) и детальных [схемах подключения](wiring-diagrams/full-system-wiring.md).
 
 ```mermaid
 flowchart LR

@@ -12,13 +12,14 @@ hide_table_of_contents: false
 
 - [Описание продукта](product-description.md) - объём работ, обзор проводки, калибровка и критерии приёмки.
 - [Bill of materials](bill-of-materials.md) - детали, которые нужно купить для настольной сборки.
-- [Схемы подключения](wiring-diagrams/overview.md) - подробная pin-by-pin проводка для каждой подсистемы.
+- [Обзор системы](system-overview.md) - высокоуровневая архитектура ПО и аппаратуры.
+- [Схемы подключения](wiring-diagrams/full-system-wiring.md) - подробная pin-by-pin проводка для каждой подсистемы.
 
 ## Быстрые ссылки на схемы подключения
 
 | Схема | Что показывает | Когда читать |
 | --- | --- | --- |
-| [Обзор системы](wiring-diagrams/overview.md) | Полная картина системы со всеми цепочками: питание, вес, температура, future expansion | Начинайте отсюда - это даёт big picture до подключения проводов |
+| [Обзор системы](system-overview.md) | Полная картина системы со всеми цепочками: питание, вес, температура, future expansion | Начинайте отсюда - это даёт big picture до подключения проводов |
 | [ESP32 ↔ HX711 + load cell](wiring-diagrams/esp32-to-hx711.md) | Pin-by-pin wiring для цепочки веса, цвета проводов load-cell bridge, советы по breadboard | Когда подключаете тензодатчик и плату HX711 |
 | [ESP32 ↔ DS18B20](wiring-diagrams/esp32-to-ds18b20.md) | 1-Wire wiring с pull-up resistor и troubleshooting частых отказов | Когда подключаете температурный зонд |
 | [Полная лабораторная проводка](wiring-diagrams/full-system-wiring.md) | Все GPIO pins в одной таблице, breadboard row map, pre-power checklist | Финальная проверка перед первым включением |
