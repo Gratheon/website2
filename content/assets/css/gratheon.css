@@ -1932,6 +1932,80 @@ html[data-theme='dark'] .front-page .future {
   box-shadow: 0 16px 34px rgba(0, 0, 0, 0.05);
 }
 
+/* WHY: The manual research-source page used to be a bare URL list that was hard to scan.
+   WHAT: turn each external portal into a compact card with favicon, role label, and source-specific guidance. */
+.knowledge-content .research-source-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+  gap: 1px;
+  margin: clamp(24px, 4vw, 48px) 0;
+  background: var(--knowledge-line);
+  border: 1px solid var(--knowledge-line);
+}
+
+.knowledge-content .research-source-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  margin: 0;
+  padding: clamp(18px, 2.4vw, 30px);
+  background: var(--knowledge-paper);
+}
+
+.knowledge-content .research-source-card--primary {
+  background: color-mix(in srgb, var(--knowledge-paper) 84%, var(--brand-yellow) 16%);
+}
+
+.knowledge-content .research-source-card__title,
+.knowledge-content .research-source-card__title:visited {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  width: fit-content;
+  color: var(--knowledge-ink);
+  font-size: clamp(1.14rem, 1.4vw, 1.48rem);
+  font-weight: 850;
+  line-height: 1.12;
+  letter-spacing: -0.035em;
+  text-decoration: none;
+}
+
+.knowledge-content .research-source-card__title:hover,
+.knowledge-content .research-source-card__title:focus-visible {
+  color: black !important;
+  background: var(--brand-yellow);
+  box-shadow: 0 0 0 5px var(--brand-yellow);
+  outline: 0;
+  text-decoration: none;
+}
+
+.knowledge-content .research-source-card__title img {
+  flex: 0 0 auto;
+  width: 32px;
+  height: 32px;
+  margin: 0;
+  padding: 5px;
+  border: 1px solid var(--knowledge-line);
+  border-radius: 8px !important;
+  background: #fff;
+  object-fit: contain;
+}
+
+.knowledge-content .research-source-card .research-card-meta {
+  margin: 16px 0 0;
+}
+
+.knowledge-content .research-source-card p:not(.research-card-meta) {
+  margin: 10px 0 0;
+  color: var(--knowledge-muted);
+  font-size: clamp(0.98rem, 1.05vw, 1.08rem);
+  line-height: 1.48;
+}
+
+html[data-theme='dark'] .knowledge-content .research-source-card--primary {
+  background: color-mix(in srgb, var(--knowledge-paper) 78%, var(--brand-yellow) 22%);
+}
+
 .knowledge-content .research-paper-filter-card:hover,
 .knowledge-content .research-paper-filter-card:focus-visible {
   border-color: var(--brand-yellow);
