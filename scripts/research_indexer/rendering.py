@@ -197,26 +197,15 @@ def render_topic_page(topic: Term, papers: list[Paper]) -> str:
             link_lookup=lambda area: f"../product-areas/{quote(area.slug + '.md', safe='/')}",
         ))
 
-    lines.extend([
-        "",
-        "## Years",
-        "",
-    ])
-    lines.extend(render_counted_links(
-        items=sorted(year_groups, key=lambda year: term_sort_key_for_year(year, year_groups[year])),
-        count_lookup=lambda year: len(year_groups[year]),
-        link_lookup=lambda year: f"../years/{quote(year.slug + '.md', safe='/')}",
-    ))
-    lines.extend([
-        "",
-        "## Papers by year",
-        "",
-    ])
-    for year in sorted(year_groups, key=lambda item: term_sort_key_for_year(item, year_groups[item])):
-        lines.append(f"### [{year.label}](../years/{quote(year.slug + '.md', safe='/')})")
-        lines.append("")
-        lines.extend(render_paper_bullets(year_groups[year], base_prefix="../"))
-        lines.append("")
+    if year_groups:
+        lines.extend([
+            "",
+        ])
+        lines.extend(render_year_timeline_filter(
+            year_groups,
+            filter_name=topic.slug,
+            base_prefix="../",
+        ))
 
     return "\n".join(lines).rstrip()
 
@@ -294,28 +283,83 @@ def render_product_area_page(product_area: Term, papers: list[Paper]) -> str:
         count_lookup=lambda topic: len(topic_groups[topic]),
         link_lookup=lambda topic: f"../topics/{quote(topic.slug + '.md', safe='/')}",
     ))
-    lines.extend([
-        "",
-        "## Years",
-        "",
-    ])
-    lines.extend(render_counted_links(
-        items=sorted(year_groups, key=lambda year: term_sort_key_for_year(year, year_groups[year])),
-        count_lookup=lambda year: len(year_groups[year]),
-        link_lookup=lambda year: f"../years/{quote(year.slug + '.md', safe='/')}",
-    ))
-    lines.extend([
-        "",
-        "## Papers by year",
-        "",
-    ])
-    for year in sorted(year_groups, key=lambda item: term_sort_key_for_year(item, year_groups[item])):
-        lines.append(f"### [{year.label}](../years/{quote(year.slug + '.md', safe='/')})")
-        lines.append("")
-        lines.extend(render_paper_bullets(year_groups[year], base_prefix="../"))
-        lines.append("")
+    if year_groups:
+        lines.extend([
+            "",
+        ])
+        lines.extend(render_year_timeline_filter(
+            year_groups,
+            filter_name=product_area.slug,
+            base_prefix="../",
+        ))
 
     return "\n".join(lines).rstrip()
+
+
+def render_year_timeline_filter(
+    year_groups: dict[Term, list[Paper]],
+    *,
+    filter_name: str,
+    base_prefix: str,
+) -> list[str]:
+    """Render horizontal year tabs and publication tables for taxonomy pages.
+
+    WHY: topic and product-area pages used bullet lists that were hard to scan.
+    WHAT: CSS-only radio tabs with arrow-connected labels switch between tables.
+    """
+    sorted_years = sorted(
+        year_groups,
+        key=lambda year: term_sort_key_for_year(year, year_groups[year]),
+    )
+    # Oldest-to-newest reads as a progressing timeline left to right.
+    timeline_years = list(reversed(sorted_years))
+    total_papers = sum(len(year_papers) for year_papers in year_groups.values())
+    radio_name = f"{filter_name}-year-filter"
+
+    lines: list[str] = [
+        '<section class="research-year-filter" aria-labelledby="research-year-filter-title">',
+        '  <h2 id="research-year-filter-title">Publications</h2>',
+        '  <div class="research-year-filter__shell">',
+        '    <div class="research-year-timeline" role="tablist" aria-label="Filter publications by year">',
+        '      <label class="research-year-tab">',
+        f'        <input type="radio" class="research-year-filter__input" name="{html.escape(radio_name, quote=True)}" value="all" checked>',
+        '        <span class="research-year-tab__label">All</span>',
+        f'        <span class="research-year-tab__count">{total_papers}</span>',
+        '      </label>',
+    ]
+
+    for year in timeline_years:
+        count = len(year_groups[year])
+        lines.extend([
+            '      <span class="research-year-tab__arrow" aria-hidden="true">›</span>',
+            '      <label class="research-year-tab">',
+            f'        <input type="radio" class="research-year-filter__input" name="{html.escape(radio_name, quote=True)}" value="{html.escape(year.slug, quote=True)}">',
+            f'        <span class="research-year-tab__label">{html.escape(year.label)}</span>',
+            f'        <span class="research-year-tab__count">{count}</span>',
+            '      </label>',
+        ])
+
+    lines.extend([
+        '    </div>',
+        '    <div class="research-year-filter__panels">',
+    ])
+
+    all_papers = [paper for year in sorted_years for paper in year_groups[year]]
+    lines.append('      <div class="research-year-panel" data-year="all">')
+    lines.extend(f"        {line}" if line else "        " for line in render_paper_table(all_papers, base_prefix=base_prefix))
+    lines.append('      </div>')
+
+    for year in sorted_years:
+        lines.append(f'      <div class="research-year-panel" data-year="{html.escape(year.slug, quote=True)}">')
+        lines.extend(f"        {line}" if line else "        " for line in render_paper_table(year_groups[year], base_prefix=base_prefix))
+        lines.append('      </div>')
+
+    lines.extend([
+        '    </div>',
+        '  </div>',
+        '</section>',
+    ])
+    return lines
 
 
 def render_counted_links(

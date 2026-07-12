@@ -2110,6 +2110,146 @@ html[data-theme='dark'] .front-page .future {
   }
 }
 
+/* Topic/product-area taxonomy pages: horizontal year tabs with arrow connectors.
+   WHY: users asked for year filtering styled like progressing tabs instead of lists.
+   WHAT: CSS-only radio tabs switch between publication tables per year. */
+.knowledge-content .research-year-filter {
+  margin-top: clamp(24px, 3vw, 36px);
+}
+
+.knowledge-content .research-year-filter h2 {
+  margin: 0 0 clamp(14px, 2vw, 20px);
+}
+
+.knowledge-content .research-year-filter__shell {
+  display: grid;
+  gap: clamp(16px, 2vw, 24px);
+}
+
+.knowledge-content .research-year-timeline {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 0;
+  padding: 10px 12px;
+  border: 1px solid var(--knowledge-line);
+  border-radius: 16px;
+  background: var(--knowledge-soft);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+}
+
+.knowledge-content .research-year-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--knowledge-ink);
+  font-size: 0.92rem;
+  font-weight: 750;
+  line-height: 1.1;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.knowledge-content .research-year-tab__label {
+  pointer-events: none;
+}
+
+.knowledge-content .research-year-tab__count {
+  color: var(--knowledge-muted);
+  font-size: 0.84rem;
+  font-weight: 650;
+  pointer-events: none;
+}
+
+.knowledge-content .research-year-tab__arrow {
+  flex: 0 0 auto;
+  color: color-mix(in srgb, var(--knowledge-muted) 72%, var(--knowledge-ink) 28%);
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1;
+  padding: 0 4px;
+  user-select: none;
+}
+
+.knowledge-content .research-year-filter__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.knowledge-content .research-year-tab:has(.research-year-filter__input:checked) {
+  border-color: var(--brand-yellow);
+  background: var(--brand-yellow);
+  color: black;
+}
+
+.knowledge-content .research-year-tab:has(.research-year-filter__input:checked) .research-year-tab__count {
+  color: color-mix(in srgb, black 58%, transparent);
+}
+
+.knowledge-content .research-year-tab:hover,
+.knowledge-content .research-year-tab:focus-within {
+  border-color: var(--knowledge-line);
+  background: var(--knowledge-paper);
+}
+
+.knowledge-content .research-year-tab:has(.research-year-filter__input:checked):hover,
+.knowledge-content .research-year-tab:has(.research-year-filter__input:checked):focus-within {
+  border-color: var(--brand-yellow);
+  background: var(--brand-yellow);
+}
+
+.knowledge-content .research-year-panel {
+  display: none;
+}
+
+.knowledge-content .research-year-filter__shell:has(.research-year-filter__input[value="all"]:checked) .research-year-panel[data-year="all"],
+.knowledge-content .research-year-filter__shell:has(.research-year-filter__input[value="2009"]:checked) .research-year-panel[data-year="2009"],
+.knowledge-content .research-year-filter__shell:has(.research-year-filter__input[value="2011"]:checked) .research-year-panel[data-year="2011"],
+.knowledge-content .research-year-filter__shell:has(.research-year-filter__input[value="2013"]:checked) .research-year-panel[data-year="2013"],
+.knowledge-content .research-year-filter__shell:has(.research-year-filter__input[value="2015"]:checked) .research-year-panel[data-year="2015"],
+.knowledge-content .research-year-filter__shell:has(.research-year-filter__input[value="2016"]:checked) .research-year-panel[data-year="2016"],
+.knowledge-content .research-year-filter__shell:has(.research-year-filter__input[value="2017"]:checked) .research-year-panel[data-year="2017"],
+.knowledge-content .research-year-filter__shell:has(.research-year-filter__input[value="2018"]:checked) .research-year-panel[data-year="2018"],
+.knowledge-content .research-year-filter__shell:has(.research-year-filter__input[value="2019"]:checked) .research-year-panel[data-year="2019"],
+.knowledge-content .research-year-filter__shell:has(.research-year-filter__input[value="2020"]:checked) .research-year-panel[data-year="2020"],
+.knowledge-content .research-year-filter__shell:has(.research-year-filter__input[value="2021"]:checked) .research-year-panel[data-year="2021"],
+.knowledge-content .research-year-filter__shell:has(.research-year-filter__input[value="2022"]:checked) .research-year-panel[data-year="2022"],
+.knowledge-content .research-year-filter__shell:has(.research-year-filter__input[value="2023"]:checked) .research-year-panel[data-year="2023"],
+.knowledge-content .research-year-filter__shell:has(.research-year-filter__input[value="2024"]:checked) .research-year-panel[data-year="2024"],
+.knowledge-content .research-year-filter__shell:has(.research-year-filter__input[value="2025"]:checked) .research-year-panel[data-year="2025"],
+.knowledge-content .research-year-filter__shell:has(.research-year-filter__input[value="2026"]:checked) .research-year-panel[data-year="2026"],
+.knowledge-content .research-year-filter__shell:has(.research-year-filter__input[value="unknown"]:checked) .research-year-panel[data-year="unknown"] {
+  display: block;
+}
+
+.knowledge-content .research-year-panel .research-publications-table-wrap {
+  margin-top: 0;
+}
+
+@media (max-width: 960px) {
+  .knowledge-content .research-year-timeline {
+    border-radius: 14px;
+  }
+
+  .knowledge-content .research-year-tab {
+    padding: 9px 12px;
+    font-size: 0.88rem;
+  }
+}
+
 .knowledge-content .research-asset-card {
   display: grid;
   align-content: start;
