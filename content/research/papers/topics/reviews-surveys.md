@@ -9,14 +9,14 @@ layout: research
 ## Summary
 
 - Topic key: `reviews-surveys`
-- Total papers: 19
+- Total papers: 20
 - [Research papers hub](../index.md)
 - [All topics](index.md)
 
 ## Product areas
 
 - [Colony Health](../product-areas/colony-health.md) (4)
-- [Monitoring Platform](../product-areas/monitoring-platform.md) (19)
+- [Monitoring Platform](../product-areas/monitoring-platform.md) (20)
 
 <section class="research-year-filter" aria-labelledby="research-year-filter-title">
   <h2 id="research-year-filter-title">Publications</h2>
@@ -25,7 +25,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="reviews-surveys-year-filter" value="all" checked>
         <span class="research-year-tab__label">All</span>
-        <span class="research-year-tab__count">19</span>
+        <span class="research-year-tab__count">20</span>
       </label>
       <span class="research-year-tab__arrow" aria-hidden="true">›</span>
       <label class="research-year-tab">
@@ -79,7 +79,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="reviews-surveys-year-filter" value="2025">
         <span class="research-year-tab__label">2025</span>
-        <span class="research-year-tab__count">3</span>
+        <span class="research-year-tab__count">4</span>
       </label>
       <span class="research-year-tab__arrow" aria-hidden="true">›</span>
       <label class="research-year-tab">
@@ -104,6 +104,7 @@ layout: research
         <tr><td><a href="/research/papers/from-hive-sensors-to-environmental-dna-toward-a-systems-biology-framework-for-honeybee-based-early-warning-of-colony-and-ecosystem-health/">From Hive Sensors to Environmental DNA: Toward a Systems Biology Framework for Honeybee-Based Early Warning of Colony and Ecosystem Health</a></td><td>2026</td><td>🇨🇳 Yangzhou University; 🇸🇦 Imam Mohammad Ibn Saud Islamic University</td></tr>
         <tr><td><a href="/research/papers/transforming-beekeeping-through-technology-a-systematic-review-of-precision-beekeeping/">Transforming Beekeeping Through Technology: A Systematic Review of Precision Beekeeping</a></td><td>2026</td><td>🇧🇳 Universiti Brunei Darussalam; 🇱🇰 Uva Wellassa University</td></tr>
         <tr><td><a href="/research/papers/a-survey-of-tinyml-applications-in-beekeeping-for-hive-monitoring-and-management/">A Survey of TinyML Applications in Beekeeping for Hive Monitoring and Management</a></td><td>2025</td><td>🇦🇺 University of Technology Sydney; 🇦🇺 BeeSTAR</td></tr>
+        <tr><td><a href="/research/papers/beekeeping-in-the-digital-age-prospects-and-pitfalls-of-hive-sensors/">Beekeeping in the digital age: prospects and pitfalls of hive sensors in commercial beekeeping</a></td><td>2025</td><td>🇦🇺 University of Melbourne; 🇦🇺 La Trobe University; 🇦🇺 ANU Research School of Biology</td></tr>
         <tr><td><a href="/research/papers/buzzing-with-intelligence-a-systematic-review-of-smartbeehive-technologies/">Buzzing with Intelligence: A Systematic Review of Smart Beehive Technologies</a></td><td>2025</td><td>🇭🇷 University of Split</td></tr>
         <tr><td><a href="/research/papers/iot-and-machine-learning-techniques-for-precision-beekeeping-a-review/">IoT and Machine Learning Techniques for Precision Beekeeping:A Review</a></td><td>2025</td><td>🇺🇬 Makerere University; 🇹🇿 Dar es Salaam Institute of Technology</td></tr>
         <tr><td><a href="/research/papers/advances-in-beehive-monitoring-systems-low-cost-integrating-sensor-technology-for-improved-apiculture-management/">Advances in Beehive Monitoring Systems: Low-Cost Integrating Sensor Technology for Improved Apiculture Management</a></td><td>2024</td><td>🇷🇴 Research and Development Institute for Wildlife and Mountain Resources Miercurea Ciuc; 🇷🇴 Sapientia Hungarian University of Transylvania; 🇷🇴 National Institute for Research and Development in Environmental Protection; 🇷🇴 National Institute for Research and Development in Forestry Marin Dracea</td></tr>
@@ -153,6 +154,7 @@ layout: research
         </thead>
         <tbody>
         <tr><td><a href="/research/papers/a-survey-of-tinyml-applications-in-beekeeping-for-hive-monitoring-and-management/">A Survey of TinyML Applications in Beekeeping for Hive Monitoring and Management</a></td><td>2025</td><td>🇦🇺 University of Technology Sydney; 🇦🇺 BeeSTAR</td></tr>
+        <tr><td><a href="/research/papers/beekeeping-in-the-digital-age-prospects-and-pitfalls-of-hive-sensors/">Beekeeping in the digital age: prospects and pitfalls of hive sensors in commercial beekeeping</a></td><td>2025</td><td>🇦🇺 University of Melbourne; 🇦🇺 La Trobe University; 🇦🇺 ANU Research School of Biology</td></tr>
         <tr><td><a href="/research/papers/buzzing-with-intelligence-a-systematic-review-of-smartbeehive-technologies/">Buzzing with Intelligence: A Systematic Review of Smart Beehive Technologies</a></td><td>2025</td><td>🇭🇷 University of Split</td></tr>
         <tr><td><a href="/research/papers/iot-and-machine-learning-techniques-for-precision-beekeeping-a-review/">IoT and Machine Learning Techniques for Precision Beekeeping:A Review</a></td><td>2025</td><td>🇺🇬 Makerere University; 🇹🇿 Dar es Salaam Institute of Technology</td></tr>
         </tbody>

@@ -27,11 +27,11 @@ This section tracks external academic work relevant to digital beekeeping, bee h
     </a>
     <a class="research-paper-filter-card" href="topics/">
       <span class="research-paper-filter-card__icon" aria-hidden="true">🏷️</span>
-      <span class="research-paper-filter-card__body"><strong>Topics</strong><small>Filter by 18 research topics.</small></span>
+      <span class="research-paper-filter-card__body"><strong>Topics</strong><small>Filter by 17 research topics.</small></span>
     </a>
     <a class="research-paper-filter-card" href="years/">
       <span class="research-paper-filter-card__icon" aria-hidden="true">📅</span>
-      <span class="research-paper-filter-card__body"><strong>Years</strong><small>Filter by 16 publication years.</small></span>
+      <span class="research-paper-filter-card__body"><strong>Years</strong><small>Filter by 15 publication years.</small></span>
     </a>
     <a class="research-paper-filter-card" href="product-areas/">
       <span class="research-paper-filter-card__icon" aria-hidden="true">🧩</span>

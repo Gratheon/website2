@@ -9,7 +9,7 @@ layout: research
 ## Summary
 
 - Topic key: `iot-sensors`
-- Total papers: 60
+- Total papers: 61
 - [Research papers hub](../index.md)
 - [All topics](index.md)
 
@@ -18,7 +18,7 @@ layout: research
 - [Colony Health](../product-areas/colony-health.md) (19)
 - [Edge Device](../product-areas/edge-device.md) (1)
 - [Gate Tracker](../product-areas/gate-tracker.md) (3)
-- [Monitoring Platform](../product-areas/monitoring-platform.md) (54)
+- [Monitoring Platform](../product-areas/monitoring-platform.md) (55)
 
 <section class="research-year-filter" aria-labelledby="research-year-filter-title">
   <h2 id="research-year-filter-title">Publications</h2>
@@ -27,7 +27,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="iot-sensors-year-filter" value="all" checked>
         <span class="research-year-tab__label">All</span>
-        <span class="research-year-tab__count">60</span>
+        <span class="research-year-tab__count">61</span>
       </label>
       <span class="research-year-tab__arrow" aria-hidden="true">›</span>
       <label class="research-year-tab">
@@ -93,7 +93,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="iot-sensors-year-filter" value="2025">
         <span class="research-year-tab__label">2025</span>
-        <span class="research-year-tab__count">9</span>
+        <span class="research-year-tab__count">10</span>
       </label>
       <span class="research-year-tab__arrow" aria-hidden="true">›</span>
       <label class="research-year-tab">
@@ -126,6 +126,7 @@ layout: research
         <tr><td><a href="/research/papers/transforming-beekeeping-through-technology-a-systematic-review-of-precision-beekeeping/">Transforming Beekeeping Through Technology: A Systematic Review of Precision Beekeeping</a></td><td>2026</td><td>🇧🇳 Universiti Brunei Darussalam; 🇱🇰 Uva Wellassa University</td></tr>
         <tr><td><a href="/research/papers/a-survey-of-tinyml-applications-in-beekeeping-for-hive-monitoring-and-management/">A Survey of TinyML Applications in Beekeeping for Hive Monitoring and Management</a></td><td>2025</td><td>🇦🇺 University of Technology Sydney; 🇦🇺 BeeSTAR</td></tr>
         <tr><td><a href="/research/papers/apis-mellifera-bee-verification-with-iot-and-graph-neural-network/">Apis mellifera Bee Verification with IoT and Graph Neural Network</a></td><td>2025</td><td>🇲🇽 Instituto Tecnológico El Llano Aguascalientes</td></tr>
+        <tr><td><a href="/research/papers/beekeeping-in-the-digital-age-prospects-and-pitfalls-of-hive-sensors/">Beekeeping in the digital age: prospects and pitfalls of hive sensors in commercial beekeeping</a></td><td>2025</td><td>🇦🇺 University of Melbourne; 🇦🇺 La Trobe University; 🇦🇺 ANU Research School of Biology</td></tr>
         <tr><td><a href="/research/papers/buzzing-with-intelligence-a-systematic-review-of-smartbeehive-technologies/">Buzzing with Intelligence: A Systematic Review of Smart Beehive Technologies</a></td><td>2025</td><td>🇭🇷 University of Split</td></tr>
         <tr><td><a href="/research/papers/deep-edge-iot-for-acoustic-detection-of-queenless-beehives/">Deep Edge IoT for Acoustic Detection of Queenless Beehives</a></td><td>2025</td><td>🇬🇷 Aristotle University of Thessaloniki</td></tr>
         <tr><td><a href="/research/papers/iot-and-machine-learning-techniques-for-precision-beekeeping-a-review/">IoT and Machine Learning Techniques for Precision Beekeeping:A Review</a></td><td>2025</td><td>🇺🇬 Makerere University; 🇹🇿 Dar es Salaam Institute of Technology</td></tr>
@@ -216,6 +217,7 @@ layout: research
         <tbody>
         <tr><td><a href="/research/papers/a-survey-of-tinyml-applications-in-beekeeping-for-hive-monitoring-and-management/">A Survey of TinyML Applications in Beekeeping for Hive Monitoring and Management</a></td><td>2025</td><td>🇦🇺 University of Technology Sydney; 🇦🇺 BeeSTAR</td></tr>
         <tr><td><a href="/research/papers/apis-mellifera-bee-verification-with-iot-and-graph-neural-network/">Apis mellifera Bee Verification with IoT and Graph Neural Network</a></td><td>2025</td><td>🇲🇽 Instituto Tecnológico El Llano Aguascalientes</td></tr>
+        <tr><td><a href="/research/papers/beekeeping-in-the-digital-age-prospects-and-pitfalls-of-hive-sensors/">Beekeeping in the digital age: prospects and pitfalls of hive sensors in commercial beekeeping</a></td><td>2025</td><td>🇦🇺 University of Melbourne; 🇦🇺 La Trobe University; 🇦🇺 ANU Research School of Biology</td></tr>
         <tr><td><a href="/research/papers/buzzing-with-intelligence-a-systematic-review-of-smartbeehive-technologies/">Buzzing with Intelligence: A Systematic Review of Smart Beehive Technologies</a></td><td>2025</td><td>🇭🇷 University of Split</td></tr>
         <tr><td><a href="/research/papers/deep-edge-iot-for-acoustic-detection-of-queenless-beehives/">Deep Edge IoT for Acoustic Detection of Queenless Beehives</a></td><td>2025</td><td>🇬🇷 Aristotle University of Thessaloniki</td></tr>
         <tr><td><a href="/research/papers/iot-and-machine-learning-techniques-for-precision-beekeeping-a-review/">IoT and Machine Learning Techniques for Precision Beekeeping:A Review</a></td><td>2025</td><td>🇺🇬 Makerere University; 🇹🇿 Dar es Salaam Institute of Technology</td></tr>

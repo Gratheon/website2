@@ -9,17 +9,17 @@ layout: research
 ## Summary
 
 - Product area key: `hive-scanner`
-- Total papers: 20
+- Total papers: 21
 - [Research papers hub](../index.md)
 - [All product areas](index.md)
 
 ## Topics
 
-- [Bee Behaviour](../topics/bee-behaviour.md) (7)
+- [Bee Behaviour](../topics/bee-behaviour.md) (8)
 - [Bee Counting](../topics/bee-counting.md) (1)
 - [Colony Health](../topics/colony-health.md) (3)
-- [Computer Vision](../topics/computer-vision.md) (20)
-- [Datasets Benchmarks](../topics/datasets-benchmarks.md) (4)
+- [Computer Vision](../topics/computer-vision.md) (21)
+- [Datasets Benchmarks](../topics/datasets-benchmarks.md) (5)
 - [Edge AI Energy](../topics/edge-ai-energy.md) (1)
 - [Varroa Health](../topics/varroa-health.md) (3)
 
@@ -30,7 +30,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="hive-scanner-year-filter" value="all" checked>
         <span class="research-year-tab__label">All</span>
-        <span class="research-year-tab__count">20</span>
+        <span class="research-year-tab__count">21</span>
       </label>
       <span class="research-year-tab__arrow" aria-hidden="true">›</span>
       <label class="research-year-tab">
@@ -70,6 +70,12 @@ layout: research
       </label>
       <span class="research-year-tab__arrow" aria-hidden="true">›</span>
       <label class="research-year-tab">
+        <input type="radio" class="research-year-filter__input" name="hive-scanner-year-filter" value="2024">
+        <span class="research-year-tab__label">2024</span>
+        <span class="research-year-tab__count">1</span>
+      </label>
+      <span class="research-year-tab__arrow" aria-hidden="true">›</span>
+      <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="hive-scanner-year-filter" value="2025">
         <span class="research-year-tab__label">2025</span>
         <span class="research-year-tab__count">4</span>
@@ -100,6 +106,7 @@ layout: research
         <tr><td><a href="/research/papers/deep-learning-based-detection-of-honey-storage-areas-in-apismellifera-colonies-for-predicting-physical-parameters-of-honey-via-linear-regression/">Deep Learning-Based Detection of Honey Storage Areas in Apismellifera Colonies for Predicting Physical Parameters of Honey via Linear Regression</a></td><td>2025</td><td>🇹🇭 Chiang Mai University</td></tr>
         <tr><td><a href="/research/papers/fast-accurate-measurement-of-the-worker-populations-of-honey-bee-colonies-using-deep-learning/">Fast, accurate measurement of the worker populations of honey bee colonies using deep learning</a></td><td>2025</td><td>🇺🇸 Arizona State University; 🇺🇸 Texas A&amp;M University–Kingsville</td></tr>
         <tr><td><a href="/research/papers/image-based-honey-bee-larval-viral-and-bacterial-diagnosis-using-machine-learning/">Image-based honey bee larval viral and bacterial diagnosis using machine learning</a></td><td>2025</td><td>🇺🇸 USDA Carl Hayden Bee Research Center; 🇺🇸 University of Arizona; 🇺🇸 Arizona Science Center</td></tr>
+        <tr><td><a href="/research/papers/individual-honey-bee-tracking-in-a-beehive-environment-using-deep-learning-and-kalman-filter/">Individual honey bee tracking in a beehive environment using deep learning and Kalman filter</a></td><td>2024</td><td>🇹🇭 King Mongkut&#x27;s University of Technology Thonburi (KMUTTH)</td></tr>
         <tr><td><a href="/research/papers/recognizing-beehives-health-abnormalities-based-on-mobile-net-deep-learning-model/">Recognizing Beehives’ Health Abnormalities Based on Mobile Net Deep Learning Model</a></td><td>2023</td><td>🇪🇬 Egyptian Russian University; 🇪🇬 Cairo University; 🇪🇬 Tanta University; 🇪🇬 Scientific Research Group in Egypt</td></tr>
         <tr><td><a href="/research/papers/sleap/">SLEAP: A deep learning system for multi-animal pose tracking</a></td><td>2022</td><td>🇺🇸 Princeton University; 🇺🇸 New York University; 🇺🇸 Johns Hopkins University School of Medicine</td></tr>
         <tr><td><a href="/research/papers/deeplabcut-based-daily-behavioural-and-posture-analysis-in-a-cricket/">DeepLabCut-based daily behavioural and posture analysis in a cricket</a></td><td>2021</td><td>🇯🇵 Waseda University</td></tr>
@@ -150,6 +157,22 @@ layout: research
         <tr><td><a href="/research/papers/deep-learning-based-detection-of-honey-storage-areas-in-apismellifera-colonies-for-predicting-physical-parameters-of-honey-via-linear-regression/">Deep Learning-Based Detection of Honey Storage Areas in Apismellifera Colonies for Predicting Physical Parameters of Honey via Linear Regression</a></td><td>2025</td><td>🇹🇭 Chiang Mai University</td></tr>
         <tr><td><a href="/research/papers/fast-accurate-measurement-of-the-worker-populations-of-honey-bee-colonies-using-deep-learning/">Fast, accurate measurement of the worker populations of honey bee colonies using deep learning</a></td><td>2025</td><td>🇺🇸 Arizona State University; 🇺🇸 Texas A&amp;M University–Kingsville</td></tr>
         <tr><td><a href="/research/papers/image-based-honey-bee-larval-viral-and-bacterial-diagnosis-using-machine-learning/">Image-based honey bee larval viral and bacterial diagnosis using machine learning</a></td><td>2025</td><td>🇺🇸 USDA Carl Hayden Bee Research Center; 🇺🇸 University of Arizona; 🇺🇸 Arizona Science Center</td></tr>
+        </tbody>
+        </table>
+        </div>
+      </div>
+      <div class="research-year-panel" data-year="2024">
+        <div class="research-publications-table-wrap">
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/individual-honey-bee-tracking-in-a-beehive-environment-using-deep-learning-and-kalman-filter/">Individual honey bee tracking in a beehive environment using deep learning and Kalman filter</a></td><td>2024</td><td>🇹🇭 King Mongkut&#x27;s University of Technology Thonburi (KMUTTH)</td></tr>
         </tbody>
         </table>
         </div>

@@ -9,14 +9,14 @@ title: "Research topic: Precision Beekeeping"
 ## Summary
 
 - Topic key: `precision-beekeeping`
-- Total papers: 2
+- Total papers: 3
 - [Research papers hub](../index.md)
 - [All topics](index.md)
 
 ## Product areas
 
 - [Colony Health](../product-areas/colony-health.md) (2)
-- [Monitoring Platform](../product-areas/monitoring-platform.md) (2)
+- [Monitoring Platform](../product-areas/monitoring-platform.md) (3)
 
 <section class="research-year-filter" aria-labelledby="research-year-filter-title">
   <h2 id="research-year-filter-title">Publications</h2>
@@ -25,7 +25,13 @@ title: "Research topic: Precision Beekeeping"
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="precision-beekeeping-year-filter" value="all" checked>
         <span class="research-year-tab__label">All</span>
-        <span class="research-year-tab__count">2</span>
+        <span class="research-year-tab__count">3</span>
+      </label>
+      <span class="research-year-tab__arrow" aria-hidden="true">›</span>
+      <label class="research-year-tab">
+        <input type="radio" class="research-year-filter__input" name="precision-beekeeping-year-filter" value="2025">
+        <span class="research-year-tab__label">2025</span>
+        <span class="research-year-tab__count">1</span>
       </label>
       <span class="research-year-tab__arrow" aria-hidden="true">›</span>
       <label class="research-year-tab">
@@ -48,6 +54,7 @@ title: "Research topic: Precision Beekeeping"
         <tbody>
         <tr><td><a href="/research/papers/time-series-dataset-of-honey-bee-colony-dynamics-before-during-and-after-sunflower-pollination/">Time-series dataset of honey bee colony dynamics before, during, and after sunflower pollination</a></td><td>2026</td><td>🇺🇦 AmoHive / Ukraine smart-hive deployment</td></tr>
         <tr><td><a href="/research/papers/transforming-beekeeping-through-technology-a-systematic-review-of-precision-beekeeping/">Transforming Beekeeping Through Technology: A Systematic Review of Precision Beekeeping</a></td><td>2026</td><td>🇧🇳 Universiti Brunei Darussalam; 🇱🇰 Uva Wellassa University</td></tr>
+        <tr><td><a href="/research/papers/beekeeping-in-the-digital-age-prospects-and-pitfalls-of-hive-sensors/">Beekeeping in the digital age: prospects and pitfalls of hive sensors in commercial beekeeping</a></td><td>2025</td><td>🇦🇺 University of Melbourne; 🇦🇺 La Trobe University; 🇦🇺 ANU Research School of Biology</td></tr>
         </tbody>
         </table>
         </div>
@@ -65,6 +72,22 @@ title: "Research topic: Precision Beekeeping"
         <tbody>
         <tr><td><a href="/research/papers/time-series-dataset-of-honey-bee-colony-dynamics-before-during-and-after-sunflower-pollination/">Time-series dataset of honey bee colony dynamics before, during, and after sunflower pollination</a></td><td>2026</td><td>🇺🇦 AmoHive / Ukraine smart-hive deployment</td></tr>
         <tr><td><a href="/research/papers/transforming-beekeeping-through-technology-a-systematic-review-of-precision-beekeeping/">Transforming Beekeeping Through Technology: A Systematic Review of Precision Beekeeping</a></td><td>2026</td><td>🇧🇳 Universiti Brunei Darussalam; 🇱🇰 Uva Wellassa University</td></tr>
+        </tbody>
+        </table>
+        </div>
+      </div>
+      <div class="research-year-panel" data-year="2025">
+        <div class="research-publications-table-wrap">
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/beekeeping-in-the-digital-age-prospects-and-pitfalls-of-hive-sensors/">Beekeeping in the digital age: prospects and pitfalls of hive sensors in commercial beekeeping</a></td><td>2025</td><td>🇦🇺 University of Melbourne; 🇦🇺 La Trobe University; 🇦🇺 ANU Research School of Biology</td></tr>
         </tbody>
         </table>
         </div>

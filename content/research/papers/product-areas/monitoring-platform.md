@@ -9,27 +9,27 @@ layout: research
 ## Summary
 
 - Product area key: `monitoring-platform`
-- Total papers: 71
+- Total papers: 73
 - [Research papers hub](../index.md)
 - [All product areas](index.md)
 
 ## Topics
 
 - [Audio Acoustics](../topics/audio-acoustics.md) (16)
-- [Bee Behaviour](../topics/bee-behaviour.md) (12)
+- [Bee Behaviour](../topics/bee-behaviour.md) (13)
 - [Bee Counting](../topics/bee-counting.md) (1)
 - [Bee Traffic](../topics/bee-traffic.md) (1)
 - [Behavior Recognition](../topics/behavior-recognition.md) (1)
 - [Colony Health](../topics/colony-health.md) (5)
-- [Computer Vision](../topics/computer-vision.md) (19)
+- [Computer Vision](../topics/computer-vision.md) (20)
 - [Datasets](../topics/datasets.md) (2)
-- [Datasets Benchmarks](../topics/datasets-benchmarks.md) (8)
+- [Datasets Benchmarks](../topics/datasets-benchmarks.md) (9)
 - [Edge AI Energy](../topics/edge-ai-energy.md) (11)
-- [IoT Sensors](../topics/iot-sensors.md) (54)
+- [IoT Sensors](../topics/iot-sensors.md) (55)
 - [Pollination Ecology](../topics/pollination-ecology.md) (5)
 - [Pollination Monitoring](../topics/pollination-monitoring.md) (1)
-- [Precision Beekeeping](../topics/precision-beekeeping.md) (2)
-- [Reviews Surveys](../topics/reviews-surveys.md) (19)
+- [Precision Beekeeping](../topics/precision-beekeeping.md) (3)
+- [Reviews Surveys](../topics/reviews-surveys.md) (20)
 - [Varroa Health](../topics/varroa-health.md) (2)
 
 <section class="research-year-filter" aria-labelledby="research-year-filter-title">
@@ -39,7 +39,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="monitoring-platform-year-filter" value="all" checked>
         <span class="research-year-tab__label">All</span>
-        <span class="research-year-tab__count">71</span>
+        <span class="research-year-tab__count">73</span>
       </label>
       <span class="research-year-tab__arrow" aria-hidden="true">›</span>
       <label class="research-year-tab">
@@ -93,13 +93,13 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="monitoring-platform-year-filter" value="2024">
         <span class="research-year-tab__label">2024</span>
-        <span class="research-year-tab__count">10</span>
+        <span class="research-year-tab__count">11</span>
       </label>
       <span class="research-year-tab__arrow" aria-hidden="true">›</span>
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="monitoring-platform-year-filter" value="2025">
         <span class="research-year-tab__label">2025</span>
-        <span class="research-year-tab__count">10</span>
+        <span class="research-year-tab__count">11</span>
       </label>
       <span class="research-year-tab__arrow" aria-hidden="true">›</span>
       <label class="research-year-tab">
@@ -139,6 +139,7 @@ layout: research
         <tr><td><a href="/research/papers/time-series-dataset-of-honey-bee-colony-dynamics-before-during-and-after-sunflower-pollination/">Time-series dataset of honey bee colony dynamics before, during, and after sunflower pollination</a></td><td>2026</td><td>🇺🇦 AmoHive / Ukraine smart-hive deployment</td></tr>
         <tr><td><a href="/research/papers/transforming-beekeeping-through-technology-a-systematic-review-of-precision-beekeeping/">Transforming Beekeeping Through Technology: A Systematic Review of Precision Beekeeping</a></td><td>2026</td><td>🇧🇳 Universiti Brunei Darussalam; 🇱🇰 Uva Wellassa University</td></tr>
         <tr><td><a href="/research/papers/a-survey-of-tinyml-applications-in-beekeeping-for-hive-monitoring-and-management/">A Survey of TinyML Applications in Beekeeping for Hive Monitoring and Management</a></td><td>2025</td><td>🇦🇺 University of Technology Sydney; 🇦🇺 BeeSTAR</td></tr>
+        <tr><td><a href="/research/papers/beekeeping-in-the-digital-age-prospects-and-pitfalls-of-hive-sensors/">Beekeeping in the digital age: prospects and pitfalls of hive sensors in commercial beekeeping</a></td><td>2025</td><td>🇦🇺 University of Melbourne; 🇦🇺 La Trobe University; 🇦🇺 ANU Research School of Biology</td></tr>
         <tr><td><a href="/research/papers/buzzdetect-an-open-source-deep-learning-tool-for-automated-bioacoustic-pollinator-monitoring/">buzzdetect: an open-source deep learning tool for automated bioacoustic pollinator monitoring</a></td><td>2025</td><td>🇺🇸 The Ohio State University; 🇺🇸 Dartmouth College</td></tr>
         <tr><td><a href="/research/papers/buzzing-with-intelligence-a-systematic-review-of-smartbeehive-technologies/">Buzzing with Intelligence: A Systematic Review of Smart Beehive Technologies</a></td><td>2025</td><td>🇭🇷 University of Split</td></tr>
         <tr><td><a href="/research/papers/fast-accurate-measurement-of-the-worker-populations-of-honey-bee-colonies-using-deep-learning/">Fast, accurate measurement of the worker populations of honey bee colonies using deep learning</a></td><td>2025</td><td>🇺🇸 Arizona State University; 🇺🇸 Texas A&amp;M University–Kingsville</td></tr>
@@ -152,6 +153,7 @@ layout: research
         <tr><td><a href="/research/papers/bee-together-joining-bee-audio-datasets-for-hive-extrapolation-in-ai-based-monitoring/">Bee Together: Joining Bee Audio Datasets for Hive Extrapolation in AI-Based Monitoring</a></td><td>2024</td><td>🇫🇷 University of Toulon</td></tr>
         <tr><td><a href="/research/papers/beehive-smart-detector-device-for-the-detection-of-criticalconditions-that-utilize-edge-device-computations-and-deeplearning-inferences/">Beehive Smart Detector Device for the Detection of CriticalConditions That Utilize Edge Device Computations and DeepLearning Inferences</a></td><td>2024</td><td>🇬🇷 University of Ioannina</td></tr>
         <tr><td><a href="/research/papers/current-status-and-future-outlooks-of-precision-beekeeping-systems-and-services/">Current Status and Future Outlooks of Precision Beekeeping Systems and Services</a></td><td>2024</td><td>🇸🇰 Slovak University of Agriculture in Nitra</td></tr>
+        <tr><td><a href="/research/papers/individual-honey-bee-tracking-in-a-beehive-environment-using-deep-learning-and-kalman-filter/">Individual honey bee tracking in a beehive environment using deep learning and Kalman filter</a></td><td>2024</td><td>🇹🇭 King Mongkut&#x27;s University of Technology Thonburi (KMUTTH)</td></tr>
         <tr><td><a href="/research/papers/intelligent-beehive-monitoring-system-based-on-internet-of-things-and-colony-state-analysis/">Intelligent beehive monitoring system based on internet of things and colony state analysis</a></td><td>2024</td><td>🇲🇾 Universiti Teknologi MARA; 🇨🇳 Peking University Shenzhen Graduate School; 🇨🇳 Xiamen University; 🇨🇳 Fujian Agriculture And Forestry University; 🇨🇳 Quanzhou University of Information Engineering</td></tr>
         <tr><td><a href="/research/papers/internet-of-things-smart-beehive-network/">Internet of Things Smart Beehive Network: Homogeneous Data,Modeling, and Forecasting the Honey Robbing Phenomenon</a></td><td>2024</td><td>🇵🇱 Warsaw University of Life Sciences</td></tr>
         <tr><td><a href="/research/papers/iot-embedded-smart-monitoring-system-with-edge-machine-learning-for-beehive-management/">IoT Embedded Smart Monitoring System with Edge Machine Learning for Beehive Management</a></td><td>2024</td><td>🇷🇴 Bucharest University of Economic Studies; 🇷🇴 National Institute for Research &amp; Development in Informatics</td></tr>
@@ -240,6 +242,7 @@ layout: research
         </thead>
         <tbody>
         <tr><td><a href="/research/papers/a-survey-of-tinyml-applications-in-beekeeping-for-hive-monitoring-and-management/">A Survey of TinyML Applications in Beekeeping for Hive Monitoring and Management</a></td><td>2025</td><td>🇦🇺 University of Technology Sydney; 🇦🇺 BeeSTAR</td></tr>
+        <tr><td><a href="/research/papers/beekeeping-in-the-digital-age-prospects-and-pitfalls-of-hive-sensors/">Beekeeping in the digital age: prospects and pitfalls of hive sensors in commercial beekeeping</a></td><td>2025</td><td>🇦🇺 University of Melbourne; 🇦🇺 La Trobe University; 🇦🇺 ANU Research School of Biology</td></tr>
         <tr><td><a href="/research/papers/buzzdetect-an-open-source-deep-learning-tool-for-automated-bioacoustic-pollinator-monitoring/">buzzdetect: an open-source deep learning tool for automated bioacoustic pollinator monitoring</a></td><td>2025</td><td>🇺🇸 The Ohio State University; 🇺🇸 Dartmouth College</td></tr>
         <tr><td><a href="/research/papers/buzzing-with-intelligence-a-systematic-review-of-smartbeehive-technologies/">Buzzing with Intelligence: A Systematic Review of Smart Beehive Technologies</a></td><td>2025</td><td>🇭🇷 University of Split</td></tr>
         <tr><td><a href="/research/papers/fast-accurate-measurement-of-the-worker-populations-of-honey-bee-colonies-using-deep-learning/">Fast, accurate measurement of the worker populations of honey bee colonies using deep learning</a></td><td>2025</td><td>🇺🇸 Arizona State University; 🇺🇸 Texas A&amp;M University–Kingsville</td></tr>
@@ -268,6 +271,7 @@ layout: research
         <tr><td><a href="/research/papers/bee-together-joining-bee-audio-datasets-for-hive-extrapolation-in-ai-based-monitoring/">Bee Together: Joining Bee Audio Datasets for Hive Extrapolation in AI-Based Monitoring</a></td><td>2024</td><td>🇫🇷 University of Toulon</td></tr>
         <tr><td><a href="/research/papers/beehive-smart-detector-device-for-the-detection-of-criticalconditions-that-utilize-edge-device-computations-and-deeplearning-inferences/">Beehive Smart Detector Device for the Detection of CriticalConditions That Utilize Edge Device Computations and DeepLearning Inferences</a></td><td>2024</td><td>🇬🇷 University of Ioannina</td></tr>
         <tr><td><a href="/research/papers/current-status-and-future-outlooks-of-precision-beekeeping-systems-and-services/">Current Status and Future Outlooks of Precision Beekeeping Systems and Services</a></td><td>2024</td><td>🇸🇰 Slovak University of Agriculture in Nitra</td></tr>
+        <tr><td><a href="/research/papers/individual-honey-bee-tracking-in-a-beehive-environment-using-deep-learning-and-kalman-filter/">Individual honey bee tracking in a beehive environment using deep learning and Kalman filter</a></td><td>2024</td><td>🇹🇭 King Mongkut&#x27;s University of Technology Thonburi (KMUTTH)</td></tr>
         <tr><td><a href="/research/papers/intelligent-beehive-monitoring-system-based-on-internet-of-things-and-colony-state-analysis/">Intelligent beehive monitoring system based on internet of things and colony state analysis</a></td><td>2024</td><td>🇲🇾 Universiti Teknologi MARA; 🇨🇳 Peking University Shenzhen Graduate School; 🇨🇳 Xiamen University; 🇨🇳 Fujian Agriculture And Forestry University; 🇨🇳 Quanzhou University of Information Engineering</td></tr>
         <tr><td><a href="/research/papers/internet-of-things-smart-beehive-network/">Internet of Things Smart Beehive Network: Homogeneous Data,Modeling, and Forecasting the Honey Robbing Phenomenon</a></td><td>2024</td><td>🇵🇱 Warsaw University of Life Sciences</td></tr>
         <tr><td><a href="/research/papers/iot-embedded-smart-monitoring-system-with-edge-machine-learning-for-beehive-management/">IoT Embedded Smart Monitoring System with Edge Machine Learning for Beehive Management</a></td><td>2024</td><td>🇷🇴 Bucharest University of Economic Studies; 🇷🇴 National Institute for Research &amp; Development in Informatics</td></tr>

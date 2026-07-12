@@ -15,8 +15,8 @@ Browse research papers by publication year.
 Years:
 
 - [2026](2026.md) (22)
-- [2025](2025.md) (19)
-- [2024](2024.md) (18)
+- [2025](2025.md) (20)
+- [2024](2024.md) (19)
 - [2023](2023.md) (22)
 - [2022](2022.md) (11)
 - [2021](2021.md) (12)
@@ -29,5 +29,4 @@ Years:
 - [2013](2013.md) (1)
 - [2011](2011.md) (1)
 - [2009](2009.md) (1)
-- [Unknown year](unknown.md) (2)
 <!-- GENERATED RESEARCH INDEX:END -->

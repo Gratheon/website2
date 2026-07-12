@@ -9,7 +9,7 @@ layout: research
 ## Summary
 
 - Topic key: `bee-behaviour`
-- Total papers: 53
+- Total papers: 54
 - [Research papers hub](../index.md)
 - [All topics](index.md)
 
@@ -18,8 +18,8 @@ layout: research
 - [Colony Health](../product-areas/colony-health.md) (14)
 - [Edge Device](../product-areas/edge-device.md) (1)
 - [Gate Tracker](../product-areas/gate-tracker.md) (21)
-- [Hive Scanner](../product-areas/hive-scanner.md) (7)
-- [Monitoring Platform](../product-areas/monitoring-platform.md) (12)
+- [Hive Scanner](../product-areas/hive-scanner.md) (8)
+- [Monitoring Platform](../product-areas/monitoring-platform.md) (13)
 - [Robotics](../product-areas/robotics.md) (6)
 
 <section class="research-year-filter" aria-labelledby="research-year-filter-title">
@@ -29,7 +29,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="bee-behaviour-year-filter" value="all" checked>
         <span class="research-year-tab__label">All</span>
-        <span class="research-year-tab__count">53</span>
+        <span class="research-year-tab__count">54</span>
       </label>
       <span class="research-year-tab__arrow" aria-hidden="true">›</span>
       <label class="research-year-tab">
@@ -107,7 +107,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="bee-behaviour-year-filter" value="2024">
         <span class="research-year-tab__label">2024</span>
-        <span class="research-year-tab__count">4</span>
+        <span class="research-year-tab__count">5</span>
       </label>
       <span class="research-year-tab__arrow" aria-hidden="true">›</span>
       <label class="research-year-tab">
@@ -146,6 +146,7 @@ layout: research
         <tr><td><a href="/research/papers/visual-recognition-of-honeybee-behavior-patterns-at-the-hive-entrance/">Visual recognition of honeybee behavior patterns at the hive entrance</a></td><td>2025</td><td>🇱🇹 Vilnius Gediminas Technical University</td></tr>
         <tr><td><a href="/research/papers/autonomous-tracking-of-honey-bee-behaviors-over-long-term-periods-with-cooperating-robots/">Autonomous tracking of honey bee behaviors over long-term periods with cooperating robots</a></td><td>2024</td><td>🇨🇿 Czech Technical University; 🇦🇹 University of Graz; 🇬🇧 Durham University; 🇹🇷 Middle East Technical University</td></tr>
         <tr><td><a href="/research/papers/honey-bulk-dna-metagenomic-analysis-to-identify-honey-biological/">Honey bulk DNA metagenomic analysis to identify honey biological</a></td><td>2024</td><td>🇪🇪 Celvia CC AS; 🇪🇪 University of Tartu; 🇸🇪 Karolinska University Hospital</td></tr>
+        <tr><td><a href="/research/papers/individual-honey-bee-tracking-in-a-beehive-environment-using-deep-learning-and-kalman-filter/">Individual honey bee tracking in a beehive environment using deep learning and Kalman filter</a></td><td>2024</td><td>🇹🇭 King Mongkut&#x27;s University of Technology Thonburi (KMUTTH)</td></tr>
         <tr><td><a href="/research/papers/intellibeehive-an-automated-honey-bee-pollen-and-varroa-destructor-monitoring-system/">IntelliBeeHive: An Automated Honey Bee, Pollen, and Varroa Destructor Monitoring System</a></td><td>2024</td><td>🇺🇸 University of Texas Rio Grande Valley</td></tr>
         <tr><td><a href="/research/papers/keypoint-based-bee-orientation-estimation-and-ramp-detection-at-the-hive-entrance-for-bee-behavior-identification-system/">Keypoint-Based Bee Orientation Estimation and Ramp Detection at the Hive Entrance for Bee Behavior Identification System</a></td><td>2024</td><td>🇱🇹 Vilnius Gediminas Technical University</td></tr>
         <tr><td><a href="/research/papers/ambient-electromagnetic-radiation-as-a-predictor-of-honey-bee-traffic/">Ambient Electromagnetic Radiation as a Predictor of Honey Bee (Apis mellifera) Traffic in Linear and Non-Linear Regression: Numerical Stability, Physical Time and Energy Efficiency</a></td><td>2023</td><td>🇺🇸 Utah State University</td></tr>
@@ -244,6 +245,7 @@ layout: research
         <tbody>
         <tr><td><a href="/research/papers/autonomous-tracking-of-honey-bee-behaviors-over-long-term-periods-with-cooperating-robots/">Autonomous tracking of honey bee behaviors over long-term periods with cooperating robots</a></td><td>2024</td><td>🇨🇿 Czech Technical University; 🇦🇹 University of Graz; 🇬🇧 Durham University; 🇹🇷 Middle East Technical University</td></tr>
         <tr><td><a href="/research/papers/honey-bulk-dna-metagenomic-analysis-to-identify-honey-biological/">Honey bulk DNA metagenomic analysis to identify honey biological</a></td><td>2024</td><td>🇪🇪 Celvia CC AS; 🇪🇪 University of Tartu; 🇸🇪 Karolinska University Hospital</td></tr>
+        <tr><td><a href="/research/papers/individual-honey-bee-tracking-in-a-beehive-environment-using-deep-learning-and-kalman-filter/">Individual honey bee tracking in a beehive environment using deep learning and Kalman filter</a></td><td>2024</td><td>🇹🇭 King Mongkut&#x27;s University of Technology Thonburi (KMUTTH)</td></tr>
         <tr><td><a href="/research/papers/intellibeehive-an-automated-honey-bee-pollen-and-varroa-destructor-monitoring-system/">IntelliBeeHive: An Automated Honey Bee, Pollen, and Varroa Destructor Monitoring System</a></td><td>2024</td><td>🇺🇸 University of Texas Rio Grande Valley</td></tr>
         <tr><td><a href="/research/papers/keypoint-based-bee-orientation-estimation-and-ramp-detection-at-the-hive-entrance-for-bee-behavior-identification-system/">Keypoint-Based Bee Orientation Estimation and Ramp Detection at the Hive Entrance for Bee Behavior Identification System</a></td><td>2024</td><td>🇱🇹 Vilnius Gediminas Technical University</td></tr>
         </tbody>

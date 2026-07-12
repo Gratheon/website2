@@ -12,8 +12,8 @@ hideToc: true
   <p class="research-card-meta">142 paper notes</p>
   <p>This bibliography links to individual paper notes kept at their existing URLs under <code>/research/papers/</code>.</p>
   <div class="research-publication-filter-links" aria-label="Alternative filters">
-    <a href="../topics/">🏷️ Topics <span>18</span></a>
-    <a href="../years/">📅 Years <span>16</span></a>
+    <a href="../topics/">🏷️ Topics <span>17</span></a>
+    <a href="../years/">📅 Years <span>15</span></a>
     <a href="../product-areas/">🧩 Product areas <span>6</span></a>
     <a href="../">← Research papers hub</a>
   </div>
@@ -57,6 +57,7 @@ hideToc: true
 <tr><td><a href="/research/papers/an-ai-based-digital-scanner-for-varroa-destructor-detection-in-beekeeping/">An AI-Based Digital Scanner for Varroa destructor Detection in Beekeeping</a></td><td>2025</td><td>🇮🇹 Council for Agricultural Research and Economics (CREA) – Research Centre for Engineering and Agro-Food Processing, Monterotondo; 🇮🇹 Council for Agricultural Research and Economics (CREA) – Research Centre for Agriculture and Environment, Bologna; 🇷🇸 University of Novi Sad</td></tr>
 <tr><td><a href="/research/papers/an-ai-based-open-source-software-for-varroa-mite-fall-analysis-in-honeybee-colonies/">An AI-Based Open-Source Software for Varroa Mite Fall Analysis in Honeybee Colonies</a></td><td>2025</td><td>🇪🇸 University of Zaragoza; 🇪🇸 University of La Rioja; 🇪🇸 University of Valencia</td></tr>
 <tr><td><a href="/research/papers/apis-mellifera-bee-verification-with-iot-and-graph-neural-network/">Apis mellifera Bee Verification with IoT and Graph Neural Network</a></td><td>2025</td><td>🇲🇽 Instituto Tecnológico El Llano Aguascalientes</td></tr>
+<tr><td><a href="/research/papers/beekeeping-in-the-digital-age-prospects-and-pitfalls-of-hive-sensors/">Beekeeping in the digital age: prospects and pitfalls of hive sensors in commercial beekeeping</a></td><td>2025</td><td>🇦🇺 University of Melbourne; 🇦🇺 La Trobe University; 🇦🇺 ANU Research School of Biology</td></tr>
 <tr><td><a href="/research/papers/buzzdetect-an-open-source-deep-learning-tool-for-automated-bioacoustic-pollinator-monitoring/">buzzdetect: an open-source deep learning tool for automated bioacoustic pollinator monitoring</a></td><td>2025</td><td>🇺🇸 The Ohio State University; 🇺🇸 Dartmouth College</td></tr>
 <tr><td><a href="/research/papers/buzzing-with-intelligence-a-systematic-review-of-smartbeehive-technologies/">Buzzing with Intelligence: A Systematic Review of Smart Beehive Technologies</a></td><td>2025</td><td>🇭🇷 University of Split</td></tr>
 <tr><td><a href="/research/papers/deep-edge-iot-for-acoustic-detection-of-queenless-beehives/">Deep Edge IoT for Acoustic Detection of Queenless Beehives</a></td><td>2025</td><td>🇬🇷 Aristotle University of Thessaloniki</td></tr>
@@ -78,6 +79,7 @@ hideToc: true
 <tr><td><a href="/research/papers/beehive-smart-detector-device-for-the-detection-of-criticalconditions-that-utilize-edge-device-computations-and-deeplearning-inferences/">Beehive Smart Detector Device for the Detection of CriticalConditions That Utilize Edge Device Computations and DeepLearning Inferences</a></td><td>2024</td><td>🇬🇷 University of Ioannina</td></tr>
 <tr><td><a href="/research/papers/current-status-and-future-outlooks-of-precision-beekeeping-systems-and-services/">Current Status and Future Outlooks of Precision Beekeeping Systems and Services</a></td><td>2024</td><td>🇸🇰 Slovak University of Agriculture in Nitra</td></tr>
 <tr><td><a href="/research/papers/honey-bulk-dna-metagenomic-analysis-to-identify-honey-biological/">Honey bulk DNA metagenomic analysis to identify honey biological</a></td><td>2024</td><td>🇪🇪 Celvia CC AS; 🇪🇪 University of Tartu; 🇸🇪 Karolinska University Hospital</td></tr>
+<tr><td><a href="/research/papers/individual-honey-bee-tracking-in-a-beehive-environment-using-deep-learning-and-kalman-filter/">Individual honey bee tracking in a beehive environment using deep learning and Kalman filter</a></td><td>2024</td><td>🇹🇭 King Mongkut&#x27;s University of Technology Thonburi (KMUTTH)</td></tr>
 <tr><td><a href="/research/papers/intellibeehive-an-automated-honey-bee-pollen-and-varroa-destructor-monitoring-system/">IntelliBeeHive: An Automated Honey Bee, Pollen, and Varroa Destructor Monitoring System</a></td><td>2024</td><td>🇺🇸 University of Texas Rio Grande Valley</td></tr>
 <tr><td><a href="/research/papers/intelligent-beehive-monitoring-system-based-on-internet-of-things-and-colony-state-analysis/">Intelligent beehive monitoring system based on internet of things and colony state analysis</a></td><td>2024</td><td>🇲🇾 Universiti Teknologi MARA; 🇨🇳 Peking University Shenzhen Graduate School; 🇨🇳 Xiamen University; 🇨🇳 Fujian Agriculture And Forestry University; 🇨🇳 Quanzhou University of Information Engineering</td></tr>
 <tr><td><a href="/research/papers/internet-of-things-smart-beehive-network/">Internet of Things Smart Beehive Network: Homogeneous Data,Modeling, and Forecasting the Honey Robbing Phenomenon</a></td><td>2024</td><td>🇵🇱 Warsaw University of Life Sciences</td></tr>
@@ -171,8 +173,6 @@ hideToc: true
 <tr><td><a href="/research/papers/reception-and-learning-of-electric-fields-in-bees/">Reception and learning of electric fields in bees</a></td><td>2013</td><td>🇩🇪 Freie Universität Berlin</td></tr>
 <tr><td><a href="/research/papers/analysis-of-the-waggle-dance-motion-of-honeybees-for-the-design-of-a-biomimetic-honeybee-robot/">Analysis of the Waggle Dance Motion of Honeybees for the Design of a Biomimetic Honeybee Robot</a></td><td>2011</td><td>🇩🇪 Freie Universität Berlin; 🇬🇧 University of Cambridge</td></tr>
 <tr><td><a href="/research/papers/biodiversity-conservation-and-current-threats-to-european-honeybees/">Biodiversity, conservation and current threats to European honeybees</a></td><td>2009</td><td>🇪🇸 Universidad de Murcia; 🇩🇪 Martin-Luther-Universität Halle-Wittenberg; 🇮🇹 CRA-API</td></tr>
-<tr><td><a href="/research/papers/beekeeping-in-the-digital-age-prospects-and-pitfalls-of-hive-sensors/">Beekeeping in the digital age - prospects and pitfalls of hive sensors</a></td><td>Unknown year</td><td></td></tr>
-<tr><td><a href="/research/papers/individual-honey-bee-tracking-in-a-beehive-environment-using-deep-learning-and-kalman-filter/">Individual honey bee tracking in a beehive environment using deep learning and Kalman filter</a></td><td>Unknown year</td><td></td></tr>
 </tbody>
 </table>
 </div>

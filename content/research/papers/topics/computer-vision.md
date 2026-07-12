@@ -9,7 +9,7 @@ layout: research
 ## Summary
 
 - Topic key: `computer-vision`
-- Total papers: 69
+- Total papers: 70
 - [Research papers hub](../index.md)
 - [All topics](index.md)
 
@@ -18,8 +18,8 @@ layout: research
 - [Colony Health](../product-areas/colony-health.md) (18)
 - [Edge Device](../product-areas/edge-device.md) (1)
 - [Gate Tracker](../product-areas/gate-tracker.md) (26)
-- [Hive Scanner](../product-areas/hive-scanner.md) (20)
-- [Monitoring Platform](../product-areas/monitoring-platform.md) (19)
+- [Hive Scanner](../product-areas/hive-scanner.md) (21)
+- [Monitoring Platform](../product-areas/monitoring-platform.md) (20)
 - [Robotics](../product-areas/robotics.md) (2)
 
 <section class="research-year-filter" aria-labelledby="research-year-filter-title">
@@ -29,7 +29,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="computer-vision-year-filter" value="all" checked>
         <span class="research-year-tab__label">All</span>
-        <span class="research-year-tab__count">69</span>
+        <span class="research-year-tab__count">70</span>
       </label>
       <span class="research-year-tab__arrow" aria-hidden="true">›</span>
       <label class="research-year-tab">
@@ -89,7 +89,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="computer-vision-year-filter" value="2024">
         <span class="research-year-tab__label">2024</span>
-        <span class="research-year-tab__count">9</span>
+        <span class="research-year-tab__count">10</span>
       </label>
       <span class="research-year-tab__arrow" aria-hidden="true">›</span>
       <label class="research-year-tab">
@@ -139,6 +139,7 @@ layout: research
         <tr><td><a href="/research/papers/autonomous-tracking-of-honey-bee-behaviors-over-long-term-periods-with-cooperating-robots/">Autonomous tracking of honey bee behaviors over long-term periods with cooperating robots</a></td><td>2024</td><td>🇨🇿 Czech Technical University; 🇦🇹 University of Graz; 🇬🇧 Durham University; 🇹🇷 Middle East Technical University</td></tr>
         <tr><td><a href="/research/papers/beehive-smart-detector-device-for-the-detection-of-criticalconditions-that-utilize-edge-device-computations-and-deeplearning-inferences/">Beehive Smart Detector Device for the Detection of CriticalConditions That Utilize Edge Device Computations and DeepLearning Inferences</a></td><td>2024</td><td>🇬🇷 University of Ioannina</td></tr>
         <tr><td><a href="/research/papers/current-status-and-future-outlooks-of-precision-beekeeping-systems-and-services/">Current Status and Future Outlooks of Precision Beekeeping Systems and Services</a></td><td>2024</td><td>🇸🇰 Slovak University of Agriculture in Nitra</td></tr>
+        <tr><td><a href="/research/papers/individual-honey-bee-tracking-in-a-beehive-environment-using-deep-learning-and-kalman-filter/">Individual honey bee tracking in a beehive environment using deep learning and Kalman filter</a></td><td>2024</td><td>🇹🇭 King Mongkut&#x27;s University of Technology Thonburi (KMUTTH)</td></tr>
         <tr><td><a href="/research/papers/intellibeehive-an-automated-honey-bee-pollen-and-varroa-destructor-monitoring-system/">IntelliBeeHive: An Automated Honey Bee, Pollen, and Varroa Destructor Monitoring System</a></td><td>2024</td><td>🇺🇸 University of Texas Rio Grande Valley</td></tr>
         <tr><td><a href="/research/papers/intelligent-beehive-monitoring-system-based-on-internet-of-things-and-colony-state-analysis/">Intelligent beehive monitoring system based on internet of things and colony state analysis</a></td><td>2024</td><td>🇲🇾 Universiti Teknologi MARA; 🇨🇳 Peking University Shenzhen Graduate School; 🇨🇳 Xiamen University; 🇨🇳 Fujian Agriculture And Forestry University; 🇨🇳 Quanzhou University of Information Engineering</td></tr>
         <tr><td><a href="/research/papers/keypoint-based-bee-orientation-estimation-and-ramp-detection-at-the-hive-entrance-for-bee-behavior-identification-system/">Keypoint-Based Bee Orientation Estimation and Ramp Detection at the Hive Entrance for Bee Behavior Identification System</a></td><td>2024</td><td>🇱🇹 Vilnius Gediminas Technical University</td></tr>
@@ -253,6 +254,7 @@ layout: research
         <tr><td><a href="/research/papers/autonomous-tracking-of-honey-bee-behaviors-over-long-term-periods-with-cooperating-robots/">Autonomous tracking of honey bee behaviors over long-term periods with cooperating robots</a></td><td>2024</td><td>🇨🇿 Czech Technical University; 🇦🇹 University of Graz; 🇬🇧 Durham University; 🇹🇷 Middle East Technical University</td></tr>
         <tr><td><a href="/research/papers/beehive-smart-detector-device-for-the-detection-of-criticalconditions-that-utilize-edge-device-computations-and-deeplearning-inferences/">Beehive Smart Detector Device for the Detection of CriticalConditions That Utilize Edge Device Computations and DeepLearning Inferences</a></td><td>2024</td><td>🇬🇷 University of Ioannina</td></tr>
         <tr><td><a href="/research/papers/current-status-and-future-outlooks-of-precision-beekeeping-systems-and-services/">Current Status and Future Outlooks of Precision Beekeeping Systems and Services</a></td><td>2024</td><td>🇸🇰 Slovak University of Agriculture in Nitra</td></tr>
+        <tr><td><a href="/research/papers/individual-honey-bee-tracking-in-a-beehive-environment-using-deep-learning-and-kalman-filter/">Individual honey bee tracking in a beehive environment using deep learning and Kalman filter</a></td><td>2024</td><td>🇹🇭 King Mongkut&#x27;s University of Technology Thonburi (KMUTTH)</td></tr>
         <tr><td><a href="/research/papers/intellibeehive-an-automated-honey-bee-pollen-and-varroa-destructor-monitoring-system/">IntelliBeeHive: An Automated Honey Bee, Pollen, and Varroa Destructor Monitoring System</a></td><td>2024</td><td>🇺🇸 University of Texas Rio Grande Valley</td></tr>
         <tr><td><a href="/research/papers/intelligent-beehive-monitoring-system-based-on-internet-of-things-and-colony-state-analysis/">Intelligent beehive monitoring system based on internet of things and colony state analysis</a></td><td>2024</td><td>🇲🇾 Universiti Teknologi MARA; 🇨🇳 Peking University Shenzhen Graduate School; 🇨🇳 Xiamen University; 🇨🇳 Fujian Agriculture And Forestry University; 🇨🇳 Quanzhou University of Information Engineering</td></tr>
         <tr><td><a href="/research/papers/keypoint-based-bee-orientation-estimation-and-ramp-detection-at-the-hive-entrance-for-bee-behavior-identification-system/">Keypoint-Based Bee Orientation Estimation and Ramp Detection at the Hive Entrance for Bee Behavior Identification System</a></td><td>2024</td><td>🇱🇹 Vilnius Gediminas Technical University</td></tr>

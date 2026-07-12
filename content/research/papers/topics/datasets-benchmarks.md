@@ -9,7 +9,7 @@ layout: research
 ## Summary
 
 - Topic key: `datasets-benchmarks`
-- Total papers: 15
+- Total papers: 16
 - [Research papers hub](../index.md)
 - [All topics](index.md)
 
@@ -17,8 +17,8 @@ layout: research
 
 - [Colony Health](../product-areas/colony-health.md) (2)
 - [Gate Tracker](../product-areas/gate-tracker.md) (5)
-- [Hive Scanner](../product-areas/hive-scanner.md) (4)
-- [Monitoring Platform](../product-areas/monitoring-platform.md) (8)
+- [Hive Scanner](../product-areas/hive-scanner.md) (5)
+- [Monitoring Platform](../product-areas/monitoring-platform.md) (9)
 
 <section class="research-year-filter" aria-labelledby="research-year-filter-title">
   <h2 id="research-year-filter-title">Publications</h2>
@@ -27,7 +27,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="datasets-benchmarks-year-filter" value="all" checked>
         <span class="research-year-tab__label">All</span>
-        <span class="research-year-tab__count">15</span>
+        <span class="research-year-tab__count">16</span>
       </label>
       <span class="research-year-tab__arrow" aria-hidden="true">›</span>
       <label class="research-year-tab">
@@ -63,7 +63,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="datasets-benchmarks-year-filter" value="2024">
         <span class="research-year-tab__label">2024</span>
-        <span class="research-year-tab__count">2</span>
+        <span class="research-year-tab__count">3</span>
       </label>
       <span class="research-year-tab__arrow" aria-hidden="true">›</span>
       <label class="research-year-tab">
@@ -97,6 +97,7 @@ layout: research
         <tr><td><a href="/research/papers/image-based-honey-bee-larval-viral-and-bacterial-diagnosis-using-machine-learning/">Image-based honey bee larval viral and bacterial diagnosis using machine learning</a></td><td>2025</td><td>🇺🇸 USDA Carl Hayden Bee Research Center; 🇺🇸 University of Arizona; 🇺🇸 Arizona Science Center</td></tr>
         <tr><td><a href="/research/papers/urban-urban-beehive-acoustics-and-phenotyping-dataset/">UrBAN: Urban Beehive Acoustics and PheNotyping Dataset</a></td><td>2025</td><td>🇨🇦 Institut National de la Recherche Scientifique; 🇨🇦 Université Laval; 🇨🇦 Nectar Technologies Inc.</td></tr>
         <tr><td><a href="/research/papers/bee-together-joining-bee-audio-datasets-for-hive-extrapolation-in-ai-based-monitoring/">Bee Together: Joining Bee Audio Datasets for Hive Extrapolation in AI-Based Monitoring</a></td><td>2024</td><td>🇫🇷 University of Toulon</td></tr>
+        <tr><td><a href="/research/papers/individual-honey-bee-tracking-in-a-beehive-environment-using-deep-learning-and-kalman-filter/">Individual honey bee tracking in a beehive environment using deep learning and Kalman filter</a></td><td>2024</td><td>🇹🇭 King Mongkut&#x27;s University of Technology Thonburi (KMUTTH)</td></tr>
         <tr><td><a href="/research/papers/mspb-a-longitudinal-multi-sensor-dataset-with-phenotypic-trait-measurements-from-honey-bees/">MSPB: a longitudinal multi-sensor dataset with phenotypic trait measurements from honey bees</a></td><td>2024</td><td>🇨🇦 Institut National de la Recherche Scientifique; 🇨🇦 Université Laval; 🇨🇦 Nectar Technologies Inc.</td></tr>
         <tr><td><a href="/research/papers/beenet-an-end-to-end-deep-network-for-bee-surveillance/">BeeNet: An End-To-End Deep Network For Bee Surveillance</a></td><td>2023</td><td>🇦🇺 Australian National University; 🇧🇩 BRAC University; 🇦🇺 Curtin University; 🇦🇺 Commonwealth Scientific and Industrial Research Organisation</td></tr>
         <tr><td><a href="/research/papers/labeled-dataset-for-bee-detection-and-direction-estimation-on-entrance-to-beehive/">Labeled dataset for bee detection and direction estimation on entrance to beehive</a></td><td>2023</td><td>🇱🇹 Vilnius Gediminas Technical University</td></tr>
@@ -157,6 +158,7 @@ layout: research
         </thead>
         <tbody>
         <tr><td><a href="/research/papers/bee-together-joining-bee-audio-datasets-for-hive-extrapolation-in-ai-based-monitoring/">Bee Together: Joining Bee Audio Datasets for Hive Extrapolation in AI-Based Monitoring</a></td><td>2024</td><td>🇫🇷 University of Toulon</td></tr>
+        <tr><td><a href="/research/papers/individual-honey-bee-tracking-in-a-beehive-environment-using-deep-learning-and-kalman-filter/">Individual honey bee tracking in a beehive environment using deep learning and Kalman filter</a></td><td>2024</td><td>🇹🇭 King Mongkut&#x27;s University of Technology Thonburi (KMUTTH)</td></tr>
         <tr><td><a href="/research/papers/mspb-a-longitudinal-multi-sensor-dataset-with-phenotypic-trait-measurements-from-honey-bees/">MSPB: a longitudinal multi-sensor dataset with phenotypic trait measurements from honey bees</a></td><td>2024</td><td>🇨🇦 Institut National de la Recherche Scientifique; 🇨🇦 Université Laval; 🇨🇦 Nectar Technologies Inc.</td></tr>
         </tbody>
         </table>

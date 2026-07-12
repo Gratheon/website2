@@ -1,13 +1,47 @@
-title: 'Individual honey bee tracking in a beehive environment using deep learning and Kalman filter'
-authors: Panadda Kongsilp, Unchalisa Taetragool, Orawan Duangphakdee
-year: 2024
-orgs: King Mongkut's University of Technology Thonburi (KMUTTH), Thailand
-source: Scientific Reports (Nature) — https://www.nature.com/articles/s41598-023-44718-y
+---
+hideNav: true
+layout: research
+hideToc: true
+title: "Individual honey bee tracking in a beehive environment using deep learning and Kalman filter"
+description: "2024 Scientific Reports paper on segmenting and tracking individual bees in an observation hive using Mask R-CNN and a Kalman filter."
+year: "2024"
+authors:
+- Panadda Kongsilp
+- Unchalisa Taetragool
+- Orawan Duangphakdee
+orgs:
+- 🇹🇭 King Mongkut's University of Technology Thonburi (KMUTTH)
+topics:
+- computer-vision
+- bee-behaviour
+- datasets-benchmarks
+productAreas:
+- monitoring-platform
+- hive-scanner
+paperType: journal
+pdf: "/assets/research/papers/pdfs/individual-honey-bee-tracking-deep-learning-kalman-filter.pdf"
 doi: 10.1038/s41598-023-44718-y
-pdf: /assets/research/papers/pdfs/individual-honey-bee-tracking-deep-learning-kalman-filter.pdf
-type: journal article
-added: 2026-07-10
+abstract: >-
+  The honey bee is the most essential pollinator and a key contributor to the natural ecosystem. Individual trajectories and social interactions are complex behavioral features that can provide valuable information for ecological study. This study investigated tracking individual bees in a beehive environment using deep learning and a Kalman filter. Detection and segmentation used Mask R-CNN with a ResNet-101 backbone; the Kalman filter linked segmented bees across frames. Videos from a custom observation hive were recorded at 30 fps and processed at 10 fps. The system achieved 0.85 mAP for segmentation, 77.48% MOTA, 79.79% MOTSP, and 79.56% recall for tracking.
+---
 
-abstract: The honey bee is the most essential pollinator and a key contributor to the natural ecosystem. There are numerous ways for thousands of bees in a hive to communicate with one another. Individual trajectories and social interactions are thus complex behavioral features that can provide valuable information for an ecological study. To study honey bee behavior, the key challenges that have resulted from unreliable studies include complexity (high density of similar objects, small objects, and occlusion), the variety of background scenes, the dynamism of individual bee movements, and the similarity between the bee body and the background in the beehive. This study investigated the tracking of individual bees in a beehive environment using a deep learning approach and a Kalman filter. Detection of multiple bees and individual object segmentation were performed using Mask R-CNN with a ResNet-101 backbone network. Subsequently, the Kalman filter was employed for tracking multiple bees by tracking the body of each bee across a sequence of image frames. Three metrics were used to assess the proposed framework: mean average precision (mAP) for multiple-object detection and segmentation tasks, CLEAR MOT for multiple object tracking tasks, and MOTS for multiple object tracking and segmentation tasks. For CLEAR MOT and MOTS metrics, accuracy (MOTA and MOTSA) and precision (MOTP and MOTSP) are considered. By employing videos from a custom-designed observation beehive, recorded at a frame rate of 30 fps and utilizing a continuous frame rate of 10 fps as input data, our system displayed impressive performance. It yielded satisfactory outcomes for tasks involving segmentation and tracking of multiple instances of bee behavior. For the multiple-object segmentation task based on Mask R-CNN, we achieved a 0.85 mAP. For the multiple-object-tracking task with the Kalman filter, we achieved 77.48% MOTA, 79.79% MOTSP, and 79.56% recall. For the overall system for multiple-object tracking and segmentation tasks, we achieved 77.00% MOTSA, 75.60% MOTSP, and 80.30% recall.
+[PDF](pdfs/individual-honey-bee-tracking-deep-learning-kalman-filter.pdf)
 
-gratheon_relevance: Directly applicable to Gratheon's video-based hive monitoring pipeline. Uses Mask R-CNN for individual bee detection/segmentation inside a beehive environment (custom observation beehive camera) combined with Kalman filter for multi-object tracking — this is the exact kind of visual tracking stack that could power Gratheon's entrance-camera analytics and in-hive video analysis features. Open access CC-BY, 2024 publication year.
+<object data={require('./pdfs/individual-honey-bee-tracking-deep-learning-kalman-filter.pdf').default} type="application/pdf" width="100%" height="800"></object>
+
+## External links
+
+- DOI: https://doi.org/10.1038/s41598-023-44718-y
+- [Publisher page](https://www.nature.com/articles/s41598-023-44718-y)
+
+## Abstract
+
+Honey bee behavior inside a hive is difficult to analyze because of high density of similar objects, occlusions, small object size, diverse backgrounds, and fast motion. The authors studied individual bee tracking in an observation hive using deep learning and a Kalman filter.
+
+Mask R-CNN with a ResNet-101 backbone was used for detection and instance segmentation. A Kalman filter then linked segmented objects across frames to build multi-bee trajectories. Video was captured in a custom observation hive at 30 fps and processed at 10 fps. Metrics included mAP for detection and segmentation, CLEAR MOT for tracking, and MOTS for joint tracking and segmentation. The model reached 0.85 mAP for segmentation, 77.48% MOTA, 79.79% MOTSP, and 79.56% recall, showing practical utility for in-hive behavior analysis.
+
+## Relevancy to Gratheon
+
+This paper is directly applicable to Gratheon's video-based hive monitoring: it combines detection, segmentation, and multi-object tracking in conditions similar to real observation hives. The stack could power entrance-camera analytics, bee interaction analysis, and future in-hive frame video monitoring.
+
+The chosen metrics are especially useful for product development: Gratheon can use MOTA, MOTSP, and recall as quality benchmarks when comparing its own tracking models. The work also shows that detection alone is insufficient - useful behavioral analytics need a robust tracking layer that preserves individual trajectories through occlusions and dense motion.
