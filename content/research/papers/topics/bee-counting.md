@@ -37,20 +37,34 @@ title: "Research topic: Bee Counting"
     <div class="research-year-filter__panels">
       <div class="research-year-panel" data-year="all">
         <div class="research-publications-table-wrap">
-        
-        | Publication | Year | Institutions |
-        |---|---|---|
-        | [Honeybee Counting on Comb Images via Part-Level Annotation and Hungarian Matching](../Honeybee%20Counting%20on%20Comb%20Images%20via%20Part-Level%20Annotation%20and%20Hungarian%20Matching.md) | 2026 | 🇯🇵 Utsunomiya University |
-        
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/honeybee-counting-on-comb-images-via-part-level-annotation-and-hungarian-matching/">Honeybee Counting on Comb Images via Part-Level Annotation and Hungarian Matching</a></td><td>2026</td><td>🇯🇵 Utsunomiya University</td></tr>
+        </tbody>
+        </table>
         </div>
       </div>
       <div class="research-year-panel" data-year="2026">
         <div class="research-publications-table-wrap">
-        
-        | Publication | Year | Institutions |
-        |---|---|---|
-        | [Honeybee Counting on Comb Images via Part-Level Annotation and Hungarian Matching](../Honeybee%20Counting%20on%20Comb%20Images%20via%20Part-Level%20Annotation%20and%20Hungarian%20Matching.md) | 2026 | 🇯🇵 Utsunomiya University |
-        
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/honeybee-counting-on-comb-images-via-part-level-annotation-and-hungarian-matching/">Honeybee Counting on Comb Images via Part-Level Annotation and Hungarian Matching</a></td><td>2026</td><td>🇯🇵 Utsunomiya University</td></tr>
+        </tbody>
+        </table>
         </div>
       </div>
     </div>

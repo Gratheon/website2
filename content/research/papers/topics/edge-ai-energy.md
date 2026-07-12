@@ -76,96 +76,152 @@ layout: research
     <div class="research-year-filter__panels">
       <div class="research-year-panel" data-year="all">
         <div class="research-publications-table-wrap">
-        
-        | Publication | Year | Institutions |
-        |---|---|---|
-        | [Adaptive Measurement Noise for Robust Kalman Filtering in Smart Beehive Telemetry](../Adaptive%20Measurement%20Noise%20for%20Robust%20Kalman%20Filtering%20in%20Smart%20Beehive%20Telemetry.md) | 2026 | 🇬🇧 University of Westminster; 🇲🇾 Technical University of Malaysia Malacca; 🇫🇮 University of Oulu |
-        | [An intelligent monitoring system for forecasting and anomaly detection in precision beekeeping](../An%20intelligent%20monitoring%20system%20for%20forecasting%20and%20anomaly%20detection%20in%20precision%20beekeeping.md) | 2026 | 🇫🇷 EFREI Research Lab; 🇫🇷 Université Paris-Panthéon-Assas |
-        | [M3DANet: A Lightweight Semi-Supervised Network and Embedded System for Bee Colony Counting](../M3DANet%20A%20Lightweight%20Semi-Supervised%20Network%20and%20Embedded%20System%20for%20Bee%20Colony%20Counting.md) | 2026 | 🇨🇳 Shandong Agricultural University; 🇨🇳 Apiculture Institute of Jiangxi Province |
-        | [Physics-aware vision instrumentation for stingless bee counting at hive entrance using hybrid edge-cloud object detection](../Physics-aware%20vision%20instrumentation%20for%20stingless%20bee%20counting%20at%20hive%20entrance%20using%20hybrid%20edge-cloud%20object%20detection.md) | 2026 | 🇲🇾 Universiti Teknologi Malaysia; 🇮🇩 Universitas Negeri Jakarta; 🇮🇩 Institut Teknologi Indonesia; 🇮🇩 Politeknik Negeri Bandung; 🇮🇩 National Research and Innovation Agency |
-        | [A Survey of TinyML Applications in Beekeeping for Hive Monitoring and Management](../A%20Survey%20of%20TinyML%20Applications%20in%20Beekeeping%20for%20Hive%20Monitoring%20and%20Management.md) | 2025 | 🇦🇺 University of Technology Sydney; 🇦🇺 BeeSTAR |
-        | [Deep Edge IoT for Acoustic Detection of Queenless Beehives](../%E2%AD%90%EF%B8%8F%20Deep%20Edge%20IoT%20for%20Acoustic%20Detection%20of%20Queenless%20Beehives.md) | 2025 | 🇬🇷 Aristotle University of Thessaloniki |
-        | [Queen Detection in Beehives via Environmental Sensor Fusion for Low-Power Edge Computing](../Queen%20Detection%20in%20Beehives%20via%20Environmental%20Sensor%20Fusion%20for%20Low-Power%20Edge%20Computing.md) | 2025 | 🇨🇭 Institute of Neuroinformatics, University of Zurich and ETH Zurich; 🇨🇭 Digital Society Initiative, University of Zurich |
-        | [Spectral Components of Honey Bee Sound Signals Recorded Inside and Outside the Beehive: An Explainable Machine Learning Approach to Diurnal Pattern Recognition](../Spectral%20Components%20of%20Honey%20Bee%20Sound%20Signals%20Recorded%20Inside%20and%20Outside%20the%20Beehive.md) | 2025 | 🇵🇱 Wrocław University of Science and Technology; 🇵🇱 AGH University of Krakow |
-        | [WaggleNet: A LoRa and MQTT-Based Monitoring System for Internal and External Beehive Conditions](../WaggleNet%20A%20LoRa%20and%20MQTT-Based%20Monitoring%20System%20for%20Internal%20and%20External%20Beehive%20Conditions.md) | 2025 | 🇰🇷 Kyonggi University; 🇰🇷 Hallym University; 🇰🇷 Jeonbuk National University; 🇺🇸 Purdue University |
-        | [Beehive Smart Detector Device for the Detection of CriticalConditions That Utilize Edge Device Computations and DeepLearning Inferences](../Beehive%20Smart%20Detector%20Device%20for%20the%20Detection%20of%20CriticalConditions%20That%20Utilize%20Edge%20Device%20Computations%20and%20DeepLearning%20Inferences.md) | 2024 | 🇬🇷 University of Ioannina |
-        | [IoT Embedded Smart Monitoring System with Edge Machine Learning for Beehive Management](../IoT%20Embedded%20Smart%20Monitoring%20System%20with%20Edge%20Machine%20Learning%20for%20Beehive%20Management.md) | 2024 | 🇷🇴 Bucharest University of Economic Studies; 🇷🇴 National Institute for Research & Development in Informatics |
-        | [Accuracy vs. Energy: An Assessment of Bee Object Inference inVideos from On-Hive Video Loggers with YOLOv3,YOLOv4-Tiny, and YOLOv7-Tiny](../Accuracy%20vs.%20Energy.md) | 2023 | 🇺🇸 Utah State University |
-        | [Deep Learning Beehive Monitoring System for Early Detection of the Varroa Mite](../Deep%20Learning%20Beehive%20Monitoring%20System%20for%20Early%20Detection%20of%20the%20Varroa%20Mite.md) | 2022 | 🇬🇷 University of Ioannina |
-        | [Self-Powered Smart Beehive Monitoring and Control System (SBMaCS)](../Self-Powered%20Smart%20Beehive%20Monitoring%20and%20ControlSystem%20%28SBMaCS%29.md) | 2021 | 🇷🇼 University of Rwanda; 🇿🇲 Copperbelt University; 🇷🇼 National Council of Science and Technology |
-        | [Analysis of Energy Consumption in a Precision Beekeeping System](../Analysis%20of%20Energy%20Consumption%20in%20a%20Precision%20Beekeeping%20System.md) | 2020 | 🇫🇷 emlyon business school; 🇫🇷 Inria; 🇫🇷 École Normale Supérieure de Lyon; 🇫🇷 Université Claude Bernard Lyon 1; 🇫🇷 CNRS LIP |
-        
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/adaptive-measurement-noise-for-robust-kalman-filtering-in-smart-beehive-telemetry/">Adaptive Measurement Noise for Robust Kalman Filtering in Smart Beehive Telemetry</a></td><td>2026</td><td>🇬🇧 University of Westminster; 🇲🇾 Technical University of Malaysia Malacca; 🇫🇮 University of Oulu</td></tr>
+        <tr><td><a href="/research/papers/an-intelligent-monitoring-system-for-forecasting-and-anomaly-detection-in-precision-beekeeping/">An intelligent monitoring system for forecasting and anomaly detection in precision beekeeping</a></td><td>2026</td><td>🇫🇷 EFREI Research Lab; 🇫🇷 Université Paris-Panthéon-Assas</td></tr>
+        <tr><td><a href="/research/papers/m3danet-a-lightweight-semi-supervised-network-and-embedded-system-for-bee-colony-counting/">M3DANet: A Lightweight Semi-Supervised Network and Embedded System for Bee Colony Counting</a></td><td>2026</td><td>🇨🇳 Shandong Agricultural University; 🇨🇳 Apiculture Institute of Jiangxi Province</td></tr>
+        <tr><td><a href="/research/papers/physics-aware-vision-instrumentation-for-stingless-bee-counting-at-hive-entrance-using-hybrid-edge-cloud-object-detection/">Physics-aware vision instrumentation for stingless bee counting at hive entrance using hybrid edge-cloud object detection</a></td><td>2026</td><td>🇲🇾 Universiti Teknologi Malaysia; 🇮🇩 Universitas Negeri Jakarta; 🇮🇩 Institut Teknologi Indonesia; 🇮🇩 Politeknik Negeri Bandung; 🇮🇩 National Research and Innovation Agency</td></tr>
+        <tr><td><a href="/research/papers/a-survey-of-tinyml-applications-in-beekeeping-for-hive-monitoring-and-management/">A Survey of TinyML Applications in Beekeeping for Hive Monitoring and Management</a></td><td>2025</td><td>🇦🇺 University of Technology Sydney; 🇦🇺 BeeSTAR</td></tr>
+        <tr><td><a href="/research/papers/deep-edge-iot-for-acoustic-detection-of-queenless-beehives/">Deep Edge IoT for Acoustic Detection of Queenless Beehives</a></td><td>2025</td><td>🇬🇷 Aristotle University of Thessaloniki</td></tr>
+        <tr><td><a href="/research/papers/queen-detection-in-beehives-via-environmental-sensor-fusion-for-low-power-edge-computing/">Queen Detection in Beehives via Environmental Sensor Fusion for Low-Power Edge Computing</a></td><td>2025</td><td>🇨🇭 Institute of Neuroinformatics, University of Zurich and ETH Zurich; 🇨🇭 Digital Society Initiative, University of Zurich</td></tr>
+        <tr><td><a href="/research/papers/spectral-components-of-honey-bee-sound-signals-recorded-inside-and-outside-the-beehive/">Spectral Components of Honey Bee Sound Signals Recorded Inside and Outside the Beehive: An Explainable Machine Learning Approach to Diurnal Pattern Recognition</a></td><td>2025</td><td>🇵🇱 Wrocław University of Science and Technology; 🇵🇱 AGH University of Krakow</td></tr>
+        <tr><td><a href="/research/papers/wagglenet-a-lora-and-mqtt-based-monitoring-system-for-internal-and-external-beehive-conditions/">WaggleNet: A LoRa and MQTT-Based Monitoring System for Internal and External Beehive Conditions</a></td><td>2025</td><td>🇰🇷 Kyonggi University; 🇰🇷 Hallym University; 🇰🇷 Jeonbuk National University; 🇺🇸 Purdue University</td></tr>
+        <tr><td><a href="/research/papers/beehive-smart-detector-device-for-the-detection-of-criticalconditions-that-utilize-edge-device-computations-and-deeplearning-inferences/">Beehive Smart Detector Device for the Detection of CriticalConditions That Utilize Edge Device Computations and DeepLearning Inferences</a></td><td>2024</td><td>🇬🇷 University of Ioannina</td></tr>
+        <tr><td><a href="/research/papers/iot-embedded-smart-monitoring-system-with-edge-machine-learning-for-beehive-management/">IoT Embedded Smart Monitoring System with Edge Machine Learning for Beehive Management</a></td><td>2024</td><td>🇷🇴 Bucharest University of Economic Studies; 🇷🇴 National Institute for Research &amp; Development in Informatics</td></tr>
+        <tr><td><a href="/research/papers/accuracy-vs-energy/">Accuracy vs. Energy: An Assessment of Bee Object Inference inVideos from On-Hive Video Loggers with YOLOv3,YOLOv4-Tiny, and YOLOv7-Tiny</a></td><td>2023</td><td>🇺🇸 Utah State University</td></tr>
+        <tr><td><a href="/research/papers/deep-learning-beehive-monitoring-system-for-early-detection-of-the-varroa-mite/">Deep Learning Beehive Monitoring System for Early Detection of the Varroa Mite</a></td><td>2022</td><td>🇬🇷 University of Ioannina</td></tr>
+        <tr><td><a href="/research/papers/self-powered-smart-beehive-monitoring-and-controlsystem-sbmacs/">Self-Powered Smart Beehive Monitoring and Control System (SBMaCS)</a></td><td>2021</td><td>🇷🇼 University of Rwanda; 🇿🇲 Copperbelt University; 🇷🇼 National Council of Science and Technology</td></tr>
+        <tr><td><a href="/research/papers/analysis-of-energy-consumption-in-a-precision-beekeeping-system/">Analysis of Energy Consumption in a Precision Beekeeping System</a></td><td>2020</td><td>🇫🇷 emlyon business school; 🇫🇷 Inria; 🇫🇷 École Normale Supérieure de Lyon; 🇫🇷 Université Claude Bernard Lyon 1; 🇫🇷 CNRS LIP</td></tr>
+        </tbody>
+        </table>
         </div>
       </div>
       <div class="research-year-panel" data-year="2026">
         <div class="research-publications-table-wrap">
-        
-        | Publication | Year | Institutions |
-        |---|---|---|
-        | [Adaptive Measurement Noise for Robust Kalman Filtering in Smart Beehive Telemetry](../Adaptive%20Measurement%20Noise%20for%20Robust%20Kalman%20Filtering%20in%20Smart%20Beehive%20Telemetry.md) | 2026 | 🇬🇧 University of Westminster; 🇲🇾 Technical University of Malaysia Malacca; 🇫🇮 University of Oulu |
-        | [An intelligent monitoring system for forecasting and anomaly detection in precision beekeeping](../An%20intelligent%20monitoring%20system%20for%20forecasting%20and%20anomaly%20detection%20in%20precision%20beekeeping.md) | 2026 | 🇫🇷 EFREI Research Lab; 🇫🇷 Université Paris-Panthéon-Assas |
-        | [M3DANet: A Lightweight Semi-Supervised Network and Embedded System for Bee Colony Counting](../M3DANet%20A%20Lightweight%20Semi-Supervised%20Network%20and%20Embedded%20System%20for%20Bee%20Colony%20Counting.md) | 2026 | 🇨🇳 Shandong Agricultural University; 🇨🇳 Apiculture Institute of Jiangxi Province |
-        | [Physics-aware vision instrumentation for stingless bee counting at hive entrance using hybrid edge-cloud object detection](../Physics-aware%20vision%20instrumentation%20for%20stingless%20bee%20counting%20at%20hive%20entrance%20using%20hybrid%20edge-cloud%20object%20detection.md) | 2026 | 🇲🇾 Universiti Teknologi Malaysia; 🇮🇩 Universitas Negeri Jakarta; 🇮🇩 Institut Teknologi Indonesia; 🇮🇩 Politeknik Negeri Bandung; 🇮🇩 National Research and Innovation Agency |
-        
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/adaptive-measurement-noise-for-robust-kalman-filtering-in-smart-beehive-telemetry/">Adaptive Measurement Noise for Robust Kalman Filtering in Smart Beehive Telemetry</a></td><td>2026</td><td>🇬🇧 University of Westminster; 🇲🇾 Technical University of Malaysia Malacca; 🇫🇮 University of Oulu</td></tr>
+        <tr><td><a href="/research/papers/an-intelligent-monitoring-system-for-forecasting-and-anomaly-detection-in-precision-beekeeping/">An intelligent monitoring system for forecasting and anomaly detection in precision beekeeping</a></td><td>2026</td><td>🇫🇷 EFREI Research Lab; 🇫🇷 Université Paris-Panthéon-Assas</td></tr>
+        <tr><td><a href="/research/papers/m3danet-a-lightweight-semi-supervised-network-and-embedded-system-for-bee-colony-counting/">M3DANet: A Lightweight Semi-Supervised Network and Embedded System for Bee Colony Counting</a></td><td>2026</td><td>🇨🇳 Shandong Agricultural University; 🇨🇳 Apiculture Institute of Jiangxi Province</td></tr>
+        <tr><td><a href="/research/papers/physics-aware-vision-instrumentation-for-stingless-bee-counting-at-hive-entrance-using-hybrid-edge-cloud-object-detection/">Physics-aware vision instrumentation for stingless bee counting at hive entrance using hybrid edge-cloud object detection</a></td><td>2026</td><td>🇲🇾 Universiti Teknologi Malaysia; 🇮🇩 Universitas Negeri Jakarta; 🇮🇩 Institut Teknologi Indonesia; 🇮🇩 Politeknik Negeri Bandung; 🇮🇩 National Research and Innovation Agency</td></tr>
+        </tbody>
+        </table>
         </div>
       </div>
       <div class="research-year-panel" data-year="2025">
         <div class="research-publications-table-wrap">
-        
-        | Publication | Year | Institutions |
-        |---|---|---|
-        | [A Survey of TinyML Applications in Beekeeping for Hive Monitoring and Management](../A%20Survey%20of%20TinyML%20Applications%20in%20Beekeeping%20for%20Hive%20Monitoring%20and%20Management.md) | 2025 | 🇦🇺 University of Technology Sydney; 🇦🇺 BeeSTAR |
-        | [Deep Edge IoT for Acoustic Detection of Queenless Beehives](../%E2%AD%90%EF%B8%8F%20Deep%20Edge%20IoT%20for%20Acoustic%20Detection%20of%20Queenless%20Beehives.md) | 2025 | 🇬🇷 Aristotle University of Thessaloniki |
-        | [Queen Detection in Beehives via Environmental Sensor Fusion for Low-Power Edge Computing](../Queen%20Detection%20in%20Beehives%20via%20Environmental%20Sensor%20Fusion%20for%20Low-Power%20Edge%20Computing.md) | 2025 | 🇨🇭 Institute of Neuroinformatics, University of Zurich and ETH Zurich; 🇨🇭 Digital Society Initiative, University of Zurich |
-        | [Spectral Components of Honey Bee Sound Signals Recorded Inside and Outside the Beehive: An Explainable Machine Learning Approach to Diurnal Pattern Recognition](../Spectral%20Components%20of%20Honey%20Bee%20Sound%20Signals%20Recorded%20Inside%20and%20Outside%20the%20Beehive.md) | 2025 | 🇵🇱 Wrocław University of Science and Technology; 🇵🇱 AGH University of Krakow |
-        | [WaggleNet: A LoRa and MQTT-Based Monitoring System for Internal and External Beehive Conditions](../WaggleNet%20A%20LoRa%20and%20MQTT-Based%20Monitoring%20System%20for%20Internal%20and%20External%20Beehive%20Conditions.md) | 2025 | 🇰🇷 Kyonggi University; 🇰🇷 Hallym University; 🇰🇷 Jeonbuk National University; 🇺🇸 Purdue University |
-        
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/a-survey-of-tinyml-applications-in-beekeeping-for-hive-monitoring-and-management/">A Survey of TinyML Applications in Beekeeping for Hive Monitoring and Management</a></td><td>2025</td><td>🇦🇺 University of Technology Sydney; 🇦🇺 BeeSTAR</td></tr>
+        <tr><td><a href="/research/papers/deep-edge-iot-for-acoustic-detection-of-queenless-beehives/">Deep Edge IoT for Acoustic Detection of Queenless Beehives</a></td><td>2025</td><td>🇬🇷 Aristotle University of Thessaloniki</td></tr>
+        <tr><td><a href="/research/papers/queen-detection-in-beehives-via-environmental-sensor-fusion-for-low-power-edge-computing/">Queen Detection in Beehives via Environmental Sensor Fusion for Low-Power Edge Computing</a></td><td>2025</td><td>🇨🇭 Institute of Neuroinformatics, University of Zurich and ETH Zurich; 🇨🇭 Digital Society Initiative, University of Zurich</td></tr>
+        <tr><td><a href="/research/papers/spectral-components-of-honey-bee-sound-signals-recorded-inside-and-outside-the-beehive/">Spectral Components of Honey Bee Sound Signals Recorded Inside and Outside the Beehive: An Explainable Machine Learning Approach to Diurnal Pattern Recognition</a></td><td>2025</td><td>🇵🇱 Wrocław University of Science and Technology; 🇵🇱 AGH University of Krakow</td></tr>
+        <tr><td><a href="/research/papers/wagglenet-a-lora-and-mqtt-based-monitoring-system-for-internal-and-external-beehive-conditions/">WaggleNet: A LoRa and MQTT-Based Monitoring System for Internal and External Beehive Conditions</a></td><td>2025</td><td>🇰🇷 Kyonggi University; 🇰🇷 Hallym University; 🇰🇷 Jeonbuk National University; 🇺🇸 Purdue University</td></tr>
+        </tbody>
+        </table>
         </div>
       </div>
       <div class="research-year-panel" data-year="2024">
         <div class="research-publications-table-wrap">
-        
-        | Publication | Year | Institutions |
-        |---|---|---|
-        | [Beehive Smart Detector Device for the Detection of CriticalConditions That Utilize Edge Device Computations and DeepLearning Inferences](../Beehive%20Smart%20Detector%20Device%20for%20the%20Detection%20of%20CriticalConditions%20That%20Utilize%20Edge%20Device%20Computations%20and%20DeepLearning%20Inferences.md) | 2024 | 🇬🇷 University of Ioannina |
-        | [IoT Embedded Smart Monitoring System with Edge Machine Learning for Beehive Management](../IoT%20Embedded%20Smart%20Monitoring%20System%20with%20Edge%20Machine%20Learning%20for%20Beehive%20Management.md) | 2024 | 🇷🇴 Bucharest University of Economic Studies; 🇷🇴 National Institute for Research & Development in Informatics |
-        
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/beehive-smart-detector-device-for-the-detection-of-criticalconditions-that-utilize-edge-device-computations-and-deeplearning-inferences/">Beehive Smart Detector Device for the Detection of CriticalConditions That Utilize Edge Device Computations and DeepLearning Inferences</a></td><td>2024</td><td>🇬🇷 University of Ioannina</td></tr>
+        <tr><td><a href="/research/papers/iot-embedded-smart-monitoring-system-with-edge-machine-learning-for-beehive-management/">IoT Embedded Smart Monitoring System with Edge Machine Learning for Beehive Management</a></td><td>2024</td><td>🇷🇴 Bucharest University of Economic Studies; 🇷🇴 National Institute for Research &amp; Development in Informatics</td></tr>
+        </tbody>
+        </table>
         </div>
       </div>
       <div class="research-year-panel" data-year="2023">
         <div class="research-publications-table-wrap">
-        
-        | Publication | Year | Institutions |
-        |---|---|---|
-        | [Accuracy vs. Energy: An Assessment of Bee Object Inference inVideos from On-Hive Video Loggers with YOLOv3,YOLOv4-Tiny, and YOLOv7-Tiny](../Accuracy%20vs.%20Energy.md) | 2023 | 🇺🇸 Utah State University |
-        
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/accuracy-vs-energy/">Accuracy vs. Energy: An Assessment of Bee Object Inference inVideos from On-Hive Video Loggers with YOLOv3,YOLOv4-Tiny, and YOLOv7-Tiny</a></td><td>2023</td><td>🇺🇸 Utah State University</td></tr>
+        </tbody>
+        </table>
         </div>
       </div>
       <div class="research-year-panel" data-year="2022">
         <div class="research-publications-table-wrap">
-        
-        | Publication | Year | Institutions |
-        |---|---|---|
-        | [Deep Learning Beehive Monitoring System for Early Detection of the Varroa Mite](../Deep%20Learning%20Beehive%20Monitoring%20System%20for%20Early%20Detection%20of%20the%20Varroa%20Mite.md) | 2022 | 🇬🇷 University of Ioannina |
-        
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/deep-learning-beehive-monitoring-system-for-early-detection-of-the-varroa-mite/">Deep Learning Beehive Monitoring System for Early Detection of the Varroa Mite</a></td><td>2022</td><td>🇬🇷 University of Ioannina</td></tr>
+        </tbody>
+        </table>
         </div>
       </div>
       <div class="research-year-panel" data-year="2021">
         <div class="research-publications-table-wrap">
-        
-        | Publication | Year | Institutions |
-        |---|---|---|
-        | [Self-Powered Smart Beehive Monitoring and Control System (SBMaCS)](../Self-Powered%20Smart%20Beehive%20Monitoring%20and%20ControlSystem%20%28SBMaCS%29.md) | 2021 | 🇷🇼 University of Rwanda; 🇿🇲 Copperbelt University; 🇷🇼 National Council of Science and Technology |
-        
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/self-powered-smart-beehive-monitoring-and-controlsystem-sbmacs/">Self-Powered Smart Beehive Monitoring and Control System (SBMaCS)</a></td><td>2021</td><td>🇷🇼 University of Rwanda; 🇿🇲 Copperbelt University; 🇷🇼 National Council of Science and Technology</td></tr>
+        </tbody>
+        </table>
         </div>
       </div>
       <div class="research-year-panel" data-year="2020">
         <div class="research-publications-table-wrap">
-        
-        | Publication | Year | Institutions |
-        |---|---|---|
-        | [Analysis of Energy Consumption in a Precision Beekeeping System](../Analysis%20of%20Energy%20Consumption%20in%20a%20Precision%20Beekeeping%20System.md) | 2020 | 🇫🇷 emlyon business school; 🇫🇷 Inria; 🇫🇷 École Normale Supérieure de Lyon; 🇫🇷 Université Claude Bernard Lyon 1; 🇫🇷 CNRS LIP |
-        
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/analysis-of-energy-consumption-in-a-precision-beekeeping-system/">Analysis of Energy Consumption in a Precision Beekeeping System</a></td><td>2020</td><td>🇫🇷 emlyon business school; 🇫🇷 Inria; 🇫🇷 École Normale Supérieure de Lyon; 🇫🇷 Université Claude Bernard Lyon 1; 🇫🇷 CNRS LIP</td></tr>
+        </tbody>
+        </table>
         </div>
       </div>
     </div>

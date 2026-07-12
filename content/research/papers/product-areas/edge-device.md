@@ -46,30 +46,51 @@ title: "Research product area: Edge Device"
     <div class="research-year-filter__panels">
       <div class="research-year-panel" data-year="all">
         <div class="research-publications-table-wrap">
-        
-        | Publication | Year | Institutions |
-        |---|---|---|
-        | [Physics-aware vision instrumentation for stingless bee counting at hive entrance using hybrid edge-cloud object detection](../Physics-aware%20vision%20instrumentation%20for%20stingless%20bee%20counting%20at%20hive%20entrance%20using%20hybrid%20edge-cloud%20object%20detection.md) | 2026 | 🇲🇾 Universiti Teknologi Malaysia; 🇮🇩 Universitas Negeri Jakarta; 🇮🇩 Institut Teknologi Indonesia; 🇮🇩 Politeknik Negeri Bandung; 🇮🇩 National Research and Innovation Agency |
-        | [Queen Detection in Beehives via Environmental Sensor Fusion for Low-Power Edge Computing](../Queen%20Detection%20in%20Beehives%20via%20Environmental%20Sensor%20Fusion%20for%20Low-Power%20Edge%20Computing.md) | 2025 | 🇨🇭 Institute of Neuroinformatics, University of Zurich and ETH Zurich; 🇨🇭 Digital Society Initiative, University of Zurich |
-        
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/physics-aware-vision-instrumentation-for-stingless-bee-counting-at-hive-entrance-using-hybrid-edge-cloud-object-detection/">Physics-aware vision instrumentation for stingless bee counting at hive entrance using hybrid edge-cloud object detection</a></td><td>2026</td><td>🇲🇾 Universiti Teknologi Malaysia; 🇮🇩 Universitas Negeri Jakarta; 🇮🇩 Institut Teknologi Indonesia; 🇮🇩 Politeknik Negeri Bandung; 🇮🇩 National Research and Innovation Agency</td></tr>
+        <tr><td><a href="/research/papers/queen-detection-in-beehives-via-environmental-sensor-fusion-for-low-power-edge-computing/">Queen Detection in Beehives via Environmental Sensor Fusion for Low-Power Edge Computing</a></td><td>2025</td><td>🇨🇭 Institute of Neuroinformatics, University of Zurich and ETH Zurich; 🇨🇭 Digital Society Initiative, University of Zurich</td></tr>
+        </tbody>
+        </table>
         </div>
       </div>
       <div class="research-year-panel" data-year="2026">
         <div class="research-publications-table-wrap">
-        
-        | Publication | Year | Institutions |
-        |---|---|---|
-        | [Physics-aware vision instrumentation for stingless bee counting at hive entrance using hybrid edge-cloud object detection](../Physics-aware%20vision%20instrumentation%20for%20stingless%20bee%20counting%20at%20hive%20entrance%20using%20hybrid%20edge-cloud%20object%20detection.md) | 2026 | 🇲🇾 Universiti Teknologi Malaysia; 🇮🇩 Universitas Negeri Jakarta; 🇮🇩 Institut Teknologi Indonesia; 🇮🇩 Politeknik Negeri Bandung; 🇮🇩 National Research and Innovation Agency |
-        
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/physics-aware-vision-instrumentation-for-stingless-bee-counting-at-hive-entrance-using-hybrid-edge-cloud-object-detection/">Physics-aware vision instrumentation for stingless bee counting at hive entrance using hybrid edge-cloud object detection</a></td><td>2026</td><td>🇲🇾 Universiti Teknologi Malaysia; 🇮🇩 Universitas Negeri Jakarta; 🇮🇩 Institut Teknologi Indonesia; 🇮🇩 Politeknik Negeri Bandung; 🇮🇩 National Research and Innovation Agency</td></tr>
+        </tbody>
+        </table>
         </div>
       </div>
       <div class="research-year-panel" data-year="2025">
         <div class="research-publications-table-wrap">
-        
-        | Publication | Year | Institutions |
-        |---|---|---|
-        | [Queen Detection in Beehives via Environmental Sensor Fusion for Low-Power Edge Computing](../Queen%20Detection%20in%20Beehives%20via%20Environmental%20Sensor%20Fusion%20for%20Low-Power%20Edge%20Computing.md) | 2025 | 🇨🇭 Institute of Neuroinformatics, University of Zurich and ETH Zurich; 🇨🇭 Digital Society Initiative, University of Zurich |
-        
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/queen-detection-in-beehives-via-environmental-sensor-fusion-for-low-power-edge-computing/">Queen Detection in Beehives via Environmental Sensor Fusion for Low-Power Edge Computing</a></td><td>2025</td><td>🇨🇭 Institute of Neuroinformatics, University of Zurich and ETH Zurich; 🇨🇭 Digital Society Initiative, University of Zurich</td></tr>
+        </tbody>
+        </table>
         </div>
       </div>
     </div>

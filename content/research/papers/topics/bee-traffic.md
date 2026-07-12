@@ -37,20 +37,34 @@ title: "Research topic: Bee Traffic"
     <div class="research-year-filter__panels">
       <div class="research-year-panel" data-year="all">
         <div class="research-publications-table-wrap">
-        
-        | Publication | Year | Institutions |
-        |---|---|---|
-        | [The Relevance of Compound Events in Bee Traffic Monitoring](../The%20Relevance%20of%20Compound%20Events%20in%20Bee%20Traffic%20Monitoring.md) | 2026 | 🇵🇷 University of Puerto Rico at Río Piedras |
-        
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/the-relevance-of-compound-events-in-bee-traffic-monitoring/">The Relevance of Compound Events in Bee Traffic Monitoring</a></td><td>2026</td><td>🇵🇷 University of Puerto Rico at Río Piedras</td></tr>
+        </tbody>
+        </table>
         </div>
       </div>
       <div class="research-year-panel" data-year="2026">
         <div class="research-publications-table-wrap">
-        
-        | Publication | Year | Institutions |
-        |---|---|---|
-        | [The Relevance of Compound Events in Bee Traffic Monitoring](../The%20Relevance%20of%20Compound%20Events%20in%20Bee%20Traffic%20Monitoring.md) | 2026 | 🇵🇷 University of Puerto Rico at Río Piedras |
-        
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/the-relevance-of-compound-events-in-bee-traffic-monitoring/">The Relevance of Compound Events in Bee Traffic Monitoring</a></td><td>2026</td><td>🇵🇷 University of Puerto Rico at Río Piedras</td></tr>
+        </tbody>
+        </table>
         </div>
       </div>
     </div>

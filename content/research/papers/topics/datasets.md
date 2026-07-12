@@ -44,30 +44,51 @@ title: "Research topic: Datasets"
     <div class="research-year-filter__panels">
       <div class="research-year-panel" data-year="all">
         <div class="research-publications-table-wrap">
-        
-        | Publication | Year | Institutions |
-        |---|---|---|
-        | [Time-series dataset of honey bee colony dynamics before, during, and after sunflower pollination](../Time-series%20dataset%20of%20honey%20bee%20colony%20dynamics%20before%20during%20and%20after%20sunflower%20pollination.md) | 2026 | 🇺🇦 AmoHive / Ukraine smart-hive deployment |
-        | [Visual recognition of honeybee behavior patterns at the hive entrance](../Visual%20recognition%20of%20honeybee%20behavior%20patterns%20at%20the%20hive%20entrance.md) | 2025 | 🇱🇹 Vilnius Gediminas Technical University |
-        
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/time-series-dataset-of-honey-bee-colony-dynamics-before-during-and-after-sunflower-pollination/">Time-series dataset of honey bee colony dynamics before, during, and after sunflower pollination</a></td><td>2026</td><td>🇺🇦 AmoHive / Ukraine smart-hive deployment</td></tr>
+        <tr><td><a href="/research/papers/visual-recognition-of-honeybee-behavior-patterns-at-the-hive-entrance/">Visual recognition of honeybee behavior patterns at the hive entrance</a></td><td>2025</td><td>🇱🇹 Vilnius Gediminas Technical University</td></tr>
+        </tbody>
+        </table>
         </div>
       </div>
       <div class="research-year-panel" data-year="2026">
         <div class="research-publications-table-wrap">
-        
-        | Publication | Year | Institutions |
-        |---|---|---|
-        | [Time-series dataset of honey bee colony dynamics before, during, and after sunflower pollination](../Time-series%20dataset%20of%20honey%20bee%20colony%20dynamics%20before%20during%20and%20after%20sunflower%20pollination.md) | 2026 | 🇺🇦 AmoHive / Ukraine smart-hive deployment |
-        
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/time-series-dataset-of-honey-bee-colony-dynamics-before-during-and-after-sunflower-pollination/">Time-series dataset of honey bee colony dynamics before, during, and after sunflower pollination</a></td><td>2026</td><td>🇺🇦 AmoHive / Ukraine smart-hive deployment</td></tr>
+        </tbody>
+        </table>
         </div>
       </div>
       <div class="research-year-panel" data-year="2025">
         <div class="research-publications-table-wrap">
-        
-        | Publication | Year | Institutions |
-        |---|---|---|
-        | [Visual recognition of honeybee behavior patterns at the hive entrance](../Visual%20recognition%20of%20honeybee%20behavior%20patterns%20at%20the%20hive%20entrance.md) | 2025 | 🇱🇹 Vilnius Gediminas Technical University |
-        
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/visual-recognition-of-honeybee-behavior-patterns-at-the-hive-entrance/">Visual recognition of honeybee behavior patterns at the hive entrance</a></td><td>2025</td><td>🇱🇹 Vilnius Gediminas Technical University</td></tr>
+        </tbody>
+        </table>
         </div>
       </div>
     </div>

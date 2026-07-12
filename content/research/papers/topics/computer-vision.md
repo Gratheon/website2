@@ -107,244 +107,335 @@ layout: research
     <div class="research-year-filter__panels">
       <div class="research-year-panel" data-year="all">
         <div class="research-publications-table-wrap">
-        
-        | Publication | Year | Institutions |
-        |---|---|---|
-        | [A Multimodal Machine Learning System for Non-Invasive Detection of Varroa destructor Infestations in Honey Bee Colonies](../A%20Multimodal%20Machine%20Learning%20System%20for%20Non-Invasive%20Detection%20of%20Varroa%20destructor%20Infestations%20in%20Honey%20Bee%20Colonies.md) | 2026 | 🇺🇸 Green Valley High School |
-        | [Continuous Non-Invasive Monitoring of Hive Entrance Activity Reveals Honey Bee Colony Dynamics](../Continuous%20Non-Invasive%20Monitoring%20of%20Hive%20Entrance%20Activity%20Reveals%20Honey%20Bee%20Colony%20Dynamics.md) | 2026 | 🇹🇷 Van Yüzüncü Yıl University |
-        | [Deep Learning and Computer Vision for Honey Bee Health Monitoring: A Systematic Survey and Future Directions](../Deep%20Learning%20and%20Computer%20Vision%20for%20Honey%20Bee%20Health%20Monitoring%3A%20A%20Systematic%20Survey%20and%20Future%20Directions.md) | 2026 | 🇮🇳 SSVPS's Bapusaheb Shivajirao Deore College of Engineering |
-        | [Estimating colony strength and pollination efficiency in honey bees using a novel dataset and deep learning-based models](../Estimating%20colony%20strength%20and%20pollination%20efficiency%20in%20honey%20bees%20using%20a%20novel%20dataset%20and%20deep%20learning-based%20models.md) | 2026 | 🇺🇸 University of Arkansas at Fayetteville; 🇺🇸 Washington State University; 🇺🇸 University of Arkansas System; 🇺🇸 Mississippi State University; 🇺🇸 University of Tennessee at Knoxville |
-        | [FAIRHiveFrames-1K: A Public FAIR Dataset of 1265 Annotated Hive Frame Images with Preliminary YOLOv8 and YOLOv11 Baselines](../FAIRHiveFrames-1K%20A%20Public%20FAIR%20Dataset%20of%201265%20Annotated%20Hive%20Frame%20Images%20with%20Preliminary%20YOLOv8%20and%20YOLOv11%20Baselines.md) | 2026 | 🇺🇸 Utah State University |
-        | [Honeybee Counting on Comb Images via Part-Level Annotation and Hungarian Matching](../Honeybee%20Counting%20on%20Comb%20Images%20via%20Part-Level%20Annotation%20and%20Hungarian%20Matching.md) | 2026 | 🇯🇵 Utsunomiya University |
-        | [Interpretable Deep Learning for Varroa Mite Detection: Integrating Deblurring, Morphology-Preserving Preprocessing, and Explainability Analysis](../Interpretable%20Deep%20Learning%20for%20Varroa%20Mite%20Detection%20Integrating%20Deblurring%20Morphology-Preserving%20Preprocessing%20and%20Explainability%20Analysis.md) | 2026 | 🇰🇷 Kangwon National University; 🇰🇷 National Institute of Agricultural Sciences |
-        | [M3DANet: A Lightweight Semi-Supervised Network and Embedded System for Bee Colony Counting](../M3DANet%20A%20Lightweight%20Semi-Supervised%20Network%20and%20Embedded%20System%20for%20Bee%20Colony%20Counting.md) | 2026 | 🇨🇳 Shandong Agricultural University; 🇨🇳 Apiculture Institute of Jiangxi Province |
-        | [Physics-aware vision instrumentation for stingless bee counting at hive entrance using hybrid edge-cloud object detection](../Physics-aware%20vision%20instrumentation%20for%20stingless%20bee%20counting%20at%20hive%20entrance%20using%20hybrid%20edge-cloud%20object%20detection.md) | 2026 | 🇲🇾 Universiti Teknologi Malaysia; 🇮🇩 Universitas Negeri Jakarta; 🇮🇩 Institut Teknologi Indonesia; 🇮🇩 Politeknik Negeri Bandung; 🇮🇩 National Research and Innovation Agency |
-        | [The Relevance of Compound Events in Bee Traffic Monitoring](../The%20Relevance%20of%20Compound%20Events%20in%20Bee%20Traffic%20Monitoring.md) | 2026 | 🇵🇷 University of Puerto Rico at Río Piedras |
-        | [Transforming Beekeeping Through Technology: A Systematic Review of Precision Beekeeping](../Transforming%20Beekeeping%20Through%20Technology%20A%20Systematic%20Review%20of%20Precision%20Beekeeping.md) | 2026 | 🇧🇳 Universiti Brunei Darussalam; 🇱🇰 Uva Wellassa University |
-        | [An AI-Based Digital Scanner for Varroa destructor Detection in Beekeeping](../An%20AI-Based%20Digital%20Scanner%20for%20Varroa%20destructor%20Detection%20in%20Beekeeping.md) | 2025 | 🇮🇹 Council for Agricultural Research and Economics (CREA) – Research Centre for Engineering and Agro-Food Processing, Monterotondo; 🇮🇹 Council for Agricultural Research and Economics (CREA) – Research Centre for Agriculture and Environment, Bologna; 🇷🇸 University of Novi Sad |
-        | [An AI-Based Open-Source Software for Varroa Mite Fall Analysis in Honeybee Colonies](../%E2%AD%90%EF%B8%8F%20An%20AI-Based%20Open-Source%20Software%20for%20Varroa%20Mite%20Fall%20Analysis%20in%20Honeybee%20Colonies.md) | 2025 | 🇪🇸 University of Zaragoza; 🇪🇸 University of La Rioja; 🇪🇸 University of Valencia |
-        | [Apis mellifera Bee Verification with IoT and Graph Neural Network](../Apis%20mellifera%20Bee%20Verification%20with%20IoT%20and%20Graph%20Neural%20Network.md) | 2025 | 🇲🇽 Instituto Tecnológico El Llano Aguascalientes |
-        | [Deep Learning-Based Detection of Honey Storage Areas in Apismellifera Colonies for Predicting Physical Parameters of Honey via Linear Regression](../Deep%20Learning-Based%20Detection%20of%20Honey%20Storage%20Areas%20in%20Apismellifera%20Colonies%20for%20Predicting%20Physical%20Parameters%20of%20Honey%20via%20Linear%20Regression.md) | 2025 | 🇹🇭 Chiang Mai University |
-        | [Evaluation of Single-Shot Object Detection Models for Identifying Fanning Behavior in Honeybees at the Hive Entrance](../Evaluation%20of%20Single-Shot%20Object%20Detection%20Models%20for%20Identifying%20Fanning%20Behavior%20in%20Honeybees%20at%20the%20Hive%20Entrance.md) | 2025 | 🇱🇹 Vilnius Gediminas Technical University |
-        | [Fast, accurate measurement of the worker populations of honey bee colonies using deep learning](../Fast%20accurate%20measurement%20of%20the%20worker%20populations%20of%20honey%20bee%20colonies%20using%20deep%20learning.md) | 2025 | 🇺🇸 Arizona State University; 🇺🇸 Texas A&M University–Kingsville |
-        | [Image-based honey bee larval viral and bacterial diagnosis using machine learning](../Image-based%20honey%20bee%20larval%20viral%20and%20bacterial%20diagnosis%20using%20machine%20learning.md) | 2025 | 🇺🇸 USDA Carl Hayden Bee Research Center; 🇺🇸 University of Arizona; 🇺🇸 Arizona Science Center |
-        | [Towards Varroa destructor mite detection using a narrow spectra illumination](../Towards%20Varroa%20destructor%20mite%20detection%20using%20a%20narrow%20spectra%20illumination.md) | 2025 | 🇨🇿 Brno University of Technology |
-        | [Visual recognition of honeybee behavior patterns at the hive entrance](../Visual%20recognition%20of%20honeybee%20behavior%20patterns%20at%20the%20hive%20entrance.md) | 2025 | 🇱🇹 Vilnius Gediminas Technical University |
-        | [Autonomous tracking of honey bee behaviors over long-term periods with cooperating robots](../%E2%AD%90%EF%B8%8F%20Autonomous%20tracking%20of%20honey%20bee%20behaviors%20over%20long-term%20periods%20with%20cooperating%20robots.md) | 2024 | 🇨🇿 Czech Technical University; 🇦🇹 University of Graz; 🇬🇧 Durham University; 🇹🇷 Middle East Technical University |
-        | [Beehive Smart Detector Device for the Detection of CriticalConditions That Utilize Edge Device Computations and DeepLearning Inferences](../Beehive%20Smart%20Detector%20Device%20for%20the%20Detection%20of%20CriticalConditions%20That%20Utilize%20Edge%20Device%20Computations%20and%20DeepLearning%20Inferences.md) | 2024 | 🇬🇷 University of Ioannina |
-        | [Current Status and Future Outlooks of Precision Beekeeping Systems and Services](../Current%20Status%20and%20Future%20Outlooks%20of%20Precision%20Beekeeping%20Systems%20and%20Services.md) | 2024 | 🇸🇰 Slovak University of Agriculture in Nitra |
-        | [IntelliBeeHive: An Automated Honey Bee, Pollen, and Varroa Destructor Monitoring System](../IntelliBeeHive%20An%20Automated%20Honey%20Bee%20Pollen%20and%20Varroa%20Destructor%20Monitoring%20System.md) | 2024 | 🇺🇸 University of Texas Rio Grande Valley |
-        | [Intelligent beehive monitoring system based on internet of things and colony state analysis](../Intelligent%20beehive%20monitoring%20system%20based%20on%20internet%20of%20things%20and%20colony%20state%20analysis.md) | 2024 | 🇲🇾 Universiti Teknologi MARA; 🇨🇳 Peking University Shenzhen Graduate School; 🇨🇳 Xiamen University; 🇨🇳 Fujian Agriculture And Forestry University; 🇨🇳 Quanzhou University of Information Engineering |
-        | [Keypoint-Based Bee Orientation Estimation and Ramp Detection at the Hive Entrance for Bee Behavior Identification System](../Keypoint-Based%20Bee%20Orientation%20Estimation%20and%20Ramp%20Detection%20at%20the%20Hive%20Entrance%20for%20Bee%20Behavior%20Identification%20System.md) | 2024 | 🇱🇹 Vilnius Gediminas Technical University |
-        | [Mapping Crop Types for Beekeepers Using Sentinel-2 Satellite Image Time Series: Five Essential Crops in the Pollination Services](../Mapping%20Crop%20Types%20for%20Beekeepers%20Using%20Sentinel-2%20Satellite%20Image%20Time%20Series%20Five%20Essential%20Crops%20in%20the%20Pollination%20Services.md) | 2024 | 🇨🇦 Université de Montréal |
-        | [Towards Robotic Mapping of a Honeybee Comb](../Towards%20Robotic%20Mapping%20of%20a%20Honeybee%20Comb.md) | 2024 | 🇨🇿 Czech Technical University; 🇬🇧 Durham University; 🇦🇹 University of Graz |
-        | [Varroa destructor detection on honey bees using hyperspectral imagery](../Varroa%20destructor%20detection%20on%20honey%20bees%20using%20hyperspectral%20imagery.md) | 2024 | 🇨🇿 Brno University of Technology; 🇫🇮 LUT University |
-        | [Accuracy vs. Energy: An Assessment of Bee Object Inference inVideos from On-Hive Video Loggers with YOLOv3,YOLOv4-Tiny, and YOLOv7-Tiny](../Accuracy%20vs.%20Energy.md) | 2023 | 🇺🇸 Utah State University |
-        | [Approximation of functions determining colony activity using neural networks. Master thesis](../Approximation%20of%20functions.md) | 2023 | 🇨🇿 Brno University of Technology |
-        | [BeeNet: An End-To-End Deep Network For Bee Surveillance](../BeeNet%20-%20An%20End-To-End%20Deep%20Network%20For%20Bee%20Surveillance.md) | 2023 | 🇦🇺 Australian National University; 🇧🇩 BRAC University; 🇦🇺 Curtin University; 🇦🇺 Commonwealth Scientific and Industrial Research Organisation |
-        | [Detection of Varroa destructor Infestation of Honeybees Based on Segmentation and Object Detection Convolutional Neural Networks](../Detection%20of%20Varroa%20destructor%20Infestation%20of%20Honeybees%20Based%20on%20Segmentation%20and%20Object%20Detection%20Convolutional%20Neural%20Networks.md) | 2023 | 🇨🇳 Shandong Agriculture University |
-        | [Labeled dataset for bee detection and direction estimation on entrance to beehive](../Labeled%20dataset%20for%20bee%20detection%20and%20direction%20estimation%20on%20entrance%20to%20beehive.md) | 2023 | 🇱🇹 Vilnius Gediminas Technical University |
-        | [Machine Learning and Computer Vision Techniques in Continuous Beehive Monitoring Applications: A Survey](../Machine%20Learning%20and%20Computer%20Vision%20Techniques%20in%20Continuous%20Beehive%20Monitoring%20Applications%20A%20Survey.md) | 2023 | 🇨🇿 Brno University of Technology |
-        | [Pollinators as Data Collectors: Estimating Floral Diversity with Bees and Computer Vision](../Pollinators%20as%20Data%20Collectors%20Estimating%20Floral%20Diversity%20with%20Bees%20and%20Computer%20Vision.md) | 2023 | 🇩🇪 Karlsruhe Institute of Technology; 🇩🇪 apic.ai GmbH |
-        | [Precision Monitoring of Honey Bee (Hymenoptera: Apidae) Activity and Pollen Diversity during Pollination to EvaluateColony Health](../Precision%20Monitoring%20of%20Honey%20Bee.md) | 2023 | 🇦🇺 La Trobe University |
-        | [Raspberry Pi Bee Health Monitoring Device](../Raspberry%20Pi%20Bee%20Health%20Monitoring%20Device.md) | 2023 | 🇨🇿 Brno University of Technology |
-        | [Recognizing Beehives’ Health Abnormalities Based on Mobile Net Deep Learning Model](../Recognizing%20Beehives%20Health%20Abnormalities%20Based%20on%20Mobile%20Net%20Deep%20Learning%20Model.md) | 2023 | 🇪🇬 Egyptian Russian University; 🇪🇬 Cairo University; 🇪🇬 Tanta University; 🇪🇬 Scientific Research Group in Egypt |
-        | [The Be-Hive Project - Counting Bee Traffic based on Deep Learning and Pose Estimation](../Be-Hive.md) | 2023 | 🇨🇾 CYENS Centre of Excellence; 🇨🇾 Cyprus University of Technology; 🇳🇱 University of Twente |
-        | [Varroa Destructor Classification Using Legendre Fourier Moments with Different Color Spaces](../Varroa%20Destructor%20Classification%20Using%20Legendre%20Fourier%20Moments%20with%20Different%20Color%20Spaces.md) | 2023 | 🇲🇽 Universidad Politécnica de Tulancingo |
-        | [Automated Video Monitoring of Unmarked and Marked Honey Bees at the Hive Entrance](../%E2%AD%90%EF%B8%8F%20Automated%20Video%20Monitoring%20of%20Unmarked%20and%20Marked%20Honey%20Bees%20at%20the%20Hive%20Entrance.md) | 2022 | 🇵🇷 University of Puerto Rico; 🇺🇸 Brown University; 🇺🇸 Howard Hughes Medical Institute (Janelia Research Campus) |
-        | [Deep Learning Beehive Monitoring System for Early Detection of the Varroa Mite](../Deep%20Learning%20Beehive%20Monitoring%20System%20for%20Early%20Detection%20of%20the%20Varroa%20Mite.md) | 2022 | 🇬🇷 University of Ioannina |
-        | [Honeybee Re-identification in Video: New Datasets and Impact of Self-supervision](../Honeybee%20Re-identification%20in%20Video%20New%20Datasets%20and%20Impact%20of%20Self-supervision.md) | 2022 | 🇵🇷 University of Puerto Rico |
-        | [Integration of Scales and Cameras in Nondisruptive ElectronicBeehive Monitoring: On the Within-Day Relationship of HiveWeight and Traffic in Honeybee (Apis mellifera) Colonies in Langstroth Hives in Tucson, Arizona, USA](../Integration%20of%20Scales%20and%20Cameras%20in%20Nondisruptive%20Electronic%20Beehive%20Monitoring.md) | 2022 | 🇺🇸 Utah State University |
-        | [SLEAP: A deep learning system for multi-animal pose tracking](../SLEAP.md) | 2022 | 🇺🇸 Princeton University; 🇺🇸 New York University; 🇺🇸 Johns Hopkins University School of Medicine |
-        | [BeePIV: A Method to Measure Apis Mellifera Traffic with Particle Image Velocimetry in Videos](../BeePIV%20A%20Method%20to%20Measure%20Apis%20Mellifera%20Traffic%20with%20Particle%20Image%20Velocimetry%20in%20Videos.md) | 2021 | 🇺🇸 Utah State University |
-        | [DeepLabCut-based daily behavioural and posture analysis in a cricket](../DeepLabCut-based%20daily%20behavioural%20and%20posture%20analysis%20in%20a%20cricket.md) | 2021 | 🇯🇵 Waseda University |
-        | [Honeybee In-Out Monitoring System by Object Recognition and Tracking from Real-Time Webcams](../Honeybee%20In-Out%20Monitoring%20System%20by%20Object%20Recognition%20and%20Tracking%20from%20Real-Time%20Webcams.md) | 2021 | 🇰🇷 Incheon National University |
-        | [Markerless tracking of an entire honey bee colony](../%E2%AD%90%EF%B8%8F%20Markerless%20tracking%20of%20an%20entire%20honey%20bee%20colony.md) | 2021 | 🇯🇵 Okinawa Institute of Science and Technology Graduate University; 🇦🇺 Australian National University; 🇳🇱 Vrije Universiteit Amsterdam |
-        | [On Image Classification in Video Analysis of Omnidirectional Apis Mellifera Traffic: Random Reinforced Forests vs. Shallow Convolutional Networks](../On%20Image%20Classification%20in%20Video%20Analysis%20of%20Omnidirectional%20Apis%20Mellifera%20Traffic%20Random%20Reinforced%20Forests%20vs.%20Shallow%20Convolutional%20Networks.md) | 2021 | 🇺🇸 Utah State University |
-        | [Visual Diagnosis of the Varroa Destructor Parasitic Mite in Honeybees Using Object Detector Techniques](../Visual%20Diagnosis%20of%20the%20Varroa%20Destructor%20Parasitic%20Mite%20in%20Honeybees%20Using%20Object%20Detector%20Techniques.md) | 2021 | 🇨🇿 Brno University of Technology |
-        | [Automatic detection and classification of honey bee comb cells using deep learning](../%E2%AD%90%EF%B8%8F%20Automatic%20detection%20and%20classification%20of%20honey%20bee%20comb%20cells%20using%20deeplearning.md) | 2020 | 🇵🇹 Instituto Politécnico de Bragança; 🇧🇷 Federal Technological University of Paraná; 🇫🇷 Université Clermont-Auvergne |
-        | [BeeAlarmed. Masters thesis](../%E2%AD%90%EF%B8%8F%20BeeAlarmed.%20Masters%20thesis.md) | 2020 | 🇩🇪 South Westphalia University of Applied Sciences |
-        | [Current achievements and future developments of a novel AI based visual monitoring of beehives in ecotoxicology and for the monitoring of landscape structures](../Current%20achievements%20and%20future%20developments%20of%20a%20novel%20AI%20based%20visual%20monitoring%20of%20beehives%20in%20ecotoxicology%20and%20for%20the%20monitoring%20of%20landscape%20structures.md) | 2020 | 🇩🇪 apic.ai GmbH |
-        | [Real-time, low-latency closed-loop feedback using markerless posture tracking](../Real-time%2C%20low-latency%20closed-loop%20feedback%20using%20markerless%20posture%20tracking.md) | 2020 | 🇺🇸 Harvard University; 🇬🇧 NeuroGEARS Ltd; 🇺🇸 University of Oregon; 🇨🇭 Swiss Federal Institute of Technology |
-        | [DeepBees – Building and Scaling Convolutional Neuronal Nets For Fast and Large-scale Visual Monitoring of Bee Hives](../%E2%AD%90%EF%B8%8F%20DeepBees%20%E2%80%93%20Building%20and%20Scaling%20Convolutional%20Neuronal%20Nets%20For%20Fast%20and%20Large-scale%20Visual%20Monitoring%20of%20Bee%20Hives.md) | 2019 | 🇩🇪 Karlsruhe Institute of Technology; 🇩🇪 apic.ai |
-        | [DeepPoseKit, a software toolkit for fast and robust animal pose estimation using deep learning](../DeepPoseKit.md) | 2019 | 🇩🇪 Max Planck Institute of Animal Behavior; 🇩🇪 University of Konstanz; 🇺🇸 Princeton University; 🇩🇪 Technische Universität München |
-        | [LabelBee: a web platform for large-scale semi-automated analysis of honeybee behavior from video](../%E2%AD%90%EF%B8%8F%20LabelBee%20a%20web%20platform%20for%20large-scale%20semi-automated%20analysis%20of%20honeybee%20behavior%20from%20video.md) | 2019 | 🇵🇷 University of Puerto Rico |
-        | [A Preliminary Study of Image Analysis forParasite Detection on Honey Bees](../A%20Preliminary%20Study%20of%20Image%20Analysis%20forParasite%20Detection%20on%20Honey%20Bees.md) | 2018 | 🇦🇹 Vienna University of Technology; 🇪🇸 Universidad de Oviedo; 🇪🇸 Universitat de Barcelona |
-        | [DeepLabCut: markerless pose estimation of user-defined body parts with deep learning](../DeepLabCut.md) | 2018 | 🇩🇪 Eberhard Karls Universität Tübingen; 🇺🇸 Harvard University; 🇺🇸 Columbia University; 🇩🇪 Max Planck Institute for Biological Cybernetics; 🇩🇪 Bernstein Center for Computational Neuroscience; 🇺🇸 Baylor College of Medicine |
-        | [Multiple Animals Tracking in VideoUsing Part Affinity Fields](../Multiple%20Animals%20Tracking%20in%20VideoUsing%20Part%20Affinity%20Fields.md) | 2018 | 🇵🇷 University of Puerto Rico |
-        | [Recognition of Pollen-bearing Bees from Video using Convolutional Neural Network](../Recognition%20of%20Pollen-bearing%20Bees%20from%20Video%20using%20Convolutional%20Neural%20Network.md) | 2018 | 🇵🇷 University of Puerto Rico |
-        | [The development of honey bee coloniesassessed using a new semi-automated broodcounting method: CombCount](../The%20development%20of%20honey%20bee%20coloniesassessed%20using%20a%20new%20semi-automated%20broodcounting%20method%20CombCount.md) | 2018 | 🇦🇺 Macquarie University; 🇦🇺 Queensland University of Technology; 🇺🇸 Carl Hayden Bee Research Center |
-        | [Towards dense object tracking in a 2D honeybee hive](../%E2%AD%90%EF%B8%8F%20Towards%20dense%20object%20tracking%20in%20a%202D%20honeybee%20hive.md) | 2018 | 🇯🇵 Okinawa Institute of Science and Technology Graduate University; 🇳🇱 VU University Amsterdam |
-        | [Tracking All Members of a Honey Bee Colony Over Their Lifetime Using Learned Models of Correspondence](../Tracking%20All%20Members%20of%20a%20Honey%20Bee%20Colony%20Over%20Their%20Lifetime%20Using%20Learned%20Models%20of%20Correspondence.md) | 2018 | 🇩🇪 Freie Universität Berlin; 🇩🇪 University of Konstanz; 🇩🇪 Robert Koch Institute; 🇺🇸 Auburn University; 🇺🇸 University of Hohenheim |
-        | [Automatic detection and decoding of honey bee waggle dances](../Automatic%20detection%20and%20decoding%20of%20honeybee%20waggle%20dances.md) | 2017 | 🇩🇪 Freie Universität Berlin |
-        | [Pollen Bearing Honey Bee Detection in Hive Entrance Video Recorded by Remote Embedded System for Pollination Monitoring](../Pollen%20Bearing%20Honey%20Bee%20Detection%20in%20Hive%20Entrance%20Video%20Recorded%20by%20Remote%20Embedded%20System%20for%20Pollination%20Monitoring.md) | 2016 | 🇧🇦 University of Banja Luka |
-        | [Automatic methods for long-term tracking and the detection and decoding of communication dances in honeybees](../Automatic%20methods%20for%20long-term%20tracking%20and%20the%20detection%20and%20decoding%20of%20communication%20dancesin%20honeybees.md) | 2015 | 🇩🇪 Freie Universität Berlin; 🇬🇧 University of Sussex |
-        
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/a-multimodal-machine-learning-system-for-non-invasive-detection-of-varroa-destructor-infestations-in-honey-bee-colonies/">A Multimodal Machine Learning System for Non-Invasive Detection of Varroa destructor Infestations in Honey Bee Colonies</a></td><td>2026</td><td>🇺🇸 Green Valley High School</td></tr>
+        <tr><td><a href="/research/papers/continuous-non-invasive-monitoring-of-hive-entrance-activity-reveals-honey-bee-colony-dynamics/">Continuous Non-Invasive Monitoring of Hive Entrance Activity Reveals Honey Bee Colony Dynamics</a></td><td>2026</td><td>🇹🇷 Van Yüzüncü Yıl University</td></tr>
+        <tr><td><a href="/research/papers/deep-learning-and-computer-vision-for-honey-bee-health-monitoring-a-systematic-survey-and-future-directions/">Deep Learning and Computer Vision for Honey Bee Health Monitoring: A Systematic Survey and Future Directions</a></td><td>2026</td><td>🇮🇳 SSVPS&#x27;s Bapusaheb Shivajirao Deore College of Engineering</td></tr>
+        <tr><td><a href="/research/papers/estimating-colony-strength-and-pollination-efficiency-in-honey-bees-using-a-novel-dataset-and-deep-learning-based-models/">Estimating colony strength and pollination efficiency in honey bees using a novel dataset and deep learning-based models</a></td><td>2026</td><td>🇺🇸 University of Arkansas at Fayetteville; 🇺🇸 Washington State University; 🇺🇸 University of Arkansas System; 🇺🇸 Mississippi State University; 🇺🇸 University of Tennessee at Knoxville</td></tr>
+        <tr><td><a href="/research/papers/fairhiveframes-1k-a-public-fair-dataset-of-1265-annotated-hive-frame-images-with-preliminary-yolov8-and-yolov11-baselines/">FAIRHiveFrames-1K: A Public FAIR Dataset of 1265 Annotated Hive Frame Images with Preliminary YOLOv8 and YOLOv11 Baselines</a></td><td>2026</td><td>🇺🇸 Utah State University</td></tr>
+        <tr><td><a href="/research/papers/honeybee-counting-on-comb-images-via-part-level-annotation-and-hungarian-matching/">Honeybee Counting on Comb Images via Part-Level Annotation and Hungarian Matching</a></td><td>2026</td><td>🇯🇵 Utsunomiya University</td></tr>
+        <tr><td><a href="/research/papers/interpretable-deep-learning-for-varroa-mite-detection-integrating-deblurring-morphology-preserving-preprocessing-and-explainability-analysis/">Interpretable Deep Learning for Varroa Mite Detection: Integrating Deblurring, Morphology-Preserving Preprocessing, and Explainability Analysis</a></td><td>2026</td><td>🇰🇷 Kangwon National University; 🇰🇷 National Institute of Agricultural Sciences</td></tr>
+        <tr><td><a href="/research/papers/m3danet-a-lightweight-semi-supervised-network-and-embedded-system-for-bee-colony-counting/">M3DANet: A Lightweight Semi-Supervised Network and Embedded System for Bee Colony Counting</a></td><td>2026</td><td>🇨🇳 Shandong Agricultural University; 🇨🇳 Apiculture Institute of Jiangxi Province</td></tr>
+        <tr><td><a href="/research/papers/physics-aware-vision-instrumentation-for-stingless-bee-counting-at-hive-entrance-using-hybrid-edge-cloud-object-detection/">Physics-aware vision instrumentation for stingless bee counting at hive entrance using hybrid edge-cloud object detection</a></td><td>2026</td><td>🇲🇾 Universiti Teknologi Malaysia; 🇮🇩 Universitas Negeri Jakarta; 🇮🇩 Institut Teknologi Indonesia; 🇮🇩 Politeknik Negeri Bandung; 🇮🇩 National Research and Innovation Agency</td></tr>
+        <tr><td><a href="/research/papers/the-relevance-of-compound-events-in-bee-traffic-monitoring/">The Relevance of Compound Events in Bee Traffic Monitoring</a></td><td>2026</td><td>🇵🇷 University of Puerto Rico at Río Piedras</td></tr>
+        <tr><td><a href="/research/papers/transforming-beekeeping-through-technology-a-systematic-review-of-precision-beekeeping/">Transforming Beekeeping Through Technology: A Systematic Review of Precision Beekeeping</a></td><td>2026</td><td>🇧🇳 Universiti Brunei Darussalam; 🇱🇰 Uva Wellassa University</td></tr>
+        <tr><td><a href="/research/papers/an-ai-based-digital-scanner-for-varroa-destructor-detection-in-beekeeping/">An AI-Based Digital Scanner for Varroa destructor Detection in Beekeeping</a></td><td>2025</td><td>🇮🇹 Council for Agricultural Research and Economics (CREA) – Research Centre for Engineering and Agro-Food Processing, Monterotondo; 🇮🇹 Council for Agricultural Research and Economics (CREA) – Research Centre for Agriculture and Environment, Bologna; 🇷🇸 University of Novi Sad</td></tr>
+        <tr><td><a href="/research/papers/an-ai-based-open-source-software-for-varroa-mite-fall-analysis-in-honeybee-colonies/">An AI-Based Open-Source Software for Varroa Mite Fall Analysis in Honeybee Colonies</a></td><td>2025</td><td>🇪🇸 University of Zaragoza; 🇪🇸 University of La Rioja; 🇪🇸 University of Valencia</td></tr>
+        <tr><td><a href="/research/papers/apis-mellifera-bee-verification-with-iot-and-graph-neural-network/">Apis mellifera Bee Verification with IoT and Graph Neural Network</a></td><td>2025</td><td>🇲🇽 Instituto Tecnológico El Llano Aguascalientes</td></tr>
+        <tr><td><a href="/research/papers/deep-learning-based-detection-of-honey-storage-areas-in-apismellifera-colonies-for-predicting-physical-parameters-of-honey-via-linear-regression/">Deep Learning-Based Detection of Honey Storage Areas in Apismellifera Colonies for Predicting Physical Parameters of Honey via Linear Regression</a></td><td>2025</td><td>🇹🇭 Chiang Mai University</td></tr>
+        <tr><td><a href="/research/papers/evaluation-of-single-shot-object-detection-models-for-identifying-fanning-behavior-in-honeybees-at-the-hive-entrance/">Evaluation of Single-Shot Object Detection Models for Identifying Fanning Behavior in Honeybees at the Hive Entrance</a></td><td>2025</td><td>🇱🇹 Vilnius Gediminas Technical University</td></tr>
+        <tr><td><a href="/research/papers/fast-accurate-measurement-of-the-worker-populations-of-honey-bee-colonies-using-deep-learning/">Fast, accurate measurement of the worker populations of honey bee colonies using deep learning</a></td><td>2025</td><td>🇺🇸 Arizona State University; 🇺🇸 Texas A&amp;M University–Kingsville</td></tr>
+        <tr><td><a href="/research/papers/image-based-honey-bee-larval-viral-and-bacterial-diagnosis-using-machine-learning/">Image-based honey bee larval viral and bacterial diagnosis using machine learning</a></td><td>2025</td><td>🇺🇸 USDA Carl Hayden Bee Research Center; 🇺🇸 University of Arizona; 🇺🇸 Arizona Science Center</td></tr>
+        <tr><td><a href="/research/papers/towards-varroa-destructor-mite-detection-using-a-narrow-spectra-illumination/">Towards Varroa destructor mite detection using a narrow spectra illumination</a></td><td>2025</td><td>🇨🇿 Brno University of Technology</td></tr>
+        <tr><td><a href="/research/papers/visual-recognition-of-honeybee-behavior-patterns-at-the-hive-entrance/">Visual recognition of honeybee behavior patterns at the hive entrance</a></td><td>2025</td><td>🇱🇹 Vilnius Gediminas Technical University</td></tr>
+        <tr><td><a href="/research/papers/autonomous-tracking-of-honey-bee-behaviors-over-long-term-periods-with-cooperating-robots/">Autonomous tracking of honey bee behaviors over long-term periods with cooperating robots</a></td><td>2024</td><td>🇨🇿 Czech Technical University; 🇦🇹 University of Graz; 🇬🇧 Durham University; 🇹🇷 Middle East Technical University</td></tr>
+        <tr><td><a href="/research/papers/beehive-smart-detector-device-for-the-detection-of-criticalconditions-that-utilize-edge-device-computations-and-deeplearning-inferences/">Beehive Smart Detector Device for the Detection of CriticalConditions That Utilize Edge Device Computations and DeepLearning Inferences</a></td><td>2024</td><td>🇬🇷 University of Ioannina</td></tr>
+        <tr><td><a href="/research/papers/current-status-and-future-outlooks-of-precision-beekeeping-systems-and-services/">Current Status and Future Outlooks of Precision Beekeeping Systems and Services</a></td><td>2024</td><td>🇸🇰 Slovak University of Agriculture in Nitra</td></tr>
+        <tr><td><a href="/research/papers/intellibeehive-an-automated-honey-bee-pollen-and-varroa-destructor-monitoring-system/">IntelliBeeHive: An Automated Honey Bee, Pollen, and Varroa Destructor Monitoring System</a></td><td>2024</td><td>🇺🇸 University of Texas Rio Grande Valley</td></tr>
+        <tr><td><a href="/research/papers/intelligent-beehive-monitoring-system-based-on-internet-of-things-and-colony-state-analysis/">Intelligent beehive monitoring system based on internet of things and colony state analysis</a></td><td>2024</td><td>🇲🇾 Universiti Teknologi MARA; 🇨🇳 Peking University Shenzhen Graduate School; 🇨🇳 Xiamen University; 🇨🇳 Fujian Agriculture And Forestry University; 🇨🇳 Quanzhou University of Information Engineering</td></tr>
+        <tr><td><a href="/research/papers/keypoint-based-bee-orientation-estimation-and-ramp-detection-at-the-hive-entrance-for-bee-behavior-identification-system/">Keypoint-Based Bee Orientation Estimation and Ramp Detection at the Hive Entrance for Bee Behavior Identification System</a></td><td>2024</td><td>🇱🇹 Vilnius Gediminas Technical University</td></tr>
+        <tr><td><a href="/research/papers/mapping-crop-types-for-beekeepers-using-sentinel-2-satellite-image-time-series-five-essential-crops-in-the-pollination-services/">Mapping Crop Types for Beekeepers Using Sentinel-2 Satellite Image Time Series: Five Essential Crops in the Pollination Services</a></td><td>2024</td><td>🇨🇦 Université de Montréal</td></tr>
+        <tr><td><a href="/research/papers/towards-robotic-mapping-of-a-honeybee-comb/">Towards Robotic Mapping of a Honeybee Comb</a></td><td>2024</td><td>🇨🇿 Czech Technical University; 🇬🇧 Durham University; 🇦🇹 University of Graz</td></tr>
+        <tr><td><a href="/research/papers/varroa-destructor-detection-on-honey-bees-using-hyperspectral-imagery/">Varroa destructor detection on honey bees using hyperspectral imagery</a></td><td>2024</td><td>🇨🇿 Brno University of Technology; 🇫🇮 LUT University</td></tr>
+        <tr><td><a href="/research/papers/accuracy-vs-energy/">Accuracy vs. Energy: An Assessment of Bee Object Inference inVideos from On-Hive Video Loggers with YOLOv3,YOLOv4-Tiny, and YOLOv7-Tiny</a></td><td>2023</td><td>🇺🇸 Utah State University</td></tr>
+        <tr><td><a href="/research/papers/approximation-of-functions/">Approximation of functions determining colony activity using neural networks. Master thesis</a></td><td>2023</td><td>🇨🇿 Brno University of Technology</td></tr>
+        <tr><td><a href="/research/papers/beenet-an-end-to-end-deep-network-for-bee-surveillance/">BeeNet: An End-To-End Deep Network For Bee Surveillance</a></td><td>2023</td><td>🇦🇺 Australian National University; 🇧🇩 BRAC University; 🇦🇺 Curtin University; 🇦🇺 Commonwealth Scientific and Industrial Research Organisation</td></tr>
+        <tr><td><a href="/research/papers/detection-of-varroa-destructor-infestation-of-honeybees-based-on-segmentation-and-object-detection-convolutional-neural-networks/">Detection of Varroa destructor Infestation of Honeybees Based on Segmentation and Object Detection Convolutional Neural Networks</a></td><td>2023</td><td>🇨🇳 Shandong Agriculture University</td></tr>
+        <tr><td><a href="/research/papers/labeled-dataset-for-bee-detection-and-direction-estimation-on-entrance-to-beehive/">Labeled dataset for bee detection and direction estimation on entrance to beehive</a></td><td>2023</td><td>🇱🇹 Vilnius Gediminas Technical University</td></tr>
+        <tr><td><a href="/research/papers/machine-learning-and-computer-vision-techniques-in-continuous-beehive-monitoring-applications-a-survey/">Machine Learning and Computer Vision Techniques in Continuous Beehive Monitoring Applications: A Survey</a></td><td>2023</td><td>🇨🇿 Brno University of Technology</td></tr>
+        <tr><td><a href="/research/papers/pollinators-as-data-collectors-estimating-floral-diversity-with-bees-and-computer-vision/">Pollinators as Data Collectors: Estimating Floral Diversity with Bees and Computer Vision</a></td><td>2023</td><td>🇩🇪 Karlsruhe Institute of Technology; 🇩🇪 apic.ai GmbH</td></tr>
+        <tr><td><a href="/research/papers/precision-monitoring-of-honey-bee/">Precision Monitoring of Honey Bee (Hymenoptera: Apidae) Activity and Pollen Diversity during Pollination to EvaluateColony Health</a></td><td>2023</td><td>🇦🇺 La Trobe University</td></tr>
+        <tr><td><a href="/research/papers/raspberry-pi-bee-health-monitoring-device/">Raspberry Pi Bee Health Monitoring Device</a></td><td>2023</td><td>🇨🇿 Brno University of Technology</td></tr>
+        <tr><td><a href="/research/papers/recognizing-beehives-health-abnormalities-based-on-mobile-net-deep-learning-model/">Recognizing Beehives’ Health Abnormalities Based on Mobile Net Deep Learning Model</a></td><td>2023</td><td>🇪🇬 Egyptian Russian University; 🇪🇬 Cairo University; 🇪🇬 Tanta University; 🇪🇬 Scientific Research Group in Egypt</td></tr>
+        <tr><td><a href="/research/papers/be-hive/">The Be-Hive Project - Counting Bee Traffic based on Deep Learning and Pose Estimation</a></td><td>2023</td><td>🇨🇾 CYENS Centre of Excellence; 🇨🇾 Cyprus University of Technology; 🇳🇱 University of Twente</td></tr>
+        <tr><td><a href="/research/papers/varroa-destructor-classification-using-legendre-fourier-moments-with-different-color-spaces/">Varroa Destructor Classification Using Legendre Fourier Moments with Different Color Spaces</a></td><td>2023</td><td>🇲🇽 Universidad Politécnica de Tulancingo</td></tr>
+        <tr><td><a href="/research/papers/automated-video-monitoring-of-unmarked-and-marked-honey-bees-at-the-hive-entrance/">Automated Video Monitoring of Unmarked and Marked Honey Bees at the Hive Entrance</a></td><td>2022</td><td>🇵🇷 University of Puerto Rico; 🇺🇸 Brown University; 🇺🇸 Howard Hughes Medical Institute (Janelia Research Campus)</td></tr>
+        <tr><td><a href="/research/papers/deep-learning-beehive-monitoring-system-for-early-detection-of-the-varroa-mite/">Deep Learning Beehive Monitoring System for Early Detection of the Varroa Mite</a></td><td>2022</td><td>🇬🇷 University of Ioannina</td></tr>
+        <tr><td><a href="/research/papers/honeybee-re-identification-in-video-new-datasets-and-impact-of-self-supervision/">Honeybee Re-identification in Video: New Datasets and Impact of Self-supervision</a></td><td>2022</td><td>🇵🇷 University of Puerto Rico</td></tr>
+        <tr><td><a href="/research/papers/integration-of-scales-and-cameras-in-nondisruptive-electronic-beehive-monitoring/">Integration of Scales and Cameras in Nondisruptive ElectronicBeehive Monitoring: On the Within-Day Relationship of HiveWeight and Traffic in Honeybee (Apis mellifera) Colonies in Langstroth Hives in Tucson, Arizona, USA</a></td><td>2022</td><td>🇺🇸 Utah State University</td></tr>
+        <tr><td><a href="/research/papers/sleap/">SLEAP: A deep learning system for multi-animal pose tracking</a></td><td>2022</td><td>🇺🇸 Princeton University; 🇺🇸 New York University; 🇺🇸 Johns Hopkins University School of Medicine</td></tr>
+        <tr><td><a href="/research/papers/beepiv-a-method-to-measure-apis-mellifera-traffic-with-particle-image-velocimetry-in-videos/">BeePIV: A Method to Measure Apis Mellifera Traffic with Particle Image Velocimetry in Videos</a></td><td>2021</td><td>🇺🇸 Utah State University</td></tr>
+        <tr><td><a href="/research/papers/deeplabcut-based-daily-behavioural-and-posture-analysis-in-a-cricket/">DeepLabCut-based daily behavioural and posture analysis in a cricket</a></td><td>2021</td><td>🇯🇵 Waseda University</td></tr>
+        <tr><td><a href="/research/papers/honeybee-in-out-monitoring-system-by-object-recognition-and-tracking-from-real-time-webcams/">Honeybee In-Out Monitoring System by Object Recognition and Tracking from Real-Time Webcams</a></td><td>2021</td><td>🇰🇷 Incheon National University</td></tr>
+        <tr><td><a href="/research/papers/markerless-tracking-of-an-entire-honey-bee-colony/">Markerless tracking of an entire honey bee colony</a></td><td>2021</td><td>🇯🇵 Okinawa Institute of Science and Technology Graduate University; 🇦🇺 Australian National University; 🇳🇱 Vrije Universiteit Amsterdam</td></tr>
+        <tr><td><a href="/research/papers/on-image-classification-in-video-analysis-of-omnidirectional-apis-mellifera-traffic-random-reinforced-forests-vs-shallow-convolutional-networks/">On Image Classification in Video Analysis of Omnidirectional Apis Mellifera Traffic: Random Reinforced Forests vs. Shallow Convolutional Networks</a></td><td>2021</td><td>🇺🇸 Utah State University</td></tr>
+        <tr><td><a href="/research/papers/visual-diagnosis-of-the-varroa-destructor-parasitic-mite-in-honeybees-using-object-detector-techniques/">Visual Diagnosis of the Varroa Destructor Parasitic Mite in Honeybees Using Object Detector Techniques</a></td><td>2021</td><td>🇨🇿 Brno University of Technology</td></tr>
+        <tr><td><a href="/research/papers/automatic-detection-and-classification-of-honey-bee-comb-cells-using-deeplearning/">Automatic detection and classification of honey bee comb cells using deep learning</a></td><td>2020</td><td>🇵🇹 Instituto Politécnico de Bragança; 🇧🇷 Federal Technological University of Paraná; 🇫🇷 Université Clermont-Auvergne</td></tr>
+        <tr><td><a href="/research/papers/beealarmed-masters-thesis/">BeeAlarmed. Masters thesis</a></td><td>2020</td><td>🇩🇪 South Westphalia University of Applied Sciences</td></tr>
+        <tr><td><a href="/research/papers/current-achievements-and-future-developments-of-a-novel-ai-based-visual-monitoring-of-beehives-in-ecotoxicology-and-for-the-monitoring-of-landscape-structures/">Current achievements and future developments of a novel AI based visual monitoring of beehives in ecotoxicology and for the monitoring of landscape structures</a></td><td>2020</td><td>🇩🇪 apic.ai GmbH</td></tr>
+        <tr><td><a href="/research/papers/real-time-low-latency-closed-loop-feedback-using-markerless-posture-tracking/">Real-time, low-latency closed-loop feedback using markerless posture tracking</a></td><td>2020</td><td>🇺🇸 Harvard University; 🇬🇧 NeuroGEARS Ltd; 🇺🇸 University of Oregon; 🇨🇭 Swiss Federal Institute of Technology</td></tr>
+        <tr><td><a href="/research/papers/deepbees-building-and-scaling-convolutional-neuronal-nets-for-fast-and-large-scale-visual-monitoring-of-bee-hives/">DeepBees – Building and Scaling Convolutional Neuronal Nets For Fast and Large-scale Visual Monitoring of Bee Hives</a></td><td>2019</td><td>🇩🇪 Karlsruhe Institute of Technology; 🇩🇪 apic.ai</td></tr>
+        <tr><td><a href="/research/papers/deepposekit/">DeepPoseKit, a software toolkit for fast and robust animal pose estimation using deep learning</a></td><td>2019</td><td>🇩🇪 Max Planck Institute of Animal Behavior; 🇩🇪 University of Konstanz; 🇺🇸 Princeton University; 🇩🇪 Technische Universität München</td></tr>
+        <tr><td><a href="/research/papers/labelbee-a-web-platform-for-large-scale-semi-automated-analysis-of-honeybee-behavior-from-video/">LabelBee: a web platform for large-scale semi-automated analysis of honeybee behavior from video</a></td><td>2019</td><td>🇵🇷 University of Puerto Rico</td></tr>
+        <tr><td><a href="/research/papers/a-preliminary-study-of-image-analysis-forparasite-detection-on-honey-bees/">A Preliminary Study of Image Analysis forParasite Detection on Honey Bees</a></td><td>2018</td><td>🇦🇹 Vienna University of Technology; 🇪🇸 Universidad de Oviedo; 🇪🇸 Universitat de Barcelona</td></tr>
+        <tr><td><a href="/research/papers/deeplabcut/">DeepLabCut: markerless pose estimation of user-defined body parts with deep learning</a></td><td>2018</td><td>🇩🇪 Eberhard Karls Universität Tübingen; 🇺🇸 Harvard University; 🇺🇸 Columbia University; 🇩🇪 Max Planck Institute for Biological Cybernetics; 🇩🇪 Bernstein Center for Computational Neuroscience; 🇺🇸 Baylor College of Medicine</td></tr>
+        <tr><td><a href="/research/papers/multiple-animals-tracking-in-videousing-part-affinity-fields/">Multiple Animals Tracking in VideoUsing Part Affinity Fields</a></td><td>2018</td><td>🇵🇷 University of Puerto Rico</td></tr>
+        <tr><td><a href="/research/papers/recognition-of-pollen-bearing-bees-from-video-using-convolutional-neural-network/">Recognition of Pollen-bearing Bees from Video using Convolutional Neural Network</a></td><td>2018</td><td>🇵🇷 University of Puerto Rico</td></tr>
+        <tr><td><a href="/research/papers/the-development-of-honey-bee-coloniesassessed-using-a-new-semi-automated-broodcounting-method-combcount/">The development of honey bee coloniesassessed using a new semi-automated broodcounting method: CombCount</a></td><td>2018</td><td>🇦🇺 Macquarie University; 🇦🇺 Queensland University of Technology; 🇺🇸 Carl Hayden Bee Research Center</td></tr>
+        <tr><td><a href="/research/papers/towards-dense-object-tracking-in-a-2d-honeybee-hive/">Towards dense object tracking in a 2D honeybee hive</a></td><td>2018</td><td>🇯🇵 Okinawa Institute of Science and Technology Graduate University; 🇳🇱 VU University Amsterdam</td></tr>
+        <tr><td><a href="/research/papers/tracking-all-members-of-a-honey-bee-colony-over-their-lifetime-using-learned-models-of-correspondence/">Tracking All Members of a Honey Bee Colony Over Their Lifetime Using Learned Models of Correspondence</a></td><td>2018</td><td>🇩🇪 Freie Universität Berlin; 🇩🇪 University of Konstanz; 🇩🇪 Robert Koch Institute; 🇺🇸 Auburn University; 🇺🇸 University of Hohenheim</td></tr>
+        <tr><td><a href="/research/papers/automatic-detection-and-decoding-of-honeybee-waggle-dances/">Automatic detection and decoding of honey bee waggle dances</a></td><td>2017</td><td>🇩🇪 Freie Universität Berlin</td></tr>
+        <tr><td><a href="/research/papers/pollen-bearing-honey-bee-detection-in-hive-entrance-video-recorded-by-remote-embedded-system-for-pollination-monitoring/">Pollen Bearing Honey Bee Detection in Hive Entrance Video Recorded by Remote Embedded System for Pollination Monitoring</a></td><td>2016</td><td>🇧🇦 University of Banja Luka</td></tr>
+        <tr><td><a href="/research/papers/automatic-methods-for-long-term-tracking-and-the-detection-and-decoding-of-communication-dancesin-honeybees/">Automatic methods for long-term tracking and the detection and decoding of communication dances in honeybees</a></td><td>2015</td><td>🇩🇪 Freie Universität Berlin; 🇬🇧 University of Sussex</td></tr>
+        </tbody>
+        </table>
         </div>
       </div>
       <div class="research-year-panel" data-year="2026">
         <div class="research-publications-table-wrap">
-        
-        | Publication | Year | Institutions |
-        |---|---|---|
-        | [A Multimodal Machine Learning System for Non-Invasive Detection of Varroa destructor Infestations in Honey Bee Colonies](../A%20Multimodal%20Machine%20Learning%20System%20for%20Non-Invasive%20Detection%20of%20Varroa%20destructor%20Infestations%20in%20Honey%20Bee%20Colonies.md) | 2026 | 🇺🇸 Green Valley High School |
-        | [Continuous Non-Invasive Monitoring of Hive Entrance Activity Reveals Honey Bee Colony Dynamics](../Continuous%20Non-Invasive%20Monitoring%20of%20Hive%20Entrance%20Activity%20Reveals%20Honey%20Bee%20Colony%20Dynamics.md) | 2026 | 🇹🇷 Van Yüzüncü Yıl University |
-        | [Deep Learning and Computer Vision for Honey Bee Health Monitoring: A Systematic Survey and Future Directions](../Deep%20Learning%20and%20Computer%20Vision%20for%20Honey%20Bee%20Health%20Monitoring%3A%20A%20Systematic%20Survey%20and%20Future%20Directions.md) | 2026 | 🇮🇳 SSVPS's Bapusaheb Shivajirao Deore College of Engineering |
-        | [Estimating colony strength and pollination efficiency in honey bees using a novel dataset and deep learning-based models](../Estimating%20colony%20strength%20and%20pollination%20efficiency%20in%20honey%20bees%20using%20a%20novel%20dataset%20and%20deep%20learning-based%20models.md) | 2026 | 🇺🇸 University of Arkansas at Fayetteville; 🇺🇸 Washington State University; 🇺🇸 University of Arkansas System; 🇺🇸 Mississippi State University; 🇺🇸 University of Tennessee at Knoxville |
-        | [FAIRHiveFrames-1K: A Public FAIR Dataset of 1265 Annotated Hive Frame Images with Preliminary YOLOv8 and YOLOv11 Baselines](../FAIRHiveFrames-1K%20A%20Public%20FAIR%20Dataset%20of%201265%20Annotated%20Hive%20Frame%20Images%20with%20Preliminary%20YOLOv8%20and%20YOLOv11%20Baselines.md) | 2026 | 🇺🇸 Utah State University |
-        | [Honeybee Counting on Comb Images via Part-Level Annotation and Hungarian Matching](../Honeybee%20Counting%20on%20Comb%20Images%20via%20Part-Level%20Annotation%20and%20Hungarian%20Matching.md) | 2026 | 🇯🇵 Utsunomiya University |
-        | [Interpretable Deep Learning for Varroa Mite Detection: Integrating Deblurring, Morphology-Preserving Preprocessing, and Explainability Analysis](../Interpretable%20Deep%20Learning%20for%20Varroa%20Mite%20Detection%20Integrating%20Deblurring%20Morphology-Preserving%20Preprocessing%20and%20Explainability%20Analysis.md) | 2026 | 🇰🇷 Kangwon National University; 🇰🇷 National Institute of Agricultural Sciences |
-        | [M3DANet: A Lightweight Semi-Supervised Network and Embedded System for Bee Colony Counting](../M3DANet%20A%20Lightweight%20Semi-Supervised%20Network%20and%20Embedded%20System%20for%20Bee%20Colony%20Counting.md) | 2026 | 🇨🇳 Shandong Agricultural University; 🇨🇳 Apiculture Institute of Jiangxi Province |
-        | [Physics-aware vision instrumentation for stingless bee counting at hive entrance using hybrid edge-cloud object detection](../Physics-aware%20vision%20instrumentation%20for%20stingless%20bee%20counting%20at%20hive%20entrance%20using%20hybrid%20edge-cloud%20object%20detection.md) | 2026 | 🇲🇾 Universiti Teknologi Malaysia; 🇮🇩 Universitas Negeri Jakarta; 🇮🇩 Institut Teknologi Indonesia; 🇮🇩 Politeknik Negeri Bandung; 🇮🇩 National Research and Innovation Agency |
-        | [The Relevance of Compound Events in Bee Traffic Monitoring](../The%20Relevance%20of%20Compound%20Events%20in%20Bee%20Traffic%20Monitoring.md) | 2026 | 🇵🇷 University of Puerto Rico at Río Piedras |
-        | [Transforming Beekeeping Through Technology: A Systematic Review of Precision Beekeeping](../Transforming%20Beekeeping%20Through%20Technology%20A%20Systematic%20Review%20of%20Precision%20Beekeeping.md) | 2026 | 🇧🇳 Universiti Brunei Darussalam; 🇱🇰 Uva Wellassa University |
-        
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/a-multimodal-machine-learning-system-for-non-invasive-detection-of-varroa-destructor-infestations-in-honey-bee-colonies/">A Multimodal Machine Learning System for Non-Invasive Detection of Varroa destructor Infestations in Honey Bee Colonies</a></td><td>2026</td><td>🇺🇸 Green Valley High School</td></tr>
+        <tr><td><a href="/research/papers/continuous-non-invasive-monitoring-of-hive-entrance-activity-reveals-honey-bee-colony-dynamics/">Continuous Non-Invasive Monitoring of Hive Entrance Activity Reveals Honey Bee Colony Dynamics</a></td><td>2026</td><td>🇹🇷 Van Yüzüncü Yıl University</td></tr>
+        <tr><td><a href="/research/papers/deep-learning-and-computer-vision-for-honey-bee-health-monitoring-a-systematic-survey-and-future-directions/">Deep Learning and Computer Vision for Honey Bee Health Monitoring: A Systematic Survey and Future Directions</a></td><td>2026</td><td>🇮🇳 SSVPS&#x27;s Bapusaheb Shivajirao Deore College of Engineering</td></tr>
+        <tr><td><a href="/research/papers/estimating-colony-strength-and-pollination-efficiency-in-honey-bees-using-a-novel-dataset-and-deep-learning-based-models/">Estimating colony strength and pollination efficiency in honey bees using a novel dataset and deep learning-based models</a></td><td>2026</td><td>🇺🇸 University of Arkansas at Fayetteville; 🇺🇸 Washington State University; 🇺🇸 University of Arkansas System; 🇺🇸 Mississippi State University; 🇺🇸 University of Tennessee at Knoxville</td></tr>
+        <tr><td><a href="/research/papers/fairhiveframes-1k-a-public-fair-dataset-of-1265-annotated-hive-frame-images-with-preliminary-yolov8-and-yolov11-baselines/">FAIRHiveFrames-1K: A Public FAIR Dataset of 1265 Annotated Hive Frame Images with Preliminary YOLOv8 and YOLOv11 Baselines</a></td><td>2026</td><td>🇺🇸 Utah State University</td></tr>
+        <tr><td><a href="/research/papers/honeybee-counting-on-comb-images-via-part-level-annotation-and-hungarian-matching/">Honeybee Counting on Comb Images via Part-Level Annotation and Hungarian Matching</a></td><td>2026</td><td>🇯🇵 Utsunomiya University</td></tr>
+        <tr><td><a href="/research/papers/interpretable-deep-learning-for-varroa-mite-detection-integrating-deblurring-morphology-preserving-preprocessing-and-explainability-analysis/">Interpretable Deep Learning for Varroa Mite Detection: Integrating Deblurring, Morphology-Preserving Preprocessing, and Explainability Analysis</a></td><td>2026</td><td>🇰🇷 Kangwon National University; 🇰🇷 National Institute of Agricultural Sciences</td></tr>
+        <tr><td><a href="/research/papers/m3danet-a-lightweight-semi-supervised-network-and-embedded-system-for-bee-colony-counting/">M3DANet: A Lightweight Semi-Supervised Network and Embedded System for Bee Colony Counting</a></td><td>2026</td><td>🇨🇳 Shandong Agricultural University; 🇨🇳 Apiculture Institute of Jiangxi Province</td></tr>
+        <tr><td><a href="/research/papers/physics-aware-vision-instrumentation-for-stingless-bee-counting-at-hive-entrance-using-hybrid-edge-cloud-object-detection/">Physics-aware vision instrumentation for stingless bee counting at hive entrance using hybrid edge-cloud object detection</a></td><td>2026</td><td>🇲🇾 Universiti Teknologi Malaysia; 🇮🇩 Universitas Negeri Jakarta; 🇮🇩 Institut Teknologi Indonesia; 🇮🇩 Politeknik Negeri Bandung; 🇮🇩 National Research and Innovation Agency</td></tr>
+        <tr><td><a href="/research/papers/the-relevance-of-compound-events-in-bee-traffic-monitoring/">The Relevance of Compound Events in Bee Traffic Monitoring</a></td><td>2026</td><td>🇵🇷 University of Puerto Rico at Río Piedras</td></tr>
+        <tr><td><a href="/research/papers/transforming-beekeeping-through-technology-a-systematic-review-of-precision-beekeeping/">Transforming Beekeeping Through Technology: A Systematic Review of Precision Beekeeping</a></td><td>2026</td><td>🇧🇳 Universiti Brunei Darussalam; 🇱🇰 Uva Wellassa University</td></tr>
+        </tbody>
+        </table>
         </div>
       </div>
       <div class="research-year-panel" data-year="2025">
         <div class="research-publications-table-wrap">
-        
-        | Publication | Year | Institutions |
-        |---|---|---|
-        | [An AI-Based Digital Scanner for Varroa destructor Detection in Beekeeping](../An%20AI-Based%20Digital%20Scanner%20for%20Varroa%20destructor%20Detection%20in%20Beekeeping.md) | 2025 | 🇮🇹 Council for Agricultural Research and Economics (CREA) – Research Centre for Engineering and Agro-Food Processing, Monterotondo; 🇮🇹 Council for Agricultural Research and Economics (CREA) – Research Centre for Agriculture and Environment, Bologna; 🇷🇸 University of Novi Sad |
-        | [An AI-Based Open-Source Software for Varroa Mite Fall Analysis in Honeybee Colonies](../%E2%AD%90%EF%B8%8F%20An%20AI-Based%20Open-Source%20Software%20for%20Varroa%20Mite%20Fall%20Analysis%20in%20Honeybee%20Colonies.md) | 2025 | 🇪🇸 University of Zaragoza; 🇪🇸 University of La Rioja; 🇪🇸 University of Valencia |
-        | [Apis mellifera Bee Verification with IoT and Graph Neural Network](../Apis%20mellifera%20Bee%20Verification%20with%20IoT%20and%20Graph%20Neural%20Network.md) | 2025 | 🇲🇽 Instituto Tecnológico El Llano Aguascalientes |
-        | [Deep Learning-Based Detection of Honey Storage Areas in Apismellifera Colonies for Predicting Physical Parameters of Honey via Linear Regression](../Deep%20Learning-Based%20Detection%20of%20Honey%20Storage%20Areas%20in%20Apismellifera%20Colonies%20for%20Predicting%20Physical%20Parameters%20of%20Honey%20via%20Linear%20Regression.md) | 2025 | 🇹🇭 Chiang Mai University |
-        | [Evaluation of Single-Shot Object Detection Models for Identifying Fanning Behavior in Honeybees at the Hive Entrance](../Evaluation%20of%20Single-Shot%20Object%20Detection%20Models%20for%20Identifying%20Fanning%20Behavior%20in%20Honeybees%20at%20the%20Hive%20Entrance.md) | 2025 | 🇱🇹 Vilnius Gediminas Technical University |
-        | [Fast, accurate measurement of the worker populations of honey bee colonies using deep learning](../Fast%20accurate%20measurement%20of%20the%20worker%20populations%20of%20honey%20bee%20colonies%20using%20deep%20learning.md) | 2025 | 🇺🇸 Arizona State University; 🇺🇸 Texas A&M University–Kingsville |
-        | [Image-based honey bee larval viral and bacterial diagnosis using machine learning](../Image-based%20honey%20bee%20larval%20viral%20and%20bacterial%20diagnosis%20using%20machine%20learning.md) | 2025 | 🇺🇸 USDA Carl Hayden Bee Research Center; 🇺🇸 University of Arizona; 🇺🇸 Arizona Science Center |
-        | [Towards Varroa destructor mite detection using a narrow spectra illumination](../Towards%20Varroa%20destructor%20mite%20detection%20using%20a%20narrow%20spectra%20illumination.md) | 2025 | 🇨🇿 Brno University of Technology |
-        | [Visual recognition of honeybee behavior patterns at the hive entrance](../Visual%20recognition%20of%20honeybee%20behavior%20patterns%20at%20the%20hive%20entrance.md) | 2025 | 🇱🇹 Vilnius Gediminas Technical University |
-        
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/an-ai-based-digital-scanner-for-varroa-destructor-detection-in-beekeeping/">An AI-Based Digital Scanner for Varroa destructor Detection in Beekeeping</a></td><td>2025</td><td>🇮🇹 Council for Agricultural Research and Economics (CREA) – Research Centre for Engineering and Agro-Food Processing, Monterotondo; 🇮🇹 Council for Agricultural Research and Economics (CREA) – Research Centre for Agriculture and Environment, Bologna; 🇷🇸 University of Novi Sad</td></tr>
+        <tr><td><a href="/research/papers/an-ai-based-open-source-software-for-varroa-mite-fall-analysis-in-honeybee-colonies/">An AI-Based Open-Source Software for Varroa Mite Fall Analysis in Honeybee Colonies</a></td><td>2025</td><td>🇪🇸 University of Zaragoza; 🇪🇸 University of La Rioja; 🇪🇸 University of Valencia</td></tr>
+        <tr><td><a href="/research/papers/apis-mellifera-bee-verification-with-iot-and-graph-neural-network/">Apis mellifera Bee Verification with IoT and Graph Neural Network</a></td><td>2025</td><td>🇲🇽 Instituto Tecnológico El Llano Aguascalientes</td></tr>
+        <tr><td><a href="/research/papers/deep-learning-based-detection-of-honey-storage-areas-in-apismellifera-colonies-for-predicting-physical-parameters-of-honey-via-linear-regression/">Deep Learning-Based Detection of Honey Storage Areas in Apismellifera Colonies for Predicting Physical Parameters of Honey via Linear Regression</a></td><td>2025</td><td>🇹🇭 Chiang Mai University</td></tr>
+        <tr><td><a href="/research/papers/evaluation-of-single-shot-object-detection-models-for-identifying-fanning-behavior-in-honeybees-at-the-hive-entrance/">Evaluation of Single-Shot Object Detection Models for Identifying Fanning Behavior in Honeybees at the Hive Entrance</a></td><td>2025</td><td>🇱🇹 Vilnius Gediminas Technical University</td></tr>
+        <tr><td><a href="/research/papers/fast-accurate-measurement-of-the-worker-populations-of-honey-bee-colonies-using-deep-learning/">Fast, accurate measurement of the worker populations of honey bee colonies using deep learning</a></td><td>2025</td><td>🇺🇸 Arizona State University; 🇺🇸 Texas A&amp;M University–Kingsville</td></tr>
+        <tr><td><a href="/research/papers/image-based-honey-bee-larval-viral-and-bacterial-diagnosis-using-machine-learning/">Image-based honey bee larval viral and bacterial diagnosis using machine learning</a></td><td>2025</td><td>🇺🇸 USDA Carl Hayden Bee Research Center; 🇺🇸 University of Arizona; 🇺🇸 Arizona Science Center</td></tr>
+        <tr><td><a href="/research/papers/towards-varroa-destructor-mite-detection-using-a-narrow-spectra-illumination/">Towards Varroa destructor mite detection using a narrow spectra illumination</a></td><td>2025</td><td>🇨🇿 Brno University of Technology</td></tr>
+        <tr><td><a href="/research/papers/visual-recognition-of-honeybee-behavior-patterns-at-the-hive-entrance/">Visual recognition of honeybee behavior patterns at the hive entrance</a></td><td>2025</td><td>🇱🇹 Vilnius Gediminas Technical University</td></tr>
+        </tbody>
+        </table>
         </div>
       </div>
       <div class="research-year-panel" data-year="2024">
         <div class="research-publications-table-wrap">
-        
-        | Publication | Year | Institutions |
-        |---|---|---|
-        | [Autonomous tracking of honey bee behaviors over long-term periods with cooperating robots](../%E2%AD%90%EF%B8%8F%20Autonomous%20tracking%20of%20honey%20bee%20behaviors%20over%20long-term%20periods%20with%20cooperating%20robots.md) | 2024 | 🇨🇿 Czech Technical University; 🇦🇹 University of Graz; 🇬🇧 Durham University; 🇹🇷 Middle East Technical University |
-        | [Beehive Smart Detector Device for the Detection of CriticalConditions That Utilize Edge Device Computations and DeepLearning Inferences](../Beehive%20Smart%20Detector%20Device%20for%20the%20Detection%20of%20CriticalConditions%20That%20Utilize%20Edge%20Device%20Computations%20and%20DeepLearning%20Inferences.md) | 2024 | 🇬🇷 University of Ioannina |
-        | [Current Status and Future Outlooks of Precision Beekeeping Systems and Services](../Current%20Status%20and%20Future%20Outlooks%20of%20Precision%20Beekeeping%20Systems%20and%20Services.md) | 2024 | 🇸🇰 Slovak University of Agriculture in Nitra |
-        | [IntelliBeeHive: An Automated Honey Bee, Pollen, and Varroa Destructor Monitoring System](../IntelliBeeHive%20An%20Automated%20Honey%20Bee%20Pollen%20and%20Varroa%20Destructor%20Monitoring%20System.md) | 2024 | 🇺🇸 University of Texas Rio Grande Valley |
-        | [Intelligent beehive monitoring system based on internet of things and colony state analysis](../Intelligent%20beehive%20monitoring%20system%20based%20on%20internet%20of%20things%20and%20colony%20state%20analysis.md) | 2024 | 🇲🇾 Universiti Teknologi MARA; 🇨🇳 Peking University Shenzhen Graduate School; 🇨🇳 Xiamen University; 🇨🇳 Fujian Agriculture And Forestry University; 🇨🇳 Quanzhou University of Information Engineering |
-        | [Keypoint-Based Bee Orientation Estimation and Ramp Detection at the Hive Entrance for Bee Behavior Identification System](../Keypoint-Based%20Bee%20Orientation%20Estimation%20and%20Ramp%20Detection%20at%20the%20Hive%20Entrance%20for%20Bee%20Behavior%20Identification%20System.md) | 2024 | 🇱🇹 Vilnius Gediminas Technical University |
-        | [Mapping Crop Types for Beekeepers Using Sentinel-2 Satellite Image Time Series: Five Essential Crops in the Pollination Services](../Mapping%20Crop%20Types%20for%20Beekeepers%20Using%20Sentinel-2%20Satellite%20Image%20Time%20Series%20Five%20Essential%20Crops%20in%20the%20Pollination%20Services.md) | 2024 | 🇨🇦 Université de Montréal |
-        | [Towards Robotic Mapping of a Honeybee Comb](../Towards%20Robotic%20Mapping%20of%20a%20Honeybee%20Comb.md) | 2024 | 🇨🇿 Czech Technical University; 🇬🇧 Durham University; 🇦🇹 University of Graz |
-        | [Varroa destructor detection on honey bees using hyperspectral imagery](../Varroa%20destructor%20detection%20on%20honey%20bees%20using%20hyperspectral%20imagery.md) | 2024 | 🇨🇿 Brno University of Technology; 🇫🇮 LUT University |
-        
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/autonomous-tracking-of-honey-bee-behaviors-over-long-term-periods-with-cooperating-robots/">Autonomous tracking of honey bee behaviors over long-term periods with cooperating robots</a></td><td>2024</td><td>🇨🇿 Czech Technical University; 🇦🇹 University of Graz; 🇬🇧 Durham University; 🇹🇷 Middle East Technical University</td></tr>
+        <tr><td><a href="/research/papers/beehive-smart-detector-device-for-the-detection-of-criticalconditions-that-utilize-edge-device-computations-and-deeplearning-inferences/">Beehive Smart Detector Device for the Detection of CriticalConditions That Utilize Edge Device Computations and DeepLearning Inferences</a></td><td>2024</td><td>🇬🇷 University of Ioannina</td></tr>
+        <tr><td><a href="/research/papers/current-status-and-future-outlooks-of-precision-beekeeping-systems-and-services/">Current Status and Future Outlooks of Precision Beekeeping Systems and Services</a></td><td>2024</td><td>🇸🇰 Slovak University of Agriculture in Nitra</td></tr>
+        <tr><td><a href="/research/papers/intellibeehive-an-automated-honey-bee-pollen-and-varroa-destructor-monitoring-system/">IntelliBeeHive: An Automated Honey Bee, Pollen, and Varroa Destructor Monitoring System</a></td><td>2024</td><td>🇺🇸 University of Texas Rio Grande Valley</td></tr>
+        <tr><td><a href="/research/papers/intelligent-beehive-monitoring-system-based-on-internet-of-things-and-colony-state-analysis/">Intelligent beehive monitoring system based on internet of things and colony state analysis</a></td><td>2024</td><td>🇲🇾 Universiti Teknologi MARA; 🇨🇳 Peking University Shenzhen Graduate School; 🇨🇳 Xiamen University; 🇨🇳 Fujian Agriculture And Forestry University; 🇨🇳 Quanzhou University of Information Engineering</td></tr>
+        <tr><td><a href="/research/papers/keypoint-based-bee-orientation-estimation-and-ramp-detection-at-the-hive-entrance-for-bee-behavior-identification-system/">Keypoint-Based Bee Orientation Estimation and Ramp Detection at the Hive Entrance for Bee Behavior Identification System</a></td><td>2024</td><td>🇱🇹 Vilnius Gediminas Technical University</td></tr>
+        <tr><td><a href="/research/papers/mapping-crop-types-for-beekeepers-using-sentinel-2-satellite-image-time-series-five-essential-crops-in-the-pollination-services/">Mapping Crop Types for Beekeepers Using Sentinel-2 Satellite Image Time Series: Five Essential Crops in the Pollination Services</a></td><td>2024</td><td>🇨🇦 Université de Montréal</td></tr>
+        <tr><td><a href="/research/papers/towards-robotic-mapping-of-a-honeybee-comb/">Towards Robotic Mapping of a Honeybee Comb</a></td><td>2024</td><td>🇨🇿 Czech Technical University; 🇬🇧 Durham University; 🇦🇹 University of Graz</td></tr>
+        <tr><td><a href="/research/papers/varroa-destructor-detection-on-honey-bees-using-hyperspectral-imagery/">Varroa destructor detection on honey bees using hyperspectral imagery</a></td><td>2024</td><td>🇨🇿 Brno University of Technology; 🇫🇮 LUT University</td></tr>
+        </tbody>
+        </table>
         </div>
       </div>
       <div class="research-year-panel" data-year="2023">
         <div class="research-publications-table-wrap">
-        
-        | Publication | Year | Institutions |
-        |---|---|---|
-        | [Accuracy vs. Energy: An Assessment of Bee Object Inference inVideos from On-Hive Video Loggers with YOLOv3,YOLOv4-Tiny, and YOLOv7-Tiny](../Accuracy%20vs.%20Energy.md) | 2023 | 🇺🇸 Utah State University |
-        | [Approximation of functions determining colony activity using neural networks. Master thesis](../Approximation%20of%20functions.md) | 2023 | 🇨🇿 Brno University of Technology |
-        | [BeeNet: An End-To-End Deep Network For Bee Surveillance](../BeeNet%20-%20An%20End-To-End%20Deep%20Network%20For%20Bee%20Surveillance.md) | 2023 | 🇦🇺 Australian National University; 🇧🇩 BRAC University; 🇦🇺 Curtin University; 🇦🇺 Commonwealth Scientific and Industrial Research Organisation |
-        | [Detection of Varroa destructor Infestation of Honeybees Based on Segmentation and Object Detection Convolutional Neural Networks](../Detection%20of%20Varroa%20destructor%20Infestation%20of%20Honeybees%20Based%20on%20Segmentation%20and%20Object%20Detection%20Convolutional%20Neural%20Networks.md) | 2023 | 🇨🇳 Shandong Agriculture University |
-        | [Labeled dataset for bee detection and direction estimation on entrance to beehive](../Labeled%20dataset%20for%20bee%20detection%20and%20direction%20estimation%20on%20entrance%20to%20beehive.md) | 2023 | 🇱🇹 Vilnius Gediminas Technical University |
-        | [Machine Learning and Computer Vision Techniques in Continuous Beehive Monitoring Applications: A Survey](../Machine%20Learning%20and%20Computer%20Vision%20Techniques%20in%20Continuous%20Beehive%20Monitoring%20Applications%20A%20Survey.md) | 2023 | 🇨🇿 Brno University of Technology |
-        | [Pollinators as Data Collectors: Estimating Floral Diversity with Bees and Computer Vision](../Pollinators%20as%20Data%20Collectors%20Estimating%20Floral%20Diversity%20with%20Bees%20and%20Computer%20Vision.md) | 2023 | 🇩🇪 Karlsruhe Institute of Technology; 🇩🇪 apic.ai GmbH |
-        | [Precision Monitoring of Honey Bee (Hymenoptera: Apidae) Activity and Pollen Diversity during Pollination to EvaluateColony Health](../Precision%20Monitoring%20of%20Honey%20Bee.md) | 2023 | 🇦🇺 La Trobe University |
-        | [Raspberry Pi Bee Health Monitoring Device](../Raspberry%20Pi%20Bee%20Health%20Monitoring%20Device.md) | 2023 | 🇨🇿 Brno University of Technology |
-        | [Recognizing Beehives’ Health Abnormalities Based on Mobile Net Deep Learning Model](../Recognizing%20Beehives%20Health%20Abnormalities%20Based%20on%20Mobile%20Net%20Deep%20Learning%20Model.md) | 2023 | 🇪🇬 Egyptian Russian University; 🇪🇬 Cairo University; 🇪🇬 Tanta University; 🇪🇬 Scientific Research Group in Egypt |
-        | [The Be-Hive Project - Counting Bee Traffic based on Deep Learning and Pose Estimation](../Be-Hive.md) | 2023 | 🇨🇾 CYENS Centre of Excellence; 🇨🇾 Cyprus University of Technology; 🇳🇱 University of Twente |
-        | [Varroa Destructor Classification Using Legendre Fourier Moments with Different Color Spaces](../Varroa%20Destructor%20Classification%20Using%20Legendre%20Fourier%20Moments%20with%20Different%20Color%20Spaces.md) | 2023 | 🇲🇽 Universidad Politécnica de Tulancingo |
-        
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/accuracy-vs-energy/">Accuracy vs. Energy: An Assessment of Bee Object Inference inVideos from On-Hive Video Loggers with YOLOv3,YOLOv4-Tiny, and YOLOv7-Tiny</a></td><td>2023</td><td>🇺🇸 Utah State University</td></tr>
+        <tr><td><a href="/research/papers/approximation-of-functions/">Approximation of functions determining colony activity using neural networks. Master thesis</a></td><td>2023</td><td>🇨🇿 Brno University of Technology</td></tr>
+        <tr><td><a href="/research/papers/beenet-an-end-to-end-deep-network-for-bee-surveillance/">BeeNet: An End-To-End Deep Network For Bee Surveillance</a></td><td>2023</td><td>🇦🇺 Australian National University; 🇧🇩 BRAC University; 🇦🇺 Curtin University; 🇦🇺 Commonwealth Scientific and Industrial Research Organisation</td></tr>
+        <tr><td><a href="/research/papers/detection-of-varroa-destructor-infestation-of-honeybees-based-on-segmentation-and-object-detection-convolutional-neural-networks/">Detection of Varroa destructor Infestation of Honeybees Based on Segmentation and Object Detection Convolutional Neural Networks</a></td><td>2023</td><td>🇨🇳 Shandong Agriculture University</td></tr>
+        <tr><td><a href="/research/papers/labeled-dataset-for-bee-detection-and-direction-estimation-on-entrance-to-beehive/">Labeled dataset for bee detection and direction estimation on entrance to beehive</a></td><td>2023</td><td>🇱🇹 Vilnius Gediminas Technical University</td></tr>
+        <tr><td><a href="/research/papers/machine-learning-and-computer-vision-techniques-in-continuous-beehive-monitoring-applications-a-survey/">Machine Learning and Computer Vision Techniques in Continuous Beehive Monitoring Applications: A Survey</a></td><td>2023</td><td>🇨🇿 Brno University of Technology</td></tr>
+        <tr><td><a href="/research/papers/pollinators-as-data-collectors-estimating-floral-diversity-with-bees-and-computer-vision/">Pollinators as Data Collectors: Estimating Floral Diversity with Bees and Computer Vision</a></td><td>2023</td><td>🇩🇪 Karlsruhe Institute of Technology; 🇩🇪 apic.ai GmbH</td></tr>
+        <tr><td><a href="/research/papers/precision-monitoring-of-honey-bee/">Precision Monitoring of Honey Bee (Hymenoptera: Apidae) Activity and Pollen Diversity during Pollination to EvaluateColony Health</a></td><td>2023</td><td>🇦🇺 La Trobe University</td></tr>
+        <tr><td><a href="/research/papers/raspberry-pi-bee-health-monitoring-device/">Raspberry Pi Bee Health Monitoring Device</a></td><td>2023</td><td>🇨🇿 Brno University of Technology</td></tr>
+        <tr><td><a href="/research/papers/recognizing-beehives-health-abnormalities-based-on-mobile-net-deep-learning-model/">Recognizing Beehives’ Health Abnormalities Based on Mobile Net Deep Learning Model</a></td><td>2023</td><td>🇪🇬 Egyptian Russian University; 🇪🇬 Cairo University; 🇪🇬 Tanta University; 🇪🇬 Scientific Research Group in Egypt</td></tr>
+        <tr><td><a href="/research/papers/be-hive/">The Be-Hive Project - Counting Bee Traffic based on Deep Learning and Pose Estimation</a></td><td>2023</td><td>🇨🇾 CYENS Centre of Excellence; 🇨🇾 Cyprus University of Technology; 🇳🇱 University of Twente</td></tr>
+        <tr><td><a href="/research/papers/varroa-destructor-classification-using-legendre-fourier-moments-with-different-color-spaces/">Varroa Destructor Classification Using Legendre Fourier Moments with Different Color Spaces</a></td><td>2023</td><td>🇲🇽 Universidad Politécnica de Tulancingo</td></tr>
+        </tbody>
+        </table>
         </div>
       </div>
       <div class="research-year-panel" data-year="2022">
         <div class="research-publications-table-wrap">
-        
-        | Publication | Year | Institutions |
-        |---|---|---|
-        | [Automated Video Monitoring of Unmarked and Marked Honey Bees at the Hive Entrance](../%E2%AD%90%EF%B8%8F%20Automated%20Video%20Monitoring%20of%20Unmarked%20and%20Marked%20Honey%20Bees%20at%20the%20Hive%20Entrance.md) | 2022 | 🇵🇷 University of Puerto Rico; 🇺🇸 Brown University; 🇺🇸 Howard Hughes Medical Institute (Janelia Research Campus) |
-        | [Deep Learning Beehive Monitoring System for Early Detection of the Varroa Mite](../Deep%20Learning%20Beehive%20Monitoring%20System%20for%20Early%20Detection%20of%20the%20Varroa%20Mite.md) | 2022 | 🇬🇷 University of Ioannina |
-        | [Honeybee Re-identification in Video: New Datasets and Impact of Self-supervision](../Honeybee%20Re-identification%20in%20Video%20New%20Datasets%20and%20Impact%20of%20Self-supervision.md) | 2022 | 🇵🇷 University of Puerto Rico |
-        | [Integration of Scales and Cameras in Nondisruptive ElectronicBeehive Monitoring: On the Within-Day Relationship of HiveWeight and Traffic in Honeybee (Apis mellifera) Colonies in Langstroth Hives in Tucson, Arizona, USA](../Integration%20of%20Scales%20and%20Cameras%20in%20Nondisruptive%20Electronic%20Beehive%20Monitoring.md) | 2022 | 🇺🇸 Utah State University |
-        | [SLEAP: A deep learning system for multi-animal pose tracking](../SLEAP.md) | 2022 | 🇺🇸 Princeton University; 🇺🇸 New York University; 🇺🇸 Johns Hopkins University School of Medicine |
-        
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/automated-video-monitoring-of-unmarked-and-marked-honey-bees-at-the-hive-entrance/">Automated Video Monitoring of Unmarked and Marked Honey Bees at the Hive Entrance</a></td><td>2022</td><td>🇵🇷 University of Puerto Rico; 🇺🇸 Brown University; 🇺🇸 Howard Hughes Medical Institute (Janelia Research Campus)</td></tr>
+        <tr><td><a href="/research/papers/deep-learning-beehive-monitoring-system-for-early-detection-of-the-varroa-mite/">Deep Learning Beehive Monitoring System for Early Detection of the Varroa Mite</a></td><td>2022</td><td>🇬🇷 University of Ioannina</td></tr>
+        <tr><td><a href="/research/papers/honeybee-re-identification-in-video-new-datasets-and-impact-of-self-supervision/">Honeybee Re-identification in Video: New Datasets and Impact of Self-supervision</a></td><td>2022</td><td>🇵🇷 University of Puerto Rico</td></tr>
+        <tr><td><a href="/research/papers/integration-of-scales-and-cameras-in-nondisruptive-electronic-beehive-monitoring/">Integration of Scales and Cameras in Nondisruptive ElectronicBeehive Monitoring: On the Within-Day Relationship of HiveWeight and Traffic in Honeybee (Apis mellifera) Colonies in Langstroth Hives in Tucson, Arizona, USA</a></td><td>2022</td><td>🇺🇸 Utah State University</td></tr>
+        <tr><td><a href="/research/papers/sleap/">SLEAP: A deep learning system for multi-animal pose tracking</a></td><td>2022</td><td>🇺🇸 Princeton University; 🇺🇸 New York University; 🇺🇸 Johns Hopkins University School of Medicine</td></tr>
+        </tbody>
+        </table>
         </div>
       </div>
       <div class="research-year-panel" data-year="2021">
         <div class="research-publications-table-wrap">
-        
-        | Publication | Year | Institutions |
-        |---|---|---|
-        | [BeePIV: A Method to Measure Apis Mellifera Traffic with Particle Image Velocimetry in Videos](../BeePIV%20A%20Method%20to%20Measure%20Apis%20Mellifera%20Traffic%20with%20Particle%20Image%20Velocimetry%20in%20Videos.md) | 2021 | 🇺🇸 Utah State University |
-        | [DeepLabCut-based daily behavioural and posture analysis in a cricket](../DeepLabCut-based%20daily%20behavioural%20and%20posture%20analysis%20in%20a%20cricket.md) | 2021 | 🇯🇵 Waseda University |
-        | [Honeybee In-Out Monitoring System by Object Recognition and Tracking from Real-Time Webcams](../Honeybee%20In-Out%20Monitoring%20System%20by%20Object%20Recognition%20and%20Tracking%20from%20Real-Time%20Webcams.md) | 2021 | 🇰🇷 Incheon National University |
-        | [Markerless tracking of an entire honey bee colony](../%E2%AD%90%EF%B8%8F%20Markerless%20tracking%20of%20an%20entire%20honey%20bee%20colony.md) | 2021 | 🇯🇵 Okinawa Institute of Science and Technology Graduate University; 🇦🇺 Australian National University; 🇳🇱 Vrije Universiteit Amsterdam |
-        | [On Image Classification in Video Analysis of Omnidirectional Apis Mellifera Traffic: Random Reinforced Forests vs. Shallow Convolutional Networks](../On%20Image%20Classification%20in%20Video%20Analysis%20of%20Omnidirectional%20Apis%20Mellifera%20Traffic%20Random%20Reinforced%20Forests%20vs.%20Shallow%20Convolutional%20Networks.md) | 2021 | 🇺🇸 Utah State University |
-        | [Visual Diagnosis of the Varroa Destructor Parasitic Mite in Honeybees Using Object Detector Techniques](../Visual%20Diagnosis%20of%20the%20Varroa%20Destructor%20Parasitic%20Mite%20in%20Honeybees%20Using%20Object%20Detector%20Techniques.md) | 2021 | 🇨🇿 Brno University of Technology |
-        
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/beepiv-a-method-to-measure-apis-mellifera-traffic-with-particle-image-velocimetry-in-videos/">BeePIV: A Method to Measure Apis Mellifera Traffic with Particle Image Velocimetry in Videos</a></td><td>2021</td><td>🇺🇸 Utah State University</td></tr>
+        <tr><td><a href="/research/papers/deeplabcut-based-daily-behavioural-and-posture-analysis-in-a-cricket/">DeepLabCut-based daily behavioural and posture analysis in a cricket</a></td><td>2021</td><td>🇯🇵 Waseda University</td></tr>
+        <tr><td><a href="/research/papers/honeybee-in-out-monitoring-system-by-object-recognition-and-tracking-from-real-time-webcams/">Honeybee In-Out Monitoring System by Object Recognition and Tracking from Real-Time Webcams</a></td><td>2021</td><td>🇰🇷 Incheon National University</td></tr>
+        <tr><td><a href="/research/papers/markerless-tracking-of-an-entire-honey-bee-colony/">Markerless tracking of an entire honey bee colony</a></td><td>2021</td><td>🇯🇵 Okinawa Institute of Science and Technology Graduate University; 🇦🇺 Australian National University; 🇳🇱 Vrije Universiteit Amsterdam</td></tr>
+        <tr><td><a href="/research/papers/on-image-classification-in-video-analysis-of-omnidirectional-apis-mellifera-traffic-random-reinforced-forests-vs-shallow-convolutional-networks/">On Image Classification in Video Analysis of Omnidirectional Apis Mellifera Traffic: Random Reinforced Forests vs. Shallow Convolutional Networks</a></td><td>2021</td><td>🇺🇸 Utah State University</td></tr>
+        <tr><td><a href="/research/papers/visual-diagnosis-of-the-varroa-destructor-parasitic-mite-in-honeybees-using-object-detector-techniques/">Visual Diagnosis of the Varroa Destructor Parasitic Mite in Honeybees Using Object Detector Techniques</a></td><td>2021</td><td>🇨🇿 Brno University of Technology</td></tr>
+        </tbody>
+        </table>
         </div>
       </div>
       <div class="research-year-panel" data-year="2020">
         <div class="research-publications-table-wrap">
-        
-        | Publication | Year | Institutions |
-        |---|---|---|
-        | [Automatic detection and classification of honey bee comb cells using deep learning](../%E2%AD%90%EF%B8%8F%20Automatic%20detection%20and%20classification%20of%20honey%20bee%20comb%20cells%20using%20deeplearning.md) | 2020 | 🇵🇹 Instituto Politécnico de Bragança; 🇧🇷 Federal Technological University of Paraná; 🇫🇷 Université Clermont-Auvergne |
-        | [BeeAlarmed. Masters thesis](../%E2%AD%90%EF%B8%8F%20BeeAlarmed.%20Masters%20thesis.md) | 2020 | 🇩🇪 South Westphalia University of Applied Sciences |
-        | [Current achievements and future developments of a novel AI based visual monitoring of beehives in ecotoxicology and for the monitoring of landscape structures](../Current%20achievements%20and%20future%20developments%20of%20a%20novel%20AI%20based%20visual%20monitoring%20of%20beehives%20in%20ecotoxicology%20and%20for%20the%20monitoring%20of%20landscape%20structures.md) | 2020 | 🇩🇪 apic.ai GmbH |
-        | [Real-time, low-latency closed-loop feedback using markerless posture tracking](../Real-time%2C%20low-latency%20closed-loop%20feedback%20using%20markerless%20posture%20tracking.md) | 2020 | 🇺🇸 Harvard University; 🇬🇧 NeuroGEARS Ltd; 🇺🇸 University of Oregon; 🇨🇭 Swiss Federal Institute of Technology |
-        
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/automatic-detection-and-classification-of-honey-bee-comb-cells-using-deeplearning/">Automatic detection and classification of honey bee comb cells using deep learning</a></td><td>2020</td><td>🇵🇹 Instituto Politécnico de Bragança; 🇧🇷 Federal Technological University of Paraná; 🇫🇷 Université Clermont-Auvergne</td></tr>
+        <tr><td><a href="/research/papers/beealarmed-masters-thesis/">BeeAlarmed. Masters thesis</a></td><td>2020</td><td>🇩🇪 South Westphalia University of Applied Sciences</td></tr>
+        <tr><td><a href="/research/papers/current-achievements-and-future-developments-of-a-novel-ai-based-visual-monitoring-of-beehives-in-ecotoxicology-and-for-the-monitoring-of-landscape-structures/">Current achievements and future developments of a novel AI based visual monitoring of beehives in ecotoxicology and for the monitoring of landscape structures</a></td><td>2020</td><td>🇩🇪 apic.ai GmbH</td></tr>
+        <tr><td><a href="/research/papers/real-time-low-latency-closed-loop-feedback-using-markerless-posture-tracking/">Real-time, low-latency closed-loop feedback using markerless posture tracking</a></td><td>2020</td><td>🇺🇸 Harvard University; 🇬🇧 NeuroGEARS Ltd; 🇺🇸 University of Oregon; 🇨🇭 Swiss Federal Institute of Technology</td></tr>
+        </tbody>
+        </table>
         </div>
       </div>
       <div class="research-year-panel" data-year="2019">
         <div class="research-publications-table-wrap">
-        
-        | Publication | Year | Institutions |
-        |---|---|---|
-        | [DeepBees – Building and Scaling Convolutional Neuronal Nets For Fast and Large-scale Visual Monitoring of Bee Hives](../%E2%AD%90%EF%B8%8F%20DeepBees%20%E2%80%93%20Building%20and%20Scaling%20Convolutional%20Neuronal%20Nets%20For%20Fast%20and%20Large-scale%20Visual%20Monitoring%20of%20Bee%20Hives.md) | 2019 | 🇩🇪 Karlsruhe Institute of Technology; 🇩🇪 apic.ai |
-        | [DeepPoseKit, a software toolkit for fast and robust animal pose estimation using deep learning](../DeepPoseKit.md) | 2019 | 🇩🇪 Max Planck Institute of Animal Behavior; 🇩🇪 University of Konstanz; 🇺🇸 Princeton University; 🇩🇪 Technische Universität München |
-        | [LabelBee: a web platform for large-scale semi-automated analysis of honeybee behavior from video](../%E2%AD%90%EF%B8%8F%20LabelBee%20a%20web%20platform%20for%20large-scale%20semi-automated%20analysis%20of%20honeybee%20behavior%20from%20video.md) | 2019 | 🇵🇷 University of Puerto Rico |
-        
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/deepbees-building-and-scaling-convolutional-neuronal-nets-for-fast-and-large-scale-visual-monitoring-of-bee-hives/">DeepBees – Building and Scaling Convolutional Neuronal Nets For Fast and Large-scale Visual Monitoring of Bee Hives</a></td><td>2019</td><td>🇩🇪 Karlsruhe Institute of Technology; 🇩🇪 apic.ai</td></tr>
+        <tr><td><a href="/research/papers/deepposekit/">DeepPoseKit, a software toolkit for fast and robust animal pose estimation using deep learning</a></td><td>2019</td><td>🇩🇪 Max Planck Institute of Animal Behavior; 🇩🇪 University of Konstanz; 🇺🇸 Princeton University; 🇩🇪 Technische Universität München</td></tr>
+        <tr><td><a href="/research/papers/labelbee-a-web-platform-for-large-scale-semi-automated-analysis-of-honeybee-behavior-from-video/">LabelBee: a web platform for large-scale semi-automated analysis of honeybee behavior from video</a></td><td>2019</td><td>🇵🇷 University of Puerto Rico</td></tr>
+        </tbody>
+        </table>
         </div>
       </div>
       <div class="research-year-panel" data-year="2018">
         <div class="research-publications-table-wrap">
-        
-        | Publication | Year | Institutions |
-        |---|---|---|
-        | [A Preliminary Study of Image Analysis forParasite Detection on Honey Bees](../A%20Preliminary%20Study%20of%20Image%20Analysis%20forParasite%20Detection%20on%20Honey%20Bees.md) | 2018 | 🇦🇹 Vienna University of Technology; 🇪🇸 Universidad de Oviedo; 🇪🇸 Universitat de Barcelona |
-        | [DeepLabCut: markerless pose estimation of user-defined body parts with deep learning](../DeepLabCut.md) | 2018 | 🇩🇪 Eberhard Karls Universität Tübingen; 🇺🇸 Harvard University; 🇺🇸 Columbia University; 🇩🇪 Max Planck Institute for Biological Cybernetics; 🇩🇪 Bernstein Center for Computational Neuroscience; 🇺🇸 Baylor College of Medicine |
-        | [Multiple Animals Tracking in VideoUsing Part Affinity Fields](../Multiple%20Animals%20Tracking%20in%20VideoUsing%20Part%20Affinity%20Fields.md) | 2018 | 🇵🇷 University of Puerto Rico |
-        | [Recognition of Pollen-bearing Bees from Video using Convolutional Neural Network](../Recognition%20of%20Pollen-bearing%20Bees%20from%20Video%20using%20Convolutional%20Neural%20Network.md) | 2018 | 🇵🇷 University of Puerto Rico |
-        | [The development of honey bee coloniesassessed using a new semi-automated broodcounting method: CombCount](../The%20development%20of%20honey%20bee%20coloniesassessed%20using%20a%20new%20semi-automated%20broodcounting%20method%20CombCount.md) | 2018 | 🇦🇺 Macquarie University; 🇦🇺 Queensland University of Technology; 🇺🇸 Carl Hayden Bee Research Center |
-        | [Towards dense object tracking in a 2D honeybee hive](../%E2%AD%90%EF%B8%8F%20Towards%20dense%20object%20tracking%20in%20a%202D%20honeybee%20hive.md) | 2018 | 🇯🇵 Okinawa Institute of Science and Technology Graduate University; 🇳🇱 VU University Amsterdam |
-        | [Tracking All Members of a Honey Bee Colony Over Their Lifetime Using Learned Models of Correspondence](../Tracking%20All%20Members%20of%20a%20Honey%20Bee%20Colony%20Over%20Their%20Lifetime%20Using%20Learned%20Models%20of%20Correspondence.md) | 2018 | 🇩🇪 Freie Universität Berlin; 🇩🇪 University of Konstanz; 🇩🇪 Robert Koch Institute; 🇺🇸 Auburn University; 🇺🇸 University of Hohenheim |
-        
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/a-preliminary-study-of-image-analysis-forparasite-detection-on-honey-bees/">A Preliminary Study of Image Analysis forParasite Detection on Honey Bees</a></td><td>2018</td><td>🇦🇹 Vienna University of Technology; 🇪🇸 Universidad de Oviedo; 🇪🇸 Universitat de Barcelona</td></tr>
+        <tr><td><a href="/research/papers/deeplabcut/">DeepLabCut: markerless pose estimation of user-defined body parts with deep learning</a></td><td>2018</td><td>🇩🇪 Eberhard Karls Universität Tübingen; 🇺🇸 Harvard University; 🇺🇸 Columbia University; 🇩🇪 Max Planck Institute for Biological Cybernetics; 🇩🇪 Bernstein Center for Computational Neuroscience; 🇺🇸 Baylor College of Medicine</td></tr>
+        <tr><td><a href="/research/papers/multiple-animals-tracking-in-videousing-part-affinity-fields/">Multiple Animals Tracking in VideoUsing Part Affinity Fields</a></td><td>2018</td><td>🇵🇷 University of Puerto Rico</td></tr>
+        <tr><td><a href="/research/papers/recognition-of-pollen-bearing-bees-from-video-using-convolutional-neural-network/">Recognition of Pollen-bearing Bees from Video using Convolutional Neural Network</a></td><td>2018</td><td>🇵🇷 University of Puerto Rico</td></tr>
+        <tr><td><a href="/research/papers/the-development-of-honey-bee-coloniesassessed-using-a-new-semi-automated-broodcounting-method-combcount/">The development of honey bee coloniesassessed using a new semi-automated broodcounting method: CombCount</a></td><td>2018</td><td>🇦🇺 Macquarie University; 🇦🇺 Queensland University of Technology; 🇺🇸 Carl Hayden Bee Research Center</td></tr>
+        <tr><td><a href="/research/papers/towards-dense-object-tracking-in-a-2d-honeybee-hive/">Towards dense object tracking in a 2D honeybee hive</a></td><td>2018</td><td>🇯🇵 Okinawa Institute of Science and Technology Graduate University; 🇳🇱 VU University Amsterdam</td></tr>
+        <tr><td><a href="/research/papers/tracking-all-members-of-a-honey-bee-colony-over-their-lifetime-using-learned-models-of-correspondence/">Tracking All Members of a Honey Bee Colony Over Their Lifetime Using Learned Models of Correspondence</a></td><td>2018</td><td>🇩🇪 Freie Universität Berlin; 🇩🇪 University of Konstanz; 🇩🇪 Robert Koch Institute; 🇺🇸 Auburn University; 🇺🇸 University of Hohenheim</td></tr>
+        </tbody>
+        </table>
         </div>
       </div>
       <div class="research-year-panel" data-year="2017">
         <div class="research-publications-table-wrap">
-        
-        | Publication | Year | Institutions |
-        |---|---|---|
-        | [Automatic detection and decoding of honey bee waggle dances](../Automatic%20detection%20and%20decoding%20of%20honeybee%20waggle%20dances.md) | 2017 | 🇩🇪 Freie Universität Berlin |
-        
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/automatic-detection-and-decoding-of-honeybee-waggle-dances/">Automatic detection and decoding of honey bee waggle dances</a></td><td>2017</td><td>🇩🇪 Freie Universität Berlin</td></tr>
+        </tbody>
+        </table>
         </div>
       </div>
       <div class="research-year-panel" data-year="2016">
         <div class="research-publications-table-wrap">
-        
-        | Publication | Year | Institutions |
-        |---|---|---|
-        | [Pollen Bearing Honey Bee Detection in Hive Entrance Video Recorded by Remote Embedded System for Pollination Monitoring](../Pollen%20Bearing%20Honey%20Bee%20Detection%20in%20Hive%20Entrance%20Video%20Recorded%20by%20Remote%20Embedded%20System%20for%20Pollination%20Monitoring.md) | 2016 | 🇧🇦 University of Banja Luka |
-        
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/pollen-bearing-honey-bee-detection-in-hive-entrance-video-recorded-by-remote-embedded-system-for-pollination-monitoring/">Pollen Bearing Honey Bee Detection in Hive Entrance Video Recorded by Remote Embedded System for Pollination Monitoring</a></td><td>2016</td><td>🇧🇦 University of Banja Luka</td></tr>
+        </tbody>
+        </table>
         </div>
       </div>
       <div class="research-year-panel" data-year="2015">
         <div class="research-publications-table-wrap">
-        
-        | Publication | Year | Institutions |
-        |---|---|---|
-        | [Automatic methods for long-term tracking and the detection and decoding of communication dances in honeybees](../Automatic%20methods%20for%20long-term%20tracking%20and%20the%20detection%20and%20decoding%20of%20communication%20dancesin%20honeybees.md) | 2015 | 🇩🇪 Freie Universität Berlin; 🇬🇧 University of Sussex |
-        
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/automatic-methods-for-long-term-tracking-and-the-detection-and-decoding-of-communication-dancesin-honeybees/">Automatic methods for long-term tracking and the detection and decoding of communication dances in honeybees</a></td><td>2015</td><td>🇩🇪 Freie Universität Berlin; 🇬🇧 University of Sussex</td></tr>
+        </tbody>
+        </table>
         </div>
       </div>
     </div>

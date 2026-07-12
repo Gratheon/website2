@@ -32,22 +32,36 @@ title: "Research topic: Uncategorized"
     <div class="research-year-filter__panels">
       <div class="research-year-panel" data-year="all">
         <div class="research-publications-table-wrap">
-        
-        | Publication | Year | Institutions |
-        |---|---|---|
-        | [Beekeeping in the digital age - prospects and pitfalls of hive sensors](../Beekeeping%20in%20the%20digital%20age%20-%20prospects%20and%20pitfalls%20of%20hive%20sensors.md) | Unknown year |  |
-        | [Individual honey bee tracking in a beehive environment using deep learning and Kalman filter](../Individual%20honey%20bee%20tracking%20in%20a%20beehive%20environment%20using%20deep%20learning%20and%20Kalman%20filter.md) | Unknown year |  |
-        
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/beekeeping-in-the-digital-age-prospects-and-pitfalls-of-hive-sensors/">Beekeeping in the digital age - prospects and pitfalls of hive sensors</a></td><td>Unknown year</td><td></td></tr>
+        <tr><td><a href="/research/papers/individual-honey-bee-tracking-in-a-beehive-environment-using-deep-learning-and-kalman-filter/">Individual honey bee tracking in a beehive environment using deep learning and Kalman filter</a></td><td>Unknown year</td><td></td></tr>
+        </tbody>
+        </table>
         </div>
       </div>
       <div class="research-year-panel" data-year="unknown">
         <div class="research-publications-table-wrap">
-        
-        | Publication | Year | Institutions |
-        |---|---|---|
-        | [Beekeeping in the digital age - prospects and pitfalls of hive sensors](../Beekeeping%20in%20the%20digital%20age%20-%20prospects%20and%20pitfalls%20of%20hive%20sensors.md) | Unknown year |  |
-        | [Individual honey bee tracking in a beehive environment using deep learning and Kalman filter](../Individual%20honey%20bee%20tracking%20in%20a%20beehive%20environment%20using%20deep%20learning%20and%20Kalman%20filter.md) | Unknown year |  |
-        
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/beekeeping-in-the-digital-age-prospects-and-pitfalls-of-hive-sensors/">Beekeeping in the digital age - prospects and pitfalls of hive sensors</a></td><td>Unknown year</td><td></td></tr>
+        <tr><td><a href="/research/papers/individual-honey-bee-tracking-in-a-beehive-environment-using-deep-learning-and-kalman-filter/">Individual honey bee tracking in a beehive environment using deep learning and Kalman filter</a></td><td>Unknown year</td><td></td></tr>
+        </tbody>
+        </table>
         </div>
       </div>
     </div>

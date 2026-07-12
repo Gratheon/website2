@@ -21,6 +21,6 @@ layout: research
 
 ### [Uncategorized](../topics/uncategorized.md)
 
-- [Beekeeping in the digital age - prospects and pitfalls of hive sensors](../Beekeeping%20in%20the%20digital%20age%20-%20prospects%20and%20pitfalls%20of%20hive%20sensors.md)
-- [Individual honey bee tracking in a beehive environment using deep learning and Kalman filter](../Individual%20honey%20bee%20tracking%20in%20a%20beehive%20environment%20using%20deep%20learning%20and%20Kalman%20filter.md)
+- [Beekeeping in the digital age - prospects and pitfalls of hive sensors](/research/papers/beekeeping-in-the-digital-age-prospects-and-pitfalls-of-hive-sensors/)
+- [Individual honey bee tracking in a beehive environment using deep learning and Kalman filter](/research/papers/individual-honey-bee-tracking-in-a-beehive-environment-using-deep-learning-and-kalman-filter/)
 <!-- GENERATED RESEARCH INDEX:END -->

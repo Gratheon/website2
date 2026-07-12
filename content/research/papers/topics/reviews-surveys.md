@@ -91,128 +91,205 @@ layout: research
     <div class="research-year-filter__panels">
       <div class="research-year-panel" data-year="all">
         <div class="research-publications-table-wrap">
-        
-        | Publication | Year | Institutions |
-        |---|---|---|
-        | [Deep Learning and Computer Vision for Honey Bee Health Monitoring: A Systematic Survey and Future Directions](../Deep%20Learning%20and%20Computer%20Vision%20for%20Honey%20Bee%20Health%20Monitoring%3A%20A%20Systematic%20Survey%20and%20Future%20Directions.md) | 2026 | 🇮🇳 SSVPS's Bapusaheb Shivajirao Deore College of Engineering |
-        | [From Hive Sensors to Environmental DNA: Toward a Systems Biology Framework for Honeybee-Based Early Warning of Colony and Ecosystem Health](../From%20Hive%20Sensors%20to%20Environmental%20DNA%20Toward%20a%20Systems%20Biology%20Framework%20for%20Honeybee-Based%20Early%20Warning%20of%20Colony%20and%20Ecosystem%20Health.md) | 2026 | 🇨🇳 Yangzhou University; 🇸🇦 Imam Mohammad Ibn Saud Islamic University |
-        | [Transforming Beekeeping Through Technology: A Systematic Review of Precision Beekeeping](../Transforming%20Beekeeping%20Through%20Technology%20A%20Systematic%20Review%20of%20Precision%20Beekeeping.md) | 2026 | 🇧🇳 Universiti Brunei Darussalam; 🇱🇰 Uva Wellassa University |
-        | [A Survey of TinyML Applications in Beekeeping for Hive Monitoring and Management](../A%20Survey%20of%20TinyML%20Applications%20in%20Beekeeping%20for%20Hive%20Monitoring%20and%20Management.md) | 2025 | 🇦🇺 University of Technology Sydney; 🇦🇺 BeeSTAR |
-        | [Buzzing with Intelligence: A Systematic Review of Smart Beehive Technologies](../Buzzing%20with%20Intelligence%20A%20Systematic%20Review%20of%20SmartBeehive%20Technologies.md) | 2025 | 🇭🇷 University of Split |
-        | [IoT and Machine Learning Techniques for Precision Beekeeping:A Review](../IoT%20and%20Machine%20Learning%20Techniques%20for%20Precision%20Beekeeping%20A%20Review.md) | 2025 | 🇺🇬 Makerere University; 🇹🇿 Dar es Salaam Institute of Technology |
-        | [Advances in Beehive Monitoring Systems: Low-Cost Integrating Sensor Technology for Improved Apiculture Management](../Advances%20in%20Beehive%20Monitoring%20Systems%20Low-Cost%20Integrating%20Sensor%20Technology%20for%20Improved%20Apiculture%20Management.md) | 2024 | 🇷🇴 Research and Development Institute for Wildlife and Mountain Resources Miercurea Ciuc; 🇷🇴 Sapientia Hungarian University of Transylvania; 🇷🇴 National Institute for Research and Development in Environmental Protection; 🇷🇴 National Institute for Research and Development in Forestry Marin Dracea |
-        | [Current Status and Future Outlooks of Precision Beekeeping Systems and Services](../Current%20Status%20and%20Future%20Outlooks%20of%20Precision%20Beekeeping%20Systems%20and%20Services.md) | 2024 | 🇸🇰 Slovak University of Agriculture in Nitra |
-        | [Importance of GIS solutions for beekeepers: a review](../Importance%20of%20GIS%20solutions%20for%20beekeepers%20a%20review.md) | 2023 | 🇱🇻 Latvia University of Life Sciences and Technologies |
-        | [Machine Learning and Computer Vision Techniques in Continuous Beehive Monitoring Applications: A Survey](../Machine%20Learning%20and%20Computer%20Vision%20Techniques%20in%20Continuous%20Beehive%20Monitoring%20Applications%20A%20Survey.md) | 2023 | 🇨🇿 Brno University of Technology |
-        | [Precision Beekeeping Systems: State of the Art, Pros and Cons, and Their Application as Tools for Advancing theBeekeeping Sector](../Precision%20Beekeeping%20Systems%20State%20of%20the%20Art%2C%20Pros%20and%20Cons%2C%20and%20Their%20Application%20as%20Tools%20for%20Advancing%20theBeekeeping%20Sector.md) | 2023 | 🇮🇹 University of Tuscia; 🇮🇹 University of Napoli Federico II |
-        | [Digital Transformation of Beekeeping through the Use of a Decision Making Architecture](../Digital%20Transformation%20of%20Beekeeping%20through%20the%20Use%20of%20a%20Decision%20Making%20Architecture.md) | 2022 | 🇫🇷 Efrei Research Lab; 🇫🇷 PSL University |
-        | [Smart Beehive Monitoring for Remote Regions - PhD thesis](../Smart%20Beehive%20Monitoring%20for%20Remote%20Regions%20-%20PhD%20thesis.md) | 2022 | 🇦🇺 University of Western Australia |
-        | [Toward an intelligent and efficient beehive: A survey of precision beekeeping systems and services](../Toward%20an%20intelligent%20and%20efficient%20beehive%20A%20survey%20of%20precision%20beekeeping%20systems%20and%20services.md) | 2021 | 🇫🇷 aivancity School for Technology; 🇫🇷 Université de Lyon |
-        | [Data fusion challenges in precision beekeeping: a review](../Data%20fusion%20challenges%20in%20precision%20beekeeping%20a%20review.md) | 2020 | 🇱🇻 Latvia University of Life Sciences and Technologies |
-        | [Application of Data Layering in Precision Beekeeping: The Concept](../Application%20of%20Data%20Layering%20in%20Precision%20Beekeeping%20The%20Concept.md) | 2019 | 🇱🇻 Latvia University of Life Sciences and Technologies |
-        | [Automated monitoring of bee behaviour using connected hives: Towards a computational apidology](../Automated%20monitoring%20of%20bee%20behaviour%20using%20connected%20hives%20Towards%20a%20computational%20apidology.md) | 2019 | 🇫🇷 CNRS Research Center on Animal Cognition; 🇫🇷 Université Toulouse III - Paul Sabatier |
-        | [myBee: An Information System for Precision Beekeeping](../mybee.md) | 2017 | 🇧🇷 State University of Maringá; 🇧🇷 Federal University of Rio de Janeiro |
-        | [Application of continuous monitoring of honeybee colonies](../Application%20of%20continuous%20monitoring%20of%20honeybee%20colonies.md) | 2015 | 🇺🇸 USDA Agricultural Research Service; 🇩🇰 Aarhus University |
-        
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/deep-learning-and-computer-vision-for-honey-bee-health-monitoring-a-systematic-survey-and-future-directions/">Deep Learning and Computer Vision for Honey Bee Health Monitoring: A Systematic Survey and Future Directions</a></td><td>2026</td><td>🇮🇳 SSVPS&#x27;s Bapusaheb Shivajirao Deore College of Engineering</td></tr>
+        <tr><td><a href="/research/papers/from-hive-sensors-to-environmental-dna-toward-a-systems-biology-framework-for-honeybee-based-early-warning-of-colony-and-ecosystem-health/">From Hive Sensors to Environmental DNA: Toward a Systems Biology Framework for Honeybee-Based Early Warning of Colony and Ecosystem Health</a></td><td>2026</td><td>🇨🇳 Yangzhou University; 🇸🇦 Imam Mohammad Ibn Saud Islamic University</td></tr>
+        <tr><td><a href="/research/papers/transforming-beekeeping-through-technology-a-systematic-review-of-precision-beekeeping/">Transforming Beekeeping Through Technology: A Systematic Review of Precision Beekeeping</a></td><td>2026</td><td>🇧🇳 Universiti Brunei Darussalam; 🇱🇰 Uva Wellassa University</td></tr>
+        <tr><td><a href="/research/papers/a-survey-of-tinyml-applications-in-beekeeping-for-hive-monitoring-and-management/">A Survey of TinyML Applications in Beekeeping for Hive Monitoring and Management</a></td><td>2025</td><td>🇦🇺 University of Technology Sydney; 🇦🇺 BeeSTAR</td></tr>
+        <tr><td><a href="/research/papers/buzzing-with-intelligence-a-systematic-review-of-smartbeehive-technologies/">Buzzing with Intelligence: A Systematic Review of Smart Beehive Technologies</a></td><td>2025</td><td>🇭🇷 University of Split</td></tr>
+        <tr><td><a href="/research/papers/iot-and-machine-learning-techniques-for-precision-beekeeping-a-review/">IoT and Machine Learning Techniques for Precision Beekeeping:A Review</a></td><td>2025</td><td>🇺🇬 Makerere University; 🇹🇿 Dar es Salaam Institute of Technology</td></tr>
+        <tr><td><a href="/research/papers/advances-in-beehive-monitoring-systems-low-cost-integrating-sensor-technology-for-improved-apiculture-management/">Advances in Beehive Monitoring Systems: Low-Cost Integrating Sensor Technology for Improved Apiculture Management</a></td><td>2024</td><td>🇷🇴 Research and Development Institute for Wildlife and Mountain Resources Miercurea Ciuc; 🇷🇴 Sapientia Hungarian University of Transylvania; 🇷🇴 National Institute for Research and Development in Environmental Protection; 🇷🇴 National Institute for Research and Development in Forestry Marin Dracea</td></tr>
+        <tr><td><a href="/research/papers/current-status-and-future-outlooks-of-precision-beekeeping-systems-and-services/">Current Status and Future Outlooks of Precision Beekeeping Systems and Services</a></td><td>2024</td><td>🇸🇰 Slovak University of Agriculture in Nitra</td></tr>
+        <tr><td><a href="/research/papers/importance-of-gis-solutions-for-beekeepers-a-review/">Importance of GIS solutions for beekeepers: a review</a></td><td>2023</td><td>🇱🇻 Latvia University of Life Sciences and Technologies</td></tr>
+        <tr><td><a href="/research/papers/machine-learning-and-computer-vision-techniques-in-continuous-beehive-monitoring-applications-a-survey/">Machine Learning and Computer Vision Techniques in Continuous Beehive Monitoring Applications: A Survey</a></td><td>2023</td><td>🇨🇿 Brno University of Technology</td></tr>
+        <tr><td><a href="/research/papers/precision-beekeeping-systems-state-of-the-art-pros-and-cons-and-their-application-as-tools-for-advancing-thebeekeeping-sector/">Precision Beekeeping Systems: State of the Art, Pros and Cons, and Their Application as Tools for Advancing theBeekeeping Sector</a></td><td>2023</td><td>🇮🇹 University of Tuscia; 🇮🇹 University of Napoli Federico II</td></tr>
+        <tr><td><a href="/research/papers/digital-transformation-of-beekeeping-through-the-use-of-a-decision-making-architecture/">Digital Transformation of Beekeeping through the Use of a Decision Making Architecture</a></td><td>2022</td><td>🇫🇷 Efrei Research Lab; 🇫🇷 PSL University</td></tr>
+        <tr><td><a href="/research/papers/smart-beehive-monitoring-for-remote-regions-phd-thesis/">Smart Beehive Monitoring for Remote Regions - PhD thesis</a></td><td>2022</td><td>🇦🇺 University of Western Australia</td></tr>
+        <tr><td><a href="/research/papers/toward-an-intelligent-and-efficient-beehive-a-survey-of-precision-beekeeping-systems-and-services/">Toward an intelligent and efficient beehive: A survey of precision beekeeping systems and services</a></td><td>2021</td><td>🇫🇷 aivancity School for Technology; 🇫🇷 Université de Lyon</td></tr>
+        <tr><td><a href="/research/papers/data-fusion-challenges-in-precision-beekeeping-a-review/">Data fusion challenges in precision beekeeping: a review</a></td><td>2020</td><td>🇱🇻 Latvia University of Life Sciences and Technologies</td></tr>
+        <tr><td><a href="/research/papers/application-of-data-layering-in-precision-beekeeping-the-concept/">Application of Data Layering in Precision Beekeeping: The Concept</a></td><td>2019</td><td>🇱🇻 Latvia University of Life Sciences and Technologies</td></tr>
+        <tr><td><a href="/research/papers/automated-monitoring-of-bee-behaviour-using-connected-hives-towards-a-computational-apidology/">Automated monitoring of bee behaviour using connected hives: Towards a computational apidology</a></td><td>2019</td><td>🇫🇷 CNRS Research Center on Animal Cognition; 🇫🇷 Université Toulouse III - Paul Sabatier</td></tr>
+        <tr><td><a href="/research/papers/mybee/">myBee: An Information System for Precision Beekeeping</a></td><td>2017</td><td>🇧🇷 State University of Maringá; 🇧🇷 Federal University of Rio de Janeiro</td></tr>
+        <tr><td><a href="/research/papers/application-of-continuous-monitoring-of-honeybee-colonies/">Application of continuous monitoring of honeybee colonies</a></td><td>2015</td><td>🇺🇸 USDA Agricultural Research Service; 🇩🇰 Aarhus University</td></tr>
+        </tbody>
+        </table>
         </div>
       </div>
       <div class="research-year-panel" data-year="2026">
         <div class="research-publications-table-wrap">
-        
-        | Publication | Year | Institutions |
-        |---|---|---|
-        | [Deep Learning and Computer Vision for Honey Bee Health Monitoring: A Systematic Survey and Future Directions](../Deep%20Learning%20and%20Computer%20Vision%20for%20Honey%20Bee%20Health%20Monitoring%3A%20A%20Systematic%20Survey%20and%20Future%20Directions.md) | 2026 | 🇮🇳 SSVPS's Bapusaheb Shivajirao Deore College of Engineering |
-        | [From Hive Sensors to Environmental DNA: Toward a Systems Biology Framework for Honeybee-Based Early Warning of Colony and Ecosystem Health](../From%20Hive%20Sensors%20to%20Environmental%20DNA%20Toward%20a%20Systems%20Biology%20Framework%20for%20Honeybee-Based%20Early%20Warning%20of%20Colony%20and%20Ecosystem%20Health.md) | 2026 | 🇨🇳 Yangzhou University; 🇸🇦 Imam Mohammad Ibn Saud Islamic University |
-        | [Transforming Beekeeping Through Technology: A Systematic Review of Precision Beekeeping](../Transforming%20Beekeeping%20Through%20Technology%20A%20Systematic%20Review%20of%20Precision%20Beekeeping.md) | 2026 | 🇧🇳 Universiti Brunei Darussalam; 🇱🇰 Uva Wellassa University |
-        
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/deep-learning-and-computer-vision-for-honey-bee-health-monitoring-a-systematic-survey-and-future-directions/">Deep Learning and Computer Vision for Honey Bee Health Monitoring: A Systematic Survey and Future Directions</a></td><td>2026</td><td>🇮🇳 SSVPS&#x27;s Bapusaheb Shivajirao Deore College of Engineering</td></tr>
+        <tr><td><a href="/research/papers/from-hive-sensors-to-environmental-dna-toward-a-systems-biology-framework-for-honeybee-based-early-warning-of-colony-and-ecosystem-health/">From Hive Sensors to Environmental DNA: Toward a Systems Biology Framework for Honeybee-Based Early Warning of Colony and Ecosystem Health</a></td><td>2026</td><td>🇨🇳 Yangzhou University; 🇸🇦 Imam Mohammad Ibn Saud Islamic University</td></tr>
+        <tr><td><a href="/research/papers/transforming-beekeeping-through-technology-a-systematic-review-of-precision-beekeeping/">Transforming Beekeeping Through Technology: A Systematic Review of Precision Beekeeping</a></td><td>2026</td><td>🇧🇳 Universiti Brunei Darussalam; 🇱🇰 Uva Wellassa University</td></tr>
+        </tbody>
+        </table>
         </div>
       </div>
       <div class="research-year-panel" data-year="2025">
         <div class="research-publications-table-wrap">
-        
-        | Publication | Year | Institutions |
-        |---|---|---|
-        | [A Survey of TinyML Applications in Beekeeping for Hive Monitoring and Management](../A%20Survey%20of%20TinyML%20Applications%20in%20Beekeeping%20for%20Hive%20Monitoring%20and%20Management.md) | 2025 | 🇦🇺 University of Technology Sydney; 🇦🇺 BeeSTAR |
-        | [Buzzing with Intelligence: A Systematic Review of Smart Beehive Technologies](../Buzzing%20with%20Intelligence%20A%20Systematic%20Review%20of%20SmartBeehive%20Technologies.md) | 2025 | 🇭🇷 University of Split |
-        | [IoT and Machine Learning Techniques for Precision Beekeeping:A Review](../IoT%20and%20Machine%20Learning%20Techniques%20for%20Precision%20Beekeeping%20A%20Review.md) | 2025 | 🇺🇬 Makerere University; 🇹🇿 Dar es Salaam Institute of Technology |
-        
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/a-survey-of-tinyml-applications-in-beekeeping-for-hive-monitoring-and-management/">A Survey of TinyML Applications in Beekeeping for Hive Monitoring and Management</a></td><td>2025</td><td>🇦🇺 University of Technology Sydney; 🇦🇺 BeeSTAR</td></tr>
+        <tr><td><a href="/research/papers/buzzing-with-intelligence-a-systematic-review-of-smartbeehive-technologies/">Buzzing with Intelligence: A Systematic Review of Smart Beehive Technologies</a></td><td>2025</td><td>🇭🇷 University of Split</td></tr>
+        <tr><td><a href="/research/papers/iot-and-machine-learning-techniques-for-precision-beekeeping-a-review/">IoT and Machine Learning Techniques for Precision Beekeeping:A Review</a></td><td>2025</td><td>🇺🇬 Makerere University; 🇹🇿 Dar es Salaam Institute of Technology</td></tr>
+        </tbody>
+        </table>
         </div>
       </div>
       <div class="research-year-panel" data-year="2024">
         <div class="research-publications-table-wrap">
-        
-        | Publication | Year | Institutions |
-        |---|---|---|
-        | [Advances in Beehive Monitoring Systems: Low-Cost Integrating Sensor Technology for Improved Apiculture Management](../Advances%20in%20Beehive%20Monitoring%20Systems%20Low-Cost%20Integrating%20Sensor%20Technology%20for%20Improved%20Apiculture%20Management.md) | 2024 | 🇷🇴 Research and Development Institute for Wildlife and Mountain Resources Miercurea Ciuc; 🇷🇴 Sapientia Hungarian University of Transylvania; 🇷🇴 National Institute for Research and Development in Environmental Protection; 🇷🇴 National Institute for Research and Development in Forestry Marin Dracea |
-        | [Current Status and Future Outlooks of Precision Beekeeping Systems and Services](../Current%20Status%20and%20Future%20Outlooks%20of%20Precision%20Beekeeping%20Systems%20and%20Services.md) | 2024 | 🇸🇰 Slovak University of Agriculture in Nitra |
-        
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/advances-in-beehive-monitoring-systems-low-cost-integrating-sensor-technology-for-improved-apiculture-management/">Advances in Beehive Monitoring Systems: Low-Cost Integrating Sensor Technology for Improved Apiculture Management</a></td><td>2024</td><td>🇷🇴 Research and Development Institute for Wildlife and Mountain Resources Miercurea Ciuc; 🇷🇴 Sapientia Hungarian University of Transylvania; 🇷🇴 National Institute for Research and Development in Environmental Protection; 🇷🇴 National Institute for Research and Development in Forestry Marin Dracea</td></tr>
+        <tr><td><a href="/research/papers/current-status-and-future-outlooks-of-precision-beekeeping-systems-and-services/">Current Status and Future Outlooks of Precision Beekeeping Systems and Services</a></td><td>2024</td><td>🇸🇰 Slovak University of Agriculture in Nitra</td></tr>
+        </tbody>
+        </table>
         </div>
       </div>
       <div class="research-year-panel" data-year="2023">
         <div class="research-publications-table-wrap">
-        
-        | Publication | Year | Institutions |
-        |---|---|---|
-        | [Importance of GIS solutions for beekeepers: a review](../Importance%20of%20GIS%20solutions%20for%20beekeepers%20a%20review.md) | 2023 | 🇱🇻 Latvia University of Life Sciences and Technologies |
-        | [Machine Learning and Computer Vision Techniques in Continuous Beehive Monitoring Applications: A Survey](../Machine%20Learning%20and%20Computer%20Vision%20Techniques%20in%20Continuous%20Beehive%20Monitoring%20Applications%20A%20Survey.md) | 2023 | 🇨🇿 Brno University of Technology |
-        | [Precision Beekeeping Systems: State of the Art, Pros and Cons, and Their Application as Tools for Advancing theBeekeeping Sector](../Precision%20Beekeeping%20Systems%20State%20of%20the%20Art%2C%20Pros%20and%20Cons%2C%20and%20Their%20Application%20as%20Tools%20for%20Advancing%20theBeekeeping%20Sector.md) | 2023 | 🇮🇹 University of Tuscia; 🇮🇹 University of Napoli Federico II |
-        
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/importance-of-gis-solutions-for-beekeepers-a-review/">Importance of GIS solutions for beekeepers: a review</a></td><td>2023</td><td>🇱🇻 Latvia University of Life Sciences and Technologies</td></tr>
+        <tr><td><a href="/research/papers/machine-learning-and-computer-vision-techniques-in-continuous-beehive-monitoring-applications-a-survey/">Machine Learning and Computer Vision Techniques in Continuous Beehive Monitoring Applications: A Survey</a></td><td>2023</td><td>🇨🇿 Brno University of Technology</td></tr>
+        <tr><td><a href="/research/papers/precision-beekeeping-systems-state-of-the-art-pros-and-cons-and-their-application-as-tools-for-advancing-thebeekeeping-sector/">Precision Beekeeping Systems: State of the Art, Pros and Cons, and Their Application as Tools for Advancing theBeekeeping Sector</a></td><td>2023</td><td>🇮🇹 University of Tuscia; 🇮🇹 University of Napoli Federico II</td></tr>
+        </tbody>
+        </table>
         </div>
       </div>
       <div class="research-year-panel" data-year="2022">
         <div class="research-publications-table-wrap">
-        
-        | Publication | Year | Institutions |
-        |---|---|---|
-        | [Digital Transformation of Beekeeping through the Use of a Decision Making Architecture](../Digital%20Transformation%20of%20Beekeeping%20through%20the%20Use%20of%20a%20Decision%20Making%20Architecture.md) | 2022 | 🇫🇷 Efrei Research Lab; 🇫🇷 PSL University |
-        | [Smart Beehive Monitoring for Remote Regions - PhD thesis](../Smart%20Beehive%20Monitoring%20for%20Remote%20Regions%20-%20PhD%20thesis.md) | 2022 | 🇦🇺 University of Western Australia |
-        
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/digital-transformation-of-beekeeping-through-the-use-of-a-decision-making-architecture/">Digital Transformation of Beekeeping through the Use of a Decision Making Architecture</a></td><td>2022</td><td>🇫🇷 Efrei Research Lab; 🇫🇷 PSL University</td></tr>
+        <tr><td><a href="/research/papers/smart-beehive-monitoring-for-remote-regions-phd-thesis/">Smart Beehive Monitoring for Remote Regions - PhD thesis</a></td><td>2022</td><td>🇦🇺 University of Western Australia</td></tr>
+        </tbody>
+        </table>
         </div>
       </div>
       <div class="research-year-panel" data-year="2021">
         <div class="research-publications-table-wrap">
-        
-        | Publication | Year | Institutions |
-        |---|---|---|
-        | [Toward an intelligent and efficient beehive: A survey of precision beekeeping systems and services](../Toward%20an%20intelligent%20and%20efficient%20beehive%20A%20survey%20of%20precision%20beekeeping%20systems%20and%20services.md) | 2021 | 🇫🇷 aivancity School for Technology; 🇫🇷 Université de Lyon |
-        
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/toward-an-intelligent-and-efficient-beehive-a-survey-of-precision-beekeeping-systems-and-services/">Toward an intelligent and efficient beehive: A survey of precision beekeeping systems and services</a></td><td>2021</td><td>🇫🇷 aivancity School for Technology; 🇫🇷 Université de Lyon</td></tr>
+        </tbody>
+        </table>
         </div>
       </div>
       <div class="research-year-panel" data-year="2020">
         <div class="research-publications-table-wrap">
-        
-        | Publication | Year | Institutions |
-        |---|---|---|
-        | [Data fusion challenges in precision beekeeping: a review](../Data%20fusion%20challenges%20in%20precision%20beekeeping%20a%20review.md) | 2020 | 🇱🇻 Latvia University of Life Sciences and Technologies |
-        
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/data-fusion-challenges-in-precision-beekeeping-a-review/">Data fusion challenges in precision beekeeping: a review</a></td><td>2020</td><td>🇱🇻 Latvia University of Life Sciences and Technologies</td></tr>
+        </tbody>
+        </table>
         </div>
       </div>
       <div class="research-year-panel" data-year="2019">
         <div class="research-publications-table-wrap">
-        
-        | Publication | Year | Institutions |
-        |---|---|---|
-        | [Application of Data Layering in Precision Beekeeping: The Concept](../Application%20of%20Data%20Layering%20in%20Precision%20Beekeeping%20The%20Concept.md) | 2019 | 🇱🇻 Latvia University of Life Sciences and Technologies |
-        | [Automated monitoring of bee behaviour using connected hives: Towards a computational apidology](../Automated%20monitoring%20of%20bee%20behaviour%20using%20connected%20hives%20Towards%20a%20computational%20apidology.md) | 2019 | 🇫🇷 CNRS Research Center on Animal Cognition; 🇫🇷 Université Toulouse III - Paul Sabatier |
-        
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/application-of-data-layering-in-precision-beekeeping-the-concept/">Application of Data Layering in Precision Beekeeping: The Concept</a></td><td>2019</td><td>🇱🇻 Latvia University of Life Sciences and Technologies</td></tr>
+        <tr><td><a href="/research/papers/automated-monitoring-of-bee-behaviour-using-connected-hives-towards-a-computational-apidology/">Automated monitoring of bee behaviour using connected hives: Towards a computational apidology</a></td><td>2019</td><td>🇫🇷 CNRS Research Center on Animal Cognition; 🇫🇷 Université Toulouse III - Paul Sabatier</td></tr>
+        </tbody>
+        </table>
         </div>
       </div>
       <div class="research-year-panel" data-year="2017">
         <div class="research-publications-table-wrap">
-        
-        | Publication | Year | Institutions |
-        |---|---|---|
-        | [myBee: An Information System for Precision Beekeeping](../mybee.md) | 2017 | 🇧🇷 State University of Maringá; 🇧🇷 Federal University of Rio de Janeiro |
-        
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/mybee/">myBee: An Information System for Precision Beekeeping</a></td><td>2017</td><td>🇧🇷 State University of Maringá; 🇧🇷 Federal University of Rio de Janeiro</td></tr>
+        </tbody>
+        </table>
         </div>
       </div>
       <div class="research-year-panel" data-year="2015">
         <div class="research-publications-table-wrap">
-        
-        | Publication | Year | Institutions |
-        |---|---|---|
-        | [Application of continuous monitoring of honeybee colonies](../Application%20of%20continuous%20monitoring%20of%20honeybee%20colonies.md) | 2015 | 🇺🇸 USDA Agricultural Research Service; 🇩🇰 Aarhus University |
-        
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/application-of-continuous-monitoring-of-honeybee-colonies/">Application of continuous monitoring of honeybee colonies</a></td><td>2015</td><td>🇺🇸 USDA Agricultural Research Service; 🇩🇰 Aarhus University</td></tr>
+        </tbody>
+        </table>
         </div>
       </div>
     </div>

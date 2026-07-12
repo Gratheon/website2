@@ -75,96 +75,152 @@ layout: research
     <div class="research-year-filter__panels">
       <div class="research-year-panel" data-year="all">
         <div class="research-publications-table-wrap">
-        
-        | Publication | Year | Institutions |
-        |---|---|---|
-        | [A Multimodal Machine Learning System for Non-Invasive Detection of Varroa destructor Infestations in Honey Bee Colonies](../A%20Multimodal%20Machine%20Learning%20System%20for%20Non-Invasive%20Detection%20of%20Varroa%20destructor%20Infestations%20in%20Honey%20Bee%20Colonies.md) | 2026 | 🇺🇸 Green Valley High School |
-        | [Interpretable Deep Learning for Varroa Mite Detection: Integrating Deblurring, Morphology-Preserving Preprocessing, and Explainability Analysis](../Interpretable%20Deep%20Learning%20for%20Varroa%20Mite%20Detection%20Integrating%20Deblurring%20Morphology-Preserving%20Preprocessing%20and%20Explainability%20Analysis.md) | 2026 | 🇰🇷 Kangwon National University; 🇰🇷 National Institute of Agricultural Sciences |
-        | [An AI-Based Digital Scanner for Varroa destructor Detection in Beekeeping](../An%20AI-Based%20Digital%20Scanner%20for%20Varroa%20destructor%20Detection%20in%20Beekeeping.md) | 2025 | 🇮🇹 Council for Agricultural Research and Economics (CREA) – Research Centre for Engineering and Agro-Food Processing, Monterotondo; 🇮🇹 Council for Agricultural Research and Economics (CREA) – Research Centre for Agriculture and Environment, Bologna; 🇷🇸 University of Novi Sad |
-        | [An AI-Based Open-Source Software for Varroa Mite Fall Analysis in Honeybee Colonies](../%E2%AD%90%EF%B8%8F%20An%20AI-Based%20Open-Source%20Software%20for%20Varroa%20Mite%20Fall%20Analysis%20in%20Honeybee%20Colonies.md) | 2025 | 🇪🇸 University of Zaragoza; 🇪🇸 University of La Rioja; 🇪🇸 University of Valencia |
-        | [Towards Varroa destructor mite detection using a narrow spectra illumination](../Towards%20Varroa%20destructor%20mite%20detection%20using%20a%20narrow%20spectra%20illumination.md) | 2025 | 🇨🇿 Brno University of Technology |
-        | [IntelliBeeHive: An Automated Honey Bee, Pollen, and Varroa Destructor Monitoring System](../IntelliBeeHive%20An%20Automated%20Honey%20Bee%20Pollen%20and%20Varroa%20Destructor%20Monitoring%20System.md) | 2024 | 🇺🇸 University of Texas Rio Grande Valley |
-        | [Tracking Varroa Parasitism Using Handheld Infrared Cameras:Is Eusocial Fever the Key?](../Tracking%20Varroa%20Parasitism%20Using%20Handheld%20Infrared%20Cameras%20Is%20Eusocial%20Fever%20the%20Key.md) | 2024 | 🇭🇺 Hungarian University of Agricultureand Life Sciences |
-        | [Varroa destructor detection on honey bees using hyperspectral imagery](../Varroa%20destructor%20detection%20on%20honey%20bees%20using%20hyperspectral%20imagery.md) | 2024 | 🇨🇿 Brno University of Technology; 🇫🇮 LUT University |
-        | [Automated, non-invasive Varroa mite detection by vibrational measurements of gait combined with machine learning](../Automated%20non-invasive%20Varroa%20mite%20detection%20by%20vibrational%20measurements%20of%20gait%20combined%20with%20machine%20learning.md) | 2023 | 🇬🇧 Nottingham Trent University |
-        | [Detection of Varroa destructor Infestation of Honeybees Based on Segmentation and Object Detection Convolutional Neural Networks](../Detection%20of%20Varroa%20destructor%20Infestation%20of%20Honeybees%20Based%20on%20Segmentation%20and%20Object%20Detection%20Convolutional%20Neural%20Networks.md) | 2023 | 🇨🇳 Shandong Agriculture University |
-        | [Recognizing Beehives’ Health Abnormalities Based on Mobile Net Deep Learning Model](../Recognizing%20Beehives%20Health%20Abnormalities%20Based%20on%20Mobile%20Net%20Deep%20Learning%20Model.md) | 2023 | 🇪🇬 Egyptian Russian University; 🇪🇬 Cairo University; 🇪🇬 Tanta University; 🇪🇬 Scientific Research Group in Egypt |
-        | [Varroa Destructor Classification Using Legendre Fourier Moments with Different Color Spaces](../Varroa%20Destructor%20Classification%20Using%20Legendre%20Fourier%20Moments%20with%20Different%20Color%20Spaces.md) | 2023 | 🇲🇽 Universidad Politécnica de Tulancingo |
-        | [Deep Learning Beehive Monitoring System for Early Detection of the Varroa Mite](../Deep%20Learning%20Beehive%20Monitoring%20System%20for%20Early%20Detection%20of%20the%20Varroa%20Mite.md) | 2022 | 🇬🇷 University of Ioannina |
-        | [Visual Diagnosis of the Varroa Destructor Parasitic Mite in Honeybees Using Object Detector Techniques](../Visual%20Diagnosis%20of%20the%20Varroa%20Destructor%20Parasitic%20Mite%20in%20Honeybees%20Using%20Object%20Detector%20Techniques.md) | 2021 | 🇨🇿 Brno University of Technology |
-        | [A Preliminary Study of Image Analysis forParasite Detection on Honey Bees](../A%20Preliminary%20Study%20of%20Image%20Analysis%20forParasite%20Detection%20on%20Honey%20Bees.md) | 2018 | 🇦🇹 Vienna University of Technology; 🇪🇸 Universidad de Oviedo; 🇪🇸 Universitat de Barcelona |
-        
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/a-multimodal-machine-learning-system-for-non-invasive-detection-of-varroa-destructor-infestations-in-honey-bee-colonies/">A Multimodal Machine Learning System for Non-Invasive Detection of Varroa destructor Infestations in Honey Bee Colonies</a></td><td>2026</td><td>🇺🇸 Green Valley High School</td></tr>
+        <tr><td><a href="/research/papers/interpretable-deep-learning-for-varroa-mite-detection-integrating-deblurring-morphology-preserving-preprocessing-and-explainability-analysis/">Interpretable Deep Learning for Varroa Mite Detection: Integrating Deblurring, Morphology-Preserving Preprocessing, and Explainability Analysis</a></td><td>2026</td><td>🇰🇷 Kangwon National University; 🇰🇷 National Institute of Agricultural Sciences</td></tr>
+        <tr><td><a href="/research/papers/an-ai-based-digital-scanner-for-varroa-destructor-detection-in-beekeeping/">An AI-Based Digital Scanner for Varroa destructor Detection in Beekeeping</a></td><td>2025</td><td>🇮🇹 Council for Agricultural Research and Economics (CREA) – Research Centre for Engineering and Agro-Food Processing, Monterotondo; 🇮🇹 Council for Agricultural Research and Economics (CREA) – Research Centre for Agriculture and Environment, Bologna; 🇷🇸 University of Novi Sad</td></tr>
+        <tr><td><a href="/research/papers/an-ai-based-open-source-software-for-varroa-mite-fall-analysis-in-honeybee-colonies/">An AI-Based Open-Source Software for Varroa Mite Fall Analysis in Honeybee Colonies</a></td><td>2025</td><td>🇪🇸 University of Zaragoza; 🇪🇸 University of La Rioja; 🇪🇸 University of Valencia</td></tr>
+        <tr><td><a href="/research/papers/towards-varroa-destructor-mite-detection-using-a-narrow-spectra-illumination/">Towards Varroa destructor mite detection using a narrow spectra illumination</a></td><td>2025</td><td>🇨🇿 Brno University of Technology</td></tr>
+        <tr><td><a href="/research/papers/intellibeehive-an-automated-honey-bee-pollen-and-varroa-destructor-monitoring-system/">IntelliBeeHive: An Automated Honey Bee, Pollen, and Varroa Destructor Monitoring System</a></td><td>2024</td><td>🇺🇸 University of Texas Rio Grande Valley</td></tr>
+        <tr><td><a href="/research/papers/tracking-varroa-parasitism-using-handheld-infrared-cameras-is-eusocial-fever-the-key/">Tracking Varroa Parasitism Using Handheld Infrared Cameras:Is Eusocial Fever the Key?</a></td><td>2024</td><td>🇭🇺 Hungarian University of Agricultureand Life Sciences</td></tr>
+        <tr><td><a href="/research/papers/varroa-destructor-detection-on-honey-bees-using-hyperspectral-imagery/">Varroa destructor detection on honey bees using hyperspectral imagery</a></td><td>2024</td><td>🇨🇿 Brno University of Technology; 🇫🇮 LUT University</td></tr>
+        <tr><td><a href="/research/papers/automated-non-invasive-varroa-mite-detection-by-vibrational-measurements-of-gait-combined-with-machine-learning/">Automated, non-invasive Varroa mite detection by vibrational measurements of gait combined with machine learning</a></td><td>2023</td><td>🇬🇧 Nottingham Trent University</td></tr>
+        <tr><td><a href="/research/papers/detection-of-varroa-destructor-infestation-of-honeybees-based-on-segmentation-and-object-detection-convolutional-neural-networks/">Detection of Varroa destructor Infestation of Honeybees Based on Segmentation and Object Detection Convolutional Neural Networks</a></td><td>2023</td><td>🇨🇳 Shandong Agriculture University</td></tr>
+        <tr><td><a href="/research/papers/recognizing-beehives-health-abnormalities-based-on-mobile-net-deep-learning-model/">Recognizing Beehives’ Health Abnormalities Based on Mobile Net Deep Learning Model</a></td><td>2023</td><td>🇪🇬 Egyptian Russian University; 🇪🇬 Cairo University; 🇪🇬 Tanta University; 🇪🇬 Scientific Research Group in Egypt</td></tr>
+        <tr><td><a href="/research/papers/varroa-destructor-classification-using-legendre-fourier-moments-with-different-color-spaces/">Varroa Destructor Classification Using Legendre Fourier Moments with Different Color Spaces</a></td><td>2023</td><td>🇲🇽 Universidad Politécnica de Tulancingo</td></tr>
+        <tr><td><a href="/research/papers/deep-learning-beehive-monitoring-system-for-early-detection-of-the-varroa-mite/">Deep Learning Beehive Monitoring System for Early Detection of the Varroa Mite</a></td><td>2022</td><td>🇬🇷 University of Ioannina</td></tr>
+        <tr><td><a href="/research/papers/visual-diagnosis-of-the-varroa-destructor-parasitic-mite-in-honeybees-using-object-detector-techniques/">Visual Diagnosis of the Varroa Destructor Parasitic Mite in Honeybees Using Object Detector Techniques</a></td><td>2021</td><td>🇨🇿 Brno University of Technology</td></tr>
+        <tr><td><a href="/research/papers/a-preliminary-study-of-image-analysis-forparasite-detection-on-honey-bees/">A Preliminary Study of Image Analysis forParasite Detection on Honey Bees</a></td><td>2018</td><td>🇦🇹 Vienna University of Technology; 🇪🇸 Universidad de Oviedo; 🇪🇸 Universitat de Barcelona</td></tr>
+        </tbody>
+        </table>
         </div>
       </div>
       <div class="research-year-panel" data-year="2026">
         <div class="research-publications-table-wrap">
-        
-        | Publication | Year | Institutions |
-        |---|---|---|
-        | [A Multimodal Machine Learning System for Non-Invasive Detection of Varroa destructor Infestations in Honey Bee Colonies](../A%20Multimodal%20Machine%20Learning%20System%20for%20Non-Invasive%20Detection%20of%20Varroa%20destructor%20Infestations%20in%20Honey%20Bee%20Colonies.md) | 2026 | 🇺🇸 Green Valley High School |
-        | [Interpretable Deep Learning for Varroa Mite Detection: Integrating Deblurring, Morphology-Preserving Preprocessing, and Explainability Analysis](../Interpretable%20Deep%20Learning%20for%20Varroa%20Mite%20Detection%20Integrating%20Deblurring%20Morphology-Preserving%20Preprocessing%20and%20Explainability%20Analysis.md) | 2026 | 🇰🇷 Kangwon National University; 🇰🇷 National Institute of Agricultural Sciences |
-        
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/a-multimodal-machine-learning-system-for-non-invasive-detection-of-varroa-destructor-infestations-in-honey-bee-colonies/">A Multimodal Machine Learning System for Non-Invasive Detection of Varroa destructor Infestations in Honey Bee Colonies</a></td><td>2026</td><td>🇺🇸 Green Valley High School</td></tr>
+        <tr><td><a href="/research/papers/interpretable-deep-learning-for-varroa-mite-detection-integrating-deblurring-morphology-preserving-preprocessing-and-explainability-analysis/">Interpretable Deep Learning for Varroa Mite Detection: Integrating Deblurring, Morphology-Preserving Preprocessing, and Explainability Analysis</a></td><td>2026</td><td>🇰🇷 Kangwon National University; 🇰🇷 National Institute of Agricultural Sciences</td></tr>
+        </tbody>
+        </table>
         </div>
       </div>
       <div class="research-year-panel" data-year="2025">
         <div class="research-publications-table-wrap">
-        
-        | Publication | Year | Institutions |
-        |---|---|---|
-        | [An AI-Based Digital Scanner for Varroa destructor Detection in Beekeeping](../An%20AI-Based%20Digital%20Scanner%20for%20Varroa%20destructor%20Detection%20in%20Beekeeping.md) | 2025 | 🇮🇹 Council for Agricultural Research and Economics (CREA) – Research Centre for Engineering and Agro-Food Processing, Monterotondo; 🇮🇹 Council for Agricultural Research and Economics (CREA) – Research Centre for Agriculture and Environment, Bologna; 🇷🇸 University of Novi Sad |
-        | [An AI-Based Open-Source Software for Varroa Mite Fall Analysis in Honeybee Colonies](../%E2%AD%90%EF%B8%8F%20An%20AI-Based%20Open-Source%20Software%20for%20Varroa%20Mite%20Fall%20Analysis%20in%20Honeybee%20Colonies.md) | 2025 | 🇪🇸 University of Zaragoza; 🇪🇸 University of La Rioja; 🇪🇸 University of Valencia |
-        | [Towards Varroa destructor mite detection using a narrow spectra illumination](../Towards%20Varroa%20destructor%20mite%20detection%20using%20a%20narrow%20spectra%20illumination.md) | 2025 | 🇨🇿 Brno University of Technology |
-        
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/an-ai-based-digital-scanner-for-varroa-destructor-detection-in-beekeeping/">An AI-Based Digital Scanner for Varroa destructor Detection in Beekeeping</a></td><td>2025</td><td>🇮🇹 Council for Agricultural Research and Economics (CREA) – Research Centre for Engineering and Agro-Food Processing, Monterotondo; 🇮🇹 Council for Agricultural Research and Economics (CREA) – Research Centre for Agriculture and Environment, Bologna; 🇷🇸 University of Novi Sad</td></tr>
+        <tr><td><a href="/research/papers/an-ai-based-open-source-software-for-varroa-mite-fall-analysis-in-honeybee-colonies/">An AI-Based Open-Source Software for Varroa Mite Fall Analysis in Honeybee Colonies</a></td><td>2025</td><td>🇪🇸 University of Zaragoza; 🇪🇸 University of La Rioja; 🇪🇸 University of Valencia</td></tr>
+        <tr><td><a href="/research/papers/towards-varroa-destructor-mite-detection-using-a-narrow-spectra-illumination/">Towards Varroa destructor mite detection using a narrow spectra illumination</a></td><td>2025</td><td>🇨🇿 Brno University of Technology</td></tr>
+        </tbody>
+        </table>
         </div>
       </div>
       <div class="research-year-panel" data-year="2024">
         <div class="research-publications-table-wrap">
-        
-        | Publication | Year | Institutions |
-        |---|---|---|
-        | [IntelliBeeHive: An Automated Honey Bee, Pollen, and Varroa Destructor Monitoring System](../IntelliBeeHive%20An%20Automated%20Honey%20Bee%20Pollen%20and%20Varroa%20Destructor%20Monitoring%20System.md) | 2024 | 🇺🇸 University of Texas Rio Grande Valley |
-        | [Tracking Varroa Parasitism Using Handheld Infrared Cameras:Is Eusocial Fever the Key?](../Tracking%20Varroa%20Parasitism%20Using%20Handheld%20Infrared%20Cameras%20Is%20Eusocial%20Fever%20the%20Key.md) | 2024 | 🇭🇺 Hungarian University of Agricultureand Life Sciences |
-        | [Varroa destructor detection on honey bees using hyperspectral imagery](../Varroa%20destructor%20detection%20on%20honey%20bees%20using%20hyperspectral%20imagery.md) | 2024 | 🇨🇿 Brno University of Technology; 🇫🇮 LUT University |
-        
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/intellibeehive-an-automated-honey-bee-pollen-and-varroa-destructor-monitoring-system/">IntelliBeeHive: An Automated Honey Bee, Pollen, and Varroa Destructor Monitoring System</a></td><td>2024</td><td>🇺🇸 University of Texas Rio Grande Valley</td></tr>
+        <tr><td><a href="/research/papers/tracking-varroa-parasitism-using-handheld-infrared-cameras-is-eusocial-fever-the-key/">Tracking Varroa Parasitism Using Handheld Infrared Cameras:Is Eusocial Fever the Key?</a></td><td>2024</td><td>🇭🇺 Hungarian University of Agricultureand Life Sciences</td></tr>
+        <tr><td><a href="/research/papers/varroa-destructor-detection-on-honey-bees-using-hyperspectral-imagery/">Varroa destructor detection on honey bees using hyperspectral imagery</a></td><td>2024</td><td>🇨🇿 Brno University of Technology; 🇫🇮 LUT University</td></tr>
+        </tbody>
+        </table>
         </div>
       </div>
       <div class="research-year-panel" data-year="2023">
         <div class="research-publications-table-wrap">
-        
-        | Publication | Year | Institutions |
-        |---|---|---|
-        | [Automated, non-invasive Varroa mite detection by vibrational measurements of gait combined with machine learning](../Automated%20non-invasive%20Varroa%20mite%20detection%20by%20vibrational%20measurements%20of%20gait%20combined%20with%20machine%20learning.md) | 2023 | 🇬🇧 Nottingham Trent University |
-        | [Detection of Varroa destructor Infestation of Honeybees Based on Segmentation and Object Detection Convolutional Neural Networks](../Detection%20of%20Varroa%20destructor%20Infestation%20of%20Honeybees%20Based%20on%20Segmentation%20and%20Object%20Detection%20Convolutional%20Neural%20Networks.md) | 2023 | 🇨🇳 Shandong Agriculture University |
-        | [Recognizing Beehives’ Health Abnormalities Based on Mobile Net Deep Learning Model](../Recognizing%20Beehives%20Health%20Abnormalities%20Based%20on%20Mobile%20Net%20Deep%20Learning%20Model.md) | 2023 | 🇪🇬 Egyptian Russian University; 🇪🇬 Cairo University; 🇪🇬 Tanta University; 🇪🇬 Scientific Research Group in Egypt |
-        | [Varroa Destructor Classification Using Legendre Fourier Moments with Different Color Spaces](../Varroa%20Destructor%20Classification%20Using%20Legendre%20Fourier%20Moments%20with%20Different%20Color%20Spaces.md) | 2023 | 🇲🇽 Universidad Politécnica de Tulancingo |
-        
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/automated-non-invasive-varroa-mite-detection-by-vibrational-measurements-of-gait-combined-with-machine-learning/">Automated, non-invasive Varroa mite detection by vibrational measurements of gait combined with machine learning</a></td><td>2023</td><td>🇬🇧 Nottingham Trent University</td></tr>
+        <tr><td><a href="/research/papers/detection-of-varroa-destructor-infestation-of-honeybees-based-on-segmentation-and-object-detection-convolutional-neural-networks/">Detection of Varroa destructor Infestation of Honeybees Based on Segmentation and Object Detection Convolutional Neural Networks</a></td><td>2023</td><td>🇨🇳 Shandong Agriculture University</td></tr>
+        <tr><td><a href="/research/papers/recognizing-beehives-health-abnormalities-based-on-mobile-net-deep-learning-model/">Recognizing Beehives’ Health Abnormalities Based on Mobile Net Deep Learning Model</a></td><td>2023</td><td>🇪🇬 Egyptian Russian University; 🇪🇬 Cairo University; 🇪🇬 Tanta University; 🇪🇬 Scientific Research Group in Egypt</td></tr>
+        <tr><td><a href="/research/papers/varroa-destructor-classification-using-legendre-fourier-moments-with-different-color-spaces/">Varroa Destructor Classification Using Legendre Fourier Moments with Different Color Spaces</a></td><td>2023</td><td>🇲🇽 Universidad Politécnica de Tulancingo</td></tr>
+        </tbody>
+        </table>
         </div>
       </div>
       <div class="research-year-panel" data-year="2022">
         <div class="research-publications-table-wrap">
-        
-        | Publication | Year | Institutions |
-        |---|---|---|
-        | [Deep Learning Beehive Monitoring System for Early Detection of the Varroa Mite](../Deep%20Learning%20Beehive%20Monitoring%20System%20for%20Early%20Detection%20of%20the%20Varroa%20Mite.md) | 2022 | 🇬🇷 University of Ioannina |
-        
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/deep-learning-beehive-monitoring-system-for-early-detection-of-the-varroa-mite/">Deep Learning Beehive Monitoring System for Early Detection of the Varroa Mite</a></td><td>2022</td><td>🇬🇷 University of Ioannina</td></tr>
+        </tbody>
+        </table>
         </div>
       </div>
       <div class="research-year-panel" data-year="2021">
         <div class="research-publications-table-wrap">
-        
-        | Publication | Year | Institutions |
-        |---|---|---|
-        | [Visual Diagnosis of the Varroa Destructor Parasitic Mite in Honeybees Using Object Detector Techniques](../Visual%20Diagnosis%20of%20the%20Varroa%20Destructor%20Parasitic%20Mite%20in%20Honeybees%20Using%20Object%20Detector%20Techniques.md) | 2021 | 🇨🇿 Brno University of Technology |
-        
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/visual-diagnosis-of-the-varroa-destructor-parasitic-mite-in-honeybees-using-object-detector-techniques/">Visual Diagnosis of the Varroa Destructor Parasitic Mite in Honeybees Using Object Detector Techniques</a></td><td>2021</td><td>🇨🇿 Brno University of Technology</td></tr>
+        </tbody>
+        </table>
         </div>
       </div>
       <div class="research-year-panel" data-year="2018">
         <div class="research-publications-table-wrap">
-        
-        | Publication | Year | Institutions |
-        |---|---|---|
-        | [A Preliminary Study of Image Analysis forParasite Detection on Honey Bees](../A%20Preliminary%20Study%20of%20Image%20Analysis%20forParasite%20Detection%20on%20Honey%20Bees.md) | 2018 | 🇦🇹 Vienna University of Technology; 🇪🇸 Universidad de Oviedo; 🇪🇸 Universitat de Barcelona |
-        
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/a-preliminary-study-of-image-analysis-forparasite-detection-on-honey-bees/">A Preliminary Study of Image Analysis forParasite Detection on Honey Bees</a></td><td>2018</td><td>🇦🇹 Vienna University of Technology; 🇪🇸 Universidad de Oviedo; 🇪🇸 Universitat de Barcelona</td></tr>
+        </tbody>
+        </table>
         </div>
       </div>
     </div>

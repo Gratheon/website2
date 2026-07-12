@@ -51,48 +51,76 @@ title: "Research topic: Colony Health"
     <div class="research-year-filter__panels">
       <div class="research-year-panel" data-year="all">
         <div class="research-publications-table-wrap">
-        
-        | Publication | Year | Institutions |
-        |---|---|---|
-        | [Deep Learning and Computer Vision for Honey Bee Health Monitoring: A Systematic Survey and Future Directions](../Deep%20Learning%20and%20Computer%20Vision%20for%20Honey%20Bee%20Health%20Monitoring%3A%20A%20Systematic%20Survey%20and%20Future%20Directions.md) | 2026 | 🇮🇳 SSVPS's Bapusaheb Shivajirao Deore College of Engineering |
-        | [From Hive Sensors to Environmental DNA: Toward a Systems Biology Framework for Honeybee-Based Early Warning of Colony and Ecosystem Health](../From%20Hive%20Sensors%20to%20Environmental%20DNA%20Toward%20a%20Systems%20Biology%20Framework%20for%20Honeybee-Based%20Early%20Warning%20of%20Colony%20and%20Ecosystem%20Health.md) | 2026 | 🇨🇳 Yangzhou University; 🇸🇦 Imam Mohammad Ibn Saud Islamic University |
-        | [Honeybee Counting on Comb Images via Part-Level Annotation and Hungarian Matching](../Honeybee%20Counting%20on%20Comb%20Images%20via%20Part-Level%20Annotation%20and%20Hungarian%20Matching.md) | 2026 | 🇯🇵 Utsunomiya University |
-        | [Transforming Beekeeping Through Technology: A Systematic Review of Precision Beekeeping](../Transforming%20Beekeeping%20Through%20Technology%20A%20Systematic%20Review%20of%20Precision%20Beekeeping.md) | 2026 | 🇧🇳 Universiti Brunei Darussalam; 🇱🇰 Uva Wellassa University |
-        | [Image-based honey bee larval viral and bacterial diagnosis using machine learning](../Image-based%20honey%20bee%20larval%20viral%20and%20bacterial%20diagnosis%20using%20machine%20learning.md) | 2025 | 🇺🇸 USDA Carl Hayden Bee Research Center; 🇺🇸 University of Arizona; 🇺🇸 Arizona Science Center |
-        | [Queen Detection in Beehives via Environmental Sensor Fusion for Low-Power Edge Computing](../Queen%20Detection%20in%20Beehives%20via%20Environmental%20Sensor%20Fusion%20for%20Low-Power%20Edge%20Computing.md) | 2025 | 🇨🇭 Institute of Neuroinformatics, University of Zurich and ETH Zurich; 🇨🇭 Digital Society Initiative, University of Zurich |
-        | [Recognizing Beehives’ Health Abnormalities Based on Mobile Net Deep Learning Model](../Recognizing%20Beehives%20Health%20Abnormalities%20Based%20on%20Mobile%20Net%20Deep%20Learning%20Model.md) | 2023 | 🇪🇬 Egyptian Russian University; 🇪🇬 Cairo University; 🇪🇬 Tanta University; 🇪🇬 Scientific Research Group in Egypt |
-        
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/deep-learning-and-computer-vision-for-honey-bee-health-monitoring-a-systematic-survey-and-future-directions/">Deep Learning and Computer Vision for Honey Bee Health Monitoring: A Systematic Survey and Future Directions</a></td><td>2026</td><td>🇮🇳 SSVPS&#x27;s Bapusaheb Shivajirao Deore College of Engineering</td></tr>
+        <tr><td><a href="/research/papers/from-hive-sensors-to-environmental-dna-toward-a-systems-biology-framework-for-honeybee-based-early-warning-of-colony-and-ecosystem-health/">From Hive Sensors to Environmental DNA: Toward a Systems Biology Framework for Honeybee-Based Early Warning of Colony and Ecosystem Health</a></td><td>2026</td><td>🇨🇳 Yangzhou University; 🇸🇦 Imam Mohammad Ibn Saud Islamic University</td></tr>
+        <tr><td><a href="/research/papers/honeybee-counting-on-comb-images-via-part-level-annotation-and-hungarian-matching/">Honeybee Counting on Comb Images via Part-Level Annotation and Hungarian Matching</a></td><td>2026</td><td>🇯🇵 Utsunomiya University</td></tr>
+        <tr><td><a href="/research/papers/transforming-beekeeping-through-technology-a-systematic-review-of-precision-beekeeping/">Transforming Beekeeping Through Technology: A Systematic Review of Precision Beekeeping</a></td><td>2026</td><td>🇧🇳 Universiti Brunei Darussalam; 🇱🇰 Uva Wellassa University</td></tr>
+        <tr><td><a href="/research/papers/image-based-honey-bee-larval-viral-and-bacterial-diagnosis-using-machine-learning/">Image-based honey bee larval viral and bacterial diagnosis using machine learning</a></td><td>2025</td><td>🇺🇸 USDA Carl Hayden Bee Research Center; 🇺🇸 University of Arizona; 🇺🇸 Arizona Science Center</td></tr>
+        <tr><td><a href="/research/papers/queen-detection-in-beehives-via-environmental-sensor-fusion-for-low-power-edge-computing/">Queen Detection in Beehives via Environmental Sensor Fusion for Low-Power Edge Computing</a></td><td>2025</td><td>🇨🇭 Institute of Neuroinformatics, University of Zurich and ETH Zurich; 🇨🇭 Digital Society Initiative, University of Zurich</td></tr>
+        <tr><td><a href="/research/papers/recognizing-beehives-health-abnormalities-based-on-mobile-net-deep-learning-model/">Recognizing Beehives’ Health Abnormalities Based on Mobile Net Deep Learning Model</a></td><td>2023</td><td>🇪🇬 Egyptian Russian University; 🇪🇬 Cairo University; 🇪🇬 Tanta University; 🇪🇬 Scientific Research Group in Egypt</td></tr>
+        </tbody>
+        </table>
         </div>
       </div>
       <div class="research-year-panel" data-year="2026">
         <div class="research-publications-table-wrap">
-        
-        | Publication | Year | Institutions |
-        |---|---|---|
-        | [Deep Learning and Computer Vision for Honey Bee Health Monitoring: A Systematic Survey and Future Directions](../Deep%20Learning%20and%20Computer%20Vision%20for%20Honey%20Bee%20Health%20Monitoring%3A%20A%20Systematic%20Survey%20and%20Future%20Directions.md) | 2026 | 🇮🇳 SSVPS's Bapusaheb Shivajirao Deore College of Engineering |
-        | [From Hive Sensors to Environmental DNA: Toward a Systems Biology Framework for Honeybee-Based Early Warning of Colony and Ecosystem Health](../From%20Hive%20Sensors%20to%20Environmental%20DNA%20Toward%20a%20Systems%20Biology%20Framework%20for%20Honeybee-Based%20Early%20Warning%20of%20Colony%20and%20Ecosystem%20Health.md) | 2026 | 🇨🇳 Yangzhou University; 🇸🇦 Imam Mohammad Ibn Saud Islamic University |
-        | [Honeybee Counting on Comb Images via Part-Level Annotation and Hungarian Matching](../Honeybee%20Counting%20on%20Comb%20Images%20via%20Part-Level%20Annotation%20and%20Hungarian%20Matching.md) | 2026 | 🇯🇵 Utsunomiya University |
-        | [Transforming Beekeeping Through Technology: A Systematic Review of Precision Beekeeping](../Transforming%20Beekeeping%20Through%20Technology%20A%20Systematic%20Review%20of%20Precision%20Beekeeping.md) | 2026 | 🇧🇳 Universiti Brunei Darussalam; 🇱🇰 Uva Wellassa University |
-        
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/deep-learning-and-computer-vision-for-honey-bee-health-monitoring-a-systematic-survey-and-future-directions/">Deep Learning and Computer Vision for Honey Bee Health Monitoring: A Systematic Survey and Future Directions</a></td><td>2026</td><td>🇮🇳 SSVPS&#x27;s Bapusaheb Shivajirao Deore College of Engineering</td></tr>
+        <tr><td><a href="/research/papers/from-hive-sensors-to-environmental-dna-toward-a-systems-biology-framework-for-honeybee-based-early-warning-of-colony-and-ecosystem-health/">From Hive Sensors to Environmental DNA: Toward a Systems Biology Framework for Honeybee-Based Early Warning of Colony and Ecosystem Health</a></td><td>2026</td><td>🇨🇳 Yangzhou University; 🇸🇦 Imam Mohammad Ibn Saud Islamic University</td></tr>
+        <tr><td><a href="/research/papers/honeybee-counting-on-comb-images-via-part-level-annotation-and-hungarian-matching/">Honeybee Counting on Comb Images via Part-Level Annotation and Hungarian Matching</a></td><td>2026</td><td>🇯🇵 Utsunomiya University</td></tr>
+        <tr><td><a href="/research/papers/transforming-beekeeping-through-technology-a-systematic-review-of-precision-beekeeping/">Transforming Beekeeping Through Technology: A Systematic Review of Precision Beekeeping</a></td><td>2026</td><td>🇧🇳 Universiti Brunei Darussalam; 🇱🇰 Uva Wellassa University</td></tr>
+        </tbody>
+        </table>
         </div>
       </div>
       <div class="research-year-panel" data-year="2025">
         <div class="research-publications-table-wrap">
-        
-        | Publication | Year | Institutions |
-        |---|---|---|
-        | [Image-based honey bee larval viral and bacterial diagnosis using machine learning](../Image-based%20honey%20bee%20larval%20viral%20and%20bacterial%20diagnosis%20using%20machine%20learning.md) | 2025 | 🇺🇸 USDA Carl Hayden Bee Research Center; 🇺🇸 University of Arizona; 🇺🇸 Arizona Science Center |
-        | [Queen Detection in Beehives via Environmental Sensor Fusion for Low-Power Edge Computing](../Queen%20Detection%20in%20Beehives%20via%20Environmental%20Sensor%20Fusion%20for%20Low-Power%20Edge%20Computing.md) | 2025 | 🇨🇭 Institute of Neuroinformatics, University of Zurich and ETH Zurich; 🇨🇭 Digital Society Initiative, University of Zurich |
-        
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/image-based-honey-bee-larval-viral-and-bacterial-diagnosis-using-machine-learning/">Image-based honey bee larval viral and bacterial diagnosis using machine learning</a></td><td>2025</td><td>🇺🇸 USDA Carl Hayden Bee Research Center; 🇺🇸 University of Arizona; 🇺🇸 Arizona Science Center</td></tr>
+        <tr><td><a href="/research/papers/queen-detection-in-beehives-via-environmental-sensor-fusion-for-low-power-edge-computing/">Queen Detection in Beehives via Environmental Sensor Fusion for Low-Power Edge Computing</a></td><td>2025</td><td>🇨🇭 Institute of Neuroinformatics, University of Zurich and ETH Zurich; 🇨🇭 Digital Society Initiative, University of Zurich</td></tr>
+        </tbody>
+        </table>
         </div>
       </div>
       <div class="research-year-panel" data-year="2023">
         <div class="research-publications-table-wrap">
-        
-        | Publication | Year | Institutions |
-        |---|---|---|
-        | [Recognizing Beehives’ Health Abnormalities Based on Mobile Net Deep Learning Model](../Recognizing%20Beehives%20Health%20Abnormalities%20Based%20on%20Mobile%20Net%20Deep%20Learning%20Model.md) | 2023 | 🇪🇬 Egyptian Russian University; 🇪🇬 Cairo University; 🇪🇬 Tanta University; 🇪🇬 Scientific Research Group in Egypt |
-        
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/recognizing-beehives-health-abnormalities-based-on-mobile-net-deep-learning-model/">Recognizing Beehives’ Health Abnormalities Based on Mobile Net Deep Learning Model</a></td><td>2023</td><td>🇪🇬 Egyptian Russian University; 🇪🇬 Cairo University; 🇪🇬 Tanta University; 🇪🇬 Scientific Research Group in Egypt</td></tr>
+        </tbody>
+        </table>
         </div>
       </div>
     </div>

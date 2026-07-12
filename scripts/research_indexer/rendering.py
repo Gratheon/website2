@@ -9,7 +9,7 @@ from urllib.parse import quote
 from .constants import UNKNOWN_YEAR_SLUG
 from .grouping import group_papers_by_product_area, group_papers_by_topic, group_papers_by_year
 from .models import Paper, Term
-from .normalize import sort_term_key, term_sort_key_for_year
+from .normalize import slugify, sort_term_key, term_sort_key_for_year
 
 def render_main_index(papers: list[Paper]) -> str:
     topic_groups = group_papers_by_topic(papers)
@@ -381,27 +381,37 @@ def render_paper_table(
 ) -> list[str]:
     paper_list = list(papers)
     if not paper_list:
-        return ["- None"]
+        return ['<div class="research-publications-table-wrap"><p>None</p></div>']
 
     lines: list[str] = [
         '<div class="research-publications-table-wrap">',
-        '',
-        '| Publication | Year | Institutions |',
-        '|---|---|---|',
+        '<table>',
+        '<thead>',
+        '<tr>',
+        '<th>Publication</th>',
+        '<th>Year</th>',
+        '<th>Institutions</th>',
+        '</tr>',
+        '</thead>',
+        '<tbody>',
     ]
 
     for paper in paper_list:
-        title = paper.title.replace('|', '\|')
-        orgs = "; ".join(paper.orgs).replace('|', '\|')
-        
-        # We must use standard markdown links so blog-engine-md converts them correctly
-        link_url = paper_link(base_prefix, paper.filename)
-        link = f"[{title}]({link_url})"
-        
-        lines.append(f"| {link} | {paper.year_label} | {orgs} |")
+        # WHY: markdown tables inside generated HTML blocks are not parsed by the
+        # site renderer and end up in <pre><code>. WHAT: emit HTML tables so topic
+        # and product-area year filters match scientific-publications styling.
+        title = html.escape(paper.title)
+        orgs = html.escape("; ".join(paper.orgs))
+        year = html.escape(paper.year_label)
+        link_url = html.escape(paper_link(base_prefix, paper.filename), quote=True)
+        lines.append(
+            f'<tr><td><a href="{link_url}">{title}</a></td>'
+            f'<td>{year}</td><td>{orgs}</td></tr>'
+        )
 
     lines.extend([
-        '',
+        '</tbody>',
+        '</table>',
         '</div>',
     ])
     return lines
@@ -426,4 +436,9 @@ def render_paper_bullets(
 
 
 def paper_link(base_prefix: str, filename: str) -> str:
-    return quote(f"{base_prefix}{filename}", safe="/.")
+    # WHY: raw HTML tables keep href values as authored, so use built page URLs
+    # instead of .md paths that only markdown link rewriting would normalize.
+    _ = base_prefix
+    stem = filename.rsplit(".", 1)[0] if "." in filename else filename
+    slug = slugify(stem)
+    return f"/research/papers/{slug}/"

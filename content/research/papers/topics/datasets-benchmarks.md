@@ -81,104 +81,167 @@ layout: research
     <div class="research-year-filter__panels">
       <div class="research-year-panel" data-year="all">
         <div class="research-publications-table-wrap">
-        
-        | Publication | Year | Institutions |
-        |---|---|---|
-        | [Estimating colony strength and pollination efficiency in honey bees using a novel dataset and deep learning-based models](../Estimating%20colony%20strength%20and%20pollination%20efficiency%20in%20honey%20bees%20using%20a%20novel%20dataset%20and%20deep%20learning-based%20models.md) | 2026 | 🇺🇸 University of Arkansas at Fayetteville; 🇺🇸 Washington State University; 🇺🇸 University of Arkansas System; 🇺🇸 Mississippi State University; 🇺🇸 University of Tennessee at Knoxville |
-        | [FAIRHiveFrames-1K: A Public FAIR Dataset of 1265 Annotated Hive Frame Images with Preliminary YOLOv8 and YOLOv11 Baselines](../FAIRHiveFrames-1K%20A%20Public%20FAIR%20Dataset%20of%201265%20Annotated%20Hive%20Frame%20Images%20with%20Preliminary%20YOLOv8%20and%20YOLOv11%20Baselines.md) | 2026 | 🇺🇸 Utah State University |
-        | [buzzdetect: an open-source deep learning tool for automated bioacoustic pollinator monitoring](../buzzdetect%20an%20open-source%20deep%20learning%20tool%20for%20automated%20bioacoustic%20pollinator%20monitoring.md) | 2025 | 🇺🇸 The Ohio State University; 🇺🇸 Dartmouth College |
-        | [Fast, accurate measurement of the worker populations of honey bee colonies using deep learning](../Fast%20accurate%20measurement%20of%20the%20worker%20populations%20of%20honey%20bee%20colonies%20using%20deep%20learning.md) | 2025 | 🇺🇸 Arizona State University; 🇺🇸 Texas A&M University–Kingsville |
-        | [Image-based honey bee larval viral and bacterial diagnosis using machine learning](../Image-based%20honey%20bee%20larval%20viral%20and%20bacterial%20diagnosis%20using%20machine%20learning.md) | 2025 | 🇺🇸 USDA Carl Hayden Bee Research Center; 🇺🇸 University of Arizona; 🇺🇸 Arizona Science Center |
-        | [UrBAN: Urban Beehive Acoustics and PheNotyping Dataset](../UrBAN%20Urban%20Beehive%20Acoustics%20and%20PheNotyping%20Dataset.md) | 2025 | 🇨🇦 Institut National de la Recherche Scientifique; 🇨🇦 Université Laval; 🇨🇦 Nectar Technologies Inc. |
-        | [Bee Together: Joining Bee Audio Datasets for Hive Extrapolation in AI-Based Monitoring](../Bee%20Together%20Joining%20Bee%20Audio%20Datasets%20for%20Hive%20Extrapolation%20in%20AI-Based%20Monitoring.md) | 2024 | 🇫🇷 University of Toulon |
-        | [MSPB: a longitudinal multi-sensor dataset with phenotypic trait measurements from honey bees](../MSPB%20a%20longitudinal%20multi-sensor%20dataset%20with%20phenotypic%20trait%20measurements%20from%20honey%20bees.md) | 2024 | 🇨🇦 Institut National de la Recherche Scientifique; 🇨🇦 Université Laval; 🇨🇦 Nectar Technologies Inc. |
-        | [BeeNet: An End-To-End Deep Network For Bee Surveillance](../BeeNet%20-%20An%20End-To-End%20Deep%20Network%20For%20Bee%20Surveillance.md) | 2023 | 🇦🇺 Australian National University; 🇧🇩 BRAC University; 🇦🇺 Curtin University; 🇦🇺 Commonwealth Scientific and Industrial Research Organisation |
-        | [Labeled dataset for bee detection and direction estimation on entrance to beehive](../Labeled%20dataset%20for%20bee%20detection%20and%20direction%20estimation%20on%20entrance%20to%20beehive.md) | 2023 | 🇱🇹 Vilnius Gediminas Technical University |
-        | [Honeybee Re-identification in Video: New Datasets and Impact of Self-supervision](../Honeybee%20Re-identification%20in%20Video%20New%20Datasets%20and%20Impact%20of%20Self-supervision.md) | 2022 | 🇵🇷 University of Puerto Rico |
-        | [Audio, Image, Video, and Weather Datasets for Continuous Electronic Beehive Monitoring](../Audio%2C%20Image%2C%20Video%2C%20and%20Weather%20Datasets%20for%20Continuous%20Electronic%20Beehive%20Monitoring.md) | 2021 | 🇺🇸 Utah State University |
-        | [Automatic detection and classification of honey bee comb cells using deep learning](../%E2%AD%90%EF%B8%8F%20Automatic%20detection%20and%20classification%20of%20honey%20bee%20comb%20cells%20using%20deeplearning.md) | 2020 | 🇵🇹 Instituto Politécnico de Bragança; 🇧🇷 Federal Technological University of Paraná; 🇫🇷 Université Clermont-Auvergne |
-        | [DeepBees – Building and Scaling Convolutional Neuronal Nets For Fast and Large-scale Visual Monitoring of Bee Hives](../%E2%AD%90%EF%B8%8F%20DeepBees%20%E2%80%93%20Building%20and%20Scaling%20Convolutional%20Neuronal%20Nets%20For%20Fast%20and%20Large-scale%20Visual%20Monitoring%20of%20Bee%20Hives.md) | 2019 | 🇩🇪 Karlsruhe Institute of Technology; 🇩🇪 apic.ai |
-        | [LabelBee: a web platform for large-scale semi-automated analysis of honeybee behavior from video](../%E2%AD%90%EF%B8%8F%20LabelBee%20a%20web%20platform%20for%20large-scale%20semi-automated%20analysis%20of%20honeybee%20behavior%20from%20video.md) | 2019 | 🇵🇷 University of Puerto Rico |
-        
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/estimating-colony-strength-and-pollination-efficiency-in-honey-bees-using-a-novel-dataset-and-deep-learning-based-models/">Estimating colony strength and pollination efficiency in honey bees using a novel dataset and deep learning-based models</a></td><td>2026</td><td>🇺🇸 University of Arkansas at Fayetteville; 🇺🇸 Washington State University; 🇺🇸 University of Arkansas System; 🇺🇸 Mississippi State University; 🇺🇸 University of Tennessee at Knoxville</td></tr>
+        <tr><td><a href="/research/papers/fairhiveframes-1k-a-public-fair-dataset-of-1265-annotated-hive-frame-images-with-preliminary-yolov8-and-yolov11-baselines/">FAIRHiveFrames-1K: A Public FAIR Dataset of 1265 Annotated Hive Frame Images with Preliminary YOLOv8 and YOLOv11 Baselines</a></td><td>2026</td><td>🇺🇸 Utah State University</td></tr>
+        <tr><td><a href="/research/papers/buzzdetect-an-open-source-deep-learning-tool-for-automated-bioacoustic-pollinator-monitoring/">buzzdetect: an open-source deep learning tool for automated bioacoustic pollinator monitoring</a></td><td>2025</td><td>🇺🇸 The Ohio State University; 🇺🇸 Dartmouth College</td></tr>
+        <tr><td><a href="/research/papers/fast-accurate-measurement-of-the-worker-populations-of-honey-bee-colonies-using-deep-learning/">Fast, accurate measurement of the worker populations of honey bee colonies using deep learning</a></td><td>2025</td><td>🇺🇸 Arizona State University; 🇺🇸 Texas A&amp;M University–Kingsville</td></tr>
+        <tr><td><a href="/research/papers/image-based-honey-bee-larval-viral-and-bacterial-diagnosis-using-machine-learning/">Image-based honey bee larval viral and bacterial diagnosis using machine learning</a></td><td>2025</td><td>🇺🇸 USDA Carl Hayden Bee Research Center; 🇺🇸 University of Arizona; 🇺🇸 Arizona Science Center</td></tr>
+        <tr><td><a href="/research/papers/urban-urban-beehive-acoustics-and-phenotyping-dataset/">UrBAN: Urban Beehive Acoustics and PheNotyping Dataset</a></td><td>2025</td><td>🇨🇦 Institut National de la Recherche Scientifique; 🇨🇦 Université Laval; 🇨🇦 Nectar Technologies Inc.</td></tr>
+        <tr><td><a href="/research/papers/bee-together-joining-bee-audio-datasets-for-hive-extrapolation-in-ai-based-monitoring/">Bee Together: Joining Bee Audio Datasets for Hive Extrapolation in AI-Based Monitoring</a></td><td>2024</td><td>🇫🇷 University of Toulon</td></tr>
+        <tr><td><a href="/research/papers/mspb-a-longitudinal-multi-sensor-dataset-with-phenotypic-trait-measurements-from-honey-bees/">MSPB: a longitudinal multi-sensor dataset with phenotypic trait measurements from honey bees</a></td><td>2024</td><td>🇨🇦 Institut National de la Recherche Scientifique; 🇨🇦 Université Laval; 🇨🇦 Nectar Technologies Inc.</td></tr>
+        <tr><td><a href="/research/papers/beenet-an-end-to-end-deep-network-for-bee-surveillance/">BeeNet: An End-To-End Deep Network For Bee Surveillance</a></td><td>2023</td><td>🇦🇺 Australian National University; 🇧🇩 BRAC University; 🇦🇺 Curtin University; 🇦🇺 Commonwealth Scientific and Industrial Research Organisation</td></tr>
+        <tr><td><a href="/research/papers/labeled-dataset-for-bee-detection-and-direction-estimation-on-entrance-to-beehive/">Labeled dataset for bee detection and direction estimation on entrance to beehive</a></td><td>2023</td><td>🇱🇹 Vilnius Gediminas Technical University</td></tr>
+        <tr><td><a href="/research/papers/honeybee-re-identification-in-video-new-datasets-and-impact-of-self-supervision/">Honeybee Re-identification in Video: New Datasets and Impact of Self-supervision</a></td><td>2022</td><td>🇵🇷 University of Puerto Rico</td></tr>
+        <tr><td><a href="/research/papers/audio-image-video-and-weather-datasets-for-continuous-electronic-beehive-monitoring/">Audio, Image, Video, and Weather Datasets for Continuous Electronic Beehive Monitoring</a></td><td>2021</td><td>🇺🇸 Utah State University</td></tr>
+        <tr><td><a href="/research/papers/automatic-detection-and-classification-of-honey-bee-comb-cells-using-deeplearning/">Automatic detection and classification of honey bee comb cells using deep learning</a></td><td>2020</td><td>🇵🇹 Instituto Politécnico de Bragança; 🇧🇷 Federal Technological University of Paraná; 🇫🇷 Université Clermont-Auvergne</td></tr>
+        <tr><td><a href="/research/papers/deepbees-building-and-scaling-convolutional-neuronal-nets-for-fast-and-large-scale-visual-monitoring-of-bee-hives/">DeepBees – Building and Scaling Convolutional Neuronal Nets For Fast and Large-scale Visual Monitoring of Bee Hives</a></td><td>2019</td><td>🇩🇪 Karlsruhe Institute of Technology; 🇩🇪 apic.ai</td></tr>
+        <tr><td><a href="/research/papers/labelbee-a-web-platform-for-large-scale-semi-automated-analysis-of-honeybee-behavior-from-video/">LabelBee: a web platform for large-scale semi-automated analysis of honeybee behavior from video</a></td><td>2019</td><td>🇵🇷 University of Puerto Rico</td></tr>
+        </tbody>
+        </table>
         </div>
       </div>
       <div class="research-year-panel" data-year="2026">
         <div class="research-publications-table-wrap">
-        
-        | Publication | Year | Institutions |
-        |---|---|---|
-        | [Estimating colony strength and pollination efficiency in honey bees using a novel dataset and deep learning-based models](../Estimating%20colony%20strength%20and%20pollination%20efficiency%20in%20honey%20bees%20using%20a%20novel%20dataset%20and%20deep%20learning-based%20models.md) | 2026 | 🇺🇸 University of Arkansas at Fayetteville; 🇺🇸 Washington State University; 🇺🇸 University of Arkansas System; 🇺🇸 Mississippi State University; 🇺🇸 University of Tennessee at Knoxville |
-        | [FAIRHiveFrames-1K: A Public FAIR Dataset of 1265 Annotated Hive Frame Images with Preliminary YOLOv8 and YOLOv11 Baselines](../FAIRHiveFrames-1K%20A%20Public%20FAIR%20Dataset%20of%201265%20Annotated%20Hive%20Frame%20Images%20with%20Preliminary%20YOLOv8%20and%20YOLOv11%20Baselines.md) | 2026 | 🇺🇸 Utah State University |
-        
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/estimating-colony-strength-and-pollination-efficiency-in-honey-bees-using-a-novel-dataset-and-deep-learning-based-models/">Estimating colony strength and pollination efficiency in honey bees using a novel dataset and deep learning-based models</a></td><td>2026</td><td>🇺🇸 University of Arkansas at Fayetteville; 🇺🇸 Washington State University; 🇺🇸 University of Arkansas System; 🇺🇸 Mississippi State University; 🇺🇸 University of Tennessee at Knoxville</td></tr>
+        <tr><td><a href="/research/papers/fairhiveframes-1k-a-public-fair-dataset-of-1265-annotated-hive-frame-images-with-preliminary-yolov8-and-yolov11-baselines/">FAIRHiveFrames-1K: A Public FAIR Dataset of 1265 Annotated Hive Frame Images with Preliminary YOLOv8 and YOLOv11 Baselines</a></td><td>2026</td><td>🇺🇸 Utah State University</td></tr>
+        </tbody>
+        </table>
         </div>
       </div>
       <div class="research-year-panel" data-year="2025">
         <div class="research-publications-table-wrap">
-        
-        | Publication | Year | Institutions |
-        |---|---|---|
-        | [buzzdetect: an open-source deep learning tool for automated bioacoustic pollinator monitoring](../buzzdetect%20an%20open-source%20deep%20learning%20tool%20for%20automated%20bioacoustic%20pollinator%20monitoring.md) | 2025 | 🇺🇸 The Ohio State University; 🇺🇸 Dartmouth College |
-        | [Fast, accurate measurement of the worker populations of honey bee colonies using deep learning](../Fast%20accurate%20measurement%20of%20the%20worker%20populations%20of%20honey%20bee%20colonies%20using%20deep%20learning.md) | 2025 | 🇺🇸 Arizona State University; 🇺🇸 Texas A&M University–Kingsville |
-        | [Image-based honey bee larval viral and bacterial diagnosis using machine learning](../Image-based%20honey%20bee%20larval%20viral%20and%20bacterial%20diagnosis%20using%20machine%20learning.md) | 2025 | 🇺🇸 USDA Carl Hayden Bee Research Center; 🇺🇸 University of Arizona; 🇺🇸 Arizona Science Center |
-        | [UrBAN: Urban Beehive Acoustics and PheNotyping Dataset](../UrBAN%20Urban%20Beehive%20Acoustics%20and%20PheNotyping%20Dataset.md) | 2025 | 🇨🇦 Institut National de la Recherche Scientifique; 🇨🇦 Université Laval; 🇨🇦 Nectar Technologies Inc. |
-        
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/buzzdetect-an-open-source-deep-learning-tool-for-automated-bioacoustic-pollinator-monitoring/">buzzdetect: an open-source deep learning tool for automated bioacoustic pollinator monitoring</a></td><td>2025</td><td>🇺🇸 The Ohio State University; 🇺🇸 Dartmouth College</td></tr>
+        <tr><td><a href="/research/papers/fast-accurate-measurement-of-the-worker-populations-of-honey-bee-colonies-using-deep-learning/">Fast, accurate measurement of the worker populations of honey bee colonies using deep learning</a></td><td>2025</td><td>🇺🇸 Arizona State University; 🇺🇸 Texas A&amp;M University–Kingsville</td></tr>
+        <tr><td><a href="/research/papers/image-based-honey-bee-larval-viral-and-bacterial-diagnosis-using-machine-learning/">Image-based honey bee larval viral and bacterial diagnosis using machine learning</a></td><td>2025</td><td>🇺🇸 USDA Carl Hayden Bee Research Center; 🇺🇸 University of Arizona; 🇺🇸 Arizona Science Center</td></tr>
+        <tr><td><a href="/research/papers/urban-urban-beehive-acoustics-and-phenotyping-dataset/">UrBAN: Urban Beehive Acoustics and PheNotyping Dataset</a></td><td>2025</td><td>🇨🇦 Institut National de la Recherche Scientifique; 🇨🇦 Université Laval; 🇨🇦 Nectar Technologies Inc.</td></tr>
+        </tbody>
+        </table>
         </div>
       </div>
       <div class="research-year-panel" data-year="2024">
         <div class="research-publications-table-wrap">
-        
-        | Publication | Year | Institutions |
-        |---|---|---|
-        | [Bee Together: Joining Bee Audio Datasets for Hive Extrapolation in AI-Based Monitoring](../Bee%20Together%20Joining%20Bee%20Audio%20Datasets%20for%20Hive%20Extrapolation%20in%20AI-Based%20Monitoring.md) | 2024 | 🇫🇷 University of Toulon |
-        | [MSPB: a longitudinal multi-sensor dataset with phenotypic trait measurements from honey bees](../MSPB%20a%20longitudinal%20multi-sensor%20dataset%20with%20phenotypic%20trait%20measurements%20from%20honey%20bees.md) | 2024 | 🇨🇦 Institut National de la Recherche Scientifique; 🇨🇦 Université Laval; 🇨🇦 Nectar Technologies Inc. |
-        
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/bee-together-joining-bee-audio-datasets-for-hive-extrapolation-in-ai-based-monitoring/">Bee Together: Joining Bee Audio Datasets for Hive Extrapolation in AI-Based Monitoring</a></td><td>2024</td><td>🇫🇷 University of Toulon</td></tr>
+        <tr><td><a href="/research/papers/mspb-a-longitudinal-multi-sensor-dataset-with-phenotypic-trait-measurements-from-honey-bees/">MSPB: a longitudinal multi-sensor dataset with phenotypic trait measurements from honey bees</a></td><td>2024</td><td>🇨🇦 Institut National de la Recherche Scientifique; 🇨🇦 Université Laval; 🇨🇦 Nectar Technologies Inc.</td></tr>
+        </tbody>
+        </table>
         </div>
       </div>
       <div class="research-year-panel" data-year="2023">
         <div class="research-publications-table-wrap">
-        
-        | Publication | Year | Institutions |
-        |---|---|---|
-        | [BeeNet: An End-To-End Deep Network For Bee Surveillance](../BeeNet%20-%20An%20End-To-End%20Deep%20Network%20For%20Bee%20Surveillance.md) | 2023 | 🇦🇺 Australian National University; 🇧🇩 BRAC University; 🇦🇺 Curtin University; 🇦🇺 Commonwealth Scientific and Industrial Research Organisation |
-        | [Labeled dataset for bee detection and direction estimation on entrance to beehive](../Labeled%20dataset%20for%20bee%20detection%20and%20direction%20estimation%20on%20entrance%20to%20beehive.md) | 2023 | 🇱🇹 Vilnius Gediminas Technical University |
-        
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/beenet-an-end-to-end-deep-network-for-bee-surveillance/">BeeNet: An End-To-End Deep Network For Bee Surveillance</a></td><td>2023</td><td>🇦🇺 Australian National University; 🇧🇩 BRAC University; 🇦🇺 Curtin University; 🇦🇺 Commonwealth Scientific and Industrial Research Organisation</td></tr>
+        <tr><td><a href="/research/papers/labeled-dataset-for-bee-detection-and-direction-estimation-on-entrance-to-beehive/">Labeled dataset for bee detection and direction estimation on entrance to beehive</a></td><td>2023</td><td>🇱🇹 Vilnius Gediminas Technical University</td></tr>
+        </tbody>
+        </table>
         </div>
       </div>
       <div class="research-year-panel" data-year="2022">
         <div class="research-publications-table-wrap">
-        
-        | Publication | Year | Institutions |
-        |---|---|---|
-        | [Honeybee Re-identification in Video: New Datasets and Impact of Self-supervision](../Honeybee%20Re-identification%20in%20Video%20New%20Datasets%20and%20Impact%20of%20Self-supervision.md) | 2022 | 🇵🇷 University of Puerto Rico |
-        
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/honeybee-re-identification-in-video-new-datasets-and-impact-of-self-supervision/">Honeybee Re-identification in Video: New Datasets and Impact of Self-supervision</a></td><td>2022</td><td>🇵🇷 University of Puerto Rico</td></tr>
+        </tbody>
+        </table>
         </div>
       </div>
       <div class="research-year-panel" data-year="2021">
         <div class="research-publications-table-wrap">
-        
-        | Publication | Year | Institutions |
-        |---|---|---|
-        | [Audio, Image, Video, and Weather Datasets for Continuous Electronic Beehive Monitoring](../Audio%2C%20Image%2C%20Video%2C%20and%20Weather%20Datasets%20for%20Continuous%20Electronic%20Beehive%20Monitoring.md) | 2021 | 🇺🇸 Utah State University |
-        
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/audio-image-video-and-weather-datasets-for-continuous-electronic-beehive-monitoring/">Audio, Image, Video, and Weather Datasets for Continuous Electronic Beehive Monitoring</a></td><td>2021</td><td>🇺🇸 Utah State University</td></tr>
+        </tbody>
+        </table>
         </div>
       </div>
       <div class="research-year-panel" data-year="2020">
         <div class="research-publications-table-wrap">
-        
-        | Publication | Year | Institutions |
-        |---|---|---|
-        | [Automatic detection and classification of honey bee comb cells using deep learning](../%E2%AD%90%EF%B8%8F%20Automatic%20detection%20and%20classification%20of%20honey%20bee%20comb%20cells%20using%20deeplearning.md) | 2020 | 🇵🇹 Instituto Politécnico de Bragança; 🇧🇷 Federal Technological University of Paraná; 🇫🇷 Université Clermont-Auvergne |
-        
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/automatic-detection-and-classification-of-honey-bee-comb-cells-using-deeplearning/">Automatic detection and classification of honey bee comb cells using deep learning</a></td><td>2020</td><td>🇵🇹 Instituto Politécnico de Bragança; 🇧🇷 Federal Technological University of Paraná; 🇫🇷 Université Clermont-Auvergne</td></tr>
+        </tbody>
+        </table>
         </div>
       </div>
       <div class="research-year-panel" data-year="2019">
         <div class="research-publications-table-wrap">
-        
-        | Publication | Year | Institutions |
-        |---|---|---|
-        | [DeepBees – Building and Scaling Convolutional Neuronal Nets For Fast and Large-scale Visual Monitoring of Bee Hives](../%E2%AD%90%EF%B8%8F%20DeepBees%20%E2%80%93%20Building%20and%20Scaling%20Convolutional%20Neuronal%20Nets%20For%20Fast%20and%20Large-scale%20Visual%20Monitoring%20of%20Bee%20Hives.md) | 2019 | 🇩🇪 Karlsruhe Institute of Technology; 🇩🇪 apic.ai |
-        | [LabelBee: a web platform for large-scale semi-automated analysis of honeybee behavior from video](../%E2%AD%90%EF%B8%8F%20LabelBee%20a%20web%20platform%20for%20large-scale%20semi-automated%20analysis%20of%20honeybee%20behavior%20from%20video.md) | 2019 | 🇵🇷 University of Puerto Rico |
-        
+        <table>
+        <thead>
+        <tr>
+        <th>Publication</th>
+        <th>Year</th>
+        <th>Institutions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td><a href="/research/papers/deepbees-building-and-scaling-convolutional-neuronal-nets-for-fast-and-large-scale-visual-monitoring-of-bee-hives/">DeepBees – Building and Scaling Convolutional Neuronal Nets For Fast and Large-scale Visual Monitoring of Bee Hives</a></td><td>2019</td><td>🇩🇪 Karlsruhe Institute of Technology; 🇩🇪 apic.ai</td></tr>
+        <tr><td><a href="/research/papers/labelbee-a-web-platform-for-large-scale-semi-automated-analysis-of-honeybee-behavior-from-video/">LabelBee: a web platform for large-scale semi-automated analysis of honeybee behavior from video</a></td><td>2019</td><td>🇵🇷 University of Puerto Rico</td></tr>
+        </tbody>
+        </table>
         </div>
       </div>
     </div>
