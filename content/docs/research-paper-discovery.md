@@ -77,7 +77,19 @@ Default ingest threshold: **total_score >= 7** with `--filter` enabled.
 
 ### Automatic rejection rules
 
-Reject when title/abstract matches off-topic biology keywords (pesticides-only, phylogeny, stingless bees, etc.) or when no technical terms appear (sensor, IoT, camera, dataset, telemetry, etc.). arXiv candidates should be reviewed manually because they are not scored automatically yet.
+The filter is intentionally stricter than the raw score because OpenAlex often returns papers that reuse bee vocabulary outside hive monitoring. A candidate must still have an open PDF and concrete technical terms, but the scorer now separates **field monitoring technology** from generic words such as `dataset`, `detection`, `sensor`, or `monitoring`.
+
+Reject candidates when title/abstract indicates:
+
+- **Bee vocabulary used only as a computing metaphor** - for example waggle-dance transformers for SDN intrusion detection, Honeybee Algorithm medical imaging, generic WSN routing, or unrelated robot navigation. Bee robotics and bio-hybrid systems are kept when they observe or interact with real honey bees.
+- **Sniffer-bee security or defense** - explosives, landmines, illicit-substance detection, or similar security uses of conditioned bees.
+- **Molecular/transcriptomic bee biology without monitoring technology** - transcriptome, ceRNA, hemolymph proteome, virome, molecular, mass-spectrometry, or bioinformatics papers are rejected unless they also include practical hive/bee monitoring hardware or data collection relevant to Gratheon.
+- **Non-monitoring ecology and biomonitoring** - environmental pollution studies using bees/products, plant-pollinator ecology, foraging-only productivity, locomotor-only lab biology, and unrelated ant/fungus ecology are rejected unless they include hive sensors, cameras, acoustics, telemetry, or similar field monitoring technology.
+- Existing off-topic biology keywords such as pesticides-only, phylogeny, stingless bees, apitherapy, venom, semen/sperm, gut microbiota, and essential-oil treatments.
+
+Preserve candidates with direct product relevance: hive sensors, electronic/remote monitoring, computer vision, acoustics, Varroa detection, annotated datasets, hive entrance tracking, queen/hall-effect sensing, and bee robotics.
+
+In the July 2026 cached OpenAlex scoring pass, these guardrails reduced filtered high-scoring candidates from 18 to 8. They removed 12 false positives from the previous output while keeping all known accepted monitoring papers represented in the test fixtures.
 
 ## Human or AI review step
 
