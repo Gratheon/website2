@@ -25,7 +25,7 @@ showChildren: true
 
   <section class="research-stats" aria-label="Resumen de investigación">
     <div class="research-stat-card">
-      <strong>93</strong>
+      <strong>142</strong>
       <span>notas de artículos registradas</span>
     </div>
     <div class="research-stat-card">
@@ -33,11 +33,11 @@ showChildren: true
       <span>rango de publicaciones</span>
     </div>
     <div class="research-stat-card">
-      <strong>48</strong>
+      <strong>70</strong>
       <span>artículos de visión por computador</span>
     </div>
     <div class="research-stat-card">
-      <strong>35</strong>
+      <strong>61</strong>
       <span>artículos sobre IoT y sensores</span>
     </div>
   </section>
@@ -48,27 +48,27 @@ showChildren: true
       <article class="research-card">
         <h3><a href="/research/papers/topics/computer-vision/">Visión por computador</a></h3>
         <p>Análisis del tráfico de la piquera, detección de polen y avispones, inspección de panales, estimación de postura y reconocimiento de comportamiento.</p>
-        <span class="research-card-meta">48 artículos</span>
+        <span class="research-card-meta">70 artículos</span>
       </article>
       <article class="research-card">
         <h3><a href="/research/papers/topics/varroa-health/">Salud de la colonia</a></h3>
         <p>Análisis visual de varroa, señales de orfandad, análisis de cría y panales, resultados de polinización y observabilidad relacionada con la salud.</p>
-        <span class="research-card-meta">18 artículos sobre salud de colonias</span>
+        <span class="research-card-meta">15 artículos sobre salud de colonias</span>
       </article>
       <article class="research-card">
         <h3><a href="/research/papers/topics/iot-sensors/">IoT y observabilidad</a></h3>
         <p>Básculas de colmena, clima, sensado acústico, telemetría remota, restricciones energéticas y despliegues en dispositivos edge.</p>
-        <span class="research-card-meta">35 artículos</span>
+        <span class="research-card-meta">61 artículos</span>
       </article>
       <article class="research-card">
         <h3><a href="/research/papers/topics/robotics/">Robótica y automatización</a></h3>
         <p>Mapeo robótico de panales, sistemas biomiméticos y experimentación con colmenas robóticas vinculada al monitoreo de campo.</p>
-        <span class="research-card-meta">7 artículos</span>
+        <span class="research-card-meta">8 artículos</span>
       </article>
       <article class="research-card">
         <h3><a href="/research/papers/topics/reviews-surveys/">Revisiones y estudios panorámicos</a></h3>
         <p>Visiones generales de la apicultura de precisión, stacks de monitoreo digital y métodos de aprendizaje automático.</p>
-        <span class="research-card-meta">12 artículos</span>
+        <span class="research-card-meta">20 artículos</span>
       </article>
       <article class="research-card research-card--accent">
         <h3><a href="/research/papers/">Índice de artículos de investigación</a></h3>

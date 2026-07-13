@@ -2369,23 +2369,30 @@ html[data-theme='dark'] .knowledge-content .research-source-card--primary {
   vector-effect: non-scaling-stroke;
 }
 
-/* WHY: the highlighted papers row is a promoted editorial block on the research landing page.
-   WHAT: let only this section use the full knowledge shell width, keep surrounding copy readable,
-   and add a decorative star marker to make the heading read as a highlight. */
+/* WHY: the stats row and highlighted papers row are promoted editorial blocks on the research landing page.
+   WHAT: let these sections use the full knowledge shell width while keeping surrounding copy readable. */
+.knowledge-page-research .knowledge-content-layout:has(.research-page > .research-stats),
 .knowledge-page-research .knowledge-content-layout:has(.research-page > section > .research-highlight-grid) {
   display: block;
 }
 
+.knowledge-page-research .knowledge-content-layout:has(.research-page > .research-stats) .knowledge-article,
 .knowledge-page-research .knowledge-content-layout:has(.research-page > section > .research-highlight-grid) .knowledge-article {
   max-width: none;
 }
 
-.knowledge-page-research .knowledge-content > .research-page:has(.research-highlight-grid) > section:not(:has(> .research-highlight-grid)) {
+.knowledge-page-research .knowledge-content > .research-page:has(.research-stats) > section:not(.research-stats):not(:has(> .research-highlight-grid)),
+.knowledge-page-research .knowledge-content > .research-page:has(.research-highlight-grid) > section:not(:has(> .research-highlight-grid)):not(.research-stats) {
   max-width: 1120px;
 }
 
+.knowledge-page-research .knowledge-content > .research-page > .research-stats,
 .knowledge-page-research .knowledge-content > .research-page > section:has(> .research-highlight-grid) {
   max-width: none;
+}
+
+.knowledge-page-research .knowledge-content > .research-page > .research-stats {
+  margin-top: 0;
 }
 
 .knowledge-page-research .knowledge-content > .research-page > section:has(> .research-highlight-grid) > h2 {

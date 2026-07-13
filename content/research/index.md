@@ -25,7 +25,7 @@ heroImage: /assets/img/research/img/research.jpg
 
   <section class="research-stats" aria-label="Research snapshot">
     <div class="research-stat-card">
-      <strong>112</strong>
+      <strong>142</strong>
       <span>paper notes tracked</span>
     </div>
     <div class="research-stat-card">
@@ -33,11 +33,11 @@ heroImage: /assets/img/research/img/research.jpg
       <span>publication range</span>
     </div>
     <div class="research-stat-card">
-      <strong>55</strong>
+      <strong>70</strong>
       <span>computer vision papers</span>
     </div>
     <div class="research-stat-card">
-      <strong>44</strong>
+      <strong>61</strong>
       <span>IoT &amp; sensor papers</span>
     </div>
   </section>
@@ -48,17 +48,17 @@ heroImage: /assets/img/research/img/research.jpg
       <article class="research-card">
         <h3><a href="/research/papers/topics/computer-vision/">Computer vision</a></h3>
         <p>Entrance traffic analysis, pollen and hornet detection, comb inspection, pose estimation, and behavior recognition for real-world apiary conditions.</p>
-        <span class="research-card-meta">55 papers</span>
+        <span class="research-card-meta">70 papers</span>
       </article>
       <article class="research-card">
         <h3><a href="/research/papers/topics/varroa-health/">Varroa and colony health</a></h3>
         <p>Varroa imaging, queenlessness signals, brood and comb analysis, pollination outcomes, and practical health observability.</p>
-        <span class="research-card-meta">11 papers</span>
+        <span class="research-card-meta">15 papers</span>
       </article>
       <article class="research-card">
         <h3><a href="/research/papers/topics/iot-sensors/">IoT and observability</a></h3>
         <p>Hive scales, weather context, acoustic sensing, remote telemetry, power constraints, and edge-device deployments.</p>
-        <span class="research-card-meta">44 papers</span>
+        <span class="research-card-meta">61 papers</span>
       </article>
       <article class="research-card">
         <h3><a href="/research/papers/topics/robotics/">Robotics and automation</a></h3>
@@ -68,7 +68,7 @@ heroImage: /assets/img/research/img/research.jpg
       <article class="research-card">
         <h3><a href="/research/papers/topics/reviews-surveys/">Surveys and reviews</a></h3>
         <p>Landscape overviews of precision beekeeping, digital monitoring stacks, and machine learning methods.</p>
-        <span class="research-card-meta">13 papers</span>
+        <span class="research-card-meta">20 papers</span>
       </article>
       <article class="research-card research-card--accent">
         <h3><a href="/research/papers/">Research papers index</a></h3>

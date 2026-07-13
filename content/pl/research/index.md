@@ -25,7 +25,7 @@ showChildren: true
 
   <section class="research-stats" aria-label="Podsumowanie badań">
     <div class="research-stat-card">
-      <strong>93</strong>
+      <strong>142</strong>
       <span>notatki o publikacjach</span>
     </div>
     <div class="research-stat-card">
@@ -33,11 +33,11 @@ showChildren: true
       <span>zakres lat publikacji</span>
     </div>
     <div class="research-stat-card">
-      <strong>48</strong>
+      <strong>70</strong>
       <span>publikacji o widzeniu komputerowym</span>
     </div>
     <div class="research-stat-card">
-      <strong>35</strong>
+      <strong>61</strong>
       <span>publikacji o IoT i sensorach</span>
     </div>
   </section>
@@ -48,27 +48,27 @@ showChildren: true
       <article class="research-card">
         <h3><a href="/research/papers/topics/computer-vision/">Widzenie komputerowe</a></h3>
         <p>Analiza ruchu przy wylotku, wykrywanie pyłku i szerszeni, inspekcja plastrów, estymacja pozy oraz rozpoznawanie zachowań.</p>
-        <span class="research-card-meta">48 publikacji</span>
+        <span class="research-card-meta">70 publikacji</span>
       </article>
       <article class="research-card">
         <h3><a href="/research/papers/topics/varroa-health/">Zdrowie rodziny pszczelej</a></h3>
         <p>Obrazowanie warrozy, sygnały braku matki, analiza czerwiu i plastrów, wyniki zapylania oraz obserwowalność związana ze zdrowiem.</p>
-        <span class="research-card-meta">18 publikacji o zdrowiu rodzin</span>
+        <span class="research-card-meta">15 publikacji o zdrowiu rodzin</span>
       </article>
       <article class="research-card">
         <h3><a href="/research/papers/topics/iot-sensors/">IoT i obserwowalność</a></h3>
         <p>Wagi ulowe, pogoda, sensory akustyczne, zdalna telemetria, ograniczenia energetyczne i wdrożenia na urządzeniach brzegowych.</p>
-        <span class="research-card-meta">35 publikacji</span>
+        <span class="research-card-meta">61 publikacji</span>
       </article>
       <article class="research-card">
         <h3><a href="/research/papers/topics/robotics/">Robotyka i automatyzacja</a></h3>
         <p>Robotyczne mapowanie plastrów, systemy biomimetyczne i eksperymenty z ulem robotycznym powiązane z monitoringiem terenowym.</p>
-        <span class="research-card-meta">7 publikacji</span>
+        <span class="research-card-meta">8 publikacji</span>
       </article>
       <article class="research-card">
         <h3><a href="/research/papers/topics/reviews-surveys/">Przeglądy i opracowania przekrojowe</a></h3>
         <p>Przeglądy krajobrazu pszczelarstwa precyzyjnego, stosów technologicznych monitoringu cyfrowego oraz metod uczenia maszynowego.</p>
-        <span class="research-card-meta">12 publikacji</span>
+        <span class="research-card-meta">20 publikacji</span>
       </article>
       <article class="research-card research-card--accent">
         <h3><a href="/research/papers/">Indeks publikacji badawczych</a></h3>

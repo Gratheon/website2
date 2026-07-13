@@ -26,7 +26,7 @@ heroImage: /assets/img/research/img/research.jpg
 
   <section class="research-stats" aria-label="Uuringute ülevaade">
     <div class="research-stat-card">
-      <strong>112</strong>
+      <strong>142</strong>
       <span>jälgitavat artiklimärkust</span>
     </div>
     <div class="research-stat-card">
@@ -34,11 +34,11 @@ heroImage: /assets/img/research/img/research.jpg
       <span>publikatsioonide ajavahemik</span>
     </div>
     <div class="research-stat-card">
-      <strong>55</strong>
+      <strong>70</strong>
       <span>arvutinägemise artiklit</span>
     </div>
     <div class="research-stat-card">
-      <strong>44</strong>
+      <strong>61</strong>
       <span>IoT ja sensorite artiklit</span>
     </div>
   </section>
@@ -49,17 +49,17 @@ heroImage: /assets/img/research/img/research.jpg
       <article class="research-card">
         <h3><a href="/research/papers/topics/computer-vision/">Arvutinägemine</a></h3>
         <p>Lennuava liikluse analüüs, õietolmu ja vapsikute tuvastus, kärjeinspektsioon, poosi hindamine ning käitumise äratundmine päris mesilate tingimustes.</p>
-        <span class="research-card-meta">55 artiklit</span>
+        <span class="research-card-meta">70 artiklit</span>
       </article>
       <article class="research-card">
         <h3><a href="/research/papers/topics/varroa-health/">Varroa ja mesilaspere tervis</a></h3>
         <p>Varroa pildianalüüs, ematussignaalid, haudme ja kärje analüüs, tolmeldustulemused ning praktiline tervisejälgitavus.</p>
-        <span class="research-card-meta">11 artiklit</span>
+        <span class="research-card-meta">15 artiklit</span>
       </article>
       <article class="research-card">
         <h3><a href="/research/papers/topics/iot-sensors/">IoT ja jälgitavus</a></h3>
         <p>Tarukaalud, ilmastikukontekst, akustiline seire, kaugtelemeetria, energiapiirangud ning servaseadmete kasutuselevõtt.</p>
-        <span class="research-card-meta">44 artiklit</span>
+        <span class="research-card-meta">61 artiklit</span>
       </article>
       <article class="research-card">
         <h3><a href="/research/papers/topics/robotics/">Robootika ja automatiseerimine</a></h3>
@@ -69,7 +69,7 @@ heroImage: /assets/img/research/img/research.jpg
       <article class="research-card">
         <h3><a href="/research/papers/topics/reviews-surveys/">Ülevaated ja kirjandusanalüüsid</a></h3>
         <p>Täppismesinduse, digitaalse seire tehnoloogiavirnade ja masinõppemeetodite ülevaated.</p>
-        <span class="research-card-meta">13 artiklit</span>
+        <span class="research-card-meta">20 artiklit</span>
       </article>
       <article class="research-card research-card--accent">
         <h3><a href="/et/research/papers/">Uurimisartiklite register</a></h3>

@@ -27,7 +27,7 @@ heroImage: /assets/img/research/img/research.jpg
 
   <section class="research-stats" aria-label="Сводка исследований">
     <div class="research-stat-card">
-      <strong>112</strong>
+      <strong>142</strong>
       <span>заметок по статьям в базе</span>
     </div>
     <div class="research-stat-card">
@@ -35,11 +35,11 @@ heroImage: /assets/img/research/img/research.jpg
       <span>диапазон публикаций</span>
     </div>
     <div class="research-stat-card">
-      <strong>55</strong>
+      <strong>70</strong>
       <span>статей по компьютерному зрению</span>
     </div>
     <div class="research-stat-card">
-      <strong>44</strong>
+      <strong>61</strong>
       <span>статьи по IoT и сенсорам</span>
     </div>
   </section>
@@ -50,17 +50,17 @@ heroImage: /assets/img/research/img/research.jpg
       <article class="research-card">
         <h3><a href="/research/papers/topics/computer-vision/">Компьютерное зрение</a></h3>
         <p>Анализ трафика у летка, обнаружение пыльцы и шершней, инспекция сот, оценка позы и распознавание поведения в реальных условиях пасеки.</p>
-        <span class="research-card-meta">55 статей</span>
+        <span class="research-card-meta">70 статей</span>
       </article>
       <article class="research-card">
         <h3><a href="/research/papers/topics/varroa-health/">Варроа и здоровье пчелиных семей</a></h3>
         <p>Визуальный анализ варроа, признаки отсутствия матки, анализ расплода и сот, результаты опыления и практическая наблюдаемость здоровья.</p>
-        <span class="research-card-meta">11 статей</span>
+        <span class="research-card-meta">15 статей</span>
       </article>
       <article class="research-card">
         <h3><a href="/research/papers/topics/iot-sensors/">IoT и наблюдаемость</a></h3>
         <p>Ульевые весы, погодный контекст, акустические сенсоры, удалённая телеметрия, ограничения питания и развёртывание edge-устройств.</p>
-        <span class="research-card-meta">44 статьи</span>
+        <span class="research-card-meta">61 статья</span>
       </article>
       <article class="research-card">
         <h3><a href="/research/papers/topics/robotics/">Робототехника и автоматизация</a></h3>
@@ -70,7 +70,7 @@ heroImage: /assets/img/research/img/research.jpg
       <article class="research-card">
         <h3><a href="/research/papers/topics/reviews-surveys/">Обзоры и аналитические работы</a></h3>
         <p>Обзорные материалы по точному пчеловодству, цифровым стекам мониторинга и методам машинного обучения.</p>
-        <span class="research-card-meta">13 статей</span>
+        <span class="research-card-meta">20 статей</span>
       </article>
       <article class="research-card research-card--accent">
         <h3><a href="/ru/research/papers/">Индекс научных статей</a></h3>
