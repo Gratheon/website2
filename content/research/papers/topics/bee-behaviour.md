@@ -9,17 +9,17 @@ layout: research
 ## Summary
 
 - Topic key: `bee-behaviour`
-- Total papers: 54
+- Total papers: 56
 - [Research papers hub](../index.md)
 - [All topics](index.md)
 
 ## Product areas
 
-- [Colony Health](../product-areas/colony-health.md) (14)
+- [Colony Health](../product-areas/colony-health.md) (15)
 - [Edge Device](../product-areas/edge-device.md) (1)
 - [Gate Tracker](../product-areas/gate-tracker.md) (21)
-- [Hive Scanner](../product-areas/hive-scanner.md) (8)
-- [Monitoring Platform](../product-areas/monitoring-platform.md) (13)
+- [Hive Scanner](../product-areas/hive-scanner.md) (10)
+- [Monitoring Platform](../product-areas/monitoring-platform.md) (14)
 - [Robotics](../product-areas/robotics.md) (6)
 
 <section class="research-year-filter" aria-labelledby="research-year-filter-title">
@@ -29,7 +29,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="bee-behaviour-year-filter" value="all" checked>
         <span class="research-year-tab__label">All</span>
-        <span class="research-year-tab__count">54</span>
+        <span class="research-year-tab__count">56</span>
       </label>
       <span class="research-year-tab__arrow" aria-hidden="true">›</span>
       <label class="research-year-tab">
@@ -119,7 +119,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="bee-behaviour-year-filter" value="2026">
         <span class="research-year-tab__label">2026</span>
-        <span class="research-year-tab__count">8</span>
+        <span class="research-year-tab__count">10</span>
       </label>
     </div>
     <div class="research-year-filter__panels">
@@ -136,10 +136,12 @@ layout: research
         <tbody>
         <tr><td><a href="/research/papers/a-hall-effect-sensor-based-queen-bee-detection-system-a-proof-of-concept/">A Hall-Effect Sensor-Based Queen Bee Detection System – a Proof of Concept</a></td><td>2026</td><td>🇵🇱 AGH University of Krakow; 🇵🇱 Wrocław University of Science and Technology</td></tr>
         <tr><td><a href="/research/papers/acoustic-signatures-of-hive-detecting-queen-bee-absence-through-machine-learning-of-short-audio-segments/">Acoustic Signatures of Hive: Detecting Queen Bee Absence Through Machine Learning of Short Audio Segments</a></td><td>2026</td><td>🇨🇱 Universidad de Viña del Mar; 🇨🇱 Universidad Técnica Federico Santa María</td></tr>
+        <tr><td><a href="/research/papers/an-open-source-high-precision-hive-for-long-term-honeybee-observation-and-research/">An open-source high-precision hive for long-term honeybee observation and research</a></td><td>2026</td><td>🇨🇿 Czech Technical University in Prague; 🇦🇹 University of Graz</td></tr>
         <tr><td><a href="/research/papers/assessing-honey-bee-colony-health-using-temperature-time-series/">Assessing Honey Bee Colony Health Using Temperature Time Series</a></td><td>2026</td><td>🇦🇺 The University of Sydney; 🇦🇺 Macquarie University</td></tr>
         <tr><td><a href="/research/papers/beeve-unsupervised-acoustic-state-discovery-in-honey-bee-buzzing/">BeeVe: Unsupervised Acoustic State Discovery in Honey Bee Buzzing</a></td><td>2026</td><td>🇺🇳 arXiv author-supplied preprint by Hamze Hammami and Nidhal Abdulaziz</td></tr>
         <tr><td><a href="/research/papers/comb/">COMB: Common Open Modular robotic platform for Bees</a></td><td>2026</td><td>🇩🇪 University of Konstanz; 🇩🇪 Freie Universität Berlin</td></tr>
         <tr><td><a href="/research/papers/continuous-non-invasive-monitoring-of-hive-entrance-activity-reveals-honey-bee-colony-dynamics/">Continuous Non-Invasive Monitoring of Hive Entrance Activity Reveals Honey Bee Colony Dynamics</a></td><td>2026</td><td>🇹🇷 Van Yüzüncü Yıl University</td></tr>
+        <tr><td><a href="/research/papers/detection-and-classification-of-honeybee-castes-using-thermal-imaging-and-deep-learning/">Detection and classification of honeybee castes using thermal imaging and deep learning</a></td><td>2026</td><td>🇮🇷 Razi University</td></tr>
         <tr><td><a href="/research/papers/estimating-colony-strength-and-pollination-efficiency-in-honey-bees-using-a-novel-dataset-and-deep-learning-based-models/">Estimating colony strength and pollination efficiency in honey bees using a novel dataset and deep learning-based models</a></td><td>2026</td><td>🇺🇸 University of Arkansas at Fayetteville; 🇺🇸 Washington State University; 🇺🇸 University of Arkansas System; 🇺🇸 Mississippi State University; 🇺🇸 University of Tennessee at Knoxville</td></tr>
         <tr><td><a href="/research/papers/physics-aware-vision-instrumentation-for-stingless-bee-counting-at-hive-entrance-using-hybrid-edge-cloud-object-detection/">Physics-aware vision instrumentation for stingless bee counting at hive entrance using hybrid edge-cloud object detection</a></td><td>2026</td><td>🇲🇾 Universiti Teknologi Malaysia; 🇮🇩 Universitas Negeri Jakarta; 🇮🇩 Institut Teknologi Indonesia; 🇮🇩 Politeknik Negeri Bandung; 🇮🇩 National Research and Innovation Agency</td></tr>
         <tr><td><a href="/research/papers/evaluation-of-single-shot-object-detection-models-for-identifying-fanning-behavior-in-honeybees-at-the-hive-entrance/">Evaluation of Single-Shot Object Detection Models for Identifying Fanning Behavior in Honeybees at the Hive Entrance</a></td><td>2025</td><td>🇱🇹 Vilnius Gediminas Technical University</td></tr>
@@ -205,10 +207,12 @@ layout: research
         <tbody>
         <tr><td><a href="/research/papers/a-hall-effect-sensor-based-queen-bee-detection-system-a-proof-of-concept/">A Hall-Effect Sensor-Based Queen Bee Detection System – a Proof of Concept</a></td><td>2026</td><td>🇵🇱 AGH University of Krakow; 🇵🇱 Wrocław University of Science and Technology</td></tr>
         <tr><td><a href="/research/papers/acoustic-signatures-of-hive-detecting-queen-bee-absence-through-machine-learning-of-short-audio-segments/">Acoustic Signatures of Hive: Detecting Queen Bee Absence Through Machine Learning of Short Audio Segments</a></td><td>2026</td><td>🇨🇱 Universidad de Viña del Mar; 🇨🇱 Universidad Técnica Federico Santa María</td></tr>
+        <tr><td><a href="/research/papers/an-open-source-high-precision-hive-for-long-term-honeybee-observation-and-research/">An open-source high-precision hive for long-term honeybee observation and research</a></td><td>2026</td><td>🇨🇿 Czech Technical University in Prague; 🇦🇹 University of Graz</td></tr>
         <tr><td><a href="/research/papers/assessing-honey-bee-colony-health-using-temperature-time-series/">Assessing Honey Bee Colony Health Using Temperature Time Series</a></td><td>2026</td><td>🇦🇺 The University of Sydney; 🇦🇺 Macquarie University</td></tr>
         <tr><td><a href="/research/papers/beeve-unsupervised-acoustic-state-discovery-in-honey-bee-buzzing/">BeeVe: Unsupervised Acoustic State Discovery in Honey Bee Buzzing</a></td><td>2026</td><td>🇺🇳 arXiv author-supplied preprint by Hamze Hammami and Nidhal Abdulaziz</td></tr>
         <tr><td><a href="/research/papers/comb/">COMB: Common Open Modular robotic platform for Bees</a></td><td>2026</td><td>🇩🇪 University of Konstanz; 🇩🇪 Freie Universität Berlin</td></tr>
         <tr><td><a href="/research/papers/continuous-non-invasive-monitoring-of-hive-entrance-activity-reveals-honey-bee-colony-dynamics/">Continuous Non-Invasive Monitoring of Hive Entrance Activity Reveals Honey Bee Colony Dynamics</a></td><td>2026</td><td>🇹🇷 Van Yüzüncü Yıl University</td></tr>
+        <tr><td><a href="/research/papers/detection-and-classification-of-honeybee-castes-using-thermal-imaging-and-deep-learning/">Detection and classification of honeybee castes using thermal imaging and deep learning</a></td><td>2026</td><td>🇮🇷 Razi University</td></tr>
         <tr><td><a href="/research/papers/estimating-colony-strength-and-pollination-efficiency-in-honey-bees-using-a-novel-dataset-and-deep-learning-based-models/">Estimating colony strength and pollination efficiency in honey bees using a novel dataset and deep learning-based models</a></td><td>2026</td><td>🇺🇸 University of Arkansas at Fayetteville; 🇺🇸 Washington State University; 🇺🇸 University of Arkansas System; 🇺🇸 Mississippi State University; 🇺🇸 University of Tennessee at Knoxville</td></tr>
         <tr><td><a href="/research/papers/physics-aware-vision-instrumentation-for-stingless-bee-counting-at-hive-entrance-using-hybrid-edge-cloud-object-detection/">Physics-aware vision instrumentation for stingless bee counting at hive entrance using hybrid edge-cloud object detection</a></td><td>2026</td><td>🇲🇾 Universiti Teknologi Malaysia; 🇮🇩 Universitas Negeri Jakarta; 🇮🇩 Institut Teknologi Indonesia; 🇮🇩 Politeknik Negeri Bandung; 🇮🇩 National Research and Innovation Agency</td></tr>
         </tbody>

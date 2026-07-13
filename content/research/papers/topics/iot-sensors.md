@@ -9,16 +9,16 @@ layout: research
 ## Summary
 
 - Topic key: `iot-sensors`
-- Total papers: 61
+- Total papers: 62
 - [Research papers hub](../index.md)
 - [All topics](index.md)
 
 ## Product areas
 
 - [Colony Health](../product-areas/colony-health.md) (19)
-- [Edge Device](../product-areas/edge-device.md) (1)
+- [Edge Device](../product-areas/edge-device.md) (2)
 - [Gate Tracker](../product-areas/gate-tracker.md) (3)
-- [Monitoring Platform](../product-areas/monitoring-platform.md) (55)
+- [Monitoring Platform](../product-areas/monitoring-platform.md) (56)
 
 <section class="research-year-filter" aria-labelledby="research-year-filter-title">
   <h2 id="research-year-filter-title">Publications</h2>
@@ -27,7 +27,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="iot-sensors-year-filter" value="all" checked>
         <span class="research-year-tab__label">All</span>
-        <span class="research-year-tab__count">61</span>
+        <span class="research-year-tab__count">62</span>
       </label>
       <span class="research-year-tab__arrow" aria-hidden="true">›</span>
       <label class="research-year-tab">
@@ -99,7 +99,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="iot-sensors-year-filter" value="2026">
         <span class="research-year-tab__label">2026</span>
-        <span class="research-year-tab__count">10</span>
+        <span class="research-year-tab__count">11</span>
       </label>
     </div>
     <div class="research-year-filter__panels">
@@ -116,6 +116,7 @@ layout: research
         <tbody>
         <tr><td><a href="/research/papers/a-hall-effect-sensor-based-queen-bee-detection-system-a-proof-of-concept/">A Hall-Effect Sensor-Based Queen Bee Detection System – a Proof of Concept</a></td><td>2026</td><td>🇵🇱 AGH University of Krakow; 🇵🇱 Wrocław University of Science and Technology</td></tr>
         <tr><td><a href="/research/papers/a-multimodal-machine-learning-system-for-non-invasive-detection-of-varroa-destructor-infestations-in-honey-bee-colonies/">A Multimodal Machine Learning System for Non-Invasive Detection of Varroa destructor Infestations in Honey Bee Colonies</a></td><td>2026</td><td>🇺🇸 Green Valley High School</td></tr>
+        <tr><td><a href="/research/papers/a-wireless-sensor-platform-for-beehive-monitoring/">A Wireless Sensor Platform for Beehive Monitoring</a></td><td>2026</td><td>🇺🇸 North Dakota State University; 🇺🇸 USDA Agricultural Research Service</td></tr>
         <tr><td><a href="/research/papers/adaptive-measurement-noise-for-robust-kalman-filtering-in-smart-beehive-telemetry/">Adaptive Measurement Noise for Robust Kalman Filtering in Smart Beehive Telemetry</a></td><td>2026</td><td>🇬🇧 University of Westminster; 🇲🇾 Technical University of Malaysia Malacca; 🇫🇮 University of Oulu</td></tr>
         <tr><td><a href="/research/papers/an-intelligent-monitoring-system-for-forecasting-and-anomaly-detection-in-precision-beekeeping/">An intelligent monitoring system for forecasting and anomaly detection in precision beekeeping</a></td><td>2026</td><td>🇫🇷 EFREI Research Lab; 🇫🇷 Université Paris-Panthéon-Assas</td></tr>
         <tr><td><a href="/research/papers/assessing-honey-bee-colony-health-using-temperature-time-series/">Assessing Honey Bee Colony Health Using Temperature Time Series</a></td><td>2026</td><td>🇦🇺 The University of Sydney; 🇦🇺 Macquarie University</td></tr>
@@ -192,6 +193,7 @@ layout: research
         <tbody>
         <tr><td><a href="/research/papers/a-hall-effect-sensor-based-queen-bee-detection-system-a-proof-of-concept/">A Hall-Effect Sensor-Based Queen Bee Detection System – a Proof of Concept</a></td><td>2026</td><td>🇵🇱 AGH University of Krakow; 🇵🇱 Wrocław University of Science and Technology</td></tr>
         <tr><td><a href="/research/papers/a-multimodal-machine-learning-system-for-non-invasive-detection-of-varroa-destructor-infestations-in-honey-bee-colonies/">A Multimodal Machine Learning System for Non-Invasive Detection of Varroa destructor Infestations in Honey Bee Colonies</a></td><td>2026</td><td>🇺🇸 Green Valley High School</td></tr>
+        <tr><td><a href="/research/papers/a-wireless-sensor-platform-for-beehive-monitoring/">A Wireless Sensor Platform for Beehive Monitoring</a></td><td>2026</td><td>🇺🇸 North Dakota State University; 🇺🇸 USDA Agricultural Research Service</td></tr>
         <tr><td><a href="/research/papers/adaptive-measurement-noise-for-robust-kalman-filtering-in-smart-beehive-telemetry/">Adaptive Measurement Noise for Robust Kalman Filtering in Smart Beehive Telemetry</a></td><td>2026</td><td>🇬🇧 University of Westminster; 🇲🇾 Technical University of Malaysia Malacca; 🇫🇮 University of Oulu</td></tr>
         <tr><td><a href="/research/papers/an-intelligent-monitoring-system-for-forecasting-and-anomaly-detection-in-precision-beekeeping/">An intelligent monitoring system for forecasting and anomaly detection in precision beekeeping</a></td><td>2026</td><td>🇫🇷 EFREI Research Lab; 🇫🇷 Université Paris-Panthéon-Assas</td></tr>
         <tr><td><a href="/research/papers/assessing-honey-bee-colony-health-using-temperature-time-series/">Assessing Honey Bee Colony Health Using Temperature Time Series</a></td><td>2026</td><td>🇦🇺 The University of Sydney; 🇦🇺 Macquarie University</td></tr>

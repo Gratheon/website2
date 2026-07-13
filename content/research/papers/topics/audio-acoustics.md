@@ -9,15 +9,16 @@ layout: research
 ## Summary
 
 - Topic key: `audio-acoustics`
-- Total papers: 20
+- Total papers: 22
 - [Research papers hub](../index.md)
 - [All topics](index.md)
 
 ## Product areas
 
-- [Colony Health](../product-areas/colony-health.md) (13)
+- [Colony Health](../product-areas/colony-health.md) (14)
+- [Edge Device](../product-areas/edge-device.md) (1)
 - [Gate Tracker](../product-areas/gate-tracker.md) (1)
-- [Monitoring Platform](../product-areas/monitoring-platform.md) (16)
+- [Monitoring Platform](../product-areas/monitoring-platform.md) (18)
 
 <section class="research-year-filter" aria-labelledby="research-year-filter-title">
   <h2 id="research-year-filter-title">Publications</h2>
@@ -26,7 +27,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="audio-acoustics-year-filter" value="all" checked>
         <span class="research-year-tab__label">All</span>
-        <span class="research-year-tab__count">20</span>
+        <span class="research-year-tab__count">22</span>
       </label>
       <span class="research-year-tab__arrow" aria-hidden="true">›</span>
       <label class="research-year-tab">
@@ -68,7 +69,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="audio-acoustics-year-filter" value="2026">
         <span class="research-year-tab__label">2026</span>
-        <span class="research-year-tab__count">4</span>
+        <span class="research-year-tab__count">6</span>
       </label>
     </div>
     <div class="research-year-filter__panels">
@@ -87,6 +88,8 @@ layout: research
         <tr><td><a href="/research/papers/acoustic-signatures-of-hive-detecting-queen-bee-absence-through-machine-learning-of-short-audio-segments/">Acoustic Signatures of Hive: Detecting Queen Bee Absence Through Machine Learning of Short Audio Segments</a></td><td>2026</td><td>🇨🇱 Universidad de Viña del Mar; 🇨🇱 Universidad Técnica Federico Santa María</td></tr>
         <tr><td><a href="/research/papers/beeve-unsupervised-acoustic-state-discovery-in-honey-bee-buzzing/">BeeVe: Unsupervised Acoustic State Discovery in Honey Bee Buzzing</a></td><td>2026</td><td>🇺🇳 arXiv author-supplied preprint by Hamze Hammami and Nidhal Abdulaziz</td></tr>
         <tr><td><a href="/research/papers/development-of-wingbeat-based-acoustic-health-monitoring-system-for-bee-colonies/">Development of Wingbeat-Based Acoustic Health Monitoring System for Bee Colonies</a></td><td>2026</td><td>🇹🇼 National Formosa University</td></tr>
+        <tr><td><a href="/research/papers/on-the-prediction-of-varroa-mite-infestations-in-honeybee-colonies-via-acoustic-monitoring/">On the Prediction of Varroa Mite Infestations in Honeybee Colonies via Acoustic Monitoring</a></td><td>2026</td><td>🇨🇦 Institut national de la recherche scientifique (INRS); 🇨🇦 Nectar Technologies Inc.; 🇨🇦 Université Laval</td></tr>
+        <tr><td><a href="/research/papers/spectrogram-based-deep-learning-models-for-acoustic-identification-of-honey-bees-in-complex-environmental-noises/">Spectrogram-Based Deep Learning Models for Acoustic Identification of Honey Bees in Complex Environmental Noises</a></td><td>2026</td><td>🇵🇰 Namal University; 🇵🇰 University of Mianwali; 🇦🇪 Abu Dhabi University; 🇹🇷 Nişantaşı University</td></tr>
         <tr><td><a href="/research/papers/buzzdetect-an-open-source-deep-learning-tool-for-automated-bioacoustic-pollinator-monitoring/">buzzdetect: an open-source deep learning tool for automated bioacoustic pollinator monitoring</a></td><td>2025</td><td>🇺🇸 The Ohio State University; 🇺🇸 Dartmouth College</td></tr>
         <tr><td><a href="/research/papers/deep-edge-iot-for-acoustic-detection-of-queenless-beehives/">Deep Edge IoT for Acoustic Detection of Queenless Beehives</a></td><td>2025</td><td>🇬🇷 Aristotle University of Thessaloniki</td></tr>
         <tr><td><a href="/research/papers/spectral-components-of-honey-bee-sound-signals-recorded-inside-and-outside-the-beehive/">Spectral Components of Honey Bee Sound Signals Recorded Inside and Outside the Beehive: An Explainable Machine Learning Approach to Diurnal Pattern Recognition</a></td><td>2025</td><td>🇵🇱 Wrocław University of Science and Technology; 🇵🇱 AGH University of Krakow</td></tr>
@@ -122,6 +125,8 @@ layout: research
         <tr><td><a href="/research/papers/acoustic-signatures-of-hive-detecting-queen-bee-absence-through-machine-learning-of-short-audio-segments/">Acoustic Signatures of Hive: Detecting Queen Bee Absence Through Machine Learning of Short Audio Segments</a></td><td>2026</td><td>🇨🇱 Universidad de Viña del Mar; 🇨🇱 Universidad Técnica Federico Santa María</td></tr>
         <tr><td><a href="/research/papers/beeve-unsupervised-acoustic-state-discovery-in-honey-bee-buzzing/">BeeVe: Unsupervised Acoustic State Discovery in Honey Bee Buzzing</a></td><td>2026</td><td>🇺🇳 arXiv author-supplied preprint by Hamze Hammami and Nidhal Abdulaziz</td></tr>
         <tr><td><a href="/research/papers/development-of-wingbeat-based-acoustic-health-monitoring-system-for-bee-colonies/">Development of Wingbeat-Based Acoustic Health Monitoring System for Bee Colonies</a></td><td>2026</td><td>🇹🇼 National Formosa University</td></tr>
+        <tr><td><a href="/research/papers/on-the-prediction-of-varroa-mite-infestations-in-honeybee-colonies-via-acoustic-monitoring/">On the Prediction of Varroa Mite Infestations in Honeybee Colonies via Acoustic Monitoring</a></td><td>2026</td><td>🇨🇦 Institut national de la recherche scientifique (INRS); 🇨🇦 Nectar Technologies Inc.; 🇨🇦 Université Laval</td></tr>
+        <tr><td><a href="/research/papers/spectrogram-based-deep-learning-models-for-acoustic-identification-of-honey-bees-in-complex-environmental-noises/">Spectrogram-Based Deep Learning Models for Acoustic Identification of Honey Bees in Complex Environmental Noises</a></td><td>2026</td><td>🇵🇰 Namal University; 🇵🇰 University of Mianwali; 🇦🇪 Abu Dhabi University; 🇹🇷 Nişantaşı University</td></tr>
         </tbody>
         </table>
         </div>

@@ -9,14 +9,16 @@ title: "Research topic: Precision Beekeeping"
 ## Summary
 
 - Topic key: `precision-beekeeping`
-- Total papers: 3
+- Total papers: 6
 - [Research papers hub](../index.md)
 - [All topics](index.md)
 
 ## Product areas
 
-- [Colony Health](../product-areas/colony-health.md) (2)
-- [Monitoring Platform](../product-areas/monitoring-platform.md) (3)
+- [Colony Health](../product-areas/colony-health.md) (3)
+- [Edge Device](../product-areas/edge-device.md) (1)
+- [Hive Scanner](../product-areas/hive-scanner.md) (1)
+- [Monitoring Platform](../product-areas/monitoring-platform.md) (6)
 
 <section class="research-year-filter" aria-labelledby="research-year-filter-title">
   <h2 id="research-year-filter-title">Publications</h2>
@@ -25,7 +27,7 @@ title: "Research topic: Precision Beekeeping"
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="precision-beekeeping-year-filter" value="all" checked>
         <span class="research-year-tab__label">All</span>
-        <span class="research-year-tab__count">3</span>
+        <span class="research-year-tab__count">6</span>
       </label>
       <span class="research-year-tab__arrow" aria-hidden="true">›</span>
       <label class="research-year-tab">
@@ -37,7 +39,7 @@ title: "Research topic: Precision Beekeeping"
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="precision-beekeeping-year-filter" value="2026">
         <span class="research-year-tab__label">2026</span>
-        <span class="research-year-tab__count">2</span>
+        <span class="research-year-tab__count">5</span>
       </label>
     </div>
     <div class="research-year-filter__panels">
@@ -52,6 +54,9 @@ title: "Research topic: Precision Beekeeping"
         </tr>
         </thead>
         <tbody>
+        <tr><td><a href="/research/papers/a-wireless-sensor-platform-for-beehive-monitoring/">A Wireless Sensor Platform for Beehive Monitoring</a></td><td>2026</td><td>🇺🇸 North Dakota State University; 🇺🇸 USDA Agricultural Research Service</td></tr>
+        <tr><td><a href="/research/papers/an-open-source-high-precision-hive-for-long-term-honeybee-observation-and-research/">An open-source high-precision hive for long-term honeybee observation and research</a></td><td>2026</td><td>🇨🇿 Czech Technical University in Prague; 🇦🇹 University of Graz</td></tr>
+        <tr><td><a href="/research/papers/on-the-prediction-of-varroa-mite-infestations-in-honeybee-colonies-via-acoustic-monitoring/">On the Prediction of Varroa Mite Infestations in Honeybee Colonies via Acoustic Monitoring</a></td><td>2026</td><td>🇨🇦 Institut national de la recherche scientifique (INRS); 🇨🇦 Nectar Technologies Inc.; 🇨🇦 Université Laval</td></tr>
         <tr><td><a href="/research/papers/time-series-dataset-of-honey-bee-colony-dynamics-before-during-and-after-sunflower-pollination/">Time-series dataset of honey bee colony dynamics before, during, and after sunflower pollination</a></td><td>2026</td><td>🇺🇦 AmoHive / Ukraine smart-hive deployment</td></tr>
         <tr><td><a href="/research/papers/transforming-beekeeping-through-technology-a-systematic-review-of-precision-beekeeping/">Transforming Beekeeping Through Technology: A Systematic Review of Precision Beekeeping</a></td><td>2026</td><td>🇧🇳 Universiti Brunei Darussalam; 🇱🇰 Uva Wellassa University</td></tr>
         <tr><td><a href="/research/papers/beekeeping-in-the-digital-age-prospects-and-pitfalls-of-hive-sensors/">Beekeeping in the digital age: prospects and pitfalls of hive sensors in commercial beekeeping</a></td><td>2025</td><td>🇦🇺 University of Melbourne; 🇦🇺 La Trobe University; 🇦🇺 ANU Research School of Biology</td></tr>
@@ -70,6 +75,9 @@ title: "Research topic: Precision Beekeeping"
         </tr>
         </thead>
         <tbody>
+        <tr><td><a href="/research/papers/a-wireless-sensor-platform-for-beehive-monitoring/">A Wireless Sensor Platform for Beehive Monitoring</a></td><td>2026</td><td>🇺🇸 North Dakota State University; 🇺🇸 USDA Agricultural Research Service</td></tr>
+        <tr><td><a href="/research/papers/an-open-source-high-precision-hive-for-long-term-honeybee-observation-and-research/">An open-source high-precision hive for long-term honeybee observation and research</a></td><td>2026</td><td>🇨🇿 Czech Technical University in Prague; 🇦🇹 University of Graz</td></tr>
+        <tr><td><a href="/research/papers/on-the-prediction-of-varroa-mite-infestations-in-honeybee-colonies-via-acoustic-monitoring/">On the Prediction of Varroa Mite Infestations in Honeybee Colonies via Acoustic Monitoring</a></td><td>2026</td><td>🇨🇦 Institut national de la recherche scientifique (INRS); 🇨🇦 Nectar Technologies Inc.; 🇨🇦 Université Laval</td></tr>
         <tr><td><a href="/research/papers/time-series-dataset-of-honey-bee-colony-dynamics-before-during-and-after-sunflower-pollination/">Time-series dataset of honey bee colony dynamics before, during, and after sunflower pollination</a></td><td>2026</td><td>🇺🇦 AmoHive / Ukraine smart-hive deployment</td></tr>
         <tr><td><a href="/research/papers/transforming-beekeeping-through-technology-a-systematic-review-of-precision-beekeeping/">Transforming Beekeeping Through Technology: A Systematic Review of Precision Beekeeping</a></td><td>2026</td><td>🇧🇳 Universiti Brunei Darussalam; 🇱🇰 Uva Wellassa University</td></tr>
         </tbody>

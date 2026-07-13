@@ -9,16 +9,16 @@ title: "Research topic: Colony Health"
 ## Summary
 
 - Topic key: `colony-health`
-- Total papers: 7
+- Total papers: 9
 - [Research papers hub](../index.md)
 - [All topics](index.md)
 
 ## Product areas
 
-- [Colony Health](../product-areas/colony-health.md) (4)
-- [Edge Device](../product-areas/edge-device.md) (1)
+- [Colony Health](../product-areas/colony-health.md) (5)
+- [Edge Device](../product-areas/edge-device.md) (2)
 - [Hive Scanner](../product-areas/hive-scanner.md) (3)
-- [Monitoring Platform](../product-areas/monitoring-platform.md) (5)
+- [Monitoring Platform](../product-areas/monitoring-platform.md) (7)
 
 <section class="research-year-filter" aria-labelledby="research-year-filter-title">
   <h2 id="research-year-filter-title">Publications</h2>
@@ -27,7 +27,7 @@ title: "Research topic: Colony Health"
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="colony-health-year-filter" value="all" checked>
         <span class="research-year-tab__label">All</span>
-        <span class="research-year-tab__count">7</span>
+        <span class="research-year-tab__count">9</span>
       </label>
       <span class="research-year-tab__arrow" aria-hidden="true">›</span>
       <label class="research-year-tab">
@@ -45,7 +45,7 @@ title: "Research topic: Colony Health"
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="colony-health-year-filter" value="2026">
         <span class="research-year-tab__label">2026</span>
-        <span class="research-year-tab__count">4</span>
+        <span class="research-year-tab__count">6</span>
       </label>
     </div>
     <div class="research-year-filter__panels">
@@ -60,9 +60,11 @@ title: "Research topic: Colony Health"
         </tr>
         </thead>
         <tbody>
+        <tr><td><a href="/research/papers/a-wireless-sensor-platform-for-beehive-monitoring/">A Wireless Sensor Platform for Beehive Monitoring</a></td><td>2026</td><td>🇺🇸 North Dakota State University; 🇺🇸 USDA Agricultural Research Service</td></tr>
         <tr><td><a href="/research/papers/deep-learning-and-computer-vision-for-honey-bee-health-monitoring-a-systematic-survey-and-future-directions/">Deep Learning and Computer Vision for Honey Bee Health Monitoring: A Systematic Survey and Future Directions</a></td><td>2026</td><td>🇮🇳 SSVPS&#x27;s Bapusaheb Shivajirao Deore College of Engineering</td></tr>
         <tr><td><a href="/research/papers/from-hive-sensors-to-environmental-dna-toward-a-systems-biology-framework-for-honeybee-based-early-warning-of-colony-and-ecosystem-health/">From Hive Sensors to Environmental DNA: Toward a Systems Biology Framework for Honeybee-Based Early Warning of Colony and Ecosystem Health</a></td><td>2026</td><td>🇨🇳 Yangzhou University; 🇸🇦 Imam Mohammad Ibn Saud Islamic University</td></tr>
         <tr><td><a href="/research/papers/honeybee-counting-on-comb-images-via-part-level-annotation-and-hungarian-matching/">Honeybee Counting on Comb Images via Part-Level Annotation and Hungarian Matching</a></td><td>2026</td><td>🇯🇵 Utsunomiya University</td></tr>
+        <tr><td><a href="/research/papers/on-the-prediction-of-varroa-mite-infestations-in-honeybee-colonies-via-acoustic-monitoring/">On the Prediction of Varroa Mite Infestations in Honeybee Colonies via Acoustic Monitoring</a></td><td>2026</td><td>🇨🇦 Institut national de la recherche scientifique (INRS); 🇨🇦 Nectar Technologies Inc.; 🇨🇦 Université Laval</td></tr>
         <tr><td><a href="/research/papers/transforming-beekeeping-through-technology-a-systematic-review-of-precision-beekeeping/">Transforming Beekeeping Through Technology: A Systematic Review of Precision Beekeeping</a></td><td>2026</td><td>🇧🇳 Universiti Brunei Darussalam; 🇱🇰 Uva Wellassa University</td></tr>
         <tr><td><a href="/research/papers/image-based-honey-bee-larval-viral-and-bacterial-diagnosis-using-machine-learning/">Image-based honey bee larval viral and bacterial diagnosis using machine learning</a></td><td>2025</td><td>🇺🇸 USDA Carl Hayden Bee Research Center; 🇺🇸 University of Arizona; 🇺🇸 Arizona Science Center</td></tr>
         <tr><td><a href="/research/papers/queen-detection-in-beehives-via-environmental-sensor-fusion-for-low-power-edge-computing/">Queen Detection in Beehives via Environmental Sensor Fusion for Low-Power Edge Computing</a></td><td>2025</td><td>🇨🇭 Institute of Neuroinformatics, University of Zurich and ETH Zurich; 🇨🇭 Digital Society Initiative, University of Zurich</td></tr>
@@ -82,9 +84,11 @@ title: "Research topic: Colony Health"
         </tr>
         </thead>
         <tbody>
+        <tr><td><a href="/research/papers/a-wireless-sensor-platform-for-beehive-monitoring/">A Wireless Sensor Platform for Beehive Monitoring</a></td><td>2026</td><td>🇺🇸 North Dakota State University; 🇺🇸 USDA Agricultural Research Service</td></tr>
         <tr><td><a href="/research/papers/deep-learning-and-computer-vision-for-honey-bee-health-monitoring-a-systematic-survey-and-future-directions/">Deep Learning and Computer Vision for Honey Bee Health Monitoring: A Systematic Survey and Future Directions</a></td><td>2026</td><td>🇮🇳 SSVPS&#x27;s Bapusaheb Shivajirao Deore College of Engineering</td></tr>
         <tr><td><a href="/research/papers/from-hive-sensors-to-environmental-dna-toward-a-systems-biology-framework-for-honeybee-based-early-warning-of-colony-and-ecosystem-health/">From Hive Sensors to Environmental DNA: Toward a Systems Biology Framework for Honeybee-Based Early Warning of Colony and Ecosystem Health</a></td><td>2026</td><td>🇨🇳 Yangzhou University; 🇸🇦 Imam Mohammad Ibn Saud Islamic University</td></tr>
         <tr><td><a href="/research/papers/honeybee-counting-on-comb-images-via-part-level-annotation-and-hungarian-matching/">Honeybee Counting on Comb Images via Part-Level Annotation and Hungarian Matching</a></td><td>2026</td><td>🇯🇵 Utsunomiya University</td></tr>
+        <tr><td><a href="/research/papers/on-the-prediction-of-varroa-mite-infestations-in-honeybee-colonies-via-acoustic-monitoring/">On the Prediction of Varroa Mite Infestations in Honeybee Colonies via Acoustic Monitoring</a></td><td>2026</td><td>🇨🇦 Institut national de la recherche scientifique (INRS); 🇨🇦 Nectar Technologies Inc.; 🇨🇦 Université Laval</td></tr>
         <tr><td><a href="/research/papers/transforming-beekeeping-through-technology-a-systematic-review-of-precision-beekeeping/">Transforming Beekeeping Through Technology: A Systematic Review of Precision Beekeeping</a></td><td>2026</td><td>🇧🇳 Universiti Brunei Darussalam; 🇱🇰 Uva Wellassa University</td></tr>
         </tbody>
         </table>

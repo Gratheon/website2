@@ -9,18 +9,19 @@ layout: research
 ## Summary
 
 - Product area key: `hive-scanner`
-- Total papers: 21
+- Total papers: 23
 - [Research papers hub](../index.md)
 - [All product areas](index.md)
 
 ## Topics
 
-- [Bee Behaviour](../topics/bee-behaviour.md) (8)
+- [Bee Behaviour](../topics/bee-behaviour.md) (10)
 - [Bee Counting](../topics/bee-counting.md) (1)
 - [Colony Health](../topics/colony-health.md) (3)
-- [Computer Vision](../topics/computer-vision.md) (21)
-- [Datasets Benchmarks](../topics/datasets-benchmarks.md) (5)
+- [Computer Vision](../topics/computer-vision.md) (23)
+- [Datasets Benchmarks](../topics/datasets-benchmarks.md) (6)
 - [Edge AI Energy](../topics/edge-ai-energy.md) (1)
+- [Precision Beekeeping](../topics/precision-beekeeping.md) (1)
 - [Varroa Health](../topics/varroa-health.md) (3)
 
 <section class="research-year-filter" aria-labelledby="research-year-filter-title">
@@ -30,7 +31,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="hive-scanner-year-filter" value="all" checked>
         <span class="research-year-tab__label">All</span>
-        <span class="research-year-tab__count">21</span>
+        <span class="research-year-tab__count">23</span>
       </label>
       <span class="research-year-tab__arrow" aria-hidden="true">›</span>
       <label class="research-year-tab">
@@ -84,7 +85,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="hive-scanner-year-filter" value="2026">
         <span class="research-year-tab__label">2026</span>
-        <span class="research-year-tab__count">3</span>
+        <span class="research-year-tab__count">5</span>
       </label>
     </div>
     <div class="research-year-filter__panels">
@@ -99,6 +100,8 @@ layout: research
         </tr>
         </thead>
         <tbody>
+        <tr><td><a href="/research/papers/an-open-source-high-precision-hive-for-long-term-honeybee-observation-and-research/">An open-source high-precision hive for long-term honeybee observation and research</a></td><td>2026</td><td>🇨🇿 Czech Technical University in Prague; 🇦🇹 University of Graz</td></tr>
+        <tr><td><a href="/research/papers/detection-and-classification-of-honeybee-castes-using-thermal-imaging-and-deep-learning/">Detection and classification of honeybee castes using thermal imaging and deep learning</a></td><td>2026</td><td>🇮🇷 Razi University</td></tr>
         <tr><td><a href="/research/papers/honeybee-counting-on-comb-images-via-part-level-annotation-and-hungarian-matching/">Honeybee Counting on Comb Images via Part-Level Annotation and Hungarian Matching</a></td><td>2026</td><td>🇯🇵 Utsunomiya University</td></tr>
         <tr><td><a href="/research/papers/interpretable-deep-learning-for-varroa-mite-detection-integrating-deblurring-morphology-preserving-preprocessing-and-explainability-analysis/">Interpretable Deep Learning for Varroa Mite Detection: Integrating Deblurring, Morphology-Preserving Preprocessing, and Explainability Analysis</a></td><td>2026</td><td>🇰🇷 Kangwon National University; 🇰🇷 National Institute of Agricultural Sciences</td></tr>
         <tr><td><a href="/research/papers/m3danet-a-lightweight-semi-supervised-network-and-embedded-system-for-bee-colony-counting/">M3DANet: A Lightweight Semi-Supervised Network and Embedded System for Bee Colony Counting</a></td><td>2026</td><td>🇨🇳 Shandong Agricultural University; 🇨🇳 Apiculture Institute of Jiangxi Province</td></tr>
@@ -135,6 +138,8 @@ layout: research
         </tr>
         </thead>
         <tbody>
+        <tr><td><a href="/research/papers/an-open-source-high-precision-hive-for-long-term-honeybee-observation-and-research/">An open-source high-precision hive for long-term honeybee observation and research</a></td><td>2026</td><td>🇨🇿 Czech Technical University in Prague; 🇦🇹 University of Graz</td></tr>
+        <tr><td><a href="/research/papers/detection-and-classification-of-honeybee-castes-using-thermal-imaging-and-deep-learning/">Detection and classification of honeybee castes using thermal imaging and deep learning</a></td><td>2026</td><td>🇮🇷 Razi University</td></tr>
         <tr><td><a href="/research/papers/honeybee-counting-on-comb-images-via-part-level-annotation-and-hungarian-matching/">Honeybee Counting on Comb Images via Part-Level Annotation and Hungarian Matching</a></td><td>2026</td><td>🇯🇵 Utsunomiya University</td></tr>
         <tr><td><a href="/research/papers/interpretable-deep-learning-for-varroa-mite-detection-integrating-deblurring-morphology-preserving-preprocessing-and-explainability-analysis/">Interpretable Deep Learning for Varroa Mite Detection: Integrating Deblurring, Morphology-Preserving Preprocessing, and Explainability Analysis</a></td><td>2026</td><td>🇰🇷 Kangwon National University; 🇰🇷 National Institute of Agricultural Sciences</td></tr>
         <tr><td><a href="/research/papers/m3danet-a-lightweight-semi-supervised-network-and-embedded-system-for-bee-colony-counting/">M3DANet: A Lightweight Semi-Supervised Network and Embedded System for Bee Colony Counting</a></td><td>2026</td><td>🇨🇳 Shandong Agricultural University; 🇨🇳 Apiculture Institute of Jiangxi Province</td></tr>

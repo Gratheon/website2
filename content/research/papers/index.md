@@ -19,7 +19,7 @@ This section tracks external academic work relevant to digital beekeeping, bee h
   <div class="research-paper-filter-grid">
     <a class="research-paper-filter-card" href="scientific-publications/">
       <span class="research-paper-filter-card__icon" aria-hidden="true">📚</span>
-      <span class="research-paper-filter-card__body"><strong>Scientific publications</strong><small>All 142 paper notes in one bibliography.</small></span>
+      <span class="research-paper-filter-card__body"><strong>Scientific publications</strong><small>All 147 paper notes in one bibliography.</small></span>
     </a>
     <a class="research-paper-filter-card" href="teams/">
       <span class="research-paper-filter-card__icon" aria-hidden="true">🏛️</span>

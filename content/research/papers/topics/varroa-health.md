@@ -9,16 +9,16 @@ layout: research
 ## Summary
 
 - Topic key: `varroa-health`
-- Total papers: 15
+- Total papers: 16
 - [Research papers hub](../index.md)
 - [All topics](index.md)
 
 ## Product areas
 
-- [Colony Health](../product-areas/colony-health.md) (15)
+- [Colony Health](../product-areas/colony-health.md) (16)
 - [Gate Tracker](../product-areas/gate-tracker.md) (1)
 - [Hive Scanner](../product-areas/hive-scanner.md) (3)
-- [Monitoring Platform](../product-areas/monitoring-platform.md) (2)
+- [Monitoring Platform](../product-areas/monitoring-platform.md) (3)
 
 <section class="research-year-filter" aria-labelledby="research-year-filter-title">
   <h2 id="research-year-filter-title">Publications</h2>
@@ -27,7 +27,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="varroa-health-year-filter" value="all" checked>
         <span class="research-year-tab__label">All</span>
-        <span class="research-year-tab__count">15</span>
+        <span class="research-year-tab__count">16</span>
       </label>
       <span class="research-year-tab__arrow" aria-hidden="true">›</span>
       <label class="research-year-tab">
@@ -69,7 +69,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="varroa-health-year-filter" value="2026">
         <span class="research-year-tab__label">2026</span>
-        <span class="research-year-tab__count">2</span>
+        <span class="research-year-tab__count">3</span>
       </label>
     </div>
     <div class="research-year-filter__panels">
@@ -86,6 +86,7 @@ layout: research
         <tbody>
         <tr><td><a href="/research/papers/a-multimodal-machine-learning-system-for-non-invasive-detection-of-varroa-destructor-infestations-in-honey-bee-colonies/">A Multimodal Machine Learning System for Non-Invasive Detection of Varroa destructor Infestations in Honey Bee Colonies</a></td><td>2026</td><td>🇺🇸 Green Valley High School</td></tr>
         <tr><td><a href="/research/papers/interpretable-deep-learning-for-varroa-mite-detection-integrating-deblurring-morphology-preserving-preprocessing-and-explainability-analysis/">Interpretable Deep Learning for Varroa Mite Detection: Integrating Deblurring, Morphology-Preserving Preprocessing, and Explainability Analysis</a></td><td>2026</td><td>🇰🇷 Kangwon National University; 🇰🇷 National Institute of Agricultural Sciences</td></tr>
+        <tr><td><a href="/research/papers/on-the-prediction-of-varroa-mite-infestations-in-honeybee-colonies-via-acoustic-monitoring/">On the Prediction of Varroa Mite Infestations in Honeybee Colonies via Acoustic Monitoring</a></td><td>2026</td><td>🇨🇦 Institut national de la recherche scientifique (INRS); 🇨🇦 Nectar Technologies Inc.; 🇨🇦 Université Laval</td></tr>
         <tr><td><a href="/research/papers/an-ai-based-digital-scanner-for-varroa-destructor-detection-in-beekeeping/">An AI-Based Digital Scanner for Varroa destructor Detection in Beekeeping</a></td><td>2025</td><td>🇮🇹 Council for Agricultural Research and Economics (CREA) – Research Centre for Engineering and Agro-Food Processing, Monterotondo; 🇮🇹 Council for Agricultural Research and Economics (CREA) – Research Centre for Agriculture and Environment, Bologna; 🇷🇸 University of Novi Sad</td></tr>
         <tr><td><a href="/research/papers/an-ai-based-open-source-software-for-varroa-mite-fall-analysis-in-honeybee-colonies/">An AI-Based Open-Source Software for Varroa Mite Fall Analysis in Honeybee Colonies</a></td><td>2025</td><td>🇪🇸 University of Zaragoza; 🇪🇸 University of La Rioja; 🇪🇸 University of Valencia</td></tr>
         <tr><td><a href="/research/papers/towards-varroa-destructor-mite-detection-using-a-narrow-spectra-illumination/">Towards Varroa destructor mite detection using a narrow spectra illumination</a></td><td>2025</td><td>🇨🇿 Brno University of Technology</td></tr>
@@ -116,6 +117,7 @@ layout: research
         <tbody>
         <tr><td><a href="/research/papers/a-multimodal-machine-learning-system-for-non-invasive-detection-of-varroa-destructor-infestations-in-honey-bee-colonies/">A Multimodal Machine Learning System for Non-Invasive Detection of Varroa destructor Infestations in Honey Bee Colonies</a></td><td>2026</td><td>🇺🇸 Green Valley High School</td></tr>
         <tr><td><a href="/research/papers/interpretable-deep-learning-for-varroa-mite-detection-integrating-deblurring-morphology-preserving-preprocessing-and-explainability-analysis/">Interpretable Deep Learning for Varroa Mite Detection: Integrating Deblurring, Morphology-Preserving Preprocessing, and Explainability Analysis</a></td><td>2026</td><td>🇰🇷 Kangwon National University; 🇰🇷 National Institute of Agricultural Sciences</td></tr>
+        <tr><td><a href="/research/papers/on-the-prediction-of-varroa-mite-infestations-in-honeybee-colonies-via-acoustic-monitoring/">On the Prediction of Varroa Mite Infestations in Honeybee Colonies via Acoustic Monitoring</a></td><td>2026</td><td>🇨🇦 Institut national de la recherche scientifique (INRS); 🇨🇦 Nectar Technologies Inc.; 🇨🇦 Université Laval</td></tr>
         </tbody>
         </table>
         </div>

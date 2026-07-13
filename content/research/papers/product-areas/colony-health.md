@@ -9,27 +9,27 @@ layout: research
 ## Summary
 
 - Product area key: `colony-health`
-- Total papers: 44
+- Total papers: 46
 - [Research papers hub](../index.md)
 - [All product areas](index.md)
 
 ## Topics
 
-- [Audio Acoustics](../topics/audio-acoustics.md) (13)
-- [Bee Behaviour](../topics/bee-behaviour.md) (14)
+- [Audio Acoustics](../topics/audio-acoustics.md) (14)
+- [Bee Behaviour](../topics/bee-behaviour.md) (15)
 - [Bee Traffic](../topics/bee-traffic.md) (1)
 - [Behavior Recognition](../topics/behavior-recognition.md) (1)
-- [Colony Health](../topics/colony-health.md) (4)
-- [Computer Vision](../topics/computer-vision.md) (18)
+- [Colony Health](../topics/colony-health.md) (5)
+- [Computer Vision](../topics/computer-vision.md) (19)
 - [Datasets](../topics/datasets.md) (1)
-- [Datasets Benchmarks](../topics/datasets-benchmarks.md) (2)
+- [Datasets Benchmarks](../topics/datasets-benchmarks.md) (3)
 - [Edge AI Energy](../topics/edge-ai-energy.md) (5)
 - [IoT Sensors](../topics/iot-sensors.md) (19)
 - [Pollination Ecology](../topics/pollination-ecology.md) (5)
 - [Pollination Monitoring](../topics/pollination-monitoring.md) (1)
-- [Precision Beekeeping](../topics/precision-beekeeping.md) (2)
+- [Precision Beekeeping](../topics/precision-beekeeping.md) (3)
 - [Reviews Surveys](../topics/reviews-surveys.md) (4)
-- [Varroa Health](../topics/varroa-health.md) (15)
+- [Varroa Health](../topics/varroa-health.md) (16)
 
 <section class="research-year-filter" aria-labelledby="research-year-filter-title">
   <h2 id="research-year-filter-title">Publications</h2>
@@ -38,7 +38,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="colony-health-year-filter" value="all" checked>
         <span class="research-year-tab__label">All</span>
-        <span class="research-year-tab__count">44</span>
+        <span class="research-year-tab__count">46</span>
       </label>
       <span class="research-year-tab__arrow" aria-hidden="true">›</span>
       <label class="research-year-tab">
@@ -98,7 +98,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="colony-health-year-filter" value="2026">
         <span class="research-year-tab__label">2026</span>
-        <span class="research-year-tab__count">13</span>
+        <span class="research-year-tab__count">15</span>
       </label>
     </div>
     <div class="research-year-filter__panels">
@@ -118,10 +118,12 @@ layout: research
         <tr><td><a href="/research/papers/an-intelligent-monitoring-system-for-forecasting-and-anomaly-detection-in-precision-beekeeping/">An intelligent monitoring system for forecasting and anomaly detection in precision beekeeping</a></td><td>2026</td><td>🇫🇷 EFREI Research Lab; 🇫🇷 Université Paris-Panthéon-Assas</td></tr>
         <tr><td><a href="/research/papers/assessing-honey-bee-colony-health-using-temperature-time-series/">Assessing Honey Bee Colony Health Using Temperature Time Series</a></td><td>2026</td><td>🇦🇺 The University of Sydney; 🇦🇺 Macquarie University</td></tr>
         <tr><td><a href="/research/papers/beeve-unsupervised-acoustic-state-discovery-in-honey-bee-buzzing/">BeeVe: Unsupervised Acoustic State Discovery in Honey Bee Buzzing</a></td><td>2026</td><td>🇺🇳 arXiv author-supplied preprint by Hamze Hammami and Nidhal Abdulaziz</td></tr>
+        <tr><td><a href="/research/papers/detection-and-classification-of-honeybee-castes-using-thermal-imaging-and-deep-learning/">Detection and classification of honeybee castes using thermal imaging and deep learning</a></td><td>2026</td><td>🇮🇷 Razi University</td></tr>
         <tr><td><a href="/research/papers/development-of-wingbeat-based-acoustic-health-monitoring-system-for-bee-colonies/">Development of Wingbeat-Based Acoustic Health Monitoring System for Bee Colonies</a></td><td>2026</td><td>🇹🇼 National Formosa University</td></tr>
         <tr><td><a href="/research/papers/estimating-colony-strength-and-pollination-efficiency-in-honey-bees-using-a-novel-dataset-and-deep-learning-based-models/">Estimating colony strength and pollination efficiency in honey bees using a novel dataset and deep learning-based models</a></td><td>2026</td><td>🇺🇸 University of Arkansas at Fayetteville; 🇺🇸 Washington State University; 🇺🇸 University of Arkansas System; 🇺🇸 Mississippi State University; 🇺🇸 University of Tennessee at Knoxville</td></tr>
         <tr><td><a href="/research/papers/from-hive-sensors-to-environmental-dna-toward-a-systems-biology-framework-for-honeybee-based-early-warning-of-colony-and-ecosystem-health/">From Hive Sensors to Environmental DNA: Toward a Systems Biology Framework for Honeybee-Based Early Warning of Colony and Ecosystem Health</a></td><td>2026</td><td>🇨🇳 Yangzhou University; 🇸🇦 Imam Mohammad Ibn Saud Islamic University</td></tr>
         <tr><td><a href="/research/papers/interpretable-deep-learning-for-varroa-mite-detection-integrating-deblurring-morphology-preserving-preprocessing-and-explainability-analysis/">Interpretable Deep Learning for Varroa Mite Detection: Integrating Deblurring, Morphology-Preserving Preprocessing, and Explainability Analysis</a></td><td>2026</td><td>🇰🇷 Kangwon National University; 🇰🇷 National Institute of Agricultural Sciences</td></tr>
+        <tr><td><a href="/research/papers/on-the-prediction-of-varroa-mite-infestations-in-honeybee-colonies-via-acoustic-monitoring/">On the Prediction of Varroa Mite Infestations in Honeybee Colonies via Acoustic Monitoring</a></td><td>2026</td><td>🇨🇦 Institut national de la recherche scientifique (INRS); 🇨🇦 Nectar Technologies Inc.; 🇨🇦 Université Laval</td></tr>
         <tr><td><a href="/research/papers/stag-cn-spatio-temporal-apiary-graph-convolutional-network-for-disease-onset-prediction-in-beehive-sensor-networks/">STAG-CN: Spatio-Temporal Apiary Graph Convolutional Network for Disease Onset Prediction in Beehive Sensor Networks</a></td><td>2026</td><td>🇰🇷 Korea University</td></tr>
         <tr><td><a href="/research/papers/the-relevance-of-compound-events-in-bee-traffic-monitoring/">The Relevance of Compound Events in Bee Traffic Monitoring</a></td><td>2026</td><td>🇵🇷 University of Puerto Rico at Río Piedras</td></tr>
         <tr><td><a href="/research/papers/time-series-dataset-of-honey-bee-colony-dynamics-before-during-and-after-sunflower-pollination/">Time-series dataset of honey bee colony dynamics before, during, and after sunflower pollination</a></td><td>2026</td><td>🇺🇦 AmoHive / Ukraine smart-hive deployment</td></tr>
@@ -177,10 +179,12 @@ layout: research
         <tr><td><a href="/research/papers/an-intelligent-monitoring-system-for-forecasting-and-anomaly-detection-in-precision-beekeeping/">An intelligent monitoring system for forecasting and anomaly detection in precision beekeeping</a></td><td>2026</td><td>🇫🇷 EFREI Research Lab; 🇫🇷 Université Paris-Panthéon-Assas</td></tr>
         <tr><td><a href="/research/papers/assessing-honey-bee-colony-health-using-temperature-time-series/">Assessing Honey Bee Colony Health Using Temperature Time Series</a></td><td>2026</td><td>🇦🇺 The University of Sydney; 🇦🇺 Macquarie University</td></tr>
         <tr><td><a href="/research/papers/beeve-unsupervised-acoustic-state-discovery-in-honey-bee-buzzing/">BeeVe: Unsupervised Acoustic State Discovery in Honey Bee Buzzing</a></td><td>2026</td><td>🇺🇳 arXiv author-supplied preprint by Hamze Hammami and Nidhal Abdulaziz</td></tr>
+        <tr><td><a href="/research/papers/detection-and-classification-of-honeybee-castes-using-thermal-imaging-and-deep-learning/">Detection and classification of honeybee castes using thermal imaging and deep learning</a></td><td>2026</td><td>🇮🇷 Razi University</td></tr>
         <tr><td><a href="/research/papers/development-of-wingbeat-based-acoustic-health-monitoring-system-for-bee-colonies/">Development of Wingbeat-Based Acoustic Health Monitoring System for Bee Colonies</a></td><td>2026</td><td>🇹🇼 National Formosa University</td></tr>
         <tr><td><a href="/research/papers/estimating-colony-strength-and-pollination-efficiency-in-honey-bees-using-a-novel-dataset-and-deep-learning-based-models/">Estimating colony strength and pollination efficiency in honey bees using a novel dataset and deep learning-based models</a></td><td>2026</td><td>🇺🇸 University of Arkansas at Fayetteville; 🇺🇸 Washington State University; 🇺🇸 University of Arkansas System; 🇺🇸 Mississippi State University; 🇺🇸 University of Tennessee at Knoxville</td></tr>
         <tr><td><a href="/research/papers/from-hive-sensors-to-environmental-dna-toward-a-systems-biology-framework-for-honeybee-based-early-warning-of-colony-and-ecosystem-health/">From Hive Sensors to Environmental DNA: Toward a Systems Biology Framework for Honeybee-Based Early Warning of Colony and Ecosystem Health</a></td><td>2026</td><td>🇨🇳 Yangzhou University; 🇸🇦 Imam Mohammad Ibn Saud Islamic University</td></tr>
         <tr><td><a href="/research/papers/interpretable-deep-learning-for-varroa-mite-detection-integrating-deblurring-morphology-preserving-preprocessing-and-explainability-analysis/">Interpretable Deep Learning for Varroa Mite Detection: Integrating Deblurring, Morphology-Preserving Preprocessing, and Explainability Analysis</a></td><td>2026</td><td>🇰🇷 Kangwon National University; 🇰🇷 National Institute of Agricultural Sciences</td></tr>
+        <tr><td><a href="/research/papers/on-the-prediction-of-varroa-mite-infestations-in-honeybee-colonies-via-acoustic-monitoring/">On the Prediction of Varroa Mite Infestations in Honeybee Colonies via Acoustic Monitoring</a></td><td>2026</td><td>🇨🇦 Institut national de la recherche scientifique (INRS); 🇨🇦 Nectar Technologies Inc.; 🇨🇦 Université Laval</td></tr>
         <tr><td><a href="/research/papers/stag-cn-spatio-temporal-apiary-graph-convolutional-network-for-disease-onset-prediction-in-beehive-sensor-networks/">STAG-CN: Spatio-Temporal Apiary Graph Convolutional Network for Disease Onset Prediction in Beehive Sensor Networks</a></td><td>2026</td><td>🇰🇷 Korea University</td></tr>
         <tr><td><a href="/research/papers/the-relevance-of-compound-events-in-bee-traffic-monitoring/">The Relevance of Compound Events in Bee Traffic Monitoring</a></td><td>2026</td><td>🇵🇷 University of Puerto Rico at Río Piedras</td></tr>
         <tr><td><a href="/research/papers/time-series-dataset-of-honey-bee-colony-dynamics-before-during-and-after-sunflower-pollination/">Time-series dataset of honey bee colony dynamics before, during, and after sunflower pollination</a></td><td>2026</td><td>🇺🇦 AmoHive / Ukraine smart-hive deployment</td></tr>
