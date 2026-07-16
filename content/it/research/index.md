@@ -1,7 +1,7 @@
 ---
-title: Research
+layout: research
+order: 1
+title: Ricerca
 navTitle: "Ricerca"
 slug: ""
-hideNav: true
-redirectUrl: "https://gratheon.com/research/"
 ---

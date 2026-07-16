@@ -1,7 +1,7 @@
 ---
-title: Research
+layout: research
+order: 1
+title: البحوث
 navTitle: "الأبحاث"
 slug: ""
-hideNav: true
-redirectUrl: "https://gratheon.com/research/"
 ---

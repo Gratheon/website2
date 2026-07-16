@@ -146,7 +146,7 @@
 {{end}}
 {{define "research_assets"}}
 <section class="knowledge-content research-assets-overview" aria-labelledby="research-assets-title">
-  <h2 id="research-assets-title">{{if eq .Page.Language "et"}}Gratheoni uurimisvarad{{else}}Gratheon research assets{{end}}</h2>
+  <h2 id="research-assets-title">{{if eq .Page.Language "et"}}Gratheoni uurimisvarad{{else if eq .Page.Language "ru"}}Исследовательские активы Gratheon{{else if eq .Page.Language "zh"}}Gratheon 研究资产{{else if eq .Page.Language "de"}}Gratheon-Forschungsressourcen{{else if eq .Page.Language "es"}}Activos de investigación de Gratheon{{else if eq .Page.Language "fr"}}Actifs de recherche Gratheon{{else if eq .Page.Language "ja"}}Gratheon 研究資産{{else if eq .Page.Language "hi"}}Gratheon अनुसंधान संपत्तियां{{else if eq .Page.Language "ar"}}أصول أبحاث Gratheon{{else if eq .Page.Language "pt"}}Ativos de pesquisa da Gratheon{{else if eq .Page.Language "it"}}Risorse di ricerca Gratheon{{else if eq .Page.Language "ko"}}Gratheon 연구 자산{{else}}Gratheon research assets{{end}}</h2>
   <div class="research-card-grid research-card-grid--3 research-assets-grid">
     <article class="research-card research-asset-card">
       <div class="research-asset-card__heading">
@@ -158,9 +158,9 @@
           <path d="M17 19.5c1.7-.2 3.2.1 4.5.7M27 20.2c1.3-.6 2.8-.9 4.5-.7M17 25c1.7-.2 3.2.1 4.5.7M27 25.7c1.3-.6 2.8-.9 4.5-.7" />
         </svg>
         <h3><a href="{{if eq .Page.Language "et"}}/et/research/datasets/{{else}}/research/datasets/{{end}}">{{if eq .Page.Language "et"}}Gratheoni andmestikud{{else}}Gratheon datasets{{end}}</a></h3>
-      </div>
+        <h3><a href="{{if eq .Page.Language "et"}}/et/research/datasets/{{else if eq .Page.Language "ru"}}/ru/research/datasets/{{else if eq .Page.Language "zh"}}/zh/research/datasets/{{else if eq .Page.Language "de"}}/de/research/datasets/{{else if eq .Page.Language "es"}}/es/research/datasets/{{else if eq .Page.Language "fr"}}/fr/research/datasets/{{else if eq .Page.Language "ja"}}/ja/research/datasets/{{else if eq .Page.Language "hi"}}/hi/research/datasets/{{else if eq .Page.Language "ar"}}/ar/research/datasets/{{else if eq .Page.Language "pt"}}/pt/research/datasets/{{else if eq .Page.Language "it"}}/it/research/datasets/{{else if eq .Page.Language "ko"}}/ko/research/datasets/{{else}}/research/datasets/{{end}}">{{if eq .Page.Language "et"}}Gratheoni andmestikud{{else if eq .Page.Language "ru"}}Датасеты Gratheon{{else if eq .Page.Language "zh"}}Gratheon 数据集{{else if eq .Page.Language "de"}}Gratheon-Datensätze{{else if eq .Page.Language "es"}}Conjuntos de datos de Gratheon{{else if eq .Page.Language "fr"}}Ensembles de données Gratheon{{else if eq .Page.Language "ja"}}Gratheon データセット{{else if eq .Page.Language "hi"}}Gratheon डेटासेट{{else if eq .Page.Language "ar"}}مجموعات بيانات Gratheon{{else if eq .Page.Language "pt"}}Conjuntos de dados da Gratheon{{else if eq .Page.Language "it"}}Set di dati Gratheon{{else if eq .Page.Language "ko"}}Gratheon 데이터 세트{{else}}Gratheon datasets{{end}}</a></h3>
       <p>{{if eq .Page.Language "et"}}Inspektsioonifotod, lennuava videod, mõõdikud, liikumisjäljed ja välised võrdlusressursid katseteks ning võrdlusanalüüsiks.{{else}}Inspection photos, entrance videos, metrics, tracks, and external reference resources for experiments and benchmarking.{{end}}</p>
-    </article>
+      <p>{{if eq .Page.Language "et"}}Inspektsioonifotod, lennuava videod, mõõdikud, liikumisjäljed ja välised võrdlusressursid katseteks ning võrdlusanalüüsiks.{{else if eq .Page.Language "ru"}}Фотографии инспекций, видео с летка, метрики, треки и внешние справочные ресурсы для экспериментов и бенчмаркинга.{{else if eq .Page.Language "zh"}}检查照片、入口视频、指标、轨迹以及用于实验和基准测试的外部参考资源。{{else if eq .Page.Language "de"}}Inspektionsfotos, Eingangsvideos, Metriken, Flugbahnen und externe Referenzressourcen für Experimente und Benchmarking.{{else if eq .Page.Language "es"}}Fotos de inspección, videos de entrada, métricas, trayectorias y recursos de referencia externos para experimentos y evaluaciones comparativas.{{else if eq .Page.Language "fr"}}Photos d'inspection, vidéos d'entrée, métriques, trajectoires et ressources de référence externes pour les expériences et l'évaluation des performances.{{else if eq .Page.Language "ja"}}検査写真、入り口の動画、指標、軌跡、および実験やベンチマーク用の外部リファレンスリソース。{{else if eq .Page.Language "hi"}}प्रयोगों और बेंचमार्किंग के लिए निरीक्षण तस्वीरें, प्रवेश वीडियो, मेट्रिक्स, ट्रैक और बाहरी संदर्भ संसाधन।{{else if eq .Page.Language "ar"}}صور الفحص، مقاطع فيديو المدخل، المقاييس، المسارات، والموارد المرجعية الخارجية للتجارب وقياس الأداء.{{else if eq .Page.Language "pt"}}Fotos de inspeção, vídeos de entrada, métricas, rastreamentos e recursos de referência externos para experimentos e benchmarking.{{else if eq .Page.Language "it"}}Foto di ispezione, video degli ingressi, metriche, tracce e risorse di riferimento esterne per esperimenti e benchmarking.{{else if eq .Page.Language "ko"}}실험 및 벤치마킹을 위한 검사 사진, 입구 비디오, 메트릭, 트랙 및 외부 참조 리소스.{{else}}Inspection photos, entrance videos, metrics, tracks, and external reference resources for experiments and benchmarking.{{end}}</p>
     <article class="research-card research-asset-card">
       <div class="research-asset-card__heading">
         <svg class="research-card-icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
@@ -171,9 +171,9 @@
           <path d="M24 14.5v22M15.5 36.5h17M13.5 30c1.4-2.8 3.3-4.3 5.8-4.3M34.5 30c-1.4-2.8-3.3-4.3-5.8-4.3" />
         </svg>
         <h3><a href="{{if eq .Page.Language "et"}}/et/research/models/{{else}}/research/models/{{end}}">{{if eq .Page.Language "et"}}Gratheoni mudelid{{else}}Gratheon models{{end}}</a></h3>
-      </div>
+        <h3><a href="{{if eq .Page.Language "et"}}/et/research/models/{{else if eq .Page.Language "ru"}}/ru/research/models/{{else if eq .Page.Language "zh"}}/zh/research/models/{{else if eq .Page.Language "de"}}/de/research/models/{{else if eq .Page.Language "es"}}/es/research/models/{{else if eq .Page.Language "fr"}}/fr/research/models/{{else if eq .Page.Language "ja"}}/ja/research/models/{{else if eq .Page.Language "hi"}}/hi/research/models/{{else if eq .Page.Language "ar"}}/ar/research/models/{{else if eq .Page.Language "pt"}}/pt/research/models/{{else if eq .Page.Language "it"}}/it/research/models/{{else if eq .Page.Language "ko"}}/ko/research/models/{{else}}/research/models/{{end}}">{{if eq .Page.Language "et"}}Gratheoni mudelid{{else if eq .Page.Language "ru"}}Модели Gratheon{{else if eq .Page.Language "zh"}}Gratheon 模型{{else if eq .Page.Language "de"}}Gratheon-Modelle{{else if eq .Page.Language "es"}}Modelos de Gratheon{{else if eq .Page.Language "fr"}}Modèles Gratheon{{else if eq .Page.Language "ja"}}Gratheon モデル{{else if eq .Page.Language "hi"}}Gratheon मॉडल{{else if eq .Page.Language "ar"}}نماذج Gratheon{{else if eq .Page.Language "pt"}}Modelos da Gratheon{{else if eq .Page.Language "it"}}Modelli Gratheon{{else if eq .Page.Language "ko"}}Gratheon 모델{{else}}Gratheon models{{end}}</a></h3>
       <p>{{if eq .Page.Language "et"}}Mesilaste tuvastus, mesilasema tuvastus, BeePose ja varroa tuvastus mesilasel brauseri inferentsi, HTTP-teenuste ja servaseadmete katsete jaoks.{{else}}Bee detection, queen detection, BeePose, and varroa-on-bee detection spanning browser inference, HTTP services, and edge experimentation.{{end}}</p>
-    </article>
+      <p>{{if eq .Page.Language "et"}}Mesilaste tuvastus, mesilasema tuvastus, BeePose ja varroa tuvastus mesilasel brauseri inferentsi, HTTP-teenuste ja servaseadmete katsete jaoks.{{else if eq .Page.Language "ru"}}Обнаружение пчел, обнаружение маток, BeePose и обнаружение клеща варроа на пчеле для инференса в браузере, HTTP-сервисов и экспериментов на граничных устройствах.{{else if eq .Page.Language "zh"}}蜜蜂检测、蜂王检测、BeePose 和蜜蜂上的瓦螨检测，涵盖浏览器推理、HTTP 服务和边缘实验。{{else if eq .Page.Language "de"}}Bienenerkennung, Königinnenerkennung, BeePose und Varroa-auf-Biene-Erkennung für Browser-Inferenz, HTTP-Dienste und Edge-Experimente.{{else if eq .Page.Language "es"}}Detección de abejas, detección de reinas, BeePose y detección de varroa en abejas que abarcan inferencia en navegador, servicios HTTP y experimentación perimetral.{{else if eq .Page.Language "fr"}}Détection des abeilles, détection des reines, BeePose et détection du varroa sur les abeilles, couvrant l'inférence dans le navigateur, les services HTTP et l'expérimentation à la périphérie.{{else if eq .Page.Language "ja"}}ブラウザ推論、HTTPサービス、エッジ実験にまたがるミツバチ検出、女王蜂検出、BeePose、およびミツバチ上のヘギイタダニ検出。{{else if eq .Page.Language "hi"}}ब्राउज़र अनुमान, HTTP सेवाओं और एज प्रयोग तक फैले हुए मधुमक्खी का पता लगाना, रानी का पता लगाना, BeePose और मधुमक्खी पर वर्रोआ का पता लगाना।{{else if eq .Page.Language "ar"}}اكتشاف النحل، اكتشاف الملكة، BeePose، واكتشاف حلم الفاروا على النحل والذي يشمل الاستدلال في المتصفح، وخدمات HTTP، والتجارب على الأجهزة الطرفية.{{else if eq .Page.Language "pt"}}Detecção de abelhas, detecção de rainhas, BeePose e detecção de varroa em abelhas abrangendo inferência no navegador, serviços HTTP e experimentação de borda.{{else if eq .Page.Language "it"}}Rilevamento delle api, rilevamento della regina, BeePose e rilevamento della varroa sulle api che coprono l'inferenza del browser, i servizi HTTP e la sperimentazione edge.{{else if eq .Page.Language "ko"}}브라우저 추론, HTTP 서비스 및 에지 실험에 걸친 벌 감지, 여왕벌 감지, BeePose 및 벌의 바로아 응애 감지.{{else}}Bee detection, queen detection, BeePose, and varroa-on-bee detection spanning browser inference, HTTP services, and edge experimentation.{{end}}</p>
     <article class="research-card research-asset-card">
       <div class="research-asset-card__heading">
         <svg class="research-card-icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
@@ -183,9 +183,9 @@
           <path d="M19 13.5h5.5" />
           <path d="M33 35.5l3 3 6-7" />
         </svg>
-        <h3><a href="/assets/assets/entrance-observer-whitepaper.pdf">{{if eq .Page.Language "et"}}Entrance Observeri whitepaper{{else}}Entrance Observer whitepaper{{end}}</a></h3>
+        <h3><a href="/assets/assets/entrance-observer-whitepaper.pdf">{{if eq .Page.Language "et"}}Entrance Observeri whitepaper{{else if eq .Page.Language "ru"}}Белая книга Entrance Observer{{else if eq .Page.Language "zh"}}Entrance Observer 白皮书{{else if eq .Page.Language "de"}}Entrance Observer Whitepaper{{else if eq .Page.Language "es"}}Libro blanco de Entrance Observer{{else if eq .Page.Language "fr"}}Livre blanc Entrance Observer{{else if eq .Page.Language "ja"}}Entrance Observer ホワイトペーパー{{else if eq .Page.Language "hi"}}Entrance Observer श्वेतपत्र{{else if eq .Page.Language "ar"}}الورقة البيضاء لـ Entrance Observer{{else if eq .Page.Language "pt"}}Whitepaper do Entrance Observer{{else if eq .Page.Language "it"}}Whitepaper di Entrance Observer{{else if eq .Page.Language "ko"}}Entrance Observer 백서{{else}}Entrance Observer whitepaper{{end}}</a></h3>
       </div>
-      <p>{{if eq .Page.Language "et"}}Otsene tehniline sissepääs Gratheoni enda seiretöösse ja koostööaruteludesse.{{else}}A direct technical entry point into Gratheon’s own monitoring work and collaboration discussions.{{end}}</p>
+      <p>{{if eq .Page.Language "et"}}Otsene tehniline sissepääs Gratheoni enda seiretöösse ja koostööaruteludesse.{{else if eq .Page.Language "ru"}}Прямая техническая точка входа в собственную работу Gratheon по мониторингу и обсуждения сотрудничества.{{else if eq .Page.Language "zh"}}这是了解 Gratheon 监控工作和协作讨论的直接技术入口。{{else if eq .Page.Language "de"}}Ein direkter technischer Einstieg in Gratheons eigene Überwachungsarbeit und Kooperationsdiskussionen.{{else if eq .Page.Language "es"}}Un punto de entrada técnico directo al trabajo de monitoreo y debates de colaboración de Gratheon.{{else if eq .Page.Language "fr"}}Un point d'entrée technique direct dans le travail de surveillance de Gratheon et les discussions de collaboration.{{else if eq .Page.Language "ja"}}Gratheon独自の監視作業およびコラボレーションの議論への直接的な技術的エントリーポイント。{{else if eq .Page.Language "hi"}}Gratheon के अपने निगरानी कार्य और सहयोग चर्चाओं में एक सीधा तकनीकी प्रवेश बिंदु।{{else if eq .Page.Language "ar"}}نقطة دخول فنية مباشرة إلى أعمال المراقبة الخاصة بـ Gratheon ومناقشات التعاون.{{else if eq .Page.Language "pt"}}Um ponto de entrada técnico direto no próprio trabalho de monitoramento da Gratheon e discussões de colaboração.{{else if eq .Page.Language "it"}}Un punto di ingresso tecnico diretto nel lavoro di monitoraggio e nelle discussioni di collaborazione di Gratheon.{{else if eq .Page.Language "ko"}}Gratheon의 자체 모니터링 작업 및 협업 논의에 대한 직접적인 기술적 진입점.{{else}}A direct technical entry point into Gratheon’s own monitoring work and collaboration discussions.{{end}}</p>
     </article>
   </div>
 </section>
@@ -213,7 +213,7 @@
           {{if eq .Page.Layout "products"}}
             {{if eq .Page.Language "et"}}Tootesüsteem{{else}}Product system{{end}}
           {{else}}
-            {{if eq .Page.Language "et"}}Uurimiskogu{{else if eq .Page.Language "ru"}}Исследовательская база{{else}}Research library{{end}}
+            {{if eq .Page.Language "et"}}Uurimiskogu{{else if eq .Page.Language "ru"}}Исследовательская база{{else if eq .Page.Language "zh"}}研究库{{else if eq .Page.Language "de"}}Forschungsbibliothek{{else if eq .Page.Language "es"}}Biblioteca de investigación{{else if eq .Page.Language "fr"}}Bibliothèque de recherche{{else if eq .Page.Language "ja"}}研究ライブラリ{{else if eq .Page.Language "hi"}}अनुसंधान पुस्तकालय{{else if eq .Page.Language "ar"}}مكتبة البحوث{{else if eq .Page.Language "pt"}}Biblioteca de pesquisa{{else if eq .Page.Language "it"}}Libreria di ricerca{{else if eq .Page.Language "ko"}}연구 라이브러리{{else}}Research library{{end}}
           {{end}}
         </p>
         <h1 id="knowledge-title">{{.Page.Title}}</h1>
@@ -225,7 +225,7 @@
           {{else if eq .Page.Layout "products"}}
             {{if eq .Page.Language "et"}}Tarkvara, seadmed ja automaatika on esitatud ühe seotud süsteemina, et tootepere oleks lihtne sirvida ka sügava funktsioonistruktuuriga.{{else}}Software, devices, and automation are presented as one connected system, so product depth stays navigable without feeling like a reference manual.{{end}}
           {{else}}
-            {{if eq .Page.Language "et"}}Artiklid, andmestikud, mudelid ja välitöö märkmed on koondatud visuaalseks teadmiste kaardiks, mis säilitab kogu sügava struktuuri.{{else if eq .Page.Language "ru"}}Статьи, датасеты, модели и полевые заметки собраны в визуальную карту знаний, сохраняя глубокую структуру раздела.{{else}}Papers, datasets, models, and field notes are connected into a practical research map for digital beekeeping, from academic references to applied Gratheon experiments.{{end}}
+            {{if eq .Page.Language "et"}}Artiklid, andmestikud, mudelid ja välitöö märkmed on koondatud visuaalseks teadmiste kaardiks, mis säilitab kogu sügava struktuuri.{{else if eq .Page.Language "ru"}}Статьи, датасеты, модели и полевые заметки собраны в визуальную карту знаний, сохраняя глубокую структуру раздела.{{else if eq .Page.Language "zh"}}论文、数据集、模型和现场笔记被整合成一个用于数字养蜂的实用研究地图，涵盖从学术参考文献到应用的 Gratheon 实验。{{else if eq .Page.Language "de"}}Papiere, Datensätze, Modelle und Feldnotizen sind zu einer praktischen Forschungskarte für die digitale Imkerei verbunden, von akademischen Referenzen bis hin zu angewandten Gratheon-Experimenten.{{else if eq .Page.Language "es"}}Documentos, conjuntos de datos, modelos y notas de campo se conectan en un mapa de investigación práctico para la apicultura digital, desde referencias académicas hasta experimentos aplicados de Gratheon.{{else if eq .Page.Language "fr"}}Les articles, ensembles de données, modèles et notes de terrain sont reliés en une carte de recherche pratique pour l'apiculture numérique, des références académiques aux expériences appliquées de Gratheon.{{else if eq .Page.Language "ja"}}論文、データセット、モデル、フィールドノートは、学術的な参考文献から応用的なGratheonの実験まで、デジタル養蜂の実用的な研究マップに統合されています。{{else if eq .Page.Language "hi"}}कागजात, डेटासेट, मॉडल और फील्ड नोट्स डिजिटल मधुमक्खी पालन के लिए एक व्यावहारिक अनुसंधान मानचित्र में जुड़े हुए हैं, अकादमिक संदर्भों से लेकर लागू Gratheon प्रयोगों तक。{{else if eq .Page.Language "ar"}}يتم ربط الأوراق ومجموعات البيانات والنماذج والملاحظات الميدانية في خريطة بحثية عملية لتربية النحل الرقمية، من المراجع الأكاديمية إلى تجارب Gratheon التطبيقية.{{else if eq .Page.Language "pt"}}Artigos, conjuntos de dados, modelos e notas de campo estão conectados em um mapa de pesquisa prático para apicultura digital, desde referências acadêmicas até experimentos aplicados da Gratheon.{{else if eq .Page.Language "it"}}Documenti, set di dati, modelli e note sul campo sono collegati in una mappa di ricerca pratica per l'apicoltura digitale, dai riferimenti accademici agli esperimenti applicati di Gratheon.{{else if eq .Page.Language "ko"}}논문, 데이터 세트, 모델 및 현장 노트는 학술적 참고 자료부터 응용된 Gratheon 실험에 이르기까지 디지털 양봉을 위한 실용적인 연구 맵으로 연결됩니다.{{else}}Papers, datasets, models, and field notes are connected into a practical research map for digital beekeeping, from academic references to applied Gratheon experiments.{{end}}
           {{end}}
         </p>
         {{if not $isProductFeaturePage}}
@@ -252,9 +252,40 @@
             {{else if eq .Page.Language "ru"}}
               <a class="knowledge-action knowledge-action--primary" href="/ru/research/papers/">Статьи</a>
               <a class="knowledge-action" href="/ru/research/models/">Модели</a>
+            {{else if eq .Page.Language "zh"}}
+              <a class="knowledge-action knowledge-action--primary" href="/zh/research/papers/">浏览论文</a>
+              <a class="knowledge-action" href="/zh/research/datasets/">探索数据集</a>
+            {{else if eq .Page.Language "de"}}
+              <a class="knowledge-action knowledge-action--primary" href="/de/research/papers/">Papiere durchsuchen</a>
+              <a class="knowledge-action" href="/de/research/datasets/">Datensätze erkunden</a>
+            {{else if eq .Page.Language "es"}}
+              <a class="knowledge-action knowledge-action--primary" href="/es/research/papers/">Explorar documentos</a>
+              <a class="knowledge-action" href="/es/research/datasets/">Explorar conjuntos de datos</a>
+            {{else if eq .Page.Language "fr"}}
+              <a class="knowledge-action knowledge-action--primary" href="/fr/research/papers/">Parcourir les articles</a>
+              <a class="knowledge-action" href="/fr/research/datasets/">Explorer les ensembles de données</a>
+            {{else if eq .Page.Language "ja"}}
+              <a class="knowledge-action knowledge-action--primary" href="/ja/research/papers/">論文を閲覧</a>
+              <a class="knowledge-action" href="/ja/research/datasets/">データセットを検索</a>
+            {{else if eq .Page.Language "hi"}}
+              <a class="knowledge-action knowledge-action--primary" href="/hi/research/papers/">कागजात ब्राउज़ करें</a>
+              <a class="knowledge-action" href="/hi/research/datasets/">डेटासेट का अन्वेषण करें</a>
+            {{else if eq .Page.Language "ar"}}
+              <a class="knowledge-action knowledge-action--primary" href="/ar/research/papers/">تصفح الأوراق</a>
+              <a class="knowledge-action" href="/ar/research/datasets/">استكشاف مجموعات البيانات</a>
+            {{else if eq .Page.Language "pt"}}
+              <a class="knowledge-action knowledge-action--primary" href="/pt/research/papers/">Navegar pelos artigos</a>
+              <a class="knowledge-action" href="/pt/research/datasets/">Explorar conjuntos de dados</a>
+            {{else if eq .Page.Language "it"}}
+              <a class="knowledge-action knowledge-action--primary" href="/it/research/papers/">Sfoglia i documenti</a>
+              <a class="knowledge-action" href="/it/research/datasets/">Esplora i set di dati</a>
+            {{else if eq .Page.Language "ko"}}
+              <a class="knowledge-action knowledge-action--primary" href="/ko/research/papers/">논문 찾아보기</a>
+              <a class="knowledge-action" href="/ko/research/datasets/">데이터 세트 탐색</a>
             {{else}}
               <a class="knowledge-action knowledge-action--primary" href="/research/papers/">Browse papers</a>
               <a class="knowledge-action" href="/research/datasets/">Explore datasets</a>
+            {{end}}
             {{end}}
           {{end}}
         </div>
@@ -293,7 +324,7 @@
     </section>
     {{if ne .Page.Layout "products"}}
     {{if and (eq .Page.Layout "research") (or (and (eq .Page.Language .Site.I18n.Default) (eq .Page.URL "/research/")) (and (eq .Page.Language "et") (eq .Page.URL "/et/research/")))}}
-      {{template "research_assets" .}}
+    {{if and (eq .Page.Layout "research") (or (eq .Page.URL "/research/") (eq .Page.URL (printf "/%s/research/" .Page.Language)))}}
     {{end}}
       {{template "knowledge_map" .}}
     {{end}}
