@@ -9,6 +9,48 @@ Gratheon helps beekeepers to protect bees, understand colony development, and sc
 ![](img/office.webp)
 </div>
 
+<section class="founder-letter" id="founder-letter">
+  <article>
+    <h2>Shape the future of beekeeping</h2>
+    <div class="author">
+      <div>
+        <a href="https://twitter.com/tot_ra" aria-label="Artjom Kurapov on Twitter">
+          <img src="/assets/img/artjom.jpg" alt="author photo" width="50" height="50">
+        </a>
+      </div>
+      <div>
+        By <a href="https://www.linkedin.com/in/kurapov/">Artjom Kurapov</a>,<br>Beekeeper, Founding engineer
+      </div>
+    </div>
+    <p>I am a software engineer and 5 years ago I became a beekeeper to improve pollination of my garden and get higher yields. To me, bees are also a cute and interesting pet.</p>
+    <p>Bees are key species for our food security. Farmers are cooperating with beekeepers to increase yields through precise pollination.</p>
+    <p>Traditional beekeeping requires observability of a bee colony, because bees can experience starvation, queen loss, late swarming, or get Varroa destructor mite infestation which weakens the colony and causes overwintering collapse.</p>
+    <p>Observability is typically solved with a hard physical labor and frequent and time-limited inspections. Dressed in a protective suit, in the summer heat, you need to lift 20 kg beehive sections, which were designed 150 years ago and notice small details while you are getting stung by defending bees, causing inspection stress and killing bees.</p>
+    <p>As your apiary grows, this work becomes unscalable. Industrial beekeepers have multiple apiaries at distant locations that are hard to reach. Existing solutions do not adequately solve these issues.</p>
+    <p>💡 Our goal is to help beekeepers with observability and automation. Our vision is a fully autonomous multi-hive Robotic Apiary that can remotely inspect colonies. We will reach this step by step, starting with a software.</p>
+    <p>By providing actionable metrics and automation, beekeepers become more efficient, spend less time in the field and analyze more, doing precise intervention only when needed.</p>
+    <div class="future">
+      <div>
+        <p>Gratheon app is built on the shoulders of open-source software and is fully open source too.</p>
+        <p>Join us to improve life of 100 million bee colonies worldwide and meet pollination demand for more. We're looking for investors to scale our development, engineers to join our team, beekeepers to run field testing and advisors to guide us.</p>
+        <p>Got some ideas?</p>
+        <p class="futureActions">
+          <a class="action action_green" href="https://discord.gg/PcbP4uedWj">Tell us in Discord</a>
+          <a class="action blue" href="https://app.gratheon.com/account/register?lang=en">Sign up</a>
+        </p>
+      </div>
+    </div>
+  </article>
+</section>
+
+<iframe
+  class="authorIntro"
+  title="Author's introduction"
+  src="https://www.youtube.com/embed/gM3AJEAhmXc?rel=0"
+  frameborder="0"
+  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen></iframe>
+
 ## Elevator pitch
 ### Problem
 Did you know that on average 20% to 40 % of bee colonies die every year. They die from hunger, [🦀 Varroa Mite Infestations](problems/biological/🦀%20Infestations.md), late  [🧶 Swarming](problems/biological/🧶%20Swarming.md) or because beekeeper was too tired to lift heavy beehives to inspect them every 1-2 weeks.

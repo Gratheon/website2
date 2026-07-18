@@ -365,7 +365,7 @@ html[dir='rtl'] .lang-menu {
 }
 
 html[dir='rtl'] .front-section,
-html[dir='rtl'] .front-story,
+html[dir='rtl'] .founder-letter,
 html[dir='rtl'] .deviceText,
 html[dir='rtl'] article {
   text-align: right;
@@ -731,31 +731,32 @@ html[data-theme='dark'] .page-content a {
   flex: 0 0 16px;
 }
 
-.front-page .front-story {
+.founder-letter {
   color: #222;
   background: rgba(255, 255, 255, 0.98);
   max-width: 1100px;
-  margin: 40px auto;
+  margin: 32px 0;
   padding: 20px;
+  border-radius: 8px;
 }
 
-.front-page .front-story article {
+.founder-letter article {
   max-width: 900px;
   margin: 0 auto;
 }
 
-.front-page .author {
+.founder-letter .author {
   display: flex;
   align-items: center;
   gap: 10px;
   margin: 0 0 16px;
 }
 
-.front-page .author a {
+.founder-letter .author a {
   border: none;
 }
 
-.front-page .author img {
+.founder-letter .author img {
   display: block;
   width: 50px !important;
   height: 50px !important;
@@ -765,43 +766,72 @@ html[data-theme='dark'] .page-content a {
   object-fit: cover;
 }
 
-.front-page .future {
+.founder-letter .future {
   border-left: 6px solid var(--brand-yellow);
   background: #f7f7f7;
   padding: 12px 18px;
   margin-top: 18px;
 }
 
-html[data-theme='dark'] .front-page .front-story {
+html[data-theme='dark'] .founder-letter {
   color: var(--text-primary);
   background: #171a1d;
   border: 1px solid var(--nav-border);
 }
 
-html[data-theme='dark'] .front-page .front-story article {
+html[data-theme='dark'] .founder-letter article {
   color: var(--text-primary);
   background: transparent;
 }
 
-html[data-theme='dark'] .front-page .future {
+html[data-theme='dark'] .founder-letter .future {
   color: var(--text-primary);
   background: #20242a;
   border-left-color: var(--brand-yellow);
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.04);
 }
 
-.front-page .futureActions {
+.founder-letter .futureActions {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
 }
 
-.front-page .authorIntro {
+.founder-letter .action {
+  border-radius: 8px;
+  color: white;
+  padding: 8px 18px;
+  border: 0;
+  font-size: 17px;
+  font-weight: 700;
+  text-decoration: none;
+  text-shadow: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.2;
+}
+
+.founder-letter .action:visited {
+  color: white;
+}
+
+.founder-letter .blue { background: #0070ff; }
+.founder-letter .action_green { background: #108310; }
+
+.founder-letter .action:hover {
+  color: black;
+  background: yellow;
+}
+
+.founder-letter + .authorIntro,
+.knowledge-content .authorIntro {
   width: 100%;
   height: 500px;
-  margin: 0 auto;
+  margin: 24px 0;
   display: block;
   border: 0;
+  border-radius: 8px;
 }
 
 .front-page .brandStripe {
