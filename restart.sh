@@ -92,16 +92,40 @@ atomic_publish_release() {
 
 prune_old_releases() {
     local current_target
-    current_target="$(readlink "$PUBLIC_DIR" 2>/dev/null || true)"
+    current_target="$(readlink -f "$PUBLIC_DIR" 2>/dev/null || true)"
 
+    # WHY: interrupted publishes can leave a large directory without a release
+    # marker. It is not a valid rollback target and must not displace the one
+    # previous valid release from the retention window.
     find "$RELEASES_DIR" -mindepth 1 -maxdepth 1 -type d -print 2>/dev/null \
-        | sort -r \
-        | awk -v keep="$KEEP_RELEASES" 'NR > keep' \
-        | while IFS= read -r old_release; do
-            if [ "$old_release" = "$current_target" ]; then
+        | while IFS= read -r release; do
+            if [ -f "$release/.release" ]; then
                 continue
             fi
-            rm -rf "$old_release"
+            if [ "$(readlink -f "$release" 2>/dev/null || true)" = "$current_target" ]; then
+                continue
+            fi
+            rm -rf -- "$release"
+        done
+
+    # KEEP_RELEASES includes the active release. Always preserve it plus the
+    # newest valid rollback releases, even when the active symlink was rolled
+    # back to an older directory.
+    local rollback_releases=$((KEEP_RELEASES > 0 ? KEEP_RELEASES - 1 : 0))
+    find "$RELEASES_DIR" -mindepth 1 -maxdepth 1 -type d -print 2>/dev/null \
+        | while IFS= read -r release; do
+            [ -f "$release/.release" ] && printf '%s\n' "$release"
+        done \
+        | sort -r \
+        | while IFS= read -r old_release; do
+            if [ "$(readlink -f "$old_release" 2>/dev/null || true)" = "$current_target" ]; then
+                continue
+            fi
+            if [ "$rollback_releases" -gt 0 ]; then
+                rollback_releases=$((rollback_releases - 1))
+                continue
+            fi
+            rm -rf -- "$old_release"
         done
 }
 
