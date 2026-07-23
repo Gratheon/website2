@@ -57,7 +57,6 @@ flowchart LR
 	image-splitter --"инференс"--> models-frame-resources("<a href='https://github.com/Gratheon/models-frame-resources'>models-frame-resources</a>\n:8540")
 	graphql-router --> user-cycle("<a href='https://github.com/Gratheon/user-cycle'>user-cycle</a>\n:4000") --> mysql
 	graphql-router --> user-cycle --> stripe
-	graphql-router --> plantnet("<a href='https://github.com/Gratheon/plantnet'>plantnet</a>\n:8090") --> mysql
 
 	graphql-router --> weather("<a href='https://github.com/Gratheon/weather'>weather</a>\n:8070")
 ```

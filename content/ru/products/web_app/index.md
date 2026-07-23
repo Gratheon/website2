@@ -99,7 +99,6 @@ layout: products
 - [🐝 Подсчёт пчёл](hobbyist-tier/count-bees.md)
 - [🐝 Распознавание рабочих пчёл](hobbyist-tier/worker-bee-detection.md)
 - [👑 Распознавание матки](hobbyist-tier/queen-detection.md)
-- [🌻 Список местных растений](hobbyist-tier/list-local-plants.md)
 - [🦀 Подсчёт varroa на донной доске](starter-tier/hive-bottom-varroa-count.md)
 - [🤖 Советы по пчеловодству с LLM](starter-tier/beekeeping-advice-with-llm.md)
 - [🐝 Распознавание и управление ячейками сота](starter-tier/honeycomb-cell-detection-and-management.md)

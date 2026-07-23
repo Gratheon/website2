@@ -69,7 +69,7 @@ If you use our Apps, we may also collect:
 <p><strong>💡 In Short:</strong> We may collect limited non-personal data from external sources to enhance application features.</p>
 </div>
 
-We may obtain non-personal information from external sources, such as plant identification data from services like PlantNet, to enrich the information available within our application. We do not collect personal information about you from public databases or marketing partners for marketing purposes.
+We may obtain limited non-personal information from external sources to enrich the information available within our application. We do not collect personal information about you from public databases or marketing partners for marketing purposes.
 
 #### 1.5. AI Processing of Your Data
 

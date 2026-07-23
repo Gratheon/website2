@@ -226,6 +226,6 @@ Kanban board: headings are columns, tasks use `[ ]` (open) or `[x]` (done).
 - **Technology stack**: Go (swarm-api, graphql-router, telemetry-api), TypeScript/Node.js (web-app, gate-video-stream, rate-limiter), Python (entrance-observer, ML scripts)
 - **Databases**: MySQL (primary), Redis (pub/sub + caching), InfluxDB (telemetry), ClickHouse (analytics)
 - **Edge hardware**: Jetson Orin/Nano running entrance-observer for real-time bee counting
-- **ML models**: Queen detection (mAP=0.92), Varroa mite counter, PlantNet species identifier — isolated in separate repos
+- **ML models**: Queen detection (mAP=0.92), Varroa mite counter - isolated in separate repos
 - **Deployment**: Docker Compose per service; no unified orchestration yet
 - **Node version**: use `nvm use 24` for majority of projects
