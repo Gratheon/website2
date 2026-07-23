@@ -291,5 +291,4 @@ hide_table_of_contents: true
 
 **Gratheon OÜ**
 Email: [pilot@gratheon.com](mailto:pilot@gratheon.com)
-Phone: (+372) 58058720
 Data Protection Officer: Artjom Kurapov

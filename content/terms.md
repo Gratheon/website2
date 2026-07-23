@@ -102,7 +102,7 @@ We offer a free plan to new users who register with the Site. Certain paid plans
 
 All purchases are non-refundable. You can cancel your subscription at any time by logging into your account or contacting us using the contact information provided at the top of this document. Your cancellation will take effect at the end of the current paid term.
 
-If you are unsatisfied with our services, please email us at pilot@gratheon.com or call us at (+372) 58058720.
+If you are unsatisfied with our services, please email us at pilot@gratheon.com.
 
 ### 8. Prohibited Activities
 

@@ -13,7 +13,6 @@ sidebar_position: 10
 
 - Gratheon OÜ, Reg. nr. [12245103](https://ariregister.rik.ee/eng/company/12245103/Gratheon-O%C3%9C)
 - Email: [pilot@gratheon.com](mailto:pilot@gratheon.com)
-- Телефон: (+372) 58058720
 - Discord: [https://discord.gg/PcbP4uedWj](https://discord.gg/PcbP4uedWj)
 
 ## Пчеловодство
