@@ -14,7 +14,7 @@ Browse research papers by publication year.
 
 Years:
 
-- [2026](2026.md) (31)
+- [2026](2026.md) (33)
 - [2025](2025.md) (20)
 - [2024](2024.md) (19)
 - [2023](2023.md) (22)
