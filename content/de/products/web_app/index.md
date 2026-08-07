@@ -1,93 +1,70 @@
 ---
 sidebar_position: 2
 title: 📱 Web-App
-navTitle: Web-App
 layout: products
 ---
 
-Die Gratheon Web-App hilft Imkern dabei, [Bienenstandsdaten](free-tier/apiary-management.md) zu verwalten, mit modularen Geräten am Bienenstock zu kommunizieren, Rähmchen- und Bodeneinlagenfotos zu analysieren, [Zeitreihen-Telemetrie](pro-tier/hive-telemetry-storage.md) zu speichern, [Warnungen](flexible-tier/alerts.md) zu erzeugen und KI-Vorschläge für Entscheidungen zu nutzen.
+Die Gratheon Web-App hilft Imkern bei der Verwaltung von [Bienenweiden](free-tier/apiary-management.md), Kommunikation mit installierten Bienenstock-Geräten, Analyse von Rähmchen- und Bodenbrettfotos, Speicherung von [Zeitreihen-Telemetrie](pro-tier/hive-telemetry-storage.md), Generierung von [Warnungen](flexible-tier/alerts.md) und Bereitstellung von KI-Empfehlungen.
 
 `status`: [TRL 6](https://www.nasa.gov/directorates/somd/space-communications-navigation-program/technology-readiness-levels/)
 
-## Zentrale Domänenobjekte
+## Hauptfunktionen der Web-App
 
-| Objekt | Beschreibung | Wichtige Eigenschaften |
-|--------|--------------|------------------------|
-| **Bienenstand** | Gruppe von Bienenstöcken an einem bestimmten Ort. | Standort, Name, aktiver Status |
-| **Bienenstock** | Physische Beutenstruktur mit vertikalen Abschnitten. Kann geteilt, zusammengeführt oder aufgegeben werden. | Name, Farbe, Status, Zargen, Volk, Verlauf |
-| **Volk (Kolonie/Königin)** | Bienen-Superorganismus, geführt von einer eierlegenden Königin. | Rasse, Einbringungsjahr, Alter, Behandlungen |
-| **Zarge (Beutenabschnitt)** | Hölzerner Abschnitt, der Rähmchen enthält. | Typ, Position, Farbe, Rähmchen |
-| **Rähmchen** | Holzrahmen mit Wachs innerhalb einer Zarge. | Typ, Position, linke und rechte Seite |
-| **Rähmchenseite** | Eine Seite eines Rähmchens, auf der Fotos für KI-Analyse hochgeladen werden können. | Bilder und erkannte Ressourcen |
-| **Durchsicht** | Momentaufnahme des gesamten Beutenzustands bei einem imkerlichen Eingriff. | Beuten-ID, Daten, Zeitpunkt |
-| **Behandlung** | Eingriffe gegen Varroa, erfasst pro Volk, Zarge oder Beute. | Typ, Datum, Ziel |
-| **Metriken (Telemetrie)** | Zeitreihendaten von IoT-Geräten. | Temperatur, Luftfeuchtigkeit, Gewicht, Zeitpunkt |
-| **Fluglochbewegung** | Analyse des Bienenverkehrs aus Fluglochkameras. | Ein-/Ausflüge, Nettofluss, Geschwindigkeit |
-| **Warnung** | Hinweis, der durch Schwellwerte und Regeln ausgelöst wird. | Text, Metrik, Beute, Zustellung, Datum |
+### 📊 Bienenstockverwaltung
+- Erstellen und Verwalten von Bienenstöcken
+- Tracking von Familien (Kolonien/Königinnen)
+- Dokumentation von Inspektionen und Behandlungen
+- Verwaltung von Rähmchen und Waben
+
+### 🔍 Varroa-Milben-Erkennung
+- Automatische Zählung von Milben auf Bodenbrettfotos
+- Historische Vergleiche zur Entwicklung des Befalls
+- Warnungen bei kritischen Schwellenwerten
+
+### 📈 Telemetrie-Analyse
+- Echtzeit-Daten von Waagen und Sensoren
+- Gewichtskurven (Honigfluss, Schwarmneigung)
+- Temperatur- und Luftfeuchtigkeitsmonitoring
+- Automatische Auswertung mit KI
+
+### 🔔 Benachrichtigungen
+- Individuelle Warnregeln konfigurierbar
+- Push-Benachrichtigungen bei Anomalien
+- Mehrere Kanäle: E-Mail, Telegram, SMS
 
 ## Hauptanwendungsfälle
 
-### Fotos hochladen, um einen Überblick über das Volk zu erhalten
-- Eine Beute anlegen.
-- Eine Zarge öffnen, Rähmchen hinzufügen und ein Foto eines Rähmchens mit Bienen und Wabenzellen hochladen.
-- Warten, bis das Backend das Bild verarbeitet hat.
-- KI-gestützte Statistiken über Bienenzahl und Zellverteilung erhalten.
-- Völker anhand realer Daten vergleichen.
+### 1. Foto-Upload für Kolonie-Übersicht
+- Bienenstock erstellen und Rähmchen hinzufügen
+- Fotos von Waben und Bodenbrett hochladen
+- KI-gestützte Analyse erhalten (Bienenzählung, Zellverteilung)
+- Vergleich verschiedener Stöcke
 
-### Volksentwicklung über die Zeit verfolgen
-- Jede Durchsicht als zeitliche Momentaufnahme des Beutenzustands speichern.
-- Prüfen, wie sich die Ressourcenverteilung zwischen Durchsichten verändert.
-- Den Verlauf nutzen, um über Füttern, Behandeln, Teilen oder Abwarten zu entscheiden.
+### 2. Entwicklung der Kolonie über Zeit verfolgen
+- Nach Inspektionen Fotos der Rähmchen hochladen
+- Inspektion als Snapshot speichern
+- Historische Entwicklungen analysieren
 
-### Telemetrie von IoT-Sensoren senden
-- In den Kontoeinstellungen ein API-Token erzeugen.
-- Das Sensorgerät mit WLAN verbinden, wie in der [Sensor-Dokumentation](/docs/beehive-sensors/) beschrieben.
-- Den Metriken-Tab der Beute öffnen und Gewichts- sowie Temperaturdiagramme prüfen.
-- Sensordaten mit Wetter, Durchsichten und Warnungen korrelieren.
+### 3. Telemetrie-Daten senden von IoT-Sensoren
+- API-Token in den Einstellungen generieren
+- IoT-Gerät einschalten und mit WiFi verbinden
+- Gewicht, Temperatur und Luftfeuchtigkeit in Echtzeit verfolgen
+- Korrelation mit Wetterdaten herstellen
 
-### Fluglochvideo streamen
-- Eine [Entrance-Observer](/de/products/entrance_observer/)-Kamera einrichten.
-- Prüfen, ob der Videostream sichtbar ist.
-- Metriken und Warnungen nutzen, um Aktivität, Räuberei, Schwärmen oder andere Ereignisse einzuordnen.
+### 4. Eingangsvideo streamen
+- [Entrance Observer](../entrance_observer/entrance_observer.md) Kamera einrichten
+- Video-Streaming über die App abrufen
+- Bienenaktivität von außen beobachten
+- Varroa-Milbenbefall am Bodenbrett erkennen
 
-### Varroa über die Bodeneinlage überwachen
-- Eine Bodeneinlage zur Beute hinzufügen.
-- Ein Foto der weißen Einschubplatte mit Varroamilben hochladen.
-- Bilder werden zusammen mit Durchsichten versioniert, damit ein historischer Verlauf entsteht.
-- [Varroa-Zählung auf der Bodeneinlage](starter-tier/hive-bottom-varroa-count.md) unterstützt die Bewertung des Befalls und Behandlungsentscheidungen.
+## Preise und Tarife
 
-## Lokalisierte Funktionsseiten
-Diese deutschen Unterseiten spiegeln zentrale englische Web-App-Funktionen wider und werden von der deutschen Preis- und Produktnavigation verlinkt:
+| Tarif | Preis | Umfang |
+|-------|-------|--------|
+| 🆓 Free Tier | Kostenlos | Bis 10 Stöcke, Grundlegende Telemetrie |
+| 💎 Hobbyist | €9/Monat | Unbegrenzt, Varroa-Zählung, API-Zugang |
+| 👑 Pro | €29/Monat | Alle Funktionen, Video-Streaming, Priority Support |
 
-### Free-Tier
-- [Bienenstandsverwaltung](free-tier/apiary-management.md)
-- [Beutenverwaltung](free-tier/hive-management.md)
-- [Rähmchenseiten verwalten](free-tier/frame-side-management.md)
-- [Tastaturkürzel](free-tier/keyboard-shortcuts.md)
-- [Öffentliche Beutenansicht](free-tier/public-beehive-view.md)
-- [QR-Code-Generierung](free-tier/qr-code-generation.md)
-- [Varroa-Behandlungsjournal](free-tier/varroa-treatment-diary.md)
-- [Fütterungsverlauf](free-tier/feeding-history.md)
-- [Live-Königinnenfinder](free-tier/live-queen-finder.md)
-- [Übertragung des Beuteneigentums](free-tier/hive-ownership-transfer.md)
-
-### Hobbyist-Tier
-- [Beuten-Standortplaner](hobbyist-tier/hive-placement-planner.md)
-- [Durchsichtsverwaltung](hobbyist-tier/inspection-management.md)
-- [Volk teilen](hobbyist-tier/split-bee-colony.md)
-- [Völker zusammenführen](hobbyist-tier/join-bee-colonies.md)
-- [Lager- und Inventarverwaltung](hobbyist-tier/inventory-management.md)
-
-### Starter-Tier
-- [Wabenzellenerkennung und -verwaltung](starter-tier/honeycomb-cell-detection-and-management.md)
-- [Varroa-Zählung auf der Bodeneinlage](starter-tier/hive-bottom-varroa-count.md)
-- [Zeichnen auf dem Bild](starter-tier/drawing-on-canvas.md)
-- [Imkereiberatung mit LLM](starter-tier/beekeeping-advice-with-llm.md)
-
-### Pro- und Zukunftsfunktionen
-- [Speicherung von Beuten-Telemetrie](pro-tier/hive-telemetry-storage.md)
-- [Zeitreihen-Datenanalyse](pro-tier/timeseries-data-analytics.md)
-- [Völkervergleich und Analytik](pro-tier/colony-comparison-analytics.md)
-- [Warnungen](flexible-tier/alerts.md)
-- [Zeitreihen-Anomalieerkennung](future-ideas/pro-tier-ideas/timeseries-anomaly-detection.md)
-- [Geräteverwaltung](future-ideas/pro-tier-ideas/device-management.md)
+### Für Investoren 💶
+- Marktchance für ein einzelnes Gerät über 150M€ ARR in Europa allein
+- SaaS / Deeptech / Agrotech / Robotik
