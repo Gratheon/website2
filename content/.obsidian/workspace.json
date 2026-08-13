@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "products/web_app/pro-tier/colony-comparison-analytics.md",
+                "file": "about/mission/Symbolism.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "colony-comparison-analytics"
+              "title": "Symbolism"
             }
           }
         ]
@@ -183,10 +183,11 @@
       "bases:Create new base": false
     }
   },
-  "active": "b8fbd663229c3f08",
+  "active": "8006753b51e09268",
   "lastOpenFiles": [
-    "products/web_app/pro-tier/count-bees-in-the-cloud.md",
+    "about/mission/img/logo_v7-linkedin-hdr7x.png",
     "products/web_app/pro-tier/colony-comparison-analytics.md",
+    "products/web_app/pro-tier/count-bees-in-the-cloud.md",
     "products/web_app/flexible-tier/alerts.md",
     "products/web_app/flexible-tier/video_playback.md",
     "products/web_app/future-ideas/varroa-mite-detection.md",
@@ -210,7 +211,6 @@
     "products/web_app/future-ideas/pro-tier-ideas/grafana-access.md",
     "products/web_app/future-ideas/pro-tier-ideas/google-calendar-integration.md",
     "products/web_app/future-ideas/pro-tier-ideas/calendar-view.md",
-    "products/web_app/future-ideas/pro-tier-ideas/multiple-user-support.md",
     "products/web_app/future-ideas/pro-tier-ideas",
     "products/web_app/future-ideas/hobbyist-tier-ideas",
     "products/web_app/future-ideas",

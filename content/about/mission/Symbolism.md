@@ -63,16 +63,21 @@ Recomendation on logo usage
 - You can use sunflower emoji 🌻 as stylized alternative in chat conversations
 
 
-![](img/logo-png-high-res.png)
-(PNG version, with white outline)
+## Wide PNG version
+![442](img/logo-png-high-res.png)
+## Wide SVG version
+![438](../../assets/img/logo_v7w.svg)
 
-![](../../assets/img/logo_v7w.svg)
+## Minimal icon-like PNG version
 
-(wide version, SVG version with white outline)
+![326](../../assets/img/logo_v7.png)
+## Minimal icon-like SVG version
+![307](../../assets/img/logo_v7.svg)
 
+## Minimal HDR png version with glow and mac OSX retina display
 
-![](../../assets/img/logo_v7.png)
-![](../../assets/img/logo_v7.svg)
+![[logo_v7-linkedin-hdr7x.png|278]]
+
 
 ## Email template
 ![](../img/Screenshot%202024-05-20%20at%2017.24.44.png)
