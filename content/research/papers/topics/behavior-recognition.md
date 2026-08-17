@@ -9,14 +9,14 @@ title: "Research topic: Behavior Recognition"
 ## Summary
 
 - Topic key: `behavior-recognition`
-- Total papers: 1
+- Total papers: 2
 - [Research papers hub](../index.md)
 - [All topics](index.md)
 
 ## Product areas
 
 - [Colony Health](../product-areas/colony-health.md) (1)
-- [Monitoring Platform](../product-areas/monitoring-platform.md) (1)
+- [Monitoring Platform](../product-areas/monitoring-platform.md) (2)
 
 <section class="research-year-filter" aria-labelledby="research-year-filter-title">
   <h2 id="research-year-filter-title">Publications</h2>
@@ -25,13 +25,13 @@ title: "Research topic: Behavior Recognition"
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="behavior-recognition-year-filter" value="all" checked>
         <span class="research-year-tab__label">All</span>
-        <span class="research-year-tab__count">1</span>
+        <span class="research-year-tab__count">2</span>
       </label>
       <span class="research-year-tab__arrow" aria-hidden="true">›</span>
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="behavior-recognition-year-filter" value="2026">
         <span class="research-year-tab__label">2026</span>
-        <span class="research-year-tab__count">1</span>
+        <span class="research-year-tab__count">2</span>
       </label>
     </div>
     <div class="research-year-filter__panels">
@@ -46,6 +46,7 @@ title: "Research topic: Behavior Recognition"
         </tr>
         </thead>
         <tbody>
+        <tr><td><a href="/research/papers/beehaviourlab-a-high-throughput-platform-for-sublethal-stressor-screening-in-insects/">BEEhaviourLab: A high-throughput platform for sublethal stressor screening in insects</a></td><td>2026</td><td>🇬🇧 University of Oxford; 🇬🇧 Queen Mary University of London; 🇬🇧 University of Edinburgh</td></tr>
         <tr><td><a href="/research/papers/the-relevance-of-compound-events-in-bee-traffic-monitoring/">The Relevance of Compound Events in Bee Traffic Monitoring</a></td><td>2026</td><td>🇵🇷 University of Puerto Rico at Río Piedras</td></tr>
         </tbody>
         </table>
@@ -62,6 +63,7 @@ title: "Research topic: Behavior Recognition"
         </tr>
         </thead>
         <tbody>
+        <tr><td><a href="/research/papers/beehaviourlab-a-high-throughput-platform-for-sublethal-stressor-screening-in-insects/">BEEhaviourLab: A high-throughput platform for sublethal stressor screening in insects</a></td><td>2026</td><td>🇬🇧 University of Oxford; 🇬🇧 Queen Mary University of London; 🇬🇧 University of Edinburgh</td></tr>
         <tr><td><a href="/research/papers/the-relevance-of-compound-events-in-bee-traffic-monitoring/">The Relevance of Compound Events in Bee Traffic Monitoring</a></td><td>2026</td><td>🇵🇷 University of Puerto Rico at Río Piedras</td></tr>
         </tbody>
         </table>

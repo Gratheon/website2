@@ -9,17 +9,17 @@ layout: research
 ## Summary
 
 - Topic key: `edge-ai-energy`
-- Total papers: 21
+- Total papers: 23
 - [Research papers hub](../index.md)
 - [All topics](index.md)
 
 ## Product areas
 
-- [Colony Health](../product-areas/colony-health.md) (7)
-- [Edge Device](../product-areas/edge-device.md) (8)
+- [Colony Health](../product-areas/colony-health.md) (8)
+- [Edge Device](../product-areas/edge-device.md) (10)
 - [Gate Tracker](../product-areas/gate-tracker.md) (2)
 - [Hive Scanner](../product-areas/hive-scanner.md) (2)
-- [Monitoring Platform](../product-areas/monitoring-platform.md) (16)
+- [Monitoring Platform](../product-areas/monitoring-platform.md) (18)
 
 <section class="research-year-filter" aria-labelledby="research-year-filter-title">
   <h2 id="research-year-filter-title">Publications</h2>
@@ -28,7 +28,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="edge-ai-energy-year-filter" value="all" checked>
         <span class="research-year-tab__label">All</span>
-        <span class="research-year-tab__count">21</span>
+        <span class="research-year-tab__count">23</span>
       </label>
       <span class="research-year-tab__arrow" aria-hidden="true">›</span>
       <label class="research-year-tab">
@@ -70,7 +70,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="edge-ai-energy-year-filter" value="2026">
         <span class="research-year-tab__label">2026</span>
-        <span class="research-year-tab__count">10</span>
+        <span class="research-year-tab__count">12</span>
       </label>
     </div>
     <div class="research-year-filter__panels">
@@ -89,9 +89,11 @@ layout: research
         <tr><td><a href="/research/papers/adaptive-measurement-noise-for-robust-kalman-filtering-in-smart-beehive-telemetry/">Adaptive Measurement Noise for Robust Kalman Filtering in Smart Beehive Telemetry</a></td><td>2026</td><td>🇬🇧 University of Westminster; 🇲🇾 Technical University of Malaysia Malacca; 🇫🇮 University of Oulu</td></tr>
         <tr><td><a href="/research/papers/an-automated-ai-based-vision-inspection-system-for-bee-mite-and-deformed-bee-detection-using-yolo-models/">An Automated AI-Based Vision Inspection System for Bee Mite and Deformed Bee Detection Using YOLO Models</a></td><td>2026</td><td>🇰🇷 Kangwon National University; 🇰🇷 National Institute of Agricultural Sciences; 🇰🇷 Terramolab Ltd.</td></tr>
         <tr><td><a href="/research/papers/an-intelligent-monitoring-system-for-forecasting-and-anomaly-detection-in-precision-beekeeping/">An intelligent monitoring system for forecasting and anomaly detection in precision beekeeping</a></td><td>2026</td><td>🇫🇷 EFREI Research Lab; 🇫🇷 Université Paris-Panthéon-Assas</td></tr>
+        <tr><td><a href="/research/papers/biome-a-resource-efficient-bioacoustic-foundational-model-for-iot-applications/">BioME: A Resource-Efficient Bioacoustic Foundational Model for IoT Applications</a></td><td>2026</td><td>🇨🇦 Institut national de la recherche scientifique (INRS)</td></tr>
         <tr><td><a href="/research/papers/communication-efficient-embedded-fft-processing-for-acoustic-telemetry-in-lpwan-based-beehive-monitoring-systems/">Communication-efficient Embedded FFT Processing for Acoustic Telemetry in LPWAN-based Beehive Monitoring Systems</a></td><td>2026</td><td>🇵🇱 Lodz University of Technology</td></tr>
         <tr><td><a href="/research/papers/insectdct-a-generalized-pipeline-for-detection-taxonomic-classification-and-tracking-of-insects-in-camera-trap-recordings/">InsectDCT: A generalized pipeline for detection, taxonomic classification, and tracking of insects in camera-trap recordings</a></td><td>2026</td><td>🇩🇰 Aarhus University; 🇩🇪 Helmholtz Centre for Environmental Research; 🇪🇸 Mediterranean Institute for Advanced Studies; 🇬🇪 Ilia State University</td></tr>
         <tr><td><a href="/research/papers/m3danet-a-lightweight-semi-supervised-network-and-embedded-system-for-bee-colony-counting/">M3DANet: A Lightweight Semi-Supervised Network and Embedded System for Bee Colony Counting</a></td><td>2026</td><td>🇨🇳 Shandong Agricultural University; 🇨🇳 Apiculture Institute of Jiangxi Province</td></tr>
+        <tr><td><a href="/research/papers/on-device-deep-learning-for-real-time-acoustic-monitoring-of-endangered-bombus-dahlbomii-and-invasive-congeners/">On-device deep learning for real-time acoustic monitoring of endangered Bombus dahlbomii and invasive congeners</a></td><td>2026</td><td>🇺🇸 Massachusetts Institute of Technology; 🇯🇵 Kioxia Corporation; 🇨🇭 ETH Zurich; 🇦🇷 INIBIOMA, Universidad Nacional del Comahue and CONICET</td></tr>
         <tr><td><a href="/research/papers/physics-aware-vision-instrumentation-for-stingless-bee-counting-at-hive-entrance-using-hybrid-edge-cloud-object-detection/">Physics-aware vision instrumentation for stingless bee counting at hive entrance using hybrid edge-cloud object detection</a></td><td>2026</td><td>🇲🇾 Universiti Teknologi Malaysia; 🇮🇩 Universitas Negeri Jakarta; 🇮🇩 Institut Teknologi Indonesia; 🇮🇩 Politeknik Negeri Bandung; 🇮🇩 National Research and Innovation Agency</td></tr>
         <tr><td><a href="/research/papers/spectrogram-based-deep-learning-models-for-acoustic-identification-of-honey-bees-in-complex-environmental-noises/">Spectrogram-Based Deep Learning Models for Acoustic Identification of Honey Bees in Complex Environmental Noises</a></td><td>2026</td><td>🇵🇰 Namal University; 🇵🇰 University of Mianwali; 🇦🇪 Abu Dhabi University; 🇹🇷 Nişantaşı University</td></tr>
         <tr><td><a href="/research/papers/technical-specification-of-a-novel-apivoltaic-system-integrating-digital-hive-monitoring-with-photovoltaic-energy-systems/">Technical Specification of a Novel Apivoltaic System: Integrating Digital Hive Monitoring with Photovoltaic Energy Systems</a></td><td>2026</td><td>🇷🇴 University of Agricultural Sciences and Veterinary Medicine of Cluj-Napoca; 🇷🇴 APIVOLT S.R.L.; 🇮🇹 University of Molise</td></tr>
@@ -125,9 +127,11 @@ layout: research
         <tr><td><a href="/research/papers/adaptive-measurement-noise-for-robust-kalman-filtering-in-smart-beehive-telemetry/">Adaptive Measurement Noise for Robust Kalman Filtering in Smart Beehive Telemetry</a></td><td>2026</td><td>🇬🇧 University of Westminster; 🇲🇾 Technical University of Malaysia Malacca; 🇫🇮 University of Oulu</td></tr>
         <tr><td><a href="/research/papers/an-automated-ai-based-vision-inspection-system-for-bee-mite-and-deformed-bee-detection-using-yolo-models/">An Automated AI-Based Vision Inspection System for Bee Mite and Deformed Bee Detection Using YOLO Models</a></td><td>2026</td><td>🇰🇷 Kangwon National University; 🇰🇷 National Institute of Agricultural Sciences; 🇰🇷 Terramolab Ltd.</td></tr>
         <tr><td><a href="/research/papers/an-intelligent-monitoring-system-for-forecasting-and-anomaly-detection-in-precision-beekeeping/">An intelligent monitoring system for forecasting and anomaly detection in precision beekeeping</a></td><td>2026</td><td>🇫🇷 EFREI Research Lab; 🇫🇷 Université Paris-Panthéon-Assas</td></tr>
+        <tr><td><a href="/research/papers/biome-a-resource-efficient-bioacoustic-foundational-model-for-iot-applications/">BioME: A Resource-Efficient Bioacoustic Foundational Model for IoT Applications</a></td><td>2026</td><td>🇨🇦 Institut national de la recherche scientifique (INRS)</td></tr>
         <tr><td><a href="/research/papers/communication-efficient-embedded-fft-processing-for-acoustic-telemetry-in-lpwan-based-beehive-monitoring-systems/">Communication-efficient Embedded FFT Processing for Acoustic Telemetry in LPWAN-based Beehive Monitoring Systems</a></td><td>2026</td><td>🇵🇱 Lodz University of Technology</td></tr>
         <tr><td><a href="/research/papers/insectdct-a-generalized-pipeline-for-detection-taxonomic-classification-and-tracking-of-insects-in-camera-trap-recordings/">InsectDCT: A generalized pipeline for detection, taxonomic classification, and tracking of insects in camera-trap recordings</a></td><td>2026</td><td>🇩🇰 Aarhus University; 🇩🇪 Helmholtz Centre for Environmental Research; 🇪🇸 Mediterranean Institute for Advanced Studies; 🇬🇪 Ilia State University</td></tr>
         <tr><td><a href="/research/papers/m3danet-a-lightweight-semi-supervised-network-and-embedded-system-for-bee-colony-counting/">M3DANet: A Lightweight Semi-Supervised Network and Embedded System for Bee Colony Counting</a></td><td>2026</td><td>🇨🇳 Shandong Agricultural University; 🇨🇳 Apiculture Institute of Jiangxi Province</td></tr>
+        <tr><td><a href="/research/papers/on-device-deep-learning-for-real-time-acoustic-monitoring-of-endangered-bombus-dahlbomii-and-invasive-congeners/">On-device deep learning for real-time acoustic monitoring of endangered Bombus dahlbomii and invasive congeners</a></td><td>2026</td><td>🇺🇸 Massachusetts Institute of Technology; 🇯🇵 Kioxia Corporation; 🇨🇭 ETH Zurich; 🇦🇷 INIBIOMA, Universidad Nacional del Comahue and CONICET</td></tr>
         <tr><td><a href="/research/papers/physics-aware-vision-instrumentation-for-stingless-bee-counting-at-hive-entrance-using-hybrid-edge-cloud-object-detection/">Physics-aware vision instrumentation for stingless bee counting at hive entrance using hybrid edge-cloud object detection</a></td><td>2026</td><td>🇲🇾 Universiti Teknologi Malaysia; 🇮🇩 Universitas Negeri Jakarta; 🇮🇩 Institut Teknologi Indonesia; 🇮🇩 Politeknik Negeri Bandung; 🇮🇩 National Research and Innovation Agency</td></tr>
         <tr><td><a href="/research/papers/spectrogram-based-deep-learning-models-for-acoustic-identification-of-honey-bees-in-complex-environmental-noises/">Spectrogram-Based Deep Learning Models for Acoustic Identification of Honey Bees in Complex Environmental Noises</a></td><td>2026</td><td>🇵🇰 Namal University; 🇵🇰 University of Mianwali; 🇦🇪 Abu Dhabi University; 🇹🇷 Nişantaşı University</td></tr>
         <tr><td><a href="/research/papers/technical-specification-of-a-novel-apivoltaic-system-integrating-digital-hive-monitoring-with-photovoltaic-energy-systems/">Technical Specification of a Novel Apivoltaic System: Integrating Digital Hive Monitoring with Photovoltaic Energy Systems</a></td><td>2026</td><td>🇷🇴 University of Agricultural Sciences and Veterinary Medicine of Cluj-Napoca; 🇷🇴 APIVOLT S.R.L.; 🇮🇹 University of Molise</td></tr>

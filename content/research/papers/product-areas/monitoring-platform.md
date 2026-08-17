@@ -9,25 +9,25 @@ layout: research
 ## Summary
 
 - Product area key: `monitoring-platform`
-- Total papers: 82
+- Total papers: 87
 - [Research papers hub](../index.md)
 - [All product areas](index.md)
 
 ## Topics
 
-- [Audio Acoustics](../topics/audio-acoustics.md) (20)
+- [Audio Acoustics](../topics/audio-acoustics.md) (23)
 - [Bee Behaviour](../topics/bee-behaviour.md) (14)
 - [Bee Counting](../topics/bee-counting.md) (1)
 - [Bee Traffic](../topics/bee-traffic.md) (1)
-- [Behavior Recognition](../topics/behavior-recognition.md) (1)
-- [Colony Health](../topics/colony-health.md) (8)
-- [Computer Vision](../topics/computer-vision.md) (23)
+- [Behavior Recognition](../topics/behavior-recognition.md) (2)
+- [Colony Health](../topics/colony-health.md) (9)
+- [Computer Vision](../topics/computer-vision.md) (26)
 - [Datasets](../topics/datasets.md) (2)
-- [Datasets Benchmarks](../topics/datasets-benchmarks.md) (12)
-- [Edge AI Energy](../topics/edge-ai-energy.md) (16)
-- [IoT Sensors](../topics/iot-sensors.md) (59)
+- [Datasets Benchmarks](../topics/datasets-benchmarks.md) (15)
+- [Edge AI Energy](../topics/edge-ai-energy.md) (18)
+- [IoT Sensors](../topics/iot-sensors.md) (60)
 - [Pollination Ecology](../topics/pollination-ecology.md) (7)
-- [Pollination Monitoring](../topics/pollination-monitoring.md) (1)
+- [Pollination Monitoring](../topics/pollination-monitoring.md) (4)
 - [Precision Beekeeping](../topics/precision-beekeeping.md) (9)
 - [Reviews Surveys](../topics/reviews-surveys.md) (20)
 - [Varroa Health](../topics/varroa-health.md) (4)
@@ -39,7 +39,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="monitoring-platform-year-filter" value="all" checked>
         <span class="research-year-tab__label">All</span>
-        <span class="research-year-tab__count">82</span>
+        <span class="research-year-tab__count">87</span>
       </label>
       <span class="research-year-tab__arrow" aria-hidden="true">›</span>
       <label class="research-year-tab">
@@ -105,7 +105,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="monitoring-platform-year-filter" value="2026">
         <span class="research-year-tab__label">2026</span>
-        <span class="research-year-tab__count">27</span>
+        <span class="research-year-tab__count">32</span>
       </label>
     </div>
     <div class="research-year-filter__panels">
@@ -128,7 +128,9 @@ layout: research
         <tr><td><a href="/research/papers/an-intelligent-monitoring-system-for-forecasting-and-anomaly-detection-in-precision-beekeeping/">An intelligent monitoring system for forecasting and anomaly detection in precision beekeeping</a></td><td>2026</td><td>🇫🇷 EFREI Research Lab; 🇫🇷 Université Paris-Panthéon-Assas</td></tr>
         <tr><td><a href="/research/papers/an-open-source-high-precision-hive-for-long-term-honeybee-observation-and-research/">An open-source high-precision hive for long-term honeybee observation and research</a></td><td>2026</td><td>🇨🇿 Czech Technical University in Prague; 🇦🇹 University of Graz</td></tr>
         <tr><td><a href="/research/papers/assessing-honey-bee-colony-health-using-temperature-time-series/">Assessing Honey Bee Colony Health Using Temperature Time Series</a></td><td>2026</td><td>🇦🇺 The University of Sydney; 🇦🇺 Macquarie University</td></tr>
+        <tr><td><a href="/research/papers/beehaviourlab-a-high-throughput-platform-for-sublethal-stressor-screening-in-insects/">BEEhaviourLab: A high-throughput platform for sublethal stressor screening in insects</a></td><td>2026</td><td>🇬🇧 University of Oxford; 🇬🇧 Queen Mary University of London; 🇬🇧 University of Edinburgh</td></tr>
         <tr><td><a href="/research/papers/beeve-unsupervised-acoustic-state-discovery-in-honey-bee-buzzing/">BeeVe: Unsupervised Acoustic State Discovery in Honey Bee Buzzing</a></td><td>2026</td><td>🇺🇳 arXiv author-supplied preprint by Hamze Hammami and Nidhal Abdulaziz</td></tr>
+        <tr><td><a href="/research/papers/biome-a-resource-efficient-bioacoustic-foundational-model-for-iot-applications/">BioME: A Resource-Efficient Bioacoustic Foundational Model for IoT Applications</a></td><td>2026</td><td>🇨🇦 Institut national de la recherche scientifique (INRS)</td></tr>
         <tr><td><a href="/research/papers/communication-efficient-embedded-fft-processing-for-acoustic-telemetry-in-lpwan-based-beehive-monitoring-systems/">Communication-efficient Embedded FFT Processing for Acoustic Telemetry in LPWAN-based Beehive Monitoring Systems</a></td><td>2026</td><td>🇵🇱 Lodz University of Technology</td></tr>
         <tr><td><a href="/research/papers/deep-learning-and-computer-vision-for-honey-bee-health-monitoring-a-systematic-survey-and-future-directions/">Deep Learning and Computer Vision for Honey Bee Health Monitoring: A Systematic Survey and Future Directions</a></td><td>2026</td><td>🇮🇳 SSVPS&#x27;s Bapusaheb Shivajirao Deore College of Engineering</td></tr>
         <tr><td><a href="/research/papers/development-of-wingbeat-based-acoustic-health-monitoring-system-for-bee-colonies/">Development of Wingbeat-Based Acoustic Health Monitoring System for Bee Colonies</a></td><td>2026</td><td>🇹🇼 National Formosa University</td></tr>
@@ -140,13 +142,16 @@ layout: research
         <tr><td><a href="/research/papers/insectdct-a-generalized-pipeline-for-detection-taxonomic-classification-and-tracking-of-insects-in-camera-trap-recordings/">InsectDCT: A generalized pipeline for detection, taxonomic classification, and tracking of insects in camera-trap recordings</a></td><td>2026</td><td>🇩🇰 Aarhus University; 🇩🇪 Helmholtz Centre for Environmental Research; 🇪🇸 Mediterranean Institute for Advanced Studies; 🇬🇪 Ilia State University</td></tr>
         <tr><td><a href="/research/papers/m3danet-a-lightweight-semi-supervised-network-and-embedded-system-for-bee-colony-counting/">M3DANet: A Lightweight Semi-Supervised Network and Embedded System for Bee Colony Counting</a></td><td>2026</td><td>🇨🇳 Shandong Agricultural University; 🇨🇳 Apiculture Institute of Jiangxi Province</td></tr>
         <tr><td><a href="/research/papers/on-the-prediction-of-varroa-mite-infestations-in-honeybee-colonies-via-acoustic-monitoring/">On the Prediction of Varroa Mite Infestations in Honeybee Colonies via Acoustic Monitoring</a></td><td>2026</td><td>🇨🇦 Institut national de la recherche scientifique (INRS); 🇨🇦 Nectar Technologies Inc.; 🇨🇦 Université Laval</td></tr>
+        <tr><td><a href="/research/papers/on-device-deep-learning-for-real-time-acoustic-monitoring-of-endangered-bombus-dahlbomii-and-invasive-congeners/">On-device deep learning for real-time acoustic monitoring of endangered Bombus dahlbomii and invasive congeners</a></td><td>2026</td><td>🇺🇸 Massachusetts Institute of Technology; 🇯🇵 Kioxia Corporation; 🇨🇭 ETH Zurich; 🇦🇷 INIBIOMA, Universidad Nacional del Comahue and CONICET</td></tr>
         <tr><td><a href="/research/papers/pollicrop-a-high-throughput-computer-vision-pipeline-for-pollinator-monitoring-in-agroecosystems/">PolliCrop: A high-throughput computer vision pipeline for pollinator monitoring in agroecosystems</a></td><td>2026</td><td>🇫🇷 INRAE; 🇫🇷 CNRS; 🇺🇸 University of California, Berkeley; 🇩🇪 Julius Kühn Institute; 🇩🇪 Technische Universität Braunschweig</td></tr>
+        <tr><td><a href="/research/papers/small-pollinator-detection-in-cluttered-field-video/">Small-Pollinator Detection in Cluttered Field Video</a></td><td>2026</td><td>🇺🇸 Iowa State University; 🇺🇸 University of Central Florida</td></tr>
         <tr><td><a href="/research/papers/spectrogram-based-deep-learning-models-for-acoustic-identification-of-honey-bees-in-complex-environmental-noises/">Spectrogram-Based Deep Learning Models for Acoustic Identification of Honey Bees in Complex Environmental Noises</a></td><td>2026</td><td>🇵🇰 Namal University; 🇵🇰 University of Mianwali; 🇦🇪 Abu Dhabi University; 🇹🇷 Nişantaşı University</td></tr>
         <tr><td><a href="/research/papers/stag-cn-spatio-temporal-apiary-graph-convolutional-network-for-disease-onset-prediction-in-beehive-sensor-networks/">STAG-CN: Spatio-Temporal Apiary Graph Convolutional Network for Disease Onset Prediction in Beehive Sensor Networks</a></td><td>2026</td><td>🇰🇷 Korea University</td></tr>
         <tr><td><a href="/research/papers/technical-specification-of-a-novel-apivoltaic-system-integrating-digital-hive-monitoring-with-photovoltaic-energy-systems/">Technical Specification of a Novel Apivoltaic System: Integrating Digital Hive Monitoring with Photovoltaic Energy Systems</a></td><td>2026</td><td>🇷🇴 University of Agricultural Sciences and Veterinary Medicine of Cluj-Napoca; 🇷🇴 APIVOLT S.R.L.; 🇮🇹 University of Molise</td></tr>
         <tr><td><a href="/research/papers/the-relevance-of-compound-events-in-bee-traffic-monitoring/">The Relevance of Compound Events in Bee Traffic Monitoring</a></td><td>2026</td><td>🇵🇷 University of Puerto Rico at Río Piedras</td></tr>
         <tr><td><a href="/research/papers/time-series-dataset-of-honey-bee-colony-dynamics-before-during-and-after-sunflower-pollination/">Time-series dataset of honey bee colony dynamics before, during, and after sunflower pollination</a></td><td>2026</td><td>🇺🇦 AmoHive / Ukraine smart-hive deployment</td></tr>
         <tr><td><a href="/research/papers/transforming-beekeeping-through-technology-a-systematic-review-of-precision-beekeeping/">Transforming Beekeeping Through Technology: A Systematic Review of Precision Beekeeping</a></td><td>2026</td><td>🇧🇳 Universiti Brunei Darussalam; 🇱🇰 Uva Wellassa University</td></tr>
+        <tr><td><a href="/research/papers/where-is-the-bee-detecting-tiny-pollinators-with-a-single-collaborative-head-transformer/">Where Is the Bee? Detecting Tiny Pollinators with a Single Collaborative-Head Transformer</a></td><td>2026</td><td>🇰🇷 Ulsan National Institute of Science and Technology (UNIST)</td></tr>
         <tr><td><a href="/research/papers/a-survey-of-tinyml-applications-in-beekeeping-for-hive-monitoring-and-management/">A Survey of TinyML Applications in Beekeeping for Hive Monitoring and Management</a></td><td>2025</td><td>🇦🇺 University of Technology Sydney; 🇦🇺 BeeSTAR</td></tr>
         <tr><td><a href="/research/papers/beekeeping-in-the-digital-age-prospects-and-pitfalls-of-hive-sensors/">Beekeeping in the digital age: prospects and pitfalls of hive sensors in commercial beekeeping</a></td><td>2025</td><td>🇦🇺 University of Melbourne; 🇦🇺 La Trobe University; 🇦🇺 ANU Research School of Biology</td></tr>
         <tr><td><a href="/research/papers/buzzdetect-an-open-source-deep-learning-tool-for-automated-bioacoustic-pollinator-monitoring/">buzzdetect: an open-source deep learning tool for automated bioacoustic pollinator monitoring</a></td><td>2025</td><td>🇺🇸 The Ohio State University; 🇺🇸 Dartmouth College</td></tr>
@@ -225,7 +230,9 @@ layout: research
         <tr><td><a href="/research/papers/an-intelligent-monitoring-system-for-forecasting-and-anomaly-detection-in-precision-beekeeping/">An intelligent monitoring system for forecasting and anomaly detection in precision beekeeping</a></td><td>2026</td><td>🇫🇷 EFREI Research Lab; 🇫🇷 Université Paris-Panthéon-Assas</td></tr>
         <tr><td><a href="/research/papers/an-open-source-high-precision-hive-for-long-term-honeybee-observation-and-research/">An open-source high-precision hive for long-term honeybee observation and research</a></td><td>2026</td><td>🇨🇿 Czech Technical University in Prague; 🇦🇹 University of Graz</td></tr>
         <tr><td><a href="/research/papers/assessing-honey-bee-colony-health-using-temperature-time-series/">Assessing Honey Bee Colony Health Using Temperature Time Series</a></td><td>2026</td><td>🇦🇺 The University of Sydney; 🇦🇺 Macquarie University</td></tr>
+        <tr><td><a href="/research/papers/beehaviourlab-a-high-throughput-platform-for-sublethal-stressor-screening-in-insects/">BEEhaviourLab: A high-throughput platform for sublethal stressor screening in insects</a></td><td>2026</td><td>🇬🇧 University of Oxford; 🇬🇧 Queen Mary University of London; 🇬🇧 University of Edinburgh</td></tr>
         <tr><td><a href="/research/papers/beeve-unsupervised-acoustic-state-discovery-in-honey-bee-buzzing/">BeeVe: Unsupervised Acoustic State Discovery in Honey Bee Buzzing</a></td><td>2026</td><td>🇺🇳 arXiv author-supplied preprint by Hamze Hammami and Nidhal Abdulaziz</td></tr>
+        <tr><td><a href="/research/papers/biome-a-resource-efficient-bioacoustic-foundational-model-for-iot-applications/">BioME: A Resource-Efficient Bioacoustic Foundational Model for IoT Applications</a></td><td>2026</td><td>🇨🇦 Institut national de la recherche scientifique (INRS)</td></tr>
         <tr><td><a href="/research/papers/communication-efficient-embedded-fft-processing-for-acoustic-telemetry-in-lpwan-based-beehive-monitoring-systems/">Communication-efficient Embedded FFT Processing for Acoustic Telemetry in LPWAN-based Beehive Monitoring Systems</a></td><td>2026</td><td>🇵🇱 Lodz University of Technology</td></tr>
         <tr><td><a href="/research/papers/deep-learning-and-computer-vision-for-honey-bee-health-monitoring-a-systematic-survey-and-future-directions/">Deep Learning and Computer Vision for Honey Bee Health Monitoring: A Systematic Survey and Future Directions</a></td><td>2026</td><td>🇮🇳 SSVPS&#x27;s Bapusaheb Shivajirao Deore College of Engineering</td></tr>
         <tr><td><a href="/research/papers/development-of-wingbeat-based-acoustic-health-monitoring-system-for-bee-colonies/">Development of Wingbeat-Based Acoustic Health Monitoring System for Bee Colonies</a></td><td>2026</td><td>🇹🇼 National Formosa University</td></tr>
@@ -237,13 +244,16 @@ layout: research
         <tr><td><a href="/research/papers/insectdct-a-generalized-pipeline-for-detection-taxonomic-classification-and-tracking-of-insects-in-camera-trap-recordings/">InsectDCT: A generalized pipeline for detection, taxonomic classification, and tracking of insects in camera-trap recordings</a></td><td>2026</td><td>🇩🇰 Aarhus University; 🇩🇪 Helmholtz Centre for Environmental Research; 🇪🇸 Mediterranean Institute for Advanced Studies; 🇬🇪 Ilia State University</td></tr>
         <tr><td><a href="/research/papers/m3danet-a-lightweight-semi-supervised-network-and-embedded-system-for-bee-colony-counting/">M3DANet: A Lightweight Semi-Supervised Network and Embedded System for Bee Colony Counting</a></td><td>2026</td><td>🇨🇳 Shandong Agricultural University; 🇨🇳 Apiculture Institute of Jiangxi Province</td></tr>
         <tr><td><a href="/research/papers/on-the-prediction-of-varroa-mite-infestations-in-honeybee-colonies-via-acoustic-monitoring/">On the Prediction of Varroa Mite Infestations in Honeybee Colonies via Acoustic Monitoring</a></td><td>2026</td><td>🇨🇦 Institut national de la recherche scientifique (INRS); 🇨🇦 Nectar Technologies Inc.; 🇨🇦 Université Laval</td></tr>
+        <tr><td><a href="/research/papers/on-device-deep-learning-for-real-time-acoustic-monitoring-of-endangered-bombus-dahlbomii-and-invasive-congeners/">On-device deep learning for real-time acoustic monitoring of endangered Bombus dahlbomii and invasive congeners</a></td><td>2026</td><td>🇺🇸 Massachusetts Institute of Technology; 🇯🇵 Kioxia Corporation; 🇨🇭 ETH Zurich; 🇦🇷 INIBIOMA, Universidad Nacional del Comahue and CONICET</td></tr>
         <tr><td><a href="/research/papers/pollicrop-a-high-throughput-computer-vision-pipeline-for-pollinator-monitoring-in-agroecosystems/">PolliCrop: A high-throughput computer vision pipeline for pollinator monitoring in agroecosystems</a></td><td>2026</td><td>🇫🇷 INRAE; 🇫🇷 CNRS; 🇺🇸 University of California, Berkeley; 🇩🇪 Julius Kühn Institute; 🇩🇪 Technische Universität Braunschweig</td></tr>
+        <tr><td><a href="/research/papers/small-pollinator-detection-in-cluttered-field-video/">Small-Pollinator Detection in Cluttered Field Video</a></td><td>2026</td><td>🇺🇸 Iowa State University; 🇺🇸 University of Central Florida</td></tr>
         <tr><td><a href="/research/papers/spectrogram-based-deep-learning-models-for-acoustic-identification-of-honey-bees-in-complex-environmental-noises/">Spectrogram-Based Deep Learning Models for Acoustic Identification of Honey Bees in Complex Environmental Noises</a></td><td>2026</td><td>🇵🇰 Namal University; 🇵🇰 University of Mianwali; 🇦🇪 Abu Dhabi University; 🇹🇷 Nişantaşı University</td></tr>
         <tr><td><a href="/research/papers/stag-cn-spatio-temporal-apiary-graph-convolutional-network-for-disease-onset-prediction-in-beehive-sensor-networks/">STAG-CN: Spatio-Temporal Apiary Graph Convolutional Network for Disease Onset Prediction in Beehive Sensor Networks</a></td><td>2026</td><td>🇰🇷 Korea University</td></tr>
         <tr><td><a href="/research/papers/technical-specification-of-a-novel-apivoltaic-system-integrating-digital-hive-monitoring-with-photovoltaic-energy-systems/">Technical Specification of a Novel Apivoltaic System: Integrating Digital Hive Monitoring with Photovoltaic Energy Systems</a></td><td>2026</td><td>🇷🇴 University of Agricultural Sciences and Veterinary Medicine of Cluj-Napoca; 🇷🇴 APIVOLT S.R.L.; 🇮🇹 University of Molise</td></tr>
         <tr><td><a href="/research/papers/the-relevance-of-compound-events-in-bee-traffic-monitoring/">The Relevance of Compound Events in Bee Traffic Monitoring</a></td><td>2026</td><td>🇵🇷 University of Puerto Rico at Río Piedras</td></tr>
         <tr><td><a href="/research/papers/time-series-dataset-of-honey-bee-colony-dynamics-before-during-and-after-sunflower-pollination/">Time-series dataset of honey bee colony dynamics before, during, and after sunflower pollination</a></td><td>2026</td><td>🇺🇦 AmoHive / Ukraine smart-hive deployment</td></tr>
         <tr><td><a href="/research/papers/transforming-beekeeping-through-technology-a-systematic-review-of-precision-beekeeping/">Transforming Beekeeping Through Technology: A Systematic Review of Precision Beekeeping</a></td><td>2026</td><td>🇧🇳 Universiti Brunei Darussalam; 🇱🇰 Uva Wellassa University</td></tr>
+        <tr><td><a href="/research/papers/where-is-the-bee-detecting-tiny-pollinators-with-a-single-collaborative-head-transformer/">Where Is the Bee? Detecting Tiny Pollinators with a Single Collaborative-Head Transformer</a></td><td>2026</td><td>🇰🇷 Ulsan National Institute of Science and Technology (UNIST)</td></tr>
         </tbody>
         </table>
         </div>

@@ -9,22 +9,22 @@ layout: research
 ## Summary
 
 - Product area key: `colony-health`
-- Total papers: 49
+- Total papers: 50
 - [Research papers hub](../index.md)
 - [All product areas](index.md)
 
 ## Topics
 
-- [Audio Acoustics](../topics/audio-acoustics.md) (15)
+- [Audio Acoustics](../topics/audio-acoustics.md) (16)
 - [Bee Behaviour](../topics/bee-behaviour.md) (15)
 - [Bee Traffic](../topics/bee-traffic.md) (1)
 - [Behavior Recognition](../topics/behavior-recognition.md) (1)
-- [Colony Health](../topics/colony-health.md) (7)
+- [Colony Health](../topics/colony-health.md) (8)
 - [Computer Vision](../topics/computer-vision.md) (20)
 - [Datasets](../topics/datasets.md) (1)
 - [Datasets Benchmarks](../topics/datasets-benchmarks.md) (3)
-- [Edge AI Energy](../topics/edge-ai-energy.md) (7)
-- [IoT Sensors](../topics/iot-sensors.md) (21)
+- [Edge AI Energy](../topics/edge-ai-energy.md) (8)
+- [IoT Sensors](../topics/iot-sensors.md) (22)
 - [Pollination Ecology](../topics/pollination-ecology.md) (5)
 - [Pollination Monitoring](../topics/pollination-monitoring.md) (1)
 - [Precision Beekeeping](../topics/precision-beekeeping.md) (5)
@@ -38,7 +38,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="colony-health-year-filter" value="all" checked>
         <span class="research-year-tab__label">All</span>
-        <span class="research-year-tab__count">49</span>
+        <span class="research-year-tab__count">50</span>
       </label>
       <span class="research-year-tab__arrow" aria-hidden="true">›</span>
       <label class="research-year-tab">
@@ -98,7 +98,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="colony-health-year-filter" value="2026">
         <span class="research-year-tab__label">2026</span>
-        <span class="research-year-tab__count">18</span>
+        <span class="research-year-tab__count">19</span>
       </label>
     </div>
     <div class="research-year-filter__panels">
@@ -119,6 +119,7 @@ layout: research
         <tr><td><a href="/research/papers/an-intelligent-monitoring-system-for-forecasting-and-anomaly-detection-in-precision-beekeeping/">An intelligent monitoring system for forecasting and anomaly detection in precision beekeeping</a></td><td>2026</td><td>🇫🇷 EFREI Research Lab; 🇫🇷 Université Paris-Panthéon-Assas</td></tr>
         <tr><td><a href="/research/papers/assessing-honey-bee-colony-health-using-temperature-time-series/">Assessing Honey Bee Colony Health Using Temperature Time Series</a></td><td>2026</td><td>🇦🇺 The University of Sydney; 🇦🇺 Macquarie University</td></tr>
         <tr><td><a href="/research/papers/beeve-unsupervised-acoustic-state-discovery-in-honey-bee-buzzing/">BeeVe: Unsupervised Acoustic State Discovery in Honey Bee Buzzing</a></td><td>2026</td><td>🇺🇳 arXiv author-supplied preprint by Hamze Hammami and Nidhal Abdulaziz</td></tr>
+        <tr><td><a href="/research/papers/biome-a-resource-efficient-bioacoustic-foundational-model-for-iot-applications/">BioME: A Resource-Efficient Bioacoustic Foundational Model for IoT Applications</a></td><td>2026</td><td>🇨🇦 Institut national de la recherche scientifique (INRS)</td></tr>
         <tr><td><a href="/research/papers/detection-and-classification-of-honeybee-castes-using-thermal-imaging-and-deep-learning/">Detection and classification of honeybee castes using thermal imaging and deep learning</a></td><td>2026</td><td>🇮🇷 Razi University</td></tr>
         <tr><td><a href="/research/papers/development-of-wingbeat-based-acoustic-health-monitoring-system-for-bee-colonies/">Development of Wingbeat-Based Acoustic Health Monitoring System for Bee Colonies</a></td><td>2026</td><td>🇹🇼 National Formosa University</td></tr>
         <tr><td><a href="/research/papers/estimating-colony-strength-and-pollination-efficiency-in-honey-bees-using-a-novel-dataset-and-deep-learning-based-models/">Estimating colony strength and pollination efficiency in honey bees using a novel dataset and deep learning-based models</a></td><td>2026</td><td>🇺🇸 University of Arkansas at Fayetteville; 🇺🇸 Washington State University; 🇺🇸 University of Arkansas System; 🇺🇸 Mississippi State University; 🇺🇸 University of Tennessee at Knoxville</td></tr>
@@ -183,6 +184,7 @@ layout: research
         <tr><td><a href="/research/papers/an-intelligent-monitoring-system-for-forecasting-and-anomaly-detection-in-precision-beekeeping/">An intelligent monitoring system for forecasting and anomaly detection in precision beekeeping</a></td><td>2026</td><td>🇫🇷 EFREI Research Lab; 🇫🇷 Université Paris-Panthéon-Assas</td></tr>
         <tr><td><a href="/research/papers/assessing-honey-bee-colony-health-using-temperature-time-series/">Assessing Honey Bee Colony Health Using Temperature Time Series</a></td><td>2026</td><td>🇦🇺 The University of Sydney; 🇦🇺 Macquarie University</td></tr>
         <tr><td><a href="/research/papers/beeve-unsupervised-acoustic-state-discovery-in-honey-bee-buzzing/">BeeVe: Unsupervised Acoustic State Discovery in Honey Bee Buzzing</a></td><td>2026</td><td>🇺🇳 arXiv author-supplied preprint by Hamze Hammami and Nidhal Abdulaziz</td></tr>
+        <tr><td><a href="/research/papers/biome-a-resource-efficient-bioacoustic-foundational-model-for-iot-applications/">BioME: A Resource-Efficient Bioacoustic Foundational Model for IoT Applications</a></td><td>2026</td><td>🇨🇦 Institut national de la recherche scientifique (INRS)</td></tr>
         <tr><td><a href="/research/papers/detection-and-classification-of-honeybee-castes-using-thermal-imaging-and-deep-learning/">Detection and classification of honeybee castes using thermal imaging and deep learning</a></td><td>2026</td><td>🇮🇷 Razi University</td></tr>
         <tr><td><a href="/research/papers/development-of-wingbeat-based-acoustic-health-monitoring-system-for-bee-colonies/">Development of Wingbeat-Based Acoustic Health Monitoring System for Bee Colonies</a></td><td>2026</td><td>🇹🇼 National Formosa University</td></tr>
         <tr><td><a href="/research/papers/estimating-colony-strength-and-pollination-efficiency-in-honey-bees-using-a-novel-dataset-and-deep-learning-based-models/">Estimating colony strength and pollination efficiency in honey bees using a novel dataset and deep learning-based models</a></td><td>2026</td><td>🇺🇸 University of Arkansas at Fayetteville; 🇺🇸 Washington State University; 🇺🇸 University of Arkansas System; 🇺🇸 Mississippi State University; 🇺🇸 University of Tennessee at Knoxville</td></tr>
