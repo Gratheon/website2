@@ -22,7 +22,8 @@ To reduce risks, we develop simultaneously our base products:
     - Utilize digital marketing channels and industry partnerships to increase awareness of Gratheon's software solution.
 3. **Partnerships and Alliances:**
     - Forge strategic partnerships with beekeeping associations, equipment suppliers, and agricultural organizations to expand reach and distribution channels. [Potential partners / contractors](https://www.notion.so/Potential-partners-contractors-ff5c7b751d7f4058971e61dfe3392cc2?pvs=21)
-    - Collaborate with research institutions to validate the effectiveness of the software and build industry credibility. 
+    - Collaborate with research institutions to validate the effectiveness of the software and build industry credibility.
+    - Use the [🌍 Beekeeping conferences](../sales_and_marketing/🌍%20Beekeeping%20conferences.md) calendar to pick regional events for association outreach and exhibition.
 4. **Sales and Distribution Channels:**
     - Offer the SaaS platform through a subscription-based model, with flexible pricing options to accommodate various user needs.
     - Utilize online sales channels and targeted marketing campaigns to drive customer acquisition.
