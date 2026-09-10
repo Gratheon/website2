@@ -26,6 +26,8 @@ jobs:
         run: |
           test -L /www/website/current
           test -f /www/website/current/index.html
+          test "$(find /www/website/releases -mindepth 1 -maxdepth 1 -type d | wc -l)" -eq 1
+          test ! -d /www/website/dist
           readlink /www/website/current
 
       - name: Verify public site

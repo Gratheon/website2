@@ -5,7 +5,7 @@ APP_DIR="${APP_DIR:-$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)}"
 PUBLIC_DIR="${PUBLIC_DIR:-$APP_DIR/current}"
 RELEASES_DIR="${RELEASES_DIR:-$APP_DIR/releases}"
 SHARED_DIR="${SHARED_DIR:-$APP_DIR/shared}"
-KEEP_RELEASES="${KEEP_RELEASES:-2}"
+KEEP_RELEASES="${KEEP_RELEASES:-1}"
 PUBLISH_ONLY=0
 ACTIVATE_ONLY=0
 
@@ -24,6 +24,17 @@ while [ "$#" -gt 0 ]; do
     esac
     shift
 done
+
+case "$KEEP_RELEASES" in
+    ''|*[!0-9]*)
+        echo "KEEP_RELEASES must be a positive integer: $KEEP_RELEASES" >&2
+        exit 2
+        ;;
+esac
+if [ "$KEEP_RELEASES" -lt 1 ]; then
+    echo "KEEP_RELEASES must be at least 1" >&2
+    exit 2
+fi
 
 find_blog_engine() {
     if [ -n "${BLOG_ENGINE:-}" ]; then
@@ -93,6 +104,8 @@ atomic_publish_release() {
 prune_old_releases() {
     local current_target
     current_target="$(readlink -f "$PUBLIC_DIR" 2>/dev/null || true)"
+    local releases_target
+    releases_target="$(readlink -f "$RELEASES_DIR" 2>/dev/null || true)"
 
     # WHY: interrupted publishes can leave a large directory without a release
     # marker. It is not a valid rollback target and must not displace the one
@@ -105,13 +118,24 @@ prune_old_releases() {
             if [ "$(readlink -f "$release" 2>/dev/null || true)" = "$current_target" ]; then
                 continue
             fi
+            echo "Removing incomplete release: $release"
             rm -rf -- "$release"
         done
 
-    # KEEP_RELEASES includes the active release. Always preserve it plus the
-    # newest valid rollback releases, even when the active symlink was rolled
-    # back to an older directory.
-    local rollback_releases=$((KEEP_RELEASES > 0 ? KEEP_RELEASES - 1 : 0))
+    # KEEP_RELEASES includes the active release. If current is missing or does
+    # not identify a valid release, preserve the newest valid release instead
+    # of accidentally pruning every recovery candidate.
+    local rollback_releases="$KEEP_RELEASES"
+    if [ -n "$releases_target" ]; then
+        case "$current_target" in
+            "$releases_target"/*)
+                if [ -f "$current_target/.release" ]; then
+                    rollback_releases=$((KEEP_RELEASES - 1))
+                fi
+                ;;
+        esac
+    fi
+
     find "$RELEASES_DIR" -mindepth 1 -maxdepth 1 -type d -print 2>/dev/null \
         | while IFS= read -r release; do
             [ -f "$release/.release" ] && printf '%s\n' "$release"
@@ -125,12 +149,28 @@ prune_old_releases() {
                 rollback_releases=$((rollback_releases - 1))
                 continue
             fi
+            echo "Removing old release: $old_release"
             rm -rf -- "$old_release"
         done
 }
 
+cleanup_publish_artifacts() {
+    rm -rf -- "$APP_DIR/dist"
+    rm -f -- "$APP_DIR/cpu.prof"
+
+    # A failed copy may leave a large unmarked release. Re-run retention on
+    # exit so failed builds reclaim their temporary output immediately.
+    prune_old_releases || true
+}
+
 publish_site() {
     cd "$APP_DIR"
+
+    # Reclaim obsolete releases before building too. This is important when a
+    # previous deploy filled the disk so completely that the next build could
+    # not get far enough to reach the post-publish cleanup.
+    mkdir -p "$RELEASES_DIR"
+    prune_old_releases
 
     local engine
     engine="$(find_blog_engine)"
@@ -141,10 +181,10 @@ publish_site() {
     fi
 
     umask 022
-    rm -rf dist
-    rm -f cpu.prof
+    rm -rf -- dist
+    rm -f -- cpu.prof
     "$engine" build
-    rm -f cpu.prof
+    rm -f -- cpu.prof
 
     if [ ! -f dist/index.html ]; then
         echo "Build finished without dist/index.html" >&2
@@ -152,8 +192,6 @@ publish_site() {
     fi
 
     prepare_shared_files
-    mkdir -p "$RELEASES_DIR"
-
     local release_dir
     release_dir="$RELEASES_DIR/$(release_id)"
     while [ -e "$release_dir" ]; do
@@ -185,7 +223,6 @@ publish_site() {
         printf 'published_at=%s\n' "$(date -u +%Y-%m-%dT%H:%M:%SZ)"
     } > "$release_dir/.release"
 
-    rm -rf dist
     atomic_publish_release "$release_dir"
     prune_old_releases
 }
@@ -258,6 +295,7 @@ reload_nginx() {
 }
 
 if [ "$PUBLISH_ONLY" -eq 1 ]; then
+    trap cleanup_publish_artifacts EXIT
     publish_site
     exit 0
 fi
@@ -268,6 +306,7 @@ if [ "$ACTIVATE_ONLY" -eq 1 ]; then
     exit 0
 fi
 
+trap cleanup_publish_artifacts EXIT
 run_publish_as_repo_owner
 remove_legacy_search_container
 reload_nginx
