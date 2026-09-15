@@ -29,7 +29,7 @@ Use this phase to validate:
 
 ## Lab interconnect map
 
-The high-level signal flow for Phase 1 is shown below. For detailed pin-by-pin wiring, see the [System overview](system-overview.md) and the detailed [wiring diagrams](wiring-diagrams/full-system-wiring.md).
+The high-level signal flow for Phase 1 is shown below. For detailed pin-by-pin wiring, see the [System overview](system-overview.md) and the detailed [wiring diagrams](/docs/beehive-sensors/phase-1-lab-validation/wiring-diagrams/full-system-wiring/).
 
 ```mermaid
 flowchart LR
