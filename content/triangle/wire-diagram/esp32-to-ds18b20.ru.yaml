@@ -1,0 +1,70 @@
+version: 1
+title: ESP32 к DS18B20
+description: Цепочка 1-Wire температуры · GPIO 4, 3.3 V, подтяжка 4.7 кОм
+notes:
+  - Отключайте USB перед изменением проводов. Все модули делят одну GND-рейку.
+  - DS18B20 VDD остаётся на 3.3 V. Не сажать зонд на рейку USB 5 V.
+  - Резистор 4.7 кОм соединяет 3.3 V с DQ. Не сажать DQ прямо на линию питания.
+  - Данные зонда коричневые или жёлтые в зависимости от кабеля. Смотрите функцию, не только цвет.
+  - Размеры корпусов и якоря пинов иллюстративные. Ориентируйтесь на подписи пинов на плате.
+groups:
+  - { id: power, label: ПИТАНИЕ USB, color: '#5c9fb5' }
+  - { id: control, label: КОНТРОЛЛЕР, color: '#d2a454' }
+  - { id: temp, label: ЦЕПОЧКА ТЕМПЕРАТУРЫ, color: '#b681a5' }
+components:
+  - id: usb
+    label: USB 5 V / 2 A
+    kind: power
+    group: power
+    dimensions: [28, 14, 22]
+    position: [-88, 8, 0]
+    schematic: [70, 95]
+    pins:
+      - { id: VBUS, label: '5 V', side: right, voltage: 5, position: [14, 2, -4] }
+      - { id: GND, side: right, voltage: 0, position: [14, 2, 4] }
+    notes: Питает ESP32 по USB. DS18B20 не берёт 5 V с этой рейки.
+  - id: esp
+    label: ESP32 DevKit
+    kind: esp32
+    group: control
+    dimensions: [52, 3, 28]
+    position: [-20, 6, 0]
+    schematic: [400, 95]
+    properties: { variant: 'Отладочная плата ESP32-WROOM', logic: 'только 3.3 V', firmware: 'DS18B20_PIN = 4' }
+    pins:
+      - { id: VIN, label: '5 V / VIN', side: left, voltage: 5, position: [-22.86, 10.2, 12.73] }
+      - { id: GND, side: left, voltage: 0, position: [-20.32, 10.2, 12.73] }
+      - { id: 3V3, label: '3.3 V', side: right, voltage: 3.3, position: [-22.86, 10.2, -12.73] }
+      - { id: IO4, label: 'GPIO 4 · DQ', side: right, position: [-10.16, 10.2, -12.73] }
+  - id: pullup
+    label: Подтяжка 4.7 кОм
+    kind: resistor
+    group: temp
+    dimensions: [10, 3, 3]
+    position: [56, 6, 45]
+    schematic: [760, 280]
+    pins:
+      - { id: VCC, side: left, position: [-7, 0, 0] }
+      - { id: DQ, side: right, position: [7, 0, 0] }
+    properties: { resistance: '4.7 кОм' }
+    notes: Аппаратная подтяжка. Прошивка не включает внутренний pull-up для этой шины.
+  - id: probe
+    label: Зонд DS18B20
+    kind: probe
+    group: temp
+    dimensions: [50, 6, 6]
+    position: [132, 5, 54]
+    schematic: [1040, 95]
+    pins:
+      - { id: VDD, label: 'VDD · красный', side: left, voltage: 3.3, position: [-28, 1.5, -2] }
+      - { id: DQ, label: 'DQ · коричневый/жёлтый', side: left, position: [-28, 1.5, 0] }
+      - { id: GND, label: 'GND · чёрный', side: left, voltage: 0, position: [-28, 1.5, 2] }
+    notes: Водонепроницаемый 3-проводной зонд. Не питать этот зонд от 5 V.
+wires:
+  - { id: usb-power, from: usb.VBUS, to: esp.VIN, color: '#c62828', label: USB 5 V, voltage: 5, lengthMm: 200, diameterMm: 1.6 }
+  - { id: usb-ground, from: usb.GND, to: esp.GND, color: '#212121', voltage: 0, net: GND }
+  - { id: probe-power, from: esp.3V3, to: probe.VDD, color: '#c62828', voltage: 3.3, dashed: true, net: 3V3, notes: Пунктир красный это только 3.3 V. Не сажать VDD DS18B20 на рейку 5 V. }
+  - { id: pullup-power, from: esp.3V3, to: pullup.VCC, color: '#c62828', voltage: 3.3, dashed: true, net: 3V3 }
+  - { id: probe-data, from: esp.IO4, to: pullup.DQ, color: '#6d4c41', net: DQ, notes: Коричневый или жёлтый jumper на узел данных }
+  - { id: probe-data-tail, from: pullup.DQ, to: probe.DQ, color: '#6d4c41', label: DQ, net: DQ }
+  - { id: probe-ground, from: esp.GND, to: probe.GND, color: '#212121', voltage: 0, net: GND }

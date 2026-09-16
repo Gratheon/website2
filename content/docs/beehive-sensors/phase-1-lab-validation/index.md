@@ -20,8 +20,8 @@ Phase 1 is the bench prototype. It is intentionally simple: prove that the elect
 | Diagram | What it shows | When to read it |
 | --- | --- | --- |
 | [System overview](system-overview.md) | Full system picture with all chains (power, weight, temperature, future expansion) | Start here — gives the big picture before wiring anything |
-| [ESP32 ↔ HX711 + load cell](wiring-diagrams/esp32-to-hx711.md) | Pin-by-pin wiring for the weight chain, load-cell bridge colours, breadboard tips | When connecting the load cell and HX711 board |
-| [ESP32 ↔ DS18B20](wiring-diagrams/esp32-to-ds18b20.md) | 1-Wire wiring with pull-up resistor, troubleshooting for common failures | When connecting the temperature probe |
+| [ESP32 ↔ HX711 + load cell](/docs/beehive-sensors/phase-1-lab-validation/wiring-diagrams/esp32-to-hx711/) | Pin-by-pin wiring for the weight chain, load-cell bridge colours, breadboard tips | When connecting the load cell and HX711 board |
+| [ESP32 ↔ DS18B20](/docs/beehive-sensors/phase-1-lab-validation/wiring-diagrams/esp32-to-ds18b20/) | 1-Wire wiring with pull-up resistor, troubleshooting for common failures | When connecting the temperature probe |
 | [Complete lab wiring](/docs/beehive-sensors/phase-1-lab-validation/wiring-diagrams/full-system-wiring/) | All GPIO pins in one table, breadboard row map, pre-power checklist | Final reference before first power-on |
 
 ## Phase outcome

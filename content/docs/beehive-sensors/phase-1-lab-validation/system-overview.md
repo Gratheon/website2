@@ -59,14 +59,14 @@ flowchart TB
         HX711[(HX711 ADC board)]
         LC[Test load cell<br/>50 kg bar type]
     end
-    click HX711 "./wiring-diagrams/esp32-to-hx711.md" "See detailed HX711 wiring"
-    click LC "./wiring-diagrams/esp32-to-hx711.md" "See detailed HX711 wiring"
+    click HX711 "./wiring-diagrams/esp32-to-hx711/" "See detailed HX711 wiring"
+    click LC "./wiring-diagrams/esp32-to-hx711/" "See detailed HX711 wiring"
 
     subgraph TEMP["Temperature chain"]
         DS18B20[DS18B20 waterproof probe]
         PULLUP[4.7 kOhm pull-up]
     end
-    click DS18B20 "./wiring-diagrams/esp32-to-ds18b20.md" "See detailed DS18B20 wiring"
+    click DS18B20 "./wiring-diagrams/esp32-to-ds18b20/" "See detailed DS18B20 wiring"
 
     subgraph FUTURE["Future expansion (reserved)"]
         I2C[Future humidity sensor<br/>GPIO 21 / GPIO 22]

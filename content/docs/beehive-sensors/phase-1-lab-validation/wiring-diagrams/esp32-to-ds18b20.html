@@ -1,0 +1,259 @@
+<!--
+---
+title: ESP32 ↔ DS18B20 wiring diagram
+order: 20
+sidebar_position: 20
+description: "Pin-by-pin 1-Wire wiring for ESP32 and DS18B20 with an interactive schematic/3D diagram, 4.7 kOhm pull-up, and GPIO 4."
+---
+-->
+<section class="lab-wiring">
+<style>
+.lab-wiring {
+  --ink: #172033;
+  --muted: #5b677a;
+  --line: #d7deea;
+  --soft: #f4f7fb;
+  --paper: #ffffff;
+  --orange: #ef6c00;
+  --red: #c62828;
+  --ui: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+.lab-wiring, .lab-wiring * { box-sizing: border-box; }
+.lab-wiring h2 { margin: 42px 0 12px; font-size: 1.55rem; line-height: 1.25; }
+.lab-wiring h3 { margin: 26px 0 10px; font-size: 1.12rem; }
+.lab-wiring p { margin: 0 0 14px; }
+.lab-wiring a { color: #0b5ed7; }
+.lab-wiring code { padding: 1px 5px; border-radius: 4px; background: #eef1f6; font-family: var(--mono); font-size: .87em; }
+.lab-wiring .lead { font-size: 1.05rem; color: var(--muted); }
+.lab-wiring .note {
+  margin: 16px 0 20px; padding: 13px 15px;
+  border-left: 4px solid var(--orange); border-radius: 0 10px 10px 0;
+  background: #fff4e8; color: #5a3b16;
+}
+.lab-wiring .note strong { color: var(--ink); }
+.lab-wiring .toc-mini {
+  display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 22px; padding: 0; list-style: none;
+}
+.lab-wiring .toc-mini a {
+  display: inline-block; padding: 6px 10px; border: 1px solid var(--line); border-radius: 999px;
+  background: var(--soft); color: var(--ink); font-size: .86rem; text-decoration: none;
+}
+.lab-wiring .toc-mini a:hover { border-color: #0b5ed7; }
+section.lab-wiring .wire-diagram-host,
+section.lab-wiring .legend,
+section.lab-wiring :is(.wire-diagram-host, .legend) :is(p, span, button, label, li, small, strong, h2, h3, h4, a, select) {
+  font-family: var(--ui);
+}
+section.lab-wiring .wire-diagram-host,
+section.lab-wiring .legend { color: var(--ink); }
+.lab-wiring .wire-diagram-host { margin: 12px 0 18px; }
+.site-content article .content section.lab-wiring .wd-widget h2 {
+  margin: 0 0 3px; font-size: 20px; line-height: 1.25; font-family: var(--ui);
+}
+.lab-wiring .lib-credit { margin: 0 0 22px; font-size: .86rem; color: var(--muted); }
+.lab-wiring .legend {
+  display: flex; flex-wrap: wrap; gap: 10px 16px;
+  margin: 0 0 28px; padding: 10px 4px 0;
+  font-size: .86rem; color: var(--muted);
+}
+.lab-wiring .swatch {
+  display: inline-block; width: 14px; height: 8px; margin-right: 6px;
+  border-radius: 99px; vertical-align: middle;
+}
+.lab-wiring .table-wrap { overflow-x: auto; margin: 8px 0 22px; }
+.site-content article .content section.lab-wiring table {
+  min-width: 640px; margin: 0; background: var(--paper);
+}
+.site-content article .content section.lab-wiring th,
+.site-content article .content section.lab-wiring td {
+  font-size: .9rem; vertical-align: top;
+}
+.lab-wiring .compare {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 8px 0 22px;
+}
+.lab-wiring .card {
+  padding: 14px 16px; border-radius: 14px; border: 1px solid var(--line);
+}
+.lab-wiring .card.bad { background: #ffebee; border-color: #ef9a9a; }
+.lab-wiring .card.good { background: #e8f5e9; border-color: #a5d6a7; }
+.lab-wiring .card h3 { margin: 0 0 8px; }
+.lab-wiring .card p { margin: 0; color: var(--ink); }
+.lab-wiring .steps { margin: 0 0 18px; padding-left: 20px; }
+.lab-wiring .steps li { margin: 0 0 8px; }
+.lab-wiring pre {
+  margin: 0 0 18px; padding: 14px 16px; overflow-x: auto;
+  border-radius: 10px; background: #172033; color: #e8eef8; font-family: var(--mono); font-size: .86rem;
+}
+@media (max-width: 800px) {
+  .lab-wiring .compare { grid-template-columns: 1fr; }
+}
+</style>
+
+<p class="lead">Detailed pin-by-pin wiring for the temperature sensor. Follow this page when you connect the DS18B20 waterproof probe to the ESP32.</p>
+
+<ul class="toc-mini">
+  <li><a href="#wiring-diagram">Wiring diagram</a></li>
+  <li><a href="#pin-allocation">Pin table</a></li>
+  <li><a href="#pull-up">Pull-up</a></li>
+  <li><a href="#breadboard">Breadboard</a></li>
+  <li><a href="#testing">Testing</a></li>
+</ul>
+
+<h2 id="wiring-diagram">Interactive 1-Wire diagram</h2>
+<p>The schematic is the pin-to-pin map. Switch to 3D to orbit the bench. Click a wire or part for details. Power to the DS18B20 leaves the ESP32 <strong>3.3V</strong> pin, not the 5V USB rail.</p>
+
+<div class="note"><strong>Power rule:</strong> USB 5V feeds the ESP32. DS18B20 VDD stays on 3.3V. The 4.7 kOhm resistor holds DQ high when idle.</div>
+
+<div
+  id="ds18b20-wiring-widget"
+  class="wire-diagram-host"
+  data-source="/assets/triangle/wire-diagram/esp32-to-ds18b20.yaml"
+></div>
+<noscript><p class="note">JavaScript is required for the interactive diagram. Use the pin table below as the wiring reference.</p></noscript>
+<p class="lib-credit">Rendered with <a href="https://github.com/tot-ra/wire-diagram">wire-diagram</a>. Toggle Schematic / 3D in the canvas corner.</p>
+
+<div class="legend">
+  <span><i class="swatch" style="background:#c62828"></i>USB 5V / 3.3V (red; 3.3V is dashed)</span>
+  <span><i class="swatch" style="background:#212121"></i>GND (black)</span>
+  <span><i class="swatch" style="background:#6d4c41"></i>DS18B20 data / GPIO 4 (brown)</span>
+</div>
+
+<h2 id="pin-allocation">Pin allocation</h2>
+<div class="table-wrap">
+<table>
+  <thead>
+    <tr>
+      <th>DS18B20 wire colour</th>
+      <th>Function</th>
+      <th>ESP32 connection</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Red</td>
+      <td>VCC (power)</td>
+      <td>3.3V on ESP32</td>
+      <td>Do not connect to 5V. DS18B20 is a 3.3V device on this board.</td>
+    </tr>
+    <tr>
+      <td>Black</td>
+      <td>GND (ground)</td>
+      <td>GND on ESP32</td>
+      <td>Must share ground with ESP32.</td>
+    </tr>
+    <tr>
+      <td>Brown or Yellow</td>
+      <td>Data / DQ</td>
+      <td>GPIO 4 via 4.7 kOhm pull-up</td>
+      <td>The pull-up is mandatory for correct 1-Wire operation.</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<h2 id="pull-up">Why the pull-up resistor matters</h2>
+<p>The DS18B20 uses the 1-Wire protocol, which requires a pull-up resistor on the data line to keep it at logic high when no device is driving it. Without this resistor:</p>
+<ul>
+  <li>The probe may appear intermittently in firmware scans</li>
+  <li>Temperature readings will be unreliable or missing entirely</li>
+  <li>Debugging becomes confusing because symptoms look like a dead sensor</li>
+</ul>
+<div class="compare">
+  <div class="card bad">
+    <h3>Without pull-up</h3>
+    <p>The data line floats. The ESP32 reads garbage or reports no device found.</p>
+  </div>
+  <div class="card good">
+    <h3>With 4.7 kOhm pull-up</h3>
+    <p>The data line is held at 3.3V when idle. The ESP32 can scan and read the probe.</p>
+  </div>
+</div>
+
+<h2 id="firmware">Firmware config</h2>
+<p>The firmware uses these constants for the DS18B20 connection:</p>
+<ul>
+  <li><code>DS18B20_PIN = 4</code> - GPIO pin for the 1-Wire data line</li>
+  <li>The 4.7 kOhm pull-up is a <strong>hardware</strong> component, not configured in software</li>
+</ul>
+
+<h2 id="breadboard">Physical wiring on breadboard</h2>
+<p>Use the 3D view above as the bench layout. The numbered steps match the same net as the schematic.</p>
+<ol class="steps">
+  <li>Connect the red wire (VCC) from DS18B20 to the 3.3V rail on the breadboard, then to the ESP32 3.3V pin.</li>
+  <li>Connect the black wire (GND) from DS18B20 to the GND rail on the breadboard, then to an ESP32 GND pin.</li>
+  <li>Connect one end of the 4.7 kOhm resistor to the 3.3V rail.</li>
+  <li>Connect the other end of the 4.7 kOhm resistor to the data line (brown or yellow wire).</li>
+  <li>Connect the data line from DS18B20 to GPIO 4 on the ESP32.</li>
+</ol>
+
+<h2 id="testing">Testing the connection</h2>
+<p>After wiring, you can verify the connection by scanning for 1-Wire devices:</p>
+<pre><code>// In setup(), after initializing the OneWire library:
+auto devices = oneWire-&gt;search();
+if (devices.empty()) {
+    Serial.println("No DS18B20 found! Check pull-up resistor and wiring.");
+} else {
+    Serial.printf("Found DS18B20 with address: %s\n", devices[0].toString().c_str());
+}</code></pre>
+<p>If no device is found:</p>
+<ul>
+  <li>Verify the 4.7 kOhm resistor is connected between 3.3V and the data line</li>
+  <li>Check that all wires are securely connected in breadboard rows</li>
+  <li>Try swapping the data wire (brown/yellow) with VCC - you may have misidentified the wires</li>
+  <li>Measure voltage on the data line with a multimeter - it should read ~3.3V when idle</li>
+</ul>
+
+<h2 id="problems">Common problems</h2>
+<div class="table-wrap">
+<table>
+  <thead>
+    <tr>
+      <th>Symptom</th>
+      <th>Check</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>No device found during scan</td>
+      <td>Verify pull-up resistor is connected between 3.3V and data line</td>
+    </tr>
+    <tr>
+      <td>Intermittent readings</td>
+      <td>Check all breadboard connections - loose wires cause intermittent contact</td>
+    </tr>
+    <tr>
+      <td>Readings show -127°C or 85°C</td>
+      <td>The sensor is not responding - check wiring again, especially the pull-up</td>
+    </tr>
+    <tr>
+      <td>Readings are stable but wrong</td>
+      <td>The probe may be damaged or measuring something other than what you expect</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p>When this chain is in place, continue to the <a href="./full-system-wiring/">complete lab wiring</a> page before first power-on of the full bench.</p>
+</section>
+<script type="module">
+// WHY: HTML articles cannot rely on the site JS bundle (it concatenates classic scripts).
+// WHAT: mount wire-diagram from the vendored ESM build and fail visibly if YAML cannot be fetched.
+import { createWiringDiagram } from '/assets/triangle/wire-diagram/wire-diagram.js';
+
+const host = document.getElementById('ds18b20-wiring-widget');
+if (host) {
+  const sourceUrl = host.dataset.source;
+  try {
+    const response = await fetch(sourceUrl);
+    if (!response.ok) throw new Error(`Wiring source: HTTP ${response.status}`);
+    createWiringDiagram(host, await response.text(), { view: '2d' });
+  } catch (err) {
+    const note = document.createElement('p');
+    note.className = 'note';
+    note.textContent = err instanceof Error ? err.message : String(err);
+    host.replaceChildren(note);
+  }
+}
+</script>
