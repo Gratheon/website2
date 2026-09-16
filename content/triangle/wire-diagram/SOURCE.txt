@@ -1,0 +1,5 @@
+Vendored from https://github.com/tot-ra/wire-diagram (local ~/git/wire-diagram, 0.1.0).
+
+blog-engine concatenates every content *.js file into /assets/js/main.js except paths under content/triangle/. Keep this ESM build here so hashed 3D chunks stay as sibling modules. Widget CSS is copied to content/assets/css/wire-diagram.css and joins the site CSS bundle.
+
+Refresh JS/CSS with scripts/vendor-wire-diagram.sh. Do not overwrite the YAML documents in this folder; they encode the Phase 1 lab power map (HX711 on 5 V, DS18B20 on 3.3 V).

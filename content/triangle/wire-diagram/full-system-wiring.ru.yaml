@@ -1,0 +1,110 @@
+version: 1
+title: Полная лабораторная проводка
+description: ESP32 + HX711 + тензодатчик + DS18B20 · стенд Этапа 1
+notes:
+  - Отключайте USB перед изменением проводов. Все модули делят одну GND-рейку.
+  - USB 5 V питает пин ESP32 VIN/5V и HX711 VCC. DS18B20 VDD остаётся на 3.3 V.
+  - Резистор 4.7 кОм соединяет 3.3 V с DQ. Не сажать DQ прямо на линию питания.
+  - GPIO 21, 22, 34 и 35 пока свободны для следующих сенсоров.
+  - Размеры корпусов и якоря пинов иллюстративные. Ориентируйтесь на подписи пинов на плате.
+groups:
+  - { id: power, label: ПИТАНИЕ USB, color: '#5c9fb5' }
+  - { id: control, label: КОНТРОЛЛЕР, color: '#d2a454' }
+  - { id: weight, label: ЦЕПОЧКА ВЕСА, color: '#64a888' }
+  - { id: temp, label: ЦЕПОЧКА ТЕМПЕРАТУРЫ, color: '#b681a5' }
+components:
+  - id: usb
+    label: USB 5 V / 2 A
+    kind: power
+    group: power
+    dimensions: [28, 14, 22]
+    position: [-88, 8, 0]
+    schematic: [70, 95]
+    pins:
+      - { id: VBUS, label: '5 V', side: right, voltage: 5, position: [14, 2, -4] }
+      - { id: GND, side: right, voltage: 0, position: [14, 2, 4] }
+    notes: VBUS и GND это жилы USB-кабеля, а не второй источник в VIN при уже подключённом USB.
+  - id: esp
+    label: ESP32 DevKit
+    kind: esp32
+    group: control
+    dimensions: [52, 3, 28]
+    position: [-20, 6, 0]
+    schematic: [420, 95]
+    properties: { variant: 'Отладочная плата ESP32-WROOM', logic: 'только 3.3 V' }
+    pins:
+      - { id: VIN, label: '5 V / VIN', side: left, voltage: 5, position: [-22.86, 10.2, 12.73] }
+      - { id: GND, side: left, voltage: 0, position: [-20.32, 10.2, 12.73] }
+      - { id: 3V3, label: '3.3 V', side: right, voltage: 3.3, position: [-22.86, 10.2, -12.73] }
+      - { id: IO16, label: 'GPIO 16 · DT', side: right, position: [-5.08, 10.2, -12.73] }
+      - { id: IO17, label: 'GPIO 17 · SCK', side: right, position: [-2.54, 10.2, -12.73] }
+      - { id: IO4, label: 'GPIO 4 · DQ', side: right, position: [-10.16, 10.2, -12.73] }
+  - id: hx
+    label: Усилитель HX711
+    kind: hx711
+    group: weight
+    dimensions: [33, 2, 21]
+    position: [55, 6, -20]
+    schematic: [820, 95]
+    properties: { supply: 'В этой лабораторной сборке 5 V; плата также принимает 3.3 V' }
+    pins:
+      - { id: VCC, side: left, voltage: 5, position: [-15, 3, -7.5] }
+      - { id: DT, side: left, position: [-15, 3, -2.5] }
+      - { id: SCK, side: left, position: [-15, 3, 2.5] }
+      - { id: GND, side: left, voltage: 0, position: [-15, 3, 7.5] }
+      - { id: E+, side: right, position: [14, 4, -7.5] }
+      - { id: E-, side: right, position: [14, 4, -2.5] }
+      - { id: A+, side: right, position: [14, 4, 2.5] }
+      - { id: A-, side: right, position: [14, 4, 7.5] }
+  - id: load
+    label: Тензодатчик
+    kind: load-cell
+    group: weight
+    dimensions: [75, 13, 13]
+    position: [140, 7, -32]
+    schematic: [1210, 95]
+    pins:
+      - { id: E+, label: 'E+ · красный', side: left, position: [-37.5, 2, -4] }
+      - { id: E-, label: 'E- · чёрный', side: left, position: [-37.5, 2, -1.3] }
+      - { id: A+, label: 'A+ · белый', side: left, position: [-37.5, 2, 1.3] }
+      - { id: A-, label: 'A- · зелёный', side: left, position: [-37.5, 2, 4] }
+    notes: Винтовые клеммы HX711, не GPIO. Цвета проводов зависят от производителя; сверяйте пары возбуждения и сигнала по datasheet.
+  - id: pullup
+    label: Подтяжка 4.7 кОм
+    kind: resistor
+    group: temp
+    dimensions: [10, 3, 3]
+    position: [56, 6, 45]
+    schematic: [820, 400]
+    pins:
+      - { id: VCC, side: left, position: [-7, 0, 0] }
+      - { id: DQ, side: right, position: [7, 0, 0] }
+    properties: { resistance: '4.7 кОм' }
+  - id: probe
+    label: Зонд DS18B20
+    kind: probe
+    group: temp
+    dimensions: [50, 6, 6]
+    position: [132, 5, 54]
+    schematic: [1210, 400]
+    pins:
+      - { id: VDD, label: 'VDD · 3.3 V', side: left, voltage: 3.3, position: [-28, 1.5, -2] }
+      - { id: DQ, label: DQ данные, side: left, position: [-28, 1.5, 0] }
+      - { id: GND, side: left, voltage: 0, position: [-28, 1.5, 2] }
+    notes: Не питать этот зонд от 5 V.
+wires:
+  - { id: usb-power, from: usb.VBUS, to: esp.VIN, color: '#c62828', label: USB 5 V, voltage: 5, lengthMm: 200, diameterMm: 1.6 }
+  - { id: usb-ground, from: usb.GND, to: esp.GND, color: '#212121', voltage: 0, net: GND }
+  - { id: hx-power, from: esp.VIN, to: hx.VCC, color: '#c62828', label: 5 V, voltage: 5, net: 5V }
+  - { id: hx-ground, from: esp.GND, to: hx.GND, color: '#212121', voltage: 0, net: GND }
+  - { id: hx-data, from: esp.IO16, to: hx.DT, color: '#ef6c00', label: DT, lengthMm: 150, gaugeAwg: 26, notes: Оранжевый jumper на HX711 DT }
+  - { id: hx-clock, from: esp.IO17, to: hx.SCK, color: '#1565c0', label: SCK, lengthMm: 150, gaugeAwg: 26, notes: Синий jumper на HX711 SCK }
+  - { id: load-excite-plus, from: hx.E+, to: load.E+, color: '#c62828' }
+  - { id: load-excite-minus, from: hx.E-, to: load.E-, color: '#212121' }
+  - { id: load-signal-plus, from: hx.A+, to: load.A+, color: '#b0b8ba', notes: Белая жила. В 2D показана серой для контраста. }
+  - { id: load-signal-minus, from: hx.A-, to: load.A-, color: '#2e7d32' }
+  - { id: probe-power, from: esp.3V3, to: probe.VDD, color: '#c62828', voltage: 3.3, dashed: true, net: 3V3, notes: Пунктир красный это только 3.3 V. Не сажать VDD DS18B20 на рейку 5 V. }
+  - { id: pullup-power, from: esp.3V3, to: pullup.VCC, color: '#c62828', voltage: 3.3, dashed: true, net: 3V3 }
+  - { id: probe-data, from: esp.IO4, to: pullup.DQ, color: '#6d4c41', net: DQ, notes: Коричневый jumper на узел данных }
+  - { id: probe-data-tail, from: pullup.DQ, to: probe.DQ, color: '#6d4c41', label: DQ, net: DQ }
+  - { id: probe-ground, from: esp.GND, to: probe.GND, color: '#212121', voltage: 0, net: GND }
