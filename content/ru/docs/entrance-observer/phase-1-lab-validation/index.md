@@ -10,8 +10,9 @@ hide_table_of_contents: false
 
 ## Страницы этой фазы
 
-- [Описание продукта](product-description.md) — scope, architecture, setup rules и exit criteria.
-- [Bill of materials](bill-of-materials.md) — детали, которые нужно купить или переиспользовать для лабораторной сборки.
+- [Описание продукта](product-description.md) - scope, architecture, setup rules и exit criteria.
+- [Bill of materials](bill-of-materials.md) - детали, которые нужно купить или переиспользовать для лабораторной сборки.
+- [Схема соединений](/ru/docs/entrance-observer/phase-1-lab-validation/wiring-diagrams/lab-product-wiring/) - интерактивная схема и 3D-соединения стенда фазы 1.
 
 ## Результат фазы
 

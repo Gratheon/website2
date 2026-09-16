@@ -114,4 +114,4 @@ Jetson Orin Nano не обязательно финальный ответ, но
 
 ## Bill of materials
 
-Подробный список деталей находится в [Phase 1 - Lab BOM](bill-of-materials.md). Core parts: Jetson Orin Nano, USB UVC camera, varifocal lens, NVMe SSD, WiFi or Ethernet, bench power и temporary camera fixture.
+Подробный список деталей находится в [Phase 1 - Lab BOM](/ru/docs/entrance-observer/phase-1-lab-validation/bill-of-materials/). Схема соединений: [лабораторная схема изделия](/ru/docs/entrance-observer/phase-1-lab-validation/wiring-diagrams/lab-product-wiring/). Core parts: Jetson Orin Nano, USB UVC camera, varifocal lens, NVMe SSD, WiFi or Ethernet, bench power и temporary camera fixture.

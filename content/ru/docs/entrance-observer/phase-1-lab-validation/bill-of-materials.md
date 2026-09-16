@@ -9,6 +9,8 @@ hide_table_of_contents: false
 
 Lab BOM относится к текущему Jetson Orin Nano prototype. Он ставит model iteration, Linux camera debugging и video pipeline development выше стоимости, питания и weatherproofing.
 
+Схема соединений этих деталей: [лабораторная схема изделия](/ru/docs/entrance-observer/phase-1-lab-validation/wiring-diagrams/lab-product-wiring/).
+
 ## Functionality covered
 
 - Локально запускает текущее приложение `entrance-observer`.

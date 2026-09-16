@@ -9,6 +9,8 @@ hide_table_of_contents: false
 
 The lab BOM is for the current Jetson Orin Nano prototype. It prioritizes model iteration, Linux camera debugging, and video pipeline development over cost, power, and weatherproofing.
 
+The interconnect for these parts is on [Lab product wiring](/docs/entrance-observer/phase-1-lab-validation/wiring-diagrams/lab-product-wiring/).
+
 ## Functionality covered
 
 - Runs the current `entrance-observer` application locally.

@@ -2,4 +2,8 @@ Vendored from https://github.com/tot-ra/wire-diagram (local ~/git/wire-diagram, 
 
 blog-engine concatenates every content *.js file into /assets/js/main.js except paths under content/triangle/. Keep this ESM build here so hashed 3D chunks stay as sibling modules. Widget CSS is copied to content/assets/css/wire-diagram.css and joins the site CSS bundle.
 
-Refresh JS/CSS with scripts/vendor-wire-diagram.sh. Do not overwrite the YAML documents in this folder; they encode the Phase 1 lab power map (HX711 on 5 V, DS18B20 on 3.3 V). Chain pages use subset YAML (esp32-to-ds18b20, esp32-to-hx711) with the same electrical map.
+Refresh JS/CSS with scripts/vendor-wire-diagram.sh. Do not overwrite the YAML documents in this folder.
+
+Beehive-sensor YAML encodes the Phase 1 lab power map (HX711 on 5 V, DS18B20 on 3.3 V). Chain pages use subset YAML (esp32-to-ds18b20, esp32-to-hx711) with the same electrical map.
+
+Entrance Observer YAML (entrance-observer-lab) is a product interconnect. Jetson USB-C is PD 19 V, not the ESP32 5 V map.

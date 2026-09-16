@@ -1,0 +1,271 @@
+version: 1
+title: Лабораторные соединения Entrance Observer
+description: Jetson Orin Nano Super + USB UVC камера · стенд фазы 1
+notes:
+  - Это схема соединений изделия, не GPIO-карта. Сверяйте подписи на реальном carrier Jetson.
+  - USB-C Jetson это PD 19 V. Не питать комплект от 5 V зарядки телефона.
+  - Для повторяемых тестов лучше Ethernet. WiFi и антенны нужны, чтобы воспроизвести полевые условия.
+  - 7-дюймовая HDMI-панель только для стола. Перед любой полевой оснасткой её снимают.
+  - Акриловый корпус от Nano 2 GB не считается подходящим для Orin. Не ставить его в рабочий стек.
+groups:
+  - { id: power, label: ПИТАНИЕ, color: '#5c9fb5' }
+  - { id: compute, label: КРАЕВОЙ КОМПЬЮТЕР, color: '#d2a454' }
+  - { id: vision, label: ЗРЕНИЕ, color: '#64a888' }
+  - { id: network, label: СЕТЬ, color: '#b681a5' }
+  - { id: fixture, label: ЛАБОРАТОРНАЯ ОСНАСТКА, color: '#7a8aa0' }
+components:
+  - id: psu
+    label: USB-C PD 19 V
+    kind: power
+    group: power
+    dimensions: [70, 32, 40]
+    position: [-150, 20, 0]
+    schematic: [40, 40]
+    pins:
+      - { id: VBUS, label: '19 V PD', side: right, voltage: 19, position: [35, 4, -8] }
+      - { id: GND, side: right, voltage: 0, position: [35, 4, 8] }
+    notes: Качественный USB-C PD блок под нагрузку Jetson, камеры, SSD и WiFi. Точный SKU в BOM ещё не зафиксирован.
+  - id: jetson
+    label: Jetson Orin Nano Super
+    kind: jetson
+    group: compute
+    dimensions: [100, 22, 79]
+    position: [0, 20, 0]
+    schematic: [340, 40]
+    properties: { ram: '8 GB', role: 'Эталонный compute фазы 1' }
+    purchase: { url: 'https://www.amazon.com/dp/B0BZJTQ5YP', label: 'Orin Nano Super 8 GB', partNumber: 'B0BZJTQ5YP' }
+    pins:
+      - { id: USBC, label: USB-C PD, side: left, voltage: 19, position: [-45.8, 1.6, 28] }
+      - { id: GND, side: left, voltage: 0, position: [-45.8, 1.6, 20] }
+      - { id: USB3, label: USB 3.2, side: left, position: [-44, 1.6, 10] }
+      - { id: HDMI, side: left, position: [-45, 1.6, -8] }
+      - { id: ETH, label: GbE, side: left, position: [-43, 3.2, -28] }
+      - { id: M2M, label: M.2 Key M, side: right, position: [48, -2, 20] }
+      - { id: M2E, label: M.2 Key E, side: right, position: [48, 6, -12] }
+    notes: Порты на модели иллюстративные. Ориентируйтесь на подписи USB-C, USB-A, HDMI, RJ45 и M.2 на плате.
+  - id: camera
+    label: MOKOSE 4K USB UVC
+    kind: camera
+    group: vision
+    dimensions: [42, 38, 38]
+    position: [130, 58, 0]
+    schematic: [700, 40]
+    purchase: { url: 'https://www.amazon.com/dp/B0814VFG12', label: 'MOKOSE 4K UVC', partNumber: 'B0814VFG12' }
+    pins:
+      - { id: USB, label: USB 3.0, side: left, position: [-21, 0, 0] }
+      - { id: CS, label: CS/C mount, side: right, position: [21, 0, 0] }
+      - { id: TRIPOD, label: '1/4 inch', side: left, position: [0, -19, 0] }
+    notes: Камера питается по USB. Берите USB 3 кабель той же длины, что планируется в поле.
+  - id: lens
+    label: Варифокальный CS/C объектив
+    kind: lens
+    group: vision
+    dimensions: [50, 36, 36]
+    position: [178, 58, 0]
+    schematic: [1000, 40]
+    purchase: { url: 'https://www.aliexpress.com/item/1005003681106033.html', label: 'Объектив 5-50 mm CS/C' }
+    pins:
+      - { id: CS, label: CS/C, side: left, position: [-25, 0, 0] }
+      - { id: FRONT, label: Оптическая плоскость, side: right, position: [25, 0, 0] }
+    notes: Варифокал только пока неизвестен FOV летка. На тестах фиксируйте фокус и зум.
+  - id: cover
+    label: Образец акрилового окна
+    kind: cover
+    group: vision
+    dimensions: [2, 80, 100]
+    position: [220, 58, 0]
+    schematic: [1300, 40]
+    purchase: { url: 'https://www.amazon.de/dp/B08F4Z9RRQ', label: 'Листы акрила', partNumber: 'B08F4Z9RRQ' }
+    pins:
+      - { id: FACE, label: Окно, side: left, position: [-1, 0, 0] }
+    notes: Лабораторный образец бликов, мыла и конденсата. Это не серийное оптическое стекло.
+  - id: lan
+    label: Лабораторный Ethernet
+    kind: board
+    group: network
+    dimensions: [36, 12, 28]
+    position: [-95, 12, -60]
+    schematic: [40, 360]
+    pins:
+      - { id: ETH, label: GbE, side: right, position: [18, 2, 0] }
+    notes: Предпочтительный лабораторный канал. Отделяет баги камеры и модели от WiFi-ретраев.
+  - id: ssd
+    label: NVMe SSD 250 GB
+    kind: ssd
+    group: compute
+    dimensions: [80, 2.4, 22]
+    position: [8, 6, 52]
+    schematic: [340, 360]
+    purchase: { url: 'https://www.amazon.de/dp/B0CN3LQSBZ', label: 'SanDisk 250 GB NVMe', partNumber: 'B0CN3LQSBZ' }
+    pins:
+      - { id: M2, label: M.2 2280, side: left, position: [-40, 0, 0] }
+    notes: OS, образы Docker, логи, буфер клипов и эталонные видео.
+  - id: wifi
+    label: Waveshare AC8265
+    kind: wifi
+    group: network
+    dimensions: [30, 2.4, 22]
+    position: [18, 34, 30]
+    schematic: [700, 360]
+    purchase: { url: 'https://www.amazon.de/dp/B07SGDRG34', label: 'AC8265 M.2 WiFi', partNumber: 'B07SGDRG34' }
+    pins:
+      - { id: M2, label: M.2 Key E, side: left, position: [-15, 0, 0] }
+      - { id: IPEX1, label: IPEX 1, side: right, position: [14, 2, -5] }
+      - { id: IPEX2, label: IPEX 2, side: right, position: [14, 2, 5] }
+    notes: Полевой вариант. Для обычной лаборатории оставляйте Ethernet.
+  - id: ant1
+    label: Антенна WiFi A
+    kind: antenna
+    group: network
+    dimensions: [8, 90, 16]
+    position: [18, 88, 58]
+    schematic: [1000, 360]
+    pins:
+      - { id: CABLE, side: left, position: [0, -40, 0] }
+  - id: ant2
+    label: Антенна WiFi B
+    kind: antenna
+    group: network
+    dimensions: [8, 90, 16]
+    position: [18, 88, -8]
+    schematic: [1300, 360]
+    pins:
+      - { id: CABLE, side: left, position: [0, -40, 0] }
+  - id: display
+    label: 7-дюймовая HDMI-панель
+    kind: display
+    group: compute
+    dimensions: [165, 100, 8]
+    position: [-210, 58, 20]
+    schematic: [340, 620]
+    purchase: { url: 'https://www.amazon.com/dp/B0BKGCB18T', label: '7-inch HDMI touch', partNumber: 'B0BKGCB18T' }
+    pins:
+      - { id: HDMI, side: left, position: [-82, -46, 0] }
+    notes: Опциональный стендовый дисплей. Панели ещё нужно USB-питание тач-контроллера. В поле не возить.
+  - id: mount
+    label: Кронштейн камеры 1/4 inch
+    kind: mount
+    group: fixture
+    dimensions: [30, 28, 30]
+    position: [130, 28, 0]
+    schematic: [700, 620]
+    purchase: { url: 'https://www.amazon.com/dp/B0CM6HPFSJ', label: 'Поворотный кронштейн', partNumber: 'B0CM6HPFSJ' }
+    pins:
+      - { id: THREAD, label: '1/4 inch', side: right, position: [0, 14, 0] }
+      - { id: BASE, side: left, position: [0, -14, 0] }
+    notes: После каждой юстировки отметьте дистанцию, высоту и угол.
+  - id: frame
+    label: Стапель из профиля 2020
+    kind: extrusion
+    group: fixture
+    dimensions: [300, 20, 20]
+    position: [80, 10, -32]
+    schematic: [1000, 620]
+    purchase: { url: 'https://www.amazon.de/dp/B0BD5V4RS2', label: 'Набор 2020 300 mm', partNumber: 'B0BD5V4RS2' }
+    pins:
+      - { id: SLOT, label: V-slot, side: right, position: [80, 10, 0] }
+    notes: Только лабораторная оснастка. Это не полевой корпус.
+wires:
+  - id: pd-power
+    from: psu.VBUS
+    to: jetson.USBC
+    color: '#c62828'
+    label: USB-C PD 19 V
+    voltage: 19
+    lengthMm: 1200
+    diameterMm: 3.2
+    notes: USB-C PD в разъём питания Jetson. Это не 5 V кабель от телефона.
+  - id: pd-ground
+    from: psu.GND
+    to: jetson.GND
+    color: '#212121'
+    voltage: 0
+    net: GND
+  - id: cam-usb
+    from: camera.USB
+    to: jetson.USB3
+    color: '#1565c0'
+    label: USB 3 UVC
+    lengthMm: 3000
+    diameterMm: 4
+    gaugeAwg: 28
+    notes: Камера питается от USB. Длинный или плохой кабель может сбрасывать UVC-устройство.
+  - id: nvme
+    from: ssd.M2
+    to: jetson.M2M
+    color: '#6d4c41'
+    label: NVMe
+    lengthMm: 40
+    diameterMm: 1.2
+    notes: Внутренний M.2 Key M. Показан коротким соединением, это не перемычка.
+  - id: wifi-m2
+    from: wifi.M2
+    to: jetson.M2E
+    color: '#7b1fa2'
+    label: M.2 WiFi
+    dashed: true
+    lengthMm: 30
+    diameterMm: 1.2
+    notes: Пунктир потому что Ethernet - основной лабораторный путь.
+  - id: ant-a
+    from: wifi.IPEX1
+    to: ant1.CABLE
+    color: '#212121'
+    label: IPEX A
+    dashed: true
+    diameterMm: 1.2
+  - id: ant-b
+    from: wifi.IPEX2
+    to: ant2.CABLE
+    color: '#212121'
+    label: IPEX B
+    dashed: true
+    diameterMm: 1.2
+  - id: ethernet
+    from: lan.ETH
+    to: jetson.ETH
+    color: '#2e7d32'
+    label: Gigabit Ethernet
+    lengthMm: 1500
+    diameterMm: 5
+    notes: Предпочтительная лабораторная сеть. WiFi только когда нужно полевое поведение канала.
+  - id: hdmi
+    from: display.HDMI
+    to: jetson.HDMI
+    color: '#546e7a'
+    label: HDMI
+    dashed: true
+    lengthMm: 500
+    diameterMm: 6
+    notes: Опционально. Отключайте перед улицей и длительными прогонами без присмотра.
+  - id: cs-mount
+    from: lens.CS
+    to: camera.CS
+    color: '#ef6c00'
+    label: CS/C mount
+    dashed: true
+    diameterMm: 2
+    notes: Механическое крепление, не электрическая сеть.
+  - id: tripod
+    from: mount.THREAD
+    to: camera.TRIPOD
+    color: '#8d6e63'
+    label: '1/4 inch'
+    dashed: true
+    diameterMm: 2
+    notes: Механический крепёж.
+  - id: fixture
+    from: frame.SLOT
+    to: mount.BASE
+    color: '#546e7a'
+    label: Стапель
+    dashed: true
+    diameterMm: 2
+  - id: window
+    from: cover.FACE
+    to: lens.FRONT
+    color: '#90caf9'
+    label: Оптический образец
+    dashed: true
+    diameterMm: 1.4
+    notes: Акрил в оптический путь ставьте только для тестов бликов и конденсата.

@@ -9192,7 +9192,25 @@ function wh(t, e = {}) {
 function _h(t, e) {
   return /* @__PURE__ */ Pf(t, e);
 }
-const vh = 64, kh = [40, 3, 25], Sh = "#475569", Pi = 3, $h = 90, Oh = 70, Ih = ["board", "esp32", "hx711", "load-cell", "probe", "resistor", "power"];
+const vh = 64, kh = [40, 3, 25], Sh = "#475569", Pi = 3, $h = 90, Oh = 70, Ih = [
+  "board",
+  "esp32",
+  "hx711",
+  "load-cell",
+  "probe",
+  "resistor",
+  "power",
+  "jetson",
+  "camera",
+  "lens",
+  "ssd",
+  "wifi",
+  "display",
+  "mount",
+  "extrusion",
+  "cover",
+  "antenna"
+];
 class le extends Error {
   constructor(e) {
     super(e), this.name = "DiagramParseError";
@@ -9770,7 +9788,7 @@ function cp(t, e, n = {}) {
     else {
       h.append(P("p", "wd-loading", "Loading 3D assembly…"));
       try {
-        const { create3DView: q } = await import("./view3d-D033GX9b.js");
+        const { create3DView: q } = await import("./view3d-Brb2djTk.js");
         if (i || C !== r) return;
         a = q(h, s, { ...zt, onError: (M) => {
           C === r && zt.onError(M);
