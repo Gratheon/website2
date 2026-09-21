@@ -20,9 +20,7 @@ hide_table_of_contents: false
 | Схема | Что показывает | Когда читать |
 | --- | --- | --- |
 | [Обзор системы](system-overview.md) | Полная картина системы со всеми цепочками: питание, вес, температура, future expansion | Начинайте отсюда - это даёт big picture до подключения проводов |
-| [ESP32 ↔ HX711 + load cell](/ru/docs/beehive-sensors/phase-1-lab-validation/wiring-diagrams/esp32-to-hx711/) | Pin-by-pin wiring для цепочки веса, цвета проводов load-cell bridge, советы по breadboard | Когда подключаете тензодатчик и плату HX711 |
-| [ESP32 ↔ DS18B20](/ru/docs/beehive-sensors/phase-1-lab-validation/wiring-diagrams/esp32-to-ds18b20/) | 1-Wire wiring с pull-up resistor и troubleshooting частых отказов | Когда подключаете температурный зонд |
-| [Полная лабораторная проводка](/ru/docs/beehive-sensors/phase-1-lab-validation/wiring-diagrams/full-system-wiring/) | Все GPIO pins в одной таблице, breadboard row map, pre-power checklist | Финальная проверка перед первым включением |
+| [Полная лабораторная проводка](/ru/docs/beehive-sensors/phase-1-lab-validation/wiring-diagrams/full-system-wiring/) | Одна интерактивная схема/3D-вид, полная GPIO-таблица, карта breadboard и pre-power checklist | Используйте эту единую reference при сборке стенда |
 
 ## Результат этапа
 
