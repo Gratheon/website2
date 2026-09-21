@@ -13,14 +13,14 @@ Phase 1 is the bench prototype. It is intentionally simple: prove that the elect
 - [Product description](product-description.md) - scope, wiring overview, calibration, and acceptance criteria.
 - [Bill of materials](bill-of-materials.md) - parts to buy for the bench build.
 - [System overview](system-overview.md) - high-level logical and physical architecture.
-- [Wiring diagrams](/docs/beehive-sensors/phase-1-lab-validation/wiring-diagrams/full-system-wiring/) - detailed pin-by-pin wiring for every subsystem.
+- [Wiring diagrams](/docs/beehive-sensors/#wiring-diagram) - detailed pin-by-pin wiring for every subsystem.
 
 ## Wiring diagram quick links
 
 | Diagram | What it shows | When to read it |
 | --- | --- | --- |
 | [System overview](system-overview.md) | Full system picture with all chains (power, weight, temperature, future expansion) | Start here — gives the big picture before wiring anything |
-| [Complete lab wiring](/docs/beehive-sensors/phase-1-lab-validation/wiring-diagrams/full-system-wiring/) | One interactive schematic/3D view, complete GPIO table, breadboard map, and pre-power checklist | Use this single reference while wiring the complete bench |
+| [Complete lab wiring](/docs/beehive-sensors/#wiring-diagram) | One interactive schematic/3D view, complete GPIO table, breadboard map, and pre-power checklist | Use this single reference while wiring the complete bench |
 
 ## Phase outcome
 

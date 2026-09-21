@@ -59,14 +59,14 @@ flowchart TB
         HX711[(HX711 ADC board)]
         LC[Test load cell<br/>50 kg bar type]
     end
-    click HX711 "./wiring-diagrams/full-system-wiring/" "Смотреть полную схему проводки"
-    click LC "./wiring-diagrams/full-system-wiring/" "Смотреть полную схему проводки"
+    click HX711 "/ru/docs/beehive-sensors/#wiring-diagram" "Смотреть полную схему проводки"
+    click LC "/ru/docs/beehive-sensors/#wiring-diagram" "Смотреть полную схему проводки"
 
     subgraph TEMP["Temperature chain"]
         DS18B20[DS18B20 waterproof probe]
         PULLUP[4.7 kOhm pull-up]
     end
-    click DS18B20 "./wiring-diagrams/full-system-wiring/" "Смотреть полную схему проводки"
+    click DS18B20 "/ru/docs/beehive-sensors/#wiring-diagram" "Смотреть полную схему проводки"
 
     subgraph FUTURE["Future expansion (reserved)"]
         I2C[Future humidity sensor<br/>GPIO 21 / GPIO 22]

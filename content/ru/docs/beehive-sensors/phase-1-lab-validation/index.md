@@ -13,14 +13,14 @@ hide_table_of_contents: false
 - [Описание продукта](product-description.md) - объём работ, обзор проводки, калибровка и критерии приёмки.
 - [Bill of materials](bill-of-materials.md) - детали, которые нужно купить для настольной сборки.
 - [Обзор системы](system-overview.md) - высокоуровневая архитектура ПО и аппаратуры.
-- [Схемы подключения](/ru/docs/beehive-sensors/phase-1-lab-validation/wiring-diagrams/full-system-wiring/) - подробная pin-by-pin проводка для каждой подсистемы.
+- [Схемы подключения](/ru/docs/beehive-sensors/#wiring-diagram) - подробная pin-by-pin проводка для каждой подсистемы.
 
 ## Быстрые ссылки на схемы подключения
 
 | Схема | Что показывает | Когда читать |
 | --- | --- | --- |
 | [Обзор системы](system-overview.md) | Полная картина системы со всеми цепочками: питание, вес, температура, future expansion | Начинайте отсюда - это даёт big picture до подключения проводов |
-| [Полная лабораторная проводка](/ru/docs/beehive-sensors/phase-1-lab-validation/wiring-diagrams/full-system-wiring/) | Одна интерактивная схема/3D-вид, полная GPIO-таблица, карта breadboard и pre-power checklist | Используйте эту единую reference при сборке стенда |
+| [Полная лабораторная проводка](/ru/docs/beehive-sensors/#wiring-diagram) | Одна интерактивная схема/3D-вид, полная GPIO-таблица, карта breadboard и pre-power checklist | Используйте эту единую reference при сборке стенда |
 
 ## Результат этапа
 

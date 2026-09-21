@@ -29,7 +29,7 @@ hide_table_of_contents: false
 
 ## Lab interconnect map
 
-Высокоуровневый signal flow для Этапа 1 показан ниже. Подробную pin-by-pin проводку смотрите в [Обзоре системы](system-overview.md) и детальных [схемах подключения](/ru/docs/beehive-sensors/phase-1-lab-validation/wiring-diagrams/full-system-wiring/).
+Высокоуровневый signal flow для Этапа 1 показан ниже. Подробную pin-by-pin проводку смотрите в [Обзоре системы](system-overview.md) и детальных [схемах подключения](/ru/docs/beehive-sensors/#wiring-diagram).
 
 ```mermaid
 flowchart LR
