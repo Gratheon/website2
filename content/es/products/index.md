@@ -64,37 +64,7 @@ layout: products
 </div>
 </section>
 
-<section class="product-family-section">
-<h2>Familia de productos</h2>
-<p class="product-lead">Cada producto puede funcionar por separado, pero el valor real está en el modelo de datos compartido: sensores y cámaras recogen señales, la aplicación las almacena y explica, y la automatización reduce gradualmente la intervención física.</p>
 
-<div class="product-card-grid product-card-grid--family">
-<article class="product-card-small">
-<a href="/es/products/scales/scales/">🌡️ Básculas para colmenas</a>
-<p>Mediciones remotas de bajo coste para peso, temperatura y otras señales ambientales.</p>
-<span class="product-card-meta">Prototipo · telemetría</span>
-</article>
-
-<article class="product-card-small">
-<a href="/es/products/entrance_observer/entrance_observer/">👁️‍🗨️ Entrance Observer</a>
-<p>Cámara y canalización de IA para vídeo de la piquera, métricas de tráfico de abejas, señales de comportamiento y alertas.</p>
-<span class="product-card-meta">Alpha · visión por computador</span>
-</article>
-
-<article class="product-card-small">
-<a href="/es/products/robotic_beehive/robotic_beehive/">🧿 Colmena robótica</a>
-<p>Una ruta modular hacia la inspección interna remota y operaciones mecanizadas con cuadros.</p>
-<span class="product-card-meta">Ideación · automatización</span>
-</article>
-
-<article class="product-card-small">
-<a href="/es/products/robotic_apiary/robotic_apiary/">🪬 Apiario robótico</a>
-<p>Visión a largo plazo para automatización de múltiples colmenas, movilidad en campo e intervención a escala de apiario.</p>
-<span class="product-card-meta">Visión · escala</span>
-</article>
-
-</div>
-</section>
 
 <section>
 <h2>Cómo encaja el sistema</h2>

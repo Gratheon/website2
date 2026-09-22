@@ -63,37 +63,7 @@ layout: products
 </div>
 </section>
 
-<section class="product-family-section">
-<h2>Product family</h2>
-<p class="product-lead">Each product can stand alone, but the real value is in the shared data model: sensors and cameras collect signals, the app stores and explains them, and automation gradually reduces physical intervention.</p>
 
-<div class="product-card-grid product-card-grid--family">
-<article class="product-card-small">
-<a href="/products/scales/">🌡️ Beehive scales</a>
-<p>Low-cost remote measurements for weight, temperature, and other environmental signals.</p>
-<span class="product-card-meta">Prototype · telemetry</span>
-</article>
-
-<article class="product-card-small">
-<a href="/products/entrance_observer/">👁️‍🗨️ Entrance Observer</a>
-<p>Camera and AI pipeline for entrance video, bee traffic metrics, behavior signals, and alerts.</p>
-<span class="product-card-meta">Alpha · computer vision</span>
-</article>
-
-<article class="product-card-small">
-<a href="/products/robotic_beehive/">🧿 Robotic beehive</a>
-<p>A modular path toward remote internal inspection and mechanized frame operations.</p>
-<span class="product-card-meta">Ideation · automation</span>
-</article>
-
-<article class="product-card-small">
-<a href="/products/robotic_apiary/">🪬 Robotic Apiary</a>
-<p>Long-term vision for multi-hive automation, field mobility, and apiary-scale intervention.</p>
-<span class="product-card-meta">Vision · scale</span>
-</article>
-
-</div>
-</section>
 
 <section>
 <h2>How the system fits together</h2>

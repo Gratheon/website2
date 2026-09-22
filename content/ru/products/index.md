@@ -63,37 +63,7 @@ layout: products
 </div>
 </section>
 
-<section class="product-family-section">
-<h2>Семейство продуктов</h2>
-<p class="product-lead">Каждый продукт может работать самостоятельно, но реальная ценность — в общей модели данных: датчики и камеры собирают сигналы, приложение сохраняет и объясняет их, а автоматизация постепенно снижает физическое вмешательство.</p>
 
-<div class="product-card-grid product-card-grid--family">
-<article class="product-card-small">
-<a href="/products/scales/">🌡️ Весы для улья</a>
-<p>Недорогие удалённые измерения веса, температуры и других environmental сигналов.</p>
-<span class="product-card-meta">Прототип · телеметрия</span>
-</article>
-
-<article class="product-card-small">
-<a href="/products/entrance_observer/">👁️‍🗨️ Наблюдатель за входом</a>
-<p>Камера и конвейер ИИ для видео входа, метрик трафика пчёл, сигналов поведения и оповещений.</p>
-<span class="product-card-meta">Альфа · компьютерное зрение</span>
-</article>
-
-<article class="product-card-small">
-<a href="/products/robotic_beehive/">🧿 Роботизированный улей</a>
-<p>Модульный путь к удалённому внутреннему осмотру и механизированным операциям с рамками.</p>
-<span class="product-card-meta">Идеация · автоматизация</span>
-</article>
-
-<article class="product-card-small">
-<a href="/products/robotic_apiary/">🪬 Роботизированное пчеловодство</a>
-<p>Долгосрочное видение мультиульевой автоматизации, мобильности в поле и вмешательств на уровне пчеловодства.</p>
-<span class="product-card-meta">Видение · масштаб</span>
-</article>
-
-</div>
-</section>
 
 <section>
 <h2>Как система работает вместе</h2>

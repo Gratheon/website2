@@ -25,16 +25,7 @@ layout: products
 </div>
 </section>
 
-<section class="product-family-section">
-<h2>Produktfamilie</h2>
-<p class="product-lead">Jedes Produkt kann eigenständig genutzt werden. Der eigentliche Wert entsteht aber durch das gemeinsame Datenmodell: Sensoren und Kameras sammeln Signale, die App speichert und erklärt sie, und Automatisierung reduziert schrittweise physische Eingriffe.</p>
-<div class="product-card-grid product-card-grid--family">
-<article class="product-card-small"><a href="/de/products/scales/">🌡️ Bienenstockwaagen</a><p>Kostengünstige Fernmessung von Gewicht, Temperatur und weiteren Umweltsignalen.</p><span class="product-card-meta">Prototyp · Telemetrie</span></article>
-<article class="product-card-small"><a href="/de/products/entrance_observer/">👁️‍🗨️ Entrance Observer</a><p>Kamera- und KI-Pipeline für Fluglochvideo, Bienenverkehrsmetriken, Verhaltenssignale und Warnungen.</p><span class="product-card-meta">Alpha · Computer Vision</span></article>
-<article class="product-card-small"><a href="/de/products/robotic_beehive/">🧿 Robotischer Bienenstock</a><p>Ein modularer Weg zu internen Ferndurchsichten und mechanisierten Rähmchenarbeiten.</p><span class="product-card-meta">Idee · Automatisierung</span></article>
-<article class="product-card-small"><a href="/de/products/robotic_apiary/">🪬 Robotischer Bienenstand</a><p>Langfristige Vision für Mehrbeuten-Automatisierung, Mobilität im Feld und Eingriffe auf Bienenstandsebene.</p><span class="product-card-meta">Vision · Skalierung</span></article>
-</div>
-</section>
+
 
 <section>
 <h2>Wie das System zusammenpasst</h2>

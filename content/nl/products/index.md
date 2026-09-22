@@ -63,37 +63,7 @@ layout: products
 </div>
 </section>
 
-<section class="product-family-section">
-<h2>Productfamilie</h2>
-<p class="product-lead">Elk product kan zelfstandig worden gebruikt, maar de echte waarde zit in het gedeelde datamodel: sensoren en camera's verzamelen signalen, de app bewaart en verklaart ze, en automatisering vermindert stap voor stap fysieke ingrepen.</p>
 
-<div class="product-card-grid product-card-grid--family">
-<article class="product-card-small">
-<a href="/nl/products/scales/">🌡️ Bijenkastweegschalen</a>
-<p>Betaalbare metingen op afstand voor gewicht, temperatuur en andere omgevingssignalen.</p>
-<span class="product-card-meta">Prototype · telemetrie</span>
-</article>
-
-<article class="product-card-small">
-<a href="/nl/products/entrance_observer/">👁️‍🗨️ Entrance Observer</a>
-<p>Camera- en AI-pijplijn voor vliegopeningvideo, bijenverkeersstatistieken, gedragssignalen en waarschuwingen.</p>
-<span class="product-card-meta">Alpha · computervisie</span>
-</article>
-
-<article class="product-card-small">
-<a href="/nl/products/robotic_beehive/">🧿 Robotische bijenkast</a>
-<p>Een modulair pad naar interne inspectie op afstand en gemechaniseerde raamhandelingen.</p>
-<span class="product-card-meta">Idee · automatisering</span>
-</article>
-
-<article class="product-card-small">
-<a href="/nl/products/robotic_apiary/">🪬 Robotische bijenstand</a>
-<p>Langetermijnvisie voor automatisering van meerdere kasten, mobiliteit in het veld en ingrepen op bijenstandniveau.</p>
-<span class="product-card-meta">Visie · schaal</span>
-</article>
-
-</div>
-</section>
 
 <section>
 <h2>Hoe het systeem samenwerkt</h2>

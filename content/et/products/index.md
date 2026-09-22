@@ -64,37 +64,7 @@ layout: products
 </div>
 </section>
 
-<section class="product-family-section">
-<h2>Tootepere</h2>
-<p class="product-lead">Iga toode saab töötada eraldi, kuid tegelik väärtus tekib ühisest andmemudelist: andurid ja kaamerad koguvad signaale, rakendus salvestab ja selgitab neid ning automatiseerimine vähendab järk-järgult füüsilist sekkumist.</p>
 
-<div class="product-card-grid product-card-grid--family">
-<article class="product-card-small">
-<a href="/et/products/scales/">🌡️ Tarukaalud</a>
-<p>Madala hinnaga kaugmõõtmised kaalu, temperatuuri ja teiste keskkonnasignaalide jaoks.</p>
-<span class="product-card-meta">Prototüüp · telemeetria</span>
-</article>
-
-<article class="product-card-small">
-<a href="/et/products/entrance_observer/">👁️‍🗨️ Lennuava jälgija</a>
-<p>Kaamera ja tehisaru töövoog lennuava video, mesilaste liiklusmõõdikute, käitumissignaalide ja hoiatuste jaoks.</p>
-<span class="product-card-meta">Alfa · arvutinägemine</span>
-</article>
-
-<article class="product-card-small">
-<a href="/et/products/robotic_beehive/">🧿 Robotmesitaru</a>
-<p>Modulaarne tee kauginspekteerimise ja mehhaniseeritud raamitööde suunas.</p>
-<span class="product-card-meta">Ideefaas · automatiseerimine</span>
-</article>
-
-<article class="product-card-small">
-<a href="/et/products/robotic_apiary/">🪬 Robotmesila</a>
-<p>Pikaajaline visioon mitme taru automatiseerimiseks, välitingimustes liikuvuseks ja mesilaüleseks sekkumiseks.</p>
-<span class="product-card-meta">Visioon · mastaap</span>
-</article>
-
-</div>
-</section>
 
 <section>
 <h2>Kuidas süsteem kokku sobib</h2>

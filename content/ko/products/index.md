@@ -26,16 +26,7 @@ layout: products
 </div>
 </section>
 
-<section class="product-family-section">
-<h2>제품군</h2>
-<p class="product-lead">각 제품은 독립적으로 사용할 수 있지만, 실제 가치는 공통 데이터 모델에서 나옵니다. 센서와 카메라는 신호를 수집하고, 앱은 이를 저장하고 설명하며, 자동화는 점차 현장 개입을 줄입니다.</p>
-<div class="product-card-grid product-card-grid--family">
-<article class="product-card-small"><a href="/ko/products/scales/">🌡️ 벌통 저울</a><p>무게, 온도 및 환경 신호를 원격으로 측정하는 저비용 IoT 장치입니다.</p><span class="product-card-meta">프로토타입 · 원격 측정</span></article>
-<article class="product-card-small"><a href="/ko/products/entrance_observer/">👁️‍🗨️ Entrance Observer</a><p>벌통 입구 영상, 벌 이동 지표, 행동 신호와 알림을 위한 카메라 및 AI 파이프라인입니다.</p><span class="product-card-meta">알파 · 컴퓨터 비전</span></article>
-<article class="product-card-small"><a href="/ko/products/robotic_beehive/">🧿 로봇 벌통</a><p>원격 내부 점검과 기계식 소비 작업으로 나아가는 모듈형 경로입니다.</p><span class="product-card-meta">아이디어 · 자동화</span></article>
-<article class="product-card-small"><a href="/ko/products/robotic_apiary/">🪬 로봇 양봉장</a><p>여러 벌통 자동화, 현장 이동성, 양봉장 단위 개입을 위한 장기 비전입니다.</p><span class="product-card-meta">비전 · 확장</span></article>
-</div>
-</section>
+
 
 <section>
 <h2>시스템이 함께 작동하는 방식</h2>

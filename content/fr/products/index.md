@@ -64,37 +64,7 @@ layout: products
 </div>
 </section>
 
-<section class="product-family-section">
-<h2>Famille de produits</h2>
-<p class="product-lead">Chaque produit peut fonctionner seul, mais la vraie valeur vient du modèle de données partagé : les capteurs et les caméras collectent des signaux, l’application les stocke et les explique, et l’automatisation réduit progressivement les interventions physiques.</p>
 
-<div class="product-card-grid product-card-grid--family">
-<article class="product-card-small">
-<a href="/fr/products/scales/">🌡️ Balances de ruches</a>
-<p>Mesures à distance à faible coût pour le poids, la température et d’autres signaux environnementaux.</p>
-<span class="product-card-meta">Prototype · télémétrie</span>
-</article>
-
-<article class="product-card-small">
-<a href="/fr/products/entrance_observer/">👁️‍🗨️ Entrance Observer</a>
-<p>Caméra et pipeline d’IA pour la vidéo d’entrée de ruche, les métriques de trafic d’abeilles, les signaux comportementaux et les alertes.</p>
-<span class="product-card-meta">Alpha · vision par ordinateur</span>
-</article>
-
-<article class="product-card-small">
-<a href="/fr/products/robotic_beehive/">🧿 Ruche robotisée</a>
-<p>Une voie modulaire vers l’inspection interne à distance et les opérations mécanisées sur les cadres.</p>
-<span class="product-card-meta">Idéation · automatisation</span>
-</article>
-
-<article class="product-card-small">
-<a href="/fr/products/robotic_apiary/">🪬 Rucher robotisé</a>
-<p>Vision à long terme pour l’automatisation de plusieurs ruches, la mobilité sur le terrain et les interventions à l’échelle du rucher.</p>
-<span class="product-card-meta">Vision · passage à l’échelle</span>
-</article>
-
-</div>
-</section>
 
 <section>
 <h2>Comment le système s’assemble</h2>

@@ -132,7 +132,7 @@
     </p>
     <h2>
       {{if eq .Page.Layout "products"}}
-        {{if eq .Page.Language "et"}}Liigu tarkvarast automaatse andmekogumiseni{{else}}Move from software to automatic data collection{{end}}
+        {{if eq .Page.Language "et"}}Tarkvarast automaatikani{{else}}From software to automation{{end}}
       {{else}}
         {{if eq .Page.Language "et"}}Sirvi uuringute kogu{{else if eq .Page.Language "ru"}}Навигация по исследовательской базе{{else}}Navigate the research collection{{end}}
       {{end}}
@@ -353,7 +353,6 @@
   document.addEventListener('DOMContentLoaded', function() {
     var mapSection = document.querySelector('.knowledge-page-products .knowledge-map');
     var webShowcase = document.querySelector('.knowledge-page-products .product-web-app-showcase');
-    var productFamilySection = document.querySelector('.knowledge-page-products .product-family-section');
     var productsMap = document.querySelector('.knowledge-page-products .knowledge-map-nav--split .sidebar-menu');
 
     // WHY: product feature pages need the concrete Purpose copy in the hero, not
@@ -463,11 +462,11 @@
       cleanSectionLabels(item);
     });
 
-    // Keep a copy of the generated product navigation for hardware details before
-    // replacing the web-app map with semantic feature cards below.
+    // Place the product navigation before the software overview, then retain a
+    // separate hardware-details map after the product content.
     var hardwareMapSection = null;
     var hardwareProductsMap = productsMap;
-    if (mapSection && productFamilySection) {
+    if (mapSection && webShowcase) {
       hardwareMapSection = mapSection.cloneNode(true);
       hardwareMapSection.classList.add('knowledge-map--hardware-products');
       var hardwareKicker = hardwareMapSection.querySelector('.knowledge-map-kicker');
@@ -476,18 +475,13 @@
         hardwareKicker.textContent = document.documentElement.lang === 'et' ? 'Riistvaratooted' : 'Hardware product details';
       }
       if (hardwareHeading) {
-        hardwareHeading.textContent = document.documentElement.lang === 'et' ? 'Vaata tootepere seadmete detaile' : 'Explore hardware product details';
+        hardwareHeading.textContent = document.documentElement.lang === 'et' ? 'Vaata tooteriistvara detaile' : 'Explore hardware product details';
       }
       hardwareProductsMap = hardwareMapSection.querySelector('.knowledge-map-nav--split .sidebar-menu');
       hardwareProductsMap.classList.add('knowledge-product-submenu-map');
       hardwareProductsMap.textContent = '';
-
-      if (webShowcase) {
-        webShowcase.insertAdjacentElement('afterend', mapSection);
-      }
-      productFamilySection.insertAdjacentElement('afterend', hardwareMapSection);
-    } else if (mapSection && webShowcase && mapSection.previousElementSibling !== webShowcase) {
-      webShowcase.insertAdjacentElement('afterend', mapSection);
+      webShowcase.insertAdjacentElement('beforebegin', mapSection);
+      webShowcase.insertAdjacentElement('afterend', hardwareMapSection);
     }
 
     productsMap.classList.add('knowledge-product-submenu-map');
