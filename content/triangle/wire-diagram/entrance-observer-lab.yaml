@@ -3,7 +3,7 @@ title: Entrance Observer lab interconnect
 description: Jetson Orin Nano Super + USB UVC camera · Phase 1 bench
 notes:
   - This is a product interconnect, not a GPIO map. Confirm labels on the actual Jetson carrier.
-  - Jetson USB-C is PD 19 V. Do not feed the kit from a 5 V phone charger.
+  - Official Orin Nano power is the 19 V DC barrel (POWER). USB-C is data/recovery only, not kit power.
   - Prefer Ethernet for repeatable tests. The optional WiFi module reproduces field conditions.
   - The 7 inch HDMI panel is bench-only. Remove it before any field fixture.
   - The acrylic Nano 2 GB case is not assumed to fit Orin. Leave it off the powered stack.
@@ -15,34 +15,36 @@ groups:
   - { id: fixture, label: LAB FIXTURE, color: '#7a8aa0' }
 components:
   - id: psu
-    label: USB-C PD 19 V
+    label: 19 V DC adapter
     kind: power
     group: power
     dimensions: [70, 32, 40]
     position: [-150, 20, 0]
     schematic: [40, 40]
     pins:
-      - { id: VBUS, label: '19 V PD', side: right, voltage: 19, position: [35, 4, -8] }
+      - { id: VBUS, label: '19 V DC', side: right, voltage: 19, position: [35, 4, -8] }
       - { id: GND, side: right, voltage: 0, position: [35, 4, 8] }
-    notes: Official-quality USB-C PD brick sized for Jetson, camera, SSD and WiFi under load. Exact SKU is still missing from the BOM.
+    notes: Official-quality 19 V barrel adapter sized for Jetson, camera, SSD and WiFi under load. Exact SKU is still missing from the BOM.
   - id: jetson
     label: Jetson Orin Nano Super
-    kind: jetson
+    kind: jetson-orin-nano
     group: compute
-    dimensions: [100, 22, 79]
+    dimensions: [100, 18, 79]
     position: [0, 20, 0]
     schematic: [340, 40]
+    pinout: jetson-orin-nano
     properties: { ram: '8 GB', role: 'Phase 1 reference compute' }
     purchase: { url: 'https://www.amazon.com/dp/B0BZJTQ5YP', label: 'Orin Nano Super 8 GB', partNumber: 'B0BZJTQ5YP' }
     pins:
-      - { id: USBC, label: USB-C PD, side: left, voltage: 19, position: [-45.8, 1.6, 28] }
-      - { id: GND, side: left, voltage: 0, position: [-45.8, 1.6, 20] }
-      - { id: USB3, label: USB 3.2, side: left, position: [-44, 1.6, 10] }
-      - { id: HDMI, side: left, position: [-45, 1.6, -8] }
-      - { id: ETH, label: GbE, side: left, position: [-43, 3.2, -28] }
-      - { id: M2M, label: M.2 Key M, side: right, position: [48, -2, 20] }
-      - { id: M2E, label: M.2 Key E, side: right, position: [48, 6, -12] }
-    notes: Carrier ports are illustrative. Use the printed USB-C, USB-A, HDMI, RJ45 and M.2 labels on the board.
+      # WHY: no pin.position - wire-diagram lands POWER/USB3/ETH/DP on the builtin Orin ports.
+      - { id: POWER, label: '19 V DC', side: left, voltage: 19 }
+      - { id: USB3, label: USB 3.2, side: right }
+      - { id: ETH, label: GbE, side: left }
+      - { id: DP, label: DisplayPort, side: left }
+      # WHY: M.2 is not a named Orin port alias; positions match the builtin Key M outline and a top-side Key E area.
+      - { id: M2M, label: M.2 Key M, side: right, position: [-26, 1.35, -15.8] }
+      - { id: M2E, label: M.2 Key E, side: right, position: [-20, 8, 18] }
+    notes: Builtin jetson-orin-nano carrier. POWER is the 19 V barrel. USB-C is data/recovery only. Video is DisplayPort. USB3 is a Type-A stack port. Confirm labels on the board.
   - id: camera
     label: MOKOSE 4K USB UVC
     kind: camera
@@ -122,21 +124,15 @@ components:
       - { id: SLOT, label: V-slot, side: right, position: [80, 10, 0] }
     notes: Lab fixture only. Not a field enclosure.
 wires:
-  - id: pd-power
+  - id: dc-power
     from: psu.VBUS
-    to: jetson.USBC
+    to: jetson.POWER
     color: '#c62828'
-    label: USB-C PD 19 V
+    label: 19 V DC barrel
     voltage: 19
     lengthMm: 1200
     diameterMm: 3.2
-    notes: USB-C PD to the Jetson power jack. Not a 5 V USB phone cable.
-  - id: pd-ground
-    from: psu.GND
-    to: jetson.GND
-    color: '#212121'
-    voltage: 0
-    net: GND
+    notes: Barrel cable to Jetson POWER. Return is in the same jack. Do not feed the kit from USB-C or a 5 V phone charger.
   - id: cam-usb
     from: camera.USB
     to: jetson.USB3
@@ -171,15 +167,15 @@ wires:
     lengthMm: 1500
     diameterMm: 5
     notes: Preferred lab network. Use WiFi only when reproducing field bandwidth.
-  - id: hdmi
+  - id: display-dp
     from: display.HDMI
-    to: jetson.HDMI
+    to: jetson.DP
     color: '#546e7a'
-    label: HDMI
+    label: DP to HDMI
     dashed: true
     lengthMm: 500
     diameterMm: 6
-    notes: Optional. Unplug before outdoor or unattended runs.
+    notes: Optional. Orin video is DisplayPort; the 7 inch panel is HDMI, so this cable needs a DP-HDMI adapter. Unplug before outdoor or unattended runs.
   - id: tripod
     from: mount.THREAD
     to: camera.TRIPOD

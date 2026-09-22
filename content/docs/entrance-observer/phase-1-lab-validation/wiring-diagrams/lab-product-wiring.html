@@ -3,7 +3,7 @@
 title: Lab product wiring diagram
 order: 3
 sidebar_position: 3
-description: "Interactive schematic and 3D interconnect for the Jetson Orin Nano Phase 1 lab BOM: USB-C PD 19 V, USB UVC camera, NVMe, Ethernet/WiFi, and the bench fixture."
+description: "Interactive schematic and 3D interconnect for the Jetson Orin Nano Phase 1 lab BOM: 19 V DC barrel, USB UVC camera, NVMe, Ethernet/WiFi, and the bench fixture."
 ---
 -->
 <section class="lab-wiring">
@@ -110,7 +110,7 @@ section.lab-wiring .checks { color: var(--ink); }
 <h2 id="wiring-diagram">Interactive wiring diagram</h2>
 <p>The schematic is the electrical interconnect. Switch to 3D to orbit the bench. Solid lines are the default lab path. Dashed lines are mechanical joints or optional field/bench extras. Optics (lens, acrylic window) and WiFi antennas stay on the BOM, not on this diagram.</p>
 
-<div class="note"><strong>Power rule:</strong> Jetson USB-C is PD <strong>19 V</strong>, not 5 V USB. The camera is bus-powered from USB 3. The HDMI panel is optional and bench-only.</div>
+<div class="note"><strong>Power rule:</strong> Official Orin Nano power is the DC barrel at <strong>19 V</strong>, not USB-C and not 5 V USB. USB-C on this carrier is data/recovery only. The camera is bus-powered from USB 3. The HDMI panel is optional, bench-only, and needs a DisplayPort-to-HDMI adapter.</div>
 
 <div
   id="lab-wiring-widget"
@@ -121,13 +121,12 @@ section.lab-wiring .checks { color: var(--ink); }
 <p class="lib-credit">Rendered with <a href="https://github.com/tot-ra/wire-diagram">wire-diagram</a>. Toggle Schematic / 3D in the canvas corner. Product silhouettes are illustrative, not manufacturing CAD.</p>
 
 <div class="legend">
-  <span><i class="swatch" style="background:#c62828"></i>USB-C PD 19 V (red)</span>
-  <span><i class="swatch" style="background:#212121"></i>GND (black)</span>
+  <span><i class="swatch" style="background:#c62828"></i>19 V DC barrel (red)</span>
   <span><i class="swatch" style="background:#1565c0"></i>USB 3 UVC (blue)</span>
   <span><i class="swatch" style="background:#2e7d32"></i>Gigabit Ethernet (green)</span>
   <span><i class="swatch" style="background:#6d4c41"></i>NVMe M.2 (brown)</span>
   <span><i class="swatch" style="background:#7b1fa2"></i>WiFi M.2, dashed (purple)</span>
-  <span><i class="swatch" style="background:#546e7a"></i>HDMI / fixture, dashed</span>
+  <span><i class="swatch" style="background:#546e7a"></i>DisplayPort / fixture, dashed</span>
 </div>
 
 <h2 id="connections">Connection table</h2>
@@ -145,10 +144,10 @@ section.lab-wiring .checks { color: var(--ink); }
   <tbody>
     <tr>
       <td>Kit power</td>
-      <td>USB-C PD brick</td>
-      <td>Jetson USB-C</td>
+      <td>19 V DC adapter</td>
+      <td>Jetson POWER (barrel)</td>
       <td>Electrical, 19 V</td>
-      <td class="warn">Not a 5 V phone charger</td>
+      <td class="warn">Not USB-C and not a 5 V phone charger</td>
     </tr>
     <tr>
       <td>Camera video + power</td>
@@ -188,9 +187,9 @@ section.lab-wiring .checks { color: var(--ink); }
     <tr>
       <td>Local preview</td>
       <td>7 inch HDMI panel</td>
-      <td>Jetson HDMI</td>
+      <td>Jetson DisplayPort</td>
       <td>Optional</td>
-      <td>Bench-only; also needs USB power for touch</td>
+      <td>Bench-only; DP-HDMI adapter plus USB power for touch</td>
     </tr>
   </tbody>
 </table>
@@ -201,7 +200,7 @@ section.lab-wiring .checks { color: var(--ink); }
   <div class="col power">
     <h3>Required power and compute</h3>
     <ul>
-      <li>USB-C PD 19 V brick</li>
+      <li>19 V DC barrel adapter</li>
       <li>Jetson Orin Nano Super 8 GB</li>
       <li>250 GB M.2 NVMe</li>
     </ul>
@@ -228,7 +227,7 @@ section.lab-wiring .checks { color: var(--ink); }
 <h2 id="checklist">Pre-power checklist</h2>
 <ul class="checks">
   <li><label><input type="checkbox"> NVMe is seated in M.2 Key M before the first boot</label></li>
-  <li><label><input type="checkbox"> USB-C PD adapter is 19 V class, not a 5 V phone charger</label></li>
+  <li><label><input type="checkbox"> 19 V DC barrel adapter is seated in POWER, not USB-C, and is not a 5 V phone charger</label></li>
   <li><label><input type="checkbox"> Camera USB 3 cable is fully seated and the same length you will use later</label></li>
   <li><label><input type="checkbox"> Ethernet is connected for the default lab path</label></li>
   <li><label><input type="checkbox"> Lens focus and zoom are locked after the first alignment</label></li>
@@ -240,7 +239,7 @@ section.lab-wiring .checks { color: var(--ink); }
 <h2 id="power-on">First power-on sequence</h2>
 <ol class="steps">
   <li>Connect Ethernet, NVMe and the camera USB cable before applying PD power.</li>
-  <li>Plug the USB-C PD brick into Jetson, then into the wall.</li>
+  <li>Plug the 19 V barrel into Jetson POWER, then into the wall.</li>
   <li>Confirm the carrier LEDs come up and the camera appears with <code>v4l2-ctl --list-devices</code>.</li>
   <li>Start <code>entrance-observer</code> on a known clip or live UVC source.</li>
   <li>If the camera drops, swap the USB cable before changing model or tracker settings.</li>
@@ -258,7 +257,7 @@ if (host) {
   try {
     const response = await fetch(sourceUrl);
     if (!response.ok) throw new Error(`Wiring source: HTTP ${response.status}`);
-    // WHY: Jetson/camera/enclosure meshes live on this site, not in the generic library.
+    // WHY: camera/fixture meshes live on this site; Jetson Orin Nano uses the wire-diagram builtin.
     createWiringDiagram(host, await response.text(), { view: '2d', models: entranceObserverModels });
   } catch (err) {
     const note = document.createElement('p');

@@ -3,7 +3,7 @@ title: Лабораторные соединения Entrance Observer
 description: Jetson Orin Nano Super + USB UVC камера · стенд фазы 1
 notes:
   - Это схема соединений изделия, не GPIO-карта. Сверяйте подписи на реальном carrier Jetson.
-  - USB-C Jetson это PD 19 V. Не питать комплект от 5 V зарядки телефона.
+  - Питание официального Orin Nano - DC barrel 19 V (POWER). USB-C только data/recovery, не питание комплекта.
   - Для повторяемых тестов лучше Ethernet. Опциональный модуль WiFi нужен, чтобы воспроизвести полевые условия.
   - 7-дюймовая HDMI-панель только для стола. Перед любой полевой оснасткой её снимают.
   - Акриловый корпус от Nano 2 GB не считается подходящим для Orin. Не ставить его в рабочий стек.
@@ -15,34 +15,36 @@ groups:
   - { id: fixture, label: ЛАБОРАТОРНАЯ ОСНАСТКА, color: '#7a8aa0' }
 components:
   - id: psu
-    label: USB-C PD 19 V
+    label: Адаптер 19 V DC
     kind: power
     group: power
     dimensions: [70, 32, 40]
     position: [-150, 20, 0]
     schematic: [40, 40]
     pins:
-      - { id: VBUS, label: '19 V PD', side: right, voltage: 19, position: [35, 4, -8] }
+      - { id: VBUS, label: '19 V DC', side: right, voltage: 19, position: [35, 4, -8] }
       - { id: GND, side: right, voltage: 0, position: [35, 4, 8] }
-    notes: Качественный USB-C PD блок под нагрузку Jetson, камеры, SSD и WiFi. Точный SKU в BOM ещё не зафиксирован.
+    notes: Качественный адаптер 19 V barrel под нагрузку Jetson, камеры, SSD и WiFi. Точный SKU в BOM ещё не зафиксирован.
   - id: jetson
     label: Jetson Orin Nano Super
-    kind: jetson
+    kind: jetson-orin-nano
     group: compute
-    dimensions: [100, 22, 79]
+    dimensions: [100, 18, 79]
     position: [0, 20, 0]
     schematic: [340, 40]
+    pinout: jetson-orin-nano
     properties: { ram: '8 GB', role: 'Эталонный compute фазы 1' }
     purchase: { url: 'https://www.amazon.com/dp/B0BZJTQ5YP', label: 'Orin Nano Super 8 GB', partNumber: 'B0BZJTQ5YP' }
     pins:
-      - { id: USBC, label: USB-C PD, side: left, voltage: 19, position: [-45.8, 1.6, 28] }
-      - { id: GND, side: left, voltage: 0, position: [-45.8, 1.6, 20] }
-      - { id: USB3, label: USB 3.2, side: left, position: [-44, 1.6, 10] }
-      - { id: HDMI, side: left, position: [-45, 1.6, -8] }
-      - { id: ETH, label: GbE, side: left, position: [-43, 3.2, -28] }
-      - { id: M2M, label: M.2 Key M, side: right, position: [48, -2, 20] }
-      - { id: M2E, label: M.2 Key E, side: right, position: [48, 6, -12] }
-    notes: Порты на модели иллюстративные. Ориентируйтесь на подписи USB-C, USB-A, HDMI, RJ45 и M.2 на плате.
+      # WHY: no pin.position - wire-diagram lands POWER/USB3/ETH/DP on the builtin Orin ports.
+      - { id: POWER, label: '19 V DC', side: left, voltage: 19 }
+      - { id: USB3, label: USB 3.2, side: right }
+      - { id: ETH, label: GbE, side: left }
+      - { id: DP, label: DisplayPort, side: left }
+      # WHY: M.2 is not a named Orin port alias; positions match the builtin Key M outline and a top-side Key E area.
+      - { id: M2M, label: M.2 Key M, side: right, position: [-26, 1.35, -15.8] }
+      - { id: M2E, label: M.2 Key E, side: right, position: [-20, 8, 18] }
+    notes: Встроенный carrier jetson-orin-nano. POWER это barrel 19 V. USB-C только data/recovery. Видео - DisplayPort. USB3 это порт Type-A. Сверяйте подписи на плате.
   - id: camera
     label: MOKOSE 4K USB UVC
     kind: camera
@@ -122,21 +124,15 @@ components:
       - { id: SLOT, label: V-slot, side: right, position: [80, 10, 0] }
     notes: Только лабораторная оснастка. Это не полевой корпус.
 wires:
-  - id: pd-power
+  - id: dc-power
     from: psu.VBUS
-    to: jetson.USBC
+    to: jetson.POWER
     color: '#c62828'
-    label: USB-C PD 19 V
+    label: Barrel 19 V DC
     voltage: 19
     lengthMm: 1200
     diameterMm: 3.2
-    notes: USB-C PD в разъём питания Jetson. Это не 5 V кабель от телефона.
-  - id: pd-ground
-    from: psu.GND
-    to: jetson.GND
-    color: '#212121'
-    voltage: 0
-    net: GND
+    notes: Кабель barrel в разъём POWER Jetson. Обратный провод в том же разъёме. Не питать комплект от USB-C или 5 V зарядки телефона.
   - id: cam-usb
     from: camera.USB
     to: jetson.USB3
@@ -171,15 +167,15 @@ wires:
     lengthMm: 1500
     diameterMm: 5
     notes: Предпочтительная лабораторная сеть. WiFi только когда нужно полевое поведение канала.
-  - id: hdmi
+  - id: display-dp
     from: display.HDMI
-    to: jetson.HDMI
+    to: jetson.DP
     color: '#546e7a'
-    label: HDMI
+    label: DP to HDMI
     dashed: true
     lengthMm: 500
     diameterMm: 6
-    notes: Опционально. Отключайте перед улицей и длительными прогонами без присмотра.
+    notes: Опционально. Видео Orin это DisplayPort; 7-дюймовая панель HDMI, нужен переходник DP-HDMI. Отключайте перед улицей и длительными прогонами без присмотра.
   - id: tripod
     from: mount.THREAD
     to: camera.TRIPOD

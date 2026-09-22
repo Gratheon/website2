@@ -3,7 +3,7 @@
 title: Схема соединений лабораторного изделия
 order: 3
 sidebar_position: 3
-description: "Интерактивная схема и 3D-соединения для лабораторного BOM фазы 1 Jetson Orin Nano: USB-C PD 19 V, USB UVC камера, NVMe, Ethernet/WiFi и стендовая оснастка."
+description: "Интерактивная схема и 3D-соединения для лабораторного BOM фазы 1 Jetson Orin Nano: DC barrel 19 V, USB UVC камера, NVMe, Ethernet/WiFi и стендовая оснастка."
 ---
 -->
 <section class="lab-wiring">
@@ -110,7 +110,7 @@ section.lab-wiring .checks { color: var(--ink); }
 <h2 id="wiring-diagram">Интерактивная схема соединений</h2>
 <p>Схема показывает электрические соединения. В 3D можно осмотреть стенд. Сплошные линии - основной лабораторный путь. Пунктир - механика или опциональные полевые/стендовые элементы. Оптика (объектив, акриловое окно) и WiFi-антенны остаются в BOM, не на этой схеме.</p>
 
-<div class="note"><strong>Правило питания:</strong> USB-C Jetson это PD <strong>19 V</strong>, не 5 V USB. Камера питается по USB 3. HDMI-панель опциональна и только для стола.</div>
+<div class="note"><strong>Правило питания:</strong> у официального Orin Nano питание это DC barrel <strong>19 V</strong>, не USB-C и не 5 V USB. USB-C на этом carrier только data/recovery. Камера питается по USB 3. HDMI-панель опциональна, только для стола, и нужен переходник DisplayPort-HDMI.</div>
 
 <div
   id="lab-wiring-widget"
@@ -121,13 +121,12 @@ section.lab-wiring .checks { color: var(--ink); }
 <p class="lib-credit">Рендер через <a href="https://github.com/tot-ra/wire-diagram">wire-diagram</a>. Переключатель Schematic / 3D в углу холста. Подписи элементов переведены; кнопки виджета пока на английском. Продуктовые силуэты - иллюстрации, не производственный CAD.</p>
 
 <div class="legend">
-  <span><i class="swatch" style="background:#c62828"></i>USB-C PD 19 V (красный)</span>
-  <span><i class="swatch" style="background:#212121"></i>GND (чёрный)</span>
+  <span><i class="swatch" style="background:#c62828"></i>Barrel 19 V DC (красный)</span>
   <span><i class="swatch" style="background:#1565c0"></i>USB 3 UVC (синий)</span>
   <span><i class="swatch" style="background:#2e7d32"></i>Gigabit Ethernet (зелёный)</span>
   <span><i class="swatch" style="background:#6d4c41"></i>NVMe M.2 (коричневый)</span>
   <span><i class="swatch" style="background:#7b1fa2"></i>WiFi M.2, пунктир (фиолетовый)</span>
-  <span><i class="swatch" style="background:#546e7a"></i>HDMI / оснастка, пунктир</span>
+  <span><i class="swatch" style="background:#546e7a"></i>DisplayPort / оснастка, пунктир</span>
 </div>
 
 <h2 id="connections">Таблица соединений</h2>
@@ -145,10 +144,10 @@ section.lab-wiring .checks { color: var(--ink); }
   <tbody>
     <tr>
       <td>Питание комплекта</td>
-      <td>Блок USB-C PD</td>
-      <td>USB-C Jetson</td>
+      <td>Адаптер 19 V DC</td>
+      <td>POWER Jetson (barrel)</td>
       <td>Электричество, 19 V</td>
-      <td class="warn">Не зарядка телефона 5 V</td>
+      <td class="warn">Не USB-C и не зарядка телефона 5 V</td>
     </tr>
     <tr>
       <td>Видео и питание камеры</td>
@@ -188,9 +187,9 @@ section.lab-wiring .checks { color: var(--ink); }
     <tr>
       <td>Локальный превью</td>
       <td>7-дюймовая HDMI-панель</td>
-      <td>HDMI Jetson</td>
+      <td>DisplayPort Jetson</td>
       <td>Опционально</td>
-      <td>Только стол; тачу ещё нужно USB-питание</td>
+      <td>Только стол; переходник DP-HDMI и USB-питание тача</td>
     </tr>
   </tbody>
 </table>
@@ -201,7 +200,7 @@ section.lab-wiring .checks { color: var(--ink); }
   <div class="col power">
     <h3>Обязательные питание и compute</h3>
     <ul>
-      <li>Блок USB-C PD 19 V</li>
+      <li>Адаптер 19 V DC barrel</li>
       <li>Jetson Orin Nano Super 8 GB</li>
       <li>M.2 NVMe 250 GB</li>
     </ul>
@@ -228,7 +227,7 @@ section.lab-wiring .checks { color: var(--ink); }
 <h2 id="checklist">Чеклист до включения</h2>
 <ul class="checks">
   <li><label><input type="checkbox"> NVMe стоит в M.2 Key M до первой загрузки</label></li>
-  <li><label><input type="checkbox"> Адаптер USB-C PD класса 19 V, не зарядка телефона 5 V</label></li>
+  <li><label><input type="checkbox"> Адаптер 19 V DC вставлен в POWER, не в USB-C, и это не зарядка телефона 5 V</label></li>
   <li><label><input type="checkbox"> USB 3 кабель камеры до конца вставлен и той же длины, что будет позже</label></li>
   <li><label><input type="checkbox"> Ethernet подключён как основной лабораторный путь</label></li>
   <li><label><input type="checkbox"> Фокус и зум объектива зафиксированы после первой юстировки</label></li>
@@ -240,7 +239,7 @@ section.lab-wiring .checks { color: var(--ink); }
 <h2 id="power-on">Последовательность первого включения</h2>
 <ol class="steps">
   <li>Подключите Ethernet, NVMe и USB-кабель камеры до подачи PD-питания.</li>
-  <li>Вставьте USB-C PD в Jetson, затем в розетку.</li>
+  <li>Вставьте barrel 19 V в POWER Jetson, затем в розетку.</li>
   <li>Проверьте, что светодиоды carrier загорелись, а камера видна в <code>v4l2-ctl --list-devices</code>.</li>
   <li>Запустите <code>entrance-observer</code> на известном клипе или живом UVC.</li>
   <li>Если камера отваливается, сначала смените USB-кабель, а не модель или трекер.</li>
@@ -258,7 +257,7 @@ if (host) {
   try {
     const response = await fetch(sourceUrl);
     if (!response.ok) throw new Error(`Wiring source: HTTP ${response.status}`);
-    // WHY: Jetson/camera/enclosure meshes live on this site, not in the generic library.
+    // WHY: camera/fixture meshes live on this site; Jetson Orin Nano uses the wire-diagram builtin.
     createWiringDiagram(host, await response.text(), { view: '2d', models: entranceObserverModels });
   } catch (err) {
     const note = document.createElement('p');

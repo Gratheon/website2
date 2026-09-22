@@ -6,4 +6,4 @@ Refresh JS/CSS with scripts/vendor-wire-diagram.sh. Do not overwrite the YAML do
 
 Beehive-sensor YAML encodes the Phase 1 lab power map (HX711 on 5 V, DS18B20 on 3.3 V). Chain pages use subset YAML (esp32-to-ds18b20, esp32-to-hx711) with the same electrical map.
 
-Entrance Observer YAML (entrance-observer-lab) is a product interconnect. Jetson USB-C is PD 19 V, not the ESP32 5 V map.
+Entrance Observer YAML (entrance-observer-lab) is a product interconnect. Use builtin `jetson-orin-nano` (not host `kind: jetson`) so POWER/USB3/ETH/DP land on the library ports. Official Orin Nano power is the 19 V DC barrel, not USB-C and not the ESP32 5 V map.
