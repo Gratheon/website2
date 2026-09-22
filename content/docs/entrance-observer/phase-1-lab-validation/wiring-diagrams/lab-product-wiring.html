@@ -108,7 +108,7 @@ section.lab-wiring .checks { color: var(--ink); }
 </ul>
 
 <h2 id="wiring-diagram">Interactive wiring diagram</h2>
-<p>The schematic is the product interconnect. Switch to 3D to orbit the bench. Solid lines are the default lab path. Dashed lines are mechanical joints or optional field/bench extras.</p>
+<p>The schematic is the electrical interconnect. Switch to 3D to orbit the bench. Solid lines are the default lab path. Dashed lines are mechanical joints or optional field/bench extras. Optics (lens, acrylic window) and WiFi antennas stay on the BOM, not on this diagram.</p>
 
 <div class="note"><strong>Power rule:</strong> Jetson USB-C is PD <strong>19 V</strong>, not 5 V USB. The camera is bus-powered from USB 3. The HDMI panel is optional and bench-only.</div>
 
@@ -118,16 +118,15 @@ section.lab-wiring .checks { color: var(--ink); }
   data-source="/assets/triangle/wire-diagram/entrance-observer-lab.yaml"
 ></div>
 <noscript><p class="note">JavaScript is required for the interactive diagram. Use the connection table below as the wiring reference.</p></noscript>
-<p class="lib-credit">Rendered with <a href="https://github.com/tot-ra/wire-diagram">wire-diagram</a>. Toggle Schematic / 3D in the canvas corner. Built-in models are illustrative silhouettes, not manufacturing CAD.</p>
+<p class="lib-credit">Rendered with <a href="https://github.com/tot-ra/wire-diagram">wire-diagram</a>. Toggle Schematic / 3D in the canvas corner. Product silhouettes are illustrative, not manufacturing CAD.</p>
 
 <div class="legend">
   <span><i class="swatch" style="background:#c62828"></i>USB-C PD 19 V (red)</span>
-  <span><i class="swatch" style="background:#212121"></i>GND / IPEX (black)</span>
+  <span><i class="swatch" style="background:#212121"></i>GND (black)</span>
   <span><i class="swatch" style="background:#1565c0"></i>USB 3 UVC (blue)</span>
   <span><i class="swatch" style="background:#2e7d32"></i>Gigabit Ethernet (green)</span>
   <span><i class="swatch" style="background:#6d4c41"></i>NVMe M.2 (brown)</span>
   <span><i class="swatch" style="background:#7b1fa2"></i>WiFi M.2, dashed (purple)</span>
-  <span><i class="swatch" style="background:#ef6c00"></i>CS/C mount, dashed (orange)</span>
   <span><i class="swatch" style="background:#546e7a"></i>HDMI / fixture, dashed</span>
 </div>
 
@@ -174,17 +173,10 @@ section.lab-wiring .checks { color: var(--ink); }
     </tr>
     <tr>
       <td>Field network</td>
-      <td>AC8265 + antennas</td>
-      <td>Jetson M.2 Key E + IPEX</td>
+      <td>AC8265</td>
+      <td>Jetson M.2 Key E</td>
       <td>Optional WiFi</td>
-      <td>Dashed on the diagram</td>
-    </tr>
-    <tr>
-      <td>Lens</td>
-      <td>Varifocal CS/C</td>
-      <td>Camera CS/C mount</td>
-      <td>Mechanical</td>
-      <td>Lock focus/zoom after alignment</td>
+      <td>Dashed on the diagram. Antennas are off this schematic.</td>
     </tr>
     <tr>
       <td>Camera pose</td>
@@ -218,8 +210,7 @@ section.lab-wiring .checks { color: var(--ink); }
     <h3>Required vision and network</h3>
     <ul>
       <li>MOKOSE 4K USB UVC camera</li>
-      <li>CS/C varifocal lens</li>
-      <li>Ethernet or AC8265 + antennas</li>
+      <li>Ethernet or AC8265</li>
       <li>1/4 inch camera mount</li>
     </ul>
   </div>
@@ -227,13 +218,12 @@ section.lab-wiring .checks { color: var(--ink); }
     <h3>Fixture and optional</h3>
     <ul>
       <li>2020 aluminium extrusion pack</li>
-      <li>Acrylic optical sample</li>
       <li>7 inch HDMI panel (bench only)</li>
       <li>Nano 2 GB acrylic case stays off the diagram until Orin fit is confirmed</li>
     </ul>
   </div>
 </div>
-<p>Part links match <a href="/docs/entrance-observer/phase-1-lab-validation/bill-of-materials/">Phase 1 - Lab BOM</a>. The diagram is a visualization aid, not a verified assembly specification.</p>
+<p>Part links match <a href="/docs/entrance-observer/phase-1-lab-validation/bill-of-materials/">Phase 1 - Lab BOM</a>. Lens, acrylic window and WiFi antennas remain purchase items there. The diagram is a visualization aid, not a verified assembly specification.</p>
 
 <h2 id="checklist">Pre-power checklist</h2>
 <ul class="checks">
@@ -260,6 +250,7 @@ section.lab-wiring .checks { color: var(--ink); }
 // WHY: HTML articles cannot rely on the site JS bundle (it concatenates classic scripts).
 // WHAT: mount wire-diagram from the vendored ESM build and fail visibly if YAML cannot be fetched.
 import { createWiringDiagram } from '/assets/triangle/wire-diagram/wire-diagram.js';
+import { entranceObserverModels } from '/assets/triangle/wire-diagram/models/entrance-observer.js';
 
 const host = document.getElementById('lab-wiring-widget');
 if (host) {
@@ -267,7 +258,8 @@ if (host) {
   try {
     const response = await fetch(sourceUrl);
     if (!response.ok) throw new Error(`Wiring source: HTTP ${response.status}`);
-    createWiringDiagram(host, await response.text(), { view: '2d' });
+    // WHY: Jetson/camera/enclosure meshes live on this site, not in the generic library.
+    createWiringDiagram(host, await response.text(), { view: '2d', models: entranceObserverModels });
   } catch (err) {
     const note = document.createElement('p');
     note.className = 'note';

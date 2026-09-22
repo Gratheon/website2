@@ -108,7 +108,7 @@ section.lab-wiring .checks { color: var(--ink); }
 </ul>
 
 <h2 id="wiring-diagram">Интерактивная схема соединений</h2>
-<p>Схема показывает соединения изделия. В 3D можно осмотреть стенд. Сплошные линии - основной лабораторный путь. Пунктир - механика или опциональные полевые/стендовые элементы.</p>
+<p>Схема показывает электрические соединения. В 3D можно осмотреть стенд. Сплошные линии - основной лабораторный путь. Пунктир - механика или опциональные полевые/стендовые элементы. Оптика (объектив, акриловое окно) и WiFi-антенны остаются в BOM, не на этой схеме.</p>
 
 <div class="note"><strong>Правило питания:</strong> USB-C Jetson это PD <strong>19 V</strong>, не 5 V USB. Камера питается по USB 3. HDMI-панель опциональна и только для стола.</div>
 
@@ -118,16 +118,15 @@ section.lab-wiring .checks { color: var(--ink); }
   data-source="/assets/triangle/wire-diagram/entrance-observer-lab.ru.yaml"
 ></div>
 <noscript><p class="note">Для интерактивной схемы нужен JavaScript. Таблица соединений ниже остаётся справочником.</p></noscript>
-<p class="lib-credit">Рендер через <a href="https://github.com/tot-ra/wire-diagram">wire-diagram</a>. Переключатель Schematic / 3D в углу холста. Подписи элементов переведены; кнопки виджета пока на английском. Встроенные модели - силуэты, не производственный CAD.</p>
+<p class="lib-credit">Рендер через <a href="https://github.com/tot-ra/wire-diagram">wire-diagram</a>. Переключатель Schematic / 3D в углу холста. Подписи элементов переведены; кнопки виджета пока на английском. Продуктовые силуэты - иллюстрации, не производственный CAD.</p>
 
 <div class="legend">
   <span><i class="swatch" style="background:#c62828"></i>USB-C PD 19 V (красный)</span>
-  <span><i class="swatch" style="background:#212121"></i>GND / IPEX (чёрный)</span>
+  <span><i class="swatch" style="background:#212121"></i>GND (чёрный)</span>
   <span><i class="swatch" style="background:#1565c0"></i>USB 3 UVC (синий)</span>
   <span><i class="swatch" style="background:#2e7d32"></i>Gigabit Ethernet (зелёный)</span>
   <span><i class="swatch" style="background:#6d4c41"></i>NVMe M.2 (коричневый)</span>
   <span><i class="swatch" style="background:#7b1fa2"></i>WiFi M.2, пунктир (фиолетовый)</span>
-  <span><i class="swatch" style="background:#ef6c00"></i>CS/C mount, пунктир (оранжевый)</span>
   <span><i class="swatch" style="background:#546e7a"></i>HDMI / оснастка, пунктир</span>
 </div>
 
@@ -174,17 +173,10 @@ section.lab-wiring .checks { color: var(--ink); }
     </tr>
     <tr>
       <td>Полевая сеть</td>
-      <td>AC8265 + антенны</td>
-      <td>Jetson M.2 Key E + IPEX</td>
+      <td>AC8265</td>
+      <td>Jetson M.2 Key E</td>
       <td>Опциональный WiFi</td>
-      <td>На схеме пунктиром</td>
-    </tr>
-    <tr>
-      <td>Объектив</td>
-      <td>Варифокал CS/C</td>
-      <td>Байонет камеры CS/C</td>
-      <td>Механика</td>
-      <td>После юстировки зафиксировать фокус и зум</td>
+      <td>На схеме пунктиром. Антенны на этой схеме не показаны.</td>
     </tr>
     <tr>
       <td>Поза камеры</td>
@@ -218,8 +210,7 @@ section.lab-wiring .checks { color: var(--ink); }
     <h3>Обязательные зрение и сеть</h3>
     <ul>
       <li>USB UVC камера MOKOSE 4K</li>
-      <li>Варифокальный объектив CS/C</li>
-      <li>Ethernet или AC8265 + антенны</li>
+      <li>Ethernet или AC8265</li>
       <li>Кронштейн камеры 1/4 inch</li>
     </ul>
   </div>
@@ -227,13 +218,12 @@ section.lab-wiring .checks { color: var(--ink); }
     <h3>Оснастка и опции</h3>
     <ul>
       <li>Набор алюминиевого профиля 2020</li>
-      <li>Образец акрилового окна</li>
       <li>7-дюймовая HDMI-панель (только стол)</li>
       <li>Акриловый корпус Nano 2 GB на схеме не показан, пока не подтверждена посадка Orin</li>
     </ul>
   </div>
 </div>
-<p>Ссылки на детали совпадают с <a href="/ru/docs/entrance-observer/phase-1-lab-validation/bill-of-materials/">BOM лаборатории фазы 1</a>. Схема - визуализация, не проверенная сборочная спецификация.</p>
+<p>Ссылки на детали совпадают с <a href="/ru/docs/entrance-observer/phase-1-lab-validation/bill-of-materials/">BOM лаборатории фазы 1</a>. Объектив, акриловое окно и WiFi-антенны остаются позициями закупки там. Схема - визуализация, не проверенная сборочная спецификация.</p>
 
 <h2 id="checklist">Чеклист до включения</h2>
 <ul class="checks">
@@ -260,6 +250,7 @@ section.lab-wiring .checks { color: var(--ink); }
 // WHY: HTML articles cannot rely on the site JS bundle (it concatenates classic scripts).
 // WHAT: mount wire-diagram from the vendored ESM build and fail visibly if YAML cannot be fetched.
 import { createWiringDiagram } from '/assets/triangle/wire-diagram/wire-diagram.js';
+import { entranceObserverModels } from '/assets/triangle/wire-diagram/models/entrance-observer.js';
 
 const host = document.getElementById('lab-wiring-widget');
 if (host) {
@@ -267,7 +258,8 @@ if (host) {
   try {
     const response = await fetch(sourceUrl);
     if (!response.ok) throw new Error(`Wiring source: HTTP ${response.status}`);
-    createWiringDiagram(host, await response.text(), { view: '2d' });
+    // WHY: Jetson/camera/enclosure meshes live on this site, not in the generic library.
+    createWiringDiagram(host, await response.text(), { view: '2d', models: entranceObserverModels });
   } catch (err) {
     const note = document.createElement('p');
     note.className = 'note';

@@ -4,7 +4,7 @@ description: Jetson Orin Nano Super + USB UVC camera · Phase 1 bench
 notes:
   - This is a product interconnect, not a GPIO map. Confirm labels on the actual Jetson carrier.
   - Jetson USB-C is PD 19 V. Do not feed the kit from a 5 V phone charger.
-  - Prefer Ethernet for repeatable tests. WiFi plus antennas reproduce field conditions.
+  - Prefer Ethernet for repeatable tests. The optional WiFi module reproduces field conditions.
   - The 7 inch HDMI panel is bench-only. Remove it before any field fixture.
   - The acrylic Nano 2 GB case is not assumed to fit Orin. Leave it off the powered stack.
 groups:
@@ -53,32 +53,8 @@ components:
     purchase: { url: 'https://www.amazon.com/dp/B0814VFG12', label: 'MOKOSE 4K UVC', partNumber: 'B0814VFG12' }
     pins:
       - { id: USB, label: USB 3.0, side: left, position: [-21, 0, 0] }
-      - { id: CS, label: CS/C mount, side: right, position: [21, 0, 0] }
       - { id: TRIPOD, label: '1/4 inch', side: left, position: [0, -19, 0] }
     notes: Bus-powered UVC camera. Use a USB 3 cable of the same length planned for field tests.
-  - id: lens
-    label: Varifocal CS/C lens
-    kind: lens
-    group: vision
-    dimensions: [50, 36, 36]
-    position: [178, 58, 0]
-    schematic: [1000, 40]
-    purchase: { url: 'https://www.aliexpress.com/item/1005003681106033.html', label: '5-50 mm CS/C lens' }
-    pins:
-      - { id: CS, label: CS/C, side: left, position: [-25, 0, 0] }
-      - { id: FRONT, label: Optical face, side: right, position: [25, 0, 0] }
-    notes: Use varifocal only while entrance FOV is unknown. Lock focus and zoom during tests.
-  - id: cover
-    label: Acrylic optical sample
-    kind: cover
-    group: vision
-    dimensions: [2, 80, 100]
-    position: [220, 58, 0]
-    schematic: [1300, 40]
-    purchase: { url: 'https://www.amazon.de/dp/B08F4Z9RRQ', label: 'Acrylic sheets', partNumber: 'B08F4Z9RRQ' }
-    pins:
-      - { id: FACE, label: Window, side: left, position: [-1, 0, 0] }
-    notes: Lab glare/blur/condensation sample. Not a production optical window.
   - id: lan
     label: Lab Ethernet
     kind: board
@@ -110,27 +86,7 @@ components:
     purchase: { url: 'https://www.amazon.de/dp/B07SGDRG34', label: 'AC8265 M.2 WiFi', partNumber: 'B07SGDRG34' }
     pins:
       - { id: M2, label: M.2 Key E, side: left, position: [-15, 0, 0] }
-      - { id: IPEX1, label: IPEX 1, side: right, position: [14, 2, -5] }
-      - { id: IPEX2, label: IPEX 2, side: right, position: [14, 2, 5] }
     notes: Field-condition option. Keep Ethernet connected for the default lab path.
-  - id: ant1
-    label: WiFi antenna A
-    kind: antenna
-    group: network
-    dimensions: [8, 90, 16]
-    position: [18, 88, 58]
-    schematic: [1000, 360]
-    pins:
-      - { id: CABLE, side: left, position: [0, -40, 0] }
-  - id: ant2
-    label: WiFi antenna B
-    kind: antenna
-    group: network
-    dimensions: [8, 90, 16]
-    position: [18, 88, -8]
-    schematic: [1300, 360]
-    pins:
-      - { id: CABLE, side: left, position: [0, -40, 0] }
   - id: display
     label: 7 inch HDMI panel
     kind: display
@@ -207,20 +163,6 @@ wires:
     lengthMm: 30
     diameterMm: 1.2
     notes: Dashed because Ethernet is the default lab path.
-  - id: ant-a
-    from: wifi.IPEX1
-    to: ant1.CABLE
-    color: '#212121'
-    label: IPEX A
-    dashed: true
-    diameterMm: 1.2
-  - id: ant-b
-    from: wifi.IPEX2
-    to: ant2.CABLE
-    color: '#212121'
-    label: IPEX B
-    dashed: true
-    diameterMm: 1.2
   - id: ethernet
     from: lan.ETH
     to: jetson.ETH
@@ -238,14 +180,6 @@ wires:
     lengthMm: 500
     diameterMm: 6
     notes: Optional. Unplug before outdoor or unattended runs.
-  - id: cs-mount
-    from: lens.CS
-    to: camera.CS
-    color: '#ef6c00'
-    label: CS/C mount
-    dashed: true
-    diameterMm: 2
-    notes: Mechanical mount, not an electrical net.
   - id: tripod
     from: mount.THREAD
     to: camera.TRIPOD
@@ -261,11 +195,3 @@ wires:
     label: Fixture
     dashed: true
     diameterMm: 2
-  - id: window
-    from: cover.FACE
-    to: lens.FRONT
-    color: '#90caf9'
-    label: Optical sample
-    dashed: true
-    diameterMm: 1.4
-    notes: Place the acrylic in the optical path only for glare and condensation tests.

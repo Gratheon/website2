@@ -4,7 +4,7 @@ description: Jetson Orin Nano Super + USB UVC камера · стенд фаз�
 notes:
   - Это схема соединений изделия, не GPIO-карта. Сверяйте подписи на реальном carrier Jetson.
   - USB-C Jetson это PD 19 V. Не питать комплект от 5 V зарядки телефона.
-  - Для повторяемых тестов лучше Ethernet. WiFi и антенны нужны, чтобы воспроизвести полевые условия.
+  - Для повторяемых тестов лучше Ethernet. Опциональный модуль WiFi нужен, чтобы воспроизвести полевые условия.
   - 7-дюймовая HDMI-панель только для стола. Перед любой полевой оснасткой её снимают.
   - Акриловый корпус от Nano 2 GB не считается подходящим для Orin. Не ставить его в рабочий стек.
 groups:
@@ -53,32 +53,8 @@ components:
     purchase: { url: 'https://www.amazon.com/dp/B0814VFG12', label: 'MOKOSE 4K UVC', partNumber: 'B0814VFG12' }
     pins:
       - { id: USB, label: USB 3.0, side: left, position: [-21, 0, 0] }
-      - { id: CS, label: CS/C mount, side: right, position: [21, 0, 0] }
       - { id: TRIPOD, label: '1/4 inch', side: left, position: [0, -19, 0] }
     notes: Камера питается по USB. Берите USB 3 кабель той же длины, что планируется в поле.
-  - id: lens
-    label: Варифокальный CS/C объектив
-    kind: lens
-    group: vision
-    dimensions: [50, 36, 36]
-    position: [178, 58, 0]
-    schematic: [1000, 40]
-    purchase: { url: 'https://www.aliexpress.com/item/1005003681106033.html', label: 'Объектив 5-50 mm CS/C' }
-    pins:
-      - { id: CS, label: CS/C, side: left, position: [-25, 0, 0] }
-      - { id: FRONT, label: Оптическая плоскость, side: right, position: [25, 0, 0] }
-    notes: Варифокал только пока неизвестен FOV летка. На тестах фиксируйте фокус и зум.
-  - id: cover
-    label: Образец акрилового окна
-    kind: cover
-    group: vision
-    dimensions: [2, 80, 100]
-    position: [220, 58, 0]
-    schematic: [1300, 40]
-    purchase: { url: 'https://www.amazon.de/dp/B08F4Z9RRQ', label: 'Листы акрила', partNumber: 'B08F4Z9RRQ' }
-    pins:
-      - { id: FACE, label: Окно, side: left, position: [-1, 0, 0] }
-    notes: Лабораторный образец бликов, мыла и конденсата. Это не серийное оптическое стекло.
   - id: lan
     label: Лабораторный Ethernet
     kind: board
@@ -110,27 +86,7 @@ components:
     purchase: { url: 'https://www.amazon.de/dp/B07SGDRG34', label: 'AC8265 M.2 WiFi', partNumber: 'B07SGDRG34' }
     pins:
       - { id: M2, label: M.2 Key E, side: left, position: [-15, 0, 0] }
-      - { id: IPEX1, label: IPEX 1, side: right, position: [14, 2, -5] }
-      - { id: IPEX2, label: IPEX 2, side: right, position: [14, 2, 5] }
     notes: Полевой вариант. Для обычной лаборатории оставляйте Ethernet.
-  - id: ant1
-    label: Антенна WiFi A
-    kind: antenna
-    group: network
-    dimensions: [8, 90, 16]
-    position: [18, 88, 58]
-    schematic: [1000, 360]
-    pins:
-      - { id: CABLE, side: left, position: [0, -40, 0] }
-  - id: ant2
-    label: Антенна WiFi B
-    kind: antenna
-    group: network
-    dimensions: [8, 90, 16]
-    position: [18, 88, -8]
-    schematic: [1300, 360]
-    pins:
-      - { id: CABLE, side: left, position: [0, -40, 0] }
   - id: display
     label: 7-дюймовая HDMI-панель
     kind: display
@@ -207,20 +163,6 @@ wires:
     lengthMm: 30
     diameterMm: 1.2
     notes: Пунктир потому что Ethernet - основной лабораторный путь.
-  - id: ant-a
-    from: wifi.IPEX1
-    to: ant1.CABLE
-    color: '#212121'
-    label: IPEX A
-    dashed: true
-    diameterMm: 1.2
-  - id: ant-b
-    from: wifi.IPEX2
-    to: ant2.CABLE
-    color: '#212121'
-    label: IPEX B
-    dashed: true
-    diameterMm: 1.2
   - id: ethernet
     from: lan.ETH
     to: jetson.ETH
@@ -238,14 +180,6 @@ wires:
     lengthMm: 500
     diameterMm: 6
     notes: Опционально. Отключайте перед улицей и длительными прогонами без присмотра.
-  - id: cs-mount
-    from: lens.CS
-    to: camera.CS
-    color: '#ef6c00'
-    label: CS/C mount
-    dashed: true
-    diameterMm: 2
-    notes: Механическое крепление, не электрическая сеть.
   - id: tripod
     from: mount.THREAD
     to: camera.TRIPOD
@@ -261,11 +195,3 @@ wires:
     label: Стапель
     dashed: true
     diameterMm: 2
-  - id: window
-    from: cover.FACE
-    to: lens.FRONT
-    color: '#90caf9'
-    label: Оптический образец
-    dashed: true
-    diameterMm: 1.4
-    notes: Акрил в оптический путь ставьте только для тестов бликов и конденсата.
