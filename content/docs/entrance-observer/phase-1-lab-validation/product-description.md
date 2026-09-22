@@ -114,4 +114,4 @@ The lab phase must still record power and FPS numbers. Without measured FPS/W an
 
 ## Bill of materials
 
-The detailed purchase list is in [Phase 1 - Lab BOM](/docs/entrance-observer/phase-1-lab-validation/bill-of-materials/). The interconnect is on [Lab product wiring](/docs/entrance-observer/phase-1-lab-validation/wiring-diagrams/lab-product-wiring/). The core parts are Jetson Orin Nano, USB UVC camera, varifocal lens, NVMe SSD, WiFi or Ethernet, bench power, and a temporary camera fixture.
+The detailed purchase list is in [Phase 1 - Lab BOM](/docs/entrance-observer/phase-1-lab-validation/bill-of-materials/). The interconnect is on [Lab product wiring](/docs/entrance-observer/#wiring-diagram). The core parts are Jetson Orin Nano, USB UVC camera, varifocal lens, NVMe SSD, WiFi or Ethernet, bench power, and a temporary camera fixture.

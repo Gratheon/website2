@@ -16,4 +16,4 @@ hide_table_of_contents: false
 - [Which model to use for vision](Which%20model%20to%20use%20for%20vision.md)
 - [Jetson Nano components](components-jetson/Jetson%20Nano.md)
 
-Не начинайте с этих страниц новую сборку. Для актуального пути используйте [Entrance Observer](../entrance-observer.md), [Bill of materials](../Bill%20of%20materials.md) и [Jetson Orin setup](../Jetson%20Orin%20setup.md).
+Не начинайте с этих страниц новую сборку. Для актуального пути используйте [Entrance Observer](../), [Bill of materials](../Bill%20of%20materials.md) и [Jetson Orin setup](../Jetson%20Orin%20setup.md).

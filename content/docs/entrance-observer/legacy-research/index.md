@@ -13,4 +13,4 @@ Current docs are focused on the Jetson Orin Nano prototype and future production
 - Early model-choice notes.
 - Early ML processing device comparisons.
 
-Do not treat these pages as the current build instructions. Start from [Entrance observer](../entrance-observer.md), [Bill of materials](../Bill%20of%20materials.md), and [Jetson Orin setup](../Jetson%20Orin%20setup.md) instead.
+Do not treat these pages as the current build instructions. Start from [Entrance observer](../), [Bill of materials](../Bill%20of%20materials.md), and [Jetson Orin setup](../Jetson%20Orin%20setup.md) instead.

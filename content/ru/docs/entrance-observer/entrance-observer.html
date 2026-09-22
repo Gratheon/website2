@@ -1,0 +1,542 @@
+<!--
+---
+title: 👁️‍🗨️ Entrance Observer
+navTitle: Entrance Observer
+order: 4
+sidebar_position: 5
+hide_table_of_contents: false
+description: Интерактивная лабораторная схема, 3D-соединения и дорожная карта Entrance Observer.
+---
+-->
+<section class="lab-wiring">
+<style>
+.lab-wiring {
+  --ink: #172033;
+  --muted: #5b677a;
+  --line: #d7deea;
+  --soft: #f4f7fb;
+  --paper: #ffffff;
+  --blue: #1565c0;
+  --orange: #ef6c00;
+  --green: #2e7d32;
+  --red: #c62828;
+  --ui: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+.lab-wiring, .lab-wiring * { box-sizing: border-box; }
+.lab-wiring h2 { margin: 42px 0 12px; font-size: 1.55rem; line-height: 1.25; }
+.lab-wiring h3 { margin: 26px 0 10px; font-size: 1.12rem; }
+.lab-wiring p { margin: 0 0 14px; }
+.lab-wiring a { color: #0b5ed7; }
+.lab-wiring code { padding: 1px 5px; border-radius: 4px; background: #eef1f6; font-family: var(--mono); font-size: .87em; }
+.lab-wiring .lead { font-size: 1.05rem; color: var(--muted); }
+.lab-wiring .note {
+  margin: 16px 0 20px; padding: 13px 15px;
+  border-left: 4px solid var(--orange); border-radius: 0 10px 10px 0;
+  background: #fff4e8; color: #5a3b16;
+}
+.lab-wiring .note strong { color: var(--ink); }
+.lab-wiring .toc-mini {
+  display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 22px; padding: 0; list-style: none;
+}
+.lab-wiring .toc-mini a {
+  display: inline-block; padding: 6px 10px; border: 1px solid var(--line); border-radius: 999px;
+  background: var(--soft); color: var(--ink); font-size: .86rem; text-decoration: none;
+}
+.lab-wiring .toc-mini a:hover { border-color: #0b5ed7; }
+section.lab-wiring .wire-diagram-host,
+section.lab-wiring .legend,
+section.lab-wiring .board-map,
+section.lab-wiring .checks,
+section.lab-wiring :is(.wire-diagram-host, .legend, .board-map, .checks) :is(p, span, button, label, li, small, strong, h2, h3, h4, a, select) {
+  font-family: var(--ui);
+}
+section.lab-wiring .wire-diagram-host,
+section.lab-wiring .legend,
+section.lab-wiring .board-map,
+section.lab-wiring .checks { color: var(--ink); }
+.lab-wiring .wire-diagram-host { margin: 12px 0 18px; }
+.site-content article .content section.lab-wiring .wd-widget h2 {
+  margin: 0 0 3px; font-size: 20px; line-height: 1.25; font-family: var(--ui);
+}
+.lab-wiring .lib-credit { margin: 0 0 22px; font-size: .86rem; color: var(--muted); }
+.lab-wiring .legend {
+  display: flex; flex-wrap: wrap; gap: 10px 16px;
+  margin: 0 0 28px; padding: 10px 4px 0;
+  font-size: .86rem; color: var(--muted);
+}
+.lab-wiring .swatch {
+  display: inline-block; width: 14px; height: 8px; margin-right: 6px;
+  border-radius: 99px; vertical-align: middle;
+}
+.lab-wiring .table-wrap { overflow-x: auto; margin: 8px 0 22px; }
+.site-content article .content section.lab-wiring table {
+  min-width: 720px; margin: 0; background: var(--paper);
+}
+.site-content article .content section.lab-wiring th,
+.site-content article .content section.lab-wiring td {
+  font-size: .9rem; vertical-align: top;
+}
+.lab-wiring .warn { color: var(--red); font-weight: 700; }
+.lab-wiring .board-map {
+  display: grid; grid-template-columns: 1fr 1.2fr 1fr; gap: 10px; margin: 14px 0 18px;
+}
+.lab-wiring .col {
+  padding: 14px; border-radius: 14px; border: 1px solid var(--line); background: var(--paper);
+}
+.lab-wiring .col h3 { margin: 0 0 8px; }
+.lab-wiring .col.power { background: #e3f2fd; border-color: #90caf9; }
+.lab-wiring .col.mcu { background: #fff3e0; border-color: #ffcc80; }
+.lab-wiring .col.sensors { background: #e8f5e9; border-color: #a5d6a7; }
+.lab-wiring .col ul { margin: 0; padding-left: 18px; }
+.lab-wiring .checks { margin: 0; padding: 0; list-style: none; }
+.lab-wiring .checks li { margin: 0 0 8px; }
+.lab-wiring .checks label { display: flex; gap: 10px; align-items: flex-start; }
+.lab-wiring .steps { margin: 0; padding-left: 20px; }
+.lab-wiring .steps li { margin: 0 0 8px; }
+@media (max-width: 800px) {
+  .lab-wiring .board-map { grid-template-columns: 1fr; }
+}
+</style>
+
+<p class="lead">Интерактивная схема стенда фазы 1: Jetson Orin Nano Super, USB UVC камера, NVMe и Ethernet или WiFi. Клик по детали или кабелю открывает ссылки на покупку и заметки по сборке.</p>
+
+<ul class="toc-mini">
+  <li><a href="#wiring-diagram">Схема</a></li>
+  <li><a href="#connections">Таблица соединений</a></li>
+  <li><a href="#bom-map">Связь с BOM</a></li>
+  <li><a href="#checklist">Чеклист</a></li>
+  <li><a href="#power-on">Первое включение</a></li>
+</ul>
+
+<h2 id="wiring-diagram">Интерактивная схема соединений</h2>
+<p>Схема показывает электрические соединения. В 3D можно осмотреть стенд. Сплошные линии - основной лабораторный путь. Пунктир - опциональные полевые или стендовые элементы. Оптика, кронштейн камеры и стапель 2020 остаются в BOM, не на этой схеме.</p>
+
+<div class="note"><strong>Правило питания:</strong> у официального Orin Nano питание это DC barrel <strong>19 V</strong>, не USB-C и не 5 V USB. USB-C на этом carrier только data/recovery. Камера питается по USB 3. HDMI-панель опциональна, только для стола, и нужен переходник DisplayPort-HDMI.</div>
+
+<div
+  id="lab-wiring-widget"
+  class="wire-diagram-host"
+  data-source="/assets/triangle/wire-diagram/entrance-observer-lab.ru.yaml"
+></div>
+<noscript><p class="note">Для интерактивной схемы нужен JavaScript. Таблица соединений ниже остаётся справочником.</p></noscript>
+<p class="lib-credit">Рендер через <a href="https://github.com/tot-ra/wire-diagram">wire-diagram</a>. Переключатель Schematic / 3D в углу холста. Подписи элементов переведены; кнопки виджета пока на английском. Продуктовые силуэты - иллюстрации, не производственный CAD.</p>
+
+<div class="legend">
+  <span><i class="swatch" style="background:#c62828"></i>Barrel 19 V DC (красный)</span>
+  <span><i class="swatch" style="background:#1565c0"></i>USB 3 UVC (синий)</span>
+  <span><i class="swatch" style="background:#2e7d32"></i>Gigabit Ethernet (зелёный)</span>
+  <span><i class="swatch" style="background:#6d4c41"></i>NVMe M.2 (коричневый)</span>
+  <span><i class="swatch" style="background:#7b1fa2"></i>WiFi M.2, пунктир (фиолетовый)</span>
+  <span><i class="swatch" style="background:#546e7a"></i>DisplayPort, пунктир</span>
+</div>
+
+<h2 id="connections">Таблица соединений</h2>
+<div class="table-wrap">
+<table>
+  <thead>
+    <tr>
+      <th>Функция</th>
+      <th>Откуда</th>
+      <th>Куда</th>
+      <th>Тип</th>
+      <th>Заметки</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Питание комплекта</td>
+      <td>Адаптер 19 V DC</td>
+      <td>POWER Jetson (barrel)</td>
+      <td>Электричество, 19 V</td>
+      <td class="warn">Не USB-C и не зарядка телефона 5 V</td>
+    </tr>
+    <tr>
+      <td>Видео и питание камеры</td>
+      <td>MOKOSE USB 3</td>
+      <td>Jetson USB 3.2 Type-A</td>
+      <td>USB 3 UVC</td>
+      <td>Кабель той же длины, что планируется в поле</td>
+    </tr>
+    <tr>
+      <td>OS / буфер клипов</td>
+      <td>NVMe 250 GB</td>
+      <td>Jetson M.2 Key M</td>
+      <td>Внутренний M.2</td>
+      <td>Поставить до первой загрузки</td>
+    </tr>
+    <tr>
+      <td>Основная сеть</td>
+      <td>Лабораторный Ethernet</td>
+      <td>Jetson RJ45</td>
+      <td>Gigabit Ethernet</td>
+      <td>Предпочтительно для повторяемых тестов</td>
+    </tr>
+    <tr>
+      <td>Полевая сеть</td>
+      <td>AC8265</td>
+      <td>Jetson M.2 Key E</td>
+      <td>Опциональный WiFi</td>
+      <td>На схеме пунктиром. Антенны на этой схеме не показаны.</td>
+    </tr>
+    <tr>
+      <td>Локальный превью</td>
+      <td>7-дюймовая HDMI-панель</td>
+      <td>DisplayPort Jetson</td>
+      <td>Опционально</td>
+      <td>Только стол; переходник DP-HDMI и USB-питание тача</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<h2 id="bom-map">Как это связано с BOM фазы 1</h2>
+<div class="board-map">
+  <div class="col power">
+    <h3>Обязательные питание и compute</h3>
+    <ul>
+      <li>Адаптер 19 V DC barrel</li>
+      <li>Jetson Orin Nano Super 8 GB</li>
+      <li>M.2 NVMe 250 GB</li>
+    </ul>
+  </div>
+  <div class="col mcu">
+    <h3>Обязательные зрение и сеть</h3>
+    <ul>
+      <li>USB UVC камера MOKOSE 4K</li>
+      <li>Ethernet или AC8265</li>
+    </ul>
+  </div>
+  <div class="col sensors">
+    <h3>Опциональная электрика</h3>
+    <ul>
+      <li>7-дюймовая HDMI-панель (только стол)</li>
+      <li>Акриловый корпус Nano 2 GB на схеме не показан, пока не подтверждена посадка Orin</li>
+    </ul>
+  </div>
+</div>
+<p>Ссылки на детали совпадают с <a href="/ru/docs/entrance-observer/phase-1-lab-validation/bill-of-materials/">BOM лаборатории фазы 1</a>. Объектив, кронштейн камеры, стапель 2020, акриловое окно и WiFi-антенны остаются позициями закупки там. Схема - визуализация, не проверенная сборочная спецификация.</p>
+
+<h2 id="checklist">Чеклист до включения</h2>
+<ul class="checks">
+  <li><label><input type="checkbox"> NVMe стоит в M.2 Key M до первой загрузки</label></li>
+  <li><label><input type="checkbox"> Адаптер 19 V DC вставлен в POWER, не в USB-C, и это не зарядка телефона 5 V</label></li>
+  <li><label><input type="checkbox"> USB 3 кабель камеры до конца вставлен и той же длины, что будет позже</label></li>
+  <li><label><input type="checkbox"> Ethernet подключён как основной лабораторный путь</label></li>
+  <li><label><input type="checkbox"> Фокус и зум объектива зафиксированы после первой юстировки</label></li>
+  <li><label><input type="checkbox"> HDMI-панель отключена, если локальный превью не нужен</label></li>
+  <li><label><input type="checkbox"> Акриловый корпус Nano 2 GB не душит охлаждение Orin</label></li>
+</ul>
+
+<h2 id="power-on">Последовательность первого включения</h2>
+<ol class="steps">
+  <li>Подключите Ethernet, NVMe и USB-кабель камеры до подачи PD-питания.</li>
+  <li>Вставьте barrel 19 V в POWER Jetson, затем в розетку.</li>
+  <li>Проверьте, что светодиоды carrier загорелись, а камера видна в <code>v4l2-ctl --list-devices</code>.</li>
+  <li>Запустите <code>entrance-observer</code> на известном клипе или живом UVC.</li>
+  <li>Если камера отваливается, сначала смените USB-кабель, а не модель или трекер.</li>
+</ol>
+</section>
+<script type="module">
+// WHY: HTML articles cannot rely on the site JS bundle (it concatenates classic scripts).
+// WHAT: mount wire-diagram from the vendored ESM build and fail visibly if YAML cannot be fetched.
+import { createWiringDiagram } from '/assets/triangle/wire-diagram/wire-diagram.js';
+import { entranceObserverModels } from '/assets/triangle/wire-diagram/models/entrance-observer.js';
+
+const host = document.getElementById('lab-wiring-widget');
+if (host) {
+  const sourceUrl = host.dataset.source;
+  try {
+    const response = await fetch(sourceUrl);
+    if (!response.ok) throw new Error(`Wiring source: HTTP ${response.status}`);
+    // WHY: camera/fixture meshes live on this site; Jetson Orin Nano uses the wire-diagram builtin.
+    createWiringDiagram(host, await response.text(), { view: '2d', models: entranceObserverModels });
+  } catch (err) {
+    const note = document.createElement('p');
+    note.className = 'note';
+    note.textContent = err instanceof Error ? err.message : String(err);
+    host.replaceChildren(note);
+  }
+}
+</script>
+
+<hr>
+
+<p>Entrance Observer — это edge-компонент компьютерного зрения, который наблюдает за летком улья, распознаёт движение пчёл и отправляет в веб-платформу Gratheon телеметрию пчелиного трафика, а при необходимости — видеодоказательства.</p>
+<p>Живой просмотр должен запускаться <strong>по запросу</strong> из <code>web-app</code>, когда пользователь открывает или начинает смотреть конкретную секцию улья. У <code>web-app</code> нет прямого доступа к edge-устройству, поэтому live-сессии должны запускаться и воспроизводиться через <code>gate-video-stream</code> и <code>graphql-router</code>. Постоянная загрузка видео и S3-воспроизведение остаются опциональными режимами записи, а не стандартным способом смотреть леток в реальном времени. Целевая архитектура описана в <a href="On-demand%20entrance%20video%20streaming/">On-demand entrance video streaming</a>.</p>
+<p>Продуктовый обзор см. в <a href="../../products/entrance_observer/entrance_observer/">Entrance Observer</a>. Собранные метрики связаны с <a href="../../products/web_app/pro-tier/hive-telemetry-storage/">хранилищем телеметрии ульев</a> и <a href="../../products/web_app/pro-tier/timeseries-data-analytics/">аналитикой временных рядов</a>.</p>
+<h2 id="napravlenie-produkta">Направление продукта</h2>
+<p>Entrance Observer должен развиваться через три понятные аппаратные фазы. Документация теперь сгруппирована сначала по фазам, потому что каждой фазе нужны и описание продукта, и отдельный bill of materials:</p>
+<ol>
+<li><strong><a href="phase-1-lab-validation/">Фаза 1 — лабораторная валидация</a></strong> — доказать работу камеры, модели, телеметрии и управления live-сессиями на стенде разработчика.</li>
+<li><strong><a href="phase-2-field-mvp/">Фаза 2 — полевой MVP</a></strong> — поставить защищённое пилотное устройство на настоящий леток и измерить надёжность, качество подсчёта, энергопотребление и пропускную способность.</li>
+<li><strong><a href="phase-3-production-kit/">Фаза 3 — production kit</a></strong> — превратить проверенный дизайн в повторяемое, поддерживаемое и продаваемое устройство или набор SKU.</li>
+</ol>
+<p>Такое разделение помогает быстро отлаживать первую сборку и одновременно показывает путь к законченному продукту Gratheon. Текущая прототипная платформа — <strong>NVIDIA Jetson Orin Nano Super Developer Kit</strong> с USB UVC-камерой. Jetson локально запускает <a href="https://github.com/Gratheon/entrance-observer"><code>entrance-observer</code></a>, чтобы пасеке не нужно было постоянно стримить сырое видео в облако.</p>
+<h2 id="obzor-faz">Обзор фаз</h2>
+<table>
+<thead>
+<tr>
+<th>Фаза</th>
+<th>Цель</th>
+<th>Основной пользователь</th>
+<th align="right">Целевая стоимость</th>
+<th>Описание продукта</th>
+<th>BOM</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Фаза 1 — лаборатория</td>
+<td>Быстрый стендовый прототип для камеры, модели, телеметрии и live-сессий</td>
+<td>Разработчик, ML-инженер, contributor</td>
+<td align="right">€550-650 с текущим Jetson-стеком</td>
+<td><a href="phase-1-lab-validation/product-description/">Описание продукта</a></td>
+<td><a href="phase-1-lab-validation/bill-of-materials/">Bill of materials</a></td>
+</tr>
+<tr>
+<td>Фаза 2 — Field MVP</td>
+<td>Защищённое пилотное устройство для одного реального летка</td>
+<td>Пилотный пчеловод, полевой тестировщик, support-инженер</td>
+<td align="right">€650-1000+ в зависимости от корпуса, питания и сети</td>
+<td><a href="phase-2-field-mvp/product-description/">Описание продукта</a></td>
+<td><a href="phase-2-field-mvp/bill-of-materials/">Bill of materials</a></td>
+</tr>
+<tr>
+<td>Фаза 3 — Production</td>
+<td>Повторяемый camera/edge-AI kit или семейство SKU</td>
+<td>Платящий клиент, реселлер, managed-apiary, support-команда</td>
+<td align="right">Выбирается по полевым данным</td>
+<td><a href="phase-3-production-kit/product-description/">Описание продукта</a></td>
+<td><a href="phase-3-production-kit/bill-of-materials/">Bill of materials</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="model-podklyucheniya-sistemy">Модель подключения системы</h2>
+<p>Аппаратную часть нужно описывать как связанные подсистемы, а не как случайный список деталей. Так явно видны границы камеры, питания, сети, сервиса и облака.</p>
+<pre><code class="language-mermaid">flowchart LR
+  subgraph Hive[Леток улья]
+    entrance[Леток и прилётная доска]
+    cameraHead[Камера, объектив, окно, кронштейн]
+  end
+
+  subgraph Edge[Edge-устройство]
+    capture[Захват видео]
+    detector[Детектор и трекер]
+    counter[Подсчёт с направлением]
+    buffer[Локальный буфер клипов]
+    publisher[On-demand media publisher]
+    health[Телеметрия здоровья устройства]
+  end
+
+  subgraph Cloud[Облако Gratheon]
+    telemetry[telemetry-api]
+    video[gate-video-stream]
+    model[models-gate-tracker]
+    graphql[graphql-router]
+    mysql[(MySQL)]
+    s3[(S3-compatible storage)]
+  end
+
+  subgraph UI[Gratheon web-app]
+    web[web-app]
+    player[Live player]
+    charts[Графики трафика]
+    archive[Архив клипов]
+  end
+
+  entrance --&gt; cameraHead
+  cameraHead --&gt; capture
+  capture --&gt; detector
+  detector --&gt; counter
+  counter --&gt;|bee count, direction, confidence, timestamp| telemetry
+  health --&gt; telemetry
+  buffer --&gt;|опциональные выбранные клипы| video
+  web --&gt;|start/stop live session for box| graphql
+  graphql --&gt; video
+  video --&gt;|session command| publisher
+  publisher --&gt;|publish only while viewed| video
+  video --&gt; player
+  video --&gt;|опциональный cloud inference/reprocessing| model
+  video --&gt; mysql
+  video --&gt; s3
+  telemetry --&gt; mysql
+  web --&gt;|query hive, streams, telemetry| graphql
+  graphql --&gt; telemetry
+  graphql --&gt; video
+  web --&gt; charts
+  web --&gt; archive</code></pre>
+<h2 id="otsenka-tekuschego-podhoda">Оценка текущего подхода</h2>
+<table>
+<thead>
+<tr>
+<th>Область</th>
+<th>Текущее состояние</th>
+<th>Пробел</th>
+<th>Рекомендуемое изменение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Группировка документации</td>
+<td>Раньше был один prototype BOM и отдельная страница будущих альтернатив.</td>
+<td>Читатель должен был угадывать, какие детали относятся к лаборатории, полевому MVP или production.</td>
+<td>Использовать phase-first структуру: в каждой фазе есть описание продукта и BOM.</td>
+</tr>
+<tr>
+<td>Edge compute</td>
+<td>Текущий reference — Jetson Orin Nano Super Developer Kit.</td>
+<td>Хорош для итераций модели, но дорогой и энергоёмкий для солнечного customer-unit.</td>
+<td>Оставить Jetson для Фазы 1 и ранней Фазы 2. До production сравнить Raspberry Pi 5 + Hailo и RK3588.</td>
+</tr>
+<tr>
+<td>Камера</td>
+<td>USB UVC 4K-камера с ручным варифокальным объективом.</td>
+<td>Удобна для отладки, но это не повторяемая уличная camera head.</td>
+<td>В лаборатории оставить USB; для поля заморозить FOV и тестировать CSI/MIPI, industrial board cameras или IP/H.265-модули.</td>
+</tr>
+<tr>
+<td>Видеопродукт</td>
+<td>Концептуально есть сохранённые клипы и on-demand live video.</td>
+<td>Непрерывная загрузка тратит bandwidth, storage, edge CPU и cloud CPU.</td>
+<td>По умолчанию telemetry-first, live video по запросу, clip storage — выборочно.</td>
+</tr>
+<tr>
+<td>Корпус</td>
+<td>Алюминиевый профиль, акриловые листы, кронштейн и dev-case — прототипные материалы.</td>
+<td>Не weatherproof, не оптимизировано для UV/конденсата и плохо обслуживается.</td>
+<td>Для Field MVP перейти к IP65/IP67-корпусу, герметичным вводам, hood/window strategy и фиксированному кронштейну.</td>
+</tr>
+<tr>
+<td>Питание</td>
+<td>Текущий BOM описывает compute/camera, но не измеренную энергию.</td>
+<td>Solar feasibility нельзя решить без Wh/day, sleep modes и duty cycle модема.</td>
+<td>Уже в Фазе 1 добавить power meters; в Фазе 2 — PoE/mains pilots; solar — только после измерений.</td>
+</tr>
+<tr>
+<td>Сеть</td>
+<td>WiFi-модуль задокументирован.</td>
+<td>На пасеках часто слабый WiFi или нет интернета.</td>
+<td>В Фазе 2 тестировать Ethernet/PoE и WiFi; для Фазы 3 определить LTE/gateway варианты.</td>
+</tr>
+<tr>
+<td>Поддержка</td>
+<td>SSH, <code>jtop</code>, Docker logs и GStreamer полезны разработчикам.</td>
+<td>Customer support нужен device health без SSH.</td>
+<td>Загружать health-поля: FPS, camera online, disk free, queue size, temperature, RSSI, app/model version, reset reason.</td>
+</tr>
+<tr>
+<td>Стоимость</td>
+<td>Прототип стоит примерно €550-650 до полевых деталей.</td>
+<td>Production cost неизвестен и может определяться корпусом, питанием и service parts, а не только compute.</td>
+<td>Вести BOM по фазам и выбирать production SKU после полевых данных.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="svodka-komponentnogo-analiza">Сводка компонентного анализа</h2>
+<p>Подробный анализ находится в <a href="Component%20analysis%20and%20alternatives/">Component analysis and alternatives</a>. Кратко:</p>
+<table>
+<thead>
+<tr>
+<th>Подсистема</th>
+<th>Текущий выбор</th>
+<th>Лучшее следующее действие</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Compute</td>
+<td>Jetson Orin Nano Super Developer Kit</td>
+<td>Оставить как reference, но benchmark Raspberry Pi 5 + Hailo AI HAT+ 26 TOPS и RK3588 на точном bee detector/tracker.</td>
+</tr>
+<tr>
+<td>Камера</td>
+<td>MOKOSE USB UVC camera</td>
+<td>Оставить для лаборатории. Для поля заморозить FOV и оценить locked camera head с лучшей weather/cable/exposure стратегией.</td>
+</tr>
+<tr>
+<td>Объектив</td>
+<td>Manual varifocal CS/C lens</td>
+<td>Использовать для поиска FOV, затем заменить или зафиксировать production lens.</td>
+</tr>
+<tr>
+<td>Storage</td>
+<td>Consumer NVMe SSD</td>
+<td>Хорош для лаборатории. Production должен использовать industrial storage под retention policy.</td>
+</tr>
+<tr>
+<td>Видео</td>
+<td>Edge clips плюс planned live streaming</td>
+<td>Для сессий использовать <code>gate-video-stream</code>; хранение клипов оставить опциональным. Избегать постоянной загрузки видео.</td>
+</tr>
+<tr>
+<td>Корпус</td>
+<td>2020 extrusion и acrylic</td>
+<td>Хорошие fixture-материалы, но не field product. Перейти к IP-rated box и optical hood/window.</td>
+</tr>
+<tr>
+<td>Питание</td>
+<td>Bench power не полностью описан</td>
+<td>Сразу добавить измерения питания; позже разделить powered/PoE и solar SKU.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="potok-dannyh">Поток данных</h2>
+<ol>
+<li><strong>Capture</strong> — <code>entrance-observer</code> читает кадры с камеры на edge-устройстве.</li>
+<li><strong>Infer and track</strong> — edge-приложение обнаруживает пчёл возле летка, отслеживает движение через настроенные зоны и вычисляет directional counts.</li>
+<li><strong>Aggregate</strong> — raw detections превращаются в telemetry buckets: entrances, exits, unknown direction, confidence и health metadata.</li>
+<li><strong>Upload metrics</strong> — edge-устройство отправляет movement telemetry в <a href="../API/rest/telemetry-api/"><code>telemetry-api</code></a> через device REST API.</li>
+<li><strong>Start live stream on demand</strong> — когда пчеловод открывает секцию улья и просит live video, <code>web-app</code> запускает короткую сессию через <code>gate-video-stream</code>. Edge-устройство публикует видео только пока сессия активна.</li>
+<li><strong>Record clips when useful</strong> — edge app или recorder в <code>gate-video-stream</code> могут сохранять выбранные клипы для playback, debugging и model retraining.</li>
+<li><strong>Read in web-app</strong> — Gratheon web-app использует <a href="../API/GraphQL/"><code>graphql-router</code></a> для user-facing queries и строит time-series charts из telemetry data.</li>
+<li><strong>Improve model</strong> — выбранные клипы используются для проверки detections, retraining модели и сравнения cloud inference с edge inference.</li>
+</ol>
+<h2 id="otvetstvennost-api">Ответственность API</h2>
+<table>
+<thead>
+<tr>
+<th>Компонент</th>
+<th>Интерфейс</th>
+<th>Ответственность</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>entrance-observer</code></td>
+<td>Local camera, REST/control clients</td>
+<td>Захват кадров, detector/tracker, агрегирование метрик, local buffering и публикация live media только во время сессии.</td>
+</tr>
+<tr>
+<td><code>telemetry-api</code></td>
+<td>Device REST API</td>
+<td>Приём movement telemetry и health metrics от устройств.</td>
+</tr>
+<tr>
+<td><code>gate-video-stream</code></td>
+<td>GraphQL/device control/media</td>
+<td>Stored clips, live session control, media relay, optional recording.</td>
+</tr>
+<tr>
+<td><code>graphql-router</code></td>
+<td>User-facing GraphQL boundary</td>
+<td>Авторизация/маршрутизация запросов <code>web-app</code> к telemetry и video services.</td>
+</tr>
+<tr>
+<td><code>web-app</code></td>
+<td>UI</td>
+<td>Start/stop live sessions, charts, device status, archived clips.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="svyazannye-stranitsy">Связанные страницы</h2>
+<ul>
+<li><a href="phase-1-lab-validation/">Фаза 1 — лабораторная валидация</a></li>
+<li><a href="phase-2-field-mvp/">Фаза 2 — полевой MVP</a></li>
+<li><a href="phase-3-production-kit/">Фаза 3 — production kit</a></li>
+<li><a href="Component%20analysis%20and%20alternatives/">Component analysis and alternatives</a></li>
+<li><a href="On-demand%20entrance%20video%20streaming/">On-demand entrance video streaming</a></li>
+<li><a href="Future%20production%20hardware%20alternatives/">Future production hardware alternatives</a></li>
+<li><a href="Jetson%20Orin%20setup/">Jetson Orin setup</a></li>
+<li><a href="legacy-research/ML%20processing%20devices/">Архив legacy research</a></li>
+</ul>

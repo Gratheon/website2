@@ -12,3 +12,6 @@
 - Entrance Observer lab wiring must use builtin `kind: jetson-orin-nano`, not a host `kind: jetson`. Leave POWER/USB3/ETH/DP without `pin.position` so 3D wires land on the library ports. Unqualified `jetson.GND` is header pin 6, not the barrel; official Orin Nano kit power is the 19 V DC barrel, USB-C is data/recovery only, and video is DisplayPort.
 - Lab product wiring is electrical interconnect only. Do not put 2020 extrusion, camera mount, or other mechanical joints on the schematic, table, or BOM map; those stay on the Phase 1 Lab BOM.
 - To assert Jetson 3D pin alignment in Node, import the vendored `view3d-*.js` chunk first. Builtin resolvers register on that lazy import; `localPinPosition` from the ESM entry alone falls back to schematic edge slots.
+- Entrance Observer lab wiring belongs on the product HTML page (`entrance-observer.html` at `/docs/entrance-observer/#wiring-diagram`), same pattern as Beehive sensors. Keep the old phase-1 wiring URL as a `redirectUrl` stub.
+- `blog-engine serve` can rebuild in a loop if `content/embeddings.json` is rewritten while watched. Stop the server after verification and do not commit that file.
+- A curl during a live rebuild can 404 a localized `/ru/` page that already exists in the finished `dist`. Recheck after the rebuild completes.

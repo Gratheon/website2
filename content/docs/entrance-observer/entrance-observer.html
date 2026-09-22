@@ -1,0 +1,554 @@
+<!--
+---
+title: 👁️‍🗨️ Entrance observer
+order: 4
+sidebar_position: 5
+hide_table_of_contents: false
+description: Interactive lab wiring, 3D interconnect, and product roadmap for Entrance Observer.
+---
+-->
+<section class="lab-wiring">
+<style>
+.lab-wiring {
+  --ink: #172033;
+  --muted: #5b677a;
+  --line: #d7deea;
+  --soft: #f4f7fb;
+  --paper: #ffffff;
+  --blue: #1565c0;
+  --orange: #ef6c00;
+  --green: #2e7d32;
+  --red: #c62828;
+  --ui: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+.lab-wiring, .lab-wiring * { box-sizing: border-box; }
+.lab-wiring h2 { margin: 42px 0 12px; font-size: 1.55rem; line-height: 1.25; }
+.lab-wiring h3 { margin: 26px 0 10px; font-size: 1.12rem; }
+.lab-wiring p { margin: 0 0 14px; }
+.lab-wiring a { color: #0b5ed7; }
+.lab-wiring code { padding: 1px 5px; border-radius: 4px; background: #eef1f6; font-family: var(--mono); font-size: .87em; }
+.lab-wiring .lead { font-size: 1.05rem; color: var(--muted); }
+.lab-wiring .note {
+  margin: 16px 0 20px; padding: 13px 15px;
+  border-left: 4px solid var(--orange); border-radius: 0 10px 10px 0;
+  background: #fff4e8; color: #5a3b16;
+}
+.lab-wiring .note strong { color: var(--ink); }
+.lab-wiring .toc-mini {
+  display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 22px; padding: 0; list-style: none;
+}
+.lab-wiring .toc-mini a {
+  display: inline-block; padding: 6px 10px; border: 1px solid var(--line); border-radius: 999px;
+  background: var(--soft); color: var(--ink); font-size: .86rem; text-decoration: none;
+}
+.lab-wiring .toc-mini a:hover { border-color: #0b5ed7; }
+section.lab-wiring .wire-diagram-host,
+section.lab-wiring .legend,
+section.lab-wiring .board-map,
+section.lab-wiring .checks,
+section.lab-wiring :is(.wire-diagram-host, .legend, .board-map, .checks) :is(p, span, button, label, li, small, strong, h2, h3, h4, a, select) {
+  font-family: var(--ui);
+}
+section.lab-wiring .wire-diagram-host,
+section.lab-wiring .legend,
+section.lab-wiring .board-map,
+section.lab-wiring .checks { color: var(--ink); }
+.lab-wiring .wire-diagram-host { margin: 12px 0 18px; }
+.site-content article .content section.lab-wiring .wd-widget h2 {
+  margin: 0 0 3px; font-size: 20px; line-height: 1.25; font-family: var(--ui);
+}
+.lab-wiring .lib-credit { margin: 0 0 22px; font-size: .86rem; color: var(--muted); }
+.lab-wiring .legend {
+  display: flex; flex-wrap: wrap; gap: 10px 16px;
+  margin: 0 0 28px; padding: 10px 4px 0;
+  font-size: .86rem; color: var(--muted);
+}
+.lab-wiring .swatch {
+  display: inline-block; width: 14px; height: 8px; margin-right: 6px;
+  border-radius: 99px; vertical-align: middle;
+}
+.lab-wiring .table-wrap { overflow-x: auto; margin: 8px 0 22px; }
+.site-content article .content section.lab-wiring table {
+  min-width: 720px; margin: 0; background: var(--paper);
+}
+.site-content article .content section.lab-wiring th,
+.site-content article .content section.lab-wiring td {
+  font-size: .9rem; vertical-align: top;
+}
+.lab-wiring .warn { color: var(--red); font-weight: 700; }
+.lab-wiring .board-map {
+  display: grid; grid-template-columns: 1fr 1.2fr 1fr; gap: 10px; margin: 14px 0 18px;
+}
+.lab-wiring .col {
+  padding: 14px; border-radius: 14px; border: 1px solid var(--line); background: var(--paper);
+}
+.lab-wiring .col h3 { margin: 0 0 8px; }
+.lab-wiring .col.power { background: #e3f2fd; border-color: #90caf9; }
+.lab-wiring .col.mcu { background: #fff3e0; border-color: #ffcc80; }
+.lab-wiring .col.sensors { background: #e8f5e9; border-color: #a5d6a7; }
+.lab-wiring .col ul { margin: 0; padding-left: 18px; }
+.lab-wiring .checks { margin: 0; padding: 0; list-style: none; }
+.lab-wiring .checks li { margin: 0 0 8px; }
+.lab-wiring .checks label { display: flex; gap: 10px; align-items: flex-start; }
+.lab-wiring .steps { margin: 0; padding-left: 20px; }
+.lab-wiring .steps li { margin: 0 0 8px; }
+@media (max-width: 800px) {
+  .lab-wiring .board-map { grid-template-columns: 1fr; }
+}
+</style>
+
+<p class="lead">Interactive interconnect for the Phase 1 lab stack: Jetson Orin Nano Super, USB UVC camera, NVMe, and Ethernet or WiFi. Click a part or cable for purchase links and assembly notes.</p>
+
+<ul class="toc-mini">
+  <li><a href="#wiring-diagram">Wiring diagram</a></li>
+  <li><a href="#connections">Connection table</a></li>
+  <li><a href="#bom-map">BOM map</a></li>
+  <li><a href="#checklist">Checklist</a></li>
+  <li><a href="#power-on">First power-on</a></li>
+</ul>
+
+<h2 id="wiring-diagram">Interactive wiring diagram</h2>
+<p>The schematic is the electrical interconnect. Switch to 3D to orbit the bench. Solid lines are the default lab path. Dashed lines are optional field or bench extras. Optics, the camera mount, and the 2020 fixture stay on the BOM, not on this diagram.</p>
+
+<div class="note"><strong>Power rule:</strong> Official Orin Nano power is the DC barrel at <strong>19 V</strong>, not USB-C and not 5 V USB. USB-C on this carrier is data/recovery only. The camera is bus-powered from USB 3. The HDMI panel is optional, bench-only, and needs a DisplayPort-to-HDMI adapter.</div>
+
+<div
+  id="lab-wiring-widget"
+  class="wire-diagram-host"
+  data-source="/assets/triangle/wire-diagram/entrance-observer-lab.yaml"
+></div>
+<noscript><p class="note">JavaScript is required for the interactive diagram. Use the connection table below as the wiring reference.</p></noscript>
+<p class="lib-credit">Rendered with <a href="https://github.com/tot-ra/wire-diagram">wire-diagram</a>. Toggle Schematic / 3D in the canvas corner. Product silhouettes are illustrative, not manufacturing CAD.</p>
+
+<div class="legend">
+  <span><i class="swatch" style="background:#c62828"></i>19 V DC barrel (red)</span>
+  <span><i class="swatch" style="background:#1565c0"></i>USB 3 UVC (blue)</span>
+  <span><i class="swatch" style="background:#2e7d32"></i>Gigabit Ethernet (green)</span>
+  <span><i class="swatch" style="background:#6d4c41"></i>NVMe M.2 (brown)</span>
+  <span><i class="swatch" style="background:#7b1fa2"></i>WiFi M.2, dashed (purple)</span>
+  <span><i class="swatch" style="background:#546e7a"></i>DisplayPort, dashed</span>
+</div>
+
+<h2 id="connections">Connection table</h2>
+<div class="table-wrap">
+<table>
+  <thead>
+    <tr>
+      <th>Function</th>
+      <th>From</th>
+      <th>To</th>
+      <th>Kind</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Kit power</td>
+      <td>19 V DC adapter</td>
+      <td>Jetson POWER (barrel)</td>
+      <td>Electrical, 19 V</td>
+      <td class="warn">Not USB-C and not a 5 V phone charger</td>
+    </tr>
+    <tr>
+      <td>Camera video + power</td>
+      <td>MOKOSE USB 3</td>
+      <td>Jetson USB 3.2 Type-A</td>
+      <td>USB 3 UVC</td>
+      <td>Use the same cable length planned for field tests</td>
+    </tr>
+    <tr>
+      <td>OS / clip storage</td>
+      <td>250 GB NVMe</td>
+      <td>Jetson M.2 Key M</td>
+      <td>Internal M.2</td>
+      <td>Install before first boot</td>
+    </tr>
+    <tr>
+      <td>Default network</td>
+      <td>Lab Ethernet</td>
+      <td>Jetson RJ45</td>
+      <td>Gigabit Ethernet</td>
+      <td>Preferred for repeatable tests</td>
+    </tr>
+    <tr>
+      <td>Field network</td>
+      <td>AC8265</td>
+      <td>Jetson M.2 Key E</td>
+      <td>Optional WiFi</td>
+      <td>Dashed on the diagram. Antennas are off this schematic.</td>
+    </tr>
+    <tr>
+      <td>Local preview</td>
+      <td>7 inch HDMI panel</td>
+      <td>Jetson DisplayPort</td>
+      <td>Optional</td>
+      <td>Bench-only; DP-HDMI adapter plus USB power for touch</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<h2 id="bom-map">How this maps to the Phase 1 BOM</h2>
+<div class="board-map">
+  <div class="col power">
+    <h3>Required power and compute</h3>
+    <ul>
+      <li>19 V DC barrel adapter</li>
+      <li>Jetson Orin Nano Super 8 GB</li>
+      <li>250 GB M.2 NVMe</li>
+    </ul>
+  </div>
+  <div class="col mcu">
+    <h3>Required vision and network</h3>
+    <ul>
+      <li>MOKOSE 4K USB UVC camera</li>
+      <li>Ethernet or AC8265</li>
+    </ul>
+  </div>
+  <div class="col sensors">
+    <h3>Optional electrical</h3>
+    <ul>
+      <li>7 inch HDMI panel (bench only)</li>
+      <li>Nano 2 GB acrylic case stays off the diagram until Orin fit is confirmed</li>
+    </ul>
+  </div>
+</div>
+<p>Part links match <a href="/docs/entrance-observer/phase-1-lab-validation/bill-of-materials/">Phase 1 - Lab BOM</a>. Lens, camera mount, 2020 fixture, acrylic window and WiFi antennas remain purchase items there. The diagram is a visualization aid, not a verified assembly specification.</p>
+
+<h2 id="checklist">Pre-power checklist</h2>
+<ul class="checks">
+  <li><label><input type="checkbox"> NVMe is seated in M.2 Key M before the first boot</label></li>
+  <li><label><input type="checkbox"> 19 V DC barrel adapter is seated in POWER, not USB-C, and is not a 5 V phone charger</label></li>
+  <li><label><input type="checkbox"> Camera USB 3 cable is fully seated and the same length you will use later</label></li>
+  <li><label><input type="checkbox"> Ethernet is connected for the default lab path</label></li>
+  <li><label><input type="checkbox"> Lens focus and zoom are locked after the first alignment</label></li>
+  <li><label><input type="checkbox"> HDMI panel is unplugged unless you need a local preview</label></li>
+  <li><label><input type="checkbox"> No acrylic Nano 2 GB case is trapping Orin heat</label></li>
+</ul>
+
+<h2 id="power-on">First power-on sequence</h2>
+<ol class="steps">
+  <li>Connect Ethernet, NVMe and the camera USB cable before applying PD power.</li>
+  <li>Plug the 19 V barrel into Jetson POWER, then into the wall.</li>
+  <li>Confirm the carrier LEDs come up and the camera appears with <code>v4l2-ctl --list-devices</code>.</li>
+  <li>Start <code>entrance-observer</code> on a known clip or live UVC source.</li>
+  <li>If the camera drops, swap the USB cable before changing model or tracker settings.</li>
+</ol>
+</section>
+<script type="module">
+// WHY: HTML articles cannot rely on the site JS bundle (it concatenates classic scripts).
+// WHAT: mount wire-diagram from the vendored ESM build and fail visibly if YAML cannot be fetched.
+import { createWiringDiagram } from '/assets/triangle/wire-diagram/wire-diagram.js';
+import { entranceObserverModels } from '/assets/triangle/wire-diagram/models/entrance-observer.js';
+
+const host = document.getElementById('lab-wiring-widget');
+if (host) {
+  const sourceUrl = host.dataset.source;
+  try {
+    const response = await fetch(sourceUrl);
+    if (!response.ok) throw new Error(`Wiring source: HTTP ${response.status}`);
+    // WHY: camera/fixture meshes live on this site; Jetson Orin Nano uses the wire-diagram builtin.
+    createWiringDiagram(host, await response.text(), { view: '2d', models: entranceObserverModels });
+  } catch (err) {
+    const note = document.createElement('p');
+    note.className = 'note';
+    note.textContent = err instanceof Error ? err.message : String(err);
+    host.replaceChildren(note);
+  }
+}
+</script>
+
+<hr>
+
+<p>Entrance Observer is the edge vision component that watches a hive entrance, detects bee movement, and sends bee traffic telemetry plus optional video evidence to Gratheon's web platform.</p>
+<p>Live viewing should be on-demand, initiated from <code>web-app</code> when a user opens or starts viewing a particular hive section. <code>web-app</code> has no direct access to the edge device, so live sessions should be started and played through <code>gate-video-stream</code> via <code>graphql-router</code>. Permanent video upload and S3-backed playback remain optional recording modes, not the default way to inspect a live entrance. See <a href="On-demand%20entrance%20video%20streaming/">On-demand entrance video streaming</a> for the target architecture.</p>
+<p>For the product-level overview, see <a href="../../products/entrance_observer/entrance_observer/">Entrance Observer</a>. Captured metrics connect to <a href="../../products/web_app/pro-tier/hive-telemetry-storage/">hive telemetry storage</a> and <a href="../../products/web_app/pro-tier/timeseries-data-analytics/">timeseries analytics</a>.</p>
+<h2 id="product-direction">Product direction</h2>
+<p>Entrance Observer should grow through three clear hardware phases. The docs are now grouped by phase first, because each phase needs both a product description and a bill of materials:</p>
+<ol>
+<li><strong><a href="phase-1-lab-validation/">Phase 1 - Lab validation</a></strong> - prove camera capture, model behavior, telemetry upload, and on-demand live-session control on a developer bench.</li>
+<li><strong><a href="phase-2-field-mvp/">Phase 2 - Field MVP</a></strong> - deploy a weather-protected pilot device at a real hive entrance and measure reliability, count quality, energy, and bandwidth.</li>
+<li><strong><a href="phase-3-production-kit/">Phase 3 - Production kit</a></strong> - convert the proven design into a repeatable, supportable, sellable device or set of SKUs.</li>
+</ol>
+<p>This split keeps the first build fast and debuggable while still showing the path to a finished Gratheon product. The current prototype target is <strong>NVIDIA Jetson Orin Nano Super Developer Kit</strong> with a USB UVC camera. Jetson runs the <a href="https://github.com/Gratheon/entrance-observer"><code>entrance-observer</code></a> edge application locally so the apiary does not need to stream continuous raw video to the cloud.</p>
+<h2 id="phase-overview">Phase overview</h2>
+<table>
+<thead>
+<tr>
+<th>Phase</th>
+<th>Goal</th>
+<th>Primary user</th>
+<th align="right">Target cost</th>
+<th>Product description</th>
+<th>BOM</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Phase 1 - Lab</td>
+<td>Fast bench prototype for camera, model, telemetry, and live-session validation</td>
+<td>Developer, ML engineer, contributor</td>
+<td align="right">€550-650 with current Jetson stack</td>
+<td><a href="phase-1-lab-validation/product-description/">Product description</a></td>
+<td><a href="phase-1-lab-validation/bill-of-materials/">Bill of materials</a></td>
+</tr>
+<tr>
+<td>Phase 2 - Field MVP</td>
+<td>Weather-protected pilot device for one real hive entrance</td>
+<td>Pilot beekeeper, field tester, support engineer</td>
+<td align="right">€650-1000+ depending on enclosure, power, and network</td>
+<td><a href="phase-2-field-mvp/product-description/">Product description</a></td>
+<td><a href="phase-2-field-mvp/bill-of-materials/">Bill of materials</a></td>
+</tr>
+<tr>
+<td>Phase 3 - Production</td>
+<td>Repeatable camera/edge-AI kit or SKU family</td>
+<td>Paying customer, reseller, managed apiary, support team</td>
+<td align="right">To be selected from field data</td>
+<td><a href="phase-3-production-kit/product-description/">Product description</a></td>
+<td><a href="phase-3-production-kit/bill-of-materials/">Bill of materials</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="system-connection-model">System connection model</h2>
+<p>The hardware should be described as connected subsystems, not as a loose parts list. This makes camera geometry, power, network, service, and cloud boundaries explicit.</p>
+<pre><code class="language-mermaid">flowchart LR
+  subgraph Hive[Hive entrance]
+    entrance[Entrance and landing board]
+    cameraHead[Camera head, lens, window, bracket]
+  end
+
+  subgraph Edge[Edge device]
+    capture[Video capture]
+    detector[Detector and tracker]
+    counter[Direction-aware counting]
+    buffer[Local clip buffer]
+    publisher[On-demand media publisher]
+    health[Device health telemetry]
+  end
+
+  subgraph Cloud[Gratheon cloud]
+    telemetry[telemetry-api]
+    video[gate-video-stream]
+    model[models-gate-tracker]
+    graphql[graphql-router]
+    mysql[(MySQL)]
+    s3[(S3-compatible object storage)]
+  end
+
+  subgraph UI[Gratheon web-app]
+    web[web-app]
+    player[Live player]
+    charts[Traffic charts]
+    archive[Recorded clips]
+  end
+
+  entrance --&gt; cameraHead
+  cameraHead --&gt; capture
+  capture --&gt; detector
+  detector --&gt; counter
+  counter --&gt;|bee count, direction, confidence, timestamp| telemetry
+  health --&gt; telemetry
+  buffer --&gt;|optional selected clips| video
+  web --&gt;|start/stop live session for box| graphql
+  graphql --&gt; video
+  video --&gt;|session command| publisher
+  publisher --&gt;|publish only while viewed| video
+  video --&gt; player
+  video --&gt;|optional cloud inference or reprocessing| model
+  video --&gt; mysql
+  video --&gt; s3
+  telemetry --&gt; mysql
+  web --&gt;|query hive, streams, telemetry| graphql
+  graphql --&gt; telemetry
+  graphql --&gt; video
+  web --&gt; charts
+  web --&gt; archive</code></pre>
+<h2 id="current-approach-assessment">Current approach assessment</h2>
+<table>
+<thead>
+<tr>
+<th>Area</th>
+<th>Current state</th>
+<th>Gap</th>
+<th>Recommended change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Documentation grouping</td>
+<td>Older docs had a single prototype BOM and a separate future-alternatives page.</td>
+<td>Readers had to infer which parts belong to lab, field MVP, or production.</td>
+<td>Use phase-first folders: each phase contains its product description and bill of materials.</td>
+</tr>
+<tr>
+<td>Edge compute</td>
+<td>Jetson Orin Nano Super Developer Kit is the current reference.</td>
+<td>Good for model iteration, but expensive and power-hungry for a customer solar unit.</td>
+<td>Keep Jetson for Phase 1 and early Phase 2. Benchmark Raspberry Pi 5 + Hailo and RK3588 before production.</td>
+</tr>
+<tr>
+<td>Camera</td>
+<td>USB UVC 4K camera with manual varifocal lens.</td>
+<td>Easy to debug, but not a repeatable outdoor camera head.</td>
+<td>Use USB in lab, then freeze FOV and evaluate CSI/MIPI, industrial board cameras, or IP/H.265 camera modules.</td>
+</tr>
+<tr>
+<td>Video product</td>
+<td>Stored clips and on-demand live video both exist conceptually.</td>
+<td>Continuous upload would waste bandwidth, storage, edge CPU, and cloud CPU.</td>
+<td>Make telemetry-first default, live video on demand, and clip storage selective.</td>
+</tr>
+<tr>
+<td>Enclosure</td>
+<td>Aluminium extrusion, acrylic sheets, camera mount, and optional acrylic case are prototype materials.</td>
+<td>Not weatherproof, not UV/condensation optimized, and not serviceable enough.</td>
+<td>Move field MVP to IP65/IP67 enclosure, sealed cable entries, hood/window strategy, and fixed bracket.</td>
+</tr>
+<tr>
+<td>Power</td>
+<td>Current BOM focuses on compute/camera, not measured energy.</td>
+<td>Solar feasibility cannot be decided without Wh/day, sleep modes, and modem duty cycle.</td>
+<td>Add power meters in Phase 1, PoE/mains field pilots in Phase 2, and solar only after measured duty-cycle data.</td>
+</tr>
+<tr>
+<td>Network</td>
+<td>WiFi module is documented.</td>
+<td>Apiaries often have weak WiFi or no internet.</td>
+<td>Test Ethernet/PoE and WiFi in Phase 2; define LTE/gateway variants for Phase 3.</td>
+</tr>
+<tr>
+<td>Supportability</td>
+<td>SSH, <code>jtop</code>, Docker logs, and GStreamer tools are useful for developers.</td>
+<td>Customer support needs device health without SSH.</td>
+<td>Upload device health fields: FPS, camera online, disk free, queue size, temperature, RSSI, app/model version, reset reason.</td>
+</tr>
+<tr>
+<td>Cost model</td>
+<td>Current prototype is about €550-650 before field parts.</td>
+<td>Production cost is unknown and may be dominated by enclosure, power, and service parts, not only compute.</td>
+<td>Track BOM by phase and select production SKU after measured field data.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="component-analysis-summary">Component analysis summary</h2>
+<p>The detailed analysis is in <a href="Component%20analysis%20and%20alternatives/">Component analysis and alternatives</a>. The short version:</p>
+<table>
+<thead>
+<tr>
+<th>Subsystem</th>
+<th>Current choice</th>
+<th>Best next action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Compute</td>
+<td>Jetson Orin Nano Super Developer Kit</td>
+<td>Keep as reference, but benchmark Raspberry Pi 5 + Hailo AI HAT+ 26 TOPS and RK3588 against the exact bee detector/tracker.</td>
+</tr>
+<tr>
+<td>Camera</td>
+<td>MOKOSE USB UVC camera</td>
+<td>Keep for lab. For field, freeze FOV and evaluate a locked camera head with better weather, cable, and exposure behavior.</td>
+</tr>
+<tr>
+<td>Lens</td>
+<td>Manual varifocal CS/C lens</td>
+<td>Use to discover FOV, then replace or lock with a fixed-focus production lens.</td>
+</tr>
+<tr>
+<td>Storage</td>
+<td>Consumer NVMe SSD</td>
+<td>Good for lab. Production should use industrial storage sized to retention policy.</td>
+</tr>
+<tr>
+<td>Video</td>
+<td>Edge clips plus planned live streaming</td>
+<td>Use <code>gate-video-stream</code> for sessions and keep stored clips optional. Avoid continuous video upload.</td>
+</tr>
+<tr>
+<td>Enclosure</td>
+<td>2020 extrusion and acrylic</td>
+<td>Good fixture material, not field product material. Move to IP-rated box and optical hood/window.</td>
+</tr>
+<tr>
+<td>Power</td>
+<td>Bench power not fully documented</td>
+<td>Add power measurement immediately; split powered/PoE and solar SKUs later.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="data-flow">Data flow</h2>
+<ol>
+<li><strong>Capture</strong> - <code>entrance-observer</code> reads frames from the camera on the edge device.</li>
+<li><strong>Infer and track</strong> - the edge app detects bees near the entrance, tracks movement across configured regions, and computes direction-aware counts.</li>
+<li><strong>Aggregate</strong> - raw detections are converted into telemetry buckets such as entrances, exits, unknown direction, confidence, and health metadata.</li>
+<li><strong>Upload metrics</strong> - the edge device sends movement telemetry to <a href="../API/rest/telemetry-api/"><code>telemetry-api</code></a> using the device REST API.</li>
+<li><strong>Start live stream on demand</strong> - when a beekeeper opens a hive section and requests live video, <code>web-app</code> starts a short-lived session through <code>gate-video-stream</code>. The edge device publishes only while the session is active, using outbound control/media connections to the cloud video gateway.</li>
+<li><strong>Record clips when useful</strong> - the edge app or <code>gate-video-stream</code> recorder can still store selected clips for playback, debugging, and model retraining.</li>
+<li><strong>Read in web-app</strong> - the Gratheon web-app uses <a href="../API/GraphQL/"><code>graphql-router</code></a> for user-facing queries and renders time-series charts directly from telemetry data.</li>
+<li><strong>Improve model</strong> - selected stored clips are used to validate detections, retrain the model, and compare cloud inference with edge inference.</li>
+</ol>
+<h2 id="api-responsibilities">API responsibilities</h2>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Interface</th>
+<th>Responsibility</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>entrance-observer</code></td>
+<td>Local camera, REST/control clients</td>
+<td>Capture frames, run edge inference, aggregate telemetry, publish live video on demand, and upload optional clips.</td>
+</tr>
+<tr>
+<td><code>telemetry-api</code></td>
+<td>REST for devices, GraphQL behind router</td>
+<td>Store entrance movement metrics and serve time-series reads to the web-app.</td>
+</tr>
+<tr>
+<td><code>gate-video-stream</code></td>
+<td>GraphQL/REST/OpenAPI plus media relay</td>
+<td>Own video sessions, authorize short-lived live streams, route media through the cloud, accept selected entrance videos, serve playback playlists, and retain training/debug clips.</td>
+</tr>
+<tr>
+<td><code>models-gate-tracker</code></td>
+<td>Internal service</td>
+<td>Run cloud-side inference/reprocessing when uploaded video needs validation or model evaluation.</td>
+</tr>
+<tr>
+<td><code>graphql-router</code></td>
+<td>Federated GraphQL</td>
+<td>User-facing API gateway for web-app queries.</td>
+</tr>
+<tr>
+<td><code>web-app</code></td>
+<td>Browser UI</td>
+<td>Device setup, status, video playback links, dashboards, and alerts.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="research-and-decision-notes">Research and decision notes</h2>
+<ul>
+<li>Full video is not the default product data. Entrance movement telemetry and device health are the durable signals; video is for live inspection, debugging, anomalies, and training data.</li>
+<li>The current YOLO-style detector and tracker should be benchmarked as a complete pipeline. Detector-only FPS is not enough because count quality depends on tracking, crossing logic, camera placement, and frame quality.</li>
+<li>Production hardware must be selected by count accuracy per watt, not by advertised TOPS alone.</li>
+<li>Camera head repeatability is a product requirement. A better model cannot fully compensate for changing focus, angle, glare, condensation, or exposure behavior.</li>
+<li>Solar autonomy is a separate SKU decision, not a small add-on to the Jetson lab build.</li>
+</ul>
+<h2 id="see-also">See also</h2>
+<ul>
+<li><a href="phase-1-lab-validation/">Phase 1 - Lab validation</a></li>
+<li><a href="phase-2-field-mvp/">Phase 2 - Field MVP</a></li>
+<li><a href="phase-3-production-kit/">Phase 3 - Production kit</a></li>
+<li><a href="Component%20analysis%20and%20alternatives/">Component analysis and alternatives</a></li>
+<li><a href="On-demand%20entrance%20video%20streaming/">On-demand entrance video streaming</a></li>
+<li><a href="Future%20production%20hardware%20alternatives/">Future production hardware alternatives</a></li>
+<li><a href="Jetson%20Orin%20setup/">Jetson Orin setup</a></li>
+<li><a href="legacy-research/ML%20processing%20devices/">Legacy research archive</a></li>
+</ul>

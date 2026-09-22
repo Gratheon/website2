@@ -12,7 +12,7 @@ Phase 1 is the bench and indoor-window prototype. It is intentionally built arou
 
 - [Product description](product-description.md) - scope, architecture, setup rules, and exit criteria.
 - [Bill of materials](bill-of-materials.md) - parts to buy or reuse for the lab build.
-- [Lab product wiring](/docs/entrance-observer/phase-1-lab-validation/wiring-diagrams/lab-product-wiring/) - interactive schematic and 3D interconnect for the Phase 1 stack.
+- [Lab product wiring](/docs/entrance-observer/#wiring-diagram) - interactive schematic and 3D interconnect for the Phase 1 stack.
 
 ## Phase outcome
 
