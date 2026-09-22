@@ -713,10 +713,12 @@
       }
     }
 
-    // WHY: the generated product sidebar is a navigation tree, but the web-app
-    // map is now content. WHAT: render only this branch as semantic feature
-    // cards so it is not constrained by sidebar/nav/ul styling.
-    rebuildWebAppCardByTier(webAppCard);
+    // WHY: billing-tier details describe the Web App, not every hardware product.
+    // WHAT: replace the shared product map only on the Web App landing page.
+    var isWebAppProductPage = /\/products\/web_app\/?$/.test(window.location.pathname);
+    if (isWebAppProductPage) {
+      rebuildWebAppCardByTier(webAppCard);
+    }
 
     if (productLinks.length) {
       var overviewCard = document.createElement('li');
