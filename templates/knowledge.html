@@ -443,6 +443,27 @@
       });
     }
 
+    // WHY: the public products map should show shipped hardware features, not
+    // internal backlog. WHAT: drop nested Ideas/Todo sections before cards render.
+    function isBacklogSection(item) {
+      return /\/(ideas|todo)\/$/.test(normalizedPath(directLink(item)));
+    }
+
+    function stripBacklogSections(root) {
+      var submenu = root && root.querySelector(':scope > .sidebar-submenu');
+      if (!submenu) return;
+      Array.prototype.slice.call(submenu.children).forEach(function(child) {
+        if (child.classList.contains('sidebar-section') && isBacklogSection(child)) {
+          child.remove();
+        }
+      });
+    }
+
+    function hasVisibleMapContent(item) {
+      var submenu = item && item.querySelector(':scope > .sidebar-submenu');
+      return !!(submenu && submenu.children.length);
+    }
+
     function findTopLevelCard(pathSuffix) {
       return Array.prototype.find.call(productsMap.children, function(item) {
         return normalizedPath(directLink(item)).endsWith(pathSuffix);
@@ -748,6 +769,10 @@
 
     productSections.forEach(function(item) {
       if (item === webAppCard) return;
+      stripBacklogSections(item);
+      // WHY: ideas-only products such as Robotic Apiary would otherwise remain
+      // as empty title cards after backlog sections are removed.
+      if (!hasVisibleMapContent(item)) return;
       item.classList.add('knowledge-map-product-card');
       hardwareProductsMap.appendChild(item);
     });
