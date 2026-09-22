@@ -1,0 +1,237 @@
+<!--
+---
+title: Документация
+navTitle: Документация
+slug: ""
+hideToc: true
+hideRelated: true
+description: "Инженерная документация продуктов Gratheon: веб-приложение, сенсоры улья, Entrance Observer, роботизированный улей и API для устройств и интеграций."
+---
+-->
+<!-- WHY: /ru/docs/ used to append a plain children list. HTML keeps the same product-column hub as English. -->
+<section class="docs-hub">
+<style>
+.docs-hub {
+  --hub-paper: var(--bg-primary);
+  --hub-ink: var(--text-primary);
+  --hub-muted: var(--text-secondary);
+  --hub-line: var(--nav-border);
+  --hub-soft: var(--nav-bg);
+  --hub-accent: #ffdc04;
+  --hub-accent-ink: #1a1400;
+}
+.docs-hub, .docs-hub * { box-sizing: border-box; }
+.docs-hub { color: var(--hub-ink); }
+.docs-hub .lead {
+  margin: 0 0 28px;
+  max-width: 46rem;
+  font-size: 1.08rem;
+  line-height: 1.55;
+  color: var(--hub-muted);
+}
+.docs-hub h2 {
+  margin: 0 0 8px;
+  font-size: clamp(1.35rem, 2.4vw, 1.85rem);
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+}
+.docs-hub .section-kicker {
+  margin: 0 0 6px;
+  color: var(--hub-muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.docs-hub .section-intro {
+  margin: 0 0 18px;
+  max-width: 42rem;
+  color: var(--hub-muted);
+}
+.docs-hub .product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 0 0 40px;
+  padding: 0;
+  list-style: none;
+}
+.docs-hub .product-card,
+.docs-hub .product-card:visited {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  padding: 22px 22px 20px;
+  border: 1px solid var(--hub-line);
+  border-radius: 18px;
+  background: var(--hub-paper);
+  color: var(--hub-ink);
+  text-decoration: none;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.04);
+}
+.docs-hub .product-card:hover,
+.docs-hub .product-card:focus-visible {
+  border-color: var(--hub-accent);
+  box-shadow: 0 0 0 4px rgba(255, 220, 4, 0.28), 0 16px 34px rgba(0, 0, 0, 0.08);
+  outline: 0;
+  text-decoration: none;
+}
+.docs-hub .product-card__icon {
+  display: grid;
+  place-items: center;
+  width: 2.7rem;
+  height: 2.7rem;
+  margin: 0 0 14px;
+  border-radius: 999px;
+  background: var(--hub-accent);
+  font-size: 1.35rem;
+  line-height: 1;
+}
+.docs-hub .product-card h3 {
+  margin: 0 0 8px;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+.docs-hub .product-card p {
+  margin: 0 0 16px;
+  flex: 1;
+  color: var(--hub-muted);
+  font-size: 0.98rem;
+  line-height: 1.5;
+}
+.docs-hub .product-card__cta {
+  color: var(--hub-ink);
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+.docs-hub .api-block {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(240px, 0.9fr);
+  gap: 28px;
+  padding: clamp(22px, 3vw, 32px);
+  border: 1px solid var(--hub-line);
+  border-radius: 22px;
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--hub-accent) 22%, var(--hub-paper)) 0%, var(--hub-soft) 58%, var(--hub-paper) 100%);
+}
+.docs-hub .api-block h2 { margin-bottom: 10px; }
+.docs-hub .api-block p {
+  margin: 0 0 14px;
+  color: var(--hub-ink);
+  line-height: 1.55;
+}
+.docs-hub .api-block p:last-child { margin-bottom: 0; }
+.docs-hub .audience {
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 8px;
+}
+.docs-hub .audience li {
+  padding: 8px 12px;
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--hub-paper) 82%, transparent);
+  color: var(--hub-ink);
+  font-size: 0.95rem;
+}
+.docs-hub .api-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 10px;
+}
+.docs-hub .api-actions a,
+.docs-hub .api-actions a:visited {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--hub-line);
+  background: var(--hub-paper);
+  color: var(--hub-ink);
+  font-size: 0.92rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+.docs-hub .api-actions a.primary,
+.docs-hub .api-actions a.primary:visited {
+  border-color: var(--hub-accent-ink);
+  background: var(--hub-accent);
+  color: var(--hub-accent-ink);
+}
+.docs-hub .api-actions a:hover,
+.docs-hub .api-actions a:focus-visible {
+  box-shadow: 0 0 0 4px rgba(255, 220, 4, 0.28);
+  outline: 0;
+}
+@media (max-width: 820px) {
+  .docs-hub .product-grid,
+  .docs-hub .api-block {
+    grid-template-columns: 1fr;
+  }
+}
+html[data-theme='dark'] .docs-hub .product-card {
+  background: var(--hub-soft);
+  box-shadow: none;
+}
+html[data-theme='dark'] .docs-hub .audience li {
+  background: color-mix(in srgb, var(--hub-paper) 55%, transparent);
+}
+</style>
+
+<p class="lead">Аппаратные заметки, архитектура ПО и контракты интеграций стека Gratheon. Начните с продукта, затем подключайте устройства или стороннее ПО через API.</p>
+
+<p class="section-kicker">Продукты</p>
+<h2>Что мы строим и документируем</h2>
+<p class="section-intro">Это продукты Gratheon. Каждая колонка - отдельная инженерная поверхность: как продукт устроен, как его собрать или запустить и куда он стыкуется с остальной платформой.</p>
+
+<div class="product-grid">
+  <a class="product-card" href="/ru/docs/web-app/">
+    <span class="product-card__icon" aria-hidden="true">📱</span>
+    <h3>Веб-приложение</h3>
+    <p>Общее рабочее пространство для записей ульев, осмотров, компьютерного зрения, телеметрии и алертов. Эти документы помогают поднять стек сервисов и развивать продукт как инженеру.</p>
+    <span class="product-card__cta">Открыть документацию веб-приложения →</span>
+  </a>
+  <a class="product-card" href="/ru/docs/beehive-sensors/">
+    <span class="product-card__icon" aria-hidden="true">🌡️</span>
+    <h3>IoT-сенсоры улья</h3>
+    <p>Вес, температура и климат улья. Схемы лабораторной проводки, распиновка, спецификации и путь от стендового прототипа к полевому комплекту.</p>
+    <span class="product-card__cta">Открыть документацию сенсоров →</span>
+  </a>
+  <a class="product-card" href="/ru/docs/entrance-observer/">
+    <span class="product-card__icon" aria-hidden="true">👁️‍🗨️</span>
+    <h3>Entrance Observer</h3>
+    <p>Компьютерное зрение на летке. Считает пчелиный трафик, запускает live-видео по запросу и отправляет доказательства в веб-платформу с устройства Jetson.</p>
+    <span class="product-card__cta">Открыть документацию наблюдателя →</span>
+  </a>
+  <a class="product-card" href="/ru/docs/robotic-beehive/">
+    <span class="product-card__icon" aria-hidden="true">🧿</span>
+    <h3>Роботизированный улей</h3>
+    <p>Черновые исследования автоматической работы с рамками и компоновок портала. Ранние заметки для тех, кто изучает робототехнику осмотров.</p>
+    <span class="product-card__cta">Открыть документацию робототехники →</span>
+  </a>
+</div>
+
+<aside class="api-block" aria-labelledby="docs-api-title">
+  <div>
+    <p class="section-kicker">Интеграции</p>
+    <h2 id="docs-api-title">API, чтобы отдавать данные или строить на Gratheon</h2>
+    <p>Веб-приложение - только один клиент. Те же контракты позволяют железу писать измерения внутрь, а другому ПО читать состояние семьи. Если вы уже собираете вес, климат, события летка или осмотры, подключайтесь к Gratheon через API, а не заводите параллельное хранилище.</p>
+    <p>Имеет смысл подключаться, если вы делаете устройства, ведёте платформу для пчеловодов или вам нужны структурированные события улья для исследований и автоматизации. REST остаётся стабильным для прошивок в поле. GraphQL быстрее подходит для программных интеграций, которые могут переживать изменения схемы.</p>
+    <ul class="audience">
+      <li>Команды устройств и прошивок, которые отправляют телеметрию с весов, климат-сенсоров или камер</li>
+      <li>Вендоры ПО для пчеловодства, которые встраивают карты ульев, осмотры или алерты</li>
+      <li>Исследователи и дата-платформы, которым нужны события в той же форме, что использует веб-приложение</li>
+    </ul>
+  </div>
+  <div class="api-actions">
+    <a class="primary" href="/ru/docs/API/">Начать с обзора API</a>
+    <a href="/ru/docs/API/GraphQL/">Смотреть GraphQL</a>
+    <a href="/ru/docs/API/rest/">REST для устройств</a>
+    <a href="/ru/docs/API/Authentication/">Получить API-токен</a>
+  </div>
+</aside>
+</section>

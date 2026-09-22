@@ -1,11 +1,8 @@
----
-title: Research paper discovery and update
-order: 90
-sidebar_position: 90
-hide_table_of_contents: false
----
+# Research paper discovery and update
 
-This document describes how Gratheon discovers, evaluates, and publishes new research papers on [gratheon.com/research](https://gratheon.com/research/). It is written for humans and for recurring AI jobs that maintain the research library.
+Internal runbook for humans and recurring AI jobs that maintain the research library on [gratheon.com/research](https://gratheon.com/research/). This used to live as a public `/docs/` page and was moved here so the docs hub can stay product-facing.
+
+This document describes how Gratheon discovers, evaluates, and publishes new research papers.
 
 ## Goals
 
