@@ -1,8 +1,8 @@
-Vendored from https://github.com/tot-ra/wire-diagram (local ~/git/wire-diagram, 0.1.0).
+Vendored from https://github.com/tot-ra/wire-diagram (local ~/git/wire-diagram, 0.1.0 with physical pin / GPIO syntax).
 
 blog-engine concatenates every content *.js file into /assets/js/main.js except paths under content/triangle/. Keep this ESM build here so hashed 3D chunks stay as sibling modules. Widget CSS is copied to content/assets/css/wire-diagram.css and joins the site CSS bundle.
 
-Refresh JS/CSS with scripts/vendor-wire-diagram.sh. Do not overwrite the YAML documents in this folder.
+Refresh JS/CSS with scripts/vendor-wire-diagram.sh. Do not overwrite the YAML documents in this folder. Site-owned 3D silhouettes live in models/ (Entrance Observer kinds). The vendor script replaces every top-level `dist/*.js` chunk, including hashed shared files the ESM entry imports.
 
 Beehive-sensor YAML encodes the Phase 1 lab power map (HX711 on 5 V, DS18B20 on 3.3 V). Chain pages use subset YAML (esp32-to-ds18b20, esp32-to-hx711) with the same electrical map.
 

@@ -30,12 +30,14 @@ components:
     dimensions: [52, 3, 28]
     position: [-20, 6, 0]
     schematic: [420, 95]
+    pinout: esp32-devkit-38
     properties: { variant: 'Отладочная плата ESP32-WROOM', logic: 'только 3.3 V', firmware: 'HX711_DT_PIN = 16, HX711_SCK_PIN = 17' }
     pins:
-      - { id: VIN, label: '5 V / VIN', side: left, voltage: 5, position: [-22.86, 10.2, 12.73] }
-      - { id: GND, side: left, voltage: 0, position: [-20.32, 10.2, 12.73] }
-      - { id: IO16, label: 'GPIO 16 · DT', side: right, position: [-5.08, 10.2, -12.73] }
-      - { id: IO17, label: 'GPIO 17 · SCK', side: right, position: [-2.54, 10.2, -12.73] }
+      # WHY: number/gpio bind 3D wires to DevKit header contacts and show Pin N / GPIOx on the schematic.
+      - { id: VIN, label: '5 V / VIN', number: 19, side: left, voltage: 5 }
+      - { id: GND, number: 14, side: left, voltage: 0 }
+      - { id: IO16, label: DT, number: 27, gpio: 16, side: right }
+      - { id: IO17, label: SCK, number: 28, gpio: 17, side: right }
   - id: hx
     label: Усилитель HX711
     kind: hx711
@@ -71,8 +73,8 @@ wires:
   - { id: usb-ground, from: usb.GND, to: esp.GND, color: '#212121', voltage: 0, net: GND }
   - { id: hx-power, from: esp.VIN, to: hx.VCC, color: '#c62828', label: 5 V, voltage: 5, net: 5V }
   - { id: hx-ground, from: esp.GND, to: hx.GND, color: '#212121', voltage: 0, net: GND }
-  - { id: hx-data, from: esp.IO16, to: hx.DT, color: '#ef6c00', label: DT, lengthMm: 150, gaugeAwg: 26, notes: Оранжевый jumper на HX711 DT }
-  - { id: hx-clock, from: esp.IO17, to: hx.SCK, color: '#1565c0', label: SCK, lengthMm: 150, gaugeAwg: 26, notes: Синий jumper на HX711 SCK }
+  - { id: hx-data, from: esp.GPIO16, to: hx.DT, color: '#ef6c00', label: DT, lengthMm: 150, gaugeAwg: 26, notes: Оранжевый jumper на HX711 DT }
+  - { id: hx-clock, from: esp.GPIO17, to: hx.SCK, color: '#1565c0', label: SCK, lengthMm: 150, gaugeAwg: 26, notes: Синий jumper на HX711 SCK }
   - { id: load-excite-plus, from: hx.E+, to: load.E+, color: '#c62828' }
   - { id: load-excite-minus, from: hx.E-, to: load.E-, color: '#212121' }
   - { id: load-signal-plus, from: hx.A+, to: load.A+, color: '#b0b8ba', notes: Белая жила. В 2D показана серой для контраста. }

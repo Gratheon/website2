@@ -33,13 +33,10 @@ fi
 (cd "$SRC" && npm run build)
 
 mkdir -p "$DEST"
+# Keep models/ (site-owned product silhouettes). Replace every top-level library chunk,
+# including hashed shared files such as index-*.js that the ESM entry imports.
 find "$DEST" -maxdepth 1 -name '*.js' -delete
-cp "$SRC"/dist/wire-diagram.js \
-  "$SRC"/dist/view3d-*.js \
-  "$SRC"/dist/OrbitControls-*.js \
-  "$SRC"/dist/GLTFLoader-*.js \
-  "$SRC"/dist/three.module-*.js \
-  "$DEST/"
+cp "$SRC"/dist/*.js "$DEST/"
 
 {
   echo "/* Vendored from wire-diagram. Refresh with scripts/vendor-wire-diagram.sh */"

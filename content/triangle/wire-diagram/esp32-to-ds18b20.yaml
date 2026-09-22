@@ -30,12 +30,14 @@ components:
     dimensions: [52, 3, 28]
     position: [-20, 6, 0]
     schematic: [400, 95]
+    pinout: esp32-devkit-38
     properties: { variant: 'ESP32-WROOM development board', logic: '3.3 V only', firmware: 'DS18B20_PIN = 4' }
     pins:
-      - { id: VIN, label: '5 V / VIN', side: left, voltage: 5, position: [-22.86, 10.2, 12.73] }
-      - { id: GND, side: left, voltage: 0, position: [-20.32, 10.2, 12.73] }
-      - { id: 3V3, label: '3.3 V', side: right, voltage: 3.3, position: [-22.86, 10.2, -12.73] }
-      - { id: IO4, label: 'GPIO 4 · DQ', side: right, position: [-10.16, 10.2, -12.73] }
+      # WHY: number/gpio bind 3D wires to DevKit header contacts and show Pin N / GPIOx on the schematic.
+      - { id: VIN, label: '5 V / VIN', number: 19, side: left, voltage: 5 }
+      - { id: GND, number: 14, side: left, voltage: 0 }
+      - { id: 3V3, label: '3.3 V', number: 1, side: right, voltage: 3.3 }
+      - { id: IO4, label: DQ, number: 26, gpio: 4, side: right }
   - id: pullup
     label: 4.7 kOhm pull-up
     kind: resistor
@@ -65,6 +67,6 @@ wires:
   - { id: usb-ground, from: usb.GND, to: esp.GND, color: '#212121', voltage: 0, net: GND }
   - { id: probe-power, from: esp.3V3, to: probe.VDD, color: '#c62828', voltage: 3.3, dashed: true, net: 3V3, notes: Dashed red is 3.3 V only. Do not tie DS18B20 VDD to the 5 V rail. }
   - { id: pullup-power, from: esp.3V3, to: pullup.VCC, color: '#c62828', voltage: 3.3, dashed: true, net: 3V3 }
-  - { id: probe-data, from: esp.IO4, to: pullup.DQ, color: '#6d4c41', net: DQ, notes: Brown or yellow jumper to the data node }
+  - { id: probe-data, from: esp.GPIO4, to: pullup.DQ, color: '#6d4c41', net: DQ, notes: Brown or yellow jumper to the data node }
   - { id: probe-data-tail, from: pullup.DQ, to: probe.DQ, color: '#6d4c41', label: DQ, net: DQ }
   - { id: probe-ground, from: esp.GND, to: probe.GND, color: '#212121', voltage: 0, net: GND }
