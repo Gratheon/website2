@@ -5,14 +5,13 @@ notes:
   - Это схема соединений изделия, не GPIO-карта. Сверяйте подписи на реальном carrier Jetson.
   - Питание официального Orin Nano - DC barrel 19 V (POWER). USB-C только data/recovery, не питание комплекта.
   - Для повторяемых тестов лучше Ethernet. Опциональный модуль WiFi нужен, чтобы воспроизвести полевые условия.
-  - 7-дюймовая HDMI-панель только для стола. Перед любой полевой оснасткой её снимают.
+  - 7-дюймовая HDMI-панель только для стола. Отключайте её перед улицей и длительными прогонами без присмотра.
   - Акриловый корпус от Nano 2 GB не считается подходящим для Orin. Не ставить его в рабочий стек.
 groups:
   - { id: power, label: ПИТАНИЕ, color: '#5c9fb5' }
   - { id: compute, label: КРАЕВОЙ КОМПЬЮТЕР, color: '#d2a454' }
   - { id: vision, label: ЗРЕНИЕ, color: '#64a888' }
   - { id: network, label: СЕТЬ, color: '#b681a5' }
-  - { id: fixture, label: ЛАБОРАТОРНАЯ ОСНАСТКА, color: '#7a8aa0' }
 components:
   - id: psu
     label: Адаптер 19 V DC
@@ -55,7 +54,6 @@ components:
     purchase: { url: 'https://www.amazon.com/dp/B0814VFG12', label: 'MOKOSE 4K UVC', partNumber: 'B0814VFG12' }
     pins:
       - { id: USB, label: USB 3.0, side: left, position: [-21, 0, 0] }
-      - { id: TRIPOD, label: '1/4 inch', side: left, position: [0, -19, 0] }
     notes: Камера питается по USB. Берите USB 3 кабель той же длины, что планируется в поле.
   - id: lan
     label: Лабораторный Ethernet
@@ -100,29 +98,6 @@ components:
     pins:
       - { id: HDMI, side: left, position: [-82, -46, 0] }
     notes: Опциональный стендовый дисплей. Панели ещё нужно USB-питание тач-контроллера. В поле не возить.
-  - id: mount
-    label: Кронштейн камеры 1/4 inch
-    kind: mount
-    group: fixture
-    dimensions: [30, 28, 30]
-    position: [130, 28, 0]
-    schematic: [700, 620]
-    purchase: { url: 'https://www.amazon.com/dp/B0CM6HPFSJ', label: 'Поворотный кронштейн', partNumber: 'B0CM6HPFSJ' }
-    pins:
-      - { id: THREAD, label: '1/4 inch', side: right, position: [0, 14, 0] }
-      - { id: BASE, side: left, position: [0, -14, 0] }
-    notes: После каждой юстировки отметьте дистанцию, высоту и угол.
-  - id: frame
-    label: Стапель из профиля 2020
-    kind: extrusion
-    group: fixture
-    dimensions: [300, 20, 20]
-    position: [80, 10, -32]
-    schematic: [1000, 620]
-    purchase: { url: 'https://www.amazon.de/dp/B0BD5V4RS2', label: 'Набор 2020 300 mm', partNumber: 'B0BD5V4RS2' }
-    pins:
-      - { id: SLOT, label: V-slot, side: right, position: [80, 10, 0] }
-    notes: Только лабораторная оснастка. Это не полевой корпус.
 wires:
   - id: dc-power
     from: psu.VBUS
@@ -176,18 +151,3 @@ wires:
     lengthMm: 500
     diameterMm: 6
     notes: Опционально. Видео Orin это DisplayPort; 7-дюймовая панель HDMI, нужен переходник DP-HDMI. Отключайте перед улицей и длительными прогонами без присмотра.
-  - id: tripod
-    from: mount.THREAD
-    to: camera.TRIPOD
-    color: '#8d6e63'
-    label: '1/4 inch'
-    dashed: true
-    diameterMm: 2
-    notes: Механический крепёж.
-  - id: fixture
-    from: frame.SLOT
-    to: mount.BASE
-    color: '#546e7a'
-    label: Стапель
-    dashed: true
-    diameterMm: 2

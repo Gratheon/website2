@@ -3,7 +3,7 @@
 title: Lab product wiring diagram
 order: 3
 sidebar_position: 3
-description: "Interactive schematic and 3D interconnect for the Jetson Orin Nano Phase 1 lab BOM: 19 V DC barrel, USB UVC camera, NVMe, Ethernet/WiFi, and the bench fixture."
+description: "Interactive schematic and 3D interconnect for the Jetson Orin Nano Phase 1 lab BOM: 19 V DC barrel, USB UVC camera, NVMe, and Ethernet or WiFi."
 ---
 -->
 <section class="lab-wiring">
@@ -97,7 +97,7 @@ section.lab-wiring .checks { color: var(--ink); }
 }
 </style>
 
-<p class="lead">Interactive interconnect for the Phase 1 lab stack: Jetson Orin Nano Super, USB UVC camera, NVMe, Ethernet or WiFi, and the temporary camera fixture. Click a part or cable for purchase links and assembly notes.</p>
+<p class="lead">Interactive interconnect for the Phase 1 lab stack: Jetson Orin Nano Super, USB UVC camera, NVMe, and Ethernet or WiFi. Click a part or cable for purchase links and assembly notes.</p>
 
 <ul class="toc-mini">
   <li><a href="#wiring-diagram">Wiring diagram</a></li>
@@ -108,7 +108,7 @@ section.lab-wiring .checks { color: var(--ink); }
 </ul>
 
 <h2 id="wiring-diagram">Interactive wiring diagram</h2>
-<p>The schematic is the electrical interconnect. Switch to 3D to orbit the bench. Solid lines are the default lab path. Dashed lines are mechanical joints or optional field/bench extras. Optics (lens, acrylic window) and WiFi antennas stay on the BOM, not on this diagram.</p>
+<p>The schematic is the electrical interconnect. Switch to 3D to orbit the bench. Solid lines are the default lab path. Dashed lines are optional field or bench extras. Optics, the camera mount, and the 2020 fixture stay on the BOM, not on this diagram.</p>
 
 <div class="note"><strong>Power rule:</strong> Official Orin Nano power is the DC barrel at <strong>19 V</strong>, not USB-C and not 5 V USB. USB-C on this carrier is data/recovery only. The camera is bus-powered from USB 3. The HDMI panel is optional, bench-only, and needs a DisplayPort-to-HDMI adapter.</div>
 
@@ -126,7 +126,7 @@ section.lab-wiring .checks { color: var(--ink); }
   <span><i class="swatch" style="background:#2e7d32"></i>Gigabit Ethernet (green)</span>
   <span><i class="swatch" style="background:#6d4c41"></i>NVMe M.2 (brown)</span>
   <span><i class="swatch" style="background:#7b1fa2"></i>WiFi M.2, dashed (purple)</span>
-  <span><i class="swatch" style="background:#546e7a"></i>DisplayPort / fixture, dashed</span>
+  <span><i class="swatch" style="background:#546e7a"></i>DisplayPort, dashed</span>
 </div>
 
 <h2 id="connections">Connection table</h2>
@@ -178,13 +178,6 @@ section.lab-wiring .checks { color: var(--ink); }
       <td>Dashed on the diagram. Antennas are off this schematic.</td>
     </tr>
     <tr>
-      <td>Camera pose</td>
-      <td>1/4 inch mount + 2020 fixture</td>
-      <td>Camera tripod thread</td>
-      <td>Mechanical</td>
-      <td>Mark distance, height and angle</td>
-    </tr>
-    <tr>
       <td>Local preview</td>
       <td>7 inch HDMI panel</td>
       <td>Jetson DisplayPort</td>
@@ -210,19 +203,17 @@ section.lab-wiring .checks { color: var(--ink); }
     <ul>
       <li>MOKOSE 4K USB UVC camera</li>
       <li>Ethernet or AC8265</li>
-      <li>1/4 inch camera mount</li>
     </ul>
   </div>
   <div class="col sensors">
-    <h3>Fixture and optional</h3>
+    <h3>Optional electrical</h3>
     <ul>
-      <li>2020 aluminium extrusion pack</li>
       <li>7 inch HDMI panel (bench only)</li>
       <li>Nano 2 GB acrylic case stays off the diagram until Orin fit is confirmed</li>
     </ul>
   </div>
 </div>
-<p>Part links match <a href="/docs/entrance-observer/phase-1-lab-validation/bill-of-materials/">Phase 1 - Lab BOM</a>. Lens, acrylic window and WiFi antennas remain purchase items there. The diagram is a visualization aid, not a verified assembly specification.</p>
+<p>Part links match <a href="/docs/entrance-observer/phase-1-lab-validation/bill-of-materials/">Phase 1 - Lab BOM</a>. Lens, camera mount, 2020 fixture, acrylic window and WiFi antennas remain purchase items there. The diagram is a visualization aid, not a verified assembly specification.</p>
 
 <h2 id="checklist">Pre-power checklist</h2>
 <ul class="checks">
@@ -231,7 +222,6 @@ section.lab-wiring .checks { color: var(--ink); }
   <li><label><input type="checkbox"> Camera USB 3 cable is fully seated and the same length you will use later</label></li>
   <li><label><input type="checkbox"> Ethernet is connected for the default lab path</label></li>
   <li><label><input type="checkbox"> Lens focus and zoom are locked after the first alignment</label></li>
-  <li><label><input type="checkbox"> Camera distance, height and angle are labelled on the fixture</label></li>
   <li><label><input type="checkbox"> HDMI panel is unplugged unless you need a local preview</label></li>
   <li><label><input type="checkbox"> No acrylic Nano 2 GB case is trapping Orin heat</label></li>
 </ul>

@@ -5,14 +5,13 @@ notes:
   - This is a product interconnect, not a GPIO map. Confirm labels on the actual Jetson carrier.
   - Official Orin Nano power is the 19 V DC barrel (POWER). USB-C is data/recovery only, not kit power.
   - Prefer Ethernet for repeatable tests. The optional WiFi module reproduces field conditions.
-  - The 7 inch HDMI panel is bench-only. Remove it before any field fixture.
+  - The 7 inch HDMI panel is bench-only. Unplug it before unattended or outdoor runs.
   - The acrylic Nano 2 GB case is not assumed to fit Orin. Leave it off the powered stack.
 groups:
   - { id: power, label: POWER, color: '#5c9fb5' }
   - { id: compute, label: EDGE COMPUTE, color: '#d2a454' }
   - { id: vision, label: VISION, color: '#64a888' }
   - { id: network, label: NETWORK, color: '#b681a5' }
-  - { id: fixture, label: LAB FIXTURE, color: '#7a8aa0' }
 components:
   - id: psu
     label: 19 V DC adapter
@@ -55,7 +54,6 @@ components:
     purchase: { url: 'https://www.amazon.com/dp/B0814VFG12', label: 'MOKOSE 4K UVC', partNumber: 'B0814VFG12' }
     pins:
       - { id: USB, label: USB 3.0, side: left, position: [-21, 0, 0] }
-      - { id: TRIPOD, label: '1/4 inch', side: left, position: [0, -19, 0] }
     notes: Bus-powered UVC camera. Use a USB 3 cable of the same length planned for field tests.
   - id: lan
     label: Lab Ethernet
@@ -100,29 +98,6 @@ components:
     pins:
       - { id: HDMI, side: left, position: [-82, -46, 0] }
     notes: Optional bench display. The panel also needs USB power for the touch controller. Remove from field builds.
-  - id: mount
-    label: 1/4 inch camera mount
-    kind: mount
-    group: fixture
-    dimensions: [30, 28, 30]
-    position: [130, 28, 0]
-    schematic: [700, 620]
-    purchase: { url: 'https://www.amazon.com/dp/B0CM6HPFSJ', label: 'Adjustable camera mount', partNumber: 'B0CM6HPFSJ' }
-    pins:
-      - { id: THREAD, label: '1/4 inch', side: right, position: [0, 14, 0] }
-      - { id: BASE, side: left, position: [0, -14, 0] }
-    notes: Mark final distance, height and angle after each alignment test.
-  - id: frame
-    label: 2020 extrusion fixture
-    kind: extrusion
-    group: fixture
-    dimensions: [300, 20, 20]
-    position: [80, 10, -32]
-    schematic: [1000, 620]
-    purchase: { url: 'https://www.amazon.de/dp/B0BD5V4RS2', label: '2020 300 mm pack', partNumber: 'B0BD5V4RS2' }
-    pins:
-      - { id: SLOT, label: V-slot, side: right, position: [80, 10, 0] }
-    notes: Lab fixture only. Not a field enclosure.
 wires:
   - id: dc-power
     from: psu.VBUS
@@ -176,18 +151,3 @@ wires:
     lengthMm: 500
     diameterMm: 6
     notes: Optional. Orin video is DisplayPort; the 7 inch panel is HDMI, so this cable needs a DP-HDMI adapter. Unplug before outdoor or unattended runs.
-  - id: tripod
-    from: mount.THREAD
-    to: camera.TRIPOD
-    color: '#8d6e63'
-    label: '1/4 inch'
-    dashed: true
-    diameterMm: 2
-    notes: Mechanical fastener.
-  - id: fixture
-    from: frame.SLOT
-    to: mount.BASE
-    color: '#546e7a'
-    label: Fixture
-    dashed: true
-    diameterMm: 2

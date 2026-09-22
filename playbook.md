@@ -10,4 +10,5 @@
 - `current` can be a broken symlink. Repo-wide ripgrep then aborts; search `content/` or another real directory instead of the repo root.
 - `/docs/` is auto-listed unless `content/docs/index.html` exists. For a designed hub, ship an HTML index with `hideToc` and no `showChildren`, and keep internal runbooks out of `content/docs/`.
 - Entrance Observer lab wiring must use builtin `kind: jetson-orin-nano`, not a host `kind: jetson`. Leave POWER/USB3/ETH/DP without `pin.position` so 3D wires land on the library ports. Unqualified `jetson.GND` is header pin 6, not the barrel; official Orin Nano kit power is the 19 V DC barrel, USB-C is data/recovery only, and video is DisplayPort.
+- Lab product wiring is electrical interconnect only. Do not put 2020 extrusion, camera mount, or other mechanical joints on the schematic, table, or BOM map; those stay on the Phase 1 Lab BOM.
 - To assert Jetson 3D pin alignment in Node, import the vendored `view3d-*.js` chunk first. Builtin resolvers register on that lazy import; `localPinPosition` from the ESM entry alone falls back to schematic edge slots.
