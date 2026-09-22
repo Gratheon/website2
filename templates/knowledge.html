@@ -354,6 +354,10 @@
     var mapSection = document.querySelector('.knowledge-page-products .knowledge-map');
     var webShowcase = document.querySelector('.knowledge-page-products .product-web-app-showcase');
     var productsMap = document.querySelector('.knowledge-page-products .knowledge-map-nav--split .sidebar-menu');
+    // WHY: the web-app feature grid is only rebuilt on /products/web_app/.
+    // On /products/ the original map is emptied and would otherwise remain as a
+    // leftover "Product map / From software to automation" heading.
+    var isWebAppProductPage = /\/products\/web_app\/?$/.test(window.location.pathname);
 
     // WHY: product feature pages need the concrete Purpose copy in the hero, not
     // as a separate first section below it. Move the first Purpose paragraph up
@@ -462,8 +466,8 @@
       cleanSectionLabels(item);
     });
 
-    // Place the product navigation before the software overview, then retain a
-    // separate hardware-details map after the product content.
+    // Keep a hardware-details map after the product content. The original map
+    // stays only on the web-app page, where it is rebuilt into the tier grid.
     var hardwareMapSection = null;
     var hardwareProductsMap = productsMap;
     if (mapSection && webShowcase) {
@@ -480,7 +484,11 @@
       hardwareProductsMap = hardwareMapSection.querySelector('.knowledge-map-nav--split .sidebar-menu');
       hardwareProductsMap.classList.add('knowledge-product-submenu-map');
       hardwareProductsMap.textContent = '';
-      webShowcase.insertAdjacentElement('beforebegin', mapSection);
+      if (isWebAppProductPage) {
+        webShowcase.insertAdjacentElement('beforebegin', mapSection);
+      } else {
+        mapSection.remove();
+      }
       webShowcase.insertAdjacentElement('afterend', hardwareMapSection);
     }
 
@@ -709,7 +717,6 @@
 
     // WHY: billing-tier details describe the Web App, not every hardware product.
     // WHAT: replace the shared product map only on the Web App landing page.
-    var isWebAppProductPage = /\/products\/web_app\/?$/.test(window.location.pathname);
     if (isWebAppProductPage) {
       rebuildWebAppCardByTier(webAppCard);
     }

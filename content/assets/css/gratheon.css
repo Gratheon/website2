@@ -1281,6 +1281,13 @@ html[data-theme='dark'] .founder-letter .future {
   padding: clamp(20px, 3vw, 36px) 0;
 }
 
+/* WHY: on /products/ the original map is emptied after the web-app feature grid
+   moved to /products/web_app/. Hide that leftover heading until JS removes it
+   or promotes a hardware/web-app variant. */
+.knowledge-page-products:has(.product-web-app-showcase) .knowledge-map:not(.knowledge-map--hardware-products):not(.knowledge-map--web-app-features) {
+  display: none;
+}
+
 .knowledge-page-products .knowledge-map-intro {
   display: block;
 }
