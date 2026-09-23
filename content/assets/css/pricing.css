@@ -454,13 +454,16 @@ html[dir='rtl'] .billing-switch-input:checked + .billing-switch-track .billing-s
 .pricing-card.enterprise .pricing-button {
   background: #333;
   color: white;
-  border: 2px solid #666;
+  border: 2px solid #1a1a1a;
+  box-shadow: 0 5px 0 0 #111;
 }
 
-.pricing-card.enterprise .pricing-button:hover {
+.pricing-card.enterprise .pricing-button:hover,
+.pricing-card.enterprise .pricing-button:focus-visible {
   background: #555;
-  border-color: #888;
-  transform: translateY(-2px);
+  border-color: #222;
+  transform: translateY(5px);
+  box-shadow: none;
 }
 
 .pricing-card.enterprise:hover {
@@ -935,7 +938,7 @@ html[dir='rtl'] .billing-switch-input:checked + .billing-switch-track .billing-s
   justify-content: center;
   min-width: 12rem;
   padding: 0.8rem 1.2rem;
-  border: 2px solid #0248ff;
+  border: 2px solid #0036c9;
   border-radius: 999px;
   background: #0248ff;
   color: white;
@@ -943,18 +946,28 @@ html[dir='rtl'] .billing-switch-input:checked + .billing-switch-track .billing-s
   font-weight: 800;
   line-height: 1;
   text-decoration: none !important;
-  box-shadow: 0 8px 18px rgba(2, 72, 255, 0.22);
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, color 0.2s ease;
+  box-shadow: 0 5px 0 0 #002a99;
+  transition:
+    transform 0.2s cubic-bezier(0.23, 1, 0.32, 1),
+    box-shadow 0.2s cubic-bezier(0.23, 1, 0.32, 1),
+    background 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
 }
 
 .pricing-button:hover,
 .pricing-button:focus-visible {
   background: #0036c9;
-  border-color: #0036c9;
+  border-color: #002a99;
   color: white;
   text-decoration: none !important;
-  transform: translateY(-2px);
-  box-shadow: 0 11px 24px rgba(2, 72, 255, 0.3);
+  transform: translateY(5px);
+  box-shadow: none;
+  outline: 0;
+}
+
+.pricing-button:active {
+  box-shadow: none;
 }
 
 /* Featured plan styling */

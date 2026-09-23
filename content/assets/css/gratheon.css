@@ -24,6 +24,19 @@
   --ifm-table-head-color: white;
   --brand-blue: #0248ff;
   --brand-yellow: #ffdc04;
+  /* 3D button chrome (beeswarmed / PostHog-style press depth) */
+  --btn-3d-depth: 5px;
+  --btn-3d-depth-sm: 4px;
+  --btn-3d-border: 2px;
+  --btn-3d-ease: cubic-bezier(0.23, 1, 0.32, 1);
+  --btn-blue-face: #0070ff;
+  --btn-blue-edge: #003d99;
+  --btn-blue-shadow: #002f7a;
+  --btn-green-face: #108310;
+  --btn-green-edge: #0a5f0b;
+  --btn-green-shadow: #084d09;
+  --btn-yellow-edge: #c9ad00;
+  --btn-yellow-shadow: #9a8400;
   --navbar-height: 60px;
   --nav-border: #e0e0e0;
   --bg-primary: #ffffff;
@@ -580,7 +593,7 @@ html[data-theme='dark'] .page-content a {
   border-radius: 8px;
   color: white;
   padding: 10px 30px;
-  border: 0;
+  border: var(--btn-3d-border) solid var(--btn-blue-edge);
   font-size: 30px;
   font-weight: bold;
   text-decoration: none;
@@ -591,13 +604,20 @@ html[data-theme='dark'] .page-content a {
   justify-content: center;
   min-width: 250px;
   white-space: nowrap;
+  box-shadow: 0 var(--btn-3d-depth) 0 0 var(--btn-blue-shadow);
+  transition:
+    transform 0.2s var(--btn-3d-ease),
+    box-shadow 0.2s var(--btn-3d-ease),
+    background 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
 }
 
 .front-page .action {
   border-radius: 8px;
   color: white;
   padding: 8px 18px;
-  border: 0;
+  border: var(--btn-3d-border) solid var(--btn-blue-edge);
   font-size: 17px;
   font-weight: 700;
   text-decoration: none;
@@ -606,6 +626,13 @@ html[data-theme='dark'] .page-content a {
   align-items: center;
   justify-content: center;
   line-height: 1.2;
+  box-shadow: 0 var(--btn-3d-depth-sm) 0 0 var(--btn-blue-shadow);
+  transition:
+    transform 0.2s var(--btn-3d-ease),
+    box-shadow 0.2s var(--btn-3d-ease),
+    background 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
 }
 
 .front-page .signup:visited,
@@ -613,12 +640,42 @@ html[data-theme='dark'] .page-content a {
   color: white;
 }
 
-.front-page .blue { background: #0070ff; }
-.front-page .action_green { background: #108310; }
+.front-page .blue {
+  background: var(--btn-blue-face);
+  border-color: var(--btn-blue-edge);
+  box-shadow: 0 var(--btn-3d-depth) 0 0 var(--btn-blue-shadow);
+}
+
+.front-page .action.blue {
+  box-shadow: 0 var(--btn-3d-depth-sm) 0 0 var(--btn-blue-shadow);
+}
+
+.front-page .action_green {
+  background: var(--btn-green-face);
+  border-color: var(--btn-green-edge);
+  box-shadow: 0 var(--btn-3d-depth-sm) 0 0 var(--btn-green-shadow);
+}
+
 .front-page .signup:hover,
-.front-page .action:hover {
+.front-page .signup:focus-visible,
+.front-page .action:hover,
+.front-page .action:focus-visible {
   color: black;
-  background: yellow;
+  background: var(--brand-yellow);
+  border-color: var(--btn-yellow-edge);
+  box-shadow: none;
+  transform: translateY(var(--btn-3d-depth));
+  outline: 0;
+}
+
+.front-page .action:hover,
+.front-page .action:focus-visible {
+  transform: translateY(var(--btn-3d-depth-sm));
+}
+
+.front-page .signup:active,
+.front-page .action:active {
+  box-shadow: none;
 }
 
 .front-page .installButtons {
@@ -801,7 +858,7 @@ html[data-theme='dark'] .founder-letter .future {
   border-radius: 8px;
   color: white;
   padding: 8px 18px;
-  border: 0;
+  border: var(--btn-3d-border) solid var(--btn-blue-edge);
   font-size: 17px;
   font-weight: 700;
   text-decoration: none;
@@ -810,18 +867,43 @@ html[data-theme='dark'] .founder-letter .future {
   align-items: center;
   justify-content: center;
   line-height: 1.2;
+  box-shadow: 0 var(--btn-3d-depth-sm) 0 0 var(--btn-blue-shadow);
+  transition:
+    transform 0.2s var(--btn-3d-ease),
+    box-shadow 0.2s var(--btn-3d-ease),
+    background 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
 }
 
 .founder-letter .action:visited {
   color: white;
 }
 
-.founder-letter .blue { background: #0070ff; }
-.founder-letter .action_green { background: #108310; }
+.founder-letter .blue {
+  background: var(--btn-blue-face);
+  border-color: var(--btn-blue-edge);
+  box-shadow: 0 var(--btn-3d-depth-sm) 0 0 var(--btn-blue-shadow);
+}
 
-.founder-letter .action:hover {
+.founder-letter .action_green {
+  background: var(--btn-green-face);
+  border-color: var(--btn-green-edge);
+  box-shadow: 0 var(--btn-3d-depth-sm) 0 0 var(--btn-green-shadow);
+}
+
+.founder-letter .action:hover,
+.founder-letter .action:focus-visible {
   color: black;
-  background: yellow;
+  background: var(--brand-yellow);
+  border-color: var(--btn-yellow-edge);
+  box-shadow: none;
+  transform: translateY(var(--btn-3d-depth-sm));
+  outline: 0;
+}
+
+.founder-letter .action:active {
+  box-shadow: none;
 }
 
 .founder-letter + .authorIntro,
@@ -1012,10 +1094,18 @@ html[data-theme='dark'] .founder-letter .future {
   align-items: center;
   min-height: 48px;
   padding: 10px 18px;
-  border: 1px solid var(--knowledge-ink);
+  border: var(--btn-3d-border) solid var(--knowledge-ink);
   color: var(--knowledge-ink);
   font-weight: 800;
   text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 var(--btn-3d-depth-sm) 0 0 color-mix(in srgb, var(--knowledge-ink) 72%, black);
+  transition:
+    transform 0.2s var(--btn-3d-ease),
+    box-shadow 0.2s var(--btn-3d-ease),
+    background 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
 }
 
 .knowledge-action--primary,
@@ -1028,8 +1118,15 @@ html[data-theme='dark'] .founder-letter .future {
 .knowledge-action:focus-visible {
   background: var(--brand-yellow);
   color: black !important;
+  border-color: var(--btn-yellow-edge);
   text-decoration: none;
+  box-shadow: none;
+  transform: translateY(var(--btn-3d-depth-sm));
   outline: 0;
+}
+
+.knowledge-action:active {
+  box-shadow: none;
 }
 
 .knowledge-hero-media {
@@ -1828,10 +1925,35 @@ html[data-theme='dark'] .founder-letter .future {
   align-items: center;
   min-height: 46px;
   padding: 10px 16px;
-  border: 1px solid var(--knowledge-ink);
+  border: var(--btn-3d-border) solid var(--knowledge-ink);
   color: var(--knowledge-ink);
   font-weight: 800;
   text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 var(--btn-3d-depth-sm) 0 0 color-mix(in srgb, var(--knowledge-ink) 72%, black);
+  transition:
+    transform 0.2s var(--btn-3d-ease),
+    box-shadow 0.2s var(--btn-3d-ease),
+    background 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.knowledge-content .research-button:hover,
+.knowledge-content .research-button:focus-visible,
+.knowledge-content .product-button:hover,
+.knowledge-content .product-button:focus-visible {
+  background: var(--brand-yellow);
+  color: black;
+  border-color: var(--btn-yellow-edge);
+  box-shadow: none;
+  transform: translateY(var(--btn-3d-depth-sm));
+  outline: 0;
+}
+
+.knowledge-content .research-button:active,
+.knowledge-content .product-button:active {
+  box-shadow: none;
 }
 
 .knowledge-content .research-button--primary,
