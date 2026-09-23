@@ -14,4 +14,5 @@
 - To assert Jetson 3D pin alignment in Node, import the vendored `view3d-*.js` chunk first. Builtin resolvers register on that lazy import; `localPinPosition` from the ESM entry alone falls back to schematic edge slots.
 - Entrance Observer lab wiring belongs on the product HTML page (`entrance-observer.html` at `/docs/entrance-observer/#wiring-diagram`), same pattern as Beehive sensors. Keep the old phase-1 wiring URL as a `redirectUrl` stub.
 - `blog-engine serve` can rebuild in a loop if `content/embeddings.json` is rewritten while watched. Stop the server after verification and do not commit that file.
+- Legacy case-sensitive URLs (for example `/research/Datasets/`) need a separate `redirectUrl` stub with an explicit `slug: Datasets`. blog-engine lowercases generated slugs, so the main page stays at `/research/datasets/`. On case-insensitive macOS builds, `datasets/` and `Datasets/` collide in `dist/`; verify redirect stubs on Linux production or by URL path case, not only by local `dist` layout.
 - A curl during a live rebuild can 404 a localized `/ru/` page that already exists in the finished `dist`. Recheck after the rebuild completes.
