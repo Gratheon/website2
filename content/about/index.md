@@ -19,7 +19,7 @@ Gratheon helps beekeepers to protect bees, understand colony development, and sc
         </a>
       </div>
       <div>
-        By <a href="https://www.linkedin.com/in/kurapov/">Artjom Kurapov</a>,<br>Beekeeper, Founding engineer
+        By <a href="https://kurapov.ee">Artjom Kurapov</a>,<br>Beekeeper, Founding engineer
       </div>
     </div>
     <p>I am a software engineer and 5 years ago I became a beekeeper to improve pollination of my garden and get higher yields. To me, bees are also a cute and interesting pet.</p>

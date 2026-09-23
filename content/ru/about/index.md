@@ -19,7 +19,7 @@ Gratheon помогает пчеловодам защищать пчёл, пон
         </a>
       </div>
       <div>
-        Автор <a href="https://www.linkedin.com/in/kurapov/">Artjom Kurapov</a>,<br>Пчеловод, founding engineer
+        Автор <a href="https://kurapov.ee">Artjom Kurapov</a>,<br>Пчеловод, founding engineer
       </div>
     </div>
     <p>Я инженер-программист, и 5 лет назад стал пчеловодом, чтобы улучшить опыление сада и получать больший урожай. Для меня пчёлы — ещё и милые, интересные питомцы.</p>

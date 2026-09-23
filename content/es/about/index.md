@@ -20,7 +20,7 @@ Gratheon ayuda a apicultores a proteger abejas, comprender el desarrollo de colo
         </a>
       </div>
       <div>
-        Por <a href="https://www.linkedin.com/in/kurapov/">Artjom Kurapov</a>,<br>Apicultor, Ingeniero fundador
+        Por <a href="https://kurapov.ee">Artjom Kurapov</a>,<br>Apicultor, Ingeniero fundador
       </div>
     </div>
     <p>Soy ingeniero de software y hace 5 años me convertí en apicultor para mejorar la polinización de mi jardín y obtener mayores rendimientos. Para mí, las abejas también son una mascota linda e interesante.</p>

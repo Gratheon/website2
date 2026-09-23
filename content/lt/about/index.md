@@ -19,7 +19,7 @@ Gratheon padeda bitininkams saugoti bites, suprasti kolonijos raidą ir mastinti
         </a>
       </div>
       <div>
-        Autorius: <a href="https://www.linkedin.com/in/kurapov/">Artjom Kurapov</a>,<br>Bitininkas, pagrindinis inžinierius
+        Autorius: <a href="https://kurapov.ee">Artjom Kurapov</a>,<br>Bitininkas, pagrindinis inžinierius
       </div>
     </div>
     <p>Aš esu programišius ir prieš 5 metus tapau bitininku, kad pagerintų sodo vėžiavimą bei gautų didesnį derlių. Man bites yra mielas ir įdomus gyvūnas.</p>

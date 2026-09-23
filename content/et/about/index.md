@@ -19,7 +19,7 @@ Gratheon aitab mesinikel kaitsta mesilasi, mõista mesilaspere arengut ja laiend
         </a>
       </div>
       <div>
-        Autor <a href="https://www.linkedin.com/in/kurapov/">Artjom Kurapov</a>,<br>Mesinik, founding engineer
+        Autor <a href="https://kurapov.ee">Artjom Kurapov</a>,<br>Mesinik, founding engineer
       </div>
     </div>
     <p>Olen tarkvarainsener ja viis aastat tagasi hakkasin mesinikuks, et parandada oma aia tolmeldamist ja saada suuremat saaki. Minu jaoks on mesilased ka armsad ja huvitavad lemmikud.</p>
