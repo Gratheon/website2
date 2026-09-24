@@ -9,7 +9,7 @@ layout: research
 ## Summary
 
 - Topic key: `computer-vision`
-- Total papers: 80
+- Total papers: 81
 - [Research papers hub](../index.md)
 - [All topics](index.md)
 
@@ -17,7 +17,7 @@ layout: research
 
 - [Colony Health](../product-areas/colony-health.md) (21)
 - [Edge Device](../product-areas/edge-device.md) (3)
-- [Gate Tracker](../product-areas/gate-tracker.md) (27)
+- [Gate Tracker](../product-areas/gate-tracker.md) (28)
 - [Hive Scanner](../product-areas/hive-scanner.md) (24)
 - [Monitoring Platform](../product-areas/monitoring-platform.md) (26)
 - [Robotics](../product-areas/robotics.md) (2)
@@ -29,7 +29,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="computer-vision-year-filter" value="all" checked>
         <span class="research-year-tab__label">All</span>
-        <span class="research-year-tab__count">80</span>
+        <span class="research-year-tab__count">81</span>
       </label>
       <span class="research-year-tab__arrow" aria-hidden="true">›</span>
       <label class="research-year-tab">
@@ -101,7 +101,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="computer-vision-year-filter" value="2026">
         <span class="research-year-tab__label">2026</span>
-        <span class="research-year-tab__count">21</span>
+        <span class="research-year-tab__count">22</span>
       </label>
     </div>
     <div class="research-year-filter__panels">
@@ -131,6 +131,7 @@ layout: research
         <tr><td><a href="/research/papers/insectdct-a-generalized-pipeline-for-detection-taxonomic-classification-and-tracking-of-insects-in-camera-trap-recordings/">InsectDCT: A generalized pipeline for detection, taxonomic classification, and tracking of insects in camera-trap recordings</a></td><td>2026</td><td>🇩🇰 Aarhus University; 🇩🇪 Helmholtz Centre for Environmental Research; 🇪🇸 Mediterranean Institute for Advanced Studies; 🇬🇪 Ilia State University</td></tr>
         <tr><td><a href="/research/papers/interpretable-deep-learning-for-varroa-mite-detection-integrating-deblurring-morphology-preserving-preprocessing-and-explainability-analysis/">Interpretable Deep Learning for Varroa Mite Detection: Integrating Deblurring, Morphology-Preserving Preprocessing, and Explainability Analysis</a></td><td>2026</td><td>🇰🇷 Kangwon National University; 🇰🇷 National Institute of Agricultural Sciences</td></tr>
         <tr><td><a href="/research/papers/m3danet-a-lightweight-semi-supervised-network-and-embedded-system-for-bee-colony-counting/">M3DANet: A Lightweight Semi-Supervised Network and Embedded System for Bee Colony Counting</a></td><td>2026</td><td>🇨🇳 Shandong Agricultural University; 🇨🇳 Apiculture Institute of Jiangxi Province</td></tr>
+        <tr><td><a href="/research/papers/machine-vision-based-quantification-of-colony-level-homing-adaptation-in-apis-mellifera-following-hive-entrance-displacement/">Machine Vision-Based Quantification of Colony-Level Homing Adaptation in Apis mellifera Following Hive Entrance Displacement</a></td><td>2026</td><td>🇨🇳 Agricultural Information Institute, Chinese Academy of Agricultural Sciences; 🇨🇳 Key Laboratory of Agricultural Blockchain Application, Ministry of Agriculture and Rural Affairs</td></tr>
         <tr><td><a href="/research/papers/physics-aware-vision-instrumentation-for-stingless-bee-counting-at-hive-entrance-using-hybrid-edge-cloud-object-detection/">Physics-aware vision instrumentation for stingless bee counting at hive entrance using hybrid edge-cloud object detection</a></td><td>2026</td><td>🇲🇾 Universiti Teknologi Malaysia; 🇮🇩 Universitas Negeri Jakarta; 🇮🇩 Institut Teknologi Indonesia; 🇮🇩 Politeknik Negeri Bandung; 🇮🇩 National Research and Innovation Agency</td></tr>
         <tr><td><a href="/research/papers/pollicrop-a-high-throughput-computer-vision-pipeline-for-pollinator-monitoring-in-agroecosystems/">PolliCrop: A high-throughput computer vision pipeline for pollinator monitoring in agroecosystems</a></td><td>2026</td><td>🇫🇷 INRAE; 🇫🇷 CNRS; 🇺🇸 University of California, Berkeley; 🇩🇪 Julius Kühn Institute; 🇩🇪 Technische Universität Braunschweig</td></tr>
         <tr><td><a href="/research/papers/small-pollinator-detection-in-cluttered-field-video/">Small-Pollinator Detection in Cluttered Field Video</a></td><td>2026</td><td>🇺🇸 Iowa State University; 🇺🇸 University of Central Florida</td></tr>
@@ -226,6 +227,7 @@ layout: research
         <tr><td><a href="/research/papers/insectdct-a-generalized-pipeline-for-detection-taxonomic-classification-and-tracking-of-insects-in-camera-trap-recordings/">InsectDCT: A generalized pipeline for detection, taxonomic classification, and tracking of insects in camera-trap recordings</a></td><td>2026</td><td>🇩🇰 Aarhus University; 🇩🇪 Helmholtz Centre for Environmental Research; 🇪🇸 Mediterranean Institute for Advanced Studies; 🇬🇪 Ilia State University</td></tr>
         <tr><td><a href="/research/papers/interpretable-deep-learning-for-varroa-mite-detection-integrating-deblurring-morphology-preserving-preprocessing-and-explainability-analysis/">Interpretable Deep Learning for Varroa Mite Detection: Integrating Deblurring, Morphology-Preserving Preprocessing, and Explainability Analysis</a></td><td>2026</td><td>🇰🇷 Kangwon National University; 🇰🇷 National Institute of Agricultural Sciences</td></tr>
         <tr><td><a href="/research/papers/m3danet-a-lightweight-semi-supervised-network-and-embedded-system-for-bee-colony-counting/">M3DANet: A Lightweight Semi-Supervised Network and Embedded System for Bee Colony Counting</a></td><td>2026</td><td>🇨🇳 Shandong Agricultural University; 🇨🇳 Apiculture Institute of Jiangxi Province</td></tr>
+        <tr><td><a href="/research/papers/machine-vision-based-quantification-of-colony-level-homing-adaptation-in-apis-mellifera-following-hive-entrance-displacement/">Machine Vision-Based Quantification of Colony-Level Homing Adaptation in Apis mellifera Following Hive Entrance Displacement</a></td><td>2026</td><td>🇨🇳 Agricultural Information Institute, Chinese Academy of Agricultural Sciences; 🇨🇳 Key Laboratory of Agricultural Blockchain Application, Ministry of Agriculture and Rural Affairs</td></tr>
         <tr><td><a href="/research/papers/physics-aware-vision-instrumentation-for-stingless-bee-counting-at-hive-entrance-using-hybrid-edge-cloud-object-detection/">Physics-aware vision instrumentation for stingless bee counting at hive entrance using hybrid edge-cloud object detection</a></td><td>2026</td><td>🇲🇾 Universiti Teknologi Malaysia; 🇮🇩 Universitas Negeri Jakarta; 🇮🇩 Institut Teknologi Indonesia; 🇮🇩 Politeknik Negeri Bandung; 🇮🇩 National Research and Innovation Agency</td></tr>
         <tr><td><a href="/research/papers/pollicrop-a-high-throughput-computer-vision-pipeline-for-pollinator-monitoring-in-agroecosystems/">PolliCrop: A high-throughput computer vision pipeline for pollinator monitoring in agroecosystems</a></td><td>2026</td><td>🇫🇷 INRAE; 🇫🇷 CNRS; 🇺🇸 University of California, Berkeley; 🇩🇪 Julius Kühn Institute; 🇩🇪 Technische Universität Braunschweig</td></tr>
         <tr><td><a href="/research/papers/small-pollinator-detection-in-cluttered-field-video/">Small-Pollinator Detection in Cluttered Field Video</a></td><td>2026</td><td>🇺🇸 Iowa State University; 🇺🇸 University of Central Florida</td></tr>

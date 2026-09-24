@@ -17,7 +17,7 @@ Browse research papers by topic.
   <div class="research-paper-filter-grid">
     <a class="research-paper-filter-card" href="/research/papers/topics/computer-vision/">
       <span class="research-paper-filter-card__icon" aria-hidden="true">👁️</span>
-      <span class="research-paper-filter-card__body"><strong>Computer Vision</strong><small>80 papers</small></span>
+      <span class="research-paper-filter-card__body"><strong>Computer Vision</strong><small>81 papers</small></span>
     </a>
     <a class="research-paper-filter-card" href="/research/papers/topics/iot-sensors/">
       <span class="research-paper-filter-card__icon" aria-hidden="true">📡</span>
@@ -41,7 +41,7 @@ Browse research papers by topic.
     </a>
     <a class="research-paper-filter-card" href="/research/papers/topics/reviews-surveys/">
       <span class="research-paper-filter-card__icon" aria-hidden="true">📋</span>
-      <span class="research-paper-filter-card__body"><strong>Reviews Surveys</strong><small>20 papers</small></span>
+      <span class="research-paper-filter-card__body"><strong>Reviews Surveys</strong><small>21 papers</small></span>
     </a>
     <a class="research-paper-filter-card" href="/research/papers/topics/varroa-health/">
       <span class="research-paper-filter-card__icon" aria-hidden="true">🦠</span>
@@ -57,7 +57,7 @@ Browse research papers by topic.
     </a>
     <a class="research-paper-filter-card" href="/research/papers/topics/precision-beekeeping/">
       <span class="research-paper-filter-card__icon" aria-hidden="true">🎯</span>
-      <span class="research-paper-filter-card__body"><strong>Precision Beekeeping</strong><small>9 papers</small></span>
+      <span class="research-paper-filter-card__body"><strong>Precision Beekeeping</strong><small>10 papers</small></span>
     </a>
     <a class="research-paper-filter-card" href="/research/papers/topics/robotics/">
       <span class="research-paper-filter-card__icon" aria-hidden="true">🤖</span>
@@ -67,17 +67,17 @@ Browse research papers by topic.
       <span class="research-paper-filter-card__icon" aria-hidden="true">🌻</span>
       <span class="research-paper-filter-card__body"><strong>Pollination Monitoring</strong><small>4 papers</small></span>
     </a>
-    <a class="research-paper-filter-card" href="/research/papers/topics/bee-counting/">
-      <span class="research-paper-filter-card__icon" aria-hidden="true">🔢</span>
-      <span class="research-paper-filter-card__body"><strong>Bee Counting</strong><small>2 papers</small></span>
-    </a>
     <a class="research-paper-filter-card" href="/research/papers/topics/bee-traffic/">
       <span class="research-paper-filter-card__icon" aria-hidden="true">🚪</span>
-      <span class="research-paper-filter-card__body"><strong>Bee Traffic</strong><small>2 papers</small></span>
+      <span class="research-paper-filter-card__body"><strong>Bee Traffic</strong><small>3 papers</small></span>
     </a>
     <a class="research-paper-filter-card" href="/research/papers/topics/behavior-recognition/">
       <span class="research-paper-filter-card__icon" aria-hidden="true">🧠</span>
-      <span class="research-paper-filter-card__body"><strong>Behavior Recognition</strong><small>2 papers</small></span>
+      <span class="research-paper-filter-card__body"><strong>Behavior Recognition</strong><small>3 papers</small></span>
+    </a>
+    <a class="research-paper-filter-card" href="/research/papers/topics/bee-counting/">
+      <span class="research-paper-filter-card__icon" aria-hidden="true">🔢</span>
+      <span class="research-paper-filter-card__body"><strong>Bee Counting</strong><small>2 papers</small></span>
     </a>
     <a class="research-paper-filter-card" href="/research/papers/topics/datasets/">
       <span class="research-paper-filter-card__icon" aria-hidden="true">📊</span>

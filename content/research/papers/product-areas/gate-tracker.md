@@ -9,7 +9,7 @@ layout: research
 ## Summary
 
 - Product area key: `gate-tracker`
-- Total papers: 29
+- Total papers: 30
 - [Research papers hub](../index.md)
 - [All product areas](index.md)
 
@@ -18,8 +18,9 @@ layout: research
 - [Audio Acoustics](../topics/audio-acoustics.md) (1)
 - [Bee Behaviour](../topics/bee-behaviour.md) (21)
 - [Bee Counting](../topics/bee-counting.md) (1)
-- [Bee Traffic](../topics/bee-traffic.md) (1)
-- [Computer Vision](../topics/computer-vision.md) (27)
+- [Bee Traffic](../topics/bee-traffic.md) (2)
+- [Behavior Recognition](../topics/behavior-recognition.md) (1)
+- [Computer Vision](../topics/computer-vision.md) (28)
 - [Datasets](../topics/datasets.md) (1)
 - [Datasets Benchmarks](../topics/datasets-benchmarks.md) (5)
 - [Edge AI Energy](../topics/edge-ai-energy.md) (2)
@@ -34,7 +35,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="gate-tracker-year-filter" value="all" checked>
         <span class="research-year-tab__label">All</span>
-        <span class="research-year-tab__count">29</span>
+        <span class="research-year-tab__count">30</span>
       </label>
       <span class="research-year-tab__arrow" aria-hidden="true">›</span>
       <label class="research-year-tab">
@@ -106,7 +107,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="gate-tracker-year-filter" value="2026">
         <span class="research-year-tab__label">2026</span>
-        <span class="research-year-tab__count">3</span>
+        <span class="research-year-tab__count">4</span>
       </label>
     </div>
     <div class="research-year-filter__panels">
@@ -123,6 +124,7 @@ layout: research
         <tbody>
         <tr><td><a href="/research/papers/bee-detection-and-tracking-at-hive-entrance-using-yolo11-and-bytetrack/">Bee Detection and Tracking at Hive Entrance using YOLO11 and ByteTrack</a></td><td>2026</td><td>🇫🇮 Savonia University of Applied Sciences; 🇩🇪 Ostbayerische Technische Hochschule Regensburg</td></tr>
         <tr><td><a href="/research/papers/continuous-non-invasive-monitoring-of-hive-entrance-activity-reveals-honey-bee-colony-dynamics/">Continuous Non-Invasive Monitoring of Hive Entrance Activity Reveals Honey Bee Colony Dynamics</a></td><td>2026</td><td>🇹🇷 Van Yüzüncü Yıl University</td></tr>
+        <tr><td><a href="/research/papers/machine-vision-based-quantification-of-colony-level-homing-adaptation-in-apis-mellifera-following-hive-entrance-displacement/">Machine Vision-Based Quantification of Colony-Level Homing Adaptation in Apis mellifera Following Hive Entrance Displacement</a></td><td>2026</td><td>🇨🇳 Agricultural Information Institute, Chinese Academy of Agricultural Sciences; 🇨🇳 Key Laboratory of Agricultural Blockchain Application, Ministry of Agriculture and Rural Affairs</td></tr>
         <tr><td><a href="/research/papers/physics-aware-vision-instrumentation-for-stingless-bee-counting-at-hive-entrance-using-hybrid-edge-cloud-object-detection/">Physics-aware vision instrumentation for stingless bee counting at hive entrance using hybrid edge-cloud object detection</a></td><td>2026</td><td>🇲🇾 Universiti Teknologi Malaysia; 🇮🇩 Universitas Negeri Jakarta; 🇮🇩 Institut Teknologi Indonesia; 🇮🇩 Politeknik Negeri Bandung; 🇮🇩 National Research and Innovation Agency</td></tr>
         <tr><td><a href="/research/papers/apis-mellifera-bee-verification-with-iot-and-graph-neural-network/">Apis mellifera Bee Verification with IoT and Graph Neural Network</a></td><td>2025</td><td>🇲🇽 Instituto Tecnológico El Llano Aguascalientes</td></tr>
         <tr><td><a href="/research/papers/evaluation-of-single-shot-object-detection-models-for-identifying-fanning-behavior-in-honeybees-at-the-hive-entrance/">Evaluation of Single-Shot Object Detection Models for Identifying Fanning Behavior in Honeybees at the Hive Entrance</a></td><td>2025</td><td>🇱🇹 Vilnius Gediminas Technical University</td></tr>
@@ -167,6 +169,7 @@ layout: research
         <tbody>
         <tr><td><a href="/research/papers/bee-detection-and-tracking-at-hive-entrance-using-yolo11-and-bytetrack/">Bee Detection and Tracking at Hive Entrance using YOLO11 and ByteTrack</a></td><td>2026</td><td>🇫🇮 Savonia University of Applied Sciences; 🇩🇪 Ostbayerische Technische Hochschule Regensburg</td></tr>
         <tr><td><a href="/research/papers/continuous-non-invasive-monitoring-of-hive-entrance-activity-reveals-honey-bee-colony-dynamics/">Continuous Non-Invasive Monitoring of Hive Entrance Activity Reveals Honey Bee Colony Dynamics</a></td><td>2026</td><td>🇹🇷 Van Yüzüncü Yıl University</td></tr>
+        <tr><td><a href="/research/papers/machine-vision-based-quantification-of-colony-level-homing-adaptation-in-apis-mellifera-following-hive-entrance-displacement/">Machine Vision-Based Quantification of Colony-Level Homing Adaptation in Apis mellifera Following Hive Entrance Displacement</a></td><td>2026</td><td>🇨🇳 Agricultural Information Institute, Chinese Academy of Agricultural Sciences; 🇨🇳 Key Laboratory of Agricultural Blockchain Application, Ministry of Agriculture and Rural Affairs</td></tr>
         <tr><td><a href="/research/papers/physics-aware-vision-instrumentation-for-stingless-bee-counting-at-hive-entrance-using-hybrid-edge-cloud-object-detection/">Physics-aware vision instrumentation for stingless bee counting at hive entrance using hybrid edge-cloud object detection</a></td><td>2026</td><td>🇲🇾 Universiti Teknologi Malaysia; 🇮🇩 Universitas Negeri Jakarta; 🇮🇩 Institut Teknologi Indonesia; 🇮🇩 Politeknik Negeri Bandung; 🇮🇩 National Research and Innovation Agency</td></tr>
         </tbody>
         </table>

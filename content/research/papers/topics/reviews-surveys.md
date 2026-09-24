@@ -9,14 +9,14 @@ layout: research
 ## Summary
 
 - Topic key: `reviews-surveys`
-- Total papers: 20
+- Total papers: 21
 - [Research papers hub](../index.md)
 - [All topics](index.md)
 
 ## Product areas
 
-- [Colony Health](../product-areas/colony-health.md) (4)
-- [Monitoring Platform](../product-areas/monitoring-platform.md) (20)
+- [Colony Health](../product-areas/colony-health.md) (5)
+- [Monitoring Platform](../product-areas/monitoring-platform.md) (21)
 
 <section class="research-year-filter" aria-labelledby="research-year-filter-title">
   <h2 id="research-year-filter-title">Publications</h2>
@@ -25,7 +25,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="reviews-surveys-year-filter" value="all" checked>
         <span class="research-year-tab__label">All</span>
-        <span class="research-year-tab__count">20</span>
+        <span class="research-year-tab__count">21</span>
       </label>
       <span class="research-year-tab__arrow" aria-hidden="true">›</span>
       <label class="research-year-tab">
@@ -85,7 +85,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="reviews-surveys-year-filter" value="2026">
         <span class="research-year-tab__label">2026</span>
-        <span class="research-year-tab__count">3</span>
+        <span class="research-year-tab__count">4</span>
       </label>
     </div>
     <div class="research-year-filter__panels">
@@ -102,6 +102,7 @@ layout: research
         <tbody>
         <tr><td><a href="/research/papers/deep-learning-and-computer-vision-for-honey-bee-health-monitoring-a-systematic-survey-and-future-directions/">Deep Learning and Computer Vision for Honey Bee Health Monitoring: A Systematic Survey and Future Directions</a></td><td>2026</td><td>🇮🇳 SSVPS&#x27;s Bapusaheb Shivajirao Deore College of Engineering</td></tr>
         <tr><td><a href="/research/papers/from-hive-sensors-to-environmental-dna-toward-a-systems-biology-framework-for-honeybee-based-early-warning-of-colony-and-ecosystem-health/">From Hive Sensors to Environmental DNA: Toward a Systems Biology Framework for Honeybee-Based Early Warning of Colony and Ecosystem Health</a></td><td>2026</td><td>🇨🇳 Yangzhou University; 🇸🇦 Imam Mohammad Ibn Saud Islamic University</td></tr>
+        <tr><td><a href="/research/papers/precision-apiculture-with-artificial-intelligence-a-survey-of-methods-tools-and-future-directions/">Precision Apiculture with Artificial Intelligence: A Survey of Methods, Tools, and Future Directions</a></td><td>2026</td><td>🇵🇱 AGH University of Krakow; 🇱🇻 Latvia University of Life Sciences and Technologies</td></tr>
         <tr><td><a href="/research/papers/transforming-beekeeping-through-technology-a-systematic-review-of-precision-beekeeping/">Transforming Beekeeping Through Technology: A Systematic Review of Precision Beekeeping</a></td><td>2026</td><td>🇧🇳 Universiti Brunei Darussalam; 🇱🇰 Uva Wellassa University</td></tr>
         <tr><td><a href="/research/papers/a-survey-of-tinyml-applications-in-beekeeping-for-hive-monitoring-and-management/">A Survey of TinyML Applications in Beekeeping for Hive Monitoring and Management</a></td><td>2025</td><td>🇦🇺 University of Technology Sydney; 🇦🇺 BeeSTAR</td></tr>
         <tr><td><a href="/research/papers/beekeeping-in-the-digital-age-prospects-and-pitfalls-of-hive-sensors/">Beekeeping in the digital age: prospects and pitfalls of hive sensors in commercial beekeeping</a></td><td>2025</td><td>🇦🇺 University of Melbourne; 🇦🇺 La Trobe University; 🇦🇺 ANU Research School of Biology</td></tr>
@@ -137,6 +138,7 @@ layout: research
         <tbody>
         <tr><td><a href="/research/papers/deep-learning-and-computer-vision-for-honey-bee-health-monitoring-a-systematic-survey-and-future-directions/">Deep Learning and Computer Vision for Honey Bee Health Monitoring: A Systematic Survey and Future Directions</a></td><td>2026</td><td>🇮🇳 SSVPS&#x27;s Bapusaheb Shivajirao Deore College of Engineering</td></tr>
         <tr><td><a href="/research/papers/from-hive-sensors-to-environmental-dna-toward-a-systems-biology-framework-for-honeybee-based-early-warning-of-colony-and-ecosystem-health/">From Hive Sensors to Environmental DNA: Toward a Systems Biology Framework for Honeybee-Based Early Warning of Colony and Ecosystem Health</a></td><td>2026</td><td>🇨🇳 Yangzhou University; 🇸🇦 Imam Mohammad Ibn Saud Islamic University</td></tr>
+        <tr><td><a href="/research/papers/precision-apiculture-with-artificial-intelligence-a-survey-of-methods-tools-and-future-directions/">Precision Apiculture with Artificial Intelligence: A Survey of Methods, Tools, and Future Directions</a></td><td>2026</td><td>🇵🇱 AGH University of Krakow; 🇱🇻 Latvia University of Life Sciences and Technologies</td></tr>
         <tr><td><a href="/research/papers/transforming-beekeeping-through-technology-a-systematic-review-of-precision-beekeeping/">Transforming Beekeeping Through Technology: A Systematic Review of Precision Beekeeping</a></td><td>2026</td><td>🇧🇳 Universiti Brunei Darussalam; 🇱🇰 Uva Wellassa University</td></tr>
         </tbody>
         </table>

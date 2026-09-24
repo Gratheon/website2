@@ -9,7 +9,7 @@ layout: research
 ## Summary
 
 - Product area key: `monitoring-platform`
-- Total papers: 89
+- Total papers: 90
 - [Research papers hub](../index.md)
 - [All product areas](index.md)
 
@@ -28,8 +28,8 @@ layout: research
 - [IoT Sensors](../topics/iot-sensors.md) (61)
 - [Pollination Ecology](../topics/pollination-ecology.md) (7)
 - [Pollination Monitoring](../topics/pollination-monitoring.md) (4)
-- [Precision Beekeeping](../topics/precision-beekeeping.md) (9)
-- [Reviews Surveys](../topics/reviews-surveys.md) (20)
+- [Precision Beekeeping](../topics/precision-beekeeping.md) (10)
+- [Reviews Surveys](../topics/reviews-surveys.md) (21)
 - [Varroa Health](../topics/varroa-health.md) (4)
 
 <section class="research-year-filter" aria-labelledby="research-year-filter-title">
@@ -39,7 +39,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="monitoring-platform-year-filter" value="all" checked>
         <span class="research-year-tab__label">All</span>
-        <span class="research-year-tab__count">89</span>
+        <span class="research-year-tab__count">90</span>
       </label>
       <span class="research-year-tab__arrow" aria-hidden="true">›</span>
       <label class="research-year-tab">
@@ -105,7 +105,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="monitoring-platform-year-filter" value="2026">
         <span class="research-year-tab__label">2026</span>
-        <span class="research-year-tab__count">34</span>
+        <span class="research-year-tab__count">35</span>
       </label>
     </div>
     <div class="research-year-filter__panels">
@@ -146,6 +146,7 @@ layout: research
         <tr><td><a href="/research/papers/on-the-prediction-of-varroa-mite-infestations-in-honeybee-colonies-via-acoustic-monitoring/">On the Prediction of Varroa Mite Infestations in Honeybee Colonies via Acoustic Monitoring</a></td><td>2026</td><td>🇨🇦 Institut national de la recherche scientifique (INRS); 🇨🇦 Nectar Technologies Inc.; 🇨🇦 Université Laval</td></tr>
         <tr><td><a href="/research/papers/on-device-deep-learning-for-real-time-acoustic-monitoring-of-endangered-bombus-dahlbomii-and-invasive-congeners/">On-device deep learning for real-time acoustic monitoring of endangered Bombus dahlbomii and invasive congeners</a></td><td>2026</td><td>🇺🇸 Massachusetts Institute of Technology; 🇯🇵 Kioxia Corporation; 🇨🇭 ETH Zurich; 🇦🇷 INIBIOMA, Universidad Nacional del Comahue and CONICET</td></tr>
         <tr><td><a href="/research/papers/pollicrop-a-high-throughput-computer-vision-pipeline-for-pollinator-monitoring-in-agroecosystems/">PolliCrop: A high-throughput computer vision pipeline for pollinator monitoring in agroecosystems</a></td><td>2026</td><td>🇫🇷 INRAE; 🇫🇷 CNRS; 🇺🇸 University of California, Berkeley; 🇩🇪 Julius Kühn Institute; 🇩🇪 Technische Universität Braunschweig</td></tr>
+        <tr><td><a href="/research/papers/precision-apiculture-with-artificial-intelligence-a-survey-of-methods-tools-and-future-directions/">Precision Apiculture with Artificial Intelligence: A Survey of Methods, Tools, and Future Directions</a></td><td>2026</td><td>🇵🇱 AGH University of Krakow; 🇱🇻 Latvia University of Life Sciences and Technologies</td></tr>
         <tr><td><a href="/research/papers/small-pollinator-detection-in-cluttered-field-video/">Small-Pollinator Detection in Cluttered Field Video</a></td><td>2026</td><td>🇺🇸 Iowa State University; 🇺🇸 University of Central Florida</td></tr>
         <tr><td><a href="/research/papers/spectrogram-based-deep-learning-models-for-acoustic-identification-of-honey-bees-in-complex-environmental-noises/">Spectrogram-Based Deep Learning Models for Acoustic Identification of Honey Bees in Complex Environmental Noises</a></td><td>2026</td><td>🇵🇰 Namal University; 🇵🇰 University of Mianwali; 🇦🇪 Abu Dhabi University; 🇹🇷 Nişantaşı University</td></tr>
         <tr><td><a href="/research/papers/stag-cn-spatio-temporal-apiary-graph-convolutional-network-for-disease-onset-prediction-in-beehive-sensor-networks/">STAG-CN: Spatio-Temporal Apiary Graph Convolutional Network for Disease Onset Prediction in Beehive Sensor Networks</a></td><td>2026</td><td>🇰🇷 Korea University</td></tr>
@@ -250,6 +251,7 @@ layout: research
         <tr><td><a href="/research/papers/on-the-prediction-of-varroa-mite-infestations-in-honeybee-colonies-via-acoustic-monitoring/">On the Prediction of Varroa Mite Infestations in Honeybee Colonies via Acoustic Monitoring</a></td><td>2026</td><td>🇨🇦 Institut national de la recherche scientifique (INRS); 🇨🇦 Nectar Technologies Inc.; 🇨🇦 Université Laval</td></tr>
         <tr><td><a href="/research/papers/on-device-deep-learning-for-real-time-acoustic-monitoring-of-endangered-bombus-dahlbomii-and-invasive-congeners/">On-device deep learning for real-time acoustic monitoring of endangered Bombus dahlbomii and invasive congeners</a></td><td>2026</td><td>🇺🇸 Massachusetts Institute of Technology; 🇯🇵 Kioxia Corporation; 🇨🇭 ETH Zurich; 🇦🇷 INIBIOMA, Universidad Nacional del Comahue and CONICET</td></tr>
         <tr><td><a href="/research/papers/pollicrop-a-high-throughput-computer-vision-pipeline-for-pollinator-monitoring-in-agroecosystems/">PolliCrop: A high-throughput computer vision pipeline for pollinator monitoring in agroecosystems</a></td><td>2026</td><td>🇫🇷 INRAE; 🇫🇷 CNRS; 🇺🇸 University of California, Berkeley; 🇩🇪 Julius Kühn Institute; 🇩🇪 Technische Universität Braunschweig</td></tr>
+        <tr><td><a href="/research/papers/precision-apiculture-with-artificial-intelligence-a-survey-of-methods-tools-and-future-directions/">Precision Apiculture with Artificial Intelligence: A Survey of Methods, Tools, and Future Directions</a></td><td>2026</td><td>🇵🇱 AGH University of Krakow; 🇱🇻 Latvia University of Life Sciences and Technologies</td></tr>
         <tr><td><a href="/research/papers/small-pollinator-detection-in-cluttered-field-video/">Small-Pollinator Detection in Cluttered Field Video</a></td><td>2026</td><td>🇺🇸 Iowa State University; 🇺🇸 University of Central Florida</td></tr>
         <tr><td><a href="/research/papers/spectrogram-based-deep-learning-models-for-acoustic-identification-of-honey-bees-in-complex-environmental-noises/">Spectrogram-Based Deep Learning Models for Acoustic Identification of Honey Bees in Complex Environmental Noises</a></td><td>2026</td><td>🇵🇰 Namal University; 🇵🇰 University of Mianwali; 🇦🇪 Abu Dhabi University; 🇹🇷 Nişantaşı University</td></tr>
         <tr><td><a href="/research/papers/stag-cn-spatio-temporal-apiary-graph-convolutional-network-for-disease-onset-prediction-in-beehive-sensor-networks/">STAG-CN: Spatio-Temporal Apiary Graph Convolutional Network for Disease Onset Prediction in Beehive Sensor Networks</a></td><td>2026</td><td>🇰🇷 Korea University</td></tr>

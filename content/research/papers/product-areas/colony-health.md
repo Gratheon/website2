@@ -9,7 +9,7 @@ layout: research
 ## Summary
 
 - Product area key: `colony-health`
-- Total papers: 51
+- Total papers: 52
 - [Research papers hub](../index.md)
 - [All product areas](index.md)
 
@@ -27,8 +27,8 @@ layout: research
 - [IoT Sensors](../topics/iot-sensors.md) (22)
 - [Pollination Ecology](../topics/pollination-ecology.md) (5)
 - [Pollination Monitoring](../topics/pollination-monitoring.md) (1)
-- [Precision Beekeeping](../topics/precision-beekeeping.md) (5)
-- [Reviews Surveys](../topics/reviews-surveys.md) (4)
+- [Precision Beekeeping](../topics/precision-beekeeping.md) (6)
+- [Reviews Surveys](../topics/reviews-surveys.md) (5)
 - [Varroa Health](../topics/varroa-health.md) (19)
 
 <section class="research-year-filter" aria-labelledby="research-year-filter-title">
@@ -38,7 +38,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="colony-health-year-filter" value="all" checked>
         <span class="research-year-tab__label">All</span>
-        <span class="research-year-tab__count">51</span>
+        <span class="research-year-tab__count">52</span>
       </label>
       <span class="research-year-tab__arrow" aria-hidden="true">›</span>
       <label class="research-year-tab">
@@ -98,7 +98,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="colony-health-year-filter" value="2026">
         <span class="research-year-tab__label">2026</span>
-        <span class="research-year-tab__count">20</span>
+        <span class="research-year-tab__count">21</span>
       </label>
     </div>
     <div class="research-year-filter__panels">
@@ -128,6 +128,7 @@ layout: research
         <tr><td><a href="/research/papers/improved-monitoring-of-honey-bee-colony-strength-via-audio-iot-sensors-modulation-tensorgrams-and-recurrent-neural-networks/">Improved Monitoring of Honey bee Colony Strength via Audio IoT Sensors, Modulation Tensorgrams and Recurrent Neural Networks</a></td><td>2026</td><td>🇨🇦 Institut national de la recherche scientifique (INRS); 🇨🇦 Université Laval; 🇨🇦 Nectar Technologies Inc.</td></tr>
         <tr><td><a href="/research/papers/interpretable-deep-learning-for-varroa-mite-detection-integrating-deblurring-morphology-preserving-preprocessing-and-explainability-analysis/">Interpretable Deep Learning for Varroa Mite Detection: Integrating Deblurring, Morphology-Preserving Preprocessing, and Explainability Analysis</a></td><td>2026</td><td>🇰🇷 Kangwon National University; 🇰🇷 National Institute of Agricultural Sciences</td></tr>
         <tr><td><a href="/research/papers/on-the-prediction-of-varroa-mite-infestations-in-honeybee-colonies-via-acoustic-monitoring/">On the Prediction of Varroa Mite Infestations in Honeybee Colonies via Acoustic Monitoring</a></td><td>2026</td><td>🇨🇦 Institut national de la recherche scientifique (INRS); 🇨🇦 Nectar Technologies Inc.; 🇨🇦 Université Laval</td></tr>
+        <tr><td><a href="/research/papers/precision-apiculture-with-artificial-intelligence-a-survey-of-methods-tools-and-future-directions/">Precision Apiculture with Artificial Intelligence: A Survey of Methods, Tools, and Future Directions</a></td><td>2026</td><td>🇵🇱 AGH University of Krakow; 🇱🇻 Latvia University of Life Sciences and Technologies</td></tr>
         <tr><td><a href="/research/papers/stag-cn-spatio-temporal-apiary-graph-convolutional-network-for-disease-onset-prediction-in-beehive-sensor-networks/">STAG-CN: Spatio-Temporal Apiary Graph Convolutional Network for Disease Onset Prediction in Beehive Sensor Networks</a></td><td>2026</td><td>🇰🇷 Korea University</td></tr>
         <tr><td><a href="/research/papers/technical-specification-of-a-novel-apivoltaic-system-integrating-digital-hive-monitoring-with-photovoltaic-energy-systems/">Technical Specification of a Novel Apivoltaic System: Integrating Digital Hive Monitoring with Photovoltaic Energy Systems</a></td><td>2026</td><td>🇷🇴 University of Agricultural Sciences and Veterinary Medicine of Cluj-Napoca; 🇷🇴 APIVOLT S.R.L.; 🇮🇹 University of Molise</td></tr>
         <tr><td><a href="/research/papers/the-relevance-of-compound-events-in-bee-traffic-monitoring/">The Relevance of Compound Events in Bee Traffic Monitoring</a></td><td>2026</td><td>🇵🇷 University of Puerto Rico at Río Piedras</td></tr>
@@ -194,6 +195,7 @@ layout: research
         <tr><td><a href="/research/papers/improved-monitoring-of-honey-bee-colony-strength-via-audio-iot-sensors-modulation-tensorgrams-and-recurrent-neural-networks/">Improved Monitoring of Honey bee Colony Strength via Audio IoT Sensors, Modulation Tensorgrams and Recurrent Neural Networks</a></td><td>2026</td><td>🇨🇦 Institut national de la recherche scientifique (INRS); 🇨🇦 Université Laval; 🇨🇦 Nectar Technologies Inc.</td></tr>
         <tr><td><a href="/research/papers/interpretable-deep-learning-for-varroa-mite-detection-integrating-deblurring-morphology-preserving-preprocessing-and-explainability-analysis/">Interpretable Deep Learning for Varroa Mite Detection: Integrating Deblurring, Morphology-Preserving Preprocessing, and Explainability Analysis</a></td><td>2026</td><td>🇰🇷 Kangwon National University; 🇰🇷 National Institute of Agricultural Sciences</td></tr>
         <tr><td><a href="/research/papers/on-the-prediction-of-varroa-mite-infestations-in-honeybee-colonies-via-acoustic-monitoring/">On the Prediction of Varroa Mite Infestations in Honeybee Colonies via Acoustic Monitoring</a></td><td>2026</td><td>🇨🇦 Institut national de la recherche scientifique (INRS); 🇨🇦 Nectar Technologies Inc.; 🇨🇦 Université Laval</td></tr>
+        <tr><td><a href="/research/papers/precision-apiculture-with-artificial-intelligence-a-survey-of-methods-tools-and-future-directions/">Precision Apiculture with Artificial Intelligence: A Survey of Methods, Tools, and Future Directions</a></td><td>2026</td><td>🇵🇱 AGH University of Krakow; 🇱🇻 Latvia University of Life Sciences and Technologies</td></tr>
         <tr><td><a href="/research/papers/stag-cn-spatio-temporal-apiary-graph-convolutional-network-for-disease-onset-prediction-in-beehive-sensor-networks/">STAG-CN: Spatio-Temporal Apiary Graph Convolutional Network for Disease Onset Prediction in Beehive Sensor Networks</a></td><td>2026</td><td>🇰🇷 Korea University</td></tr>
         <tr><td><a href="/research/papers/technical-specification-of-a-novel-apivoltaic-system-integrating-digital-hive-monitoring-with-photovoltaic-energy-systems/">Technical Specification of a Novel Apivoltaic System: Integrating Digital Hive Monitoring with Photovoltaic Energy Systems</a></td><td>2026</td><td>🇷🇴 University of Agricultural Sciences and Veterinary Medicine of Cluj-Napoca; 🇷🇴 APIVOLT S.R.L.; 🇮🇹 University of Molise</td></tr>
         <tr><td><a href="/research/papers/the-relevance-of-compound-events-in-bee-traffic-monitoring/">The Relevance of Compound Events in Bee Traffic Monitoring</a></td><td>2026</td><td>🇵🇷 University of Puerto Rico at Río Piedras</td></tr>

@@ -9,16 +9,16 @@ title: "Research topic: Precision Beekeeping"
 ## Summary
 
 - Topic key: `precision-beekeeping`
-- Total papers: 9
+- Total papers: 10
 - [Research papers hub](../index.md)
 - [All topics](index.md)
 
 ## Product areas
 
-- [Colony Health](../product-areas/colony-health.md) (5)
+- [Colony Health](../product-areas/colony-health.md) (6)
 - [Edge Device](../product-areas/edge-device.md) (3)
 - [Hive Scanner](../product-areas/hive-scanner.md) (1)
-- [Monitoring Platform](../product-areas/monitoring-platform.md) (9)
+- [Monitoring Platform](../product-areas/monitoring-platform.md) (10)
 
 <section class="research-year-filter" aria-labelledby="research-year-filter-title">
   <h2 id="research-year-filter-title">Publications</h2>
@@ -27,7 +27,7 @@ title: "Research topic: Precision Beekeeping"
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="precision-beekeeping-year-filter" value="all" checked>
         <span class="research-year-tab__label">All</span>
-        <span class="research-year-tab__count">9</span>
+        <span class="research-year-tab__count">10</span>
       </label>
       <span class="research-year-tab__arrow" aria-hidden="true">›</span>
       <label class="research-year-tab">
@@ -39,7 +39,7 @@ title: "Research topic: Precision Beekeeping"
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="precision-beekeeping-year-filter" value="2026">
         <span class="research-year-tab__label">2026</span>
-        <span class="research-year-tab__count">8</span>
+        <span class="research-year-tab__count">9</span>
       </label>
     </div>
     <div class="research-year-filter__panels">
@@ -59,6 +59,7 @@ title: "Research topic: Precision Beekeeping"
         <tr><td><a href="/research/papers/communication-efficient-embedded-fft-processing-for-acoustic-telemetry-in-lpwan-based-beehive-monitoring-systems/">Communication-efficient Embedded FFT Processing for Acoustic Telemetry in LPWAN-based Beehive Monitoring Systems</a></td><td>2026</td><td>🇵🇱 Lodz University of Technology</td></tr>
         <tr><td><a href="/research/papers/improved-monitoring-of-honey-bee-colony-strength-via-audio-iot-sensors-modulation-tensorgrams-and-recurrent-neural-networks/">Improved Monitoring of Honey bee Colony Strength via Audio IoT Sensors, Modulation Tensorgrams and Recurrent Neural Networks</a></td><td>2026</td><td>🇨🇦 Institut national de la recherche scientifique (INRS); 🇨🇦 Université Laval; 🇨🇦 Nectar Technologies Inc.</td></tr>
         <tr><td><a href="/research/papers/on-the-prediction-of-varroa-mite-infestations-in-honeybee-colonies-via-acoustic-monitoring/">On the Prediction of Varroa Mite Infestations in Honeybee Colonies via Acoustic Monitoring</a></td><td>2026</td><td>🇨🇦 Institut national de la recherche scientifique (INRS); 🇨🇦 Nectar Technologies Inc.; 🇨🇦 Université Laval</td></tr>
+        <tr><td><a href="/research/papers/precision-apiculture-with-artificial-intelligence-a-survey-of-methods-tools-and-future-directions/">Precision Apiculture with Artificial Intelligence: A Survey of Methods, Tools, and Future Directions</a></td><td>2026</td><td>🇵🇱 AGH University of Krakow; 🇱🇻 Latvia University of Life Sciences and Technologies</td></tr>
         <tr><td><a href="/research/papers/technical-specification-of-a-novel-apivoltaic-system-integrating-digital-hive-monitoring-with-photovoltaic-energy-systems/">Technical Specification of a Novel Apivoltaic System: Integrating Digital Hive Monitoring with Photovoltaic Energy Systems</a></td><td>2026</td><td>🇷🇴 University of Agricultural Sciences and Veterinary Medicine of Cluj-Napoca; 🇷🇴 APIVOLT S.R.L.; 🇮🇹 University of Molise</td></tr>
         <tr><td><a href="/research/papers/time-series-dataset-of-honey-bee-colony-dynamics-before-during-and-after-sunflower-pollination/">Time-series dataset of honey bee colony dynamics before, during, and after sunflower pollination</a></td><td>2026</td><td>🇺🇦 AmoHive / Ukraine smart-hive deployment</td></tr>
         <tr><td><a href="/research/papers/transforming-beekeeping-through-technology-a-systematic-review-of-precision-beekeeping/">Transforming Beekeeping Through Technology: A Systematic Review of Precision Beekeeping</a></td><td>2026</td><td>🇧🇳 Universiti Brunei Darussalam; 🇱🇰 Uva Wellassa University</td></tr>
@@ -83,6 +84,7 @@ title: "Research topic: Precision Beekeeping"
         <tr><td><a href="/research/papers/communication-efficient-embedded-fft-processing-for-acoustic-telemetry-in-lpwan-based-beehive-monitoring-systems/">Communication-efficient Embedded FFT Processing for Acoustic Telemetry in LPWAN-based Beehive Monitoring Systems</a></td><td>2026</td><td>🇵🇱 Lodz University of Technology</td></tr>
         <tr><td><a href="/research/papers/improved-monitoring-of-honey-bee-colony-strength-via-audio-iot-sensors-modulation-tensorgrams-and-recurrent-neural-networks/">Improved Monitoring of Honey bee Colony Strength via Audio IoT Sensors, Modulation Tensorgrams and Recurrent Neural Networks</a></td><td>2026</td><td>🇨🇦 Institut national de la recherche scientifique (INRS); 🇨🇦 Université Laval; 🇨🇦 Nectar Technologies Inc.</td></tr>
         <tr><td><a href="/research/papers/on-the-prediction-of-varroa-mite-infestations-in-honeybee-colonies-via-acoustic-monitoring/">On the Prediction of Varroa Mite Infestations in Honeybee Colonies via Acoustic Monitoring</a></td><td>2026</td><td>🇨🇦 Institut national de la recherche scientifique (INRS); 🇨🇦 Nectar Technologies Inc.; 🇨🇦 Université Laval</td></tr>
+        <tr><td><a href="/research/papers/precision-apiculture-with-artificial-intelligence-a-survey-of-methods-tools-and-future-directions/">Precision Apiculture with Artificial Intelligence: A Survey of Methods, Tools, and Future Directions</a></td><td>2026</td><td>🇵🇱 AGH University of Krakow; 🇱🇻 Latvia University of Life Sciences and Technologies</td></tr>
         <tr><td><a href="/research/papers/technical-specification-of-a-novel-apivoltaic-system-integrating-digital-hive-monitoring-with-photovoltaic-energy-systems/">Technical Specification of a Novel Apivoltaic System: Integrating Digital Hive Monitoring with Photovoltaic Energy Systems</a></td><td>2026</td><td>🇷🇴 University of Agricultural Sciences and Veterinary Medicine of Cluj-Napoca; 🇷🇴 APIVOLT S.R.L.; 🇮🇹 University of Molise</td></tr>
         <tr><td><a href="/research/papers/time-series-dataset-of-honey-bee-colony-dynamics-before-during-and-after-sunflower-pollination/">Time-series dataset of honey bee colony dynamics before, during, and after sunflower pollination</a></td><td>2026</td><td>🇺🇦 AmoHive / Ukraine smart-hive deployment</td></tr>
         <tr><td><a href="/research/papers/transforming-beekeeping-through-technology-a-systematic-review-of-precision-beekeeping/">Transforming Beekeeping Through Technology: A Systematic Review of Precision Beekeeping</a></td><td>2026</td><td>🇧🇳 Universiti Brunei Darussalam; 🇱🇰 Uva Wellassa University</td></tr>
