@@ -51,6 +51,23 @@
   font-display: swap;
 }
 
+/* Nav menu uses Scada (Google Fonts, self-hosted like Open Sans). */
+@font-face {
+  font-family: "Scada";
+  src: url("/assets/css/Scada/Scada-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Scada";
+  src: url("/assets/css/Scada/Scada-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -308,6 +325,7 @@ html[data-theme='dark'] .lang-link:visited {
   gap: 0;
   background: transparent;
   width: 100%;
+  font-family: "Scada", "Open Sans", sans-serif;
 }
 
 .site-nav a,
@@ -322,7 +340,7 @@ html[data-theme='dark'] .lang-link:visited {
   margin: 4px 6px;
   border-radius: 999px;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.1;
   white-space: nowrap;
   transition:
