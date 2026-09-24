@@ -305,6 +305,8 @@ html[data-theme='dark'] .lang-link:visited {
   flex: 0 0 auto;
   text-decoration: none;
   border: 0;
+  /* Optical align with nav pill baseline (logo artwork sits low in the bounding box). */
+  transform: translateY(-2px);
 }
 
 .navbar-logo img {
@@ -339,7 +341,7 @@ html[data-theme='dark'] .lang-link:visited {
   padding: 10px 14px;
   margin: 4px 6px;
   border-radius: 999px;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 400;
   line-height: 1.1;
   white-space: nowrap;
@@ -361,14 +363,22 @@ html[data-theme='dark'] .site-nav a:visited {
 
 .site-nav a:hover,
 .site-nav a:active,
-.site-nav a:focus-visible,
-.site-nav a.is-active {
+.site-nav a:focus-visible {
   background: var(--brand-yellow);
   color: black !important;
   text-decoration: none;
   outline: 0;
   transform: translateY(-1px);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.site-nav a.is-active {
+  background: var(--brand-yellow);
+  color: black !important;
+  text-decoration: none;
+  outline: 0;
+  transform: translateY(-1px);
+  box-shadow: none;
 }
 
 /* RTL support for Arabic, Hebrew and future right-to-left locales. */
