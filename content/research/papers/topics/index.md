@@ -17,27 +17,27 @@ Browse research papers by topic.
   <div class="research-paper-filter-grid">
     <a class="research-paper-filter-card" href="/research/papers/topics/computer-vision/">
       <span class="research-paper-filter-card__icon" aria-hidden="true">👁️</span>
-      <span class="research-paper-filter-card__body"><strong>Computer Vision</strong><small>78 papers</small></span>
+      <span class="research-paper-filter-card__body"><strong>Computer Vision</strong><small>80 papers</small></span>
     </a>
     <a class="research-paper-filter-card" href="/research/papers/topics/iot-sensors/">
       <span class="research-paper-filter-card__icon" aria-hidden="true">📡</span>
-      <span class="research-paper-filter-card__body"><strong>IoT Sensors</strong><small>66 papers</small></span>
+      <span class="research-paper-filter-card__body"><strong>IoT Sensors</strong><small>67 papers</small></span>
     </a>
     <a class="research-paper-filter-card" href="/research/papers/topics/bee-behaviour/">
       <span class="research-paper-filter-card__icon" aria-hidden="true">🐝</span>
-      <span class="research-paper-filter-card__body"><strong>Bee Behaviour</strong><small>56 papers</small></span>
+      <span class="research-paper-filter-card__body"><strong>Bee Behaviour</strong><small>57 papers</small></span>
     </a>
     <a class="research-paper-filter-card" href="/research/papers/topics/audio-acoustics/">
       <span class="research-paper-filter-card__icon" aria-hidden="true">🔊</span>
-      <span class="research-paper-filter-card__body"><strong>Audio Acoustics</strong><small>27 papers</small></span>
-    </a>
-    <a class="research-paper-filter-card" href="/research/papers/topics/datasets-benchmarks/">
-      <span class="research-paper-filter-card__icon" aria-hidden="true">📈</span>
-      <span class="research-paper-filter-card__body"><strong>Datasets Benchmarks</strong><small>23 papers</small></span>
+      <span class="research-paper-filter-card__body"><strong>Audio Acoustics</strong><small>29 papers</small></span>
     </a>
     <a class="research-paper-filter-card" href="/research/papers/topics/edge-ai-energy/">
       <span class="research-paper-filter-card__icon" aria-hidden="true">⚡</span>
-      <span class="research-paper-filter-card__body"><strong>Edge AI Energy</strong><small>23 papers</small></span>
+      <span class="research-paper-filter-card__body"><strong>Edge AI Energy</strong><small>25 papers</small></span>
+    </a>
+    <a class="research-paper-filter-card" href="/research/papers/topics/datasets-benchmarks/">
+      <span class="research-paper-filter-card__icon" aria-hidden="true">📈</span>
+      <span class="research-paper-filter-card__body"><strong>Datasets Benchmarks</strong><small>24 papers</small></span>
     </a>
     <a class="research-paper-filter-card" href="/research/papers/topics/reviews-surveys/">
       <span class="research-paper-filter-card__icon" aria-hidden="true">📋</span>
@@ -45,7 +45,7 @@ Browse research papers by topic.
     </a>
     <a class="research-paper-filter-card" href="/research/papers/topics/varroa-health/">
       <span class="research-paper-filter-card__icon" aria-hidden="true">🦠</span>
-      <span class="research-paper-filter-card__body"><strong>Varroa Health</strong><small>18 papers</small></span>
+      <span class="research-paper-filter-card__body"><strong>Varroa Health</strong><small>19 papers</small></span>
     </a>
     <a class="research-paper-filter-card" href="/research/papers/topics/pollination-ecology/">
       <span class="research-paper-filter-card__icon" aria-hidden="true">🌸</span>
@@ -67,6 +67,14 @@ Browse research papers by topic.
       <span class="research-paper-filter-card__icon" aria-hidden="true">🌻</span>
       <span class="research-paper-filter-card__body"><strong>Pollination Monitoring</strong><small>4 papers</small></span>
     </a>
+    <a class="research-paper-filter-card" href="/research/papers/topics/bee-counting/">
+      <span class="research-paper-filter-card__icon" aria-hidden="true">🔢</span>
+      <span class="research-paper-filter-card__body"><strong>Bee Counting</strong><small>2 papers</small></span>
+    </a>
+    <a class="research-paper-filter-card" href="/research/papers/topics/bee-traffic/">
+      <span class="research-paper-filter-card__icon" aria-hidden="true">🚪</span>
+      <span class="research-paper-filter-card__body"><strong>Bee Traffic</strong><small>2 papers</small></span>
+    </a>
     <a class="research-paper-filter-card" href="/research/papers/topics/behavior-recognition/">
       <span class="research-paper-filter-card__icon" aria-hidden="true">🧠</span>
       <span class="research-paper-filter-card__body"><strong>Behavior Recognition</strong><small>2 papers</small></span>
@@ -74,14 +82,6 @@ Browse research papers by topic.
     <a class="research-paper-filter-card" href="/research/papers/topics/datasets/">
       <span class="research-paper-filter-card__icon" aria-hidden="true">📊</span>
       <span class="research-paper-filter-card__body"><strong>Datasets</strong><small>2 papers</small></span>
-    </a>
-    <a class="research-paper-filter-card" href="/research/papers/topics/bee-counting/">
-      <span class="research-paper-filter-card__icon" aria-hidden="true">🔢</span>
-      <span class="research-paper-filter-card__body"><strong>Bee Counting</strong><small>1 paper</small></span>
-    </a>
-    <a class="research-paper-filter-card" href="/research/papers/topics/bee-traffic/">
-      <span class="research-paper-filter-card__icon" aria-hidden="true">🚪</span>
-      <span class="research-paper-filter-card__body"><strong>Bee Traffic</strong><small>1 paper</small></span>
     </a>
   </div>
 </section>

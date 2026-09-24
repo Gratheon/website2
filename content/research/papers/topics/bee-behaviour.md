@@ -9,7 +9,7 @@ layout: research
 ## Summary
 
 - Topic key: `bee-behaviour`
-- Total papers: 56
+- Total papers: 57
 - [Research papers hub](../index.md)
 - [All topics](index.md)
 
@@ -19,7 +19,7 @@ layout: research
 - [Edge Device](../product-areas/edge-device.md) (1)
 - [Gate Tracker](../product-areas/gate-tracker.md) (21)
 - [Hive Scanner](../product-areas/hive-scanner.md) (10)
-- [Monitoring Platform](../product-areas/monitoring-platform.md) (14)
+- [Monitoring Platform](../product-areas/monitoring-platform.md) (15)
 - [Robotics](../product-areas/robotics.md) (6)
 
 <section class="research-year-filter" aria-labelledby="research-year-filter-title">
@@ -29,7 +29,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="bee-behaviour-year-filter" value="all" checked>
         <span class="research-year-tab__label">All</span>
-        <span class="research-year-tab__count">56</span>
+        <span class="research-year-tab__count">57</span>
       </label>
       <span class="research-year-tab__arrow" aria-hidden="true">›</span>
       <label class="research-year-tab">
@@ -119,7 +119,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="bee-behaviour-year-filter" value="2026">
         <span class="research-year-tab__label">2026</span>
-        <span class="research-year-tab__count">10</span>
+        <span class="research-year-tab__count">11</span>
       </label>
     </div>
     <div class="research-year-filter__panels">
@@ -143,6 +143,7 @@ layout: research
         <tr><td><a href="/research/papers/continuous-non-invasive-monitoring-of-hive-entrance-activity-reveals-honey-bee-colony-dynamics/">Continuous Non-Invasive Monitoring of Hive Entrance Activity Reveals Honey Bee Colony Dynamics</a></td><td>2026</td><td>🇹🇷 Van Yüzüncü Yıl University</td></tr>
         <tr><td><a href="/research/papers/detection-and-classification-of-honeybee-castes-using-thermal-imaging-and-deep-learning/">Detection and classification of honeybee castes using thermal imaging and deep learning</a></td><td>2026</td><td>🇮🇷 Razi University</td></tr>
         <tr><td><a href="/research/papers/estimating-colony-strength-and-pollination-efficiency-in-honey-bees-using-a-novel-dataset-and-deep-learning-based-models/">Estimating colony strength and pollination efficiency in honey bees using a novel dataset and deep learning-based models</a></td><td>2026</td><td>🇺🇸 University of Arkansas at Fayetteville; 🇺🇸 Washington State University; 🇺🇸 University of Arkansas System; 🇺🇸 Mississippi State University; 🇺🇸 University of Tennessee at Knoxville</td></tr>
+        <tr><td><a href="/research/papers/label-free-acoustic-monitoring-of-honeybee-swarming-an-unsupervised-online-learning-approach/">Label-free acoustic monitoring of honeybee swarming: An unsupervised online learning approach</a></td><td>2026</td><td>🇩🇿 Djillali Liabes University</td></tr>
         <tr><td><a href="/research/papers/physics-aware-vision-instrumentation-for-stingless-bee-counting-at-hive-entrance-using-hybrid-edge-cloud-object-detection/">Physics-aware vision instrumentation for stingless bee counting at hive entrance using hybrid edge-cloud object detection</a></td><td>2026</td><td>🇲🇾 Universiti Teknologi Malaysia; 🇮🇩 Universitas Negeri Jakarta; 🇮🇩 Institut Teknologi Indonesia; 🇮🇩 Politeknik Negeri Bandung; 🇮🇩 National Research and Innovation Agency</td></tr>
         <tr><td><a href="/research/papers/evaluation-of-single-shot-object-detection-models-for-identifying-fanning-behavior-in-honeybees-at-the-hive-entrance/">Evaluation of Single-Shot Object Detection Models for Identifying Fanning Behavior in Honeybees at the Hive Entrance</a></td><td>2025</td><td>🇱🇹 Vilnius Gediminas Technical University</td></tr>
         <tr><td><a href="/research/papers/visual-recognition-of-honeybee-behavior-patterns-at-the-hive-entrance/">Visual recognition of honeybee behavior patterns at the hive entrance</a></td><td>2025</td><td>🇱🇹 Vilnius Gediminas Technical University</td></tr>
@@ -214,6 +215,7 @@ layout: research
         <tr><td><a href="/research/papers/continuous-non-invasive-monitoring-of-hive-entrance-activity-reveals-honey-bee-colony-dynamics/">Continuous Non-Invasive Monitoring of Hive Entrance Activity Reveals Honey Bee Colony Dynamics</a></td><td>2026</td><td>🇹🇷 Van Yüzüncü Yıl University</td></tr>
         <tr><td><a href="/research/papers/detection-and-classification-of-honeybee-castes-using-thermal-imaging-and-deep-learning/">Detection and classification of honeybee castes using thermal imaging and deep learning</a></td><td>2026</td><td>🇮🇷 Razi University</td></tr>
         <tr><td><a href="/research/papers/estimating-colony-strength-and-pollination-efficiency-in-honey-bees-using-a-novel-dataset-and-deep-learning-based-models/">Estimating colony strength and pollination efficiency in honey bees using a novel dataset and deep learning-based models</a></td><td>2026</td><td>🇺🇸 University of Arkansas at Fayetteville; 🇺🇸 Washington State University; 🇺🇸 University of Arkansas System; 🇺🇸 Mississippi State University; 🇺🇸 University of Tennessee at Knoxville</td></tr>
+        <tr><td><a href="/research/papers/label-free-acoustic-monitoring-of-honeybee-swarming-an-unsupervised-online-learning-approach/">Label-free acoustic monitoring of honeybee swarming: An unsupervised online learning approach</a></td><td>2026</td><td>🇩🇿 Djillali Liabes University</td></tr>
         <tr><td><a href="/research/papers/physics-aware-vision-instrumentation-for-stingless-bee-counting-at-hive-entrance-using-hybrid-edge-cloud-object-detection/">Physics-aware vision instrumentation for stingless bee counting at hive entrance using hybrid edge-cloud object detection</a></td><td>2026</td><td>🇲🇾 Universiti Teknologi Malaysia; 🇮🇩 Universitas Negeri Jakarta; 🇮🇩 Institut Teknologi Indonesia; 🇮🇩 Politeknik Negeri Bandung; 🇮🇩 National Research and Innovation Agency</td></tr>
         </tbody>
         </table>

@@ -9,13 +9,13 @@ layout: research
 ## Summary
 
 - Topic key: `datasets-benchmarks`
-- Total papers: 23
+- Total papers: 24
 - [Research papers hub](../index.md)
 - [All topics](index.md)
 
 ## Product areas
 
-- [Colony Health](../product-areas/colony-health.md) (3)
+- [Colony Health](../product-areas/colony-health.md) (4)
 - [Edge Device](../product-areas/edge-device.md) (2)
 - [Gate Tracker](../product-areas/gate-tracker.md) (5)
 - [Hive Scanner](../product-areas/hive-scanner.md) (6)
@@ -28,7 +28,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="datasets-benchmarks-year-filter" value="all" checked>
         <span class="research-year-tab__label">All</span>
-        <span class="research-year-tab__count">23</span>
+        <span class="research-year-tab__count">24</span>
       </label>
       <span class="research-year-tab__arrow" aria-hidden="true">›</span>
       <label class="research-year-tab">
@@ -76,7 +76,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="datasets-benchmarks-year-filter" value="2026">
         <span class="research-year-tab__label">2026</span>
-        <span class="research-year-tab__count">9</span>
+        <span class="research-year-tab__count">10</span>
       </label>
     </div>
     <div class="research-year-filter__panels">
@@ -91,6 +91,7 @@ layout: research
         </tr>
         </thead>
         <tbody>
+        <tr><td><a href="/research/papers/annotation-versioning-and-cross-collection-generalization-in-varroa-mite-counting/">Annotation Versioning and Cross-Collection Generalization in Varroa Mite Counting</a></td><td>2026</td><td></td></tr>
         <tr><td><a href="/research/papers/beehaviourlab-a-high-throughput-platform-for-sublethal-stressor-screening-in-insects/">BEEhaviourLab: A high-throughput platform for sublethal stressor screening in insects</a></td><td>2026</td><td>🇬🇧 University of Oxford; 🇬🇧 Queen Mary University of London; 🇬🇧 University of Edinburgh</td></tr>
         <tr><td><a href="/research/papers/detection-and-classification-of-honeybee-castes-using-thermal-imaging-and-deep-learning/">Detection and classification of honeybee castes using thermal imaging and deep learning</a></td><td>2026</td><td>🇮🇷 Razi University</td></tr>
         <tr><td><a href="/research/papers/estimating-colony-strength-and-pollination-efficiency-in-honey-bees-using-a-novel-dataset-and-deep-learning-based-models/">Estimating colony strength and pollination efficiency in honey bees using a novel dataset and deep learning-based models</a></td><td>2026</td><td>🇺🇸 University of Arkansas at Fayetteville; 🇺🇸 Washington State University; 🇺🇸 University of Arkansas System; 🇺🇸 Mississippi State University; 🇺🇸 University of Tennessee at Knoxville</td></tr>
@@ -129,6 +130,7 @@ layout: research
         </tr>
         </thead>
         <tbody>
+        <tr><td><a href="/research/papers/annotation-versioning-and-cross-collection-generalization-in-varroa-mite-counting/">Annotation Versioning and Cross-Collection Generalization in Varroa Mite Counting</a></td><td>2026</td><td></td></tr>
         <tr><td><a href="/research/papers/beehaviourlab-a-high-throughput-platform-for-sublethal-stressor-screening-in-insects/">BEEhaviourLab: A high-throughput platform for sublethal stressor screening in insects</a></td><td>2026</td><td>🇬🇧 University of Oxford; 🇬🇧 Queen Mary University of London; 🇬🇧 University of Edinburgh</td></tr>
         <tr><td><a href="/research/papers/detection-and-classification-of-honeybee-castes-using-thermal-imaging-and-deep-learning/">Detection and classification of honeybee castes using thermal imaging and deep learning</a></td><td>2026</td><td>🇮🇷 Razi University</td></tr>
         <tr><td><a href="/research/papers/estimating-colony-strength-and-pollination-efficiency-in-honey-bees-using-a-novel-dataset-and-deep-learning-based-models/">Estimating colony strength and pollination efficiency in honey bees using a novel dataset and deep learning-based models</a></td><td>2026</td><td>🇺🇸 University of Arkansas at Fayetteville; 🇺🇸 Washington State University; 🇺🇸 University of Arkansas System; 🇺🇸 Mississippi State University; 🇺🇸 University of Tennessee at Knoxville</td></tr>

@@ -9,14 +9,14 @@ layout: research
 ## Summary
 
 - Product area key: `monitoring-platform`
-- Total papers: 87
+- Total papers: 89
 - [Research papers hub](../index.md)
 - [All product areas](index.md)
 
 ## Topics
 
-- [Audio Acoustics](../topics/audio-acoustics.md) (23)
-- [Bee Behaviour](../topics/bee-behaviour.md) (14)
+- [Audio Acoustics](../topics/audio-acoustics.md) (25)
+- [Bee Behaviour](../topics/bee-behaviour.md) (15)
 - [Bee Counting](../topics/bee-counting.md) (1)
 - [Bee Traffic](../topics/bee-traffic.md) (1)
 - [Behavior Recognition](../topics/behavior-recognition.md) (2)
@@ -24,8 +24,8 @@ layout: research
 - [Computer Vision](../topics/computer-vision.md) (26)
 - [Datasets](../topics/datasets.md) (2)
 - [Datasets Benchmarks](../topics/datasets-benchmarks.md) (15)
-- [Edge AI Energy](../topics/edge-ai-energy.md) (18)
-- [IoT Sensors](../topics/iot-sensors.md) (60)
+- [Edge AI Energy](../topics/edge-ai-energy.md) (20)
+- [IoT Sensors](../topics/iot-sensors.md) (61)
 - [Pollination Ecology](../topics/pollination-ecology.md) (7)
 - [Pollination Monitoring](../topics/pollination-monitoring.md) (4)
 - [Precision Beekeeping](../topics/precision-beekeeping.md) (9)
@@ -39,7 +39,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="monitoring-platform-year-filter" value="all" checked>
         <span class="research-year-tab__label">All</span>
-        <span class="research-year-tab__count">87</span>
+        <span class="research-year-tab__count">89</span>
       </label>
       <span class="research-year-tab__arrow" aria-hidden="true">›</span>
       <label class="research-year-tab">
@@ -105,7 +105,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="monitoring-platform-year-filter" value="2026">
         <span class="research-year-tab__label">2026</span>
-        <span class="research-year-tab__count">32</span>
+        <span class="research-year-tab__count">34</span>
       </label>
     </div>
     <div class="research-year-filter__panels">
@@ -140,7 +140,9 @@ layout: research
         <tr><td><a href="/research/papers/honeybee-counting-on-comb-images-via-part-level-annotation-and-hungarian-matching/">Honeybee Counting on Comb Images via Part-Level Annotation and Hungarian Matching</a></td><td>2026</td><td>🇯🇵 Utsunomiya University</td></tr>
         <tr><td><a href="/research/papers/improved-monitoring-of-honey-bee-colony-strength-via-audio-iot-sensors-modulation-tensorgrams-and-recurrent-neural-networks/">Improved Monitoring of Honey bee Colony Strength via Audio IoT Sensors, Modulation Tensorgrams and Recurrent Neural Networks</a></td><td>2026</td><td>🇨🇦 Institut national de la recherche scientifique (INRS); 🇨🇦 Université Laval; 🇨🇦 Nectar Technologies Inc.</td></tr>
         <tr><td><a href="/research/papers/insectdct-a-generalized-pipeline-for-detection-taxonomic-classification-and-tracking-of-insects-in-camera-trap-recordings/">InsectDCT: A generalized pipeline for detection, taxonomic classification, and tracking of insects in camera-trap recordings</a></td><td>2026</td><td>🇩🇰 Aarhus University; 🇩🇪 Helmholtz Centre for Environmental Research; 🇪🇸 Mediterranean Institute for Advanced Studies; 🇬🇪 Ilia State University</td></tr>
+        <tr><td><a href="/research/papers/label-free-acoustic-monitoring-of-honeybee-swarming-an-unsupervised-online-learning-approach/">Label-free acoustic monitoring of honeybee swarming: An unsupervised online learning approach</a></td><td>2026</td><td>🇩🇿 Djillali Liabes University</td></tr>
         <tr><td><a href="/research/papers/m3danet-a-lightweight-semi-supervised-network-and-embedded-system-for-bee-colony-counting/">M3DANet: A Lightweight Semi-Supervised Network and Embedded System for Bee Colony Counting</a></td><td>2026</td><td>🇨🇳 Shandong Agricultural University; 🇨🇳 Apiculture Institute of Jiangxi Province</td></tr>
+        <tr><td><a href="/research/papers/multimodal-beehive-weight-forecasting-using-iot-telemetry-and-acoustic-signal-processing/">Multimodal beehive weight forecasting using IoT telemetry and acoustic signal processing</a></td><td>2026</td><td>🇵🇱 Lodz University of Technology; 🇬🇧 Coventry University</td></tr>
         <tr><td><a href="/research/papers/on-the-prediction-of-varroa-mite-infestations-in-honeybee-colonies-via-acoustic-monitoring/">On the Prediction of Varroa Mite Infestations in Honeybee Colonies via Acoustic Monitoring</a></td><td>2026</td><td>🇨🇦 Institut national de la recherche scientifique (INRS); 🇨🇦 Nectar Technologies Inc.; 🇨🇦 Université Laval</td></tr>
         <tr><td><a href="/research/papers/on-device-deep-learning-for-real-time-acoustic-monitoring-of-endangered-bombus-dahlbomii-and-invasive-congeners/">On-device deep learning for real-time acoustic monitoring of endangered Bombus dahlbomii and invasive congeners</a></td><td>2026</td><td>🇺🇸 Massachusetts Institute of Technology; 🇯🇵 Kioxia Corporation; 🇨🇭 ETH Zurich; 🇦🇷 INIBIOMA, Universidad Nacional del Comahue and CONICET</td></tr>
         <tr><td><a href="/research/papers/pollicrop-a-high-throughput-computer-vision-pipeline-for-pollinator-monitoring-in-agroecosystems/">PolliCrop: A high-throughput computer vision pipeline for pollinator monitoring in agroecosystems</a></td><td>2026</td><td>🇫🇷 INRAE; 🇫🇷 CNRS; 🇺🇸 University of California, Berkeley; 🇩🇪 Julius Kühn Institute; 🇩🇪 Technische Universität Braunschweig</td></tr>
@@ -242,7 +244,9 @@ layout: research
         <tr><td><a href="/research/papers/honeybee-counting-on-comb-images-via-part-level-annotation-and-hungarian-matching/">Honeybee Counting on Comb Images via Part-Level Annotation and Hungarian Matching</a></td><td>2026</td><td>🇯🇵 Utsunomiya University</td></tr>
         <tr><td><a href="/research/papers/improved-monitoring-of-honey-bee-colony-strength-via-audio-iot-sensors-modulation-tensorgrams-and-recurrent-neural-networks/">Improved Monitoring of Honey bee Colony Strength via Audio IoT Sensors, Modulation Tensorgrams and Recurrent Neural Networks</a></td><td>2026</td><td>🇨🇦 Institut national de la recherche scientifique (INRS); 🇨🇦 Université Laval; 🇨🇦 Nectar Technologies Inc.</td></tr>
         <tr><td><a href="/research/papers/insectdct-a-generalized-pipeline-for-detection-taxonomic-classification-and-tracking-of-insects-in-camera-trap-recordings/">InsectDCT: A generalized pipeline for detection, taxonomic classification, and tracking of insects in camera-trap recordings</a></td><td>2026</td><td>🇩🇰 Aarhus University; 🇩🇪 Helmholtz Centre for Environmental Research; 🇪🇸 Mediterranean Institute for Advanced Studies; 🇬🇪 Ilia State University</td></tr>
+        <tr><td><a href="/research/papers/label-free-acoustic-monitoring-of-honeybee-swarming-an-unsupervised-online-learning-approach/">Label-free acoustic monitoring of honeybee swarming: An unsupervised online learning approach</a></td><td>2026</td><td>🇩🇿 Djillali Liabes University</td></tr>
         <tr><td><a href="/research/papers/m3danet-a-lightweight-semi-supervised-network-and-embedded-system-for-bee-colony-counting/">M3DANet: A Lightweight Semi-Supervised Network and Embedded System for Bee Colony Counting</a></td><td>2026</td><td>🇨🇳 Shandong Agricultural University; 🇨🇳 Apiculture Institute of Jiangxi Province</td></tr>
+        <tr><td><a href="/research/papers/multimodal-beehive-weight-forecasting-using-iot-telemetry-and-acoustic-signal-processing/">Multimodal beehive weight forecasting using IoT telemetry and acoustic signal processing</a></td><td>2026</td><td>🇵🇱 Lodz University of Technology; 🇬🇧 Coventry University</td></tr>
         <tr><td><a href="/research/papers/on-the-prediction-of-varroa-mite-infestations-in-honeybee-colonies-via-acoustic-monitoring/">On the Prediction of Varroa Mite Infestations in Honeybee Colonies via Acoustic Monitoring</a></td><td>2026</td><td>🇨🇦 Institut national de la recherche scientifique (INRS); 🇨🇦 Nectar Technologies Inc.; 🇨🇦 Université Laval</td></tr>
         <tr><td><a href="/research/papers/on-device-deep-learning-for-real-time-acoustic-monitoring-of-endangered-bombus-dahlbomii-and-invasive-congeners/">On-device deep learning for real-time acoustic monitoring of endangered Bombus dahlbomii and invasive congeners</a></td><td>2026</td><td>🇺🇸 Massachusetts Institute of Technology; 🇯🇵 Kioxia Corporation; 🇨🇭 ETH Zurich; 🇦🇷 INIBIOMA, Universidad Nacional del Comahue and CONICET</td></tr>
         <tr><td><a href="/research/papers/pollicrop-a-high-throughput-computer-vision-pipeline-for-pollinator-monitoring-in-agroecosystems/">PolliCrop: A high-throughput computer vision pipeline for pollinator monitoring in agroecosystems</a></td><td>2026</td><td>🇫🇷 INRAE; 🇫🇷 CNRS; 🇺🇸 University of California, Berkeley; 🇩🇪 Julius Kühn Institute; 🇩🇪 Technische Universität Braunschweig</td></tr>

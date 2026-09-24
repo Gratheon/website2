@@ -9,7 +9,7 @@ layout: research
 ## Summary
 
 - Topic key: `audio-acoustics`
-- Total papers: 27
+- Total papers: 29
 - [Research papers hub](../index.md)
 - [All topics](index.md)
 
@@ -18,7 +18,7 @@ layout: research
 - [Colony Health](../product-areas/colony-health.md) (16)
 - [Edge Device](../product-areas/edge-device.md) (4)
 - [Gate Tracker](../product-areas/gate-tracker.md) (1)
-- [Monitoring Platform](../product-areas/monitoring-platform.md) (23)
+- [Monitoring Platform](../product-areas/monitoring-platform.md) (25)
 
 <section class="research-year-filter" aria-labelledby="research-year-filter-title">
   <h2 id="research-year-filter-title">Publications</h2>
@@ -27,7 +27,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="audio-acoustics-year-filter" value="all" checked>
         <span class="research-year-tab__label">All</span>
-        <span class="research-year-tab__count">27</span>
+        <span class="research-year-tab__count">29</span>
       </label>
       <span class="research-year-tab__arrow" aria-hidden="true">›</span>
       <label class="research-year-tab">
@@ -69,7 +69,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="audio-acoustics-year-filter" value="2026">
         <span class="research-year-tab__label">2026</span>
-        <span class="research-year-tab__count">11</span>
+        <span class="research-year-tab__count">13</span>
       </label>
     </div>
     <div class="research-year-filter__panels">
@@ -92,6 +92,8 @@ layout: research
         <tr><td><a href="/research/papers/communication-efficient-embedded-fft-processing-for-acoustic-telemetry-in-lpwan-based-beehive-monitoring-systems/">Communication-efficient Embedded FFT Processing for Acoustic Telemetry in LPWAN-based Beehive Monitoring Systems</a></td><td>2026</td><td>🇵🇱 Lodz University of Technology</td></tr>
         <tr><td><a href="/research/papers/development-of-wingbeat-based-acoustic-health-monitoring-system-for-bee-colonies/">Development of Wingbeat-Based Acoustic Health Monitoring System for Bee Colonies</a></td><td>2026</td><td>🇹🇼 National Formosa University</td></tr>
         <tr><td><a href="/research/papers/improved-monitoring-of-honey-bee-colony-strength-via-audio-iot-sensors-modulation-tensorgrams-and-recurrent-neural-networks/">Improved Monitoring of Honey bee Colony Strength via Audio IoT Sensors, Modulation Tensorgrams and Recurrent Neural Networks</a></td><td>2026</td><td>🇨🇦 Institut national de la recherche scientifique (INRS); 🇨🇦 Université Laval; 🇨🇦 Nectar Technologies Inc.</td></tr>
+        <tr><td><a href="/research/papers/label-free-acoustic-monitoring-of-honeybee-swarming-an-unsupervised-online-learning-approach/">Label-free acoustic monitoring of honeybee swarming: An unsupervised online learning approach</a></td><td>2026</td><td>🇩🇿 Djillali Liabes University</td></tr>
+        <tr><td><a href="/research/papers/multimodal-beehive-weight-forecasting-using-iot-telemetry-and-acoustic-signal-processing/">Multimodal beehive weight forecasting using IoT telemetry and acoustic signal processing</a></td><td>2026</td><td>🇵🇱 Lodz University of Technology; 🇬🇧 Coventry University</td></tr>
         <tr><td><a href="/research/papers/on-the-prediction-of-varroa-mite-infestations-in-honeybee-colonies-via-acoustic-monitoring/">On the Prediction of Varroa Mite Infestations in Honeybee Colonies via Acoustic Monitoring</a></td><td>2026</td><td>🇨🇦 Institut national de la recherche scientifique (INRS); 🇨🇦 Nectar Technologies Inc.; 🇨🇦 Université Laval</td></tr>
         <tr><td><a href="/research/papers/on-device-deep-learning-for-real-time-acoustic-monitoring-of-endangered-bombus-dahlbomii-and-invasive-congeners/">On-device deep learning for real-time acoustic monitoring of endangered Bombus dahlbomii and invasive congeners</a></td><td>2026</td><td>🇺🇸 Massachusetts Institute of Technology; 🇯🇵 Kioxia Corporation; 🇨🇭 ETH Zurich; 🇦🇷 INIBIOMA, Universidad Nacional del Comahue and CONICET</td></tr>
         <tr><td><a href="/research/papers/spectrogram-based-deep-learning-models-for-acoustic-identification-of-honey-bees-in-complex-environmental-noises/">Spectrogram-Based Deep Learning Models for Acoustic Identification of Honey Bees in Complex Environmental Noises</a></td><td>2026</td><td>🇵🇰 Namal University; 🇵🇰 University of Mianwali; 🇦🇪 Abu Dhabi University; 🇹🇷 Nişantaşı University</td></tr>
@@ -134,6 +136,8 @@ layout: research
         <tr><td><a href="/research/papers/communication-efficient-embedded-fft-processing-for-acoustic-telemetry-in-lpwan-based-beehive-monitoring-systems/">Communication-efficient Embedded FFT Processing for Acoustic Telemetry in LPWAN-based Beehive Monitoring Systems</a></td><td>2026</td><td>🇵🇱 Lodz University of Technology</td></tr>
         <tr><td><a href="/research/papers/development-of-wingbeat-based-acoustic-health-monitoring-system-for-bee-colonies/">Development of Wingbeat-Based Acoustic Health Monitoring System for Bee Colonies</a></td><td>2026</td><td>🇹🇼 National Formosa University</td></tr>
         <tr><td><a href="/research/papers/improved-monitoring-of-honey-bee-colony-strength-via-audio-iot-sensors-modulation-tensorgrams-and-recurrent-neural-networks/">Improved Monitoring of Honey bee Colony Strength via Audio IoT Sensors, Modulation Tensorgrams and Recurrent Neural Networks</a></td><td>2026</td><td>🇨🇦 Institut national de la recherche scientifique (INRS); 🇨🇦 Université Laval; 🇨🇦 Nectar Technologies Inc.</td></tr>
+        <tr><td><a href="/research/papers/label-free-acoustic-monitoring-of-honeybee-swarming-an-unsupervised-online-learning-approach/">Label-free acoustic monitoring of honeybee swarming: An unsupervised online learning approach</a></td><td>2026</td><td>🇩🇿 Djillali Liabes University</td></tr>
+        <tr><td><a href="/research/papers/multimodal-beehive-weight-forecasting-using-iot-telemetry-and-acoustic-signal-processing/">Multimodal beehive weight forecasting using IoT telemetry and acoustic signal processing</a></td><td>2026</td><td>🇵🇱 Lodz University of Technology; 🇬🇧 Coventry University</td></tr>
         <tr><td><a href="/research/papers/on-the-prediction-of-varroa-mite-infestations-in-honeybee-colonies-via-acoustic-monitoring/">On the Prediction of Varroa Mite Infestations in Honeybee Colonies via Acoustic Monitoring</a></td><td>2026</td><td>🇨🇦 Institut national de la recherche scientifique (INRS); 🇨🇦 Nectar Technologies Inc.; 🇨🇦 Université Laval</td></tr>
         <tr><td><a href="/research/papers/on-device-deep-learning-for-real-time-acoustic-monitoring-of-endangered-bombus-dahlbomii-and-invasive-congeners/">On-device deep learning for real-time acoustic monitoring of endangered Bombus dahlbomii and invasive congeners</a></td><td>2026</td><td>🇺🇸 Massachusetts Institute of Technology; 🇯🇵 Kioxia Corporation; 🇨🇭 ETH Zurich; 🇦🇷 INIBIOMA, Universidad Nacional del Comahue and CONICET</td></tr>
         <tr><td><a href="/research/papers/spectrogram-based-deep-learning-models-for-acoustic-identification-of-honey-bees-in-complex-environmental-noises/">Spectrogram-Based Deep Learning Models for Acoustic Identification of Honey Bees in Complex Environmental Noises</a></td><td>2026</td><td>🇵🇰 Namal University; 🇵🇰 University of Mianwali; 🇦🇪 Abu Dhabi University; 🇹🇷 Nişantaşı University</td></tr>

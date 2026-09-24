@@ -9,12 +9,13 @@ title: "Research topic: Bee Counting"
 ## Summary
 
 - Topic key: `bee-counting`
-- Total papers: 1
+- Total papers: 2
 - [Research papers hub](../index.md)
 - [All topics](index.md)
 
 ## Product areas
 
+- [Gate Tracker](../product-areas/gate-tracker.md) (1)
 - [Hive Scanner](../product-areas/hive-scanner.md) (1)
 - [Monitoring Platform](../product-areas/monitoring-platform.md) (1)
 
@@ -25,13 +26,13 @@ title: "Research topic: Bee Counting"
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="bee-counting-year-filter" value="all" checked>
         <span class="research-year-tab__label">All</span>
-        <span class="research-year-tab__count">1</span>
+        <span class="research-year-tab__count">2</span>
       </label>
       <span class="research-year-tab__arrow" aria-hidden="true">›</span>
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="bee-counting-year-filter" value="2026">
         <span class="research-year-tab__label">2026</span>
-        <span class="research-year-tab__count">1</span>
+        <span class="research-year-tab__count">2</span>
       </label>
     </div>
     <div class="research-year-filter__panels">
@@ -46,6 +47,7 @@ title: "Research topic: Bee Counting"
         </tr>
         </thead>
         <tbody>
+        <tr><td><a href="/research/papers/bee-detection-and-tracking-at-hive-entrance-using-yolo11-and-bytetrack/">Bee Detection and Tracking at Hive Entrance using YOLO11 and ByteTrack</a></td><td>2026</td><td>🇫🇮 Savonia University of Applied Sciences; 🇩🇪 Ostbayerische Technische Hochschule Regensburg</td></tr>
         <tr><td><a href="/research/papers/honeybee-counting-on-comb-images-via-part-level-annotation-and-hungarian-matching/">Honeybee Counting on Comb Images via Part-Level Annotation and Hungarian Matching</a></td><td>2026</td><td>🇯🇵 Utsunomiya University</td></tr>
         </tbody>
         </table>
@@ -62,6 +64,7 @@ title: "Research topic: Bee Counting"
         </tr>
         </thead>
         <tbody>
+        <tr><td><a href="/research/papers/bee-detection-and-tracking-at-hive-entrance-using-yolo11-and-bytetrack/">Bee Detection and Tracking at Hive Entrance using YOLO11 and ByteTrack</a></td><td>2026</td><td>🇫🇮 Savonia University of Applied Sciences; 🇩🇪 Ostbayerische Technische Hochschule Regensburg</td></tr>
         <tr><td><a href="/research/papers/honeybee-counting-on-comb-images-via-part-level-annotation-and-hungarian-matching/">Honeybee Counting on Comb Images via Part-Level Annotation and Hungarian Matching</a></td><td>2026</td><td>🇯🇵 Utsunomiya University</td></tr>
         </tbody>
         </table>

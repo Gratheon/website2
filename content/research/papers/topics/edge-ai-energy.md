@@ -9,7 +9,7 @@ layout: research
 ## Summary
 
 - Topic key: `edge-ai-energy`
-- Total papers: 23
+- Total papers: 25
 - [Research papers hub](../index.md)
 - [All topics](index.md)
 
@@ -19,7 +19,7 @@ layout: research
 - [Edge Device](../product-areas/edge-device.md) (10)
 - [Gate Tracker](../product-areas/gate-tracker.md) (2)
 - [Hive Scanner](../product-areas/hive-scanner.md) (2)
-- [Monitoring Platform](../product-areas/monitoring-platform.md) (18)
+- [Monitoring Platform](../product-areas/monitoring-platform.md) (20)
 
 <section class="research-year-filter" aria-labelledby="research-year-filter-title">
   <h2 id="research-year-filter-title">Publications</h2>
@@ -28,7 +28,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="edge-ai-energy-year-filter" value="all" checked>
         <span class="research-year-tab__label">All</span>
-        <span class="research-year-tab__count">23</span>
+        <span class="research-year-tab__count">25</span>
       </label>
       <span class="research-year-tab__arrow" aria-hidden="true">›</span>
       <label class="research-year-tab">
@@ -70,7 +70,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="edge-ai-energy-year-filter" value="2026">
         <span class="research-year-tab__label">2026</span>
-        <span class="research-year-tab__count">12</span>
+        <span class="research-year-tab__count">14</span>
       </label>
     </div>
     <div class="research-year-filter__panels">
@@ -92,7 +92,9 @@ layout: research
         <tr><td><a href="/research/papers/biome-a-resource-efficient-bioacoustic-foundational-model-for-iot-applications/">BioME: A Resource-Efficient Bioacoustic Foundational Model for IoT Applications</a></td><td>2026</td><td>🇨🇦 Institut national de la recherche scientifique (INRS)</td></tr>
         <tr><td><a href="/research/papers/communication-efficient-embedded-fft-processing-for-acoustic-telemetry-in-lpwan-based-beehive-monitoring-systems/">Communication-efficient Embedded FFT Processing for Acoustic Telemetry in LPWAN-based Beehive Monitoring Systems</a></td><td>2026</td><td>🇵🇱 Lodz University of Technology</td></tr>
         <tr><td><a href="/research/papers/insectdct-a-generalized-pipeline-for-detection-taxonomic-classification-and-tracking-of-insects-in-camera-trap-recordings/">InsectDCT: A generalized pipeline for detection, taxonomic classification, and tracking of insects in camera-trap recordings</a></td><td>2026</td><td>🇩🇰 Aarhus University; 🇩🇪 Helmholtz Centre for Environmental Research; 🇪🇸 Mediterranean Institute for Advanced Studies; 🇬🇪 Ilia State University</td></tr>
+        <tr><td><a href="/research/papers/label-free-acoustic-monitoring-of-honeybee-swarming-an-unsupervised-online-learning-approach/">Label-free acoustic monitoring of honeybee swarming: An unsupervised online learning approach</a></td><td>2026</td><td>🇩🇿 Djillali Liabes University</td></tr>
         <tr><td><a href="/research/papers/m3danet-a-lightweight-semi-supervised-network-and-embedded-system-for-bee-colony-counting/">M3DANet: A Lightweight Semi-Supervised Network and Embedded System for Bee Colony Counting</a></td><td>2026</td><td>🇨🇳 Shandong Agricultural University; 🇨🇳 Apiculture Institute of Jiangxi Province</td></tr>
+        <tr><td><a href="/research/papers/multimodal-beehive-weight-forecasting-using-iot-telemetry-and-acoustic-signal-processing/">Multimodal beehive weight forecasting using IoT telemetry and acoustic signal processing</a></td><td>2026</td><td>🇵🇱 Lodz University of Technology; 🇬🇧 Coventry University</td></tr>
         <tr><td><a href="/research/papers/on-device-deep-learning-for-real-time-acoustic-monitoring-of-endangered-bombus-dahlbomii-and-invasive-congeners/">On-device deep learning for real-time acoustic monitoring of endangered Bombus dahlbomii and invasive congeners</a></td><td>2026</td><td>🇺🇸 Massachusetts Institute of Technology; 🇯🇵 Kioxia Corporation; 🇨🇭 ETH Zurich; 🇦🇷 INIBIOMA, Universidad Nacional del Comahue and CONICET</td></tr>
         <tr><td><a href="/research/papers/physics-aware-vision-instrumentation-for-stingless-bee-counting-at-hive-entrance-using-hybrid-edge-cloud-object-detection/">Physics-aware vision instrumentation for stingless bee counting at hive entrance using hybrid edge-cloud object detection</a></td><td>2026</td><td>🇲🇾 Universiti Teknologi Malaysia; 🇮🇩 Universitas Negeri Jakarta; 🇮🇩 Institut Teknologi Indonesia; 🇮🇩 Politeknik Negeri Bandung; 🇮🇩 National Research and Innovation Agency</td></tr>
         <tr><td><a href="/research/papers/spectrogram-based-deep-learning-models-for-acoustic-identification-of-honey-bees-in-complex-environmental-noises/">Spectrogram-Based Deep Learning Models for Acoustic Identification of Honey Bees in Complex Environmental Noises</a></td><td>2026</td><td>🇵🇰 Namal University; 🇵🇰 University of Mianwali; 🇦🇪 Abu Dhabi University; 🇹🇷 Nişantaşı University</td></tr>
@@ -130,7 +132,9 @@ layout: research
         <tr><td><a href="/research/papers/biome-a-resource-efficient-bioacoustic-foundational-model-for-iot-applications/">BioME: A Resource-Efficient Bioacoustic Foundational Model for IoT Applications</a></td><td>2026</td><td>🇨🇦 Institut national de la recherche scientifique (INRS)</td></tr>
         <tr><td><a href="/research/papers/communication-efficient-embedded-fft-processing-for-acoustic-telemetry-in-lpwan-based-beehive-monitoring-systems/">Communication-efficient Embedded FFT Processing for Acoustic Telemetry in LPWAN-based Beehive Monitoring Systems</a></td><td>2026</td><td>🇵🇱 Lodz University of Technology</td></tr>
         <tr><td><a href="/research/papers/insectdct-a-generalized-pipeline-for-detection-taxonomic-classification-and-tracking-of-insects-in-camera-trap-recordings/">InsectDCT: A generalized pipeline for detection, taxonomic classification, and tracking of insects in camera-trap recordings</a></td><td>2026</td><td>🇩🇰 Aarhus University; 🇩🇪 Helmholtz Centre for Environmental Research; 🇪🇸 Mediterranean Institute for Advanced Studies; 🇬🇪 Ilia State University</td></tr>
+        <tr><td><a href="/research/papers/label-free-acoustic-monitoring-of-honeybee-swarming-an-unsupervised-online-learning-approach/">Label-free acoustic monitoring of honeybee swarming: An unsupervised online learning approach</a></td><td>2026</td><td>🇩🇿 Djillali Liabes University</td></tr>
         <tr><td><a href="/research/papers/m3danet-a-lightweight-semi-supervised-network-and-embedded-system-for-bee-colony-counting/">M3DANet: A Lightweight Semi-Supervised Network and Embedded System for Bee Colony Counting</a></td><td>2026</td><td>🇨🇳 Shandong Agricultural University; 🇨🇳 Apiculture Institute of Jiangxi Province</td></tr>
+        <tr><td><a href="/research/papers/multimodal-beehive-weight-forecasting-using-iot-telemetry-and-acoustic-signal-processing/">Multimodal beehive weight forecasting using IoT telemetry and acoustic signal processing</a></td><td>2026</td><td>🇵🇱 Lodz University of Technology; 🇬🇧 Coventry University</td></tr>
         <tr><td><a href="/research/papers/on-device-deep-learning-for-real-time-acoustic-monitoring-of-endangered-bombus-dahlbomii-and-invasive-congeners/">On-device deep learning for real-time acoustic monitoring of endangered Bombus dahlbomii and invasive congeners</a></td><td>2026</td><td>🇺🇸 Massachusetts Institute of Technology; 🇯🇵 Kioxia Corporation; 🇨🇭 ETH Zurich; 🇦🇷 INIBIOMA, Universidad Nacional del Comahue and CONICET</td></tr>
         <tr><td><a href="/research/papers/physics-aware-vision-instrumentation-for-stingless-bee-counting-at-hive-entrance-using-hybrid-edge-cloud-object-detection/">Physics-aware vision instrumentation for stingless bee counting at hive entrance using hybrid edge-cloud object detection</a></td><td>2026</td><td>🇲🇾 Universiti Teknologi Malaysia; 🇮🇩 Universitas Negeri Jakarta; 🇮🇩 Institut Teknologi Indonesia; 🇮🇩 Politeknik Negeri Bandung; 🇮🇩 National Research and Innovation Agency</td></tr>
         <tr><td><a href="/research/papers/spectrogram-based-deep-learning-models-for-acoustic-identification-of-honey-bees-in-complex-environmental-noises/">Spectrogram-Based Deep Learning Models for Acoustic Identification of Honey Bees in Complex Environmental Noises</a></td><td>2026</td><td>🇵🇰 Namal University; 🇵🇰 University of Mianwali; 🇦🇪 Abu Dhabi University; 🇹🇷 Nişantaşı University</td></tr>

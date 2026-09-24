@@ -9,7 +9,7 @@ layout: research
 ## Summary
 
 - Topic key: `iot-sensors`
-- Total papers: 66
+- Total papers: 67
 - [Research papers hub](../index.md)
 - [All topics](index.md)
 
@@ -18,7 +18,7 @@ layout: research
 - [Colony Health](../product-areas/colony-health.md) (22)
 - [Edge Device](../product-areas/edge-device.md) (5)
 - [Gate Tracker](../product-areas/gate-tracker.md) (3)
-- [Monitoring Platform](../product-areas/monitoring-platform.md) (60)
+- [Monitoring Platform](../product-areas/monitoring-platform.md) (61)
 
 <section class="research-year-filter" aria-labelledby="research-year-filter-title">
   <h2 id="research-year-filter-title">Publications</h2>
@@ -27,7 +27,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="iot-sensors-year-filter" value="all" checked>
         <span class="research-year-tab__label">All</span>
-        <span class="research-year-tab__count">66</span>
+        <span class="research-year-tab__count">67</span>
       </label>
       <span class="research-year-tab__arrow" aria-hidden="true">›</span>
       <label class="research-year-tab">
@@ -99,7 +99,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="iot-sensors-year-filter" value="2026">
         <span class="research-year-tab__label">2026</span>
-        <span class="research-year-tab__count">15</span>
+        <span class="research-year-tab__count">16</span>
       </label>
     </div>
     <div class="research-year-filter__panels">
@@ -125,6 +125,7 @@ layout: research
         <tr><td><a href="/research/papers/development-of-wingbeat-based-acoustic-health-monitoring-system-for-bee-colonies/">Development of Wingbeat-Based Acoustic Health Monitoring System for Bee Colonies</a></td><td>2026</td><td>🇹🇼 National Formosa University</td></tr>
         <tr><td><a href="/research/papers/from-hive-sensors-to-environmental-dna-toward-a-systems-biology-framework-for-honeybee-based-early-warning-of-colony-and-ecosystem-health/">From Hive Sensors to Environmental DNA: Toward a Systems Biology Framework for Honeybee-Based Early Warning of Colony and Ecosystem Health</a></td><td>2026</td><td>🇨🇳 Yangzhou University; 🇸🇦 Imam Mohammad Ibn Saud Islamic University</td></tr>
         <tr><td><a href="/research/papers/improved-monitoring-of-honey-bee-colony-strength-via-audio-iot-sensors-modulation-tensorgrams-and-recurrent-neural-networks/">Improved Monitoring of Honey bee Colony Strength via Audio IoT Sensors, Modulation Tensorgrams and Recurrent Neural Networks</a></td><td>2026</td><td>🇨🇦 Institut national de la recherche scientifique (INRS); 🇨🇦 Université Laval; 🇨🇦 Nectar Technologies Inc.</td></tr>
+        <tr><td><a href="/research/papers/multimodal-beehive-weight-forecasting-using-iot-telemetry-and-acoustic-signal-processing/">Multimodal beehive weight forecasting using IoT telemetry and acoustic signal processing</a></td><td>2026</td><td>🇵🇱 Lodz University of Technology; 🇬🇧 Coventry University</td></tr>
         <tr><td><a href="/research/papers/stag-cn-spatio-temporal-apiary-graph-convolutional-network-for-disease-onset-prediction-in-beehive-sensor-networks/">STAG-CN: Spatio-Temporal Apiary Graph Convolutional Network for Disease Onset Prediction in Beehive Sensor Networks</a></td><td>2026</td><td>🇰🇷 Korea University</td></tr>
         <tr><td><a href="/research/papers/technical-specification-of-a-novel-apivoltaic-system-integrating-digital-hive-monitoring-with-photovoltaic-energy-systems/">Technical Specification of a Novel Apivoltaic System: Integrating Digital Hive Monitoring with Photovoltaic Energy Systems</a></td><td>2026</td><td>🇷🇴 University of Agricultural Sciences and Veterinary Medicine of Cluj-Napoca; 🇷🇴 APIVOLT S.R.L.; 🇮🇹 University of Molise</td></tr>
         <tr><td><a href="/research/papers/time-series-dataset-of-honey-bee-colony-dynamics-before-during-and-after-sunflower-pollination/">Time-series dataset of honey bee colony dynamics before, during, and after sunflower pollination</a></td><td>2026</td><td>🇺🇦 AmoHive / Ukraine smart-hive deployment</td></tr>
@@ -206,6 +207,7 @@ layout: research
         <tr><td><a href="/research/papers/development-of-wingbeat-based-acoustic-health-monitoring-system-for-bee-colonies/">Development of Wingbeat-Based Acoustic Health Monitoring System for Bee Colonies</a></td><td>2026</td><td>🇹🇼 National Formosa University</td></tr>
         <tr><td><a href="/research/papers/from-hive-sensors-to-environmental-dna-toward-a-systems-biology-framework-for-honeybee-based-early-warning-of-colony-and-ecosystem-health/">From Hive Sensors to Environmental DNA: Toward a Systems Biology Framework for Honeybee-Based Early Warning of Colony and Ecosystem Health</a></td><td>2026</td><td>🇨🇳 Yangzhou University; 🇸🇦 Imam Mohammad Ibn Saud Islamic University</td></tr>
         <tr><td><a href="/research/papers/improved-monitoring-of-honey-bee-colony-strength-via-audio-iot-sensors-modulation-tensorgrams-and-recurrent-neural-networks/">Improved Monitoring of Honey bee Colony Strength via Audio IoT Sensors, Modulation Tensorgrams and Recurrent Neural Networks</a></td><td>2026</td><td>🇨🇦 Institut national de la recherche scientifique (INRS); 🇨🇦 Université Laval; 🇨🇦 Nectar Technologies Inc.</td></tr>
+        <tr><td><a href="/research/papers/multimodal-beehive-weight-forecasting-using-iot-telemetry-and-acoustic-signal-processing/">Multimodal beehive weight forecasting using IoT telemetry and acoustic signal processing</a></td><td>2026</td><td>🇵🇱 Lodz University of Technology; 🇬🇧 Coventry University</td></tr>
         <tr><td><a href="/research/papers/stag-cn-spatio-temporal-apiary-graph-convolutional-network-for-disease-onset-prediction-in-beehive-sensor-networks/">STAG-CN: Spatio-Temporal Apiary Graph Convolutional Network for Disease Onset Prediction in Beehive Sensor Networks</a></td><td>2026</td><td>🇰🇷 Korea University</td></tr>
         <tr><td><a href="/research/papers/technical-specification-of-a-novel-apivoltaic-system-integrating-digital-hive-monitoring-with-photovoltaic-energy-systems/">Technical Specification of a Novel Apivoltaic System: Integrating Digital Hive Monitoring with Photovoltaic Energy Systems</a></td><td>2026</td><td>🇷🇴 University of Agricultural Sciences and Veterinary Medicine of Cluj-Napoca; 🇷🇴 APIVOLT S.R.L.; 🇮🇹 University of Molise</td></tr>
         <tr><td><a href="/research/papers/time-series-dataset-of-honey-bee-colony-dynamics-before-during-and-after-sunflower-pollination/">Time-series dataset of honey bee colony dynamics before, during, and after sunflower pollination</a></td><td>2026</td><td>🇺🇦 AmoHive / Ukraine smart-hive deployment</td></tr>
