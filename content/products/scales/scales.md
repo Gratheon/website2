@@ -6,7 +6,7 @@ productPhase: Prototype
 productTrl: "4"
 heroLead: true
 heroImage: /products/scales/img/beehive-scale-3d.png
-heroImageAlt: Gratheon beehive scale under a hive, with the solar landing board in front of the entrance and the electronics pod flush in the wooden base
+heroImageAlt: Gratheon beehive scale under a transparent hive, with the solar landing board in front of the entrance and the electronics pod flush in the wooden base
 ctaPrimaryText: Explore the code
 ctaPrimaryHref: https://github.com/Gratheon/beehive-sensors/
 ctaSecondaryText: Invest in Gratheon
