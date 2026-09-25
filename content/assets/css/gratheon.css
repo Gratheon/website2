@@ -1705,6 +1705,13 @@ html[data-theme='dark'] .founder-letter .future {
   line-height: 1.1;
 }
 
+/* WHY: hero lead is moved from the article and includes lists; inherit sans from body otherwise. */
+.knowledge-hero--model .knowledge-hero-lead,
+.knowledge-content p,
+.knowledge-content li {
+  font-family: var(--font-small);
+}
+
 .knowledge-content > .research-page,
 .knowledge-content > .product-page {
   display: grid;
