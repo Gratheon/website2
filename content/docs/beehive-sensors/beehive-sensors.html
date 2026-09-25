@@ -4,292 +4,218 @@ title: 🌡️ Beehive IoT sensors
 order: 3
 sidebar_position: 4
 hide_table_of_contents: false
-description: "Interactive lab wiring, pin allocation, and product roadmap for Beehive IoT sensors."
+description: "Gratheon beehive scale, Phase 3 production kit: 3D model, production wiring, pin map and how it fits the Robotic Beehive."
 ---
 -->
-<section class="lab-wiring">
+<section class="scale-doc">
 <style>
-.lab-wiring {
+.scale-doc {
   --ink: #172033;
   --muted: #5b677a;
   --line: #d7deea;
   --soft: #f4f7fb;
-  --paper: #ffffff;
-  --blue: #1565c0;
   --orange: #ef6c00;
-  --green: #2e7d32;
-  --red: #c62828;
   --ui: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
   --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 }
-.lab-wiring, .lab-wiring * { box-sizing: border-box; }
-.lab-wiring h2 { margin: 42px 0 12px; font-size: 1.55rem; line-height: 1.25; }
-.lab-wiring h3 { margin: 26px 0 10px; font-size: 1.12rem; }
-.lab-wiring p { margin: 0 0 14px; }
-.lab-wiring a { color: #0b5ed7; }
-.lab-wiring code { padding: 1px 5px; border-radius: 4px; background: #eef1f6; font-family: var(--mono); font-size: .87em; }
-.lab-wiring .lead { font-size: 1.05rem; color: var(--muted); }
-.lab-wiring .note {
+.scale-doc, .scale-doc * { box-sizing: border-box; }
+.scale-doc h2 { margin: 42px 0 12px; font-size: 1.55rem; line-height: 1.25; }
+.scale-doc p { margin: 0 0 14px; }
+.scale-doc code { padding: 1px 5px; border-radius: 4px; background: #eef1f6; font-family: var(--mono); font-size: .87em; }
+.scale-doc .lead { font-size: 1.05rem; color: var(--muted); }
+.scale-doc .note {
   margin: 16px 0 20px; padding: 13px 15px;
   border-left: 4px solid var(--orange); border-radius: 0 10px 10px 0;
   background: #fff4e8; color: #5a3b16;
 }
-.lab-wiring .note strong { color: var(--ink); }
-.lab-wiring .toc-mini {
-  display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 22px; padding: 0; list-style: none;
-}
-.lab-wiring .toc-mini a {
+.scale-doc .note strong { color: var(--ink); }
+.scale-doc .toc-mini { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 22px; padding: 0; list-style: none; }
+.scale-doc .toc-mini a {
   display: inline-block; padding: 6px 10px; border: 1px solid var(--line); border-radius: 999px;
   background: var(--soft); color: var(--ink); font-size: .86rem; text-decoration: none;
 }
-.lab-wiring .toc-mini a:hover { border-color: #0b5ed7; }
-
-/* WHY: site article typography fights compact widget chrome and lab tables. */
-section.lab-wiring .wire-diagram-host,
-section.lab-wiring .legend,
-section.lab-wiring .board-map,
-section.lab-wiring .checks,
-section.lab-wiring :is(.wire-diagram-host, .legend, .board-map, .checks) :is(p, span, button, label, li, small, strong, h2, h3, h4, a, select) {
-  font-family: var(--ui);
+.scale-doc .toc-mini a:hover { border-color: #0b5ed7; }
+.scale-doc .wire-diagram-host,
+.scale-doc .wire-diagram-host :is(p, span, button, label, li, small, strong, h2, h3, h4, a, select) { font-family: var(--ui); }
+.scale-doc .wire-diagram-host { margin: 12px 0 18px; color: var(--ink); }
+.site-content article .content section.scale-doc .wd-widget h2 { margin: 0 0 3px; font-size: 20px; line-height: 1.25; font-family: var(--ui); }
+.scale-doc .beehive-scale { margin: 8px 0 12px; }
+.scale-doc .table-wrap { overflow-x: auto; margin: 8px 0 22px; }
+.site-content article .content section.scale-doc table { min-width: 640px; margin: 0; }
+.site-content article .content section.scale-doc th,
+.site-content article .content section.scale-doc td { font-size: .9rem; vertical-align: top; }
+.scale-doc .lib-credit { margin: 0 0 22px; font-size: .86rem; color: var(--muted); }
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme="light"]) .scale-doc .note { background: #2d2216; color: #f3d8b6; }
+  html:not([data-theme="light"]) .scale-doc .note strong { color: inherit; }
 }
-section.lab-wiring .wire-diagram-host,
-section.lab-wiring .legend,
-section.lab-wiring .board-map,
-section.lab-wiring .checks { color: var(--ink); }
-
-.lab-wiring .wire-diagram-host { margin: 12px 0 18px; }
-.site-content article .content section.lab-wiring .wd-widget h2 {
-  margin: 0 0 3px; font-size: 20px; line-height: 1.25; font-family: var(--ui);
-}
-.lab-wiring .lib-credit { margin: 0 0 22px; font-size: .86rem; color: var(--muted); }
-.lab-wiring .legend {
-  display: flex; flex-wrap: wrap; gap: 10px 16px;
-  margin: 0 0 28px; padding: 10px 4px 0;
-  font-size: .86rem; color: var(--muted);
-}
-.lab-wiring .swatch {
-  display: inline-block; width: 14px; height: 8px; margin-right: 6px;
-  border-radius: 99px; vertical-align: middle;
-}
-.lab-wiring .table-wrap { overflow-x: auto; margin: 8px 0 22px; }
-.site-content article .content section.lab-wiring table {
-  min-width: 720px; margin: 0; background: var(--paper);
-}
-.site-content article .content section.lab-wiring th,
-.site-content article .content section.lab-wiring td {
-  font-size: .9rem; vertical-align: top;
-}
-.lab-wiring .warn { color: var(--red); font-weight: 700; }
-.lab-wiring .board-map {
-  display: grid; grid-template-columns: 1fr 1.4fr 1fr; gap: 10px; margin: 14px 0 18px;
-}
-.lab-wiring .col {
-  padding: 14px; border-radius: 14px; border: 1px solid var(--line); background: var(--paper);
-}
-.lab-wiring .col h3 { margin: 0 0 8px; }
-.lab-wiring .col.power { background: #e3f2fd; border-color: #90caf9; }
-.lab-wiring .col.mcu { background: #fff3e0; border-color: #ffcc80; }
-.lab-wiring .col.sensors { background: #e8f5e9; border-color: #a5d6a7; }
-.lab-wiring .col ul { margin: 0; padding-left: 18px; }
-.lab-wiring .checks { margin: 0; padding: 0; list-style: none; }
-.lab-wiring .checks li { margin: 0 0 8px; }
-.lab-wiring .checks label { display: flex; gap: 10px; align-items: flex-start; }
-.lab-wiring .steps { margin: 0; padding-left: 20px; }
-.lab-wiring .steps li { margin: 0 0 8px; }
-@media (max-width: 800px) {
-  .lab-wiring .board-map { grid-template-columns: 1fr; }
-}
+html[data-theme="dark"] .scale-doc .note { background: #2d2216; color: #f3d8b6; }
+html[data-theme="dark"] .scale-doc .note strong { color: inherit; }
 </style>
 
-<p class="lead">This page is the final bench reference before first power-on: exact GPIO numbers, wire colours, an interactive schematic with a 3D bench view, and a corrected power map.</p>
+<p class="lead">The Gratheon beehive scale is a low stand that goes under a hive. It has a single load cell and a snap-in ESP32 pod, and every 10 minutes it measures hive weight, brood-nest temperature, ambient temperature and humidity, and battery health. This section describes the <strong>Phase 3 production kit</strong>. The bench and field prototypes that led to it are summarised in <a href="prototypes/">Earlier prototypes</a>.</p>
 
 <ul class="toc-mini">
-  <li><a href="#wiring-diagram">Wiring diagram</a></li>
-  <li><a href="#pin-allocation">Pin table</a></li>
-  <li><a href="#breadboard">Breadboard</a></li>
-  <li><a href="#checklist">Checklist</a></li>
-  <li><a href="#power-on">First power-on</a></li>
+  <li><a href="#model">3D model</a></li>
+  <li><a href="#measures">What it measures</a></li>
+  <li><a href="#figures">Key figures</a></li>
+  <li><a href="#robotic-beehive">Robotic Beehive fit</a></li>
+  <li><a href="#wiring">Wiring</a></li>
+  <li><a href="#pins">Pin map</a></li>
+  <li><a href="#services">Services</a></li>
 </ul>
 
-<h2 id="wiring-diagram">Interactive wiring diagram</h2>
-<p>The schematic is the pin-to-pin map. Switch to 3D to orbit the bench. Click a wire or part for details. Power to the DS18B20 leaves the ESP32 <strong>3.3V</strong> pin, not the 5V USB rail.</p>
+<h2 id="model">3D model</h2>
+<p>Drag to orbit, point at a part to read what it does, and use <em>Explode</em> to open the scale layer by layer. <em>Stands on → Robot</em> shows the same scale in the Robotic Beehive plinth. The model source is in <a href="https://github.com/Gratheon/beehive-sensors/tree/main/model">beehive-sensors/model</a>; see <a href="3d-model/">3D model</a> for how it is built.</p>
 
-<div class="note"><strong>Power rule:</strong> USB 5V feeds the ESP32 and HX711. DS18B20 VDD stays on 3.3V. Every module shares the same GND rail.</div>
+<!-- beehive-scale:start (generated by beehive-sensors/model/build-viewer.mjs) -->
+<div class="beehive-scale" data-beehive-scale>
+  <div class="bs-stage">
+    <canvas class="bs-canvas" data-bs="canvas" aria-label="3D model of the Gratheon beehive scale"></canvas>
+    <div class="bs-hint">
+      <span class="bs-chip">Drag to orbit · scroll to zoom</span>
+      <span class="bs-chip" data-bs="chip">Assembled</span>
+    </div>
+    <div class="bs-info" aria-live="polite">
+      <h3 data-bs="info-title">Point at any part</h3>
+      <p data-bs="info-text">Every part has a note: what it is, why it is there and how it is serviced.</p>
+    </div>
+  </div>
+  <aside class="bs-panel">
+    <section>
+      <div class="bs-label">Assembly</div>
+      <div class="bs-explode">
+        <button class="bs-btn bs-primary" data-bs="explode" type="button">Explode</button>
+        <input type="range" data-bs="scrub" min="0" max="1000" value="0" aria-label="Exploded view">
+      </div>
+    </section>
+    <section>
+      <div class="bs-label">Parts</div>
+      <ol class="bs-steps" data-bs="parts"></ol>
+    </section>
+    <section>
+      <div class="bs-label">View</div>
+      <div class="bs-controls">
+        <div class="bs-field">
+          <span>Stands on</span>
+          <div class="bs-seg" role="group" aria-label="Where the scale stands" data-bs="context">
+            <button type="button" data-value="hive" aria-pressed="true">Ground</button>
+            <button type="button" data-value="robot" aria-pressed="false">Robot</button>
+          </div>
+        </div>
+        <div class="bs-field">
+          <span>Hive</span>
+          <div class="bs-seg" role="group" aria-label="Hive display" data-bs="hive">
+            <button type="button" data-value="solid" aria-pressed="false">Solid</button>
+            <button type="button" data-value="ghost" aria-pressed="true">Ghost</button>
+            <button type="button" data-value="off" aria-pressed="false">Off</button>
+          </div>
+        </div>
+        <div class="bs-field">
+          <span>18650 cells</span>
+          <div class="bs-seg" role="group" aria-label="Battery cells fitted" data-bs="cells">
+            <button type="button" data-value="2" aria-pressed="false">2</button>
+            <button type="button" data-value="3" aria-pressed="false">3</button>
+            <button type="button" data-value="4" aria-pressed="true">4</button>
+          </div>
+        </div>
+        <label class="bs-check"><input type="checkbox" data-bs="solar" checked> Solar panel</label>
+      </div>
+    </section>
+    <section>
+      <div class="bs-label">Key figures</div>
+      <dl class="bs-specs" data-bs="specs"></dl>
+    </section>
+    <p class="bs-foot">Open source: <a href="https://github.com/Gratheon/beehive-sensors">github.com/Gratheon/beehive-sensors</a>. The same model is available as <a data-bs="glb" href="/assets/models/beehive-scale.glb" download>beehive-scale.glb</a> with the exploded-view animation.</p>
+  </aside>
+</div>
+<script defer src="/assets/triangle/beehive-scale/beehive-scale-viewer.js"></script>
+<!-- beehive-scale:end -->
 
+<h2 id="measures">What it measures</h2>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>Signal</th><th>Sensor</th><th>What the beekeeper learns</th></tr></thead>
+  <tbody>
+    <tr><td>Hive weight</td><td>AP62AFB single-point load cell + HX711</td><td>Nectar flow, the day a swarm leaves (a 1–3 kg drop in minutes), winter stores running low, robbing, theft or a hive knocked over.</td></tr>
+    <tr><td>Brood-nest temperature</td><td>DS18B20 probe on the top bars</td><td>Brood rearing (steady 34–35 °C), a queenless or failing colony (temperature drifts), where the winter cluster sits.</td></tr>
+    <tr><td>Ambient temperature and humidity</td><td>SHT40 in a radiation shield</td><td>Context for weight and brood readings: foraging weather, cold snaps, damp periods.</td></tr>
+    <tr><td>Device health</td><td>MAX17048 fuel gauge, Wi-Fi RSSI, reset reason</td><td>When to change batteries, and why data stopped arriving.</td></tr>
+  </tbody>
+</table>
+</div>
+
+<h2 id="figures">Key figures</h2>
+<div class="table-wrap">
+<table>
+  <tbody>
+    <tr><th>Deck</th><td>540 × 490 mm aluminium, fits a 506 × 450 mm (Estonian) hive with corner locators</td></tr>
+    <tr><th>Height</th><td>88 mm scale stack + 25 mm levelling feet</td></tr>
+    <tr><th>Capacity</th><td>200 kg (350 kg cell option), overload stops under every deck corner</td></tr>
+    <tr><th>Controller</th><td>ESP32-S3-MINI-1 on a Gratheon carrier PCB, Wi-Fi + BLE, LoRa footprint</td></tr>
+    <tr><th>Power</th><td>2–4 × 18650 in parallel, BQ24074 solar charger, optional 1 W 6 V panel</td></tr>
+    <tr><th>Battery life</th><td>about 9 months (2 cells) or 13 months (4 cells) without solar, at 10-minute readings and 30-minute uploads, including self-discharge and a cold-winter derate</td></tr>
+    <tr><th>Enclosure</th><td>IP67 ASA pod on a dock at the back, three sealed M8 field connectors</td></tr>
+    <tr><th>Mounting</th><td>4 × M10 on a 400 × 300 mm pattern, the same as the Robotic Beehive deck pads</td></tr>
+    <tr><th>Target BOM</th><td>≈ €140–220 at 100 units (see <a href="bill-of-materials/">bill of materials</a>)</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Details, reasoning and acceptance tests are in the <a href="product-description/">product description</a>. The dimensions of the AP62AFB cell and brackets come from the supplier listing and must be checked on the delivered part before the deck and base drawings are released.</p>
+
+<h2 id="robotic-beehive">Robotic Beehive fit</h2>
+<p>The scale is designed as a module of the <a href="/products/robotic_beehive/">Robotic Beehive</a>. Both models use the same axes and hive dimensions, and the interface is fixed:</p>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>Interface</th><th>Stand-alone scale</th><th>In the Robotic Beehive</th></tr></thead>
+  <tbody>
+    <tr><td>Footprint</td><td>Deck 540 × 490 mm, base 524 × 474 mm</td><td>Fits between the 22 mm corner posts (722 × 582 mm clear).</td></tr>
+    <tr><td>Mounting</td><td>4 levelling feet, M10, 400 × 300 mm</td><td>Feet removed; the same four M10 holes bolt to the plinth deck cross members, where the rubber pads were.</td></tr>
+    <tr><td>Height</td><td>88 mm stack</td><td>The hive deck rises 88 mm. In <code>hive-model.js</code> the hive base becomes plinth + 88 mm + bottom board; every lift height derives from it.</td></tr>
+    <tr><td>Electronics pod</td><td>Docks on the back of the base</td><td>Mounts on a plinth bracket and becomes the always-on supervisor. It is powered from the robot's fused 5 V rail through the solar M8 port, with LoRa fitted, UART to the Jetson and the watchdog relay output.</td></tr>
+    <tr><td>Data</td><td>Weight, temperatures, humidity, battery to <code>telemetry-api</code></td><td>The same, plus a cross-check: during a lift, the drop in scale weight must match what the fork load cells report.</td></tr>
+  </tbody>
+</table>
+</div>
+
+<h2 id="wiring">Production wiring</h2>
+<p>Everything inside the pod is on one carrier PCB. Field parts plug in through M8 connectors, so a damaged probe, load cell or panel is replaced without opening the pod. Click a wire or part for details; switch to 3D in the canvas corner.</p>
 <div
-  id="lab-wiring-widget"
+  id="scale-wiring-widget"
   class="wire-diagram-host"
-  data-source="/assets/triangle/wire-diagram/full-system-wiring.yaml"
+  data-source="/assets/triangle/wire-diagram/beehive-scale-production.yaml"
 ></div>
-<noscript><p class="note">JavaScript is required for the interactive diagram. Use the pin table below as the wiring reference.</p></noscript>
-<p class="lib-credit">Rendered with <a href="https://github.com/tot-ra/wire-diagram">wire-diagram</a>. Toggle Schematic / 3D in the canvas corner.</p>
+<noscript><p class="note">JavaScript is required for the interactive diagram. Use the pin map below as the wiring reference.</p></noscript>
+<p class="lib-credit">Rendered with <a href="https://github.com/tot-ra/wire-diagram">wire-diagram</a>. The breadboard build from Phase 1 is on <a href="lab-wiring/">Lab bench wiring</a>.</p>
 
-<div class="legend">
-  <span><i class="swatch" style="background:#c62828"></i>5V / 3.3V (red; 3.3V is dashed)</span>
-  <span><i class="swatch" style="background:#212121"></i>GND (black)</span>
-  <span><i class="swatch" style="background:#ef6c00"></i>HX711 DT / GPIO 16 pin 27 (orange)</span>
-  <span><i class="swatch" style="background:#1565c0"></i>HX711 SCK / GPIO 17 pin 28 (blue)</span>
-  <span><i class="swatch" style="background:#6d4c41"></i>DS18B20 data / GPIO 4 pin 26 (brown)</span>
-  <span><i class="swatch" style="background:#f5f5f5;border:1px solid #bbb"></i>Load cell A+ (white)</span>
-  <span><i class="swatch" style="background:#2e7d32"></i>Load cell A- (green)</span>
-</div>
-
-<h2 id="pin-allocation">Complete pin allocation</h2>
+<h2 id="pins">Pin map (carrier PCB rev A)</h2>
 <div class="table-wrap">
 <table>
-  <thead>
-    <tr>
-      <th>Function</th>
-      <th>ESP32 pin</th>
-      <th>Wire colour</th>
-      <th>Connected to</th>
-      <th>Notes</th>
-    </tr>
-  </thead>
+  <thead><tr><th>ESP32-S3 pin</th><th>Function</th><th>Connected to</th><th>Notes</th></tr></thead>
   <tbody>
-    <tr>
-      <td>HX711 SCK (clock)</td>
-      <td>GPIO 17 (pin 28)</td>
-      <td>Blue</td>
-      <td>HX711 SCK pin</td>
-      <td>Firmware clock output</td>
-    </tr>
-    <tr>
-      <td>HX711 DT (data)</td>
-      <td>GPIO 16 (pin 27)</td>
-      <td>Orange</td>
-      <td>HX711 DT pin</td>
-      <td>Firmware data input</td>
-    </tr>
-    <tr>
-      <td>DS18B20 Data</td>
-      <td>GPIO 4 (pin 26)</td>
-      <td>Brown / Yellow</td>
-      <td>DS18B20 DQ + 4.7 kOhm pull-up to 3.3V</td>
-      <td>Mandatory pull-up resistor</td>
-    </tr>
-    <tr>
-      <td>DS18B20 VCC</td>
-      <td>3.3V (pin 1)</td>
-      <td>Red</td>
-      <td>DS18B20 VDD pin</td>
-      <td class="warn">Do not use 5V</td>
-    </tr>
-    <tr>
-      <td>HX711 VCC</td>
-      <td>5V (pin 19) or 3.3V</td>
-      <td>Red</td>
-      <td>HX711 VCC pin</td>
-      <td>This lab build uses 5V; the board accepts both</td>
-    </tr>
-    <tr>
-      <td>System GND</td>
-      <td>GND (pin 14)</td>
-      <td>Black</td>
-      <td>All GND pins (HX711, DS18B20, ESP32)</td>
-      <td><strong>Must be common ground</strong></td>
-    </tr>
-    <tr>
-      <td>I2C SDA (reserved)</td>
-      <td>GPIO 21 (pin 33)</td>
-      <td>Purple</td>
-      <td>Future humidity sensor</td>
-      <td>Do not connect anything yet</td>
-    </tr>
-    <tr>
-      <td>I2C SCL (reserved)</td>
-      <td>GPIO 22 (pin 36)</td>
-      <td>Grey</td>
-      <td>Future humidity sensor</td>
-      <td>Do not connect anything yet</td>
-    </tr>
-    <tr>
-      <td>Battery ADC (reserved)</td>
-      <td>GPIO 34 (pin 5) or GPIO 35 (pin 6)</td>
-      <td>White</td>
-      <td>Future voltage divider</td>
-      <td>Input-only pins, do not use for output</td>
-    </tr>
+    <tr><td>IO4</td><td>HX711 DOUT</td><td>HX711 DT</td><td>Input; hold low while the sensor rail is off</td></tr>
+    <tr><td>IO5</td><td>HX711 SCK</td><td>HX711 SCK</td><td>High for &gt; 60 µs puts the HX711 in power-down</td></tr>
+    <tr><td>IO6</td><td>1-Wire</td><td>DS18B20 DQ, 4.7 kΩ to 3V3_SW</td><td>Probe on M8 3-pin</td></tr>
+    <tr><td>IO7</td><td>SENS_EN</td><td>TPS22917 ON</td><td>Powers the HX711, load-cell excitation and DS18B20</td></tr>
+    <tr><td>IO8 / IO9</td><td>I2C SDA / SCL</td><td>MAX17048 (0x36), SHT40 (0x44)</td><td>Always-on bus, 10 kΩ pull-ups</td></tr>
+    <tr><td>IO10</td><td>CHG</td><td>BQ24074 CHG</td><td>Open drain, internal pull-up</td></tr>
+    <tr><td>IO11</td><td>PGOOD</td><td>BQ24074 PGOOD</td><td>Low when the panel (or robot 5 V) is present</td></tr>
+    <tr><td>IO1</td><td>Magnet wake</td><td>Reed switch to GND</td><td>RTC GPIO, deep-sleep wake source for BLE setup</td></tr>
+    <tr><td>IO12</td><td>Status LED</td><td>LED via 1 kΩ, light pipe in the lid</td><td>Blinks once per upload</td></tr>
+    <tr><td>IO19 / IO20</td><td>USB D− / D+</td><td>Pogo pads</td><td>Factory flashing and test only</td></tr>
+    <tr><td>IO33–IO37, IO13, IO14, IO21</td><td>LoRa (option)</td><td>SX1262 module</td><td>Not fitted on the Wi-Fi SKU</td></tr>
+    <tr><td>IO43 / IO44</td><td>UART (robot)</td><td>Jetson 40-pin header</td><td>Robotic Beehive variant only</td></tr>
   </tbody>
 </table>
 </div>
-
-<p>This page is the single reference for the complete lab wiring: use the interactive schematic above for both the weight and temperature chains.</p>
-
-<h2 id="breadboard">Breadboard layout</h2>
-<div class="board-map">
-  <div class="col power">
-    <h3>Left - power</h3>
-    <ul>
-      <li>Top red rail: 5V from ESP32 USB</li>
-      <li>Bottom blue rail: common GND</li>
-      <li>A short 3.3V tap from the ESP32 3.3V pin for DS18B20 and the pull-up</li>
-    </ul>
-  </div>
-  <div class="col mcu">
-    <h3>Center - ESP32 + HX711</h3>
-    <ul>
-      <li>Rows 10-11: ESP32 DevKit</li>
-      <li>Rows 20-21: HX711, close so DT/SCK stay short</li>
-      <li>Leave empty rows around both boards for jumper access</li>
-    </ul>
-  </div>
-  <div class="col sensors">
-    <h3>Right - sensors</h3>
-    <ul>
-      <li>Row 30: 4.7 kOhm between 3.3V and the data node</li>
-      <li>Rows 35-36: DS18B20 connector, brown/yellow to GPIO 4</li>
-      <li>Load cell: screw terminals on HX711, not the breadboard</li>
-    </ul>
-  </div>
-</div>
-
-<div class="table-wrap">
-<table>
-  <thead>
-    <tr><th>Row</th><th>Component / connection</th><th>Notes</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>Top rail (red)</td><td>5V from ESP32 USB</td><td>Powers HX711 VCC and ESP32 5V pin</td></tr>
-    <tr><td>Bottom rail (blue)</td><td>GND common bus</td><td>All GND connections meet here</td></tr>
-    <tr><td>Row 10-11</td><td>ESP32 DevKit mounted</td><td>Leave space around the board for wiring access</td></tr>
-    <tr><td>Row 20-21</td><td>HX711 board mounted</td><td>Close to ESP32 for short signal wires</td></tr>
-    <tr><td>Row 30</td><td>4.7 kOhm resistor between row 30 and row 35</td><td>One end to 3.3V, other to DS18B20 data</td></tr>
-    <tr><td>Row 35-36</td><td>DS18B20 probe connector</td><td>Brown wire to GPIO 4 via row 35</td></tr>
-  </tbody>
-</table>
-</div>
-
-<h2 id="checklist">Pre-power checklist</h2>
-<p>Before applying power for the first time, verify every connection against this list:</p>
-<ul class="checks">
-  <li><label><input type="checkbox"> ESP32 USB cable is connected to laptop or charger</label></li>
-  <li><label><input type="checkbox"> HX711 VCC is connected to 5V or 3.3V rail</label></li>
-  <li><label><input type="checkbox"> HX711 GND shares the same ground as ESP32</label></li>
-  <li><label><input type="checkbox"> HX711 DT (GPIO 16) and SCK (GPIO 17) wires are in the correct rows</label></li>
-  <li><label><input type="checkbox"> Load cell E+/E-/A+/A- wires match HX711 pin labels</label></li>
-  <li><label><input type="checkbox"> DS18B20 VCC is connected to 3.3V, not 5V</label></li>
-  <li><label><input type="checkbox"> DS18B20 GND shares the same ground as ESP32</label></li>
-  <li><label><input type="checkbox"> <strong>4.7 kOhm pull-up resistor connects 3.3V rail to GPIO 4 / data line</strong></label></li>
-  <li><label><input type="checkbox"> No jumper wires are touching each other or shorting adjacent pins</label></li>
-  <li><label><input type="checkbox"> Reserved pins (GPIO 21, 22, 34/35) have nothing connected</label></li>
-</ul>
-
-<h2 id="power-on">First power-on sequence</h2>
-<ol class="steps">
-  <li>Connect the USB cable to the laptop.</li>
-  <li>Open a serial monitor at 115200 baud.</li>
-  <li>Press the ESP32 reset button if serial output does not start automatically.</li>
-  <li>Check that firmware prints <code>HX711 found</code>, <code>DS18B20 found</code>, and initial readings.</li>
-  <li>If anything fails, use the troubleshooting sections on the individual wiring pages.</li>
-</ol>
+<p class="note"><strong>Firmware:</strong> the pin map differs from the Phase 1 DevKit bench. Firmware reads the hardware revision from its configuration and selects the map, so one code base serves the bench, the field prototype and the production pod.</p>
 </section>
 <script type="module">
 // WHY: HTML articles cannot rely on the site JS bundle (it concatenates classic scripts).
 // WHAT: mount wire-diagram from the vendored ESM build and fail visibly if YAML cannot be fetched.
 import { createWiringDiagram } from '/assets/triangle/wire-diagram/wire-diagram.js';
 
-const host = document.getElementById('lab-wiring-widget');
+const host = document.getElementById('scale-wiring-widget');
 if (host) {
   const sourceUrl = host.dataset.source;
   try {
@@ -305,176 +231,14 @@ if (host) {
 }
 </script>
 
-<hr>
-
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/Ags3rplPkQE" title="Getting started with iot sensors development" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<h2 id="product-direction">Product direction</h2>
-<p>Beehive IoT sensors should grow through three clear hardware phases. The docs are now grouped by phase first, because each phase needs both a product description and a bill of materials:</p>
-<ol>
-<li><strong><a href="phase-1-lab-validation/">Phase 1 - Lab validation</a></strong> - prove firmware, wiring, calibration, and telemetry ingestion on a bench.</li>
-<li><strong><a href="phase-2-field-mvp/">Phase 2 - Field MVP</a></strong> - deploy a weatherproof DIY hive scale that measures the signals beekeepers need first.</li>
-<li><strong><a href="phase-3-production-kit/">Phase 3 - Production kit</a></strong> - convert the proven design into a repeatable, supportable, sellable device.</li>
-</ol>
-<p>This split keeps the first public build cheap and learnable while still showing the path to a finished Gratheon product. The current prototype already proves the most important path: an ESP32 collects temperature and weight data and sends readings to <a href="https://github.com/gratheon/telemetry-api">telemetry-api</a>. The hardware scope, bill of materials, functionality, electrical interfaces, mechanical interfaces, and upgrade path are documented under the relevant phase so the sidebar follows the build journey.</p>
-<h2 id="phase-overview">Phase overview</h2>
-<table>
-<thead>
-<tr>
-<th>Phase</th>
-<th>Goal</th>
-<th>Primary user</th>
-<th align="right">Target cost</th>
-<th>Product description</th>
-<th>BOM</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Phase 1 - Lab</td>
-<td>Fast bench prototype for firmware and API validation</td>
-<td>Developer, contributor, early maker</td>
-<td align="right">€20-35</td>
-<td><a href="/docs/beehive-sensors/phase-1-lab-validation/product-description/">Product description</a></td>
-<td><a href="/docs/beehive-sensors/phase-1-lab-validation/bill-of-materials/">Bill of materials</a></td>
-</tr>
-<tr>
-<td>Phase 2 - Field MVP</td>
-<td>Weatherproof DIY hive scale for pilot apiaries</td>
-<td>Pilot beekeeper, field tester</td>
-<td align="right">€45-90</td>
-<td><a href="/docs/beehive-sensors/phase-2-field-mvp/product-description/">Product description</a></td>
-<td><a href="/docs/beehive-sensors/phase-2-field-mvp/bill-of-materials/">Bill of materials</a></td>
-</tr>
-<tr>
-<td>Phase 3 - Production</td>
-<td>Calibrated, supportable hardware kit</td>
-<td>Paying customer, reseller, managed apiary</td>
-<td align="right">€90-180+</td>
-<td><a href="/docs/beehive-sensors/phase-3-production-kit/product-description/">Product description</a></td>
-<td><a href="/docs/beehive-sensors/phase-3-production-kit/bill-of-materials/">Bill of materials</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="system-connection-model">System connection model</h2>
-<p>The hardware should be described as connected subsystems, not as a loose parts list. This makes electrical, mechanical, and service decisions explicit.</p>
-<pre><code class="language-mermaid">flowchart LR
-    subgraph Mechanical[Mechanical system]
-        frame[Hive scale frame]
-        loadcell[Load cell]
-        stops[Overload stops and side guides]
-    end
-
-    subgraph Electrical[Electrical system]
-        hx711[HX711 or 24-bit ADC]
-        esp32[ESP32 firmware]
-        temp[DS18B20 probe]
-        humidity[SHT31/BME280 ambient sensor]
-        power[Battery, charger, fuel gauge, solar input]
-    end
-
-    subgraph Cloud[Gratheon services]
-        telemetry[telemetry-api]
-        graphql[graphql-router]
-        app[web-app dashboards and alerts]
-    end
-
-    frame --&gt; loadcell
-    stops --&gt; frame
-    loadcell -- low-level differential signal --&gt; hx711
-    hx711 --&gt; esp32
-    temp --&gt; esp32
-    humidity --&gt; esp32
-    power --&gt; esp32
-    esp32 -- HTTPS metrics --&gt; telemetry
-    app --&gt; graphql
-    graphql --&gt; telemetry
-</code></pre>
-<h2 id="current-approach-assessment">Current approach assessment</h2>
-<table>
-<thead>
-<tr>
-<th>Area</th>
-<th>Current state</th>
-<th>Gap</th>
-<th>Recommended change</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Documentation grouping</td>
-<td>Older docs had separate parent folders for product phases and BOM.</td>
-<td>Readers had to jump between layers for one build phase.</td>
-<td>Use phase-first folders: each phase contains its product description and bill of materials.</td>
-</tr>
-<tr>
-<td>Value proposition</td>
-<td>Docs say sensors support the <a href="/products/scales/">beehive scales</a> product.</td>
-<td>The page did not explain why a beekeeper should build it or what events it detects.</td>
-<td>Lead with “DIY hive scale + climate telemetry” and map metrics to beekeeper decisions.</td>
-</tr>
-<tr>
-<td>Bill of materials</td>
-<td>Existing BOM listed purchased parts and many research sensors together.</td>
-<td>It mixed lab, MVP, optional research sensors, mechanical prototype parts, and missing prices.</td>
-<td>Keep BOM per phase: <a href="/docs/beehive-sensors/phase-1-lab-validation/bill-of-materials/">Lab</a>, <a href="/docs/beehive-sensors/phase-2-field-mvp/bill-of-materials/">Field MVP</a>, <a href="/docs/beehive-sensors/phase-3-production-kit/bill-of-materials/">Production</a>.</td>
-</tr>
-<tr>
-<td>Electrical interfaces</td>
-<td>Parts were listed, but connection boundaries were implicit.</td>
-<td>Load-cell, 1-Wire, I2C, power, and service/debug connections need different treatment.</td>
-<td>Add per-phase interconnect maps, pin tables, connector choices, and wiring rules.</td>
-</tr>
-<tr>
-<td>Mechanical interfaces</td>
-<td>Scale frame was treated as a component.</td>
-<td>Weight accuracy depends on load path, side load, overload stops, cable protection, and calibration access.</td>
-<td>Treat the frame, load cell, top plate, stops, and cable routing as one mechanical subsystem.</td>
-</tr>
-<tr>
-<td>Chip choice</td>
-<td>ESP32 is listed as popular and cheap.</td>
-<td>No decision rule for WiFi vs LoRa vs cellular.</td>
-<td>Keep ESP32-WROOM/DevKit for <a href="/docs/beehive-sensors/phase-1-lab-validation/product-description/">Lab</a> and <a href="/docs/beehive-sensors/phase-2-field-mvp/product-description/">Field MVP</a>; add LoRa/cellular gateway as <a href="/docs/beehive-sensors/phase-3-production-kit/product-description/">Production</a> variants.</td>
-</tr>
-<tr>
-<td>Telemetry API</td>
-<td><code>telemetry-api</code> supports <code>temperatureCelsius</code>, <code>humidityPercent</code>, <code>weightKg</code>, timestamps, batching, and <code>dedupeKey</code>.</td>
-<td>Firmware/docs should consistently use the <code>/iot/v1/metrics</code> JSON contract; battery voltage is not yet represented.</td>
-<td>No backend blocker for MVP; add future <code>batteryVoltage</code>, <code>batteryPercent</code>, <code>rssi</code>, firmware, hardware, and calibration metadata.</td>
-</tr>
-<tr>
-<td>Power</td>
-<td>Firmware sleeps most of the time.</td>
-<td>Page had no battery budget, send interval guidance, or solar recommendation.</td>
-<td>Use 30-60 seconds in lab and 10-15 minutes in field, then size battery/solar from measured current.</td>
-</tr>
-<tr>
-<td>Product representation</td>
-<td>Page was engineering-only.</td>
-<td>It did not look like a phased product with install scope, cost, data examples, or next purchase/action.</td>
-<td>Use the three-phase roadmap and phase-specific BOM pages.</td>
-</tr>
-</tbody>
-</table>
-<h2 id="research-findings">Research findings</h2>
-<p>Local research notes and internet checks point to the same MVP order: <strong>weight + temperature/humidity first</strong>, then acoustic, CO2, air-quality, and tamper sensors later.</p>
-<ul>
-<li>A multisensor hive-monitoring platform measuring <strong>weight, sound, temperature, humidity, and CO2</strong> was shown to detect events such as swarming, theft, honey gathering, food shortage, and colony decline through sensor fusion (<a href="/research/papers/a-smart-sensor-based-measurement-system-for-advanced-bee-hive-monitoring/">A Smart Sensor-Based Measurement System for Advanced Bee Hive Monitoring</a>, DOI:10.3390/s20092726). For Gratheon, this validates the long-term multimodal direction, but not all sensors are needed on day one.</li>
-<li>A 2024 low-cost beehive monitoring review highlights temperature, humidity, hive weight, and sound as common practical modalities, while stressing that accuracy and beekeeper interpretation determine usefulness (<a href="/research/papers/advances-in-beehive-monitoring-systems-low-cost-integrating-sensor-technology-for-improved-apiculture-management/">Advances in Beehive Monitoring Systems: Low-Cost Integrating Sensor Technology for Improved Apiculture Management</a>, DOI:10.1051/e3sconf/202458904001).</li>
-<li>Energy-focused precision-beekeeping work confirms that offline field deployments must be designed around sleep cycles, radio duty cycle, and reduced edge processing rather than constant streaming (<a href="/research/papers/analysis-of-energy-consumption-in-a-precision-beekeeping-system/">Analysis of Energy Consumption in a Precision Beekeeping System</a>, arXiv:2010.14934).</li>
-<li>ESP8266/ESP32 + ESP-NOW + GSM/GPRS gateway research shows a cost-effective apiary topology where cheap hive nodes talk locally to a single internet gateway (<a href="/research/papers/bee-colony-remote-monitoring-based-on-iot-using-esp-now-protocol/">Bee colony remote monitoring based on IoT using ESP-NOW protocol</a>, DOI:10.7717/peerj-cs.1363). This is a good production architecture for apiaries without WiFi.</li>
-<li>Open DIY examples and component guides repeatedly use <strong>ESP32/ESP8266 + HX711 + load cell + DS18B20/DHT-style climate sensor</strong>, including public tutorials and open-source smart-scale projects. This reduces adoption risk because beekeepers can source parts and debug with common Arduino/ESP32 tooling.</li>
-<li>Outdoor sensor wiring should treat cable entry, strain relief, sealing, O-rings, and unused connector caps as part of the design, not as afterthoughts. For this reason, the production phase now has a connector strategy instead of a generic “waterproof connectors” line item.</li>
-</ul>
 <h2 id="services">Services</h2>
 <ul>
-<li><a href="https://github.com/Gratheon/hardware-beehive-sensors">https://github.com/Gratheon/hardware-beehive-sensors</a> - sensor firmware and hardware notes</li>
+<li><a href="https://github.com/Gratheon/beehive-sensors">https://github.com/Gratheon/beehive-sensors</a> - firmware and the 3D model</li>
 <li><a href="https://github.com/gratheon/telemetry-api">https://github.com/gratheon/telemetry-api</a> - server-side ingestion and querying</li>
 <li><a href="/docs/API/rest/telemetry-api/">Telemetry API docs</a> - service-owned OpenAPI documentation</li>
 </ul>
-<h2 id="current-service-architecture">Current service architecture</h2>
 <pre><code class="language-mermaid">flowchart LR
-    beehive-sensors[&lt;a href=&quot;https://github.com/Gratheon/hardware-beehive-sensors&quot;&gt;hardware-beehive-sensors&lt;/a&gt;] -.&quot;send metrics&quot;.-&gt; telemetry-api
+    beehive-sensors[&lt;a href=&quot;https://github.com/Gratheon/beehive-sensors&quot;&gt;beehive-sensors&lt;/a&gt;] -.&quot;send metrics&quot;.-&gt; telemetry-api
 
     telemetry-api --&quot;store sensor time series&quot; --&gt; mysql[(&lt;a href=&quot;https://github.com/Gratheon/mysql&quot;&gt;mysql&lt;/a&gt;)]
 
@@ -482,9 +246,5 @@ if (host) {
     web-app[&lt;a href=&quot;https://github.com/Gratheon/web-app&quot;&gt;web-app&lt;/a&gt;] --&quot;render telemetry charts&quot;--&gt; graphql-router[&lt;a href=&quot;https://github.com/Gratheon/graphql-router&quot;&gt;graphql-router&lt;/a&gt;]
     graphql-router --&quot;query metric history&quot;--&gt; telemetry-api
 </code></pre>
-<p><figure class="md-image">
-  <picture>
-    <source srcset="/assets/img/docs/beehive-sensors/img/352610409-b4ed305f-7ddd-44ff-b200-e0d139734349-thumbnail.webp 300w, /assets/img/docs/beehive-sensors/img/352610409-b4ed305f-7ddd-44ff-b200-e0d139734349-preview.webp 800w, /assets/img/docs/beehive-sensors/img/352610409-b4ed305f-7ddd-44ff-b200-e0d139734349-full.webp 1600w" sizes="(max-width: 768px) 100vw, 800px" type="image/webp">
-    <img src="/assets/img/docs/beehive-sensors/img/352610409-b4ed305f-7ddd-44ff-b200-e0d139734349-full.webp" alt="" loading="lazy" width="1600" height="1198">
-  </picture>
-</figure></p>
+
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/Ags3rplPkQE" title="Getting started with iot sensors development" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

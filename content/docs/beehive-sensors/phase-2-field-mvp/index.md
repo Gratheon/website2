@@ -1,4 +1,5 @@
 ---
+hideNav: true
 title: Phase 2 - Field MVP
 navTitle: Phase 2 - Field MVP
 order: 2

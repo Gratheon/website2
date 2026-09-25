@@ -1,4 +1,5 @@
 ---
+hideNav: true
 title: Product description
 order: 1
 sidebar_position: 1

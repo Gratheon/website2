@@ -1,4 +1,5 @@
 ---
+hideNav: true
 title: Bill of materials
 order: 2
 sidebar_position: 2

@@ -1,9 +1,13 @@
 ---
 title: Choice of processor chip
 hide_table_of_contents: true
+order: 8
+sidebar_position: 8
 ---
 
 The first Gratheon beehive sensor kit should optimize for DIY availability, simple firmware support, and enough power for HTTPS telemetry. That makes **ESP32-WROOM DevKit** the default MVP choice.
+
+**Production decision:** the Phase 3 pod uses an **ESP32-S3-MINI-1** module on a carrier PCB. It has enough GPIO for the LoRa option and the Robotic Beehive UART, native USB for factory flashing and BLE for phone setup. See the [product description](product-description.md#chip-and-connectivity-choice).
 
 ## Recommendation
 
