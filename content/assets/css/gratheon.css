@@ -1112,6 +1112,43 @@ html[data-theme='dark'] .founder-letter .future {
   text-transform: uppercase;
 }
 
+/* Product hero (heroModel): phase + TRL where "Product system" sat on other product pages. */
+.knowledge-product-status {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 14px;
+  margin: 0 0 16px;
+  font-size: 0.92rem;
+  line-height: 1.35;
+}
+
+.knowledge-product-status__phase {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  padding: 4px 14px;
+  border: 1px solid var(--knowledge-line);
+  border-radius: 999px;
+  background: var(--knowledge-soft);
+  color: var(--knowledge-ink);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.knowledge-product-status__trl,
+.knowledge-product-status__trl:visited {
+  color: var(--knowledge-muted);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--knowledge-muted) 45%, transparent);
+  text-underline-offset: 0.15em;
+}
+
+.knowledge-product-status__trl:hover {
+  color: var(--knowledge-ink);
+}
+
 .knowledge-hero h1 {
   margin: 0;
   color: var(--knowledge-ink);
@@ -3244,12 +3281,18 @@ html[data-theme='dark'] .knowledge-content .product-card--accent {
   font-size: clamp(2.2rem, 4.2vw, 4.6rem);
 }
 
-.knowledge-hero--model .knowledge-hero-lead {
-  max-width: 760px;
-  margin-top: clamp(16px, 2.2vw, 28px);
-  color: var(--knowledge-ink);
-  font-size: clamp(1rem, 1.2vw, 1.12rem);
-  line-height: 1.55;
+.knowledge-hero--model .knowledge-hero-lead.knowledge-standfirst {
+  margin-top: clamp(14px, 2vw, 24px);
+}
+
+.knowledge-hero--model .knowledge-hero-lead.knowledge-standfirst > .knowledge-standfirst {
+  margin: 0;
+}
+
+.knowledge-page-products:has(.knowledge-hero--model) .knowledge-content > h2:first-of-type {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
 }
 
 .knowledge-hero--model .knowledge-hero-lead > :first-child {

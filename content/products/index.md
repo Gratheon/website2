@@ -22,7 +22,7 @@ layout: products
 <p>Live video of the hive entrance. Counts bees in and out, tracks pollen flow, and detects robbing, hornets and varroa on bees.</p>
 </article>
 <article class="product-feature-card product-hardware-card">
-<a href="/products/robotic_beehive/"><img src="/assets/img/hive-tower.webp" alt="Hive Tower robotic beehive 3D model" /></a>
+<a href="/products/robotic_beehive/"><img src="/assets/img/hive-tower.webp" alt="Robotic Beehive 3D model" /></a>
 <span class="product-card-meta">Concept phase</span>
 <h3><a href="/products/robotic_beehive/">Robotic beehive</a></h3>
 <p>A cabinet that lifts frames one at a time and photographs both faces, without a beekeeper opening the hive. See the interactive 3D model.</p>

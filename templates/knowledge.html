@@ -215,6 +215,19 @@
     <section class="knowledge-hero{{if $isProductFeaturePage}} knowledge-hero--text-only{{end}}{{if $isPaperDetail}} knowledge-hero--paper-detail{{end}}{{if $heroModel}} knowledge-hero--model{{end}}" aria-labelledby="knowledge-title">
       <div class="knowledge-hero-copy">
         {{template "knowledge_breadcrumbs" .}}
+        {{if $heroModel}}
+        {{/* WHY: 3D product pages show TRL / phase where the generic "Product system" kicker was. */}}
+        {{with .Frontmatter.Params}}
+          {{ $productPhase := index . "productPhase" }}
+          {{ $productTrl := index . "productTrl" }}
+          {{if or $productPhase $productTrl}}
+        <p class="knowledge-product-status">
+          {{if $productPhase}}<span class="knowledge-product-status__phase">{{ $productPhase }}</span>{{end}}
+          {{if $productTrl}}<a class="knowledge-product-status__trl" href="https://www.nasa.gov/directorates/somd/space-communications-navigation-program/technology-readiness-levels/">TRL {{ $productTrl }}</a>{{end}}
+        </p>
+          {{end}}
+        {{end}}
+        {{else}}
         <p class="knowledge-eyebrow">
           {{if eq .Page.Layout "products"}}
             {{if eq .Page.Language "et"}}Tootesüsteem{{else}}Product system{{end}}
@@ -222,10 +235,11 @@
             {{if eq .Page.Language "et"}}Uurimiskogu{{else if eq .Page.Language "ru"}}Исследовательская база{{else if eq .Page.Language "zh"}}研究库{{else if eq .Page.Language "de"}}Forschungsbibliothek{{else if eq .Page.Language "es"}}Biblioteca de investigación{{else if eq .Page.Language "fr"}}Bibliothèque de recherche{{else if eq .Page.Language "ja"}}研究ライブラリ{{else if eq .Page.Language "hi"}}अनुसंधान पुस्तकालय{{else if eq .Page.Language "ar"}}مكتبة البحوث{{else if eq .Page.Language "pt"}}Biblioteca de pesquisa{{else if eq .Page.Language "it"}}Libreria di ricerca{{else if eq .Page.Language "ko"}}연구 라이브러리{{else}}Research library{{end}}
           {{end}}
         </p>
+        {{end}}
         <h1 id="knowledge-title">{{.Page.Title}}</h1>
         {{if $heroModel}}
         {{/* WHY: product intro stays in markdown for authoring; JS moves it here between the title and CTAs. */}}
-        <div class="knowledge-hero-lead" data-hero-model-lead></div>
+        <div class="knowledge-hero-lead knowledge-standfirst" data-hero-model-lead></div>
         {{end}}
         {{if not $heroModel}}
         <p class="knowledge-standfirst">
