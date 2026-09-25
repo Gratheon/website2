@@ -1030,6 +1030,14 @@ html[data-theme='dark'] .founder-letter .future {
   border-radius: 8px;
 }
 
+.front-page .front-section--join {
+  margin-top: 24px;
+}
+
+.front-page .founder-letter--cta {
+  margin: 0;
+}
+
 .front-page .brandStripe {
   display: flex;
 }

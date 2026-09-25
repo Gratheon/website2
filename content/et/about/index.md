@@ -29,27 +29,8 @@ Gratheon aitab mesinikel kaitsta mesilasi, mõista mesilaspere arengut ja laiend
     <p>Kui mesila kasvab, ei skaleeru see töö. Tööstuslikel mesinikel on mitu mesilat kaugetes ja raskesti ligipääsetavates kohtades. Olemasolevad lahendused ei lahenda neid probleeme piisavalt.</p>
     <p>💡 Meie eesmärk on aidata mesinikke jälgitavuse ja automatiseerimisega. Meie visioon on täielikult autonoomne mitme taruga robotmesila, mis saab peresid eemalt üle vaadata. Jõuame sinna samm-sammult, alustades tarkvarast.</p>
     <p>Tegevust võimaldavate mõõdikute ja automatiseerimisega muutuvad mesinikud tõhusamaks, veedavad vähem aega väljal ja analüüsivad rohkem, sekkudes täpselt siis, kui vaja.</p>
-    <div class="future">
-      <div>
-        <p>Gratheoni rakendus toetub open-source tarkvarale ja on ka ise täielikult open source.</p>
-        <p>Liitu meiega, et parandada 100 miljoni mesilaspere elu üle maailma ja katta kasvav tolmeldamise nõudlus. Otsime investoreid arenduse skaleerimiseks, insenere meeskonda, mesinikke välitestideks ja nõustajaid.</p>
-        <p>On ideid?</p>
-        <p class="futureActions">
-          <a class="action action_green" href="https://discord.gg/PcbP4uedWj">Räägi meile Discordis</a>
-          <a class="action blue" href="https://app.gratheon.com/account/register?lang=et">Registreeru</a>
-        </p>
-      </div>
-    </div>
   </article>
 </section>
-
-<iframe
-  class="authorIntro"
-  title="Autori tutvustus"
-  src="https://www.youtube.com/embed/gM3AJEAhmXc?rel=0"
-  frameborder="0"
-  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-  allowfullscreen></iframe>
 
 ## Lühitutvustus
 ### Probleem

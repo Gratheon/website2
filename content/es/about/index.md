@@ -30,27 +30,8 @@ Gratheon ayuda a apicultores a proteger abejas, comprender el desarrollo de colo
     <p>A medida que tu apiario crece, este trabajo se vuelve inescalable. Los apicultores industriales tienen múltiples apiarios en ubicaciones distantes que son difíciles de alcanzar. Las soluciones existentes no resuelven adecuadamente estos problemas.</p>
     <p>💡 Nuestro objetivo es ayudar a los apicultores con la observabilidad y automatización. Nuestra visión es una Colmena Robótica Multi-colonia totalmente autónoma que pueda inspeccionar colonias remotamente. Llegaremos a esto paso a paso, comenzando con un software.</p>
     <p>Al proporcionar métricas accionables y automatización, los apicultores se vuelven más eficientes, pasan menos tiempo en el campo y analizan más, haciendo intervenciones precisas solo cuando es necesario.</p>
-    <div class="future">
-      <div>
-        <p>La aplicación Gratheon está construida sobre los hombros de software open source y también es completamente open source.</p>
-        <p>Únete a nosotros para mejorar la vida de 100 millones de colonias de abejas en todo el mundo y satisfacer la demanda de polinización. Estamos buscando inversionistas para escalar nuestro desarrollo, ingenieros para unirse a nuestro equipo, apicultores para realizar pruebas en campo y asesores para guiarnos.</p>
-        <p>¿Tienes algunas ideas?</p>
-        <p class="futureActions">
-          <a class="action action_green" href="https://discord.gg/PcbP4uedWj">Cuéntanos en Discord</a>
-          <a class="action blue" href="https://app.gratheon.com/account/register?lang=es">Regístrate</a>
-        </p>
-      </div>
-    </div>
   </article>
 </section>
-
-<iframe
-  class="authorIntro"
-  title="Introducción del autor"
-  src="https://www.youtube.com/embed/gM3AJEAhmXc?rel=0"
-  frameborder="0"
-  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-  allowfullscreen></iframe>
 
 ## Elevator pitch
 ### Problema

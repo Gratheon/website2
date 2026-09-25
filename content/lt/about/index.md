@@ -29,27 +29,8 @@ Gratheon padeda bitininkams saugoti bites, suprasti kolonijos raidą ir mastinti
     <p>Kai jūsų aviliai auga, šis darbas tampa neapibrėžiamu. Pramoniniai bitininkai turi daugybę avilių nutolusiose vietose, kurios sunkiai pasiekiamos. Esami sprendimai nepakankamai išsprendžia šias problemas.</p>
     <p>💡 Mūsų tikslas – padėti bitininkams su stebėjimu ir automatizavimu. Mūsų vizija yra visiškai autonominė daugiaplušinė Robotic Apiary, kuri galėtų nuotoliniu būdu tikrinti kolonijas. Mes tai pasieksime žingsnis po žingsnio, pradėdami nuo programinės įrangos.</p>
     <p>Tiekiant veiksmingus metrikus ir automatizavimą, bitininkai tampa efektyvesni, praleidžia mažiau laiko lauke ir daugiau analizuoja, atlikdami tikslų intervenciją tik tada, kai reikia.</p>
-    <div class="future">
-      <div>
-        <p>Gratheon programėlė sukurta ant atvirojo kodo programinės įrangos pečių ir yra visiškai atviro kodo.</p>
-        <p>Prisijunkite prie mūsų, kad pagerintumėte 100 milijonų bitų kolonijų gyvenimą visame pasaulyje ir patenkintumėte vėžiavimo paklausą. Ieškome investuotojų plėsti mūsų vystymąsi, inžinierių prisijungti prie mūsų komandos, bitininkų atlikti lauko testavimą ir patarėjų mus vadovauti.</p>
-        <p>Turite idėjų?</p>
-        <p class="futureActions">
-          <a class="action action_green" href="https://discord.gg/PcbP4uedWj">Pasakykite mums Discord</a>
-          <a class="action blue" href="https://app.gratheon.com/account/register?lang=en">Užsiregistruoti</a>
-        </p>
-      </div>
-    </div>
   </article>
 </section>
-
-<iframe
-  class="authorIntro"
-  title="Autoriaus pristatymas"
-  src="https://www.youtube.com/embed/gM3AJEAhmXc?rel=0"
-  frameborder="0"
-  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-  allowfullscreen></iframe>
 
 ## Elevator pitch
 ### Problema

@@ -29,27 +29,8 @@ Gratheon helps beekeepers to protect bees, understand colony development, and sc
     <p>As your apiary grows, this work becomes unscalable. Industrial beekeepers have multiple apiaries at distant locations that are hard to reach. Existing solutions do not adequately solve these issues.</p>
     <p>💡 Our goal is to help beekeepers with observability and automation. Our vision is a fully autonomous multi-hive Robotic Apiary that can remotely inspect colonies. We will reach this step by step, starting with a software.</p>
     <p>By providing actionable metrics and automation, beekeepers become more efficient, spend less time in the field and analyze more, doing precise intervention only when needed.</p>
-    <div class="future">
-      <div>
-        <p>Gratheon app is built on the shoulders of open-source software and is fully open source too.</p>
-        <p>Join us to improve life of 100 million bee colonies worldwide and meet pollination demand for more. We're looking for investors to scale our development, engineers to join our team, beekeepers to run field testing and advisors to guide us.</p>
-        <p>Got some ideas?</p>
-        <p class="futureActions">
-          <a class="action action_green" href="https://discord.gg/PcbP4uedWj">Tell us in Discord</a>
-          <a class="action blue" href="https://app.gratheon.com/account/register?lang=en">Sign up</a>
-        </p>
-      </div>
-    </div>
   </article>
 </section>
-
-<iframe
-  class="authorIntro"
-  title="Author's introduction"
-  src="https://www.youtube.com/embed/gM3AJEAhmXc?rel=0"
-  frameborder="0"
-  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-  allowfullscreen></iframe>
 
 ## Elevator pitch
 ### Problem
