@@ -2164,12 +2164,28 @@ html[data-theme='dark'] .founder-letter .future {
 
 /* WHY: Research assets are the primary navigation cards requested above the research map.
    WHAT: style the lifted block and its inline SVG icons without adding external assets. */
+/* WHY: /research/ stacks template hero, asset cards, and map; default hero min-height left a large dead zone. */
+.knowledge-page-research:has(.research-assets-overview) .knowledge-hero {
+  margin-bottom: clamp(18px, 3vw, 36px);
+  padding-bottom: clamp(16px, 2.5vw, 32px);
+}
+
+.knowledge-page-research:has(.research-assets-overview) .knowledge-hero-copy {
+  min-height: 0;
+}
+
 .knowledge-page-research .research-assets-overview {
-  margin-bottom: clamp(42px, 6vw, 96px);
+  margin-bottom: clamp(22px, 3.5vw, 44px);
+}
+
+.knowledge-page-research:has(.research-assets-overview) .knowledge-map {
+  margin-bottom: clamp(28px, 4vw, 56px);
+  padding-top: clamp(14px, 2.5vw, 28px);
 }
 
 .knowledge-page-research .research-assets-overview h2 {
   margin-top: 0;
+  margin-bottom: clamp(16px, 2.5vw, 24px);
   padding-top: 0;
   border-top: 0;
 }
@@ -2642,15 +2658,27 @@ html[data-theme='dark'] .knowledge-content .research-source-card--primary {
   color: var(--brand-yellow, #ffd400);
   fill: none;
   stroke: currentColor;
-  stroke-width: 2.4;
+  stroke-width: 2.2;
   stroke-linecap: round;
   stroke-linejoin: round;
-  filter: drop-shadow(0 10px 18px rgba(255, 212, 0, 0.18));
+  filter: drop-shadow(0 8px 14px rgba(255, 212, 0, 0.2));
+}
+
+.knowledge-content .research-card-icon .research-card-icon__plate {
+  fill: color-mix(in srgb, var(--brand-yellow, #ffd400) 16%, transparent);
+  stroke: color-mix(in srgb, var(--brand-yellow, #ffd400) 42%, transparent);
+  stroke-width: 1.5;
 }
 
 .knowledge-content .research-card-icon path,
-.knowledge-content .research-card-icon circle {
+.knowledge-content .research-card-icon circle,
+.knowledge-content .research-card-icon ellipse,
+.knowledge-content .research-card-icon rect:not(.research-card-icon__plate) {
   vector-effect: non-scaling-stroke;
+}
+
+.knowledge-content .research-card-icon circle {
+  fill: color-mix(in srgb, var(--brand-yellow, #ffd400) 22%, transparent);
 }
 
 /* WHY: the stats row and highlighted papers row are promoted editorial blocks on the research landing page.
