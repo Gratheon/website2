@@ -11,7 +11,7 @@ The production kit on the [overview page](/docs/beehive-sensors/) grew out of tw
 | --- | --- | --- | ---: | --- |
 | Phase 1 - Lab | Firmware, wiring, calibration and telemetry ingestion on a desk | ESP32 DevKit, HX711 breakout, one load cell, DS18B20, USB power | €20-35 | [Overview](phase-1-lab-validation/), [product description](phase-1-lab-validation/product-description.md), [system overview](phase-1-lab-validation/system-overview.md), [BOM](phase-1-lab-validation/bill-of-materials.md), [bench wiring](/docs/beehive-sensors/lab-wiring/) |
 | Phase 2 - Field MVP | An outdoor DIY scale that a pilot beekeeper can install | DevKit + modules in an IP65 box, scale frame, 18650 battery shield, optional solar | €45-90 | [Overview](phase-2-field-mvp/), [product description](phase-2-field-mvp/product-description.md), [BOM](phase-2-field-mvp/bill-of-materials.md) |
-| Phase 3 - Production | A repeatable, supportable, sellable kit that also fits the Robotic Beehive | Carrier PCB with ESP32-S3, AP62AFB single-point cell, aluminium deck and base, IP67 pod | ≈ €140-220 | [Overview](/docs/beehive-sensors/), [product description](product-description.md), [BOM](bill-of-materials.md), [3D model](3d-model.md) |
+| Phase 3 - Production | A repeatable, supportable, sellable kit that also fits the Robotic Beehive | Carrier PCB with ESP32-S3, AP62AFB single-point cell, plywood and thermo-pine case, 3D-printed parts, IP67 pod | ≈ €150-250 | [Overview](/docs/beehive-sensors/), [product description](product-description.md), [BOM](bill-of-materials.md), [3D model](3d-model.md) |
 
 ## What carried over
 
