@@ -15,7 +15,7 @@ layout: products
 <p>Weight, temperature, humidity, CO2, pressure and sound, to correlate colony development with the environment. The most affordable and energy-efficient device.</p>
 </article>
 <article class="product-feature-card product-hardware-card">
-<a href="/products/entrance_observer/"><img src="/products/entrance_observer/img/entrance-observer-3d.png" alt="Gratheon Entrance Observer on a hive: an opal canopy over a 4K camera and a grey landing board with calibration markers, between two graphite side cheeks" /></a>
+<a href="/products/entrance_observer/"><img src="/products/entrance_observer/img/entrance-observer-3d.png" alt="Gratheon Entrance Observer on a hive: a slim arch with a small opal roof over the 4K camera head, graphite side arms and a grey landing board with calibration markers" /></a>
 <h3><a href="/products/entrance_observer/">Entrance Observer</a></h3>
 <p>Live video of the hive entrance. Counts bees in and out, tracks pollen flow, and detects robbing, hornets and varroa on bees.</p>
 </article>
