@@ -2149,6 +2149,14 @@ html[data-theme='dark'] .founder-letter .future {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+/* WHY: hardware cards on /products/ should read as a loose grid, not a bordered table.
+   WHAT: drop the 1px gap trick used on research stat grids. */
+.knowledge-content .product-feature-grid.product-hardware-grid {
+  gap: clamp(16px, 2.5vw, 28px);
+  background: transparent;
+  border: 0;
+}
+
 .knowledge-content .research-stat-card,
 .knowledge-content .research-card,
 .knowledge-content .research-highlight-card,
