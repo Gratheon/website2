@@ -830,6 +830,15 @@ html[data-theme='dark'] .page-content a {
   border-radius: 12px;
 }
 
+.front-page .deviceText h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.front-page .deviceText h3 a:hover {
+  text-decoration: underline;
+}
+
 .front-page .deviceImgs {
   display: flex;
   flex-wrap: wrap;
