@@ -2637,6 +2637,22 @@ html[data-theme='dark'] .knowledge-content .research-source-card--primary {
   align-items: center;
 }
 
+/* WHY: hardware cards on /products/ mix landscape photos and portrait renders.
+   WHAT: give every card image the same box so titles line up. */
+.knowledge-content .product-hardware-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  margin-bottom: 14px;
+  border-radius: 6px;
+  background: var(--knowledge-line);
+}
+
+.knowledge-content .product-hardware-card h3 {
+  margin: 6px 0 8px;
+}
+
 /* WHY: hero web-app screenshot sits on an accent-colored card; no frame keeps it clean. */
 .knowledge-content .product-web-app-showcase__grid img {
   width: 100%;

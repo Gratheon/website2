@@ -66,6 +66,31 @@ layout: products
 
 
 <section>
+<h2>Hardware products</h2>
+<p>Devices that collect data in the apiary and send it to the web app. All hardware is open source.</p>
+<div class="product-feature-grid product-hardware-grid">
+<article class="product-feature-card product-hardware-card">
+<a href="/products/scales/"><img src="/assets/img/sensors.webp" alt="Beehive sensors and scales" /></a>
+<span class="product-card-meta">Prototype phase</span>
+<h3><a href="/products/scales/">Beehive sensors</a></h3>
+<p>Weight, temperature, humidity, CO2, pressure and sound, to correlate colony development with the environment. The most affordable and energy-efficient device.</p>
+</article>
+<article class="product-feature-card product-hardware-card">
+<a href="/products/entrance_observer/"><img src="/assets/img/observer.webp" alt="Entrance Observer camera at a hive entrance" /></a>
+<span class="product-card-meta">MVP phase</span>
+<h3><a href="/products/entrance_observer/">Entrance Observer</a></h3>
+<p>Live video of the hive entrance. Counts bees in and out, tracks pollen flow, and detects robbing, hornets and varroa on bees.</p>
+</article>
+<article class="product-feature-card product-hardware-card">
+<a href="/products/robotic_beehive/"><img src="/assets/img/hive-tower.webp" alt="Hive Tower robotic beehive 3D model" /></a>
+<span class="product-card-meta">Concept phase</span>
+<h3><a href="/products/robotic_beehive/">Robotic beehive</a></h3>
+<p>A cabinet that lifts frames one at a time and photographs both faces, without a beekeeper opening the hive. See the interactive 3D model.</p>
+</article>
+</div>
+</section>
+
+<section>
 <h2>How the system fits together</h2>
 <div class="product-feature-grid">
 <article class="product-feature-card">
