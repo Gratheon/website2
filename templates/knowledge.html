@@ -223,6 +223,10 @@
           {{end}}
         </p>
         <h1 id="knowledge-title">{{.Page.Title}}</h1>
+        {{if $heroModel}}
+        {{/* WHY: product intro stays in markdown for authoring; JS moves it here between the title and CTAs. */}}
+        <div class="knowledge-hero-lead" data-hero-model-lead></div>
+        {{end}}
         {{if not $heroModel}}
         <p class="knowledge-standfirst">
           {{if and $isProductFeaturePage .MetaDescription}}
@@ -367,6 +371,20 @@
           return;
         }
         slot.insertBefore(viewer, slot.firstChild);
+
+        var leadSlot = document.querySelector('[data-hero-model-lead]');
+        var article = document.querySelector('.knowledge-main .knowledge-content');
+        if (leadSlot && article) {
+          while (article.firstChild) {
+            var node = article.firstChild;
+            if (node.nodeType === 1 && node.tagName === 'H2') break;
+            if (node.nodeType === 3 && !(node.textContent || '').trim()) {
+              article.removeChild(node);
+              continue;
+            }
+            leadSlot.appendChild(node);
+          }
+        }
 
         // Full screen shows the complete viewer (step list, controls, key
         // figures); the hero preview only shows the scene. Browsers without the

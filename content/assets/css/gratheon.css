@@ -3165,6 +3165,27 @@ html[data-theme='dark'] .knowledge-content .product-card--accent {
   font-size: clamp(2.2rem, 4.2vw, 4.6rem);
 }
 
+.knowledge-hero--model .knowledge-hero-lead {
+  max-width: 760px;
+  margin-top: clamp(16px, 2.2vw, 28px);
+  color: var(--knowledge-ink);
+  font-size: clamp(1rem, 1.2vw, 1.12rem);
+  line-height: 1.55;
+}
+
+.knowledge-hero--model .knowledge-hero-lead > :first-child {
+  margin-top: 0;
+}
+
+.knowledge-hero--model .knowledge-hero-lead > :last-child {
+  margin-bottom: 0;
+}
+
+.knowledge-hero--model .knowledge-hero-lead ul {
+  margin: 0.75em 0;
+  padding-left: 1.25em;
+}
+
 button.knowledge-action {
   font: inherit;
   font-weight: 800;
