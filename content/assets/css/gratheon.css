@@ -1698,6 +1698,121 @@ html[data-theme='dark'] .founder-letter .future {
   color: color-mix(in srgb, var(--knowledge-muted) 88%, var(--knowledge-ink));
 }
 
+/* WHY: hardware product pages list problems, clients, and idea links as emoji-prefixed anchors; a single column and default underlines (through icons) are hard to scan.
+   WHAT: two-column link grids without list markers, idea tables as grids, and target-client copy beside the hero photo. */
+.knowledge-page-products .knowledge-content .knowledge-product-link-grid,
+.knowledge-page-products .knowledge-content h3#problem-focus + p + ul,
+.knowledge-page-products .knowledge-content .knowledge-product-split__copy > ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px clamp(18px, 3vw, 32px);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-width: none;
+}
+
+.knowledge-page-products .knowledge-content .knowledge-product-link-grid > li,
+.knowledge-page-products .knowledge-content h3#problem-focus + p + ul > li,
+.knowledge-page-products .knowledge-content .knowledge-product-split__copy > ul > li {
+  margin: 0;
+}
+
+.knowledge-page-products .knowledge-content .knowledge-product-split {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, min(38vw, 360px));
+  gap: clamp(22px, 4vw, 48px);
+  align-items: start;
+  margin: 1em 0 0;
+}
+
+.knowledge-page-products .knowledge-content .knowledge-product-split__media {
+  min-width: 0;
+}
+
+.knowledge-page-products .knowledge-content .knowledge-product-split__media .md-image,
+.knowledge-page-products .knowledge-content .knowledge-product-split__media .md-image img {
+  margin: 0;
+}
+
+.knowledge-page-products .knowledge-content .knowledge-product-split__media > p {
+  margin-top: 12px;
+  color: var(--knowledge-muted);
+  font-size: 0.94rem;
+  line-height: 1.45;
+}
+
+.knowledge-page-products .knowledge-content h2#features + table {
+  display: block;
+  width: 100%;
+  max-width: none;
+  margin: clamp(18px, 2.5vw, 28px) 0 0;
+  border: 0;
+}
+
+.knowledge-page-products .knowledge-content h2#features + table thead {
+  display: none;
+}
+
+.knowledge-page-products .knowledge-content h2#features + table tbody {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px clamp(18px, 3vw, 32px);
+}
+
+.knowledge-page-products .knowledge-content h2#features + table tr {
+  display: block;
+}
+
+.knowledge-page-products .knowledge-content h2#features + table td {
+  display: block;
+  padding: 0;
+  border: 0;
+}
+
+.knowledge-page-products .knowledge-content .knowledge-product-link-grid a,
+.knowledge-page-products .knowledge-content .knowledge-product-link-grid a:visited,
+.knowledge-page-products .knowledge-content h3#problem-focus + p + ul a,
+.knowledge-page-products .knowledge-content h3#problem-focus + p + ul a:visited,
+.knowledge-page-products .knowledge-content .knowledge-product-split__copy a,
+.knowledge-page-products .knowledge-content .knowledge-product-split__copy a:visited,
+.knowledge-page-products .knowledge-content h2#features + table a,
+.knowledge-page-products .knowledge-content h2#features + table a:visited {
+  display: inline;
+  color: var(--knowledge-muted);
+  font-size: clamp(0.98rem, 1.08vw, 1.08rem);
+  line-height: 1.35;
+  text-decoration: none;
+}
+
+.knowledge-page-products .knowledge-content .knowledge-product-link-grid a:hover,
+.knowledge-page-products .knowledge-content .knowledge-product-link-grid a:focus-visible,
+.knowledge-page-products .knowledge-content h3#problem-focus + p + ul a:hover,
+.knowledge-page-products .knowledge-content h3#problem-focus + p + ul a:focus-visible,
+.knowledge-page-products .knowledge-content .knowledge-product-split__copy a:hover,
+.knowledge-page-products .knowledge-content .knowledge-product-split__copy a:focus-visible,
+.knowledge-page-products .knowledge-content h2#features + table a:hover,
+.knowledge-page-products .knowledge-content h2#features + table a:focus-visible {
+  color: black;
+  background: var(--brand-yellow);
+  box-shadow: 0 0 0 5px var(--brand-yellow);
+  outline: 0;
+  text-decoration: none;
+}
+
+@media (max-width: 760px) {
+  .knowledge-page-products .knowledge-content .knowledge-product-link-grid,
+  .knowledge-page-products .knowledge-content h3#problem-focus + p + ul,
+  .knowledge-page-products .knowledge-content .knowledge-product-split__copy > ul,
+  .knowledge-page-products .knowledge-content h2#features + table tbody {
+    grid-template-columns: 1fr;
+  }
+
+  .knowledge-page-products .knowledge-content .knowledge-product-split {
+    grid-template-columns: 1fr;
+  }
+}
+
 .knowledge-page-products .knowledge-web-app-tier-subhead {
   margin-top: 12px;
   padding-top: 14px;

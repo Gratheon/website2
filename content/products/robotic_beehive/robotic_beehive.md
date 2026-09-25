@@ -108,15 +108,27 @@ Out of all beekeeping issues, this product is helping with these:
 
 ### Target clients
 
+<div class="knowledge-product-split">
+
+<div class="knowledge-product-split__copy">
+
 A robotic inspection platform will cost (>2000 EUR) and its main value is in digitalization and organization of the apiary state. It might be too cumbersome for [👨🏻‍🚒 Industrial beekeepers](../../about/company/clients/👨🏻‍🚒%20Industrial%20beekeepers.md) or [🧑🏻‍🌾 Farmers](../../about/company/clients/🧑🏻‍🌾%20Farmers.md) and too hard for [👨🏻 Potential new beekeepers](../../about/company/clients/👨🏻%20Potential%20new%20beekeepers.md). But it does look viable for:
 
 - [👨🏻‍🚀 Semi-professional beekeepers](../../about/company/clients/👨🏻‍🚀%20Semi-professional%20beekeepers.md)
 - [👩🏼‍🏫 Urban beekeepers](../../about/company/clients/👩🏼‍🏫%20Urban%20beekeepers.md)
 - [👩🏻 Corporate Hive Sponsorship Program](../../about/company/clients/👩🏻%20Tech%20scale-up%20companies.md)
 
+</div>
+
+<div class="knowledge-product-split__media">
+
 ![](../../about/img/president.png)
 
 President Alar Karis harvesting honey from the Kadriorg Palace beehives. ([Photo: Office of the President](https://news.err.ee/1609070024/gallery-president-alar-karis-harvesting-honey-in-front-of-kadriorg-palace#lg=1&slide=1)) An example of potential complimentary brand
+
+</div>
+
+</div>
 
 ## Features
 <!-- QueryToSerialize: table WITHOUT ID "[" + default(title, file.name) + "]" + default( "("+  replace(replace(file.path, "products/robotic_beehive/", ""), " ", "%20") + ")", "") as title FROM "products/robotic_beehive/ideas" WHERE file.name != "index" -->
