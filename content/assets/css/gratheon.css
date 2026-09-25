@@ -756,8 +756,10 @@ html[data-theme='dark'] .page-content a {
   justify-content: center;
 }
 
+/* Condensed feature cards: shorter media block and tighter spacing so the
+   section takes less vertical space (7 features instead of 10). */
 .front-page .feature {
-  padding: 15px 20px;
+  padding: 12px 14px;
   box-sizing: border-box;
   flex-basis: calc(33.33333% - 5px);
   max-width: 400px;
@@ -767,11 +769,21 @@ html[data-theme='dark'] .page-content a {
   margin-top: -1px;
 }
 
+.front-page .feature h3 {
+  margin: 0 0 6px;
+}
+
+.front-page .feature p {
+  margin: 0 0 10px;
+}
+
 .front-page .feature img,
 .front-page .feature video {
-  max-width: 450px;
-  max-height: 450px;
   width: 100%;
+  height: 240px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
 }
 
 .front-page .device {
@@ -3130,5 +3142,137 @@ html[data-theme='dark'] .knowledge-content .product-card--accent {
 @media (max-width: 768px) {
   .page-layout-page .site-content {
     padding-inline: 16px;
+  }
+}
+
+/* Product hero with an interactive 3D model (frontmatter heroModel, e.g. the
+   robotic beehive). The text sits at the top of the hero and the model is a
+   compact scene-only preview; the full viewer panel appears in full screen. */
+.knowledge-hero--model {
+  align-items: start;
+  margin-bottom: clamp(28px, 4vw, 56px);
+  padding-bottom: clamp(24px, 3vw, 44px);
+}
+
+.knowledge-hero--model .knowledge-hero-copy {
+  justify-content: flex-start;
+  min-height: 0;
+}
+
+.knowledge-hero--model h1 {
+  max-width: none;
+  white-space: nowrap;
+  font-size: clamp(2.2rem, 4.2vw, 4.6rem);
+}
+
+button.knowledge-action {
+  font: inherit;
+  font-weight: 800;
+  background: transparent;
+  cursor: pointer;
+}
+
+button.knowledge-action--primary {
+  background: var(--knowledge-ink);
+  color: var(--knowledge-paper);
+}
+
+.knowledge-hero-model {
+  position: relative;
+  height: clamp(320px, 34vw, 440px);
+  border: 1px solid var(--knowledge-line);
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--knowledge-soft);
+}
+
+.knowledge-hero-model .hive-tower {
+  --ht-height: 100%;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: minmax(0, 1fr);
+  height: 100%;
+  border: 0;
+  border-radius: 0;
+}
+
+.knowledge-hero-model:not(.is-fullscreen) .hive-tower .ht-panel,
+.knowledge-hero-model:not(.is-fullscreen) .hive-tower .ht-info {
+  display: none;
+}
+
+.knowledge-hero-model__fullscreen {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border: 1px solid var(--knowledge-line);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--knowledge-paper) 90%, transparent);
+  color: var(--knowledge-ink);
+  font: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.knowledge-hero-model__fullscreen:hover,
+.knowledge-hero-model__fullscreen:focus-visible {
+  background: var(--brand-yellow);
+  color: black;
+}
+
+.knowledge-hero-model__fullscreen svg {
+  width: 16px;
+  height: 16px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+/* Keep the step chips clear of the full-screen button. */
+.knowledge-hero-model .hive-tower .ht-hint {
+  right: 150px;
+}
+
+.knowledge-hero-model.is-fullscreen {
+  height: 100vh;
+  height: 100dvh;
+  border: 0;
+  border-radius: 0;
+}
+
+.knowledge-hero-model.is-fullscreen .hive-tower {
+  grid-template-columns: minmax(0, 1fr) 360px;
+}
+
+.knowledge-hero-model.is-expanded {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+}
+
+html.hero-model-open {
+  overflow: hidden;
+}
+
+@media (max-width: 820px) {
+  .knowledge-hero-model.is-fullscreen .hive-tower {
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(0, 1fr) minmax(0, 45%);
+  }
+
+  .knowledge-hero-model.is-fullscreen .hive-tower .ht-panel {
+    overflow-y: auto;
+  }
+}
+
+@media (max-width: 420px) {
+  .knowledge-hero--model h1 {
+    white-space: normal;
   }
 }
