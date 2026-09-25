@@ -3250,6 +3250,11 @@ button.knowledge-action--primary {
   grid-template-columns: minmax(0, 1fr) 360px;
 }
 
+/* Keep the exit button over the scene, not over the viewer's side panel. */
+.knowledge-hero-model.is-fullscreen .knowledge-hero-model__fullscreen {
+  right: 374px;
+}
+
 .knowledge-hero-model.is-expanded {
   position: fixed;
   inset: 0;
@@ -3268,6 +3273,10 @@ html.hero-model-open {
 
   .knowledge-hero-model.is-fullscreen .hive-tower .ht-panel {
     overflow-y: auto;
+  }
+
+  .knowledge-hero-model.is-fullscreen .knowledge-hero-model__fullscreen {
+    right: 10px;
   }
 }
 

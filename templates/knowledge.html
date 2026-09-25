@@ -206,7 +206,13 @@
     {{ $isResearchPapersSubIndex := or (eq $researchPaperPath "scientific-publications/") (eq $researchPaperPath "topics/") (eq $researchPaperPath "years/") (eq $researchPaperPath "product-areas/") (eq $researchPaperPath "teams/") (eq $researchPaperPath "other-research-sources/") }}
     {{ $isResearchPapersTaxonomy := or (ne (trimPrefix $researchPaperPath "topics/") $researchPaperPath) (ne (trimPrefix $researchPaperPath "years/") $researchPaperPath) (ne (trimPrefix $researchPaperPath "product-areas/") $researchPaperPath) }}
     {{ $isPaperDetail := and $isResearchPaperPath (not $isResearchPapersIndex) (not $isResearchPapersSubIndex) (not $isResearchPapersTaxonomy) }}
-    <section class="knowledge-hero{{if $isProductFeaturePage}} knowledge-hero--text-only{{end}}{{if $isPaperDetail}} knowledge-hero--paper-detail{{end}}" aria-labelledby="knowledge-title">
+    {{/* WHY: product pages with an interactive 3D model (frontmatter heroModel)
+         show that model in the hero instead of the generic products picture;
+         the viewer block itself stays in the markdown and is moved up by JS. */}}
+    {{ $heroModel := "" }}
+    {{with .Frontmatter.Params}}{{with index . "heroModel"}}{{ $heroModel = . }}{{end}}{{end}}
+    {{ if or $isProductFeaturePage (ne .Page.Layout "products") }}{{ $heroModel = "" }}{{ end }}
+    <section class="knowledge-hero{{if $isProductFeaturePage}} knowledge-hero--text-only{{end}}{{if $isPaperDetail}} knowledge-hero--paper-detail{{end}}{{if $heroModel}} knowledge-hero--model{{end}}" aria-labelledby="knowledge-title">
       <div class="knowledge-hero-copy">
         {{template "knowledge_breadcrumbs" .}}
         <p class="knowledge-eyebrow">
@@ -217,6 +223,7 @@
           {{end}}
         </p>
         <h1 id="knowledge-title">{{.Page.Title}}</h1>
+        {{if not $heroModel}}
         <p class="knowledge-standfirst">
           {{if and $isProductFeaturePage .MetaDescription}}
             {{.MetaDescription}}
@@ -228,6 +235,7 @@
             {{if eq .Page.Language "et"}}Artiklid, andmestikud, mudelid ja välitöö märkmed on koondatud visuaalseks teadmiste kaardiks, mis säilitab kogu sügava struktuuri.{{else if eq .Page.Language "ru"}}Статьи, датасеты, модели и полевые заметки собраны в визуальную карту знаний, сохраняя глубокую структуру раздела.{{else if eq .Page.Language "zh"}}论文、数据集、模型和现场笔记被整合成一个用于数字养蜂的实用研究地图，涵盖从学术参考文献到应用的 Gratheon 实验。{{else if eq .Page.Language "de"}}Papiere, Datensätze, Modelle und Feldnotizen sind zu einer praktischen Forschungskarte für die digitale Imkerei verbunden, von akademischen Referenzen bis hin zu angewandten Gratheon-Experimenten.{{else if eq .Page.Language "es"}}Documentos, conjuntos de datos, modelos y notas de campo se conectan en un mapa de investigación práctico para la apicultura digital, desde referencias académicas hasta experimentos aplicados de Gratheon.{{else if eq .Page.Language "fr"}}Les articles, ensembles de données, modèles et notes de terrain sont reliés en une carte de recherche pratique pour l'apiculture numérique, des références académiques aux expériences appliquées de Gratheon.{{else if eq .Page.Language "ja"}}論文、データセット、モデル、フィールドノートは、学術的な参考文献から応用的なGratheonの実験まで、デジタル養蜂の実用的な研究マップに統合されています。{{else if eq .Page.Language "hi"}}कागजात, डेटासेट, मॉडल और फील्ड नोट्स डिजिटल मधुमक्खी पालन के लिए एक व्यावहारिक अनुसंधान मानचित्र में जुड़े हुए हैं, अकादमिक संदर्भों से लेकर लागू Gratheon प्रयोगों तक।{{else if eq .Page.Language "ar"}}يتم ربط الأوراق ومجموعات البيانات والنماذج والملاحظات الميدانية في خريطة بحثية عملية لتربية النحل الرقمية، من المراجع الأكاديمية إلى تجارب Gratheon التطبيقية.{{else if eq .Page.Language "pt"}}Artigos, conjuntos de dados, modelos e notas de campo estão conectados em um mapa de pesquisa prático para apicultura digital, desde referências acadêmicas até experimentos aplicados da Gratheon.{{else if eq .Page.Language "it"}}Documenti, set di dati, modelli e note sul campo sono collegati in una mappa di ricerca pratica per l'apicoltura digitale, dai riferimenti accademici agli esperimenti applicati di Gratheon.{{else if eq .Page.Language "ko"}}논문, 데이터 세트, 모델 및 현장 노트는 학술적 참고 자료부터 응용된 Gratheon 실험에 이르기까지 디지털 양봉을 위한 실용적인 연구 맵으로 연결됩니다.{{else}}Papers, datasets, models, and field notes are connected into a practical research map for digital beekeeping, from academic references to applied Gratheon experiments.{{end}}
           {{end}}
         </p>
+        {{end}}
         {{if not $isProductFeaturePage}}
         <div class="knowledge-actions">
           {{if $isPaperDetail}}
@@ -237,6 +245,9 @@
               <a class="knowledge-action knowledge-action--primary" href="{{.}}?v={{$pdfVersion}}">{{if eq $.Page.Language "ru"}}Скачать PDF{{else if eq $.Page.Language "et"}}Laadi PDF alla{{else}}Download PDF{{end}}</a>
               {{end}}
             {{end}}
+          {{else if $heroModel}}
+            <button type="button" class="knowledge-action knowledge-action--primary" data-hero-model-fullscreen>Open 3D model in full screen</button>
+            <a class="knowledge-action" href="mailto:pilot@gratheon.com?subject=Investing%20in%20Gratheon&body=Hi%20Gratheon%20team%2C%0A%0AI%20am%20interested%20in%20investing%20in%20Gratheon%20and%20the%20robotic%20beehive.%20Could%20we%20schedule%20a%20call%3F%0A%0A">Invest in Gratheon</a>
           {{else if eq .Page.Layout "products"}}
             {{if eq .Page.Language "et"}}
               <a class="knowledge-action knowledge-action--primary" href="/et/products/web_app/">Vaata veebirakendust</a>
@@ -290,7 +301,16 @@
         </div>
         {{end}}
       </div>
-      {{if and (not $isProductFeaturePage) (not $isPaperDetail)}}
+      {{if $heroModel}}
+      <div class="knowledge-hero-media">
+        <div class="knowledge-hero-model" data-hero-model-slot>
+          <button type="button" class="knowledge-hero-model__fullscreen" data-hero-model-fullscreen aria-label="Open 3D model in full screen">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5" /></svg>
+            <span data-hero-model-fullscreen-label>Full screen</span>
+          </button>
+        </div>
+      </div>
+      {{else if and (not $isProductFeaturePage) (not $isPaperDetail)}}
       <div class="knowledge-hero-media" aria-hidden="true">
         {{if eq .Page.Layout "products"}}
         <figure class="knowledge-visual knowledge-visual--products">
@@ -334,6 +354,59 @@
         {{if $isPaperDetail}}{{template "research_paper_pdf_preview" .}}{{end}}
         {{template "knowledge_article" .}}
       </section>
+      {{if $heroModel}}
+      <script>
+      // WHY: runs synchronously right after the article is parsed, before the
+      // deferred viewer bundle mounts, so the 3D model is lifted into the hero
+      // without a visible jump. Without JS the viewer simply stays in the article.
+      (function() {
+        var slot = document.querySelector('[data-hero-model-slot]');
+        var viewer = document.querySelector('.knowledge-main [data-hive-tower]');
+        if (!slot || !viewer) {
+          document.querySelectorAll('[data-hero-model-fullscreen]').forEach(function(el) { el.hidden = true; });
+          return;
+        }
+        slot.insertBefore(viewer, slot.firstChild);
+
+        // Full screen shows the complete viewer (step list, controls, key
+        // figures); the hero preview only shows the scene. Browsers without the
+        // element Fullscreen API (iOS Safari) get a fixed-overlay fallback.
+        var label = slot.querySelector('[data-hero-model-fullscreen-label]');
+        var isOpen = function() {
+          return document.fullscreenElement === slot || slot.classList.contains('is-expanded');
+        };
+        var sync = function() {
+          var open = isOpen();
+          slot.classList.toggle('is-fullscreen', open);
+          document.documentElement.classList.toggle('hero-model-open', slot.classList.contains('is-expanded'));
+          if (label) label.textContent = open ? 'Exit full screen' : 'Full screen';
+        };
+        var toggle = function() {
+          if (document.fullscreenElement === slot) {
+            document.exitFullscreen();
+          } else if (slot.classList.contains('is-expanded')) {
+            slot.classList.remove('is-expanded');
+            sync();
+          } else if (slot.requestFullscreen) {
+            slot.requestFullscreen().catch(function() {
+              slot.classList.add('is-expanded');
+              sync();
+            });
+          } else {
+            slot.classList.add('is-expanded');
+            sync();
+          }
+        };
+        document.querySelectorAll('[data-hero-model-fullscreen]').forEach(function(el) {
+          el.addEventListener('click', toggle);
+        });
+        document.addEventListener('fullscreenchange', sync);
+        document.addEventListener('keydown', function(event) {
+          if (event.key === 'Escape' && slot.classList.contains('is-expanded')) toggle();
+        });
+      })();
+      </script>
+      {{end}}
       {{if .TOC}}
       <aside class="knowledge-onpage">
         {{.TOC}}
