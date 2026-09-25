@@ -1568,26 +1568,29 @@ html[data-theme='dark'] .founder-letter .future {
   grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr));
 }
 
-.knowledge-page-products .knowledge-map--hardware-products .knowledge-map-product-card > .sidebar-submenu {
-  grid-template-columns: repeat(auto-fit, minmax(min(180px, 100%), 1fr));
-  align-items: start;
-}
-
-.knowledge-page-products .knowledge-map--hardware-products .knowledge-map-product-card > .sidebar-submenu > .sidebar-section {
+.knowledge-page-products .knowledge-map--hardware-products .knowledge-map-intro h2 {
+  max-width: none;
   margin-top: 0;
 }
 
-.knowledge-page-products .knowledge-map--hardware-products .knowledge-map-product-card > .sidebar-submenu > .sidebar-section > .sidebar-submenu {
-  margin-left: 0;
-  padding-left: 0;
-  border-left: 0;
+.knowledge-page-products .knowledge-map--hardware-products .knowledge-map-product-card > .sidebar-submenu {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+  align-items: start;
+  margin: 14px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.knowledge-page-products .knowledge-map--hardware-products .knowledge-map-product-card > .sidebar-submenu > .sidebar-item {
+  margin: 0;
 }
 
 .knowledge-page-products .knowledge-map-nav .knowledge-product-submenu-map > .sidebar-item {
-  max-height: min(56vh, 620px);
-  overflow: auto;
+  max-height: none;
+  overflow: visible;
   padding: 18px 20px;
-  scrollbar-width: thin;
 }
 
 .knowledge-page-products .knowledge-map--web-app-features {
@@ -2897,6 +2900,74 @@ html[data-theme='dark'] .knowledge-content .research-source-card--primary {
   line-height: 1.45;
 }
 
+/* WHY: the old 3-card grid read as a catalog. WHAT: one horizontal path with
+   numbered stops so Record → Observe → Decide feels like a user journey. */
+.knowledge-content .product-journey > h2 {
+  margin-bottom: clamp(18px, 2.5vw, 28px);
+}
+
+.knowledge-content .product-journey-track {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(18px, 2.4vw, 32px);
+  margin: clamp(8px, 1.5vw, 16px) 0 0;
+  padding: 0;
+  list-style: none;
+  max-width: none;
+}
+
+.knowledge-content .product-journey-track::before {
+  content: "";
+  position: absolute;
+  top: 21px;
+  left: calc(16.666% + 18px);
+  right: calc(16.666% + 18px);
+  height: 2px;
+  background: color-mix(in srgb, var(--knowledge-line) 70%, var(--accent, #2f8b0b));
+}
+
+.knowledge-content .product-journey-step {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  justify-items: start;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.knowledge-content .product-journey-index {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border: 2px solid var(--accent, #2f8b0b);
+  border-radius: 999px;
+  background: var(--knowledge-paper);
+  color: var(--accent, #2f8b0b);
+  font-size: 0.95rem;
+  font-weight: 850;
+  letter-spacing: 0;
+}
+
+.knowledge-content .product-journey-copy {
+  width: 100%;
+  min-width: 0;
+  padding: clamp(16px, 2vw, 24px);
+  border: 1px solid var(--knowledge-line);
+  background: var(--knowledge-paper);
+}
+
+.knowledge-content .product-journey-copy h3 {
+  margin: 8px 0 10px;
+}
+
+.knowledge-content .product-journey-copy p {
+  margin: 0;
+}
+
 .knowledge-content .product-card-grid--family {
   grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr));
 }
@@ -3065,8 +3136,18 @@ html[data-theme='dark'] .knowledge-content .product-card--accent {
   }
 
   .knowledge-content .product-web-app-showcase__grid,
-  .knowledge-content .product-tier-grid {
+  .knowledge-content .product-tier-grid,
+  .knowledge-content .product-journey-track {
     grid-template-columns: 1fr;
+  }
+
+  .knowledge-content .product-journey-track::before {
+    top: 0;
+    bottom: 0;
+    left: 20px;
+    right: auto;
+    width: 2px;
+    height: auto;
   }
 }
 .front-page .front-section {

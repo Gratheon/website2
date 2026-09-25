@@ -28,12 +28,33 @@ layout: products
 
 
 
-<section>
+<section class="product-journey">
 <h2>시스템이 함께 작동하는 방식</h2>
-<div class="product-feature-grid">
-<article class="product-feature-card"><span class="product-card-meta">01 · 기록</span><h3>양봉장을 모델링</h3><p>양봉장, 벌통, 상자, 소비, 점검, 처리, 여왕벌 이력을 이후 분석에 충분히 구조화하여 보관합니다.</p></article>
-<article class="product-feature-card"><span class="product-card-meta">02 · 관찰</span><h3>영상과 센서 신호 수집</h3><p>소비 사진, 바닥판 이미지, 입구 영상, 무게, 온도, 습도, 움직임 지표가 더 풍부한 봉군 상태를 만듭니다.</p></article>
-<article class="product-feature-card"><span class="product-card-meta">03 · 결정</span><h3>데이터를 행동으로 전환</h3><p>컴퓨터 비전, 시계열 분석, 알림, AI 제안이 점검, 처리, 급이, 분봉 또는 대기를 결정하는 데 도움을 줍니다.</p></article>
+<ol class="product-journey-track">
+<li class="product-journey-step">
+<span class="product-journey-index">1</span>
+<div class="product-journey-copy">
+<span class="product-card-meta">기록</span>
+<h3>양봉장을 모델링</h3>
+<p>양봉장, 벌통, 상자, 소비, 점검, 처리, 여왕벌 이력을 이후 분석에 충분히 구조화하여 보관합니다.</p>
 </div>
+</li>
+<li class="product-journey-step">
+<span class="product-journey-index">2</span>
+<div class="product-journey-copy">
+<span class="product-card-meta">관찰</span>
+<h3>영상과 센서 신호 수집</h3>
+<p>소비 사진, 바닥판 이미지, 입구 영상, 무게, 온도, 습도, 움직임 지표가 더 풍부한 봉군 상태를 만듭니다.</p>
+</div>
+</li>
+<li class="product-journey-step">
+<span class="product-journey-index">3</span>
+<div class="product-journey-copy">
+<span class="product-card-meta">결정</span>
+<h3>데이터를 행동으로 전환</h3>
+<p>컴퓨터 비전, 시계열 분석, 알림, AI 제안이 점검, 처리, 급이, 분봉 또는 대기를 결정하는 데 도움을 줍니다.</p>
+</div>
+</li>
+</ol>
 </section>
 </div>

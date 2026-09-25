@@ -65,24 +65,33 @@ layout: products
 
 
 
-<section>
+<section class="product-journey">
 <h2>Hoe het systeem samenwerkt</h2>
-<div class="product-feature-grid">
-<article class="product-feature-card">
-<span class="product-card-meta">01 · Vastleggen</span>
+<ol class="product-journey-track">
+<li class="product-journey-step">
+<span class="product-journey-index">1</span>
+<div class="product-journey-copy">
+<span class="product-card-meta">Vastleggen</span>
 <h3>Modelleer de bijenstand</h3>
 <p>Bewaar bijenstanden, kasten, bakken, ramen, inspecties, behandelingen en koninginnengeschiedenis gestructureerd genoeg voor latere analyse.</p>
-</article>
-<article class="product-feature-card">
-<span class="product-card-meta">02 · Observeren</span>
+</div>
+</li>
+<li class="product-journey-step">
+<span class="product-journey-index">2</span>
+<div class="product-journey-copy">
+<span class="product-card-meta">Observeren</span>
 <h3>Verzamel beeld- en sensorsignalen</h3>
 <p>Raamfoto's, beelden van bodemplanken, vliegopeningvideo, gewicht, temperatuur, luchtvochtigheid en bewegingsstatistieken vormen samen een rijker beeld van het volk.</p>
-</article>
-<article class="product-feature-card">
-<span class="product-card-meta">03 · Beslissen</span>
+</div>
+</li>
+<li class="product-journey-step">
+<span class="product-journey-index">3</span>
+<div class="product-journey-copy">
+<span class="product-card-meta">Beslissen</span>
 <h3>Zet data om in actie</h3>
 <p>Computervisie, tijdreeksanalyse, waarschuwingen en AI-suggesties helpen bepalen wanneer je moet inspecteren, behandelen, voeren, splitsen of wachten.</p>
-</article>
 </div>
+</li>
+</ol>
 </section>
 </div>

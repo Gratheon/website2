@@ -66,24 +66,33 @@ layout: products
 
 
 
-<section>
+<section class="product-journey">
 <h2>Kuidas süsteem kokku sobib</h2>
-<div class="product-feature-grid">
-<article class="product-feature-card">
-<span class="product-card-meta">01 · Salvesta</span>
+<ol class="product-journey-track">
+<li class="product-journey-step">
+<span class="product-journey-index">1</span>
+<div class="product-journey-copy">
+<span class="product-card-meta">Salvesta</span>
 <h3>Modelleeri mesila</h3>
 <p>Hoia mesilad, tarud, korpused, raamid, inspekteerimised, ravid ja mesilasema ajalugu piisavalt struktureerituna, et neid hiljem analüüsida.</p>
-</article>
-<article class="product-feature-card">
-<span class="product-card-meta">02 · Vaatle</span>
+</div>
+</li>
+<li class="product-journey-step">
+<span class="product-journey-index">2</span>
+<div class="product-journey-copy">
+<span class="product-card-meta">Vaatle</span>
 <h3>Kogu visuaalseid ja andurisignaale</h3>
 <p>Raamifotod, põhjalaua pildid, lennuava video, kaal, temperatuur, õhuniiskus ja liikumismõõdikud loovad mesilasperest rikkalikuma pildi.</p>
-</article>
-<article class="product-feature-card">
-<span class="product-card-meta">03 · Otsusta</span>
+</div>
+</li>
+<li class="product-journey-step">
+<span class="product-journey-index">3</span>
+<div class="product-journey-copy">
+<span class="product-card-meta">Otsusta</span>
 <h3>Muuda andmed tegevuseks</h3>
 <p>Arvutinägemine, aegridade analüütika, hoiatused ja tehisaru soovitused aitavad otsustada, millal kontrollida, ravida, sööta, peret jagada või oodata.</p>
-</article>
 </div>
+</li>
+</ol>
 </section>
 </div>

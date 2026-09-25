@@ -66,25 +66,34 @@ layout: products
 
 
 
-<section>
+<section class="product-journey">
 <h2>Comment le système s’assemble</h2>
-<div class="product-feature-grid">
-<article class="product-feature-card">
-<span class="product-card-meta">01 · Enregistrer</span>
+<ol class="product-journey-track">
+<li class="product-journey-step">
+<span class="product-journey-index">1</span>
+<div class="product-journey-copy">
+<span class="product-card-meta">Enregistrer</span>
 <h3>Modéliser le rucher</h3>
 <p>Conserver les ruchers, ruches, hausses, cadres, inspections, traitements et historiques de reines avec assez de structure pour les analyses futures.</p>
-</article>
-<article class="product-feature-card">
-<span class="product-card-meta">02 · Observer</span>
+</div>
+</li>
+<li class="product-journey-step">
+<span class="product-journey-index">2</span>
+<div class="product-journey-copy">
+<span class="product-card-meta">Observer</span>
 <h3>Collecter les signaux visuels et capteurs</h3>
 <p>Photos de cadres, images de plateaux de fond, vidéo d’entrée, poids, température, humidité et métriques de mouvement créent une image plus riche de la colonie.</p>
-</article>
-<article class="product-feature-card">
-<span class="product-card-meta">03 · Décider</span>
+</div>
+</li>
+<li class="product-journey-step">
+<span class="product-journey-index">3</span>
+<div class="product-journey-copy">
+<span class="product-card-meta">Décider</span>
 <h3>Transformer les données en actions</h3>
 <p>La vision par ordinateur, l’analyse de séries temporelles, les alertes et les suggestions d’IA aident à décider quand inspecter, traiter, nourrir, diviser ou attendre.</p>
-</article>
 </div>
+</li>
+</ol>
 </section>
 </div>
 

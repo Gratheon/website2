@@ -27,12 +27,33 @@ layout: products
 
 
 
-<section>
+<section class="product-journey">
 <h2>Wie das System zusammenpasst</h2>
-<div class="product-feature-grid">
-<article class="product-feature-card"><span class="product-card-meta">01 · Erfassen</span><h3>Den Bienenstand modellieren</h3><p>Bienenstände, Beuten, Zargen, Rähmchen, Durchsichten, Behandlungen und Königinnenhistorie strukturiert genug für spätere Analysen festhalten.</p></article>
-<article class="product-feature-card"><span class="product-card-meta">02 · Beobachten</span><h3>Bild- und Sensorsignale sammeln</h3><p>Rähmchenfotos, Bodeneinlagenbilder, Fluglochvideo, Gewicht, Temperatur, Luftfeuchtigkeit und Bewegungsmetriken ergeben ein vollständigeres Bild des Volkes.</p></article>
-<article class="product-feature-card"><span class="product-card-meta">03 · Entscheiden</span><h3>Daten in Handlungen übersetzen</h3><p>Computer Vision, Zeitreihenanalysen, Warnungen und KI-Vorschläge helfen zu entscheiden, wann kontrolliert, behandelt, gefüttert, geteilt oder abgewartet werden sollte.</p></article>
+<ol class="product-journey-track">
+<li class="product-journey-step">
+<span class="product-journey-index">1</span>
+<div class="product-journey-copy">
+<span class="product-card-meta">Erfassen</span>
+<h3>Den Bienenstand modellieren</h3>
+<p>Bienenstände, Beuten, Zargen, Rähmchen, Durchsichten, Behandlungen und Königinnenhistorie strukturiert genug für spätere Analysen festhalten.</p>
 </div>
+</li>
+<li class="product-journey-step">
+<span class="product-journey-index">2</span>
+<div class="product-journey-copy">
+<span class="product-card-meta">Beobachten</span>
+<h3>Bild- und Sensorsignale sammeln</h3>
+<p>Rähmchenfotos, Bodeneinlagenbilder, Fluglochvideo, Gewicht, Temperatur, Luftfeuchtigkeit und Bewegungsmetriken ergeben ein vollständigeres Bild des Volkes.</p>
+</div>
+</li>
+<li class="product-journey-step">
+<span class="product-journey-index">3</span>
+<div class="product-journey-copy">
+<span class="product-card-meta">Entscheiden</span>
+<h3>Daten in Handlungen übersetzen</h3>
+<p>Computer Vision, Zeitreihenanalysen, Warnungen und KI-Vorschläge helfen zu entscheiden, wann kontrolliert, behandelt, gefüttert, geteilt oder abgewartet werden sollte.</p>
+</div>
+</li>
+</ol>
 </section>
 </div>

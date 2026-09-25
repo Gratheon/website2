@@ -66,25 +66,34 @@ layout: products
 
 
 
-<section>
+<section class="product-journey">
 <h2>Cómo encaja el sistema</h2>
-<div class="product-feature-grid">
-<article class="product-feature-card">
-<span class="product-card-meta">01 · Registrar</span>
+<ol class="product-journey-track">
+<li class="product-journey-step">
+<span class="product-journey-index">1</span>
+<div class="product-journey-copy">
+<span class="product-card-meta">Registrar</span>
 <h3>Modelar el apiario</h3>
 <p>Mantén apiarios, colmenas, cajas, cuadros, inspecciones, tratamientos e historial de reinas con estructura suficiente para análisis posteriores.</p>
-</article>
-<article class="product-feature-card">
-<span class="product-card-meta">02 · Observar</span>
+</div>
+</li>
+<li class="product-journey-step">
+<span class="product-journey-index">2</span>
+<div class="product-journey-copy">
+<span class="product-card-meta">Observar</span>
 <h3>Recoger señales visuales y de sensores</h3>
 <p>Fotos de cuadros, imágenes de bandejas inferiores, vídeo de piquera, peso, temperatura, humedad y métricas de movimiento crean una imagen más rica de la colonia.</p>
-</article>
-<article class="product-feature-card">
-<span class="product-card-meta">03 · Decidir</span>
+</div>
+</li>
+<li class="product-journey-step">
+<span class="product-journey-index">3</span>
+<div class="product-journey-copy">
+<span class="product-card-meta">Decidir</span>
 <h3>Convertir datos en acción</h3>
 <p>La visión por computador, la analítica de series temporales, las alertas y las sugerencias de IA ayudan a decidir cuándo inspeccionar, tratar, alimentar, dividir o esperar.</p>
-</article>
 </div>
+</li>
+</ol>
 </section>
 </div>
 

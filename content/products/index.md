@@ -85,24 +85,33 @@ layout: products
 </div>
 </section>
 
-<section>
+<section class="product-journey">
 <h2>How the system fits together</h2>
-<div class="product-feature-grid">
-<article class="product-feature-card">
-<span class="product-card-meta">01 · Record</span>
+<ol class="product-journey-track">
+<li class="product-journey-step">
+<span class="product-journey-index">1</span>
+<div class="product-journey-copy">
+<span class="product-card-meta">Record</span>
 <h3>Model the apiary</h3>
 <p>Keep apiaries, hives, boxes, frames, inspections, treatments, and queen history structured enough for later analysis.</p>
-</article>
-<article class="product-feature-card">
-<span class="product-card-meta">02 · Observe</span>
+</div>
+</li>
+<li class="product-journey-step">
+<span class="product-journey-index">2</span>
+<div class="product-journey-copy">
+<span class="product-card-meta">Observe</span>
 <h3>Collect visual and sensor signals</h3>
 <p>Frame photos, bottom-board images, entrance video, weight, temperature, humidity, and movement metrics create a richer colony picture.</p>
-</article>
-<article class="product-feature-card">
-<span class="product-card-meta">03 · Decide</span>
+</div>
+</li>
+<li class="product-journey-step">
+<span class="product-journey-index">3</span>
+<div class="product-journey-copy">
+<span class="product-card-meta">Decide</span>
 <h3>Turn data into action</h3>
 <p>Computer vision, timeseries analytics, alerts, and AI suggestions help decide when to inspect, treat, feed, split, or wait.</p>
-</article>
 </div>
+</li>
+</ol>
 </section>
 </div>

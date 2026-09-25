@@ -241,19 +241,16 @@
       <div class="knowledge-hero-copy">
         {{template "knowledge_breadcrumbs" .}}
         {{if $hasProductStatus}}
-        {{/* WHY: flagship product pages show TRL / phase where the generic "Product system" kicker was. */}}
+        {{/* WHY: flagship product pages show TRL / phase in the hero. */}}
         <p class="knowledge-product-status">
           {{if $productPhase}}<span class="knowledge-product-status__phase">{{ $productPhase }}</span>{{end}}
           {{if $productTrl}}<a class="knowledge-product-status__trl" href="https://www.nasa.gov/directorates/somd/space-communications-navigation-program/technology-readiness-levels/">TRL {{ $productTrl }}</a>{{end}}
         </p>
-        {{/* WHY: research pages already have a large H1; the uppercase eyebrow duplicated the title without adding navigation value. */}}
-        {{else if and (not $heroProductDetail) (ne .Page.Layout "research")}}
+        {{/* WHY: products already have a large H1; "Product system" added no navigation value.
+             Research pages also skip the eyebrow because it duplicated the title. */}}
+        {{else if and (not $heroProductDetail) (ne .Page.Layout "research") (ne .Page.Layout "products")}}
         <p class="knowledge-eyebrow">
-          {{if eq .Page.Layout "products"}}
-            {{if eq .Page.Language "et"}}Tootesüsteem{{else}}Product system{{end}}
-          {{else}}
-            {{if eq .Page.Language "et"}}Uurimiskogu{{else if eq .Page.Language "ru"}}Исследовательская база{{else if eq .Page.Language "zh"}}研究库{{else if eq .Page.Language "de"}}Forschungsbibliothek{{else if eq .Page.Language "es"}}Biblioteca de investigación{{else if eq .Page.Language "fr"}}Bibliothèque de recherche{{else if eq .Page.Language "ja"}}研究ライブラリ{{else if eq .Page.Language "hi"}}अनुसंधान पुस्तकालय{{else if eq .Page.Language "ar"}}مكتبة البحوث{{else if eq .Page.Language "pt"}}Biblioteca de pesquisa{{else if eq .Page.Language "it"}}Libreria di ricerca{{else if eq .Page.Language "ko"}}연구 라이브러리{{else}}Research library{{end}}
-          {{end}}
+          {{if eq .Page.Language "et"}}Uurimiskogu{{else if eq .Page.Language "ru"}}Исследовательская база{{else if eq .Page.Language "zh"}}研究库{{else if eq .Page.Language "de"}}Forschungsbibliothek{{else if eq .Page.Language "es"}}Biblioteca de investigación{{else if eq .Page.Language "fr"}}Bibliothèque de recherche{{else if eq .Page.Language "ja"}}研究ライブラリ{{else if eq .Page.Language "hi"}}अनुसंधान पुस्तकालय{{else if eq .Page.Language "ar"}}مكتبة البحوث{{else if eq .Page.Language "pt"}}Biblioteca de pesquisa{{else if eq .Page.Language "it"}}Libreria di ricerca{{else if eq .Page.Language "ko"}}연구 라이브러리{{else}}Research library{{end}}
         </p>
         {{end}}
         <h1 id="knowledge-title">{{.Page.Title}}</h1>
@@ -616,9 +613,6 @@
     var productSections = productItems.filter(function(item) {
       return item.classList.contains('sidebar-section');
     });
-    var productLinks = productItems.filter(function(item) {
-      return !item.classList.contains('sidebar-section');
-    });
 
     if (!productSections.length) return;
 
@@ -636,9 +630,8 @@
       hardwareMapSection.classList.add('knowledge-map--hardware-products');
       var hardwareKicker = hardwareMapSection.querySelector('.knowledge-map-kicker');
       var hardwareHeading = hardwareMapSection.querySelector('.knowledge-map-intro h2');
-      if (hardwareKicker) {
-        hardwareKicker.textContent = document.documentElement.lang === 'et' ? 'Riistvaratooted' : 'Hardware product details';
-      }
+      // WHY: the uppercase kicker repeated the heading without adding a path.
+      if (hardwareKicker) hardwareKicker.remove();
       if (hardwareHeading) {
         hardwareHeading.textContent = document.documentElement.lang === 'et' ? 'Vaata tooteriistvara detaile' : 'Explore hardware product details';
       }
@@ -882,29 +875,25 @@
       rebuildWebAppCardByTier(webAppCard);
     }
 
-    if (productLinks.length) {
-      var overviewCard = document.createElement('li');
-      overviewCard.className = 'sidebar-item sidebar-section knowledge-map-product-overview';
-      var overviewHead = productsCard && productsCard.querySelector(':scope > .sidebar-section-head');
-      if (overviewHead) {
-        overviewCard.appendChild(overviewHead);
-      } else {
-        var generatedHead = document.createElement('div');
-        generatedHead.className = 'sidebar-section-head';
-        generatedHead.innerHTML = '<a href="' + (document.documentElement.lang === 'et' ? '/et/products/' : '/products/') + '">' + (document.documentElement.lang === 'et' ? 'Muud tootelehed' : 'Other product pages') + '</a>';
-        overviewCard.appendChild(generatedHead);
-      }
-
-      if (productLinks.length) {
-        var overviewList = document.createElement('ul');
-        overviewList.className = 'sidebar-submenu knowledge-map-product-links';
-        productLinks.forEach(function(item) {
-          overviewList.appendChild(item);
+    function flattenHardwareCard(item) {
+      var submenu = item.querySelector(':scope > .sidebar-submenu');
+      if (!submenu) return;
+      var leaves = [];
+      function collectLeaves(node) {
+        Array.prototype.slice.call(node.children).forEach(function(child) {
+          if (child.classList.contains('sidebar-section')) {
+            var nested = child.querySelector(':scope > .sidebar-submenu');
+            if (nested) collectLeaves(nested);
+            return;
+          }
+          leaves.push(child);
         });
-        overviewCard.appendChild(overviewList);
       }
-
-      hardwareProductsMap.appendChild(overviewCard);
+      collectLeaves(submenu);
+      submenu.replaceChildren();
+      leaves.forEach(function(leaf) {
+        submenu.appendChild(leaf);
+      });
     }
 
     productSections.forEach(function(item) {
@@ -912,6 +901,8 @@
       stripBacklogSections(item);
       // WHY: ideas-only products such as Robotic Apiary would otherwise remain
       // as empty title cards after backlog sections are removed.
+      if (!hasVisibleMapContent(item)) return;
+      flattenHardwareCard(item);
       if (!hasVisibleMapContent(item)) return;
       item.classList.add('knowledge-map-product-card');
       hardwareProductsMap.appendChild(item);

@@ -65,24 +65,33 @@ layout: products
 
 
 
-<section>
+<section class="product-journey">
 <h2>Как система работает вместе</h2>
-<div class="product-feature-grid">
-<article class="product-feature-card">
-<span class="product-card-meta">01 · Записать</span>
+<ol class="product-journey-track">
+<li class="product-journey-step">
+<span class="product-journey-index">1</span>
+<div class="product-journey-copy">
+<span class="product-card-meta">Записать</span>
 <h3>Моделируйте пчеловодство</h3>
 <p>Храните пчеловодства, ульи, коробки, рамки, осмотры, обработки и историю маток в структурированном виде для последующего анализа.</p>
-</article>
-<article class="product-feature-card">
-<span class="product-card-meta">02 · Наблюдать</span>
+</div>
+</li>
+<li class="product-journey-step">
+<span class="product-journey-index">2</span>
+<div class="product-journey-copy">
+<span class="product-card-meta">Наблюдать</span>
 <h3>Собирайте визуальные и сенсорные сигналы</h3>
 <p>Фотографии рамок, изображения с нижнего летка, видео входа, вес, температура, влажность и метрики движения создают более полную картину семьи.</p>
-</article>
-<article class="product-feature-card">
-<span class="product-card-meta">03 · Принимать решения</span>
+</div>
+</li>
+<li class="product-journey-step">
+<span class="product-journey-index">3</span>
+<div class="product-journey-copy">
+<span class="product-card-meta">Принимать решения</span>
 <h3>Превращайте данные в действия</h3>
 <p>Компьютерное зрение, анализ временных рядов, оповещения и предложения ИИ помогают решить, когда осматривать, обрабатывать, подкармливать, объединять или ждать.</p>
-</article>
 </div>
+</li>
+</ol>
 </section>
 </div>
