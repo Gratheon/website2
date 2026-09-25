@@ -5,6 +5,8 @@ layout: products
 productPhase: Prototype
 productTrl: "4"
 heroLead: true
+# WHY: scales page is long (3D viewer + photos); skip the footer product-map duplicate of sidebar nav.
+hideProductMap: true
 heroImage: /products/scales/img/beehive-scale-3d.png
 heroImageAlt: Gratheon beehive scale under a transparent hive, with the solar landing board in front of the entrance and the electronics pod flush in the wooden base
 ctaPrimaryText: Explore the code

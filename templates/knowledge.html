@@ -479,7 +479,11 @@
     </div>
 
     {{if eq .Page.Layout "products"}}
-      {{template "knowledge_map" .}}
+      {{ $hideProductMap := false }}
+      {{with .Frontmatter.Params}}{{with index . "hideProductMap"}}{{ $hideProductMap = . }}{{end}}{{end}}
+      {{if not $hideProductMap}}
+        {{template "knowledge_map" .}}
+      {{end}}
     {{end}}
   </main>
 
