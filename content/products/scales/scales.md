@@ -138,7 +138,8 @@ Out of all beekeeping issues, this product is helping with these:
 
 ### Prototype photos
 
+<div class="photo-grid" role="group" aria-label="Beehive scale prototype photos">
 ![](../../about/img/20240726_000022.webp)
 ![](img/20250119_131627.webp)
-
 ![](img/0.jpg)
+</div>

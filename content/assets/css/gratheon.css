@@ -2148,6 +2148,43 @@ html[data-theme='dark'] .founder-letter .future {
   border-radius: 0 !important;
 }
 
+/* WHY: product pages can stack several full-width photos and feel endless.
+   WHAT: grouped prototype shots render as a compact two-column gallery (kurapov.ee photo-grid). */
+.knowledge-content .photo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin: clamp(26px, 4vw, 48px) 0;
+  max-width: min(720px, 100%);
+}
+
+.knowledge-content .photo-grid .md-image {
+  margin: 0;
+  overflow: hidden;
+  background: var(--knowledge-soft);
+  aspect-ratio: 4 / 3;
+}
+
+.knowledge-content .photo-grid picture,
+.knowledge-content .photo-grid img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  margin: 0;
+}
+
+.knowledge-content .photo-grid img {
+  object-fit: cover;
+}
+
+@media (max-width: 640px) {
+  .knowledge-content .photo-grid {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+}
+
 .knowledge-content iframe,
 .knowledge-content object {
   width: 100%;
