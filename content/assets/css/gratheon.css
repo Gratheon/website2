@@ -42,6 +42,8 @@
   --bg-primary: #ffffff;
   --text-primary: #222;
   --text-secondary: #666;
+  --font-body: "Open Sans", "Segoe UI", Roboto, Arial, sans-serif;
+  --font-small: "IBM Plex Serif", Georgia, "Times New Roman", serif;
 }
 
 @font-face {
@@ -68,6 +70,30 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "IBM Plex Serif";
+  src: url("/assets/css/IBM_Plex_Serif/ibm-plex-serif-latin-400-normal.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IBM Plex Serif";
+  src: url("/assets/css/IBM_Plex_Serif/ibm-plex-serif-latin-400-italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IBM Plex Serif";
+  src: url("/assets/css/IBM_Plex_Serif/ibm-plex-serif-latin-600-normal.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -79,11 +105,16 @@ body {
 }
 
 body {
-  font-family: "Open Sans", "Segoe UI", Roboto, Arial, sans-serif;
+  font-family: var(--font-body);
   font-size: 105%;
   line-height: 1.2;
   color: #222;
   background: white;
+}
+
+/* WHY: body copy is serif for readability; UI chrome keeps sans via more specific rules. */
+p {
+  font-family: var(--font-small);
 }
 
 html[data-theme='dark'] {
@@ -615,6 +646,7 @@ html[data-theme='dark'] .page-content a {
   font-size: 25px;
   border-radius: 10px;
   font-weight: normal;
+  font-family: var(--font-body);
 }
 
 .front-page .signup {
