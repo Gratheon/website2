@@ -780,25 +780,57 @@ html[data-theme='dark'] .page-content a {
   background: white;
 }
 
-.front-page .features {
+.front-page .desktopDownloads {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
-  padding-left: 10px;
   justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin: 8px 0 28px;
 }
 
-/* Condensed feature cards: shorter media block and tighter spacing so the
-   section takes less vertical space (7 features instead of 10). */
+/* Column masonry: uneven card heights pack without empty row gaps. */
+.front-page .features {
+  column-count: 3;
+  column-gap: 16px;
+  padding: 0;
+}
+
 .front-page .feature {
-  padding: 12px 14px;
+  display: inline-block;
+  width: 100%;
+  max-width: none;
   box-sizing: border-box;
-  flex-basis: calc(33.33333% - 5px);
-  max-width: 400px;
+  margin: 0 0 16px;
+  padding: 16px 18px 18px;
   border: 1px solid #eee;
-  border-collapse: collapse;
-  margin-left: -1px;
-  margin-top: -1px;
+  border-radius: 12px;
+  break-inside: avoid;
+  page-break-inside: avoid;
+  color: inherit;
+  text-decoration: none;
+  background: #fff;
+  vertical-align: top;
+}
+
+.front-page a.feature {
+  color: inherit;
+  text-decoration: none;
+}
+
+.front-page a.feature:hover,
+.front-page a.feature:focus-visible {
+  /* WHY: global main a:hover paints a yellow background; cards should stay white. */
+  background: #fff;
+  color: inherit !important;
+  border-color: #c8c8c8;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.front-page .desktopDownloads a:hover,
+.front-page .platformDownloads a:hover {
+  background: transparent;
+  color: inherit !important;
 }
 
 .front-page .feature h3 {
@@ -806,13 +838,14 @@ html[data-theme='dark'] .page-content a {
 }
 
 .front-page .feature p {
-  margin: 0 0 10px;
+  margin: 0 0 12px;
 }
 
 .front-page .feature img,
 .front-page .feature video {
   width: 100%;
-  height: 240px;
+  height: auto;
+  max-height: 280px;
   object-fit: contain;
   display: block;
   margin: 0 auto;
@@ -3034,6 +3067,11 @@ html[data-theme='dark'] .knowledge-content .product-card--accent {
   padding: 0 20px;
 }
 
+.front-page .front-section--app {
+  /* WHY: must follow .front-section so the wider masonry grid actually wins. */
+  max-width: min(1680px, calc(100vw - 48px));
+}
+
 .front-page h2 {
   text-align: center;
 }
@@ -3062,6 +3100,8 @@ html[data-theme='dark'] .knowledge-content .product-card--accent {
   .gratheon-footer-badge {
     margin-left: 0;
   }
+
+  .front-page .features { column-count: 2; }
 }
 
 @media (max-width: 1024px) {
@@ -3073,7 +3113,6 @@ html[data-theme='dark'] .knowledge-content .product-card--accent {
 
 @media (max-width: 800px) {
   .front-page #bgVideo { height: 100%; width: auto; min-width: 100%; }
-  .front-page .feature { flex-basis: calc(50% - 5px); max-width: calc(50% - 5px); }
   .front-page .device { grid-template-columns: 1fr; }
 }
 
@@ -3108,7 +3147,7 @@ html[data-theme='dark'] .knowledge-content .product-card--accent {
     min-width: min(250px, 100%);
     white-space: normal;
   }
-  .front-page .feature { flex-basis: 100%; max-width: 100%; }
+  .front-page .features { column-count: 1; }
   .front-page .desktopDownloadIcon,
   .front-page .googlePlayBadge { height: 30px; }
 

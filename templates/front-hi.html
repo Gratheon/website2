@@ -16,9 +16,6 @@
             <a class="signup blue" href="https://app.gratheon.com/account/register?lang={{.Page.Language}}">मुफ़्त आज़माएँ</a>
             <div class="platformDownloads">
               <a href="https://play.google.com/store/apps/details?id=com.gratheon.app.twa"><img class="googlePlayBadge no-transform" height="50" src="/assets/img/google.png" alt="Google Play"></a>
-              <a href="https://github.com/Gratheon/web-app/releases/latest" data-latest-release="mac"><img class="desktopDownloadIcon no-transform" src="/assets/img/mac.png" alt="macOS ARM डाउनलोड करें"></a>
-              <a href="https://github.com/Gratheon/web-app/releases/latest" data-latest-release="windows"><img class="desktopDownloadIcon no-transform" src="/assets/img/windows-full.webp" alt="Windows डाउनलोड करें"></a>
-              <a href="https://github.com/Gratheon/web-app/releases/latest" data-latest-release="linux"><img class="desktopDownloadIcon no-transform" src="/assets/img/linux.png" alt="Linux डाउनलोड करें"></a>
             </div>
           </div>
         </div>
@@ -27,46 +24,49 @@
 
     <video id="showcase" autoplay loop muted playsinline src="https://gratheon.s3-accelerate.amazonaws.com/www/detection2.mov"></video>
 
-    <section class="front-section">
+    <section class="front-section front-section--app">
       <h2>ऐप कैसे काम करता है?</h2>
+      <div class="desktopDownloads">
+        <a href="https://github.com/Gratheon/web-app/releases/latest" data-latest-release="mac"><img class="desktopDownloadIcon no-transform" src="/assets/img/mac.png" alt="macOS ARM डाउनलोड करें"></a>
+        <a href="https://github.com/Gratheon/web-app/releases/latest" data-latest-release="windows"><img class="desktopDownloadIcon no-transform" src="/assets/img/windows-full.webp" alt="Windows डाउनलोड करें"></a>
+        <a href="https://github.com/Gratheon/web-app/releases/latest" data-latest-release="linux"><img class="desktopDownloadIcon no-transform" src="/assets/img/linux.png" alt="Linux डाउनलोड करें"></a>
+      </div>
       <div class="features">
-        <div class="feature">
+        <a class="feature" href="/products/web_app/free-tier/hive-management/">
           <h3>छत्तों का मॉडल बनाएँ</h3>
           <p>जब मैदान में कागज़ी नोट संभालना कठिन हो जाए, तब कहाँ और क्यों कार्रवाई करनी है यह याद रखने के लिए छत्तों का मॉडल बनाएँ।</p>
           <video autoplay loop muted playsinline src="https://gratheon.s3-accelerate.amazonaws.com/www/frame-management3.mov"></video>
-        </div>
-        <div class="feature">
+        </a>
+        <a class="feature" href="/products/web_app/hobbyist-tier/count-bees/">
           <h3>फ्रेम फ़ोटो अपलोड करें</h3>
           <p>फ्रेम की तस्वीरें लें और ऐप में अपलोड करें। Gratheon मधुमक्खियों का पता लगाकर उन्हें गिनता है ताकि कॉलोनी का आकार मापा जा सके।</p>
           <img src="/assets/img/count.webp" alt="Bee count detection">
-        </div>
-        <div class="feature">
+        </a>
+        <a class="feature" href="/products/web_app/free-tier/live-queen-finder/">
           <h3>Live Queen Finder</h3>
           <p>निरीक्षण के दौरान फ़ोन कैमरा इस्तेमाल करें और Gratheon को फ्रेम स्कैन करते समय रानी जैसी पहचानें दिखाने दें।</p>
-          <a href="/products/web_app/free-tier/live-queen-finder/">
-            <img src="/assets/img/blog/img/live-queen-finder-detection-preview.webp" alt="Live Queen Finder camera detection">
-          </a>
-        </div>
-        <div class="feature">
+          <img src="/assets/img/blog/img/live-queen-finder-detection-preview.webp" alt="Live Queen Finder camera detection">
+        </a>
+        <a class="feature" href="/products/web_app/hobbyist-tier/inspection-management/">
           <h3>निरीक्षण सहेजें</h3>
           <p>कॉलोनी के विकास को समय के साथ ट्रैक करें और बदलाव देखने के लिए उसी फ्रेम की तुलना करें।</p>
           <img src="/assets/img/inspections.webp" alt="Inspection history">
-        </div>
-        <div class="feature">
+        </a>
+        <a class="feature" href="/products/web_app/starter-tier/honeycomb-cell-detection-and-management/">
           <h3>संसाधनों का अनुमान लगाएँ</h3>
           <p>सेल पहचानें और संसाधन अनुपात का अनुमान लगाएँ। कॉलोनियों के बीच नेक्टर और पराग संतुलित करने से भूखमरी रोकी जा सकती है।</p>
           <img src="/assets/img/comb.webp" alt="Honeycomb cell analysis">
-        </div>
-        <div class="feature">
+        </a>
+        <a class="feature" href="/products/web_app/starter-tier/hive-bottom-varroa-count/">
           <h3>माइट संक्रमण मापें</h3>
           <p>अल्कोहल वॉश टेस्ट से मधुमक्खियों को मारे बिना वर्रोआ माइट्स का पता लगाएँ और गिनें।</p>
           <img src="/assets/img/varroa.webp" alt="Varroa detection">
-        </div>
-        <div class="feature">
+        </a>
+        <a class="feature" href="/products/web_app/free-tier/public-beehive-view/">
           <h3>साझा करें</h3>
           <p>छत्ता निरीक्षण मधुमक्खी पालन समुदाय के साथ साझा करें और विशेषज्ञ सलाह पाएँ।</p>
           <img src="/assets/img/sharing.webp" alt="Public hive sharing">
-        </div>
+        </a>
       </div>
     </section>
 
