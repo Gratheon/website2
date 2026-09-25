@@ -3,11 +3,17 @@ sidebar_position: 2
 title: 📱 Veebirakendus
 navTitle: Veebirakendus
 layout: products
+productTrl: "6"
+heroLead: true
+heroImage: /about/img/web-app.png
+heroImageAlt: Gratheoni veebirakenduse kasutajaliides mesila ja taru haldamiseks
+ctaPrimaryText: Vaata hindu
+ctaPrimaryHref: /et/pricing/
+ctaSecondaryText: Laadi alla töölauarakendus
+ctaSecondaryHref: https://github.com/Gratheon/web-app/releases/latest
 ---
 
-Gratheoni veebirakendus aitab mesinikel hallata [mesila andmeid](free-tier/apiary-management.md), suhelda paigaldatud modulaarsete taruseadmetega, analüüsida kärje- ja põhjalaua pilte, salvestada [aegridade telemeetriat](pro-tier/hive-telemetry-storage.md), luua [hoiatusi](flexible-tier/alerts.md), teha prognoose ning pakkuda tehisaru soovitusi probleemide lahendamiseks.
-
-`status`: [TRL 6](https://www.nasa.gov/directorates/somd/space-communications-navigation-program/technology-readiness-levels/)
+<p class="knowledge-standfirst">Gratheoni veebirakendus aitab mesinikel hallata <a href="free-tier/apiary-management.md">mesila andmeid</a>, suhelda paigaldatud modulaarsete taruseadmetega, analüüsida kärje- ja põhjalaua pilte, salvestada <a href="pro-tier/hive-telemetry-storage.md">aegridade telemeetriat</a>, luua <a href="flexible-tier/alerts.md">hoiatusi</a>, teha prognoose ning pakkuda tehisaru soovitusi probleemide lahendamiseks.</p>
 
 ## Põhivaldkonna olemid
 
@@ -30,8 +36,6 @@ Gratheoni veebirakendus aitab mesinikel hallata [mesila andmeid](free-tier/apiar
 | **Hoiatus** | Mõõdikulävede ja reeglite põhjal loodud teavitus. | Tekst, mõõdiku tüüp/väärtus, taru ID, kohaletoimetamise olek |
 | **Hoiatusreegel** | Kasutaja määratud tingimused hoiatuste käivitamiseks. | Mõõdik, tingimus, lävi, kestus, ulatus |
 | **Hoiatuskanal** | Hoiatuste kohaletoimetamise viis. | E-post, telefon, Telegram, webhook |
-
-![](../../../about/img/web-app.png)
 
 ## Peamised kasutusjuhud
 

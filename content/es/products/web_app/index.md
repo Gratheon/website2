@@ -3,11 +3,17 @@ sidebar_position: 2
 title: 📱 Aplicación web
 navTitle: Aplicación web
 layout: products
+productTrl: "6"
+heroLead: true
+heroImage: /about/img/web-app.png
+heroImageAlt: Interfaz de la aplicación web Gratheon para gestionar apiarios y colmenas
+ctaPrimaryText: Comparar planes
+ctaPrimaryHref: /es/pricing/
+ctaSecondaryText: Descargar aplicación de escritorio
+ctaSecondaryHref: https://github.com/Gratheon/web-app/releases/latest
 ---
 
-La aplicación web de Gratheon ayuda a los apicultores a gestionar [datos del apiario](/es/products/web_app/free-tier/apiary-management/), comunicarse con dispositivos modulares instalados en las colmenas, analizar imágenes de cuadros y fondos sanitarios, guardar [telemetría de series temporales](/es/products/web_app/pro-tier/hive-telemetry-storage/), generar [alertas](/es/products/web_app/flexible-tier/alerts/), hacer previsiones y recibir sugerencias de IA para resolver problemas.
-
-`status`: [TRL 6](https://www.nasa.gov/directorates/somd/space-communications-navigation-program/technology-readiness-levels/)
+<p class="knowledge-standfirst">La aplicación web de Gratheon ayuda a los apicultores a gestionar <a href="/es/products/web_app/free-tier/apiary-management/">datos del apiario</a>, comunicarse con dispositivos modulares instalados en las colmenas, analizar imágenes de cuadros y fondos sanitarios, guardar <a href="/es/products/web_app/pro-tier/hive-telemetry-storage/">telemetría de series temporales</a>, generar <a href="/es/products/web_app/flexible-tier/alerts/">alertas</a>, hacer previsiones y recibir sugerencias de IA para resolver problemas.</p>
 
 ## Entidades principales del dominio
 
@@ -30,8 +36,6 @@ La aplicación web de Gratheon ayuda a los apicultores a gestionar [datos del ap
 | **Alerta** | Avisos generados según umbrales y reglas de métricas. | Texto, tipo/valor de métrica, ID de colmena, estado de entrega, marca de tiempo |
 | **Regla de alerta** | Condiciones definidas por el usuario que disparan alertas. | Tipo de métrica, condición, umbral, duración, estado activo, alcance (colmena/apiario) |
 | **Canal de alerta** | Métodos de entrega de alertas. | Tipo (email/teléfono/Telegram), contacto, ventana horaria, estado activo |
-
-![](/about/img/web-app.png)
 
 ## Casos de uso principales
 Un caso de uso agrupa funciones que juntas aportan más valor al cliente.

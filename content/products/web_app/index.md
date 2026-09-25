@@ -2,11 +2,17 @@
 sidebar_position: 2
 title: 📱Web-app
 layout: products
+productTrl: "6"
+heroLead: true
+heroImage: /about/img/web-app.png
+heroImageAlt: Gratheon web app interface showing apiary and hive management
+ctaPrimaryText: Compare plans
+ctaPrimaryHref: /pricing/
+ctaSecondaryText: Download desktop app
+ctaSecondaryHref: https://github.com/Gratheon/web-app/releases/latest
 ---
 
-Gratheon web app is intended to help beekeepers manage [apiary data](free-tier/apiary-management.md), communicate with installed modular hive devices, analyze frame and bottom-board images, store [timeseries telemetry](pro-tier/hive-telemetry-storage.md), generate [alerts](flexible-tier/alerts.md), forecast, and provide AI suggestions to solve issues.
-
-`status`: [TRL 6](https://www.nasa.gov/directorates/somd/space-communications-navigation-program/technology-readiness-levels/)
+<p class="knowledge-standfirst">Gratheon web app is intended to help beekeepers manage <a href="free-tier/apiary-management.md">apiary data</a>, communicate with installed modular hive devices, analyze frame and bottom-board images, store <a href="pro-tier/hive-telemetry-storage.md">timeseries telemetry</a>, generate <a href="flexible-tier/alerts.md">alerts</a>, forecast, and provide AI suggestions to solve issues.</p>
 
 ## Core domain entities
 
@@ -29,8 +35,6 @@ Gratheon web app is intended to help beekeepers manage [apiary data](free-tier/a
 | **Alert** | Generated warnings based on metric thresholds and rules | Text, metric type/value, hive ID, delivery status, timestamp |
 | **Alert Rule** | User-defined conditions that trigger alerts | Metric type, condition, threshold, duration, enabled status, scope (hive/apiary) |
 | **Alert Channel** | Delivery methods for alerts | Type (email/phone/telegram), contact info, time window, enabled status |
-
-![](../../about/img/web-app.png)
 
 ## Main app use cases
 Use-cases is a group of features that when combined serve a great value for the customer
