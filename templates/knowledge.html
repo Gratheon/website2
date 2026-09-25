@@ -210,24 +210,41 @@
          show that model in the hero instead of the generic products picture;
          the viewer block itself stays in the markdown and is moved up by JS. */}}
     {{ $heroModel := "" }}
-    {{with .Frontmatter.Params}}{{with index . "heroModel"}}{{ $heroModel = . }}{{end}}{{end}}
-    {{ if or $isProductFeaturePage (ne .Page.Layout "products") }}{{ $heroModel = "" }}{{ end }}
-    <section class="knowledge-hero{{if $isProductFeaturePage}} knowledge-hero--text-only{{end}}{{if $isPaperDetail}} knowledge-hero--paper-detail{{end}}{{if $heroModel}} knowledge-hero--model{{end}}" aria-labelledby="knowledge-title">
+    {{ $productPhase := "" }}
+    {{ $productTrl := "" }}
+    {{ $heroLead := false }}
+    {{ $productHeroImage := "" }}
+    {{ $productHeroImageAlt := "" }}
+    {{ $ctaPrimaryText := "" }}
+    {{ $ctaPrimaryHref := "" }}
+    {{ $ctaSecondaryText := "" }}
+    {{ $ctaSecondaryHref := "" }}
+    {{with .Frontmatter.Params}}
+      {{with index . "heroModel"}}{{ $heroModel = . }}{{end}}
+      {{with index . "productPhase"}}{{ $productPhase = . }}{{end}}
+      {{with index . "productTrl"}}{{ $productTrl = . }}{{end}}
+      {{with index . "heroLead"}}{{ $heroLead = . }}{{end}}
+      {{with index . "heroImage"}}{{ $productHeroImage = . }}{{end}}
+      {{with index . "heroImageAlt"}}{{ $productHeroImageAlt = . }}{{end}}
+      {{with index . "ctaPrimaryText"}}{{ $ctaPrimaryText = . }}{{end}}
+      {{with index . "ctaPrimaryHref"}}{{ $ctaPrimaryHref = . }}{{end}}
+      {{with index . "ctaSecondaryText"}}{{ $ctaSecondaryText = . }}{{end}}
+      {{with index . "ctaSecondaryHref"}}{{ $ctaSecondaryHref = . }}{{end}}
+    {{end}}
+    {{ if or $isProductFeaturePage (ne .Page.Layout "products") }}{{ $heroModel = "" }}{{ $heroLead = false }}{{ end }}
+    {{ if $heroModel }}{{ $heroLead = true }}{{ end }}
+    {{ $hasProductStatus := or $productPhase $productTrl }}
+    {{ $heroProductDetail := or $heroModel $heroLead }}
+    <section class="knowledge-hero{{if $isProductFeaturePage}} knowledge-hero--text-only{{end}}{{if $isPaperDetail}} knowledge-hero--paper-detail{{end}}{{if $heroProductDetail}} knowledge-hero--model{{end}}" aria-labelledby="knowledge-title">
       <div class="knowledge-hero-copy">
         {{template "knowledge_breadcrumbs" .}}
-        {{if $heroModel}}
-        {{/* WHY: 3D product pages show TRL / phase where the generic "Product system" kicker was. */}}
-        {{with .Frontmatter.Params}}
-          {{ $productPhase := index . "productPhase" }}
-          {{ $productTrl := index . "productTrl" }}
-          {{if or $productPhase $productTrl}}
+        {{if $hasProductStatus}}
+        {{/* WHY: flagship product pages show TRL / phase where the generic "Product system" kicker was. */}}
         <p class="knowledge-product-status">
           {{if $productPhase}}<span class="knowledge-product-status__phase">{{ $productPhase }}</span>{{end}}
           {{if $productTrl}}<a class="knowledge-product-status__trl" href="https://www.nasa.gov/directorates/somd/space-communications-navigation-program/technology-readiness-levels/">TRL {{ $productTrl }}</a>{{end}}
         </p>
-          {{end}}
-        {{end}}
-        {{else}}
+        {{else if not $heroProductDetail}}
         <p class="knowledge-eyebrow">
           {{if eq .Page.Layout "products"}}
             {{if eq .Page.Language "et"}}Tootesüsteem{{else}}Product system{{end}}
@@ -237,11 +254,11 @@
         </p>
         {{end}}
         <h1 id="knowledge-title">{{.Page.Title}}</h1>
-        {{if $heroModel}}
+        {{if $heroLead}}
         {{/* WHY: product intro stays in markdown for authoring; JS moves it here between the title and CTAs. */}}
         <div class="knowledge-hero-lead knowledge-standfirst" data-hero-model-lead></div>
         {{end}}
-        {{if not $heroModel}}
+        {{if not $heroProductDetail}}
         <p class="knowledge-standfirst">
           {{if and $isProductFeaturePage .MetaDescription}}
             {{.MetaDescription}}
@@ -267,7 +284,12 @@
             <button type="button" class="knowledge-action knowledge-action--primary" data-hero-model-fullscreen>Open 3D model in full screen</button>
             <a class="knowledge-action" href="mailto:pilot@gratheon.com?subject=Investing%20in%20Gratheon&body=Hi%20Gratheon%20team%2C%0A%0AI%20am%20interested%20in%20investing%20in%20Gratheon%20and%20the%20robotic%20beehive.%20Could%20we%20schedule%20a%20call%3F%0A%0A">Invest in Gratheon</a>
           {{else if eq .Page.Layout "products"}}
-            {{if eq .Page.Language "et"}}
+            {{if and $ctaPrimaryHref $ctaPrimaryText}}
+              <a class="knowledge-action knowledge-action--primary" href="{{$ctaPrimaryHref}}">{{$ctaPrimaryText}}</a>
+              {{if and $ctaSecondaryHref $ctaSecondaryText}}
+              <a class="knowledge-action" href="{{$ctaSecondaryHref}}">{{$ctaSecondaryText}}</a>
+              {{end}}
+            {{else if eq .Page.Language "et"}}
               <a class="knowledge-action knowledge-action--primary" href="/et/products/web_app/">Vaata veebirakendust</a>
               <a class="knowledge-action" href="/et/pricing/">Hinnad</a>
             {{else}}
@@ -331,8 +353,10 @@
       {{else if and (not $isProductFeaturePage) (not $isPaperDetail)}}
       <div class="knowledge-hero-media" aria-hidden="true">
         {{if eq .Page.Layout "products"}}
+        {{ $productsHeroImage := "/assets/img/products.png" }}
+        {{if $productHeroImage}}{{ $productsHeroImage = $productHeroImage }}{{end}}
         <figure class="knowledge-visual knowledge-visual--products">
-          <img src="/assets/img/products.png" alt="" loading="eager">
+          <img class="{{if $productHeroImage}}no-transform{{end}}" src="{{$productsHeroImage}}" alt="{{$productHeroImageAlt}}" loading="eager">
         </figure>
         {{else}}
         {{ $researchHeroImage := "/assets/img/research.webp" }}
@@ -372,7 +396,7 @@
         {{if $isPaperDetail}}{{template "research_paper_pdf_preview" .}}{{end}}
         {{template "knowledge_article" .}}
       </section>
-      {{if $heroModel}}
+      {{if $heroLead}}
       <script>
       // WHY: runs synchronously right after the article is parsed, before the
       // deferred viewer bundle mounts, so the 3D model is lifted into the hero
@@ -380,14 +404,15 @@
       (function() {
         var slot = document.querySelector('[data-hero-model-slot]');
         var viewer = document.querySelector('.knowledge-main [data-hive-tower]');
-        if (!slot || !viewer) {
+        if (slot && viewer) {
+          slot.insertBefore(viewer, slot.firstChild);
+        } else {
           document.querySelectorAll('[data-hero-model-fullscreen]').forEach(function(el) { el.hidden = true; });
-          return;
         }
-        slot.insertBefore(viewer, slot.firstChild);
 
         var leadSlot = document.querySelector('[data-hero-model-lead]');
         var article = document.querySelector('.knowledge-main .knowledge-content');
+        var hoistUntilH2 = !!slot;
         if (leadSlot && article) {
           while (article.firstChild) {
             var node = article.firstChild;
@@ -396,9 +421,16 @@
               article.removeChild(node);
               continue;
             }
+            if (!hoistUntilH2) {
+              if (node.nodeType === 1 && node.classList && node.classList.contains('knowledge-standfirst')) {
+                leadSlot.appendChild(node);
+              }
+              break;
+            }
             leadSlot.appendChild(node);
           }
         }
+        if (!slot || !viewer) return;
 
         // Full screen shows the complete viewer (step list, controls, key
         // figures); the hero preview only shows the scene. Browsers without the

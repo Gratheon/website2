@@ -2,16 +2,18 @@
 sidebar_position: 4
 title: 👁️‍🗨️ Entrance Observer
 layout: products
+productPhase: Alpha
+productTrl: "5"
+heroLead: true
+heroImage: /products/entrance_observer/img/Screenshot%202025-10-22%20at%2020.43.55.png
+heroImageAlt: Entrance Observer camera at a hive entrance
+ctaPrimaryText: Explore the code
+ctaPrimaryHref: https://github.com/Gratheon/entrance-observer/
+ctaSecondaryText: Invest in Gratheon
+ctaSecondaryHref: mailto:pilot@gratheon.com?subject=Investing%20in%20Gratheon&body=Hi%20Gratheon%20team%2C%0A%0AI%20am%20interested%20in%20investing%20in%20Gratheon%20and%20Entrance%20Observer.%20Could%20we%20schedule%20a%20call%3F%0A%0A
 ---
 
-`status: alpha`, [TRL 5](https://www.nasa.gov/directorates/somd/space-communications-navigation-program/technology-readiness-levels/)
-
-💡 Entrance Observer is a set of cameras and a hardware devices that analyze beehive entrance. It records a video stream, runs AI analysis that sends metrics and videos to our [web app](../web_app/index.md) for preview and alerts.
-
-
-![](img/Screenshot%202025-10-22%20at%2020.43.55.png)
-
-Check and install our [open source code of **entrance-observer**](https://github.com/Gratheon/entrance-observer/)
+<p class="knowledge-standfirst">💡 <strong>Entrance Observer</strong> is a set of cameras and hardware devices that analyze the beehive entrance. It records a video stream, runs AI analysis that sends metrics and videos to our <a href="../web_app/index.md">web app</a> for preview and alerts.</p>
 
 For implementation details, see the [Entrance Observer engineering docs](../../docs/entrance-observer/entrance-observer.md). The metrics it produces are stored through [hive telemetry storage](../web_app/pro-tier/hive-telemetry-storage.md) and can feed [alerts](../web_app/flexible-tier/alerts.md).
 
