@@ -124,7 +124,7 @@ A robotic inspection platform will cost (>2000 EUR) and its main value is in dig
 
 ![](../../about/img/president.png)
 
-President Alar Karis harvesting honey from the Kadriorg Palace beehives. ([Photo: Office of the President](https://news.err.ee/1609070024/gallery-president-alar-karis-harvesting-honey-in-front-of-kadriorg-palace#lg=1&slide=1)) An example of potential complimentary brand
+President Alar Karis harvesting honey from the Kadriorg Palace beehives. ([Photo: Office of the President](https://news.err.ee/1609070024/gallery-president-alar-karis-harvesting-honey-in-front-of-kadriorg-palace#lg=1&slide=1)) An example of a complementary brand partnership.
 
 </div>
 
@@ -149,23 +149,23 @@ President Alar Karis harvesting honey from the Kadriorg Palace beehives. ([Photo
 - [🦾 Moveable hive bottom with varroa counting](ideas/🦾%20Moveable%20hive%20bottom%20with%20varroa%20counting.md)
 - [🦾 Robotic frame reordering](ideas/🦾%20Robotic%20frame%20reordering.md)
 - [🦾 Robotic insertion of new frames](ideas/🦾%20Robotic%20insertion%20of%20new%20frames.md)
-- [🦾Robotic frame isolation & extraction](ideas/🦾Robotic%20frame%20isolation%20&%20extraction.md)
+- [🦾 Robotic frame isolation & extraction](ideas/🦾Robotic%20frame%20isolation%20&%20extraction.md)
 - [🧪 Automatic acid treatment against varroa](ideas/🧪%20Automatic%20acid%20treatment%20against%20varroa.md)
 
 ## Non-functional requirements
 
-Extraction should happen without disturbing the bees, exposing them to elements or risking people around.
+Frame extraction must not disturb the colony, expose bees to weather, or put people nearby at risk.
 
-- able to adjust to frame size and hive section size of customer’s choice (Langstroth, Farrar, National etc)
-- should not harm human operator - @Regulations and Compliance (ex. breaking hands)
-- not kill 🐝 bees [squashing with moving mechanisms, cause hypothermia, open to stealing or attacks via cracks]
-- be able to extract frame if bees glued it with wax
-- not 🔥 ignite from overheating, sun, electrical wiring etc. Beewax is highly flammable
-- move frame that is full of honey (4kg)
-- be repairable (modular, hot-swappable)
-- be offline-first. Provide data to beekeeper without internet or cloud account
-- provide manual on-site control over frame movement
-- fallback to safe mode on power loss
+- Support common frame and hive section sizes (Langstroth, Farrar, National, and others)
+- Protect the beekeeper and bystanders from pinch, crush, and entrapment hazards
+- Protect bees: no crushing in mechanisms, no prolonged cold exposure, no theft paths through gaps
+- Pull frames even when bees have propolised them shut
+- Avoid fire risk from overheating, sun load, or faulty wiring (beeswax is highly flammable)
+- Lift a full honey frame (about 4 kg)
+- Stay repairable with modular, hot-swappable parts
+- Work offline-first: readings and media available without internet or a cloud account
+- Allow manual on-site control of frame movement
+- Fall back to a safe mechanical state on power loss
 
 ## Concept and next steps
 
