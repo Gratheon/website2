@@ -1,4 +1,5 @@
 ---
+hideNav: true
 title: Bill of materials
 order: 2
 sidebar_position: 2
@@ -24,7 +25,7 @@ The field MVP BOM is the first outdoor kit. It should be weatherproof, battery-p
 | --- | --- | --- | ---: | ---: | --- | --- |
 | Required | Microcontroller | ESP32 DevKit / ESP32-WROOM-32 board | 1 | €4-10 | [Existing AliExpress ESP32](../components/ESP32.md), [Espressif ESP32-DevKitC at DigiKey](https://www.digikey.com/en/products/detail/espressif-systems/ESP32-DEVKITC-32E/12091810), [ESP32-DevKitC at Mouser](https://www.mouser.com/ProductDetail/Espressif-Systems/ESP32-DevKitC-32E) | Same board as lab keeps support simple. |
 | Required | Weight ADC | HX711 breakout | 1-4 | €1-16 | [SparkFun HX711 breakout](https://www.sparkfun.com/products/13879), [Adafruit HX711 breakout](https://www.adafruit.com/product/5974), [Existing HX711/bar-cell notes](../components/HX711-bar.md) | Use one HX711 per independent load-cell channel. |
-| Required | Load cell option A | 100-200 kg single-point load cell | 1 | €12-35 | [Alibaba industrial load-cell examples](../phase-3-production-kit/bill-of-materials.md#supplier-examples-to-compare), [Amazon single-point load-cell search](https://www.amazon.de/s?k=200kg+single+point+load+cell), [AliExpress load-cell search](https://www.aliexpress.com/wholesale?SearchText=200kg+single+point+load+cell) | Best for simpler mechanics if the frame transfers load correctly. |
+| Required | Load cell option A | 100-200 kg single-point load cell | 1 | €12-35 | [Alibaba industrial load-cell examples](../bill-of-materials.md#supplier-examples-to-compare), [Amazon single-point load-cell search](https://www.amazon.de/s?k=200kg+single+point+load+cell), [AliExpress load-cell search](https://www.aliexpress.com/wholesale?SearchText=200kg+single+point+load+cell) | Best for simpler mechanics if the frame transfers load correctly. |
 | Required | Load cell option B | 50 kg bar load cells | 4 | €8-25 total | [Existing 50 kg bar load cells](../components/HX711-bar.md), [Amazon HX711 4-load-cell kit search](https://www.amazon.de/s?k=HX711+4+load+cell+kit), [AliExpress 50 kg load-cell search](https://www.aliexpress.com/wholesale?SearchText=50kg+load+cell+HX711) | Easier to source, harder to make mechanically repeatable. |
 | Required | Internal temperature | Waterproof DS18B20 probe | 1 | €2-10 | [Existing AliExpress DS18B20](../components/DS18B20.md), [Adafruit waterproof DS18B20](https://www.adafruit.com/product/381), [Amazon DS18B20 search](https://www.amazon.de/s?k=DS18B20+waterproof) | Place near brood-area edge or under cover without disturbing colony. |
 | Required | Ambient humidity/temperature | SHT31, SHTC3, or BME280 module | 1 | €3-15 | [Adafruit SHT31-D breakout](https://www.adafruit.com/product/2857), [SparkFun Qwiic SHTC3](https://www.sparkfun.com/products/16467), [Adafruit BME280 breakout](https://www.adafruit.com/product/2652) | Prefer SHT31/SHTC3 over DHT-style sensors for field reliability. |

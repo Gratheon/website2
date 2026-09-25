@@ -1,5 +1,7 @@
 ---
-sidebar_position: 1
+sidebar_position: 4
+title: Installation
+order: 4
 ---
 
 ### Setting up Arduino IDE for firmware upload

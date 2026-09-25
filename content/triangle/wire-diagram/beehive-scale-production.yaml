@@ -1,0 +1,263 @@
+version: 1
+title: Beehive scale pod wiring
+description: Phase 3 production kit · ESP32-S3 carrier PCB, 18650 pack, M8 field connectors
+notes:
+  - Everything left of the M8 sockets is on the carrier PCB. Field parts (load cell, hive probe, solar panel) plug into the pod through sealed M8 connectors.
+  - The 18650 cells are wired in parallel (1S). Ship 2 or 4 cells; slots without a cell stay empty. Never mix old and new cells.
+  - The TPS22917 load switch powers the HX711, load-cell excitation and DS18B20 only while measuring (about 0.6 s every 10 minutes). Drive IO4, IO5 and IO6 low or as inputs while it is off, so the ESP32 does not back-power the sensors.
+  - SHT40 and MAX17048 share the always-on I2C bus (IO8 SDA, IO9 SCL, 10 kΩ pull-ups to 3.3 V on the PCB). Both idle below 1 µA.
+  - In the Robotic Beehive the solar port takes the robot's fused 5 V rail instead of a panel. The pod then also drives the watchdog relay and talks to the Jetson over UART (IO43/IO44, not shown).
+  - The optional SX1262 LoRa module (SPI on IO33–IO37, BUSY IO13, DIO1 IO14, RST IO21) is not shown; it is not fitted on the Wi-Fi SKU.
+  - Pin choices avoid ESP32-S3 strapping pins (IO0, IO3, IO45, IO46) and the USB pins (IO19, IO20), which go to the factory pogo pads.
+groups:
+  - { id: power, label: POWER, color: '#5c9fb5' }
+  - { id: control, label: CONTROLLER, color: '#d2a454' }
+  - { id: weight, label: WEIGHT CHAIN, color: '#64a888' }
+  - { id: climate, label: CLIMATE, color: '#b681a5' }
+  - { id: service, label: SERVICE, color: '#8a8f98' }
+components:
+  - id: solar
+    label: Solar panel 6 V 1 W · M8 3-pin
+    kind: power
+    group: power
+    dimensions: [40, 4, 30]
+    position: [-150, 2, -40]
+    schematic: [40, 60]
+    pins:
+      - { id: V+, label: 'SOLAR+ · pin 1', side: right, voltage: 6 }
+      - { id: GND, label: 'SOLAR− · pin 3', side: right, voltage: 0 }
+    notes: Keyed M8 A-coded plug. The BQ24074 accepts 4.35–6.4 V; a 6 V panel is the maximum.
+  - id: cells
+    label: 18650 pack · 1S2P–1S4P
+    kind: power
+    group: power
+    dimensions: [70, 20, 82]
+    position: [-150, 10, 60]
+    schematic: [40, 300]
+    properties: { chemistry: 'Li-ion 18650, 2500 mAh each', configuration: 'all cells in parallel', thermistor: '10 kΩ NTC B3435' }
+    pins:
+      - { id: BAT+, label: 'BAT+ · 3.0–4.2 V', side: right, voltage: 3.7 }
+      - { id: NTC, side: right }
+      - { id: BAT-, label: 'BAT−', side: right, voltage: 0 }
+  - id: charger
+    label: BQ24074 charger + power path
+    kind: board
+    group: power
+    dimensions: [12, 2, 12]
+    position: [-80, 3, -20]
+    schematic: [330, 60]
+    pins:
+      - { id: IN, side: left, voltage: 6 }
+      - { id: BAT, side: left, voltage: 3.7 }
+      - { id: TS, side: left }
+      - { id: GND, side: left, voltage: 0 }
+      - { id: OUT, label: 'OUT · system rail', side: right, voltage: 4.2 }
+      - { id: CHG, label: 'CHG (open drain)', side: right }
+      - { id: PGOOD, label: 'PGOOD (open drain)', side: right }
+    notes: Blocks charging outside 0–45 °C via TS. Charge current 500 mA (ISET), input current limit 500 mA.
+  - id: gauge
+    label: MAX17048 fuel gauge
+    kind: board
+    group: power
+    dimensions: [8, 2, 8]
+    position: [-80, 3, 30]
+    schematic: [330, 330]
+    pins:
+      - { id: CELL, side: left, voltage: 3.7 }
+      - { id: GND, side: left, voltage: 0 }
+      - { id: SDA, side: right }
+      - { id: SCL, side: right }
+    notes: Powered straight from the cell. Hibernates automatically at low current (about 3 µA).
+  - id: buck
+    label: TPS62840 3.3 V buck
+    kind: board
+    group: power
+    dimensions: [8, 2, 8]
+    position: [-40, 3, -20]
+    schematic: [330, 500]
+    pins:
+      - { id: VIN, side: left, voltage: 4.2 }
+      - { id: GND, side: left, voltage: 0 }
+      - { id: VOUT, label: '3V3 · 750 mA', side: right, voltage: 3.3 }
+    notes: 60 nA quiescent current, 100 % mode when the cell falls towards 3.3 V. Firmware stops uploads below 3.4 V.
+  - id: esp
+    label: ESP32-S3-MINI-1 module
+    kind: board
+    group: control
+    dimensions: [15.4, 2.4, 20.5]
+    position: [0, 3, 0]
+    schematic: [640, 60]
+    properties: { flash: '8 MB', radio: 'Wi-Fi 2.4 GHz + BLE 5', deepSleep: 'about 8 µA' }
+    pins:
+      - { id: 3V3, label: '3V3', side: left, voltage: 3.3 }
+      - { id: GND, side: left, voltage: 0 }
+      - { id: IO10, label: 'IO10 · CHG', side: left }
+      - { id: IO11, label: 'IO11 · PGOOD', side: left }
+      - { id: IO8, label: 'IO8 · SDA', side: left }
+      - { id: IO9, label: 'IO9 · SCL', side: left }
+      - { id: IO7, label: 'IO7 · SENS_EN', side: right }
+      - { id: IO4, label: 'IO4 · HX DOUT', side: right }
+      - { id: IO5, label: 'IO5 · HX SCK', side: right }
+      - { id: IO6, label: 'IO6 · 1-Wire', side: right }
+      - { id: IO1, label: 'IO1 · reed wake', side: right }
+      - { id: IO12, label: 'IO12 · LED', side: right }
+      - { id: IO19, label: 'IO19 · USB D−', side: right }
+      - { id: IO20, label: 'IO20 · USB D+', side: right }
+    notes: Pin map differs from the Phase 1 DevKit bench (HX711 on GPIO 19/21, DS18B20 on GPIO 4). Firmware selects the map by hardware revision.
+  - id: loadsw
+    label: TPS22917 sensor load switch
+    kind: board
+    group: weight
+    dimensions: [6, 1, 6]
+    position: [40, 3, -30]
+    schematic: [960, 40]
+    pins:
+      - { id: VIN, side: left, voltage: 3.3 }
+      - { id: ON, side: left }
+      - { id: VOUT, label: '3V3_SW', side: right, voltage: 3.3 }
+  - id: hx
+    label: HX711 ADC (on PCB)
+    kind: hx711
+    group: weight
+    dimensions: [33, 2, 21]
+    position: [60, 3, 0]
+    schematic: [960, 220]
+    pins:
+      - { id: VCC, side: left, voltage: 3.3 }
+      - { id: DT, side: left }
+      - { id: SCK, side: left }
+      - { id: GND, side: left, voltage: 0 }
+      - { id: E+, side: right }
+      - { id: E-, side: right }
+      - { id: A+, side: right }
+      - { id: A-, side: right }
+    notes: Gain 128, 10 Hz. 16 samples are averaged per reading.
+  - id: lc
+    label: AP62AFB load cell · M8 4-pin
+    kind: load-cell
+    group: weight
+    dimensions: [75, 13, 13]
+    position: [150, 7, -10]
+    schematic: [1290, 220]
+    purchase: { url: 'https://www.alibaba.com/product-detail/AP62AFB-200kg-350kg-Liquid-Automatic-Quantitative_1601491747233.html', label: 'AP62AFB on Alibaba' }
+    pins:
+      - { id: E+, label: 'E+ · pin 1', side: left }
+      - { id: E-, label: 'E− · pin 3', side: left }
+      - { id: A+, label: 'A+ · pin 2', side: left }
+      - { id: A-, label: 'A− · pin 4', side: left }
+    notes: Single-point cell, 2 mV/V. Confirm the lead colours on the delivered cell and mark them on the harness; the M8 pin numbers are the fixed contract.
+  - id: pullup
+    label: 4.7 kΩ pull-up
+    kind: resistor
+    group: climate
+    dimensions: [10, 3, 3]
+    position: [60, 3, 40]
+    schematic: [960, 560]
+    pins:
+      - { id: VCC, side: left }
+      - { id: DQ, side: right }
+    properties: { resistance: '4.7 kΩ' }
+  - id: probe
+    label: DS18B20 hive probe · M8 3-pin
+    kind: probe
+    group: climate
+    dimensions: [50, 6, 6]
+    position: [150, 4, 50]
+    schematic: [1290, 560]
+    pins:
+      - { id: VDD, label: 'VDD · pin 1', side: left, voltage: 3.3 }
+      - { id: DQ, label: 'DQ · pin 4', side: left }
+      - { id: GND, label: 'GND · pin 3', side: left, voltage: 0 }
+    notes: Stainless probe on the brood-box top bars. 2.5 mm flat cable through the box seam, 1.5 m.
+  - id: sht
+    label: SHT40 ambient T/RH
+    kind: board
+    group: climate
+    dimensions: [8, 2, 8]
+    position: [-60, 3, 60]
+    schematic: [960, 720]
+    pins:
+      - { id: VDD, side: left, voltage: 3.3 }
+      - { id: GND, side: left, voltage: 0 }
+      - { id: SDA, side: left }
+      - { id: SCL, side: left }
+    notes: Sits in the louvred radiation shield outside the pod, on a short flex tail. I2C address 0x44.
+  - id: reed
+    label: Reed switch · magnet setup
+    kind: board
+    group: service
+    dimensions: [10, 2, 3]
+    position: [30, 3, 40]
+    schematic: [640, 440]
+    pins:
+      - { id: A, side: left }
+      - { id: B, side: left }
+    notes: Holding the magnet for 3 s wakes the pod into BLE setup. Internal pull-up on IO1 (RTC GPIO, wake source).
+  - id: led
+    label: Status LED
+    kind: status-led
+    group: service
+    dimensions: [5, 3, 5]
+    position: [30, 3, 55]
+    schematic: [640, 590]
+    pins:
+      - { id: A, label: 'A · via 1 kΩ', side: left }
+      - { id: K, side: left }
+  - id: pogo
+    label: Pogo pads · factory USB
+    kind: board
+    group: service
+    dimensions: [12, 1, 8]
+    position: [40, 3, 70]
+    schematic: [640, 720]
+    pins:
+      - { id: D-, label: 'D−', side: left }
+      - { id: D+, side: left }
+      - { id: GND, side: left, voltage: 0 }
+    notes: Native USB of the ESP32-S3 for flashing and the factory test. No USB port is exposed outside the pod.
+wires:
+  # power path
+  - { id: solar-in, from: solar.V+, to: charger.IN, color: '#e65100', label: SOLAR, voltage: 6 }
+  - { id: solar-gnd, from: solar.GND, to: charger.GND, color: '#212121', voltage: 0, net: GND }
+  - { id: bat-plus, from: cells.BAT+, to: charger.BAT, color: '#c62828', label: BAT, voltage: 3.7, gaugeAwg: 20 }
+  - { id: bat-minus, from: cells.BAT-, to: charger.GND, color: '#212121', voltage: 0, net: GND, gaugeAwg: 20 }
+  - { id: bat-ntc, from: cells.NTC, to: charger.TS, color: '#6a1b9a', label: NTC }
+  - { id: gauge-cell, from: cells.BAT+, to: gauge.CELL, color: '#c62828', voltage: 3.7 }
+  - { id: gauge-gnd, from: cells.BAT-, to: gauge.GND, color: '#212121', voltage: 0, net: GND }
+  - { id: sys-rail, from: charger.OUT, to: buck.VIN, color: '#c62828', label: SYS, voltage: 4.2 }
+  - { id: buck-gnd, from: charger.GND, to: buck.GND, color: '#212121', voltage: 0, net: GND }
+  - { id: rail-3v3, from: buck.VOUT, to: esp.3V3, color: '#c62828', label: 3V3, voltage: 3.3, dashed: true, net: 3V3 }
+  - { id: esp-gnd, from: buck.GND, to: esp.GND, color: '#212121', voltage: 0, net: GND }
+  - { id: chg-status, from: charger.CHG, to: esp.IO10, color: '#546e7a' }
+  - { id: pgood-status, from: charger.PGOOD, to: esp.IO11, color: '#546e7a' }
+  # always-on I2C bus
+  - { id: gauge-sda, from: gauge.SDA, to: esp.IO8, color: '#1565c0', label: SDA, net: SDA }
+  - { id: gauge-scl, from: gauge.SCL, to: esp.IO9, color: '#00838f', label: SCL, net: SCL }
+  - { id: sht-power, from: buck.VOUT, to: sht.VDD, color: '#c62828', voltage: 3.3, dashed: true, net: 3V3 }
+  - { id: sht-gnd, from: buck.GND, to: sht.GND, color: '#212121', voltage: 0, net: GND }
+  - { id: sht-sda, from: sht.SDA, to: esp.IO8, color: '#1565c0', net: SDA }
+  - { id: sht-scl, from: sht.SCL, to: esp.IO9, color: '#00838f', net: SCL }
+  # switched sensor rail
+  - { id: sw-in, from: buck.VOUT, to: loadsw.VIN, color: '#c62828', voltage: 3.3, dashed: true, net: 3V3 }
+  - { id: sw-enable, from: esp.IO7, to: loadsw.ON, color: '#f9a825', label: SENS_EN }
+  - { id: hx-power, from: loadsw.VOUT, to: hx.VCC, color: '#ad1457', label: 3V3_SW, voltage: 3.3, net: 3V3_SW }
+  - { id: hx-gnd, from: esp.GND, to: hx.GND, color: '#212121', voltage: 0, net: GND }
+  - { id: hx-data, from: esp.IO4, to: hx.DT, color: '#ef6c00', label: DOUT }
+  - { id: hx-clock, from: esp.IO5, to: hx.SCK, color: '#1565c0', label: SCK }
+  - { id: load-excite-plus, from: hx.E+, to: lc.E+, color: '#c62828', notes: 'Shielded 4-core cable; shield to the M8 housing only.' }
+  - { id: load-excite-minus, from: hx.E-, to: lc.E-, color: '#212121' }
+  - { id: load-signal-plus, from: hx.A+, to: lc.A+, color: '#b0b8ba', notes: 'White conductor, shown grey for contrast.' }
+  - { id: load-signal-minus, from: hx.A-, to: lc.A-, color: '#2e7d32' }
+  - { id: probe-power, from: loadsw.VOUT, to: probe.VDD, color: '#ad1457', voltage: 3.3, net: 3V3_SW }
+  - { id: pullup-power, from: loadsw.VOUT, to: pullup.VCC, color: '#ad1457', voltage: 3.3, net: 3V3_SW }
+  - { id: probe-data, from: esp.IO6, to: pullup.DQ, color: '#6d4c41', label: 1-Wire, net: DQ }
+  - { id: probe-data-tail, from: pullup.DQ, to: probe.DQ, color: '#6d4c41', net: DQ }
+  - { id: probe-gnd, from: esp.GND, to: probe.GND, color: '#212121', voltage: 0, net: GND }
+  # service
+  - { id: reed-wake, from: esp.IO1, to: reed.A, color: '#7cb342', label: WAKE }
+  - { id: reed-gnd, from: esp.GND, to: reed.B, color: '#212121', voltage: 0, net: GND }
+  - { id: led-drive, from: esp.IO12, to: led.A, color: '#f9a825', label: LED }
+  - { id: led-gnd, from: esp.GND, to: led.K, color: '#212121', voltage: 0, net: GND }
+  - { id: usb-dm, from: esp.IO19, to: pogo.D-, color: '#78909c' }
+  - { id: usb-dp, from: esp.IO20, to: pogo.D+, color: '#78909c' }
+  - { id: usb-gnd, from: esp.GND, to: pogo.GND, color: '#212121', voltage: 0, net: GND }
