@@ -2,16 +2,21 @@
 sidebar_position: 3
 title: 🌡️ Beehive scales
 layout: products
+productPhase: Prototype
+productTrl: "4"
+heroLead: true
+heroImage: /products/scales/img/Screenshot%202025-10-22%20at%2021.48.15.png
+heroImageAlt: Beehive scales on a hive
+ctaPrimaryText: Explore the code
+ctaPrimaryHref: https://github.com/Gratheon/beehive-sensors/
+ctaSecondaryText: Invest in Gratheon
+ctaSecondaryHref: mailto:pilot@gratheon.com?subject=Investing%20in%20Gratheon&body=Hi%20Gratheon%20team%2C%0A%0AI%20am%20interested%20in%20investing%20in%20Gratheon%20and%20beehive%20scales.%20Could%20we%20schedule%20a%20call%3F%0A%0A
 ---
 
-🌡️ Beehive scales are smart IoT scales equipped with additional sensors and communication chips. They periodically measure the hive's state and send data to a [web app](../web_app/index.md). This aggregated data helps beekeepers monitor their colonies in the field with minimal costs.
+<p class="knowledge-standfirst">🌡️ Beehive scales are smart IoT scales equipped with additional sensors and communication chips. They periodically measure the hive's state and send data to a <a href="../web_app/index.md">web app</a>. This aggregated data helps beekeepers monitor their colonies in the field with minimal costs.</p>
 
 The hardware is described in the [beehive sensors docs](../../docs/beehive-sensors/beehive-sensors.md), while the app stores readings in [hive telemetry storage](../web_app/pro-tier/hive-telemetry-storage.md) and compares them through [timeseries data analytics](../web_app/pro-tier/timeseries-data-analytics.md).
 
-`status`: [TRL 4](https://www.nasa.gov/directorates/somd/space-communications-navigation-program/technology-readiness-levels/) (prototype)
-
-
-![](img/Screenshot%202025-10-22%20at%2021.48.15.png)
 ## Overview
 
 
