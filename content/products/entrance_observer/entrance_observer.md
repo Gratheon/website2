@@ -97,6 +97,9 @@ This is the Phase 3 production kit concept: a 4K camera under a small steep roof
 <script defer src="/assets/triangle/entrance-observer/entrance-observer-viewer.js"></script>
 <!-- entrance-observer:end -->
 
+### On-edge bee counting
+<video autoplay loop muted playsinline src="/assets/img/counting.mov"></video>
+
 <iframe width="100%" height="500"  src="https://www.youtube.com/embed/hNval4v44ao" title="Beehive Entrance Observer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### Problem focus
