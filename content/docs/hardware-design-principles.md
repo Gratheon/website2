@@ -37,7 +37,7 @@ Aim for the fewest different materials and the fewest parts. Every part should b
 ## 4. Installation: one tool, a paper template, never in the bees' way
 
 - A beekeeper installs it alone in under 15 minutes, with a Torx T20 driver and the paper drill template in the box.
-- Never block beekeeping. Nothing is screwed into a hive body in a way that stops it lifting off, and nothing enters the bee space. Only the bottom board, the stand or a scale takes screws.
+- Never block beekeeping. Nothing enters the bee space. Screws go into the bottom board, the stand or a scale where possible; if a hive body must take screws, they are few, stainless, reachable in seconds with the same driver, and sheltered from rain, so a body can always be lifted off with one tool.
 - Weather-tight by design: no cable in the sun, rain or camera view; every cable enters from below with a drip loop. Water that runs down the hive wall is led onto a roof or away, never behind a part or into the entrance (EPDM flashing where a part meets the hive).
 - Removable in seconds for winter, inspection or repair: parts hang on hooks and are held by captive screws, and land in the same place every time.
 
@@ -66,10 +66,10 @@ Aim for the fewest different materials and the fewest parts. Every part should b
 | Principle | Beehive scale | Entrance Observer | Robotic Beehive |
 | --- | --- | --- | --- |
 | Wood first | Birch plywood deck, thermo-pine base and skirt | Thermo-pine landing board and front gable | Thermo-pine cladding, charred-wood skirt, wood-fibre insulation |
-| Aluminium where strong | Cast aluminium load-cell brackets, rails | One folded 5052 sheet wall frame, standard beam extrusion, one pod extrusion, clips and covers | Aluminium extrusion skeleton and beams |
+| Aluminium where strong | Cast aluminium load-cell brackets, rails | One folded 5052 sheet wall frame, standard beam extrusion, one pod extrusion, upright covers | Aluminium extrusion skeleton and beams |
 | Plastic only where needed | ASA pod shell, bay sleeve, small printed parts | HDPE porch and camera background insert, opal PC roof (diffuser), ASA brick decks and pod end caps | PC viewing window, ASA antenna fin, printed brackets |
 | Stainless fasteners | Yes | Yes (A2, Torx T20) | Yes, with nylon washers on aluminium |
-| Never block beekeeping | Hive sits on the deck; nothing attached to the hive | Frame screwed to the bottom board only; wall clips slide off when the body lifts | Robot lifts the boxes itself; hand beekeeping when the forks fold away |
+| Never block beekeeping | Hive sits on the deck; nothing attached to the hive | Frame screwed to the bottom board, plus two top screws under the roof into the first body: lift off the head and undo two screws to lift it | Robot lifts the boxes itself; hand beekeeping when the forks fold away |
 | Water led away | Skirt labyrinth, drain holes | Roof flashing and wall seal, cables from below | Double roof with flashing, drip edges |
 | Swappable electronics | Pod slides out | Compute sled, camera module and gate drive swap | Crown bay modules |
 | Fails safe | Transport lock warns | Gate fails open on power loss | Self-locking lead screws, interlocked door |
