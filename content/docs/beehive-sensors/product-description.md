@@ -23,6 +23,7 @@ The 3D model on the [overview page](/docs/beehive-sensors/#model) shows every pa
 2. **No cables outside the case.** The load cell, the front-module connector and the ambient sensor are wired inside the base. The only outside cables are a short plug under the landing board and the probe lead going into the entrance.
 3. **Nothing sticks out.** The pod sits flush in the side of the base, under the deck overhang. Snow, a boot or a hive tool has nothing to catch or break off. The landing board is the only part in front, and bees need it anyway.
 4. **One front interface.** Landing boards, the Entrance Observer and the Robotic Beehive harness all use the same rail and the same M12 connector.
+5. **Shared hardware principles.** The scale follows the [hardware design principles](../hardware-design-principles.md) of all Gratheon hardware: wood first (birch plywood and thermo-pine), aluminium where it carries load, plastic only for the sealed pod and small parts, A2 stainless fasteners, one tool, every part replaceable.
 
 ## Functionality
 
