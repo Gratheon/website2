@@ -7,26 +7,27 @@ hide_table_of_contents: false
 
 The beehive scale is modelled in code, like the [Robotic Beehive](/products/robotic_beehive/). One parametric three.js file describes the case, the load cell, the electronics pod and the cables. The interactive viewer on the [overview page](/docs/beehive-sensors/#model) and the downloadable [beehive-scale.glb](/assets/models/beehive-scale.glb) are both generated from it.
 
-![Beehive scale under a hive: solar landing board in front of the entrance, pod flush in the side](docs/beehive-sensors/img/beehive-scale-installed.png)
+![Beehive scale under a hive: pod flush in the side, climate probe from the sensor port into the entrance](docs/beehive-sensors/img/beehive-scale-installed.png)
 
-![Beehive scale, exploded: deck, load cell and brackets, base pan, pod with battery cartridge, solar landing board](docs/beehive-sensors/img/beehive-scale-exploded.png)
+![Beehive scale, exploded: deck, load cell and brackets, base, pod with battery cartridge](docs/beehive-sensors/img/beehive-scale-exploded.png)
 
 ## What is modelled
 
 | Assembly | Parts |
 | --- | --- |
-| Scale | Film-faced plywood deck with thermo-pine skirt, printed hive locators, bubble level and transport lock; upper and lower AP62AFB weighing brackets; single-point load cell; plywood and thermo-pine base with drain holes, overload stops, side bumpers, printed pod-bay sleeve, sensor louvres, accessory rails on four sides and the internal harness; levelling feet |
+| Scale | Film-faced plywood deck with thermo-pine skirt, printed hive locators, bubble level and transport lock; upper and lower AP62AFB weighing brackets; single-point load cell; plywood and thermo-pine base with drain holes, overload stops, side bumpers, printed pod-bay sleeve, sensor louvres, front rail with the M12 accessory connector and the internal harness; levelling feet |
 | Electronics pod | ASA shell and lid, face with OLED window, button, USB-C flap and vent; slide-out battery cartridge with 2–4 cells; carrier PCB with ESP32-S3 module, HX711, charger, LoRa footprint; dock connector |
-| Modules | M12 front connector; solar landing board (default) or plain landing board, Entrance Observer concept arch; the same solar panel as a wing on the left, back or right rail, or on the lid; DS18B20 probe in through the entrance |
+| Hive climate probe | Sensor port in the front-right hive locator, probe groove along the deck, SHT45 probe in through the entrance, and the service loop from the port down inside the skirt to the base |
+| Entrance Observer | Simplified from [its own model](https://github.com/Gratheon/entrance-observer/tree/main/3d-model): wall frame on risers on the front rail, porch, landing board, gable roof and camera pod, and the M12 lead to the scale |
 | Context | A 2-box Estonian hive (ghost, solid or hidden), or the Robotic Beehive plinth with posts, rings and deck cross members |
 
 Every part carries a short note (what it is, why it is there, how it is serviced), which the viewer shows on hover and the GLB stores as glTF extras. The GLB also contains an `explode` animation clip.
 
-## Stand-alone and Robotic Beehive
+## Stand-alone, with the Entrance Observer and in the Robotic Beehive
 
-The model uses the same axes and hive dimensions as `robotic-beehive/model/hive-model.js`: X across the frames, Y up, Z towards the entrance. *Solar panel* moves the panel to the side that faces south. The *Stands on → Robot* switch removes the feet and the landing board, bolts the scale to the robot's plinth cross members on the shared 400 × 300 mm hole pattern, and plugs the robot harness into the front-module connector. The pod stays in its bay.
+The model uses the same axes and hive dimensions as `robotic-beehive/model/hive-model.js`: X across the frames, Y up, Z towards the entrance. *With Entrance Observer* stands the Observer on the front rail, with the same numbers the Observer model uses for the scale (deck 560 × 510 mm, stack 112 mm, feet 25 mm), so the two models agree. The *Stands on → Robot* switch removes the feet, bolts the scale to the robot's plinth cross members on the shared 400 × 300 mm hole pattern, and plugs the robot harness into the accessory connector. The pod stays in its bay.
 
-![Solar panel as a wing on the south-facing side, plain landing board at the entrance](docs/beehive-sensors/img/beehive-scale-solar-wing.png)
+![Entrance Observer standing on the scale's front rail, one M12 lead to the scale](docs/beehive-sensors/img/beehive-scale-observer.png)
 
 ![Beehive scale in the Robotic Beehive plinth](docs/beehive-sensors/img/beehive-scale-robotic-beehive.png)
 
