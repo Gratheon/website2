@@ -9,7 +9,7 @@ notes:
   - VIN from the accessory connector and VBUS from the USB-C port are OR-ed by an LM66200 ideal diode, so neither back-feeds the other.
   - The 18650 cells sit in a slide-out cartridge, all in parallel (1S). Ship 2 or 4 cells; never mix old and new cells.
   - The TPS22917 load switch powers the HX711, load-cell excitation, the climate probe and the OLED only while measuring or while the display is on. The probe and the OLED share the second I2C bus (IO15, IO16), so unpowered parts never load the always-on bus.
-  - SHT40 (ambient) and MAX17048 share the always-on I2C bus (IO8, IO9).
+  - SHT40 (ambient), MAX17048 and the LIS2DH12 tilt sensor share the always-on I2C bus (IO8, IO9). The tilt sensor replaces a bubble level; the pod display shows the tilt while levelling, and its interrupt on IO2 wakes the pod if the scale is knocked or tipped.
   - The optional SX1262 LoRa module (SPI on IO33–IO37, BUSY IO13, DIO1 IO14, RST IO21) is not shown.
 groups:
   - { id: front, label: ACCESSORY, color: '#e0a800' }
@@ -159,6 +159,7 @@ components:
       - { id: IO43, label: 'IO43 · UART TX', side: left }
       - { id: IO44, label: 'IO44 · UART RX', side: left }
       - { id: IO18, label: 'IO18 · accessory WAKE', side: left }
+      - { id: IO2, label: 'IO2 · tilt INT', side: left }
       - { id: IO7, label: 'IO7 · SENS_EN', side: right }
       - { id: IO4, label: 'IO4 · HX DOUT', side: right }
       - { id: IO5, label: 'IO5 · HX SCK', side: right }
@@ -246,6 +247,20 @@ components:
       - { id: SDA, side: left }
       - { id: SCL, side: left }
     notes: Temperature ±0.1 °C and humidity ±1 % RH behind a vented stainless tip. Goes in through the entrance; plugs into the sensor port in the front-right locator. 1 m flat 4-core lead plus the service loop to the base.
+  - id: accel
+    label: LIS2DH12 tilt sensor (pod board)
+    kind: board
+    group: climate
+    dimensions: [2, 1, 2]
+    position: [20, 3, 20]
+    schematic: [1300, 760]
+    pins:
+      - { id: VDD, side: left, voltage: 3.3 }
+      - { id: GND, side: left, voltage: 0 }
+      - { id: SDA, side: left }
+      - { id: SCL, side: left }
+      - { id: INT1, side: left }
+    notes: I2C address 0x18, about 2 µA in low-power mode. The pod is fixed in the base, so this is the tilt of the scale.
   - id: sht
     label: SHT40 ambient T/RH (base wall pocket)
     kind: board
@@ -323,3 +338,9 @@ wires:
   - { id: probe-gnd, from: esp.GND, to: probe.GND, color: '#212121', voltage: 0, net: GND }
   - { id: probe-sda, from: esp.IO15, to: probe.SDA, color: '#3949ab', net: SDA1 }
   - { id: probe-scl, from: esp.IO16, to: probe.SCL, color: '#00acc1', net: SCL1 }
+  # tilt sensor on the always-on bus
+  - { id: accel-power, from: buck.VOUT, to: accel.VDD, color: '#c62828', voltage: 3.3, dashed: true, net: 3V3 }
+  - { id: accel-gnd, from: esp.GND, to: accel.GND, color: '#212121', voltage: 0, net: GND }
+  - { id: accel-sda, from: esp.IO8, to: accel.SDA, color: '#1565c0', net: SDA }
+  - { id: accel-scl, from: esp.IO9, to: accel.SCL, color: '#00838f', net: SCL }
+  - { id: accel-int, from: esp.IO2, to: accel.INT1, color: '#7cb342', label: TILT }

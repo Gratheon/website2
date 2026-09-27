@@ -12,7 +12,7 @@ The production kit is the version of the beehive scale that Gratheon can sell, c
 The same scale works in three settings:
 
 - **Stand-alone:** on the ground under any 506 × 450 mm hive, on batteries, through snow, rain and inspections.
-- **With the Entrance Observer:** the [Entrance Observer](/docs/entrance-observer/) stands on the scale's front rail, powers the scale and uploads its readings. The Observer brings the landing board and the solar power (a solar roof and an optional external panel), so the scale has neither.
+- **With the Entrance Observer:** the [Entrance Observer](/docs/entrance-observer/) bolts to the front of the scale base, powers the scale and uploads its readings. The Observer brings the landing board and the solar power (a solar roof and an optional external panel), so the scale has neither.
 - **Robotic Beehive:** bolted into the plinth of the [Robotic Beehive](/products/robotic_beehive/), where the pod becomes the robot's always-on supervisor.
 
 The 3D model on the [overview page](/docs/beehive-sensors/#model) shows every part described here; tick *With Entrance Observer* to see the two together.
@@ -29,7 +29,7 @@ The 3D model on the [overview page](/docs/beehive-sensors/#model) shows every pa
 
 - Hive weight every 10 minutes, 200 kg capacity (350 kg option).
 - **Hive climate:** brood-nest temperature and hive humidity from one SHT45 probe pushed in through the entrance; ambient temperature and humidity from an SHT40 in the base wall.
-- Battery %, voltage, power source, Wi-Fi RSSI, firmware version and reset reason with every upload.
+- Battery %, voltage, power source, tilt, Wi-Fi RSSI, firmware version and reset reason with every upload. A sudden tilt raises a tipped-hive alert.
 - **Button and display on the pod:** press to see weight, temperatures, humidity, battery and Wi-Fi for 15 s and send a reading now; hold 5 s for BLE setup from a phone.
 - **Power:** a swappable cartridge of 2–4 × 18650 cells, charged over USB-C on the pod face. With an Entrance Observer or in the Robotic Beehive, the pod runs from their 5 V and the cells are only a backup.
 - Uploads over Wi-Fi to `telemetry-api`, batched every 30 minutes. With an Entrance Observer, the readings go through the Observer's link instead. LoRa to an apiary gateway is an option.
@@ -46,7 +46,7 @@ flowchart LR
         cell[AP62AFB cell] --> low[Lower bracket] --> pan[Base + feet]
         harness[Internal harness]
         dock[Pod dock]
-        rail[Front rail + M12 accessory connector]
+        rail[Observer mounting inserts + M12 accessory connector]
         sht[SHT40 wall pocket]
     end
     top --> cell
@@ -75,13 +75,15 @@ The scale is a closed "lid over tray". The deck is a lid with a skirt, the base 
 | Deck | 18 mm film-faced birch plywood (anti-slip mesh face, as on trailer floors), 560 × 510 mm, 40 mm thermo-pine skirt, sealed edges | Stiff enough for a full hive plus a snow cap, and made by any joinery shop. The film face and sealed edges keep water out, so the weighed deck does not gain weight when it rains. |
 | Base | 22 mm thermo-pine boards on a 12 mm exterior plywood floor, 504 × 454 × 60 mm, drain hole in each corner | The skirt overlaps the base walls by 6 mm with an 8 mm gap: a rain labyrinth with no contact, so nothing bypasses the cell. Water in the base does not matter; it is not weighed. |
 | Pod bay | Rectangular cut in the right wall with a 3D-printed ASA sleeve: guides and the dock connector | The pod sits flush with the wall under the deck overhang. The woodwork is one straight cut. |
-| Front rail | Aluminium angle on the front of the base, below the skirt; the M12 accessory socket is under it, facing down, with a dust cap | The Entrance Observer frame stands on it with two printed risers, so the Observer is carried by the base and never weighed. |
+| Observer mounting points | Two M6 threaded inserts in the front wall of the base, under the deck edge, 434 mm apart | The Entrance Observer frame bolts to them with two printed risers and thumbscrews, so it is carried by the base and never weighed. Stand-alone, the front is plain wood. |
+| Accessory connector | M12 socket recessed into the underside of the front wall, facing down, with a dust cap | Protected by the wall itself; nothing hangs below the edge. |
 | Sensor port | The front-right hive locator is a larger printed block with the probe socket, next to the entrance corner | The probe plugs in right beside the entrance. The socket's lead drops through the deck and runs in a slack service loop inside the skirt to the base harness. |
 | Probe groove | Printed clip-in groove along the front strip of the deck, from the sensor port to the entrance | Holds the probe lead flat and tidy; under an Entrance Observer the porch floor covers it. |
 | Overload stops | M10 bolt in a threaded insert under each deck corner, set with a feeler gauge just below the deck | A leaning beekeeper, a dropped super or a heavy snow load lands on the stops, not on the cell. |
 | Side bumpers | EPDM pads on the base walls, 4 mm free travel | Stop the deck sliding sideways, without taking load in normal use. |
 | Hive locators | Three 3D-printed ASA corner blocks, 20 mm high, plus the sensor port on the fourth corner | The hive goes back in the same place after every inspection, centred over the cell. |
-| Feet | 4 × M10 levelling feet in threaded inserts, 400 × 300 mm pattern, bubble level in the front skirt | A level scale loads the cell straight. The pattern matches the Robotic Beehive deck pads. |
+| Feet | 4 × M10 levelling feet in threaded inserts, 400 × 300 mm pattern | A level scale loads the cell straight. The pattern matches the Robotic Beehive deck pads. |
+| Tilt sensor | LIS2DH12 accelerometer on the pod board (the pod sits fixed in the base) | Replaces a bubble level: the pod display shows the tilt while you set the feet, and every upload reports it, so the app can warn when a hive has been tipped over or the scale has sunk into soft ground. |
 | Transport lock | Captive quarter-turn lock on the right (service) side, next to the pod, with a red mark on the skirt | Clamps the deck to the base for shipping or when moving a hive. It cannot be lost, everything the beekeeper touches is on one side, and the pod display warns if it is left locked. |
 
 The scale stack is 112 mm high, plus 25 mm feet. **To verify on the delivered AP62AFB:** cell length and height, bracket hole pattern and thickness, rated deflection (this sets the overload-stop gap), and lead colours. The 3D model keeps these as parameters (`cell`, `bracket` in `scale-model.js`).
@@ -97,7 +99,7 @@ The case is designed so that a local joinery shop and a 3D printer can make it, 
 | Film-faced birch plywood, 18 mm and 12 mm | Deck, base floor | CNC-cut from sheet; edges sealed with paint; threaded inserts for the brackets, feet and stops |
 | Thermo-pine (thermally modified pine), 20–22 mm | Deck skirt, base walls | Sawn, screwed and glued; no chemical preservatives, like the hive itself |
 | 3D-printed ASA (UV-stable) | Pod shell and battery cartridge (pilot batches), bay sleeve, hive locators, sensor port, probe groove, sensor louvres, lock knob | FDM printer, 0.2 mm layers; moulded later if volumes justify it |
-| Aluminium | AP62AFB brackets (bought with the cell), front rail, overload-stop tubes | Bought in or cut from standard angle |
+| Aluminium | AP62AFB brackets (bought with the cell), overload-stop tubes | Bought with the cell or cut from standard tube |
 
 Wood on the weighed side is the one compromise: soaked wood is heavier. The film face and sealed edges keep water uptake to a few tens of grams. The app also tracks a slow tare drift and treats it separately from hive weight, as it does for snow.
 
@@ -149,8 +151,8 @@ The [Entrance Observer](/docs/entrance-observer/) is designed to stand on the sc
 | Power | Batteries stand-alone; 5 V from the Observer when fitted | PoE, 12–24 V DC, or the solar roof (14 W) with an optional external panel |
 | Upload | Wi-Fi stand-alone; through the Observer when fitted | Ethernet or Wi-Fi |
 
-- **Mount.** The Observer's wall frame stands on two printed risers hooked onto the scale's front rail, 2 mm clear of the hive. The porch bridges over the deck with a brush seal. Frame, roof, snow and bees on the board are carried by the scale base and never weighed.
-- **One lead.** A short M12 lead joins the socket under the foot of the Observer's right upright to the scale's accessory connector. It runs under the rail, out of sight.
+- **Mount.** The Observer's wall frame stands on two printed risers, each bolted to a threaded insert in the scale's front wall with one M6 thumbscrew, 2 mm clear of the hive. The porch bridges over the deck with a brush seal. Frame, roof, snow and bees on the board are carried by the scale base and never weighed.
+- **One lead.** A short M12 lead joins the socket under the foot of the Observer's right upright to the scale's accessory connector. It runs under the front edge of the base, out of sight.
 - **Power.** The Observer supplies 5 V; the scale cells stay charged as a backup. A scale without its own solar is therefore normal: an Observer site brings PoE or solar anyway.
 - **Data.** The scale sends weight, temperatures and humidity over UART; the Observer uploads them with its own data and keeps the scale clock in sync. A falling weight together with robbing traffic is a stronger robbing signal for the gate.
 - **Probe.** The probe lead enters under the porch, as described above.
@@ -168,6 +170,7 @@ The pod is a 150 × 38 × 76 mm IP67 housing in honey-yellow ASA (3D printed for
 | Fuel gauge | MAX17048 | Battery % without a sense resistor, about 3 µA in hibernate. |
 | 3.3 V rail | TPS62840 buck | 60 nA quiescent current, 750 mA for Wi-Fi bursts. |
 | Sensor rail | TPS22917 load switch | Powers the HX711, load-cell excitation, the probe and the OLED only when needed. |
+| Tilt sensor | LIS2DH12 accelerometer | On the always-on I2C bus, about 2 µA; its interrupt wakes the pod if the scale is knocked or tipped. |
 | Display | 0.96″ OLED 128 × 64 (SSD1306) behind a window | Works down to −40 °C (e-paper does not refresh below 0 °C). On for 15 s per button press. |
 | Button | Sealed IP67 tactile switch | Short press: show stats and send a reading. 5 s hold: BLE setup. Wakes the pod from deep sleep. |
 | USB-C | Receptacle behind a rubber flap | Charge from any charger or power bank, flash firmware, read the service console. |
@@ -184,12 +187,12 @@ No tools, no opening the hive, no disconnecting cables. With an Entrance Observe
 
 ## Installation
 
-1. Place the scale on firm, level ground, entrance side facing the flight path. Level it with the feet and the bubble level.
+1. Place the scale on firm ground, entrance side facing the flight path. Press the pod button and adjust the feet until the display shows the scale is level.
 2. Turn the transport lock on the right side from the red mark to OPEN.
 3. Put the hive on the deck between the locators; its front-right corner goes against the sensor port.
 4. Push the climate probe in through the entrance until the mark on the lead is at the entrance edge, press the lead into the groove and plug it into the sensor port.
 5. Hold the pod button for 5 s and pair the scale with the Gratheon app over BLE; enter Wi-Fi and choose the hive.
-6. With an Entrance Observer: hook its frame onto the front rail with the two risers, then plug the Observer's M12 lead into the accessory connector (remove the dust cap). The scale then pairs through the Observer.
+6. With an Entrance Observer: bolt its two risers to the inserts in the scale's front wall (two thumbscrews), then plug the Observer's M12 lead into the accessory connector (remove the dust cap). The scale then pairs through the Observer.
 
 During an inspection nothing needs to be unplugged.
 
@@ -251,6 +254,7 @@ Decision rule: **Wi-Fi first, LoRa gateway second, cellular last.** More backgro
 | `temperatureCelsius`, `humidityPercent` | Yes | Brood-nest temperature and hive humidity from the probe. |
 | Ambient temperature and humidity | Yes | Weather context. |
 | `batteryVoltage`, `batteryPercent`, `powerSource` | Yes | Battery alerts; shows whether the pod runs on cells, USB-C or an Observer. |
+| `tiltDegrees` | Yes | Tipped-hive alert (storm, bear, theft) and a scale that has sunk into soft ground. |
 | `rssi` | Yes | Explains missing uploads. |
 | `firmwareVersion`, `hardwareRevision` | Yes | Support, rollout, pin map selection. |
 | `resetReason` | Yes | Brownouts and crashes. |
@@ -270,7 +274,7 @@ Decision rule: **Wi-Fi first, LoRa gateway second, cellular last.** More backgro
 - Drop test of the packed scale with the transport lock closed.
 - Wet-deck test: weight change of the deck after 24 h of simulated rain.
 - Probe: propolis and wax exposure over a season; humidity reading against a reference.
-- Accessory test: Entrance Observer on the rail (clearance to the hive, lead, power, UART) and a UART test jig on the M12 connector.
+- Accessory test: Entrance Observer on the scale (clearance to the hive, lead, power, UART) and a UART test jig on the M12 connector.
 - Robotic Beehive fit check: bolt pattern, height and UART link on the robot bench rig.
 
 ## Exit criteria

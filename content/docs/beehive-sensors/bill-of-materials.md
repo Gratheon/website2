@@ -11,10 +11,10 @@ This is the parts list for the Phase 3 production kit described in the [product 
 
 | Subassembly | Estimate |
 | --- | ---: |
-| Scale mechanics: wood case, load cell, front rail, sensor port, internal harness | €85–145 |
+| Scale mechanics: wood case, load cell, Observer mounting inserts, sensor port, internal harness | €82–142 |
 | Electronics pod (2–4 cells) | €32–58 |
 | Hive climate probe and packaging | €13–22 |
-| **Total** | **≈ €130–225** |
+| **Total** | **≈ €127–222** |
 | Spare battery cartridge | + €10–20 |
 
 The scale has no landing board and no solar panel. With an [Entrance Observer](/docs/entrance-observer/) the Observer provides both, and powers the scale over one M12 lead (the lead ships with the Observer).
@@ -33,10 +33,9 @@ The scale has no landing board and no solar panel. With an [Entrance Observer](/
 | Levelling feet | M10 × 40 stud, 40 mm rubber pad | 4 | €1.2–2 | [Amazon levelling feet search](https://www.amazon.de/s?k=M10+levelling+feet) | Removed for the Robotic Beehive. |
 | Side bumpers | EPDM pad 40 × 14 × 4 mm, adhesive | 4 | €0.25 | Local rubber supplier | |
 | Bracket fasteners | M8 stainless bolts, washers, thread lock | 1 set | €3–5 | Fastener wholesaler | Torque per cell datasheet. |
-| Bubble level | 18 mm round vial | 1 | €1 | AliExpress, Amazon | Pressed into the skirt. |
 | Pod bay sleeve | 3D-printed ASA sleeve with guides and dock holder, fitted into the wall cut | 1 | €2–4 | In-house FDM printer | |
 | Dock connector | Keyed, gasketed 12-pin board-to-board pair (e.g. Molex Micro-Fit sealed, or custom) | 1 pair | €3–5 | Mouser, DigiKey | Mates as the pod slides in. |
-| Front rail | Aluminium angle 440 mm, riser seats for the Entrance Observer | 1 | €2–3 | Cut from standard angle | |
+| Observer mounting points | M6 brass threaded inserts in the front wall | 2 | €0.3 | Fastener wholesaler | The Entrance Observer risers bolt here. |
 | Accessory connector | M12 8-pin A-coded panel socket, IP67, facing down, with dust cap | 1 | €5–8 | [Mouser M12 connectors](https://www.mouser.com/c/connectors/circular-connectors/) | Entrance Observer and Robotic Beehive plug in here. |
 | Internal harness | Shielded 4-core (load cell), 8-core (accessory connector), 4-core (SHT40), crimped to the dock | 1 set | €4–6 | Harness shop | Stays inside the base. |
 | Ambient sensor pocket | SHT40 on a small PCB behind louvres in the left base wall | 1 | €2.5–4 | LCSC | |
@@ -56,6 +55,7 @@ The scale has no landing board and no solar panel. With an [Entrance Observer](/
 | Fuel gauge | Analog Devices MAX17048 | 1 | €1.2–1.6 | LCSC, DigiKey | |
 | 3.3 V buck | TI TPS62840 | 1 | €0.9 | LCSC, DigiKey | |
 | Sensor load switch | TI TPS22917 | 1 | €0.3 | LCSC | |
+| Tilt sensor | ST LIS2DH12 accelerometer | 1 | €0.5 | LCSC | Replaces a bubble level; tipped-hive alert. |
 | Passives | — | 1 set | €1.5 | LCSC | |
 | Carrier PCB + assembly | 4-layer, 72 × 62 mm, SX1262 footprint | 1 | €4–7 | [JLCPCB](https://jlcpcb.com/), [PCBWay](https://www.pcbway.com/) | Price per board at 100 units. |
 | LoRa module (option) | SX1262 module, 868 MHz | 0–1 | €4–7 | LCSC, Ebyte | Fitted for the gateway SKU and the Robotic Beehive. |
