@@ -3753,3 +3753,27 @@ html.hero-model-open {
     white-space: normal;
   }
 }
+
+/* WHY: the Robotic Beehive product page is built around the Hive Tower viewer; a 1480px
+   shell and side padding make the model feel like a narrow embed in the article.
+   WHAT: let the whole product page use the viewport width and break the viewer out
+   edge-to-edge (same breakout as front-page .deviceShowcase). */
+.knowledge-page-products:has(.knowledge-main [data-hive-tower]) {
+  overflow-x: clip;
+}
+
+.knowledge-page-products:has(.knowledge-main [data-hive-tower]) .knowledge-shell {
+  max-width: none;
+  padding-inline: clamp(16px, 3vw, 40px);
+}
+
+.knowledge-page-products:has(.knowledge-main [data-hive-tower]) .knowledge-content .hive-tower {
+  width: 100vw;
+  max-width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  border-radius: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+  --ht-height: min(76vh, 880px);
+}
