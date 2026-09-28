@@ -12,7 +12,7 @@ ctaSecondaryText: Download desktop app
 ctaSecondaryHref: https://github.com/Gratheon/web-app/releases/latest
 ---
 
-<p class="knowledge-standfirst">Gratheon web app is intended to help beekeepers manage <a href="free-tier/apiary-management.md">apiary data</a>, communicate with installed modular hive devices, analyze frame and bottom-board images, store <a href="pro-tier/hive-telemetry-storage.md">timeseries telemetry</a>, generate <a href="flexible-tier/alerts.md">alerts</a>, forecast, and provide AI suggestions to solve issues.</p>
+<p class="knowledge-standfirst">Gratheon web app is intended to help beekeepers manage <a href="/products/web_app/free-tier/apiary-management/">apiary data</a>, communicate with installed modular hive devices, analyze frame and bottom-board images, store <a href="/products/web_app/pro-tier/hive-telemetry-storage/">timeseries telemetry</a>, generate <a href="/products/web_app/flexible-tier/alerts/">alerts</a>, forecast, and provide AI suggestions to solve issues.</p>
 
 ## Core domain entities
 
