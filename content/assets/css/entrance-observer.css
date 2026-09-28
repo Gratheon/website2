@@ -119,11 +119,12 @@ html[data-theme="dark"] .entrance-observer {
 .deviceShowcaseStage {
   position: sticky; top: 0; height: 100vh; height: 100svh;
   display: flex; flex-direction: column; align-items: center; justify-content: center;
-  padding: 88px 16px 36px; box-sizing: border-box; text-align: center;
+  padding: 52px 16px 36px; box-sizing: border-box; text-align: center;
   background: radial-gradient(ellipse 70% 60% at 50% 55%, #ffffff 0%, #f1f3ef 55%, #e3e8e1 100%);
 }
 .deviceShowcaseKicker { margin: 0; font-size: 14px; letter-spacing: 0.14em; text-transform: uppercase; color: #6b7468; }
-.deviceShowcase h3 { margin: 6px 0 0; font-size: clamp(22px, 2.6vw, 34px); font-weight: 600; line-height: 1.15; letter-spacing: 0.01em; color: #4a5249; }
+/* WHY: homepage feedback - titles sit closer to the section edge, with air before the 3D stage. */
+.deviceShowcase h3 { margin: 0 0 18px; font-size: clamp(22px, 2.6vw, 34px); font-weight: 600; line-height: 1.15; letter-spacing: 0.01em; color: #4a5249; }
 .deviceShowcase h3 a { color: inherit; text-decoration: none; }
 /* the site paints a yellow background on every link hover in main; not here */
 .deviceShowcase a:hover, .deviceShowcase a:focus-visible { background: transparent; color: inherit !important; }
@@ -140,5 +141,5 @@ html[data-theme="dark"] .entrance-observer {
 html[data-theme="dark"] .deviceShowcaseStage { background: radial-gradient(ellipse 70% 60% at 50% 55%, #2a2f2b 0%, #1a1e1b 60%, #111412 100%); }
 html[data-theme="dark"] .deviceShowcase p, html[data-theme="dark"] .deviceShowcaseKicker { color: #c9d0c6; }
 html[data-theme="dark"] .deviceShowcase h3 { color: #d7ddd4; }
-@media (max-width: 700px) { .deviceShowcase { height: 240vh; } .deviceShowcaseStage { padding-top: 72px; } }
+@media (max-width: 700px) { .deviceShowcase { height: 240vh; } .deviceShowcaseStage { padding-top: 48px; } }
 @media (prefers-reduced-motion: reduce) { .deviceShowcase { height: auto; } .deviceShowcaseStage { position: relative; height: 90vh; } }
