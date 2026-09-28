@@ -120,7 +120,7 @@ showChildren: true
         <p>Systemy DIY, open hardware i open source dla liczników, wag, kamer i telemetrii, które uzupełniają prace akademickie.</p>
       </article>
       <article class="research-card">
-        <h3><a href="/assets/assets/entrance-observer-whitepaper.pdf">Whitepaper Entrance Observer</a></h3>
+        <h3><a href="/assets/entrance-observer-whitepaper.pdf">Whitepaper Entrance Observer</a></h3>
         <p>Bezpośredni techniczny punkt wejścia do własnych prac monitoringowych Gratheon i rozmów o współpracy.</p>
       </article>
     </div>

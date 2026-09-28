@@ -120,7 +120,7 @@ showChildren: true
         <p>Sistemas DIY, de hardware abierto y de código abierto para contadores, básculas, cámaras y telemetría que complementan el trabajo académico.</p>
       </article>
       <article class="research-card">
-        <h3><a href="/assets/assets/entrance-observer-whitepaper.pdf">Whitepaper de Entrance Observer</a></h3>
+        <h3><a href="/assets/entrance-observer-whitepaper.pdf">Whitepaper de Entrance Observer</a></h3>
         <p>Un punto de entrada técnico directo al trabajo de monitoreo de Gratheon y a conversaciones de colaboración.</p>
       </article>
     </div>
