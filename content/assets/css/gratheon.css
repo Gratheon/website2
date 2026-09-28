@@ -2327,6 +2327,24 @@ html[data-theme='dark'] .founder-letter .future {
   object-fit: cover;
 }
 
+/* Three-shot galleries (e.g. version history) sit in one compact row. */
+.knowledge-content .photo-grid--3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  max-width: min(900px, 100%);
+}
+
+/* Square tiles: the prototype shots mix portrait and landscape. The ratio sits
+   on the img because height: 100% does not resolve inside an aspect-ratio box,
+   which left landscape shots short of the tile. */
+.knowledge-content .photo-grid--3 .md-image {
+  aspect-ratio: auto;
+}
+
+.knowledge-content .photo-grid--3 img {
+  aspect-ratio: 1 / 1;
+  height: auto;
+}
+
 @media (max-width: 640px) {
   .knowledge-content .photo-grid {
     grid-template-columns: 1fr;

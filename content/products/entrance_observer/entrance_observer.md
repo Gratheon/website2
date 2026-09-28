@@ -168,11 +168,13 @@ Out of all beekeeping issues, this product is helping with these:
 
 
 ### Version history
-![](../../about/img/436202645_10161734083722973_395574856169740131_n.jpg)
-Prototype v4 at field testing. Camera has protective case. Missing the landing board protective cone as it needs artificial lighting
 
-![](../../about/img/gatehousev3.jpg)
-Prototype v3. Added protective cone, now idea is to have CPU/GPU block separated and moved into the hive roof to have less devices on the entrance, have camera integrated with the cone, have WIFI antennae and power blocks farther away from the bees.
+<div class="photo-grid photo-grid--3" role="group" aria-label="Entrance Observer prototype versions">
+![Prototype v4 at field testing](../../about/img/436202645_10161734083722973_395574856169740131_n.jpg)
+![Prototype v3 with protective cone](../../about/img/gatehousev3.jpg)
+![Prototype v1 on a monopod](../../about/img/1000004899.jpg)
+</div>
 
-![](../../about/img/1000004899.jpg)
-Prototype v1 version. Camera at the center on a monopod, jetson orin nano at the center with wiring and antennae facing down
+- **v4** - field testing. Camera has protective case. Missing the landing board protective cone as it needs artificial lighting.
+- **v3** - added protective cone, now idea is to have CPU/GPU block separated and moved into the hive roof to have less devices on the entrance, have camera integrated with the cone, have WIFI antennae and power blocks farther away from the bees.
+- **v1** - camera at the center on a monopod, jetson orin nano at the center with wiring and antennae facing down.
