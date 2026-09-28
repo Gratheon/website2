@@ -1122,6 +1122,9 @@ html[data-theme='dark'] .founder-letter .future {
   --knowledge-line: var(--nav-border, #e0e0e0);
   --knowledge-paper: var(--bg-primary, #fff);
   --knowledge-soft: #f6f7f2;
+  /* WHY: hero titles were inconsistent (up to 7.4rem on product feature pages).
+     WHAT: one desktop cap (4rem) for all knowledge hero H1 scales. */
+  --knowledge-hero-title-size: clamp(2.2rem, 4vw, 4rem);
   background: var(--knowledge-paper);
   color: var(--knowledge-ink);
 }
@@ -1168,8 +1171,9 @@ html[data-theme='dark'] .founder-letter .future {
 
 .knowledge-page-products .knowledge-hero--text-only h1 {
   max-width: none;
-  font-size: clamp(3.1rem, 6.9vw, 7.4rem);
-  line-height: 0.98;
+  font-size: var(--knowledge-hero-title-size);
+  line-height: 1.02;
+  letter-spacing: -0.055em;
 }
 
 .knowledge-page-products .knowledge-hero--text-only .knowledge-standfirst {
@@ -1255,9 +1259,9 @@ html[data-theme='dark'] .founder-letter .future {
 .knowledge-hero h1 {
   margin: 0;
   color: var(--knowledge-ink);
-  font-size: clamp(2.45rem, 4.8vw, 5.4rem);
-  line-height: 0.96;
-  letter-spacing: -0.06em;
+  font-size: var(--knowledge-hero-title-size);
+  line-height: 1.02;
+  letter-spacing: -0.055em;
   max-width: 12ch;
 }
 
@@ -1275,7 +1279,7 @@ html[data-theme='dark'] .founder-letter .future {
 }
 
 .knowledge-page-research:has(.knowledge-content .pdf-embed) .knowledge-hero h1 {
-  font-size: clamp(2.35rem, 4.8vw, 4.8rem);
+  font-size: var(--knowledge-hero-title-size);
   line-height: 1.02;
   letter-spacing: -0.055em;
   max-width: none;
@@ -2730,7 +2734,7 @@ article .content code:not(pre code),
 }
 
 .knowledge-page-research .knowledge-hero:not(.knowledge-hero--paper-detail):not(.knowledge-hero--bibliography) h1 {
-  font-size: clamp(2.2rem, 4vw, 4rem);
+  font-size: var(--knowledge-hero-title-size);
   max-width: none;
 }
 
@@ -4195,7 +4199,7 @@ html[data-theme='dark'] .knowledge-content .product-card--accent {
 
 .knowledge-hero--paper-detail h1,
 .knowledge-hero--bibliography h1 {
-  font-size: clamp(2.35rem, 4.8vw, 4.8rem);
+  font-size: var(--knowledge-hero-title-size);
   line-height: 1.02;
   letter-spacing: -0.055em;
   max-width: none;
@@ -4332,7 +4336,7 @@ html[data-theme='dark'] .knowledge-content .product-card--accent {
 .knowledge-hero--model h1 {
   max-width: none;
   white-space: nowrap;
-  font-size: clamp(2.2rem, 4.2vw, 4.6rem);
+  font-size: var(--knowledge-hero-title-size);
 }
 
 .knowledge-hero--model .knowledge-hero-lead.knowledge-standfirst {
