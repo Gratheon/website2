@@ -3320,6 +3320,19 @@ html[data-theme='dark'] .knowledge-content .research-source-card--primary {
   margin: 0;
 }
 
+/* WHY: models index should read like the research assets overview, with one card per model. */
+.knowledge-content .research-models-grid {
+  margin-top: clamp(12px, 2vw, 20px);
+}
+
+.knowledge-content .research-page > section > h2 {
+  margin-bottom: 0;
+}
+
+.knowledge-content .research-models-grid .research-asset-card {
+  min-height: 100%;
+}
+
 /* WHY: research collaboration cards should show partner logos beside copy, like asset cards. */
 .knowledge-content .research-collab-card__layout {
   display: flex;
