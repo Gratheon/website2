@@ -5,6 +5,7 @@ order: 1
 hideToc: true
 showChildren: true
 heroImage: /assets/img/research/img/research.jpg
+description: "Gratheon Research is a working knowledge base for digital beekeeping: academic literature, field datasets, machine learning models, and engineering experiments connected in one place."
 ---
 
 <div class="research-page">
