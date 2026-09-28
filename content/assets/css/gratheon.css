@@ -1937,6 +1937,66 @@ html[data-theme='dark'] .founder-letter .future {
   text-decoration: none;
 }
 
+/* WHY: scales review asked for problem focus beside target audience with matching body type, not h2 vs h3 stacks.
+   WHAT: pair layout with shared product prose size on both columns. */
+.knowledge-page-products .knowledge-content .knowledge-product-focus-pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(20px, 4vw, 48px);
+  align-items: start;
+  margin: 0.55em 0 0;
+}
+
+.knowledge-page-products .knowledge-content .knowledge-product-focus-pair__col {
+  min-width: 0;
+}
+
+.knowledge-page-products .knowledge-content .knowledge-product-focus-pair h3 {
+  margin: 0 0 8px;
+}
+
+.knowledge-page-products .knowledge-content .knowledge-product-focus-pair p,
+.knowledge-page-products .knowledge-content .knowledge-product-focus-pair ul {
+  font-size: var(--knowledge-product-prose-size);
+  line-height: var(--knowledge-product-prose-line);
+}
+
+.knowledge-page-products .knowledge-content .knowledge-product-focus-pair p {
+  margin: 0 0 0.35em;
+}
+
+.knowledge-page-products .knowledge-content .knowledge-product-focus-pair ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 6px;
+  list-style: none;
+  margin: 0.45em 0 0;
+  padding: 0;
+  max-width: none;
+}
+
+.knowledge-page-products .knowledge-content .knowledge-product-focus-pair ul > li {
+  margin: 0;
+}
+
+.knowledge-page-products .knowledge-content .knowledge-product-focus-pair a,
+.knowledge-page-products .knowledge-content .knowledge-product-focus-pair a:visited {
+  display: inline;
+  color: var(--knowledge-muted);
+  font-size: inherit;
+  line-height: inherit;
+  text-decoration: none;
+}
+
+.knowledge-page-products .knowledge-content .knowledge-product-focus-pair a:hover,
+.knowledge-page-products .knowledge-content .knowledge-product-focus-pair a:focus-visible {
+  color: black;
+  background: var(--brand-yellow);
+  box-shadow: 0 0 0 5px var(--brand-yellow);
+  outline: 0;
+  text-decoration: none;
+}
+
 @media (max-width: 760px) {
   .knowledge-page-products .knowledge-content .knowledge-product-link-grid,
   .knowledge-page-products .knowledge-content h3#problem-focus + p + ul,
@@ -1948,6 +2008,17 @@ html[data-theme='dark'] .founder-letter .future {
   .knowledge-page-products .knowledge-content .knowledge-product-split {
     grid-template-columns: 1fr;
   }
+
+  .knowledge-page-products .knowledge-content .knowledge-product-focus-pair {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* WHY: product prototype galleries were capped at 720–900px while the article is full width.
+   WHAT: let photo grids use the content column on hardware product pages. */
+.knowledge-page-products .knowledge-content .photo-grid,
+.knowledge-page-products .knowledge-content .photo-grid--3 {
+  max-width: none;
 }
 
 .knowledge-page-products .knowledge-web-app-tier-subhead {

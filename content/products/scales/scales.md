@@ -104,24 +104,35 @@ Drag to orbit, point at a part to see what it does, and press *Explode* to open 
 - Ships calibrated in one flat box, installs in about 15 minutes
 
 
-### Problem focus
-Out of all beekeeping issues, this product is helping with these:
-- [🧶 Swarming](../../about/problems/biological/🧶%20Swarming.md)
-- [🍽️ Bee colony starvation](../../about/problems/biological/🍽️%20Bee%20colony%20starvation.md)
-- [💢 Robbing state](../../about/problems/biological/💢%20Robbing%20state.md)
-- [🐻 Bears destroying hives & colonies](../../about/problems/🐻%20Bears%20destroying%20hives%20&%20colonies.md)
-- [🗃️ Storm wind collapsing beehives](../../about/problems/🗃️%20Storm%20wind%20collapsing%20beehives.md)
-- [🌲 Distant locations](../../about/problems/systemic/🌲%20Distant%20locations.md)
+<div class="knowledge-product-focus-pair">
 
-## Target audience
-- [🧑‍🚀 Hobby beekeepers](../../about/company/clients/🧑‍🚀%20Hobby%20beekeepers.md)
-- [👨🏻‍🚒 Industrial beekeepers](../../about/company/clients/👨🏻‍🚒%20Industrial%20beekeepers.md)
-- [👩🏼‍🏫 Urban beekeepers](../../about/company/clients/👩🏼‍🏫%20Urban%20beekeepers.md)
+<section class="knowledge-product-focus-pair__col">
+<h3 id="problem-focus">Problem focus</h3>
+<p>Out of all beekeeping issues, this product is helping with these:</p>
+<ul>
+<li><a href="../../about/problems/biological/🧶%20Swarming.md">🧶 Swarming</a></li>
+<li><a href="../../about/problems/biological/🍽️%20Bee%20colony%20starvation.md">🍽️ Bee colony starvation</a></li>
+<li><a href="../../about/problems/biological/💢%20Robbing%20state.md">💢 Robbing state</a></li>
+<li><a href="../../about/problems/🐻%20Bears%20destroying%20hives%20&%20colonies.md">🐻 Bears destroying hives &amp; colonies</a></li>
+<li><a href="../../about/problems/🗃️%20Storm%20wind%20collapsing%20beehives.md">🗃️ Storm wind collapsing beehives</a></li>
+<li><a href="../../about/problems/systemic/🌲%20Distant%20locations.md">🌲 Distant locations</a></li>
+</ul>
+</section>
 
+<section class="knowledge-product-focus-pair__col">
+<h3 id="target-audience">Target audience</h3>
+<ul>
+<li><a href="../../about/company/clients/🧑‍🚀%20Hobby%20beekeepers.md">🧑‍🚀 Hobby beekeepers</a></li>
+<li><a href="../../about/company/clients/👨🏻‍🚒%20Industrial%20beekeepers.md">👨🏻‍🚒 Industrial beekeepers</a></li>
+<li><a href="../../about/company/clients/👩🏼‍🏫%20Urban%20beekeepers.md">👩🏼‍🏫 Urban beekeepers</a></li>
+</ul>
+</section>
+
+</div>
 
 ### Prototype photos
 
-<div class="photo-grid" role="group" aria-label="Beehive scale prototype photos">
+<div class="photo-grid photo-grid--3" role="group" aria-label="Beehive scale prototype photos">
 ![](../../about/img/20240726_000022.webp)
 ![](img/20250119_131627.webp)
 ![](img/0.jpg)
