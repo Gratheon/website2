@@ -1553,15 +1553,18 @@ html[data-theme='dark'] .founder-letter .future {
   /* WHY: research map cards should sit below the section heading, not beside it.
      The map now lives under the article, so drop the large mid-page margin. */
   grid-template-columns: 1fr;
-  gap: clamp(10px, 1.6vw, 18px);
-  margin-top: clamp(16px, 2.5vw, 32px);
+  gap: clamp(8px, 1.2vw, 14px);
+  margin-top: clamp(12px, 2vw, 24px);
   margin-bottom: 0;
-  padding: clamp(10px, 1.6vw, 18px) 0 0;
+  padding: clamp(8px, 1.2vw, 14px) 0 0;
+  border-bottom: 0;
   max-width: none;
 }
 
 .knowledge-page-research .knowledge-map-intro h2 {
   max-width: none;
+  font-size: clamp(1.25rem, 2vw, 1.85rem);
+  line-height: 1.1;
 }
 
 /* WHY: research landing child previews and map cards should use the shell width. */
@@ -1595,7 +1598,15 @@ html[data-theme='dark'] .founder-letter .future {
 }
 
 .knowledge-page-research .knowledge-map-nav .sidebar-menu > .sidebar-item {
-  padding: clamp(14px, 2vw, 20px);
+  padding: clamp(10px, 1.5vw, 16px);
+  border-radius: 14px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.04);
+}
+
+.knowledge-page-research .knowledge-map-nav .sidebar-submenu {
+  margin: 10px 0 0;
+  padding: 10px 0 0;
+  gap: 6px;
 }
 
 .knowledge-page-research .knowledge-content > .research-page {
@@ -2629,7 +2640,7 @@ html[data-theme='dark'] .founder-letter .future {
 
 .knowledge-page-research:has(.research-assets-overview) .knowledge-map {
   margin-bottom: 0;
-  padding-top: clamp(14px, 2.5vw, 28px);
+  padding-top: clamp(8px, 1.5vw, 16px);
 }
 
 .knowledge-page-research .research-assets-overview h2 {
@@ -4068,7 +4079,7 @@ html[data-theme='dark'] .knowledge-content .product-card--accent {
 }
 
 .knowledge-page-research:has(.knowledge-hero--bibliography) .knowledge-map {
-  margin-top: clamp(28px, 4vw, 48px);
+  margin-top: clamp(16px, 2.5vw, 28px);
   margin-bottom: 0;
 }
 

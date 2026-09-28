@@ -123,13 +123,11 @@
 {{if and .Sidebar (not $isPaperDetail) (not $isPapersLanding)}}
 <section class="knowledge-map" aria-label="{{.UI.Navigation}}">
   <div class="knowledge-map-intro">
+    {{if eq .Page.Layout "products"}}
     <p class="knowledge-map-kicker">
-      {{if eq .Page.Layout "products"}}
-        {{if eq .Page.Language "et"}}Tootekaart{{else}}Product map{{end}}
-      {{else}}
-        {{if eq .Page.Language "et"}}Uuringute kaart{{else if eq .Page.Language "ru"}}Карта раздела{{else}}Research map{{end}}
-      {{end}}
+      {{if eq .Page.Language "et"}}Tootekaart{{else}}Product map{{end}}
     </p>
+    {{end}}
     <h2>
       {{if eq .Page.Layout "products"}}
         {{if eq .Page.Language "et"}}Tarkvarast automaatikani{{else}}From software to automation{{end}}
