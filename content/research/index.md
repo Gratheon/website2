@@ -108,13 +108,28 @@ heroImage: /assets/img/research/img/research.jpg
   <section>
     <h2>Research collaborations</h2>
     <div class="research-card-grid research-card-grid--2">
-      <article class="research-card">
-        <h3><a href="/blog/2025-12-17-university-of-tartu-students-advance-bee-monitoring-with-ai/">University of Tartu student teams</a></h3>
-        <p>Applied AI work on bee type detection, hornet detection, and multi-class entrance monitoring.</p>
+      <article class="research-card research-collab-card">
+        <div class="research-collab-card__layout">
+          <div class="research-collab-card__logos" aria-hidden="true">
+            <img class="research-collab-card__logo research-collab-card__logo--wordmark" src="/assets/img/research/partners/university-of-tartu.svg" alt="" width="160" height="48" loading="lazy" decoding="async" />
+          </div>
+          <div class="research-collab-card__copy">
+            <h3><a href="/blog/2025-12-17-university-of-tartu-students-advance-bee-monitoring-with-ai/">University of Tartu student teams</a></h3>
+            <p>Applied AI work on bee type detection, hornet detection, and multi-class entrance monitoring.</p>
+          </div>
+        </div>
       </article>
-      <article class="research-card">
-        <h3><a href="/blog/2025-01-13-visited-vidrik/">TalTech / VIDRIK collaboration</a></h3>
-        <p>Applied research and engineering exchange, including a joint white paper preprint.</p>
+      <article class="research-card research-collab-card">
+        <div class="research-collab-card__layout">
+          <div class="research-collab-card__logos research-collab-card__logos--stack" aria-hidden="true">
+            <img class="research-collab-card__logo" src="/assets/img/research/partners/taltech.svg" alt="" width="72" height="72" loading="lazy" decoding="async" />
+            <img class="research-collab-card__logo research-collab-card__logo--vidrik" src="/assets/img/research/partners/vidrik-preview.webp" alt="" width="120" height="48" loading="lazy" decoding="async" />
+          </div>
+          <div class="research-collab-card__copy">
+            <h3><a href="/blog/2025-01-13-visited-vidrik/">TalTech / VIDRIK collaboration</a></h3>
+            <p>Applied research and engineering exchange, including a joint white paper preprint.</p>
+          </div>
+        </div>
       </article>
       <article class="research-card">
         <h3><a href="/blog/2026-06-08-milissa-laane-completed-her-bachelor-thesis-on-digital-beekeeping-solutions/">Bachelor thesis support</a></h3>
