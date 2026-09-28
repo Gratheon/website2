@@ -209,6 +209,11 @@
     {{ $isResearchPapersTaxonomy := or (ne (trimPrefix $researchPaperPath "topics/") $researchPaperPath) (ne (trimPrefix $researchPaperPath "years/") $researchPaperPath) (ne (trimPrefix $researchPaperPath "product-areas/") $researchPaperPath) }}
     {{ $isPaperDetail := and $isResearchPaperPath (not $isResearchPapersIndex) (not $isResearchPapersSubIndex) (not $isResearchPapersTaxonomy) }}
     {{ $isScientificPublications := eq $researchPaperPath "scientific-publications/" }}
+    {{ $datasetsPath := trimPrefix .Page.URL "/research/datasets/" }}
+    {{ if eq $datasetsPath .Page.URL }}
+      {{ $datasetsPath = trimPrefix .Page.URL (printf "/%s/research/datasets/" .Page.Language) }}
+    {{ end }}
+    {{ $isDatasetsPage := ne $datasetsPath .Page.URL }}
     {{/* WHY: product pages with an interactive 3D model (frontmatter heroModel)
          show that model in the hero instead of the generic products picture;
          the viewer block itself stays in the markdown and is moved up by JS. */}}
@@ -269,6 +274,8 @@
             {{if .MetaDescription}}{{.MetaDescription}}{{else}}{{.Page.Description}}{{end}}
           {{else if eq .Page.Layout "products"}}
             {{if eq .Page.Language "et"}}Tarkvara, seadmed ja automaatika on esitatud ühe seotud süsteemina, et tootepere oleks lihtne sirvida ka sügava funktsioonistruktuuriga.{{else}}Software, devices, and automation are presented as one connected system, so product depth stays navigable without feeling like a reference manual.{{end}}
+          {{else if .MetaDescription}}
+            {{.MetaDescription}}
           {{else}}
             {{if eq .Page.Language "et"}}Artiklid, andmestikud, mudelid ja välitöö märkmed on koondatud visuaalseks teadmiste kaardiks, mis säilitab kogu sügava struktuuri.{{else if eq .Page.Language "ru"}}Статьи, датасеты, модели и полевые заметки собраны в визуальную карту знаний, сохраняя глубокую структуру раздела.{{else if eq .Page.Language "zh"}}论文、数据集、模型和现场笔记被整合成一个用于数字养蜂的实用研究地图，涵盖从学术参考文献到应用的 Gratheon 实验。{{else if eq .Page.Language "de"}}Papiere, Datensätze, Modelle und Feldnotizen sind zu einer praktischen Forschungskarte für die digitale Imkerei verbunden, von akademischen Referenzen bis hin zu angewandten Gratheon-Experimenten.{{else if eq .Page.Language "es"}}Documentos, conjuntos de datos, modelos y notas de campo se conectan en un mapa de investigación práctico para la apicultura digital, desde referencias académicas hasta experimentos aplicados de Gratheon.{{else if eq .Page.Language "fr"}}Les articles, ensembles de données, modèles et notes de terrain sont reliés en une carte de recherche pratique pour l'apiculture numérique, des références académiques aux expériences appliquées de Gratheon.{{else if eq .Page.Language "ja"}}論文、データセット、モデル、フィールドノートは、学術的な参考文献から応用的なGratheonの実験まで、デジタル養蜂の実用的な研究マップに統合されています。{{else if eq .Page.Language "hi"}}कागजात, डेटासेट, मॉडल और फील्ड नोट्स डिजिटल मधुमक्खी पालन के लिए एक व्यावहारिक अनुसंधान मानचित्र में जुड़े हुए हैं, अकादमिक संदर्भों से लेकर लागू Gratheon प्रयोगों तक।{{else if eq .Page.Language "ar"}}يتم ربط الأوراق ومجموعات البيانات والنماذج والملاحظات الميدانية في خريطة بحثية عملية لتربية النحل الرقمية، من المراجع الأكاديمية إلى تجارب Gratheon التطبيقية.{{else if eq .Page.Language "pt"}}Artigos, conjuntos de dados, modelos e notas de campo estão conectados em um mapa de pesquisa prático para apicultura digital, desde referências acadêmicas até experimentos aplicados da Gratheon.{{else if eq .Page.Language "it"}}Documenti, set di dati, modelli e note sul campo sono collegati in una mappa di ricerca pratica per l'apicoltura digitale, dai riferimenti accademici agli esperimenti applicati di Gratheon.{{else if eq .Page.Language "ko"}}논문, 데이터 세트, 모델 및 현장 노트는 학술적 참고 자료부터 응용된 Gratheon 실험에 이르기까지 디지털 양봉을 위한 실용적인 연구 맵으로 연결됩니다.{{else}}Papers, datasets, models, and field notes are connected into a practical research map for digital beekeeping, from academic references to applied Gratheon experiments.{{end}}
           {{end}}
@@ -298,6 +305,17 @@
             {{else}}
               <a class="knowledge-action knowledge-action--primary" href="/products/web_app/">Explore the web app</a>
               <a class="knowledge-action" href="/pricing/">Compare plans</a>
+            {{end}}
+          {{else if $isDatasetsPage}}
+            {{if eq .Page.Language "et"}}
+              <a class="knowledge-action knowledge-action--primary" href="/et/research/papers/">Sirvi artikleid</a>
+              <a class="knowledge-action" href="/et/research/models/">Mudelid</a>
+            {{else if eq .Page.Language "ru"}}
+              <a class="knowledge-action knowledge-action--primary" href="/ru/research/papers/">Статьи</a>
+              <a class="knowledge-action" href="/ru/research/models/">Модели</a>
+            {{else}}
+              <a class="knowledge-action knowledge-action--primary" href="/research/papers/">Browse papers</a>
+              <a class="knowledge-action" href="/research/models/">Related models</a>
             {{end}}
           {{else}}
             {{if eq .Page.Language "et"}}
@@ -363,13 +381,11 @@
         </figure>
         {{else}}
         {{ $researchHeroImage := "/assets/img/research.webp" }}
-        {{ $datasetsPath := trimPrefix .Page.URL "/research/datasets/" }}
-        {{ if eq $datasetsPath .Page.URL }}{{ $datasetsPath = trimPrefix .Page.URL (printf "/%s/research/datasets/" .Page.Language) }}{{ end }}
         {{ $modelsPath := trimPrefix .Page.URL "/research/models/" }}
         {{ if eq $modelsPath .Page.URL }}{{ $modelsPath = trimPrefix .Page.URL (printf "/%s/research/models/" .Page.Language) }}{{ end }}
         {{ $hackerProjectsPath := trimPrefix .Page.URL "/research/hacker-projects/" }}
         {{ if eq $hackerProjectsPath .Page.URL }}{{ $hackerProjectsPath = trimPrefix .Page.URL (printf "/%s/research/hacker-projects/" .Page.Language) }}{{ end }}
-        {{ if ne $datasetsPath .Page.URL }}
+        {{ if $isDatasetsPage }}
           {{ $researchHeroImage = "/assets/img/research/img/Screenshot 2025-09-10 at 09.11.23.png" }}
         {{ else if ne $modelsPath .Page.URL }}
           {{ $researchHeroImage = "/assets/img/queens.webp" }}
@@ -386,13 +402,8 @@
       </div>
       {{end}}
     </section>
-    {{if ne .Page.Layout "products"}}
     {{if and (eq .Page.Layout "research") (or (eq .Page.URL "/research/") (eq .Page.URL (printf "/%s/research/" .Page.Language)))}}
       {{template "research_assets" .}}
-    {{end}}
-      {{if not $isScientificPublications}}
-      {{template "knowledge_map" .}}
-      {{end}}
     {{end}}
 
     <div class="knowledge-content-layout">
@@ -483,15 +494,15 @@
       {{end}}
     </div>
 
-    {{if $isScientificPublications}}
-      {{template "knowledge_map" .}}
-    {{end}}
     {{if eq .Page.Layout "products"}}
       {{ $hideProductMap := false }}
       {{with .Frontmatter.Params}}{{with index . "hideProductMap"}}{{ $hideProductMap = . }}{{end}}{{end}}
       {{if not $hideProductMap}}
         {{template "knowledge_map" .}}
       {{end}}
+    {{else}}
+      {{/* WHY: research readers want the page body first; the collection map is secondary navigation. */}}
+      {{template "knowledge_map" .}}
     {{end}}
   </main>
 

@@ -1550,13 +1550,17 @@ html[data-theme='dark'] .founder-letter .future {
 }
 
 .knowledge-page-research .knowledge-map {
-  /* WHY: research map cards should sit below the section heading, not beside it. */
+  /* WHY: research map cards should sit below the section heading, not beside it.
+     The map now lives under the article, so drop the large mid-page margin. */
   grid-template-columns: 1fr;
-  gap: clamp(18px, 3vw, 32px);
+  gap: clamp(14px, 2.2vw, 24px);
+  margin-top: clamp(28px, 4vw, 56px);
+  margin-bottom: 0;
+  padding: clamp(18px, 2.8vw, 32px) 0 0;
 }
 
 .knowledge-page-research .knowledge-map-intro h2 {
-  max-width: 18ch;
+  max-width: none;
 }
 
 .knowledge-page-products .knowledge-map-nav .sidebar-menu {
@@ -1942,6 +1946,12 @@ html[data-theme='dark'] .founder-letter .future {
   grid-template-columns: minmax(0, 1fr) minmax(220px, 280px);
   gap: clamp(28px, 5vw, 72px);
   align-items: start;
+}
+
+/* WHY: hideToc pages still inherited a reserved TOC column, leaving a blank strip
+   beside datasets/models/hacker-project content. */
+.knowledge-content-layout:not(:has(.knowledge-onpage)) {
+  grid-template-columns: 1fr;
 }
 
 .knowledge-main {
@@ -2545,12 +2555,31 @@ html[data-theme='dark'] .founder-letter .future {
   min-height: 0;
 }
 
+/* WHY: inner research pages (datasets, models) used a 430px hero min-height for a short title. */
+.knowledge-page-research .knowledge-hero:not(.knowledge-hero--paper-detail):not(.knowledge-hero--bibliography) {
+  margin-bottom: clamp(18px, 3vw, 36px);
+  padding-bottom: clamp(16px, 2.4vw, 32px);
+}
+
+.knowledge-page-research .knowledge-hero:not(.knowledge-hero--paper-detail):not(.knowledge-hero--bibliography) .knowledge-hero-copy {
+  min-height: 0;
+}
+
+.knowledge-page-research .knowledge-hero:not(.knowledge-hero--paper-detail):not(.knowledge-hero--bibliography) h1 {
+  font-size: clamp(2.2rem, 4vw, 4rem);
+  max-width: none;
+}
+
+.knowledge-page-research .knowledge-hero:not(.knowledge-hero--paper-detail):not(.knowledge-hero--bibliography) .knowledge-visual {
+  min-height: 240px;
+}
+
 .knowledge-page-research .research-assets-overview {
   margin-bottom: clamp(22px, 3.5vw, 44px);
 }
 
 .knowledge-page-research:has(.research-assets-overview) .knowledge-map {
-  margin-bottom: clamp(28px, 4vw, 56px);
+  margin-bottom: 0;
   padding-top: clamp(14px, 2.5vw, 28px);
 }
 
@@ -2675,6 +2704,204 @@ html[data-theme='dark'] .founder-letter .future {
 
 html[data-theme='dark'] .knowledge-content .research-source-card--primary {
   background: color-mix(in srgb, var(--knowledge-paper) 78%, var(--brand-yellow) 22%);
+}
+
+/* WHY: /research/datasets/ was a long markdown dump with raw Drive URLs, a ffmpeg
+   probe block, and an unused TOC column. WHAT: compact catalog cards, labeled
+   downloads, and a spec grid instead of a code wall. */
+.knowledge-content .dataset-catalog {
+  max-width: 1120px;
+}
+
+.knowledge-content .dataset-catalog .research-lead {
+  margin: 0 0 8px;
+}
+
+.knowledge-content .dataset-catalog .research-actions {
+  margin: 18px 0 8px;
+}
+
+.knowledge-content .dataset-catalog h2 {
+  margin: clamp(28px, 4vw, 48px) 0 14px;
+  padding-top: 16px;
+}
+
+.knowledge-content .dataset-catalog h3 {
+  margin: 28px 0 12px;
+}
+
+.knowledge-content .dataset-day h3,
+.knowledge-content .dataset-catalog h4 {
+  margin: 0 0 8px;
+  font-size: clamp(1.08rem, 1.3vw, 1.28rem);
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+}
+
+.knowledge-content .dataset-feature {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(240px, 0.9fr);
+  gap: clamp(18px, 3vw, 36px);
+  align-items: start;
+  margin: 8px 0 0;
+}
+
+.knowledge-content .dataset-feature p {
+  margin: 0 0 14px;
+}
+
+.knowledge-content .dataset-feature figure,
+.knowledge-content .dataset-media {
+  margin: 0;
+}
+
+.knowledge-content .dataset-feature img,
+.knowledge-content .dataset-media img,
+.knowledge-content .dataset-media video {
+  width: 100%;
+  margin: 0;
+  border: 1px solid var(--knowledge-line);
+  background: var(--knowledge-soft);
+}
+
+.knowledge-content .dataset-media {
+  margin: 16px 0 0;
+}
+
+.knowledge-content .dataset-catalog figcaption {
+  margin-top: 8px;
+  color: var(--knowledge-muted);
+  font-size: 0.92rem;
+  line-height: 1.4;
+}
+
+.knowledge-content .dataset-spec {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(160px, 100%), 1fr));
+  gap: 1px;
+  margin: 12px 0 8px;
+  background: var(--knowledge-line);
+  border: 1px solid var(--knowledge-line);
+}
+
+.knowledge-content .dataset-spec > div {
+  margin: 0;
+  padding: 14px 16px;
+  background: var(--knowledge-paper);
+}
+
+.knowledge-content .dataset-spec dt {
+  margin: 0 0 4px;
+  color: var(--knowledge-muted);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.knowledge-content .dataset-spec dd {
+  margin: 0;
+  font-size: 1.02rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.knowledge-content .dataset-probe {
+  margin: 12px 0 8px;
+  color: var(--knowledge-muted);
+  font-size: 0.92rem;
+}
+
+.knowledge-content .dataset-probe summary {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.knowledge-content .dataset-probe pre {
+  margin: 10px 0 0;
+  padding: 14px 16px;
+  overflow: auto;
+  border: 1px solid var(--knowledge-line);
+  background: var(--knowledge-soft);
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+
+.knowledge-content .dataset-day-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+  gap: 12px;
+  margin: 12px 0 8px;
+  background: transparent;
+  border: 0;
+}
+
+.knowledge-content .dataset-day {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 0;
+  margin: 0;
+  padding: clamp(16px, 2.2vw, 24px);
+  border: 1px solid var(--knowledge-line);
+  background: var(--knowledge-paper);
+}
+
+.knowledge-content .dataset-day p,
+.knowledge-content .dataset-day ul {
+  margin: 0;
+  max-width: none;
+  color: var(--knowledge-muted);
+  font-size: clamp(0.96rem, 1.05vw, 1.06rem);
+  line-height: 1.45;
+}
+
+.knowledge-content .dataset-day ul {
+  padding-left: 1.1em;
+}
+
+.knowledge-content .dataset-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: auto;
+}
+
+.knowledge-content .dataset-links a,
+.knowledge-content .dataset-links a:visited {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 4px 12px;
+  border: 1px solid var(--knowledge-line);
+  border-radius: 999px;
+  color: var(--knowledge-ink);
+  font-size: 0.86rem;
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.knowledge-content .dataset-links a:hover,
+.knowledge-content .dataset-links a:focus-visible {
+  color: black !important;
+  background: var(--brand-yellow);
+  border-color: var(--brand-yellow);
+  outline: 0;
+  text-decoration: none;
+}
+
+.knowledge-content .dataset-embed {
+  margin: 16px 0 0;
+}
+
+.knowledge-content .dataset-embed iframe {
+  margin: 0;
+}
+
+@media (max-width: 760px) {
+  .knowledge-content .dataset-feature {
+    grid-template-columns: 1fr;
+  }
 }
 
 .knowledge-content .research-paper-filter-card:hover,
