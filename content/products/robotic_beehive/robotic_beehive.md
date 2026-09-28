@@ -102,6 +102,10 @@ Drag to orbit, point at a part to see what it does and why it is safe for the be
 
 The design, wiring, bill of materials and control code are open source in [Gratheon/robotic-beehive](https://github.com/Gratheon/robotic-beehive): see the [design document](https://github.com/Gratheon/robotic-beehive/blob/main/docs/DESIGN.md) and the [wiring](https://github.com/Gratheon/robotic-beehive/blob/main/docs/WIRING.md). The hardware direction is also tracked in the [robotic beehive engineering docs](../../docs/robotic-beehive/robotic-beehive.md). The inspection workflow depends on [frame side management](../web_app/free-tier/frame-side-management.md) and [inspection management](../web_app/hobbyist-tier/inspection-management.md) in the web app.
 
+<div class="knowledge-product-focus-pair">
+
+<div class="knowledge-product-focus-pair__col">
+
 ### Problem focus
 Out of all beekeeping issues, this product is helping with these:
 - [👁️ Observability of bee colony](../../about/problems/core/👁️%20Observability%20of%20bee%20colony.md)
@@ -114,25 +118,24 @@ Out of all beekeeping issues, this product is helping with these:
 - [🗃️ Ugly beehives](../../about/problems/🗃️%20Ugly%20beehives.md)
 - [🎒 Challenging to become a new beekeeper](../../about/problems/🎒%20Challenging%20to%20become%20a%20new%20beekeeper.md)
 
+</div>
+
+<div class="knowledge-product-focus-pair__col">
+
 ### Target clients
-
-<div class="knowledge-product-split">
-
-<div class="knowledge-product-split__copy">
-
 A robotic inspection platform will cost (>2000 EUR) and its main value is in digitalization and organization of the apiary state. It might be too cumbersome for [👨🏻‍🚒 Industrial beekeepers](../../about/company/clients/👨🏻‍🚒%20Industrial%20beekeepers.md) or [🧑🏻‍🌾 Farmers](../../about/company/clients/🧑🏻‍🌾%20Farmers.md) and too hard for [👨🏻 Potential new beekeepers](../../about/company/clients/👨🏻%20Potential%20new%20beekeepers.md). But it does look viable for:
 
 - [👨🏻‍🚀 Semi-professional beekeepers](../../about/company/clients/👨🏻‍🚀%20Semi-professional%20beekeepers.md)
 - [👩🏼‍🏫 Urban beekeepers](../../about/company/clients/👩🏼‍🏫%20Urban%20beekeepers.md)
 - [👩🏻 Corporate Hive Sponsorship Program](../../about/company/clients/👩🏻%20Tech%20scale-up%20companies.md)
 
-</div>
-
 <div class="knowledge-product-split__media">
 
 ![](../../about/img/president.png)
 
-President Alar Karis harvesting honey from the Kadriorg Palace beehives. ([Photo: Office of the President](https://news.err.ee/1609070024/gallery-president-alar-karis-harvesting-honey-in-front-of-kadriorg-palace#lg=1&slide=1)) An example of a complementary brand partnership.
+President Alar Karis harvesting honey from the Kadriorg Palace beehives. (<a href="https://news.err.ee/1609070024/gallery-president-alar-karis-harvesting-honey-in-front-of-kadriorg-palace#lg=1&amp;slide=1">Photo: Office of the President</a>) An example of a complementary brand partnership.
+
+</div>
 
 </div>
 

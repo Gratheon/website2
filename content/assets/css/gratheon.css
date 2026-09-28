@@ -1955,6 +1955,29 @@ html[data-theme='dark'] .founder-letter .future {
   min-width: 0;
 }
 
+.knowledge-page-products .knowledge-content .knowledge-product-focus-pair__col > .knowledge-product-split__media {
+  margin-top: 1em;
+}
+
+.knowledge-page-products .knowledge-content .knowledge-product-focus-pair__col > .knowledge-product-split__media > p {
+  margin-top: 8px;
+  color: var(--knowledge-muted);
+  font-size: 0.78em;
+  line-height: 1.35;
+}
+
+.knowledge-page-products .knowledge-content .knowledge-product-focus-pair__col > .knowledge-product-split__media > p a,
+.knowledge-page-products .knowledge-content .knowledge-product-focus-pair__col > .knowledge-product-split__media > p a:visited {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+}
+
+.knowledge-page-products .knowledge-content .knowledge-product-focus-pair__col > .knowledge-product-split__media > p a:hover,
+.knowledge-page-products .knowledge-content .knowledge-product-focus-pair__col > .knowledge-product-split__media > p a:focus-visible {
+  color: var(--knowledge-ink);
+}
+
 .knowledge-page-products .knowledge-content .knowledge-product-focus-pair h3 {
   margin: 0 0 8px;
 }
