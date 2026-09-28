@@ -1032,8 +1032,6 @@ html[data-theme='dark'] .founder-letter .future {
 
 .front-page .front-section--join {
   margin-top: 24px;
-  /* WHY: join CTA should use the wider front-page canvas like the app showcase. */
-  max-width: min(1680px, calc(100vw - 48px));
 }
 
 .front-page .founder-letter--cta {
@@ -1053,21 +1051,22 @@ html[data-theme='dark'] .founder-letter .future {
   /* WHY: desktop join block pairs full-width CTA copy with the founder video beside it. */
   .front-page .front-section--join {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(320px, 42%);
+    grid-template-columns: minmax(0, 1fr) minmax(280px, 38%);
     gap: 24px;
-    align-items: stretch;
+    align-items: start;
   }
 
   .front-page .front-section--join .founder-letter--cta {
     max-width: none;
     margin: 0;
-    height: 100%;
+    height: auto;
   }
 
   .front-page .front-section--join .authorIntro {
     width: 100%;
-    height: 100%;
-    min-height: 360px;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    min-height: 0;
     margin: 0;
   }
 }
@@ -3390,6 +3389,18 @@ html[data-theme='dark'] .knowledge-content .product-card--accent {
 .front-page .front-section--app {
   /* WHY: must follow .front-section so the wider masonry grid actually wins. */
   max-width: min(1680px, calc(100vw - 48px));
+}
+
+.front-page .front-section--join {
+  /* WHY: must follow .front-section so join CTA uses the wide front-page canvas like the app block. */
+  max-width: min(1680px, calc(100vw - 48px));
+}
+
+.front-page .front-section--join .authorIntro {
+  /* WHY: fixed 500px from .founder-letter + .authorIntro overstretches the embed on the home page. */
+  height: auto;
+  aspect-ratio: 16 / 9;
+  margin: 0;
 }
 
 .front-page h2 {
