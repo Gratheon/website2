@@ -723,6 +723,8 @@
         .section-article-image img {
             max-height: 320px;
             object-fit: cover;
+            /* Crop from the bottom so faces and screenshot headers stay visible */
+            object-position: center top;
         }
         .section-article-preview h2 {
             margin: 0 0 8px;
