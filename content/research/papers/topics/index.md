@@ -17,7 +17,7 @@ Browse research papers by topic.
   <div class="research-paper-filter-grid">
     <a class="research-paper-filter-card" href="/research/papers/topics/computer-vision/">
       <span class="research-paper-filter-card__icon" aria-hidden="true">👁️</span>
-      <span class="research-paper-filter-card__body"><strong>Computer Vision</strong><small>81 papers</small></span>
+      <span class="research-paper-filter-card__body"><strong>Computer Vision</strong><small>83 papers</small></span>
     </a>
     <a class="research-paper-filter-card" href="/research/papers/topics/iot-sensors/">
       <span class="research-paper-filter-card__icon" aria-hidden="true">📡</span>
@@ -61,19 +61,19 @@ Browse research papers by topic.
     </a>
     <a class="research-paper-filter-card" href="/research/papers/topics/robotics/">
       <span class="research-paper-filter-card__icon" aria-hidden="true">🤖</span>
-      <span class="research-paper-filter-card__body"><strong>Robotics</strong><small>8 papers</small></span>
+      <span class="research-paper-filter-card__body"><strong>Robotics</strong><small>9 papers</small></span>
+    </a>
+    <a class="research-paper-filter-card" href="/research/papers/topics/behavior-recognition/">
+      <span class="research-paper-filter-card__icon" aria-hidden="true">🧠</span>
+      <span class="research-paper-filter-card__body"><strong>Behavior Recognition</strong><small>5 papers</small></span>
     </a>
     <a class="research-paper-filter-card" href="/research/papers/topics/pollination-monitoring/">
       <span class="research-paper-filter-card__icon" aria-hidden="true">🌻</span>
-      <span class="research-paper-filter-card__body"><strong>Pollination Monitoring</strong><small>4 papers</small></span>
+      <span class="research-paper-filter-card__body"><strong>Pollination Monitoring</strong><small>5 papers</small></span>
     </a>
     <a class="research-paper-filter-card" href="/research/papers/topics/bee-traffic/">
       <span class="research-paper-filter-card__icon" aria-hidden="true">🚪</span>
       <span class="research-paper-filter-card__body"><strong>Bee Traffic</strong><small>3 papers</small></span>
-    </a>
-    <a class="research-paper-filter-card" href="/research/papers/topics/behavior-recognition/">
-      <span class="research-paper-filter-card__icon" aria-hidden="true">🧠</span>
-      <span class="research-paper-filter-card__body"><strong>Behavior Recognition</strong><small>3 papers</small></span>
     </a>
     <a class="research-paper-filter-card" href="/research/papers/topics/bee-counting/">
       <span class="research-paper-filter-card__icon" aria-hidden="true">🔢</span>

@@ -1,0 +1,35 @@
+[
+  {
+    "file": "content/research/papers/pdfs/2026-braid-multicamera-insect-tracking.pdf",
+    "source_url": "https://www.biorxiv.org/content/10.64898/2026.08.21.745392v1.full.pdf",
+    "verification_at": "2026-09-28T08:15:43.061519+00:00",
+    "initial_download_bytes": 28787223,
+    "initial_download_sha256": "4baa0ba38b09479112dc60b5d1ee76eb3a1c1d510c078460e34723bd3d9d9e1c",
+    "local_matches_initial_download": true,
+    "license": "CC-BY-4.0",
+    "refetch_status": 200,
+    "refetch_content_type": "application/pdf",
+    "refetch_bytes": 28787223,
+    "refetch_is_pdf": true,
+    "refetch_sha256": "b2498ff995b2ccd4a66963ecdd84148761f90f85888cef11e3156db740eca698",
+    "refetch_matches_local": false,
+    "refetch_extracted_text_matches_initial": true,
+    "refetch_difference_note": "Byte comparison localized differences to PDF/XMP timestamps and document identifiers; full pdftotext output is identical. Local PDF preserves initial response bytes."
+  },
+  {
+    "file": "content/research/papers/pdfs/2026-clover-honeybee-foraging-monitoring.pdf",
+    "source_url": "https://www.micropublication.org/static/pdf/micropub-biology-002378.pdf",
+    "verification_at": "2026-09-28T08:15:50.716170+00:00",
+    "initial_download_bytes": 7762239,
+    "initial_download_sha256": "bac376f7e6b1695324f4ba8f183e55c46f1fb7a63eb12bbe907338ec2c46293b",
+    "local_matches_initial_download": true,
+    "license": "CC-BY-4.0",
+    "refetch_status": 200,
+    "refetch_content_type": "application/pdf",
+    "refetch_bytes": 7762239,
+    "refetch_is_pdf": true,
+    "refetch_sha256": "bac376f7e6b1695324f4ba8f183e55c46f1fb7a63eb12bbe907338ec2c46293b",
+    "refetch_matches_local": true,
+    "refetch_extracted_text_matches_initial": true
+  }
+]

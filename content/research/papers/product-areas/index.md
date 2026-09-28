@@ -16,8 +16,8 @@ Product areas:
 
 - [Colony Health](colony-health.md) (52)
 - [Edge Device](edge-device.md) (10)
-- [Gate Tracker](gate-tracker.md) (30)
+- [Gate Tracker](gate-tracker.md) (32)
 - [Hive Scanner](hive-scanner.md) (24)
-- [Monitoring Platform](monitoring-platform.md) (90)
-- [Robotics](robotics.md) (8)
+- [Monitoring Platform](monitoring-platform.md) (91)
+- [Robotics](robotics.md) (9)
 <!-- GENERATED RESEARCH INDEX:END -->

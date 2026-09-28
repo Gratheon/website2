@@ -9,7 +9,7 @@ title: "Research topic: Pollination Monitoring"
 ## Summary
 
 - Topic key: `pollination-monitoring`
-- Total papers: 4
+- Total papers: 5
 - [Research papers hub](../index.md)
 - [All topics](index.md)
 
@@ -17,7 +17,8 @@ title: "Research topic: Pollination Monitoring"
 
 - [Colony Health](../product-areas/colony-health.md) (1)
 - [Edge Device](../product-areas/edge-device.md) (1)
-- [Monitoring Platform](../product-areas/monitoring-platform.md) (4)
+- [Gate Tracker](../product-areas/gate-tracker.md) (1)
+- [Monitoring Platform](../product-areas/monitoring-platform.md) (5)
 
 <section class="research-year-filter" aria-labelledby="research-year-filter-title">
   <h2 id="research-year-filter-title">Publications</h2>
@@ -26,13 +27,13 @@ title: "Research topic: Pollination Monitoring"
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="pollination-monitoring-year-filter" value="all" checked>
         <span class="research-year-tab__label">All</span>
-        <span class="research-year-tab__count">4</span>
+        <span class="research-year-tab__count">5</span>
       </label>
       <span class="research-year-tab__arrow" aria-hidden="true">›</span>
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="pollination-monitoring-year-filter" value="2026">
         <span class="research-year-tab__label">2026</span>
-        <span class="research-year-tab__count">4</span>
+        <span class="research-year-tab__count">5</span>
       </label>
     </div>
     <div class="research-year-filter__panels">
@@ -47,6 +48,7 @@ title: "Research topic: Pollination Monitoring"
         </tr>
         </thead>
         <tbody>
+        <tr><td><a href="/research/papers/digital-monitoring-and-modeling-of-honey-bee-foraging-on-clover-flowers-under-heat-stress/">Digital Monitoring and Modeling of Honey Bee Foraging on Clover Flowers Under Heat Stress</a></td><td>2026</td><td>🇺🇸 Oregon State University</td></tr>
         <tr><td><a href="/research/papers/on-device-deep-learning-for-real-time-acoustic-monitoring-of-endangered-bombus-dahlbomii-and-invasive-congeners/">On-device deep learning for real-time acoustic monitoring of endangered Bombus dahlbomii and invasive congeners</a></td><td>2026</td><td>🇺🇸 Massachusetts Institute of Technology; 🇯🇵 Kioxia Corporation; 🇨🇭 ETH Zurich; 🇦🇷 INIBIOMA, Universidad Nacional del Comahue and CONICET</td></tr>
         <tr><td><a href="/research/papers/small-pollinator-detection-in-cluttered-field-video/">Small-Pollinator Detection in Cluttered Field Video</a></td><td>2026</td><td>🇺🇸 Iowa State University; 🇺🇸 University of Central Florida</td></tr>
         <tr><td><a href="/research/papers/time-series-dataset-of-honey-bee-colony-dynamics-before-during-and-after-sunflower-pollination/">Time-series dataset of honey bee colony dynamics before, during, and after sunflower pollination</a></td><td>2026</td><td>🇺🇦 AmoHive / Ukraine smart-hive deployment</td></tr>
@@ -66,6 +68,7 @@ title: "Research topic: Pollination Monitoring"
         </tr>
         </thead>
         <tbody>
+        <tr><td><a href="/research/papers/digital-monitoring-and-modeling-of-honey-bee-foraging-on-clover-flowers-under-heat-stress/">Digital Monitoring and Modeling of Honey Bee Foraging on Clover Flowers Under Heat Stress</a></td><td>2026</td><td>🇺🇸 Oregon State University</td></tr>
         <tr><td><a href="/research/papers/on-device-deep-learning-for-real-time-acoustic-monitoring-of-endangered-bombus-dahlbomii-and-invasive-congeners/">On-device deep learning for real-time acoustic monitoring of endangered Bombus dahlbomii and invasive congeners</a></td><td>2026</td><td>🇺🇸 Massachusetts Institute of Technology; 🇯🇵 Kioxia Corporation; 🇨🇭 ETH Zurich; 🇦🇷 INIBIOMA, Universidad Nacional del Comahue and CONICET</td></tr>
         <tr><td><a href="/research/papers/small-pollinator-detection-in-cluttered-field-video/">Small-Pollinator Detection in Cluttered Field Video</a></td><td>2026</td><td>🇺🇸 Iowa State University; 🇺🇸 University of Central Florida</td></tr>
         <tr><td><a href="/research/papers/time-series-dataset-of-honey-bee-colony-dynamics-before-during-and-after-sunflower-pollination/">Time-series dataset of honey bee colony dynamics before, during, and after sunflower pollination</a></td><td>2026</td><td>🇺🇦 AmoHive / Ukraine smart-hive deployment</td></tr>

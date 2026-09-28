@@ -9,13 +9,14 @@ layout: research
 ## Summary
 
 - Topic key: `robotics`
-- Total papers: 8
+- Total papers: 9
 - [Research papers hub](../index.md)
 - [All topics](index.md)
 
 ## Product areas
 
-- [Robotics](../product-areas/robotics.md) (8)
+- [Gate Tracker](../product-areas/gate-tracker.md) (1)
+- [Robotics](../product-areas/robotics.md) (9)
 
 <section class="research-year-filter" aria-labelledby="research-year-filter-title">
   <h2 id="research-year-filter-title">Publications</h2>
@@ -24,7 +25,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="robotics-year-filter" value="all" checked>
         <span class="research-year-tab__label">All</span>
-        <span class="research-year-tab__count">8</span>
+        <span class="research-year-tab__count">9</span>
       </label>
       <span class="research-year-tab__arrow" aria-hidden="true">›</span>
       <label class="research-year-tab">
@@ -54,7 +55,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="robotics-year-filter" value="2026">
         <span class="research-year-tab__label">2026</span>
-        <span class="research-year-tab__count">1</span>
+        <span class="research-year-tab__count">2</span>
       </label>
     </div>
     <div class="research-year-filter__panels">
@@ -70,6 +71,7 @@ layout: research
         </thead>
         <tbody>
         <tr><td><a href="/research/papers/comb/">COMB: Common Open Modular robotic platform for Bees</a></td><td>2026</td><td>🇩🇪 University of Konstanz; 🇩🇪 Freie Universität Berlin</td></tr>
+        <tr><td><a href="/research/papers/low-latency-multicamera-3d-tracking-of-insects-with-braid/">Low-latency multicamera 3D tracking of insects with Braid</a></td><td>2026</td><td>🇩🇪 University of Freiburg; 🇩🇪 Bernstein Center Freiburg</td></tr>
         <tr><td><a href="/research/papers/autonomous-tracking-of-honey-bee-behaviors-over-long-term-periods-with-cooperating-robots/">Autonomous tracking of honey bee behaviors over long-term periods with cooperating robots</a></td><td>2024</td><td>🇨🇿 Czech Technical University; 🇦🇹 University of Graz; 🇬🇧 Durham University; 🇹🇷 Middle East Technical University</td></tr>
         <tr><td><a href="/research/papers/open-remote-web-lab-for-learning-robotics-andros-with-physical-and-simulated-robots-in-anauthentic-developer-environment/">Open Remote Web Lab for Learning Robotics and ROS With Physical and Simulated Robots in an Authentic Developer Environment</a></td><td>2024</td><td>🇪🇪 University of Tartu</td></tr>
         <tr><td><a href="/research/papers/towards-robotic-mapping-of-a-honeybee-comb/">Towards Robotic Mapping of a Honeybee Comb</a></td><td>2024</td><td>🇨🇿 Czech Technical University; 🇬🇧 Durham University; 🇦🇹 University of Graz</td></tr>
@@ -93,6 +95,7 @@ layout: research
         </thead>
         <tbody>
         <tr><td><a href="/research/papers/comb/">COMB: Common Open Modular robotic platform for Bees</a></td><td>2026</td><td>🇩🇪 University of Konstanz; 🇩🇪 Freie Universität Berlin</td></tr>
+        <tr><td><a href="/research/papers/low-latency-multicamera-3d-tracking-of-insects-with-braid/">Low-latency multicamera 3D tracking of insects with Braid</a></td><td>2026</td><td>🇩🇪 University of Freiburg; 🇩🇪 Bernstein Center Freiburg</td></tr>
         </tbody>
         </table>
         </div>

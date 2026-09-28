@@ -9,7 +9,7 @@ layout: research
 ## Summary
 
 - Product area key: `monitoring-platform`
-- Total papers: 90
+- Total papers: 91
 - [Research papers hub](../index.md)
 - [All product areas](index.md)
 
@@ -19,15 +19,15 @@ layout: research
 - [Bee Behaviour](../topics/bee-behaviour.md) (15)
 - [Bee Counting](../topics/bee-counting.md) (1)
 - [Bee Traffic](../topics/bee-traffic.md) (1)
-- [Behavior Recognition](../topics/behavior-recognition.md) (2)
+- [Behavior Recognition](../topics/behavior-recognition.md) (3)
 - [Colony Health](../topics/colony-health.md) (9)
-- [Computer Vision](../topics/computer-vision.md) (26)
+- [Computer Vision](../topics/computer-vision.md) (27)
 - [Datasets](../topics/datasets.md) (2)
 - [Datasets Benchmarks](../topics/datasets-benchmarks.md) (15)
 - [Edge AI Energy](../topics/edge-ai-energy.md) (20)
 - [IoT Sensors](../topics/iot-sensors.md) (61)
 - [Pollination Ecology](../topics/pollination-ecology.md) (7)
-- [Pollination Monitoring](../topics/pollination-monitoring.md) (4)
+- [Pollination Monitoring](../topics/pollination-monitoring.md) (5)
 - [Precision Beekeeping](../topics/precision-beekeeping.md) (10)
 - [Reviews Surveys](../topics/reviews-surveys.md) (21)
 - [Varroa Health](../topics/varroa-health.md) (4)
@@ -39,7 +39,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="monitoring-platform-year-filter" value="all" checked>
         <span class="research-year-tab__label">All</span>
-        <span class="research-year-tab__count">90</span>
+        <span class="research-year-tab__count">91</span>
       </label>
       <span class="research-year-tab__arrow" aria-hidden="true">›</span>
       <label class="research-year-tab">
@@ -105,7 +105,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="monitoring-platform-year-filter" value="2026">
         <span class="research-year-tab__label">2026</span>
-        <span class="research-year-tab__count">35</span>
+        <span class="research-year-tab__count">36</span>
       </label>
     </div>
     <div class="research-year-filter__panels">
@@ -134,6 +134,7 @@ layout: research
         <tr><td><a href="/research/papers/communication-efficient-embedded-fft-processing-for-acoustic-telemetry-in-lpwan-based-beehive-monitoring-systems/">Communication-efficient Embedded FFT Processing for Acoustic Telemetry in LPWAN-based Beehive Monitoring Systems</a></td><td>2026</td><td>🇵🇱 Lodz University of Technology</td></tr>
         <tr><td><a href="/research/papers/deep-learning-and-computer-vision-for-honey-bee-health-monitoring-a-systematic-survey-and-future-directions/">Deep Learning and Computer Vision for Honey Bee Health Monitoring: A Systematic Survey and Future Directions</a></td><td>2026</td><td>🇮🇳 SSVPS&#x27;s Bapusaheb Shivajirao Deore College of Engineering</td></tr>
         <tr><td><a href="/research/papers/development-of-wingbeat-based-acoustic-health-monitoring-system-for-bee-colonies/">Development of Wingbeat-Based Acoustic Health Monitoring System for Bee Colonies</a></td><td>2026</td><td>🇹🇼 National Formosa University</td></tr>
+        <tr><td><a href="/research/papers/digital-monitoring-and-modeling-of-honey-bee-foraging-on-clover-flowers-under-heat-stress/">Digital Monitoring and Modeling of Honey Bee Foraging on Clover Flowers Under Heat Stress</a></td><td>2026</td><td>🇺🇸 Oregon State University</td></tr>
         <tr><td><a href="/research/papers/estimating-colony-strength-and-pollination-efficiency-in-honey-bees-using-a-novel-dataset-and-deep-learning-based-models/">Estimating colony strength and pollination efficiency in honey bees using a novel dataset and deep learning-based models</a></td><td>2026</td><td>🇺🇸 University of Arkansas at Fayetteville; 🇺🇸 Washington State University; 🇺🇸 University of Arkansas System; 🇺🇸 Mississippi State University; 🇺🇸 University of Tennessee at Knoxville</td></tr>
         <tr><td><a href="/research/papers/fairhiveframes-1k-a-public-fair-dataset-of-1265-annotated-hive-frame-images-with-preliminary-yolov8-and-yolov11-baselines/">FAIRHiveFrames-1K: A Public FAIR Dataset of 1265 Annotated Hive Frame Images with Preliminary YOLOv8 and YOLOv11 Baselines</a></td><td>2026</td><td>🇺🇸 Utah State University</td></tr>
         <tr><td><a href="/research/papers/from-hive-sensors-to-environmental-dna-toward-a-systems-biology-framework-for-honeybee-based-early-warning-of-colony-and-ecosystem-health/">From Hive Sensors to Environmental DNA: Toward a Systems Biology Framework for Honeybee-Based Early Warning of Colony and Ecosystem Health</a></td><td>2026</td><td>🇨🇳 Yangzhou University; 🇸🇦 Imam Mohammad Ibn Saud Islamic University</td></tr>
@@ -239,6 +240,7 @@ layout: research
         <tr><td><a href="/research/papers/communication-efficient-embedded-fft-processing-for-acoustic-telemetry-in-lpwan-based-beehive-monitoring-systems/">Communication-efficient Embedded FFT Processing for Acoustic Telemetry in LPWAN-based Beehive Monitoring Systems</a></td><td>2026</td><td>🇵🇱 Lodz University of Technology</td></tr>
         <tr><td><a href="/research/papers/deep-learning-and-computer-vision-for-honey-bee-health-monitoring-a-systematic-survey-and-future-directions/">Deep Learning and Computer Vision for Honey Bee Health Monitoring: A Systematic Survey and Future Directions</a></td><td>2026</td><td>🇮🇳 SSVPS&#x27;s Bapusaheb Shivajirao Deore College of Engineering</td></tr>
         <tr><td><a href="/research/papers/development-of-wingbeat-based-acoustic-health-monitoring-system-for-bee-colonies/">Development of Wingbeat-Based Acoustic Health Monitoring System for Bee Colonies</a></td><td>2026</td><td>🇹🇼 National Formosa University</td></tr>
+        <tr><td><a href="/research/papers/digital-monitoring-and-modeling-of-honey-bee-foraging-on-clover-flowers-under-heat-stress/">Digital Monitoring and Modeling of Honey Bee Foraging on Clover Flowers Under Heat Stress</a></td><td>2026</td><td>🇺🇸 Oregon State University</td></tr>
         <tr><td><a href="/research/papers/estimating-colony-strength-and-pollination-efficiency-in-honey-bees-using-a-novel-dataset-and-deep-learning-based-models/">Estimating colony strength and pollination efficiency in honey bees using a novel dataset and deep learning-based models</a></td><td>2026</td><td>🇺🇸 University of Arkansas at Fayetteville; 🇺🇸 Washington State University; 🇺🇸 University of Arkansas System; 🇺🇸 Mississippi State University; 🇺🇸 University of Tennessee at Knoxville</td></tr>
         <tr><td><a href="/research/papers/fairhiveframes-1k-a-public-fair-dataset-of-1265-annotated-hive-frame-images-with-preliminary-yolov8-and-yolov11-baselines/">FAIRHiveFrames-1K: A Public FAIR Dataset of 1265 Annotated Hive Frame Images with Preliminary YOLOv8 and YOLOv11 Baselines</a></td><td>2026</td><td>🇺🇸 Utah State University</td></tr>
         <tr><td><a href="/research/papers/from-hive-sensors-to-environmental-dna-toward-a-systems-biology-framework-for-honeybee-based-early-warning-of-colony-and-ecosystem-health/">From Hive Sensors to Environmental DNA: Toward a Systems Biology Framework for Honeybee-Based Early Warning of Colony and Ecosystem Health</a></td><td>2026</td><td>🇨🇳 Yangzhou University; 🇸🇦 Imam Mohammad Ibn Saud Islamic University</td></tr>

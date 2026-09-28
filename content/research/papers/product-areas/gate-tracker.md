@@ -9,7 +9,7 @@ layout: research
 ## Summary
 
 - Product area key: `gate-tracker`
-- Total papers: 30
+- Total papers: 32
 - [Research papers hub](../index.md)
 - [All product areas](index.md)
 
@@ -19,13 +19,15 @@ layout: research
 - [Bee Behaviour](../topics/bee-behaviour.md) (21)
 - [Bee Counting](../topics/bee-counting.md) (1)
 - [Bee Traffic](../topics/bee-traffic.md) (2)
-- [Behavior Recognition](../topics/behavior-recognition.md) (1)
-- [Computer Vision](../topics/computer-vision.md) (28)
+- [Behavior Recognition](../topics/behavior-recognition.md) (3)
+- [Computer Vision](../topics/computer-vision.md) (30)
 - [Datasets](../topics/datasets.md) (1)
 - [Datasets Benchmarks](../topics/datasets-benchmarks.md) (5)
 - [Edge AI Energy](../topics/edge-ai-energy.md) (2)
 - [IoT Sensors](../topics/iot-sensors.md) (3)
 - [Pollination Ecology](../topics/pollination-ecology.md) (3)
+- [Pollination Monitoring](../topics/pollination-monitoring.md) (1)
+- [Robotics](../topics/robotics.md) (1)
 - [Varroa Health](../topics/varroa-health.md) (1)
 
 <section class="research-year-filter" aria-labelledby="research-year-filter-title">
@@ -35,7 +37,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="gate-tracker-year-filter" value="all" checked>
         <span class="research-year-tab__label">All</span>
-        <span class="research-year-tab__count">30</span>
+        <span class="research-year-tab__count">32</span>
       </label>
       <span class="research-year-tab__arrow" aria-hidden="true">›</span>
       <label class="research-year-tab">
@@ -107,7 +109,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="gate-tracker-year-filter" value="2026">
         <span class="research-year-tab__label">2026</span>
-        <span class="research-year-tab__count">4</span>
+        <span class="research-year-tab__count">6</span>
       </label>
     </div>
     <div class="research-year-filter__panels">
@@ -124,6 +126,8 @@ layout: research
         <tbody>
         <tr><td><a href="/research/papers/bee-detection-and-tracking-at-hive-entrance-using-yolo11-and-bytetrack/">Bee Detection and Tracking at Hive Entrance using YOLO11 and ByteTrack</a></td><td>2026</td><td>🇫🇮 Savonia University of Applied Sciences; 🇩🇪 Ostbayerische Technische Hochschule Regensburg</td></tr>
         <tr><td><a href="/research/papers/continuous-non-invasive-monitoring-of-hive-entrance-activity-reveals-honey-bee-colony-dynamics/">Continuous Non-Invasive Monitoring of Hive Entrance Activity Reveals Honey Bee Colony Dynamics</a></td><td>2026</td><td>🇹🇷 Van Yüzüncü Yıl University</td></tr>
+        <tr><td><a href="/research/papers/digital-monitoring-and-modeling-of-honey-bee-foraging-on-clover-flowers-under-heat-stress/">Digital Monitoring and Modeling of Honey Bee Foraging on Clover Flowers Under Heat Stress</a></td><td>2026</td><td>🇺🇸 Oregon State University</td></tr>
+        <tr><td><a href="/research/papers/low-latency-multicamera-3d-tracking-of-insects-with-braid/">Low-latency multicamera 3D tracking of insects with Braid</a></td><td>2026</td><td>🇩🇪 University of Freiburg; 🇩🇪 Bernstein Center Freiburg</td></tr>
         <tr><td><a href="/research/papers/machine-vision-based-quantification-of-colony-level-homing-adaptation-in-apis-mellifera-following-hive-entrance-displacement/">Machine Vision-Based Quantification of Colony-Level Homing Adaptation in Apis mellifera Following Hive Entrance Displacement</a></td><td>2026</td><td>🇨🇳 Agricultural Information Institute, Chinese Academy of Agricultural Sciences; 🇨🇳 Key Laboratory of Agricultural Blockchain Application, Ministry of Agriculture and Rural Affairs</td></tr>
         <tr><td><a href="/research/papers/physics-aware-vision-instrumentation-for-stingless-bee-counting-at-hive-entrance-using-hybrid-edge-cloud-object-detection/">Physics-aware vision instrumentation for stingless bee counting at hive entrance using hybrid edge-cloud object detection</a></td><td>2026</td><td>🇲🇾 Universiti Teknologi Malaysia; 🇮🇩 Universitas Negeri Jakarta; 🇮🇩 Institut Teknologi Indonesia; 🇮🇩 Politeknik Negeri Bandung; 🇮🇩 National Research and Innovation Agency</td></tr>
         <tr><td><a href="/research/papers/apis-mellifera-bee-verification-with-iot-and-graph-neural-network/">Apis mellifera Bee Verification with IoT and Graph Neural Network</a></td><td>2025</td><td>🇲🇽 Instituto Tecnológico El Llano Aguascalientes</td></tr>
@@ -169,6 +173,8 @@ layout: research
         <tbody>
         <tr><td><a href="/research/papers/bee-detection-and-tracking-at-hive-entrance-using-yolo11-and-bytetrack/">Bee Detection and Tracking at Hive Entrance using YOLO11 and ByteTrack</a></td><td>2026</td><td>🇫🇮 Savonia University of Applied Sciences; 🇩🇪 Ostbayerische Technische Hochschule Regensburg</td></tr>
         <tr><td><a href="/research/papers/continuous-non-invasive-monitoring-of-hive-entrance-activity-reveals-honey-bee-colony-dynamics/">Continuous Non-Invasive Monitoring of Hive Entrance Activity Reveals Honey Bee Colony Dynamics</a></td><td>2026</td><td>🇹🇷 Van Yüzüncü Yıl University</td></tr>
+        <tr><td><a href="/research/papers/digital-monitoring-and-modeling-of-honey-bee-foraging-on-clover-flowers-under-heat-stress/">Digital Monitoring and Modeling of Honey Bee Foraging on Clover Flowers Under Heat Stress</a></td><td>2026</td><td>🇺🇸 Oregon State University</td></tr>
+        <tr><td><a href="/research/papers/low-latency-multicamera-3d-tracking-of-insects-with-braid/">Low-latency multicamera 3D tracking of insects with Braid</a></td><td>2026</td><td>🇩🇪 University of Freiburg; 🇩🇪 Bernstein Center Freiburg</td></tr>
         <tr><td><a href="/research/papers/machine-vision-based-quantification-of-colony-level-homing-adaptation-in-apis-mellifera-following-hive-entrance-displacement/">Machine Vision-Based Quantification of Colony-Level Homing Adaptation in Apis mellifera Following Hive Entrance Displacement</a></td><td>2026</td><td>🇨🇳 Agricultural Information Institute, Chinese Academy of Agricultural Sciences; 🇨🇳 Key Laboratory of Agricultural Blockchain Application, Ministry of Agriculture and Rural Affairs</td></tr>
         <tr><td><a href="/research/papers/physics-aware-vision-instrumentation-for-stingless-bee-counting-at-hive-entrance-using-hybrid-edge-cloud-object-detection/">Physics-aware vision instrumentation for stingless bee counting at hive entrance using hybrid edge-cloud object detection</a></td><td>2026</td><td>🇲🇾 Universiti Teknologi Malaysia; 🇮🇩 Universitas Negeri Jakarta; 🇮🇩 Institut Teknologi Indonesia; 🇮🇩 Politeknik Negeri Bandung; 🇮🇩 National Research and Innovation Agency</td></tr>
         </tbody>
