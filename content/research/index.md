@@ -44,7 +44,33 @@ description: "Gratheon Research is a working knowledge base for digital beekeepi
   </section>
 
   <section>
-    <h2>Research focus areas</h2>
+    <h2>Highlighted papers and threads</h2>
+    <div class="research-highlight-grid">
+      <article class="research-highlight-card">
+        <span class="research-chip">2026 · Robotics</span>
+        <h3><a href="/research/papers/comb/">COMB: Common Open Modular robotic platform for Bees</a></h3>
+        <p>Open modular robotics work from the University of Konstanz and Freie Universität Berlin, relevant to future autonomous-apiary experiments.</p>
+      </article>
+      <article class="research-highlight-card">
+        <span class="research-chip">2025 · Computer vision</span>
+        <h3><a href="/research/papers/evaluation-of-single-shot-object-detection-models-for-identifying-fanning-behavior-in-honeybees-at-the-hive-entrance/">Fanning behavior detection at the hive entrance</a></h3>
+        <p>Object-detection benchmarking for behavior signals that can strengthen entrance monitoring and colony-state interpretation.</p>
+      </article>
+      <article class="research-highlight-card">
+        <span class="research-chip">2025 · Colony health</span>
+        <h3><a href="/research/papers/an-ai-based-open-source-software-for-varroa-mite-fall-analysis-in-honeybee-colonies/">Open-source varroa mite fall analysis</a></h3>
+        <p>Practical vision tooling for colony-health workflows and varroa-related evaluation.</p>
+      </article>
+      <article class="research-highlight-card">
+        <span class="research-chip">2021 · Datasets</span>
+        <h3><a href="/research/papers/audio-image-video-and-weather-datasets-for-continuous-electronic-beehive-monitoring/">Continuous electronic beehive monitoring datasets</a></h3>
+        <p>Reference data spanning audio, image, video, and weather signals for continuous hive observability.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="research-section--tracked-papers">
+    <h2>Tracked academic research papers</h2>
     <div class="research-card-grid research-card-grid--3">
       <article class="research-card">
         <h3><a href="/research/papers/topics/computer-vision/">Computer vision</a></h3>
@@ -75,32 +101,6 @@ description: "Gratheon Research is a working knowledge base for digital beekeepi
         <h3><a href="/research/papers/">Research papers index</a></h3>
         <p>Browse the full bibliography by year, topic, product area, and research team without changing existing paper URLs.</p>
         <span class="research-card-meta">Academic bibliography</span>
-      </article>
-    </div>
-  </section>
-
-  <section>
-    <h2>Highlighted papers and threads</h2>
-    <div class="research-highlight-grid">
-      <article class="research-highlight-card">
-        <span class="research-chip">2026 · Robotics</span>
-        <h3><a href="/research/papers/comb/">COMB: Common Open Modular robotic platform for Bees</a></h3>
-        <p>Open modular robotics work from the University of Konstanz and Freie Universität Berlin, relevant to future autonomous-apiary experiments.</p>
-      </article>
-      <article class="research-highlight-card">
-        <span class="research-chip">2025 · Computer vision</span>
-        <h3><a href="/research/papers/evaluation-of-single-shot-object-detection-models-for-identifying-fanning-behavior-in-honeybees-at-the-hive-entrance/">Fanning behavior detection at the hive entrance</a></h3>
-        <p>Object-detection benchmarking for behavior signals that can strengthen entrance monitoring and colony-state interpretation.</p>
-      </article>
-      <article class="research-highlight-card">
-        <span class="research-chip">2025 · Colony health</span>
-        <h3><a href="/research/papers/an-ai-based-open-source-software-for-varroa-mite-fall-analysis-in-honeybee-colonies/">Open-source varroa mite fall analysis</a></h3>
-        <p>Practical vision tooling for colony-health workflows and varroa-related evaluation.</p>
-      </article>
-      <article class="research-highlight-card">
-        <span class="research-chip">2021 · Datasets</span>
-        <h3><a href="/research/papers/audio-image-video-and-weather-datasets-for-continuous-electronic-beehive-monitoring/">Continuous electronic beehive monitoring datasets</a></h3>
-        <p>Reference data spanning audio, image, video, and weather signals for continuous hive observability.</p>
       </article>
     </div>
   </section>

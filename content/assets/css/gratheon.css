@@ -3434,17 +3434,19 @@ html[data-theme='dark'] .knowledge-content .research-source-card--primary {
 /* WHY: the stats row and highlighted papers row are promoted editorial blocks on the research landing page.
    WHAT: let these sections use the full knowledge shell width while keeping surrounding copy readable. */
 .knowledge-page-research .knowledge-content-layout:has(.research-page > .research-stats),
-.knowledge-page-research .knowledge-content-layout:has(.research-page > section > .research-highlight-grid) {
+.knowledge-page-research .knowledge-content-layout:has(.research-page > section > .research-highlight-grid),
+.knowledge-page-research .knowledge-content-layout:has(.research-page > .research-section--tracked-papers) {
   display: block;
 }
 
 .knowledge-page-research .knowledge-content-layout:has(.research-page > .research-stats) .knowledge-article,
-.knowledge-page-research .knowledge-content-layout:has(.research-page > section > .research-highlight-grid) .knowledge-article {
+.knowledge-page-research .knowledge-content-layout:has(.research-page > section > .research-highlight-grid) .knowledge-article,
+.knowledge-page-research .knowledge-content-layout:has(.research-page > .research-section--tracked-papers) .knowledge-article {
   max-width: none;
 }
 
-.knowledge-page-research .knowledge-content > .research-page:has(.research-stats) > section:not(.research-stats):not(:has(> .research-highlight-grid)):not(:has(> .research-card-grid .research-collab-card)),
-.knowledge-page-research .knowledge-content > .research-page:has(.research-highlight-grid) > section:not(:has(> .research-highlight-grid)):not(.research-stats):not(:has(> .research-card-grid .research-collab-card)) {
+.knowledge-page-research .knowledge-content > .research-page:has(.research-stats) > section:not(.research-stats):not(.research-section--tracked-papers):not(:has(> .research-highlight-grid)):not(:has(> .research-card-grid .research-collab-card)),
+.knowledge-page-research .knowledge-content > .research-page:has(.research-highlight-grid) > section:not(:has(> .research-highlight-grid)):not(.research-stats):not(.research-section--tracked-papers):not(:has(> .research-card-grid .research-collab-card)) {
   max-width: 1120px;
 }
 
@@ -3453,12 +3455,30 @@ html[data-theme='dark'] .knowledge-content .research-source-card--primary {
 }
 
 .knowledge-page-research .knowledge-content > .research-page > .research-stats,
-.knowledge-page-research .knowledge-content > .research-page > section:has(> .research-highlight-grid) {
+.knowledge-page-research .knowledge-content > .research-page > section:has(> .research-highlight-grid),
+.knowledge-page-research .knowledge-content > .research-page > .research-section--tracked-papers {
   max-width: none;
 }
 
+/* WHY: browser review asked for a tighter stats band and less dead space above the first full-width row. */
 .knowledge-page-research .knowledge-content > .research-page > .research-stats {
   margin-top: 0;
+  margin-bottom: clamp(10px, 1.6vw, 18px);
+}
+
+.knowledge-page-research .knowledge-content > .research-page > .research-stats .research-stat-card {
+  padding: clamp(12px, 1.8vw, 22px);
+}
+
+/* WHY: tracked papers grid should read like the highlighted row: shell width with tighter vertical rhythm. */
+.knowledge-page-research .knowledge-content > .research-page > .research-section--tracked-papers > h2 {
+  margin-top: clamp(14px, 2vw, 24px);
+  padding-top: 0;
+}
+
+.knowledge-page-research .knowledge-content > .research-page > .research-section--tracked-papers .research-card-grid {
+  margin-top: clamp(8px, 1.2vw, 14px);
+  margin-bottom: clamp(12px, 2vw, 22px);
 }
 
 .knowledge-page-research .knowledge-content > .research-page > section:has(> .research-highlight-grid) > h2 {
