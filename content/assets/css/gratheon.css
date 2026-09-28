@@ -3087,6 +3087,15 @@ html[data-theme='dark'] .knowledge-content .research-source-card--primary {
   color: #fff;
 }
 
+/* WHY: ink-filled primary CTAs match light sections; on the #111 showcase they disappear until hover. */
+.knowledge-content .product-web-app-showcase .product-button--primary,
+.knowledge-content .product-web-app-showcase .product-button--primary:visited {
+  background: var(--brand-yellow);
+  color: #111;
+  border-color: var(--btn-yellow-edge);
+  box-shadow: 0 var(--btn-3d-depth-sm) 0 0 color-mix(in srgb, var(--btn-yellow-edge) 72%, black);
+}
+
 .knowledge-content .product-tier-grid {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
