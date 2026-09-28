@@ -521,8 +521,8 @@
     }
     if (!productsMap) return;
 
-    // Keep knowledge-map section labels navigable even after the products map is
-    // split into separate web-app and hardware maps below.
+    // Keep knowledge-map section labels navigable when the products map is rebuilt
+    // on individual product pages (not on the /products/ landing page).
     document.addEventListener('click', function(event) {
       var link = event.target.closest('.knowledge-map-nav .sidebar-section > .sidebar-section-head > a');
       if (!link) return;
@@ -625,33 +625,15 @@
       cleanSectionLabels(item);
     });
 
-    // Keep a hardware-details map after the product content. The original map
-    // stays only on the web-app page, where it is rebuilt into the tier grid.
-    var hardwareMapSection = null;
-    var hardwareProductsMap = productsMap;
-    if (mapSection && webShowcase) {
-      hardwareMapSection = mapSection.cloneNode(true);
-      hardwareMapSection.classList.add('knowledge-map--hardware-products');
-      var hardwareKicker = hardwareMapSection.querySelector('.knowledge-map-kicker');
-      var hardwareHeading = hardwareMapSection.querySelector('.knowledge-map-intro h2');
-      // WHY: the uppercase kicker repeated the heading without adding a path.
-      if (hardwareKicker) hardwareKicker.remove();
-      if (hardwareHeading) {
-        hardwareHeading.textContent = document.documentElement.lang === 'et' ? 'Vaata tooteriistvara detaile' : 'Explore hardware product details';
-      }
-      hardwareProductsMap = hardwareMapSection.querySelector('.knowledge-map-nav--split .sidebar-menu');
-      hardwareProductsMap.classList.add('knowledge-product-submenu-map');
-      hardwareProductsMap.textContent = '';
-      if (isWebAppProductPage) {
-        webShowcase.insertAdjacentElement('beforebegin', mapSection);
-      } else {
-        mapSection.remove();
-      }
-      webShowcase.insertAdjacentElement('afterend', hardwareMapSection);
+    // WHY: /products/ already surfaces hardware through cards and deep links; the
+    // cloned map below the web-app showcase duplicated that catalog.
+    var skipProductKnowledgeMap = !!(mapSection && webShowcase);
+    if (skipProductKnowledgeMap) {
+      mapSection.remove();
+    } else {
+      productsMap.classList.add('knowledge-product-submenu-map');
+      productsMap.textContent = '';
     }
-
-    productsMap.classList.add('knowledge-product-submenu-map');
-    productsMap.textContent = '';
 
     var webAppCard = productSections.find(function(item) {
       return normalizedPath(directLink(item)).endsWith('/products/web_app/');
@@ -900,17 +882,20 @@
       });
     }
 
-    productSections.forEach(function(item) {
-      if (item === webAppCard) return;
-      stripBacklogSections(item);
-      // WHY: ideas-only products such as Robotic Apiary would otherwise remain
-      // as empty title cards after backlog sections are removed.
-      if (!hasVisibleMapContent(item)) return;
-      flattenHardwareCard(item);
-      if (!hasVisibleMapContent(item)) return;
-      item.classList.add('knowledge-map-product-card');
-      hardwareProductsMap.appendChild(item);
-    });
+    if (!skipProductKnowledgeMap) {
+      var hardwareProductsMap = productsMap;
+      productSections.forEach(function(item) {
+        if (item === webAppCard) return;
+        stripBacklogSections(item);
+        // WHY: ideas-only products such as Robotic Apiary would otherwise remain
+        // as empty title cards after backlog sections are removed.
+        if (!hasVisibleMapContent(item)) return;
+        flattenHardwareCard(item);
+        if (!hasVisibleMapContent(item)) return;
+        item.classList.add('knowledge-map-product-card');
+        hardwareProductsMap.appendChild(item);
+      });
+    }
   });
   </script>
   {{if .JSPath}}<script defer src="{{.JSPath}}"></script>{{end}}
