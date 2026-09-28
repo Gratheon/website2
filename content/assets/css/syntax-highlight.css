@@ -1,17 +1,16 @@
-/* Dependency-free syntax highlighting for Markdown fenced code blocks.
-   WHY: blog-engine-md already emits language-* classes, but the website does not ship
-   a highlighter. These variables and token styles are used by syntax-highlight.js. */
+/* Chroma token colors for server-side highlighted fenced code blocks (blog-engine-md).
+   WHY: build output uses pre.chroma markup; knowledge pages load this file via main.css. */
 :root {
   --syntax-code-bg: #f6f8fa;
   --syntax-code-border: #d8dee4;
-  --syntax-code-text: #1f2328;
+  --syntax-code-text: #24292f;
   --syntax-token-comment: #6e7781;
   --syntax-token-keyword: #cf222e;
-  --syntax-token-string: #0a7f36;
+  --syntax-token-string: #0a3069;
   --syntax-token-number: #0550ae;
   --syntax-token-property: #953800;
   --syntax-token-function: #8250df;
-  --syntax-token-operator: #57606a;
+  --syntax-token-type: #116329;
 }
 
 html[data-theme='dark'] {
@@ -22,37 +21,34 @@ html[data-theme='dark'] {
   --syntax-token-keyword: #ff7b72;
   --syntax-token-string: #a5d6ff;
   --syntax-token-number: #79c0ff;
-  --syntax-token-property: #d2a8ff;
+  --syntax-token-property: #ffa657;
   --syntax-token-function: #d2a8ff;
-  --syntax-token-operator: #ff7b72;
+  --syntax-token-type: #7ee787;
 }
 
-article .content pre {
+.knowledge-content pre.chroma,
+article .content pre.chroma {
   border: 1px solid var(--syntax-code-border);
-  background: var(--syntax-code-bg) !important;
+  background: var(--syntax-code-bg);
   color: var(--syntax-code-text);
   line-height: 1.5;
+  overflow-x: auto;
 }
 
-article .content pre > code[class*="language-"],
-pre > code[class*="language-"] {
+.knowledge-content pre.chroma code,
+article .content pre.chroma code {
   display: block;
-  background: transparent !important;
+  min-width: max-content;
+  padding: 0;
+  background: none;
   color: inherit;
-  white-space: pre;
 }
 
-pre code.is-highlighted .token-comment { color: var(--syntax-token-comment); font-style: italic; }
-pre code.is-highlighted .token-keyword { color: var(--syntax-token-keyword); font-weight: 700; }
-pre code.is-highlighted .token-string { color: var(--syntax-token-string); }
-pre code.is-highlighted .token-number { color: var(--syntax-token-number); }
-pre code.is-highlighted .token-property { color: var(--syntax-token-property); }
-pre code.is-highlighted .token-function { color: var(--syntax-token-function); }
-pre code.is-highlighted .token-operator { color: var(--syntax-token-operator); }
-pre code.is-highlighted .token-punctuation { color: var(--text-secondary, #666); }
-pre code.is-highlighted .token-variable { color: var(--syntax-token-number); }
-pre code.is-highlighted .token-command { color: var(--syntax-token-function); font-weight: 700; }
-pre code.is-highlighted .token-option { color: var(--syntax-token-property); }
-pre code.is-highlighted .token-header { color: var(--syntax-token-property); }
-pre code.is-highlighted .token-method { color: var(--syntax-token-keyword); font-weight: 700; }
-pre code.is-highlighted .token-path { color: var(--syntax-token-string); }
+.chroma .line { display: block; }
+.chroma .k, .chroma .kc, .chroma .kd, .chroma .kn, .chroma .kp, .chroma .kr, .chroma .kt, .chroma .o, .chroma .ow { color: var(--syntax-token-keyword); }
+.chroma .na, .chroma .nc, .chroma .nd, .chroma .ne, .chroma .nf, .chroma .nl { color: var(--syntax-token-function); }
+.chroma .nb, .chroma .bp { color: var(--syntax-token-property); }
+.chroma .no, .chroma .nv, .chroma .vc, .chroma .vg, .chroma .vi, .chroma .m, .chroma .mb, .chroma .mf, .chroma .mh, .chroma .mi, .chroma .il, .chroma .mo { color: var(--syntax-token-number); }
+.chroma .nn, .chroma .nt { color: var(--syntax-token-type); }
+.chroma .s, .chroma .sa, .chroma .sb, .chroma .sc, .chroma .dl, .chroma .sd, .chroma .s2, .chroma .se, .chroma .sh, .chroma .si, .chroma .sx, .chroma .sr, .chroma .s1, .chroma .ss { color: var(--syntax-token-string); }
+.chroma .c, .chroma .ch, .chroma .cm, .chroma .c1, .chroma .cs, .chroma .cp, .chroma .cpf { color: var(--syntax-token-comment); font-style: italic; }
