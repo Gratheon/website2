@@ -92,24 +92,26 @@ def render_scientific_publications_index(papers: list[Paper]) -> str:
     year_groups = group_papers_by_year(papers)
     product_area_groups = group_papers_by_product_area(papers)
 
+    # WHY: the bibliography table is the page's primary content; a boxed summary
+    # and generic copy delayed it below the fold. WHAT: keep a compact heading
+    # row with filter chips, then the table.
     lines: list[str] = [
-        '<section class="research-publications-summary" aria-label="Scientific publications summary">',
-        f'  <p class="research-card-meta">{len(papers)} paper notes</p>',
-        '  <p>This bibliography links to individual paper notes kept at their existing URLs under <code>/research/papers/</code>.</p>',
+        '## Publications',
+        '',
+        '<div class="research-publications-toolbar">',
+        f'  <p class="research-publications-count">{len(papers)} papers</p>',
         '  <div class="research-publication-filter-links" aria-label="Alternative filters">',
-        f'    <a href="../topics/">🏷️ Topics <span>{len(topic_groups)}</span></a>',
-        f'    <a href="../years/">📅 Years <span>{len(year_groups)}</span></a>',
+        f'    <a href="../topics/">Topics <span>{len(topic_groups)}</span></a>',
+        f'    <a href="../years/">Years <span>{len(year_groups)}</span></a>',
     ]
 
     if product_area_groups:
-        lines.append(f'    <a href="../product-areas/">🧩 Product areas <span>{len(product_area_groups)}</span></a>')
+        lines.append(f'    <a href="../product-areas/">Product areas <span>{len(product_area_groups)}</span></a>')
 
     lines.extend([
-        '    <a href="../">← Research papers hub</a>',
+        '    <a href="../">Research papers hub</a>',
         '  </div>',
-        '</section>',
-        '',
-        '## Publications',
+        '</div>',
         '',
     ])
     # WHY: a bibliography with 100+ entries is easier to scan as aligned columns.

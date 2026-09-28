@@ -2720,24 +2720,35 @@ html[data-theme='dark'] .knowledge-content .research-source-card--primary {
   letter-spacing: -0.04em;
 }
 
-.knowledge-content .research-publications-summary {
-  display: grid;
-  gap: 14px;
-  margin-bottom: clamp(26px, 4vw, 48px);
-  padding: clamp(18px, 2.6vw, 30px);
-  border: 1px solid var(--knowledge-line);
-  border-radius: 20px;
-  background: var(--knowledge-soft);
+/* Bibliography page: keep heading + filters tight so the table starts high. */
+.knowledge-content:has(.research-publications-table-wrap) > h2:first-of-type {
+  margin: 0 0 10px;
+  padding-top: 0;
+  border-top: 0;
+  font-size: clamp(1.45rem, 2.2vw, 2.1rem);
+  letter-spacing: -0.04em;
 }
 
-.knowledge-content .research-publications-summary p {
+.knowledge-content .research-publications-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 16px;
+  margin: 0 0 14px;
+}
+
+.knowledge-content .research-publications-count {
   margin: 0;
+  color: var(--knowledge-muted);
+  font-family: var(--font-small);
+  font-size: 0.92rem;
+  font-weight: 650;
 }
 
 .knowledge-content .research-publication-filter-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 8px;
 }
 
 .knowledge-content .research-publication-filter-links a,
@@ -2781,7 +2792,7 @@ html[data-theme='dark'] .knowledge-content .research-source-card--primary {
 .knowledge-content .research-publications-table-wrap {
   width: 100%;
   max-width: none;
-  margin: clamp(18px, 3vw, 32px) 0 0;
+  margin: 0;
   overflow-x: auto;
   border: 1px solid var(--knowledge-line);
   background: var(--knowledge-paper);
@@ -3726,25 +3737,51 @@ html[data-theme='dark'] .knowledge-content .product-card--accent {
   aspect-ratio: 16 / 9;
 }
 
-.knowledge-hero--paper-detail {
+.knowledge-hero--paper-detail,
+.knowledge-hero--bibliography {
   grid-template-columns: minmax(0, 1fr);
   gap: 0;
 }
 
-.knowledge-hero--paper-detail .knowledge-hero-copy {
+.knowledge-hero--paper-detail .knowledge-hero-copy,
+.knowledge-hero--bibliography .knowledge-hero-copy {
   min-height: auto;
   max-width: none;
 }
 
-.knowledge-hero--paper-detail h1 {
+.knowledge-hero--paper-detail h1,
+.knowledge-hero--bibliography h1 {
   font-size: clamp(2.35rem, 4.8vw, 4.8rem);
   line-height: 1.02;
   letter-spacing: -0.055em;
   max-width: none;
 }
 
-.knowledge-hero--paper-detail .knowledge-standfirst {
+.knowledge-hero--paper-detail .knowledge-standfirst,
+.knowledge-hero--bibliography .knowledge-standfirst {
   max-width: 1100px;
+}
+
+/* WHY: this page's job is the bibliography table, not a marketing hero.
+   WHAT: drop the large visual gap and keep title + one-line description compact. */
+.knowledge-hero--bibliography {
+  margin-bottom: clamp(18px, 2.5vw, 32px);
+  padding-bottom: clamp(16px, 2vw, 28px);
+}
+
+.knowledge-hero--bibliography .knowledge-breadcrumbs ol {
+  margin-bottom: 12px;
+}
+
+.knowledge-hero--bibliography .knowledge-standfirst {
+  margin-top: 12px;
+  font-size: clamp(1rem, 1.2vw, 1.15rem);
+  line-height: 1.4;
+}
+
+.knowledge-page-research:has(.knowledge-hero--bibliography) .knowledge-map {
+  margin-top: clamp(28px, 4vw, 48px);
+  margin-bottom: 0;
 }
 
 .research-paper-meta {

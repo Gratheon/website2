@@ -8,18 +8,17 @@ hideToc: true
 ---
 
 <!-- GENERATED RESEARCH INDEX:START -->
-<section class="research-publications-summary" aria-label="Scientific publications summary">
-  <p class="research-card-meta">166 paper notes</p>
-  <p>This bibliography links to individual paper notes kept at their existing URLs under <code>/research/papers/</code>.</p>
-  <div class="research-publication-filter-links" aria-label="Alternative filters">
-    <a href="../topics/">🏷️ Topics <span>17</span></a>
-    <a href="../years/">📅 Years <span>15</span></a>
-    <a href="../product-areas/">🧩 Product areas <span>6</span></a>
-    <a href="../">← Research papers hub</a>
-  </div>
-</section>
-
 ## Publications
+
+<div class="research-publications-toolbar">
+  <p class="research-publications-count">166 papers</p>
+  <div class="research-publication-filter-links" aria-label="Alternative filters">
+    <a href="../topics/">Topics <span>17</span></a>
+    <a href="../years/">Years <span>15</span></a>
+    <a href="../product-areas/">Product areas <span>6</span></a>
+    <a href="../">Research papers hub</a>
+  </div>
+</div>
 
 <div class="research-publications-table-wrap">
 <table>

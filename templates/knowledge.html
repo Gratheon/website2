@@ -208,6 +208,7 @@
     {{ $isResearchPapersSubIndex := or (eq $researchPaperPath "scientific-publications/") (eq $researchPaperPath "topics/") (eq $researchPaperPath "years/") (eq $researchPaperPath "product-areas/") (eq $researchPaperPath "teams/") (eq $researchPaperPath "other-research-sources/") }}
     {{ $isResearchPapersTaxonomy := or (ne (trimPrefix $researchPaperPath "topics/") $researchPaperPath) (ne (trimPrefix $researchPaperPath "years/") $researchPaperPath) (ne (trimPrefix $researchPaperPath "product-areas/") $researchPaperPath) }}
     {{ $isPaperDetail := and $isResearchPaperPath (not $isResearchPapersIndex) (not $isResearchPapersSubIndex) (not $isResearchPapersTaxonomy) }}
+    {{ $isScientificPublications := eq $researchPaperPath "scientific-publications/" }}
     {{/* WHY: product pages with an interactive 3D model (frontmatter heroModel)
          show that model in the hero instead of the generic products picture;
          the viewer block itself stays in the markdown and is moved up by JS. */}}
@@ -237,7 +238,7 @@
     {{ if $heroModel }}{{ $heroLead = true }}{{ end }}
     {{ $hasProductStatus := or $productPhase $productTrl }}
     {{ $heroProductDetail := or $heroModel $heroLead }}
-    <section class="knowledge-hero{{if $isProductFeaturePage}} knowledge-hero--text-only{{end}}{{if $isPaperDetail}} knowledge-hero--paper-detail{{end}}{{if $heroProductDetail}} knowledge-hero--model{{end}}" aria-labelledby="knowledge-title">
+    <section class="knowledge-hero{{if $isProductFeaturePage}} knowledge-hero--text-only{{end}}{{if $isPaperDetail}} knowledge-hero--paper-detail{{end}}{{if $isScientificPublications}} knowledge-hero--bibliography{{end}}{{if $heroProductDetail}} knowledge-hero--model{{end}}" aria-labelledby="knowledge-title">
       <div class="knowledge-hero-copy">
         {{template "knowledge_breadcrumbs" .}}
         {{if $hasProductStatus}}
@@ -264,6 +265,8 @@
             {{.MetaDescription}}
           {{else if $isPaperDetail}}
             {{with .Frontmatter.Params}}{{if index . "abstract"}}{{index . "abstract"}}{{else}}{{$.Page.Description}}{{end}}{{else}}{{.Page.Description}}{{end}}
+          {{else if $isScientificPublications}}
+            {{if .MetaDescription}}{{.MetaDescription}}{{else}}{{.Page.Description}}{{end}}
           {{else if eq .Page.Layout "products"}}
             {{if eq .Page.Language "et"}}Tarkvara, seadmed ja automaatika on esitatud ühe seotud süsteemina, et tootepere oleks lihtne sirvida ka sügava funktsioonistruktuuriga.{{else}}Software, devices, and automation are presented as one connected system, so product depth stays navigable without feeling like a reference manual.{{end}}
           {{else}}
@@ -271,7 +274,7 @@
           {{end}}
         </p>
         {{end}}
-        {{if not $isProductFeaturePage}}
+        {{if and (not $isProductFeaturePage) (not $isScientificPublications)}}
         <div class="knowledge-actions">
           {{if $isPaperDetail}}
             {{with .Frontmatter.Params}}
@@ -350,7 +353,7 @@
           </button>
         </div>
       </div>
-      {{else if and (not $isProductFeaturePage) (not $isPaperDetail)}}
+      {{else if and (not $isProductFeaturePage) (not $isPaperDetail) (not $isScientificPublications)}}
       <div class="knowledge-hero-media" aria-hidden="true">
         {{if eq .Page.Layout "products"}}
         {{ $productsHeroImage := "/assets/img/products.png" }}
@@ -387,7 +390,9 @@
     {{if and (eq .Page.Layout "research") (or (eq .Page.URL "/research/") (eq .Page.URL (printf "/%s/research/" .Page.Language)))}}
       {{template "research_assets" .}}
     {{end}}
+      {{if not $isScientificPublications}}
       {{template "knowledge_map" .}}
+      {{end}}
     {{end}}
 
     <div class="knowledge-content-layout">
@@ -478,6 +483,9 @@
       {{end}}
     </div>
 
+    {{if $isScientificPublications}}
+      {{template "knowledge_map" .}}
+    {{end}}
     {{if eq .Page.Layout "products"}}
       {{ $hideProductMap := false }}
       {{with .Frontmatter.Params}}{{with index . "hideProductMap"}}{{ $hideProductMap = . }}{{end}}{{end}}
