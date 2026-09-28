@@ -18,23 +18,23 @@ ctaSecondaryHref: https://github.com/Gratheon/web-app/releases/latest
 
 | Entity | Description | Key Properties |
 |--------|-------------|----------------|
-| **Apiary** | Set of beehives located together at specific location. Size limited by surrounding land that bees can pollinate | Location (lat/lng), name, active status |
-| **Hive** | Physical beehive structure with vertical sections. Can be split, merged, or collapsed | Name, color, status, boxes, family, split/merge history, collapse tracking |
-| **Family (Colony/Queen)** | Bee superorganism led by queen that lays eggs | Race (apis mellifera variation), added year, age (auto-calculated), treatments |
-| **Box (Hive Section)** | Hollow wooden section that houses frames. Types: Deep (brood), Super (honey), Gate (entrance), Ventilation, Queen Excluder, Horizontal Feeder, Bottom Board | Type, position, color, frames |
-| **Frame** | Wooden frame with wax foundation inside sections. Types: Foundation, Empty Comb, Void, Partition, Feeder | Type, position, left/right sides |
-| **Frame Side** | One side of a frame where photos can be uploaded for AI analysis | File references for images, detected resources |
-| **Inspection** | Snapshot of entire beehive state during beekeeper intervention. Stores JSON data of hive composition at specific time | Hive ID, data (JSON), timestamp |
-| **Treatment** | Anti-varroa chemical interventions tracked per family/box/hive for medical history | Type, timestamp, target (hive/box/family) |
-| **File** | Uploaded images (frame photos, bottom board varroa photos). Processed through AI detection pipeline | Hash, dimensions, user ID, file type, detection jobs |
-| **Detected Resources** | AI-detected cell types on frame photos: Capped brood, Eggs, Honey, Larvae, Nectar, Pollen, Other | Class, coordinates (x,y), radius, probability |
-| **Detected Bees/Queens** | AI-detected bee and queen positions on frames | Bounding boxes, confidence scores |
-| **Detected Varroa** | AI-detected varroa mites on bottom board photos | Count, positions (coming soon) |
-| **Metrics (Telemetry)** | Time-series sensor data from IoT devices | Temperature (°C), humidity (%), weight (kg), timestamp |
-| **Entrance Movement** | Bee traffic analysis from entrance video cameras | Bees in/out, net flow, speed stats, stationary bees, interactions |
-| **Alert** | Generated warnings based on metric thresholds and rules | Text, metric type/value, hive ID, delivery status, timestamp |
-| **Alert Rule** | User-defined conditions that trigger alerts | Metric type, condition, threshold, duration, enabled status, scope (hive/apiary) |
-| **Alert Channel** | Delivery methods for alerts | Type (email/phone/telegram), contact info, time window, enabled status |
+| <span class="knowledge-domain-entity-icon" aria-hidden="true">📍</span> **Apiary** | Set of beehives located together at specific location. Size limited by surrounding land that bees can pollinate | Location (lat/lng), name, active status |
+| <span class="knowledge-domain-entity-icon" aria-hidden="true">🏠</span> **Hive** | Physical beehive structure with vertical sections. Can be split, merged, or collapsed | Name, color, status, boxes, family, split/merge history, collapse tracking |
+| <span class="knowledge-domain-entity-icon" aria-hidden="true">👑</span> **Family (Colony/Queen)** | Bee superorganism led by queen that lays eggs | Race (apis mellifera variation), added year, age (auto-calculated), treatments |
+| <span class="knowledge-domain-entity-icon" aria-hidden="true">📦</span> **Box (Hive Section)** | Hollow wooden section that houses frames. Types: Deep (brood), Super (honey), Gate (entrance), Ventilation, Queen Excluder, Horizontal Feeder, Bottom Board | Type, position, color, frames |
+| <span class="knowledge-domain-entity-icon" aria-hidden="true">🪵</span> **Frame** | Wooden frame with wax foundation inside sections. Types: Foundation, Empty Comb, Void, Partition, Feeder | Type, position, left/right sides |
+| <span class="knowledge-domain-entity-icon" aria-hidden="true">📷</span> **Frame Side** | One side of a frame where photos can be uploaded for AI analysis | File references for images, detected resources |
+| <span class="knowledge-domain-entity-icon" aria-hidden="true">🔎</span> **Inspection** | Snapshot of entire beehive state during beekeeper intervention. Stores JSON data of hive composition at specific time | Hive ID, data (JSON), timestamp |
+| <span class="knowledge-domain-entity-icon" aria-hidden="true">💊</span> **Treatment** | Anti-varroa chemical interventions tracked per family/box/hive for medical history | Type, timestamp, target (hive/box/family) |
+| <span class="knowledge-domain-entity-icon" aria-hidden="true">🖼️</span> **File** | Uploaded images (frame photos, bottom board varroa photos). Processed through AI detection pipeline | Hash, dimensions, user ID, file type, detection jobs |
+| <span class="knowledge-domain-entity-icon" aria-hidden="true">🍯</span> **Detected Resources** | AI-detected cell types on frame photos: Capped brood, Eggs, Honey, Larvae, Nectar, Pollen, Other | Class, coordinates (x,y), radius, probability |
+| <span class="knowledge-domain-entity-icon" aria-hidden="true">🐝</span> **Detected Bees/Queens** | AI-detected bee and queen positions on frames | Bounding boxes, confidence scores |
+| <span class="knowledge-domain-entity-icon" aria-hidden="true">🦠</span> **Detected Varroa** | AI-detected varroa mites on bottom board photos | Count, positions (coming soon) |
+| <span class="knowledge-domain-entity-icon" aria-hidden="true">📊</span> **Metrics (Telemetry)** | Time-series sensor data from IoT devices | Temperature (°C), humidity (%), weight (kg), timestamp |
+| <span class="knowledge-domain-entity-icon" aria-hidden="true">🚪</span> **Entrance Movement** | Bee traffic analysis from entrance video cameras | Bees in/out, net flow, speed stats, stationary bees, interactions |
+| <span class="knowledge-domain-entity-icon" aria-hidden="true">🔔</span> **Alert** | Generated warnings based on metric thresholds and rules | Text, metric type/value, hive ID, delivery status, timestamp |
+| <span class="knowledge-domain-entity-icon" aria-hidden="true">⚙️</span> **Alert Rule** | User-defined conditions that trigger alerts | Metric type, condition, threshold, duration, enabled status, scope (hive/apiary) |
+| <span class="knowledge-domain-entity-icon" aria-hidden="true">📬</span> **Alert Channel** | Delivery methods for alerts | Type (email/phone/telegram), contact info, time window, enabled status |
 
 ## Main app use cases
 Use-cases is a group of features that when combined serve a great value for the customer

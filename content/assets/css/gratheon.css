@@ -2125,6 +2125,102 @@ html[data-theme='dark'] .founder-letter .future {
   outline: 0;
 }
 
+/* Web app /products/web_app/ domain entity reference table.
+   WHY: the default markdown table was cramped and Key Properties read denser than Description.
+   WHAT: widen the article lane, add roomier cells, match Description + Key Properties typography, and align entity emoji markers. */
+.knowledge-content-layout:has(#core-domain-entities) {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.knowledge-article:has(#core-domain-entities) {
+  max-width: none;
+}
+
+.knowledge-content h2#core-domain-entities + table {
+  width: 100%;
+  max-width: none;
+  margin: clamp(24px, 3vw, 44px) 0;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-size: clamp(0.98rem, 1.05vw, 1.1rem);
+  line-height: 1.45;
+}
+
+.knowledge-content h2#core-domain-entities + table th,
+.knowledge-content h2#core-domain-entities + table td {
+  padding: clamp(18px, 2vw, 30px) clamp(20px, 2.4vw, 34px);
+  vertical-align: top;
+  border-bottom: 1px solid var(--knowledge-line);
+  text-align: left;
+}
+
+.knowledge-content h2#core-domain-entities + table th {
+  color: var(--knowledge-ink);
+  font-weight: 850;
+  line-height: 1.15;
+  background: color-mix(in srgb, var(--knowledge-soft) 72%, var(--knowledge-paper) 28%);
+}
+
+.knowledge-content h2#core-domain-entities + table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.knowledge-content h2#core-domain-entities + table th:nth-child(1),
+.knowledge-content h2#core-domain-entities + table td:nth-child(1) {
+  width: 18%;
+}
+
+.knowledge-content h2#core-domain-entities + table th:nth-child(2),
+.knowledge-content h2#core-domain-entities + table td:nth-child(2) {
+  width: 44%;
+}
+
+.knowledge-content h2#core-domain-entities + table th:nth-child(3),
+.knowledge-content h2#core-domain-entities + table td:nth-child(3) {
+  width: 38%;
+}
+
+.knowledge-content h2#core-domain-entities + table td:nth-child(2),
+.knowledge-content h2#core-domain-entities + table td:nth-child(3) {
+  color: var(--knowledge-ink);
+  font-family: var(--font-small);
+  font-size: inherit;
+  line-height: 1.45;
+}
+
+.knowledge-content h2#core-domain-entities + table td:nth-child(1) {
+  font-weight: 750;
+}
+
+.knowledge-content h2#core-domain-entities + table td:nth-child(1) strong {
+  font-weight: inherit;
+}
+
+.knowledge-content h2#core-domain-entities + table .knowledge-domain-entity-icon {
+  display: inline-block;
+  width: 1.35em;
+  margin-right: 0.2em;
+  text-align: center;
+}
+
+@media (max-width: 760px) {
+  .knowledge-content h2#core-domain-entities + table {
+    display: block;
+    overflow-x: auto;
+    table-layout: auto;
+  }
+
+  .knowledge-content h2#core-domain-entities + table th:nth-child(1),
+  .knowledge-content h2#core-domain-entities + table td:nth-child(1),
+  .knowledge-content h2#core-domain-entities + table th:nth-child(2),
+  .knowledge-content h2#core-domain-entities + table td:nth-child(2),
+  .knowledge-content h2#core-domain-entities + table th:nth-child(3),
+  .knowledge-content h2#core-domain-entities + table td:nth-child(3) {
+    width: auto;
+    min-width: 160px;
+  }
+}
+
 .knowledge-content .research-team-avatars {
   display: flex;
   flex-wrap: wrap;
