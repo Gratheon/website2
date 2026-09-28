@@ -25,6 +25,7 @@ doi: 10.2478/plua-2026-0008
 source: https://reference-global.com/article/10.2478/plua-2026-0008
 original: https://reference-global.com/article/10.2478/plua-2026-0008
 pdf: https://reference-global.com/download/article/10.2478/plua-2026-0008.pdf
+pdfPreview: https://docs.google.com/gview?embedded=1&url=https%3A%2F%2Freference-global.com%2Fdownload%2Farticle%2F10.2478%2Fplua-2026-0008.pdf
 pdfSource: https://reference-global.com/download/article/10.2478/plua-2026-0008.pdf
 license: CC BY-NC-ND 3.0
 licenseUrl: https://creativecommons.org/licenses/by-nc-nd/3.0/
