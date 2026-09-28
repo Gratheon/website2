@@ -3397,6 +3397,10 @@ html[data-theme='dark'] .knowledge-content .research-source-card--primary {
   margin-bottom: 0;
 }
 
+.knowledge-content .research-collab-card--no-logo .research-collab-card__layout {
+  display: block;
+}
+
 .knowledge-content .research-card-icon {
   flex: 0 0 auto;
   width: clamp(52px, 5vw, 68px);
@@ -3439,9 +3443,13 @@ html[data-theme='dark'] .knowledge-content .research-source-card--primary {
   max-width: none;
 }
 
-.knowledge-page-research .knowledge-content > .research-page:has(.research-stats) > section:not(.research-stats):not(:has(> .research-highlight-grid)),
-.knowledge-page-research .knowledge-content > .research-page:has(.research-highlight-grid) > section:not(:has(> .research-highlight-grid)):not(.research-stats) {
+.knowledge-page-research .knowledge-content > .research-page:has(.research-stats) > section:not(.research-stats):not(:has(> .research-highlight-grid)):not(:has(> .research-card-grid .research-collab-card)),
+.knowledge-page-research .knowledge-content > .research-page:has(.research-highlight-grid) > section:not(:has(> .research-highlight-grid)):not(.research-stats):not(:has(> .research-card-grid .research-collab-card)) {
   max-width: 1120px;
+}
+
+.knowledge-page-research .knowledge-content > .research-page > section:has(> .research-card-grid .research-collab-card) {
+  max-width: none;
 }
 
 .knowledge-page-research .knowledge-content > .research-page > .research-stats,

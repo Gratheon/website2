@@ -151,11 +151,8 @@ showChildren: true
           </div>
         </div>
       </article>
-      <article class="research-card research-collab-card">
+      <article class="research-card research-collab-card research-collab-card--no-logo">
         <div class="research-collab-card__layout">
-          <div class="research-collab-card__logos" aria-hidden="true">
-            <img class="research-collab-card__logo research-collab-card__logo--wordmark" src="/assets/img/research/partners/university-of-tartu.svg" alt="" width="160" height="48" loading="lazy" decoding="async" />
-          </div>
           <div class="research-collab-card__copy">
             <h3><a href="/blog/2026-06-08-milissa-laane-completed-her-bachelor-thesis-on-digital-beekeeping-solutions/">Apoyo a investigación de grado</a></h3>
             <p>Apoyo a trabajo académico centrado en soluciones de apicultura digital y diseño práctico de sistemas.</p>
