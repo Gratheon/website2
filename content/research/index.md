@@ -121,9 +121,8 @@ heroImage: /assets/img/research/img/research.jpg
       </article>
       <article class="research-card research-collab-card">
         <div class="research-collab-card__layout">
-          <div class="research-collab-card__logos research-collab-card__logos--stack" aria-hidden="true">
+          <div class="research-collab-card__logos" aria-hidden="true">
             <img class="research-collab-card__logo" src="/assets/img/research/partners/taltech.svg" alt="" width="72" height="72" loading="lazy" decoding="async" />
-            <img class="research-collab-card__logo research-collab-card__logo--vidrik" src="/assets/img/research/partners/vidrik-preview.webp" alt="" width="120" height="48" loading="lazy" decoding="async" />
           </div>
           <div class="research-collab-card__copy">
             <h3><a href="/blog/2025-01-13-visited-vidrik/">TalTech / VIDRIK collaboration</a></h3>
@@ -131,9 +130,16 @@ heroImage: /assets/img/research/img/research.jpg
           </div>
         </div>
       </article>
-      <article class="research-card">
-        <h3><a href="/blog/2026-06-08-milissa-laane-completed-her-bachelor-thesis-on-digital-beekeeping-solutions/">Bachelor thesis support</a></h3>
-        <p>Support for academic work on digital beekeeping solutions, practical system design, and field-ready monitoring workflows.</p>
+      <article class="research-card research-collab-card">
+        <div class="research-collab-card__layout">
+          <div class="research-collab-card__logos" aria-hidden="true">
+            <img class="research-collab-card__logo research-collab-card__logo--wordmark" src="/assets/img/research/partners/university-of-tartu.svg" alt="" width="160" height="48" loading="lazy" decoding="async" />
+          </div>
+          <div class="research-collab-card__copy">
+            <h3><a href="/blog/2026-06-08-milissa-laane-completed-her-bachelor-thesis-on-digital-beekeeping-solutions/">Bachelor thesis support</a></h3>
+            <p>Support for academic work on digital beekeeping solutions, practical system design, and field-ready monitoring workflows.</p>
+          </div>
+        </div>
       </article>
       <article class="research-card research-card--accent">
         <h3>Open to collaboration</h3>
