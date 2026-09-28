@@ -3115,8 +3115,9 @@ html[data-theme='dark'] .knowledge-content .research-source-card--primary {
   content: "";
   position: absolute;
   top: 21px;
-  left: calc(16.666% + 18px);
-  right: calc(16.666% + 18px);
+  /* WHY: connector must run through badge centers (1/6 and 5/6 of the track). */
+  left: 16.666%;
+  right: 16.666%;
   height: 2px;
   background: color-mix(in srgb, var(--knowledge-line) 70%, var(--accent, #2f8b0b));
 }
@@ -3160,6 +3161,13 @@ html[data-theme='dark'] .knowledge-content .research-source-card--primary {
 
 .knowledge-content .product-journey-copy p {
   margin: 0;
+}
+
+@media (min-width: 761px) {
+  /* WHY: horizontal connector uses column centers; badges must sit on that line. */
+  .knowledge-content .product-journey-step {
+    justify-items: center;
+  }
 }
 
 .knowledge-content .product-card-grid--family {
