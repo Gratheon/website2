@@ -40,3 +40,5 @@
 - This workspace contains multiple nested Git repositories. Identify the component repository before running Git commands.
 - Research paper filenames can contain punctuation such as commas; enumerate exact paths before reading or editing them.
 - For external PDF previews, inspect `Content-Type` and `Content-Disposition`: publisher endpoints returning `binary/octet-stream` may download in Chrome even inside an iframe. Keep the original URL for downloads and use a dedicated preview URL when needed.
+- When discovering optional sibling repositories, list the parent directory rather than passing several possibly unmatched globs to `ls`; missing matches can return a failure even when another component exists.
+- A README reference to `config.yaml` does not establish its repository path or availability. Locate configuration files in the GitHub tree before requesting a raw URL.
