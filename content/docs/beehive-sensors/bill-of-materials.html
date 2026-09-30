@@ -1,0 +1,523 @@
+<!--
+---
+title: Bill of materials
+order: 2
+sidebar_position: 2
+hideToc: true
+description: "Illustrated parts list for the Gratheon beehive scale production kit, with specifications, quantities, estimated costs and supplier references."
+---
+-->
+<section class="beehive-bom">
+<style>
+/* Page-scoped styles: the long BOM needs rows, not a six-column table. */
+body:has(.beehive-bom) .site-content { max-width: none; }
+.site-content article .content .beehive-bom { max-width: 1050px; margin-inline: auto; line-height: 1.5; }
+.beehive-bom { --bom-line: var(--nav-border, #ddd); --bom-muted: var(--text-secondary, #606770); }
+.site-content article .content .beehive-bom h2 { margin: 2rem 0 1rem; }
+.site-content article .content .beehive-bom h3 { margin: 0 0 .35rem; font-size: 1.05rem; line-height: 1.35; }
+.site-content article .content .beehive-bom p { margin: 0 0 .6rem; }
+.site-content article .content .beehive-bom .bom-summary { margin: 1.25rem 0; }
+.bom-summary > div { display: flex; justify-content: space-between; gap: 1rem; padding: .55rem 0; border-bottom: 1px solid var(--bom-line); }
+.bom-summary dt { flex: 1; }
+.bom-summary dd { margin: 0; white-space: nowrap; }
+.site-content article .content .beehive-bom .bom-list { list-style: none; margin: 0; padding: 0; }
+.site-content article .content .beehive-bom .bom-item { display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: 1.25rem; margin: 0; padding: 1.1rem 0; border-bottom: 1px solid var(--bom-line); }
+.site-content article .content .beehive-bom .bom-photo { margin: 0; width: 96px; }
+.site-content article .content .beehive-bom .bom-photo img { display: block; width: 96px; height: 96px; max-width: 100%; margin: 0; padding: 4px; object-fit: contain; border-radius: 8px; background: #fff; border: 1px solid var(--bom-line); }
+.beehive-bom .bom-photo figcaption { margin-top: .3rem; font-size: .72rem; line-height: 1.3; overflow-wrap: anywhere; }
+.beehive-bom .bom-detail { min-width: 0; overflow-wrap: anywhere; }
+.site-content article .content .beehive-bom .bom-meta { display: flex; flex-wrap: wrap; gap: .3rem 1.25rem; margin: .5rem 0; padding: 0; font-size: .88rem; }
+.bom-meta > div { display: flex; gap: .35rem; }
+.bom-meta dt { font-weight: 600; }
+.bom-meta dd { margin: 0; }
+.beehive-bom .bom-source, .beehive-bom .bom-note, .beehive-bom .bom-photo-note { font-size: .86rem; }
+.beehive-bom .bom-photo-note, .beehive-bom .bom-note, .beehive-bom .bom-intro-note { color: var(--bom-muted); }
+.beehive-bom .bom-intro-note { font-size: .9rem; border-left: 3px solid #f7bd00; padding-left: 1rem; }
+@media (max-width: 600px) {
+  body:has(.beehive-bom) .site-content { padding-inline: 16px; }
+  .site-content article .content .beehive-bom .bom-item { grid-template-columns: 72px minmax(0, 1fr); gap: .75rem; }
+  .site-content article .content .beehive-bom .bom-photo { width: 72px; }
+  .site-content article .content .beehive-bom .bom-photo img { width: 72px; height: 72px; }
+  .bom-summary > div { font-size: .9rem; }
+}
+</style>
+<h2 id="description">Description</h2>
+<p>This is the parts list for the Phase 3 production kit described in the <a href="/docs/beehive-sensors/product-description/">product description</a> and shown in the <a href="/docs/beehive-sensors/#model">3D model</a>. Costs are rough per-unit estimates in EUR at about 100 units, before assembly labour, VAT and shipping. Replace them with quotes before pricing the product.</p>
+<dl class="bom-summary">
+<div><dt>Scale mechanics: wood case, load cell, Observer mounting inserts, sensor port, internal harness</dt><dd>€82–142</dd></div>
+<div><dt>Electronics pod (2–4 cells)</dt><dd>€32–58</dd></div>
+<div><dt>Hive climate probe and packaging</dt><dd>€13–22</dd></div>
+<div><dt><strong>Total</strong></dt><dd><strong>≈ €127–222</strong></dd></div>
+<div><dt>Spare battery cartridge</dt><dd>+ €10–20</dd></div>
+</dl>
+<p class="bom-intro-note">Photos are compact visual references from supplier websites. Example boards, materials and alternative parts are labelled below each specification; they are not approved substitutes. Custom assemblies are not sold as pictured. Click a photo credit to view its source. Image rights remain with the original shops and manufacturers.</p>
+<p>The scale has no landing board and no solar panel. With an <a href="/docs/entrance-observer/">Entrance Observer</a> the Observer provides both, and powers the scale over one M12 lead (the lead ships with the Observer).</p>
+<h2 id="scale-mechanics">Scale mechanics</h2>
+<ul class="bom-list" role="list">
+<li class="bom-item">
+<figure class="bom-photo"><a href="https://www.alibaba.com/trade/search?SearchText=AP62AFB+load+cell" aria-label="Load cell + brackets: photo reference from Alibaba"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/load-cell.webp" alt="Rectangular single-point aluminium/steel load cell from Alibaba; same form factor as the AP62AFB, but the exact AP62AFB listing was not located" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>Photo: <a href="https://www.alibaba.com/trade/search?SearchText=AP62AFB+load+cell">Alibaba</a></figcaption></figure>
+<div class="bom-detail">
+<h3>Load cell + brackets</h3>
+<p>AP62AFB single-point, 200 kg (350 kg option), with two aluminium weighing brackets</p>
+<dl class="bom-meta"><div><dt>Qty</dt><dd>1</dd></div><div><dt>Unit estimate</dt><dd>€30–45</dd></div></dl>
+<p class="bom-source"><strong>Supplier:</strong> <a href="https://www.alibaba.com/product-detail/AP62AFB-200kg-350kg-Liquid-Automatic-Quantitative_1601491747233.html">Alibaba AP62AFB</a></p>
+<p class="bom-note">Currently used. Verify dimensions, deflection and cable on delivery.</p>
+<p class="bom-photo-note"><strong>Representative example:</strong> Rectangular single-point aluminium/steel load cell from Alibaba; same form factor as the AP62AFB, but the exact AP62AFB listing was not located</p>
+</div>
+</li>
+<li class="bom-item">
+<figure class="bom-photo"><a href="https://www.capitolcitylumber.com/" aria-label="Deck: photo reference from Capitol City Lumber"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/plywood.webp" alt="Baltic birch plywood sheet from a wood shop; the deck is custom CNC-cut birch plywood" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>Photo: <a href="https://www.capitolcitylumber.com/">Capitol City Lumber</a></figcaption></figure>
+<div class="bom-detail">
+<h3>Deck</h3>
+<p>18 mm film-faced birch plywood (anti-slip mesh face), 560 × 510 mm, CNC-cut, sealed edges, M8 threaded inserts; 40 × 20 mm thermo-pine skirt</p>
+<dl class="bom-meta"><div><dt>Qty</dt><dd>1</dd></div><div><dt>Unit estimate</dt><dd>€15–25</dd></div></dl>
+<p class="bom-source"><strong>Supplier:</strong> Local joinery shop; plywood from Riga Wood / Metsä dealers</p>
+<p class="bom-note">Film face keeps rain out of the weighed deck.</p>
+<p class="bom-photo-note"><strong>Example material / custom fabrication:</strong> Baltic birch plywood sheet from a wood shop; the deck is custom CNC-cut birch plywood</p>
+</div>
+</li>
+<li class="bom-item">
+<figure class="bom-photo"><a href="https://www.capitolcitylumber.com/" aria-label="Base: photo reference from Capitol City Lumber"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/plywood.webp" alt="Baltic birch plywood sheet from a wood shop; the base is custom plywood and thermo-pine" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>Photo: <a href="https://www.capitolcitylumber.com/">Capitol City Lumber</a></figcaption></figure>
+<div class="bom-detail">
+<h3>Base</h3>
+<p>12 mm exterior plywood floor, 22 mm thermo-pine board walls 60 mm high, drain holes, bay cut, M10 inserts for feet and stops</p>
+<dl class="bom-meta"><div><dt>Qty</dt><dd>1</dd></div><div><dt>Unit estimate</dt><dd>€12–20</dd></div></dl>
+<p class="bom-source"><strong>Supplier:</strong> Local joinery shop</p>
+<p class="bom-note">Not weighed, so moisture does not matter.</p>
+<p class="bom-photo-note"><strong>Example material / custom fabrication:</strong> Baltic birch plywood sheet from a wood shop; the base is custom plywood and thermo-pine</p>
+</div>
+</li>
+<li class="bom-item">
+<figure class="bom-photo"><a href="https://www.prusa3d.com/product/prusament-asa-prusa-orange-850g/" aria-label="Hive locators: photo reference from Prusa Research"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/filament.webp" alt="Prusament ASA filament spool; parts are printed in ASA in-house" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>Photo: <a href="https://www.prusa3d.com/product/prusament-asa-prusa-orange-850g/">Prusa Research</a></figcaption></figure>
+<div class="bom-detail">
+<h3>Hive locators</h3>
+<p>3D-printed ASA corner blocks, 20 mm high</p>
+<dl class="bom-meta"><div><dt>Qty</dt><dd>3</dd></div><div><dt>Unit estimate</dt><dd>€0.3–0.5</dd></div></dl>
+<p class="bom-source"><strong>Supplier:</strong> In-house FDM printer</p>
+<p class="bom-note">Screwed to the deck.</p>
+<p class="bom-photo-note"><strong>Example material / custom fabrication:</strong> Prusament ASA filament spool; parts are printed in ASA in-house</p>
+</div>
+</li>
+<li class="bom-item">
+<figure class="bom-photo"><a href="https://www.adafruit.com/product/744" aria-label="Sensor port: photo reference from Adafruit"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/waterproof-4wire.webp" alt="Waterproof polarized 4-wire connector set, like the sealed 4-pin probe socket" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>Photo: <a href="https://www.adafruit.com/product/744">Adafruit</a></figcaption></figure>
+<div class="bom-detail">
+<h3>Sensor port</h3>
+<p>3D-printed ASA corner block with a sealed 4-pin probe socket, flat 4-core service-loop lead through the deck to the harness</p>
+<dl class="bom-meta"><div><dt>Qty</dt><dd>1</dd></div><div><dt>Unit estimate</dt><dd>€3–5</dd></div></dl>
+<p class="bom-source"><strong>Supplier:</strong> Printer + connector house</p>
+<p class="bom-note">Replaces the fourth locator.</p>
+<p class="bom-photo-note"><strong>Representative example:</strong> Waterproof polarized 4-wire connector set, like the sealed 4-pin probe socket</p>
+</div>
+</li>
+<li class="bom-item">
+<figure class="bom-photo"><a href="https://www.prusa3d.com/product/prusament-asa-prusa-orange-850g/" aria-label="Probe groove: photo reference from Prusa Research"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/filament.webp" alt="Prusament ASA filament spool; the groove is a printed ASA part" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>Photo: <a href="https://www.prusa3d.com/product/prusament-asa-prusa-orange-850g/">Prusa Research</a></figcaption></figure>
+<div class="bom-detail">
+<h3>Probe groove</h3>
+<p>3D-printed clip-in channel along the front strip of the deck</p>
+<dl class="bom-meta"><div><dt>Qty</dt><dd>1</dd></div><div><dt>Unit estimate</dt><dd>€0.3</dd></div></dl>
+<p class="bom-source"><strong>Supplier:</strong> In-house FDM printer</p>
+<p class="bom-photo-note"><strong>Example material / custom fabrication:</strong> Prusament ASA filament spool; the groove is a printed ASA part</p>
+</div>
+</li>
+<li class="bom-item">
+<figure class="bom-photo"><a href="https://thepihut.com/products/10-sets-m3x12-screw-low-profile-hex-head-cap-screw" aria-label="Overload stops: photo reference from The Pi Hut"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/hex-screws.webp" alt="Hex head cap screws; the stops use M10 x 90 stainless bolts" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>Photo: <a href="https://thepihut.com/products/10-sets-m3x12-screw-low-profile-hex-head-cap-screw">The Pi Hut</a></figcaption></figure>
+<div class="bom-detail">
+<h3>Overload stops</h3>
+<p>M10 × 90 stainless hex bolt, lock nut, spacer tube</p>
+<dl class="bom-meta"><div><dt>Qty</dt><dd>4</dd></div><div><dt>Unit estimate</dt><dd>€0.8</dd></div></dl>
+<p class="bom-source"><strong>Supplier:</strong> Fastener wholesaler</p>
+<p class="bom-note">Set with a feeler gauge at assembly.</p>
+<p class="bom-photo-note"><strong>Representative example:</strong> Hex head cap screws; the stops use M10 x 90 stainless bolts</p>
+</div>
+</li>
+<li class="bom-item">
+<figure class="bom-photo"><a href="https://www.hawkeng.co.uk/" aria-label="Levelling feet: photo reference from Hawk Engineering"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/leveling-feet-m10.webp" alt="M10 studded rubber leveling foot with 50 mm base" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>Photo: <a href="https://www.hawkeng.co.uk/">Hawk Engineering</a></figcaption></figure>
+<div class="bom-detail">
+<h3>Levelling feet</h3>
+<p>M10 × 40 stud, 40 mm rubber pad</p>
+<dl class="bom-meta"><div><dt>Qty</dt><dd>4</dd></div><div><dt>Unit estimate</dt><dd>€1.2–2</dd></div></dl>
+<p class="bom-source"><strong>Supplier:</strong> <a href="https://www.amazon.de/s?k=M10+levelling+feet">Amazon levelling feet search</a></p>
+<p class="bom-note">Removed for the Robotic Beehive.</p>
+<p class="bom-photo-note"><strong>Representative example:</strong> M10 studded rubber leveling foot with 50 mm base</p>
+</div>
+</li>
+<li class="bom-item">
+<figure class="bom-photo"><a href="https://www.sparkfun.com/silicone-bumpers-large-10x16-5mm-4-pack.html" aria-label="Side bumpers: photo reference from SparkFun"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/silicone-bumpers.webp" alt="Adhesive silicone bumpers; the kit uses EPDM pads" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>Photo: <a href="https://www.sparkfun.com/silicone-bumpers-large-10x16-5mm-4-pack.html">SparkFun</a></figcaption></figure>
+<div class="bom-detail">
+<h3>Side bumpers</h3>
+<p>EPDM pad 40 × 14 × 4 mm, adhesive</p>
+<dl class="bom-meta"><div><dt>Qty</dt><dd>4</dd></div><div><dt>Unit estimate</dt><dd>€0.25</dd></div></dl>
+<p class="bom-source"><strong>Supplier:</strong> Local rubber supplier</p>
+<p class="bom-photo-note"><strong>Representative example:</strong> Adhesive silicone bumpers; the kit uses EPDM pads</p>
+</div>
+</li>
+<li class="bom-item">
+<figure class="bom-photo"><a href="https://shop.pimoroni.com/products/bolt-set-philips-screw-nuts-180-pcs" aria-label="Bracket fasteners: photo reference from Pimoroni"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/bolt-set.webp" alt="Assorted screws, nuts and washers; the kit uses M8 stainless" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>Photo: <a href="https://shop.pimoroni.com/products/bolt-set-philips-screw-nuts-180-pcs">Pimoroni</a></figcaption></figure>
+<div class="bom-detail">
+<h3>Bracket fasteners</h3>
+<p>M8 stainless bolts, washers, thread lock</p>
+<dl class="bom-meta"><div><dt>Qty</dt><dd>1 set</dd></div><div><dt>Unit estimate</dt><dd>€3–5</dd></div></dl>
+<p class="bom-source"><strong>Supplier:</strong> Fastener wholesaler</p>
+<p class="bom-note">Torque per cell datasheet.</p>
+<p class="bom-photo-note"><strong>Representative example:</strong> Assorted screws, nuts and washers; the kit uses M8 stainless</p>
+</div>
+</li>
+<li class="bom-item">
+<figure class="bom-photo"><a href="https://www.prusa3d.com/product/prusament-asa-prusa-orange-850g/" aria-label="Pod bay sleeve: photo reference from Prusa Research"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/filament.webp" alt="Prusament ASA filament spool; the sleeve is a printed ASA part" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>Photo: <a href="https://www.prusa3d.com/product/prusament-asa-prusa-orange-850g/">Prusa Research</a></figcaption></figure>
+<div class="bom-detail">
+<h3>Pod bay sleeve</h3>
+<p>3D-printed ASA sleeve with guides and dock holder, fitted into the wall cut</p>
+<dl class="bom-meta"><div><dt>Qty</dt><dd>1</dd></div><div><dt>Unit estimate</dt><dd>€2–4</dd></div></dl>
+<p class="bom-source"><strong>Supplier:</strong> In-house FDM printer</p>
+<p class="bom-photo-note"><strong>Example material / custom fabrication:</strong> Prusament ASA filament spool; the sleeve is a printed ASA part</p>
+</div>
+</li>
+<li class="bom-item">
+<figure class="bom-photo"><a href="https://shop.pimoroni.com/products/connector-set-for-low-voltage-applications" aria-label="Dock connector: photo reference from Pimoroni"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/connector-set.webp" alt="Low-voltage connector set; the dock uses a keyed gasketed 12-pin pair" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>Photo: <a href="https://shop.pimoroni.com/products/connector-set-for-low-voltage-applications">Pimoroni</a></figcaption></figure>
+<div class="bom-detail">
+<h3>Dock connector</h3>
+<p>Keyed, gasketed 12-pin board-to-board pair (e.g. Molex Micro-Fit sealed, or custom)</p>
+<dl class="bom-meta"><div><dt>Qty</dt><dd>1 pair</dd></div><div><dt>Unit estimate</dt><dd>€3–5</dd></div></dl>
+<p class="bom-source"><strong>Supplier:</strong> Mouser, DigiKey</p>
+<p class="bom-note">Mates as the pod slides in.</p>
+<p class="bom-photo-note"><strong>Representative example:</strong> Low-voltage connector set; the dock uses a keyed gasketed 12-pin pair</p>
+</div>
+</li>
+<li class="bom-item">
+<figure class="bom-photo"><a href="https://www.adafruit.com/product/4255" aria-label="Observer mounting points: photo reference from Adafruit"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/brass-inserts.webp" alt="Brass heat-set inserts; the kit uses M6 inserts" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>Photo: <a href="https://www.adafruit.com/product/4255">Adafruit</a></figcaption></figure>
+<div class="bom-detail">
+<h3>Observer mounting points</h3>
+<p>M6 brass threaded inserts in the front wall</p>
+<dl class="bom-meta"><div><dt>Qty</dt><dd>2</dd></div><div><dt>Unit estimate</dt><dd>€0.3</dd></div></dl>
+<p class="bom-source"><strong>Supplier:</strong> Fastener wholesaler</p>
+<p class="bom-note">The Entrance Observer risers bolt here.</p>
+<p class="bom-photo-note"><strong>Representative example:</strong> Brass heat-set inserts; the kit uses M6 inserts</p>
+</div>
+</li>
+<li class="bom-item">
+<figure class="bom-photo"><a href="https://metabeeai.com/" aria-label="Accessory connector: photo reference from Metabee"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/m12-8pin-socket.webp" alt="M12 8-pin A-coded female panel-mount socket" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>Photo: <a href="https://metabeeai.com/">Metabee</a></figcaption></figure>
+<div class="bom-detail">
+<h3>Accessory connector</h3>
+<p>M12 8-pin A-coded panel socket, IP67, facing down, with dust cap</p>
+<dl class="bom-meta"><div><dt>Qty</dt><dd>1</dd></div><div><dt>Unit estimate</dt><dd>€5–8</dd></div></dl>
+<p class="bom-source"><strong>Supplier:</strong> <a href="https://www.mouser.com/c/connectors/circular-connectors/">Mouser M12 connectors</a></p>
+<p class="bom-note">Entrance Observer and Robotic Beehive plug in here.</p>
+<p class="bom-photo-note"><strong>Representative example:</strong> M12 8-pin A-coded female panel-mount socket</p>
+</div>
+</li>
+<li class="bom-item">
+<figure class="bom-photo"><a href="https://www.adafruit.com/product/3891" aria-label="Internal harness: photo reference from Adafruit"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/ribbon-cable.webp" alt="Silicone-insulated 4-wire ribbon cable" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>Photo: <a href="https://www.adafruit.com/product/3891">Adafruit</a></figcaption></figure>
+<div class="bom-detail">
+<h3>Internal harness</h3>
+<p>Shielded 4-core (load cell), 8-core (accessory connector), 4-core (SHT40), crimped to the dock</p>
+<dl class="bom-meta"><div><dt>Qty</dt><dd>1 set</dd></div><div><dt>Unit estimate</dt><dd>€4–6</dd></div></dl>
+<p class="bom-source"><strong>Supplier:</strong> Harness shop</p>
+<p class="bom-note">Stays inside the base.</p>
+<p class="bom-photo-note"><strong>Representative example:</strong> Silicone-insulated 4-wire ribbon cable</p>
+</div>
+</li>
+<li class="bom-item">
+<figure class="bom-photo"><a href="https://www.adafruit.com/product/4885" aria-label="Ambient sensor pocket: photo reference from Adafruit"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/sht40.webp" alt="Sensirion SHT40 on an Adafruit breakout" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>Photo: <a href="https://www.adafruit.com/product/4885">Adafruit</a></figcaption></figure>
+<div class="bom-detail">
+<h3>Ambient sensor pocket</h3>
+<p>SHT40 on a small PCB behind louvres in the left base wall</p>
+<dl class="bom-meta"><div><dt>Qty</dt><dd>1</dd></div><div><dt>Unit estimate</dt><dd>€2.5–4</dd></div></dl>
+<p class="bom-source"><strong>Supplier:</strong> LCSC</p>
+<p class="bom-photo-note"><strong>Component on example breakout:</strong> Sensirion SHT40 on an Adafruit breakout</p>
+</div>
+</li>
+<li class="bom-item">
+<figure class="bom-photo"><a href="https://thepihut.com/products/10-sets-m3x12-screw-low-profile-hex-head-cap-screw" aria-label="Transport lock: photo reference from The Pi Hut"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/hex-screws.webp" alt="Hex head screws; the lock is a captive M8 cam bolt with a printed knob" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>Photo: <a href="https://thepihut.com/products/10-sets-m3x12-screw-low-profile-hex-head-cap-screw">The Pi Hut</a></figcaption></figure>
+<div class="bom-detail">
+<h3>Transport lock</h3>
+<p>Captive quarter-turn M8 cam bolt, printed ASA knob, red mark on the skirt</p>
+<dl class="bom-meta"><div><dt>Qty</dt><dd>1</dd></div><div><dt>Unit estimate</dt><dd>€1–2</dd></div></dl>
+<p class="bom-source"><strong>Supplier:</strong> Fastener wholesaler + printer</p>
+<p class="bom-note">On the service side next to the pod.</p>
+<p class="bom-photo-note"><strong>Representative example:</strong> Hex head screws; the lock is a captive M8 cam bolt with a printed knob</p>
+</div>
+</li>
+</ul>
+<h2 id="electronics-pod">Electronics pod</h2>
+<ul class="bom-list" role="list">
+<li class="bom-item">
+<figure class="bom-photo"><a href="https://www.adafruit.com/product/5311" aria-label="MCU module: photo reference from Adafruit"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/esp32-s3.webp" alt="ESP32-S3-MINI-1 module on an ESP32-S3-DevKitM-1 dev board" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>Photo: <a href="https://www.adafruit.com/product/5311">Adafruit</a></figcaption></figure>
+<div class="bom-detail">
+<h3>MCU module</h3>
+<p>ESP32-S3-MINI-1-N8</p>
+<dl class="bom-meta"><div><dt>Qty</dt><dd>1</dd></div><div><dt>Unit estimate</dt><dd>€2.8–3.5</dd></div></dl>
+<p class="bom-source"><strong>Supplier:</strong> <a href="https://www.lcsc.com/">LCSC</a>, <a href="https://www.mouser.com/c/?q=ESP32-S3-MINI-1">Mouser</a></p>
+<p class="bom-note">Pre-certified radio.</p>
+<p class="bom-photo-note"><strong>Component on example board:</strong> ESP32-S3-MINI-1 module on an ESP32-S3-DevKitM-1 dev board</p>
+</div>
+</li>
+<li class="bom-item">
+<figure class="bom-photo"><a href="https://www.sparkfun.com/sparkfun-load-cell-amplifier-hx711.html" aria-label="Weight ADC: photo reference from SparkFun"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/hx711.webp" alt="HX711 IC on a SparkFun load cell amplifier breakout" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>Photo: <a href="https://www.sparkfun.com/sparkfun-load-cell-amplifier-hx711.html">SparkFun</a></figcaption></figure>
+<div class="bom-detail">
+<h3>Weight ADC</h3>
+<p>HX711 (SOP-16)</p>
+<dl class="bom-meta"><div><dt>Qty</dt><dd>1</dd></div><div><dt>Unit estimate</dt><dd>€0.4</dd></div></dl>
+<p class="bom-source"><strong>Supplier:</strong> LCSC</p>
+<p class="bom-note">NAU7802 as the alternative.</p>
+<p class="bom-photo-note"><strong>Component on example board:</strong> HX711 IC on a SparkFun load cell amplifier breakout</p>
+</div>
+</li>
+<li class="bom-item">
+<figure class="bom-photo"><a href="https://www.adafruit.com/product/1904" aria-label="Charger: photo reference from Adafruit"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/lipo-charger.webp" alt="Li-ion charger breakout; the pod uses a TI BQ24074" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>Photo: <a href="https://www.adafruit.com/product/1904">Adafruit</a></figcaption></figure>
+<div class="bom-detail">
+<h3>Charger</h3>
+<p>TI BQ24074</p>
+<dl class="bom-meta"><div><dt>Qty</dt><dd>1</dd></div><div><dt>Unit estimate</dt><dd>€1.8–2.5</dd></div></dl>
+<p class="bom-source"><strong>Supplier:</strong> LCSC, <a href="https://www.digikey.com/">DigiKey</a></p>
+<p class="bom-note">TS pin wired to the pack NTC.</p>
+<p class="bom-photo-note"><strong>Representative example:</strong> Li-ion charger breakout; the pod uses a TI BQ24074</p>
+</div>
+</li>
+<li class="bom-item">
+<figure class="bom-photo"><a href="https://www.adafruit.com/product/5830" aria-label="Input selector: photo reference from Adafruit"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/lm66200.webp" alt="LM66200 ideal diode IC on an Adafruit breakout" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>Photo: <a href="https://www.adafruit.com/product/5830">Adafruit</a></figcaption></figure>
+<div class="bom-detail">
+<h3>Input selector</h3>
+<p>TI LM66200 dual ideal diode</p>
+<dl class="bom-meta"><div><dt>Qty</dt><dd>1</dd></div><div><dt>Unit estimate</dt><dd>€0.8</dd></div></dl>
+<p class="bom-source"><strong>Supplier:</strong> LCSC, DigiKey</p>
+<p class="bom-note">Accessory VIN + USB-C VBUS.</p>
+<p class="bom-photo-note"><strong>Component on example board:</strong> LM66200 ideal diode IC on an Adafruit breakout</p>
+</div>
+</li>
+<li class="bom-item">
+<figure class="bom-photo"><a href="https://www.adafruit.com/product/326" aria-label="Display: photo reference from Adafruit"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/oled.webp" alt="0.96 inch 128 x 64 monochrome OLED module (SSD1306 class)" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>Photo: <a href="https://www.adafruit.com/product/326">Adafruit</a></figcaption></figure>
+<div class="bom-detail">
+<h3>Display</h3>
+<p>0.96″ OLED 128 × 64, SSD1306, I2C</p>
+<dl class="bom-meta"><div><dt>Qty</dt><dd>1</dd></div><div><dt>Unit estimate</dt><dd>€2–3</dd></div></dl>
+<p class="bom-source"><strong>Supplier:</strong> LCSC, AliExpress</p>
+<p class="bom-note">Behind a polycarbonate window.</p>
+<p class="bom-photo-note"><strong>Representative example:</strong> 0.96 inch 128 x 64 monochrome OLED module (SSD1306 class)</p>
+</div>
+</li>
+<li class="bom-item">
+<figure class="bom-photo"><a href="https://www.adafruit.com/product/559" aria-label="Button: photo reference from Adafruit"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/metal-button.webp" alt="Rugged metal pushbutton; the kit uses a 12 mm IP67 tactile switch" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>Photo: <a href="https://www.adafruit.com/product/559">Adafruit</a></figcaption></figure>
+<div class="bom-detail">
+<h3>Button</h3>
+<p>IP67 sealed tactile switch, 12 mm</p>
+<dl class="bom-meta"><div><dt>Qty</dt><dd>1</dd></div><div><dt>Unit estimate</dt><dd>€1–2</dd></div></dl>
+<p class="bom-source"><strong>Supplier:</strong> Mouser (e.g. C&amp;K, E-Switch)</p>
+<p class="bom-photo-note"><strong>Representative example:</strong> Rugged metal pushbutton; the kit uses a 12 mm IP67 tactile switch</p>
+</div>
+</li>
+<li class="bom-item">
+<figure class="bom-photo"><a href="https://www.adafruit.com/product/5180" aria-label="USB-C: photo reference from Adafruit"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/usbc-socket.webp" alt="USB-C socket breakout" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>Photo: <a href="https://www.adafruit.com/product/5180">Adafruit</a></figcaption></figure>
+<div class="bom-detail">
+<h3>USB-C</h3>
+<p>16-pin USB-C receptacle + silicone flap</p>
+<dl class="bom-meta"><div><dt>Qty</dt><dd>1</dd></div><div><dt>Unit estimate</dt><dd>€0.8</dd></div></dl>
+<p class="bom-source"><strong>Supplier:</strong> LCSC</p>
+<p class="bom-note">5.1 kΩ CC resistors.</p>
+<p class="bom-photo-note"><strong>Representative example:</strong> USB-C socket breakout</p>
+</div>
+</li>
+<li class="bom-item">
+<figure class="bom-photo"><a href="https://www.adafruit.com/product/5580" aria-label="Fuel gauge: photo reference from Adafruit"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/max17048.webp" alt="MAX17048 IC on an Adafruit breakout" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>Photo: <a href="https://www.adafruit.com/product/5580">Adafruit</a></figcaption></figure>
+<div class="bom-detail">
+<h3>Fuel gauge</h3>
+<p>Analog Devices MAX17048</p>
+<dl class="bom-meta"><div><dt>Qty</dt><dd>1</dd></div><div><dt>Unit estimate</dt><dd>€1.2–1.6</dd></div></dl>
+<p class="bom-source"><strong>Supplier:</strong> LCSC, DigiKey</p>
+<p class="bom-photo-note"><strong>Component on example board:</strong> MAX17048 IC on an Adafruit breakout</p>
+</div>
+</li>
+<li class="bom-item">
+<figure class="bom-photo"><a href="https://www.adafruit.com/product/2745" aria-label="3.3 V buck: photo reference from Adafruit"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/buck-3v3.webp" alt="3.3 V buck converter breakout; the pod uses a TI TPS62840" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>Photo: <a href="https://www.adafruit.com/product/2745">Adafruit</a></figcaption></figure>
+<div class="bom-detail">
+<h3>3.3 V buck</h3>
+<p>TI TPS62840</p>
+<dl class="bom-meta"><div><dt>Qty</dt><dd>1</dd></div><div><dt>Unit estimate</dt><dd>€0.9</dd></div></dl>
+<p class="bom-source"><strong>Supplier:</strong> LCSC, DigiKey</p>
+<p class="bom-photo-note"><strong>Representative example:</strong> 3.3 V buck converter breakout; the pod uses a TI TPS62840</p>
+</div>
+</li>
+<li class="bom-item">
+<figure class="bom-photo"><a href="https://shop.pimoroni.com/products/ht0740-breakout" aria-label="Sensor load switch: photo reference from Pimoroni"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/load-switch.webp" alt="Switch breakout; the pod uses a TI TPS22917 load switch IC" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>Photo: <a href="https://shop.pimoroni.com/products/ht0740-breakout">Pimoroni</a></figcaption></figure>
+<div class="bom-detail">
+<h3>Sensor load switch</h3>
+<p>TI TPS22917</p>
+<dl class="bom-meta"><div><dt>Qty</dt><dd>1</dd></div><div><dt>Unit estimate</dt><dd>€0.3</dd></div></dl>
+<p class="bom-source"><strong>Supplier:</strong> LCSC</p>
+<p class="bom-photo-note"><strong>Representative example:</strong> Switch breakout; the pod uses a TI TPS22917 load switch IC</p>
+</div>
+</li>
+<li class="bom-item">
+<figure class="bom-photo"><a href="https://www.adafruit.com/product/2809" aria-label="Tilt sensor: photo reference from Adafruit"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/accelerometer.webp" alt="LIS3DH accelerometer breakout; the pod uses the LIS2DH12" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>Photo: <a href="https://www.adafruit.com/product/2809">Adafruit</a></figcaption></figure>
+<div class="bom-detail">
+<h3>Tilt sensor</h3>
+<p>ST LIS2DH12 accelerometer</p>
+<dl class="bom-meta"><div><dt>Qty</dt><dd>1</dd></div><div><dt>Unit estimate</dt><dd>€0.5</dd></div></dl>
+<p class="bom-source"><strong>Supplier:</strong> LCSC</p>
+<p class="bom-note">Replaces a bubble level; tipped-hive alert.</p>
+<p class="bom-photo-note"><strong>Representative example:</strong> LIS3DH accelerometer breakout; the pod uses the LIS2DH12</p>
+</div>
+</li>
+<li class="bom-item">
+<figure class="bom-photo"><a href="https://www.adafruit.com/product/441" aria-label="Passives: photo reference from Adafruit"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/smd-passives.webp" alt="SMD resistor and capacitor assortment book" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>Photo: <a href="https://www.adafruit.com/product/441">Adafruit</a></figcaption></figure>
+<div class="bom-detail">
+<h3>Passives</h3>
+<p>-</p>
+<dl class="bom-meta"><div><dt>Qty</dt><dd>1 set</dd></div><div><dt>Unit estimate</dt><dd>€1.5</dd></div></dl>
+<p class="bom-source"><strong>Supplier:</strong> LCSC</p>
+<p class="bom-photo-note"><strong>Representative example:</strong> SMD resistor and capacitor assortment book</p>
+</div>
+</li>
+<li class="bom-item">
+<figure class="bom-photo"><a href="https://www.adafruit.com/product/1609" aria-label="Carrier PCB + assembly: photo reference from Adafruit"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/pcb.webp" alt="Bare prototyping PCB; the carrier is a custom 4-layer board" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>Photo: <a href="https://www.adafruit.com/product/1609">Adafruit</a></figcaption></figure>
+<div class="bom-detail">
+<h3>Carrier PCB + assembly</h3>
+<p>4-layer, 72 × 62 mm, SX1262 footprint</p>
+<dl class="bom-meta"><div><dt>Qty</dt><dd>1</dd></div><div><dt>Unit estimate</dt><dd>€4–7</dd></div></dl>
+<p class="bom-source"><strong>Supplier:</strong> <a href="https://jlcpcb.com/">JLCPCB</a>, <a href="https://www.pcbway.com/">PCBWay</a></p>
+<p class="bom-note">Price per board at 100 units.</p>
+<p class="bom-photo-note"><strong>Example material / custom fabrication:</strong> Bare prototyping PCB; the carrier is a custom 4-layer board</p>
+</div>
+</li>
+<li class="bom-item">
+<figure class="bom-photo"><a href="https://www.adafruit.com/product/5684" aria-label="LoRa module (option): photo reference from Adafruit"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/lora.webp" alt="RFM95CW LoRa module; the option uses an SX1262 module" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>Photo: <a href="https://www.adafruit.com/product/5684">Adafruit</a></figcaption></figure>
+<div class="bom-detail">
+<h3>LoRa module (option)</h3>
+<p>SX1262 module, 868 MHz</p>
+<dl class="bom-meta"><div><dt>Qty</dt><dd>0–1</dd></div><div><dt>Unit estimate</dt><dd>€4–7</dd></div></dl>
+<p class="bom-source"><strong>Supplier:</strong> LCSC, Ebyte</p>
+<p class="bom-note">Fitted for the gateway SKU and the Robotic Beehive.</p>
+<p class="bom-photo-note"><strong>Representative example:</strong> RFM95CW LoRa module; the option uses an SX1262 module</p>
+</div>
+</li>
+<li class="bom-item">
+<figure class="bom-photo"><a href="https://www.adafruit.com/product/3931" aria-label="Enclosure: photo reference from Adafruit"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/enclosure.webp" alt="Weatherproof plastic enclosure; the pod enclosure is custom ASA" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>Photo: <a href="https://www.adafruit.com/product/3931">Adafruit</a></figcaption></figure>
+<div class="bom-detail">
+<h3>Enclosure</h3>
+<p>ASA tub, lid and face, 150 × 38 × 76 mm, silicone gasket, quarter-turn latch</p>
+<dl class="bom-meta"><div><dt>Qty</dt><dd>1</dd></div><div><dt>Unit estimate</dt><dd>€5–10</dd></div></dl>
+<p class="bom-source"><strong>Supplier:</strong> 3D printed (pilot), injection moulded (≈ €5–9k tool)</p>
+<p class="bom-note">Honey yellow.</p>
+<p class="bom-photo-note"><strong>Example material / custom fabrication:</strong> Weatherproof plastic enclosure; the pod enclosure is custom ASA</p>
+</div>
+</li>
+<li class="bom-item">
+<figure class="bom-photo"><a href="https://www.gore.com/products/gore-protective-vents" aria-label="Pressure vent: photo reference from W. L. Gore &amp; Associates"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/pressure-vent.webp" alt="Gore PolyVent M12 ePTFE membrane pressure vent plug" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>Photo: <a href="https://www.gore.com/products/gore-protective-vents">W. L. Gore &amp; Associates</a></figcaption></figure>
+<div class="bom-detail">
+<h3>Pressure vent</h3>
+<p>ePTFE membrane vent</p>
+<dl class="bom-meta"><div><dt>Qty</dt><dd>1</dd></div><div><dt>Unit estimate</dt><dd>€1.5</dd></div></dl>
+<p class="bom-source"><strong>Supplier:</strong> <a href="https://www.mouser.com/c/?q=membrane%20vent">Mouser vents</a></p>
+<p class="bom-photo-note"><strong>Representative example:</strong> Gore PolyVent M12 ePTFE membrane pressure vent plug</p>
+</div>
+</li>
+<li class="bom-item">
+<figure class="bom-photo"><a href="https://www.sparkfun.com/battery-holder-2x18650-wire-leads.html" aria-label="Battery cartridge: photo reference from SparkFun"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/18650-holder.webp" alt="Two-cell 18650 holder; the cartridge is a custom keyed sled" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>Photo: <a href="https://www.sparkfun.com/battery-holder-2x18650-wire-leads.html">SparkFun</a></figcaption></figure>
+<div class="bom-detail">
+<h3>Battery cartridge</h3>
+<p>Keyed sled for 4 × 18650, 1S contacts, 10 kΩ NTC, grip</p>
+<dl class="bom-meta"><div><dt>Qty</dt><dd>1</dd></div><div><dt>Unit estimate</dt><dd>€3–5</dd></div></dl>
+<p class="bom-source"><strong>Supplier:</strong> 3D printed / moulded + Keystone contacts</p>
+<p class="bom-note">Slides out of the pod face.</p>
+<p class="bom-photo-note"><strong>Example material / custom fabrication:</strong> Two-cell 18650 holder; the cartridge is a custom keyed sled</p>
+</div>
+</li>
+<li class="bom-item">
+<figure class="bom-photo"><a href="https://thepihut.com/products/18650-lithium-ion-rechargeable-cell-2500mah-3-7v-20a" aria-label="18650 cells: photo reference from The Pi Hut"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/18650-cell.webp" alt="18650 Li-ion cell, 2500 mAh; generic cell, not the specific sourced SKU" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>Photo: <a href="https://thepihut.com/products/18650-lithium-ion-rechargeable-cell-2500mah-3-7v-20a">The Pi Hut</a></figcaption></figure>
+<div class="bom-detail">
+<h3>18650 cells</h3>
+<p>2500 mAh Li-ion, low-temperature rated (e.g. Samsung 25R, Molicel P28A)</p>
+<dl class="bom-meta"><div><dt>Qty</dt><dd>2–4</dd></div><div><dt>Unit estimate</dt><dd>€2.5–4</dd></div></dl>
+<p class="bom-source"><strong>Supplier:</strong> Authorised battery distributor</p>
+<p class="bom-note">Buy matched cells from one lot.</p>
+<p class="bom-photo-note"><strong>Representative example:</strong> 18650 Li-ion cell, 2500 mAh; generic cell, not the specific sourced SKU</p>
+</div>
+</li>
+</ul>
+<h2 id="hive-climate-probe-and-packaging">Hive climate probe and packaging</h2>
+<ul class="bom-list" role="list">
+<li class="bom-item">
+<figure class="bom-photo"><a href="https://www.adafruit.com/product/6174" aria-label="Hive climate probe: photo reference from Adafruit"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/sht45-ptfe.webp" alt="Sensirion SHT45 on an Adafruit breakout with PTFE cover; the probe itself is a custom stainless tube assembly" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>Photo: <a href="https://www.adafruit.com/product/6174">Adafruit</a></figcaption></figure>
+<div class="bom-detail">
+<h3>Hive climate probe</h3>
+<p>Sensirion SHT45 in a 6 mm stainless tube with a vented ePTFE tip, 1 m semi-rigid flat 4-core lead with an insertion mark, sealed 4-pin plug</p>
+<dl class="bom-meta"><div><dt>Qty</dt><dd>1</dd></div><div><dt>Unit estimate</dt><dd>€8–14</dd></div></dl>
+<p class="bom-source"><strong>Supplier:</strong> Probe manufacturer; <a href="https://sensirion.com/products/catalog/SHT45">Sensirion SHT45</a></p>
+<p class="bom-note">Goes in through the entrance.</p>
+<p class="bom-photo-note"><strong>Component on example breakout:</strong> Sensirion SHT45 on an Adafruit breakout with PTFE cover; the probe itself is a custom stainless tube assembly</p>
+</div>
+</li>
+<li class="bom-item">
+<figure class="bom-photo"><a href="https://www.uline.com/Product/Detail/S-4799/Corrugated-Boxes/" aria-label="Labels, manual, box: photo reference from Uline"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/cardboard-box.webp" alt="Corrugated shipping box as an example of the packaging; contents are custom print" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>Photo: <a href="https://www.uline.com/Product/Detail/S-4799/Corrugated-Boxes/">Uline</a></figcaption></figure>
+<div class="bom-detail">
+<h3>Labels, manual, box</h3>
+<p>Serial and calibration label, quick-start card, flat box 600 × 550 × 160 mm</p>
+<dl class="bom-meta"><div><dt>Qty</dt><dd>1 set</dd></div><div><dt>Unit estimate</dt><dd>€5–8</dd></div></dl>
+<p class="bom-source"><strong>Supplier:</strong> Local print shop</p>
+<p class="bom-photo-note"><strong>Representative example:</strong> Corrugated shipping box as an example of the packaging; contents are custom print</p>
+</div>
+</li>
+</ul>
+<h2 id="robotic-beehive-variant">Robotic Beehive variant</h2>
+<p>Remove the feet. Add a LoRa module and a robot harness with an M12 8-pin plug: 5 V from the robot&#x27;s fused logic rail, UART and WAKE to the Jetson. The pod stays in the scale&#x27;s side bay.</p>
+<h2 id="factory-equipment">Factory equipment</h2>
+<ul class="bom-list" role="list">
+<li class="bom-item">
+<figure class="bom-photo"><a href="https://www.ourweigh.co.uk/" aria-label="Calibration weights, 20 kg and 100 kg (M1 class): photo reference from Ourweigh"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/calibration-weight.webp" alt="Cast iron M1-class calibration weight with adjusting cavity" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>Photo: <a href="https://www.ourweigh.co.uk/">Ourweigh</a></figcaption></figure>
+<div class="bom-detail">
+<h3>Calibration weights, 20 kg and 100 kg (M1 class)</h3>
+<p>3-point calibration and the corner-load test.</p>
+<p class="bom-photo-note"><strong>Representative example:</strong> Cast iron M1-class calibration weight with adjusting cavity</p>
+</div>
+</li>
+<li class="bom-item">
+<figure class="bom-photo"><a href="https://www.adafruit.com/product/4232" aria-label="USB-C test station: photo reference from Adafruit"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/usb-tester.webp" alt="USB-C digital tester; the station is a custom flash and self-test rig" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>Photo: <a href="https://www.adafruit.com/product/4232">Adafruit</a></figcaption></figure>
+<div class="bom-detail">
+<h3>USB-C test station</h3>
+<p>Flash firmware and run the board self-test through the pod&#x27;s USB-C port.</p>
+<p class="bom-photo-note"><strong>Representative example:</strong> USB-C digital tester; the station is a custom flash and self-test rig</p>
+</div>
+</li>
+<li class="bom-item">
+<figure class="bom-photo"><a href="https://metabeeai.com/" aria-label="M12 test plug: photo reference from Metabee"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/m12-8pin-plug.webp" alt="M12 8-pin A-coded field-wireable connector; the test plug is a custom loop-back" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>Photo: <a href="https://metabeeai.com/">Metabee</a></figcaption></figure>
+<div class="bom-detail">
+<h3>M12 test plug</h3>
+<p>Accessory-connector loop-back test (VIN, 1-Wire, UART, WAKE).</p>
+<p class="bom-photo-note"><strong>Representative example:</strong> M12 8-pin A-coded field-wireable connector; the test plug is a custom loop-back</p>
+</div>
+</li>
+<li class="bom-item">
+<figure class="bom-photo"><a href="https://www.drapertools.com/product/51720/32-blade-combination-feeler-gauge-set/" aria-label="Feeler gauge set: photo reference from Draper Tools"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/feeler-gauge.webp" alt="Draper 32-blade combination feeler gauge set" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>Photo: <a href="https://www.drapertools.com/product/51720/32-blade-combination-feeler-gauge-set/">Draper Tools</a></figcaption></figure>
+<div class="bom-detail">
+<h3>Feeler gauge set</h3>
+<p>Set the overload stops.</p>
+<p class="bom-photo-note"><strong>Representative example:</strong> Draper 32-blade combination feeler gauge set</p>
+</div>
+</li>
+<li class="bom-item">
+<figure class="bom-photo"><a href="https://www.adafruit.com/product/4699" aria-label="Pod leak tester (vacuum decay) or dunk tank: photo reference from Adafruit"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/vacuum-pump.webp" alt="Small vacuum pump motor as an example part; the tester is custom" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>Photo: <a href="https://www.adafruit.com/product/4699">Adafruit</a></figcaption></figure>
+<div class="bom-detail">
+<h3>Pod leak tester (vacuum decay) or dunk tank</h3>
+<p>IP67 check before shipping.</p>
+<p class="bom-photo-note"><strong>Representative example:</strong> Small vacuum pump motor as an example part; the tester is custom</p>
+</div>
+</li>
+</ul>
+<h2 id="selection-rules-before-ordering">Selection rules before ordering</h2>
+<ul>
+<li>Each critical part needs at least two acceptable suppliers or an approved substitute.</li>
+<li>Measure the delivered AP62AFB before releasing deck and base drawings.</li>
+<li>Check enclosure, connector and cable diameters together, not separately.</li>
+<li>Load-cell capacity must cover the hive at peak honey, a leaning beekeeper and an overload margin.</li>
+<li>Document battery chemistry and cell source for safe shipping (UN38.3) and service.</li>
+<li>Record the PCB and frame revision in telemetry metadata.</li>
+</ul>
+<h2 id="supplier-examples-to-compare">Supplier examples to compare</h2>
+<p>These are research links, not approved suppliers:</p>
+<ul>
+<li><a href="https://www.alibaba.com/product-detail/AP62AFB-200kg-350kg-Liquid-Automatic-Quantitative_1601491747233.html">Alibaba AP62AFB single-point cell with brackets</a> (current choice)</li>
+<li><a href="https://www.alibaba.com/product-detail/Weight-Pesage-Industrial-Balanzas-Load-Cell_1600454137483.html">Alibaba industrial load-cell scale example</a></li>
+<li><a href="https://www.alibaba.com/product-detail/Stainless-Steel-Waterproof-Weighing-Industrial-Scale_1600910558433.html">Alibaba stainless waterproof scale example</a></li>
+<li><a href="http://en.pilot-scale.com/product_category/Bench-scale-series.html">Pilot Scale bench-scale series</a></li>
+<li><a href="https://www.alibaba.com/product-detail/X-Type-Electronic-Digital-Scale-Stainless_1601348321471.html">Alibaba X-type stainless scale example</a></li>
+</ul>
+</section>

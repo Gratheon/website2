@@ -1,0 +1,380 @@
+{
+  "Load cell + brackets": {
+    "file": "content/docs/beehive-sensors/bom-images/load-cell.webp",
+    "productUrl": "https://www.alibaba.com/trade/search?SearchText=AP62AFB+load+cell",
+    "imageUrl": "https://s.alicdn.com/@sc04/kf/He8c12ff964f3475c930a3cdfeb1618cf1.jpg_720x720q50.jpg",
+    "label": "Representative example",
+    "alt": "Rectangular single-point aluminium/steel load cell from Alibaba; same form factor as the AP62AFB, but the exact AP62AFB listing was not located",
+    "source": "Alibaba",
+    "attribution": "Product photo from Alibaba; image rights belong to the shop and are used as a reference only"
+  },
+  "Deck": {
+    "file": "content/docs/beehive-sensors/bom-images/plywood.webp",
+    "productUrl": "https://www.capitolcitylumber.com/",
+    "imageUrl": "https://www.capitolcitylumber.com/cms/wp-content/uploads/2017/02/Baltic-Birch-Marine-Plywood-cclc.jpg",
+    "label": "Example material / custom fabrication",
+    "alt": "Baltic birch plywood sheet from a wood shop; the deck is custom CNC-cut birch plywood",
+    "source": "Capitol City Lumber",
+    "attribution": "Product photo from Capitol City Lumber; image rights belong to the shop and are used as a reference only"
+  },
+  "Base": {
+    "file": "content/docs/beehive-sensors/bom-images/plywood.webp",
+    "productUrl": "https://www.capitolcitylumber.com/",
+    "imageUrl": "https://www.capitolcitylumber.com/cms/wp-content/uploads/2017/02/Baltic-Birch-Marine-Plywood-cclc.jpg",
+    "label": "Example material / custom fabrication",
+    "alt": "Baltic birch plywood sheet from a wood shop; the base is custom plywood and thermo-pine",
+    "source": "Capitol City Lumber",
+    "attribution": "Product photo from Capitol City Lumber; image rights belong to the shop and are used as a reference only"
+  },
+  "Hive locators": {
+    "file": "content/docs/beehive-sensors/bom-images/filament.webp",
+    "productUrl": "https://www.prusa3d.com/product/prusament-asa-prusa-orange-850g/",
+    "imageUrl": "https://www.prusa3d.com/content/images/product/0ea4d2e1-1401-458f-8350-e25551b0a319.jpg",
+    "label": "Example material / custom fabrication",
+    "alt": "Prusament ASA filament spool; parts are printed in ASA in-house",
+    "source": "Prusa Research",
+    "attribution": "Product photo from Prusa Research; image rights belong to the shop and are used as a reference only"
+  },
+  "Sensor port": {
+    "file": "content/docs/beehive-sensors/bom-images/waterproof-4wire.webp",
+    "productUrl": "https://www.adafruit.com/product/744",
+    "imageUrl": "https://cdn-shop.adafruit.com/640x480/744-05.jpg",
+    "label": "Representative example",
+    "alt": "Waterproof polarized 4-wire connector set, like the sealed 4-pin probe socket",
+    "source": "Adafruit",
+    "attribution": "Product photo from Adafruit; image rights belong to the shop and are used as a reference only"
+  },
+  "Probe groove": {
+    "file": "content/docs/beehive-sensors/bom-images/filament.webp",
+    "productUrl": "https://www.prusa3d.com/product/prusament-asa-prusa-orange-850g/",
+    "imageUrl": "https://www.prusa3d.com/content/images/product/0ea4d2e1-1401-458f-8350-e25551b0a319.jpg",
+    "label": "Example material / custom fabrication",
+    "alt": "Prusament ASA filament spool; the groove is a printed ASA part",
+    "source": "Prusa Research",
+    "attribution": "Product photo from Prusa Research; image rights belong to the shop and are used as a reference only"
+  },
+  "Overload stops": {
+    "file": "content/docs/beehive-sensors/bom-images/hex-screws.webp",
+    "productUrl": "https://thepihut.com/products/10-sets-m3x12-screw-low-profile-hex-head-cap-screw",
+    "imageUrl": "https://thepihut.com/cdn/shop/products/10-sets-m3x12-screw-low-profile-hex-head-cap-screw-dfrobot-fit0280-28601536708803.jpg?v=1646824331",
+    "label": "Representative example",
+    "alt": "Hex head cap screws; the stops use M10 x 90 stainless bolts",
+    "source": "The Pi Hut",
+    "attribution": "Product photo from The Pi Hut; image rights belong to the shop and are used as a reference only"
+  },
+  "Levelling feet": {
+    "file": "content/docs/beehive-sensors/bom-images/leveling-feet-m10.webp",
+    "productUrl": "https://www.hawkeng.co.uk/",
+    "imageUrl": "https://www.hawkeng.co.uk/image/cache/catalog/50mmFootM10/IMG_E5419-1000x1000.jpg",
+    "label": "Representative example",
+    "alt": "M10 studded rubber leveling foot with 50 mm base",
+    "source": "Hawk Engineering",
+    "attribution": "Product photo from Hawk Engineering; image rights belong to the shop and are used as a reference only"
+  },
+  "Side bumpers": {
+    "file": "content/docs/beehive-sensors/bom-images/silicone-bumpers.webp",
+    "productUrl": "https://www.sparkfun.com/silicone-bumpers-large-10x16-5mm-4-pack.html",
+    "imageUrl": "https://www.sparkfun.com/media/catalog/product/cache/6b78ac9ed927a3c2db42a3c84dab4ce5/1/0/10594-01.jpg",
+    "label": "Representative example",
+    "alt": "Adhesive silicone bumpers; the kit uses EPDM pads",
+    "source": "SparkFun",
+    "attribution": "Product photo from SparkFun; image rights belong to the shop and are used as a reference only"
+  },
+  "Bracket fasteners": {
+    "file": "content/docs/beehive-sensors/bom-images/bolt-set.webp",
+    "productUrl": "https://shop.pimoroni.com/products/bolt-set-philips-screw-nuts-180-pcs",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0174/1800/products/k_sc2.jpg?v=1596123091",
+    "label": "Representative example",
+    "alt": "Assorted screws, nuts and washers; the kit uses M8 stainless",
+    "source": "Pimoroni",
+    "attribution": "Product photo from Pimoroni; image rights belong to the shop and are used as a reference only"
+  },
+  "Pod bay sleeve": {
+    "file": "content/docs/beehive-sensors/bom-images/filament.webp",
+    "productUrl": "https://www.prusa3d.com/product/prusament-asa-prusa-orange-850g/",
+    "imageUrl": "https://www.prusa3d.com/content/images/product/0ea4d2e1-1401-458f-8350-e25551b0a319.jpg",
+    "label": "Example material / custom fabrication",
+    "alt": "Prusament ASA filament spool; the sleeve is a printed ASA part",
+    "source": "Prusa Research",
+    "attribution": "Product photo from Prusa Research; image rights belong to the shop and are used as a reference only"
+  },
+  "Dock connector": {
+    "file": "content/docs/beehive-sensors/bom-images/connector-set.webp",
+    "productUrl": "https://shop.pimoroni.com/products/connector-set-for-low-voltage-applications",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0174/1800/products/vcs200.jpg?v=1623854480",
+    "label": "Representative example",
+    "alt": "Low-voltage connector set; the dock uses a keyed gasketed 12-pin pair",
+    "source": "Pimoroni",
+    "attribution": "Product photo from Pimoroni; image rights belong to the shop and are used as a reference only"
+  },
+  "Observer mounting points": {
+    "file": "content/docs/beehive-sensors/bom-images/brass-inserts.webp",
+    "productUrl": "https://www.adafruit.com/product/4255",
+    "imageUrl": "https://cdn-shop.adafruit.com/640x480/4255-02.jpg",
+    "label": "Representative example",
+    "alt": "Brass heat-set inserts; the kit uses M6 inserts",
+    "source": "Adafruit",
+    "attribution": "Product photo from Adafruit; image rights belong to the shop and are used as a reference only"
+  },
+  "Accessory connector": {
+    "file": "content/docs/beehive-sensors/bom-images/m12-8pin-socket.webp",
+    "productUrl": "https://metabeeai.com/",
+    "imageUrl": "https://metabeeai.com/wp-content/uploads/2024/03/Waterproof-M12-8-Pin-A-Coded-Female-Bulkhead-Panel-Mount-Connector-for-Cable-Solder-Type-Straight-4-600x600.webp",
+    "label": "Representative example",
+    "alt": "M12 8-pin A-coded female panel-mount socket",
+    "source": "Metabee",
+    "attribution": "Product photo from Metabee; image rights belong to the shop and are used as a reference only"
+  },
+  "Internal harness": {
+    "file": "content/docs/beehive-sensors/bom-images/ribbon-cable.webp",
+    "productUrl": "https://www.adafruit.com/product/3891",
+    "imageUrl": "https://cdn-shop.adafruit.com/640x480/3891-01.jpg",
+    "label": "Representative example",
+    "alt": "Silicone-insulated 4-wire ribbon cable",
+    "source": "Adafruit",
+    "attribution": "Product photo from Adafruit; image rights belong to the shop and are used as a reference only"
+  },
+  "Ambient sensor pocket": {
+    "file": "content/docs/beehive-sensors/bom-images/sht40.webp",
+    "productUrl": "https://www.adafruit.com/product/4885",
+    "imageUrl": "https://cdn-shop.adafruit.com/640x480/4885-05.jpg",
+    "label": "Component on example breakout",
+    "alt": "Sensirion SHT40 on an Adafruit breakout",
+    "source": "Adafruit",
+    "attribution": "Product photo from Adafruit; image rights belong to the shop and are used as a reference only"
+  },
+  "Transport lock": {
+    "file": "content/docs/beehive-sensors/bom-images/hex-screws.webp",
+    "productUrl": "https://thepihut.com/products/10-sets-m3x12-screw-low-profile-hex-head-cap-screw",
+    "imageUrl": "https://thepihut.com/cdn/shop/products/10-sets-m3x12-screw-low-profile-hex-head-cap-screw-dfrobot-fit0280-28601536708803.jpg?v=1646824331",
+    "label": "Representative example",
+    "alt": "Hex head screws; the lock is a captive M8 cam bolt with a printed knob",
+    "source": "The Pi Hut",
+    "attribution": "Product photo from The Pi Hut; image rights belong to the shop and are used as a reference only"
+  },
+  "MCU module": {
+    "file": "content/docs/beehive-sensors/bom-images/esp32-s3.webp",
+    "productUrl": "https://www.adafruit.com/product/5311",
+    "imageUrl": "https://cdn-shop.adafruit.com/640x480/5311-03.jpg",
+    "label": "Component on example board",
+    "alt": "ESP32-S3-MINI-1 module on an ESP32-S3-DevKitM-1 dev board",
+    "source": "Adafruit",
+    "attribution": "Product photo from Adafruit; image rights belong to the shop and are used as a reference only"
+  },
+  "Weight ADC": {
+    "file": "content/docs/beehive-sensors/bom-images/hx711.webp",
+    "productUrl": "https://www.sparkfun.com/sparkfun-load-cell-amplifier-hx711.html",
+    "imageUrl": "https://www.sparkfun.com/media/catalog/product/cache/6b78ac9ed927a3c2db42a3c84dab4ce5/1/3/13879-SparkFun_Load_Cell_Amplifier_-_HX711-01.jpg",
+    "label": "Component on example board",
+    "alt": "HX711 IC on a SparkFun load cell amplifier breakout",
+    "source": "SparkFun",
+    "attribution": "Product photo from SparkFun; image rights belong to the shop and are used as a reference only"
+  },
+  "Charger": {
+    "file": "content/docs/beehive-sensors/bom-images/lipo-charger.webp",
+    "productUrl": "https://www.adafruit.com/product/1904",
+    "imageUrl": "https://cdn-shop.adafruit.com/640x480/1904-06.jpg",
+    "label": "Representative example",
+    "alt": "Li-ion charger breakout; the pod uses a TI BQ24074",
+    "source": "Adafruit",
+    "attribution": "Product photo from Adafruit; image rights belong to the shop and are used as a reference only"
+  },
+  "Input selector": {
+    "file": "content/docs/beehive-sensors/bom-images/lm66200.webp",
+    "productUrl": "https://www.adafruit.com/product/5830",
+    "imageUrl": "https://cdn-shop.adafruit.com/640x480/5830-04.jpg",
+    "label": "Component on example board",
+    "alt": "LM66200 ideal diode IC on an Adafruit breakout",
+    "source": "Adafruit",
+    "attribution": "Product photo from Adafruit; image rights belong to the shop and are used as a reference only"
+  },
+  "Display": {
+    "file": "content/docs/beehive-sensors/bom-images/oled.webp",
+    "productUrl": "https://www.adafruit.com/product/326",
+    "imageUrl": "https://cdn-shop.adafruit.com/640x480/326-04.jpg",
+    "label": "Representative example",
+    "alt": "0.96 inch 128 x 64 monochrome OLED module (SSD1306 class)",
+    "source": "Adafruit",
+    "attribution": "Product photo from Adafruit; image rights belong to the shop and are used as a reference only"
+  },
+  "Button": {
+    "file": "content/docs/beehive-sensors/bom-images/metal-button.webp",
+    "productUrl": "https://www.adafruit.com/product/559",
+    "imageUrl": "https://cdn-shop.adafruit.com/640x480/559-00.jpg",
+    "label": "Representative example",
+    "alt": "Rugged metal pushbutton; the kit uses a 12 mm IP67 tactile switch",
+    "source": "Adafruit",
+    "attribution": "Product photo from Adafruit; image rights belong to the shop and are used as a reference only"
+  },
+  "USB-C": {
+    "file": "content/docs/beehive-sensors/bom-images/usbc-socket.webp",
+    "productUrl": "https://www.adafruit.com/product/5180",
+    "imageUrl": "https://cdn-shop.adafruit.com/640x480/5180-01.jpg",
+    "label": "Representative example",
+    "alt": "USB-C socket breakout",
+    "source": "Adafruit",
+    "attribution": "Product photo from Adafruit; image rights belong to the shop and are used as a reference only"
+  },
+  "Fuel gauge": {
+    "file": "content/docs/beehive-sensors/bom-images/max17048.webp",
+    "productUrl": "https://www.adafruit.com/product/5580",
+    "imageUrl": "https://cdn-shop.adafruit.com/640x480/5580-06.jpg",
+    "label": "Component on example board",
+    "alt": "MAX17048 IC on an Adafruit breakout",
+    "source": "Adafruit",
+    "attribution": "Product photo from Adafruit; image rights belong to the shop and are used as a reference only"
+  },
+  "3.3 V buck": {
+    "file": "content/docs/beehive-sensors/bom-images/buck-3v3.webp",
+    "productUrl": "https://www.adafruit.com/product/2745",
+    "imageUrl": "https://cdn-shop.adafruit.com/640x480/2745-04.jpg",
+    "label": "Representative example",
+    "alt": "3.3 V buck converter breakout; the pod uses a TI TPS62840",
+    "source": "Adafruit",
+    "attribution": "Product photo from Adafruit; image rights belong to the shop and are used as a reference only"
+  },
+  "Sensor load switch": {
+    "file": "content/docs/beehive-sensors/bom-images/load-switch.webp",
+    "productUrl": "https://shop.pimoroni.com/products/ht0740-breakout",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0174/1800/products/HT0740_-_Big_Damn_Switch_1_of_4.jpg?v=1565781630",
+    "label": "Representative example",
+    "alt": "Switch breakout; the pod uses a TI TPS22917 load switch IC",
+    "source": "Pimoroni",
+    "attribution": "Product photo from Pimoroni; image rights belong to the shop and are used as a reference only"
+  },
+  "Tilt sensor": {
+    "file": "content/docs/beehive-sensors/bom-images/accelerometer.webp",
+    "productUrl": "https://www.adafruit.com/product/2809",
+    "imageUrl": "https://cdn-shop.adafruit.com/640x480/2809-08.jpg",
+    "label": "Representative example",
+    "alt": "LIS3DH accelerometer breakout; the pod uses the LIS2DH12",
+    "source": "Adafruit",
+    "attribution": "Product photo from Adafruit; image rights belong to the shop and are used as a reference only"
+  },
+  "Passives": {
+    "file": "content/docs/beehive-sensors/bom-images/smd-passives.webp",
+    "productUrl": "https://www.adafruit.com/product/441",
+    "imageUrl": "https://cdn-shop.adafruit.com/640x480/441-05.jpg",
+    "label": "Representative example",
+    "alt": "SMD resistor and capacitor assortment book",
+    "source": "Adafruit",
+    "attribution": "Product photo from Adafruit; original image rights retained"
+  },
+  "Carrier PCB + assembly": {
+    "file": "content/docs/beehive-sensors/bom-images/pcb.webp",
+    "productUrl": "https://www.adafruit.com/product/1609",
+    "imageUrl": "https://cdn-shop.adafruit.com/640x480/1609-03.jpg",
+    "label": "Example material / custom fabrication",
+    "alt": "Bare prototyping PCB; the carrier is a custom 4-layer board",
+    "source": "Adafruit",
+    "attribution": "Product photo from Adafruit; image rights belong to the shop and are used as a reference only"
+  },
+  "LoRa module (option)": {
+    "file": "content/docs/beehive-sensors/bom-images/lora.webp",
+    "productUrl": "https://www.adafruit.com/product/5684",
+    "imageUrl": "https://cdn-shop.adafruit.com/640x480/5684-03.jpg",
+    "label": "Representative example",
+    "alt": "RFM95CW LoRa module; the option uses an SX1262 module",
+    "source": "Adafruit",
+    "attribution": "Product photo from Adafruit; image rights belong to the shop and are used as a reference only"
+  },
+  "Enclosure": {
+    "file": "content/docs/beehive-sensors/bom-images/enclosure.webp",
+    "productUrl": "https://www.adafruit.com/product/3931",
+    "imageUrl": "https://cdn-shop.adafruit.com/640x480/3931-00.jpg",
+    "label": "Example material / custom fabrication",
+    "alt": "Weatherproof plastic enclosure; the pod enclosure is custom ASA",
+    "source": "Adafruit",
+    "attribution": "Product photo from Adafruit; image rights belong to the shop and are used as a reference only"
+  },
+  "Pressure vent": {
+    "file": "content/docs/beehive-sensors/bom-images/pressure-vent.webp",
+    "productUrl": "https://www.gore.com/products/gore-protective-vents",
+    "imageUrl": "https://www.gore.com/sites/default/files/styles/wf_comp_banner_spotlight_scale_crop_lg_wf_small_center_center/public/2025-12/GORE-PolyVent-High-Airflow-PRO-gray-turned-720x1280-tiled.jpg.webp?itok=D1mkIM3M",
+    "label": "Representative example",
+    "alt": "Gore PolyVent M12 ePTFE membrane pressure vent plug",
+    "source": "W. L. Gore & Associates",
+    "attribution": "Product photo from Gore; image rights belong to the manufacturer and are used as a reference only"
+  },
+  "Battery cartridge": {
+    "file": "content/docs/beehive-sensors/bom-images/18650-holder.webp",
+    "productUrl": "https://www.sparkfun.com/battery-holder-2x18650-wire-leads.html",
+    "imageUrl": "https://www.sparkfun.com/media/catalog/product/cache/6b78ac9ed927a3c2db42a3c84dab4ce5/1/2/12900-01.jpg",
+    "label": "Example material / custom fabrication",
+    "alt": "Two-cell 18650 holder; the cartridge is a custom keyed sled",
+    "source": "SparkFun",
+    "attribution": "Product photo from SparkFun; image rights belong to the shop and are used as a reference only"
+  },
+  "18650 cells": {
+    "file": "content/docs/beehive-sensors/bom-images/18650-cell.webp",
+    "productUrl": "https://thepihut.com/products/18650-lithium-ion-rechargeable-cell-2500mah-3-7v-20a",
+    "imageUrl": "https://thepihut.com/cdn/shop/files/18650-lithium-ion-rechargeable-cell-2500mah-3-7v-20a-the-pi-hut-106464-1151688302.jpg?v=1742931439",
+    "label": "Representative example",
+    "alt": "18650 Li-ion cell, 2500 mAh; generic cell, not the specific sourced SKU",
+    "source": "The Pi Hut",
+    "attribution": "Product photo from The Pi Hut; image rights belong to the shop and are used as a reference only"
+  },
+  "Hive climate probe": {
+    "file": "content/docs/beehive-sensors/bom-images/sht45-ptfe.webp",
+    "productUrl": "https://www.adafruit.com/product/6174",
+    "imageUrl": "https://cdn-shop.adafruit.com/640x480/6174-00.jpg",
+    "label": "Component on example breakout",
+    "alt": "Sensirion SHT45 on an Adafruit breakout with PTFE cover; the probe itself is a custom stainless tube assembly",
+    "source": "Adafruit",
+    "attribution": "Product photo from Adafruit; image rights belong to the shop and are used as a reference only"
+  },
+  "Labels, manual, box": {
+    "file": "content/docs/beehive-sensors/bom-images/cardboard-box.webp",
+    "productUrl": "https://www.uline.com/Product/Detail/S-4799/Corrugated-Boxes/",
+    "imageUrl": "https://img.uline.com/is/image/uline/S-4799?$Mobile_Zoom$",
+    "label": "Representative example",
+    "alt": "Corrugated shipping box as an example of the packaging; contents are custom print",
+    "source": "Uline",
+    "attribution": "Product photo from Uline; image rights belong to the shop and are used as a reference only"
+  },
+  "Calibration weights, 20 kg and 100 kg (M1 class)": {
+    "file": "content/docs/beehive-sensors/bom-images/calibration-weight.webp",
+    "productUrl": "https://www.ourweigh.co.uk/",
+    "imageUrl": "https://www.ourweigh.co.uk/user/products/large/calibration_weights_cast_iron.jpg",
+    "label": "Representative example",
+    "alt": "Cast iron M1-class calibration weight with adjusting cavity",
+    "source": "Ourweigh",
+    "attribution": "Product photo from Ourweigh; image rights belong to the shop and are used as a reference only"
+  },
+  "USB-C test station": {
+    "file": "content/docs/beehive-sensors/bom-images/usb-tester.webp",
+    "productUrl": "https://www.adafruit.com/product/4232",
+    "imageUrl": "https://cdn-shop.adafruit.com/640x480/4232-10.jpg",
+    "label": "Representative example",
+    "alt": "USB-C digital tester; the station is a custom flash and self-test rig",
+    "source": "Adafruit",
+    "attribution": "Product photo from Adafruit; image rights belong to the shop and are used as a reference only"
+  },
+  "M12 test plug": {
+    "file": "content/docs/beehive-sensors/bom-images/m12-8pin-plug.webp",
+    "productUrl": "https://metabeeai.com/",
+    "imageUrl": "https://metabeeai.com/wp-content/uploads/2024/03/M12-8-Pin-A-Coded-Female-Field-Wireable-Connector-Straight-Shielded-1-600x600.webp",
+    "label": "Representative example",
+    "alt": "M12 8-pin A-coded field-wireable connector; the test plug is a custom loop-back",
+    "source": "Metabee",
+    "attribution": "Product photo from Metabee; image rights belong to the shop and are used as a reference only"
+  },
+  "Feeler gauge set": {
+    "file": "content/docs/beehive-sensors/bom-images/feeler-gauge.webp",
+    "productUrl": "https://www.drapertools.com/product/51720/32-blade-combination-feeler-gauge-set/",
+    "imageUrl": "https://cdn11.bigcommerce.com/s-1qmaqa25jp/products/13769/images/59942/51720_1__45464.1698185744.386.513.jpg?c=1",
+    "label": "Representative example",
+    "alt": "Draper 32-blade combination feeler gauge set",
+    "source": "Draper Tools",
+    "attribution": "Product photo from Draper Tools; original image rights retained"
+  },
+  "Pod leak tester (vacuum decay) or dunk tank": {
+    "file": "content/docs/beehive-sensors/bom-images/vacuum-pump.webp",
+    "productUrl": "https://www.adafruit.com/product/4699",
+    "imageUrl": "https://cdn-shop.adafruit.com/product-videos/640x480/4699-06.jpg",
+    "label": "Representative example",
+    "alt": "Small vacuum pump motor as an example part; the tester is custom",
+    "source": "Adafruit",
+    "attribution": "Product photo from Adafruit; image rights belong to the shop and are used as a reference only"
+  }
+}

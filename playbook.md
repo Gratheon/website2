@@ -42,3 +42,13 @@
 - For external PDF previews, inspect `Content-Type` and `Content-Disposition`: publisher endpoints returning `binary/octet-stream` may download in Chrome even inside an iframe. Keep the original URL for downloads and use a dedicated preview URL when needed.
 - When discovering optional sibling repositories, list the parent directory rather than passing several possibly unmatched globs to `ls`; missing matches can return a failure even when another component exists.
 - A README reference to `config.yaml` does not establish its repository path or availability. Locate configuration files in the GitHub tree before requesting a raw URL.
+
+- Project file indexing may be disabled; use `find_files` / `grep` rather than retrying `file_search`.
+- Brave's free search plan allows one request per second; do not fan out Brave searches in parallel.
+- `dev-mechanical-coder` was unavailable on 2026-09-30 because OpenRouter credits were exhausted; continue locally rather than retrying it.
+- Treat shop breakouts and material photos as examples, not exact production parts. Verify visual similarity and expose differences in visible captions, not just alt text. Some shops (e.g. Polycase) block automated image lookups with HTTP 403.
+- The blog-engine binary does not recognize `build --help` as a help request and runs a build. Inspect CLI source or README for build flags instead.
+- Subagent sessions can unexpectedly start in the a2gent host repo rather than `/workspace`; pass both the project host path and expected Docker path explicitly.
+- BOM photos belong next to the document under `content/docs/beehive-sensors/bom-images/`. WebP files pass through to `/assets/img/docs/beehive-sensors/bom-images/`; verify generated paths after building.
+- Browser automation is stateful: call `browser_chrome` sequentially as a top-level call, never inside `parallel`.
+- Online-shop photo tasks should not silently fall back to Wikimedia. If CC BY-SA photos are used, visible captions must include the creator, licence link and modification notice; otherwise replace them with actual supplier references.
