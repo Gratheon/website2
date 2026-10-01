@@ -13,20 +13,20 @@ description: "Illustrated parts list for the Gratheon beehive scale production k
 body:has(.beehive-bom) .site-content { max-width: none; }
 .site-content article .content .beehive-bom { max-width: 1050px; margin-inline: auto; line-height: 1.5; }
 .beehive-bom { --bom-line: var(--nav-border, #ddd); --bom-muted: var(--text-secondary, #606770); }
-.site-content article .content .beehive-bom h2 { margin: 2rem 0 1rem; }
-.site-content article .content .beehive-bom h3 { margin: 0 0 .35rem; font-size: 1.05rem; line-height: 1.35; }
-.site-content article .content .beehive-bom p { margin: 0 0 .6rem; }
-.site-content article .content .beehive-bom .bom-summary { margin: 1.25rem 0; }
-.bom-summary > div { display: flex; justify-content: space-between; gap: 1rem; padding: .55rem 0; border-bottom: 1px solid var(--bom-line); }
+.site-content article .content .beehive-bom h2 { margin: 1.25rem 0 .6rem; }
+.site-content article .content .beehive-bom h3 { margin: 0 0 .25rem; font-size: 1.05rem; line-height: 1.35; }
+.site-content article .content .beehive-bom p { margin: 0 0 .3rem; }
+.site-content article .content .beehive-bom .bom-summary { margin: .65rem 0; }
+.bom-summary > div { display: flex; justify-content: space-between; gap: 1rem; padding: .3rem 0; border-bottom: 1px solid var(--bom-line); }
 .bom-summary dt { flex: 1; }
 .bom-summary dd { margin: 0; white-space: nowrap; }
 .site-content article .content .beehive-bom .bom-list { list-style: none; margin: 0; padding: 0; }
-.site-content article .content .beehive-bom .bom-item { display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: 1.25rem; margin: 0; padding: 1.1rem 0; border-bottom: 1px solid var(--bom-line); }
-.site-content article .content .beehive-bom .bom-photo { margin: 0; width: 96px; }
-.site-content article .content .beehive-bom .bom-photo img { display: block; width: 96px; height: 96px; max-width: 100%; margin: 0; padding: 4px; object-fit: contain; border-radius: 8px; background: #fff; border: 1px solid var(--bom-line); }
+.site-content article .content .beehive-bom .bom-item { display: grid; grid-template-columns: 192px minmax(0, 1fr); gap: 1.25rem; margin: 0; padding: .55rem 0; border-bottom: 1px solid var(--bom-line); }
+.site-content article .content .beehive-bom .bom-photo { margin: 0; width: 192px; }
+.site-content article .content .beehive-bom .bom-photo img { display: block; width: 192px; height: 192px; max-width: 100%; margin: 0; padding: 4px; object-fit: contain; border-radius: 8px; background: #fff; border: 1px solid var(--bom-line); }
 .beehive-bom .bom-photo figcaption { margin-top: .3rem; font-size: .72rem; line-height: 1.3; overflow-wrap: anywhere; }
 .beehive-bom .bom-detail { min-width: 0; overflow-wrap: anywhere; }
-.site-content article .content .beehive-bom .bom-meta { display: flex; flex-wrap: wrap; gap: .3rem 1.25rem; margin: .5rem 0; padding: 0; font-size: .88rem; }
+.site-content article .content .beehive-bom .bom-meta { display: flex; flex-wrap: wrap; gap: .2rem .9rem; margin: .25rem 0; padding: 0; font-size: .88rem; }
 .bom-meta > div { display: flex; gap: .35rem; }
 .bom-meta dt { font-weight: 600; }
 .bom-meta dd { margin: 0; }
@@ -35,9 +35,9 @@ body:has(.beehive-bom) .site-content { max-width: none; }
 .beehive-bom .bom-intro-note { font-size: .9rem; border-left: 3px solid #f7bd00; padding-left: 1rem; }
 @media (max-width: 600px) {
   body:has(.beehive-bom) .site-content { padding-inline: 16px; }
-  .site-content article .content .beehive-bom .bom-item { grid-template-columns: 72px minmax(0, 1fr); gap: .75rem; }
-  .site-content article .content .beehive-bom .bom-photo { width: 72px; }
-  .site-content article .content .beehive-bom .bom-photo img { width: 72px; height: 72px; }
+  .site-content article .content .beehive-bom .bom-item { grid-template-columns: 144px minmax(0, 1fr); gap: .75rem; padding: .4rem 0; }
+  .site-content article .content .beehive-bom .bom-photo { width: 144px; }
+  .site-content article .content .beehive-bom .bom-photo img { width: 144px; height: 144px; }
   .bom-summary > div { font-size: .9rem; }
 }
 </style>

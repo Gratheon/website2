@@ -132,9 +132,13 @@ body {
   background: white;
 }
 
-/* WHY: body copy is serif for readability; UI chrome keeps sans via more specific rules. */
-p {
+/* Article copy uses IBM Plex Serif while headings and site chrome retain their existing sans-serif styles. */
+.site-content article .content {
   font-family: var(--font-small);
+}
+
+.site-content article .content :is(h1, h2, h3, h4, h5, h6) {
+  font-family: var(--font-body);
 }
 
 html[data-theme='dark'] {
