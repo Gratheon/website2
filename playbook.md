@@ -52,3 +52,4 @@
 - BOM photos belong next to the document under `content/docs/beehive-sensors/bom-images/`. WebP files pass through to `/assets/img/docs/beehive-sensors/bom-images/`; verify generated paths after building.
 - Browser automation is stateful: call `browser_chrome` sequentially as a top-level call, never inside `parallel`.
 - Online-shop photo tasks should not silently fall back to Wikimedia. If CC BY-SA photos are used, visible captions must include the creator, licence link and modification notice; otherwise replace them with actual supplier references.
+- In non-interactive CLI shells, `nvm` may not be loaded even when Node 24 is already active; check `node --version` and run build commands directly before treating it as a blocker.

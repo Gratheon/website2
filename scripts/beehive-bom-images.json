@@ -1,12 +1,12 @@
 {
   "Load cell + brackets": {
     "file": "content/docs/beehive-sensors/bom-images/load-cell.webp",
-    "productUrl": "https://www.alibaba.com/trade/search?SearchText=AP62AFB+load+cell",
-    "imageUrl": "https://s.alicdn.com/@sc04/kf/He8c12ff964f3475c930a3cdfeb1618cf1.jpg_720x720q50.jpg",
-    "label": "Representative example",
-    "alt": "Rectangular single-point aluminium/steel load cell from Alibaba; same form factor as the AP62AFB, but the exact AP62AFB listing was not located",
-    "source": "Alibaba",
-    "attribution": "Product photo from Alibaba; image rights belong to the shop and are used as a reference only"
+    "productUrl": "https://www.alibaba.com/product-detail/AP62AFB-200kg-350kg-Liquid-Automatic-Quantitative_1601491747233.html",
+    "imageUrl": "https://s.alicdn.com/@sc04/kf/Haf394524ce0448e1bde377a6ac2b6918i.jpg_720x720q50.jpg",
+    "label": "Exact product",
+    "alt": "AP62AFB single-point aluminium load cell with weighing brackets, shown on Alibaba",
+    "source": "Alibaba AP62AFB",
+    "attribution": "Product photo from the Alibaba AP62AFB listing; image rights belong to the seller and are used as a reference only"
   },
   "Deck": {
     "file": "content/docs/beehive-sensors/bom-images/plywood.webp",
