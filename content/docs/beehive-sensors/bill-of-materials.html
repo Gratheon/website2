@@ -25,6 +25,12 @@ body:has(.beehive-bom) .site-content { max-width: none; }
 .site-content article .content .beehive-bom .bom-photo { margin: 0; width: 192px; }
 .site-content article .content .beehive-bom .bom-photo img { display: block; width: 192px; height: 192px; max-width: 100%; margin: 0; padding: 4px; object-fit: contain; border-radius: 8px; background: #fff; border: 1px solid var(--bom-line); }
 .beehive-bom .bom-photo figcaption { margin-top: .3rem; font-size: .72rem; line-height: 1.3; overflow-wrap: anywhere; }
+.beehive-bom .bom-photo figcaption a { color: var(--bom-muted); text-decoration: underline; text-decoration-color: var(--bom-line); }
+.beehive-bom .bom-photo figcaption a:hover { color: inherit; }
+.site-content article .content .beehive-bom .bom-item.has-download { grid-template-columns: 192px minmax(0, 1fr) auto; }
+.site-content article .content .beehive-bom .bom-download { align-self: center; display: inline-flex; flex-direction: column; align-items: center; gap: .15rem; padding: .6rem 1rem; border-radius: 8px; background: #f7bd00; color: #1c1e21; font-weight: 600; font-size: .9rem; text-decoration: none; white-space: nowrap; box-shadow: 0 1px 2px rgba(0,0,0,.15); transition: background .15s, transform .15s; }
+.site-content article .content .beehive-bom .bom-download:hover { background: #ffcc1a; transform: translateY(-1px); }
+.beehive-bom .bom-download small { font-weight: 400; font-size: .7rem; opacity: .75; }
 .beehive-bom .bom-detail { min-width: 0; overflow-wrap: anywhere; }
 .site-content article .content .beehive-bom .bom-meta { display: flex; flex-wrap: wrap; gap: .2rem .9rem; margin: .25rem 0; padding: 0; font-size: .88rem; }
 .bom-meta > div { display: flex; gap: .35rem; }
@@ -38,6 +44,8 @@ body:has(.beehive-bom) .site-content { max-width: none; }
   .site-content article .content .beehive-bom .bom-item { grid-template-columns: 144px minmax(0, 1fr); gap: .75rem; padding: .4rem 0; }
   .site-content article .content .beehive-bom .bom-photo { width: 144px; }
   .site-content article .content .beehive-bom .bom-photo img { width: 144px; height: 144px; }
+  .site-content article .content .beehive-bom .bom-item.has-download { grid-template-columns: 144px minmax(0, 1fr); }
+  .site-content article .content .beehive-bom .bom-download { grid-column: 1 / -1; justify-self: start; flex-direction: row; }
   .bom-summary > div { font-size: .9rem; }
 }
 </style>
@@ -370,10 +378,10 @@ body:has(.beehive-bom) .site-content { max-width: none; }
 </li>
 </ul>
 <h2 id="3d-printed-parts">3D-printed parts</h2>
-<p>All shaped plastic parts are printed in ASA on an FDM printer for pilot batches; the pod enclosure moves to injection moulding later. Click a picture or a file name to download the STL. Files are in millimetres, already oriented for printing, and generated from the <a href="https://github.com/Gratheon/beehive-sensors/tree/main/model">beehive-sensors model</a> (<code>npm run print</code>). Unless noted: 0.2 mm layers, 4 perimeters, enclosed printer.</p>
+<p>All shaped plastic parts are printed in ASA on an FDM printer for pilot batches; the pod enclosure moves to injection moulding later. Click a picture or the download button to get the STL. Files are in millimetres, already oriented for printing, and generated from the <a href="https://github.com/Gratheon/beehive-sensors/tree/main/model">beehive-sensors model</a> (<code>npm run print</code>). Unless noted: 0.2 mm layers, 4 perimeters, enclosed printer.</p>
 <ul class="bom-list" role="list">
-<li class="bom-item">
-<figure class="bom-photo"><a href="/assets/models/beehive-scale-parts/hive-locator.stl" download aria-label="Hive locators: download the 3D model (STL) for printing"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/print-hive-locator.webp" alt="3D model of the L-shaped ASA hive locator with two countersunk screw holes" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>3D model: <a href="/assets/models/beehive-scale-parts/hive-locator.stl" download>hive-locator.stl</a></figcaption></figure>
+<li class="bom-item has-download">
+<figure class="bom-photo"><a href="/assets/models/beehive-scale-parts/hive-locator.stl" download aria-label="Hive locators: download the 3D model (STL) for printing"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/print-hive-locator.webp" alt="3D model of the L-shaped ASA hive locator with two countersunk screw holes" width="96" height="96" loading="lazy" decoding="async"></a></figure>
 <div class="bom-detail">
 <h3>Hive locators</h3>
 <p>L-shaped corner block, 46 × 38 × 20 mm, 10 mm arms, lead-in chamfer for the bottom board, two countersunk holes for 4 × 30 mm wood screws</p>
@@ -382,9 +390,10 @@ body:has(.beehive-bom) .site-content { max-width: none; }
 <p class="bom-note">Screwed to the deck at three hive corners.</p>
 <p class="bom-print"><strong>Print:</strong> graphite ASA, about 10 g, 40 % infill, no supports.</p>
 </div>
+<a class="bom-download" href="/assets/models/beehive-scale-parts/hive-locator.stl" download title="Download hive-locator.stl"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M11 3h2v10.17l3.59-3.58L18 11l-6 6-6-6 1.41-1.41L11 13.17zM5 19h14v2H5z"/></svg><span>Download STL</span><small>hive-locator.stl</small></a>
 </li>
-<li class="bom-item">
-<figure class="bom-photo"><a href="/assets/models/beehive-scale-parts/sensor-port.stl" download aria-label="Sensor port: download the 3D model (STL) for printing"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/print-sensor-port.webp" alt="3D model of the ASA sensor port block with the socket bore and an engraved hexagon mark" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>3D model: <a href="/assets/models/beehive-scale-parts/sensor-port.stl" download>sensor-port.stl</a></figcaption></figure>
+<li class="bom-item has-download">
+<figure class="bom-photo"><a href="/assets/models/beehive-scale-parts/sensor-port.stl" download aria-label="Sensor port: download the 3D model (STL) for printing"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/print-sensor-port.webp" alt="3D model of the ASA sensor port block with the socket bore and an engraved hexagon mark" width="96" height="96" loading="lazy" decoding="async"></a></figure>
 <div class="bom-detail">
 <h3>Sensor port</h3>
 <p>Corner block, 62 × 26 × 22 mm, with a Ø13 mm bore for the sealed 4-pin probe socket and a lead hole down through the deck; flat 4-core service-loop lead to the harness</p>
@@ -393,9 +402,10 @@ body:has(.beehive-bom) .site-content { max-width: none; }
 <p class="bom-note">Replaces the fourth locator. The socket and the lead are bought; the estimate includes them.</p>
 <p class="bom-print"><strong>Print:</strong> graphite ASA, about 20 g, 40 % infill, no supports.</p>
 </div>
+<a class="bom-download" href="/assets/models/beehive-scale-parts/sensor-port.stl" download title="Download sensor-port.stl"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M11 3h2v10.17l3.59-3.58L18 11l-6 6-6-6 1.41-1.41L11 13.17zM5 19h14v2H5z"/></svg><span>Download STL</span><small>sensor-port.stl</small></a>
 </li>
-<li class="bom-item">
-<figure class="bom-photo"><a href="/assets/models/beehive-scale-parts/probe-groove.stl" download aria-label="Probe groove: download the 3D model (STL) for printing"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/print-probe-groove.webp" alt="3D model of the ASA probe groove, a slotted channel with retaining lips" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>3D model: <a href="/assets/models/beehive-scale-parts/probe-groove.stl" download>probe-groove.stl</a></figcaption></figure>
+<li class="bom-item has-download">
+<figure class="bom-photo"><a href="/assets/models/beehive-scale-parts/probe-groove.stl" download aria-label="Probe groove: download the 3D model (STL) for printing"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/print-probe-groove.webp" alt="3D model of the ASA probe groove, a slotted channel with retaining lips" width="96" height="96" loading="lazy" decoding="async"></a></figure>
 <div class="bom-detail">
 <h3>Probe groove</h3>
 <p>Channel, 82 × 12 × 6 mm, along the front strip of the deck; the flat probe lead clips in past two lips</p>
@@ -404,9 +414,10 @@ body:has(.beehive-bom) .site-content { max-width: none; }
 <p class="bom-note">Two M3 countersunk screws.</p>
 <p class="bom-print"><strong>Print:</strong> graphite ASA, about 4 g, no supports.</p>
 </div>
+<a class="bom-download" href="/assets/models/beehive-scale-parts/probe-groove.stl" download title="Download probe-groove.stl"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M11 3h2v10.17l3.59-3.58L18 11l-6 6-6-6 1.41-1.41L11 13.17zM5 19h14v2H5z"/></svg><span>Download STL</span><small>probe-groove.stl</small></a>
 </li>
-<li class="bom-item">
-<figure class="bom-photo"><a href="/assets/models/beehive-scale-parts/pod-bay-sleeve.stl" download aria-label="Pod bay sleeve: download the 3D model (STL) for printing"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/print-pod-bay-sleeve.webp" alt="3D model of the ASA pod bay sleeve with side flanges and the dock connector window" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>3D model: <a href="/assets/models/beehive-scale-parts/pod-bay-sleeve.stl" download>pod-bay-sleeve.stl</a></figcaption></figure>
+<li class="bom-item has-download">
+<figure class="bom-photo"><a href="/assets/models/beehive-scale-parts/pod-bay-sleeve.stl" download aria-label="Pod bay sleeve: download the 3D model (STL) for printing"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/print-pod-bay-sleeve.webp" alt="3D model of the ASA pod bay sleeve with side flanges and the dock connector window" width="96" height="96" loading="lazy" decoding="async"></a></figure>
 <div class="bom-detail">
 <h3>Pod bay sleeve</h3>
 <p>Sleeve, 168 × 80 × 40 mm, for the wall cut: side flanges over the cut edges, dock connector window with two M2.5 holes, two drain holes</p>
@@ -415,9 +426,10 @@ body:has(.beehive-bom) .site-content { max-width: none; }
 <p class="bom-note">Glued into the service-side wall cut.</p>
 <p class="bom-print"><strong>Print:</strong> graphite ASA, about 55 g, stands on its floor, no supports.</p>
 </div>
+<a class="bom-download" href="/assets/models/beehive-scale-parts/pod-bay-sleeve.stl" download title="Download pod-bay-sleeve.stl"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M11 3h2v10.17l3.59-3.58L18 11l-6 6-6-6 1.41-1.41L11 13.17zM5 19h14v2H5z"/></svg><span>Download STL</span><small>pod-bay-sleeve.stl</small></a>
 </li>
-<li class="bom-item">
-<figure class="bom-photo"><a href="/assets/models/beehive-scale-parts/pod-tub.stl" download aria-label="Pod enclosure tub: download the 3D model (STL) for printing"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/print-pod-tub.webp" alt="3D model of the honey-yellow ASA pod enclosure tub with lid bosses and a guide rail" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>3D model: <a href="/assets/models/beehive-scale-parts/pod-tub.stl" download>pod-tub.stl</a></figcaption></figure>
+<li class="bom-item has-download">
+<figure class="bom-photo"><a href="/assets/models/beehive-scale-parts/pod-tub.stl" download aria-label="Pod enclosure tub: download the 3D model (STL) for printing"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/print-pod-tub.webp" alt="3D model of the honey-yellow ASA pod enclosure tub with lid bosses and a guide rail" width="96" height="96" loading="lazy" decoding="async"></a></figure>
 <div class="bom-detail">
 <h3>Pod enclosure tub</h3>
 <p>Open tub, 73 × 150 × 34 mm, 2.5 mm walls: four M3 lid bosses, PCB standoffs, cartridge guide rail, dock connector window</p>
@@ -426,9 +438,10 @@ body:has(.beehive-bom) .site-content { max-width: none; }
 <p class="bom-note">Honey yellow. The face is solvent-welded to it with acetone.</p>
 <p class="bom-print"><strong>Print:</strong> honey-yellow ASA, about 55 g, 5 perimeters for IP67, no supports.</p>
 </div>
+<a class="bom-download" href="/assets/models/beehive-scale-parts/pod-tub.stl" download title="Download pod-tub.stl"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M11 3h2v10.17l3.59-3.58L18 11l-6 6-6-6 1.41-1.41L11 13.17zM5 19h14v2H5z"/></svg><span>Download STL</span><small>pod-tub.stl</small></a>
 </li>
-<li class="bom-item">
-<figure class="bom-photo"><a href="/assets/models/beehive-scale-parts/pod-lid.stl" download aria-label="Pod enclosure lid: download the 3D model (STL) for printing"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/print-pod-lid.webp" alt="3D model of the honey-yellow ASA pod lid with the gasket groove" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>3D model: <a href="/assets/models/beehive-scale-parts/pod-lid.stl" download>pod-lid.stl</a></figcaption></figure>
+<li class="bom-item has-download">
+<figure class="bom-photo"><a href="/assets/models/beehive-scale-parts/pod-lid.stl" download aria-label="Pod enclosure lid: download the 3D model (STL) for printing"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/print-pod-lid.webp" alt="3D model of the honey-yellow ASA pod lid with the gasket groove" width="96" height="96" loading="lazy" decoding="async"></a></figure>
 <div class="bom-detail">
 <h3>Pod enclosure lid</h3>
 <p>Flat lid, 73 × 150 × 3 mm, groove for a 1.5 mm silicone cord gasket, four M3 screws</p>
@@ -437,9 +450,10 @@ body:has(.beehive-bom) .site-content { max-width: none; }
 <p class="bom-note">Only opened at the factory or for repair.</p>
 <p class="bom-print"><strong>Print:</strong> honey-yellow ASA, about 35 g, groove side up, 100 % infill.</p>
 </div>
+<a class="bom-download" href="/assets/models/beehive-scale-parts/pod-lid.stl" download title="Download pod-lid.stl"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M11 3h2v10.17l3.59-3.58L18 11l-6 6-6-6 1.41-1.41L11 13.17zM5 19h14v2H5z"/></svg><span>Download STL</span><small>pod-lid.stl</small></a>
 </li>
-<li class="bom-item">
-<figure class="bom-photo"><a href="/assets/models/beehive-scale-parts/pod-face.stl" download aria-label="Pod enclosure face: download the 3D model (STL) for printing"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/print-pod-face.webp" alt="3D model of the honey-yellow ASA pod face plate with the display window and cartridge slot" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>3D model: <a href="/assets/models/beehive-scale-parts/pod-face.stl" download>pod-face.stl</a></figcaption></figure>
+<li class="bom-item has-download">
+<figure class="bom-photo"><a href="/assets/models/beehive-scale-parts/pod-face.stl" download aria-label="Pod enclosure face: download the 3D model (STL) for printing"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/print-pod-face.webp" alt="3D model of the honey-yellow ASA pod face plate with the display window and cartridge slot" width="96" height="96" loading="lazy" decoding="async"></a></figure>
 <div class="bom-detail">
 <h3>Pod enclosure face</h3>
 <p>Face plate, 150 × 38 × 3 mm, with a locating lip: OLED window, sealed button, USB-C, vent, quarter-turn latch and the keyed battery cartridge slot</p>
@@ -448,9 +462,10 @@ body:has(.beehive-bom) .site-content { max-width: none; }
 <p class="bom-note">The OLED window is glazed from inside with a clear PC sheet.</p>
 <p class="bom-print"><strong>Print:</strong> honey-yellow ASA, about 9 g, outer face on the bed, 100 % infill.</p>
 </div>
+<a class="bom-download" href="/assets/models/beehive-scale-parts/pod-face.stl" download title="Download pod-face.stl"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M11 3h2v10.17l3.59-3.58L18 11l-6 6-6-6 1.41-1.41L11 13.17zM5 19h14v2H5z"/></svg><span>Download STL</span><small>pod-face.stl</small></a>
 </li>
-<li class="bom-item">
-<figure class="bom-photo"><a href="/assets/models/beehive-scale-parts/battery-cartridge.stl" download aria-label="Battery cartridge: download the 3D model (STL) for printing"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/print-battery-cartridge.webp" alt="3D model of the ASA battery cartridge with four cell cradles and the keyed end cap" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>3D model: <a href="/assets/models/beehive-scale-parts/battery-cartridge.stl" download>battery-cartridge.stl</a></figcaption></figure>
+<li class="bom-item has-download">
+<figure class="bom-photo"><a href="/assets/models/beehive-scale-parts/battery-cartridge.stl" download aria-label="Battery cartridge: download the 3D model (STL) for printing"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/print-battery-cartridge.webp" alt="3D model of the ASA battery cartridge with four cell cradles and the keyed end cap" width="96" height="96" loading="lazy" decoding="async"></a></figure>
 <div class="bom-detail">
 <h3>Battery cartridge</h3>
 <p>Sled for 4 × 18650 (1S), 72 × 82 × 30 mm: cell cradles, slots for leaf contacts at both ends, wire channel, end cap with a chamfered key corner and a grip slot</p>
@@ -459,9 +474,10 @@ body:has(.beehive-bom) .site-content { max-width: none; }
 <p class="bom-note">Slides out of the pod face; the chamfered corner lets it fit only one way. Takes unprotected 65 mm cells and a 10 kΩ NTC.</p>
 <p class="bom-print"><strong>Print:</strong> graphite ASA, about 35 g, no supports.</p>
 </div>
+<a class="bom-download" href="/assets/models/beehive-scale-parts/battery-cartridge.stl" download title="Download battery-cartridge.stl"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M11 3h2v10.17l3.59-3.58L18 11l-6 6-6-6 1.41-1.41L11 13.17zM5 19h14v2H5z"/></svg><span>Download STL</span><small>battery-cartridge.stl</small></a>
 </li>
-<li class="bom-item">
-<figure class="bom-photo"><a href="/assets/models/beehive-scale-parts/transport-lock-knob.stl" download aria-label="Transport lock knob: download the 3D model (STL) for printing"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/print-transport-lock-knob.webp" alt="3D model of the ASA transport lock knob with a wing grip" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>3D model: <a href="/assets/models/beehive-scale-parts/transport-lock-knob.stl" download>transport-lock-knob.stl</a></figcaption></figure>
+<li class="bom-item has-download">
+<figure class="bom-photo"><a href="/assets/models/beehive-scale-parts/transport-lock-knob.stl" download aria-label="Transport lock knob: download the 3D model (STL) for printing"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/print-transport-lock-knob.webp" alt="3D model of the ASA transport lock knob with a wing grip" width="96" height="96" loading="lazy" decoding="async"></a></figure>
 <div class="bom-detail">
 <h3>Transport lock knob</h3>
 <p>Ø22 mm knob with a wing grip and a pocket for the M8 bolt head (13 mm hex)</p>
@@ -470,9 +486,10 @@ body:has(.beehive-bom) .site-content { max-width: none; }
 <p class="bom-note">Pressed onto the cam bolt; the dot on the wing end is painted red.</p>
 <p class="bom-print"><strong>Print:</strong> graphite ASA, about 3 g, pocket on the bed, 100 % infill.</p>
 </div>
+<a class="bom-download" href="/assets/models/beehive-scale-parts/transport-lock-knob.stl" download title="Download transport-lock-knob.stl"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M11 3h2v10.17l3.59-3.58L18 11l-6 6-6-6 1.41-1.41L11 13.17zM5 19h14v2H5z"/></svg><span>Download STL</span><small>transport-lock-knob.stl</small></a>
 </li>
-<li class="bom-item">
-<figure class="bom-photo"><a href="/assets/models/beehive-scale-parts/ambient-louvre.stl" download aria-label="Ambient sensor louvre: download the 3D model (STL) for printing"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/print-ambient-louvre.webp" alt="3D model of the ASA ambient sensor louvre with four angled slats" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>3D model: <a href="/assets/models/beehive-scale-parts/ambient-louvre.stl" download>ambient-louvre.stl</a></figcaption></figure>
+<li class="bom-item has-download">
+<figure class="bom-photo"><a href="/assets/models/beehive-scale-parts/ambient-louvre.stl" download aria-label="Ambient sensor louvre: download the 3D model (STL) for printing"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/print-ambient-louvre.webp" alt="3D model of the ASA ambient sensor louvre with four angled slats" width="96" height="96" loading="lazy" decoding="async"></a></figure>
 <div class="bom-detail">
 <h3>Ambient sensor louvre</h3>
 <p>Louvre insert, 62 × 38 × 22 mm, for the ambient sensor pocket: flange on the outer face, four 45° slats that shed rain, duct through the 22 mm wall</p>
@@ -481,6 +498,7 @@ body:has(.beehive-bom) .site-content { max-width: none; }
 <p class="bom-note">Glued into the left base wall; the SHT40 board sits at its inner end.</p>
 <p class="bom-print"><strong>Print:</strong> graphite ASA, about 11 g, flange on the bed, no supports.</p>
 </div>
+<a class="bom-download" href="/assets/models/beehive-scale-parts/ambient-louvre.stl" download title="Download ambient-louvre.stl"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M11 3h2v10.17l3.59-3.58L18 11l-6 6-6-6 1.41-1.41L11 13.17zM5 19h14v2H5z"/></svg><span>Download STL</span><small>ambient-louvre.stl</small></a>
 </li>
 </ul>
 <h2 id="hive-climate-probe-and-packaging">Hive climate probe and packaging</h2>
