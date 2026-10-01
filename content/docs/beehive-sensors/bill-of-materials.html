@@ -30,7 +30,7 @@ body:has(.beehive-bom) .site-content { max-width: none; }
 .bom-meta > div { display: flex; gap: .35rem; }
 .bom-meta dt { font-weight: 600; }
 .bom-meta dd { margin: 0; }
-.beehive-bom .bom-source, .beehive-bom .bom-note, .beehive-bom .bom-photo-note { font-size: .86rem; }
+.beehive-bom .bom-source, .beehive-bom .bom-note, .beehive-bom .bom-photo-note, .beehive-bom .bom-print { font-size: .86rem; }
 .beehive-bom .bom-photo-note, .beehive-bom .bom-note, .beehive-bom .bom-intro-note { color: var(--bom-muted); }
 .beehive-bom .bom-intro-note { font-size: .9rem; border-left: 3px solid #f7bd00; padding-left: 1rem; }
 @media (max-width: 600px) {
@@ -44,10 +44,11 @@ body:has(.beehive-bom) .site-content { max-width: none; }
 <h2 id="description">Description</h2>
 <p>This is the parts list for the Phase 3 production kit described in the <a href="/docs/beehive-sensors/product-description/">product description</a> and shown in the <a href="/docs/beehive-sensors/#model">3D model</a>. Costs are rough per-unit estimates in EUR at about 100 units, before assembly labour, VAT and shipping. Replace them with quotes before pricing the product.</p>
 <dl class="bom-summary">
-<div><dt>Scale mechanics: wood case, load cell, Observer mounting inserts, sensor port, internal harness</dt><dd>€82–142</dd></div>
-<div><dt>Electronics pod (2–4 cells)</dt><dd>€32–58</dd></div>
+<div><dt>Scale mechanics: wood case, load cell, Observer mounting inserts, internal harness</dt><dd>€76–131</dd></div>
+<div><dt>Electronics pod (2–4 cells)</dt><dd>€24–43</dd></div>
+<div><dt>3D-printed parts: locators, sensor port, pod bay, pod enclosure, battery cartridge</dt><dd>€15–26</dd></div>
 <div><dt>Hive climate probe and packaging</dt><dd>€13–22</dd></div>
-<div><dt><strong>Total</strong></dt><dd><strong>≈ €127–222</strong></dd></div>
+<div><dt><strong>Total</strong></dt><dd><strong>≈ €128–222</strong></dd></div>
 <div><dt>Spare battery cartridge</dt><dd>+ €10–20</dd></div>
 </dl>
 <p class="bom-intro-note">Photos are compact visual references from supplier websites. Example boards, materials and alternative parts are labelled below each specification; they are not approved substitutes. Custom assemblies are not sold as pictured. Click a photo credit to view its source. Image rights remain with the original shops and manufacturers.</p>
@@ -84,38 +85,6 @@ body:has(.beehive-bom) .site-content { max-width: none; }
 <p class="bom-source"><strong>Supplier:</strong> Local joinery shop</p>
 <p class="bom-note">Not weighed, so moisture does not matter.</p>
 <p class="bom-photo-note"><strong>Example material / custom fabrication:</strong> Baltic birch plywood sheet from a wood shop; the base is custom plywood and thermo-pine</p>
-</div>
-</li>
-<li class="bom-item">
-<figure class="bom-photo"><a href="https://www.prusa3d.com/product/prusament-asa-prusa-orange-850g/" aria-label="Hive locators: photo reference from Prusa Research"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/filament.webp" alt="Prusament ASA filament spool; parts are printed in ASA in-house" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>Photo: <a href="https://www.prusa3d.com/product/prusament-asa-prusa-orange-850g/">Prusa Research</a></figcaption></figure>
-<div class="bom-detail">
-<h3>Hive locators</h3>
-<p>3D-printed ASA corner blocks, 20 mm high</p>
-<dl class="bom-meta"><div><dt>Qty</dt><dd>3</dd></div><div><dt>Unit estimate</dt><dd>€0.3–0.5</dd></div></dl>
-<p class="bom-source"><strong>Supplier:</strong> In-house FDM printer</p>
-<p class="bom-note">Screwed to the deck.</p>
-<p class="bom-photo-note"><strong>Example material / custom fabrication:</strong> Prusament ASA filament spool; parts are printed in ASA in-house</p>
-</div>
-</li>
-<li class="bom-item">
-<figure class="bom-photo"><a href="https://www.adafruit.com/product/744" aria-label="Sensor port: photo reference from Adafruit"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/waterproof-4wire.webp" alt="Waterproof polarized 4-wire connector set, like the sealed 4-pin probe socket" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>Photo: <a href="https://www.adafruit.com/product/744">Adafruit</a></figcaption></figure>
-<div class="bom-detail">
-<h3>Sensor port</h3>
-<p>3D-printed ASA corner block with a sealed 4-pin probe socket, flat 4-core service-loop lead through the deck to the harness</p>
-<dl class="bom-meta"><div><dt>Qty</dt><dd>1</dd></div><div><dt>Unit estimate</dt><dd>€3–5</dd></div></dl>
-<p class="bom-source"><strong>Supplier:</strong> Printer + connector house</p>
-<p class="bom-note">Replaces the fourth locator.</p>
-<p class="bom-photo-note"><strong>Representative example:</strong> Waterproof polarized 4-wire connector set, like the sealed 4-pin probe socket</p>
-</div>
-</li>
-<li class="bom-item">
-<figure class="bom-photo"><a href="https://www.prusa3d.com/product/prusament-asa-prusa-orange-850g/" aria-label="Probe groove: photo reference from Prusa Research"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/filament.webp" alt="Prusament ASA filament spool; the groove is a printed ASA part" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>Photo: <a href="https://www.prusa3d.com/product/prusament-asa-prusa-orange-850g/">Prusa Research</a></figcaption></figure>
-<div class="bom-detail">
-<h3>Probe groove</h3>
-<p>3D-printed clip-in channel along the front strip of the deck</p>
-<dl class="bom-meta"><div><dt>Qty</dt><dd>1</dd></div><div><dt>Unit estimate</dt><dd>€0.3</dd></div></dl>
-<p class="bom-source"><strong>Supplier:</strong> In-house FDM printer</p>
-<p class="bom-photo-note"><strong>Example material / custom fabrication:</strong> Prusament ASA filament spool; the groove is a printed ASA part</p>
 </div>
 </li>
 <li class="bom-item">
@@ -159,16 +128,6 @@ body:has(.beehive-bom) .site-content { max-width: none; }
 <p class="bom-source"><strong>Supplier:</strong> Fastener wholesaler</p>
 <p class="bom-note">Torque per cell datasheet.</p>
 <p class="bom-photo-note"><strong>Representative example:</strong> Assorted screws, nuts and washers; the kit uses M8 stainless</p>
-</div>
-</li>
-<li class="bom-item">
-<figure class="bom-photo"><a href="https://www.prusa3d.com/product/prusament-asa-prusa-orange-850g/" aria-label="Pod bay sleeve: photo reference from Prusa Research"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/filament.webp" alt="Prusament ASA filament spool; the sleeve is a printed ASA part" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>Photo: <a href="https://www.prusa3d.com/product/prusament-asa-prusa-orange-850g/">Prusa Research</a></figcaption></figure>
-<div class="bom-detail">
-<h3>Pod bay sleeve</h3>
-<p>3D-printed ASA sleeve with guides and dock holder, fitted into the wall cut</p>
-<dl class="bom-meta"><div><dt>Qty</dt><dd>1</dd></div><div><dt>Unit estimate</dt><dd>€2–4</dd></div></dl>
-<p class="bom-source"><strong>Supplier:</strong> In-house FDM printer</p>
-<p class="bom-photo-note"><strong>Example material / custom fabrication:</strong> Prusament ASA filament spool; the sleeve is a printed ASA part</p>
 </div>
 </li>
 <li class="bom-item">
@@ -229,10 +188,10 @@ body:has(.beehive-bom) .site-content { max-width: none; }
 <figure class="bom-photo"><a href="https://thepihut.com/products/10-sets-m3x12-screw-low-profile-hex-head-cap-screw" aria-label="Transport lock: photo reference from The Pi Hut"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/hex-screws.webp" alt="Hex head screws; the lock is a captive M8 cam bolt with a printed knob" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>Photo: <a href="https://thepihut.com/products/10-sets-m3x12-screw-low-profile-hex-head-cap-screw">The Pi Hut</a></figcaption></figure>
 <div class="bom-detail">
 <h3>Transport lock</h3>
-<p>Captive quarter-turn M8 cam bolt, printed ASA knob, red mark on the skirt</p>
-<dl class="bom-meta"><div><dt>Qty</dt><dd>1</dd></div><div><dt>Unit estimate</dt><dd>€1–2</dd></div></dl>
-<p class="bom-source"><strong>Supplier:</strong> Fastener wholesaler + printer</p>
-<p class="bom-note">On the service side next to the pod.</p>
+<p>Captive quarter-turn M8 cam bolt, red mark on the skirt</p>
+<dl class="bom-meta"><div><dt>Qty</dt><dd>1</dd></div><div><dt>Unit estimate</dt><dd>€0.7–1.7</dd></div></dl>
+<p class="bom-source"><strong>Supplier:</strong> Fastener wholesaler</p>
+<p class="bom-note">On the service side next to the pod. The knob is printed, see <a href="#3d-printed-parts">3D-printed parts</a>.</p>
 <p class="bom-photo-note"><strong>Representative example:</strong> Hex head screws; the lock is a captive M8 cam bolt with a printed knob</p>
 </div>
 </li>
@@ -389,17 +348,6 @@ body:has(.beehive-bom) .site-content { max-width: none; }
 </div>
 </li>
 <li class="bom-item">
-<figure class="bom-photo"><a href="https://www.adafruit.com/product/3931" aria-label="Enclosure: photo reference from Adafruit"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/enclosure.webp" alt="Weatherproof plastic enclosure; the pod enclosure is custom ASA" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>Photo: <a href="https://www.adafruit.com/product/3931">Adafruit</a></figcaption></figure>
-<div class="bom-detail">
-<h3>Enclosure</h3>
-<p>ASA tub, lid and face, 150 × 38 × 76 mm, silicone gasket, quarter-turn latch</p>
-<dl class="bom-meta"><div><dt>Qty</dt><dd>1</dd></div><div><dt>Unit estimate</dt><dd>€5–10</dd></div></dl>
-<p class="bom-source"><strong>Supplier:</strong> 3D printed (pilot), injection moulded (≈ €5–9k tool)</p>
-<p class="bom-note">Honey yellow.</p>
-<p class="bom-photo-note"><strong>Example material / custom fabrication:</strong> Weatherproof plastic enclosure; the pod enclosure is custom ASA</p>
-</div>
-</li>
-<li class="bom-item">
 <figure class="bom-photo"><a href="https://www.gore.com/products/gore-protective-vents" aria-label="Pressure vent: photo reference from W. L. Gore &amp; Associates"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/pressure-vent.webp" alt="Gore PolyVent M12 ePTFE membrane pressure vent plug" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>Photo: <a href="https://www.gore.com/products/gore-protective-vents">W. L. Gore &amp; Associates</a></figcaption></figure>
 <div class="bom-detail">
 <h3>Pressure vent</h3>
@@ -407,17 +355,6 @@ body:has(.beehive-bom) .site-content { max-width: none; }
 <dl class="bom-meta"><div><dt>Qty</dt><dd>1</dd></div><div><dt>Unit estimate</dt><dd>€1.5</dd></div></dl>
 <p class="bom-source"><strong>Supplier:</strong> <a href="https://www.mouser.com/c/?q=membrane%20vent">Mouser vents</a></p>
 <p class="bom-photo-note"><strong>Representative example:</strong> Gore PolyVent M12 ePTFE membrane pressure vent plug</p>
-</div>
-</li>
-<li class="bom-item">
-<figure class="bom-photo"><a href="https://www.sparkfun.com/battery-holder-2x18650-wire-leads.html" aria-label="Battery cartridge: photo reference from SparkFun"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/18650-holder.webp" alt="Two-cell 18650 holder; the cartridge is a custom keyed sled" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>Photo: <a href="https://www.sparkfun.com/battery-holder-2x18650-wire-leads.html">SparkFun</a></figcaption></figure>
-<div class="bom-detail">
-<h3>Battery cartridge</h3>
-<p>Keyed sled for 4 × 18650, 1S contacts, 10 kΩ NTC, grip</p>
-<dl class="bom-meta"><div><dt>Qty</dt><dd>1</dd></div><div><dt>Unit estimate</dt><dd>€3–5</dd></div></dl>
-<p class="bom-source"><strong>Supplier:</strong> 3D printed / moulded + Keystone contacts</p>
-<p class="bom-note">Slides out of the pod face.</p>
-<p class="bom-photo-note"><strong>Example material / custom fabrication:</strong> Two-cell 18650 holder; the cartridge is a custom keyed sled</p>
 </div>
 </li>
 <li class="bom-item">
@@ -429,6 +366,120 @@ body:has(.beehive-bom) .site-content { max-width: none; }
 <p class="bom-source"><strong>Supplier:</strong> Authorised battery distributor</p>
 <p class="bom-note">Buy matched cells from one lot.</p>
 <p class="bom-photo-note"><strong>Representative example:</strong> 18650 Li-ion cell, 2500 mAh; generic cell, not the specific sourced SKU</p>
+</div>
+</li>
+</ul>
+<h2 id="3d-printed-parts">3D-printed parts</h2>
+<p>All shaped plastic parts are printed in ASA on an FDM printer for pilot batches; the pod enclosure moves to injection moulding later. Click a picture or a file name to download the STL. Files are in millimetres, already oriented for printing, and generated from the <a href="https://github.com/Gratheon/beehive-sensors/tree/main/model">beehive-sensors model</a> (<code>npm run print</code>). Unless noted: 0.2 mm layers, 4 perimeters, enclosed printer.</p>
+<ul class="bom-list" role="list">
+<li class="bom-item">
+<figure class="bom-photo"><a href="/assets/models/beehive-scale-parts/hive-locator.stl" download aria-label="Hive locators: download the 3D model (STL) for printing"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/print-hive-locator.webp" alt="3D model of the L-shaped ASA hive locator with two countersunk screw holes" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>3D model: <a href="/assets/models/beehive-scale-parts/hive-locator.stl" download>hive-locator.stl</a></figcaption></figure>
+<div class="bom-detail">
+<h3>Hive locators</h3>
+<p>L-shaped corner block, 46 × 38 × 20 mm, 10 mm arms, lead-in chamfer for the bottom board, two countersunk holes for 4 × 30 mm wood screws</p>
+<dl class="bom-meta"><div><dt>Qty</dt><dd>3</dd></div><div><dt>Unit estimate</dt><dd>€0.3–0.5</dd></div></dl>
+<p class="bom-source"><strong>Supplier:</strong> In-house FDM printer</p>
+<p class="bom-note">Screwed to the deck at three hive corners.</p>
+<p class="bom-print"><strong>Print:</strong> graphite ASA, about 10 g, 40 % infill, no supports.</p>
+</div>
+</li>
+<li class="bom-item">
+<figure class="bom-photo"><a href="/assets/models/beehive-scale-parts/sensor-port.stl" download aria-label="Sensor port: download the 3D model (STL) for printing"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/print-sensor-port.webp" alt="3D model of the ASA sensor port block with the socket bore and an engraved hexagon mark" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>3D model: <a href="/assets/models/beehive-scale-parts/sensor-port.stl" download>sensor-port.stl</a></figcaption></figure>
+<div class="bom-detail">
+<h3>Sensor port</h3>
+<p>Corner block, 62 × 26 × 22 mm, with a Ø13 mm bore for the sealed 4-pin probe socket and a lead hole down through the deck; flat 4-core service-loop lead to the harness</p>
+<dl class="bom-meta"><div><dt>Qty</dt><dd>1</dd></div><div><dt>Unit estimate</dt><dd>€3–5</dd></div></dl>
+<p class="bom-source"><strong>Supplier:</strong> Printer + connector house</p>
+<p class="bom-note">Replaces the fourth locator. The socket and the lead are bought; the estimate includes them.</p>
+<p class="bom-print"><strong>Print:</strong> graphite ASA, about 20 g, 40 % infill, no supports.</p>
+</div>
+</li>
+<li class="bom-item">
+<figure class="bom-photo"><a href="/assets/models/beehive-scale-parts/probe-groove.stl" download aria-label="Probe groove: download the 3D model (STL) for printing"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/print-probe-groove.webp" alt="3D model of the ASA probe groove, a slotted channel with retaining lips" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>3D model: <a href="/assets/models/beehive-scale-parts/probe-groove.stl" download>probe-groove.stl</a></figcaption></figure>
+<div class="bom-detail">
+<h3>Probe groove</h3>
+<p>Channel, 82 × 12 × 6 mm, along the front strip of the deck; the flat probe lead clips in past two lips</p>
+<dl class="bom-meta"><div><dt>Qty</dt><dd>1</dd></div><div><dt>Unit estimate</dt><dd>€0.3</dd></div></dl>
+<p class="bom-source"><strong>Supplier:</strong> In-house FDM printer</p>
+<p class="bom-note">Two M3 countersunk screws.</p>
+<p class="bom-print"><strong>Print:</strong> graphite ASA, about 4 g, no supports.</p>
+</div>
+</li>
+<li class="bom-item">
+<figure class="bom-photo"><a href="/assets/models/beehive-scale-parts/pod-bay-sleeve.stl" download aria-label="Pod bay sleeve: download the 3D model (STL) for printing"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/print-pod-bay-sleeve.webp" alt="3D model of the ASA pod bay sleeve with side flanges and the dock connector window" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>3D model: <a href="/assets/models/beehive-scale-parts/pod-bay-sleeve.stl" download>pod-bay-sleeve.stl</a></figcaption></figure>
+<div class="bom-detail">
+<h3>Pod bay sleeve</h3>
+<p>Sleeve, 168 × 80 × 40 mm, for the wall cut: side flanges over the cut edges, dock connector window with two M2.5 holes, two drain holes</p>
+<dl class="bom-meta"><div><dt>Qty</dt><dd>1</dd></div><div><dt>Unit estimate</dt><dd>€2–4</dd></div></dl>
+<p class="bom-source"><strong>Supplier:</strong> In-house FDM printer</p>
+<p class="bom-note">Glued into the service-side wall cut.</p>
+<p class="bom-print"><strong>Print:</strong> graphite ASA, about 55 g, stands on its floor, no supports.</p>
+</div>
+</li>
+<li class="bom-item">
+<figure class="bom-photo"><a href="/assets/models/beehive-scale-parts/pod-tub.stl" download aria-label="Pod enclosure tub: download the 3D model (STL) for printing"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/print-pod-tub.webp" alt="3D model of the honey-yellow ASA pod enclosure tub with lid bosses and a guide rail" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>3D model: <a href="/assets/models/beehive-scale-parts/pod-tub.stl" download>pod-tub.stl</a></figcaption></figure>
+<div class="bom-detail">
+<h3>Pod enclosure tub</h3>
+<p>Open tub, 73 × 150 × 34 mm, 2.5 mm walls: four M3 lid bosses, PCB standoffs, cartridge guide rail, dock connector window</p>
+<dl class="bom-meta"><div><dt>Qty</dt><dd>1</dd></div><div><dt>Unit estimate</dt><dd>€2.5–5</dd></div></dl>
+<p class="bom-source"><strong>Supplier:</strong> 3D printed (pilot), injection moulded later (≈ €5–9k tool for tub, lid and face)</p>
+<p class="bom-note">Honey yellow. The face is solvent-welded to it with acetone.</p>
+<p class="bom-print"><strong>Print:</strong> honey-yellow ASA, about 55 g, 5 perimeters for IP67, no supports.</p>
+</div>
+</li>
+<li class="bom-item">
+<figure class="bom-photo"><a href="/assets/models/beehive-scale-parts/pod-lid.stl" download aria-label="Pod enclosure lid: download the 3D model (STL) for printing"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/print-pod-lid.webp" alt="3D model of the honey-yellow ASA pod lid with the gasket groove" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>3D model: <a href="/assets/models/beehive-scale-parts/pod-lid.stl" download>pod-lid.stl</a></figcaption></figure>
+<div class="bom-detail">
+<h3>Pod enclosure lid</h3>
+<p>Flat lid, 73 × 150 × 3 mm, groove for a 1.5 mm silicone cord gasket, four M3 screws</p>
+<dl class="bom-meta"><div><dt>Qty</dt><dd>1</dd></div><div><dt>Unit estimate</dt><dd>€1.5–3</dd></div></dl>
+<p class="bom-source"><strong>Supplier:</strong> 3D printed (pilot), injection moulded later</p>
+<p class="bom-note">Only opened at the factory or for repair.</p>
+<p class="bom-print"><strong>Print:</strong> honey-yellow ASA, about 35 g, groove side up, 100 % infill.</p>
+</div>
+</li>
+<li class="bom-item">
+<figure class="bom-photo"><a href="/assets/models/beehive-scale-parts/pod-face.stl" download aria-label="Pod enclosure face: download the 3D model (STL) for printing"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/print-pod-face.webp" alt="3D model of the honey-yellow ASA pod face plate with the display window and cartridge slot" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>3D model: <a href="/assets/models/beehive-scale-parts/pod-face.stl" download>pod-face.stl</a></figcaption></figure>
+<div class="bom-detail">
+<h3>Pod enclosure face</h3>
+<p>Face plate, 150 × 38 × 3 mm, with a locating lip: OLED window, sealed button, USB-C, vent, quarter-turn latch and the keyed battery cartridge slot</p>
+<dl class="bom-meta"><div><dt>Qty</dt><dd>1</dd></div><div><dt>Unit estimate</dt><dd>€1–2</dd></div></dl>
+<p class="bom-source"><strong>Supplier:</strong> 3D printed (pilot), injection moulded later</p>
+<p class="bom-note">The OLED window is glazed from inside with a clear PC sheet.</p>
+<p class="bom-print"><strong>Print:</strong> honey-yellow ASA, about 9 g, outer face on the bed, 100 % infill.</p>
+</div>
+</li>
+<li class="bom-item">
+<figure class="bom-photo"><a href="/assets/models/beehive-scale-parts/battery-cartridge.stl" download aria-label="Battery cartridge: download the 3D model (STL) for printing"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/print-battery-cartridge.webp" alt="3D model of the ASA battery cartridge with four cell cradles and the keyed end cap" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>3D model: <a href="/assets/models/beehive-scale-parts/battery-cartridge.stl" download>battery-cartridge.stl</a></figcaption></figure>
+<div class="bom-detail">
+<h3>Battery cartridge</h3>
+<p>Sled for 4 × 18650 (1S), 72 × 82 × 30 mm: cell cradles, slots for leaf contacts at both ends, wire channel, end cap with a chamfered key corner and a grip slot</p>
+<dl class="bom-meta"><div><dt>Qty</dt><dd>1</dd></div><div><dt>Unit estimate</dt><dd>€3–5</dd></div></dl>
+<p class="bom-source"><strong>Supplier:</strong> 3D printed / moulded + Keystone leaf contacts</p>
+<p class="bom-note">Slides out of the pod face; the chamfered corner lets it fit only one way. Takes unprotected 65 mm cells and a 10 kΩ NTC.</p>
+<p class="bom-print"><strong>Print:</strong> graphite ASA, about 35 g, no supports.</p>
+</div>
+</li>
+<li class="bom-item">
+<figure class="bom-photo"><a href="/assets/models/beehive-scale-parts/transport-lock-knob.stl" download aria-label="Transport lock knob: download the 3D model (STL) for printing"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/print-transport-lock-knob.webp" alt="3D model of the ASA transport lock knob with a wing grip" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>3D model: <a href="/assets/models/beehive-scale-parts/transport-lock-knob.stl" download>transport-lock-knob.stl</a></figcaption></figure>
+<div class="bom-detail">
+<h3>Transport lock knob</h3>
+<p>Ø22 mm knob with a wing grip and a pocket for the M8 bolt head (13 mm hex)</p>
+<dl class="bom-meta"><div><dt>Qty</dt><dd>1</dd></div><div><dt>Unit estimate</dt><dd>€0.3</dd></div></dl>
+<p class="bom-source"><strong>Supplier:</strong> In-house FDM printer</p>
+<p class="bom-note">Pressed onto the cam bolt; the dot on the wing end is painted red.</p>
+<p class="bom-print"><strong>Print:</strong> graphite ASA, about 3 g, pocket on the bed, 100 % infill.</p>
+</div>
+</li>
+<li class="bom-item">
+<figure class="bom-photo"><a href="/assets/models/beehive-scale-parts/ambient-louvre.stl" download aria-label="Ambient sensor louvre: download the 3D model (STL) for printing"><img class="no-transform" src="/assets/img/docs/beehive-sensors/bom-images/print-ambient-louvre.webp" alt="3D model of the ASA ambient sensor louvre with four angled slats" width="96" height="96" loading="lazy" decoding="async"></a><figcaption>3D model: <a href="/assets/models/beehive-scale-parts/ambient-louvre.stl" download>ambient-louvre.stl</a></figcaption></figure>
+<div class="bom-detail">
+<h3>Ambient sensor louvre</h3>
+<p>Louvre insert, 62 × 38 × 22 mm, for the ambient sensor pocket: flange on the outer face, four 45° slats that shed rain, duct through the 22 mm wall</p>
+<dl class="bom-meta"><div><dt>Qty</dt><dd>1</dd></div><div><dt>Unit estimate</dt><dd>€0.3</dd></div></dl>
+<p class="bom-source"><strong>Supplier:</strong> In-house FDM printer</p>
+<p class="bom-note">Glued into the left base wall; the SHT40 board sits at its inner end.</p>
+<p class="bom-print"><strong>Print:</strong> graphite ASA, about 11 g, flange on the bed, no supports.</p>
 </div>
 </li>
 </ul>
