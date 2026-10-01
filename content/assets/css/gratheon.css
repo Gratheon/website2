@@ -998,6 +998,19 @@ html[data-theme='dark'] .founder-letter .future {
   gap: 12px;
 }
 
+/* WHY: small open-source software/hardware badges under the open-source statement in the join CTA. */
+.founder-letter .ossLogos {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.founder-letter .ossLogos img {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
 .founder-letter .action {
   border-radius: 8px;
   color: white;
