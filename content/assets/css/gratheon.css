@@ -562,7 +562,7 @@ html[data-theme='dark'] .page-content a {
 }
 
 .gratheon-footer li {
-  margin: 0 0 0.7rem;
+  margin: 0 0 0.35rem;
 }
 
 .gratheon-footer li:last-child {
@@ -994,11 +994,17 @@ html[data-theme='dark'] .founder-letter .future {
 
 .founder-letter .futureActions {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 16px;
+  margin: 0;
 }
 
-/* WHY: small open-source software/hardware badges under the open-source statement in the join CTA. */
+/* WHY: keep the badges beside the CTA button without making them paragraphs with default margins. */
+.founder-letter .futureActions .ossLogos {
+  margin: 0;
+}
+
 .founder-letter .ossLogos {
   display: flex;
   align-items: center;
@@ -1099,10 +1105,20 @@ html[data-theme='dark'] .founder-letter .future {
     align-items: start;
   }
 
+  /* WHY: start the text and video at the same level, with no inherited card/CTA top gaps. */
   .front-page .front-section--join .founder-letter--cta {
     max-width: none;
     margin: 0;
+    padding: 0;
     height: auto;
+  }
+
+  .front-page .front-section--join .founder-letter--cta article {
+    margin: 0;
+  }
+
+  .front-page .front-section--join .founder-letter--cta .future {
+    margin-top: 0;
   }
 
   .front-page .front-section--join .authorIntro {

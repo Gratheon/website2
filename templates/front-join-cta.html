@@ -8,52 +8,52 @@
         <div>
           {{if eq $lang "ru"}}
           <p>Gratheon построен на плечах open-source ПО и сам полностью открыт - и софт, и железо (open-source hardware).</p>
-          {{template "front_join_oss_logos"}}
           <p>Присоединяйтесь, чтобы улучшить жизнь 100 миллионов пчелиных семей по всему миру и удовлетворить растущий спрос на опыление. Мы ищем инвесторов для масштабирования разработки, инженеров в команду, пчеловодов для полевых тестов и советников.</p>
           <p>Есть идеи?</p>
-          <p class="futureActions">
+          <div class="futureActions">
             <a class="action action_green" href="https://discord.gg/PcbP4uedWj">Напишите нам в Discord</a>
-          </p>
+            {{template "front_join_oss_logos"}}
+          </div>
           {{else if eq $lang "et"}}
           <p>Gratheon toetub open-source tarkvarale ja on ise täielikult avatud - nii tarkvara kui ka riistvara (open-source hardware).</p>
-          {{template "front_join_oss_logos"}}
           <p>Liitu meiega, et parandada 100 miljoni mesilaspere elu üle maailma ja katta kasvav tolmeldamise nõudlus. Otsime investoreid arenduse skaleerimiseks, insenere meeskonda, mesinikke välitestideks ja nõustajaid.</p>
           <p>On ideid?</p>
-          <p class="futureActions">
+          <div class="futureActions">
             <a class="action action_green" href="https://discord.gg/PcbP4uedWj">Räägi meile Discordis</a>
-          </p>
+            {{template "front_join_oss_logos"}}
+          </div>
           {{else if eq $lang "es"}}
           <p>Gratheon está construido sobre los hombros de software open source y también es completamente abierto: tanto el software como el hardware (open-source hardware).</p>
-          {{template "front_join_oss_logos"}}
           <p>Únete a nosotros para mejorar la vida de 100 millones de colonias de abejas en todo el mundo y satisfacer la demanda de polinización. Estamos buscando inversionistas para escalar nuestro desarrollo, ingenieros para unirse a nuestro equipo, apicultores para realizar pruebas en campo y asesores para guiarnos.</p>
           <p>¿Tienes algunas ideas?</p>
-          <p class="futureActions">
+          <div class="futureActions">
             <a class="action action_green" href="https://discord.gg/PcbP4uedWj">Cuéntanos en Discord</a>
-          </p>
+            {{template "front_join_oss_logos"}}
+          </div>
           {{else if eq $lang "lt"}}
           <p>Gratheon sukurtas ant atvirojo kodo programinės įrangos pečių ir yra visiškai atviras - tiek programinė, tiek aparatinė įranga (open-source hardware).</p>
-          {{template "front_join_oss_logos"}}
           <p>Prisijunkite prie mūsų, kad pagerintumėte 100 milijonų bitų kolonijų gyvenimą visame pasaulyje ir patenkintumėte vėžiavimo paklausą. Ieškome investuotojų plėsti mūsų vystymąsi, inžinierių prisijungti prie mūsų komandos, bitininkų atlikti lauko testavimą ir patarėjų mus vadovauti.</p>
           <p>Turite idėjų?</p>
-          <p class="futureActions">
+          <div class="futureActions">
             <a class="action action_green" href="https://discord.gg/PcbP4uedWj">Pasakykite mums Discord</a>
-          </p>
+            {{template "front_join_oss_logos"}}
+          </div>
           {{else if eq $lang "de"}}
           <p>Gratheon basiert auf Open-Source-Software und ist selbst vollständig offen - sowohl Software als auch Hardware (Open-Source-Hardware).</p>
-          {{template "front_join_oss_logos"}}
           <p>Mit uns zusammen das Leben von 100 Millionen Bienenvölkern weltweit verbessern und mehr Bestäubungsbedarf decken. Wir suchen Investoren, Ingenieure, Imker und Berater.</p>
           <p>Ideen?</p>
-          <p class="futureActions">
+          <div class="futureActions">
             <a class="action action_green" href="https://discord.gg/PcbP4uedWj">Schreib uns auf Discord</a>
-          </p>
+            {{template "front_join_oss_logos"}}
+          </div>
           {{else}}
           <p>Gratheon is built on the shoulders of open-source software and is fully open too - both software and hardware.</p>
-          {{template "front_join_oss_logos"}}
           <p>Join us to improve life of 100 million bee colonies worldwide and meet pollination demand for more. We're looking for investors to scale our development, engineers to join our team, beekeepers to run field testing and advisors to guide us.</p>
           <p>Got some ideas?</p>
-          <p class="futureActions">
+          <div class="futureActions">
             <a class="action action_green" href="https://discord.gg/PcbP4uedWj">Tell us in Discord</a>
-          </p>
+            {{template "front_join_oss_logos"}}
+          </div>
           {{end}}
         </div>
       </div>
