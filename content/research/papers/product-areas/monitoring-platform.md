@@ -9,26 +9,26 @@ layout: research
 ## Summary
 
 - Product area key: `monitoring-platform`
-- Total papers: 91
+- Total papers: 94
 - [Research papers hub](../index.md)
 - [All product areas](index.md)
 
 ## Topics
 
-- [Audio Acoustics](../topics/audio-acoustics.md) (25)
+- [Audio Acoustics](../topics/audio-acoustics.md) (26)
 - [Bee Behaviour](../topics/bee-behaviour.md) (15)
 - [Bee Counting](../topics/bee-counting.md) (1)
 - [Bee Traffic](../topics/bee-traffic.md) (1)
-- [Behavior Recognition](../topics/behavior-recognition.md) (3)
-- [Colony Health](../topics/colony-health.md) (9)
-- [Computer Vision](../topics/computer-vision.md) (27)
+- [Behavior Recognition](../topics/behavior-recognition.md) (4)
+- [Colony Health](../topics/colony-health.md) (10)
+- [Computer Vision](../topics/computer-vision.md) (28)
 - [Datasets](../topics/datasets.md) (2)
-- [Datasets Benchmarks](../topics/datasets-benchmarks.md) (15)
-- [Edge AI Energy](../topics/edge-ai-energy.md) (20)
-- [IoT Sensors](../topics/iot-sensors.md) (61)
+- [Datasets Benchmarks](../topics/datasets-benchmarks.md) (16)
+- [Edge AI Energy](../topics/edge-ai-energy.md) (21)
+- [IoT Sensors](../topics/iot-sensors.md) (62)
 - [Pollination Ecology](../topics/pollination-ecology.md) (7)
-- [Pollination Monitoring](../topics/pollination-monitoring.md) (5)
-- [Precision Beekeeping](../topics/precision-beekeeping.md) (10)
+- [Pollination Monitoring](../topics/pollination-monitoring.md) (6)
+- [Precision Beekeeping](../topics/precision-beekeeping.md) (11)
 - [Reviews Surveys](../topics/reviews-surveys.md) (21)
 - [Varroa Health](../topics/varroa-health.md) (4)
 
@@ -39,7 +39,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="monitoring-platform-year-filter" value="all" checked>
         <span class="research-year-tab__label">All</span>
-        <span class="research-year-tab__count">91</span>
+        <span class="research-year-tab__count">94</span>
       </label>
       <span class="research-year-tab__arrow" aria-hidden="true">›</span>
       <label class="research-year-tab">
@@ -105,7 +105,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="monitoring-platform-year-filter" value="2026">
         <span class="research-year-tab__label">2026</span>
-        <span class="research-year-tab__count">36</span>
+        <span class="research-year-tab__count">39</span>
       </label>
     </div>
     <div class="research-year-filter__panels">
@@ -123,6 +123,7 @@ layout: research
         <tr><td><a href="/research/papers/a-hall-effect-sensor-based-queen-bee-detection-system-a-proof-of-concept/">A Hall-Effect Sensor-Based Queen Bee Detection System – a Proof of Concept</a></td><td>2026</td><td>🇵🇱 AGH University of Krakow; 🇵🇱 Wrocław University of Science and Technology</td></tr>
         <tr><td><a href="/research/papers/a-multimodal-machine-learning-system-for-non-invasive-detection-of-varroa-destructor-infestations-in-honey-bee-colonies/">A Multimodal Machine Learning System for Non-Invasive Detection of Varroa destructor Infestations in Honey Bee Colonies</a></td><td>2026</td><td>🇺🇸 Green Valley High School</td></tr>
         <tr><td><a href="/research/papers/a-wireless-sensor-platform-for-beehive-monitoring/">A Wireless Sensor Platform for Beehive Monitoring</a></td><td>2026</td><td>🇺🇸 North Dakota State University; 🇺🇸 USDA Agricultural Research Service</td></tr>
+        <tr><td><a href="/research/papers/acoustic-honeybee-queen-state-detection-under-unseen-conditions/">Acoustic Honeybee Queen-State Detection Under Unseen Conditions</a></td><td>2026</td><td>INRS-EMT, Université du Québec, Montréal, Canada; Nectar Technologies, Montréal, Canada</td></tr>
         <tr><td><a href="/research/papers/acoustic-signatures-of-hive-detecting-queen-bee-absence-through-machine-learning-of-short-audio-segments/">Acoustic Signatures of Hive: Detecting Queen Bee Absence Through Machine Learning of Short Audio Segments</a></td><td>2026</td><td>🇨🇱 Universidad de Viña del Mar; 🇨🇱 Universidad Técnica Federico Santa María</td></tr>
         <tr><td><a href="/research/papers/adaptive-measurement-noise-for-robust-kalman-filtering-in-smart-beehive-telemetry/">Adaptive Measurement Noise for Robust Kalman Filtering in Smart Beehive Telemetry</a></td><td>2026</td><td>🇬🇧 University of Westminster; 🇲🇾 Technical University of Malaysia Malacca; 🇫🇮 University of Oulu</td></tr>
         <tr><td><a href="/research/papers/an-intelligent-monitoring-system-for-forecasting-and-anomaly-detection-in-precision-beekeeping/">An intelligent monitoring system for forecasting and anomaly detection in precision beekeeping</a></td><td>2026</td><td>🇫🇷 EFREI Research Lab; 🇫🇷 Université Paris-Panthéon-Assas</td></tr>
@@ -130,6 +131,7 @@ layout: research
         <tr><td><a href="/research/papers/assessing-honey-bee-colony-health-using-temperature-time-series/">Assessing Honey Bee Colony Health Using Temperature Time Series</a></td><td>2026</td><td>🇦🇺 The University of Sydney; 🇦🇺 Macquarie University</td></tr>
         <tr><td><a href="/research/papers/beehaviourlab-a-high-throughput-platform-for-sublethal-stressor-screening-in-insects/">BEEhaviourLab: A high-throughput platform for sublethal stressor screening in insects</a></td><td>2026</td><td>🇬🇧 University of Oxford; 🇬🇧 Queen Mary University of London; 🇬🇧 University of Edinburgh</td></tr>
         <tr><td><a href="/research/papers/beeve-unsupervised-acoustic-state-discovery-in-honey-bee-buzzing/">BeeVe: Unsupervised Acoustic State Discovery in Honey Bee Buzzing</a></td><td>2026</td><td>🇺🇳 arXiv author-supplied preprint by Hamze Hammami and Nidhal Abdulaziz</td></tr>
+        <tr><td><a href="/research/papers/beewhere-segmenting-bumble-bee-colonies-to-quantify-behavioral-effects/">BeeWhere: Segmenting Bumble Bee Colonies to Quantify Behavioral Effects</a></td><td>2026</td><td>University of Copenhagen, Denmark; Lund University, Sweden; University of Wisconsin-Madison, USA</td></tr>
         <tr><td><a href="/research/papers/biome-a-resource-efficient-bioacoustic-foundational-model-for-iot-applications/">BioME: A Resource-Efficient Bioacoustic Foundational Model for IoT Applications</a></td><td>2026</td><td>🇨🇦 Institut national de la recherche scientifique (INRS)</td></tr>
         <tr><td><a href="/research/papers/communication-efficient-embedded-fft-processing-for-acoustic-telemetry-in-lpwan-based-beehive-monitoring-systems/">Communication-efficient Embedded FFT Processing for Acoustic Telemetry in LPWAN-based Beehive Monitoring Systems</a></td><td>2026</td><td>🇵🇱 Lodz University of Technology</td></tr>
         <tr><td><a href="/research/papers/deep-learning-and-computer-vision-for-honey-bee-health-monitoring-a-systematic-survey-and-future-directions/">Deep Learning and Computer Vision for Honey Bee Health Monitoring: A Systematic Survey and Future Directions</a></td><td>2026</td><td>🇮🇳 SSVPS&#x27;s Bapusaheb Shivajirao Deore College of Engineering</td></tr>
@@ -155,6 +157,7 @@ layout: research
         <tr><td><a href="/research/papers/the-relevance-of-compound-events-in-bee-traffic-monitoring/">The Relevance of Compound Events in Bee Traffic Monitoring</a></td><td>2026</td><td>🇵🇷 University of Puerto Rico at Río Piedras</td></tr>
         <tr><td><a href="/research/papers/time-series-dataset-of-honey-bee-colony-dynamics-before-during-and-after-sunflower-pollination/">Time-series dataset of honey bee colony dynamics before, during, and after sunflower pollination</a></td><td>2026</td><td>🇺🇦 AmoHive / Ukraine smart-hive deployment</td></tr>
         <tr><td><a href="/research/papers/transforming-beekeeping-through-technology-a-systematic-review-of-precision-beekeeping/">Transforming Beekeeping Through Technology: A Systematic Review of Precision Beekeeping</a></td><td>2026</td><td>🇧🇳 Universiti Brunei Darussalam; 🇱🇰 Uva Wellassa University</td></tr>
+        <tr><td><a href="/research/papers/ultra-low-power-lightweight-probabilistic-rss-based-path-reconstruction-a-system-for-landscape-scale-bee-tracking/">Ultra Low-Power, Lightweight, Probabilistic RSS-Based Path Reconstruction: A System for Landscape-Scale Bee Tracking</a></td><td>2026</td><td>University of Sheffield, UK</td></tr>
         <tr><td><a href="/research/papers/where-is-the-bee-detecting-tiny-pollinators-with-a-single-collaborative-head-transformer/">Where Is the Bee? Detecting Tiny Pollinators with a Single Collaborative-Head Transformer</a></td><td>2026</td><td>🇰🇷 Ulsan National Institute of Science and Technology (UNIST)</td></tr>
         <tr><td><a href="/research/papers/a-survey-of-tinyml-applications-in-beekeeping-for-hive-monitoring-and-management/">A Survey of TinyML Applications in Beekeeping for Hive Monitoring and Management</a></td><td>2025</td><td>🇦🇺 University of Technology Sydney; 🇦🇺 BeeSTAR</td></tr>
         <tr><td><a href="/research/papers/beekeeping-in-the-digital-age-prospects-and-pitfalls-of-hive-sensors/">Beekeeping in the digital age: prospects and pitfalls of hive sensors in commercial beekeeping</a></td><td>2025</td><td>🇦🇺 University of Melbourne; 🇦🇺 La Trobe University; 🇦🇺 ANU Research School of Biology</td></tr>
@@ -229,6 +232,7 @@ layout: research
         <tr><td><a href="/research/papers/a-hall-effect-sensor-based-queen-bee-detection-system-a-proof-of-concept/">A Hall-Effect Sensor-Based Queen Bee Detection System – a Proof of Concept</a></td><td>2026</td><td>🇵🇱 AGH University of Krakow; 🇵🇱 Wrocław University of Science and Technology</td></tr>
         <tr><td><a href="/research/papers/a-multimodal-machine-learning-system-for-non-invasive-detection-of-varroa-destructor-infestations-in-honey-bee-colonies/">A Multimodal Machine Learning System for Non-Invasive Detection of Varroa destructor Infestations in Honey Bee Colonies</a></td><td>2026</td><td>🇺🇸 Green Valley High School</td></tr>
         <tr><td><a href="/research/papers/a-wireless-sensor-platform-for-beehive-monitoring/">A Wireless Sensor Platform for Beehive Monitoring</a></td><td>2026</td><td>🇺🇸 North Dakota State University; 🇺🇸 USDA Agricultural Research Service</td></tr>
+        <tr><td><a href="/research/papers/acoustic-honeybee-queen-state-detection-under-unseen-conditions/">Acoustic Honeybee Queen-State Detection Under Unseen Conditions</a></td><td>2026</td><td>INRS-EMT, Université du Québec, Montréal, Canada; Nectar Technologies, Montréal, Canada</td></tr>
         <tr><td><a href="/research/papers/acoustic-signatures-of-hive-detecting-queen-bee-absence-through-machine-learning-of-short-audio-segments/">Acoustic Signatures of Hive: Detecting Queen Bee Absence Through Machine Learning of Short Audio Segments</a></td><td>2026</td><td>🇨🇱 Universidad de Viña del Mar; 🇨🇱 Universidad Técnica Federico Santa María</td></tr>
         <tr><td><a href="/research/papers/adaptive-measurement-noise-for-robust-kalman-filtering-in-smart-beehive-telemetry/">Adaptive Measurement Noise for Robust Kalman Filtering in Smart Beehive Telemetry</a></td><td>2026</td><td>🇬🇧 University of Westminster; 🇲🇾 Technical University of Malaysia Malacca; 🇫🇮 University of Oulu</td></tr>
         <tr><td><a href="/research/papers/an-intelligent-monitoring-system-for-forecasting-and-anomaly-detection-in-precision-beekeeping/">An intelligent monitoring system for forecasting and anomaly detection in precision beekeeping</a></td><td>2026</td><td>🇫🇷 EFREI Research Lab; 🇫🇷 Université Paris-Panthéon-Assas</td></tr>
@@ -236,6 +240,7 @@ layout: research
         <tr><td><a href="/research/papers/assessing-honey-bee-colony-health-using-temperature-time-series/">Assessing Honey Bee Colony Health Using Temperature Time Series</a></td><td>2026</td><td>🇦🇺 The University of Sydney; 🇦🇺 Macquarie University</td></tr>
         <tr><td><a href="/research/papers/beehaviourlab-a-high-throughput-platform-for-sublethal-stressor-screening-in-insects/">BEEhaviourLab: A high-throughput platform for sublethal stressor screening in insects</a></td><td>2026</td><td>🇬🇧 University of Oxford; 🇬🇧 Queen Mary University of London; 🇬🇧 University of Edinburgh</td></tr>
         <tr><td><a href="/research/papers/beeve-unsupervised-acoustic-state-discovery-in-honey-bee-buzzing/">BeeVe: Unsupervised Acoustic State Discovery in Honey Bee Buzzing</a></td><td>2026</td><td>🇺🇳 arXiv author-supplied preprint by Hamze Hammami and Nidhal Abdulaziz</td></tr>
+        <tr><td><a href="/research/papers/beewhere-segmenting-bumble-bee-colonies-to-quantify-behavioral-effects/">BeeWhere: Segmenting Bumble Bee Colonies to Quantify Behavioral Effects</a></td><td>2026</td><td>University of Copenhagen, Denmark; Lund University, Sweden; University of Wisconsin-Madison, USA</td></tr>
         <tr><td><a href="/research/papers/biome-a-resource-efficient-bioacoustic-foundational-model-for-iot-applications/">BioME: A Resource-Efficient Bioacoustic Foundational Model for IoT Applications</a></td><td>2026</td><td>🇨🇦 Institut national de la recherche scientifique (INRS)</td></tr>
         <tr><td><a href="/research/papers/communication-efficient-embedded-fft-processing-for-acoustic-telemetry-in-lpwan-based-beehive-monitoring-systems/">Communication-efficient Embedded FFT Processing for Acoustic Telemetry in LPWAN-based Beehive Monitoring Systems</a></td><td>2026</td><td>🇵🇱 Lodz University of Technology</td></tr>
         <tr><td><a href="/research/papers/deep-learning-and-computer-vision-for-honey-bee-health-monitoring-a-systematic-survey-and-future-directions/">Deep Learning and Computer Vision for Honey Bee Health Monitoring: A Systematic Survey and Future Directions</a></td><td>2026</td><td>🇮🇳 SSVPS&#x27;s Bapusaheb Shivajirao Deore College of Engineering</td></tr>
@@ -261,6 +266,7 @@ layout: research
         <tr><td><a href="/research/papers/the-relevance-of-compound-events-in-bee-traffic-monitoring/">The Relevance of Compound Events in Bee Traffic Monitoring</a></td><td>2026</td><td>🇵🇷 University of Puerto Rico at Río Piedras</td></tr>
         <tr><td><a href="/research/papers/time-series-dataset-of-honey-bee-colony-dynamics-before-during-and-after-sunflower-pollination/">Time-series dataset of honey bee colony dynamics before, during, and after sunflower pollination</a></td><td>2026</td><td>🇺🇦 AmoHive / Ukraine smart-hive deployment</td></tr>
         <tr><td><a href="/research/papers/transforming-beekeeping-through-technology-a-systematic-review-of-precision-beekeeping/">Transforming Beekeeping Through Technology: A Systematic Review of Precision Beekeeping</a></td><td>2026</td><td>🇧🇳 Universiti Brunei Darussalam; 🇱🇰 Uva Wellassa University</td></tr>
+        <tr><td><a href="/research/papers/ultra-low-power-lightweight-probabilistic-rss-based-path-reconstruction-a-system-for-landscape-scale-bee-tracking/">Ultra Low-Power, Lightweight, Probabilistic RSS-Based Path Reconstruction: A System for Landscape-Scale Bee Tracking</a></td><td>2026</td><td>University of Sheffield, UK</td></tr>
         <tr><td><a href="/research/papers/where-is-the-bee-detecting-tiny-pollinators-with-a-single-collaborative-head-transformer/">Where Is the Bee? Detecting Tiny Pollinators with a Single Collaborative-Head Transformer</a></td><td>2026</td><td>🇰🇷 Ulsan National Institute of Science and Technology (UNIST)</td></tr>
         </tbody>
         </table>

@@ -53,3 +53,7 @@
 - Browser automation is stateful: call `browser_chrome` sequentially as a top-level call, never inside `parallel`.
 - Online-shop photo tasks should not silently fall back to Wikimedia. If CC BY-SA photos are used, visible captions must include the creator, licence link and modification notice; otherwise replace them with actual supplier references.
 - In non-interactive CLI shells, `nvm` may not be loaded even when Node 24 is already active; check `node --version` and run build commands directly before treating it as a blocker.
+
+- Research curation (2026-10-12): read this playbook and identify the nested component repository before the first Git command; the workspace root is not a Git repository. Locate blog-engine CLI sources under `cmd/` rather than assuming a root `main.go`.
+- Research source failures (2026-10-12): Semantic Scholar returned HTTP 429; the Napier accepted-manuscript endpoint and Research Square HTML returned HTTP 403. Cache successful alternate primary sources and defer papers without a verified PDF, rather than bypassing access controls. A PDF's claim of an open dataset is not enough: the cited Zenodo record `15783267` returned HTTP 404 and requires verification before accepting reproducibility claims.
+- Research inventory counts must distinguish PDF files from all files in `pdfs/`; this collection also contains a PNG and MOV. Counting directory entries alone overstated the PDF count by two during the 2026-10-12 review.

@@ -9,16 +9,16 @@ title: "Research topic: Colony Health"
 ## Summary
 
 - Topic key: `colony-health`
-- Total papers: 12
+- Total papers: 13
 - [Research papers hub](../index.md)
 - [All topics](index.md)
 
 ## Product areas
 
-- [Colony Health](../product-areas/colony-health.md) (8)
+- [Colony Health](../product-areas/colony-health.md) (9)
 - [Edge Device](../product-areas/edge-device.md) (4)
 - [Hive Scanner](../product-areas/hive-scanner.md) (4)
-- [Monitoring Platform](../product-areas/monitoring-platform.md) (9)
+- [Monitoring Platform](../product-areas/monitoring-platform.md) (10)
 
 <section class="research-year-filter" aria-labelledby="research-year-filter-title">
   <h2 id="research-year-filter-title">Publications</h2>
@@ -27,7 +27,7 @@ title: "Research topic: Colony Health"
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="colony-health-year-filter" value="all" checked>
         <span class="research-year-tab__label">All</span>
-        <span class="research-year-tab__count">12</span>
+        <span class="research-year-tab__count">13</span>
       </label>
       <span class="research-year-tab__arrow" aria-hidden="true">›</span>
       <label class="research-year-tab">
@@ -45,7 +45,7 @@ title: "Research topic: Colony Health"
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="colony-health-year-filter" value="2026">
         <span class="research-year-tab__label">2026</span>
-        <span class="research-year-tab__count">9</span>
+        <span class="research-year-tab__count">10</span>
       </label>
     </div>
     <div class="research-year-filter__panels">
@@ -61,6 +61,7 @@ title: "Research topic: Colony Health"
         </thead>
         <tbody>
         <tr><td><a href="/research/papers/a-wireless-sensor-platform-for-beehive-monitoring/">A Wireless Sensor Platform for Beehive Monitoring</a></td><td>2026</td><td>🇺🇸 North Dakota State University; 🇺🇸 USDA Agricultural Research Service</td></tr>
+        <tr><td><a href="/research/papers/acoustic-honeybee-queen-state-detection-under-unseen-conditions/">Acoustic Honeybee Queen-State Detection Under Unseen Conditions</a></td><td>2026</td><td>INRS-EMT, Université du Québec, Montréal, Canada; Nectar Technologies, Montréal, Canada</td></tr>
         <tr><td><a href="/research/papers/an-automated-ai-based-vision-inspection-system-for-bee-mite-and-deformed-bee-detection-using-yolo-models/">An Automated AI-Based Vision Inspection System for Bee Mite and Deformed Bee Detection Using YOLO Models</a></td><td>2026</td><td>🇰🇷 Kangwon National University; 🇰🇷 National Institute of Agricultural Sciences; 🇰🇷 Terramolab Ltd.</td></tr>
         <tr><td><a href="/research/papers/biome-a-resource-efficient-bioacoustic-foundational-model-for-iot-applications/">BioME: A Resource-Efficient Bioacoustic Foundational Model for IoT Applications</a></td><td>2026</td><td>🇨🇦 Institut national de la recherche scientifique (INRS)</td></tr>
         <tr><td><a href="/research/papers/deep-learning-and-computer-vision-for-honey-bee-health-monitoring-a-systematic-survey-and-future-directions/">Deep Learning and Computer Vision for Honey Bee Health Monitoring: A Systematic Survey and Future Directions</a></td><td>2026</td><td>🇮🇳 SSVPS&#x27;s Bapusaheb Shivajirao Deore College of Engineering</td></tr>
@@ -88,6 +89,7 @@ title: "Research topic: Colony Health"
         </thead>
         <tbody>
         <tr><td><a href="/research/papers/a-wireless-sensor-platform-for-beehive-monitoring/">A Wireless Sensor Platform for Beehive Monitoring</a></td><td>2026</td><td>🇺🇸 North Dakota State University; 🇺🇸 USDA Agricultural Research Service</td></tr>
+        <tr><td><a href="/research/papers/acoustic-honeybee-queen-state-detection-under-unseen-conditions/">Acoustic Honeybee Queen-State Detection Under Unseen Conditions</a></td><td>2026</td><td>INRS-EMT, Université du Québec, Montréal, Canada; Nectar Technologies, Montréal, Canada</td></tr>
         <tr><td><a href="/research/papers/an-automated-ai-based-vision-inspection-system-for-bee-mite-and-deformed-bee-detection-using-yolo-models/">An Automated AI-Based Vision Inspection System for Bee Mite and Deformed Bee Detection Using YOLO Models</a></td><td>2026</td><td>🇰🇷 Kangwon National University; 🇰🇷 National Institute of Agricultural Sciences; 🇰🇷 Terramolab Ltd.</td></tr>
         <tr><td><a href="/research/papers/biome-a-resource-efficient-bioacoustic-foundational-model-for-iot-applications/">BioME: A Resource-Efficient Bioacoustic Foundational Model for IoT Applications</a></td><td>2026</td><td>🇨🇦 Institut national de la recherche scientifique (INRS)</td></tr>
         <tr><td><a href="/research/papers/deep-learning-and-computer-vision-for-honey-bee-health-monitoring-a-systematic-survey-and-future-directions/">Deep Learning and Computer Vision for Honey Bee Health Monitoring: A Systematic Survey and Future Directions</a></td><td>2026</td><td>🇮🇳 SSVPS&#x27;s Bapusaheb Shivajirao Deore College of Engineering</td></tr>

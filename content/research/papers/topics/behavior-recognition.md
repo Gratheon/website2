@@ -9,7 +9,7 @@ title: "Research topic: Behavior Recognition"
 ## Summary
 
 - Topic key: `behavior-recognition`
-- Total papers: 5
+- Total papers: 6
 - [Research papers hub](../index.md)
 - [All topics](index.md)
 
@@ -17,7 +17,8 @@ title: "Research topic: Behavior Recognition"
 
 - [Colony Health](../product-areas/colony-health.md) (1)
 - [Gate Tracker](../product-areas/gate-tracker.md) (3)
-- [Monitoring Platform](../product-areas/monitoring-platform.md) (3)
+- [Hive Scanner](../product-areas/hive-scanner.md) (1)
+- [Monitoring Platform](../product-areas/monitoring-platform.md) (4)
 - [Robotics](../product-areas/robotics.md) (1)
 
 <section class="research-year-filter" aria-labelledby="research-year-filter-title">
@@ -27,13 +28,13 @@ title: "Research topic: Behavior Recognition"
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="behavior-recognition-year-filter" value="all" checked>
         <span class="research-year-tab__label">All</span>
-        <span class="research-year-tab__count">5</span>
+        <span class="research-year-tab__count">6</span>
       </label>
       <span class="research-year-tab__arrow" aria-hidden="true">›</span>
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="behavior-recognition-year-filter" value="2026">
         <span class="research-year-tab__label">2026</span>
-        <span class="research-year-tab__count">5</span>
+        <span class="research-year-tab__count">6</span>
       </label>
     </div>
     <div class="research-year-filter__panels">
@@ -49,6 +50,7 @@ title: "Research topic: Behavior Recognition"
         </thead>
         <tbody>
         <tr><td><a href="/research/papers/beehaviourlab-a-high-throughput-platform-for-sublethal-stressor-screening-in-insects/">BEEhaviourLab: A high-throughput platform for sublethal stressor screening in insects</a></td><td>2026</td><td>🇬🇧 University of Oxford; 🇬🇧 Queen Mary University of London; 🇬🇧 University of Edinburgh</td></tr>
+        <tr><td><a href="/research/papers/beewhere-segmenting-bumble-bee-colonies-to-quantify-behavioral-effects/">BeeWhere: Segmenting Bumble Bee Colonies to Quantify Behavioral Effects</a></td><td>2026</td><td>University of Copenhagen, Denmark; Lund University, Sweden; University of Wisconsin-Madison, USA</td></tr>
         <tr><td><a href="/research/papers/digital-monitoring-and-modeling-of-honey-bee-foraging-on-clover-flowers-under-heat-stress/">Digital Monitoring and Modeling of Honey Bee Foraging on Clover Flowers Under Heat Stress</a></td><td>2026</td><td>🇺🇸 Oregon State University</td></tr>
         <tr><td><a href="/research/papers/low-latency-multicamera-3d-tracking-of-insects-with-braid/">Low-latency multicamera 3D tracking of insects with Braid</a></td><td>2026</td><td>🇩🇪 University of Freiburg; 🇩🇪 Bernstein Center Freiburg</td></tr>
         <tr><td><a href="/research/papers/machine-vision-based-quantification-of-colony-level-homing-adaptation-in-apis-mellifera-following-hive-entrance-displacement/">Machine Vision-Based Quantification of Colony-Level Homing Adaptation in Apis mellifera Following Hive Entrance Displacement</a></td><td>2026</td><td>🇨🇳 Agricultural Information Institute, Chinese Academy of Agricultural Sciences; 🇨🇳 Key Laboratory of Agricultural Blockchain Application, Ministry of Agriculture and Rural Affairs</td></tr>
@@ -69,6 +71,7 @@ title: "Research topic: Behavior Recognition"
         </thead>
         <tbody>
         <tr><td><a href="/research/papers/beehaviourlab-a-high-throughput-platform-for-sublethal-stressor-screening-in-insects/">BEEhaviourLab: A high-throughput platform for sublethal stressor screening in insects</a></td><td>2026</td><td>🇬🇧 University of Oxford; 🇬🇧 Queen Mary University of London; 🇬🇧 University of Edinburgh</td></tr>
+        <tr><td><a href="/research/papers/beewhere-segmenting-bumble-bee-colonies-to-quantify-behavioral-effects/">BeeWhere: Segmenting Bumble Bee Colonies to Quantify Behavioral Effects</a></td><td>2026</td><td>University of Copenhagen, Denmark; Lund University, Sweden; University of Wisconsin-Madison, USA</td></tr>
         <tr><td><a href="/research/papers/digital-monitoring-and-modeling-of-honey-bee-foraging-on-clover-flowers-under-heat-stress/">Digital Monitoring and Modeling of Honey Bee Foraging on Clover Flowers Under Heat Stress</a></td><td>2026</td><td>🇺🇸 Oregon State University</td></tr>
         <tr><td><a href="/research/papers/low-latency-multicamera-3d-tracking-of-insects-with-braid/">Low-latency multicamera 3D tracking of insects with Braid</a></td><td>2026</td><td>🇩🇪 University of Freiburg; 🇩🇪 Bernstein Center Freiburg</td></tr>
         <tr><td><a href="/research/papers/machine-vision-based-quantification-of-colony-level-homing-adaptation-in-apis-mellifera-following-hive-entrance-displacement/">Machine Vision-Based Quantification of Colony-Level Homing Adaptation in Apis mellifera Following Hive Entrance Displacement</a></td><td>2026</td><td>🇨🇳 Agricultural Information Institute, Chinese Academy of Agricultural Sciences; 🇨🇳 Key Laboratory of Agricultural Blockchain Application, Ministry of Agriculture and Rural Affairs</td></tr>

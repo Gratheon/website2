@@ -9,7 +9,7 @@ layout: research
 ## Summary
 
 - Topic key: `datasets-benchmarks`
-- Total papers: 24
+- Total papers: 25
 - [Research papers hub](../index.md)
 - [All topics](index.md)
 
@@ -18,8 +18,8 @@ layout: research
 - [Colony Health](../product-areas/colony-health.md) (4)
 - [Edge Device](../product-areas/edge-device.md) (2)
 - [Gate Tracker](../product-areas/gate-tracker.md) (5)
-- [Hive Scanner](../product-areas/hive-scanner.md) (6)
-- [Monitoring Platform](../product-areas/monitoring-platform.md) (15)
+- [Hive Scanner](../product-areas/hive-scanner.md) (7)
+- [Monitoring Platform](../product-areas/monitoring-platform.md) (16)
 
 <section class="research-year-filter" aria-labelledby="research-year-filter-title">
   <h2 id="research-year-filter-title">Publications</h2>
@@ -28,7 +28,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="datasets-benchmarks-year-filter" value="all" checked>
         <span class="research-year-tab__label">All</span>
-        <span class="research-year-tab__count">24</span>
+        <span class="research-year-tab__count">25</span>
       </label>
       <span class="research-year-tab__arrow" aria-hidden="true">›</span>
       <label class="research-year-tab">
@@ -76,7 +76,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="datasets-benchmarks-year-filter" value="2026">
         <span class="research-year-tab__label">2026</span>
-        <span class="research-year-tab__count">10</span>
+        <span class="research-year-tab__count">11</span>
       </label>
     </div>
     <div class="research-year-filter__panels">
@@ -93,6 +93,7 @@ layout: research
         <tbody>
         <tr><td><a href="/research/papers/annotation-versioning-and-cross-collection-generalization-in-varroa-mite-counting/">Annotation Versioning and Cross-Collection Generalization in Varroa Mite Counting</a></td><td>2026</td><td></td></tr>
         <tr><td><a href="/research/papers/beehaviourlab-a-high-throughput-platform-for-sublethal-stressor-screening-in-insects/">BEEhaviourLab: A high-throughput platform for sublethal stressor screening in insects</a></td><td>2026</td><td>🇬🇧 University of Oxford; 🇬🇧 Queen Mary University of London; 🇬🇧 University of Edinburgh</td></tr>
+        <tr><td><a href="/research/papers/beewhere-segmenting-bumble-bee-colonies-to-quantify-behavioral-effects/">BeeWhere: Segmenting Bumble Bee Colonies to Quantify Behavioral Effects</a></td><td>2026</td><td>University of Copenhagen, Denmark; Lund University, Sweden; University of Wisconsin-Madison, USA</td></tr>
         <tr><td><a href="/research/papers/detection-and-classification-of-honeybee-castes-using-thermal-imaging-and-deep-learning/">Detection and classification of honeybee castes using thermal imaging and deep learning</a></td><td>2026</td><td>🇮🇷 Razi University</td></tr>
         <tr><td><a href="/research/papers/estimating-colony-strength-and-pollination-efficiency-in-honey-bees-using-a-novel-dataset-and-deep-learning-based-models/">Estimating colony strength and pollination efficiency in honey bees using a novel dataset and deep learning-based models</a></td><td>2026</td><td>🇺🇸 University of Arkansas at Fayetteville; 🇺🇸 Washington State University; 🇺🇸 University of Arkansas System; 🇺🇸 Mississippi State University; 🇺🇸 University of Tennessee at Knoxville</td></tr>
         <tr><td><a href="/research/papers/fairhiveframes-1k-a-public-fair-dataset-of-1265-annotated-hive-frame-images-with-preliminary-yolov8-and-yolov11-baselines/">FAIRHiveFrames-1K: A Public FAIR Dataset of 1265 Annotated Hive Frame Images with Preliminary YOLOv8 and YOLOv11 Baselines</a></td><td>2026</td><td>🇺🇸 Utah State University</td></tr>
@@ -132,6 +133,7 @@ layout: research
         <tbody>
         <tr><td><a href="/research/papers/annotation-versioning-and-cross-collection-generalization-in-varroa-mite-counting/">Annotation Versioning and Cross-Collection Generalization in Varroa Mite Counting</a></td><td>2026</td><td></td></tr>
         <tr><td><a href="/research/papers/beehaviourlab-a-high-throughput-platform-for-sublethal-stressor-screening-in-insects/">BEEhaviourLab: A high-throughput platform for sublethal stressor screening in insects</a></td><td>2026</td><td>🇬🇧 University of Oxford; 🇬🇧 Queen Mary University of London; 🇬🇧 University of Edinburgh</td></tr>
+        <tr><td><a href="/research/papers/beewhere-segmenting-bumble-bee-colonies-to-quantify-behavioral-effects/">BeeWhere: Segmenting Bumble Bee Colonies to Quantify Behavioral Effects</a></td><td>2026</td><td>University of Copenhagen, Denmark; Lund University, Sweden; University of Wisconsin-Madison, USA</td></tr>
         <tr><td><a href="/research/papers/detection-and-classification-of-honeybee-castes-using-thermal-imaging-and-deep-learning/">Detection and classification of honeybee castes using thermal imaging and deep learning</a></td><td>2026</td><td>🇮🇷 Razi University</td></tr>
         <tr><td><a href="/research/papers/estimating-colony-strength-and-pollination-efficiency-in-honey-bees-using-a-novel-dataset-and-deep-learning-based-models/">Estimating colony strength and pollination efficiency in honey bees using a novel dataset and deep learning-based models</a></td><td>2026</td><td>🇺🇸 University of Arkansas at Fayetteville; 🇺🇸 Washington State University; 🇺🇸 University of Arkansas System; 🇺🇸 Mississippi State University; 🇺🇸 University of Tennessee at Knoxville</td></tr>
         <tr><td><a href="/research/papers/fairhiveframes-1k-a-public-fair-dataset-of-1265-annotated-hive-frame-images-with-preliminary-yolov8-and-yolov11-baselines/">FAIRHiveFrames-1K: A Public FAIR Dataset of 1265 Annotated Hive Frame Images with Preliminary YOLOv8 and YOLOv11 Baselines</a></td><td>2026</td><td>🇺🇸 Utah State University</td></tr>

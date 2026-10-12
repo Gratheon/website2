@@ -9,7 +9,7 @@ layout: research
 ## Summary
 
 - Product area key: `hive-scanner`
-- Total papers: 24
+- Total papers: 25
 - [Research papers hub](../index.md)
 - [All product areas](index.md)
 
@@ -17,9 +17,10 @@ layout: research
 
 - [Bee Behaviour](../topics/bee-behaviour.md) (10)
 - [Bee Counting](../topics/bee-counting.md) (1)
+- [Behavior Recognition](../topics/behavior-recognition.md) (1)
 - [Colony Health](../topics/colony-health.md) (4)
-- [Computer Vision](../topics/computer-vision.md) (24)
-- [Datasets Benchmarks](../topics/datasets-benchmarks.md) (6)
+- [Computer Vision](../topics/computer-vision.md) (25)
+- [Datasets Benchmarks](../topics/datasets-benchmarks.md) (7)
 - [Edge AI Energy](../topics/edge-ai-energy.md) (2)
 - [Precision Beekeeping](../topics/precision-beekeeping.md) (1)
 - [Varroa Health](../topics/varroa-health.md) (4)
@@ -31,7 +32,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="hive-scanner-year-filter" value="all" checked>
         <span class="research-year-tab__label">All</span>
-        <span class="research-year-tab__count">24</span>
+        <span class="research-year-tab__count">25</span>
       </label>
       <span class="research-year-tab__arrow" aria-hidden="true">›</span>
       <label class="research-year-tab">
@@ -85,7 +86,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="hive-scanner-year-filter" value="2026">
         <span class="research-year-tab__label">2026</span>
-        <span class="research-year-tab__count">6</span>
+        <span class="research-year-tab__count">7</span>
       </label>
     </div>
     <div class="research-year-filter__panels">
@@ -102,6 +103,7 @@ layout: research
         <tbody>
         <tr><td><a href="/research/papers/an-automated-ai-based-vision-inspection-system-for-bee-mite-and-deformed-bee-detection-using-yolo-models/">An Automated AI-Based Vision Inspection System for Bee Mite and Deformed Bee Detection Using YOLO Models</a></td><td>2026</td><td>🇰🇷 Kangwon National University; 🇰🇷 National Institute of Agricultural Sciences; 🇰🇷 Terramolab Ltd.</td></tr>
         <tr><td><a href="/research/papers/an-open-source-high-precision-hive-for-long-term-honeybee-observation-and-research/">An open-source high-precision hive for long-term honeybee observation and research</a></td><td>2026</td><td>🇨🇿 Czech Technical University in Prague; 🇦🇹 University of Graz</td></tr>
+        <tr><td><a href="/research/papers/beewhere-segmenting-bumble-bee-colonies-to-quantify-behavioral-effects/">BeeWhere: Segmenting Bumble Bee Colonies to Quantify Behavioral Effects</a></td><td>2026</td><td>University of Copenhagen, Denmark; Lund University, Sweden; University of Wisconsin-Madison, USA</td></tr>
         <tr><td><a href="/research/papers/detection-and-classification-of-honeybee-castes-using-thermal-imaging-and-deep-learning/">Detection and classification of honeybee castes using thermal imaging and deep learning</a></td><td>2026</td><td>🇮🇷 Razi University</td></tr>
         <tr><td><a href="/research/papers/honeybee-counting-on-comb-images-via-part-level-annotation-and-hungarian-matching/">Honeybee Counting on Comb Images via Part-Level Annotation and Hungarian Matching</a></td><td>2026</td><td>🇯🇵 Utsunomiya University</td></tr>
         <tr><td><a href="/research/papers/interpretable-deep-learning-for-varroa-mite-detection-integrating-deblurring-morphology-preserving-preprocessing-and-explainability-analysis/">Interpretable Deep Learning for Varroa Mite Detection: Integrating Deblurring, Morphology-Preserving Preprocessing, and Explainability Analysis</a></td><td>2026</td><td>🇰🇷 Kangwon National University; 🇰🇷 National Institute of Agricultural Sciences</td></tr>
@@ -141,6 +143,7 @@ layout: research
         <tbody>
         <tr><td><a href="/research/papers/an-automated-ai-based-vision-inspection-system-for-bee-mite-and-deformed-bee-detection-using-yolo-models/">An Automated AI-Based Vision Inspection System for Bee Mite and Deformed Bee Detection Using YOLO Models</a></td><td>2026</td><td>🇰🇷 Kangwon National University; 🇰🇷 National Institute of Agricultural Sciences; 🇰🇷 Terramolab Ltd.</td></tr>
         <tr><td><a href="/research/papers/an-open-source-high-precision-hive-for-long-term-honeybee-observation-and-research/">An open-source high-precision hive for long-term honeybee observation and research</a></td><td>2026</td><td>🇨🇿 Czech Technical University in Prague; 🇦🇹 University of Graz</td></tr>
+        <tr><td><a href="/research/papers/beewhere-segmenting-bumble-bee-colonies-to-quantify-behavioral-effects/">BeeWhere: Segmenting Bumble Bee Colonies to Quantify Behavioral Effects</a></td><td>2026</td><td>University of Copenhagen, Denmark; Lund University, Sweden; University of Wisconsin-Madison, USA</td></tr>
         <tr><td><a href="/research/papers/detection-and-classification-of-honeybee-castes-using-thermal-imaging-and-deep-learning/">Detection and classification of honeybee castes using thermal imaging and deep learning</a></td><td>2026</td><td>🇮🇷 Razi University</td></tr>
         <tr><td><a href="/research/papers/honeybee-counting-on-comb-images-via-part-level-annotation-and-hungarian-matching/">Honeybee Counting on Comb Images via Part-Level Annotation and Hungarian Matching</a></td><td>2026</td><td>🇯🇵 Utsunomiya University</td></tr>
         <tr><td><a href="/research/papers/interpretable-deep-learning-for-varroa-mite-detection-integrating-deblurring-morphology-preserving-preprocessing-and-explainability-analysis/">Interpretable Deep Learning for Varroa Mite Detection: Integrating Deblurring, Morphology-Preserving Preprocessing, and Explainability Analysis</a></td><td>2026</td><td>🇰🇷 Kangwon National University; 🇰🇷 National Institute of Agricultural Sciences</td></tr>

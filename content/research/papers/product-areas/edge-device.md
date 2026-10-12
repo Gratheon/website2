@@ -9,7 +9,7 @@ title: "Research product area: Edge Device"
 ## Summary
 
 - Product area key: `edge-device`
-- Total papers: 10
+- Total papers: 11
 - [Research papers hub](../index.md)
 - [All product areas](index.md)
 
@@ -20,10 +20,10 @@ title: "Research product area: Edge Device"
 - [Colony Health](../topics/colony-health.md) (4)
 - [Computer Vision](../topics/computer-vision.md) (3)
 - [Datasets Benchmarks](../topics/datasets-benchmarks.md) (2)
-- [Edge AI Energy](../topics/edge-ai-energy.md) (10)
-- [IoT Sensors](../topics/iot-sensors.md) (5)
+- [Edge AI Energy](../topics/edge-ai-energy.md) (11)
+- [IoT Sensors](../topics/iot-sensors.md) (6)
 - [Pollination Ecology](../topics/pollination-ecology.md) (1)
-- [Pollination Monitoring](../topics/pollination-monitoring.md) (1)
+- [Pollination Monitoring](../topics/pollination-monitoring.md) (2)
 - [Precision Beekeeping](../topics/precision-beekeeping.md) (3)
 - [Varroa Health](../topics/varroa-health.md) (2)
 
@@ -34,7 +34,7 @@ title: "Research product area: Edge Device"
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="edge-device-year-filter" value="all" checked>
         <span class="research-year-tab__label">All</span>
-        <span class="research-year-tab__count">10</span>
+        <span class="research-year-tab__count">11</span>
       </label>
       <span class="research-year-tab__arrow" aria-hidden="true">›</span>
       <label class="research-year-tab">
@@ -46,7 +46,7 @@ title: "Research product area: Edge Device"
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="edge-device-year-filter" value="2026">
         <span class="research-year-tab__label">2026</span>
-        <span class="research-year-tab__count">9</span>
+        <span class="research-year-tab__count">10</span>
       </label>
     </div>
     <div class="research-year-filter__panels">
@@ -70,6 +70,7 @@ title: "Research product area: Edge Device"
         <tr><td><a href="/research/papers/physics-aware-vision-instrumentation-for-stingless-bee-counting-at-hive-entrance-using-hybrid-edge-cloud-object-detection/">Physics-aware vision instrumentation for stingless bee counting at hive entrance using hybrid edge-cloud object detection</a></td><td>2026</td><td>🇲🇾 Universiti Teknologi Malaysia; 🇮🇩 Universitas Negeri Jakarta; 🇮🇩 Institut Teknologi Indonesia; 🇮🇩 Politeknik Negeri Bandung; 🇮🇩 National Research and Innovation Agency</td></tr>
         <tr><td><a href="/research/papers/spectrogram-based-deep-learning-models-for-acoustic-identification-of-honey-bees-in-complex-environmental-noises/">Spectrogram-Based Deep Learning Models for Acoustic Identification of Honey Bees in Complex Environmental Noises</a></td><td>2026</td><td>🇵🇰 Namal University; 🇵🇰 University of Mianwali; 🇦🇪 Abu Dhabi University; 🇹🇷 Nişantaşı University</td></tr>
         <tr><td><a href="/research/papers/technical-specification-of-a-novel-apivoltaic-system-integrating-digital-hive-monitoring-with-photovoltaic-energy-systems/">Technical Specification of a Novel Apivoltaic System: Integrating Digital Hive Monitoring with Photovoltaic Energy Systems</a></td><td>2026</td><td>🇷🇴 University of Agricultural Sciences and Veterinary Medicine of Cluj-Napoca; 🇷🇴 APIVOLT S.R.L.; 🇮🇹 University of Molise</td></tr>
+        <tr><td><a href="/research/papers/ultra-low-power-lightweight-probabilistic-rss-based-path-reconstruction-a-system-for-landscape-scale-bee-tracking/">Ultra Low-Power, Lightweight, Probabilistic RSS-Based Path Reconstruction: A System for Landscape-Scale Bee Tracking</a></td><td>2026</td><td>University of Sheffield, UK</td></tr>
         <tr><td><a href="/research/papers/queen-detection-in-beehives-via-environmental-sensor-fusion-for-low-power-edge-computing/">Queen Detection in Beehives via Environmental Sensor Fusion for Low-Power Edge Computing</a></td><td>2025</td><td>🇨🇭 Institute of Neuroinformatics, University of Zurich and ETH Zurich; 🇨🇭 Digital Society Initiative, University of Zurich</td></tr>
         </tbody>
         </table>
@@ -95,6 +96,7 @@ title: "Research product area: Edge Device"
         <tr><td><a href="/research/papers/physics-aware-vision-instrumentation-for-stingless-bee-counting-at-hive-entrance-using-hybrid-edge-cloud-object-detection/">Physics-aware vision instrumentation for stingless bee counting at hive entrance using hybrid edge-cloud object detection</a></td><td>2026</td><td>🇲🇾 Universiti Teknologi Malaysia; 🇮🇩 Universitas Negeri Jakarta; 🇮🇩 Institut Teknologi Indonesia; 🇮🇩 Politeknik Negeri Bandung; 🇮🇩 National Research and Innovation Agency</td></tr>
         <tr><td><a href="/research/papers/spectrogram-based-deep-learning-models-for-acoustic-identification-of-honey-bees-in-complex-environmental-noises/">Spectrogram-Based Deep Learning Models for Acoustic Identification of Honey Bees in Complex Environmental Noises</a></td><td>2026</td><td>🇵🇰 Namal University; 🇵🇰 University of Mianwali; 🇦🇪 Abu Dhabi University; 🇹🇷 Nişantaşı University</td></tr>
         <tr><td><a href="/research/papers/technical-specification-of-a-novel-apivoltaic-system-integrating-digital-hive-monitoring-with-photovoltaic-energy-systems/">Technical Specification of a Novel Apivoltaic System: Integrating Digital Hive Monitoring with Photovoltaic Energy Systems</a></td><td>2026</td><td>🇷🇴 University of Agricultural Sciences and Veterinary Medicine of Cluj-Napoca; 🇷🇴 APIVOLT S.R.L.; 🇮🇹 University of Molise</td></tr>
+        <tr><td><a href="/research/papers/ultra-low-power-lightweight-probabilistic-rss-based-path-reconstruction-a-system-for-landscape-scale-bee-tracking/">Ultra Low-Power, Lightweight, Probabilistic RSS-Based Path Reconstruction: A System for Landscape-Scale Bee Tracking</a></td><td>2026</td><td>University of Sheffield, UK</td></tr>
         </tbody>
         </table>
         </div>

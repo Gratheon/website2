@@ -9,7 +9,7 @@ layout: research
 ## Summary
 
 - Topic key: `computer-vision`
-- Total papers: 83
+- Total papers: 85
 - [Research papers hub](../index.md)
 - [All topics](index.md)
 
@@ -17,9 +17,9 @@ layout: research
 
 - [Colony Health](../product-areas/colony-health.md) (21)
 - [Edge Device](../product-areas/edge-device.md) (3)
-- [Gate Tracker](../product-areas/gate-tracker.md) (30)
-- [Hive Scanner](../product-areas/hive-scanner.md) (24)
-- [Monitoring Platform](../product-areas/monitoring-platform.md) (27)
+- [Gate Tracker](../product-areas/gate-tracker.md) (31)
+- [Hive Scanner](../product-areas/hive-scanner.md) (25)
+- [Monitoring Platform](../product-areas/monitoring-platform.md) (28)
 - [Robotics](../product-areas/robotics.md) (3)
 
 <section class="research-year-filter" aria-labelledby="research-year-filter-title">
@@ -29,7 +29,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="computer-vision-year-filter" value="all" checked>
         <span class="research-year-tab__label">All</span>
-        <span class="research-year-tab__count">83</span>
+        <span class="research-year-tab__count">85</span>
       </label>
       <span class="research-year-tab__arrow" aria-hidden="true">›</span>
       <label class="research-year-tab">
@@ -101,7 +101,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="computer-vision-year-filter" value="2026">
         <span class="research-year-tab__label">2026</span>
-        <span class="research-year-tab__count">24</span>
+        <span class="research-year-tab__count">26</span>
       </label>
     </div>
     <div class="research-year-filter__panels">
@@ -117,11 +117,13 @@ layout: research
         </thead>
         <tbody>
         <tr><td><a href="/research/papers/a-multimodal-machine-learning-system-for-non-invasive-detection-of-varroa-destructor-infestations-in-honey-bee-colonies/">A Multimodal Machine Learning System for Non-Invasive Detection of Varroa destructor Infestations in Honey Bee Colonies</a></td><td>2026</td><td>🇺🇸 Green Valley High School</td></tr>
+        <tr><td><a href="/research/papers/a-u-net-based-segmentation-approach-for-honeybee-pollen-detection-using-deep-learning/">A U-Net–Based Segmentation Approach for Honeybee Pollen Detection Using Deep Learning</a></td><td>2026</td><td>Marmara University, İstanbul, Türkiye</td></tr>
         <tr><td><a href="/research/papers/an-automated-ai-based-vision-inspection-system-for-bee-mite-and-deformed-bee-detection-using-yolo-models/">An Automated AI-Based Vision Inspection System for Bee Mite and Deformed Bee Detection Using YOLO Models</a></td><td>2026</td><td>🇰🇷 Kangwon National University; 🇰🇷 National Institute of Agricultural Sciences; 🇰🇷 Terramolab Ltd.</td></tr>
         <tr><td><a href="/research/papers/an-open-source-high-precision-hive-for-long-term-honeybee-observation-and-research/">An open-source high-precision hive for long-term honeybee observation and research</a></td><td>2026</td><td>🇨🇿 Czech Technical University in Prague; 🇦🇹 University of Graz</td></tr>
         <tr><td><a href="/research/papers/annotation-versioning-and-cross-collection-generalization-in-varroa-mite-counting/">Annotation Versioning and Cross-Collection Generalization in Varroa Mite Counting</a></td><td>2026</td><td></td></tr>
         <tr><td><a href="/research/papers/bee-detection-and-tracking-at-hive-entrance-using-yolo11-and-bytetrack/">Bee Detection and Tracking at Hive Entrance using YOLO11 and ByteTrack</a></td><td>2026</td><td>🇫🇮 Savonia University of Applied Sciences; 🇩🇪 Ostbayerische Technische Hochschule Regensburg</td></tr>
         <tr><td><a href="/research/papers/beehaviourlab-a-high-throughput-platform-for-sublethal-stressor-screening-in-insects/">BEEhaviourLab: A high-throughput platform for sublethal stressor screening in insects</a></td><td>2026</td><td>🇬🇧 University of Oxford; 🇬🇧 Queen Mary University of London; 🇬🇧 University of Edinburgh</td></tr>
+        <tr><td><a href="/research/papers/beewhere-segmenting-bumble-bee-colonies-to-quantify-behavioral-effects/">BeeWhere: Segmenting Bumble Bee Colonies to Quantify Behavioral Effects</a></td><td>2026</td><td>University of Copenhagen, Denmark; Lund University, Sweden; University of Wisconsin-Madison, USA</td></tr>
         <tr><td><a href="/research/papers/continuous-non-invasive-monitoring-of-hive-entrance-activity-reveals-honey-bee-colony-dynamics/">Continuous Non-Invasive Monitoring of Hive Entrance Activity Reveals Honey Bee Colony Dynamics</a></td><td>2026</td><td>🇹🇷 Van Yüzüncü Yıl University</td></tr>
         <tr><td><a href="/research/papers/deep-learning-and-computer-vision-for-honey-bee-health-monitoring-a-systematic-survey-and-future-directions/">Deep Learning and Computer Vision for Honey Bee Health Monitoring: A Systematic Survey and Future Directions</a></td><td>2026</td><td>🇮🇳 SSVPS&#x27;s Bapusaheb Shivajirao Deore College of Engineering</td></tr>
         <tr><td><a href="/research/papers/detection-and-classification-of-honeybee-castes-using-thermal-imaging-and-deep-learning/">Detection and classification of honeybee castes using thermal imaging and deep learning</a></td><td>2026</td><td>🇮🇷 Razi University</td></tr>
@@ -215,11 +217,13 @@ layout: research
         </thead>
         <tbody>
         <tr><td><a href="/research/papers/a-multimodal-machine-learning-system-for-non-invasive-detection-of-varroa-destructor-infestations-in-honey-bee-colonies/">A Multimodal Machine Learning System for Non-Invasive Detection of Varroa destructor Infestations in Honey Bee Colonies</a></td><td>2026</td><td>🇺🇸 Green Valley High School</td></tr>
+        <tr><td><a href="/research/papers/a-u-net-based-segmentation-approach-for-honeybee-pollen-detection-using-deep-learning/">A U-Net–Based Segmentation Approach for Honeybee Pollen Detection Using Deep Learning</a></td><td>2026</td><td>Marmara University, İstanbul, Türkiye</td></tr>
         <tr><td><a href="/research/papers/an-automated-ai-based-vision-inspection-system-for-bee-mite-and-deformed-bee-detection-using-yolo-models/">An Automated AI-Based Vision Inspection System for Bee Mite and Deformed Bee Detection Using YOLO Models</a></td><td>2026</td><td>🇰🇷 Kangwon National University; 🇰🇷 National Institute of Agricultural Sciences; 🇰🇷 Terramolab Ltd.</td></tr>
         <tr><td><a href="/research/papers/an-open-source-high-precision-hive-for-long-term-honeybee-observation-and-research/">An open-source high-precision hive for long-term honeybee observation and research</a></td><td>2026</td><td>🇨🇿 Czech Technical University in Prague; 🇦🇹 University of Graz</td></tr>
         <tr><td><a href="/research/papers/annotation-versioning-and-cross-collection-generalization-in-varroa-mite-counting/">Annotation Versioning and Cross-Collection Generalization in Varroa Mite Counting</a></td><td>2026</td><td></td></tr>
         <tr><td><a href="/research/papers/bee-detection-and-tracking-at-hive-entrance-using-yolo11-and-bytetrack/">Bee Detection and Tracking at Hive Entrance using YOLO11 and ByteTrack</a></td><td>2026</td><td>🇫🇮 Savonia University of Applied Sciences; 🇩🇪 Ostbayerische Technische Hochschule Regensburg</td></tr>
         <tr><td><a href="/research/papers/beehaviourlab-a-high-throughput-platform-for-sublethal-stressor-screening-in-insects/">BEEhaviourLab: A high-throughput platform for sublethal stressor screening in insects</a></td><td>2026</td><td>🇬🇧 University of Oxford; 🇬🇧 Queen Mary University of London; 🇬🇧 University of Edinburgh</td></tr>
+        <tr><td><a href="/research/papers/beewhere-segmenting-bumble-bee-colonies-to-quantify-behavioral-effects/">BeeWhere: Segmenting Bumble Bee Colonies to Quantify Behavioral Effects</a></td><td>2026</td><td>University of Copenhagen, Denmark; Lund University, Sweden; University of Wisconsin-Madison, USA</td></tr>
         <tr><td><a href="/research/papers/continuous-non-invasive-monitoring-of-hive-entrance-activity-reveals-honey-bee-colony-dynamics/">Continuous Non-Invasive Monitoring of Hive Entrance Activity Reveals Honey Bee Colony Dynamics</a></td><td>2026</td><td>🇹🇷 Van Yüzüncü Yıl University</td></tr>
         <tr><td><a href="/research/papers/deep-learning-and-computer-vision-for-honey-bee-health-monitoring-a-systematic-survey-and-future-directions/">Deep Learning and Computer Vision for Honey Bee Health Monitoring: A Systematic Survey and Future Directions</a></td><td>2026</td><td>🇮🇳 SSVPS&#x27;s Bapusaheb Shivajirao Deore College of Engineering</td></tr>
         <tr><td><a href="/research/papers/detection-and-classification-of-honeybee-castes-using-thermal-imaging-and-deep-learning/">Detection and classification of honeybee castes using thermal imaging and deep learning</a></td><td>2026</td><td>🇮🇷 Razi University</td></tr>

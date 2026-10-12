@@ -9,16 +9,16 @@ layout: research
 ## Summary
 
 - Topic key: `audio-acoustics`
-- Total papers: 29
+- Total papers: 30
 - [Research papers hub](../index.md)
 - [All topics](index.md)
 
 ## Product areas
 
-- [Colony Health](../product-areas/colony-health.md) (16)
+- [Colony Health](../product-areas/colony-health.md) (17)
 - [Edge Device](../product-areas/edge-device.md) (4)
 - [Gate Tracker](../product-areas/gate-tracker.md) (1)
-- [Monitoring Platform](../product-areas/monitoring-platform.md) (25)
+- [Monitoring Platform](../product-areas/monitoring-platform.md) (26)
 
 <section class="research-year-filter" aria-labelledby="research-year-filter-title">
   <h2 id="research-year-filter-title">Publications</h2>
@@ -27,7 +27,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="audio-acoustics-year-filter" value="all" checked>
         <span class="research-year-tab__label">All</span>
-        <span class="research-year-tab__count">29</span>
+        <span class="research-year-tab__count">30</span>
       </label>
       <span class="research-year-tab__arrow" aria-hidden="true">›</span>
       <label class="research-year-tab">
@@ -69,7 +69,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="audio-acoustics-year-filter" value="2026">
         <span class="research-year-tab__label">2026</span>
-        <span class="research-year-tab__count">13</span>
+        <span class="research-year-tab__count">14</span>
       </label>
     </div>
     <div class="research-year-filter__panels">
@@ -85,6 +85,7 @@ layout: research
         </thead>
         <tbody>
         <tr><td><a href="/research/papers/a-multimodal-machine-learning-system-for-non-invasive-detection-of-varroa-destructor-infestations-in-honey-bee-colonies/">A Multimodal Machine Learning System for Non-Invasive Detection of Varroa destructor Infestations in Honey Bee Colonies</a></td><td>2026</td><td>🇺🇸 Green Valley High School</td></tr>
+        <tr><td><a href="/research/papers/acoustic-honeybee-queen-state-detection-under-unseen-conditions/">Acoustic Honeybee Queen-State Detection Under Unseen Conditions</a></td><td>2026</td><td>INRS-EMT, Université du Québec, Montréal, Canada; Nectar Technologies, Montréal, Canada</td></tr>
         <tr><td><a href="/research/papers/acoustic-signatures-of-hive-detecting-queen-bee-absence-through-machine-learning-of-short-audio-segments/">Acoustic Signatures of Hive: Detecting Queen Bee Absence Through Machine Learning of Short Audio Segments</a></td><td>2026</td><td>🇨🇱 Universidad de Viña del Mar; 🇨🇱 Universidad Técnica Federico Santa María</td></tr>
         <tr><td><a href="/research/papers/beehaviourlab-a-high-throughput-platform-for-sublethal-stressor-screening-in-insects/">BEEhaviourLab: A high-throughput platform for sublethal stressor screening in insects</a></td><td>2026</td><td>🇬🇧 University of Oxford; 🇬🇧 Queen Mary University of London; 🇬🇧 University of Edinburgh</td></tr>
         <tr><td><a href="/research/papers/beeve-unsupervised-acoustic-state-discovery-in-honey-bee-buzzing/">BeeVe: Unsupervised Acoustic State Discovery in Honey Bee Buzzing</a></td><td>2026</td><td>🇺🇳 arXiv author-supplied preprint by Hamze Hammami and Nidhal Abdulaziz</td></tr>
@@ -129,6 +130,7 @@ layout: research
         </thead>
         <tbody>
         <tr><td><a href="/research/papers/a-multimodal-machine-learning-system-for-non-invasive-detection-of-varroa-destructor-infestations-in-honey-bee-colonies/">A Multimodal Machine Learning System for Non-Invasive Detection of Varroa destructor Infestations in Honey Bee Colonies</a></td><td>2026</td><td>🇺🇸 Green Valley High School</td></tr>
+        <tr><td><a href="/research/papers/acoustic-honeybee-queen-state-detection-under-unseen-conditions/">Acoustic Honeybee Queen-State Detection Under Unseen Conditions</a></td><td>2026</td><td>INRS-EMT, Université du Québec, Montréal, Canada; Nectar Technologies, Montréal, Canada</td></tr>
         <tr><td><a href="/research/papers/acoustic-signatures-of-hive-detecting-queen-bee-absence-through-machine-learning-of-short-audio-segments/">Acoustic Signatures of Hive: Detecting Queen Bee Absence Through Machine Learning of Short Audio Segments</a></td><td>2026</td><td>🇨🇱 Universidad de Viña del Mar; 🇨🇱 Universidad Técnica Federico Santa María</td></tr>
         <tr><td><a href="/research/papers/beehaviourlab-a-high-throughput-platform-for-sublethal-stressor-screening-in-insects/">BEEhaviourLab: A high-throughput platform for sublethal stressor screening in insects</a></td><td>2026</td><td>🇬🇧 University of Oxford; 🇬🇧 Queen Mary University of London; 🇬🇧 University of Edinburgh</td></tr>
         <tr><td><a href="/research/papers/beeve-unsupervised-acoustic-state-discovery-in-honey-bee-buzzing/">BeeVe: Unsupervised Acoustic State Discovery in Honey Bee Buzzing</a></td><td>2026</td><td>🇺🇳 arXiv author-supplied preprint by Hamze Hammami and Nidhal Abdulaziz</td></tr>

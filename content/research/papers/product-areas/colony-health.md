@@ -9,17 +9,17 @@ layout: research
 ## Summary
 
 - Product area key: `colony-health`
-- Total papers: 52
+- Total papers: 53
 - [Research papers hub](../index.md)
 - [All product areas](index.md)
 
 ## Topics
 
-- [Audio Acoustics](../topics/audio-acoustics.md) (16)
+- [Audio Acoustics](../topics/audio-acoustics.md) (17)
 - [Bee Behaviour](../topics/bee-behaviour.md) (15)
 - [Bee Traffic](../topics/bee-traffic.md) (1)
 - [Behavior Recognition](../topics/behavior-recognition.md) (1)
-- [Colony Health](../topics/colony-health.md) (8)
+- [Colony Health](../topics/colony-health.md) (9)
 - [Computer Vision](../topics/computer-vision.md) (21)
 - [Datasets](../topics/datasets.md) (1)
 - [Datasets Benchmarks](../topics/datasets-benchmarks.md) (4)
@@ -27,7 +27,7 @@ layout: research
 - [IoT Sensors](../topics/iot-sensors.md) (22)
 - [Pollination Ecology](../topics/pollination-ecology.md) (5)
 - [Pollination Monitoring](../topics/pollination-monitoring.md) (1)
-- [Precision Beekeeping](../topics/precision-beekeeping.md) (6)
+- [Precision Beekeeping](../topics/precision-beekeeping.md) (7)
 - [Reviews Surveys](../topics/reviews-surveys.md) (5)
 - [Varroa Health](../topics/varroa-health.md) (19)
 
@@ -38,7 +38,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="colony-health-year-filter" value="all" checked>
         <span class="research-year-tab__label">All</span>
-        <span class="research-year-tab__count">52</span>
+        <span class="research-year-tab__count">53</span>
       </label>
       <span class="research-year-tab__arrow" aria-hidden="true">›</span>
       <label class="research-year-tab">
@@ -98,7 +98,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="colony-health-year-filter" value="2026">
         <span class="research-year-tab__label">2026</span>
-        <span class="research-year-tab__count">21</span>
+        <span class="research-year-tab__count">22</span>
       </label>
     </div>
     <div class="research-year-filter__panels">
@@ -114,6 +114,7 @@ layout: research
         </thead>
         <tbody>
         <tr><td><a href="/research/papers/a-multimodal-machine-learning-system-for-non-invasive-detection-of-varroa-destructor-infestations-in-honey-bee-colonies/">A Multimodal Machine Learning System for Non-Invasive Detection of Varroa destructor Infestations in Honey Bee Colonies</a></td><td>2026</td><td>🇺🇸 Green Valley High School</td></tr>
+        <tr><td><a href="/research/papers/acoustic-honeybee-queen-state-detection-under-unseen-conditions/">Acoustic Honeybee Queen-State Detection Under Unseen Conditions</a></td><td>2026</td><td>INRS-EMT, Université du Québec, Montréal, Canada; Nectar Technologies, Montréal, Canada</td></tr>
         <tr><td><a href="/research/papers/acoustic-signatures-of-hive-detecting-queen-bee-absence-through-machine-learning-of-short-audio-segments/">Acoustic Signatures of Hive: Detecting Queen Bee Absence Through Machine Learning of Short Audio Segments</a></td><td>2026</td><td>🇨🇱 Universidad de Viña del Mar; 🇨🇱 Universidad Técnica Federico Santa María</td></tr>
         <tr><td><a href="/research/papers/an-automated-ai-based-vision-inspection-system-for-bee-mite-and-deformed-bee-detection-using-yolo-models/">An Automated AI-Based Vision Inspection System for Bee Mite and Deformed Bee Detection Using YOLO Models</a></td><td>2026</td><td>🇰🇷 Kangwon National University; 🇰🇷 National Institute of Agricultural Sciences; 🇰🇷 Terramolab Ltd.</td></tr>
         <tr><td><a href="/research/papers/an-intelligent-monitoring-system-for-forecasting-and-anomaly-detection-in-precision-beekeeping/">An intelligent monitoring system for forecasting and anomaly detection in precision beekeeping</a></td><td>2026</td><td>🇫🇷 EFREI Research Lab; 🇫🇷 Université Paris-Panthéon-Assas</td></tr>
@@ -181,6 +182,7 @@ layout: research
         </thead>
         <tbody>
         <tr><td><a href="/research/papers/a-multimodal-machine-learning-system-for-non-invasive-detection-of-varroa-destructor-infestations-in-honey-bee-colonies/">A Multimodal Machine Learning System for Non-Invasive Detection of Varroa destructor Infestations in Honey Bee Colonies</a></td><td>2026</td><td>🇺🇸 Green Valley High School</td></tr>
+        <tr><td><a href="/research/papers/acoustic-honeybee-queen-state-detection-under-unseen-conditions/">Acoustic Honeybee Queen-State Detection Under Unseen Conditions</a></td><td>2026</td><td>INRS-EMT, Université du Québec, Montréal, Canada; Nectar Technologies, Montréal, Canada</td></tr>
         <tr><td><a href="/research/papers/acoustic-signatures-of-hive-detecting-queen-bee-absence-through-machine-learning-of-short-audio-segments/">Acoustic Signatures of Hive: Detecting Queen Bee Absence Through Machine Learning of Short Audio Segments</a></td><td>2026</td><td>🇨🇱 Universidad de Viña del Mar; 🇨🇱 Universidad Técnica Federico Santa María</td></tr>
         <tr><td><a href="/research/papers/an-automated-ai-based-vision-inspection-system-for-bee-mite-and-deformed-bee-detection-using-yolo-models/">An Automated AI-Based Vision Inspection System for Bee Mite and Deformed Bee Detection Using YOLO Models</a></td><td>2026</td><td>🇰🇷 Kangwon National University; 🇰🇷 National Institute of Agricultural Sciences; 🇰🇷 Terramolab Ltd.</td></tr>
         <tr><td><a href="/research/papers/an-intelligent-monitoring-system-for-forecasting-and-anomaly-detection-in-precision-beekeeping/">An intelligent monitoring system for forecasting and anomaly detection in precision beekeeping</a></td><td>2026</td><td>🇫🇷 EFREI Research Lab; 🇫🇷 Université Paris-Panthéon-Assas</td></tr>

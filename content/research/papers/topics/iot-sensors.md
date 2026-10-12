@@ -9,16 +9,16 @@ layout: research
 ## Summary
 
 - Topic key: `iot-sensors`
-- Total papers: 67
+- Total papers: 68
 - [Research papers hub](../index.md)
 - [All topics](index.md)
 
 ## Product areas
 
 - [Colony Health](../product-areas/colony-health.md) (22)
-- [Edge Device](../product-areas/edge-device.md) (5)
+- [Edge Device](../product-areas/edge-device.md) (6)
 - [Gate Tracker](../product-areas/gate-tracker.md) (3)
-- [Monitoring Platform](../product-areas/monitoring-platform.md) (61)
+- [Monitoring Platform](../product-areas/monitoring-platform.md) (62)
 
 <section class="research-year-filter" aria-labelledby="research-year-filter-title">
   <h2 id="research-year-filter-title">Publications</h2>
@@ -27,7 +27,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="iot-sensors-year-filter" value="all" checked>
         <span class="research-year-tab__label">All</span>
-        <span class="research-year-tab__count">67</span>
+        <span class="research-year-tab__count">68</span>
       </label>
       <span class="research-year-tab__arrow" aria-hidden="true">›</span>
       <label class="research-year-tab">
@@ -99,7 +99,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="iot-sensors-year-filter" value="2026">
         <span class="research-year-tab__label">2026</span>
-        <span class="research-year-tab__count">16</span>
+        <span class="research-year-tab__count">17</span>
       </label>
     </div>
     <div class="research-year-filter__panels">
@@ -130,6 +130,7 @@ layout: research
         <tr><td><a href="/research/papers/technical-specification-of-a-novel-apivoltaic-system-integrating-digital-hive-monitoring-with-photovoltaic-energy-systems/">Technical Specification of a Novel Apivoltaic System: Integrating Digital Hive Monitoring with Photovoltaic Energy Systems</a></td><td>2026</td><td>🇷🇴 University of Agricultural Sciences and Veterinary Medicine of Cluj-Napoca; 🇷🇴 APIVOLT S.R.L.; 🇮🇹 University of Molise</td></tr>
         <tr><td><a href="/research/papers/time-series-dataset-of-honey-bee-colony-dynamics-before-during-and-after-sunflower-pollination/">Time-series dataset of honey bee colony dynamics before, during, and after sunflower pollination</a></td><td>2026</td><td>🇺🇦 AmoHive / Ukraine smart-hive deployment</td></tr>
         <tr><td><a href="/research/papers/transforming-beekeeping-through-technology-a-systematic-review-of-precision-beekeeping/">Transforming Beekeeping Through Technology: A Systematic Review of Precision Beekeeping</a></td><td>2026</td><td>🇧🇳 Universiti Brunei Darussalam; 🇱🇰 Uva Wellassa University</td></tr>
+        <tr><td><a href="/research/papers/ultra-low-power-lightweight-probabilistic-rss-based-path-reconstruction-a-system-for-landscape-scale-bee-tracking/">Ultra Low-Power, Lightweight, Probabilistic RSS-Based Path Reconstruction: A System for Landscape-Scale Bee Tracking</a></td><td>2026</td><td>University of Sheffield, UK</td></tr>
         <tr><td><a href="/research/papers/a-survey-of-tinyml-applications-in-beekeeping-for-hive-monitoring-and-management/">A Survey of TinyML Applications in Beekeeping for Hive Monitoring and Management</a></td><td>2025</td><td>🇦🇺 University of Technology Sydney; 🇦🇺 BeeSTAR</td></tr>
         <tr><td><a href="/research/papers/apis-mellifera-bee-verification-with-iot-and-graph-neural-network/">Apis mellifera Bee Verification with IoT and Graph Neural Network</a></td><td>2025</td><td>🇲🇽 Instituto Tecnológico El Llano Aguascalientes</td></tr>
         <tr><td><a href="/research/papers/beekeeping-in-the-digital-age-prospects-and-pitfalls-of-hive-sensors/">Beekeeping in the digital age: prospects and pitfalls of hive sensors in commercial beekeeping</a></td><td>2025</td><td>🇦🇺 University of Melbourne; 🇦🇺 La Trobe University; 🇦🇺 ANU Research School of Biology</td></tr>
@@ -212,6 +213,7 @@ layout: research
         <tr><td><a href="/research/papers/technical-specification-of-a-novel-apivoltaic-system-integrating-digital-hive-monitoring-with-photovoltaic-energy-systems/">Technical Specification of a Novel Apivoltaic System: Integrating Digital Hive Monitoring with Photovoltaic Energy Systems</a></td><td>2026</td><td>🇷🇴 University of Agricultural Sciences and Veterinary Medicine of Cluj-Napoca; 🇷🇴 APIVOLT S.R.L.; 🇮🇹 University of Molise</td></tr>
         <tr><td><a href="/research/papers/time-series-dataset-of-honey-bee-colony-dynamics-before-during-and-after-sunflower-pollination/">Time-series dataset of honey bee colony dynamics before, during, and after sunflower pollination</a></td><td>2026</td><td>🇺🇦 AmoHive / Ukraine smart-hive deployment</td></tr>
         <tr><td><a href="/research/papers/transforming-beekeeping-through-technology-a-systematic-review-of-precision-beekeeping/">Transforming Beekeeping Through Technology: A Systematic Review of Precision Beekeeping</a></td><td>2026</td><td>🇧🇳 Universiti Brunei Darussalam; 🇱🇰 Uva Wellassa University</td></tr>
+        <tr><td><a href="/research/papers/ultra-low-power-lightweight-probabilistic-rss-based-path-reconstruction-a-system-for-landscape-scale-bee-tracking/">Ultra Low-Power, Lightweight, Probabilistic RSS-Based Path Reconstruction: A System for Landscape-Scale Bee Tracking</a></td><td>2026</td><td>University of Sheffield, UK</td></tr>
         </tbody>
         </table>
         </div>

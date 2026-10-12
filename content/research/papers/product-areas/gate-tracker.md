@@ -9,7 +9,7 @@ layout: research
 ## Summary
 
 - Product area key: `gate-tracker`
-- Total papers: 32
+- Total papers: 33
 - [Research papers hub](../index.md)
 - [All product areas](index.md)
 
@@ -18,15 +18,16 @@ layout: research
 - [Audio Acoustics](../topics/audio-acoustics.md) (1)
 - [Bee Behaviour](../topics/bee-behaviour.md) (21)
 - [Bee Counting](../topics/bee-counting.md) (1)
-- [Bee Traffic](../topics/bee-traffic.md) (2)
+- [Bee Traffic](../topics/bee-traffic.md) (3)
 - [Behavior Recognition](../topics/behavior-recognition.md) (3)
-- [Computer Vision](../topics/computer-vision.md) (30)
+- [Computer Vision](../topics/computer-vision.md) (31)
 - [Datasets](../topics/datasets.md) (1)
 - [Datasets Benchmarks](../topics/datasets-benchmarks.md) (5)
 - [Edge AI Energy](../topics/edge-ai-energy.md) (2)
 - [IoT Sensors](../topics/iot-sensors.md) (3)
 - [Pollination Ecology](../topics/pollination-ecology.md) (3)
 - [Pollination Monitoring](../topics/pollination-monitoring.md) (1)
+- [Precision Beekeeping](../topics/precision-beekeeping.md) (1)
 - [Robotics](../topics/robotics.md) (1)
 - [Varroa Health](../topics/varroa-health.md) (1)
 
@@ -37,7 +38,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="gate-tracker-year-filter" value="all" checked>
         <span class="research-year-tab__label">All</span>
-        <span class="research-year-tab__count">32</span>
+        <span class="research-year-tab__count">33</span>
       </label>
       <span class="research-year-tab__arrow" aria-hidden="true">›</span>
       <label class="research-year-tab">
@@ -109,7 +110,7 @@ layout: research
       <label class="research-year-tab">
         <input type="radio" class="research-year-filter__input" name="gate-tracker-year-filter" value="2026">
         <span class="research-year-tab__label">2026</span>
-        <span class="research-year-tab__count">6</span>
+        <span class="research-year-tab__count">7</span>
       </label>
     </div>
     <div class="research-year-filter__panels">
@@ -124,6 +125,7 @@ layout: research
         </tr>
         </thead>
         <tbody>
+        <tr><td><a href="/research/papers/a-u-net-based-segmentation-approach-for-honeybee-pollen-detection-using-deep-learning/">A U-Net–Based Segmentation Approach for Honeybee Pollen Detection Using Deep Learning</a></td><td>2026</td><td>Marmara University, İstanbul, Türkiye</td></tr>
         <tr><td><a href="/research/papers/bee-detection-and-tracking-at-hive-entrance-using-yolo11-and-bytetrack/">Bee Detection and Tracking at Hive Entrance using YOLO11 and ByteTrack</a></td><td>2026</td><td>🇫🇮 Savonia University of Applied Sciences; 🇩🇪 Ostbayerische Technische Hochschule Regensburg</td></tr>
         <tr><td><a href="/research/papers/continuous-non-invasive-monitoring-of-hive-entrance-activity-reveals-honey-bee-colony-dynamics/">Continuous Non-Invasive Monitoring of Hive Entrance Activity Reveals Honey Bee Colony Dynamics</a></td><td>2026</td><td>🇹🇷 Van Yüzüncü Yıl University</td></tr>
         <tr><td><a href="/research/papers/digital-monitoring-and-modeling-of-honey-bee-foraging-on-clover-flowers-under-heat-stress/">Digital Monitoring and Modeling of Honey Bee Foraging on Clover Flowers Under Heat Stress</a></td><td>2026</td><td>🇺🇸 Oregon State University</td></tr>
@@ -171,6 +173,7 @@ layout: research
         </tr>
         </thead>
         <tbody>
+        <tr><td><a href="/research/papers/a-u-net-based-segmentation-approach-for-honeybee-pollen-detection-using-deep-learning/">A U-Net–Based Segmentation Approach for Honeybee Pollen Detection Using Deep Learning</a></td><td>2026</td><td>Marmara University, İstanbul, Türkiye</td></tr>
         <tr><td><a href="/research/papers/bee-detection-and-tracking-at-hive-entrance-using-yolo11-and-bytetrack/">Bee Detection and Tracking at Hive Entrance using YOLO11 and ByteTrack</a></td><td>2026</td><td>🇫🇮 Savonia University of Applied Sciences; 🇩🇪 Ostbayerische Technische Hochschule Regensburg</td></tr>
         <tr><td><a href="/research/papers/continuous-non-invasive-monitoring-of-hive-entrance-activity-reveals-honey-bee-colony-dynamics/">Continuous Non-Invasive Monitoring of Hive Entrance Activity Reveals Honey Bee Colony Dynamics</a></td><td>2026</td><td>🇹🇷 Van Yüzüncü Yıl University</td></tr>
         <tr><td><a href="/research/papers/digital-monitoring-and-modeling-of-honey-bee-foraging-on-clover-flowers-under-heat-stress/">Digital Monitoring and Modeling of Honey Bee Foraging on Clover Flowers Under Heat Stress</a></td><td>2026</td><td>🇺🇸 Oregon State University</td></tr>
