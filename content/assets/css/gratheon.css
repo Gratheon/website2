@@ -1635,15 +1635,118 @@ html[data-theme='dark'] .founder-letter .future {
   max-width: none;
 }
 
+/* WHY: the generated preview links had grid columns and gaps but no grid formatting context,
+   so the browser rendered them as a cramped inline row. Give each destination a clear card. */
 .knowledge-page-research .knowledge-content .section-video-preview-list {
+  --research-preview-surface: color-mix(in srgb, var(--knowledge-paper) 92%, var(--knowledge-ink));
+  display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: clamp(12px, 1.8vw, 18px);
-  margin-top: clamp(8px, 1.4vw, 14px);
+  margin: clamp(24px, 3vw, 36px) 0;
+}
+
+.knowledge-page-research .knowledge-content .section-video-preview,
+.knowledge-page-research .knowledge-content .section-video-preview:visited {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 12px;
+  min-width: 0;
+  min-height: 112px;
+  padding: clamp(12px, 1.5vw, 18px);
+  border: 1px solid var(--knowledge-line);
+  border-radius: 16px;
+  background: var(--knowledge-paper);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.045);
+  color: var(--knowledge-ink);
+  text-decoration: none;
+  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.knowledge-page-research .knowledge-content .section-video-preview:hover,
+.knowledge-page-research .knowledge-content .section-video-preview:focus-visible {
+  transform: translateY(-3px);
+  border-color: color-mix(in srgb, var(--accent, #2f8b0b) 48%, var(--knowledge-line));
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.09);
+  outline: 0;
+}
+
+.knowledge-page-research .knowledge-content .section-video-preview:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--accent, #2f8b0b) 58%, transparent);
+  outline-offset: 3px;
+}
+
+.knowledge-page-research .knowledge-content .section-video-preview-thumb {
+  display: block;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 10px;
+  background: var(--research-preview-surface);
+}
+
+.knowledge-page-research .knowledge-content .section-video-preview-thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 220ms ease;
+}
+
+.knowledge-page-research .knowledge-content .section-video-preview:hover .section-video-preview-thumb img {
+  transform: scale(1.035);
+}
+
+.knowledge-page-research .knowledge-content .section-video-preview-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 40px;
+  color: inherit;
+  font-size: clamp(1rem, 1.2vw, 1.15rem);
+  font-weight: 750;
+  line-height: 1.25;
+}
+
+.knowledge-page-research .knowledge-content .section-video-preview-title::after {
+  content: "↗";
+  display: grid;
+  flex: 0 0 32px;
+  width: 32px;
+  height: 32px;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--research-preview-surface);
+  font-size: 1rem;
+  transition: background 180ms ease, transform 180ms ease;
+}
+
+.knowledge-page-research .knowledge-content .section-video-preview:hover .section-video-preview-title::after,
+.knowledge-page-research .knowledge-content .section-video-preview:focus-visible .section-video-preview-title::after {
+  transform: translate(2px, -2px);
+  background: var(--brand-yellow);
+}
+
+.knowledge-page-research .knowledge-content .section-video-preview:not(:has(.section-video-preview-thumb)) {
+  justify-content: center;
+  background: linear-gradient(145deg, var(--knowledge-paper), var(--research-preview-surface));
 }
 
 @media (max-width: 899px) {
   .knowledge-page-research .knowledge-content .section-video-preview-list {
     grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .knowledge-page-research .knowledge-content .section-video-preview,
+  .knowledge-page-research .knowledge-content .section-video-preview:is(:hover, :focus-visible),
+  .knowledge-page-research .knowledge-content .section-video-preview-thumb img,
+  .knowledge-page-research .knowledge-content .section-video-preview:is(:hover, :focus-visible) .section-video-preview-thumb img,
+  .knowledge-page-research .knowledge-content .section-video-preview-title::after,
+  .knowledge-page-research .knowledge-content .section-video-preview:is(:hover, :focus-visible) .section-video-preview-title::after {
+    transition: none;
+    transform: none;
   }
 }
 
