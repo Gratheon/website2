@@ -108,4 +108,4 @@ def run() -> None:
         raise SystemExit(main())
     except FrontmatterError as exc:
         print(exc, file=sys.stderr)
-        raise SystemExit(1)
+        raise SystemExit(1) from None

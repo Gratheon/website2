@@ -15,6 +15,13 @@ from .existing import ExistingPaperIndex, load_existing_papers
 ATOM_NS = "{http://www.w3.org/2005/Atom}"
 
 
+def _child_text(element: ET.Element, tag: str) -> str:
+    child = element.find(f"{ATOM_NS}{tag}")
+    if child is None or child.text is None:
+        return ""
+    return child.text
+
+
 def search_arxiv(*, year: int | None = None, existing: ExistingPaperIndex | None = None) -> list[dict[str, Any]]:
     existing = existing or load_existing_papers()
     results: list[dict[str, Any]] = []
@@ -38,22 +45,24 @@ def search_arxiv(*, year: int | None = None, existing: ExistingPaperIndex | None
             continue
 
         for entry in root.findall(f"{ATOM_NS}entry"):
-            id_url = entry.find(f"{ATOM_NS}id").text
+            id_url = _child_text(entry, "id")
+            if not id_url:
+                continue
             arxiv_id = id_url.split("/abs/")[-1].split("v")[0]
             if arxiv_id in seen_ids or arxiv_id.lower() in existing.arxiv_ids:
                 continue
             seen_ids.add(arxiv_id)
 
-            title = entry.find(f"{ATOM_NS}title").text.strip().replace("\n", " ")
-            summary = entry.find(f"{ATOM_NS}summary").text.strip().replace("\n", " ")
-            published = entry.find(f"{ATOM_NS}published").text
+            title = _child_text(entry, "title").strip().replace("\n", " ")
+            summary = _child_text(entry, "summary").strip().replace("\n", " ")
+            published = _child_text(entry, "published")
             published_year = published.split("-")[0]
 
             if year_filter and published_year != year_filter:
                 continue
 
             authors = [
-                author.find(f"{ATOM_NS}name").text
+                _child_text(author, "name")
                 for author in entry.findall(f"{ATOM_NS}author")
             ]
 
