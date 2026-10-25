@@ -6,7 +6,7 @@ import html
 from typing import Iterable
 from urllib.parse import quote
 
-from .constants import DEFAULT_TOPIC_ICON, TOPIC_ICONS, UNKNOWN_YEAR_SLUG
+from .constants import DEFAULT_TOPIC_ICON, TOPIC_ICONS
 from .grouping import group_papers_by_product_area, group_papers_by_topic, group_papers_by_year
 from .models import Paper, Term
 from .normalize import slugify, sort_term_key, sort_term_key_by_count, term_sort_key_for_year
